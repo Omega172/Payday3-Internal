@@ -1,0 +1,4 @@
+#define UNLOAD_KEY VK_END
+#define CONSOLE_KEY VK_HOME
+
+#define TARGET_VERSION "902193"

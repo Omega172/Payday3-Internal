@@ -1,0 +1,4 @@
+.vscode/compile_commands.json
+.xmake/
+Build/
+.github/
