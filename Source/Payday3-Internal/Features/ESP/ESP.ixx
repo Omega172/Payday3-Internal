@@ -37,9 +37,15 @@ const std::vector<BonePair>& CalculateGuardBonePairs(SDK::USkeletalMeshComponent
     // Calculate bone pairs by following parent hierarchy from specific end bones
     std::vector<BonePair> pairs;
     std::unordered_set<int32_t> processedBones;
-    
+
+    SDK::FName head = SDK::UKismetStringLibrary::Conv_StringToName(L"Head");
+    SDK::FName rightHand = SDK::UKismetStringLibrary::Conv_StringToName(L"RightHand");
+    SDK::FName leftHand = SDK::UKismetStringLibrary::Conv_StringToName(L"LeftHand");
+    SDK::FName rightFoot = SDK::UKismetStringLibrary::Conv_StringToName(L"RightFloor");
+    SDK::FName leftFoot = SDK::UKismetStringLibrary::Conv_StringToName(L"LeftFloor");
+
     // Key end bones to trace back from (head, hands, feet)
-    std::vector<int32_t> endBones = {8, 94, 59, 145, 135}; // Head, Right Hand, Left Hand, Right Foot, Left Foot
+    std::vector<int32_t> endBones = {pMeshComponent->GetBoneIndex(head), pMeshComponent->GetBoneIndex(rightHand), pMeshComponent->GetBoneIndex(leftHand), pMeshComponent->GetBoneIndex(rightFoot), pMeshComponent->GetBoneIndex(leftFoot)}; // Head, Right Hand, Left Hand, Right Foot, Left Foot
     
     for (int32_t endBone : endBones) {
         int32_t current = endBone;
@@ -262,8 +268,8 @@ export namespace ESP
             return;
 
         // Get bone 0 (Reference - bottom/root) and bone 10 (HeadEnd - top of head)
-        SDK::FVector RootPos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(0));
-        SDK::FVector HeadPos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(10));
+        SDK::FVector RootPos = pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"Reference"));
+        SDK::FVector HeadPos = pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"HeadEnd"));
 
         // Project both bones to screen
         SDK::FVector2D RootScreen, HeadScreen;
@@ -331,6 +337,29 @@ export namespace ESP
             0,
             2.0f
         );
+
+        SDK::ACH_BaseCop_C* pGuard = reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor);
+        float fCurrentHealth = pGuard->AttributeSet->Health.CurrentValue;
+        float fMaxHealth = pGuard->AttributeSet->HealthMax.CurrentValue;
+
+        // Draw health bar
+        float healthBarHeight = height;
+        float healthBarWidth = 5.0f;
+        float healthPercent = fCurrentHealth / fMaxHealth;
+        float healthBarX = leftX - 10.0f;
+        float healthBarY = topY;
+        // Background
+        pDrawList->AddRectFilled(
+            ImVec2(healthBarX, healthBarY),
+            ImVec2(healthBarX + healthBarWidth, healthBarY + healthBarHeight),
+            IM_COL32(50, 50, 50, 255)
+        );
+        // Health fill
+        pDrawList->AddRectFilled(
+            ImVec2(healthBarX, healthBarY + healthBarHeight * (1.0f - healthPercent)),
+            ImVec2(healthBarX + healthBarWidth, healthBarY + healthBarHeight),
+            IM_COL32(0, 255, 0, 255)
+        );
     }
 
     void Render(SDK::UWorld* pGWorld, SDK::APlayerController* pPlayerController) {
@@ -341,14 +370,22 @@ export namespace ESP
         if (pWorldRuntime) {
             ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
             
-            UC::TArray<SDK::UObject*> guards = pWorldRuntime->AllAliveAIGuards->Objects;
-            for (int i = 0; i < guards.Num(); i++) {
-                auto pGuard = reinterpret_cast<SDK::ACH_BaseCop_C*>(guards[i]);
+            UC::TArray<SDK::UObject*> actors = pWorldRuntime->AllPawns->Objects;
+            UC::TArray<SDK::UObject*> aliveActors = pWorldRuntime->AllAlivePawns->Objects;
+
+            for (int i = 0; i < aliveActors.Num(); i++) {
+                SDK::AActor* pActor = reinterpret_cast<SDK::AActor*>(aliveActors[i]);
+                if (!pActor || !pActor->IsA(SDK::ACH_BaseCop_C::StaticClass()))
+                    continue;
+
+                auto pGuard = reinterpret_cast<SDK::ACH_BaseCop_C*>(aliveActors[i]);
                 SDK::FVector2D vec2ScreenLocation;
                 if (!pGuard || !pPlayerController->ProjectWorldLocationToScreen(pGuard->K2_GetActorLocation(), &vec2ScreenLocation, false))
                     continue;
 
-                pGuard->Multicast_SetMarked(true);
+            
+                if (SDK::USBZOnlineFunctionLibrary::IsSoloGame(pGWorld))
+                    pGuard->Multicast_SetMarked(true);
 
                 SDK::USkeletalMeshComponent* pSkeletalMesh = pGuard->Mesh;
                 if (!pSkeletalMesh)
@@ -359,6 +396,36 @@ export namespace ESP
                 DrawSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
                 DrawDebugSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
             }
+        }
+
+        SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
+        pPersistentLevel->Actors;
+
+        for (SDK::AActor* pActor : pPersistentLevel->Actors) {
+            if (!pActor)
+                continue;
+
+            std::vector<SDK::UClass*> actorClasses = {
+                SDK::ABP_RFIDTagBase_C::StaticClass(),
+                SDK::ABP_KeycardBase_C::StaticClass(),
+                SDK::ABP_CarriedInteractableBase_C::StaticClass(),
+                SDK::UGE_CarKeys_C::StaticClass(),
+                SDK::UGA_Phone_C::StaticClass(),
+            };
+
+            if (std::none_of(actorClasses.begin(), actorClasses.end(), [pActor](SDK::UClass* pClass) { return pActor->IsA(pClass); }))
+                continue;
+
+            // Drae name on item
+            SDK::FVector ActorLocation = pActor->K2_GetActorLocation();
+            SDK::FVector2D ScreenLocation;
+            if (!pPlayerController->ProjectWorldLocationToScreen(ActorLocation, &ScreenLocation, false))
+                continue;
+
+            char szName[64];
+            szName[pActor->Class->Name.GetRawString().copy(szName, 63)] = '\0';
+            ImVec2 vecTextSize = ImGui::CalcTextSize(szName);
+            ImGui::GetBackgroundDrawList()->AddText({ScreenLocation.X - vecTextSize.x / 2, ScreenLocation.Y - 8.f}, IM_COL32(0, 255, 0, 255), szName);
         }
     }
 
