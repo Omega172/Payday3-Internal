@@ -109,6 +109,13 @@ namespace Dx12Hook
 	// Initialize ImGui
 	static void InitImGui()
 	{
+		if (ImGui::GetCurrentContext())
+		{
+			ImGui_ImplDX12_Shutdown();
+			ImGui_ImplWin32_Shutdown();
+			ImGui::DestroyContext();
+		}
+
 		ImGui::CreateContext();
 		ImGuiIO& io = ImGui::GetIO();
 		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
@@ -345,6 +352,7 @@ namespace Dx12Hook
 		if (SUCCEEDED(result) && g_bInitialized)
 		{
 			CreateRenderTarget();
+			InitImGui();
 			ImGui_ImplDX12_CreateDeviceObjects();
 		}
 
