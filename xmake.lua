@@ -21,7 +21,9 @@ target("Payday3-Internal")
     add_files("Source/Payday3-Internal/Dumper-7/SDK/CoreUObject_functions.cpp")
     add_files("Source/Payday3-Internal/Dumper-7/SDK/Engine_Functions.cpp")
     add_files("Source/Payday3-Internal/Dumper-7/SDK/Starbreeze_functions.cpp")
+    add_files("Source/Payday3-Internal/Dumper-7/SDK/SBZWorldRuntime_functions.cpp")
+
     add_packages("vcpkg::minhook", "vcpkg::imgui")
     add_syslinks("d3d12", "dxgi")
 
-    add_links("user32", "minhook.x64", "imguid")
+    add_links("user32", "minhook.x64", "imgui")

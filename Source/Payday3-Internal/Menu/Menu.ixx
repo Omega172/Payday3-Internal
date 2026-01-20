@@ -6,15 +6,59 @@ export module Menu;
 import Utils.Logging;
 static bool g_bESP = false;
 static bool g_bDebugESP = false;
-static bool g_bExcludeCivilians = true;
-
 export namespace Menu
 {
-    void PreDraw()
-    {
+    void ESP(SDK::UWorld* pGWorld, SDK::APlayerController* pPlayerController) {
         if (!g_bESP)
             return;
 
+        SDK::USBZWorldRuntime* pWorldRuntime = reinterpret_cast<SDK::USBZWorldRuntime*>(SDK::USBZWorldRuntime::GetWorldRuntime(pGWorld));
+        if (pWorldRuntime) {
+            UC::TArray<SDK::UObject*> guards = pWorldRuntime->AllAliveAIGuards->Objects;
+            for (int i = 0; i < guards.Num(); i++) {
+                auto pGaurd = reinterpret_cast<SDK::ACH_BaseCop_C*>(guards[i]);
+                SDK::FVector2D vec2ScreenLocation;
+                if (!pGaurd || !pPlayerController->ProjectWorldLocationToScreen(pGaurd->K2_GetActorLocation(), &vec2ScreenLocation, false))
+                    continue;
+
+                pGaurd->Multicast_SetMarked(true);
+            }
+        }
+    }
+
+    void DebugESP(SDK::ULevel* pPersistentLevel, SDK::APlayerController* pPlayerController) {
+        if (!g_bDebugESP)
+            return;
+
+        ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
+
+        for (SDK::AActor* pActor : pPersistentLevel->Actors) {
+            if (!pActor)
+                continue;
+
+            SDK::FVector ActorLocation = pActor->K2_GetActorLocation();
+            SDK::FVector2D ScreenLocation;
+
+            if (!pPlayerController->ProjectWorldLocationToScreen(ActorLocation, &ScreenLocation, false))
+                continue;
+
+            if (!g_bDebugESP)
+                continue;
+
+            char szName[64];
+            for (SDK::UStruct* pStruct = static_cast<SDK::UStruct*>(pActor->Class); pStruct != nullptr; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct)) {
+
+                szName[pStruct->Name.GetRawString().copy(szName, 63)] = '\0';
+
+                ImVec2 vecTextSize = ImGui::CalcTextSize(szName);
+                pDrawList->AddText({ScreenLocation.X - vecTextSize.x / 2, ScreenLocation.Y - 8.f}, IM_COL32(255, 0, 0, 255), szName);
+                ScreenLocation.Y += vecTextSize.y + 2.f;
+            }
+        }
+    }
+
+    void PreDraw()
+    {
         SDK::UWorld* pGWorld = SDK::UWorld::GetWorld();
         if (!pGWorld)
             return;
@@ -35,43 +79,9 @@ export namespace Menu
         if (!pPersistentLevel)
             return;
 
-        ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
-        if (!pDrawList)
-            return;
+        ESP(pGWorld, pPlayerController);
 
-        for (SDK::AActor* pActor : pPersistentLevel->Actors) {
-            if (!pActor)
-                continue;
-
-            SDK::FVector ActorLocation = pActor->K2_GetActorLocation();
-            SDK::FVector2D ScreenLocation;
-
-            if (!pPlayerController->ProjectWorldLocationToScreen(ActorLocation, &ScreenLocation, false))
-                continue;
-
-            if (pActor->IsA(SDK::ACH_BaseCop_C::StaticClass())) {
-                SDK::ACH_BaseCop_C* pCop = static_cast<SDK::ACH_BaseCop_C*>(pActor);
-                pCop->Multicast_SetMarked(true);
-                continue;
-            }
-
-            if (pActor->IsA(SDK::ACH_BaseCivilian_C::StaticClass()) || pActor->IsA(SDK::ABP_CivilianController_C::StaticClass())) {
-                continue;
-            }
-
-            if (!g_bDebugESP)
-                continue;
-
-            char szName[64];
-            for (SDK::UStruct* pStruct = static_cast<SDK::UStruct*>(pActor->Class); pStruct != nullptr; pStruct = static_cast<SDK::UStruct*>(pStruct->SuperStruct)) {
-
-                szName[pStruct->Name.GetRawString().copy(szName, 63)] = '\0';
-
-                ImVec2 vecTextSize = ImGui::CalcTextSize(szName);
-                pDrawList->AddText({ScreenLocation.X - vecTextSize.x / 2, ScreenLocation.Y - 8.f}, IM_COL32(255, 0, 0, 255), szName);
-                ScreenLocation.Y += vecTextSize.y + 2.f;
-            }
-        }
+        DebugESP(pPersistentLevel, pPlayerController);
     }
 
 	// Draw the main menu content
@@ -80,7 +90,7 @@ export namespace Menu
 		if (!bShowMenu)
 			return;
 
-        ImGui::Begin("Payday 3 Internal", &bShowMenu);
+        ImGui::Begin("Payday 3 Internal", &bShowMenu, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoCollapse);
 		// Header
 		ImGui::Text("DirectX 12 Hook Active");
 		ImGui::Text("Press INSERT to toggle menu");
@@ -95,8 +105,6 @@ export namespace Menu
 		ImGui::Checkbox("Enable ESP", &g_bESP);
         if (g_bESP)
             ImGui::Checkbox("Debug ESP (Show Class Names)", &g_bDebugESP);
-        if (g_bDebugESP)
-            ImGui::Checkbox("Exclude Civilians", &g_bExcludeCivilians);
 
         ImGui::End();
 	}

@@ -4,6 +4,7 @@
 #include <thread>
 #include <chrono>
 #include <string>
+#include <utility>
 #include <stacktrace>
 #include <MinHook.h>
 #pragma comment(lib, "version.lib")
@@ -77,78 +78,12 @@ bool Init()
 	return true;
 }
 
-DWORD WINAPI MainThread(LPVOID lpParam)
+void MainLoop()
 {
-	bool bInitSuccess = Init();
-	(bInitSuccess) ? Utils::LogDebug("Initialization successful") : Utils::LogError("Initialization failed!");
-
-    while (bInitSuccess && !GetAsyncKeyState(UNLOAD_KEY))
+	while (!GetAsyncKeyState(UNLOAD_KEY))
     {
 		if (GetAsyncKeyState(CONSOLE_KEY) & 0x1)
 			Globals::g_upConsole->ToggleVisibility();
-
-		static std::once_flag mainLoopInit;
-		std::call_once(mainLoopInit, [&bInitSuccess]() {
-			// Get current module name
-			char moduleName[MAX_PATH];
-			GetModuleFileNameA(Globals::g_hBaseModule, moduleName, MAX_PATH);
-			Utils::LogDebug(std::string("Module Name: ") + moduleName);
-
-			boolean bOriginalVisibility = Globals::g_upConsole->GetVisibility();
-			Globals::g_upConsole->SetVisibility(true);
-
-			// Get current module file version and compare with target version
-			DWORD versionInfoSize = GetFileVersionInfoSizeA(moduleName, NULL);
-			if (versionInfoSize > 0) {
-				std::vector<BYTE> versionData(versionInfoSize);
-				if (GetFileVersionInfoA(moduleName, 0, versionInfoSize, versionData.data())) {
-					// First get the translation information to determine the language and code page
-					struct LANGANDCODEPAGE {
-						WORD wLanguage;
-						WORD wCodePage;
-					} *lpTranslate;
-					
-					UINT cbTranslate;
-					if (VerQueryValueA(versionData.data(), "\\VarFileInfo\\Translation", (LPVOID*)&lpTranslate, &cbTranslate)) {
-						// Build the path to the ProductVersion string
-						char subBlock[256];
-						snprintf(subBlock, sizeof(subBlock), "\\StringFileInfo\\%04x%04x\\ProductVersion", 
-							lpTranslate[0].wLanguage, lpTranslate[0].wCodePage);
-						
-						// Query the ProductVersion string
-						LPVOID lpBuffer;
-						UINT dwBytes;
-						if (VerQueryValueA(versionData.data(), subBlock, &lpBuffer, &dwBytes) && dwBytes > 0) {
-							std::string productVersion = static_cast<char*>(lpBuffer);
-							Utils::LogDebug(std::string("Product Version: ") + productVersion);
-							Utils::LogDebug(std::string("Target Version: ") + TARGET_VERSION);
-							
-							if (productVersion == TARGET_VERSION) {
-								Utils::LogDebug("Version match: Target version found!");
-							} else {
-								Utils::LogDebug("Version mismatch: Target version not found!");
-								bInitSuccess = false;
-							}
-						} else {
-							Utils::LogError("Failed to query ProductVersion string");
-							bInitSuccess = false;
-						}
-					} else {
-						Utils::LogError("Failed to query translation information");
-						bInitSuccess = false;
-					}
-				} else {
-					Utils::LogError("Failed to get file version info");
-					bInitSuccess = false;
-				}
-			} else {
-				Utils::LogDebug("No version information available for this module");
-				bInitSuccess = false;
-			}
-
-			std::this_thread::sleep_for(std::chrono::seconds(5));
-			Globals::g_upConsole->SetVisibility(bOriginalVisibility);
-		});
 
 		// Do frame independent work here
 		SDK::UWorld* pGWorld = SDK::UWorld::GetWorld();
@@ -188,7 +123,63 @@ DWORD WINAPI MainThread(LPVOID lpParam)
 		}
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
 	}
+}
+
+bool VerifyGameVersion()
+{
+	char szBlock[MAX_PATH];
+	GetModuleFileNameA(Globals::g_hBaseModule, szBlock, MAX_PATH);
+	Utils::LogDebug(std::string("Module Name: ") + szBlock);
+
+	Globals::g_upConsole->SetVisibility(true);
+
+	// Get current module file version and compare with target version
+	std::vector<BYTE> vecVersionData(GetFileVersionInfoSizeA(szBlock, NULL));
+	if(!vecVersionData.size() || !GetFileVersionInfoA(szBlock, 0, vecVersionData.size(), vecVersionData.data())){
+		Utils::LogError("Failed to open game to find version info!");
+		return false;
+	}
+
+	std::pair<WORD, WORD>* lpTranslate{};
+	UINT iTranslations{};
+	if(!VerQueryValueA(vecVersionData.data(), "\\VarFileInfo\\Translation", reinterpret_cast<void**>(&lpTranslate), &iTranslations) || !lpTranslate || !iTranslations){
+		Utils::LogError("Failed to query for game translations!");
+		return false;
+	}
+
+	memset(szBlock, 0, sizeof(szBlock));
+	snprintf(szBlock, sizeof(szBlock), "\\StringFileInfo\\%04x%04x\\ProductVersion", lpTranslate[0].first, lpTranslate[0].second);
+
+	void* lpBuffer{};
+	UINT iBytes{};
+
+	if(!VerQueryValueA(vecVersionData.data(), szBlock, &lpBuffer, &iBytes) || !iBytes || !lpBuffer){
+		Utils::LogError("Failed to find game version!");
+		return false;
+	}
+
+	if(std::string(static_cast<char*>(lpBuffer)) != TARGET_VERSION) {
+		Utils::LogError(std::string("Game version mismatch! Expected ") + TARGET_VERSION + ", got " + static_cast<char*>(lpBuffer));
+		return false;
+	}
+
+	return true;
+}
+
+DWORD WINAPI MainThread(LPVOID lpParam)
+{
+	bool bInitSuccess = Init();
+	bool bOriginalVisibility = Globals::g_upConsole->GetVisibility();
+	bInitSuccess &= VerifyGameVersion();
+
+	(bInitSuccess) ? Utils::LogDebug("Initialization successful") : Utils::LogError("Initialization failed!");
+
+	std::this_thread::sleep_for(std::chrono::seconds(5));
+	Globals::g_upConsole->SetVisibility(bOriginalVisibility);
+
+	MainLoop();
 	Utils::LogDebug("Unloading...");
 
 	// Shutdown DirectX 12 hook
