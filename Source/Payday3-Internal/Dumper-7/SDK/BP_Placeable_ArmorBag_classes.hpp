@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Placeable_ArmorBag.BP_Placeable_ArmorBag_C
 // 0x0070 (0x05C0 - 0x0550)
-class ABP_Placeable_ArmorBag_C final : public ASBZArmorBag
+class ABP_Placeable_ArmorBag_C : public ASBZArmorBag
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

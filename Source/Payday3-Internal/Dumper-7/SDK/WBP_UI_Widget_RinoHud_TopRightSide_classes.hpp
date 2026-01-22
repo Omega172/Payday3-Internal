@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "ST_RinoHud_BagAdjustments_structs.hpp"
+#include "ST_RinoHud_CounterIcon_structs.hpp"
 #include "RinoHud_SaveGame_Struct_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Starbreeze_structs.hpp"
-#include "ST_RinoHud_CounterIcon_structs.hpp"
-#include "ERinoHud_IconRow_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
+#include "ST_RinoHud_BagAdjustments_structs.hpp"
+#include "Starbreeze_structs.hpp"
+#include "ERinoHud_IconRow_structs.hpp"
 
 
 namespace SDK

@@ -10,22 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
-
 
 namespace SDK::Params
 {
-
-// Function WBP_UI_Widget_CollectedBagIcon.WBP_UI_Widget_CollectedBagIcon_C.ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_Widget_CollectedBagIcon_C_ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_CollectedBagIcon_C_ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon;
 
 // Function WBP_UI_Widget_CollectedBagIcon.WBP_UI_Widget_CollectedBagIcon_C.CollectBag
 // 0x0008 (0x0008 - 0x0000)

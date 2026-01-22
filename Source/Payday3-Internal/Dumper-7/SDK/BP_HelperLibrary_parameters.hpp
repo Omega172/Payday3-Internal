@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
-#include "BPS_GlassHit_VFXData_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BPS_GlassHit_VFXData_structs.hpp"
+#include "GameplayTags_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 namespace SDK::Params

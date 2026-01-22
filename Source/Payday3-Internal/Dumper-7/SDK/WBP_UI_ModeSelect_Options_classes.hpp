@@ -13,15 +13,15 @@
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "E_ButtonLockedState_structs.hpp"
 #include "UMG_structs.hpp"
+#include "E_ButtonLockedState_structs.hpp"
 
 
 namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C
-// 0x0098 (0x0358 - 0x02C0)
+// 0x00C8 (0x0388 - 0x02C0)
 class UWBP_UI_ModeSelect_Options_C final : public USBZMenuStackScreenWidget
 {
 public:
@@ -38,44 +38,48 @@ public:
 	class UImage*                                 Image_101;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Image_173;                                         // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               LVL5_Overlay;                                      // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ModeSelect_ModeButton_C*        Quickplay_Button;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ModeSelect_ModeButton_C*        SoloMode_Button;                                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ModeSelect_ModeButton_C*        Tutorial_Button;                                   // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         CurrentModeFocused;                                // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAkAudioEvent*                          ButtonShownAudioEvent;                             // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_ModeSelect_ModeButton_C*        ModdedHeists_Button;                               // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               ModdedHeistSizeBox;                                // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ModeSelect_ModeButton_C*        Quickplay_Button;                                  // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ModeSelect_ModeButton_C*        SoloMode_Button;                                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ModeSelect_ModeButton_C*        Tutorial_Button;                                   // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               TutorialSizeBox;                                   // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_69;                                    // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         CurrentModeFocused;                                // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAkAudioEvent*                          ButtonShownAudioEvent;                             // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_ModdedHeistSelectionMenu_C*         ModdedHeistsModObject;                             // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_ModdedHeists_HeistSelection_C*  ModdedHeistsMenu;                                  // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_ModeSelect_Options(int32 EntryPoint);
+	void BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_9_OnShowAdditionalInfo__DelegateSignature();
+	void BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_ModeSelect_Options_ModdedHeists_Button_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_ModeSelect_Options_ModdedHeists_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void OnGameStartEntered();
 	void OnPlayerPartyChanged(const class FString& PlayerId);
 	void OnInstallStateChanged(bool bIsGameInstallPending);
 	void OnPrivilegeChanged(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
 	void OnPartyCreated();
 	void OnInitialized();
-	void Construct();
-	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature();
 	void ClearFocusedButton();
 	void OnButtonFullyShown();
-	void BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void OnLostStackFocused();
 	void OnGainedStackFocused(const class FName& PreviousValue);
-	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnControlRefPressed(class FName ActionName);
-	void ShowHideAdditionalInfo(bool ForceHide);
-	void ResetButtonsVisuals();
-	void UpdateButtonsBasedOnAccess();
+	void Construct();
 	void CheckIfNewPlayer();
-	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_0();
-	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_1();
-	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_2();
-	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_3();
+	void UpdateButtonsBasedOnAccess();
+	void ResetButtonsVisuals();
+	void ShowHideAdditionalInfo(bool ForceHide);
+	void OnControlRefPressed(class FName ActionName);
 
 public:
 	static class UClass* StaticClass()

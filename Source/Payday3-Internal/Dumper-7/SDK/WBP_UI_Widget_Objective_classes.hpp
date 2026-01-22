@@ -51,11 +51,11 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void OnObjectiveInitialized(class ASBZObjective* ObjectiveInit, bool bIsSubObjective);
 	void OnTickingTypeChanged(ESBZTickingLootType InTickingLootType);
-	void ObjectiveActivated(class ASBZObjective* Param_ObjectiveActivated_0);
+	void ObjectiveActivated(class ASBZObjective* NewObjectiveActivated);
 	void OnAnimationFinished(const class UWidgetAnimation* Animation);
 	void OnObjectiveRemoved();
-	void InitTickingLootVisuals();
 	void UpdateTickingLootType(ESBZTickingLootType InType);
+	void InitTickingLootVisuals();
 
 public:
 	static class UClass* StaticClass()

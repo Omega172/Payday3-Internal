@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
-#include "ESBZSkillEquipResult_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ESBZSkillEquipResult_structs.hpp"
 
 
 namespace SDK::Params

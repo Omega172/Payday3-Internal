@@ -38,7 +38,7 @@ void UPD3_GameInstance_C::ExecuteUbergraph_PD3_GameInstance(int32 EntryPoint)
 
 
 // Function PD3_GameInstance.PD3_GameInstance_C.OnFindReplaysComplete
-// (Event, Public, HasOutParams, BlueprintEvent)
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const TArray<struct FSBZReplayInfo>&    Replays                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
@@ -54,6 +54,20 @@ void UPD3_GameInstance_C::OnFindReplaysComplete(const TArray<struct FSBZReplayIn
 	Parms.Replays = std::move(Replays);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PD3_GameInstance.PD3_GameInstance_C.ReceiveInit
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UPD3_GameInstance_C::ReceiveInit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PD3_GameInstance_C", "ReceiveInit");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

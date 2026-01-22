@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.ExecuteUbergraph_WBP_PlayerNameplate
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerNameplate_C::ExecuteUbergraph_WBP_PlayerNameplate(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerNameplate_C", "ExecuteUbergraph_WBP_PlayerNameplate");
+
+	Params::WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.SetDisplayName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -170,26 +190,6 @@ void UWBP_PlayerNameplate_C::BP_SetRenownLevel(int32 RenownLevel_0)
 	Params::WBP_PlayerNameplate_C_BP_SetRenownLevel Parms{};
 
 	Parms.RenownLevel_0 = RenownLevel_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.ExecuteUbergraph_WBP_PlayerNameplate
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerNameplate_C::ExecuteUbergraph_WBP_PlayerNameplate(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerNameplate_C", "ExecuteUbergraph_WBP_PlayerNameplate");
-
-	Params::WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

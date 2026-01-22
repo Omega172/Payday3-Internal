@@ -88,9 +88,9 @@ void UWBP_UI_Widget_BaseCounter_RinoHud_C::PreConstruct(bool IsDesignTime)
 // Function WBP_UI_Widget_BaseCounter_RinoHud.WBP_UI_Widget_BaseCounter_RinoHud_C.Set Count
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   count_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_BaseCounter_RinoHud_C::Set_Count(int32 count_0)
+void UWBP_UI_Widget_BaseCounter_RinoHud_C::Set_Count(int32 count)
 {
 	static class UFunction* Func = nullptr;
 
@@ -99,7 +99,7 @@ void UWBP_UI_Widget_BaseCounter_RinoHud_C::Set_Count(int32 count_0)
 
 	Params::WBP_UI_Widget_BaseCounter_RinoHud_C_Set_Count Parms{};
 
-	Parms.count_0 = count_0;
+	Parms.count = count;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

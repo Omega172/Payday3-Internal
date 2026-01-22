@@ -37,6 +37,20 @@ void UWBP_Skills2_Menu_C::ExecuteUbergraph_WBP_Skills2_Menu(int32 EntryPoint)
 }
 
 
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.BndEvt__WBP_Skills2_Menu_WBP_UI_Widget_ActionInput_C_0_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Skills2_Menu_C::BndEvt__WBP_Skills2_Menu_WBP_UI_Widget_ActionInput_C_0_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Skills2_Menu_C", "BndEvt__WBP_Skills2_Menu_WBP_UI_Widget_ActionInput_C_0_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -495,20 +509,6 @@ void UWBP_Skills2_Menu_C::RefreshSkillButtonVisuals()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Skills2_Menu_C", "RefreshSkillButtonVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.UpdateSkillDescription
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_Menu_C::UpdateSkillDescription()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Skills2_Menu_C", "UpdateSkillDescription");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

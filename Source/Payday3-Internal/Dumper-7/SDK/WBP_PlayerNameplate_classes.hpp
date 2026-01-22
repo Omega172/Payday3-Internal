@@ -39,6 +39,7 @@ public:
 	class USizeBox*                               Root_SB;                                           // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void ExecuteUbergraph_WBP_PlayerNameplate(int32 EntryPoint);
 	void SetDisplayName(const class FText& InDisplayName);
 	void UpdatePlayer(const class FText& InDisplayName, const class FText& InPlatformName, int32 InInfamyLevel, int32 InRenownLevel);
 	void InitPlayer(const class FText& InDisplayName, const class FText& InPlatformName, ESBZPlatform InPlatform, int32 InInfamyLevel, int32 InRenownLevel, bool InIsPlatformName, bool InIsPartyLeader);
@@ -46,7 +47,6 @@ public:
 	void BP_SetUserData(const struct FSBZUser& InUserData);
 	void BP_SetInfamyLevel(int32 InfamyLevel);
 	void BP_SetRenownLevel(int32 RenownLevel_0);
-	void ExecuteUbergraph_WBP_PlayerNameplate(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

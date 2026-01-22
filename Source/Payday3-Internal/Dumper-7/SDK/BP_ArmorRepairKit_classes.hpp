@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ArmorRepairKit.BP_ArmorRepairKit_C
 // 0x0030 (0x0570 - 0x0540)
-class ABP_ArmorRepairKit_C final : public ASBZArmorRepairKit
+class ABP_ArmorRepairKit_C : public ASBZArmorRepairKit
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0540(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

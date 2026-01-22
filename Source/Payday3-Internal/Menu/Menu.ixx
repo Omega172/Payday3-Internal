@@ -57,8 +57,14 @@ export namespace Menu
 		ImGui::Checkbox("Enable ESP", &espConfig.bESP);
         if (espConfig.bESP) {
             ImGui::Indent();
-            ImGui::Checkbox("Box ESP", &espConfig.bBoxESP);
-            ImGui::Checkbox("Skeleton ESP", &espConfig.bSkeleton);
+            if(ImGui::BeginCombo("Enemy ESP", "FUCK NIGGER", 0))
+            {
+                ImGui::Selectable("Box", &espConfig.bBoxESP);
+                ImGui::Selectable("Skeleton", &espConfig.bSkeleton);
+                ImGui::Selectable("Outline", &espConfig.bOutline);
+                ImGui::EndCombo();
+            }
+
             if (espConfig.bSkeleton) {
                 ImGui::Indent();
 #ifdef _DEBUG

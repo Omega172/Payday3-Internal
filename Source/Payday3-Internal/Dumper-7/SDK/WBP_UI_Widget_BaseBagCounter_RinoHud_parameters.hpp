@@ -15,14 +15,15 @@ namespace SDK::Params
 {
 
 // Function WBP_UI_Widget_BaseBagCounter_RinoHud.WBP_UI_Widget_BaseBagCounter_RinoHud_C.ExecuteUbergraph_WBP_UI_Widget_BaseBagCounter_RinoHud
-// 0x0018 (0x0018 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct WBP_UI_Widget_BaseBagCounter_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseBagCounter_RinoHud final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_BaseBagCounter_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseBagCounter_RinoHud;
 
@@ -40,7 +41,7 @@ DUMPER7_ASSERTS_WBP_UI_Widget_BaseBagCounter_RinoHud_C_PreConstruct;
 struct WBP_UI_Widget_BaseBagCounter_RinoHud_C_Set_Count final
 {
 public:
-	int32                                         count_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "ST_RinoHud_CounterIcon_BagGeneratorInclusion_structs.hpp"
 #include "ST_RinoHud_CounterIcon_ActorInclusion_structs.hpp"
+#include "ST_RinoHud_CounterIcon_BagGeneratorInclusion_structs.hpp"
 #include "ERinoHud_IconRow_structs.hpp"
 
 

@@ -46,14 +46,13 @@ public:
 DUMPER7_ASSERTS_WBP_UI_Widget_BaseGroupedCounters_RinoHud_C__GetLogoBrush;
 
 // Function WBP_UI_Widget_BaseGroupedCounters_RinoHud.WBP_UI_Widget_BaseGroupedCounters_RinoHud_C.AddWidget
-// 0x0028 (0x0028 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct WBP_UI_Widget_BaseGroupedCounters_RinoHud_C_AddWidget final
 {
 public:
 	class USBZWidgetBase*                         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, InstancedReference, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_BaseGroupedCounters_RinoHud_C_AddWidget;
 

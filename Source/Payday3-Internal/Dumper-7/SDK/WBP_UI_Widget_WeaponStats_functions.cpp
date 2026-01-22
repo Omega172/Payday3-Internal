@@ -38,7 +38,7 @@ void UWBP_UI_Widget_WeaponStats_C::ExecuteUbergraph_WBP_UI_Widget_WeaponStats(in
 
 
 // Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.OnUpdateVisuals
-// (Event, Public, BlueprintEvent)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
 void UWBP_UI_Widget_WeaponStats_C::OnUpdateVisuals()
 {
@@ -46,6 +46,20 @@ void UWBP_UI_Widget_WeaponStats_C::OnUpdateVisuals()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "OnUpdateVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.SetAmmoStat
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_WeaponStats_C::SetAmmoStat()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "SetAmmoStat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,17 +91,101 @@ void UWBP_UI_Widget_WeaponStats_C::SetWeaponStat(class UProgressBar* ProgressBar
 }
 
 
-// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.SetAmmoStat
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.GetStatValuesFromEquippableConfig
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZEquippableConfig&      Equippable_Config                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// TArray<float>*                          Damage                                                 (Parm, OutParm)
+// TArray<float>*                          Recoil                                                 (Parm, OutParm)
+// TArray<float>*                          Stability                                              (Parm, OutParm)
+// TArray<float>*                          Accuracy                                               (Parm, OutParm)
+// TArray<float>*                          Handling                                               (Parm, OutParm)
+// TArray<float>*                          FireRate                                               (Parm, OutParm)
 
-void UWBP_UI_Widget_WeaponStats_C::SetAmmoStat()
+void UWBP_UI_Widget_WeaponStats_C::GetStatValuesFromEquippableConfig(const struct FSBZEquippableConfig& Equippable_Config, TArray<float>* Damage, TArray<float>* Recoil, TArray<float>* Stability, TArray<float>* Accuracy, TArray<float>* Handling, TArray<float>* FireRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "SetAmmoStat");
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "GetStatValuesFromEquippableConfig");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_WeaponStats_C_GetStatValuesFromEquippableConfig Parms{};
+
+	Parms.Equippable_Config = std::move(Equippable_Config);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Damage != nullptr)
+		*Damage = std::move(Parms.Damage);
+
+	if (Recoil != nullptr)
+		*Recoil = std::move(Parms.Recoil);
+
+	if (Stability != nullptr)
+		*Stability = std::move(Parms.Stability);
+
+	if (Accuracy != nullptr)
+		*Accuracy = std::move(Parms.Accuracy);
+
+	if (Handling != nullptr)
+		*Handling = std::move(Parms.Handling);
+
+	if (FireRate != nullptr)
+		*FireRate = std::move(Parms.FireRate);
+}
+
+
+// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.GetFirstNValuesFromArray
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<float>&                          Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   Values                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutArray                                               (Parm, OutParm)
+
+void UWBP_UI_Widget_WeaponStats_C::GetFirstNValuesFromArray(TArray<float>& Array, int32 Values, TArray<float>* OutArray)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "GetFirstNValuesFromArray");
+
+	Params::WBP_UI_Widget_WeaponStats_C_GetFirstNValuesFromArray Parms{};
+
+	Parms.Array = std::move(Array);
+	Parms.Values = Values;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
+
+	if (OutArray != nullptr)
+		*OutArray = std::move(Parms.OutArray);
+}
+
+
+// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.DetermineDowngradeUpgradeColour
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   BaseVal                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CompareVal                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    Colour                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_WeaponStats_C::DetermineDowngradeUpgradeColour(float BaseVal, float CompareVal, struct FLinearColor* Colour)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "DetermineDowngradeUpgradeColour");
+
+	Params::WBP_UI_Widget_WeaponStats_C_DetermineDowngradeUpgradeColour Parms{};
+
+	Parms.BaseVal = BaseVal;
+	Parms.CompareVal = CompareVal;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Colour != nullptr)
+		*Colour = std::move(Parms.Colour);
 }
 
 }

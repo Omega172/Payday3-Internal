@@ -18,15 +18,17 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PD3_GameInstance.PD3_GameInstance_C
-// 0x0008 (0x05E8 - 0x05E0)
+// 0x0010 (0x05F0 - 0x05E0)
 class UPD3_GameInstance_C final : public USBZGameInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UModLoaderManager_C*                    ModLoaderManager;                                  // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_PD3_GameInstance(int32 EntryPoint);
 	void OnFindReplaysComplete(const TArray<struct FSBZReplayInfo>& Replays);
+	void ReceiveInit();
 
 public:
 	static class UClass* StaticClass()

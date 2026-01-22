@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_Settings_SliderButton_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_Settings_SliderButton_classes.hpp"
 
 
 namespace SDK

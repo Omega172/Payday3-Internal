@@ -51,7 +51,7 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void OnAmmoInventoryStateChanged(EPD3AmmoState NewState);
 	void OnAmmoInventoryChanged(int32 AmmoInventoryChanged);
-	void OnAmmoAdded(int32 AmmoAddedCount, bool bIsFireRangedWeaponScope);
+	void OnAmmoAdded(int32 AmmoAddedCount);
 	void OnInitialized();
 	void OnAmmoLoadedStateChanged(EPD3AmmoState NewState);
 	void OnEquippedChanged(bool bIsEquippedNewValue);

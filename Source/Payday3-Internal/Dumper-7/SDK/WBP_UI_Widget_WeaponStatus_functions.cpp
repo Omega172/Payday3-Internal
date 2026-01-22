@@ -101,9 +101,8 @@ void UWBP_UI_Widget_WeaponStatus_C::OnAmmoInventoryChanged(int32 AmmoInventoryCh
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
 // int32                                   AmmoAddedCount                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFireRangedWeaponScope                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_Widget_WeaponStatus_C::OnAmmoAdded(int32 AmmoAddedCount, bool bIsFireRangedWeaponScope)
+void UWBP_UI_Widget_WeaponStatus_C::OnAmmoAdded(int32 AmmoAddedCount)
 {
 	static class UFunction* Func = nullptr;
 
@@ -113,7 +112,6 @@ void UWBP_UI_Widget_WeaponStatus_C::OnAmmoAdded(int32 AmmoAddedCount, bool bIsFi
 	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoAdded Parms{};
 
 	Parms.AmmoAddedCount = AmmoAddedCount;
-	Parms.bIsFireRangedWeaponScope = bIsFireRangedWeaponScope;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

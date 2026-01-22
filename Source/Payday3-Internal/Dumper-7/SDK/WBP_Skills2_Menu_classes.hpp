@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_Skills2_Menu.WBP_Skills2_Menu_C
-// 0x0180 (0x0848 - 0x06C8)
+// 0x0178 (0x0840 - 0x06C8)
 class UWBP_Skills2_Menu_C final : public USBZMainMenuSkillsMenu
 {
 public:
@@ -64,14 +64,15 @@ public:
 	class UWBP_Skills2_SkillLine_C*               SkillLine3;                                        // 0x07F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               SKILLLOCKED;                                       // 0x07F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x0800(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<bool>                                  SkillTiersLocked;                                  // 0x0808(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(bool LockedStatus, int32 Tier)> OnSkillTierLockedStatusChanged;    // 0x0818(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class UWBP_Skills2_SkillButton_C*             LastFocusedSkillButton;                            // 0x0828(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZSkillCategoryData*                  CurrentSkillCategory;                              // 0x0830(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZSkillTreePair                      CurrentSkillPair;                                  // 0x0838(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	class UWBP_UI_Widget_ActionInput_C*           WBP_UI_Widget_ActionInput_C_0;                     // 0x0808(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<bool>                                  SkillTiersLocked;                                  // 0x0810(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMulticastInlineDelegate<void(bool LockedStatus, int32 Tier)> OnSkillTierLockedStatusChanged;    // 0x0820(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class UWBP_Skills2_SkillButton_C*             LastFocusedSkillButton;                            // 0x0830(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZSkillCategoryData*                  CurrentSkillCategory;                              // 0x0838(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Skills2_Menu(int32 EntryPoint);
+	void BndEvt__WBP_Skills2_Menu_WBP_UI_Widget_ActionInput_C_0_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature();
 	void PreConstruct(bool IsDesignTime);
 	void OnAddedToStack();
 	void OnLostStackFocused();
@@ -96,7 +97,6 @@ public:
 	void GetCurrentCategorySkillCount(int32* CurrentCategorySkillCount);
 	void OnCantEquipSkill(const class FText& NotifHeaderText, const class FText& NotifDescText);
 	void RefreshSkillButtonVisuals();
-	void UpdateSkillDescription();
 
 public:
 	static class UClass* StaticClass()

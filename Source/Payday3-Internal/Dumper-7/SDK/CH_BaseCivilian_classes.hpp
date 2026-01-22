@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass CH_BaseCivilian.CH_BaseCivilian_C
 // 0x0050 (0x1D30 - 0x1CE0)
-class ACH_BaseCivilian_C final : public ACH_BaseHumanAI_C
+class ACH_BaseCivilian_C : public ACH_BaseHumanAI_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1CE0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

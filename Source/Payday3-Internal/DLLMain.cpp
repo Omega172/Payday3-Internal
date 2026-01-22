@@ -114,12 +114,6 @@ void MainLoop()
 		if (!pMovementComponent)
 			continue;
 
-		
-		
-		pMovementComponent->MovementState.bCanFly = true;
-		pMovementComponent->MovementMode = SDK::EMovementMode::MOVE_Flying;
-	
-		// pLocalPlayerController->PlayerInput
 		//bool LineOfSightTo(const class AActor* Other, const struct FVector& ViewPoint, bool bAlternateChecks) const;
 
 		pLocalPlayerPawn->CarryTiltDegrees = 0.0f;
@@ -129,7 +123,7 @@ void MainLoop()
 		//pLocalPlayerPawn->K2_SetActorLocation(pLocalPlayerPawn->K2_GetActorLocation() + (SDK::UKismetMathLibrary::GetForwardVector(pLocalPlayerPawn->K2_GetActorRotation()).GetNormalized() * 100.0f), false, nullptr, true);
 		//pLocalPlayerPawn->Client_Teleport(, 0.f);
 
-		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 	}
 }
 

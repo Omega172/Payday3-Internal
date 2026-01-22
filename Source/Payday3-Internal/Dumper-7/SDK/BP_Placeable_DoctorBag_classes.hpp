@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C
 // 0x0070 (0x05D0 - 0x0560)
-class ABP_Placeable_DoctorBag_C final : public ASBZDoctorBag
+class ABP_Placeable_DoctorBag_C : public ASBZDoctorBag
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0560(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

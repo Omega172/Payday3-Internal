@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function WBP_UI_Widget_BaseTimedActionWzCount_RinoHud.WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C.ExecuteUbergraph_WBP_UI_Widget_BaseTimedActionWzCount_RinoHud
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -48,28 +48,6 @@ void UWBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C::OnInitialized()
 		Func = Class->GetFunction("WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_BaseTimedActionWzCount_RinoHud.WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C", "Tick");
-
-	Params::WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

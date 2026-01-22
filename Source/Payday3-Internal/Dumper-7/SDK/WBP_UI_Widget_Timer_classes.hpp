@@ -17,13 +17,14 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_Timer.WBP_UI_Widget_Timer_C
-// 0x0020 (0x02C0 - 0x02A0)
+// 0x0028 (0x02C8 - 0x02A0)
 class UWBP_UI_Widget_Timer_C final : public UPD3HUDGameTimerWidget
 {
 public:
-	float                                         StartTimer;                                        // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   NewVar_0;                                          // 0x02A8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UTextBlock*                             Text_Timer_ERROR_DUPLICATE_0;                      // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	float                                         StartTimer;                                        // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2AC[0x4];                                      // 0x02AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   NewVar_0;                                          // 0x02B0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	static class UClass* StaticClass()

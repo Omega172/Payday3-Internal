@@ -34,10 +34,6 @@ public:
 
 public:
 	void ExecuteUbergraph_WBP_UI_MainMenu_ActionControlReference(int32 EntryPoint);
-	void OnHoldActionPressed(const class FName ActionName);
-	void OnHoldActionReleased(const class FName ActionName);
-	void OnTimerCompleted();
-	void OnTimerUpdated();
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnHover(bool bIsHovered);

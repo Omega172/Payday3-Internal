@@ -463,26 +463,5 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::IsActiveButtonOfBundleType(bool* bIs
 		*bIsBundleButton = Parms.bIsBundleButton;
 }
 
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.IsActiveButtonOfFeaturedBundleType
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// bool*                                   bIsFeaturedButton                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::IsActiveButtonOfFeaturedBundleType(bool* bIsFeaturedButton) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "IsActiveButtonOfFeaturedBundleType");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_IsActiveButtonOfFeaturedBundleType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsFeaturedButton != nullptr)
-		*bIsFeaturedButton = Parms.bIsFeaturedButton;
-}
-
 }
 

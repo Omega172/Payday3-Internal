@@ -18,6 +18,27 @@
 namespace SDK::Params
 {
 
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.ExecuteUbergraph_WBP_PlayerNameplate
+// 0x0980 (0x0980 - 0x0000)
+struct WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLobbyCharacterInfoUi               K2Node_Event_InLobbyInfo;                          // 0x0008(0x0428)(ConstParm)
+	struct FSBZUser                               K2Node_Event_InUserData;                           // 0x0430(0x04A8)(ConstParm)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x08D8(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x08F0(0x0018)()
+	int32                                         K2Node_Event_InfamyLevel;                          // 0x0908(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_90C[0x4];                                      // 0x090C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0910(0x0040)(HasGetValueTypeHash)
+	int32                                         K2Node_Event_RenownLevel;                          // 0x0950(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_954[0x4];                                      // 0x0954(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0958(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0968(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate;
+
 // Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.SetDisplayName
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_PlayerNameplate_C_SetDisplayName final
@@ -118,27 +139,6 @@ public:
 	int32                                         RenownLevel_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PlayerNameplate_C_BP_SetRenownLevel;
-
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.ExecuteUbergraph_WBP_PlayerNameplate
-// 0x0980 (0x0980 - 0x0000)
-struct WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLobbyCharacterInfoUi               K2Node_Event_InLobbyInfo;                          // 0x0008(0x0428)(ConstParm)
-	struct FSBZUser                               K2Node_Event_InUserData;                           // 0x0430(0x04A8)(ConstParm)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x08D8(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x08F0(0x0018)()
-	int32                                         K2Node_Event_InfamyLevel;                          // 0x0908(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_90C[0x4];                                      // 0x090C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0910(0x0040)(HasGetValueTypeHash)
-	int32                                         K2Node_Event_RenownLevel;                          // 0x0950(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_954[0x4];                                      // 0x0954(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0958(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0968(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate;
 
 }
 

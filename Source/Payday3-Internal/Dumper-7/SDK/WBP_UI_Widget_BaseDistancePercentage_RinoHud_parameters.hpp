@@ -16,6 +16,27 @@
 namespace SDK::Params
 {
 
+// Function WBP_UI_Widget_BaseDistancePercentage_RinoHud.WBP_UI_Widget_BaseDistancePercentage_RinoHud_C.ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud;
+
+// Function WBP_UI_Widget_BaseDistancePercentage_RinoHud.WBP_UI_Widget_BaseDistancePercentage_RinoHud_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_PreConstruct;
+
 // Function WBP_UI_Widget_BaseDistancePercentage_RinoHud.WBP_UI_Widget_BaseDistancePercentage_RinoHud_C.SetValues
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_SetValues final

@@ -17,7 +17,7 @@ namespace SDK::Params
 {
 
 // Function WBP_UI_Widget_BaseTimedSkill_RinoHud.WBP_UI_Widget_BaseTimedSkill_RinoHud_C.ExecuteUbergraph_WBP_UI_Widget_BaseTimedSkill_RinoHud
-// 0x0044 (0x0044 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct WBP_UI_Widget_BaseTimedSkill_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseTimedSkill_RinoHud final
 {
 public:
@@ -26,6 +26,8 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_BaseTimedSkill_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseTimedSkill_RinoHud;
 

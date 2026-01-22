@@ -294,26 +294,5 @@ void UWBP_Skills2_SkillButton_C::SetFocused(bool Focus)
 	UObject::ProcessEvent(Func, &Parms);
 }
 
-
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.GetFocusedColor
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FSlateColor*                     FocusedColor                                           (Parm, OutParm)
-
-void UWBP_Skills2_SkillButton_C::GetFocusedColor(struct FSlateColor* FocusedColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Skills2_SkillButton_C", "GetFocusedColor");
-
-	Params::WBP_Skills2_SkillButton_C_GetFocusedColor Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FocusedColor != nullptr)
-		*FocusedColor = std::move(Parms.FocusedColor);
-}
-
 }
 

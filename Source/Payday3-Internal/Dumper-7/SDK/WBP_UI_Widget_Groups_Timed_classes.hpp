@@ -49,7 +49,7 @@ public:
 	TMap<class ASBZModifiableTimer*, class UWBP_UI_Widget_BaseTimedAction_RinoHud_C*> modifiableTimers_mapOfAssociations; // 0x06D8(0x0050)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<class ASBZPlayerState*, class UWBP_UI_Widget_BaseTimedSkill_RinoHud_C*> interceptor_widgets; // 0x0728(0x0050)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<class ASBZPlayerState*, float>           interceptor_end;                                   // 0x0778(0x0050)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
-	bool                                          bUsePlayerColors;                                  // 0x07C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                          _________;                                         // 0x07C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void update();

@@ -72,7 +72,6 @@ public:
 	void Set_State(ESBZSkillState State);
 	void UnequipSkillButton();
 	void SetFocused(bool Focus);
-	void GetFocusedColor(struct FSlateColor* FocusedColor);
 
 public:
 	static class UClass* StaticClass()

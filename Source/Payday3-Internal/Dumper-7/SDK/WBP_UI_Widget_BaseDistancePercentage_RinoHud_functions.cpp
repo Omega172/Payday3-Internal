@@ -17,6 +17,46 @@
 namespace SDK
 {
 
+// Function WBP_UI_Widget_BaseDistancePercentage_RinoHud.WBP_UI_Widget_BaseDistancePercentage_RinoHud_C.ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_BaseDistancePercentage_RinoHud_C::ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_BaseDistancePercentage_RinoHud_C", "ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud");
+
+	Params::WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_ExecuteUbergraph_WBP_UI_Widget_BaseDistancePercentage_RinoHud Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_BaseDistancePercentage_RinoHud.WBP_UI_Widget_BaseDistancePercentage_RinoHud_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UWBP_UI_Widget_BaseDistancePercentage_RinoHud_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_BaseDistancePercentage_RinoHud_C", "PreConstruct");
+
+	Params::WBP_UI_Widget_BaseDistancePercentage_RinoHud_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_BaseDistancePercentage_RinoHud.WBP_UI_Widget_BaseDistancePercentage_RinoHud_C.SetValues
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
