@@ -98,6 +98,9 @@ void MainLoop()
 		if (!pLocalPlayer)
 			continue;
 
+		if(!pLocalPlayer->PlayerController)
+			continue;
+
 		SDK::APawn* pAcknowledgedPawn = pLocalPlayer->PlayerController->AcknowledgedPawn;
 		if (!pAcknowledgedPawn)
 			continue;
