@@ -98,12 +98,19 @@ void MainLoop()
 		if (!pLocalPlayer)
 			continue;
 
-		if(!pLocalPlayer->PlayerController)
+		SDK::APlayerController* pLocalPlayerController = pLocalPlayer->PlayerController;
+		if (!pLocalPlayerController)
 			continue;
 
 		SDK::APawn* pAcknowledgedPawn = pLocalPlayer->PlayerController->AcknowledgedPawn;
 		if (!pAcknowledgedPawn)
 			continue;
+
+		if (pLocalPlayerController->IsA(SDK::ASBZPlayerController::StaticClass())) {
+			SDK::ASBZPlayerController* pSBZPlayerController = static_cast<SDK::ASBZPlayerController*>(pLocalPlayerController);
+			if (!pSBZPlayerController)
+				continue;
+		}
 
 		if (pAcknowledgedPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass())) {
 			SDK::ASBZPlayerCharacter* pLocalPlayerCharacter = static_cast<SDK::ASBZPlayerCharacter*>(pAcknowledgedPawn);
@@ -115,18 +122,7 @@ void MainLoop()
 			pLocalPlayerCharacter->CarryAdditionalTiltDegrees = 0.0f;
 		}
 
-		SDK::APlayerController* pLocalPlayerController = pLocalPlayer->PlayerController;
-		if (!pLocalPlayerController)
-			continue;
-
-		if (pLocalPlayerController->IsA(SDK::ASBZPlayerController::StaticClass())) {
-			SDK::ASBZPlayerController* pSBZPlayerController = static_cast<SDK::ASBZPlayerController*>(pLocalPlayerController);
-			if (!pSBZPlayerController)
-				continue;
-		}
-
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
 	}
 }
 
