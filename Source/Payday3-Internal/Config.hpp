@@ -1,4 +1,7 @@
+#pragma once
+
 #define UNLOAD_KEY VK_END
+#define UNLOAD_KEY_ALT VK_DELETE
 #define CONSOLE_KEY VK_HOME
 
 #define TARGET_VERSION "902193"

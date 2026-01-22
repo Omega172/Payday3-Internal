@@ -79,8 +79,8 @@ bool Init()
 }
 
 void MainLoop()
-{
-	while (!GetAsyncKeyState(UNLOAD_KEY))
+{	
+	while (!GetAsyncKeyState(UNLOAD_KEY) && !GetAsyncKeyState(UNLOAD_KEY_ALT))
     {
 		if (GetAsyncKeyState(CONSOLE_KEY) & 0x1)
 			Globals::g_upConsole->ToggleVisibility();
@@ -98,29 +98,36 @@ void MainLoop()
 		if (!pLocalPlayer)
 			continue;
 
-		SDK::APlayerController* pLocalPlayerController = pLocalPlayer->PlayerController;
-		if (!pLocalPlayerController)
+		SDK::ASBZPlayerController* pLocalPlayerController = reinterpret_cast<SDK::ASBZPlayerController*>(pLocalPlayer->PlayerController);
+		if (!pLocalPlayerController || !pLocalPlayerController->IsA(SDK::ASBZPlayerController::StaticClass()))
 			continue;
 
-		SDK::APawn* pAcknowledgedPawn = pLocalPlayer->PlayerController->AcknowledgedPawn;
-		if (!pAcknowledgedPawn)
+		SDK::ASBZPlayerCharacter* pLocalPlayerPawn = reinterpret_cast<SDK::ASBZPlayerCharacter*>(pLocalPlayerController->AcknowledgedPawn);
+		if (!pLocalPlayerPawn || !pLocalPlayerPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
 			continue;
 
-		if (pLocalPlayerController->IsA(SDK::ASBZPlayerController::StaticClass())) {
-			SDK::ASBZPlayerController* pSBZPlayerController = static_cast<SDK::ASBZPlayerController*>(pLocalPlayerController);
-			if (!pSBZPlayerController)
-				continue;
-		}
+		SDK::FRotator rotCameraAngles{};
+	
+		rotCameraAngles = pLocalPlayerController->TargetViewRotation;
 
-		if (pAcknowledgedPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass())) {
-			SDK::ASBZPlayerCharacter* pLocalPlayerCharacter = static_cast<SDK::ASBZPlayerCharacter*>(pAcknowledgedPawn);
-			if (!pLocalPlayerCharacter)
-				continue;
+		SDK::USBZPlayerMovementComponent* pMovementComponent = reinterpret_cast<SDK::USBZPlayerMovementComponent*>(pLocalPlayerPawn->GetComponentByClass(SDK::USBZPlayerMovementComponent::StaticClass()));
+		if (!pMovementComponent)
+			continue;
 
-			pLocalPlayerCharacter->CarryTiltDegrees = 0.0f;
-			pLocalPlayerCharacter->CarryTiltSpeed = 0.0f;
-			pLocalPlayerCharacter->CarryAdditionalTiltDegrees = 0.0f;
-		}
+		
+		
+		pMovementComponent->MovementState.bCanFly = true;
+		pMovementComponent->MovementMode = SDK::EMovementMode::MOVE_Flying;
+	
+		// pLocalPlayerController->PlayerInput
+		//bool LineOfSightTo(const class AActor* Other, const struct FVector& ViewPoint, bool bAlternateChecks) const;
+
+		pLocalPlayerPawn->CarryTiltDegrees = 0.0f;
+		pLocalPlayerPawn->CarryTiltSpeed = 0.0f;
+		pLocalPlayerPawn->CarryAdditionalTiltDegrees = 0.0f;
+
+		//pLocalPlayerPawn->K2_SetActorLocation(pLocalPlayerPawn->K2_GetActorLocation() + (SDK::UKismetMathLibrary::GetForwardVector(pLocalPlayerPawn->K2_GetActorRotation()).GetNormalized() * 100.0f), false, nullptr, true);
+		//pLocalPlayerPawn->Client_Teleport(, 0.f);
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
