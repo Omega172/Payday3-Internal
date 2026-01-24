@@ -219,7 +219,7 @@ export namespace ESP
         bool m_bSkeleton = false;
         bool m_bOutline = false;
         bool m_bWasOutlineActive = true;
-        std::string m_sPreviewText = "";
+        std::string m_sPreviewText = "None";
 
         void UpdatePreviewText(){
             m_sPreviewText = "";
@@ -241,6 +241,9 @@ export namespace ESP
             fnAppend(m_sPreviewText, "Flags", m_bFlags);
             fnAppend(m_sPreviewText, "Skeleton", m_bSkeleton);
             fnAppend(m_sPreviewText, "Outline", m_bOutline);
+
+            if (!m_sPreviewText.size())
+                m_sPreviewText = "None";
         }
     };
 
@@ -450,45 +453,37 @@ export namespace ESP
         }
     }
 
-    void DrawBox(ImDrawList* pDrawList, ImVec4 vec4ScreenBox, SDK::AActor* pActor) {
+    void DrawBar(ImDrawList* pDrawList, ImVec4 vec4ScreenBox, float flPercentage, ImU32 color, float flOffset = 4.f, float flWidth = 5.f)
+    {
+        if (flPercentage > 1.f)
+            flPercentage = 1.f;
+        if (flPercentage <= 0.f)
+            flPercentage = 0.f;
 
-        // Draw the bounding box
-        pDrawList->AddRect(
-            ImVec2(vec4ScreenBox.x, vec4ScreenBox.y),
-            ImVec2(vec4ScreenBox.z, vec4ScreenBox.w),
-            IM_COL32(255, 0, 0, 255),
-            0.0f,
-            0,
-            2.0f
-        );
+        float flHeight = vec4ScreenBox.w - vec4ScreenBox.y;
+        float flBarX = vec4ScreenBox.x - (flWidth + flOffset);
 
-        SDK::ACH_BaseCop_C* pGuard = reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor);
-        float fCurrentHealth = pGuard->AttributeSet->Health.CurrentValue;
-        float fMaxHealth = pGuard->AttributeSet->HealthMax.CurrentValue;
-
-        // Draw health bar
-        float healthBarHeight = vec4ScreenBox.y - vec4ScreenBox.w;
-        float healthBarWidth = 5.0f;
-        float healthPercent = fCurrentHealth / fMaxHealth;
-        float healthBarX = vec4ScreenBox.x - (healthBarWidth * 2.f);
-        float healthBarY = vec4ScreenBox.w;
         // Background
         pDrawList->AddRectFilled(
-            ImVec2(healthBarX, healthBarY),
-            ImVec2(healthBarX + healthBarWidth, healthBarY + healthBarHeight),
-            IM_COL32(50, 50, 50, 255)
+            ImVec2(flBarX - 1, vec4ScreenBox.y - 1),
+            ImVec2(flBarX + flWidth + 1, vec4ScreenBox.y + flHeight + 1),
+            IM_COL32(30, 30, 30, 55)
         );
-        // Health fill
+
+        // Fill
         pDrawList->AddRectFilled(
-            ImVec2(healthBarX, healthBarY + healthBarHeight * (1.0f - healthPercent)),
-            ImVec2(healthBarX + healthBarWidth, healthBarY + healthBarHeight),
-            IM_COL32(0, 255, 0, 255)
+            ImVec2(flBarX, vec4ScreenBox.y + flHeight * (1.0f - flPercentage)),
+            ImVec2(flBarX + flWidth, vec4ScreenBox.y + flHeight),
+            color
         );
     }
 
     void DrawName(ImDrawList* pDrawList, ImVec4 vec4ScreenBox, SDK::AActor* pActor, EActorType eType) {
         std::string sCharacterName = "";
         switch(eType){
+        case EActorType::Guard:
+            sCharacterName = "Pig";
+            break;
         case EActorType::Shield:
             sCharacterName = "Shield";
             break;
@@ -519,7 +514,10 @@ export namespace ESP
             return;
 
         ImVec2 vec2TextSize = ImGui::CalcTextSize(sCharacterName.c_str());
-        pDrawList->AddText(ImVec2{(vec4ScreenBox.z - vec4ScreenBox.x - vec2TextSize.x) / 2.f + vec4ScreenBox.x, vec4ScreenBox.y - vec2TextSize.y - 2.f}, ImColor{ 255, 255, 255, 255}, sCharacterName.c_str());
+        ImVec2 vec2TextPos = ImVec2{(vec4ScreenBox.z - vec4ScreenBox.x - vec2TextSize.x) / 2.f + vec4ScreenBox.x, vec4ScreenBox.y - vec2TextSize.y - 4.f};
+        
+        pDrawList->AddText(ImVec2{ vec2TextPos.x + 1.f, vec2TextPos.y + 1.f }, IM_COL32(30, 30, 30, 55), sCharacterName.c_str());
+        pDrawList->AddText(vec2TextPos, IM_COL32(255, 255, 255, 200), sCharacterName.c_str());
     };
 
     void DrawEnemyESP(ImDrawList* pDrawList, SDK::APlayerController* pPlayerController, SDK::ACH_BaseCop_C* pGuard, EActorType eType, EnemyESP& stSettings){
@@ -544,11 +542,25 @@ export namespace ESP
         if (auto optScreenBox = CalculateScreenBox(pSkeletalMesh, pPlayerController, pGuard); optScreenBox.has_value())
         {
             auto vec4ScreenBox = optScreenBox.value();
-            if (stSettings.m_bBox)
-                DrawBox(pDrawList, vec4ScreenBox, pGuard);
-
+            if (stSettings.m_bBox){
+                pDrawList->AddRect(ImVec2(vec4ScreenBox.x - 1, vec4ScreenBox.y - 1), ImVec2(vec4ScreenBox.z + 1, vec4ScreenBox.w + 1), IM_COL32(30, 30, 30, 55), 0.0f, 0, 2.0f);
+                pDrawList->AddRect(ImVec2(vec4ScreenBox.x, vec4ScreenBox.y), ImVec2(vec4ScreenBox.z, vec4ScreenBox.w), IM_COL32(255, 0, 0, 255), 0.0f, 0, 2.0f);
+            }
+                
             if (stSettings.m_bName)
                 DrawName(pDrawList, vec4ScreenBox, pGuard, eType);
+
+            float flBarOffset = 4.f;
+            if (stSettings.m_bHealth){
+                DrawBar(pDrawList, vec4ScreenBox, pGuard->AttributeSet->Health.CurrentValue / pGuard->AttributeSet->HealthMax.CurrentValue, IM_COL32(142, 230, 11, 200), flBarOffset);
+                flBarOffset += 8.f;
+            }
+
+            if (stSettings.m_bArmor && pGuard->AttributeSet->Armor.CurrentValue > std::numeric_limits<float>::epsilon()){
+                DrawBar(pDrawList, vec4ScreenBox, pGuard->AttributeSet->Armor.CurrentValue / pGuard->AttributeSet->ArmorMax.CurrentValue, IM_COL32(64, 147, 255, 200), flBarOffset);
+                flBarOffset += 8.f;
+            }            
+
 
             if (!stSettings.m_bFlags)
                 return;
