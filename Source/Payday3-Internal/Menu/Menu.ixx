@@ -34,6 +34,23 @@ export namespace Menu
         ESP::RenderDebugESP(pPersistentLevel, pPlayerController);
     }
 
+    void DrawEnemyESPSection(const char* szType, ESP::EnemyESP& stSettings)
+    {
+        if(!ImGui::BeginCombo(szType, std::format("{}###{}", stSettings.m_sPreviewText, szType).c_str()))
+            return;
+
+        if (ImGui::Selectable("Box", &stSettings.m_bBox) ||
+            ImGui::Selectable("Health", &stSettings.m_bHealth) ||
+            ImGui::Selectable("Armor", &stSettings.m_bArmor) ||
+            ImGui::Selectable("Name", &stSettings.m_bName) ||
+            ImGui::Selectable("Flags", &stSettings.m_bFlags) ||
+            ImGui::Selectable("Skeleton", &stSettings.m_bSkeleton) ||
+            ImGui::Selectable("Outline", &stSettings.m_bOutline))
+            stSettings.UpdatePreviewText();
+
+        ImGui::EndCombo();
+    }
+
 	// Draw the main menu content
 	void Draw(bool& bShowMenu)
 	{
@@ -57,22 +74,15 @@ export namespace Menu
 		ImGui::Checkbox("Enable ESP", &espConfig.bESP);
         if (espConfig.bESP) {
             ImGui::Indent();
-            if(ImGui::BeginCombo("Enemy ESP", "FUCK NIGGER", 0))
-            {
-                ImGui::Selectable("Box", &espConfig.bBoxESP);
-                ImGui::Selectable("Skeleton", &espConfig.bSkeleton);
-                ImGui::Selectable("Outline", &espConfig.bOutline);
-                ImGui::EndCombo();
-            }
 
-            if (espConfig.bSkeleton) {
-                ImGui::Indent();
+            DrawEnemyESPSection("Normal Enemies", espConfig.m_stNormalEnemies);
+            DrawEnemyESPSection("Special Enemies", espConfig.m_stSpecialEnemies);
+
 #ifdef _DEBUG
-                ImGui::Checkbox("Debug Draw Bone Indices", &espConfig.bDebugDrawBoneIndices);
-                ImGui::Checkbox("Debug Draw Bone Names Instead of Indices", &espConfig.bDebugDrawBoneNames);
+            ImGui::Checkbox("Debug Draw Bone Indices", &espConfig.bDebugDrawBoneIndices);
+            ImGui::Checkbox("Debug Draw Bone Names Instead of Indices", &espConfig.bDebugDrawBoneNames);
 #endif
-                ImGui::Unindent();
-            }
+            
 #ifdef _DEBUG
             ImGui::Checkbox("Debug Skeleton", &espConfig.bDebugSkeleton);
             if (espConfig.bDebugSkeleton) {

@@ -112,9 +112,65 @@ std::optional<ImVec4> CalculateScreenBox(SDK::USkeletalMeshComponent* pMeshCompo
     if (!pMeshComponent || !pPlayerController || !pActor)
         return {};
 
+    SDK::FVector vecDirection = (pActor->K2_GetActorLocation() - pPlayerController->PlayerCameraManager->GetCameraLocation()).GetNormalized();
+
+    // Calculate actor's forward vector from rotation (yaw angle)
+    // Convert yaw from degrees to radians
+    float flYawRad = pActor->K2_GetActorRotation().Yaw * (3.14159265358979323846f / 180.0f);
+
+    // Calculate dot product to determine viewing angle
+    // Dot product: 1 = viewing from front/back, 0 = viewing from side
+    float flForwardDot = std::abs(
+        SDK::FVector(std::cos(flYawRad), std::sin(flYawRad), 0.f)
+        .GetNormalized()
+        .Dot(vecDirection)
+    );
+
+
+
     // Get bone 0 (Reference - bottom/root) and bone 10 (HeadEnd - top of head)
     SDK::FVector RootPos = pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"Reference"));
     SDK::FVector HeadPos = pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"HeadEnd"));
+
+    auto bbox = pMeshComponent->GetTightBounds(false);
+    SDK::FVector vecOrigin{};
+    SDK::FVector vecExtent{};
+
+    pActor->GetActorBounds(true, &vecOrigin, &vecExtent, true);
+
+    if (1){
+        SDK::FVector aBox[]{
+            vecOrigin + SDK::FVector(vecExtent.X, vecExtent.Y, vecExtent.Z),
+            vecOrigin + SDK::FVector(-vecExtent.X, vecExtent.Y, vecExtent.Z),
+            vecOrigin + SDK::FVector(vecExtent.X, -vecExtent.Y, vecExtent.Z),
+            vecOrigin + SDK::FVector(-vecExtent.X, -vecExtent.Y, vecExtent.Z),
+            vecOrigin + SDK::FVector(vecExtent.X, vecExtent.Y, -vecExtent.Z),
+            vecOrigin + SDK::FVector(-vecExtent.X, vecExtent.Y, -vecExtent.Z),
+            vecOrigin + SDK::FVector(vecExtent.X, -vecExtent.Y, -vecExtent.Z),
+            vecOrigin + SDK::FVector(-vecExtent.X, -vecExtent.Y, -vecExtent.Z)
+        };
+
+        float flMinX = std::numeric_limits<float>::max(), flMaxX = std::numeric_limits<float>::lowest(), flMinY = std::numeric_limits<float>::max(), flMaxY = std::numeric_limits<float>::lowest();
+        
+        for(size_t i = 0; i < 8; ++i){
+            SDK::FVector2D vec2ScreenPos;
+            if(!pPlayerController->ProjectWorldLocationToScreen(aBox[i], &vec2ScreenPos, false))
+                continue;
+
+            //ImGui::GetBackgroundDrawList()->AddRectFilled(ImVec2{ vec2ScreenPos.X - 5.f, vec2ScreenPos.Y - 5.f }, ImVec2{ vec2ScreenPos.X + 5.f, vec2ScreenPos.Y + 5.f }, ImColor{ 255, 0, 155, 255 });
+
+            flMinX = std::min(flMinX, vec2ScreenPos.X);
+            flMaxX = std::max(flMaxX, vec2ScreenPos.X);
+            flMinY = std::min(flMinY, vec2ScreenPos.Y);
+            flMaxY = std::max(flMaxY, vec2ScreenPos.Y);
+        }
+
+        if(flMinX == std::numeric_limits<float>::max() || flMaxX == std::numeric_limits<float>::lowest() || flMinY == std::numeric_limits<float>::max() || flMaxY == std::numeric_limits<float>::lowest() ||
+            flMinX >= flMaxX || flMinY >= flMaxY)
+            return{};
+        
+        return ImVec4{ flMinX, flMinY, flMaxX, flMaxY };
+    }
 
     // Project both bones to screen
     SDK::FVector2D RootScreen, HeadScreen;
@@ -125,34 +181,12 @@ std::optional<ImVec4> CalculateScreenBox(SDK::USkeletalMeshComponent* pMeshCompo
     // Calculate height (distance between root and head on screen)
     float height = abs(HeadScreen.Y - RootScreen.Y);
 
-    // Get camera location and target actor location
-    SDK::FVector CameraLocation = pPlayerController->PlayerCameraManager->GetCameraLocation();
-    SDK::FVector ActorLocation = pActor->K2_GetActorLocation();
-    SDK::FRotator ActorRotation = pActor->K2_GetActorRotation();
 
-    // Calculate view direction (camera to target)
-    SDK::FVector ViewDir = ActorLocation - CameraLocation;
-    ViewDir.Normalize();
-
-    // Calculate actor's forward vector from rotation (yaw angle)
-    // Convert yaw from degrees to radians
-    const float PI = 3.14159265358979323846f;
-    float YawRadians = ActorRotation.Yaw * (PI / 180.0f);
-    
-    SDK::FVector ActorForward;
-    ActorForward.X = cosf(YawRadians);
-    ActorForward.Y = sinf(YawRadians);
-    ActorForward.Z = 0.0f;
-    ActorForward.Normalize();
-
-    // Calculate dot product to determine viewing angle
-    // Dot product: 1 = viewing from front/back, 0 = viewing from side
-    float ViewDot = abs(ActorForward.Dot(ViewDir));
 
     // Interpolate width multiplier based on viewing angle
     // Side view (dot ~0): narrower box (1/4 height)
     // Front/back view (dot ~1): wider box (1/2.5 height)
-    float widthMultiplier = 0.25f + (ViewDot * 0.15f); // Range: 0.25 to 0.4
+    float widthMultiplier = 0.25f + (flForwardDot * 0.15f); // Range: 0.25 to 0.4
     
     // Check if crouching by comparing actual height to expected standing height
     // Normal standing height ratio should be around certain value, crouching reduces it
@@ -175,11 +209,47 @@ std::optional<ImVec4> CalculateScreenBox(SDK::USkeletalMeshComponent* pMeshCompo
 export namespace ESP
 {
     // ESP Configuration
+    
+    struct EnemyESP{
+        bool m_bBox = false;
+        bool m_bHealth = false;
+        bool m_bArmor = false;
+        bool m_bName = false;
+        bool m_bFlags = false;
+        bool m_bSkeleton = false;
+        bool m_bOutline = false;
+        bool m_bWasOutlineActive = true;
+        std::string m_sPreviewText = "";
+
+        void UpdatePreviewText(){
+            m_sPreviewText = "";
+
+            auto fnAppend = [](std::string& sText, const char* szAppendText, bool bAppend) {
+                if (!bAppend)
+                    return;
+
+                if (sText.size())
+                    sText += ", ";
+
+                sText += szAppendText;
+            };
+
+            fnAppend(m_sPreviewText, "Box", m_bBox);
+            fnAppend(m_sPreviewText, "Health", m_bHealth);
+            fnAppend(m_sPreviewText, "Armor", m_bArmor);
+            fnAppend(m_sPreviewText, "Name", m_bName);
+            fnAppend(m_sPreviewText, "Flags", m_bFlags);
+            fnAppend(m_sPreviewText, "Skeleton", m_bSkeleton);
+            fnAppend(m_sPreviewText, "Outline", m_bOutline);
+        }
+    };
+
     struct Config {
         bool bESP = false;
-        bool bBoxESP = false;
-        bool bSkeleton = false;
-        bool bOutline = false;
+
+        EnemyESP m_stNormalEnemies{};
+        EnemyESP m_stSpecialEnemies{};
+
         bool bDebugSkeleton = false;
         bool bDebugDrawBoneIndices = false;
         bool bDebugDrawBoneNames = false;
@@ -188,11 +258,67 @@ export namespace ESP
         bool bDebugESP = false;
     };
 
-    inline Config g_Config;
-
-    Config& GetConfig() {
-        return g_Config;
+    inline Config& GetConfig() {
+        static Config config{};
+        return config;
     }
+
+    enum class EActorType{
+        Other,
+        Guard,
+        Shield,
+        Dozer,
+        Cloaker,
+        Sniper,
+        Grenadier,
+        Taser,
+        Techie,
+        Civilian,
+        ObjectiveItem,
+        LootBag,
+        
+        Max
+    };
+
+    
+    EActorType DetermineActorType(SDK::AActor* pActor){
+        if (pActor->IsA(SDK::ACH_SWAT_SHIELD_C::StaticClass()))
+            return EActorType::Shield;
+        else if (pActor->IsA(SDK::ACH_Dozer_C::StaticClass()))
+            return EActorType::Dozer;
+        else if (pActor->IsA(SDK::ACH_Cloaker_C::StaticClass()))
+            return EActorType::Cloaker;
+        else if (pActor->IsA(SDK::ACH_Sniper_C::StaticClass()))
+            return EActorType::Sniper;
+        else if (pActor->IsA(SDK::ACH_Grenadier_C::StaticClass()))
+            return EActorType::Grenadier;
+        else if (pActor->IsA(SDK::ACH_Taser_C::StaticClass()))
+            return EActorType::Taser;
+        else if (pActor->IsA(SDK::ACH_Tower_C::StaticClass()))
+            return EActorType::Techie;
+
+        if(pActor->IsA(SDK::ACH_BaseCop_C::StaticClass()))
+            return EActorType::Guard;
+
+        if(pActor->IsA(SDK::ACH_BaseCivilian_C::StaticClass()))
+            return EActorType::Civilian;
+
+        static std::vector<SDK::UClass*> aObjectiveItemClasses = {
+            SDK::ABP_RFIDTagBase_C::StaticClass(),
+            SDK::ABP_KeycardBase_C::StaticClass(),
+            SDK::ABP_CarriedInteractableBase_C::StaticClass(),
+            SDK::UGE_CarKeys_C::StaticClass(),
+            SDK::UGA_Phone_C::StaticClass()
+        };
+        if(!std::none_of(aObjectiveItemClasses.begin(), aObjectiveItemClasses.end(), [pActor](SDK::UClass* pClass) { return pActor->IsA(pClass); }))
+            return EActorType::ObjectiveItem;
+
+        if(pActor->IsA(SDK::ABP_BaseValuableBag_C::StaticClass()))
+            return EActorType::LootBag;
+
+        return EActorType::Other;        
+    }
+
 
     void DrawSkeleton(SDK::USkeletalMeshComponent* pMeshComponent, SDK::APlayerController* pPlayerController, ImDrawList* pDrawList) {
         if (!pMeshComponent || !pPlayerController || !pDrawList)
@@ -202,7 +328,7 @@ export namespace ESP
         const auto& bonePairs = CalculateGuardBonePairs(pMeshComponent);
 
         // Draw bone indices/names
-        if (g_Config.bDebugDrawBoneIndices) {
+        if (GetConfig().bDebugDrawBoneIndices) {
             // Create set of bone indices that appear in bone pairs
             std::unordered_set<int32_t> usedBones;
             for (const auto& pair : bonePairs) {
@@ -218,7 +344,7 @@ export namespace ESP
                 SDK::FVector BonePos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(i));
                 SDK::FVector2D ScreenPos;
                 if (pPlayerController->ProjectWorldLocationToScreen(BonePos, &ScreenPos, false)) {
-                    if (g_Config.bDebugDrawBoneNames) {
+                    if (GetConfig().bDebugDrawBoneNames) {
                         SDK::FName boneName = pMeshComponent->GetBoneName(i);
                         std::string nameStr = boneName.ToString();
                         pDrawList->AddText(
@@ -240,30 +366,27 @@ export namespace ESP
             }
         }
 
-        // Draw skeleton using calculated bone pairs
-        if (g_Config.bSkeleton) {
-            for (const auto& pair : bonePairs) {
-                // Exclude bone 0
-                if (pair.ChildIndex == 0 || pair.ParentIndex == 0)
-                    continue;
+        for (const auto& pair : bonePairs) {
+            // Exclude bone 0
+            if (pair.ChildIndex == 0 || pair.ParentIndex == 0)
+                continue;
 
-                // Get bone transforms in world space
-                SDK::FVector ChildPos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(pair.ChildIndex));
-                SDK::FVector ParentPos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(pair.ParentIndex));
+            // Get bone transforms in world space
+            SDK::FVector ChildPos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(pair.ChildIndex));
+            SDK::FVector ParentPos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(pair.ParentIndex));
+            
+            // Project to screen
+            SDK::FVector2D ChildScreen, ParentScreen;
+            if (pPlayerController->ProjectWorldLocationToScreen(ChildPos, &ChildScreen, false) &&
+                pPlayerController->ProjectWorldLocationToScreen(ParentPos, &ParentScreen, false)) {
                 
-                // Project to screen
-                SDK::FVector2D ChildScreen, ParentScreen;
-                if (pPlayerController->ProjectWorldLocationToScreen(ChildPos, &ChildScreen, false) &&
-                    pPlayerController->ProjectWorldLocationToScreen(ParentPos, &ParentScreen, false)) {
-                    
-                    // Draw line between bones
-                    pDrawList->AddLine(
-                        ImVec2(ParentScreen.X, ParentScreen.Y),
-                        ImVec2(ChildScreen.X, ChildScreen.Y),
-                        IM_COL32(255, 255, 0, 255),
-                        2.0f
-                    );
-                }
+                // Draw line between bones
+                pDrawList->AddLine(
+                    ImVec2(ParentScreen.X, ParentScreen.Y),
+                    ImVec2(ChildScreen.X, ChildScreen.Y),
+                    IM_COL32(255, 255, 0, 255),
+                    2.0f
+                );
             }
         }
     }
@@ -273,13 +396,13 @@ export namespace ESP
             return;
         
         // Draw bone indices/names
-        if (g_Config.bDebugSkeletonDrawBoneIndices) {
+        if (GetConfig().bDebugSkeletonDrawBoneIndices) {
             int32_t BoneCount = pMeshComponent->GetNumBones();
             for (int32_t i = 0; i < BoneCount; i++) {
                 SDK::FVector BonePos = pMeshComponent->GetSocketLocation(pMeshComponent->GetBoneName(i));
                 SDK::FVector2D ScreenPos;
                 if (pPlayerController->ProjectWorldLocationToScreen(BonePos, &ScreenPos, false)) {
-                    if (g_Config.bDebugSkeletonDrawBoneNames) {
+                    if (GetConfig().bDebugSkeletonDrawBoneNames) {
                         SDK::FName boneName = pMeshComponent->GetBoneName(i);
                         std::string nameStr = boneName.ToString();
                         pDrawList->AddText(
@@ -302,7 +425,7 @@ export namespace ESP
         }
         
         // Draw debug skeleton using dynamically calculated bone pairs
-        if (g_Config.bDebugSkeleton) {
+        if (GetConfig().bDebugSkeleton) {
             const auto& pairs = GetOrCalculateBonePairs(pMeshComponent);
             
             for (const auto& pair : pairs) {
@@ -363,41 +486,117 @@ export namespace ESP
         );
     }
 
-    void DrawName(ImDrawList* pDrawList, ImVec4 vec4ScreenBox, SDK::AActor* pActor) {
+    void DrawName(ImDrawList* pDrawList, ImVec4 vec4ScreenBox, SDK::AActor* pActor, EActorType eType) {
+        std::string sCharacterName = "";
+        switch(eType){
+        case EActorType::Shield:
+            sCharacterName = "Shield";
+            break;
+        case EActorType::Dozer:
+            sCharacterName = "Dozer";
+            break;
+        case EActorType::Cloaker:
+            sCharacterName = "Cloaker";
+            break;
+        case EActorType::Sniper:
+            sCharacterName = "Sniper";
+            break;
+        case EActorType::Grenadier:
+            sCharacterName = "Grenadier";
+            break;
+        case EActorType::Taser:
+            sCharacterName = "Taser";
+            break;
+        case EActorType::Techie:
+            sCharacterName = "Techie";
+            break;
+        default:
+            sCharacterName = pActor->GetName();
+            break;
+        }
 
+        if (!sCharacterName.size())
+            return;
+
+        ImVec2 vec2TextSize = ImGui::CalcTextSize(sCharacterName.c_str());
+        pDrawList->AddText(ImVec2{(vec4ScreenBox.z - vec4ScreenBox.x - vec2TextSize.x) / 2.f + vec4ScreenBox.x, vec4ScreenBox.y - vec2TextSize.y - 2.f}, ImColor{ 255, 255, 255, 255}, sCharacterName.c_str());
     };
 
-    enum class EActorType{
-        Other,
-        Guard,
-        Civilian,
-        ObjectiveItem,
-        LootBag,
+    void DrawEnemyESP(ImDrawList* pDrawList, SDK::APlayerController* pPlayerController, SDK::ACH_BaseCop_C* pGuard, EActorType eType, EnemyESP& stSettings){
+        if(stSettings.m_bOutline)
+            pGuard->Multicast_SetMarked(true);
+        else if(stSettings.m_bWasOutlineActive){ // How the fuck do we turn the outline off???
+            pGuard->Multicast_SetMarked(false);
+            pGuard->Multicast_Unmark(100.f);
+        }
+            
         
-        Max
+        SDK::USkeletalMeshComponent* pSkeletalMesh = pGuard->Mesh;
+        if (!pSkeletalMesh)
+            return;
+
+        // Draw ESP features
+        if (stSettings.m_bSkeleton) {
+            DrawSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
+            DrawDebugSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
+        }
+        
+        if (auto optScreenBox = CalculateScreenBox(pSkeletalMesh, pPlayerController, pGuard); optScreenBox.has_value())
+        {
+            auto vec4ScreenBox = optScreenBox.value();
+            if (stSettings.m_bBox)
+                DrawBox(pDrawList, vec4ScreenBox, pGuard);
+
+            if (stSettings.m_bName)
+                DrawName(pDrawList, vec4ScreenBox, pGuard, eType);
+
+            if (!stSettings.m_bFlags)
+                return;
+            
+            float flFlagsOffset = 0.f;
+
+            auto& aGuardChildren = pGuard->Children;
+            for(int i = 0; i < aGuardChildren.Num(); i++){
+                SDK::AActor* pChildObj = aGuardChildren[i];
+                if(!pChildObj)
+                    continue;
+
+                if (DetermineActorType(pChildObj) != EActorType::ObjectiveItem)
+                    continue;
+                
+                pDrawList->AddText(
+                    ImVec2(vec4ScreenBox.z + 5.f, vec4ScreenBox.y + flFlagsOffset),
+                    IM_COL32(0, 255, 0, 255),
+                    (pChildObj->IsA(SDK::ABP_CarriedBlueKeycard_C::StaticClass()) ? "Blue Keycard" : 
+                        pChildObj->IsA(SDK::ABP_CarriedRedKeycard_C::StaticClass()) ? "Red Keycard" :
+                        pChildObj->IsA(SDK::ABP_CarriedHackablePhone_C::StaticClass()) ? "Phone" :
+                        pChildObj->IsA(SDK::ABP_CarriedFakeID_C::StaticClass()) ? "Fake ID" :
+                        pChildObj->Name.ToString()).c_str()
+                );
+                
+                flFlagsOffset += 15.f;
+            }
+        }  
     };
 
-    EActorType DetermineActorType(SDK::AActor* pActor){
-        if(pActor->IsA(SDK::ACH_BaseCop_C::StaticClass()))
-            return EActorType::Guard;
 
-        if(pActor->IsA(SDK::ACH_BaseCivilian_C::StaticClass()))
-            return EActorType::Civilian;
+    bool ShouldSkipActor(SDK::AActor* pActor, EActorType eType){
+        switch(eType){
+        case EActorType::Guard:
+        case EActorType::Shield:
+        case EActorType::Dozer:
+        case EActorType::Cloaker:
+        case EActorType::Sniper:
+        case EActorType::Grenadier:
+        case EActorType::Taser:
+        case EActorType::Techie:
+        case EActorType::Civilian:
+            return !reinterpret_cast<SDK::ASBZCharacter*>(pActor)->bIsAlive;
 
-        static std::vector<SDK::UClass*> aObjectiveItemClasses = {
-            SDK::ABP_RFIDTagBase_C::StaticClass(),
-            SDK::ABP_KeycardBase_C::StaticClass(),
-            SDK::ABP_CarriedInteractableBase_C::StaticClass(),
-            SDK::UGE_CarKeys_C::StaticClass(),
-            SDK::UGA_Phone_C::StaticClass()
-        };
-        if(!std::none_of(aObjectiveItemClasses.begin(), aObjectiveItemClasses.end(), [pActor](SDK::UClass* pClass) { return pActor->IsA(pClass); }))
-            return EActorType::ObjectiveItem;
-
-        if(pActor->IsA(SDK::ABP_BaseValuableBag_C::StaticClass()))
-            return EActorType::LootBag;
-
-        return EActorType::Other;        
+        default:
+            break;
+        }
+        return false;
     }
 
     struct ActorInfo{
@@ -407,7 +606,7 @@ export namespace ESP
     };
 
     void Render(SDK::UWorld* pGWorld, SDK::APlayerController* pPlayerController) {
-        if (!g_Config.bESP)
+        if (!GetConfig().bESP)
             return;
 
         SDK::USBZWorldRuntime* pWorldRuntime = reinterpret_cast<SDK::USBZWorldRuntime*>(SDK::USBZWorldRuntime::GetWorldRuntime(pGWorld));
@@ -428,8 +627,12 @@ export namespace ESP
                 if(!pActor)
                     continue;
 
+                auto eType = DetermineActorType(pActor);
+                if (ShouldSkipActor(pActor, eType))
+                    continue;
+
                 vecActors.emplace_back(ActorInfo{
-                    .m_eType = DetermineActorType(pActor),
+                    .m_eType = eType,
                     .m_flDistance = (pActor->K2_GetActorLocation() - vecCameraLocation).Magnitude(),
                     .m_pActor = pActor
                 });
@@ -444,73 +647,36 @@ export namespace ESP
 
             for (ActorInfo& infoActor : vecActors){
                 auto pActor = infoActor.m_pActor;
-                if (!pActor || !pActor->IsA(SDK::ACH_BaseCop_C::StaticClass()))
-                    continue;
-
-                auto pGuard = reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor);
                 SDK::FVector2D vec2ScreenLocation;
-                if (!pGuard || !pPlayerController->ProjectWorldLocationToScreen(pGuard->K2_GetActorLocation(), &vec2ScreenLocation, false))
+                if (!pActor || !pPlayerController->ProjectWorldLocationToScreen(pActor->K2_GetActorLocation(), &vec2ScreenLocation, false))
                     continue;
 
-            
-                if (SDK::USBZOnlineFunctionLibrary::IsSoloGame(pGWorld))
-                    pGuard->Multicast_SetMarked(true);
-
-                SDK::USkeletalMeshComponent* pSkeletalMesh = pGuard->Mesh;
-                if (!pSkeletalMesh)
-                    continue;
+                switch(infoActor.m_eType){
+                case EActorType::Guard:
+                    DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stNormalEnemies);
+                    break;
+                case EActorType::Shield:
+                case EActorType::Dozer:
+                case EActorType::Cloaker:
+                case EActorType::Sniper:
+                case EActorType::Grenadier:
+                case EActorType::Taser:
+                case EActorType::Techie:
+                    DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stSpecialEnemies);
+                    break;
+                default:
+                    break;
+                }
+                //if (SDK::USBZOnlineFunctionLibrary::IsSoloGame(pGWorld))
 
                 
-                if (auto optScreenBox = CalculateScreenBox(pSkeletalMesh, pPlayerController, pGuard); optScreenBox.has_value())
-                {
-                    auto vec4ScreenBox = optScreenBox.value();
-                    DrawBox(pDrawList, vec4ScreenBox, pGuard);
-
-                    float flFlagsOffset = 0.f;
-
-                    auto& aGuardChildren = pGuard->Children;
-                    for(int i = 0; i < aGuardChildren.Num(); i++){
-                        SDK::AActor* pChildObj = aGuardChildren[i];
-                        if(!pChildObj)
-                            continue;
-
-                        if (DetermineActorType(pChildObj) != EActorType::ObjectiveItem)
-                            continue;
-                        
-                        pDrawList->AddText(
-                            ImVec2(vec4ScreenBox.z + 5.f, vec4ScreenBox.y + flFlagsOffset),
-                            IM_COL32(0, 255, 0, 255),
-                            (pChildObj->IsA(SDK::ABP_CarriedBlueKeycard_C::StaticClass()) ? "Blue Keycard" : 
-                                pChildObj->IsA(SDK::ABP_CarriedRedKeycard_C::StaticClass()) ? "Red Keycard" :
-                                pChildObj->IsA(SDK::ABP_CarriedHackablePhone_C::StaticClass()) ? "Phone" :
-                                pChildObj->IsA(SDK::ABP_CarriedFakeID_C::StaticClass()) ? "Fake ID" :
-                                pChildObj->Name.ToString()).c_str()
-                        );
-                        
-                        flFlagsOffset += 15.f;
-                    }
-                }
-
-                // Draw ESP features
-                DrawSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
-                DrawDebugSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
-
-                if(g_Config.bOutline){
-                    /**
-                     * 1 = Red Z
-                     * 2 = Orange
-                     * 3 = Red Z
-                     * 4 = Purple or sum shit Z
-                     * 5 = Blue (crew)
-                     */
-                    pGuard->Multicast_SetMarked(true);
-                }
             }
         }
 
         SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
         pPersistentLevel->Actors;
 
+        /** 
         for (SDK::AActor* pActor : pPersistentLevel->Actors) {
             if (!pActor || DetermineActorType(pActor) != EActorType::ObjectiveItem)
                 continue;
@@ -526,10 +692,14 @@ export namespace ESP
             ImVec2 vecTextSize = ImGui::CalcTextSize(szName);
             ImGui::GetBackgroundDrawList()->AddText({ScreenLocation.X - vecTextSize.x / 2, ScreenLocation.Y - 8.f}, IM_COL32(0, 255, 0, 255), szName);
         }
+        */
+
+        GetConfig().m_stNormalEnemies.m_bWasOutlineActive = GetConfig().m_stNormalEnemies.m_bOutline;
+        GetConfig().m_stSpecialEnemies.m_bWasOutlineActive = GetConfig().m_stSpecialEnemies.m_bOutline;
     }
 
     void RenderDebugESP(SDK::ULevel* pPersistentLevel, SDK::APlayerController* pPlayerController) {
-        if (!g_Config.bDebugESP)
+        if (!GetConfig().bDebugESP)
             return;
 
         ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
