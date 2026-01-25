@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <cmath>
+#include <chrono>
 #include "../../Dumper-7/SDK.hpp"
 
 
@@ -587,72 +588,196 @@ namespace ESP
         SDK::AActor* m_pActor;
     };
 
+/*
+Default__GA_Hacker_RoutedPing_C
+Default__GA_Hacker_SecuredLoop_C
+Default__GA_PlayerCrouch_C
+Default__GA_EquipNextWeapon_C
+Default__GA_EquipPreviousWeapon_C
+Default__GA_EquipPrimaryWeapon_C
+Default__GA_EquipSecondaryWeapon_C
+Default__GA_Traverse_C
+Default__GA_PlayerJump_C
+Default__GA_Run_C
+Default__GA_Downed_C
+Default__GA_BleedOut_C
+Default__GA_Interact_C
+Default__GA_Equip_C
+Default__GA_Shout_C
+Default__GA_ThrowBag_C
+Default__GA_Slide_C
+Default__GA_Carry_C
+Default__GA_ThrowCarry_C
+Default__GA_ThrowItem_C
+Default__GA_MiniGame_C
+Default__GA_Land_C
+Default__GA_MaskOnInput_C
+Default__SBZPlayerViewTargetAbility
+Default__GA_HumanShieldInstigator_C
+Default__GA_HumanShieldShove_C
+Default__SBZEquipPlaceableAbility
+Default__GA_Tased_C
+Default__SBZCuffedAbility
+Default__SBZEquipNextGadgetAbility
+Default__SBZEquipAutoAbility
+Default__GA_MaskOnAction_C
+Default__GA_Tased_Gently_C
+Default__GA_Tased_Uncontrolled_C
+Default__SBZKillHumanShieldAbility
+Default__SBZSubduedAbility
+Default__GA_Tackle_C
+Default__SBZToolUnequippedAbility
+Default__SBZZiplineAbility
+Default__GA_CuttingTool_C
+Default__SBZExitPhoneAbility
+Default__SBZPlayerRunExitAbility
+Default__SBZCanUIActivatePhoneAbility
+Default__GA_AnimatedInteraction_C
+Default__GA_EquippableInspect_C
+Default__GA_HackDrone_C
+Default__GA_PlayerWeaponTanking_C
+Default__GA_PlayerWeaponWallReaction_C
+Default__GA_PlayerThrowBagAnimation_C
+Default__GA_PlayerEmote_C
+Default__SBZEquipConsumableAbility
+Default__GA_UseConsumable_C
+Default__SBZSkillHET5AOEDamageAbility
+Default__SBZTickOverskillOperatorAbility
+Default__GA_Phone_C
+Default__GA_PlaceECMJammer_C
+Default__GA_RequestOverkillWeapon_C
+Default__GA_Fire_C
+Default__GA_PlayerTarget_C
+Default__GA_Reload_C
+Default__GA_Melee_C
+Default__GA_PlayerEndCycleReload_C
+*/
+
+    SDK::FGameplayAbilitySpec* GetAbilitySpec(SDK::USBZPlayerAbilitySystemComponent* pAbilitySystem, const SDK::FName& nameAbility){
+        if (!pAbilitySystem)
+            return nullptr;
+
+        auto& aAbilities = pAbilitySystem->ActivatableAbilities.Items;
+        for (int i = 0; i < aAbilities.Num(); ++i) {
+            if (!aAbilities.IsValidIndex(i))
+                continue;
+
+            auto pAbility = aAbilities[i].Ability;
+            if (!pAbility)
+                continue;
+
+            if (pAbility->Name == nameAbility)
+                return &aAbilities[i];
+        }
+
+        return nullptr;
+    }
+
     void Render(SDK::UWorld* pGWorld, SDK::APlayerController* pPlayerController) {
         if (!GetConfig().bESP)
             return;
 
         SDK::USBZWorldRuntime* pWorldRuntime = reinterpret_cast<SDK::USBZWorldRuntime*>(SDK::USBZWorldRuntime::GetWorldRuntime(pGWorld));
-        if (pWorldRuntime) {
-            ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
-            
-            UC::TArray<SDK::UObject*>& actors = pWorldRuntime->AllPawns->Objects;
-            UC::TArray<SDK::UObject*>& aliveActors = pWorldRuntime->AllAlivePawns->Objects;
+        if (!pWorldRuntime)
+            return;
+        
+        ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
+        
+        UC::TArray<SDK::UObject*>& actors = pWorldRuntime->AllPawns->Objects;
+        UC::TArray<SDK::UObject*>& aliveActors = pWorldRuntime->AllAlivePawns->Objects;
 
-            SDK::FVector vecCameraLocation = pPlayerController->PlayerCameraManager->GetCameraLocation();
-            std::vector<ActorInfo> vecActors{};
-            vecActors.reserve(actors.Num());
-            for (int i = 0; i < actors.Num(); ++i){
-                if (!actors.IsValidIndex(i))
-                    break;
+        SDK::FVector vecCameraLocation = pPlayerController->PlayerCameraManager->GetCameraLocation();
+        std::vector<ActorInfo> vecActors{};
+        vecActors.reserve(actors.Num());
+        for (int i = 0; i < actors.Num(); ++i){
+            if (!actors.IsValidIndex(i))
+                break;
 
-                auto pActor = reinterpret_cast<SDK::AActor*>(actors[i]);
-                if(!pActor)
-                    continue;
+            auto pActor = reinterpret_cast<SDK::AActor*>(actors[i]);
+            if(!pActor)
+                continue;
 
-                auto eType = DetermineActorType(pActor);
-                if (ShouldSkipActor(pActor, eType))
-                    continue;
+            auto eType = DetermineActorType(pActor);
+            if (ShouldSkipActor(pActor, eType))
+                continue;
 
-                vecActors.emplace_back(ActorInfo{
-                    .m_eType = eType,
-                    .m_flDistance = (pActor->K2_GetActorLocation() - vecCameraLocation).Magnitude(),
-                    .m_pActor = pActor
-                });
-            }
-
-            std::sort(vecActors.begin(), vecActors.end(), [](ActorInfo& lhs, ActorInfo& rhs) {
-                if (lhs.m_flDistance == rhs.m_flDistance)
-                    rhs.m_flDistance += 0.001f;
-
-                return lhs.m_flDistance < rhs.m_flDistance;
+            vecActors.emplace_back(ActorInfo{
+                .m_eType = eType,
+                .m_flDistance = (pActor->K2_GetActorLocation() - vecCameraLocation).Magnitude(),
+                .m_pActor = pActor
             });
+        }
 
-            for (ActorInfo& infoActor : vecActors){
-                auto pActor = infoActor.m_pActor;
-                SDK::FVector2D vec2ScreenLocation;
-                if (!pActor || !pPlayerController->ProjectWorldLocationToScreen(pActor->K2_GetActorLocation(), &vec2ScreenLocation, false))
-                    continue;
+        std::sort(vecActors.begin(), vecActors.end(), [](ActorInfo& lhs, ActorInfo& rhs) {
+            if (lhs.m_flDistance == rhs.m_flDistance)
+                rhs.m_flDistance += 0.001f;
 
-                switch(infoActor.m_eType){
-                case EActorType::Guard:
-                    DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stNormalEnemies);
-                    break;
-                case EActorType::Shield:
-                case EActorType::Dozer:
-                case EActorType::Cloaker:
-                case EActorType::Sniper:
-                case EActorType::Grenadier:
-                case EActorType::Taser:
-                case EActorType::Techie:
-                    DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stSpecialEnemies);
-                    break;
-                default:
-                    break;
+            return lhs.m_flDistance < rhs.m_flDistance;
+        });
+
+        for (ActorInfo& infoActor : vecActors){
+            auto pActor = infoActor.m_pActor;
+            SDK::FVector2D vec2ScreenLocation;
+            if (!pActor || !pPlayerController->ProjectWorldLocationToScreen(pActor->K2_GetActorLocation(), &vec2ScreenLocation, false))
+                continue;
+
+            switch(infoActor.m_eType){
+            case EActorType::Guard:
+                DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stNormalEnemies);
+                break;
+            case EActorType::Shield:
+            case EActorType::Dozer:
+            case EActorType::Cloaker:
+            case EActorType::Sniper:
+            case EActorType::Grenadier:
+            case EActorType::Taser:
+            case EActorType::Techie:
+                DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stSpecialEnemies);
+                break;
+            default:
+                break;
+            }           
+        }
+
+        auto pLocalPlayer = reinterpret_cast<SDK::ASBZPlayerCharacter*>(pPlayerController->AcknowledgedPawn);
+        if (!pLocalPlayer)
+            return;
+
+        // No Recoil
+        if (pLocalPlayer->RecoilComponent && pLocalPlayer->RecoilComponent->CurrentRecoilData){
+            pLocalPlayer->RecoilComponent->CurrentRecoilData->ViewKick.SpeedDeflect = 0.f;
+            pLocalPlayer->RecoilComponent->CurrentRecoilData->GunKickXY.SpeedDeflect = 0.f;
+        }
+
+        // No Spread
+        if (pLocalPlayer->FPCameraAttachment && pLocalPlayer->FPCameraAttachment->EquippedWeaponData){
+            if (pLocalPlayer->FPCameraAttachment->EquippedWeaponData->IsA(SDK::USBZRangedWeaponData::StaticClass())){
+                auto pWeaponData = reinterpret_cast<SDK::USBZRangedWeaponData*>(pLocalPlayer->FPCameraAttachment->EquippedWeaponData);
+            
+                if (pWeaponData->SpreadData){
+                    auto pSpreadData = pWeaponData->SpreadData;
+                    pSpreadData->InnerClusterSpreadMultiplier = pSpreadData->FireSpreadStart = pSpreadData->FireSpreadMinCap = pSpreadData->FireSpreadCap = pSpreadData->FireSpreadIncrease = 0.f;
                 }
-                //if (SDK::USBZOnlineFunctionLibrary::IsSoloGame(pGWorld))
-
-                
             }
+        }
+        
+        // No camera shake
+        pPlayerController->PlayerCameraManager->StopAllCameraShakes(true);
+
+
+
+        auto& aCameras = pWorldRuntime->AllSecurityCameras->Objects;
+        for (int i = 0; i < aCameras.Num(); ++i) {
+            if (!aCameras.IsValidIndex(i))
+                break;
+
+            auto pCamera = reinterpret_cast<SDK::ASBZSecurityCamera*>(aCameras[i]);
+            if (!pCamera)
+                continue;
+
+            if (pCamera->SoundState == SDK::ESBZCameraSoundState::Suspiscious){
+                // Use runtime on this camera
+            }             
         }
 
         SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
@@ -674,6 +799,8 @@ namespace ESP
             ImVec2 vecTextSize = ImGui::CalcTextSize(szName);
             ImGui::GetBackgroundDrawList()->AddText({ScreenLocation.X - vecTextSize.x / 2, ScreenLocation.Y - 8.f}, IM_COL32(0, 255, 0, 255), szName);
         }
+
+Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000000000138
         */
 
         GetConfig().m_stNormalEnemies.m_bWasOutlineActive = GetConfig().m_stNormalEnemies.m_bOutline;
