@@ -12,7 +12,8 @@ The goal is experimentation rather than expanding the framework's feature set an
 
 ## Building
 
-Requires xmake and vcpkg.
+Requires xmake, vcpkg, and an installation of VisualStudio with the C++ build tools for the compiler.
+add the variable VCPKG_ROOT pointing to your vcpkg rood dir to your environment variables
 
 ```cmd
 xmake config -m debug   # or -m release
