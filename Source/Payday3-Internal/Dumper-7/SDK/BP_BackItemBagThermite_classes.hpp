@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
-	void BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent);
 	void ExecuteUbergraph_BP_BackItemBagThermite(int32 EntryPoint);
+	void BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent);
+	void BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
 
 public:
 	static class UClass* StaticClass()

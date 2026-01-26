@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CH_BaseHumanAI_classes.hpp"
 #include "Engine_structs.hpp"
+#include "CH_BaseHumanAI_classes.hpp"
 #include "CoreUObject_structs.hpp"
 
 

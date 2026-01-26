@@ -17,85 +17,45 @@
 namespace SDK
 {
 
-// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.BP_LA_Manager_Scripted_Patrol_AutoGenFunc
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.ExecuteUbergraph_BP_LA_Scripted_Patrol
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UObject*                          ObjectA                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          ObjectB                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_Scripted_Patrol_C::BP_LA_Manager_Scripted_Patrol_AutoGenFunc(class UObject* ObjectA, class UObject* ObjectB, bool* Result)
+void ABP_LA_Scripted_Patrol_C::ExecuteUbergraph_BP_LA_Scripted_Patrol(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "BP_LA_Manager_Scripted_Patrol_AutoGenFunc");
+		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "ExecuteUbergraph_BP_LA_Scripted_Patrol");
 
-	Params::BP_LA_Scripted_Patrol_C_BP_LA_Manager_Scripted_Patrol_AutoGenFunc Parms{};
+	Params::BP_LA_Scripted_Patrol_C_ExecuteUbergraph_BP_LA_Scripted_Patrol Parms{};
 
-	Parms.ObjectA = ObjectA;
-	Parms.ObjectB = ObjectB;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
 }
 
 
-// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.GetNextAction
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    DisableRandomOrder                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USBZLifeActionSlot**              NextActionSlot_0                                       (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_Scripted_Patrol_C::GetNextAction(bool DisableRandomOrder, class USBZLifeActionSlot** NextActionSlot_0)
+void ABP_LA_Scripted_Patrol_C::BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "GetNextAction");
+		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature");
 
-	Params::BP_LA_Scripted_Patrol_C_GetNextAction Parms{};
+	Params::BP_LA_Scripted_Patrol_C_BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature Parms{};
 
-	Parms.DisableRandomOrder = DisableRandomOrder;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NextActionSlot_0 != nullptr)
-		*NextActionSlot_0 = Parms.NextActionSlot_0;
-}
-
-
-// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_LA_Scripted_Patrol_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_Scripted_Patrol_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "ReceiveTick");
-
-	Params::BP_LA_Scripted_Patrol_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.Character = Character;
+	Parms.ActionInstance = ActionInstance;
+	Parms.ActionSlot = ActionSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -127,47 +87,87 @@ void ABP_LA_Scripted_Patrol_C::BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2
 }
 
 
-// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_Scripted_Patrol_C::BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
+void ABP_LA_Scripted_Patrol_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature");
+		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "ReceiveTick");
 
-	Params::BP_LA_Scripted_Patrol_C_BndEvt__BP_LA_Manager_Scripted_EyeScan_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature Parms{};
+	Params::BP_LA_Scripted_Patrol_C_ReceiveTick Parms{};
 
-	Parms.Character = Character;
-	Parms.ActionInstance = ActionInstance;
-	Parms.ActionSlot = ActionSlot;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.ExecuteUbergraph_BP_LA_Scripted_Patrol
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Scripted_Patrol_C::ExecuteUbergraph_BP_LA_Scripted_Patrol(int32 EntryPoint)
+void ABP_LA_Scripted_Patrol_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "ExecuteUbergraph_BP_LA_Scripted_Patrol");
+		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "UserConstructionScript");
 
-	Params::BP_LA_Scripted_Patrol_C_ExecuteUbergraph_BP_LA_Scripted_Patrol Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.GetNextAction
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    DisableRandomOrder                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZLifeActionSlot**              NextActionSlot_0                                       (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_Scripted_Patrol_C::GetNextAction(bool DisableRandomOrder, class USBZLifeActionSlot** NextActionSlot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "GetNextAction");
+
+	Params::BP_LA_Scripted_Patrol_C_GetNextAction Parms{};
+
+	Parms.DisableRandomOrder = DisableRandomOrder;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (NextActionSlot_0 != nullptr)
+		*NextActionSlot_0 = Parms.NextActionSlot_0;
+}
+
+
+// Function BP_LA_Scripted_Patrol.BP_LA_Scripted_Patrol_C.BP_LA_Manager_Scripted_Patrol_AutoGenFunc
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          ObjectA                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ObjectB                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_LA_Scripted_Patrol_C::BP_LA_Manager_Scripted_Patrol_AutoGenFunc(class UObject* ObjectA, class UObject* ObjectB, bool* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LA_Scripted_Patrol_C", "BP_LA_Manager_Scripted_Patrol_AutoGenFunc");
+
+	Params::BP_LA_Scripted_Patrol_C_BP_LA_Manager_Scripted_Patrol_AutoGenFunc Parms{};
+
+	Parms.ObjectA = ObjectA;
+	Parms.ObjectB = ObjectB;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 }

@@ -60,26 +60,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_PocketDrill_C_ExecuteUbergraph_BP_PocketDrill;
 
-// Function BP_PocketDrill.BP_PocketDrill_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_PocketDrill_C_BP_OnStateChanged final
-{
-public:
-	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_PocketDrill_C_BP_OnStateChanged;
-
-// Function BP_PocketDrill.BP_PocketDrill_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PocketDrill_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PocketDrill_C_ReceiveTick;
-
 // Function BP_PocketDrill.BP_PocketDrill_C.BndEvt__BP_PocketDrill_ActivationInteraction_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
 struct BP_PocketDrill_C_BndEvt__BP_PocketDrill_ActivationInteraction_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
@@ -90,6 +70,26 @@ public:
 	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PocketDrill_C_BndEvt__BP_PocketDrill_ActivationInteraction_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
+
+// Function BP_PocketDrill.BP_PocketDrill_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PocketDrill_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PocketDrill_C_ReceiveTick;
+
+// Function BP_PocketDrill.BP_PocketDrill_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_PocketDrill_C_BP_OnStateChanged final
+{
+public:
+	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_PocketDrill_C_BP_OnStateChanged;
 
 }
 

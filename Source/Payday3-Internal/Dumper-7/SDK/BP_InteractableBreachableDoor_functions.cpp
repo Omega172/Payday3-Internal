@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.setBreachedMeshVisibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    breached_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_InteractableBreachableDoor_C::setBreachedMeshVisibility(bool breached_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableBreachableDoor_C", "setBreachedMeshVisibility");
-
-	Params::BP_InteractableBreachableDoor_C_setBreachedMeshVisibility Parms{};
-
-	Parms.breached_0 = breached_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.ExecuteUbergraph_BP_InteractableBreachableDoor
 // (Final, UbergraphFunction)
 // Parameters:
@@ -52,6 +32,26 @@ void ABP_InteractableBreachableDoor_C::ExecuteUbergraph_BP_InteractableBreachabl
 	Params::BP_InteractableBreachableDoor_C_ExecuteUbergraph_BP_InteractableBreachableDoor Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.setBreachedMeshVisibility
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    breached_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_InteractableBreachableDoor_C::setBreachedMeshVisibility(bool breached_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_InteractableBreachableDoor_C", "setBreachedMeshVisibility");
+
+	Params::BP_InteractableBreachableDoor_C_setBreachedMeshVisibility Parms{};
+
+	Parms.breached_0 = breached_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

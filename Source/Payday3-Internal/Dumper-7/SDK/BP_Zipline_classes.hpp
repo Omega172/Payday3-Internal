@@ -34,10 +34,10 @@ public:
 	float                                         ZiplineUnfold_Duration;                            // 0x0374(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics);
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_Zipline(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

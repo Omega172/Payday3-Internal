@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_HeistGameState.BP_HeistGameState_C.BP_OnHideAllOutlinesChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHidden                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_HeistGameState_C::BP_OnHideAllOutlinesChanged(bool bIsHidden)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HeistGameState_C", "BP_OnHideAllOutlinesChanged");
-
-	Params::BP_HeistGameState_C_BP_OnHideAllOutlinesChanged Parms{};
-
-	Parms.bIsHidden = bIsHidden;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_HeistGameState.BP_HeistGameState_C.ExecuteUbergraph_BP_HeistGameState
 // (Final, UbergraphFunction)
 // Parameters:
@@ -52,6 +32,26 @@ void ABP_HeistGameState_C::ExecuteUbergraph_BP_HeistGameState(int32 EntryPoint)
 	Params::BP_HeistGameState_C_ExecuteUbergraph_BP_HeistGameState Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HeistGameState.BP_HeistGameState_C.BP_OnHideAllOutlinesChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHidden                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_HeistGameState_C::BP_OnHideAllOutlinesChanged(bool bIsHidden)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_HeistGameState_C", "BP_OnHideAllOutlinesChanged");
+
+	Params::BP_HeistGameState_C_BP_OnHideAllOutlinesChanged Parms{};
+
+	Parms.bIsHidden = bIsHidden;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

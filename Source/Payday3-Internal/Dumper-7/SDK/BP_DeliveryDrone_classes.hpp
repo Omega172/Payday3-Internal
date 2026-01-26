@@ -28,9 +28,9 @@ public:
 	int32                                         MarkerID;                                          // 0x0630(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void BP_OnBagDropped();
 	void ExecuteUbergraph_BP_DeliveryDrone(int32 EntryPoint);
+	void BP_OnBagDropped();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

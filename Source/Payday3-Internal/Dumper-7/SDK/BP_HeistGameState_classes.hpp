@@ -28,8 +28,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x14D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnHideAllOutlinesChanged(bool bIsHidden);
 	void ExecuteUbergraph_BP_HeistGameState(int32 EntryPoint);
+	void BP_OnHideAllOutlinesChanged(bool bIsHidden);
 
 public:
 	static class UClass* StaticClass()

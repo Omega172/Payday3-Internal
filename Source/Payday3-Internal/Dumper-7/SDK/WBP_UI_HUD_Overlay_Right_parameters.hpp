@@ -14,8 +14,8 @@
 #include "ST_DifficultyBasedValue_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "UMG_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "ST_MissionPayout_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params

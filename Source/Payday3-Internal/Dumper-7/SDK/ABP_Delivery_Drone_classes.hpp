@@ -37,8 +37,8 @@ public:
 	struct FVector                                __CustomProperty_Velocity_5EDB93024FE086C233BEDB80FB05A585; // 0x099C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
 	void ExecuteUbergraph_ABP_Delivery_Drone(int32 EntryPoint);
+	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

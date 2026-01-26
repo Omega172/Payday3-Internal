@@ -17,39 +17,21 @@
 namespace SDK
 {
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PoliceHelicopter_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.OnPawnSpawned
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
+// (Final, UbergraphFunction)
 // Parameters:
-// class APD3PawnSpawnGroup*               SpawnGroup                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnBase*                Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_C::OnPawnSpawned(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)
+void ABP_PoliceHelicopter_C::ExecuteUbergraph_BP_PoliceHelicopter(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "OnPawnSpawned");
+		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ExecuteUbergraph_BP_PoliceHelicopter");
 
-	Params::BP_PoliceHelicopter_C_OnPawnSpawned Parms{};
+	Params::BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter Parms{};
 
-	Parms.SpawnGroup = SpawnGroup;
-	Parms.Spawner = Spawner;
-	Parms.Pawn = Pawn;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,23 +59,41 @@ void ABP_PoliceHelicopter_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Doo
 }
 
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
-// (Final, UbergraphFunction)
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.OnPawnSpawned
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APD3PawnSpawnGroup*               SpawnGroup                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnBase*                Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_C::ExecuteUbergraph_BP_PoliceHelicopter(int32 EntryPoint)
+void ABP_PoliceHelicopter_C::OnPawnSpawned(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ExecuteUbergraph_BP_PoliceHelicopter");
+		Func = Class->GetFunction("BP_PoliceHelicopter_C", "OnPawnSpawned");
 
-	Params::BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter Parms{};
+	Params::BP_PoliceHelicopter_C_OnPawnSpawned Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.SpawnGroup = SpawnGroup;
+	Parms.Spawner = Spawner;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PoliceHelicopter_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

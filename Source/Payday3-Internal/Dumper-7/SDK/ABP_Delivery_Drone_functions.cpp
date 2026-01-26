@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function ABP_Delivery_Drone.ABP_Delivery_Drone_C.ExecuteUbergraph_ABP_Delivery_Drone
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_Delivery_Drone_C::ExecuteUbergraph_ABP_Delivery_Drone(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Delivery_Drone_C", "ExecuteUbergraph_ABP_Delivery_Drone");
+
+	Params::ABP_Delivery_Drone_C_ExecuteUbergraph_ABP_Delivery_Drone Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ABP_Delivery_Drone.ABP_Delivery_Drone_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -38,26 +58,6 @@ void UABP_Delivery_Drone_C::AnimGraph(const struct FPoseLink& InPose, struct FPo
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function ABP_Delivery_Drone.ABP_Delivery_Drone_C.ExecuteUbergraph_ABP_Delivery_Drone
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_Delivery_Drone_C::ExecuteUbergraph_ABP_Delivery_Drone(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Delivery_Drone_C", "ExecuteUbergraph_ABP_Delivery_Drone");
-
-	Params::ABP_Delivery_Drone_C_ExecuteUbergraph_ABP_Delivery_Drone Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

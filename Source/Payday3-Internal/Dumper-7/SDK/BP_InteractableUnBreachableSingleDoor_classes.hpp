@@ -40,12 +40,12 @@ public:
 	class UStaticMesh*                            BreachedReinforcementMesh;                         // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
-	void setBreachedMeshVisibility(bool breached_0);
-	void onDoorBreached(ESBZGateState oldState, ESBZGateState newState);
-	void onOpenAnimUpdateTick(float alpha);
-	void onOpenAnimStarted();
 	void ExecuteUbergraph_BP_InteractableUnBreachableSingleDoor(int32 EntryPoint);
+	void onOpenAnimStarted();
+	void onOpenAnimUpdateTick(float alpha);
+	void onDoorBreached(ESBZGateState oldState, ESBZGateState newState);
+	void setBreachedMeshVisibility(bool breached_0);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

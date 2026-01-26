@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UDS_ModActorStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UDS_ModActorStruct_structs.hpp"
 #include "UMG_classes.hpp"
 #include "Starbreeze_structs.hpp"
 

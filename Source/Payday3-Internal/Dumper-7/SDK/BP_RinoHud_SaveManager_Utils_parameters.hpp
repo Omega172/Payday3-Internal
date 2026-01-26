@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "Slate_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "RinoHud_SaveGame_Struct_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "Slate_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 namespace SDK::Params

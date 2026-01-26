@@ -49,13 +49,13 @@ public:
 	struct FTimerHandle                           DistanceTimer;                                     // 0x0758(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, float* DistanceToGround);
-	void UserConstructionScript();
-	void CustomEvent_0(class ASBZAerialVehicle* Vehicle);
-	void ReceiveBeginPlay();
-	void ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen);
-	void CustomEvent_1(class ASBZAerialVehicle* Vehicle, class FName State);
 	void ExecuteUbergraph_BP_EscapeHelicopter(int32 EntryPoint);
+	void CustomEvent_1(class ASBZAerialVehicle* Vehicle, class FName State);
+	void ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen);
+	void ReceiveBeginPlay();
+	void CustomEvent_0(class ASBZAerialVehicle* Vehicle);
+	void UserConstructionScript();
+	void CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, float* DistanceToGround);
 
 public:
 	static class UClass* StaticClass()

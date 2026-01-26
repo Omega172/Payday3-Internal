@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_MarkerZone.BP_MarkerZone_C.ExecuteUbergraph_BP_MarkerZone
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MarkerZone_C::ExecuteUbergraph_BP_MarkerZone(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MarkerZone_C", "ExecuteUbergraph_BP_MarkerZone");
+
+	Params::BP_MarkerZone_C_ExecuteUbergraph_BP_MarkerZone Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_MarkerZone.BP_MarkerZone_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -34,26 +54,6 @@ void ABP_MarkerZone_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
 
 	Parms.bStateToChangeTo = bStateToChangeTo;
 	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MarkerZone.BP_MarkerZone_C.ExecuteUbergraph_BP_MarkerZone
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MarkerZone_C::ExecuteUbergraph_BP_MarkerZone(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MarkerZone_C", "ExecuteUbergraph_BP_MarkerZone");
-
-	Params::BP_MarkerZone_C_ExecuteUbergraph_BP_MarkerZone Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void UserConstructionScript();
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_SBZSmallCosmeticDestruction_fading(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

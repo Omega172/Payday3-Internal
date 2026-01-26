@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_DeliveryDrone.BP_DeliveryDrone_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_DeliveryDrone_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DeliveryDrone_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DeliveryDrone.BP_DeliveryDrone_C.BP_OnBagDropped
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-
-void ABP_DeliveryDrone_C::BP_OnBagDropped()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DeliveryDrone_C", "BP_OnBagDropped");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_DeliveryDrone.BP_DeliveryDrone_C.ExecuteUbergraph_BP_DeliveryDrone
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -62,6 +34,34 @@ void ABP_DeliveryDrone_C::ExecuteUbergraph_BP_DeliveryDrone(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DeliveryDrone.BP_DeliveryDrone_C.BP_OnBagDropped
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void ABP_DeliveryDrone_C::BP_OnBagDropped()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DeliveryDrone_C", "BP_OnBagDropped");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DeliveryDrone.BP_DeliveryDrone_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_DeliveryDrone_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DeliveryDrone_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

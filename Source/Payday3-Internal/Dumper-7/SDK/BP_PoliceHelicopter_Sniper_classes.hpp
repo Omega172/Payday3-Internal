@@ -32,14 +32,14 @@ public:
 	class FName                                   AttachSocket;                                      // 0x06E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetAttachementSocket(class FName* Socket);
-	void OnPawnSpawnedBP(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn);
-	void ReceiveDestroyed();
-	void OnHeistStateChanged_Event_0(EPD3HeistState OldState, EPD3HeistState NewState);
-	void ReceiveBeginPlay();
-	void ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen);
-	void OnDestroyed_Event_0(class AActor* DestroyedActor);
 	void ExecuteUbergraph_BP_PoliceHelicopter_Sniper(int32 EntryPoint);
+	void OnDestroyed_Event_0(class AActor* DestroyedActor);
+	void ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen);
+	void ReceiveBeginPlay();
+	void OnHeistStateChanged_Event_0(EPD3HeistState OldState, EPD3HeistState NewState);
+	void ReceiveDestroyed();
+	void OnPawnSpawnedBP(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn);
+	void GetAttachementSocket(class FName* Socket);
 
 public:
 	static class UClass* StaticClass()

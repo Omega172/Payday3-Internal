@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ASBZSmallCosmeticDestruction_fading_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SBZSmallCosmeticDestruction_fading_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASBZSmallCosmeticDestruction_fading_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SBZSmallCosmeticDestruction_fading_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ExecuteUbergraph_SBZSmallCosmeticDestruction_fading
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void ASBZSmallCosmeticDestruction_fading_C::ExecuteUbergraph_SBZSmallCosmeticDes
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASBZSmallCosmeticDestruction_fading_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SBZSmallCosmeticDestruction_fading_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ASBZSmallCosmeticDestruction_fading_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SBZSmallCosmeticDestruction_fading_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

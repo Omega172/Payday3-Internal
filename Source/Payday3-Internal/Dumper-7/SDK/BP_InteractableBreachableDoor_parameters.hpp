@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.setBreachedMeshVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InteractableBreachableDoor_C_setBreachedMeshVisibility final
-{
-public:
-	bool                                          breached_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_InteractableBreachableDoor_C_setBreachedMeshVisibility;
-
 // Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.ExecuteUbergraph_BP_InteractableBreachableDoor
 // 0x000C (0x000C - 0x0000)
 struct BP_InteractableBreachableDoor_C_ExecuteUbergraph_BP_InteractableBreachableDoor final
@@ -39,6 +30,15 @@ public:
 	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_InteractableBreachableDoor_C_ExecuteUbergraph_BP_InteractableBreachableDoor;
+
+// Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.setBreachedMeshVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InteractableBreachableDoor_C_setBreachedMeshVisibility final
+{
+public:
+	bool                                          breached_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_InteractableBreachableDoor_C_setBreachedMeshVisibility;
 
 }
 

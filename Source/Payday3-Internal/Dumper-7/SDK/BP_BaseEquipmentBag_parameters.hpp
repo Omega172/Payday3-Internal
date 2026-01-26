@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BaseEquipmentBag.BP_BaseEquipmentBag_C.BP_OnZiplineAttachmentChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BP_BaseEquipmentBag_C_BP_OnZiplineAttachmentChanged final
-{
-public:
-	bool                                          bIsAttached;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_BaseEquipmentBag_C_BP_OnZiplineAttachmentChanged;
-
 // Function BP_BaseEquipmentBag.BP_BaseEquipmentBag_C.ExecuteUbergraph_BP_BaseEquipmentBag
 // 0x0008 (0x0008 - 0x0000)
 struct BP_BaseEquipmentBag_C_ExecuteUbergraph_BP_BaseEquipmentBag final
@@ -33,6 +24,15 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_BaseEquipmentBag_C_ExecuteUbergraph_BP_BaseEquipmentBag;
+
+// Function BP_BaseEquipmentBag.BP_BaseEquipmentBag_C.BP_OnZiplineAttachmentChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BP_BaseEquipmentBag_C_BP_OnZiplineAttachmentChanged final
+{
+public:
+	bool                                          bIsAttached;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_BaseEquipmentBag_C_BP_OnZiplineAttachmentChanged;
 
 }
 

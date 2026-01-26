@@ -14,16 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_MarkerZone.BP_MarkerZone_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_MarkerZone_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_MarkerZone_C_OnStateChanged;
-
 // Function BP_MarkerZone.BP_MarkerZone_C.ExecuteUbergraph_BP_MarkerZone
 // 0x0008 (0x0008 - 0x0000)
 struct BP_MarkerZone_C_ExecuteUbergraph_BP_MarkerZone final
@@ -35,6 +25,16 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_MarkerZone_C_ExecuteUbergraph_BP_MarkerZone;
+
+// Function BP_MarkerZone.BP_MarkerZone_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_MarkerZone_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_MarkerZone_C_OnStateChanged;
 
 }
 

@@ -18,43 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InteractableUnBreachableSingleDoor_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_UserConstructionScript;
-
-// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.setBreachedMeshVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InteractableUnBreachableSingleDoor_C_setBreachedMeshVisibility final
-{
-public:
-	bool                                          breached_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_setBreachedMeshVisibility;
-
-// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.onDoorBreached
-// 0x0002 (0x0002 - 0x0000)
-struct BP_InteractableUnBreachableSingleDoor_C_onDoorBreached final
-{
-public:
-	ESBZGateState                                 oldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 newState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_onDoorBreached;
-
-// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.onOpenAnimUpdateTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_InteractableUnBreachableSingleDoor_C_onOpenAnimUpdateTick final
-{
-public:
-	float                                         alpha;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_onOpenAnimUpdateTick;
-
 // Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.ExecuteUbergraph_BP_InteractableUnBreachableSingleDoor
 // 0x0060 (0x0060 - 0x0000)
 struct BP_InteractableUnBreachableSingleDoor_C_ExecuteUbergraph_BP_InteractableUnBreachableSingleDoor final
@@ -87,6 +50,43 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_ExecuteUbergraph_BP_InteractableUnBreachableSingleDoor;
+
+// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.onOpenAnimUpdateTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_InteractableUnBreachableSingleDoor_C_onOpenAnimUpdateTick final
+{
+public:
+	float                                         alpha;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_onOpenAnimUpdateTick;
+
+// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.onDoorBreached
+// 0x0002 (0x0002 - 0x0000)
+struct BP_InteractableUnBreachableSingleDoor_C_onDoorBreached final
+{
+public:
+	ESBZGateState                                 oldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 newState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_onDoorBreached;
+
+// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.setBreachedMeshVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InteractableUnBreachableSingleDoor_C_setBreachedMeshVisibility final
+{
+public:
+	bool                                          breached_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_setBreachedMeshVisibility;
+
+// Function BP_InteractableUnBreachableSingleDoor.BP_InteractableUnBreachableSingleDoor_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InteractableUnBreachableSingleDoor_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableSingleDoor_C_UserConstructionScript;
 
 }
 

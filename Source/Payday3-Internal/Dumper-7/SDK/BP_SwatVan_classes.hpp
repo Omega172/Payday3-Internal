@@ -18,8 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_SwatVan.BP_SwatVan_C
 // 0x0000 (0x0720 - 0x0720)
-#pragma pack(push, 0x1)
-class alignas(0x10) ABP_SwatVan_C : public ABP_WheeledVehicle_Base_C
+class ABP_SwatVan_C final : public ABP_WheeledVehicle_Base_C
 {
 public:
 	static class UClass* StaticClass()
@@ -35,7 +34,6 @@ public:
 		return GetDefaultObjImpl<ABP_SwatVan_C>();
 	}
 };
-#pragma pack(pop)
 DUMPER7_ASSERTS_ABP_SwatVan_C;
 
 }

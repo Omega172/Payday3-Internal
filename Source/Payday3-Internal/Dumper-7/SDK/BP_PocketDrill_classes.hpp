@@ -44,9 +44,9 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_PocketDrill(int32 EntryPoint);
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
-	void ReceiveTick(float DeltaSeconds);
 	void BndEvt__BP_PocketDrill_ActivationInteraction_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void ReceiveTick(float DeltaSeconds);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()

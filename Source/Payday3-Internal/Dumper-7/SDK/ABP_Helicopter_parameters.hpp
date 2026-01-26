@@ -18,29 +18,28 @@
 namespace SDK::Params
 {
 
-// Function ABP_Helicopter.ABP_Helicopter_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_Helicopter_C_AnimGraph final
+// Function ABP_Helicopter.ABP_Helicopter_C.ExecuteUbergraph_ABP_Helicopter
+// 0x0028 (0x0028 - 0x0000)
+struct ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter final
 {
 public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_DeltaTimeX;                           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_UpdateRotorYaw_New_Yaw;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_UpdateRotorYaw_New_Yaw_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ABP_Helicopter_C_AnimGraph;
+DUMPER7_ASSERTS_ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter;
 
-// Function ABP_Helicopter.ABP_Helicopter_C.UpdateRotorYaw
-// 0x001C (0x001C - 0x0000)
-struct ABP_Helicopter_C_UpdateRotorYaw final
+// Function ABP_Helicopter.ABP_Helicopter_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_Helicopter_C_BlueprintUpdateAnimation final
 {
 public:
-	float                                         Current_Yaw;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Speed;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Delta_Time;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         New_Yaw;                                           // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ABP_Helicopter_C_UpdateRotorYaw;
+DUMPER7_ASSERTS_ABP_Helicopter_C_BlueprintUpdateAnimation;
 
 // Function ABP_Helicopter.ABP_Helicopter_C.SetDoorState
 // 0x0018 (0x0018 - 0x0000)
@@ -59,28 +58,29 @@ public:
 };
 DUMPER7_ASSERTS_ABP_Helicopter_C_SetDoorState;
 
-// Function ABP_Helicopter.ABP_Helicopter_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_Helicopter_C_BlueprintUpdateAnimation final
+// Function ABP_Helicopter.ABP_Helicopter_C.UpdateRotorYaw
+// 0x001C (0x001C - 0x0000)
+struct ABP_Helicopter_C_UpdateRotorYaw final
 {
 public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Current_Yaw;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Speed;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Delta_Time;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         New_Yaw;                                           // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_ABP_Helicopter_C_BlueprintUpdateAnimation;
+DUMPER7_ASSERTS_ABP_Helicopter_C_UpdateRotorYaw;
 
-// Function ABP_Helicopter.ABP_Helicopter_C.ExecuteUbergraph_ABP_Helicopter
-// 0x0028 (0x0028 - 0x0000)
-struct ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter final
+// Function ABP_Helicopter.ABP_Helicopter_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_Helicopter_C_AnimGraph final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue_1;                // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_DeltaTimeX;                           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_UpdateRotorYaw_New_Yaw;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_UpdateRotorYaw_New_Yaw_1;                 // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter;
+DUMPER7_ASSERTS_ABP_Helicopter_C_AnimGraph;
 
 }
 

@@ -16,27 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.OnPawnSpawned
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PoliceHelicopter_C_OnPawnSpawned final
-{
-public:
-	class APD3PawnSpawnGroup*                     SpawnGroup;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnBase*                      Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  Pawn;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_C_OnPawnSpawned;
-
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveOnDoorStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged final
-{
-public:
-	ESBZAerialVehicleDoor                         Door;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsDoorOpen;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged;
-
 // Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
 // 0x0060 (0x0060 - 0x0000)
 struct BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter final
@@ -61,6 +40,27 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter;
+
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveOnDoorStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged final
+{
+public:
+	ESBZAerialVehicleDoor                         Door;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsDoorOpen;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged;
+
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.OnPawnSpawned
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PoliceHelicopter_C_OnPawnSpawned final
+{
+public:
+	class APD3PawnSpawnGroup*                     SpawnGroup;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnBase*                      Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_C_OnPawnSpawned;
 
 }
 

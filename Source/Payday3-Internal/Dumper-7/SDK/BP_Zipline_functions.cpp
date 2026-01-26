@@ -17,15 +17,35 @@
 namespace SDK
 {
 
-// Function BP_Zipline.BP_Zipline_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Zipline.BP_Zipline_C.ExecuteUbergraph_BP_Zipline
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Zipline_C::UserConstructionScript()
+void ABP_Zipline_C::ExecuteUbergraph_BP_Zipline(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "UserConstructionScript");
+		Func = Class->GetFunction("BP_Zipline_C", "ExecuteUbergraph_BP_Zipline");
+
+	Params::BP_Zipline_C_ExecuteUbergraph_BP_Zipline Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Zipline.BP_Zipline_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Zipline_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Zipline_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -53,37 +73,17 @@ void ABP_Zipline_C::BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics)
 }
 
 
-// Function BP_Zipline.BP_Zipline_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Zipline.BP_Zipline_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Zipline_C::ReceiveBeginPlay()
+void ABP_Zipline_C::UserConstructionScript()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_Zipline_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Zipline.BP_Zipline_C.ExecuteUbergraph_BP_Zipline
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Zipline_C::ExecuteUbergraph_BP_Zipline(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "ExecuteUbergraph_BP_Zipline");
-
-	Params::BP_Zipline_C_ExecuteUbergraph_BP_Zipline Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

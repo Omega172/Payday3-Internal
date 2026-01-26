@@ -38,10 +38,10 @@ public:
 	bool                                          AlternateStartBoat_;                               // 0x02F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void UserConstructionScript();
-	void MoveBoat__FinishedFunc();
-	void MoveBoat__UpdateFunc();
 	void ExecuteUbergraph_BP_LivingWorld_BoatSpawn(int32 EntryPoint);
+	void MoveBoat__UpdateFunc();
+	void MoveBoat__FinishedFunc();
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

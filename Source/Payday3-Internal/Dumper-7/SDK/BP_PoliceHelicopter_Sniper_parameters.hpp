@@ -17,71 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.GetAttachementSocket
-// 0x0098 (0x0098 - 0x0000)
-struct BP_PoliceHelicopter_Sniper_C_GetAttachementSocket final
-{
-public:
-	class FName                                   Socket;                                            // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                PlayerCenterDir;                                   // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         RightDot;                                          // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         LeftDot;                                           // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   RightSocket;                                       // 0x0020(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   LeftSocket;                                        // 0x002C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_PlayerCenterOfMass_ReturnValue;           // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetDirectionUnitVector_ReturnValue;       // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue_1;          // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_GetAttachementSocket;
-
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnPawnSpawnedBP
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PoliceHelicopter_Sniper_C_OnPawnSpawnedBP final
-{
-public:
-	class APD3PawnSpawnGroup*                     SpawnGroup;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnBase*                      Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  Pawn;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_OnPawnSpawnedBP;
-
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnHeistStateChanged_Event_0
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PoliceHelicopter_Sniper_C_OnHeistStateChanged_Event_0 final
-{
-public:
-	EPD3HeistState                                OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_OnHeistStateChanged_Event_0;
-
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveOnDoorStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PoliceHelicopter_Sniper_C_ReceiveOnDoorStateChanged final
-{
-public:
-	ESBZAerialVehicleDoor                         Door;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsDoorOpen;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_ReceiveOnDoorStateChanged;
-
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnDestroyed_Event_0
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PoliceHelicopter_Sniper_C_OnDestroyed_Event_0 final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_OnDestroyed_Event_0;
-
 // Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ExecuteUbergraph_BP_PoliceHelicopter_Sniper
 // 0x0110 (0x0110 - 0x0000)
 struct BP_PoliceHelicopter_Sniper_C_ExecuteUbergraph_BP_PoliceHelicopter_Sniper final
@@ -139,6 +74,71 @@ public:
 	class AActor*                                 K2Node_CustomEvent_DestroyedActor;                 // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_ExecuteUbergraph_BP_PoliceHelicopter_Sniper;
+
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnDestroyed_Event_0
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PoliceHelicopter_Sniper_C_OnDestroyed_Event_0 final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_OnDestroyed_Event_0;
+
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveOnDoorStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PoliceHelicopter_Sniper_C_ReceiveOnDoorStateChanged final
+{
+public:
+	ESBZAerialVehicleDoor                         Door;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsDoorOpen;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_ReceiveOnDoorStateChanged;
+
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnHeistStateChanged_Event_0
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PoliceHelicopter_Sniper_C_OnHeistStateChanged_Event_0 final
+{
+public:
+	EPD3HeistState                                OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_OnHeistStateChanged_Event_0;
+
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnPawnSpawnedBP
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PoliceHelicopter_Sniper_C_OnPawnSpawnedBP final
+{
+public:
+	class APD3PawnSpawnGroup*                     SpawnGroup;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnBase*                      Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_OnPawnSpawnedBP;
+
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.GetAttachementSocket
+// 0x0098 (0x0098 - 0x0000)
+struct BP_PoliceHelicopter_Sniper_C_GetAttachementSocket final
+{
+public:
+	class FName                                   Socket;                                            // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                PlayerCenterDir;                                   // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         RightDot;                                          // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         LeftDot;                                           // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   RightSocket;                                       // 0x0020(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   LeftSocket;                                        // 0x002C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue;             // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_PlayerCenterOfMass_ReturnValue;           // 0x0064(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetDirectionUnitVector_ReturnValue;       // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue_1;          // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue_1;           // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Dot_VectorVector_ReturnValue_1;           // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PoliceHelicopter_Sniper_C_GetAttachementSocket;
 
 }
 

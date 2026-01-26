@@ -17,60 +17,77 @@
 namespace SDK
 {
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.GetAttachementSocket
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ExecuteUbergraph_BP_PoliceHelicopter_Sniper
+// (Final, UbergraphFunction)
 // Parameters:
-// class FName*                            Socket                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_Sniper_C::GetAttachementSocket(class FName* Socket)
+void ABP_PoliceHelicopter_Sniper_C::ExecuteUbergraph_BP_PoliceHelicopter_Sniper(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "GetAttachementSocket");
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ExecuteUbergraph_BP_PoliceHelicopter_Sniper");
 
-	Params::BP_PoliceHelicopter_Sniper_C_GetAttachementSocket Parms{};
+	Params::BP_PoliceHelicopter_Sniper_C_ExecuteUbergraph_BP_PoliceHelicopter_Sniper Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Socket != nullptr)
-		*Socket = Parms.Socket;
 }
 
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnPawnSpawnedBP
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnDestroyed_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APD3PawnSpawnGroup*               SpawnGroup                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnBase*                Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_Sniper_C::OnPawnSpawnedBP(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)
+void ABP_PoliceHelicopter_Sniper_C::OnDestroyed_Event_0(class AActor* DestroyedActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "OnPawnSpawnedBP");
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "OnDestroyed_Event_0");
 
-	Params::BP_PoliceHelicopter_Sniper_C_OnPawnSpawnedBP Parms{};
+	Params::BP_PoliceHelicopter_Sniper_C_OnDestroyed_Event_0 Parms{};
 
-	Parms.SpawnGroup = SpawnGroup;
-	Parms.Spawner = Spawner;
-	Parms.Pawn = Pawn;
+	Parms.DestroyedActor = DestroyedActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveDestroyed
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveOnDoorStateChanged
 // (Event, Public, BlueprintEvent)
+// Parameters:
+// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDoorOpen                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_PoliceHelicopter_Sniper_C::ReceiveDestroyed()
+void ABP_PoliceHelicopter_Sniper_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ReceiveDestroyed");
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ReceiveOnDoorStateChanged");
+
+	Params::BP_PoliceHelicopter_Sniper_C_ReceiveOnDoorStateChanged Parms{};
+
+	Parms.Door = Door;
+	Parms.bIsDoorOpen = bIsDoorOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PoliceHelicopter_Sniper_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -98,79 +115,62 @@ void ABP_PoliceHelicopter_Sniper_C::OnHeistStateChanged_Event_0(EPD3HeistState O
 }
 
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
 
-void ABP_PoliceHelicopter_Sniper_C::ReceiveBeginPlay()
+void ABP_PoliceHelicopter_Sniper_C::ReceiveDestroyed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ReceiveOnDoorStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsDoorOpen                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_PoliceHelicopter_Sniper_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ReceiveOnDoorStateChanged");
-
-	Params::BP_PoliceHelicopter_Sniper_C_ReceiveOnDoorStateChanged Parms{};
-
-	Parms.Door = Door;
-	Parms.bIsDoorOpen = bIsDoorOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnDestroyed_Event_0
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.OnPawnSpawnedBP
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APD3PawnSpawnGroup*               SpawnGroup                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnBase*                Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_Sniper_C::OnDestroyed_Event_0(class AActor* DestroyedActor)
+void ABP_PoliceHelicopter_Sniper_C::OnPawnSpawnedBP(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "OnDestroyed_Event_0");
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "OnPawnSpawnedBP");
 
-	Params::BP_PoliceHelicopter_Sniper_C_OnDestroyed_Event_0 Parms{};
+	Params::BP_PoliceHelicopter_Sniper_C_OnPawnSpawnedBP Parms{};
 
-	Parms.DestroyedActor = DestroyedActor;
+	Parms.SpawnGroup = SpawnGroup;
+	Parms.Spawner = Spawner;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.ExecuteUbergraph_BP_PoliceHelicopter_Sniper
-// (Final, UbergraphFunction)
+// Function BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C.GetAttachementSocket
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            Socket                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_Sniper_C::ExecuteUbergraph_BP_PoliceHelicopter_Sniper(int32 EntryPoint)
+void ABP_PoliceHelicopter_Sniper_C::GetAttachementSocket(class FName* Socket)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "ExecuteUbergraph_BP_PoliceHelicopter_Sniper");
+		Func = Class->GetFunction("BP_PoliceHelicopter_Sniper_C", "GetAttachementSocket");
 
-	Params::BP_PoliceHelicopter_Sniper_C_ExecuteUbergraph_BP_PoliceHelicopter_Sniper Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::BP_PoliceHelicopter_Sniper_C_GetAttachementSocket Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Socket != nullptr)
+		*Socket = Parms.Socket;
 }
 
 }

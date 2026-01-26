@@ -17,24 +17,93 @@
 namespace SDK
 {
 
-// Function ABP_Helicopter.ABP_Helicopter_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_Helicopter.ABP_Helicopter_C.ExecuteUbergraph_ABP_Helicopter
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_Helicopter_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UABP_Helicopter_C::ExecuteUbergraph_ABP_Helicopter(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "AnimGraph");
+		Func = Class->GetFunction("ABP_Helicopter_C", "ExecuteUbergraph_ABP_Helicopter");
 
-	Params::ABP_Helicopter_C_AnimGraph Parms{};
+	Params::ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+
+// Function ABP_Helicopter.ABP_Helicopter_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_Helicopter_C::BlueprintUpdateAnimation(float DeltaTimeX)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Helicopter_C", "BlueprintUpdateAnimation");
+
+	Params::ABP_Helicopter_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX = DeltaTimeX;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ABP_Helicopter.ABP_Helicopter_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_A78D83F4407A86000184928B157B16F6
+// (BlueprintEvent)
+
+void UABP_Helicopter_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_A78D83F4407A86000184928B157B16F6()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Helicopter_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_A78D83F4407A86000184928B157B16F6");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_Helicopter.ABP_Helicopter_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_AC792ADB49F5E54BC06324AEBDF31802
+// (BlueprintEvent)
+
+void UABP_Helicopter_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_AC792ADB49F5E54BC06324AEBDF31802()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Helicopter_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_AC792ADB49F5E54BC06324AEBDF31802");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_Helicopter.ABP_Helicopter_C.SetDoorState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UABP_Helicopter_C::SetDoorState(ESBZAerialVehicleDoor Door, bool bIsOpen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Helicopter_C", "SetDoorState");
+
+	Params::ABP_Helicopter_C_SetDoorState Parms{};
+
+	Parms.Door = Door;
+	Parms.bIsOpen = bIsOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -66,93 +135,24 @@ void UABP_Helicopter_C::UpdateRotorYaw(float Current_Yaw, float Speed, float Del
 }
 
 
-// Function ABP_Helicopter.ABP_Helicopter_C.SetDoorState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function ABP_Helicopter.ABP_Helicopter_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UABP_Helicopter_C::SetDoorState(ESBZAerialVehicleDoor Door, bool bIsOpen)
+void UABP_Helicopter_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "SetDoorState");
+		Func = Class->GetFunction("ABP_Helicopter_C", "AnimGraph");
 
-	Params::ABP_Helicopter_C_SetDoorState Parms{};
-
-	Parms.Door = Door;
-	Parms.bIsOpen = bIsOpen;
+	Params::ABP_Helicopter_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function ABP_Helicopter.ABP_Helicopter_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_AC792ADB49F5E54BC06324AEBDF31802
-// (BlueprintEvent)
-
-void UABP_Helicopter_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_AC792ADB49F5E54BC06324AEBDF31802()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_AC792ADB49F5E54BC06324AEBDF31802");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ABP_Helicopter.ABP_Helicopter_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_A78D83F4407A86000184928B157B16F6
-// (BlueprintEvent)
-
-void UABP_Helicopter_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_A78D83F4407A86000184928B157B16F6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Helicopter_AnimGraphNode_ModifyBone_A78D83F4407A86000184928B157B16F6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ABP_Helicopter.ABP_Helicopter_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_Helicopter_C::BlueprintUpdateAnimation(float DeltaTimeX)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "BlueprintUpdateAnimation");
-
-	Params::ABP_Helicopter_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_Helicopter.ABP_Helicopter_C.ExecuteUbergraph_ABP_Helicopter
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_Helicopter_C::ExecuteUbergraph_ABP_Helicopter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "ExecuteUbergraph_ABP_Helicopter");
-
-	Params::ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

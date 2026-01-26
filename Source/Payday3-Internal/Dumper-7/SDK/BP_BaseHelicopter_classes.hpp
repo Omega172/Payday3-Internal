@@ -28,8 +28,8 @@ public:
 	class UNiagaraComponent*                      FX_Vehicle_Downwash;                               // 0x06B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_BaseHelicopter(int32 EntryPoint);
+	void ReceiveBeginPlay();
 	void CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, float* DistanceToGround);
 
 public:

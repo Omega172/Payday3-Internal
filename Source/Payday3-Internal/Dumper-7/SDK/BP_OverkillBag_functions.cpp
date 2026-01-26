@@ -17,25 +17,21 @@
 namespace SDK
 {
 
-// Function BP_OverkillBag.BP_OverkillBag_C.BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_OverkillBag.BP_OverkillBag_C.ExecuteUbergraph_BP_OverkillBag
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_OverkillBag_C::BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_OverkillBag_C::ExecuteUbergraph_BP_OverkillBag(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverkillBag_C", "BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+		Func = Class->GetFunction("BP_OverkillBag_C", "ExecuteUbergraph_BP_OverkillBag");
 
-	Params::BP_OverkillBag_C_BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_OverkillBag_C_ExecuteUbergraph_BP_OverkillBag Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -65,21 +61,25 @@ void ABP_OverkillBag_C::BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoun
 }
 
 
-// Function BP_OverkillBag.BP_OverkillBag_C.ExecuteUbergraph_BP_OverkillBag
-// (Final, UbergraphFunction)
+// Function BP_OverkillBag.BP_OverkillBag_C.BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_OverkillBag_C::ExecuteUbergraph_BP_OverkillBag(int32 EntryPoint)
+void ABP_OverkillBag_C::BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_OverkillBag_C", "ExecuteUbergraph_BP_OverkillBag");
+		Func = Class->GetFunction("BP_OverkillBag_C", "BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
 
-	Params::BP_OverkillBag_C_ExecuteUbergraph_BP_OverkillBag Parms{};
+	Params::BP_OverkillBag_C_BndEvt__BP_OverkillBag_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable_0 = Interactable_0;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

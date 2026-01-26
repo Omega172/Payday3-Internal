@@ -17,25 +17,21 @@
 namespace SDK
 {
 
-// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.BP_AdjustAttachment
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.ExecuteUbergraph_BP_BackItemBagThermite
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FTransform&                NewStrapTransformOffset                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BackItemBagThermite_C::BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
+void ABP_BackItemBagThermite_C::ExecuteUbergraph_BP_BackItemBagThermite(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BackItemBagThermite_C", "BP_AdjustAttachment");
+		Func = Class->GetFunction("BP_BackItemBagThermite_C", "ExecuteUbergraph_BP_BackItemBagThermite");
 
-	Params::BP_BackItemBagThermite_C_BP_AdjustAttachment Parms{};
+	Params::BP_BackItemBagThermite_C_ExecuteUbergraph_BP_BackItemBagThermite Parms{};
 
-	Parms.Index_0 = Index_0;
-	Parms.NewCount = NewCount;
-	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -61,21 +57,25 @@ void ABP_BackItemBagThermite_C::BP_AttachmentComplete(class USkeletalMeshCompone
 }
 
 
-// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.ExecuteUbergraph_BP_BackItemBagThermite
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.BP_AdjustAttachment
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTransform&                NewStrapTransformOffset                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
 
-void ABP_BackItemBagThermite_C::ExecuteUbergraph_BP_BackItemBagThermite(int32 EntryPoint)
+void ABP_BackItemBagThermite_C::BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BackItemBagThermite_C", "ExecuteUbergraph_BP_BackItemBagThermite");
+		Func = Class->GetFunction("BP_BackItemBagThermite_C", "BP_AdjustAttachment");
 
-	Params::BP_BackItemBagThermite_C_ExecuteUbergraph_BP_BackItemBagThermite Parms{};
+	Params::BP_BackItemBagThermite_C_BP_AdjustAttachment Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Index_0 = Index_0;
+	Parms.NewCount = NewCount;
+	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
