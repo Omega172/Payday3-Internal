@@ -8,6 +8,7 @@ import Features.ESP;
 
 export namespace Menu
 {
+    inline bool g_bClientMove = false;
     void PreDraw()
     {
         SDK::UWorld* pGWorld = SDK::UWorld::GetWorld();
@@ -64,6 +65,8 @@ export namespace Menu
 		ImGui::Text("DirectX 12 Hook Active");
 		ImGui::Text("Press INSERT to toggle menu");
 		ImGui::Separator();
+
+        ImGui::Checkbox("Client Move", &g_bClientMove);
 		
 		// Performance metrics
 		ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 

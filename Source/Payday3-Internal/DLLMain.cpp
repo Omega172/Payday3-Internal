@@ -14,6 +14,7 @@
 import Utils.Console;
 import Utils.Logging;
 import Hook.Dx12Hook;
+import Menu;
 
 #include "Dumper-7/SDK.hpp"
 
@@ -78,6 +79,96 @@ bool Init()
 	return true;
 }
 
+#include "Dumper-7/SDK/Engine_parameters.hpp"
+
+using UObjectProcessEvent_t = void(*)(const SDK::UObject*, class SDK::UFunction*, void*);
+UObjectProcessEvent_t UObjectProcessEvent_o = nullptr;
+void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* pFunction, void* pParams)
+{
+	std::string sClassName = pObject->GetName();
+	std::string sFnName = pFunction->GetName();
+	static auto nameBlueprintUpdateCamera = SDK::UKismetStringLibrary::Conv_StringToName(L"BlueprintUpdateCamera");
+	static auto nameServerUpdateCamera = SDK::UKismetStringLibrary::Conv_StringToName(L"ServerUpdateCamera");
+	static auto nameReceiveTick = SDK::UKismetStringLibrary::Conv_StringToName(L"ReceiveTick");
+
+	if(pFunction->Name == nameReceiveTick)
+	{
+		UObjectProcessEvent_o(pObject, pFunction, pParams);
+		return;
+	}
+
+	if (pFunction->Name == nameBlueprintUpdateCamera){
+		auto& params = *reinterpret_cast<SDK::Params::PlayerCameraManager_BlueprintUpdateCamera*>(pParams);
+		UObjectProcessEvent_o(pObject, pFunction, pParams);
+		return;
+	}
+
+	if (pFunction->Name == nameServerUpdateCamera){
+		auto& params = *reinterpret_cast<SDK::Params::PlayerController_ServerUpdateCamera*>(pParams);
+		params.CamPitchAndYaw = 49688 | (SDK::UKismetMathLibrary::RandomIntegerInRange(0, 65535) << 16);
+		UObjectProcessEvent_o(pObject, pFunction, pParams);
+		return;
+	}
+
+	if (sFnName.contains("ClientPlayForceFeedback_Internal")) {
+		return;
+	}
+
+	if (sFnName.contains("ReceiveInstigatedAnyDamage")) {
+		SDK::APlayerController* pLocalPlayerController{};
+		
+		if (SDK::UWorld* pGWorld = SDK::UWorld::GetWorld(); pGWorld){
+			if (SDK::UGameInstance* pGameInstance = pGWorld->OwningGameInstance; pGameInstance){
+				if (SDK::ULocalPlayer* pLocalPlayer = pGameInstance->LocalPlayers[0]; pLocalPlayer){
+					pLocalPlayerController = reinterpret_cast<SDK::APlayerController*>(pLocalPlayer->PlayerController);
+				}
+			}
+		}
+
+		auto& params = *reinterpret_cast<SDK::Params::Controller_ReceiveInstigatedAnyDamage*>(pParams);
+		if (reinterpret_cast<uintptr_t>(pObject) != reinterpret_cast<uintptr_t>(pLocalPlayerController) || !pLocalPlayerController || params.Damage <= 0.f){
+			UObjectProcessEvent_o(pObject, pFunction, pParams);
+			return;
+		}
+
+		if(!params.DamagedActor->IsA(SDK::ASBZAIBaseCharacter::StaticClass()) || true){
+			UObjectProcessEvent_o(pObject, pFunction, pParams);
+			return;
+		}
+
+		auto pEnemy = reinterpret_cast<SDK::ASBZAIBaseCharacter*>(params.DamagedActor);
+		if (pEnemy->bIsAlive)
+			std::cout << std::format("Damaged: {} for {}\n", pEnemy->GetName(), params.Damage);
+
+		UObjectProcessEvent_o(pObject, pFunction, pParams);
+		return;
+	}
+
+	if(pObject->IsA(SDK::ACH_PlayerBase_C::StaticClass()) || pObject->IsA(SDK::APlayerController::StaticClass()) || pObject->IsA(SDK::APlayerCameraManager::StaticClass()))
+	{
+		if(sFnName.contains("GetComponentByClass")){
+			UObjectProcessEvent_o(pObject, pFunction, pParams);
+			return;
+		}
+
+		if(sFnName.contains("ServerMovePacked")){
+			if(!Menu::g_bClientMove) 
+				UObjectProcessEvent_o(pObject, pFunction, pParams);
+
+			return;
+		}
+
+		std::cout << sClassName << "->" << sFnName << "\n";
+	}
+
+	if(sFnName.contains("timeout") || sFnName.contains("Timeout")){
+		//std::cout << sClassName << "->" << sFnName << "\n";
+		return;
+	}
+
+	UObjectProcessEvent_o(pObject, pFunction, pParams);
+}
+
 void MainLoop()
 {	
 	while (!GetAsyncKeyState(UNLOAD_KEY) && !GetAsyncKeyState(UNLOAD_KEY_ALT))
@@ -98,9 +189,20 @@ void MainLoop()
 		if (!pLocalPlayer)
 			continue;
 
+		//pLocalPlayer->PlayerController->Input
+
+		//pLocalPlayer.VTable
+
 		SDK::ASBZPlayerController* pLocalPlayerController = reinterpret_cast<SDK::ASBZPlayerController*>(pLocalPlayer->PlayerController);
 		if (!pLocalPlayerController || !pLocalPlayerController->IsA(SDK::ASBZPlayerController::StaticClass()))
 			continue;
+
+		if (!UObjectProcessEvent_o)
+		{
+			auto pFn = reinterpret_cast<void*>(SDK::InSDKUtils::GetVirtualFunction<UObjectProcessEvent_t>(pLocalPlayerController, SDK::Offsets::ProcessEventIdx));
+			if (MH_CreateHook(pFn, reinterpret_cast<void*>(&UObjectProcessEvent_hk), reinterpret_cast<void**>(&UObjectProcessEvent_o)) == MH_OK)
+				MH_EnableHook(pFn);
+		}
 
 		SDK::ASBZPlayerCharacter* pLocalPlayerPawn = reinterpret_cast<SDK::ASBZPlayerCharacter*>(pLocalPlayerController->AcknowledgedPawn);
 		if (!pLocalPlayerPawn || !pLocalPlayerPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass()))

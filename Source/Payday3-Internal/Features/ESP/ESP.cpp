@@ -107,104 +107,83 @@ const std::vector<BonePair>& GetOrCalculateBonePairs(SDK::USkeletalMeshComponent
     return g_SkeletonCache[pMesh];
 }
 
-// Left, Top, Right, Bottom
-std::optional<ImVec4> CalculateScreenBox(SDK::USkeletalMeshComponent* pMeshComponent, SDK::APlayerController* pPlayerController, SDK::AActor* pActor)
+std::optional<ImVec4> CalculateScreenBoxFromBBox(SDK::APlayerController* pPlayerController,SDK::FVector vecOrigin, SDK::FVector vecExtent)
+{
+    SDK::FVector aBox[]{
+        vecOrigin + SDK::FVector(vecExtent.X, vecExtent.Y, vecExtent.Z),
+        vecOrigin + SDK::FVector(-vecExtent.X, vecExtent.Y, vecExtent.Z),
+        vecOrigin + SDK::FVector(vecExtent.X, -vecExtent.Y, vecExtent.Z),
+        vecOrigin + SDK::FVector(-vecExtent.X, -vecExtent.Y, vecExtent.Z),
+        vecOrigin + SDK::FVector(vecExtent.X, vecExtent.Y, -vecExtent.Z),
+        vecOrigin + SDK::FVector(-vecExtent.X, vecExtent.Y, -vecExtent.Z),
+        vecOrigin + SDK::FVector(vecExtent.X, -vecExtent.Y, -vecExtent.Z),
+        vecOrigin + SDK::FVector(-vecExtent.X, -vecExtent.Y, -vecExtent.Z)
+    };
+
+    float flMinX = std::numeric_limits<float>::max(), flMaxX = std::numeric_limits<float>::lowest(), flMinY = std::numeric_limits<float>::max(), flMaxY = std::numeric_limits<float>::lowest();
+
+    for(size_t i = 0; i < 8; ++i){
+        SDK::FVector2D vec2ScreenPos;
+        if(!pPlayerController->ProjectWorldLocationToScreen(aBox[i], &vec2ScreenPos, false))
+            continue;
+
+        flMinX = std::min(flMinX, vec2ScreenPos.X);
+        flMaxX = std::max(flMaxX, vec2ScreenPos.X);
+        flMinY = std::min(flMinY, vec2ScreenPos.Y);
+        flMaxY = std::max(flMaxY, vec2ScreenPos.Y);
+    }
+
+    if(flMinX == std::numeric_limits<float>::max() || flMaxX == std::numeric_limits<float>::lowest() || flMinY == std::numeric_limits<float>::max() || flMaxY == std::numeric_limits<float>::lowest() ||
+        flMinX >= flMaxX || flMinY >= flMaxY)
+        return{};
+
+    return ImVec4{ flMinX, flMinY, flMaxX, flMaxY };
+}
+
+std::optional<ImVec4> CalculateScreenBoxFromTopBottom(SDK::APlayerController* pPlayerController, SDK::AActor* pActor, SDK::FVector vecTop, SDK::FVector vecBottom, float flCrouchingHeight = 80.f, float flBaseWidthRatio = 0.25f, float flSidewaysWidthRatioAdd = 0.15f, float flCrouchingWidthRatioMultiplier = 1.2f)
+{
+    SDK::FVector2D vec2Top, vec2Bottom;
+    if (!pPlayerController->ProjectWorldLocationToScreen(vecBottom, &vec2Bottom, false) ||
+        !pPlayerController->ProjectWorldLocationToScreen(vecTop, &vec2Top, false))
+        return {};
+
+    float flHeight = std::abs(vec2Top.Y - vec2Bottom.Y);
+    float flYawRad = pActor->K2_GetActorRotation().Yaw * (3.14159265358979323846f / 180.0f);
+    float flWidthRatio = flBaseWidthRatio + (std::abs(SDK::FVector(std::cos(flYawRad), std::sin(flYawRad), 0.f).GetNormalized().Dot((pActor->K2_GetActorLocation() - pPlayerController->PlayerCameraManager->GetCameraLocation()).GetNormalized())) * flSidewaysWidthRatioAdd); // Range: 0.25 to 0.4
+    
+    if (flHeight < flCrouchingHeight)
+        flWidthRatio *= flCrouchingWidthRatioMultiplier;
+
+    float flWidth = flHeight * flWidthRatio;
+    float flCenter = (vec2Bottom.X + vec2Top.X) / 2.0f;
+    return ImVec4{ flCenter - (flWidth / 2.0f), std::min(vec2Bottom.Y, vec2Top.Y), flCenter + (flWidth / 2.0f), std::max(vec2Bottom.Y, vec2Top.Y) };
+}
+
+std::optional<ImVec4> CalculateScreenBoxForGuard(SDK::USkeletalMeshComponent* pMeshComponent, SDK::APlayerController* pPlayerController, SDK::AActor* pActor)
 {
     if (!pMeshComponent || !pPlayerController || !pActor)
         return {};
 
-    SDK::FVector vecDirection = (pActor->K2_GetActorLocation() - pPlayerController->PlayerCameraManager->GetCameraLocation()).GetNormalized();
-
-    // Calculate actor's forward vector from rotation (yaw angle)
-    // Convert yaw from degrees to radians
-    float flYawRad = pActor->K2_GetActorRotation().Yaw * (3.14159265358979323846f / 180.0f);
-
-    // Calculate dot product to determine viewing angle
-    // Dot product: 1 = viewing from front/back, 0 = viewing from side
-    float flForwardDot = std::abs(
-        SDK::FVector(std::cos(flYawRad), std::sin(flYawRad), 0.f)
-        .GetNormalized()
-        .Dot(vecDirection)
+    return CalculateScreenBoxFromTopBottom(
+        pPlayerController, 
+        pActor, 
+        pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"HeadEnd")), 
+        pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"Reference"))
     );
+}
 
+// Left, Top, Right, Bottom
+std::optional<ImVec4> CalculateScreenBoxUsingBounds(SDK::APlayerController* pPlayerController, SDK::AActor* pActor)
+{
+    if (!pPlayerController || !pActor)
+        return {};
 
-
-    // Get bone 0 (Reference - bottom/root) and bone 10 (HeadEnd - top of head)
-    SDK::FVector RootPos = pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"Reference"));
-    SDK::FVector HeadPos = pMeshComponent->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"HeadEnd"));
-
-    auto bbox = pMeshComponent->GetTightBounds(false);
+    //auto bbox = pMeshComponent->GetTightBounds(false);
     SDK::FVector vecOrigin{};
     SDK::FVector vecExtent{};
 
-    pActor->GetActorBounds(true, &vecOrigin, &vecExtent, true);
-
-    if (1){
-        SDK::FVector aBox[]{
-            vecOrigin + SDK::FVector(vecExtent.X, vecExtent.Y, vecExtent.Z),
-            vecOrigin + SDK::FVector(-vecExtent.X, vecExtent.Y, vecExtent.Z),
-            vecOrigin + SDK::FVector(vecExtent.X, -vecExtent.Y, vecExtent.Z),
-            vecOrigin + SDK::FVector(-vecExtent.X, -vecExtent.Y, vecExtent.Z),
-            vecOrigin + SDK::FVector(vecExtent.X, vecExtent.Y, -vecExtent.Z),
-            vecOrigin + SDK::FVector(-vecExtent.X, vecExtent.Y, -vecExtent.Z),
-            vecOrigin + SDK::FVector(vecExtent.X, -vecExtent.Y, -vecExtent.Z),
-            vecOrigin + SDK::FVector(-vecExtent.X, -vecExtent.Y, -vecExtent.Z)
-        };
-
-        float flMinX = std::numeric_limits<float>::max(), flMaxX = std::numeric_limits<float>::lowest(), flMinY = std::numeric_limits<float>::max(), flMaxY = std::numeric_limits<float>::lowest();
-        
-        for(size_t i = 0; i < 8; ++i){
-            SDK::FVector2D vec2ScreenPos;
-            if(!pPlayerController->ProjectWorldLocationToScreen(aBox[i], &vec2ScreenPos, false))
-                continue;
-
-            //ImGui::GetBackgroundDrawList()->AddRectFilled(ImVec2{ vec2ScreenPos.X - 5.f, vec2ScreenPos.Y - 5.f }, ImVec2{ vec2ScreenPos.X + 5.f, vec2ScreenPos.Y + 5.f }, ImColor{ 255, 0, 155, 255 });
-
-            flMinX = std::min(flMinX, vec2ScreenPos.X);
-            flMaxX = std::max(flMaxX, vec2ScreenPos.X);
-            flMinY = std::min(flMinY, vec2ScreenPos.Y);
-            flMaxY = std::max(flMaxY, vec2ScreenPos.Y);
-        }
-
-        if(flMinX == std::numeric_limits<float>::max() || flMaxX == std::numeric_limits<float>::lowest() || flMinY == std::numeric_limits<float>::max() || flMaxY == std::numeric_limits<float>::lowest() ||
-            flMinX >= flMaxX || flMinY >= flMaxY)
-            return{};
-        
-        return ImVec4{ flMinX, flMinY, flMaxX, flMaxY };
-    }
-
-    // Project both bones to screen
-    SDK::FVector2D RootScreen, HeadScreen;
-    if (!pPlayerController->ProjectWorldLocationToScreen(RootPos, &RootScreen, false) ||
-        !pPlayerController->ProjectWorldLocationToScreen(HeadPos, &HeadScreen, false))
-        return {};
-
-    // Calculate height (distance between root and head on screen)
-    float height = abs(HeadScreen.Y - RootScreen.Y);
-
-
-
-    // Interpolate width multiplier based on viewing angle
-    // Side view (dot ~0): narrower box (1/4 height)
-    // Front/back view (dot ~1): wider box (1/2.5 height)
-    float widthMultiplier = 0.25f + (flForwardDot * 0.15f); // Range: 0.25 to 0.4
-    
-    // Check if crouching by comparing actual height to expected standing height
-    // Normal standing height ratio should be around certain value, crouching reduces it
-    float heightRatio = height / 100.0f; // Adjust base value as needed
-    bool bIsCrouching = heightRatio < 0.8f; // Threshold for crouch detection
-    
-    if (bIsCrouching) {
-        // When crouching, slightly increase width multiplier since body is more compact
-        widthMultiplier *= 1.2f;
-    }
-
-    float width = height * widthMultiplier;
-
-    // Calculate box corners (centered on the character)
-    float centerX = (RootScreen.X + HeadScreen.X) / 2.0f;
-    
-    return ImVec4{ centerX - (width / 2.0f), std::min(RootScreen.Y, HeadScreen.Y), centerX + (width / 2.0f), std::max(RootScreen.Y, HeadScreen.Y) };
+    pActor->GetActorBounds(true, &vecOrigin, &vecExtent, false);
+    return CalculateScreenBoxFromBBox(pPlayerController, vecOrigin, vecExtent);
 }
 
 namespace ESP
@@ -238,6 +217,7 @@ namespace ESP
 
 
     enum class EActorType{
+        // tazer mine, objective items, ammo boxes, fbi van, drones
         Other,
         Guard,
         Shield,
@@ -249,6 +229,7 @@ namespace ESP
         Techie,
         Civilian,
         ObjectiveItem,
+        InteractableItem,
         LootBag,
         
         Max
@@ -286,13 +267,15 @@ namespace ESP
         };
         if(!std::none_of(aObjectiveItemClasses.begin(), aObjectiveItemClasses.end(), [pActor](SDK::UClass* pClass) { return pActor->IsA(pClass); }))
             return EActorType::ObjectiveItem;
+        
+        if(pActor->IsA(SDK::ASBZInteractionActor::StaticClass()))
+            return EActorType::InteractableItem;
 
         if(pActor->IsA(SDK::ABP_BaseValuableBag_C::StaticClass()))
             return EActorType::LootBag;
 
         return EActorType::Other;        
     }
-
 
     void DrawSkeleton(SDK::USkeletalMeshComponent* pMeshComponent, SDK::APlayerController* pPlayerController, ImDrawList* pDrawList) {
         if (!pMeshComponent || !pPlayerController || !pDrawList)
@@ -510,7 +493,7 @@ namespace ESP
             DrawDebugSkeleton(pSkeletalMesh, pPlayerController, pDrawList);
         }
         
-        if (auto optScreenBox = CalculateScreenBox(pSkeletalMesh, pPlayerController, pGuard); optScreenBox.has_value())
+        if (auto optScreenBox = CalculateScreenBoxForGuard(pSkeletalMesh, pPlayerController, pGuard); optScreenBox.has_value())
         {
             auto vec4ScreenBox = optScreenBox.value();
             if (stSettings.m_bBox){
@@ -561,6 +544,17 @@ namespace ESP
             }
         }  
     };
+
+    void DrawInteractableESP(ImDrawList* pDrawList, SDK::APlayerController* pPlayerController, SDK::ASBZInteractionActor* pItem, EActorType eType){
+        if (!pItem)
+            return;
+
+        if (auto optScreenBox = CalculateScreenBoxUsingBounds(pPlayerController, pItem); optScreenBox.has_value())
+        {
+            auto vec4ScreenBox = optScreenBox.value();
+            DrawName(pDrawList, vec4ScreenBox, pItem, eType);
+        }
+    }
 
 
     bool ShouldSkipActor(SDK::AActor* pActor, EActorType eType){
@@ -708,23 +702,61 @@ Default__GA_PlayerEndCycleReload_C
             });
         }
 
+        
+
         std::sort(vecActors.begin(), vecActors.end(), [](ActorInfo& lhs, ActorInfo& rhs) {
             if (lhs.m_flDistance == rhs.m_flDistance)
                 rhs.m_flDistance += 0.001f;
 
             return lhs.m_flDistance < rhs.m_flDistance;
         });
+        
+        SDK::FRotator vecPlayerRotation = pPlayerController->PlayerCameraManager->GetCameraRotation();
+        SDK::FVector vecForward = SDK::UKismetMathLibrary::GetForwardVector(vecPlayerRotation);
+        SDK::FVector vecLookAheadLocation = vecCameraLocation + (vecForward * 200.f);
 
         for (ActorInfo& infoActor : vecActors){
             auto pActor = infoActor.m_pActor;
             SDK::FVector2D vec2ScreenLocation;
-            if (!pActor || !pPlayerController->ProjectWorldLocationToScreen(pActor->K2_GetActorLocation(), &vec2ScreenLocation, false))
+            if (!pActor)
+                continue;
+
+            SDK::FVector vecOffset{};
+
+            if(0){
+                switch(infoActor.m_eType){
+                case EActorType::Guard:
+                case EActorType::Shield:
+                case EActorType::Cloaker:
+                case EActorType::Sniper:
+                case EActorType::Grenadier:
+                case EActorType::Taser:
+                case EActorType::Techie:;
+                    vecOffset = pActor->K2_GetActorLocation() - reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor)->Mesh->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"Head"));
+                    pActor->K2_SetActorRotation(vecPlayerRotation, true);
+                    pActor->K2_SetActorLocation(vecLookAheadLocation + vecOffset, false, nullptr, true);
+                    break;
+
+                case EActorType::Dozer:
+                    vecOffset = pActor->K2_GetActorLocation() - reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor)->Mesh->GetSocketLocation(SDK::UKismetStringLibrary::Conv_StringToName(L"Head"));
+                    pActor->K2_SetActorRotation(SDK::FRotator(-vecPlayerRotation.Pitch, -vecPlayerRotation.Yaw), true);
+                    pActor->K2_SetActorLocation(vecLookAheadLocation + vecOffset, false, nullptr, true);
+                    break;
+
+                default:
+                    break;
+                }
+            }
+            
+
+            if(!pPlayerController->ProjectWorldLocationToScreen(pActor->K2_GetActorLocation(), &vec2ScreenLocation, false))
                 continue;
 
             switch(infoActor.m_eType){
             case EActorType::Guard:
                 DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stNormalEnemies);
                 break;
+
             case EActorType::Shield:
             case EActorType::Dozer:
             case EActorType::Cloaker:
@@ -734,6 +766,12 @@ Default__GA_PlayerEndCycleReload_C
             case EActorType::Techie:
                 DrawEnemyESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ACH_BaseCop_C*>(pActor), infoActor.m_eType, GetConfig().m_stSpecialEnemies);
                 break;
+
+            case EActorType::ObjectiveItem:
+            case EActorType::InteractableItem:
+                DrawInteractableESP(pDrawList, pPlayerController, reinterpret_cast<SDK::ASBZInteractionActor*>(pActor), infoActor.m_eType);
+                break;
+
             default:
                 break;
             }           
@@ -764,7 +802,14 @@ Default__GA_PlayerEndCycleReload_C
         // No camera shake
         pPlayerController->PlayerCameraManager->StopAllCameraShakes(true);
 
+        auto pAbilitySystem = pLocalPlayer->PlayerAbilitySystem;
+        if (!pAbilitySystem)
+            return;
 
+        auto& aAbilities = pAbilitySystem->ActivatableAbilities.Items;
+
+        auto pReloadAbility = GetAbilitySpec(pAbilitySystem, SDK::UKismetStringLibrary::Conv_StringToName(L"Default__GA_Reload_C"));
+        auto pFireAbility = GetAbilitySpec(pAbilitySystem, SDK::UKismetStringLibrary::Conv_StringToName(L"Default__GA_Fire_C"));
 
         auto& aCameras = pWorldRuntime->AllSecurityCameras->Objects;
         for (int i = 0; i < aCameras.Num(); ++i) {
@@ -777,31 +822,15 @@ Default__GA_PlayerEndCycleReload_C
 
             if (pCamera->SoundState == SDK::ESBZCameraSoundState::Suspiscious){
                 // Use runtime on this camera
-            }             
+            }
+
+            if (pCamera->OutlineAsset)
+                pCamera->OutlineAsset->ColorIndex = 3;
+            pCamera->OutlineComponent->Multicast_SetActiveReplicated(pCamera->OutlineAsset);
         }
 
         SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
         pPersistentLevel->Actors;
-
-        /** 
-        for (SDK::AActor* pActor : pPersistentLevel->Actors) {
-            if (!pActor || DetermineActorType(pActor) != EActorType::ObjectiveItem)
-                continue;
-
-            // Drae name on item
-            SDK::FVector ActorLocation = pActor->K2_GetActorLocation();
-            SDK::FVector2D ScreenLocation;
-            if (!pPlayerController->ProjectWorldLocationToScreen(ActorLocation, &ScreenLocation, false))
-                continue;
-
-            char szName[64];
-            szName[pActor->Class->Name.GetRawString().copy(szName, 63)] = '\0';
-            ImVec2 vecTextSize = ImGui::CalcTextSize(szName);
-            ImGui::GetBackgroundDrawList()->AddText({ScreenLocation.X - vecTextSize.x / 2, ScreenLocation.Y - 8.f}, IM_COL32(0, 255, 0, 255), szName);
-        }
-
-Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x0000000000000138
-        */
 
         GetConfig().m_stNormalEnemies.m_bWasOutlineActive = GetConfig().m_stNormalEnemies.m_bOutline;
         GetConfig().m_stSpecialEnemies.m_bWasOutlineActive = GetConfig().m_stSpecialEnemies.m_bOutline;
