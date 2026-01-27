@@ -5,14 +5,15 @@ An cheat for Payday 3 targeting the steam build.
 ## About This Project
 
 This project deliberately avoids using my framework in favor of experimenting with:
-- **C++20/23 Modules** - Using `.ixx` module interface files instead of traditional headers and `std::stacktrace`
+- **C++20/23 Modules** - Using `.ixx` module interface files instead of traditional headers
 - **vcpkg + xmake Integration** - Testing package management with vcpkg in xmake
 
 The goal is experimentation rather than expanding the framework's feature set and examples.
 
 ## Building
 
-Requires xmake and vcpkg.
+Requires xmake, vcpkg, and an installation of VisualStudio with the C++ build tools for the compiler.
+add the variable VCPKG_ROOT pointing to your vcpkg rood dir to your environment variables
 
 ```cmd
 xmake config -m debug   # or -m release
