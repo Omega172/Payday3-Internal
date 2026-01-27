@@ -100,12 +100,11 @@ void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* p
 	if (pFunction->Name == nameBlueprintUpdateCamera){
 		auto& params = *reinterpret_cast<SDK::Params::PlayerCameraManager_BlueprintUpdateCamera*>(pParams);
 		UObjectProcessEvent_o(pObject, pFunction, pParams);
+
 		return;
 	}
 
 	if (pFunction->Name == nameServerUpdateCamera){
-		auto& params = *reinterpret_cast<SDK::Params::PlayerController_ServerUpdateCamera*>(pParams);
-		params.CamPitchAndYaw = 49688 | (SDK::UKismetMathLibrary::RandomIntegerInRange(0, 65535) << 16);
 		UObjectProcessEvent_o(pObject, pFunction, pParams);
 		return;
 	}
@@ -114,38 +113,13 @@ void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* p
 		return;
 	}
 
-	if (sFnName.contains("ReceiveInstigatedAnyDamage")) {
-		SDK::APlayerController* pLocalPlayerController{};
-		
-		if (SDK::UWorld* pGWorld = SDK::UWorld::GetWorld(); pGWorld){
-			if (SDK::UGameInstance* pGameInstance = pGWorld->OwningGameInstance; pGameInstance){
-				if (SDK::ULocalPlayer* pLocalPlayer = pGameInstance->LocalPlayers[0]; pLocalPlayer){
-					pLocalPlayerController = reinterpret_cast<SDK::APlayerController*>(pLocalPlayer->PlayerController);
-				}
-			}
-		}
-
-		auto& params = *reinterpret_cast<SDK::Params::Controller_ReceiveInstigatedAnyDamage*>(pParams);
-		if (reinterpret_cast<uintptr_t>(pObject) != reinterpret_cast<uintptr_t>(pLocalPlayerController) || !pLocalPlayerController || params.Damage <= 0.f){
-			UObjectProcessEvent_o(pObject, pFunction, pParams);
-			return;
-		}
-
-		if(!params.DamagedActor->IsA(SDK::ASBZAIBaseCharacter::StaticClass()) || true){
-			UObjectProcessEvent_o(pObject, pFunction, pParams);
-			return;
-		}
-
-		auto pEnemy = reinterpret_cast<SDK::ASBZAIBaseCharacter*>(params.DamagedActor);
-		if (pEnemy->bIsAlive)
-			std::cout << std::format("Damaged: {} for {}\n", pEnemy->GetName(), params.Damage);
-
-		UObjectProcessEvent_o(pObject, pFunction, pParams);
-		return;
-	}
-
-	if(pObject->IsA(SDK::ACH_PlayerBase_C::StaticClass()) || pObject->IsA(SDK::APlayerController::StaticClass()) || pObject->IsA(SDK::APlayerCameraManager::StaticClass()))
+	if(pObject->IsA(SDK::ACH_PlayerBase_C::StaticClass()) || pObject->IsA(SDK::APlayerController::StaticClass()) || pObject->IsA(SDK::APlayerCameraManager::StaticClass()) || pObject->IsA(SDK::UCharacterMovementComponent::StaticClass()))
 	{
+		if(sFnName.contains("ProjectWorldLocationToScreen") || sFnName.contains("GetCameraLocation") || sFnName.contains("GetCameraRotation") || sFnName.contains("StopAllCameraShakes")){
+			UObjectProcessEvent_o(pObject, pFunction, pParams);
+			return;
+		}
+
 		if(sFnName.contains("GetComponentByClass")){
 			UObjectProcessEvent_o(pObject, pFunction, pParams);
 			return;
@@ -158,7 +132,7 @@ void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* p
 			return;
 		}
 
-		std::cout << sClassName << "->" << sFnName << "\n";
+		//std::cout << sClassName << "->" << sFnName << "\n";
 	}
 
 	if(sFnName.contains("timeout") || sFnName.contains("Timeout")){
@@ -208,13 +182,23 @@ void MainLoop()
 		if (!pLocalPlayerPawn || !pLocalPlayerPawn->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
 			continue;
 
-		SDK::FRotator rotCameraAngles{};
-	
-		rotCameraAngles = pLocalPlayerController->TargetViewRotation;
+
 
 		SDK::USBZPlayerMovementComponent* pMovementComponent = reinterpret_cast<SDK::USBZPlayerMovementComponent*>(pLocalPlayerPawn->GetComponentByClass(SDK::USBZPlayerMovementComponent::StaticClass()));
 		if (!pMovementComponent)
 			continue;
+
+	
+		if(Menu::g_bClientMove){
+			if (pLocalPlayerPawn->GetActorEnableCollision())
+				pLocalPlayerPawn->SetActorEnableCollision(false);
+
+			pMovementComponent->MovementMode = SDK::EMovementMode::MOVE_Flying;
+		}
+		else if(!pLocalPlayerPawn->GetActorEnableCollision()){
+			pLocalPlayerPawn->SetActorEnableCollision(true);
+			pMovementComponent->MovementMode = SDK::EMovementMode::MOVE_Walking;
+		}
 
 		//bool LineOfSightTo(const class AActor* Other, const struct FVector& ViewPoint, bool bAlternateChecks) const;
 
