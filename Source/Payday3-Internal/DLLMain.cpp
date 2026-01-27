@@ -132,7 +132,7 @@ void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* p
 			return;
 		}
 
-		//std::cout << sClassName << "->" << sFnName << "\n";
+		std::cout << sClassName << "->" << sFnName << "\n";
 	}
 
 	if(sFnName.contains("timeout") || sFnName.contains("Timeout")){

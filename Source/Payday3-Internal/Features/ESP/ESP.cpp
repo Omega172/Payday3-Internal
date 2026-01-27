@@ -477,9 +477,9 @@ namespace ESP
     void DrawEnemyESP(ImDrawList* pDrawList, SDK::APlayerController* pPlayerController, SDK::ACH_BaseCop_C* pGuard, EActorType eType, EnemyESP& stSettings){
         if(stSettings.m_bOutline)
             pGuard->Multicast_SetMarked(true);
-        else if(stSettings.m_bWasOutlineActive){ // How the fuck do we turn the outline off???
-            pGuard->Multicast_SetMarked(false);
-            pGuard->Multicast_Unmark(100.f);
+        else if(stSettings.m_bWasOutlineActive){
+            if(pGuard->OutlineComponent)
+                pGuard->OutlineComponent->Deactivate();
         }
             
         
@@ -827,6 +827,7 @@ Default__GA_PlayerEndCycleReload_C
             if (pCamera->OutlineAsset)
                 pCamera->OutlineAsset->ColorIndex = 3;
             pCamera->OutlineComponent->Multicast_SetActiveReplicated(pCamera->OutlineAsset);
+            //pCamera->OutlineComponent->Multicast();
         }
 
         SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
