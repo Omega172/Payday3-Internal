@@ -113,16 +113,30 @@ void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* p
 		return;
 	}
 
+	if(pObject->IsA(SDK::UGameplayAbility::StaticClass()) || pObject->IsA(SDK::ASBZWeapon::StaticClass())){
+		std::cout << sClassName << "->" << sFnName << "\n";
+		UObjectProcessEvent_o(pObject, pFunction, pParams);
+		return;
+	}
+	
 	if(pObject->IsA(SDK::ACH_PlayerBase_C::StaticClass()) || pObject->IsA(SDK::APlayerController::StaticClass()) || pObject->IsA(SDK::APlayerCameraManager::StaticClass()) || pObject->IsA(SDK::UCharacterMovementComponent::StaticClass()))
 	{
-		if(sFnName.contains("ProjectWorldLocationToScreen") || sFnName.contains("GetCameraLocation") || sFnName.contains("GetCameraRotation") || sFnName.contains("StopAllCameraShakes")){
-			UObjectProcessEvent_o(pObject, pFunction, pParams);
-			return;
-		}
+		static std::string aBlacklist[] = {
+			"ProjectWorldLocationToScreen",
+			"GetCameraLocation",
+			"GetCameraRotation",
+			"StopAllCameraShakes",
+			"GetComponentByClass",
+			"K2_GetActorLocation",
+			"K2_GetActorRotation",
+			"GetActorEnableCollision"
+		};
 
-		if(sFnName.contains("GetComponentByClass")){
-			UObjectProcessEvent_o(pObject, pFunction, pParams);
-			return;
+		for(const std::string& sBlacklistedFunction : aBlacklist){
+			if(sFnName.contains(sBlacklistedFunction)){
+				UObjectProcessEvent_o(pObject, pFunction, pParams);
+				return;
+			}
 		}
 
 		if(sFnName.contains("ServerMovePacked")){

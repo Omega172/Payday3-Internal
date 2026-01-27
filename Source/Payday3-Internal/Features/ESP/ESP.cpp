@@ -475,14 +475,8 @@ namespace ESP
     };
 
     void DrawEnemyESP(ImDrawList* pDrawList, SDK::APlayerController* pPlayerController, SDK::ACH_BaseCop_C* pGuard, EActorType eType, EnemyESP& stSettings){
-        if(stSettings.m_bOutline)
-            pGuard->Multicast_SetMarked(true);
-        else if(stSettings.m_bWasOutlineActive){
-            if(pGuard->OutlineComponent)
-                pGuard->OutlineComponent->Deactivate();
-        }
-            
-        
+        pGuard->Multicast_SetMarked(stSettings.m_bOutline);
+
         SDK::USkeletalMeshComponent* pSkeletalMesh = pGuard->Mesh;
         if (!pSkeletalMesh)
             return;
