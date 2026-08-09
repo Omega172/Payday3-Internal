@@ -383,6 +383,9 @@ void Cheat::OnPlayerControllerTick(){
     if(!g_bDidBackupWeaponData)
         g_bDidBackupWeaponData = BackupWeaponData(pGameInstance);
 
+	if (!pGameInstance->LocalPlayers.IsValidIndex(0))
+		return;
+
 	SDK::ULocalPlayer* pULocalPlayer = pGameInstance->LocalPlayers[0];
 	if (!pULocalPlayer)
 		return;

@@ -247,6 +247,9 @@ namespace Cheat{
         if (!pWorldRuntime)
             return;
 
+        if (!pGameInstance->LocalPlayers.IsValidIndex(0))
+            return;
+
         SDK::ULocalPlayer* pULocalPlayer = pGameInstance->LocalPlayers[0];
         if (!pULocalPlayer)
             return;

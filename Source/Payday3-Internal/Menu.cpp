@@ -3,6 +3,7 @@
 #include <array>
 #include <algorithm>
 #include <cctype>
+#include <exception>
 #include <filesystem>
 #include <fstream>
 #include <string_view>
@@ -710,28 +711,37 @@ namespace Menu
         CheatConfig::Get().m_misc.m_keyClientMoveTeleport.UpdateState();
         CheatConfig::Get().m_misc.m_keyClientMoveFaster.UpdateState();
 
-        SDK::UWorld* pGWorld = SDK::UWorld::GetWorld();
-        if (!pGWorld)
-            return;
+        try {
+            SDK::UWorld* pGWorld = SDK::UWorld::GetWorld();
+            if (!pGWorld)
+                return;
 
-        SDK::UGameInstance* pGameInstance = pGWorld->OwningGameInstance;
-        if (!pGameInstance)
-            return;
+            SDK::UGameInstance* pGameInstance = pGWorld->OwningGameInstance;
+            if (!pGameInstance)
+                return;
 
-        SDK::ULocalPlayer* pLocalPlayer = pGameInstance->LocalPlayers[0];
-        if (!pLocalPlayer)
-            return;
+            // Empty during menu/loading — TArray::operator[] throws and kills the process
+            if (!pGameInstance->LocalPlayers.IsValidIndex(0))
+                return;
 
-        SDK::APlayerController* pPlayerController = pLocalPlayer->PlayerController;
-        if (!pPlayerController)
-            return;
+            SDK::ULocalPlayer* pLocalPlayer = pGameInstance->LocalPlayers[0];
+            if (!pLocalPlayer)
+                return;
 
-        SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
-        if (!pPersistentLevel)
-            return;
+            SDK::APlayerController* pPlayerController = pLocalPlayer->PlayerController;
+            if (!pPlayerController)
+                return;
 
-        ESP::Render(pGWorld, pPlayerController);
-        ESP::RenderDebugESP(pPersistentLevel, pPlayerController);
+            SDK::ULevel* pPersistentLevel = pGWorld->PersistentLevel;
+            if (!pPersistentLevel)
+                return;
+
+            ESP::Render(pGWorld, pPlayerController);
+            ESP::RenderDebugESP(pPersistentLevel, pPlayerController);
+        } catch (const std::exception&) {
+            // Present-thread must not throw; skip this frame's world overlay
+        } catch (...) {
+        }
     }
 
     

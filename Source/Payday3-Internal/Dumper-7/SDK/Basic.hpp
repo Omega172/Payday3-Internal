@@ -777,7 +777,7 @@ template<typename FunctionSignature>
 class TDelegate
 {
 public:
-	static_assert(false, "TDelegate should be used with a function signature. Something might be wrong in the SDK-Generator.");
+	static_assert(sizeof(FunctionSignature) == 0, "TDelegate should be used with a function signature. Something might be wrong in the SDK-Generator.");
 	uint8                                         Pad_0[0x14];                                       // 0x0000(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 
@@ -796,7 +796,7 @@ template<typename FunctionSignature>
 class TMulticastInlineDelegate
 {
 public:
-	static_assert(false, "TMulticastInlineDelegate should be used with a function signature. Something might be wrong in the SDK-Generator.");
+	static_assert(sizeof(FunctionSignature) == 0, "TMulticastInlineDelegate should be used with a function signature. Something might be wrong in the SDK-Generator.");
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 

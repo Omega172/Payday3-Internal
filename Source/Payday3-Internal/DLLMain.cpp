@@ -64,12 +64,15 @@ bool Init()
 		SDK::Offsets::GNames = offsets.GNames;
 		SDK::Offsets::ProcessEvent = offsets.ProcessEvent;
 		SDK::Offsets::ProcessEventIdx = offsets.ProcessEventIdx;
+		SDK::Offsets::GWorld = offsets.GWorld;
 
 		Utils::LogDebug("Offsets updated successfully:");
 		Utils::LogDebug(std::format("GObjects: 0x{:08X}", offsets.GObjects));
 		Utils::LogDebug(std::format("AppendString: 0x{:08X}", offsets.AppendString));
 		Utils::LogDebug(std::format("GNames: 0x{:08X}", offsets.GNames));
 		Utils::LogDebug(std::format("GWorld: 0x{:08X}", offsets.GWorld));
+		if (offsets.GWorld == 0)
+			Utils::LogDebug("GWorld scan returned 0; using UEngine GameViewport fallback");
 		Utils::LogDebug(std::format("ProcessEvent: 0x{:08X}", offsets.ProcessEvent));
 		Utils::LogDebug(std::format("ProcessEventIdx: 0x{:08X}", offsets.ProcessEventIdx));
 	}
@@ -150,6 +153,9 @@ SDK::ASBZPlayerCharacter* GetLocalPlayer()
 	if (!pGameInstance)
 		return{};
 
+	if (!pGameInstance->LocalPlayers.IsValidIndex(0))
+		return{};
+
 	SDK::ULocalPlayer* pLocalPlayer = pGameInstance->LocalPlayers[0];
 	if (!pLocalPlayer)
 		return{};
@@ -194,9 +200,14 @@ using UObjectProcessEvent_t = void(*)(const SDK::UObject*, class SDK::UFunction*
 UObjectProcessEvent_t UObjectProcessEvent_o = nullptr;
 void UObjectProcessEvent_hk(const SDK::UObject* pObject, class SDK::UFunction* pFunction, void* pParams)
 {
+	if (!pObject || !pObject->Class || !pFunction) {
+		UObjectProcessEvent_o(pObject, pFunction, pParams);
+		return;
+	}
+
 	auto nameObject = pObject->Name;
 	auto nameClass = pObject->Class->Name;
-	auto nameSuper = pObject->Class->SuperStruct->Name;
+	auto nameSuper = pObject->Class->SuperStruct ? pObject->Class->SuperStruct->Name : SDK::FName{};
 	auto nameFunction = pFunction->Name;
 
 	if(!Cheat::g_bIsInGame || pObject->Name == FNames::KismetStringLibrary){
@@ -444,37 +455,25 @@ void MainLoop()
 		if (GetAsyncKeyState(CONSOLE_KEY) & 0x1)
 			Globals::g_upConsole->ToggleVisibility();
 
-		// Do frame independent work here
 		SDK::UWorld* pGWorld = SDK::UWorld::GetWorld();
 		if (!pGWorld)
 			ContinueLoop
 
-		FNames::Initialize();
-
-		if (!UObjectProcessEvent_o && !FNames::KismetStringLibrary.IsNone())
-			HookFunction("UObjectProcessEvent", SDK::InSDKUtils::GetVirtualFunction<void*>(pGWorld, SDK::Offsets::ProcessEventIdx), reinterpret_cast<void*>(&UObjectProcessEvent_hk), reinterpret_cast<void**>(&UObjectProcessEvent_o));
-
 		SDK::UGameInstance* pGameInstance = pGWorld->OwningGameInstance;
 		if (!pGameInstance)
+			ContinueLoop
+
+		if (!pGameInstance->LocalPlayers.IsValidIndex(0))
 			ContinueLoop
 
 		SDK::ULocalPlayer* pLocalPlayer = pGameInstance->LocalPlayers[0];
 		if (!pLocalPlayer)
 			ContinueLoop
 
-		if (!ULocalPlayerGetViewPoint_o)
-			HookFunction("ULocalPlayerGetViewPoint", SDK::InSDKUtils::GetVirtualFunction<void*>(pLocalPlayer, ULOCALPLAYER_GETVIEWPOINT_INDEX), reinterpret_cast<void*>(&ULocalPlayerGetViewPoint_hk), reinterpret_cast<void**>(&ULocalPlayerGetViewPoint_o));
-	
 		SDK::APlayerController* pLocalPlayerControllerBase = pLocalPlayer->PlayerController;
 		if (!pLocalPlayerControllerBase)
 			ContinueLoop
 
-		if (!APlayerControllerGetPlayerViewPoint_o)
-			HookFunction("APlayerControllerGetPlayerViewPoint", SDK::InSDKUtils::GetVirtualFunction<void*>(pLocalPlayerControllerBase, APLAYERCONTROLLER_GETPLAYERVIEWPOINT_INDEX), reinterpret_cast<void*>(&APlayerControllerGetPlayerViewPoint_hk), reinterpret_cast<void**>(&APlayerControllerGetPlayerViewPoint_o));
-
-		if(!UObjectProcessEventPlayer_o)
-			HookFunction("UObjectProcessEventPlayer", SDK::InSDKUtils::GetVirtualFunction<void*>(pLocalPlayerControllerBase, SDK::Offsets::ProcessEventIdx), reinterpret_cast<void*>(&UObjectProcessEventPlayer_hk), reinterpret_cast<void**>(&UObjectProcessEventPlayer_o));
-		
 		SDK::ASBZPlayerController* pLocalPlayerController = reinterpret_cast<SDK::ASBZPlayerController*>(pLocalPlayerControllerBase);
 		if (!pLocalPlayerController || !pLocalPlayerController->IsA(SDK::ASBZPlayerController::StaticClass())){
 			Cheat::g_bIsInGame = false;
@@ -494,8 +493,26 @@ void MainLoop()
 			ContinueLoop
 		}
 
+		const bool bInActionPhase = eMachineState == SDK::ESBZGameStateMachineState::SM_ActionPhase;
 		Cheat::g_bIsInStealth = pGameState->CurrentHeistState == SDK::EPD3HeistState::Stealth || pGameState->CurrentHeistState == SDK::EPD3HeistState::Search;
-		Cheat::g_bIsInGame = eMachineState == SDK::ESBZGameStateMachineState::SM_ActionPhase;
+		Cheat::g_bIsInGame = bInActionPhase;
+
+		if (!bInActionPhase)
+			ContinueLoop
+
+		FNames::Initialize();
+
+		if (!UObjectProcessEvent_o && !FNames::KismetStringLibrary.IsNone())
+			HookFunction("UObjectProcessEvent", SDK::InSDKUtils::GetVirtualFunction<void*>(pGWorld, SDK::Offsets::ProcessEventIdx), reinterpret_cast<void*>(&UObjectProcessEvent_hk), reinterpret_cast<void**>(&UObjectProcessEvent_o));
+
+		if (!ULocalPlayerGetViewPoint_o)
+			HookFunction("ULocalPlayerGetViewPoint", SDK::InSDKUtils::GetVirtualFunction<void*>(pLocalPlayer, ULOCALPLAYER_GETVIEWPOINT_INDEX), reinterpret_cast<void*>(&ULocalPlayerGetViewPoint_hk), reinterpret_cast<void**>(&ULocalPlayerGetViewPoint_o));
+
+		if (!APlayerControllerGetPlayerViewPoint_o)
+			HookFunction("APlayerControllerGetPlayerViewPoint", SDK::InSDKUtils::GetVirtualFunction<void*>(pLocalPlayerControllerBase, APLAYERCONTROLLER_GETPLAYERVIEWPOINT_INDEX), reinterpret_cast<void*>(&APlayerControllerGetPlayerViewPoint_hk), reinterpret_cast<void**>(&APlayerControllerGetPlayerViewPoint_o));
+
+		if(!UObjectProcessEventPlayer_o)
+			HookFunction("UObjectProcessEventPlayer", SDK::InSDKUtils::GetVirtualFunction<void*>(pLocalPlayerControllerBase, SDK::Offsets::ProcessEventIdx), reinterpret_cast<void*>(&UObjectProcessEventPlayer_hk), reinterpret_cast<void**>(&UObjectProcessEventPlayer_o));
 
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}

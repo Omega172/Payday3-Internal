@@ -146,32 +146,47 @@ namespace Dx12Hook
 		if (uMsg == WM_KEYDOWN && wParam == VK_INSERT)
 		{
 			g_bShowMenu = !g_bShowMenu;
-			return true; // Block INSERT from game
+			return true;
 		}
 
 		// Let ImGui handle input first
-		if (g_bInitialized && ImGui::GetCurrentContext() && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
-			return true;
+		if (g_bInitialized && ImGui::GetCurrentContext())
+			ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam);
 
-		// Block all input to game when menu is open
+		// Only block input messages while the menu is open — never swallow
+		// paint/activate/size/etc. or the game/DXGI path can destabilize.
 		if (g_bShowMenu)
 		{
-			// Block mouse and keyboard input
 			switch (uMsg)
 			{
-            default:
-				return true; // Block from game
+			case WM_LBUTTONDOWN: case WM_LBUTTONUP: case WM_LBUTTONDBLCLK:
+			case WM_RBUTTONDOWN: case WM_RBUTTONUP: case WM_RBUTTONDBLCLK:
+			case WM_MBUTTONDOWN: case WM_MBUTTONUP: case WM_MBUTTONDBLCLK:
+			case WM_XBUTTONDOWN: case WM_XBUTTONUP: case WM_XBUTTONDBLCLK:
+			case WM_MOUSEWHEEL: case WM_MOUSEHWHEEL:
+			case WM_MOUSEMOVE:
+			case WM_KEYDOWN: case WM_KEYUP:
+			case WM_SYSKEYDOWN: case WM_SYSKEYUP:
+			case WM_CHAR: case WM_SYSCHAR:
+			case WM_INPUT:
+				return true;
+			default:
+				break;
 			}
 		}
 
 		return CallWindowProcW(oWndProc, hWnd, uMsg, wParam, lParam);
 	}
 
-	// Hooked ExecuteCommandLists - captures command queue
+	// Hooked ExecuteCommandLists - captures the DIRECT graphics queue only
 	static void __stdcall HookedExecuteCommandLists(ID3D12CommandQueue* pCommandQueue, UINT NumCommandLists, ID3D12CommandList* const* ppCommandLists)
 	{
-		if (!g_pd3dCommandQueue)
-			g_pd3dCommandQueue = pCommandQueue;
+		if (!g_pd3dCommandQueue && pCommandQueue)
+		{
+			const D3D12_COMMAND_QUEUE_DESC desc = pCommandQueue->GetDesc();
+			if (desc.Type == D3D12_COMMAND_LIST_TYPE_DIRECT)
+				g_pd3dCommandQueue = pCommandQueue;
+		}
 
 		oExecuteCommandLists(pCommandQueue, NumCommandLists, ppCommandLists);
 	}
@@ -286,7 +301,10 @@ namespace Dx12Hook
 	if (g_bShuttingDown)
 		return oPresent(pSwapChain, SyncInterval, Flags);
 
-	Cheat::AimbotOnFrameBegin();
+	try {
+		Cheat::AimbotOnFrameBegin();
+	} catch (...) {
+	}
 	
 	ImGuiContext* ctx = ImGui::GetCurrentContext();
 	if (!ctx)
@@ -297,26 +315,34 @@ namespace Dx12Hook
 	if (!io.Fonts || !io.Fonts->IsBuilt())
 		return oPresent(pSwapChain, SyncInterval, Flags);
 
+	if (!g_pSwapChain || !g_frameContext || g_numBackBuffers == 0)
+		return oPresent(pSwapChain, SyncInterval, Flags);
+
+	const UINT backBufferIdx = g_pSwapChain->GetCurrentBackBufferIndex();
+	if (backBufferIdx >= g_numBackBuffers)
+		return oPresent(pSwapChain, SyncInterval, Flags);
+
+	FrameContext& frameCtx = g_frameContext[backBufferIdx];
+	if (!frameCtx.pBackBuffer || !frameCtx.pCommandAllocator || !g_pd3dCommandList)
+		return oPresent(pSwapChain, SyncInterval, Flags);
+
 	// Start new frame
 	ImGui_ImplDX12_NewFrame();
 	ImGui_ImplWin32_NewFrame();
 	ImGui::NewFrame();
 
-	// Render ImGui content
-	ImGui::GetIO().MouseDrawCursor = g_bShowMenu;
-    Menu::PreDraw();
-    Menu::Draw(g_bShowMenu);
-    Menu::PostDraw();
+	// Render ImGui content — never let C++ exceptions escape the Present hook
+	try {
+		ImGui::GetIO().MouseDrawCursor = g_bShowMenu;
+		Menu::PreDraw();
+		Menu::Draw(g_bShowMenu);
+		Menu::PostDraw();
+	} catch (...) {
+		ImGui::GetIO().MouseDrawCursor = false;
+	}
 
 	// Always end the frame (required by ImGui)
 	ImGui::Render();
-
-	// Get current back buffer
-	UINT backBufferIdx = g_pSwapChain->GetCurrentBackBufferIndex();
-	FrameContext& frameCtx = g_frameContext[backBufferIdx];
-
-	if (!frameCtx.pBackBuffer || !frameCtx.pCommandAllocator)
-		return oPresent(pSwapChain, SyncInterval, Flags);
 
 	if (g_pd3dFence && frameCtx.fenceValue != 0 && g_pd3dFence->GetCompletedValue() < frameCtx.fenceValue)
 	{
@@ -349,20 +375,20 @@ namespace Dx12Hook
 
 	barrier.Transition.StateBefore = D3D12_RESOURCE_STATE_RENDER_TARGET;
 	barrier.Transition.StateAfter = D3D12_RESOURCE_STATE_PRESENT;
-		g_pd3dCommandList->ResourceBarrier(1, &barrier);
-		g_pd3dCommandList->Close();
+	g_pd3dCommandList->ResourceBarrier(1, &barrier);
+	g_pd3dCommandList->Close();
 
-		// Execute command list
-		g_pd3dCommandQueue->ExecuteCommandLists(1, (ID3D12CommandList* const*)&g_pd3dCommandList);
+	// Execute command list
+	g_pd3dCommandQueue->ExecuteCommandLists(1, (ID3D12CommandList* const*)&g_pd3dCommandList);
 
-		if (g_pd3dFence)
-		{
-			g_fenceLastSignaledValue++;
-			g_pd3dCommandQueue->Signal(g_pd3dFence, g_fenceLastSignaledValue);
-			frameCtx.fenceValue = g_fenceLastSignaledValue;
-		}
+	if (g_pd3dFence)
+	{
+		g_fenceLastSignaledValue++;
+		g_pd3dCommandQueue->Signal(g_pd3dFence, g_fenceLastSignaledValue);
+		frameCtx.fenceValue = g_fenceLastSignaledValue;
+	}
 
-		return oPresent(pSwapChain, SyncInterval, Flags);
+	return oPresent(pSwapChain, SyncInterval, Flags);
 	}
 
 	// Hooked ResizeBuffers
