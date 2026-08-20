@@ -13,6 +13,9 @@ or from the official Xenos Github [here](https://github.com/DarthTon/Xenos)
 When making any changes they should all happen to the main v2 branch, and then merged into the v2-ms-store branch
 to make sure any SDK changes are not merged into the v2-ms-store branch make sure you run `git config merge.ours-sdk.driver true` after checking out the branch for the first time.
 
+## Want to add a translation?
+Checkout this file [here](https://github.com/Omega172/Payday3-Internal/blob/v2-beta/Source/Shared/Localization/Locales/Locales.hpp)
+
 ## Building
 
 Requires xmake, and an installation of VisualStudio with the C++ build tools for the compiler.
