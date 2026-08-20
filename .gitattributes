@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# This branch (v2-beta-ms-store) carries its own Unreal SDK dump, distinct from
+# whatever is on the branch being merged in. On merge, always keep our copy of
+# these paths instead of taking incoming changes.
+# NOTE: `merge=ours-sdk` only takes effect if `git config merge.ours-sdk.driver true`
+# has been run in this clone's local .git/config — that registration is NOT stored
+# in this file (git merge drivers can't carry arbitrary logic in .gitattributes),
+# so it must be set up once per machine/clone.
+Source/Internal/Interfaces/Unreal/SDK/** merge=ours-sdk
+Source/Internal/Interfaces/Unreal/SDK.hpp merge=ours-sdk
+Source/Internal/Interfaces/Unreal/UnrealContainers.hpp merge=ours-sdk
+Source/Internal/Interfaces/Unreal/PropertyFixup.hpp merge=ours-sdk
+Source/Internal/Interfaces/Unreal/Assertions.inl merge=ours-sdk
+Source/Internal/Interfaces/Unreal/NameCollisions.inl merge=ours-sdk
+Source/Internal/Interfaces/Unreal/UtfN.hpp merge=ours-sdk
