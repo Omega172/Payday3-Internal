@@ -9,6 +9,10 @@ Download the latest DLL from [here](https://github.com/Omega172/Payday3-Internal
 For injection I recommend downloading Xenos Injector 2.3.2 from [here](https://www.unknowncheats.me/forum/downloads.php?do=file&id=23686)
 or from the official Xenos Github [here](https://github.com/DarthTon/Xenos)
 
+# Contributing
+When making any changes they should all happen to the main v2 branch, and then merged into the v2-ms-store branch
+to make sure any SDK changes are not merged into the v2-ms-store branch make sure you run `git config merge.ours-sdk.driver true` after checking out the branch for the first time.
+
 ## Building
 
 Requires xmake, and an installation of VisualStudio with the C++ build tools for the compiler.
