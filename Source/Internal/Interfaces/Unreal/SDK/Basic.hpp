@@ -48,7 +48,9 @@
 
 SDK_NAMESPACE_START
 
+#ifndef IMPORT_CPP_SDK_INTO_IDA
 using namespace UC;
+#endif // IMPORT_CPP_SDK_INTO_IDA
 
 #include "../NameCollisions.inl"
 
@@ -59,11 +61,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x073CCFE0;
-	constexpr int32 AppendString      = 0x01A730B0;
-	constexpr int32 GNames            = 0x07375100;
-	constexpr int32 GWorld            = 0x07522DE0;
-	constexpr int32 ProcessEvent      = 0x01C6EDD0;
+	constexpr int32 GObjects          = 0x070DC8F0;
+	constexpr int32 AppendString      = 0x019DF9E0;
+	constexpr int32 GNames            = 0x07084A40;
+	constexpr int32 GWorld            = 0x0721E170;
+	constexpr int32 ProcessEvent      = 0x01BDA3B0;
 	constexpr int32 ProcessEventIdx   = 0x00000045;
 }
 
@@ -439,7 +441,7 @@ public:
 		return ClassPtr;
 	}
 
-	template<typename Target, typename = std::enable_if<std::is_base_of_v<Target, ClassType>, bool>::type>
+	template<typename Target, typename = typename std::enable_if<std::is_base_of_v<Target, ClassType>, bool>::type>
 	inline operator TSubclassOf<Target>() const
 	{
 		return ClassPtr;
@@ -777,7 +779,6 @@ template<typename FunctionSignature>
 class TDelegate
 {
 public:
-	static_assert(false, "TDelegate should be used with a function signature. Something might be wrong in the SDK-Generator.");
 	uint8                                         Pad_0[0x14];                                       // 0x0000(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 
@@ -796,7 +797,6 @@ template<typename FunctionSignature>
 class TMulticastInlineDelegate
 {
 public:
-	static_assert(false, "TMulticastInlineDelegate should be used with a function signature. Something might be wrong in the SDK-Generator.");
 	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 
@@ -879,28 +879,36 @@ using T8ByteEnum = TFixedSizeEnum<EnumType, uint64>;
 
 
 #define UE_ENUM_OPERATORS(EEnumClassType)																													\
-																																							\
+																																										\
 inline constexpr EEnumClassType operator|(EEnumClassType Left, EEnumClassType Right)															 			\
-{																																							\
+{																																										\
 	using EnumUnderlayingType = std::underlying_type<EEnumClassType>::type;																					\
 																																							\
 	return static_cast<EEnumClassType>(static_cast<EnumUnderlayingType>(Left) | static_cast<EnumUnderlayingType>(Right));									\
-}																																							\
-																																							\
+}																																										\
+																																										\
 inline EEnumClassType& operator|=(EEnumClassType& Left, EEnumClassType Right)																				\
-{																																							\
+{																																										\
     using EnumUnderlayingType = std::underlying_type<EEnumClassType>::type;																					\
 																																							\
     reinterpret_cast<EnumUnderlayingType&>(Left) |= static_cast<EnumUnderlayingType>(Right);																\
 	return Left;																																			\
-}																																							\
+}																																										\
+																																										\
+inline EEnumClassType& operator|=(EEnumClassType& Left, std::underlying_type<EEnumClassType>::type Right)													\
+{																																										\
+	using EnumUnderlayingType = std::underlying_type<EEnumClassType>::type;																					\
 																																							\
+	reinterpret_cast<EnumUnderlayingType&>(Left) |= Right;																									\
+	return Left;																																			\
+}																																										\
+																																										\
 inline bool operator&(EEnumClassType Left, EEnumClassType Right)																							\
-{																																							\
+{																																										\
 	using EnumUnderlayingType = std::underlying_type<EEnumClassType>::type;																					\
 																																							\
 	return ((static_cast<EnumUnderlayingType>(Left) & static_cast<EnumUnderlayingType>(Right)) == static_cast<EnumUnderlayingType>(Right));					\
-}
+}																																										
 
 enum class EObjectFlags : uint32
 {

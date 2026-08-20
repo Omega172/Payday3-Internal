@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "SBZBackend_structs.hpp"
 #include "Engine_structs.hpp"
 #include "struct_PlayerStatsToCompare_structs.hpp"
 #include "UMG_classes.hpp"
+#include "SBZBackend_structs.hpp"
 
 
 SDK_NAMESPACE_START

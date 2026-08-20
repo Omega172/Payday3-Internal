@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "CoreUObject_classes.hpp"
 #include "OnlineSubsystemEOS_structs.hpp"
+#include "CoreUObject_classes.hpp"
 #include "OnlineSubsystemUtils_classes.hpp"
 
 

@@ -16,142 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillRawTexture2D
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UTextureRenderTarget2D*           Dest                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  TilesX                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  TilesY                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UNiagaraDataInterfaceGrid2DCollection::FillRawTexture2D(const class UNiagaraComponent* Component, class UTextureRenderTarget2D* Dest, int32* TilesX, int32* TilesY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillRawTexture2D");
-
-	Params::NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D Parms{};
-
-	Parms.Component = Component;
-	Parms.Dest = Dest;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (TilesX != nullptr)
-		*TilesX = Parms.TilesX;
-
-	if (TilesY != nullptr)
-		*TilesY = Parms.TilesY;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillTexture2D
-// (Native, Public, BlueprintCallable)
-// Parameters:
-// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UTextureRenderTarget2D*           dest                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   AttributeIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UNiagaraDataInterfaceGrid2DCollection::FillTexture2D(const class UNiagaraComponent* Component, class UTextureRenderTarget2D* dest, int32 AttributeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillTexture2D");
-
-	Params::NiagaraDataInterfaceGrid2DCollection_FillTexture2D Parms{};
-
-	Parms.Component = Component;
-	Parms.dest = dest;
-	Parms.AttributeIndex = AttributeIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetRawTextureSize
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  SizeX                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  SizeY                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UNiagaraDataInterfaceGrid2DCollection::GetRawTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetRawTextureSize");
-
-	Params::NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize Parms{};
-
-	Parms.Component = Component;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (SizeX != nullptr)
-		*SizeX = Parms.SizeX;
-
-	if (SizeY != nullptr)
-		*SizeY = Parms.SizeY;
-}
-
-
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetTextureSize
-// (Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  SizeX                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  SizeY                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UNiagaraDataInterfaceGrid2DCollection::GetTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetTextureSize");
-
-	Params::NiagaraDataInterfaceGrid2DCollection_GetTextureSize Parms{};
-
-	Parms.Component = Component;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (SizeX != nullptr)
-		*SizeX = Parms.SizeX;
-
-	if (SizeY != nullptr)
-		*SizeY = Parms.SizeY;
-}
-
-
 // Function Niagara.NiagaraActor.OnNiagaraSystemFinished
 // (Final, Native, Private)
 // Parameters:
@@ -1752,26 +1616,21 @@ bool UNiagaraComponent::IsPaused() const
 }
 
 
-// Function Niagara.NiagaraPreviewAxis.ApplyToPreview
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Function Niagara.NiagaraPreviewGrid.ActivatePreviews
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UNiagaraComponent*                PreviewComponent                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PreviewIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bIsXAxis                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FString*                          OutLabelText                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bReset                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewComponent, int32 PreviewIndex, bool bIsXAxis, class FString* OutLabelText)
+void ANiagaraPreviewGrid::ActivatePreviews(bool bReset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewAxis", "ApplyToPreview");
+		Func = Class->GetFunction("NiagaraPreviewGrid", "ActivatePreviews");
 
-	Params::NiagaraPreviewAxis_ApplyToPreview Parms{};
+	Params::NiagaraPreviewGrid_ActivatePreviews Parms{};
 
-	Parms.PreviewComponent = PreviewComponent;
-	Parms.PreviewIndex = PreviewIndex;
-	Parms.bIsXAxis = bIsXAxis;
+	Parms.bReset = bReset;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1779,25 +1638,41 @@ void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewCompone
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	if (OutLabelText != nullptr)
-		*OutLabelText = std::move(Parms.OutLabelText);
 }
 
 
-// Function Niagara.NiagaraPreviewAxis.Num
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function Niagara.NiagaraPreviewGrid.DeactivatePreviews
+// (Final, Native, Public, BlueprintCallable)
 
-int32 UNiagaraPreviewAxis::Num()
+void ANiagaraPreviewGrid::DeactivatePreviews()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewAxis", "Num");
+		Func = Class->GetFunction("NiagaraPreviewGrid", "DeactivatePreviews");
 
-	Params::NiagaraPreviewAxis_Num Parms{};
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Niagara.NiagaraPreviewGrid.GetPreviews
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<class UNiagaraComponent*>*       OutPreviews                                            (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+void ANiagaraPreviewGrid::GetPreviews(TArray<class UNiagaraComponent*>* OutPreviews)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraPreviewGrid", "GetPreviews");
+
+	Params::NiagaraPreviewGrid_GetPreviews Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1806,7 +1681,79 @@ int32 UNiagaraPreviewAxis::Num()
 
 	Func->FunctionFlags = Flgs;
 
-	return Parms.ReturnValue;
+	if (OutPreviews != nullptr)
+		*OutPreviews = std::move(Parms.OutPreviews);
+}
+
+
+// Function Niagara.NiagaraPreviewGrid.SetPaused
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bPaused                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ANiagaraPreviewGrid::SetPaused(bool bPaused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraPreviewGrid", "SetPaused");
+
+	Params::NiagaraPreviewGrid_SetPaused Parms{};
+
+	Parms.bPaused = bPaused;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Niagara.NiagaraParticleCallbackHandler.ReceiveParticleData
+// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FBasicParticleData>&Data                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// class UNiagaraSystem*                   NiagaraSystem                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void INiagaraParticleCallbackHandler::ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("NiagaraParticleCallbackHandler", "ReceiveParticleData");
+
+	Params::NiagaraParticleCallbackHandler_ReceiveParticleData Parms{};
+
+	Parms.Data = std::move(Data);
+	Parms.NiagaraSystem = NiagaraSystem;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete
+// (Final, Native, Public)
+
+void UNiagaraScript::RaiseOnGPUCompilationComplete()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraScript", "RaiseOnGPUCompilationComplete");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
 }
 
 
@@ -2802,33 +2749,6 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVectorValue(class
 }
 
 
-// Function Niagara.NiagaraParticleCallbackHandler.ReceiveParticleData
-// (Native, Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<struct FBasicParticleData>&Data                                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// class UNiagaraSystem*                   NiagaraSystem                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void INiagaraParticleCallbackHandler::ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("NiagaraParticleCallbackHandler", "ReceiveParticleData");
-
-	Params::NiagaraParticleCallbackHandler_ReceiveParticleData Parms{};
-
-	Parms.Data = std::move(Data);
-	Parms.NiagaraSystem = NiagaraSystem;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	AsUObject()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function Niagara.NiagaraDataInterfaceGrid3DCollection.FillRawVolumeTexture
 // (Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -2974,6 +2894,142 @@ void UNiagaraDataInterfaceGrid3DCollection::GetTextureSize(const class UNiagaraC
 
 	if (SizeZ != nullptr)
 		*SizeZ = Parms.SizeZ;
+}
+
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillRawTexture2D
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTextureRenderTarget2D*           Dest                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  TilesX                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  TilesY                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UNiagaraDataInterfaceGrid2DCollection::FillRawTexture2D(const class UNiagaraComponent* Component, class UTextureRenderTarget2D* Dest, int32* TilesX, int32* TilesY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillRawTexture2D");
+
+	Params::NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D Parms{};
+
+	Parms.Component = Component;
+	Parms.Dest = Dest;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (TilesX != nullptr)
+		*TilesX = Parms.TilesX;
+
+	if (TilesY != nullptr)
+		*TilesY = Parms.TilesY;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillTexture2D
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTextureRenderTarget2D*           dest                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   AttributeIndex                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UNiagaraDataInterfaceGrid2DCollection::FillTexture2D(const class UNiagaraComponent* Component, class UTextureRenderTarget2D* dest, int32 AttributeIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillTexture2D");
+
+	Params::NiagaraDataInterfaceGrid2DCollection_FillTexture2D Parms{};
+
+	Parms.Component = Component;
+	Parms.dest = dest;
+	Parms.AttributeIndex = AttributeIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetRawTextureSize
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  SizeX                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  SizeY                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UNiagaraDataInterfaceGrid2DCollection::GetRawTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetRawTextureSize");
+
+	Params::NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize Parms{};
+
+	Parms.Component = Component;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (SizeX != nullptr)
+		*SizeX = Parms.SizeX;
+
+	if (SizeY != nullptr)
+		*SizeY = Parms.SizeY;
+}
+
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetTextureSize
+// (Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class UNiagaraComponent*          Component                                              (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  SizeX                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  SizeY                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UNiagaraDataInterfaceGrid2DCollection::GetTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetTextureSize");
+
+	Params::NiagaraDataInterfaceGrid2DCollection_GetTextureSize Parms{};
+
+	Parms.Component = Component;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (SizeX != nullptr)
+		*SizeX = Parms.SizeX;
+
+	if (SizeY != nullptr)
+		*SizeY = Parms.SizeY;
 }
 
 
@@ -3901,63 +3957,26 @@ void ANiagaraPreviewBase::SetSystem(class UNiagaraSystem* InSystem)
 }
 
 
-// Function Niagara.NiagaraPreviewGrid.ActivatePreviews
-// (Final, Native, Public, BlueprintCallable)
+// Function Niagara.NiagaraPreviewAxis.ApplyToPreview
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    bReset                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UNiagaraComponent*                PreviewComponent                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PreviewIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIsXAxis                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString*                          OutLabelText                                           (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ANiagaraPreviewGrid::ActivatePreviews(bool bReset)
+void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewComponent, int32 PreviewIndex, bool bIsXAxis, class FString* OutLabelText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "ActivatePreviews");
+		Func = Class->GetFunction("NiagaraPreviewAxis", "ApplyToPreview");
 
-	Params::NiagaraPreviewGrid_ActivatePreviews Parms{};
+	Params::NiagaraPreviewAxis_ApplyToPreview Parms{};
 
-	Parms.bReset = bReset;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Niagara.NiagaraPreviewGrid.DeactivatePreviews
-// (Final, Native, Public, BlueprintCallable)
-
-void ANiagaraPreviewGrid::DeactivatePreviews()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "DeactivatePreviews");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Niagara.NiagaraPreviewGrid.GetPreviews
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// TArray<class UNiagaraComponent*>*       OutPreviews                                            (Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-
-void ANiagaraPreviewGrid::GetPreviews(TArray<class UNiagaraComponent*>* OutPreviews)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "GetPreviews");
-
-	Params::NiagaraPreviewGrid_GetPreviews Parms{};
+	Parms.PreviewComponent = PreviewComponent;
+	Parms.PreviewIndex = PreviewIndex;
+	Parms.bIsXAxis = bIsXAxis;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3966,26 +3985,24 @@ void ANiagaraPreviewGrid::GetPreviews(TArray<class UNiagaraComponent*>* OutPrevi
 
 	Func->FunctionFlags = Flgs;
 
-	if (OutPreviews != nullptr)
-		*OutPreviews = std::move(Parms.OutPreviews);
+	if (OutLabelText != nullptr)
+		*OutLabelText = std::move(Parms.OutLabelText);
 }
 
 
-// Function Niagara.NiagaraPreviewGrid.SetPaused
-// (Final, Native, Public, BlueprintCallable)
+// Function Niagara.NiagaraPreviewAxis.Num
+// (Native, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bPaused                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void ANiagaraPreviewGrid::SetPaused(bool bPaused)
+int32 UNiagaraPreviewAxis::Num()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "SetPaused");
+		Func = Class->GetFunction("NiagaraPreviewAxis", "Num");
 
-	Params::NiagaraPreviewGrid_SetPaused Parms{};
-
-	Parms.bPaused = bPaused;
+	Params::NiagaraPreviewAxis_Num Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3993,25 +4010,8 @@ void ANiagaraPreviewGrid::SetPaused(bool bPaused)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
 
-
-// Function Niagara.NiagaraScript.RaiseOnGPUCompilationComplete
-// (Final, Native, Public)
-
-void UNiagaraScript::RaiseOnGPUCompilationComplete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraScript", "RaiseOnGPUCompilationComplete");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
+	return Parms.ReturnValue;
 }
 
 

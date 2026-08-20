@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.ExecuteUbergraph_BP_PhoneToolCamera
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PhoneToolCamera_C_ExecuteUbergraph_BP_PhoneToolCamera final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PhoneToolCamera_C_ExecuteUbergraph_BP_PhoneToolCamera;
-
 // Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.UserConstructionScript
 // 0x0070 (0x0070 - 0x0000)
 struct BP_PhoneToolCamera_C_UserConstructionScript final
@@ -47,6 +38,15 @@ public:
 	struct FVector4                               CallFunc_MakeVector4_ReturnValue_2;                // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PhoneToolCamera_C_UserConstructionScript;
+
+// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.ExecuteUbergraph_BP_PhoneToolCamera
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PhoneToolCamera_C_ExecuteUbergraph_BP_PhoneToolCamera final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PhoneToolCamera_C_ExecuteUbergraph_BP_PhoneToolCamera;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

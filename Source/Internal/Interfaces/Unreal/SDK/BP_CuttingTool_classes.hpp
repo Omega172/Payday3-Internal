@@ -31,11 +31,11 @@ public:
 	struct FSBZControlsReference                  In_Controls_Reference_Idle;                        // 0x0608(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_BP_CuttingTool(int32 EntryPoint);
-	void OnActivatedIdle();
-	void OnReady();
-	void OnActivatedUsing();
 	void OnCanceled();
+	void OnActivatedUsing();
+	void OnReady();
+	void OnActivatedIdle();
+	void ExecuteUbergraph_BP_CuttingTool(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

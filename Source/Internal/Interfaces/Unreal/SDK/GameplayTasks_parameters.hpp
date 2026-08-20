@@ -17,42 +17,18 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
-// 0x0040 (0x0040 - 0x0000)
-struct GameplayTask_SpawnActor_SpawnActor final
+// Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
+// 0x0020 (0x0020 - 0x0000)
+struct GameplayTask_WaitDelay_TaskWaitDelay final
 {
 public:
 	TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
-	struct FVector                                SpawnLocation;                                     // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FRotator                               SpawnRotation;                                     // 0x001C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	TSubclassOf<class AActor>                     Class_0;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSpawnOnlyOnAuthority;                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameplayTask_SpawnActor*               ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Priority;                                          // 0x0014(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGameplayTask_WaitDelay*                ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_GameplayTask_SpawnActor_SpawnActor;
-
-// Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
-// 0x0018 (0x0018 - 0x0000)
-struct GameplayTask_SpawnActor_BeginSpawningActor final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 SpawnedActor;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_GameplayTask_SpawnActor_BeginSpawningActor;
-
-// Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
-// 0x0010 (0x0010 - 0x0000)
-struct GameplayTask_SpawnActor_FinishSpawningActor final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 SpawnedActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_GameplayTask_SpawnActor_FinishSpawningActor;
+DUMPER7_ASSERTS_GameplayTask_WaitDelay_TaskWaitDelay;
 
 // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
 // 0x0048 (0x0048 - 0x0000)
@@ -98,18 +74,42 @@ public:
 };
 DUMPER7_ASSERTS_GameplayTask_ClaimResource_ClaimResources;
 
-// Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
-// 0x0020 (0x0020 - 0x0000)
-struct GameplayTask_WaitDelay_TaskWaitDelay final
+// Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
+// 0x0040 (0x0040 - 0x0000)
+struct GameplayTask_SpawnActor_SpawnActor final
 {
 public:
 	TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
-	float                                         Time;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Priority;                                          // 0x0014(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGameplayTask_WaitDelay*                ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                SpawnLocation;                                     // 0x0010(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FRotator                               SpawnRotation;                                     // 0x001C(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TSubclassOf<class AActor>                     Class_0;                                           // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSpawnOnlyOnAuthority;                             // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UGameplayTask_SpawnActor*               ReturnValue;                                       // 0x0038(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_GameplayTask_WaitDelay_TaskWaitDelay;
+DUMPER7_ASSERTS_GameplayTask_SpawnActor_SpawnActor;
+
+// Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
+// 0x0018 (0x0018 - 0x0000)
+struct GameplayTask_SpawnActor_BeginSpawningActor final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 SpawnedActor;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_GameplayTask_SpawnActor_BeginSpawningActor;
+
+// Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
+// 0x0010 (0x0010 - 0x0000)
+struct GameplayTask_SpawnActor_FinishSpawningActor final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 SpawnedActor;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GameplayTask_SpawnActor_FinishSpawningActor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

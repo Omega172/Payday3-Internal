@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Starbreeze_classes.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,8 +28,8 @@ public:
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0380(0x00D0)()
 
 public:
+	void AnimGraph(struct FPoseLink* AnimGraph);
 	void ExecuteUbergraph_ABP_HandCuffsAnimation(int32 EntryPoint);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

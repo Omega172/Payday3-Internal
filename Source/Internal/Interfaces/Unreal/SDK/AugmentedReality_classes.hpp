@@ -10,93 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "AugmentedReality_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AugmentedReality_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 
 
 SDK_NAMESPACE_START
-
-// Class AugmentedReality.ARTrackedGeometry
-// 0x00D0 (0x0100 - 0x0030)
-class UARTrackedGeometry : public UObject
-{
-public:
-	struct FGuid                                  UniqueId;                                          // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0030)(IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x0070(0x0030)(IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	EARTrackingState                              TrackingState;                                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_A1[0xF];                                       // 0x00A1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMRMeshComponent*                       UnderlyingMesh;                                    // 0x00B0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARObjectClassification                       ObjectClassification;                              // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARSpatialMeshUsageFlags                      SpatialMeshUsageFlags;                             // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_BA[0x16];                                      // 0x00BA(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         LastUpdateFrameNumber;                             // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D4[0xC];                                       // 0x00D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   DebugName;                                         // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_EC[0x14];                                      // 0x00EC(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class UMRMeshComponent* GetUnderlyingMesh();
-
-	class FName GetDebugName() const;
-	int32 GetLastUpdateFrameNumber() const;
-	float GetLastUpdateTimestamp() const;
-	struct FTransform GetLocalToTrackingTransform() const;
-	struct FTransform GetLocalToWorldTransform() const;
-	class FString GetName() const;
-	EARObjectClassification GetObjectClassification() const;
-	EARTrackingState GetTrackingState() const;
-	bool HasSpatialMeshUsageFlag(const EARSpatialMeshUsageFlags InFlag) const;
-	bool IsTracked() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ARTrackedGeometry")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ARTrackedGeometry")
-	}
-	static class UARTrackedGeometry* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARTrackedGeometry>();
-	}
-};
-DUMPER7_ASSERTS_UARTrackedGeometry;
-
-// Class AugmentedReality.AREnvironmentCaptureProbe
-// 0x0020 (0x0120 - 0x0100)
-class UAREnvironmentCaptureProbe final : public UARTrackedGeometry
-{
-public:
-	struct FVector                                Extent;                                            // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAREnvironmentCaptureProbeTexture*      EnvironmentCaptureTexture;                         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	class UAREnvironmentCaptureProbeTexture* GetEnvironmentCaptureTexture();
-
-	struct FVector GetExtent() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AREnvironmentCaptureProbe")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AREnvironmentCaptureProbe")
-	}
-	static class UAREnvironmentCaptureProbe* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAREnvironmentCaptureProbe>();
-	}
-};
-DUMPER7_ASSERTS_UAREnvironmentCaptureProbe;
 
 // Class AugmentedReality.ARActor
 // 0x0000 (0x02A8 - 0x02A8)
@@ -383,41 +303,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UARPlaneComponent;
-
-// Class AugmentedReality.ARCandidateObject
-// 0x0040 (0x0078 - 0x0038)
-class UARCandidateObject final : public UDataAsset
-{
-public:
-	TArray<uint8>                                 CandidateObjectData;                               // 0x0038(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	class FString                                 FriendlyName;                                      // 0x0048(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FBox                                   BoundingBox;                                       // 0x0058(0x001C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void SetBoundingBox(const struct FBox& InBoundingBox);
-	void SetCandidateObjectData(const TArray<uint8>& InCandidateObject);
-	void SetFriendlyName(const class FString& NewName);
-
-	const struct FBox GetBoundingBox() const;
-	const TArray<uint8> GetCandidateObjectData() const;
-	class FString GetFriendlyName() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ARCandidateObject")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ARCandidateObject")
-	}
-	static class UARCandidateObject* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARCandidateObject>();
-	}
-};
-DUMPER7_ASSERTS_UARCandidateObject;
 
 // Class AugmentedReality.ARPointComponent
 // 0x0000 (0x02B0 - 0x02B0)
@@ -752,115 +637,6 @@ public:
 };
 DUMPER7_ASSERTS_UARGeoTrackingSupport;
 
-// Class AugmentedReality.ARSessionConfig
-// 0x00E0 (0x0118 - 0x0038)
-class UARSessionConfig final : public UDataAsset
-{
-public:
-	bool                                          bGenerateMeshDataFromTrackedGeometry;              // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bGenerateCollisionForMeshData;                     // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bGenerateNavMeshForMeshData;                       // 0x003A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseMeshDataForOcclusion;                          // 0x003B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bRenderMeshDataInWireframe;                        // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bTrackSceneObjects;                                // 0x003D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUsePersonSegmentationForOcclusion;                // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseSceneDepthForOcclusion;                        // 0x003F(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseAutomaticImageScaleEstimation;                 // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseStandardOnboardingUX;                          // 0x0041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EARWorldAlignment                             WorldAlignment;                                    // 0x0042(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARSessionType                                SessionType;                                       // 0x0043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARPlaneDetectionMode                         PlaneDetectionMode;                                // 0x0044(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bHorizontalPlaneDetection;                         // 0x0045(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bVerticalPlaneDetection;                           // 0x0046(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableAutoFocus;                                  // 0x0047(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARLightEstimationMode                        LightEstimationMode;                               // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARFrameSyncMode                              FrameSyncMode;                                     // 0x0049(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableAutomaticCameraOverlay;                     // 0x004A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bEnableAutomaticCameraTracking;                    // 0x004B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bResetCameraTracking;                              // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bResetTrackedObjects;                              // 0x004D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UARCandidateImage*>              CandidateImages;                                   // 0x0050(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	int32                                         MaxNumSimultaneousImagesTracked;                   // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EAREnvironmentCaptureProbeType                EnvironmentCaptureProbeType;                       // 0x0064(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<uint8>                                 WorldMapData;                                      // 0x0068(0x0010)(Edit, ZeroConstructor, EditConst, Protected, NativeAccessSpecifierProtected)
-	TArray<class UARCandidateObject*>             CandidateObjects;                                  // 0x0078(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	struct FARVideoFormat                         DesiredVideoFormat;                                // 0x0088(0x000C)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	bool                                          bUseOptimalVideoFormat;                            // 0x0094(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARFaceTrackingDirection                      FaceTrackingDirection;                             // 0x0095(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARFaceTrackingUpdate                         FaceTrackingUpdate;                                // 0x0096(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxNumberOfTrackedFaces;                           // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<uint8>                                 SerializedARCandidateImageDatabase;                // 0x00A0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	EARSessionTrackingFeature                     EnabledSessionTrackingFeature;                     // 0x00B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	EARSceneReconstruction                        SceneReconstructionMethod;                         // 0x00B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UARPlaneComponent>          PlaneComponentClass;                               // 0x00B8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARPointComponent>          PointComponentClass;                               // 0x00C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARFaceComponent>           FaceComponentClass;                                // 0x00C8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARImageComponent>          ImageComponentClass;                               // 0x00D0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARQRCodeComponent>         QRCodeComponentClass;                              // 0x00D8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARPoseComponent>           PoseComponentClass;                                // 0x00E0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UAREnvironmentProbeComponent> EnvironmentProbeComponentClass;                  // 0x00E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARObjectComponent>         ObjectComponentClass;                              // 0x00F0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARMeshComponent>           MeshComponentClass;                                // 0x00F8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UARGeoAnchorComponent>      GeoAnchorComponentClass;                           // 0x0100(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMaterialInterface*                     DefaultMeshMaterial;                               // 0x0108(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UMaterialInterface*                     DefaultWireframeMeshMaterial;                      // 0x0110(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	void AddCandidateImage(class UARCandidateImage* NewCandidateImage);
-	void AddCandidateObject(class UARCandidateObject* CandidateObject);
-	void SetCandidateObjectList(const TArray<class UARCandidateObject*>& InCandidateObjects);
-	void SetDesiredVideoFormat(const struct FARVideoFormat& NewFormat);
-	void SetEnableAutoFocus(bool bNewValue);
-	void SetFaceTrackingDirection(EARFaceTrackingDirection InDirection);
-	void SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate);
-	void SetResetCameraTracking(bool bNewValue);
-	void SetResetTrackedObjects(bool bNewValue);
-	void SetSceneReconstructionMethod(EARSceneReconstruction InSceneReconstructionMethod);
-	void SetSessionTrackingFeatureToEnable(EARSessionTrackingFeature InSessionTrackingFeature);
-	void SetWorldMapData(const TArray<uint8>& WorldMapData_0);
-
-	const TArray<class UARCandidateImage*> GetCandidateImageList() const;
-	const TArray<class UARCandidateObject*> GetCandidateObjectList() const;
-	struct FARVideoFormat GetDesiredVideoFormat() const;
-	EARSessionTrackingFeature GetEnabledSessionTrackingFeature() const;
-	EAREnvironmentCaptureProbeType GetEnvironmentCaptureProbeType() const;
-	EARFaceTrackingDirection GetFaceTrackingDirection() const;
-	EARFaceTrackingUpdate GetFaceTrackingUpdate() const;
-	EARFrameSyncMode GetFrameSyncMode() const;
-	EARLightEstimationMode GetLightEstimationMode() const;
-	int32 GetMaxNumSimultaneousImagesTracked() const;
-	EARPlaneDetectionMode GetPlaneDetectionMode() const;
-	EARSceneReconstruction GetSceneReconstructionMethod() const;
-	EARSessionType GetSessionType() const;
-	EARWorldAlignment GetWorldAlignment() const;
-	const TArray<uint8> GetWorldMapData() const;
-	bool ShouldEnableAutoFocus() const;
-	bool ShouldEnableCameraTracking() const;
-	bool ShouldRenderCameraOverlay() const;
-	bool ShouldResetCameraTracking() const;
-	bool ShouldResetTrackedObjects() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ARSessionConfig")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ARSessionConfig")
-	}
-	static class UARSessionConfig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UARSessionConfig>();
-	}
-};
-DUMPER7_ASSERTS_UARSessionConfig;
-
 // Class AugmentedReality.CheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy
 // 0x0050 (0x00A8 - 0x0058)
 class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy final : public UARBaseAsyncTaskBlueprintProxy
@@ -1056,6 +832,115 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UARPin;
+
+// Class AugmentedReality.ARSessionConfig
+// 0x00E0 (0x0118 - 0x0038)
+class UARSessionConfig final : public UDataAsset
+{
+public:
+	bool                                          bGenerateMeshDataFromTrackedGeometry;              // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bGenerateCollisionForMeshData;                     // 0x0039(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bGenerateNavMeshForMeshData;                       // 0x003A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseMeshDataForOcclusion;                          // 0x003B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bRenderMeshDataInWireframe;                        // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTrackSceneObjects;                                // 0x003D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUsePersonSegmentationForOcclusion;                // 0x003E(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseSceneDepthForOcclusion;                        // 0x003F(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseAutomaticImageScaleEstimation;                 // 0x0040(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseStandardOnboardingUX;                          // 0x0041(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EARWorldAlignment                             WorldAlignment;                                    // 0x0042(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARSessionType                                SessionType;                                       // 0x0043(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARPlaneDetectionMode                         PlaneDetectionMode;                                // 0x0044(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bHorizontalPlaneDetection;                         // 0x0045(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bVerticalPlaneDetection;                           // 0x0046(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableAutoFocus;                                  // 0x0047(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARLightEstimationMode                        LightEstimationMode;                               // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARFrameSyncMode                              FrameSyncMode;                                     // 0x0049(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableAutomaticCameraOverlay;                     // 0x004A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bEnableAutomaticCameraTracking;                    // 0x004B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bResetCameraTracking;                              // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bResetTrackedObjects;                              // 0x004D(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_4E[0x2];                                       // 0x004E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UARCandidateImage*>              CandidateImages;                                   // 0x0050(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	int32                                         MaxNumSimultaneousImagesTracked;                   // 0x0060(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EAREnvironmentCaptureProbeType                EnvironmentCaptureProbeType;                       // 0x0064(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<uint8>                                 WorldMapData;                                      // 0x0068(0x0010)(Edit, ZeroConstructor, EditConst, Protected, NativeAccessSpecifierProtected)
+	TArray<class UARCandidateObject*>             CandidateObjects;                                  // 0x0078(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	struct FARVideoFormat                         DesiredVideoFormat;                                // 0x0088(0x000C)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	bool                                          bUseOptimalVideoFormat;                            // 0x0094(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARFaceTrackingDirection                      FaceTrackingDirection;                             // 0x0095(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARFaceTrackingUpdate                         FaceTrackingUpdate;                                // 0x0096(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxNumberOfTrackedFaces;                           // 0x0098(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<uint8>                                 SerializedARCandidateImageDatabase;                // 0x00A0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	EARSessionTrackingFeature                     EnabledSessionTrackingFeature;                     // 0x00B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARSceneReconstruction                        SceneReconstructionMethod;                         // 0x00B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UARPlaneComponent>          PlaneComponentClass;                               // 0x00B8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARPointComponent>          PointComponentClass;                               // 0x00C0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARFaceComponent>           FaceComponentClass;                                // 0x00C8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARImageComponent>          ImageComponentClass;                               // 0x00D0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARQRCodeComponent>         QRCodeComponentClass;                              // 0x00D8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARPoseComponent>           PoseComponentClass;                                // 0x00E0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UAREnvironmentProbeComponent> EnvironmentProbeComponentClass;                  // 0x00E8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARObjectComponent>         ObjectComponentClass;                              // 0x00F0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARMeshComponent>           MeshComponentClass;                                // 0x00F8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UARGeoAnchorComponent>      GeoAnchorComponentClass;                           // 0x0100(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMaterialInterface*                     DefaultMeshMaterial;                               // 0x0108(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UMaterialInterface*                     DefaultWireframeMeshMaterial;                      // 0x0110(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void AddCandidateImage(class UARCandidateImage* NewCandidateImage);
+	void AddCandidateObject(class UARCandidateObject* CandidateObject);
+	void SetCandidateObjectList(const TArray<class UARCandidateObject*>& InCandidateObjects);
+	void SetDesiredVideoFormat(const struct FARVideoFormat& NewFormat);
+	void SetEnableAutoFocus(bool bNewValue);
+	void SetFaceTrackingDirection(EARFaceTrackingDirection InDirection);
+	void SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate);
+	void SetResetCameraTracking(bool bNewValue);
+	void SetResetTrackedObjects(bool bNewValue);
+	void SetSceneReconstructionMethod(EARSceneReconstruction InSceneReconstructionMethod);
+	void SetSessionTrackingFeatureToEnable(EARSessionTrackingFeature InSessionTrackingFeature);
+	void SetWorldMapData(const TArray<uint8>& WorldMapData_0);
+
+	const TArray<class UARCandidateImage*> GetCandidateImageList() const;
+	const TArray<class UARCandidateObject*> GetCandidateObjectList() const;
+	struct FARVideoFormat GetDesiredVideoFormat() const;
+	EARSessionTrackingFeature GetEnabledSessionTrackingFeature() const;
+	EAREnvironmentCaptureProbeType GetEnvironmentCaptureProbeType() const;
+	EARFaceTrackingDirection GetFaceTrackingDirection() const;
+	EARFaceTrackingUpdate GetFaceTrackingUpdate() const;
+	EARFrameSyncMode GetFrameSyncMode() const;
+	EARLightEstimationMode GetLightEstimationMode() const;
+	int32 GetMaxNumSimultaneousImagesTracked() const;
+	EARPlaneDetectionMode GetPlaneDetectionMode() const;
+	EARSceneReconstruction GetSceneReconstructionMethod() const;
+	EARSessionType GetSessionType() const;
+	EARWorldAlignment GetWorldAlignment() const;
+	const TArray<uint8> GetWorldMapData() const;
+	bool ShouldEnableAutoFocus() const;
+	bool ShouldEnableCameraTracking() const;
+	bool ShouldRenderCameraOverlay() const;
+	bool ShouldResetCameraTracking() const;
+	bool ShouldResetTrackedObjects() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ARSessionConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ARSessionConfig")
+	}
+	static class UARSessionConfig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARSessionConfig>();
+	}
+};
+DUMPER7_ASSERTS_UARSessionConfig;
 
 // Class AugmentedReality.ARSharedWorldGameMode
 // 0x0068 (0x0400 - 0x0398)
@@ -1297,6 +1182,55 @@ public:
 };
 DUMPER7_ASSERTS_UARTraceResultDummy;
 
+// Class AugmentedReality.ARTrackedGeometry
+// 0x00D0 (0x0100 - 0x0030)
+class UARTrackedGeometry : public UObject
+{
+public:
+	struct FGuid                                  UniqueId;                                          // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTransform                             LocalToTrackingTransform;                          // 0x0040(0x0030)(IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FTransform                             LocalToAlignedTrackingTransform;                   // 0x0070(0x0030)(IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	EARTrackingState                              TrackingState;                                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_A1[0xF];                                       // 0x00A1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMRMeshComponent*                       UnderlyingMesh;                                    // 0x00B0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARObjectClassification                       ObjectClassification;                              // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	EARSpatialMeshUsageFlags                      SpatialMeshUsageFlags;                             // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_BA[0x16];                                      // 0x00BA(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         LastUpdateFrameNumber;                             // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_D4[0xC];                                       // 0x00D4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   DebugName;                                         // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_EC[0x14];                                      // 0x00EC(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class UMRMeshComponent* GetUnderlyingMesh();
+
+	class FName GetDebugName() const;
+	int32 GetLastUpdateFrameNumber() const;
+	float GetLastUpdateTimestamp() const;
+	struct FTransform GetLocalToTrackingTransform() const;
+	struct FTransform GetLocalToWorldTransform() const;
+	class FString GetName() const;
+	EARObjectClassification GetObjectClassification() const;
+	EARTrackingState GetTrackingState() const;
+	bool HasSpatialMeshUsageFlag(const EARSpatialMeshUsageFlags InFlag) const;
+	bool IsTracked() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ARTrackedGeometry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ARTrackedGeometry")
+	}
+	static class UARTrackedGeometry* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARTrackedGeometry>();
+	}
+};
+DUMPER7_ASSERTS_UARTrackedGeometry;
+
 // Class AugmentedReality.ARPlaneGeometry
 // 0x0040 (0x0140 - 0x0100)
 class UARPlaneGeometry final : public UARTrackedGeometry
@@ -1442,6 +1376,37 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UARFaceGeometry;
+
+// Class AugmentedReality.AREnvironmentCaptureProbe
+// 0x0020 (0x0120 - 0x0100)
+class UAREnvironmentCaptureProbe final : public UARTrackedGeometry
+{
+public:
+	struct FVector                                Extent;                                            // 0x0100(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAREnvironmentCaptureProbeTexture*      EnvironmentCaptureTexture;                         // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_118[0x8];                                      // 0x0118(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class UAREnvironmentCaptureProbeTexture* GetEnvironmentCaptureTexture();
+
+	struct FVector GetExtent() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AREnvironmentCaptureProbe")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AREnvironmentCaptureProbe")
+	}
+	static class UAREnvironmentCaptureProbe* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAREnvironmentCaptureProbe>();
+	}
+};
+DUMPER7_ASSERTS_UAREnvironmentCaptureProbe;
 
 // Class AugmentedReality.ARTrackedObject
 // 0x0010 (0x0110 - 0x0100)
@@ -1645,5 +1610,40 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UARCandidateImage;
+
+// Class AugmentedReality.ARCandidateObject
+// 0x0040 (0x0078 - 0x0038)
+class UARCandidateObject final : public UDataAsset
+{
+public:
+	TArray<uint8>                                 CandidateObjectData;                               // 0x0038(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	class FString                                 FriendlyName;                                      // 0x0048(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FBox                                   BoundingBox;                                       // 0x0058(0x001C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetBoundingBox(const struct FBox& InBoundingBox);
+	void SetCandidateObjectData(const TArray<uint8>& InCandidateObject);
+	void SetFriendlyName(const class FString& NewName);
+
+	const struct FBox GetBoundingBox() const;
+	const TArray<uint8> GetCandidateObjectData() const;
+	class FString GetFriendlyName() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ARCandidateObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ARCandidateObject")
+	}
+	static class UARCandidateObject* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UARCandidateObject>();
+	}
+};
+DUMPER7_ASSERTS_UARCandidateObject;
 
 SDK_NAMESPACE_END

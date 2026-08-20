@@ -39,17 +39,14 @@ enum class ELiveLinkTimecodeProviderEvaluationType : uint32
 	ELiveLinkTimecodeProviderEvaluationType_MAX = 3,
 };
 
-// ScriptStruct LiveLink.LiveLinkRoleProjectSetting
-// 0x0028 (0x0028 - 0x0000)
-struct FLiveLinkRoleProjectSetting final
+// ScriptStruct LiveLink.LiveLinkRetargetAssetReference
+// 0x0001 (0x0001 - 0x0000)
+struct FLiveLinkRetargetAssetReference final
 {
 public:
-	TSubclassOf<class ULiveLinkRole>              Role;                                              // 0x0000(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class ULiveLinkSubjectSettings>   SettingClass;                                      // 0x0008(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor;             // 0x0010(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<TSubclassOf<class ULiveLinkFramePreProcessor>> FramePreProcessors;                        // 0x0018(0x0010)(Edit, ZeroConstructor, Config, UObjectWrapper, NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FLiveLinkRoleProjectSetting;
+DUMPER7_ASSERTS_FLiveLinkRetargetAssetReference;
 
 // ScriptStruct LiveLink.AnimNode_LiveLinkPose
 // 0x0048 (0x0068 - 0x0020)
@@ -87,13 +84,16 @@ public:
 };
 DUMPER7_ASSERTS_FProviderPollResult;
 
-// ScriptStruct LiveLink.LiveLinkRetargetAssetReference
-// 0x0001 (0x0001 - 0x0000)
-struct FLiveLinkRetargetAssetReference final
+// ScriptStruct LiveLink.LiveLinkRoleProjectSetting
+// 0x0028 (0x0028 - 0x0000)
+struct FLiveLinkRoleProjectSetting final
 {
 public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class ULiveLinkRole>              Role;                                              // 0x0000(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULiveLinkSubjectSettings>   SettingClass;                                      // 0x0008(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor;             // 0x0010(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<TSubclassOf<class ULiveLinkFramePreProcessor>> FramePreProcessors;                        // 0x0018(0x0010)(Edit, ZeroConstructor, Config, UObjectWrapper, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FLiveLinkRetargetAssetReference;
+DUMPER7_ASSERTS_FLiveLinkRoleProjectSetting;
 
 SDK_NAMESPACE_END

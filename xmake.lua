@@ -68,6 +68,7 @@ target("Payday-Internal-v2")
     set_languages("c++latest")
     set_kind("shared")
     set_targetdir(is_mode("debug") and "Build/Debug/Payday-Internal-v2" or "Build/Release/Payday-Internal-v2")
+    set_filename("Payday3-Internal-v2-WinGDK.dll")
     set_pcxxheader("Source/Internal/PCH/pch.h")
 
     add_deps("Shared")

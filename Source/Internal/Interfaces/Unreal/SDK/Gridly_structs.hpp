@@ -22,17 +22,6 @@ enum class EGridlyColumnDataType : uint8
 	EGridlyColumnDataType_MAX                = 2,
 };
 
-// ScriptStruct Gridly.GridlyColumnInfo
-// 0x0018 (0x0018 - 0x0000)
-struct FGridlyColumnInfo final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EGridlyColumnDataType                         DataType;                                          // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FGridlyColumnInfo;
-
 // ScriptStruct Gridly.GridlyResult
 // 0x0010 (0x0010 - 0x0000)
 struct FGridlyResult final
@@ -63,5 +52,16 @@ public:
 	TArray<struct FGridlyTableCell>               Cells;                                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FGridlyTableRow;
+
+// ScriptStruct Gridly.GridlyColumnInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FGridlyColumnInfo final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EGridlyColumnDataType                         DataType;                                          // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FGridlyColumnInfo;
 
 SDK_NAMESPACE_END

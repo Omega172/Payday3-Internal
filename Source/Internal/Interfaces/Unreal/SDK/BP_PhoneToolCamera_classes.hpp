@@ -33,11 +33,11 @@ public:
 	struct FColor                                 Phone_Success_Color;                               // 0x061C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PhoneToolCamera(int32 EntryPoint);
-	void OnActivated();
-	void OnCanceled();
-	void OnReady();
 	void UserConstructionScript();
+	void OnReady();
+	void OnCanceled();
+	void OnActivated();
+	void ExecuteUbergraph_BP_PhoneToolCamera(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

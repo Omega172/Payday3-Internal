@@ -17,45 +17,6 @@
 
 SDK_NAMESPACE_START
 
-// Class TimeManagement.TimeManagementBlueprintLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UTimeManagementBlueprintLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static struct FFrameNumber Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
-	static struct FFrameNumber Add_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static int32 Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber);
-	static float Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate);
-	static float Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime);
-	static class FString Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay);
-	static struct FFrameNumber Divide_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static struct FTimecode GetTimecode();
-	static struct FFrameRate GetTimecodeFrameRate();
-	static bool IsValid_Framerate(const struct FFrameRate& InFrameRate);
-	static bool IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate);
-	static struct FFrameNumber Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static struct FFrameTime Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate);
-	static struct FFrameTime SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate);
-	static struct FFrameNumber Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
-	static struct FFrameNumber Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
-	static struct FFrameTime TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("TimeManagementBlueprintLibrary")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"TimeManagementBlueprintLibrary")
-	}
-	static class UTimeManagementBlueprintLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UTimeManagementBlueprintLibrary>();
-	}
-};
-DUMPER7_ASSERTS_UTimeManagementBlueprintLibrary;
-
 // Class TimeManagement.TimeSynchronizationSource
 // 0x0008 (0x0038 - 0x0030)
 class UTimeSynchronizationSource : public UObject
@@ -168,5 +129,44 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UGenlockedTimecodeProvider;
+
+// Class TimeManagement.TimeManagementBlueprintLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UTimeManagementBlueprintLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static struct FFrameNumber Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
+	static struct FFrameNumber Add_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static int32 Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber);
+	static float Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate);
+	static float Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime);
+	static class FString Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay);
+	static struct FFrameNumber Divide_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static struct FTimecode GetTimecode();
+	static struct FFrameRate GetTimecodeFrameRate();
+	static bool IsValid_Framerate(const struct FFrameRate& InFrameRate);
+	static bool IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate);
+	static struct FFrameNumber Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static struct FFrameTime Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate);
+	static struct FFrameTime SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate);
+	static struct FFrameNumber Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B);
+	static struct FFrameNumber Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
+	static struct FFrameTime TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("TimeManagementBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeManagementBlueprintLibrary")
+	}
+	static class UTimeManagementBlueprintLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UTimeManagementBlueprintLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UTimeManagementBlueprintLibrary;
 
 SDK_NAMESPACE_END

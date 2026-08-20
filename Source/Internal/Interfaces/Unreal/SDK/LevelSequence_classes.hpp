@@ -10,41 +10,46 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "LevelSequence_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
+#include "Engine_classes.hpp"
 #include "UMG_classes.hpp"
 #include "DeveloperSettings_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
-// Class LevelSequence.AnimSequenceLevelSequenceLink
-// 0x0030 (0x0060 - 0x0030)
-class UAnimSequenceLevelSequenceLink final : public UAssetUserData
+// Class LevelSequence.LevelSequenceMetaData
+// 0x0000 (0x0000 - 0x0000)
+class ILevelSequenceMetaData final
 {
-public:
-	struct FGuid                                  SkelTrackGuid;                                     // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        PathToLevelSequence;                               // 0x0040(0x0020)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("AnimSequenceLevelSequenceLink")
+		STATIC_CLASS_IMPL("LevelSequenceMetaData")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"AnimSequenceLevelSequenceLink")
+		STATIC_NAME_IMPL(L"LevelSequenceMetaData")
 	}
-	static class UAnimSequenceLevelSequenceLink* GetDefaultObj()
+	static class ILevelSequenceMetaData* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UAnimSequenceLevelSequenceLink>();
+		return GetDefaultObjImpl<ILevelSequenceMetaData>();
+	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
 	}
 };
-DUMPER7_ASSERTS_UAnimSequenceLevelSequenceLink;
+DUMPER7_ASSERTS_ILevelSequenceMetaData;
 
 // Class LevelSequence.LevelSequence
 // 0x0168 (0x01D0 - 0x0068)
@@ -82,6 +87,30 @@ public:
 };
 DUMPER7_ASSERTS_ULevelSequence;
 
+// Class LevelSequence.AnimSequenceLevelSequenceLink
+// 0x0030 (0x0060 - 0x0030)
+class UAnimSequenceLevelSequenceLink final : public UAssetUserData
+{
+public:
+	struct FGuid                                  SkelTrackGuid;                                     // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        PathToLevelSequence;                               // 0x0040(0x0020)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("AnimSequenceLevelSequenceLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimSequenceLevelSequenceLink")
+	}
+	static class UAnimSequenceLevelSequenceLink* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UAnimSequenceLevelSequenceLink>();
+	}
+};
+DUMPER7_ASSERTS_UAnimSequenceLevelSequenceLink;
+
 // Class LevelSequence.DefaultLevelSequenceInstanceData
 // 0x0040 (0x0070 - 0x0030)
 class UDefaultLevelSequenceInstanceData final : public UObject
@@ -106,35 +135,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UDefaultLevelSequenceInstanceData;
-
-// Class LevelSequence.LevelSequenceMetaData
-// 0x0000 (0x0000 - 0x0000)
-class ILevelSequenceMetaData final
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LevelSequenceMetaData")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LevelSequenceMetaData")
-	}
-	static class ILevelSequenceMetaData* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ILevelSequenceMetaData>();
-	}
-
-	class UObject* AsUObject()
-	{
-		return reinterpret_cast<UObject*>(this);
-	}
-	const class UObject* AsUObject() const
-	{
-		return reinterpret_cast<const UObject*>(this);
-	}
-};
-DUMPER7_ASSERTS_ILevelSequenceMetaData;
 
 // Class LevelSequence.LevelSequenceBurnInInitSettings
 // 0x0000 (0x0030 - 0x0030)

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -42,9 +42,9 @@ public:
 	struct FSBZAnimNode_CopyBoneDeltaMultiTargets SBZAnimGraphNode_CopyBoneDeltaMultiTargets;        // 0x1520(0x0120)()
 
 public:
-	void ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

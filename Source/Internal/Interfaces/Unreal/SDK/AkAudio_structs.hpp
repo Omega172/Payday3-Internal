@@ -527,6 +527,24 @@ enum class ESBZAkPoolType : uint8
 	ESBZAkPoolType_MAX                       = 8,
 };
 
+// ScriptStruct AkAudio.MovieSceneAkAudioEventTemplate
+// 0x0008 (0x0028 - 0x0020)
+struct FMovieSceneAkAudioEventTemplate final : public FMovieSceneEvalTemplate
+{
+public:
+	class UMovieSceneAkAudioEventSection*         Section;                                           // 0x0020(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMovieSceneAkAudioEventTemplate;
+
+// ScriptStruct AkAudio.AKWaapiJsonObject
+// 0x0010 (0x0010 - 0x0000)
+struct alignas(0x08) FAKWaapiJsonObject final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAKWaapiJsonObject;
+
 // ScriptStruct AkAudio.AkExternalSourceInfo
 // 0x0038 (0x0038 - 0x0000)
 struct FAkExternalSourceInfo final
@@ -541,26 +559,6 @@ public:
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAkExternalSourceInfo;
-
-// ScriptStruct AkAudio.AkAcousticSurface
-// 0x0018 (0x0018 - 0x0000)
-struct FAkAcousticSurface final
-{
-public:
-	uint32                                        Texture;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAkAcousticSurface;
-
-// ScriptStruct AkAudio.AKWaapiJsonObject
-// 0x0010 (0x0010 - 0x0000)
-struct alignas(0x08) FAKWaapiJsonObject final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAKWaapiJsonObject;
 
 // ScriptStruct AkAudio.AkWaapiSubscriptionId
 // 0x0008 (0x0008 - 0x0000)
@@ -765,6 +763,17 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAkGeometrySurfaceOverride;
+
+// ScriptStruct AkAudio.AkAcousticSurface
+// 0x0018 (0x0018 - 0x0000)
+struct FAkAcousticSurface final
+{
+public:
+	uint32                                        Texture;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Occlusion;                                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAkAcousticSurface;
 
 // ScriptStruct AkAudio.AkTriangle
 // 0x0008 (0x0008 - 0x0000)
@@ -1137,15 +1146,6 @@ public:
 	uint32                                        uMaxSystemAudioObjects;                            // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAkXSXAdvancedInitializationSettings;
-
-// ScriptStruct AkAudio.MovieSceneAkAudioEventTemplate
-// 0x0008 (0x0028 - 0x0020)
-struct FMovieSceneAkAudioEventTemplate final : public FMovieSceneEvalTemplate
-{
-public:
-	class UMovieSceneAkAudioEventSection*         Section;                                           // 0x0020(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMovieSceneAkAudioEventTemplate;
 
 // ScriptStruct AkAudio.MovieSceneAkAudioRTPCTemplate
 // 0x0008 (0x0028 - 0x0020)

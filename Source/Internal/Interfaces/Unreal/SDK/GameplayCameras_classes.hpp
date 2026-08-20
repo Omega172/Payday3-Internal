@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "GameplayCameras_structs.hpp"
 #include "MovieSceneTracks_classes.hpp"
+#include "GameplayCameras_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -64,26 +64,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_USimpleCameraShakePattern;
-
-// Class GameplayCameras.MovieSceneMatineeCameraShakeEvaluator
-// 0x0000 (0x0030 - 0x0030)
-class UMovieSceneMatineeCameraShakeEvaluator final : public UMovieSceneCameraShakeEvaluator
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MovieSceneMatineeCameraShakeEvaluator")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MovieSceneMatineeCameraShakeEvaluator")
-	}
-	static class UMovieSceneMatineeCameraShakeEvaluator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneMatineeCameraShakeEvaluator>();
-	}
-};
-DUMPER7_ASSERTS_UMovieSceneMatineeCameraShakeEvaluator;
 
 // Class GameplayCameras.ConstantCameraShakePattern
 // 0x0018 (0x0058 - 0x0040)
@@ -225,6 +205,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UMatineeCameraShakePattern;
+
+// Class GameplayCameras.MovieSceneMatineeCameraShakeEvaluator
+// 0x0000 (0x0030 - 0x0030)
+class UMovieSceneMatineeCameraShakeEvaluator final : public UMovieSceneCameraShakeEvaluator
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MovieSceneMatineeCameraShakeEvaluator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneMatineeCameraShakeEvaluator")
+	}
+	static class UMovieSceneMatineeCameraShakeEvaluator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneMatineeCameraShakeEvaluator>();
+	}
+};
+DUMPER7_ASSERTS_UMovieSceneMatineeCameraShakeEvaluator;
 
 // Class GameplayCameras.MatineeCameraShakeFunctionLibrary
 // 0x0000 (0x0030 - 0x0030)

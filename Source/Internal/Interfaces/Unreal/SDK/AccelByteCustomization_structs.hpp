@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AccelByteUe4Sdk_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AccelByteUe4Sdk_structs.hpp"
 
 
 SDK_NAMESPACE_START

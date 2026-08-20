@@ -84,26 +84,6 @@ public:
 };
 DUMPER7_ASSERTS_ULiveLinkSourceSettings;
 
-// Class LiveLinkInterface.LiveLinkFrameTranslator
-// 0x0000 (0x0030 - 0x0030)
-class ULiveLinkFrameTranslator : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkFrameTranslator")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkFrameTranslator")
-	}
-	static class ULiveLinkFrameTranslator* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkFrameTranslator>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkFrameTranslator;
-
 // Class LiveLinkInterface.LiveLinkRole
 // 0x0000 (0x0030 - 0x0030)
 class ULiveLinkRole : public UObject
@@ -123,6 +103,66 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkRole;
+
+// Class LiveLinkInterface.LiveLinkBasicRole
+// 0x0000 (0x0030 - 0x0030)
+class ULiveLinkBasicRole : public ULiveLinkRole
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkBasicRole")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkBasicRole")
+	}
+	static class ULiveLinkBasicRole* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkBasicRole>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkBasicRole;
+
+// Class LiveLinkInterface.LiveLinkAnimationRole
+// 0x0000 (0x0030 - 0x0030)
+class ULiveLinkAnimationRole final : public ULiveLinkBasicRole
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkAnimationRole")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkAnimationRole")
+	}
+	static class ULiveLinkAnimationRole* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkAnimationRole>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkAnimationRole;
+
+// Class LiveLinkInterface.LiveLinkFrameTranslator
+// 0x0000 (0x0030 - 0x0030)
+class ULiveLinkFrameTranslator : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkFrameTranslator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkFrameTranslator")
+	}
+	static class ULiveLinkFrameTranslator* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkFrameTranslator>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkFrameTranslator;
 
 // Class LiveLinkInterface.LiveLinkVirtualSubject
 // 0x0138 (0x0168 - 0x0030)
@@ -152,25 +192,25 @@ public:
 };
 DUMPER7_ASSERTS_ULiveLinkVirtualSubject;
 
-// Class LiveLinkInterface.LiveLinkBasicRole
+// Class LiveLinkInterface.LiveLinkSourceFactory
 // 0x0000 (0x0030 - 0x0030)
-class ULiveLinkBasicRole : public ULiveLinkRole
+class ULiveLinkSourceFactory : public UObject
 {
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("LiveLinkBasicRole")
+		STATIC_CLASS_IMPL("LiveLinkSourceFactory")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"LiveLinkBasicRole")
+		STATIC_NAME_IMPL(L"LiveLinkSourceFactory")
 	}
-	static class ULiveLinkBasicRole* GetDefaultObj()
+	static class ULiveLinkSourceFactory* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<ULiveLinkBasicRole>();
+		return GetDefaultObjImpl<ULiveLinkSourceFactory>();
 	}
 };
-DUMPER7_ASSERTS_ULiveLinkBasicRole;
+DUMPER7_ASSERTS_ULiveLinkSourceFactory;
 
 // Class LiveLinkInterface.LiveLinkTransformRole
 // 0x0000 (0x0030 - 0x0030)
@@ -211,46 +251,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkCameraRole;
-
-// Class LiveLinkInterface.LiveLinkSourceFactory
-// 0x0000 (0x0030 - 0x0030)
-class ULiveLinkSourceFactory : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkSourceFactory")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkSourceFactory")
-	}
-	static class ULiveLinkSourceFactory* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkSourceFactory>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkSourceFactory;
-
-// Class LiveLinkInterface.LiveLinkAnimationRole
-// 0x0000 (0x0030 - 0x0030)
-class ULiveLinkAnimationRole final : public ULiveLinkBasicRole
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkAnimationRole")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkAnimationRole")
-	}
-	static class ULiveLinkAnimationRole* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkAnimationRole>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkAnimationRole;
 
 // Class LiveLinkInterface.LiveLinkController
 // 0x0000 (0x0030 - 0x0030)

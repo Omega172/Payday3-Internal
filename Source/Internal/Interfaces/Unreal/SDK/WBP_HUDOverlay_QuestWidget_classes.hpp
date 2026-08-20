@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Starbreeze_structs.hpp"
-#include "Starbreeze_classes.hpp"
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Starbreeze_structs.hpp"
+#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START

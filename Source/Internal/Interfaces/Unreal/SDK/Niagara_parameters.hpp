@@ -18,55 +18,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillRawTexture2D
-// 0x0020 (0x0020 - 0x0000)
-struct NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D final
-{
-public:
-	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTextureRenderTarget2D*                 Dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TilesX;                                            // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TilesY;                                            // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D;
-
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillTexture2D
-// 0x0018 (0x0018 - 0x0000)
-struct NiagaraDataInterfaceGrid2DCollection_FillTexture2D final
-{
-public:
-	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UTextureRenderTarget2D*                 dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AttributeIndex;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_FillTexture2D;
-
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetRawTextureSize
-// 0x0010 (0x0010 - 0x0000)
-struct NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize final
-{
-public:
-	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SizeX;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SizeY;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize;
-
-// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetTextureSize
-// 0x0010 (0x0010 - 0x0000)
-struct NiagaraDataInterfaceGrid2DCollection_GetTextureSize final
-{
-public:
-	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SizeX;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SizeY;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_GetTextureSize;
-
 // Function Niagara.NiagaraActor.OnNiagaraSystemFinished
 // 0x0008 (0x0008 - 0x0000)
 struct NiagaraActor_OnNiagaraSystemFinished final
@@ -643,27 +594,42 @@ public:
 };
 DUMPER7_ASSERTS_NiagaraComponent_IsPaused;
 
-// Function Niagara.NiagaraPreviewAxis.ApplyToPreview
-// 0x0020 (0x0020 - 0x0000)
-struct NiagaraPreviewAxis_ApplyToPreview final
+// Function Niagara.NiagaraPreviewGrid.ActivatePreviews
+// 0x0001 (0x0001 - 0x0000)
+struct NiagaraPreviewGrid_ActivatePreviews final
 {
 public:
-	class UNiagaraComponent*                      PreviewComponent;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PreviewIndex;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsXAxis;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 OutLabelText;                                      // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bReset;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_NiagaraPreviewAxis_ApplyToPreview;
+DUMPER7_ASSERTS_NiagaraPreviewGrid_ActivatePreviews;
 
-// Function Niagara.NiagaraPreviewAxis.Num
-// 0x0004 (0x0004 - 0x0000)
-struct NiagaraPreviewAxis_Num final
+// Function Niagara.NiagaraPreviewGrid.GetPreviews
+// 0x0010 (0x0010 - 0x0000)
+struct NiagaraPreviewGrid_GetPreviews final
 {
 public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UNiagaraComponent*>              OutPreviews;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_NiagaraPreviewAxis_Num;
+DUMPER7_ASSERTS_NiagaraPreviewGrid_GetPreviews;
+
+// Function Niagara.NiagaraPreviewGrid.SetPaused
+// 0x0001 (0x0001 - 0x0000)
+struct NiagaraPreviewGrid_SetPaused final
+{
+public:
+	bool                                          bPaused;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_NiagaraPreviewGrid_SetPaused;
+
+// Function Niagara.NiagaraParticleCallbackHandler.ReceiveParticleData
+// 0x0018 (0x0018 - 0x0000)
+struct NiagaraParticleCallbackHandler_ReceiveParticleData final
+{
+public:
+	TArray<struct FBasicParticleData>             Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class UNiagaraSystem*                         NiagaraSystem;                                     // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_NiagaraParticleCallbackHandler_ReceiveParticleData;
 
 // Function Niagara.NiagaraDataInterfaceArrayFunctionLibrary.GetNiagaraArrayBool
 // 0x0028 (0x0028 - 0x0000)
@@ -1073,16 +1039,6 @@ public:
 };
 DUMPER7_ASSERTS_NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayVectorValue;
 
-// Function Niagara.NiagaraParticleCallbackHandler.ReceiveParticleData
-// 0x0018 (0x0018 - 0x0000)
-struct NiagaraParticleCallbackHandler_ReceiveParticleData final
-{
-public:
-	TArray<struct FBasicParticleData>             Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class UNiagaraSystem*                         NiagaraSystem;                                     // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_NiagaraParticleCallbackHandler_ReceiveParticleData;
-
 // Function Niagara.NiagaraDataInterfaceGrid3DCollection.FillRawVolumeTexture
 // 0x0020 (0x0020 - 0x0000)
 struct NiagaraDataInterfaceGrid3DCollection_FillRawVolumeTexture final
@@ -1136,6 +1092,55 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_NiagaraDataInterfaceGrid3DCollection_GetTextureSize;
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillRawTexture2D
+// 0x0020 (0x0020 - 0x0000)
+struct NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D final
+{
+public:
+	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 Dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TilesX;                                            // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TilesY;                                            // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D;
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.FillTexture2D
+// 0x0018 (0x0018 - 0x0000)
+struct NiagaraDataInterfaceGrid2DCollection_FillTexture2D final
+{
+public:
+	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 dest;                                              // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AttributeIndex;                                    // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_FillTexture2D;
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetRawTextureSize
+// 0x0010 (0x0010 - 0x0000)
+struct NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize final
+{
+public:
+	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SizeX;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SizeY;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize;
+
+// Function Niagara.NiagaraDataInterfaceGrid2DCollection.GetTextureSize
+// 0x0010 (0x0010 - 0x0000)
+struct NiagaraDataInterfaceGrid2DCollection_GetTextureSize final
+{
+public:
+	const class UNiagaraComponent*                Component;                                         // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SizeX;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SizeY;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_NiagaraDataInterfaceGrid2DCollection_GetTextureSize;
 
 // Function Niagara.NiagaraFunctionLibrary.GetNiagaraParameterCollection
 // 0x0018 (0x0018 - 0x0000)
@@ -1486,32 +1491,27 @@ public:
 };
 DUMPER7_ASSERTS_NiagaraPreviewBase_SetSystem;
 
-// Function Niagara.NiagaraPreviewGrid.ActivatePreviews
-// 0x0001 (0x0001 - 0x0000)
-struct NiagaraPreviewGrid_ActivatePreviews final
+// Function Niagara.NiagaraPreviewAxis.ApplyToPreview
+// 0x0020 (0x0020 - 0x0000)
+struct NiagaraPreviewAxis_ApplyToPreview final
 {
 public:
-	bool                                          bReset;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UNiagaraComponent*                      PreviewComponent;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PreviewIndex;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsXAxis;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 OutLabelText;                                      // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_NiagaraPreviewGrid_ActivatePreviews;
+DUMPER7_ASSERTS_NiagaraPreviewAxis_ApplyToPreview;
 
-// Function Niagara.NiagaraPreviewGrid.GetPreviews
-// 0x0010 (0x0010 - 0x0000)
-struct NiagaraPreviewGrid_GetPreviews final
+// Function Niagara.NiagaraPreviewAxis.Num
+// 0x0004 (0x0004 - 0x0000)
+struct NiagaraPreviewAxis_Num final
 {
 public:
-	TArray<class UNiagaraComponent*>              OutPreviews;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_NiagaraPreviewGrid_GetPreviews;
-
-// Function Niagara.NiagaraPreviewGrid.SetPaused
-// 0x0001 (0x0001 - 0x0000)
-struct NiagaraPreviewGrid_SetPaused final
-{
-public:
-	bool                                          bPaused;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_NiagaraPreviewGrid_SetPaused;
+DUMPER7_ASSERTS_NiagaraPreviewAxis_Num;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

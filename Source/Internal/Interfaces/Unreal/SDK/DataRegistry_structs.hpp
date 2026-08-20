@@ -62,15 +62,6 @@ enum class EDataRegistryAvailability : uint8
 	EDataRegistryAvailability_MAX            = 6,
 };
 
-// ScriptStruct DataRegistry.DataRegistryIdFormat
-// 0x000C (0x000C - 0x0000)
-struct FDataRegistryIdFormat final
-{
-public:
-	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDataRegistryIdFormat;
-
 // ScriptStruct DataRegistry.DataRegistryLookup
 // 0x0020 (0x0020 - 0x0000)
 struct alignas(0x08) FDataRegistryLookup final
@@ -133,5 +124,14 @@ public:
 	float                                         ForceReleaseSeconds;                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDataRegistryCachePolicy;
+
+// ScriptStruct DataRegistry.DataRegistryIdFormat
+// 0x000C (0x000C - 0x0000)
+struct FDataRegistryIdFormat final
+{
+public:
+	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDataRegistryIdFormat;
 
 SDK_NAMESPACE_END

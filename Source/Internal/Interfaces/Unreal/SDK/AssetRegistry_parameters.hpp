@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "AssetRegistry_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AssetRegistry_structs.hpp"
 
 
 SDK_NAMESPACE_START

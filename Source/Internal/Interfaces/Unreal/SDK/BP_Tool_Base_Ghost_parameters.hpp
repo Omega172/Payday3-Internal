@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C.OnGhostToolStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Tool_Base_Ghost_C_OnGhostToolStateChanged final
+{
+public:
+	ESBZPlacementState                            NewPlacementState;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Tool_Base_Ghost_C_OnGhostToolStateChanged;
+
 // Function BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C.ExecuteUbergraph_BP_Tool_Base_Ghost
 // 0x0008 (0x0008 - 0x0000)
 struct BP_Tool_Base_Ghost_C_ExecuteUbergraph_BP_Tool_Base_Ghost final
@@ -26,15 +35,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_BP_Tool_Base_Ghost_C_ExecuteUbergraph_BP_Tool_Base_Ghost;
-
-// Function BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C.OnGhostToolStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Tool_Base_Ghost_C_OnGhostToolStateChanged final
-{
-public:
-	ESBZPlacementState                            NewPlacementState;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Tool_Base_Ghost_C_OnGhostToolStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

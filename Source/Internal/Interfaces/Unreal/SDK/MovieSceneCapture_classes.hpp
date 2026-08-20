@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "MovieSceneCapture_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "MovieSceneCapture_structs.hpp"
 #include "ImageWriteQueue_structs.hpp"
 
 

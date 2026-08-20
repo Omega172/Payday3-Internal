@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_classes.hpp"
 #include "UMG_structs.hpp"
+#include "Starbreeze_classes.hpp"
 #include "E_ButtonLockedState_structs.hpp"
 
 

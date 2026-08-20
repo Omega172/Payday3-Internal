@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "S_ContractorHeists_structs.hpp"
-#include "Starbreeze_structs.hpp"
-#include "UMG_classes.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_classes.hpp"
+#include "Starbreeze_structs.hpp"
 
 
 SDK_NAMESPACE_START

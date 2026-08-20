@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // Class TLMVoiceChat.TLMVoiceChatSubsystem
-// 0x0230 (0x0268 - 0x0038)
+// 0x0238 (0x0270 - 0x0038)
 class UTLMVoiceChatSubsystem final : public UGameInstanceSubsystem
 {
 public:
@@ -25,7 +25,7 @@ public:
 	TMulticastInlineDelegate<void(const class FString& EOSProdID, bool bIsMuted)> OnPlayerMuteUpdated; // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const class FString& EOSProdID, bool bIsBlocked)> OnPlayerBlockUpdated; // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const class FString& EOSId, bool bJoined)> OnVoiceSessionParticipantsChange_EOSId; // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_120[0x148];                                    // 0x0120(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_120[0x150];                                    // 0x0120(0x0150)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool GetAudioInputMute();

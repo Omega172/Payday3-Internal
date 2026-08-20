@@ -26,8 +26,8 @@ public:
 	class UMaterialInterface*                     DefaultMaterial;                                   // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Tool_Base_Ghost(int32 EntryPoint);
 	void OnGhostToolStateChanged(ESBZPlacementState NewPlacementState);
+	void ExecuteUbergraph_BP_Tool_Base_Ghost(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

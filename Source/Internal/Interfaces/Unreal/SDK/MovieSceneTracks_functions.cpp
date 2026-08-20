@@ -16,21 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function MovieSceneTracks.MovieSceneAudioSection.SetSound
+// Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class USoundBase*                       InSound                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    InShotDisplayName                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UMovieSceneAudioSection::SetSound(class USoundBase* InSound)
+void UMovieSceneCinematicShotSection::SetShotDisplayName(const class FString& InShotDisplayName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "SetSound");
+		Func = Class->GetFunction("MovieSceneCinematicShotSection", "SetShotDisplayName");
 
-	Params::MovieSceneAudioSection_SetSound Parms{};
+	Params::MovieSceneCinematicShotSection_SetShotDisplayName Parms{};
 
-	Parms.InSound = InSound;
+	Parms.InShotDisplayName = std::move(InShotDisplayName);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -41,69 +41,19 @@ void UMovieSceneAudioSection::SetSound(class USoundBase* InSound)
 }
 
 
-// Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FFrameNumber&              InStartOffset                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMovieSceneAudioSection::SetStartOffset(const struct FFrameNumber& InStartOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "SetStartOffset");
-
-	Params::MovieSceneAudioSection_SetStartOffset Parms{};
-
-	Parms.InStartOffset = std::move(InStartOffset);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MovieSceneTracks.MovieSceneAudioSection.GetSound
+// Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class USoundBase*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class USoundBase* UMovieSceneAudioSection::GetSound() const
+class FString UMovieSceneCinematicShotSection::GetShotDisplayName() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "GetSound");
+		Func = Class->GetFunction("MovieSceneCinematicShotSection", "GetShotDisplayName");
 
-	Params::MovieSceneAudioSection_GetSound Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// struct FFrameNumber                     ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FFrameNumber UMovieSceneAudioSection::GetStartOffset() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "GetStartOffset");
-
-	Params::MovieSceneAudioSection_GetStartOffset Parms{};
+	Params::MovieSceneCinematicShotSection_GetShotDisplayName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -554,6 +504,106 @@ const struct FMovieSceneObjectBindingID UMovieScene3DConstraintSection::GetConst
 }
 
 
+// Function MovieSceneTracks.MovieSceneAudioSection.SetSound
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USoundBase*                       InSound                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMovieSceneAudioSection::SetSound(class USoundBase* InSound)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneAudioSection", "SetSound");
+
+	Params::MovieSceneAudioSection_SetSound Parms{};
+
+	Parms.InSound = InSound;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FFrameNumber&              InStartOffset                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UMovieSceneAudioSection::SetStartOffset(const struct FFrameNumber& InStartOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneAudioSection", "SetStartOffset");
+
+	Params::MovieSceneAudioSection_SetStartOffset Parms{};
+
+	Parms.InStartOffset = std::move(InStartOffset);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function MovieSceneTracks.MovieSceneAudioSection.GetSound
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class USoundBase*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class USoundBase* UMovieSceneAudioSection::GetSound() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneAudioSection", "GetSound");
+
+	Params::MovieSceneAudioSection_GetSound Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FFrameNumber                     ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FFrameNumber UMovieSceneAudioSection::GetStartOffset() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MovieSceneAudioSection", "GetStartOffset");
+
+	Params::MovieSceneAudioSection_GetStartOffset Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -592,56 +642,6 @@ const struct FMovieSceneObjectBindingID UMovieSceneCameraCutSection::GetCameraBi
 		Func = Class->GetFunction("MovieSceneCameraCutSection", "GetCameraBindingID");
 
 	Params::MovieSceneCameraCutSection_GetCameraBindingID Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    InShotDisplayName                                      (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UMovieSceneCinematicShotSection::SetShotDisplayName(const class FString& InShotDisplayName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCinematicShotSection", "SetShotDisplayName");
-
-	Params::MovieSceneCinematicShotSection_SetShotDisplayName Parms{};
-
-	Parms.InShotDisplayName = std::move(InShotDisplayName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FString UMovieSceneCinematicShotSection::GetShotDisplayName() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCinematicShotSection", "GetShotDisplayName");
-
-	Params::MovieSceneCinematicShotSection_GetShotDisplayName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

@@ -15,6 +15,15 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct EngineMessages.EngineServiceTerminate
+// 0x0010 (0x0010 - 0x0000)
+struct FEngineServiceTerminate final
+{
+public:
+	class FString                                 UserName;                                          // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FEngineServiceTerminate;
+
 // ScriptStruct EngineMessages.EngineServiceNotification
 // 0x0018 (0x0018 - 0x0000)
 struct FEngineServiceNotification final
@@ -24,15 +33,6 @@ public:
 	double                                        TimeSeconds;                                       // 0x0010(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FEngineServiceNotification;
-
-// ScriptStruct EngineMessages.EngineServiceTerminate
-// 0x0010 (0x0010 - 0x0000)
-struct FEngineServiceTerminate final
-{
-public:
-	class FString                                 UserName;                                          // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FEngineServiceTerminate;
 
 // ScriptStruct EngineMessages.EngineServiceExecuteCommand
 // 0x0020 (0x0020 - 0x0000)

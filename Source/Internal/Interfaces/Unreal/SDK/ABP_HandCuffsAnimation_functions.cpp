@@ -16,6 +16,27 @@
 
 SDK_NAMESPACE_START
 
+// Function ABP_HandCuffsAnimation.ABP_HandCuffsAnimation_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
+
+void UABP_HandCuffsAnimation_C::AnimGraph(struct FPoseLink* AnimGraph)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_HandCuffsAnimation_C", "AnimGraph");
+
+	Params::ABP_HandCuffsAnimation_C_AnimGraph Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph != nullptr)
+		*AnimGraph = std::move(Parms.AnimGraph);
+}
+
+
 // Function ABP_HandCuffsAnimation.ABP_HandCuffsAnimation_C.ExecuteUbergraph_ABP_HandCuffsAnimation
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,27 +54,6 @@ void UABP_HandCuffsAnimation_C::ExecuteUbergraph_ABP_HandCuffsAnimation(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_HandCuffsAnimation.ABP_HandCuffsAnimation_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
-
-void UABP_HandCuffsAnimation_C::AnimGraph(struct FPoseLink* AnimGraph_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_HandCuffsAnimation_C", "AnimGraph");
-
-	Params::ABP_HandCuffsAnimation_C_AnimGraph Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 

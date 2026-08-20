@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Starbreeze_structs.hpp"
 #include "UMG_classes.hpp"
+#include "Starbreeze_structs.hpp"
 
 
 SDK_NAMESPACE_START

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "Starbreeze_structs.hpp"
 
 
 SDK_NAMESPACE_START

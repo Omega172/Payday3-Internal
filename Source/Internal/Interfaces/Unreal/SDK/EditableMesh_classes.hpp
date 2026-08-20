@@ -36,6 +36,32 @@ public:
 };
 DUMPER7_ASSERTS_UEditableMeshAdapter;
 
+// Class EditableMesh.EditableStaticMeshAdapter
+// 0x00B8 (0x00E8 - 0x0030)
+class UEditableStaticMeshAdapter final : public UEditableMeshAdapter
+{
+public:
+	class UStaticMesh*                            StaticMesh;                                        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UStaticMesh*                            OriginalStaticMesh;                                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         StaticMeshLODIndex;                                // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_44[0xA4];                                      // 0x0044(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EditableStaticMeshAdapter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableStaticMeshAdapter")
+	}
+	static class UEditableStaticMeshAdapter* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEditableStaticMeshAdapter>();
+	}
+};
+DUMPER7_ASSERTS_UEditableStaticMeshAdapter;
+
 // Class EditableMesh.EditableGeometryCollectionAdapter
 // 0x00B0 (0x00E0 - 0x0030)
 class UEditableGeometryCollectionAdapter final : public UEditableMeshAdapter
@@ -247,31 +273,5 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UEditableMeshFactory;
-
-// Class EditableMesh.EditableStaticMeshAdapter
-// 0x00B8 (0x00E8 - 0x0030)
-class UEditableStaticMeshAdapter final : public UEditableMeshAdapter
-{
-public:
-	class UStaticMesh*                            StaticMesh;                                        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UStaticMesh*                            OriginalStaticMesh;                                // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         StaticMeshLODIndex;                                // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_44[0xA4];                                      // 0x0044(0x00A4)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("EditableStaticMeshAdapter")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"EditableStaticMeshAdapter")
-	}
-	static class UEditableStaticMeshAdapter* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEditableStaticMeshAdapter>();
-	}
-};
-DUMPER7_ASSERTS_UEditableStaticMeshAdapter;
 
 SDK_NAMESPACE_END

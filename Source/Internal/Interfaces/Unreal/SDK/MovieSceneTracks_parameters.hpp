@@ -18,41 +18,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function MovieSceneTracks.MovieSceneAudioSection.SetSound
-// 0x0008 (0x0008 - 0x0000)
-struct MovieSceneAudioSection_SetSound final
+// Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
+// 0x0010 (0x0010 - 0x0000)
+struct MovieSceneCinematicShotSection_SetShotDisplayName final
 {
 public:
-	class USoundBase*                             InSound;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InShotDisplayName;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MovieSceneAudioSection_SetSound;
+DUMPER7_ASSERTS_MovieSceneCinematicShotSection_SetShotDisplayName;
 
-// Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
-// 0x0004 (0x0004 - 0x0000)
-struct MovieSceneAudioSection_SetStartOffset final
+// Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
+// 0x0010 (0x0010 - 0x0000)
+struct MovieSceneCinematicShotSection_GetShotDisplayName final
 {
 public:
-	struct FFrameNumber                           InStartOffset;                                     // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MovieSceneAudioSection_SetStartOffset;
-
-// Function MovieSceneTracks.MovieSceneAudioSection.GetSound
-// 0x0008 (0x0008 - 0x0000)
-struct MovieSceneAudioSection_GetSound final
-{
-public:
-	class USoundBase*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneAudioSection_GetSound;
-
-// Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
-// 0x0004 (0x0004 - 0x0000)
-struct MovieSceneAudioSection_GetStartOffset final
-{
-public:
-	struct FFrameNumber                           ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneAudioSection_GetStartOffset;
+DUMPER7_ASSERTS_MovieSceneCinematicShotSection_GetShotDisplayName;
 
 // Function MovieSceneTracks.MovieSceneParameterSection.AddBoolParameterKey
 // 0x0014 (0x0014 - 0x0000)
@@ -223,6 +205,42 @@ public:
 };
 DUMPER7_ASSERTS_MovieScene3DConstraintSection_GetConstraintBindingID;
 
+// Function MovieSceneTracks.MovieSceneAudioSection.SetSound
+// 0x0008 (0x0008 - 0x0000)
+struct MovieSceneAudioSection_SetSound final
+{
+public:
+	class USoundBase*                             InSound;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAudioSection_SetSound;
+
+// Function MovieSceneTracks.MovieSceneAudioSection.SetStartOffset
+// 0x0004 (0x0004 - 0x0000)
+struct MovieSceneAudioSection_SetStartOffset final
+{
+public:
+	struct FFrameNumber                           InStartOffset;                                     // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAudioSection_SetStartOffset;
+
+// Function MovieSceneTracks.MovieSceneAudioSection.GetSound
+// 0x0008 (0x0008 - 0x0000)
+struct MovieSceneAudioSection_GetSound final
+{
+public:
+	class USoundBase*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAudioSection_GetSound;
+
+// Function MovieSceneTracks.MovieSceneAudioSection.GetStartOffset
+// 0x0004 (0x0004 - 0x0000)
+struct MovieSceneAudioSection_GetStartOffset final
+{
+public:
+	struct FFrameNumber                           ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MovieSceneAudioSection_GetStartOffset;
+
 // Function MovieSceneTracks.MovieSceneCameraCutSection.SetCameraBindingID
 // 0x0018 (0x0018 - 0x0000)
 struct MovieSceneCameraCutSection_SetCameraBindingID final
@@ -240,24 +258,6 @@ public:
 	struct FMovieSceneObjectBindingID             ReturnValue;                                       // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCameraCutSection_GetCameraBindingID;
-
-// Function MovieSceneTracks.MovieSceneCinematicShotSection.SetShotDisplayName
-// 0x0010 (0x0010 - 0x0000)
-struct MovieSceneCinematicShotSection_SetShotDisplayName final
-{
-public:
-	class FString                                 InShotDisplayName;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneCinematicShotSection_SetShotDisplayName;
-
-// Function MovieSceneTracks.MovieSceneCinematicShotSection.GetShotDisplayName
-// 0x0010 (0x0010 - 0x0000)
-struct MovieSceneCinematicShotSection_GetShotDisplayName final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MovieSceneCinematicShotSection_GetShotDisplayName;
 
 // Function MovieSceneTracks.MovieSceneLevelVisibilitySection.SetLevelNames
 // 0x0010 (0x0010 - 0x0000)

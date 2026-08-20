@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "SequencerScripting_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "MovieScene_structs.hpp"
-#include "SequencerScripting_structs.hpp"
 #include "CoreUObject_classes.hpp"
 
 
