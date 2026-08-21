@@ -1,4 +1,7 @@
 #include "pch.h"
+#include "../Features/Player/Player.hpp"
+#include "../Features/Visuals/Visuals.hpp"
+#include "../Features/Aimbot/Aimbot.hpp"
 
 void GUI::Render()
 {
@@ -50,6 +53,9 @@ void GUI::Render()
 			});
 
 			GuiSidebar->AddElement(GuiFeatureSeperator.get());
+			GuiSidebar->AddElement(pPlayer->GetMenuButton());
+			GuiSidebar->AddElement(pVisuals->GetMenuButton());
+			GuiSidebar->AddElement(pAimbot->GetMenuButton());
 			GuiSidebar->AddElement(GuiMiscSeperator.get());
 			GuiSidebar->AddElement(GuiStyle.get());
 			GuiSidebar->AddElement(GuiSettings.get());

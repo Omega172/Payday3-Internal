@@ -123,10 +123,7 @@ Locale_t localeEnglish{
 		{ "VISUALS_ITEM_CASH_COLOR"Hashed, "Cash Color" },
 		{ "VISUALS_ITEM_DEPOSITBOX_COLOR"Hashed, "Deposit Box Color" },
 		{ "VISUALS_ITEM_KEYCARD_COLOR"Hashed, "Keycard Color" },
-		{ "VISUALS_SHOW_COPS"Hashed, "Cops" },
-		{ "VISUALS_SHOW_CIVILIANS"Hashed, "Civilians" },
-		{ "VISUALS_SHOW_CASH"Hashed, "Cash" },
-		{ "VISUALS_SHOW_DEPOSITBOX"Hashed, "Deposit Box" },
-		{ "VISUALS_SHOW_KEYCARDS"Hashed, "Keycards" }
+		{ "VISUALS_FILTERS"Hashed, ""},
+		{ "VISUALS_ITEM_FILTERS"Hashed, ""},
 	}),
 };

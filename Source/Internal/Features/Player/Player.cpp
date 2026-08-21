@@ -16,8 +16,6 @@ void Player::HandleMenu()
 	static std::once_flag onceflag;
 
 	std::call_once(onceflag, [this]() {
-		Framework::menu->GetChild("SIDEBAR")->InsertElementAfter(m_pMenuButton.get(), "FEATURE_SEPERATOR");
-
 		auto pHeaderGroup = static_cast<HeaderGroup*>(Framework::menu->GetChild("HEADER_GROUP"));
 		if (pHeaderGroup)
 			pHeaderGroup->AddHeaders(Player::s_iPlayerPageId, { "PLAYER_TAB1"Hashed, "PLAYER_TAB2"Hashed, "PLAYER_TAB3"Hashed });

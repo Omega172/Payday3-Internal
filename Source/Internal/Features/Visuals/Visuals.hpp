@@ -70,12 +70,8 @@ private:
 	std::unique_ptr<ColorPicker> m_pItemDepositBoxColor = std::make_unique<ColorPicker>("VISUALS_ITEM_DEPOSITBOX_COLOR", "VISUALS_ITEM_DEPOSITBOX_COLOR"Hashed);
 	std::unique_ptr<ColorPicker> m_pItemKeycardColor = std::make_unique<ColorPicker>("VISUALS_ITEM_KEYCARD_COLOR", "VISUALS_ITEM_KEYCARD_COLOR"Hashed);
 
-	// No MultiSelectCombo in this widget library - individual checkboxes per filter option instead.
-	std::unique_ptr<Checkbox> m_pShowCops = std::make_unique<Checkbox>("VISUALS_SHOW_COPS", "VISUALS_SHOW_COPS"Hashed);
-	std::unique_ptr<Checkbox> m_pShowCivilians = std::make_unique<Checkbox>("VISUALS_SHOW_CIVILIANS", "VISUALS_SHOW_CIVILIANS"Hashed, ElementBase::Style_t{ .eSameLine = ElementBase::ESameLine::Same });
-	std::unique_ptr<Checkbox> m_pShowCash = std::make_unique<Checkbox>("VISUALS_SHOW_CASH", "VISUALS_SHOW_CASH"Hashed);
-	std::unique_ptr<Checkbox> m_pShowDepositBox = std::make_unique<Checkbox>("VISUALS_SHOW_DEPOSITBOX", "VISUALS_SHOW_DEPOSITBOX"Hashed, ElementBase::Style_t{ .eSameLine = ElementBase::ESameLine::Same });
-	std::unique_ptr<Checkbox> m_pShowKeycards = std::make_unique<Checkbox>("VISUALS_SHOW_KEYCARDS", "VISUALS_SHOW_KEYCARDS"Hashed, ElementBase::Style_t{ .eSameLine = ElementBase::ESameLine::Same });
+	std::unique_ptr<MultiSelectCombo> m_pFilters = std::make_unique<MultiSelectCombo>("VISUALS_FILTERS", "VISUALS_FILTERS"Hashed, ElementBase::Style_t{ .vec2Size = ImVec2(-0.1f, 0) });
+	std::unique_ptr<MultiSelectCombo> m_pItemFilters = std::make_unique<MultiSelectCombo>("VISUALS_ITEM_FILTERS", "VISUALS_ITEM_FILTERS"Hashed, ElementBase::Style_t{ .vec2Size = ImVec2(-0.1f, 0) });
 
 	std::vector<Types::ESPData> m_vESPData;
 	std::unordered_map<SDK::USkeletalMeshComponent*, Types::BoneCache> m_BoneCache;
@@ -100,8 +96,7 @@ private:
 		bool ShowKeycards = false;
 	};
 
-	void CollectFrameData(SDK::UWorld* pGWorld, SDK::APlayerController* pPlayerController, SDK::APlayerCameraManager* pCameraManager,
-		SDK::AActor* pLocalPlayer, const FrameSettings& settings);
+	void CollectFrameData(SDK::UWorld* pGWorld, SDK::APlayerController* pPlayerController, SDK::APlayerCameraManager* pCameraManager, SDK::AActor* pLocalPlayer, const FrameSettings& settings);
 	Types::ItemType GetItemType(SDK::AActor* actor);
 	Types::EnemyType GetEnemyType(SDK::AActor* actor);
 

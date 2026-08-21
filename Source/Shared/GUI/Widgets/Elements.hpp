@@ -71,6 +71,7 @@ public:
 		Text,
 		Table,
 		ConfigManager,
+		MultiSelectCombo
 	};
 
 	enum class ESameLine : uint8_t
@@ -2432,5 +2433,284 @@ public:
 	void SetPopVarsCallback(std::function<void()> Callback)
 	{
 		m_PopVarsCallback = Callback;
+	};
+};
+
+class MultiSelectCombo : public ElementBase
+{
+protected:
+	struct ComboOption
+	{
+		std::string sLabel;
+		std::function<void(bool)> Callback;
+		bool bSelected = false;
+	};
+
+	std::string m_sPreviewlabel = "PreviewNotSet";
+	std::function<void()> m_Callback;
+	std::vector<ComboOption> m_Options;
+
+	std::function<float()> m_WidthCallback = nullptr;
+
+	void UpdateMenuVisibility()
+	{
+		bool bAnySelected = false;
+
+		for (const auto& option : m_Options)
+		{
+			if (option.bSelected)
+			{
+				bAnySelected = true;
+				break;
+			}
+		}
+
+		if (!bAnySelected)
+		{
+			m_sPreviewlabel = "None";
+			return;
+		}
+
+		m_sPreviewlabel.clear();
+
+		for (const auto& option : m_Options)
+		{
+			if (!option.bSelected)
+				continue;
+
+			if (!m_sPreviewlabel.empty())
+				m_sPreviewlabel += ", ";
+
+			m_sPreviewlabel += option.sLabel;
+		}
+	}
+
+public:
+	MultiSelectCombo(
+		std::string sUnique,
+		size_t ullLocalizedNameHash,
+		Style_t stStyle = {})
+	{
+		m_sUnique = sUnique;
+		m_ullLocalizedNameHash = ullLocalizedNameHash;
+		m_stStyle = stStyle;
+	};
+
+	MultiSelectCombo(
+		std::string sUnique,
+		std::string sUnlocalizedName,
+		Style_t stStyle = {})
+	{
+		m_sUnique = sUnique;
+		m_bUnlocalizedName = true;
+		m_sUnlocalizedName = sUnlocalizedName;
+		m_stStyle = stStyle;
+	};
+
+	constexpr EElementType GetType() const override
+	{
+		return EElementType::MultiSelectCombo;
+	};
+
+	ImVec2 GetNaturalSize() const override
+	{
+		const ImGuiStyle& style = ImGui::GetStyle();
+
+		float flPreviewWidth =
+			ImGui::CalcTextSize(
+				m_sPreviewlabel.c_str(),
+				NULL,
+				true).x;
+
+		return ImVec2(
+			ImGui::GetFrameHeight() +
+			flPreviewWidth +
+			style.FramePadding.x * 2.0f,
+			ImGui::GetFrameHeight());
+	};
+
+	void Render() override
+	{
+		if (!m_stStyle.bVisible)
+			return;
+
+		SameLine();
+
+		ImGuiComboFlags iFlags = m_stStyle.iFlags;
+
+		if (m_WidthCallback)
+		{
+			ImGui::SetNextItemWidth(
+				ImMax(
+					m_WidthCallback(),
+					GetNaturalSize().x));
+
+			iFlags &= ~ImGuiComboFlags_WidthFitPreview;
+		}
+
+		ImGui::PushID(m_sUnique.c_str());
+
+		if (ImAdd::BeginCombo(
+			GetName().c_str(),
+			m_sPreviewlabel.c_str(),
+			iFlags))
+		{
+			if (m_Callback)
+			{
+				m_Callback();
+			}
+			else
+			{
+				for (size_t i = 0; i < m_Options.size(); ++i)
+				{
+					ImGui::PushID(static_cast<int>(i));
+
+					bool bSelected = m_Options[i].bSelected;
+
+					if (ImGui::Selectable(
+						m_Options[i].sLabel.c_str(),
+						bSelected,
+						ImGuiSelectableFlags_DontClosePopups))
+					{
+						m_Options[i].bSelected =
+							!m_Options[i].bSelected;
+
+						if (m_Options[i].Callback)
+						{
+							m_Options[i].Callback(
+								m_Options[i].bSelected);
+						}
+
+						UpdateMenuVisibility();
+					}
+
+					if (bSelected)
+						ImGui::SetItemDefaultFocus();
+
+					ImGui::PopID();
+				}
+			}
+
+			ImGui::EndCombo();
+		}
+
+		ImGui::PopID();
+
+		RenderChildren();
+	};
+
+	void SetWidthCallback(std::function<float()> Callback)
+	{
+		m_WidthCallback = Callback;
+	};
+
+	void SetCallback(std::function<void()> Callback)
+	{
+		m_Callback = Callback;
+	};
+
+	void SetPreviewLabel(std::string s)
+	{
+		m_sPreviewlabel = s;
+	};
+
+	void AddOption(
+		std::string sLabel,
+		std::function<void(bool)> Callback = nullptr,
+		bool bSelected = false)
+	{
+		m_Options.push_back({
+			sLabel,
+			Callback,
+			bSelected
+		});
+
+		UpdateMenuVisibility();
+	};
+
+	bool IsSelected(int iIndex) const
+	{
+		if (iIndex < 0 ||
+			iIndex >= static_cast<int>(m_Options.size()))
+		{
+			return false;
+		}
+
+		return m_Options[iIndex].bSelected;
+	};
+
+	void SetSelected(int iIndex, bool bSelected)
+	{
+		if (iIndex < 0 ||
+			iIndex >= static_cast<int>(m_Options.size()))
+		{
+			return;
+		}
+
+		m_Options[iIndex].bSelected = bSelected;
+
+		UpdateMenuVisibility();
+	};
+
+	std::vector<bool> GetSelected() const
+	{
+		std::vector<bool> vecSelected;
+
+		vecSelected.reserve(m_Options.size());
+
+		for (const auto& option : m_Options)
+			vecSelected.push_back(option.bSelected);
+
+		return vecSelected;
+	};
+
+	std::vector<int> GetSelectedIndexes() const
+	{
+		std::vector<int> vecSelectedIndexes;
+
+		for (int i = 0;
+			i < static_cast<int>(m_Options.size());
+			++i)
+		{
+			if (m_Options[i].bSelected)
+				vecSelectedIndexes.push_back(i);
+		}
+
+		return vecSelectedIndexes;
+	};
+
+	void SetSelectedByLabel(
+		const std::string& sLabel,
+		bool bSelected)
+	{
+		for (auto& option : m_Options)
+		{
+			if (option.sLabel != sLabel)
+				continue;
+
+			option.bSelected = bSelected;
+			break;
+		}
+
+		UpdateMenuVisibility();
+	};
+
+	void ClearSelection()
+	{
+		for (auto& option : m_Options)
+			option.bSelected = false;
+
+		UpdateMenuVisibility();
+	};
+
+	void ClearOptions()
+	{
+		m_Options.clear();
+		m_sPreviewlabel.clear();
+	};
+
+	void UpdateSelection()
+	{
+		UpdateMenuVisibility();
 	};
 };

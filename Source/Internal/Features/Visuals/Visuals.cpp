@@ -197,12 +197,12 @@ void Visuals::CollectFrameData(SDK::UWorld* pGWorld, SDK::APlayerController* pPl
 
 void Visuals::UpdateMenuVisibility()
 {
-	const bool copSelected = m_pShowCops->GetValue();
-	const bool civilianSelected = m_pShowCivilians->GetValue();
+	const bool copSelected = m_pFilters->IsSelected(0);
+	const bool civilianSelected = m_pFilters->IsSelected(1);
 
-	const bool cashSelected = m_pShowCash->GetValue();
-	const bool depositBoxSelected = m_pShowDepositBox->GetValue();
-	const bool keycardSelected = m_pShowKeycards->GetValue();
+	const bool cashSelected = m_pItemFilters->IsSelected(0);
+	const bool depositBoxSelected = m_pItemFilters->IsSelected(1);
+	const bool keycardSelected = m_pItemFilters->IsSelected(2);
 
 	m_pBoundingBoxCopColor->SetVisible(m_pBoundingBox->GetValue() && copSelected);
 	m_pBoundingBoxCivilianColor->SetVisible(m_pBoundingBox->GetValue() && civilianSelected);
@@ -230,8 +230,6 @@ void Visuals::HandleMenu()
 {
 	static std::once_flag onceflag;
 	std::call_once(onceflag, [this]() {
-		Framework::menu->GetChild("SIDEBAR")->InsertElementAfter(m_pMenuButton.get(), "FEATURE_SEPERATOR");
-
 		auto pHeaderGroup = static_cast<HeaderGroup*>(Framework::menu->GetChild("HEADER_GROUP"));
 		if (pHeaderGroup)
 			pHeaderGroup->AddHeaders(Visuals::s_iVisualsPageId, { "VISUALS_TAB1"Hashed });
@@ -290,11 +288,15 @@ void Visuals::HandleMenu()
 		m_pItemDepositBoxColor->SetValue(ImVec4(1.0f, 0.0f, 0.0f, 1.0f));
 		m_pItemKeycardColor->SetValue(ImVec4(0.0f, 0.0f, 1.0f, 1.0f));
 
-		m_pTab1Bottom->AddElement(m_pShowCops.get());
-		m_pTab1Bottom->AddElement(m_pShowCivilians.get());
-		m_pTab1Bottom->AddElement(m_pShowCash.get());
-		m_pTab1Bottom->AddElement(m_pShowDepositBox.get());
-		m_pTab1Bottom->AddElement(m_pShowKeycards.get());
+		// Filters
+        m_pFilters->AddOption("COP", [](bool bEnabled) {});
+        m_pFilters->AddOption("CIVILIAN", [](bool bEnabled) {});
+        m_pItemFilters->AddOption("CASH", [](bool bEnabled) {});
+        m_pItemFilters->AddOption("DEPOSIT BOX", [](bool bEnabled) {});
+        m_pItemFilters->AddOption("KEYCARDS", [](bool bEnabled) {});
+
+        m_pTab1Bottom->AddElement(m_pFilters.get());
+		m_pTab1Bottom->AddElement(m_pItemFilters.get());
 
 		m_pTab1Group->AddElement(m_pTab1Left.get());
 		m_pTab1Group->AddElement(m_pTab1Right.get());
@@ -361,11 +363,11 @@ void Visuals::Render()
 		drawSkeleton,
 		drawHighlight,
 		drawItems,
-		m_pShowCops->GetValue(),
-		m_pShowCivilians->GetValue(),
-		m_pShowCash->GetValue(),
-		m_pShowDepositBox->GetValue(),
-		m_pShowKeycards->GetValue()
+		m_pFilters->IsSelected(0),
+        m_pFilters->IsSelected(1),
+        m_pItemFilters->IsSelected(0),
+        m_pItemFilters->IsSelected(1),
+        m_pItemFilters->IsSelected(2)
 	});
 
 	if (m_vESPData.empty() && m_vItemData.empty())

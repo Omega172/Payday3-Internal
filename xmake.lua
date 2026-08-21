@@ -30,11 +30,61 @@ option_end()
 
 set_runtimes(is_mode("debug") and "MTd" or "MT")
 
-add_requires("vcpkg::freetype", {configs = {debug = is_mode("debug")}})
-add_requires("vcpkg::nlohmann-json", {configs = {debug = is_mode("debug")}})
-add_requires("vcpkg::polyhook2", {configs = {debug = is_mode("debug")}})
+add_requires("vcpkg::freetype", {
+    configs = { debug = is_mode("debug") }
+})
 
-local frameworkPackages = {"vcpkg::freetype", "vcpkg::nlohmann-json", "vcpkg::polyhook2"}
+add_requires("vcpkg::nlohmann-json", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::polyhook2", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::asmjit", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::asmtk", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::zydis", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::libpng", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::zlib", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::bzip2", {
+    configs = { debug = is_mode("debug") }
+})
+
+add_requires("vcpkg::brotli", {
+    configs = { debug = is_mode("debug") }
+})
+
+local frameworkPackages =
+{
+    "vcpkg::freetype",
+    "vcpkg::nlohmann-json",
+    "vcpkg::polyhook2",
+
+    "vcpkg::asmjit",
+    "vcpkg::asmtk",
+    "vcpkg::zydis",
+
+    "vcpkg::libpng",
+    "vcpkg::zlib",
+    "vcpkg::bzip2",
+    "vcpkg::brotli"
+}
 
 target("Shared")
     if has_config("avx2") then
