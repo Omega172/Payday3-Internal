@@ -39,8 +39,8 @@ void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ExecuteUbergraph_WBP_UI_MainMenu
 // Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnButtonFocusedChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnButtonFocusedChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -53,6 +53,28 @@ void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnButtonFocusedChanged(class USB
 
 	Parms.Button = Button;
 	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<struct FSBZOnlineSearchResult>&Results                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A");
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A Parms{};
+
+	Parms.ErrorCode = ErrorCode;
+	Parms.Results = std::move(Results);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -75,6 +97,40 @@ void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnControlsReferenceClicked(class
 	Parms.InActionInput = InActionInput;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "OnGainedStackFocused");
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -118,34 +174,6 @@ void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnJoinStarted(const struct FSBZO
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ReloadButtons
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ReloadButtons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "ReloadButtons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
@@ -160,45 +188,17 @@ void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnLostStackFocused()
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ReloadButtons
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ReloadButtons()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "OnGainedStackFocused");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "ReloadButtons");
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TArray<struct FSBZOnlineSearchResult>&Results                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A");
-
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A Parms{};
-
-	Parms.ErrorCode = ErrorCode;
-	Parms.Results = std::move(Results);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

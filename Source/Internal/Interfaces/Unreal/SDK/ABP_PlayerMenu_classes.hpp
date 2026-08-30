@@ -18,33 +18,34 @@
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_PlayerMenu.ABP_PlayerMenu_C
-// 0x0C50 (0x0FA0 - 0x0350)
+// 0x0DA0 (0x1260 - 0x04C0)
 class UABP_PlayerMenu_C final : public USBZMainMenuPlayerAnimation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x0358(0x00D0)()
-	uint8                                         Pad_428[0x8];                                      // 0x0428(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_1;                         // 0x0430(0x0240)()
-	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK;                           // 0x0670(0x0240)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x08B0(0x0138)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x09E8(0x0138)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0B20(0x0030)()
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0B50(0x0048)()
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_1;                  // 0x0B98(0x00E8)()
-	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x0C80(0x00E8)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0D68(0x00D0)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0E38(0x00D0)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0F08(0x0030)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0F38(0x0060)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x04C8(0x0008)()
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x04D0(0x0008)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_2;                    // 0x04D8(0x0098)()
+	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_1;                         // 0x0570(0x02D0)()
+	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK;                           // 0x0840(0x02D0)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x0B10(0x0170)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x0C80(0x0170)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0DF0(0x0030)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0E20(0x0030)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend_1;                  // 0x0E50(0x0118)()
+	struct FAnimNode_LayeredBoneBlend             AnimGraphNode_LayeredBoneBlend;                    // 0x0F68(0x0118)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x1080(0x0098)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x1118(0x0098)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x11B0(0x0030)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x11E0(0x0078)()
 
 public:
-	void ExecuteUbergraph_ABP_PlayerMenu(int32 EntryPoint);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F();
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_12E0E52C405F26D8B89282A7D21078DF();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_A8FE88E84CB3CF3C381924947064EBB1();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C();
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F();
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ABP_PlayerMenu(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

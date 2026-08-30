@@ -16,51 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization(int32 EntryPoint)
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization");
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OpenNewModMenu
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::OpenNewModMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OpenNewModMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnBackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnBackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -98,6 +84,235 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::BndEvt__WBP_MainMenu_LoadoutWea
 }
 
 
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreatePartButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPanelWidget*                     ParentWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartSlot*        WeaponSlot                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartDataAsset*   Equippable_Part                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TDelegate<void(class USBZMenuButton* Button)>&OnClick                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// class USBZWeaponCustomiaztionPartButton_C**Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::CreatePartButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlot* WeaponSlot, const class USBZModularPartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionPartButton_C** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "CreatePartButton");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_CreatePartButton Parms{};
+
+	Parms.ParentWidget = ParentWidget;
+	Parms.WeaponSlot = WeaponSlot;
+	Parms.Equippable_Part = Equippable_Part;
+	Parms.OnClick = OnClick;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreateSlotButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPanelWidget*                     ParentWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartSlotBase*    WeaponSlot                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZEquippablePartDataAsset*Equippable_Part                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TDelegate<void(class USBZMenuButton* Button)>&OnClick                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// class USBZWeaponCustomiaztionSlotButton_C**Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::CreateSlotButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlotBase* WeaponSlot, const class USBZEquippablePartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionSlotButton_C** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "CreateSlotButton");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_CreateSlotButton Parms{};
+
+	Parms.ParentWidget = ParentWidget;
+	Parms.WeaponSlot = WeaponSlot;
+	Parms.Equippable_Part = Equippable_Part;
+	Parms.OnClick = OnClick;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetEquippedPartInSlot
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const class USBZModularPartSlotBase*&   Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// class USBZModularPartDataAsset**        Part                                                   (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::GetEquippedPartInSlot(const class USBZModularPartSlotBase*& Key, class USBZModularPartDataAsset** Part)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "GetEquippedPartInSlot");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_GetEquippedPartInSlot Parms{};
+
+	Parms.Key = Key;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Part != nullptr)
+		*Part = Parms.Part;
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetModularConfiguration
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration>*Modular_Configuration                                  (Parm, OutParm)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::GetModularConfiguration(TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration>* Modular_Configuration)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "GetModularConfiguration");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_GetModularConfiguration Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Modular_Configuration != nullptr)
+		*Modular_Configuration = std::move(Parms.Modular_Configuration);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeData
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::InitializeData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "InitializeData");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponPartItems
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZWeaponCustomiaztionSlotButton_C*BoxReference                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const TDelegate<void(class USBZMenuButton* Button)>&OnSelectedEvent                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::InitializeWeaponPartItems(class USBZWeaponCustomiaztionSlotButton_C* BoxReference, const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "InitializeWeaponPartItems");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponPartItems Parms{};
+
+	Parms.BoxReference = BoxReference;
+	Parms.OnSelectedEvent = OnSelectedEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponSlotItems
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TDelegate<void(class USBZMenuButton* Button)>&OnSelectedEvent                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::InitializeWeaponSlotItems(const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "InitializeWeaponSlotItems");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponSlotItems Parms{};
+
+	Parms.OnSelectedEvent = OnSelectedEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnBackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnBackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnGainedStackFocused");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnInspectPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -112,19 +327,33 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnInspectPressed()
 }
 
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnLostStackFocused");
 
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressedWeaponSlotButton
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnPressedWeaponSlotButton(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnPressedWeaponSlotButton");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressedWeaponSlotButton Parms{};
 
 	Parms.Button = Button;
 
@@ -135,7 +364,7 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::BndEvt__WBP_MainMenu_LoadoutWea
 // Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressetCosmeticSlotButton
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnPressetCosmeticSlotButton(class USBZMenuButton* Button)
 {
@@ -152,10 +381,24 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnPressetCosmeticSlotButton(cla
 }
 
 
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OpenNewModMenu
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::OpenNewModMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OpenNewModMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MainMenu_LoadoutWeaponCustomization_C::PreConstruct(bool IsDesignTime)
 {
@@ -167,6 +410,26 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.RefreshEquippedStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZWeaponPartDataAsset*    NewlyEquippedPart                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_LoadoutWeaponCustomization_C::RefreshEquippedStatus(const class USBZWeaponPartDataAsset* NewlyEquippedPart)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "RefreshEquippedStatus");
+
+	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_RefreshEquippedStatus Parms{};
+
+	Parms.NewlyEquippedPart = NewlyEquippedPart;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -209,7 +472,7 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::SetupWeaponMods()
 // Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.SetWeaponPart
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MainMenu_LoadoutWeaponCustomization_C::SetWeaponPart(class USBZMenuButton* Button)
 {
@@ -223,269 +486,6 @@ void UWBP_MainMenu_LoadoutWeaponCustomization_C::SetWeaponPart(class USBZMenuBut
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressedWeaponSlotButton
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnPressedWeaponSlotButton(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnPressedWeaponSlotButton");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressedWeaponSlotButton Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "OnGainedStackFocused");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeData
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::InitializeData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "InitializeData");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreatePartButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPanelWidget*                     ParentWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZModularPartSlot*        WeaponSlot                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZModularPartDataAsset*   Equippable_Part                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TDelegate<void(class USBZMenuButton* Button)>&OnClick                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-// class USBZWeaponCustomiaztionPartButton_C**Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::CreatePartButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlot* WeaponSlot, const class USBZModularPartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionPartButton_C** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "CreatePartButton");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_CreatePartButton Parms{};
-
-	Parms.ParentWidget = ParentWidget;
-	Parms.WeaponSlot = WeaponSlot;
-	Parms.Equippable_Part = Equippable_Part;
-	Parms.OnClick = OnClick;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetModularConfiguration
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration>*Modular_Configuration                                  (Parm, OutParm)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::GetModularConfiguration(TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration>* Modular_Configuration)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "GetModularConfiguration");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_GetModularConfiguration Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Modular_Configuration != nullptr)
-		*Modular_Configuration = std::move(Parms.Modular_Configuration);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponSlotItems
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TDelegate<void(class USBZMenuButton* Button)>&OnSelectedEvent                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::InitializeWeaponSlotItems(const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "InitializeWeaponSlotItems");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponSlotItems Parms{};
-
-	Parms.OnSelectedEvent = OnSelectedEvent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponPartItems
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZWeaponCustomiaztionSlotButton_C*BoxReference                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TDelegate<void(class USBZMenuButton* Button)>&OnSelectedEvent                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::InitializeWeaponPartItems(class USBZWeaponCustomiaztionSlotButton_C* BoxReference, const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "InitializeWeaponPartItems");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponPartItems Parms{};
-
-	Parms.BoxReference = BoxReference;
-	Parms.OnSelectedEvent = OnSelectedEvent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.RefreshEquippedStatus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZWeaponPartDataAsset*    NewlyEquippedPart                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::RefreshEquippedStatus(const class USBZWeaponPartDataAsset* NewlyEquippedPart)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "RefreshEquippedStatus");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_RefreshEquippedStatus Parms{};
-
-	Parms.NewlyEquippedPart = NewlyEquippedPart;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreateSlotButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPanelWidget*                     ParentWidget                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZModularPartSlotBase*    WeaponSlot                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZEquippablePartDataAsset*Equippable_Part                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TDelegate<void(class USBZMenuButton* Button)>&OnClick                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
-// class USBZWeaponCustomiaztionSlotButton_C**Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::CreateSlotButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlotBase* WeaponSlot, const class USBZEquippablePartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionSlotButton_C** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "CreateSlotButton");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_CreateSlotButton Parms{};
-
-	Parms.ParentWidget = ParentWidget;
-	Parms.WeaponSlot = WeaponSlot;
-	Parms.Equippable_Part = Equippable_Part;
-	Parms.OnClick = OnClick;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetEquippedPartInSlot
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const class USBZModularPartSlotBase*&   Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZModularPartDataAsset**        Part                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_LoadoutWeaponCustomization_C::GetEquippedPartInSlot(const class USBZModularPartSlotBase*& Key, class USBZModularPartDataAsset** Part)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_LoadoutWeaponCustomization_C", "GetEquippedPartInSlot");
-
-	Params::WBP_MainMenu_LoadoutWeaponCustomization_C_GetEquippedPartInSlot Parms{};
-
-	Parms.Key = Key;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Part != nullptr)
-		*Part = Parms.Part;
 }
 
 

@@ -22,13 +22,43 @@ enum class EOnlineSessionP2PConnectedAction : uint8
 	EOnlineSessionP2PConnectedAction_MAX     = 2,
 };
 
-// Enum OnlineSubsystemAccelByte.ETypeOfOnlineAsyncTask
-// NumValues: 0x0003
-enum class ETypeOfOnlineAsyncTask : uint8
+// Enum OnlineSubsystemAccelByte.EAccelByteState
+// NumValues: 0x0004
+enum class EAccelByteState : uint8
 {
-	Serial                                   = 0,
-	Parallel                                 = 1,
-	ETypeOfOnlineAsyncTask_MAX               = 2,
+	Undefined                                = 0,
+	Client                                   = 1,
+	Server                                   = 2,
+	EAccelByteState_MAX                      = 3,
+};
+
+// Enum OnlineSubsystemAccelByte.EAccelByteLoginType
+// NumValues: 0x0017
+enum class EAccelByteLoginType : uint8
+{
+	None                                     = 0,
+	DeviceId                                 = 1,
+	AccelByte                                = 2,
+	Xbox                                     = 3,
+	PS4                                      = 4,
+	PS4CrossGen                              = 5,
+	PS5                                      = 6,
+	PSPC                                     = 7,
+	Launcher                                 = 8,
+	Steam                                    = 9,
+	EOS                                      = 10,
+	OIDC                                     = 11,
+	Apple                                    = 12,
+	Google                                   = 13,
+	GooglePlayGames                          = 14,
+	ExchangeCode                             = 15,
+	PublisherCode                            = 16,
+	RefreshToken                             = 17,
+	CachedToken                              = 18,
+	Simultaneous                             = 19,
+	Oculus                                   = 20,
+	Switch                                   = 21,
+	EAccelByteLoginType_MAX                  = 22,
 };
 
 // Enum OnlineSubsystemAccelByte.EAccelByteChatRoomType
@@ -43,24 +73,13 @@ enum class EAccelByteChatRoomType : uint8
 	EAccelByteChatRoomType_MAX               = 5,
 };
 
-// Enum OnlineSubsystemAccelByte.EAccelByteLoginType
-// NumValues: 0x000E
-enum class EAccelByteLoginType : uint8
+// Enum OnlineSubsystemAccelByte.ETypeOfOnlineAsyncTask
+// NumValues: 0x0003
+enum class ETypeOfOnlineAsyncTask : uint8
 {
-	None                                     = 0,
-	DeviceId                                 = 1,
-	AccelByte                                = 2,
-	Xbox                                     = 3,
-	PS4                                      = 4,
-	PS5                                      = 5,
-	Launcher                                 = 6,
-	Steam                                    = 7,
-	EOS                                      = 8,
-	ExchangeCode                             = 9,
-	PublisherCode                            = 10,
-	RefreshToken                             = 11,
-	CachedToken                              = 12,
-	EAccelByteLoginType_MAX                  = 13,
+	Serial                                   = 0,
+	Parallel                                 = 1,
+	ETypeOfOnlineAsyncTask_MAX               = 2,
 };
 
 // ScriptStruct OnlineSubsystemAccelByte.AccelByteUniqueIdComposite

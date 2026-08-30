@@ -18,32 +18,32 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C
-// 0x0048 (0x0328 - 0x02E0)
+// 0x0048 (0x0388 - 0x0340)
 class UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C final : public USBZMenuStackScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UScrollBox*                             ScrollBox_ServerList;                              // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_HeistHeader;                                  // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LookingForSessions;                           // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_NoServers;                                    // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PingHeader;                                   // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PlayerCount;                                  // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bCanRefresh;                                       // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* ActiveButton;                                    // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UScrollBox*                             ScrollBox_ServerList;                              // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_HeistHeader;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LookingForSessions;                           // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_NoServers;                                    // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_PingHeader;                                   // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_PlayerCount;                                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bCanRefresh;                                       // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_379[0x7];                                      // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* ActiveButton;                                    // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser(int32 EntryPoint);
 	void OnButtonFocusedChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results);
 	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
 	void OnInviteFinished(ESBZOnlineCode ErrorCode);
 	void OnJoinStarted(const struct FSBZOnlineSearchResult& RemoteSessionInfo);
-	void ReloadButtons();
-	void OnInitialized();
 	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results);
+	void ReloadButtons();
 
 public:
 	static class UClass* StaticClass()

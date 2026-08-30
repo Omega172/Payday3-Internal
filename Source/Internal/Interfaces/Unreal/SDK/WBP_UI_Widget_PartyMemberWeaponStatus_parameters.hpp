@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "Starbreeze_structs.hpp"
+#include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -23,16 +23,16 @@ struct WBP_UI_Widget_PartyMemberWeaponStatus_C_ExecuteUbergraph_WBP_UI_Widget_Pa
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsEquippedNewValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsEquippedNewValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_AmmoTotalChanged;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPD3AmmoState                                 K2Node_Event_NewState;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_AmmoAddedCount;                       // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsFireRangedWeaponScope;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsFireRangedWeaponScope;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_ExecuteUbergraph_WBP_UI_Widget_PartyMemberWeaponStatus;
 
@@ -42,18 +42,9 @@ struct WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoAdded final
 {
 public:
 	int32                                         AmmoAddedCount;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFireRangedWeaponScope;                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsFireRangedWeaponScope;                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoAdded;
-
-// Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.OnAmmoTotalStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoTotalStateChanged final
-{
-public:
-	EPD3AmmoState                                 NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoTotalStateChanged;
 
 // Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.OnAmmoTotalChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -64,53 +55,63 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoTotalChanged;
 
+// Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.OnAmmoTotalStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoTotalStateChanged final
+{
+public:
+	EPD3AmmoState                                 NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_OnAmmoTotalStateChanged;
+
 // Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.OnEquippedChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Widget_PartyMemberWeaponStatus_C_OnEquippedChanged final
 {
 public:
-	bool                                          bIsEquippedNewValue;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsEquippedNewValue;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_OnEquippedChanged;
 
-// Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.SetEquipped
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_PartyMemberWeaponStatus_C_SetEquipped final
-{
-public:
-	bool                                          IsEquipped;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_SetEquipped;
-
 // Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.SetAmmoState
-// 0x0038 (0x0038 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct WBP_UI_Widget_PartyMemberWeaponStatus_C_SetAmmoState final
 {
 public:
-	class UTextBlock*                             TextBlock;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPD3AmmoState                                 Index_0;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPD3AmmoState                                 Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x0010(0x0028)()
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x000C(0x0014)()
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_SetAmmoState;
 
+// Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.SetEquipped
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Widget_PartyMemberWeaponStatus_C_SetEquipped final
+{
+public:
+	bool                                          IsEquipped;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_SetEquipped;
+
 // Function WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C.SetText
-// 0x0060 (0x0060 - 0x0000)
+// 0x0048 (0x0048 - 0x0000)
 struct WBP_UI_Widget_PartyMemberWeaponStatus_C_SetText final
 {
 public:
 	int32                                         AmmoValue;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_FormatIntToText_ReturnValue;              // 0x0008(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_FormatIntToText_ReturnValue_1;            // 0x0028(0x0018)()
-	class FText                                   CallFunc_FormatIntToText_ReturnValue_2;            // 0x0040(0x0018)()
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_FormatIntToText_ReturnValue;              // 0x0008(0x0010)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_FormatIntToText_ReturnValue_1;            // 0x0020(0x0010)()
+	class FText                                   CallFunc_FormatIntToText_ReturnValue_2;            // 0x0030(0x0010)()
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PartyMemberWeaponStatus_C_SetText;
 

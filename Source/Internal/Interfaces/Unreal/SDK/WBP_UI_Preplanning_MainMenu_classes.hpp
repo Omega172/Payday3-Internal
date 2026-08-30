@@ -10,104 +10,104 @@
 
 #include "Basic.hpp"
 
-#include "SBZBackend_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
+#include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Preplanning_MainMenu.WBP_UI_Preplanning_MainMenu_C
-// 0x0160 (0x0420 - 0x02C0)
+// 0x0170 (0x0490 - 0x0320)
 class UWBP_UI_Preplanning_MainMenu_C final : public USBZMainMenuPrePlanningWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x02C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UOverlay*                               Han_Solo_Message;                                  // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_191;                                         // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_273;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuButton_C*                      LoadingButton;                                     // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_LoadoutButton_C* LoadoutSelectionButton;                      // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           LoadProgress;                                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_LobbyChat_C*                       LobbyChat;                                         // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        LobbyType_T;                                       // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Outline_I;                                         // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player1_ReadyStatus;                     // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player2_ReadyStatus;                     // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player3_ReadyStatus;                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player4_ReadyStatus;                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Players_HB;                                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_PreplanningItemSelection_C*     PreplanningItemSelection;                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_UnifiedButton_C*                ReadyButton;                                       // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        ReadyStatus_WS;                                    // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_Hard_I;                                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_Normal_I;                                // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_Overkill_I;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_VeryHard_I;                              // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        SoloMode_T;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TacticType_T;                                      // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Difficulty;                                   // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_UnifiedButton_C*                UnreadyButton;                                     // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     WBP_ScreenTitle;                                   // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_Loading_C*               Widget_Loading;                                    // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         ActiveButton;                                      // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FSBZButtonControlReference>     TempControlRefArray;                               // 0x03F8(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* FocusedPlayerStatusWidget;               // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PreMatchReadyNotifyValue;                          // 0x0410(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasSetReadyTimerLowDurationLeft;                  // 0x0414(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_415[0x3];                                      // 0x0415(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PreMatchTimerDisableReadyButtons;                  // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasReachedLockedReadyTimeState;                   // 0x041C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0328(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UOverlay*                               Han_Solo_Message;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image;                                             // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1;                                           // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_191;                                         // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_273;                                         // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuButton_C*                      LoadingButton;                                     // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_LoadoutButton_C* LoadoutSelectionButton;                      // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           LoadProgress;                                      // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_LobbyChat_C*                       LobbyChat;                                         // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        LobbyType_T;                                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Outline_I;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player1_ReadyStatus;                     // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player2_ReadyStatus;                     // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player3_ReadyStatus;                     // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player4_ReadyStatus;                     // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         Players_HB;                                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_PreplanningItemSelection_C*     PreplanningItemSelection;                          // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_UnifiedButton_C*                ReadyButton;                                       // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        ReadyStatus_WS;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_Hard_I;                                  // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_Normal_I;                                // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_Overkill_I;                              // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_VeryHard_I;                              // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        SoloMode_T;                                        // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TacticType_T;                                      // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Difficulty;                                   // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_UnifiedButton_C*                UnreadyButton;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     WBP_ScreenTitle;                                   // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_Loading_C*               Widget_Loading;                                    // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         ActiveButton;                                      // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x0430(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FSBZButtonControlReference>     TempControlRefArray;                               // 0x0458(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* FocusedPlayerStatusWidget;               // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        PreMatchReadyNotifyValue;                          // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasSetReadyTimerLowDurationLeft;                  // 0x0478(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_479[0x7];                                      // 0x0479(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        PreMatchTimerDisableReadyButtons;                  // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasReachedLockedReadyTimeState;                   // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu(int32 EntryPoint);
-	void NewLoadout();
-	void ShowLoadProgress(const struct FSBZAsyncLoadingProgress& AsyncLoadingProgressData);
-	void CancelAction();
+	void AddXboxFriendsControlRefToArray(TArray<struct FSBZButtonControlReference>& InControlsRefArray);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadingButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_NewUnready_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_NewUnready_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void PreConstruct(bool IsDesignTime);
-	void ReachedLockedReadyTimeState();
-	void OnLobbyPlayerReadyStatusUpdatedEvent(bool bInReadyStatus);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player4ReadyStatus_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player3ReadyStatus_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player2ReadyStatus_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player1ReadyStatus_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnAddedToStack();
-	void OnBackConfirmed(class FName ClosingActionName);
-	void OnAsyncLoadingDone();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void SetActiveLoadout();
-	void OnRemovedFromStack();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_LoadoutButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void PrePush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
-	void InitializeLobbyDetails();
-	void UpdatePreMatchTimer(float InPreMatchTimer);
-	void IsLobbyInGame(bool* bInGame);
-	void SetButtonFocus(class USBZMenuButton* ActiveButton_0, bool Condition);
-	void AddXboxFriendsControlRefToArray(TArray<struct FSBZButtonControlReference>& InControlsRefArray);
-	void OnPlayerStatusWidgetFocusChanged(class USBZMenuButton* Widget, bool IsFocused);
-	void Setup_Solo_Mode_Visuals();
-	void RebindActions();
-	void DecreaseLoadoutIndex();
-	void IncreaseLoadoutIndex();
-	void SetActiveLoadoutIndex();
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player1ReadyStatus_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player2ReadyStatus_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player3ReadyStatus_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player4ReadyStatus_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void CancelAction();
 	void CustomizeLoadout();
+	void DecreaseLoadoutIndex();
+	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu(int32 EntryPoint);
+	void IncreaseLoadoutIndex();
+	void InitializeLobbyDetails();
+	void IsLobbyInGame(bool* bInGame);
+	void NewLoadout();
+	void OnAddedToStack();
+	void OnAsyncLoadingDone();
+	void OnBackConfirmed(class FName ClosingActionName);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLobbyPlayerReadyStatusUpdatedEvent(bool bInReadyStatus);
+	void OnLostStackFocused();
+	void OnPlayerStatusWidgetFocusChanged(class USBZMenuButton* Widget, bool IsFocused);
+	void OnRemovedFromStack();
+	void PostPush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime);
+	void PrePush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
+	void ReachedLockedReadyTimeState();
+	void RebindActions();
+	void SetActiveLoadout();
+	void SetActiveLoadoutIndex();
+	void SetButtonFocus(class USBZMenuButton* ActiveButton_0, bool Condition);
+	void Setup_Solo_Mode_Visuals();
+	void ShowLoadProgress(const struct FSBZAsyncLoadingProgress& AsyncLoadingProgressData);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void UpdatePreMatchTimer(double InPreMatchTimer);
 
 public:
 	static class UClass* StaticClass()

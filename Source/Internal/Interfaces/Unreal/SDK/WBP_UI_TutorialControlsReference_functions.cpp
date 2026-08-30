@@ -16,40 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_TutorialControlsReference.WBP_UI_TutorialControlsReference_C.ExecuteUbergraph_WBP_UI_TutorialControlsReference
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_TutorialControlsReference_C::ExecuteUbergraph_WBP_UI_TutorialControlsReference(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialControlsReference_C", "ExecuteUbergraph_WBP_UI_TutorialControlsReference");
-
-	Params::WBP_UI_TutorialControlsReference_C_ExecuteUbergraph_WBP_UI_TutorialControlsReference Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_TutorialControlsReference.WBP_UI_TutorialControlsReference_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_TutorialControlsReference_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialControlsReference_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_TutorialControlsReference.WBP_UI_TutorialControlsReference_C.DisplayControlsReference
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -70,6 +36,26 @@ void UWBP_UI_TutorialControlsReference_C::DisplayControlsReference(const struct 
 }
 
 
+// Function WBP_UI_TutorialControlsReference.WBP_UI_TutorialControlsReference_C.ExecuteUbergraph_WBP_UI_TutorialControlsReference
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_TutorialControlsReference_C::ExecuteUbergraph_WBP_UI_TutorialControlsReference(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_TutorialControlsReference_C", "ExecuteUbergraph_WBP_UI_TutorialControlsReference");
+
+	Params::WBP_UI_TutorialControlsReference_C_ExecuteUbergraph_WBP_UI_TutorialControlsReference Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_TutorialControlsReference.WBP_UI_TutorialControlsReference_C.HideControlsReference
 // (Event, Protected, BlueprintEvent)
 
@@ -79,6 +65,20 @@ void UWBP_UI_TutorialControlsReference_C::HideControlsReference()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_TutorialControlsReference_C", "HideControlsReference");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_TutorialControlsReference.WBP_UI_TutorialControlsReference_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_TutorialControlsReference_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_TutorialControlsReference_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

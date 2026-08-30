@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_HUD_Shoutout.WBP_UI_HUD_Shoutout_C
-// 0x0000 (0x02B0 - 0x02B0)
+// 0x0000 (0x0310 - 0x0310)
 class UWBP_UI_HUD_Shoutout_C final : public USBZShoutoutWidget
 {
 public:

@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.DisplayNotification
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZHUDNotificationData&   InNotification                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Widget_ActionNotification_C::DisplayNotification(const struct FSBZHUDNotificationData& InNotification)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "DisplayNotification");
+
+	Params::WBP_UI_Widget_ActionNotification_C_DisplayNotification Parms{};
+
+	Parms.InNotification = std::move(InNotification);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.ExecuteUbergraph_WBP_UI_Widget_ActionNotification
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,43 +56,31 @@ void UWBP_UI_Widget_ActionNotification_C::ExecuteUbergraph_WBP_UI_Widget_ActionN
 }
 
 
-// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.UpdateDisplayedNotificationText
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.Finished_95C5AD0D41C8E43D64146BA29E2C58DF
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_ActionNotification_C::UpdateDisplayedNotificationText(const class FText& InText)
+void UWBP_UI_Widget_ActionNotification_C::Finished_95C5AD0D41C8E43D64146BA29E2C58DF()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "UpdateDisplayedNotificationText");
+		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "Finished_95C5AD0D41C8E43D64146BA29E2C58DF");
 
-	Params::WBP_UI_Widget_ActionNotification_C_UpdateDisplayedNotificationText Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_ActionNotification_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Widget_ActionNotification_C::Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6");
 
-	Params::WBP_UI_Widget_ActionNotification_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -110,51 +118,43 @@ void UWBP_UI_Widget_ActionNotification_C::OnNotificationAdded(const struct FSBZH
 }
 
 
-// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.DisplayNotification
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// const struct FSBZHUDNotificationData&   InNotification                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_ActionNotification_C::DisplayNotification(const struct FSBZHUDNotificationData& InNotification)
+void UWBP_UI_Widget_ActionNotification_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "DisplayNotification");
+		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "PreConstruct");
 
-	Params::WBP_UI_Widget_ActionNotification_C_DisplayNotification Parms{};
+	Params::WBP_UI_Widget_ActionNotification_C_PreConstruct Parms{};
 
-	Parms.InNotification = std::move(InNotification);
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.UpdateDisplayedNotificationText
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UI_Widget_ActionNotification_C::Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6()
+void UWBP_UI_Widget_ActionNotification_C::UpdateDisplayedNotificationText(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6");
+		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "UpdateDisplayedNotificationText");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_UI_Widget_ActionNotification_C_UpdateDisplayedNotificationText Parms{};
 
+	Parms.InText = std::move(InText);
 
-// Function WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C.Finished_95C5AD0D41C8E43D64146BA29E2C58DF
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_ActionNotification_C::Finished_95C5AD0D41C8E43D64146BA29E2C58DF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionNotification_C", "Finished_95C5AD0D41C8E43D64146BA29E2C58DF");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

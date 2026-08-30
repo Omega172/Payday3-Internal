@@ -10,41 +10,41 @@
 
 #include "Basic.hpp"
 
-#include "InputCore_structs.hpp"
 #include "Engine_structs.hpp"
+#include "InputCore_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Settings_InputKeyActionBindings.WBP_Settings_InputKeyActionBindings_C
-// 0x0050 (0x03C8 - 0x0378)
+// 0x0050 (0x0428 - 0x03D8)
 class UWBP_Settings_InputKeyActionBindings_C final : public USBZMenuButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_Background;                                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Hover;                                       // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInputKeySelector*                      InputKeySelector_PrimaryKey;                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_ActionNames;                                  // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_InputKey_C*                     WBP_UI_InputKey;                                   // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FKey                                   InputKey;                                          // 0x03A8(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_Background;                                  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Hover;                                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInputKeySelector*                      InputKeySelector_PrimaryKey;                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_ActionNames;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_InputKey_C*                     WBP_UI_InputKey;                                   // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FKey                                   InputKey;                                          // 0x0408(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Settings_InputKeyActionBindings(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered);
-	void ButtonFocusedChanged(bool bInHasFocus);
+	void ActionNamesVisuals();
 	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ExecuteUbergraph_WBP_Settings_InputKeyActionBindings(int32 EntryPoint);
+	void GetJoinedActionNames(TArray<class FText>& Action_Names, class FString* Result);
+	void InitializeVisuals();
+	void InputKeyVisuals();
+	void OnDisabledVisuals(bool bIsDisabled_0);
+	void OnFocusedVisuals(bool bIsFocused);
+	void OnHoverVisuals(bool bIsHovered);
 	void OnInitialized();
 	void PreConstruct(bool IsDesignTime);
 	void RefreshVisuals();
-	void OnHoverVisuals(bool bIsHovered);
-	void OnDisabledVisuals(bool bIsDisabled_0);
-	void InitializeVisuals();
-	void OnFocusedVisuals(bool bIsFocused);
-	void GetJoinedActionNames(TArray<class FText>& Action_Names, class FString* Result);
-	void ActionNamesVisuals();
-	void InputKeyVisuals();
 
 public:
 	static class UClass* StaticClass()

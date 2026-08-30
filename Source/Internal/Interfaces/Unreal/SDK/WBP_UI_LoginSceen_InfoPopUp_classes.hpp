@@ -18,19 +18,19 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C
-// 0x0020 (0x02F8 - 0x02D8)
+// 0x0020 (0x0350 - 0x0330)
 class UWBP_UI_LoginSceen_InfoPopUp_C final : public USBZLoginScreenInfoPopupWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Hover;                                             // 0x02E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class USizeBox*                               SizeBox_0;                                         // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TextBlock_100;                                     // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Hover;                                             // 0x0338(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class USizeBox*                               SizeBox_0;                                         // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TextBlock_100;                                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp(int32 EntryPoint);
-	void BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp(int32 EntryPoint);
 	void OnInfoTextInitialized();
 	void PreConstruct(bool IsDesignTime);
 

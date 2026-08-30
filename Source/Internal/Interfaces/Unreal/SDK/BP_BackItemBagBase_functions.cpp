@@ -16,6 +16,50 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BackItemBagBase.BP_BackItemBagBase_C.BP_AdjustAttachment
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTransform&                NewStrapTransformOffset                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BackItemBagBase_C::BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BackItemBagBase_C", "BP_AdjustAttachment");
+
+	Params::BP_BackItemBagBase_C_BP_AdjustAttachment Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.NewCount = NewCount;
+	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BackItemBagBase.BP_BackItemBagBase_C.BP_AttachmentComplete
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USkeletalMeshComponent*           ParentSkeletalMeshComponent                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BackItemBagBase_C::BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BackItemBagBase_C", "BP_AttachmentComplete");
+
+	Params::BP_BackItemBagBase_C_BP_AttachmentComplete Parms{};
+
+	Parms.ParentSkeletalMeshComponent = ParentSkeletalMeshComponent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BackItemBagBase.BP_BackItemBagBase_C.ExecuteUbergraph_BP_BackItemBagBase
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -51,50 +95,6 @@ void ABP_BackItemBagBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 	Params::BP_BackItemBagBase_C_ReceiveEndPlay Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BackItemBagBase.BP_BackItemBagBase_C.BP_AttachmentComplete
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USkeletalMeshComponent*           ParentSkeletalMeshComponent                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BackItemBagBase_C::BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BackItemBagBase_C", "BP_AttachmentComplete");
-
-	Params::BP_BackItemBagBase_C_BP_AttachmentComplete Parms{};
-
-	Parms.ParentSkeletalMeshComponent = ParentSkeletalMeshComponent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BackItemBagBase.BP_BackItemBagBase_C.BP_AdjustAttachment
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FTransform&                NewStrapTransformOffset                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor)
-
-void ABP_BackItemBagBase_C::BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BackItemBagBase_C", "BP_AdjustAttachment");
-
-	Params::BP_BackItemBagBase_C_BP_AdjustAttachment Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.NewCount = NewCount;
-	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

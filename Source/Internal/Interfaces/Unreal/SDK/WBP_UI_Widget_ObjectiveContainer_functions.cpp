@@ -36,44 +36,10 @@ void UWBP_UI_Widget_ObjectiveContainer_C::ExecuteUbergraph_WBP_UI_Widget_Objecti
 }
 
 
-// Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_ObjectiveContainer_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "PreConstruct");
-
-	Params::WBP_UI_Widget_ObjectiveContainer_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.WidgetAnimationEvt_CloseAnimation_K2Node_WidgetAnimationEvent_2
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_ObjectiveContainer_C::WidgetAnimationEvt_CloseAnimation_K2Node_WidgetAnimationEvent_2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "WidgetAnimationEvt_CloseAnimation_K2Node_WidgetAnimationEvent_2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.ObjectiveAdded
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZObjective*                    Objective                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZObjective*                    Objective                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ObjectiveContainer_C::ObjectiveAdded(class ASBZObjective* Objective)
 {
@@ -93,7 +59,7 @@ void UWBP_UI_Widget_ObjectiveContainer_C::ObjectiveAdded(class ASBZObjective* Ob
 // Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.ObjectiveRemove
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZObjective*                    Objective                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZObjective*                    Objective                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ObjectiveContainer_C::ObjectiveRemove(class ASBZObjective* Objective)
 {
@@ -110,17 +76,23 @@ void UWBP_UI_Widget_ObjectiveContainer_C::ObjectiveRemove(class ASBZObjective* O
 }
 
 
-// Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.WidgetAnimationEvt_OpenAnimation_K2Node_WidgetAnimationEvent_0
-// (BlueprintEvent)
+// Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_ObjectiveContainer_C::WidgetAnimationEvt_OpenAnimation_K2Node_WidgetAnimationEvent_0()
+void UWBP_UI_Widget_ObjectiveContainer_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "WidgetAnimationEvt_OpenAnimation_K2Node_WidgetAnimationEvent_0");
+		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_ObjectiveContainer_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -133,6 +105,34 @@ void UWBP_UI_Widget_ObjectiveContainer_C::TryPlayAnimation()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "TryPlayAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.WidgetAnimationEvt_CloseAnimation_K2Node_WidgetAnimationEvent_2
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_ObjectiveContainer_C::WidgetAnimationEvt_CloseAnimation_K2Node_WidgetAnimationEvent_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "WidgetAnimationEvt_CloseAnimation_K2Node_WidgetAnimationEvent_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_ObjectiveContainer.WBP_UI_Widget_ObjectiveContainer_C.WidgetAnimationEvt_OpenAnimation_K2Node_WidgetAnimationEvent_0
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_ObjectiveContainer_C::WidgetAnimationEvt_OpenAnimation_K2Node_WidgetAnimationEvent_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ObjectiveContainer_C", "WidgetAnimationEvt_OpenAnimation_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

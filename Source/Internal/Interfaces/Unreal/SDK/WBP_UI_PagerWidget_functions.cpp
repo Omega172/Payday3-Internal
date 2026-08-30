@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.CreateMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_PagerWidget_C::CreateMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "CreateMaterial");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.ExecuteUbergraph_WBP_UI_PagerWidget
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,84 +47,6 @@ void UWBP_UI_PagerWidget_C::ExecuteUbergraph_WBP_UI_PagerWidget(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.OnHeistStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PagerWidget_C::OnHeistStateChanged(EPD3HeistState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "OnHeistStateChanged");
-
-	Params::WBP_UI_PagerWidget_C_OnHeistStateChanged Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.OnAnswerPagerValueChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   AnswerPagerValue                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   MaxAnswerPagerValue                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PagerWidget_C::OnAnswerPagerValueChanged(int32 AnswerPagerValue, int32 MaxAnswerPagerValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "OnAnswerPagerValueChanged");
-
-	Params::WBP_UI_PagerWidget_C_OnAnswerPagerValueChanged Parms{};
-
-	Parms.AnswerPagerValue = AnswerPagerValue;
-	Parms.MaxAnswerPagerValue = MaxAnswerPagerValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.UpdatePagerStatus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InPagerCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InPagerMax                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PagerWidget_C::UpdatePagerStatus(int32 InPagerCount, int32 InPagerMax)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "UpdatePagerStatus");
-
-	Params::WBP_UI_PagerWidget_C_UpdatePagerStatus Parms{};
-
-	Parms.InPagerCount = InPagerCount;
-	Parms.InPagerMax = InPagerMax;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.CreateMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_PagerWidget_C::CreateMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "CreateMaterial");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -137,6 +73,70 @@ void UWBP_UI_PagerWidget_C::GetPagerStatus(int32 InPagerMax, int32 RemainingPage
 
 	if (State != nullptr)
 		*State = Parms.State;
+}
+
+
+// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.OnAnswerPagerValueChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   AnswerPagerValue                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaxAnswerPagerValue                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PagerWidget_C::OnAnswerPagerValueChanged(int32 AnswerPagerValue, int32 MaxAnswerPagerValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "OnAnswerPagerValueChanged");
+
+	Params::WBP_UI_PagerWidget_C_OnAnswerPagerValueChanged Parms{};
+
+	Parms.AnswerPagerValue = AnswerPagerValue;
+	Parms.MaxAnswerPagerValue = MaxAnswerPagerValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.OnHeistStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PagerWidget_C::OnHeistStateChanged(EPD3HeistState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "OnHeistStateChanged");
+
+	Params::WBP_UI_PagerWidget_C_OnHeistStateChanged Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PagerWidget.WBP_UI_PagerWidget_C.UpdatePagerStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InPagerCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InPagerMax                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PagerWidget_C::UpdatePagerStatus(int32 InPagerCount, int32 InPagerMax)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PagerWidget_C", "UpdatePagerStatus");
+
+	Params::WBP_UI_PagerWidget_C_UpdatePagerStatus Parms{};
+
+	Parms.InPagerCount = InPagerCount;
+	Parms.InPagerMax = InPagerMax;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

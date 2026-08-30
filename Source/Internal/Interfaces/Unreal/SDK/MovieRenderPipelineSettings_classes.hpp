@@ -11,41 +11,15 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "MovieRenderPipelineCore_classes.hpp"
 #include "UMG_classes.hpp"
+#include "MovieRenderPipelineCore_structs.hpp"
+#include "MovieRenderPipelineCore_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
-// Class MovieRenderPipelineSettings.MoviePipelineBurnInSetting
-// 0x0060 (0x00B0 - 0x0050)
-class UMoviePipelineBurnInSetting final : public UMoviePipelineRenderPass
-{
-public:
-	struct FSoftClassPath                         BurnInClass;                                       // 0x0050(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCompositeOntoFinalImage;                          // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_71[0x2F];                                      // 0x0071(0x002F)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x00A0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMoviePipelineBurnInWidget*             BurnInWidgetInstance;                              // 0x00A8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MoviePipelineBurnInSetting")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MoviePipelineBurnInSetting")
-	}
-	static class UMoviePipelineBurnInSetting* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMoviePipelineBurnInSetting>();
-	}
-};
-DUMPER7_ASSERTS_UMoviePipelineBurnInSetting;
-
 // Class MovieRenderPipelineSettings.MoviePipelineBurnInWidget
-// 0x0000 (0x0290 - 0x0290)
+// 0x0000 (0x02F0 - 0x02F0)
 class UMoviePipelineBurnInWidget final : public UUserWidget
 {
 public:
@@ -67,15 +41,51 @@ public:
 };
 DUMPER7_ASSERTS_UMoviePipelineBurnInWidget;
 
+// Class MovieRenderPipelineSettings.MoviePipelineBurnInSetting
+// 0x0070 (0x00C0 - 0x0050)
+class UMoviePipelineBurnInSetting final : public UMoviePipelineRenderPass
+{
+public:
+	struct FSoftClassPath                         BurnInClass;                                       // 0x0050(0x0028)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCompositeOntoFinalImage;                          // 0x0078(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_79[0x2F];                                      // 0x0079(0x002F)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TArray<class UMoviePipelineBurnInWidget*>     BurnInWidgetInstances;                             // 0x00B0(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MoviePipelineBurnInSetting")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MoviePipelineBurnInSetting")
+	}
+	static class UMoviePipelineBurnInSetting* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMoviePipelineBurnInSetting>();
+	}
+};
+DUMPER7_ASSERTS_UMoviePipelineBurnInSetting;
+
 // Class MovieRenderPipelineSettings.MoviePipelineConsoleVariableSetting
-// 0x0080 (0x00D0 - 0x0050)
+// 0x0060 (0x00B0 - 0x0050)
 class UMoviePipelineConsoleVariableSetting final : public UMoviePipelineSetting
 {
 public:
-	TMap<class FString, float>                    ConsoleVariables;                                  // 0x0050(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<class FString>                         StartConsoleCommands;                              // 0x00A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         EndConsoleCommands;                                // 0x00B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C0[0x10];                                      // 0x00C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<TScriptInterface<class IMovieSceneConsoleVariableTrackInterface>> ConsoleVariablePresets; // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	TArray<class FString>                         StartConsoleCommands;                              // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         EndConsoleCommands;                                // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FMoviePipelineConsoleVariableEntry> CVars;                                         // 0x0080(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_90[0x20];                                      // 0x0090(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool AddConsoleVariable(const class FString& Name_0, const float Value);
+	bool AddOrUpdateConsoleVariable(const class FString& Name_0, const float Value);
+	bool RemoveConsoleVariable(const class FString& Name_0, const bool bRemoveAllInstances);
+	bool UpdateConsoleVariableEnableState(const class FString& Name_0, const bool bIsEnabled);
+
+	TArray<struct FMoviePipelineConsoleVariableEntry> GetConsoleVariables() const;
 
 public:
 	static class UClass* StaticClass()
@@ -100,7 +110,7 @@ class UMoviePipelineWidgetRenderer final : public UMoviePipelineRenderPass
 public:
 	bool                                          bCompositeOntoFinalImage;                          // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x17];                                      // 0x0051(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0068(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UTextureRenderTarget2D*                 RenderTarget;                                      // 0x0068(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()

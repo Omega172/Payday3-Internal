@@ -16,6 +16,94 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_UI_Inventory_TextButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Inventory_TextButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Inventory_TextButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_TextButton_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_TextButton_C::DisabledButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "DisabledButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ExecuteUbergraph_WBP_UI_Inventory_TextButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,267 +124,28 @@ void UWBP_UI_Inventory_TextButton_C::ExecuteUbergraph_WBP_UI_Inventory_TextButto
 }
 
 
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.UpdateButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_TextButton_C::UpdateButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "UpdateButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.GetCharacterData
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsValid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData**           CharacterData                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_TextButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_UI_Inventory_TextButton_C::GetCharacterData(bool* bIsValid, class USBZInventoryBaseData** CharacterData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "GetCharacterData");
 
-	Params::WBP_UI_Inventory_TextButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
+	Params::WBP_UI_Inventory_TextButton_C_GetCharacterData Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
+	if (bIsValid != nullptr)
+		*bIsValid = Parms.bIsValid;
 
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_TextButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_TextButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "PreConstruct");
-
-	Params::WBP_UI_Inventory_TextButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnAnimationFinished
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_TextButton_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnAnimationFinished");
-
-	Params::WBP_UI_Inventory_TextButton_C_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_TextButton_C::DisabledButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "DisabledButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_TextButton_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_TextButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Inventory_TextButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_TextButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Inventory_TextButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_TextButton_C::OnHoverVisuals(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnHoverVisuals");
-
-	Params::WBP_UI_Inventory_TextButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnFocusedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_TextButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnFocusedVisuals");
-
-	Params::WBP_UI_Inventory_TextButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_TextButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnDisabledVisuals");
-
-	Params::WBP_UI_Inventory_TextButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.RefreshVisual
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_TextButton_C::RefreshVisual()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "RefreshVisual");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.SetButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InButtonText                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_UI_Inventory_TextButton_C::SetButtonText(const class FText& InButtonText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "SetButtonText");
-
-	Params::WBP_UI_Inventory_TextButton_C_SetButtonText Parms{};
-
-	Parms.InButtonText = std::move(InButtonText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ResetToDefaultButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_TextButton_C::ResetToDefaultButtonText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ResetToDefaultButtonText");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (CharacterData != nullptr)
+		*CharacterData = Parms.CharacterData;
 }
 
 
@@ -321,6 +170,148 @@ void UWBP_UI_Inventory_TextButton_C::GetText(class FText* OutText)
 }
 
 
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnAnimationFinished");
+
+	Params::WBP_UI_Inventory_TextButton_C_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::OnDisabledVisuals(bool bIsDisabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnDisabledVisuals");
+
+	Params::WBP_UI_Inventory_TextButton_C_OnDisabledVisuals Parms{};
+
+	Parms.bIsDisabled_0 = bIsDisabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnFocusedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::OnFocusedVisuals(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnFocusedVisuals");
+
+	Params::WBP_UI_Inventory_TextButton_C_OnFocusedVisuals Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::OnHoverVisuals(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnHoverVisuals");
+
+	Params::WBP_UI_Inventory_TextButton_C_OnHoverVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_TextButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_TextButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "PreConstruct");
+
+	Params::WBP_UI_Inventory_TextButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.RefreshVisual
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_TextButton_C::RefreshVisual()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "RefreshVisual");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.ResetToDefaultButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_TextButton_C::ResetToDefaultButtonText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "ResetToDefaultButtonText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.Set Appearance Type Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -341,28 +332,37 @@ void UWBP_UI_Inventory_TextButton_C::Set_Appearance_Type_Icon(int32 SelectedLoud
 }
 
 
-// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.GetCharacterData
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.SetButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   bIsValid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USBZInventoryBaseData**           CharacterData                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InButtonText                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_Inventory_TextButton_C::GetCharacterData(bool* bIsValid, class USBZInventoryBaseData** CharacterData)
+void UWBP_UI_Inventory_TextButton_C::SetButtonText(const class FText& InButtonText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "GetCharacterData");
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "SetButtonText");
 
-	Params::WBP_UI_Inventory_TextButton_C_GetCharacterData Parms{};
+	Params::WBP_UI_Inventory_TextButton_C_SetButtonText Parms{};
+
+	Parms.InButtonText = std::move(InButtonText);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (bIsValid != nullptr)
-		*bIsValid = Parms.bIsValid;
 
-	if (CharacterData != nullptr)
-		*CharacterData = Parms.CharacterData;
+// Function WBP_UI_Inventory_TextButton.WBP_UI_Inventory_TextButton_C.UpdateButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_TextButton_C::UpdateButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_TextButton_C", "UpdateButton");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

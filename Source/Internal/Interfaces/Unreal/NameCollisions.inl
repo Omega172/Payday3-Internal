@@ -9,5 +9,43 @@
 // FORWARD DECLARATIONS
 
 
+namespace ABP_TPPlayerBase_Moneybag { struct FAnimBlueprintGeneratedConstantData; }
+
 namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
 
+
+namespace ABP_Mask_Base
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Placeable_SentryGun
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_HandCuffsAnimation
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_WP_Master
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_PlayerMenu
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_SentryGun
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}

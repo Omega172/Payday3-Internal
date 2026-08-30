@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlayerTarget.GA_PlayerTarget_C
-// 0x0000 (0x04D8 - 0x04D8)
+// 0x0000 (0x04D0 - 0x04D0)
 class UGA_PlayerTarget_C final : public USBZPlayerTargetAbility
 {
 public:

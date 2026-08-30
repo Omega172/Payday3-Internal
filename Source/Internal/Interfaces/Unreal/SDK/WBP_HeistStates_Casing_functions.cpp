@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.BP_OnPawnChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZPlayerCharacter*              NewPlayerCharacter                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HeistStates_Casing_C::BP_OnPawnChanged(class ASBZPlayerCharacter* NewPlayerCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Casing_C", "BP_OnPawnChanged");
+
+	Params::WBP_HeistStates_Casing_C_BP_OnPawnChanged Parms{};
+
+	Parms.NewPlayerCharacter = NewPlayerCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_HeistStates_Casing_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Casing_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.ExecuteUbergraph_WBP_HeistStates_Casing
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,44 +70,24 @@ void UWBP_HeistStates_Casing_C::ExecuteUbergraph_WBP_HeistStates_Casing(int32 En
 }
 
 
-// Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.Hide
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_HeistStates_Casing_C::Destruct()
+void UWBP_HeistStates_Casing_C::Hide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Casing_C", "Destruct");
+		Func = Class->GetFunction("WBP_HeistStates_Casing_C", "Hide");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.BP_OnPawnChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZPlayerCharacter*              NewPlayerCharacter                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_HeistStates_Casing_C::BP_OnPawnChanged(class ASBZPlayerCharacter* NewPlayerCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Casing_C", "BP_OnPawnChanged");
-
-	Params::WBP_HeistStates_Casing_C_BP_OnPawnChanged Parms{};
-
-	Parms.NewPlayerCharacter = NewPlayerCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.OnCasingUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsCasing                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsCasing                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_HeistStates_Casing_C::OnCasingUpdated(bool bIsCasing)
 {
@@ -87,20 +101,6 @@ void UWBP_HeistStates_Casing_C::OnCasingUpdated(bool bIsCasing)
 	Parms.bIsCasing = bIsCasing;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HeistStates_Casing.WBP_HeistStates_Casing_C.Hide
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_Casing_C::Hide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Casing_C", "Hide");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

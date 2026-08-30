@@ -17,31 +17,6 @@
 
 SDK_NAMESPACE_START
 
-// Class ConstructionSystemRuntime.ConstructionSystemSaveSystem
-// 0x0000 (0x0030 - 0x0030)
-class UConstructionSystemSaveSystem final : public UBlueprintFunctionLibrary
-{
-public:
-	static void HandleConstructionSystemLevelLoad(const class UObject* WorldContextObject);
-	static void LoadConstructionSystemLevel(const class UObject* WorldContextObject, const class FName& LevelName, bool bAbsolute, const class FString& SaveSlotName, int32 UserIndex);
-	static void SaveConstructionSystemLevel(const class UObject* WorldContextObject, const class FString& SaveSlotName, int32 UserIndex, bool bSavePlayerState);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ConstructionSystemSaveSystem")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ConstructionSystemSaveSystem")
-	}
-	static class UConstructionSystemSaveSystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UConstructionSystemSaveSystem>();
-	}
-};
-DUMPER7_ASSERTS_UConstructionSystemSaveSystem;
-
 // Class ConstructionSystemRuntime.ConstructionSystemTool
 // 0x0008 (0x0038 - 0x0030)
 class UConstructionSystemTool : public UObject
@@ -72,8 +47,8 @@ class UConstructionSystemBuildTool final : public UConstructionSystemTool
 public:
 	float                                         TraceDistance;                                     // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CursorRotationStepAngle;                           // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UConstructionSystemCursor*              Cursor;                                            // 0x0040(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UPrefabricatorAssetInterface*           ActivePrefabAsset;                                 // 0x0048(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UConstructionSystemCursor*              Cursor;                                            // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPrefabricatorAssetInterface*           ActivePrefabAsset;                                 // 0x0048(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_50[0x138];                                     // 0x0050(0x0138)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -100,24 +75,24 @@ public:
 DUMPER7_ASSERTS_UConstructionSystemBuildTool;
 
 // Class ConstructionSystemRuntime.ConstructionSystemComponent
-// 0x00A0 (0x0160 - 0x00C0)
+// 0x00A0 (0x0148 - 0x00A8)
 class UConstructionSystemComponent final : public UActorComponent
 {
 public:
-	class UMaterialInterface*                     CursorMaterial;                                    // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMaterialInterface*                     CursorInvalidMaterial;                             // 0x00C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TraceStartDistance;                                // 0x00D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         TraceSweepRadius;                                  // 0x00D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 ConstructionCameraActor;                           // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConstructionCameraTransitionTime;                  // 0x00E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ConstructionCameraTransitionExp;                   // 0x00E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UUserWidget>                BuildMenuUI;                                       // 0x00E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UConstructionSystemUIAsset*             BuildMenuData;                                     // 0x00F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UUserWidget*                            BuildMenuUIInstance;                               // 0x00F8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EConstructionSystemToolType                   ActiveToolType;                                    // 0x0100(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EConstructionSystemToolType, class UConstructionSystemTool*> Tools;                         // 0x0108(0x0050)(Transient, NativeAccessSpecifierPublic)
-	uint8                                         Pad_158[0x8];                                      // 0x0158(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CursorMaterial;                                    // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     CursorInvalidMaterial;                             // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TraceStartDistance;                                // 0x00B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         TraceSweepRadius;                                  // 0x00BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 ConstructionCameraActor;                           // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConstructionCameraTransitionTime;                  // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ConstructionCameraTransitionExp;                   // 0x00CC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UUserWidget>                BuildMenuUI;                                       // 0x00D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UConstructionSystemUIAsset*             BuildMenuData;                                     // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UUserWidget*                            BuildMenuUIInstance;                               // 0x00E0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EConstructionSystemToolType                   ActiveToolType;                                    // 0x00E8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EConstructionSystemToolType, class UConstructionSystemTool*> Tools;                         // 0x00F0(0x0050)(Transient, NativeAccessSpecifierPublic)
+	uint8                                         Pad_140[0x8];                                      // 0x0140(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void DisableConstructionSystem();
@@ -176,11 +151,11 @@ DUMPER7_ASSERTS_UConstructionSystemItemUserData;
 class UConstructionSystemCursor final : public UObject
 {
 public:
-	class APrefabActor*                           CursorGhostActor;                                  // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class APrefabActor*                           CursorGhostActor;                                  // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         CursorSeed;                                        // 0x0038(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CursorMaterial;                                    // 0x0040(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMaterialInterface*                     CursorInvalidMaterial;                             // 0x0048(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMaterialInterface*                     CursorMaterial;                                    // 0x0040(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UMaterialInterface*                     CursorInvalidMaterial;                             // 0x0048(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UPrefabricatorConstructionSnapComponent*> SnapComponents;                           // 0x0050(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	int32                                         ActiveSnapComponentIndex;                          // 0x0060(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -230,15 +205,15 @@ public:
 DUMPER7_ASSERTS_UConstructionSystemRemoveTool;
 
 // Class ConstructionSystemRuntime.ConstructionSystemSaveGame
-// 0x0080 (0x00B0 - 0x0030)
+// 0x00C0 (0x00F0 - 0x0030)
 class UConstructionSystemSaveGame final : public USaveGame
 {
 public:
 	class FString                                 SaveSlotName;                                      // 0x0030(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        UserIndex;                                         // 0x0040(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0xC];                                       // 0x0044(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FConstructionSystemSavePlayerInfo      PlayerInfo;                                        // 0x0050(0x0050)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
-	TArray<struct FConstructionSystemSaveConstructedItem> ConstructedItems;                          // 0x00A0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FConstructionSystemSavePlayerInfo      PlayerInfo;                                        // 0x0050(0x0090)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<struct FConstructionSystemSaveConstructedItem> ConstructedItems;                          // 0x00E0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -256,19 +231,44 @@ public:
 };
 DUMPER7_ASSERTS_UConstructionSystemSaveGame;
 
+// Class ConstructionSystemRuntime.ConstructionSystemSaveSystem
+// 0x0000 (0x0030 - 0x0030)
+class UConstructionSystemSaveSystem final : public UBlueprintFunctionLibrary
+{
+public:
+	static void HandleConstructionSystemLevelLoad(const class UObject* WorldContextObject);
+	static void LoadConstructionSystemLevel(const class UObject* WorldContextObject, const class FName& LevelName, bool bAbsolute, const class FString& SaveSlotName, int32 UserIndex);
+	static void SaveConstructionSystemLevel(const class UObject* WorldContextObject, const class FString& SaveSlotName, int32 UserIndex, bool bSavePlayerState);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ConstructionSystemSaveSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConstructionSystemSaveSystem")
+	}
+	static class UConstructionSystemSaveSystem* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UConstructionSystemSaveSystem>();
+	}
+};
+DUMPER7_ASSERTS_UConstructionSystemSaveSystem;
+
 // Class ConstructionSystemRuntime.PrefabricatorConstructionSnapComponent
-// 0x0010 (0x0540 - 0x0530)
+// 0x0020 (0x05B0 - 0x0590)
 class UPrefabricatorConstructionSnapComponent final : public UBoxComponent
 {
 public:
-	EPrefabricatorConstructionSnapType            SnapType;                                          // 0x0528(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FPCSnapConstraintFloor                 FloorConstraint;                                   // 0x0529(0x0006)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FPCSnapConstraintWall                  WallConstraint;                                    // 0x052F(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bAlignToGroundSlope;                               // 0x0533(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseMaxGroundSlopeConstraint;                      // 0x0534(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_535[0x3];                                      // 0x0535(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MaxGroundPlacementSlope;                           // 0x0538(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_53C[0x4];                                      // 0x053C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EPrefabricatorConstructionSnapType            SnapType;                                          // 0x0590(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPCSnapConstraintFloor                 FloorConstraint;                                   // 0x0591(0x0006)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPCSnapConstraintWall                  WallConstraint;                                    // 0x0597(0x0004)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          bAlignToGroundSlope;                               // 0x059B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseMaxGroundSlopeConstraint;                      // 0x059C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59D[0x3];                                      // 0x059D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MaxGroundPlacementSlope;                           // 0x05A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5A4[0xC];                                      // 0x05A4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -287,11 +287,11 @@ public:
 DUMPER7_ASSERTS_UPrefabricatorConstructionSnapComponent;
 
 // Class ConstructionSystemRuntime.PrefabricatorConstructionSnap
-// 0x0008 (0x02B0 - 0x02A8)
+// 0x0008 (0x0330 - 0x0328)
 class APrefabricatorConstructionSnap final : public AActor
 {
 public:
-	class UPrefabricatorConstructionSnapComponent* ConstructionSnapComponent;                        // 0x02A8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPrefabricatorConstructionSnapComponent* ConstructionSnapComponent;                        // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -343,12 +343,12 @@ public:
 DUMPER7_ASSERTS_IConstructionSystemBuildUI;
 
 // Class ConstructionSystemRuntime.ConstructionSystemUIAsset
-// 0x0028 (0x0060 - 0x0038)
+// 0x0020 (0x0058 - 0x0038)
 class UConstructionSystemUIAsset final : public UDataAsset
 {
 public:
-	class FText                                   MenuTitle;                                         // 0x0038(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
-	TArray<struct FConstructionSystemUICategory>  Categories;                                        // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	class FText                                   MenuTitle;                                         // 0x0038(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
+	TArray<struct FConstructionSystemUICategory>  Categories;                                        // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()

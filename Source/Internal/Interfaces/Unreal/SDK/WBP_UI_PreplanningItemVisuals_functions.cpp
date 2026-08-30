@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.EmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_PreplanningItemVisuals_C::EmptySet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "EmptySet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.ExecuteUbergraph_WBP_UI_PreplanningItemVisuals
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,64 +50,44 @@ void UWBP_UI_PreplanningItemVisuals_C::ExecuteUbergraph_WBP_UI_PreplanningItemVi
 }
 
 
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.InitializeEmptyVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_PreplanningItemVisuals_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_PreplanningItemVisuals_C::InitializeEmptyVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "PreConstruct");
-
-	Params::WBP_UI_PreplanningItemVisuals_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SpriteLoaded
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemVisuals_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "SpriteLoaded");
-
-	Params::WBP_UI_PreplanningItemVisuals_C_SpriteLoaded Parms{};
-
-	Parms.OutLoadedSprite = OutLoadedSprite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.EmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_PreplanningItemVisuals_C::EmptySet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "EmptySet");
+		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "InitializeEmptyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.InitializeItemVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZPreplanningAssetData*         InPreplanningItem                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemVisuals_C::InitializeItemVisuals(class USBZPreplanningAssetData* InPreplanningItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "InitializeItemVisuals");
+
+	Params::WBP_UI_PreplanningItemVisuals_C_InitializeItemVisuals Parms{};
+
+	Parms.InPreplanningItem = InPreplanningItem;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.ItemInitialized
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZInventoryBaseData*      NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZInventoryBaseData*      NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_PreplanningItemVisuals_C::ItemInitialized(const class USBZInventoryBaseData* NewItem)
 {
@@ -110,10 +104,50 @@ void UWBP_UI_PreplanningItemVisuals_C::ItemInitialized(const class USBZInventory
 }
 
 
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.OnFocus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemVisuals_C::OnFocus(bool IsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "OnFocus");
+
+	Params::WBP_UI_PreplanningItemVisuals_C_OnFocus Parms{};
+
+	Parms.IsFocused = IsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemVisuals_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "PreConstruct");
+
+	Params::WBP_UI_PreplanningItemVisuals_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SetDisplayName
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZPreplanningAssetData*         InPrePlanningAsset                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZPreplanningAssetData*         InPrePlanningAsset                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_PreplanningItemVisuals_C::SetDisplayName(class USBZPreplanningAssetData* InPrePlanningAsset)
 {
@@ -133,7 +167,7 @@ void UWBP_UI_PreplanningItemVisuals_C::SetDisplayName(class USBZPreplanningAsset
 // Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     InDisplayIcon                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InDisplayIcon                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_PreplanningItemVisuals_C::SetIcon(class UPaperSprite* InDisplayIcon)
 {
@@ -150,55 +184,21 @@ void UWBP_UI_PreplanningItemVisuals_C::SetIcon(class UPaperSprite* InDisplayIcon
 }
 
 
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.InitializeItemVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SpriteLoaded
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZPreplanningAssetData*         InPreplanningItem                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_PreplanningItemVisuals_C::InitializeItemVisuals(class USBZPreplanningAssetData* InPreplanningItem)
+void UWBP_UI_PreplanningItemVisuals_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "InitializeItemVisuals");
+		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "SpriteLoaded");
 
-	Params::WBP_UI_PreplanningItemVisuals_C_InitializeItemVisuals Parms{};
+	Params::WBP_UI_PreplanningItemVisuals_C_SpriteLoaded Parms{};
 
-	Parms.InPreplanningItem = InPreplanningItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.InitializeEmptyVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_PreplanningItemVisuals_C::InitializeEmptyVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "InitializeEmptyVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.OnFocus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_PreplanningItemVisuals_C::OnFocus(bool IsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PreplanningItemVisuals_C", "OnFocus");
-
-	Params::WBP_UI_PreplanningItemVisuals_C_OnFocus Parms{};
-
-	Parms.IsFocused = IsFocused;
+	Parms.OutLoadedSprite = OutLoadedSprite;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

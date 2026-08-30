@@ -20,7 +20,7 @@ struct BP_MainMenu_Van_01_C_ExecuteUbergraph_BP_MainMenu_Van_01 final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ApplyVariationToStatic_ReturnValue;       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_ApplyVariationToStatic_ReturnValue;       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MainMenu_Van_01_C_ExecuteUbergraph_BP_MainMenu_Van_01;
 

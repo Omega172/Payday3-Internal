@@ -18,28 +18,28 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_SideModInfoPanel.WBP_SideModInfoPanel_C
-// 0x0030 (0x02C0 - 0x0290)
+// 0x0038 (0x0328 - 0x02F0)
 class UWBP_SideModInfoPanel_C final : public USBZWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USizeBox*                               SizeBox_0;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_ModDescription;                               // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_ModName;                                      // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         Text_WeaponPartDescription;                        // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	float                                         MinDesiredWidth;                                   // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MaxDesiredWidth;                                   // 0x02BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USizeBox*                               SizeBox_0;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_ModDescription;                               // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_ModName;                                      // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         Text_WeaponPartDescription;                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        MinDesiredWidth;                                   // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MaxDesiredWidth;                                   // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_SideModInfoPanel(int32 EntryPoint);
-	void SetInfoToEmpty();
-	void SetWeaponPartDescription(const class FText& InText);
-	void SetInfoToUnequipMod();
-	void UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData);
+	void GetFirstSkillData(const class USBZWeaponPartDataAsset* WeaponPartData, class USBZSkillData** SkillData);
+	void PreConstruct(bool IsDesignTime);
 	void SetBody(const class FText& InText);
 	void SetHeader(const class FText& InText);
-	void PreConstruct(bool IsDesignTime);
-	void GetFirstSkillData(const class USBZWeaponPartDataAsset* WeaponPartData, class USBZSkillData** SkillData);
+	void SetInfoToEmpty();
+	void SetInfoToUnequipMod();
+	void SetWeaponPartDescription(const class FText& InText);
+	void UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData);
 
 public:
 	static class UClass* StaticClass()

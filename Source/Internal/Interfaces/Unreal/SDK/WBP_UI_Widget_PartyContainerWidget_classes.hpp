@@ -18,15 +18,15 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_PartyContainerWidget.WBP_UI_Widget_PartyContainerWidget_C
-// 0x0030 (0x02E8 - 0x02B8)
+// 0x0030 (0x0348 - 0x0318)
 class UWBP_UI_Widget_PartyContainerWidget_C final : public UPD3HUDPartyContainerWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               SharedKeyItemContiainerOverlay;                    // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class FText>                           PartyStrings;                                      // 0x02D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          bIsDisplayingPartyString;                          // 0x02E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               SharedKeyItemContiainerOverlay;                    // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class FText>                           PartyStrings;                                      // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          bIsDisplayingPartyString;                          // 0x0340(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_PartyContainerWidget(int32 EntryPoint);

@@ -37,12 +37,12 @@ public:
 DUMPER7_ASSERTS_USteamAuthComponentModuleInterface;
 
 // Class OnlineSubsystemSteam.SteamNetConnection
-// 0x0008 (0x1CA0 - 0x1C98)
+// 0x0008 (0x1EC8 - 0x1EC0)
 class USteamNetConnection final : public UIpConnection
 {
 public:
-	bool                                          bIsPassthrough;                                    // 0x1C98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C99[0x7];                                     // 0x1C99(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bIsPassthrough;                                    // 0x1EC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1EC1[0x7];                                     // 0x1EC1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -61,11 +61,11 @@ public:
 DUMPER7_ASSERTS_USteamNetConnection;
 
 // Class OnlineSubsystemSteam.SteamNetDriver
-// 0x0008 (0x0800 - 0x07F8)
+// 0x0008 (0x09B0 - 0x09A8)
 class USteamNetDriver final : public UIpNetDriver
 {
 public:
-	uint8                                         Pad_7F8[0x8];                                      // 0x07F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9A8[0x8];                                      // 0x09A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

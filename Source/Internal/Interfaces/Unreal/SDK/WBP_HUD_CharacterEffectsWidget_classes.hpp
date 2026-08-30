@@ -17,11 +17,11 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_HUD_CharacterEffectsWidget.WBP_HUD_CharacterEffectsWidget_C
-// 0x0008 (0x0328 - 0x0320)
+// 0x0008 (0x0388 - 0x0380)
 class UWBP_HUD_CharacterEffectsWidget_C final : public USBZCharacterEffectContainer
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_WBP_HUD_CharacterEffectsWidget(int32 EntryPoint);

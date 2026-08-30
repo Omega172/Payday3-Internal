@@ -16,71 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_LobbyChat.WBP_LobbyChat_C.ExecuteUbergraph_WBP_LobbyChat
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_LobbyChat.WBP_LobbyChat_C.AddMessageToChat
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Message                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_LobbyChat_C::ExecuteUbergraph_WBP_LobbyChat(int32 EntryPoint)
+void UWBP_LobbyChat_C::AddMessageToChat(const class FText& Message)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "ExecuteUbergraph_WBP_LobbyChat");
+		Func = Class->GetFunction("WBP_LobbyChat_C", "AddMessageToChat");
 
-	Params::WBP_LobbyChat_C_ExecuteUbergraph_WBP_LobbyChat Parms{};
+	Params::WBP_LobbyChat_C_AddMessageToChat Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Message = std::move(Message);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LobbyChat.WBP_LobbyChat_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_LobbyChat_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_LobbyChat.WBP_LobbyChat_C.OnMessageReceivedEvent
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZChatMessage&           ChatMessage                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_LobbyChat_C::OnMessageReceivedEvent(const struct FSBZChatMessage& ChatMessage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "OnMessageReceivedEvent");
-
-	Params::WBP_LobbyChat_C_OnMessageReceivedEvent Parms{};
-
-	Parms.ChatMessage = std::move(ChatMessage);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LobbyChat.WBP_LobbyChat_C.EventCollapseChat
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_LobbyChat_C::EventCollapseChat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "EventCollapseChat");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -95,40 +47,6 @@ void UWBP_LobbyChat_C::BndEvt__WBP_LobbyChat_EditableText_ChatInput_K2Node_Compo
 		Func = Class->GetFunction("WBP_LobbyChat_C", "BndEvt__WBP_LobbyChat_EditableText_ChatInput_K2Node_ComponentBoundEvent_1_OnMaxInputLengthReached__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_LobbyChat.WBP_LobbyChat_C.OnChatActionPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_LobbyChat_C::OnChatActionPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "OnChatActionPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_LobbyChat.WBP_LobbyChat_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_LobbyChat_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "PreConstruct");
-
-	Params::WBP_LobbyChat_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -182,57 +100,58 @@ void UWBP_LobbyChat_C::BndEvt__WBP_LobbyChat_WBP_UI_Menu_ActionInputButton_K2Nod
 }
 
 
-// Function WBP_LobbyChat.WBP_LobbyChat_C.SetIdleState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Init                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_LobbyChat.WBP_LobbyChat_C.EventCollapseChat
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_LobbyChat_C::SetIdleState(bool Init)
+void UWBP_LobbyChat_C::EventCollapseChat()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "SetIdleState");
-
-	Params::WBP_LobbyChat_C_SetIdleState Parms{};
-
-	Parms.Init = Init;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LobbyChat.WBP_LobbyChat_C.SetActiveState
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_LobbyChat_C::SetActiveState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "SetActiveState");
+		Func = Class->GetFunction("WBP_LobbyChat_C", "EventCollapseChat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_LobbyChat.WBP_LobbyChat_C.UpdateUnreadMessageCount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_LobbyChat.WBP_LobbyChat_C.ExecuteUbergraph_WBP_LobbyChat
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   InAmountOfMessageUnread                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LobbyChat_C::UpdateUnreadMessageCount(int32 InAmountOfMessageUnread)
+void UWBP_LobbyChat_C::ExecuteUbergraph_WBP_LobbyChat(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "UpdateUnreadMessageCount");
+		Func = Class->GetFunction("WBP_LobbyChat_C", "ExecuteUbergraph_WBP_LobbyChat");
 
-	Params::WBP_LobbyChat_C_UpdateUnreadMessageCount Parms{};
+	Params::WBP_LobbyChat_C_ExecuteUbergraph_WBP_LobbyChat Parms{};
 
-	Parms.InAmountOfMessageUnread = InAmountOfMessageUnread;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LobbyChat.WBP_LobbyChat_C.GetIsActive
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   IsActive_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LobbyChat_C::GetIsActive(bool* IsActive_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LobbyChat_C", "GetIsActive");
+
+	Params::WBP_LobbyChat_C_GetIsActive Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsActive_0 != nullptr)
+		*IsActive_0 = Parms.IsActive_0;
 }
 
 
@@ -250,23 +169,31 @@ void UWBP_LobbyChat_C::InitExpandedSectionVisuals()
 }
 
 
-// Function WBP_LobbyChat.WBP_LobbyChat_C.AddMessageToChat
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Message                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_LobbyChat.WBP_LobbyChat_C.OnChatActionPressed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_LobbyChat_C::AddMessageToChat(const class FText& Message)
+void UWBP_LobbyChat_C::OnChatActionPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "AddMessageToChat");
+		Func = Class->GetFunction("WBP_LobbyChat_C", "OnChatActionPressed");
 
-	Params::WBP_LobbyChat_C_AddMessageToChat Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Message = std::move(Message);
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_LobbyChat.WBP_LobbyChat_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_LobbyChat_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LobbyChat_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -290,24 +217,97 @@ void UWBP_LobbyChat_C::OnMessageReceived(const struct FSBZChatMessage& InChatMes
 }
 
 
-// Function WBP_LobbyChat.WBP_LobbyChat_C.GetIsActive
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_LobbyChat.WBP_LobbyChat_C.OnMessageReceivedEvent
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// bool*                                   IsActive_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FSBZChatMessage&           ChatMessage                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_LobbyChat_C::GetIsActive(bool* IsActive_0)
+void UWBP_LobbyChat_C::OnMessageReceivedEvent(const struct FSBZChatMessage& ChatMessage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LobbyChat_C", "GetIsActive");
+		Func = Class->GetFunction("WBP_LobbyChat_C", "OnMessageReceivedEvent");
 
-	Params::WBP_LobbyChat_C_GetIsActive Parms{};
+	Params::WBP_LobbyChat_C_OnMessageReceivedEvent Parms{};
+
+	Parms.ChatMessage = std::move(ChatMessage);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (IsActive_0 != nullptr)
-		*IsActive_0 = Parms.IsActive_0;
+
+// Function WBP_LobbyChat.WBP_LobbyChat_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LobbyChat_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LobbyChat_C", "PreConstruct");
+
+	Params::WBP_LobbyChat_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LobbyChat.WBP_LobbyChat_C.SetActiveState
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_LobbyChat_C::SetActiveState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LobbyChat_C", "SetActiveState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_LobbyChat.WBP_LobbyChat_C.SetIdleState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Init                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LobbyChat_C::SetIdleState(bool Init)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LobbyChat_C", "SetIdleState");
+
+	Params::WBP_LobbyChat_C_SetIdleState Parms{};
+
+	Parms.Init = Init;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LobbyChat.WBP_LobbyChat_C.UpdateUnreadMessageCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InAmountOfMessageUnread                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LobbyChat_C::UpdateUnreadMessageCount(int32 InAmountOfMessageUnread)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LobbyChat_C", "UpdateUnreadMessageCount");
+
+	Params::WBP_LobbyChat_C_UpdateUnreadMessageCount Parms{};
+
+	Parms.InAmountOfMessageUnread = InAmountOfMessageUnread;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

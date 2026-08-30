@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_AttributeBar_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.ExecuteUbergraph_WBP_UI_Widget_AttributeBar
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,27 +50,24 @@ void UWBP_UI_Widget_AttributeBar_C::ExecuteUbergraph_WBP_UI_Widget_AttributeBar(
 }
 
 
-// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.OnMaxAttributeUpdate
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.GetMaterialInstance
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   OldPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   NewPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic**        MatInst_0                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_AttributeBar_C::OnMaxAttributeUpdate(float NewValue, float OldPercentage, float NewPercentage)
+void UWBP_UI_Widget_AttributeBar_C::GetMaterialInstance(class UMaterialInstanceDynamic** MatInst_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "OnMaxAttributeUpdate");
+		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "GetMaterialInstance");
 
-	Params::WBP_UI_Widget_AttributeBar_C_OnMaxAttributeUpdate Parms{};
-
-	Parms.NewValue = NewValue;
-	Parms.OldPercentage = OldPercentage;
-	Parms.NewPercentage = NewPercentage;
+	Params::WBP_UI_Widget_AttributeBar_C_GetMaterialInstance Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (MatInst_0 != nullptr)
+		*MatInst_0 = Parms.MatInst_0;
 }
 
 
@@ -75,6 +86,30 @@ void UWBP_UI_Widget_AttributeBar_C::OnCurrentAttributeUpdate(float NewValue, flo
 		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "OnCurrentAttributeUpdate");
 
 	Params::WBP_UI_Widget_AttributeBar_C_OnCurrentAttributeUpdate Parms{};
+
+	Parms.NewValue = NewValue;
+	Parms.OldPercentage = OldPercentage;
+	Parms.NewPercentage = NewPercentage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.OnMaxAttributeUpdate
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   OldPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   NewPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_AttributeBar_C::OnMaxAttributeUpdate(float NewValue, float OldPercentage, float NewPercentage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "OnMaxAttributeUpdate");
+
+	Params::WBP_UI_Widget_AttributeBar_C_OnMaxAttributeUpdate Parms{};
 
 	Parms.NewValue = NewValue;
 	Parms.OldPercentage = OldPercentage;
@@ -108,24 +143,10 @@ void UWBP_UI_Widget_AttributeBar_C::OnSetup(float CurrentValueSetup, float MaxVa
 }
 
 
-// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_AttributeBar_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_AttributeBar_C::PreConstruct(bool IsDesignTime)
 {
@@ -137,26 +158,6 @@ void UWBP_UI_Widget_AttributeBar_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_Widget_AttributeBar_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.SetShaderProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_AttributeBar_C::SetShaderProgress(float Progress_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "SetShaderProgress");
-
-	Params::WBP_UI_Widget_AttributeBar_C_SetShaderProgress Parms{};
-
-	Parms.Progress_0 = Progress_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -176,24 +177,23 @@ void UWBP_UI_Widget_AttributeBar_C::SetShaderParams()
 }
 
 
-// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.GetMaterialInstance
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_AttributeBar.WBP_UI_Widget_AttributeBar_C.SetShaderProgress
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstanceDynamic**        MatInst_0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_AttributeBar_C::GetMaterialInstance(class UMaterialInstanceDynamic** MatInst_0)
+void UWBP_UI_Widget_AttributeBar_C::SetShaderProgress(double Progress_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "GetMaterialInstance");
+		Func = Class->GetFunction("WBP_UI_Widget_AttributeBar_C", "SetShaderProgress");
 
-	Params::WBP_UI_Widget_AttributeBar_C_GetMaterialInstance Parms{};
+	Params::WBP_UI_Widget_AttributeBar_C_SetShaderProgress Parms{};
+
+	Parms.Progress_0 = Progress_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (MatInst_0 != nullptr)
-		*MatInst_0 = Parms.MatInst_0;
 }
 
 

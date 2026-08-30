@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DesktopComputer_01_Tower.BP_DesktopComputer_01_Tower_C
-// 0x0000 (0x02E0 - 0x02E0)
+// 0x0000 (0x0360 - 0x0360)
 class ABP_DesktopComputer_01_Tower_C final : public ASBZSmallCosmeticDestruction_fading_C
 {
 public:

@@ -16,6 +16,74 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.BP_OnCharacterChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class ASBZAICrewState*                  InAICrewState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_PartyAICrewWidget_C::BP_OnCharacterChanged(class ASBZAICrewState* InAICrewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "BP_OnCharacterChanged");
+
+	Params::WBP_UI_Widget_PartyAICrewWidget_C_BP_OnCharacterChanged Parms{};
+
+	Parms.InAICrewState = InAICrewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.BP_OnMaskedOnStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class ASBZAICrewState*                  InAICrewState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_PartyAICrewWidget_C::BP_OnMaskedOnStateChanged(class ASBZAICrewState* InAICrewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "BP_OnMaskedOnStateChanged");
+
+	Params::WBP_UI_Widget_PartyAICrewWidget_C_BP_OnMaskedOnStateChanged Parms{};
+
+	Parms.InAICrewState = InAICrewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_PartyAICrewWidget_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_PartyAICrewWidget_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.ExecuteUbergraph_WBP_UI_Widget_PartyAICrewWidget
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -33,6 +101,30 @@ void UWBP_UI_Widget_PartyAICrewWidget_C::ExecuteUbergraph_WBP_UI_Widget_PartyAIC
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.Get Character Icon
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICrewState*                  InPlayerState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TScriptInterface<class ISlateTextureAtlasInterface>*CharacterIcon                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_PartyAICrewWidget_C::Get_Character_Icon(class ASBZAICrewState* InPlayerState, TScriptInterface<class ISlateTextureAtlasInterface>* CharacterIcon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "Get Character Icon");
+
+	Params::WBP_UI_Widget_PartyAICrewWidget_C_Get_Character_Icon Parms{};
+
+	Parms.InPlayerState = InPlayerState;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CharacterIcon != nullptr)
+		*CharacterIcon = Parms.CharacterIcon;
 }
 
 
@@ -64,26 +156,6 @@ void UWBP_UI_Widget_PartyAICrewWidget_C::OnReviveStarted()
 }
 
 
-// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_PartyAICrewWidget_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "PreConstruct");
-
-	Params::WBP_UI_Widget_PartyAICrewWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.OnStateChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -106,95 +178,23 @@ void UWBP_UI_Widget_PartyAICrewWidget_C::OnStateChanged(EPD3DefeatState Old, EPD
 }
 
 
-// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.Destruct
+// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_PartyAICrewWidget_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_PartyAICrewWidget_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.BP_OnCharacterChanged
-// (Event, Public, BlueprintEvent)
 // Parameters:
-// class ASBZAICrewState*                  InAICrewState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_PartyAICrewWidget_C::BP_OnCharacterChanged(class ASBZAICrewState* InAICrewState)
+void UWBP_UI_Widget_PartyAICrewWidget_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "BP_OnCharacterChanged");
+		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "PreConstruct");
 
-	Params::WBP_UI_Widget_PartyAICrewWidget_C_BP_OnCharacterChanged Parms{};
+	Params::WBP_UI_Widget_PartyAICrewWidget_C_PreConstruct Parms{};
 
-	Parms.InAICrewState = InAICrewState;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.BP_OnMaskedOnStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class ASBZAICrewState*                  InAICrewState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_PartyAICrewWidget_C::BP_OnMaskedOnStateChanged(class ASBZAICrewState* InAICrewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "BP_OnMaskedOnStateChanged");
-
-	Params::WBP_UI_Widget_PartyAICrewWidget_C_BP_OnMaskedOnStateChanged Parms{};
-
-	Parms.InAICrewState = InAICrewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_PartyAICrewWidget.WBP_UI_Widget_PartyAICrewWidget_C.Get Character Icon
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAICrewState*                  InPlayerState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TScriptInterface<class ISlateTextureAtlasInterface>*CharacterIcon                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-
-void UWBP_UI_Widget_PartyAICrewWidget_C::Get_Character_Icon(class ASBZAICrewState* InPlayerState, TScriptInterface<class ISlateTextureAtlasInterface>* CharacterIcon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyAICrewWidget_C", "Get Character Icon");
-
-	Params::WBP_UI_Widget_PartyAICrewWidget_C_Get_Character_Icon Parms{};
-
-	Parms.InPlayerState = InPlayerState;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CharacterIcon != nullptr)
-		*CharacterIcon = Parms.CharacterIcon;
 }
 
 

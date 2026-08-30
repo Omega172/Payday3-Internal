@@ -36,49 +36,21 @@ void UWBP_Blackmarket_Category_C::ExecuteUbergraph_WBP_Blackmarket_Category(int3
 }
 
 
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryDefaultVisuals
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Blackmarket_Category_C::UpdateCategoryDefaultVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "UpdateCategoryDefaultVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisualsForDLCBundle
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Blackmarket_Category_C::UpdateCategoryVisualsForDLCBundle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "UpdateCategoryVisualsForDLCBundle");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisuals
-// (Event, Public, BlueprintEvent)
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// ESBZStoreItemDefaultUICategory          CategoryType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_Category_C::UpdateCategoryVisuals(ESBZStoreItemDefaultUICategory CategoryType)
+void UWBP_Blackmarket_Category_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "UpdateCategoryVisuals");
+		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "PreConstruct");
 
-	Params::WBP_Blackmarket_Category_C_UpdateCategoryVisuals Parms{};
+	Params::WBP_Blackmarket_Category_C_PreConstruct Parms{};
 
-	Parms.CategoryType = CategoryType;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -104,23 +76,51 @@ void UWBP_Blackmarket_Category_C::SetStoreCategoryName(const class FText& InCate
 }
 
 
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryDefaultVisuals
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Blackmarket_Category_C::PreConstruct(bool IsDesignTime)
+void UWBP_Blackmarket_Category_C::UpdateCategoryDefaultVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "UpdateCategoryDefaultVisuals");
 
-	Params::WBP_Blackmarket_Category_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisuals
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// ESBZStoreItemDefaultUICategory          CategoryType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Blackmarket_Category_C::UpdateCategoryVisuals(ESBZStoreItemDefaultUICategory CategoryType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "UpdateCategoryVisuals");
+
+	Params::WBP_Blackmarket_Category_C_UpdateCategoryVisuals Parms{};
+
+	Parms.CategoryType = CategoryType;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisualsForDLCBundle
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Blackmarket_Category_C::UpdateCategoryVisualsForDLCBundle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Blackmarket_Category_C", "UpdateCategoryVisualsForDLCBundle");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

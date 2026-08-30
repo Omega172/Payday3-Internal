@@ -36,30 +36,10 @@ void UWBP_UI_Widget_PartyMemberCarryStatus_C::ExecuteUbergraph_WBP_UI_Widget_Par
 }
 
 
-// Function WBP_UI_Widget_PartyMemberCarryStatus.WBP_UI_Widget_PartyMemberCarryStatus_C.OnCarryTypePickedUp
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZCarryType*              PickedUpCarryType                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_PartyMemberCarryStatus_C::OnCarryTypePickedUp(const class USBZCarryType* PickedUpCarryType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyMemberCarryStatus_C", "OnCarryTypePickedUp");
-
-	Params::WBP_UI_Widget_PartyMemberCarryStatus_C_OnCarryTypePickedUp Parms{};
-
-	Parms.PickedUpCarryType = PickedUpCarryType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_PartyMemberCarryStatus.WBP_UI_Widget_PartyMemberCarryStatus_C.OnCarryTypeDropped
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZCarryType*              DroppedCarryType                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCarryType*              DroppedCarryType                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_PartyMemberCarryStatus_C::OnCarryTypeDropped(const class USBZCarryType* DroppedCarryType)
 {
@@ -71,6 +51,26 @@ void UWBP_UI_Widget_PartyMemberCarryStatus_C::OnCarryTypeDropped(const class USB
 	Params::WBP_UI_Widget_PartyMemberCarryStatus_C_OnCarryTypeDropped Parms{};
 
 	Parms.DroppedCarryType = DroppedCarryType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_PartyMemberCarryStatus.WBP_UI_Widget_PartyMemberCarryStatus_C.OnCarryTypePickedUp
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZCarryType*              PickedUpCarryType                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_PartyMemberCarryStatus_C::OnCarryTypePickedUp(const class USBZCarryType* PickedUpCarryType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyMemberCarryStatus_C", "OnCarryTypePickedUp");
+
+	Params::WBP_UI_Widget_PartyMemberCarryStatus_C_OnCarryTypePickedUp Parms{};
+
+	Parms.PickedUpCarryType = PickedUpCarryType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

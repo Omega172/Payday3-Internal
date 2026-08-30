@@ -16,23 +16,52 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_PlayerMenu.ABP_PlayerMenu_C.ExecuteUbergraph_ABP_PlayerMenu
-// (Final, UbergraphFunction)
+// Function ABP_PlayerMenu.ABP_PlayerMenu_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UABP_PlayerMenu_C::ExecuteUbergraph_ABP_PlayerMenu(int32 EntryPoint)
+void UABP_PlayerMenu_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_PlayerMenu_C", "ExecuteUbergraph_ABP_PlayerMenu");
+		Func = Class->GetFunction("ABP_PlayerMenu_C", "AnimGraph");
 
-	Params::ABP_PlayerMenu_C_ExecuteUbergraph_ABP_PlayerMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ABP_PlayerMenu_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F
+// (BlueprintEvent)
+
+void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_PlayerMenu_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C
+// (BlueprintEvent)
+
+void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_PlayerMenu_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -64,52 +93,23 @@ void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMe
 }
 
 
-// Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C
-// (BlueprintEvent)
-
-void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_PlayerMenu_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F
-// (BlueprintEvent)
-
-void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_PlayerMenu_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ABP_PlayerMenu.ABP_PlayerMenu_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_PlayerMenu.ABP_PlayerMenu_C.ExecuteUbergraph_ABP_PlayerMenu
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_PlayerMenu_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UABP_PlayerMenu_C::ExecuteUbergraph_ABP_PlayerMenu(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_PlayerMenu_C", "AnimGraph");
+		Func = Class->GetFunction("ABP_PlayerMenu_C", "ExecuteUbergraph_ABP_PlayerMenu");
 
-	Params::ABP_PlayerMenu_C_AnimGraph Parms{};
+	Params::ABP_PlayerMenu_C_ExecuteUbergraph_ABP_PlayerMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 

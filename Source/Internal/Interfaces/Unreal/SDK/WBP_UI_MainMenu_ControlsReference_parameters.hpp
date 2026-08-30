@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C.DisplayControlsReference
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_UI_MainMenu_ControlsReference_C_DisplayControlsReference final
+{
+public:
+	struct FSBZControlsReference                  InControlsReference;                               // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_ControlsReference_C_DisplayControlsReference;
+
 // Function WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C.ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_UI_MainMenu_ControlsReference_C_ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference final
@@ -26,15 +35,6 @@ public:
 	struct FSBZControlsReference                  K2Node_Event_InControlsReference;                  // 0x0008(0x0030)(ConstParm)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_ControlsReference_C_ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference;
-
-// Function WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C.DisplayControlsReference
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_MainMenu_ControlsReference_C_DisplayControlsReference final
-{
-public:
-	struct FSBZControlsReference                  InControlsReference;                               // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_ControlsReference_C_DisplayControlsReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

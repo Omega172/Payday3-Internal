@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_ItemBundleButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_ItemBundleButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ExecuteUbergraph_WBP_Shop_ItemBundleButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -39,7 +59,7 @@ void UWBP_Shop_ItemBundleButton_C::ExecuteUbergraph_WBP_Shop_ItemBundleButton(in
 // Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnShowItemBundle
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsNew                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsNew                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_ItemBundleButton_C::OnShowItemBundle(bool bIsNew)
 {
@@ -59,7 +79,7 @@ void UWBP_Shop_ItemBundleButton_C::OnShowItemBundle(bool bIsNew)
 // Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnUpdateOwnershipStatus
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_ItemBundleButton_C::OnUpdateOwnershipStatus(bool bIsOwned)
 {
@@ -71,26 +91,6 @@ void UWBP_Shop_ItemBundleButton_C::OnUpdateOwnershipStatus(bool bIsOwned)
 	Params::WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus Parms{};
 
 	Parms.bIsOwned = bIsOwned;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_ItemBundleButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_ItemBundleButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

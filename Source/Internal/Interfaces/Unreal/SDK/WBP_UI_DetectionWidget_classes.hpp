@@ -17,25 +17,25 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C
-// 0x0028 (0x02C8 - 0x02A0)
+// 0x0028 (0x0328 - 0x0300)
 class UWBP_UI_DetectionWidget_C final : public UPD3DetectionMeter
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       pop;                                               // 0x02A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Image_ProgressBar;                                 // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Material;                                          // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewVar_0;                                          // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       pop;                                               // 0x0308(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Image_ProgressBar;                                 // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Material;                                          // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                        NewVar_0;                                          // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_DetectionWidget(int32 EntryPoint);
-	void OnStoppedBeingDetected();
-	void OnPlayerDetected();
-	void OnNewDetector(class AActor* InDetectingActor, float InDetectionValue);
 	void OnDetectionValueUpdated(float InDetectionValue);
-	void PreConstruct(bool IsDesignTime);
 	void OnInitialized();
-	void UpdateBarVisuals(float InPercent);
+	void OnNewDetector(class AActor* InDetectingActor, float InDetectionValue);
+	void OnPlayerDetected();
+	void OnStoppedBeingDetected();
+	void PreConstruct(bool IsDesignTime);
+	void UpdateBarVisuals(double InPercent);
 
 public:
 	static class UClass* StaticClass()

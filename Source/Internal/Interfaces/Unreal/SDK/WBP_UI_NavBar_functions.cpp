@@ -36,6 +36,20 @@ void UWBP_UI_NavBar_C::ExecuteUbergraph_WBP_UI_NavBar(int32 EntryPoint)
 }
 
 
+// Function WBP_UI_NavBar.WBP_UI_NavBar_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_NavBar_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_NavBar_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_NavBar.WBP_UI_NavBar_C.OnStackChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -53,20 +67,6 @@ void UWBP_UI_NavBar_C::OnStackChanged(const struct FSBZUIStackChangedEvent& Stac
 	Parms.StackEvent = std::move(StackEvent);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_NavBar.WBP_UI_NavBar_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_NavBar_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_NavBar_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

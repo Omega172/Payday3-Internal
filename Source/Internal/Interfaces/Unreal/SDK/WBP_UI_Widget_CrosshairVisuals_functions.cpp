@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_CrosshairVisuals_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.ExecuteUbergraph_WBP_UI_Widget_CrosshairVisuals
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,10 +50,45 @@ void UWBP_UI_Widget_CrosshairVisuals_C::ExecuteUbergraph_WBP_UI_Widget_Crosshair
 }
 
 
+// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.GetCurrentCrosshairSettings
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FSBZCrosshairSettings*           CrosshairSettings                                      (Parm, OutParm, NoDestructor)
+
+void UWBP_UI_Widget_CrosshairVisuals_C::GetCurrentCrosshairSettings(struct FSBZCrosshairSettings* CrosshairSettings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "GetCurrentCrosshairSettings");
+
+	Params::WBP_UI_Widget_CrosshairVisuals_C_GetCurrentCrosshairSettings Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CrosshairSettings != nullptr)
+		*CrosshairSettings = std::move(Parms.CrosshairSettings);
+}
+
+
+// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.OnGeometeryUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_CrosshairVisuals_C::OnGeometeryUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "OnGeometeryUpdated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_CrosshairVisuals_C::PreConstruct(bool IsDesignTime)
 {
@@ -59,10 +108,10 @@ void UWBP_UI_Widget_CrosshairVisuals_C::PreConstruct(bool IsDesignTime)
 // Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.SetBarSize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Width                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Width                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_CrosshairVisuals_C::SetBarSize(float Length, float Width)
+void UWBP_UI_Widget_CrosshairVisuals_C::SetBarSize(double Length, double Width)
 {
 	static class UFunction* Func = nullptr;
 
@@ -73,26 +122,6 @@ void UWBP_UI_Widget_CrosshairVisuals_C::SetBarSize(float Length, float Width)
 
 	Parms.Length = Length;
 	Parms.Width = Width;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.SetDotSize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   DotSize_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_CrosshairVisuals_C::SetDotSize(float DotSize_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "SetDotSize");
-
-	Params::WBP_UI_Widget_CrosshairVisuals_C_SetDotSize Parms{};
-
-	Parms.DotSize_0 = DotSize_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -120,12 +149,32 @@ void UWBP_UI_Widget_CrosshairVisuals_C::SetCrosshairColour(const struct FLinearC
 }
 
 
+// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.SetDotSize
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DotSize_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_CrosshairVisuals_C::SetDotSize(double DotSize_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "SetDotSize");
+
+	Params::WBP_UI_Widget_CrosshairVisuals_C_SetDotSize Parms{};
+
+	Parms.DotSize_0 = DotSize_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.UpdateScale
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   CurrentScale                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CurrentScale                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_CrosshairVisuals_C::UpdateScale(float CurrentScale)
+void UWBP_UI_Widget_CrosshairVisuals_C::UpdateScale(double CurrentScale)
 {
 	static class UFunction* Func = nullptr;
 
@@ -163,7 +212,7 @@ void UWBP_UI_Widget_CrosshairVisuals_C::UpdateSettings(const struct FSBZCrosshai
 // Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.UpdateVisibility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_CrosshairVisuals_C::UpdateVisibility(bool IsVisible_0)
 {
@@ -177,41 +226,6 @@ void UWBP_UI_Widget_CrosshairVisuals_C::UpdateVisibility(bool IsVisible_0)
 	Parms.IsVisible_0 = IsVisible_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.OnGeometeryUpdated
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_CrosshairVisuals_C::OnGeometeryUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "OnGeometeryUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_CrosshairVisuals.WBP_UI_Widget_CrosshairVisuals_C.GetCurrentCrosshairSettings
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FSBZCrosshairSettings*           CrosshairSettings                                      (Parm, OutParm, NoDestructor)
-
-void UWBP_UI_Widget_CrosshairVisuals_C::GetCurrentCrosshairSettings(struct FSBZCrosshairSettings* CrosshairSettings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CrosshairVisuals_C", "GetCurrentCrosshairSettings");
-
-	Params::WBP_UI_Widget_CrosshairVisuals_C_GetCurrentCrosshairSettings Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CrosshairSettings != nullptr)
-		*CrosshairSettings = std::move(Parms.CrosshairSettings);
 }
 
 

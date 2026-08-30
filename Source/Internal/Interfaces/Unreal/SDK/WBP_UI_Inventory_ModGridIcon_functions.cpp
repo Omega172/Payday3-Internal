@@ -36,6 +36,26 @@ void UWBP_UI_Inventory_ModGridIcon_C::ExecuteUbergraph_WBP_UI_Inventory_ModGridI
 }
 
 
+// Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.SetAndDisplayIcon
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      InItem                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ModGridIcon_C::SetAndDisplayIcon(const class USBZInventoryBaseData* InItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ModGridIcon_C", "SetAndDisplayIcon");
+
+	Params::WBP_UI_Inventory_ModGridIcon_C_SetAndDisplayIcon Parms{};
+
+	Parms.InItem = InItem;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.SetAndDisplayText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -51,26 +71,6 @@ void UWBP_UI_Inventory_ModGridIcon_C::SetAndDisplayText(const class FText& InTex
 	Params::WBP_UI_Inventory_ModGridIcon_C_SetAndDisplayText Parms{};
 
 	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.SetAndDisplayIcon
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      InItem                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_ModGridIcon_C::SetAndDisplayIcon(const class USBZInventoryBaseData* InItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ModGridIcon_C", "SetAndDisplayIcon");
-
-	Params::WBP_UI_Inventory_ModGridIcon_C_SetAndDisplayIcon Parms{};
-
-	Parms.InItem = InItem;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

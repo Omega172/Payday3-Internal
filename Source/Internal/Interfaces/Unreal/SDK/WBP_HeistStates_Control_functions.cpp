@@ -36,20 +36,6 @@ void UWBP_HeistStates_Control_C::ExecuteUbergraph_WBP_HeistStates_Control(int32 
 }
 
 
-// Function WBP_HeistStates_Control.WBP_HeistStates_Control_C.HideDescriptiveText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_Control_C::HideDescriptiveText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Control_C", "HideDescriptiveText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HeistStates_Control.WBP_HeistStates_Control_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -59,6 +45,20 @@ void UWBP_HeistStates_Control_C::Hide()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_HeistStates_Control_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HeistStates_Control.WBP_HeistStates_Control_C.HideDescriptiveText
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_Control_C::HideDescriptiveText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Control_C", "HideDescriptiveText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

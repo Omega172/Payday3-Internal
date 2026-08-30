@@ -18,16 +18,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass WBP_Currency_Icon.WBP_Currency_Icon_C
-// 0x0008 (0x0250 - 0x0248)
+// 0x0010 (0x02F0 - 0x02E0)
 class UWBP_Currency_Icon_C final : public UImage
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0248(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_WBP_Currency_Icon(int32 EntryPoint);
-	void SetCurrency(ESBZCurrencyCode Index_0);
 	void GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor);
+	void SetCurrency(ESBZCurrencyCode Index_0);
 
 public:
 	static class UClass* StaticClass()

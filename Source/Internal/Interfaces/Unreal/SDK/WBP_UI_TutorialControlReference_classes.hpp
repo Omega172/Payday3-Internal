@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_TutorialControlReference.WBP_UI_TutorialControlReference_C
-// 0x0008 (0x0328 - 0x0320)
+// 0x0008 (0x0380 - 0x0378)
 class UWBP_UI_TutorialControlReference_C final : public USBZControlsReferenceActionWidget
 {
 public:
-	class UImage*                                 Image_Background;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Background;                                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

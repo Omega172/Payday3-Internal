@@ -156,7 +156,7 @@ TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAssetData(const
 // Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetPtr
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const class UObject*                    AssetPtr                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    AssetPtr                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<class FName>                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
 TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAssetPtr(const class UObject* AssetPtr)
@@ -169,6 +169,34 @@ TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAssetPtr(const 
 	Params::AssetTagsSubsystem_GetCollectionsContainingAssetPtr Parms{};
 
 	Parms.AssetPtr = AssetPtr;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AssetTags.AssetTagsSubsystem.K2_GetCollectionsContainingAsset
+// (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FSoftObjectPath&           AssetPath                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<class FName>                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+
+TArray<class FName> UAssetTagsSubsystem::K2_GetCollectionsContainingAsset(const struct FSoftObjectPath& AssetPath)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AssetTagsSubsystem", "K2_GetCollectionsContainingAsset");
+
+	Params::AssetTagsSubsystem_K2_GetCollectionsContainingAsset Parms{};
+
+	Parms.AssetPath = std::move(AssetPath);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

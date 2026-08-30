@@ -36,30 +36,10 @@ void UWBP_UI_TutorialPopUpBody_C::ExecuteUbergraph_WBP_UI_TutorialPopUpBody(int3
 }
 
 
-// Function WBP_UI_TutorialPopUpBody.WBP_UI_TutorialPopUpBody_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_TutorialPopUpBody_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialPopUpBody_C", "PreConstruct");
-
-	Params::WBP_UI_TutorialPopUpBody_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_TutorialPopUpBody.WBP_UI_TutorialPopUpBody_C.OnTutorialPopUpInitialized
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZTutorialPopUpDataAsset* InPopUpDataAsset                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZTutorialPopUpDataAsset* InPopUpDataAsset                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_TutorialPopUpBody_C::OnTutorialPopUpInitialized(const class USBZTutorialPopUpDataAsset* InPopUpDataAsset)
 {
@@ -71,6 +51,26 @@ void UWBP_UI_TutorialPopUpBody_C::OnTutorialPopUpInitialized(const class USBZTut
 	Params::WBP_UI_TutorialPopUpBody_C_OnTutorialPopUpInitialized Parms{};
 
 	Parms.InPopUpDataAsset = InPopUpDataAsset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_TutorialPopUpBody.WBP_UI_TutorialPopUpBody_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_TutorialPopUpBody_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_TutorialPopUpBody_C", "PreConstruct");
+
+	Params::WBP_UI_TutorialPopUpBody_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

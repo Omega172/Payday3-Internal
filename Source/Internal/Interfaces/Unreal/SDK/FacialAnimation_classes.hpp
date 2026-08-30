@@ -16,13 +16,14 @@
 SDK_NAMESPACE_START
 
 // Class FacialAnimation.AudioCurveSourceComponent
-// 0x0040 (0x08E0 - 0x08A0)
+// 0x0040 (0x0C90 - 0x0C50)
 class UAudioCurveSourceComponent final : public UAudioComponent
 {
 public:
-	class FName                                   CurveSourceBindingName;                            // 0x08A0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         CurveSyncOffset;                                   // 0x08AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8B0[0x30];                                     // 0x08B0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C50[0x8];                                      // 0x0C50(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CurveSourceBindingName;                            // 0x0C58(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         CurveSyncOffset;                                   // 0x0C64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C68[0x28];                                     // 0x0C68(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

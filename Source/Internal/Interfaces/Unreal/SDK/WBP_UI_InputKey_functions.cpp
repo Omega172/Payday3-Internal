@@ -36,21 +36,21 @@ void UWBP_UI_InputKey_C::ExecuteUbergraph_WBP_UI_InputKey(int32 EntryPoint)
 }
 
 
-// Function WBP_UI_InputKey.WBP_UI_InputKey_C.SetInverted
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_InputKey.WBP_UI_InputKey_C.OnKeyIconChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInInverted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UPaperSprite*                     NewActionKeyIcon                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_InputKey_C::SetInverted(bool bInInverted)
+void UWBP_UI_InputKey_C::OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_InputKey_C", "SetInverted");
+		Func = Class->GetFunction("WBP_UI_InputKey_C", "OnKeyIconChanged");
 
-	Params::WBP_UI_InputKey_C_SetInverted Parms{};
+	Params::WBP_UI_InputKey_C_OnKeyIconChanged Parms{};
 
-	Parms.bInInverted = bInInverted;
+	Parms.NewActionKeyIcon = NewActionKeyIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,30 +76,10 @@ void UWBP_UI_InputKey_C::OnKeyNameChanged(const class FString& NewActionKeyName)
 }
 
 
-// Function WBP_UI_InputKey.WBP_UI_InputKey_C.OnKeyIconChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     NewActionKeyIcon                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_InputKey_C::OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_InputKey_C", "OnKeyIconChanged");
-
-	Params::WBP_UI_InputKey_C_OnKeyIconChanged Parms{};
-
-	Parms.NewActionKeyIcon = NewActionKeyIcon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_InputKey.WBP_UI_InputKey_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_InputKey_C::PreConstruct(bool IsDesignTime)
 {
@@ -116,10 +96,30 @@ void UWBP_UI_InputKey_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function WBP_UI_InputKey.WBP_UI_InputKey_C.SetInverted
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInInverted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_InputKey_C::SetInverted(bool bInInverted)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_InputKey_C", "SetInverted");
+
+	Params::WBP_UI_InputKey_C_SetInverted Parms{};
+
+	Parms.bInInverted = bInInverted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_InputKey.WBP_UI_InputKey_C.SetInvertedVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InInverted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InInverted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_InputKey_C::SetInvertedVisuals(bool InInverted)
 {

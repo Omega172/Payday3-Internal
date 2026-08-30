@@ -36,21 +36,41 @@ void UWBP_ModItemButton_C::ExecuteUbergraph_WBP_ModItemButton(int32 EntryPoint)
 }
 
 
-// Function WBP_ModItemButton.WBP_ModItemButton_C.SetSlot
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ModItemButton.WBP_ModItemButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZModularPartSlotBase*    SlotData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModItemButton_C::SetSlot(const class USBZModularPartSlotBase* SlotData)
+void UWBP_ModItemButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModItemButton_C", "SetSlot");
+		Func = Class->GetFunction("WBP_ModItemButton_C", "OnListItemObjectSet");
 
-	Params::WBP_ModItemButton_C_SetSlot Parms{};
+	Params::WBP_ModItemButton_C_OnListItemObjectSet Parms{};
 
-	Parms.SlotData = SlotData;
+	Parms.ListItemObject = ListItemObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModItemButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModItemButton_C", "PreConstruct");
+
+	Params::WBP_ModItemButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -73,7 +93,7 @@ void UWBP_ModItemButton_C::SetEmpty()
 // Function WBP_ModItemButton.WBP_ModItemButton_C.SetItemData
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryBaseData*            ItemData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            ItemData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ModItemButton_C::SetItemData(class USBZInventoryBaseData* ItemData)
 {
@@ -90,41 +110,21 @@ void UWBP_ModItemButton_C::SetItemData(class USBZInventoryBaseData* ItemData)
 }
 
 
-// Function WBP_ModItemButton.WBP_ModItemButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ModItemButton.WBP_ModItemButton_C.SetSlot
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class USBZModularPartSlotBase*    SlotData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModItemButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_ModItemButton_C::SetSlot(const class USBZModularPartSlotBase* SlotData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModItemButton_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_ModItemButton_C", "SetSlot");
 
-	Params::WBP_ModItemButton_C_PreConstruct Parms{};
+	Params::WBP_ModItemButton_C_SetSlot Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.OnListItemObjectSet
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModItemButton_C::OnListItemObjectSet(class UObject* ListItemObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModItemButton_C", "OnListItemObjectSet");
-
-	Params::WBP_ModItemButton_C_OnListItemObjectSet Parms{};
-
-	Parms.ListItemObject = ListItemObject;
+	Parms.SlotData = SlotData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

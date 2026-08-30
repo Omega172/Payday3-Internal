@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_HUD_Overlay.WBP_UI_HUD_Overlay_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_HUD_Overlay_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Overlay_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_HUD_Overlay.WBP_UI_HUD_Overlay_C.ExecuteUbergraph_WBP_UI_HUD_Overlay
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,20 +50,6 @@ void UWBP_UI_HUD_Overlay_C::ExecuteUbergraph_WBP_UI_HUD_Overlay(int32 EntryPoint
 }
 
 
-// Function WBP_UI_HUD_Overlay.WBP_UI_HUD_Overlay_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_HUD_Overlay_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Overlay_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_HUD_Overlay.WBP_UI_HUD_Overlay_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -61,6 +61,26 @@ void UWBP_UI_HUD_Overlay_C::Hide()
 		Func = Class->GetFunction("WBP_UI_HUD_Overlay_C", "Hide");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_HUD_Overlay.WBP_UI_HUD_Overlay_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_HUD_Overlay_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Overlay_C", "OnAnimationFinished");
+
+	Params::WBP_UI_HUD_Overlay_C_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

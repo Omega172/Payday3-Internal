@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
-#include "Engine_classes.hpp"
 #include "AccelByteUe4Sdk_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -33,6 +33,7 @@ public:
 	void QueryGlobalAchievements(const class FString& AchievementCode, const EAccelByteGlobalAchievementStatus& AchievementStatus, const EAccelByteGlobalAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedUserGlobalAchievement& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
 	void QueryGlobalAchievementUserContributed(const class FString& AchievementCode, const EAccelByteGlobalAchievementContributorsSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementUserContributed& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
 	void QueryUserAchievements(const EAccelByteAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit, bool PreferUnlocked, const class FString& TagQuery);
+	void QueryUserAchievementsV2(const EAccelByteGlobalAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit, bool PreferUnlocked, const class FString& TagQuery);
 	void UnlockAchievement(const class FString& AchievementCode, const TDelegate<void()> OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 
 public:
@@ -61,11 +62,14 @@ public:
 public:
 	void AcceptPolicyVersion(const class FString& LocalizedPolicyVersionId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void BulkAcceptPolicyVersions(const struct FArrayModelsAcceptAgreementRequest& AgreementRequests, const TDelegate<void(const struct FAccelByteModelsAcceptAgreementResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void ChangePolicyPreferences(const TArray<struct FAccelByteModelsChangeAgreementRequest>& ChangeAgreementRequests, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLegalDocument(const class FString& Url, const TDelegate<void(const class FString& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLegalPolicies(const EAccelByteAgreementPolicyType& AgreementPolicyType, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLegalPoliciesByCountry(const class FString& CountryCode, const EAccelByteAgreementPolicyType& AgreementPolicyType, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLegalPoliciesByCountryAndTags(const class FString& CountryCode, const EAccelByteAgreementPolicyType& AgreementPolicyType, const TArray<class FString>& Tags, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLegalPoliciesByNamespace(const class FString& Namesapce, const EAccelByteAgreementPolicyType& AgreementPolicyType, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetLegalPoliciesByNamespaceAndCountry(const class FString& Namespace, const class FString& CountryCode, const EAccelByteAgreementPolicyType& AgreementPolicyType, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetLegalPoliciesByNamespaceCountryAndTags(const class FString& Namespace, const class FString& CountryCode, const EAccelByteAgreementPolicyType& AgreementPolicyType, const TArray<class FString>& Tags, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLegalPoliciesByTags(const EAccelByteAgreementPolicyType& AgreementPolicyType, const TArray<class FString>& tags, bool DefaultOnEmpty, const TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void QueryLegalEligibilities(const class FString& Namespace, const TDelegate<void(const struct FArrayModelsRetrieveUserEligibilitiesResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 
@@ -190,6 +194,38 @@ public:
 };
 DUMPER7_ASSERTS_UABCatalog;
 
+// Class AccelByteUe4Sdk.ABChallenge
+// 0x0010 (0x0040 - 0x0030)
+class UABChallenge final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ClaimReward(const struct FAccelByteModelsChallengeRewardClaimRequest& Request, const TDelegate<void(const TArray<struct FAccelByteModelsChallengeReward>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void EvaluateChallengeProgress(const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetChallengeList(const TDelegate<void(const struct FAccelByteModelsGetChallengesResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const TArray<class FString>& OptionalTags, EAccelByteModelsChallengeSortBy SortBy, EAccelByteModelsChallengeStatus Status, int64 Offset, int64 Limit, const class FString& Keyword);
+	void GetChallengeProgress(const class FString& ChallengeCode, const class FString& GoalCode, const TDelegate<void(const struct FAccelByteModelsChallengeProgressResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const TArray<class FString>& OptionalTags, int64 Offset, int64 Limit);
+	void GetChallenges(const TDelegate<void(const struct FAccelByteModelsGetChallengesResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteModelsChallengeSortBy SortBy, EAccelByteModelsChallengeStatus Status, int64 Offset, int64 Limit);
+	void GetPreviousChallengeProgresses(const class FString& ChallengeCode, int32 Index_0, const TDelegate<void(const struct FAccelByteModelsChallengeProgressResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const TArray<class FString>& OptionalTags, const class FString& GoalCode, int64 Offset, int64 Limit);
+	void GetRewards(const TDelegate<void(const struct FAccelByteModelsChallengeGetRewardStatusResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteModelsChallengeRewardStatus Status, EAccelByteModelsChallengeSortBy SortBy, int64 Offset, int64 Limit);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ABChallenge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABChallenge")
+	}
+	static class UABChallenge* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UABChallenge>();
+	}
+};
+DUMPER7_ASSERTS_UABChallenge;
+
 // Class AccelByteUe4Sdk.ABCloudSave
 // 0x0010 (0x0040 - 0x0030)
 class UABCloudSave final : public UObject
@@ -198,6 +234,7 @@ public:
 	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	void BulkGetCurrentPlayerPublicRecordKeys(const TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPublicUserRecordKeysResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
 	void BulkGetGameRecords(const TArray<class FString>& Keys, const TDelegate<void(const struct FAccelByteModelsListGameRecords& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void BulkGetOtherPlayerPublicRecordKeys(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPublicUserRecordKeysResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
 	void BulkGetOtherPlayerPublicRecords(const class FString& UserId, const TArray<class FString>& Keys, const TDelegate<void(const struct FListAccelByteModelsUserRecord& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
@@ -271,8 +308,10 @@ public:
 	void ConsumeUserEntitlement(const class FString& EntitlementId, const int32& UseCount, TDelegate<void(const struct FAccelByteModelsEntitlementInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void CreateDistributionReceiver(const class FString& ExtUserId, const struct FAccelByteModelsAttributes& Attributes, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void DeleteDistributionReceiver(const class FString& ExtUserId, const class FString& UserId, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void GetCurrentUserEntitlementHistory(TDelegate<void(const struct FAccelByteModelsUserEntitlementHistoryPagingResult& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, const EAccelByteEntitlementClass& EntitlementClass, const struct FDateTime& StartDate, const struct FDateTime& EndDate, int32 Limit, int32 Offset);
 	void GetDistributionReceiver(const class FString& PublisherNamespace, const class FString& PublisherUserId, TDelegate<void(const struct FArrayModelsDistributionReceiver& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserEntitlementById(const class FString& Entitlementid, TDelegate<void(const struct FAccelByteModelsEntitlementInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void GetUserEntitlementByIds(const TArray<class FString>& EntitlementIds, TDelegate<void(const TArray<struct FAccelByteModelsEntitlementInfo>& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, bool bAvailablePlatformOnly);
 	void GetUserEntitlementOwnershipAny(const TArray<class FString>& ItemIds, const TArray<class FString>& AppIds, const TArray<class FString>& Skus, TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserEntitlementOwnershipByAppId(const class FString& AppId, TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserEntitlementOwnershipByItemId(const class FString& ItemId, TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
@@ -418,9 +457,9 @@ public:
 	void RejectGroupJoinRequest(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void RejectV2GroupInvitation(const class FString& GroupId, const TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void RejectV2GroupJoinRequest(const class FString& UserId, const class FString& GroupId, const TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	void UpdateGroup(const class FString& GroupId, const bool bCompletelyReplace, struct FAccelByteModelsGroupUpdatable* RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	void UpdateGroupCustomAttributes(const class FString& GroupId, struct FAccelByteModelsUpdateGroupCustomAttributesRequest* RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	void UpdateGroupCustomRule(const class FString& GroupId, struct FAccelByteModelsUpdateCustomRulesRequest* RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void UpdateGroup(const class FString& GroupId, const bool bCompletelyReplace, const struct FAccelByteModelsGroupUpdatable& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void UpdateGroupCustomAttributes(const class FString& GroupId, const struct FAccelByteModelsUpdateGroupCustomAttributesRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void UpdateGroupCustomRule(const class FString& GroupId, const struct FAccelByteModelsUpdateCustomRulesRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void UpdateGroupPredefinedRule(const class FString& GroupId, const EAccelByteAllowedAction& AllowedAction, const struct FAccelByteModelsUpdateGroupPredefinedRuleRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void UpdateV2Group(const class FString& GroupId, const struct FAccelByteModelsUpdateGroupRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void UpdateV2GroupCustomAttributes(const class FString& GroupId, const struct FAccelByteModelsUpdateGroupCustomAttributesRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
@@ -443,6 +482,41 @@ public:
 };
 DUMPER7_ASSERTS_UABGroup;
 
+// Class AccelByteUe4Sdk.ABInventory
+// 0x0010 (0x0040 - 0x0030)
+class UABInventory final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void BulkDeleteInventoryItems(const class FString& InventoryId, const TArray<struct FAccelByteModelsDeleteUserInventoryItemsRequest>& DeletedItemsRequest, const TDelegate<void(const TArray<struct FAccelByteModelsDeleteUserInventoryItemResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkUpdateInventoryItems(const class FString& InventoryId, const TArray<struct FAccelByteModelsUpdateUserInventoryItemRequest>& UpdatedItemsRequest, const TDelegate<void(const TArray<struct FAccelByteModelsUpdateUserInventoryItemResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void ConsumeUserInventoryItem(const class FString& InventoryId, const struct FAccelByteModelsConsumeUserItemsRequest& ConsumedItemsRequest, const TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetInventoryConfigurations(const TDelegate<void(const struct FAccelByteModelsInventoryConfigurationsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const EAccelByteInventoryConfigurationSortBy& SortBy, const int32& Limit, const int32& Offset, const class FString& InventoryConfigurationCode);
+	void GetInventoryTags(const TDelegate<void(const struct FAccelByteModelsInventoryTagPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const EAccelByteInventoryUtilitiesSortBy& SortBy, const int32& Limit, const int32& Offset);
+	void GetItemTypes(const TDelegate<void(const struct FAccelByteModelsItemTypePagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const EAccelByteInventoryUtilitiesSortBy& SortBy, const int32& Limit, const int32& Offset);
+	void GetUserInventories(const TDelegate<void(const struct FAccelByteModelsUserInventoriesPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const EAccelByteUserInventoriesSortBy& SortBy, const int32& Limit, const int32& Offset, const class FString& InventoryConfigurationCode);
+	void GetUserInventoryAllItems(const class FString& InventoryId, const TDelegate<void(const struct FAccelByteModelsUserItemsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const EAccelByteUserItemsSortBy& SortBy, int32 Limit, int32 Offset, const class FString& SourceItemId, const class FString& Tags);
+	void GetUserInventoryItem(const class FString& InventoryId, const class FString& SlotId, const class FString& SourceItemId, const TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void MoveItemsBetweenInventories(const class FString& TargetInventoryId, const struct FAccelByteModelsMoveUserItemsBetweenInventoriesRequest& MoveItemsRequest, const TDelegate<void(const struct FAccelByteModelsMoveUserItemsBetweenInventoriesResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ABInventory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABInventory")
+	}
+	static class UABInventory* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UABInventory>();
+	}
+};
+DUMPER7_ASSERTS_UABInventory;
+
 // Class AccelByteUe4Sdk.ABLeaderboard
 // 0x0010 (0x0040 - 0x0030)
 class UABLeaderboard final : public UObject
@@ -453,7 +527,10 @@ public:
 public:
 	void GetBulkUserRankingV3(const TArray<class FString>& UserIds, const class FString& LeaderboardCode, const TDelegate<void(const struct FAccelByteModelsBulkUserRankingDataV3& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetLeaderboards(int32 Offset, int32 Limit, const TDelegate<void(const struct FAccelByteModelsPaginatedLeaderboardData& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetLeaderboardsV3(const TDelegate<void(const struct FAccelByteModelsPaginatedLeaderboardData& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void GetLeaderboardV3(const class FString& LeaderboardCode, const TDelegate<void(const struct FAccelByteModelsBaseLeaderboardData& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetRankingByCycle(const class FString& LeaderboardCode, const class FString& CycleId, int32 Offset, int32 Limit, const TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetRankingByCycleV3(const class FString& LeaderboardCode, const class FString& CycleId, const TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void GetRankings(const class FString& LeaderboardCode, const EAccelByteLeaderboardTimeFrame& TimeFrame, int32 Offset, int32 Limit, const TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResult& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetRankingsV3(const class FString& LeaderboardCode, int32 Offset, int32 Limit, const TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetUserRanking(const class FString& UserId, const class FString& LeaderboardCode, const TDelegate<void(const struct FAccelByteModelsUserRankingData& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
@@ -556,6 +633,7 @@ public:
 	void GetUserOrder(const class FString& OrderNo, TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserOrderHistory(const class FString& OrderNo, TDelegate<void(const struct FArrayModelsOrderHistoryInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserOrders(const int32& Page, const int32& Size, TDelegate<void(const struct FAccelByteModelsPagedOrderInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void PreviewUserOrder(const struct FAccelByteModelsUserPreviewOrderRequest& OrderPreviewRequest, const TDelegate<void(const struct FAccelByteModelsUserPreviewOrderResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 
 public:
 	static class UClass* StaticClass()
@@ -635,6 +713,7 @@ public:
 
 public:
 	void BulkGetUserPresence(const struct FBulkGetUserPresenceRequest& Request, TDelegate<void(const struct FAccelByteModelsBulkUserStatusNotif& Response)> OnResponse, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void BulkGetUserPresenceV2(const struct FBulkGetUserPresenceRequest& Request, TDelegate<void(const struct FAccelByteModelsBulkUserStatusNotif& Response)> OnResponse, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetAllFriendsStatus(TDelegate<void(const struct FAccelByteModelsGetOnlineUsersResponse& Response)> OnResponse, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SetOnFriendStatusNotif(TDelegate<void(const struct FAccelByteModelsUsersPresenceNotice& Notif)> OnNotif);
 	void SetPresenceStatus(const struct FAccelBytePresenceStatus& Request, TDelegate<void(const struct FAccelByteModelsSetOnlineUsersResponse& Response)> OnResponse, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
@@ -739,6 +818,49 @@ public:
 };
 DUMPER7_ASSERTS_UABServerAchievement;
 
+// Class AccelByteUe4Sdk.ABServerCloudsave
+// 0x0010 (0x0040 - 0x0030)
+class UABServerCloudsave final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void BulkGetPlayerRecordSize(const struct FAccelByteModelsBulkGetPlayerRecordSizeRequest& GetPlayerRecordSizeRequest, const TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPlayerRecordSizeResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkGetUserRecord(const class FString& Key, const TArray<class FString>& UserIds, const TDelegate<void(const TArray<struct FAccelByteModelsUserRecord>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkGetUserRecordsByKeys(const class FString& UserId, const TArray<class FString>& Keys, const TDelegate<void(const struct FAccelByteModelsAdminGetUserRecords& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkReplaceUserRecord(const class FString& Key, const struct FAccelByteModelsBulkReplaceUserRecordRequest& Request, const TDelegate<void(const TArray<struct FAccelByteModelsBulkReplaceUserRecordResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteAdminGameRecord(const class FString& Key, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteAdminGameRecordTTLConfig(const class FString& Key, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteAdminUserRecord(const class FString& Key, const class FString& UserId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteGameRecord(const class FString& Key, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteGameRecordTTLConfig(const class FString& Key, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteUserRecord(const class FString& Key, const class FString& UserId, bool bIsPublic, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetGameRecord(const class FString& Key, const TDelegate<void(const struct FAccelByteModelsGameRecord& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetPublicUserRecord(const class FString& Key, const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUserRecord& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetUserRecord(const class FString& Key, const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUserRecord& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void QueryAdminGameRecordKeys(int32 Limit, int32 Offset, const TDelegate<void(const struct FAccelByteModelsPaginatedRecordsKey& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void QueryAdminGameRecordsByKey(const class FString& Key, const TDelegate<void(const struct FAccelByteModelsAdminGameRecord& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void QueryAdminUserRecordKeys(const class FString& UserId, int32 Limit, int32 Offset, const TDelegate<void(const struct FAccelByteModelsPaginatedGetAdminUserRecordKeysResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void QueryAdminUserRecordsByKey(const class FString& Key, const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsAdminUserRecord& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void RetrieveGameRecordsKey(const TDelegate<void(const struct FAccelByteModelsPaginatedRecordsKey& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const class FString& Query, int32 Limit, int32 Offset);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ABServerCloudsave")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABServerCloudsave")
+	}
+	static class UABServerCloudsave* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UABServerCloudsave>();
+	}
+};
+DUMPER7_ASSERTS_UABServerCloudsave;
+
 // Class AccelByteUe4Sdk.ABServerDSM
 // 0x0010 (0x0040 - 0x0030)
 class UABServerDSM final : public UObject
@@ -775,6 +897,73 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UABServerDSM;
+
+// Class AccelByteUe4Sdk.ABServerEntitlement
+// 0x0010 (0x0040 - 0x0030)
+class UABServerEntitlement final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void GetUserEntitlementHistory(const class FString& UserId, const class FString& EntitlementId, TDelegate<void(const TArray<struct FAccelByteModelsUserEntitlementHistory>& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ABServerEntitlement")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABServerEntitlement")
+	}
+	static class UABServerEntitlement* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UABServerEntitlement>();
+	}
+};
+DUMPER7_ASSERTS_UABServerEntitlement;
+
+// Class AccelByteUe4Sdk.ABServerInventory
+// 0x0010 (0x0040 - 0x0030)
+class UABServerInventory final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void BulkDeleteUserInventoryItems(const class FString& UserId, const class FString& InventoryId, const TArray<struct FAccelByteModelsDeleteUserInventoryItemsRequest>& DeletedItemsRequest, const TDelegate<void(const TArray<struct FAccelByteModelsDeleteUserInventoryItemResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkSaveInventoryItems(const class FString& UserId, const TArray<struct FAccelByteModelsSaveInventoryItemRequest>& SaveItemsRequests, const TDelegate<void(const TArray<struct FAccelByteModelsBulkSaveInventoryItems>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkSaveInventoryItemsByInventoryId(const class FString& UserId, const class FString& InventoryId, const TArray<struct FAccelByteModelsSaveInventoryItemByInventoryIdRequest>& SaveItemsRequests, const TDelegate<void(const TArray<struct FAccelByteModelsBulkSaveInventoryItems>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void BulkUpdateInventoryItems(const class FString& UserId, const class FString& InventoryId, const TArray<struct FAccelByteModelsUpdateInventoryItemRequest>& UpdatedItemsRequest, const TDelegate<void(const TArray<struct FAccelByteModelsUpdateUserInventoryItemResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void ConsumeInventoryItem(const class FString& UserId, const class FString& InventoryId, const struct FAccelByteModelsConsumeUserItemsRequest& ConsumedItemsRequest, const TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void CreateInventory(const struct FAccelByteModelsCreateInventoryRequest& CreateInventoryRequest, const TDelegate<void(const struct FAccelByteModelsUserInventoryResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteInventory(const class FString& InventoryId, const struct FAccelByteModelsDeleteInventoryRequest& DeleteInventoryRequest, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetInventories(const TDelegate<void(const struct FAccelByteModelsUserInventoriesPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const class FString& UserId, const class FString& InventoryConfigurationCode, EAccelByteInventoriesSortBy SortBy, int32 Limit, int32 Offset);
+	void GetInventory(const class FString& InventoryId, const TDelegate<void(const struct FAccelByteModelsUserInventoryResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetInventoryAllItems(const class FString& InventoryId, const TDelegate<void(const struct FAccelByteModelsUserItemsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const EAccelByteUserItemsSortBy& SortBy, int32 Limit, int32 Offset, const class FString& SourceItemId, const class FString& Tags);
+	void GetInventoryItem(const class FString& InventoryId, const class FString& SlotId, const class FString& SourceItemId, const TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void SaveInventoryItem(const class FString& UserId, const struct FAccelByteModelsSaveInventoryItemRequest& SaveItemRequest, const TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void SaveInventoryItemByInventoryId(const class FString& UserId, const class FString& InventoryId, const struct FAccelByteModelsSaveInventoryItemByInventoryIdRequest& SaveItemRequest, const TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void SyncUserEntitlement(const class FString& UserId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void UpdateAllUserInventories(const class FString& UserId, const class FString& InventoryConfigurationCode, const struct FAccelByteModelsUpdateInventoryRequest& UpdateInventoryRequest, const TDelegate<void(const TArray<struct FAccelByteModelsUserInventoryResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void UpdateInventory(const class FString& InventoryId, const struct FAccelByteModelsUpdateInventoryRequest& UpdateInventoryRequest, const TDelegate<void(const struct FAccelByteModelsUserInventoryResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ABServerInventory")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ABServerInventory")
+	}
+	static class UABServerInventory* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UABServerInventory>();
+	}
+};
+DUMPER7_ASSERTS_UABServerInventory;
 
 // Class AccelByteUe4Sdk.ABServerLobby
 // 0x0010 (0x0040 - 0x0030)
@@ -927,6 +1116,8 @@ public:
 	void GetUserStatItems(const class FString& UserId, const TArray<class FString>& StatCodes, const TArray<class FString>& Tags, TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, int32 Limit, int32 Offset, EAccelByteStatisticSortBy SortBy);
 	void IncrementManyUsersStatItems(const TArray<struct FAccelByteModelsBulkUserStatItemInc>& Data, TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void IncrementUserStatItems(const class FString& UserId, const TArray<struct FAccelByteModelsBulkStatItemInc>& Data, TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void ListGlobalStatItems(TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, int32 Limit, int32 Offset);
+	void ListGlobalStatItemsWithFilter(TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, const TArray<class FString>& StatCodes, int32 Limit, int32 Offset);
 
 public:
 	static class UClass* StaticClass()
@@ -954,6 +1145,18 @@ public:
 public:
 	void DeleteContentByShareCode(const class FString& UserId, const class FString& ChannelId, const class FString& ShareCode, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void ModifyContentByShareCode(const class FString& UserId, const class FString& ChannelId, const class FString& ShareCode, const struct FAccelByteModelsUGCUpdateRequest& ModifyRequest, const TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentBulk(const TArray<class FString>& ContentIds, const TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentBulkByIdsV2(const TArray<class FString>& ContentIds, const TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByContentId(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByContentIdV2(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByShareCode(const class FString& ShareCode, const TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByShareCodeV2(const class FString& ShareCode, const TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetUserContent(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCContentPageResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void PublicGetUserContentsV2(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void PublicSearchAllContents(const struct FAccelByteModelsUGCSearchContentsRequest& Request, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void PublicSearchContents(const class FString& Name_0, const class FString& Creator, const class FString& Type, const class FString& Subtype, const TArray<class FString>& Tags, bool IsOfficial, const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteUgcSortBy SortBy, EAccelByteUgcOrderBy OrderBy, int32 Limit, int32 Offset);
+	void PublicSearchContentsSpecificToChannelV2(const class FString& ChannelId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, EAccelByteUGCContentSortByV2 SortBy);
+	void PublicSearchContentsV2(const struct FAccelByteModelsUGCFilterRequestV2& Filter, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, EAccelByteUGCContentSortByV2 SortBy);
 	void SearchContents(const struct FAccelByteModelsUGCSearchContentsRequest& Request, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void SearchContentsSpecificToChannel(const class FString& ChannelId, const struct FAccelByteModelsUGCSearchContentsRequest& Request, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 
@@ -1087,6 +1290,8 @@ public:
 	void GetGlobalStatItemsByStatCode(const class FString& StatCode, const TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetUserStatItems(const TArray<class FString>& StatCodes, const TArray<class FString>& Tags, const TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, EAccelByteStatisticSortBy SortBy);
 	void IncrementUserStatItems(const TArray<struct FAccelByteModelsBulkStatItemInc>& Data, const TDelegate<void(const struct FArrayModelsBulkStatItemOperationResultResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void ListGlobalStatItems(const TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void ListGlobalStatItemsWithFilter(const TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const TArray<class FString>& StatCodesFilter, int32 Limit, int32 Offset);
 
 public:
 	static class UClass* StaticClass()
@@ -1124,9 +1329,11 @@ public:
 	void DeleteContentByShareCode(const class FString& ChannelId, const class FString& ShareCode, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void DeleteContentScreenshotV2(const class FString& ContentId, const class FString& ScreenshotId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void DeleteContentV2(const class FString& ChannelId, const class FString& ContentId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void DeleteStagingContent(const class FString& ContentId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GenerateUploadContentURLV2(const class FString& ChannelId, const class FString& ContentId, const struct FAccelByteModelsUploadContentURLRequestV2& UploadRequest, const TDelegate<void(const struct FAccelByteModelsUGCUploadContentURLResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetChannels(const TDelegate<void(const struct FAccelByteModelsUGCChannelsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, const class FString& ChannelName);
 	void GetChannelsByUserId(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCChannelsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void GetContentBulk(const TArray<class FString>& ContentIds, const TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetContentBulkByIdsV2(const TArray<class FString>& ContentIds, const TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetContentByContentId(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void GetContentByContentIdV2(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
@@ -1137,8 +1344,11 @@ public:
 	void GetListContentDownloaderV2(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCGetPaginatedContentDownloaderResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const class FString& UserId, int32 Limit, int32 Offset, EAccelByteUGCContentUtilitiesSortByV2 SortBy);
 	void GetListContentLikerV2(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCGetPaginatedContentLikerResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void GetListFollowers(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCGetListFollowersPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void GetStagingContentById(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCStagingContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void GetStagingContents(EStagingContentRequestStatus Status, const TDelegate<void(const struct FAccelByteModelsUGCPaginatedListStagingContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, EAccelByteStagingContentUtilitiesSortBy SortBy);
 	void GetTags(const TDelegate<void(const struct FAccelByteModelsUGCTagsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void GetTypes(const TDelegate<void(const struct FAccelByteModelsUGCTypesPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void GetUserContent(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCContentPageResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void GetUserContentsV2(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void ModifyContent(const class FString& ChannelId, const class FString& ContentId, const class FString& Name_0, const class FString& Type, const class FString& SubType, const TArray<class FString>& Tags, const TArray<uint8>& Preview, const class FString& FileExtension, const TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const class FString& ContentType);
 	void ModifyContentByShareCode(const class FString& ChannelId, const class FString& ShareCode, const struct FAccelByteModelsUGCUpdateRequest& ModifyRequest, const TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
@@ -1147,6 +1357,18 @@ public:
 	void ModifyContentShareCode(const class FString& ChannelId, const class FString& ContentId, const struct FAccelByteModelsUGCModifyContentShareCodeRequest& ModifyContentShareCodeRequest, const TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void ModifyContentShareCodeV2(const class FString& ChannelId, const class FString& ContentId, const struct FAccelByteModelsUGCModifyContentShareCodeRequest& ModifyContentShareCodeRequest, const TDelegate<void(const struct FAccelByteModelsUGCCreateUGCResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void ModifyContentV2(const class FString& ChannelId, const class FString& ContentId, const struct FAccelByteModelsModifyUGCRequestV2& ModifyRequest, const TDelegate<void(const struct FAccelByteModelsUGCModifyUGCResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentBulk(const TArray<class FString>& ContentIds, const TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentBulkByIdsV2(const TArray<class FString>& ContentIds, const TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByContentId(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByContentIdV2(const class FString& ContentId, const TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByShareCode(const class FString& ShareCode, const TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetContentByShareCodeV2(const class FString& ShareCode, const TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void PublicGetUserContent(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCContentPageResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void PublicGetUserContentsV2(const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void PublicSearchAllContents(const struct FAccelByteModelsUGCSearchContentsRequest& Request, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
+	void PublicSearchContents(const class FString& Name_0, const class FString& Creator, const class FString& Type, const class FString& Subtype, const TArray<class FString>& Tags, bool IsOfficial, const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteUgcSortBy SortBy, EAccelByteUgcOrderBy OrderBy, int32 Limit, int32 Offset);
+	void PublicSearchContentsSpecificToChannelV2(const class FString& ChannelId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, EAccelByteUGCContentSortByV2 SortBy);
+	void PublicSearchContentsV2(const struct FAccelByteModelsUGCFilterRequestV2& Filter, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset, EAccelByteUGCContentSortByV2 SortBy);
 	void SearchAllContents(const struct FAccelByteModelsUGCSearchContentsRequest& Request, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
 	void SearchContents(const class FString& Name_0, const class FString& Creator, const class FString& Type, const class FString& Subtype, const TArray<class FString>& Tags, bool IsOfficial, const class FString& UserId, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteUgcSortBy SortBy, EAccelByteUgcOrderBy OrderBy, int32 Limit, int32 Offset);
 	void SearchContentsByChannelId(const class FString& ChannelId, const struct FAccelByteModelsUGCSearchContentsRequest& Request, const TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, int32 Limit, int32 Offset);
@@ -1158,6 +1380,7 @@ public:
 	void UpdateFollowStatusToUser(const class FString& UserId, bool bFollowStatus, const TDelegate<void(const struct FAccelByteModelsUGCUpdateFollowStatusToUserResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void UpdateLikeStatusToContent(const class FString& ContentId, bool bLikeStatus, const TDelegate<void(const struct FAccelByteModelsUGCUpdateLikeStatusToContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void UpdateLikeStatusToContentV2(const class FString& ContentId, bool bLikeStatus, const TDelegate<void(const struct FAccelByteModelsUGCUpdateLikeStatusToContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
+	void UpdateStagingContent(const class FString& ContentId, const struct FAccelByteModelsUGCUpdateContentFileLocationRequestV2& UpdateRequest, const TDelegate<void(const struct FAccelByteModelsUGCStagingContentResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 	void UploadContentScreenshotV2(const class FString& ContentId, const struct FAccelByteModelsUGCUploadScreenshotsRequestV2& ScreenshotsRequest, const TDelegate<void(const struct FAccelByteModelsUGCUpdateContentScreenshotResponse& Response)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
 
 public:
@@ -1185,35 +1408,45 @@ public:
 
 public:
 	void BulkGetUserByOtherPlatformUserIds(EAccelBytePlatformType PlatformType, const TArray<class FString>& OtherPlatformUserId, TDelegate<void(const struct FBulkPlatformUserIdResponse& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
-	void BulkGetUserInfo(const TArray<class FString>& UserIds, TDelegate<void(const struct FListBulkUserInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void ForcedLinkOtherPlatform(EAccelBytePlatformType PlatformType, const class FString& PlatformUserId, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FAccountLinkConflictErrorJson& Response)> OnError);
 	void ForgetAllCredentials();
 	void GetCountryFromIP(TDelegate<void(const struct FCountryInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetData(TDelegate<void(const struct FAccountUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void GetDataWithLinkedPlatform(TDelegate<void(const struct FAccountUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetPlatformLinks(TDelegate<void(const struct FPagedPlatformLinks& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
-	void GetUserByOtherPlatformUserId(EAccelBytePlatformType PlatformType, const class FString& OtherPlatformUserId, TDelegate<void(const struct FAccountUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserByUserId(const class FString& UserId, TDelegate<void(const struct FSimpleUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void GetUserEligibleToPlay(TDelegate<void(bool Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void GetUserOtherPlatformBasicPublicInfo(const struct FPlatformAccountInfoRequest& Request, TDelegate<void(const struct FAccountUserPlatformInfosResponse& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void LinkOtherPlatform(EAccelBytePlatformType PlatformType, const class FString& Ticket, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FAccountLinkConflictErrorJson& Response)> OnError);
 	void LoginByExchangeCodeForToken(const class FString& Code, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void LoginByExchangeCodeForTokenV4(const class FString& Code, TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError);
 	void LoginWithDeviceId(TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void LoginWithDeviceIdV4(TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError);
 	void LoginWithLauncher(TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void LoginWithLauncherV4(TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError);
 	void LoginWithOtherPlatform(EAccelBytePlatformType PlatformType, const class FString& PlatformToken, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, bool bCreateHeadless);
 	void LoginWithOtherPlatformId(const class FString& PlatformId, const class FString& PlatformToken, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError, bool bCreateHeadless);
+	void LoginWithOtherPlatformIdV4(const class FString& PlatformId, const class FString& PlatformToken, TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError, bool bCreateHeadless);
+	void LoginWithOtherPlatformV4(EAccelBytePlatformType PlatformType, const class FString& PlatformToken, TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError, bool bCreateHeadless);
 	void LoginWithRefreshToken(TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void LoginWithRefreshTokenV4(TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError);
 	void LoginWithUsername(const class FString& Username, const class FString& Password, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void LoginWithUsernameV4(const class FString& Username, const class FString& Password, TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError);
 	void Logout(TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void Register(const class FString& Username, const class FString& Password, const class FString& DisplayName, const class FString& Country, const class FString& DateOfBirth, TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void Registerv2(const class FString& EmailAddress, const class FString& Username, const class FString& Password, const class FString& DisplayName, const class FString& Country, const class FString& DateOfBirth, TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void Registerv3(const struct FRegisterRequestv3& RegisterRequest, TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void ResetPassword(const class FString& VerificationCode, const class FString& EmailAddress, const class FString& NewPassword, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SearchUsers(const class FString& Query, TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void SearchUsersByOtherPlatformId(const class FString& Query, const class FString& PlatformId, EAccelByteSearchPlatformType PlatformBy, TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void SearchUsersByOtherPlatformType(const class FString& Query, EAccelBytePlatformType PlatformType, EAccelByteSearchPlatformType PlatformBy, TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SearchUsersByType(const class FString& Query, EAccelByteSearchType By, TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SendResetPasswordCode(const class FString& EmailAddress, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SendUpdateEmailVerificationCode(TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SendUpgradeVerificationCode(const class FString& EmailAddress, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void SendVerificationCode(TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void TryRelogin(const class FString& PlatformUserID, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void TryReloginV4(const class FString& PlatformUserID, TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError);
 	void UnlinkAllOtherPlatform(EAccelBytePlatformType PlatformType, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError);
 	void UnlinkAllOtherPlatformId(const class FString& PlatformId, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError);
 	void UnlinkOtherPlatform(EAccelBytePlatformType PlatformType, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
@@ -1224,6 +1457,7 @@ public:
 	void Upgrade(const class FString& Username, const class FString& Password, TDelegate<void(const struct FAccountUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void UpgradeAndVerify(const class FString& Username, const class FString& Password, const class FString& VerificationCode, TDelegate<void(const struct FAccountUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void Upgradev2(const class FString& EmailAddress, const class FString& Username, const class FString& Password, TDelegate<void(const struct FAccountUserData& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
+	void ValidateUserInput(const struct FUserInputValidationRequest& UserInputValidationRequest, TDelegate<void(const struct FUserInputValidationResponse& Response)> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 	void Verify(const class FString& VerificationCode, TDelegate<void()> OnSuccess, TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError);
 
 public:
@@ -1301,37 +1535,6 @@ public:
 };
 DUMPER7_ASSERTS_UABWallet;
 
-// Class AccelByteUe4Sdk.AccelByteBlueprintsAchievement
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsAchievement final : public UBlueprintFunctionLibrary
-{
-public:
-	static void ClaimGlobalAchievements(const class FString& AchievementCode, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetAchievement(const class FString& AchievementCode, const TDelegate<void(const struct FAccelByteModelsMultiLanguageAchievement& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetTags(const class FString& Name_0, const EAccelByteAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedPublicTag& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
-	static void QueryAchievements(const class FString& Language, const EAccelByteAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedPublicAchievement& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit, const class FString& TagQuery, bool bGlobal);
-	static void QueryGlobalAchievementContributors(const class FString& AchievementCode, const EAccelByteGlobalAchievementContributorsSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementContributors& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
-	static void QueryGlobalAchievements(const class FString& AchievementCode, const EAccelByteGlobalAchievementStatus& AchievementStatus, const EAccelByteGlobalAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedUserGlobalAchievement& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
-	static void QueryGlobalAchievementUserContributed(const class FString& AchievementCode, const EAccelByteGlobalAchievementContributorsSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementUserContributed& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit);
-	static void QueryUserAchievements(const EAccelByteAchievementListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, const int32& Offset, const int32& Limit, bool preferUnlocked, const class FString& TagQuery);
-	static void UnlockAchievement(const class FString& AchievementCode, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsAchievement")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsAchievement")
-	}
-	static class UAccelByteBlueprintsAchievement* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsAchievement>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsAchievement;
-
 // Class AccelByteUe4Sdk.ABCredentials
 // 0x0010 (0x0040 - 0x0030)
 class UABCredentials final : public UObject
@@ -1378,38 +1581,39 @@ public:
 DUMPER7_ASSERTS_UABCredentials;
 
 // Class AccelByteUe4Sdk.ABApiClient
-// 0x00E8 (0x0118 - 0x0030)
+// 0x00F0 (0x0120 - 0x0030)
 class UABApiClient final : public UObject
 {
 public:
-	class UABCredentials*                         Credentials;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABUser*                                User;                                              // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABLobby*                               Lobby;                                             // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABParty*                               Party;                                             // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABMatchmaking*                         Matchmaking;                                       // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABFriends*                             Friends;                                           // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABCatalog*                             Catalog;                                           // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABOrder*                               Order;                                             // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABEntitlement*                         Entitlement;                                       // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABCurrency*                            Currency;                                          // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABWallet*                              Wallet;                                            // 0x0080(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABFulfillment*                         Fulfillment;                                       // 0x0088(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABCloudSave*                           CloudSave;                                         // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABAgreement*                           Agreement;                                         // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABReward*                              Reward;                                            // 0x00A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABSeasonPass*                          SeasonPass;                                        // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABStatistic*                           Statistic;                                         // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABLeaderboard*                         Leaderboard;                                       // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABAchievement*                         Achievement;                                       // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABSessionBrowser*                      SessionBrowser;                                    // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABUGC*                                 UGC;                                               // 0x00D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABPresence*                            Presence;                                          // 0x00D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABBlock*                               Block;                                             // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABMessage*                             Message;                                           // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABSessionAttribute*                    SessionAttribute;                                  // 0x00F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABSignaling*                           Signaling;                                         // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABGroup*                               Group;                                             // 0x0100(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_108[0x10];                                     // 0x0108(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UABCredentials*                         Credentials;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABUser*                                User;                                              // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABLobby*                               Lobby;                                             // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABFriends*                             Friends;                                           // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABCatalog*                             Catalog;                                           // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABOrder*                               Order;                                             // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABEntitlement*                         Entitlement;                                       // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABCurrency*                            Currency;                                          // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABWallet*                              Wallet;                                            // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABFulfillment*                         Fulfillment;                                       // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABCloudSave*                           CloudSave;                                         // 0x0080(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABAgreement*                           Agreement;                                         // 0x0088(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABReward*                              Reward;                                            // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABSeasonPass*                          SeasonPass;                                        // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABStatistic*                           Statistic;                                         // 0x00A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABLeaderboard*                         Leaderboard;                                       // 0x00A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABAchievement*                         Achievement;                                       // 0x00B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABMatchmaking*                         Matchmaking;                                       // 0x00B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABSessionBrowser*                      SessionBrowser;                                    // 0x00C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABParty*                               Party;                                             // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABUGC*                                 UGC;                                               // 0x00D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABInventory*                           Inventory;                                         // 0x00D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABPresence*                            Presence;                                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABBlock*                               Block;                                             // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABMessage*                             Message;                                           // 0x00F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABSessionAttribute*                    SessionAttribute;                                  // 0x00F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABSignaling*                           Signaling;                                         // 0x0100(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABGroup*                               Group;                                             // 0x0108(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_110[0x10];                                     // 0x0110(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1426,29 +1630,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UABApiClient;
-
-// Class AccelByteUe4Sdk.ABMultiRegistry
-// 0x0000 (0x0030 - 0x0030)
-class UABMultiRegistry final : public UBlueprintFunctionLibrary
-{
-public:
-	static class UABApiClient* GetApiClient(const class FString& Key);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ABMultiRegistry")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ABMultiRegistry")
-	}
-	static class UABMultiRegistry* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UABMultiRegistry>();
-	}
-};
-DUMPER7_ASSERTS_UABMultiRegistry;
 
 // Class AccelByteUe4Sdk.ABLobby
 // 0x0010 (0x0040 - 0x0030)
@@ -1518,14 +1699,14 @@ DUMPER7_ASSERTS_UABServerCredentials;
 class UServerApiClient final : public UObject
 {
 public:
-	class UABServerCredentials*                   Credentials;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerOauth2*                        ServerOauth2;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerDSM*                           ServerDSM;                                         // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerLobby*                         ServerLobby;                                       // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerMatchmaking*                   ServerMatchmaking;                                 // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerSessionBrowser*                ServerSessionBrowser;                              // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerAchievement*                   ServerAchievement;                                 // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABServerStatistic*                     ServerStatistic;                                   // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerCredentials*                   Credentials;                                       // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerOauth2*                        ServerOauth2;                                      // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerDSM*                           ServerDSM;                                         // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerLobby*                         ServerLobby;                                       // 0x0048(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerMatchmaking*                   ServerMatchmaking;                                 // 0x0050(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerSessionBrowser*                ServerSessionBrowser;                              // 0x0058(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerAchievement*                   ServerAchievement;                                 // 0x0060(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABServerStatistic*                     ServerStatistic;                                   // 0x0068(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_70[0x10];                                      // 0x0070(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -1544,407 +1725,37 @@ public:
 };
 DUMPER7_ASSERTS_UServerApiClient;
 
-// Class AccelByteUe4Sdk.ServerMultiRegistry
-// 0x0000 (0x0030 - 0x0030)
-class UServerMultiRegistry final : public UBlueprintFunctionLibrary
+// Class AccelByteUe4Sdk.AccelByteInstance
+// 0x0010 (0x0040 - 0x0030)
+class UAccelByteInstance final : public UObject
 {
 public:
-	static class UServerApiClient* GetServerApiClient(const class FString& Key);
+	uint8                                         Pad_30[0x10];                                      // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UAccelByteInstance* CreateAccelByteInstance();
+
+	class UABApiClient* GetApiClient(const class FString& Key);
+	class UServerApiClient* GetServerApiClient(const class FString& Key);
 
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("ServerMultiRegistry")
+		STATIC_CLASS_IMPL("AccelByteInstance")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"ServerMultiRegistry")
+		STATIC_NAME_IMPL(L"AccelByteInstance")
 	}
-	static class UServerMultiRegistry* GetDefaultObj()
+	static class UAccelByteInstance* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UServerMultiRegistry>();
+		return GetDefaultObjImpl<UAccelByteInstance>();
 	}
 };
-DUMPER7_ASSERTS_UServerMultiRegistry;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsCategory
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsCategory final : public UBlueprintFunctionLibrary
-{
-public:
-	static void GetCategory(const class FString& ParentPath, const class FString& Language, const TDelegate<void(const struct FAccelByteModelsCategoryInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetChildCategories(const class FString& Language, const class FString& CategoryPath, const TDelegate<void(const TArray<struct FAccelByteModelsCategoryInfo>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetDescendantCategories(const class FString& Language, const class FString& CategoryPath, const TDelegate<void(const TArray<struct FAccelByteModelsCategoryInfo>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetRootCategories(const class FString& Language, const TDelegate<void(const TArray<struct FAccelByteModelsCategoryInfo>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsCategory")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsCategory")
-	}
-	static class UAccelByteBlueprintsCategory* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsCategory>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsCategory;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsCloudStorage final : public UBlueprintFunctionLibrary
-{
-public:
-	static void CreateSlot(const TArray<uint8>& Data, const class FString& FileName, const TArray<class FString>& Tags, const class FString& Label, const class FString& CustomAttribute, const TDelegate<void(const struct FAccelByteModelsSlot& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void DeleteSlot(const class FString& SlotId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetAllSlots(const TDelegate<void(const TArray<struct FAccelByteModelsSlot>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetSlot(const class FString& SlotId, const TDelegate<void(const TArray<uint8>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateSlot(const class FString& SlotId, const class FString& FileName, const TArray<uint8>& Data, const TArray<class FString>& Tags, const class FString& Label, const class FString& CustomAttribute, const TDelegate<void(const struct FAccelByteModelsSlot& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateSlotMetadata(const class FString& SlotId, const class FString& FileName, const TArray<class FString>& Tags, const class FString& Label, const class FString& CustomAttribute, const TDelegate<void(const struct FAccelByteModelsSlot& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsCloudStorage")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsCloudStorage")
-	}
-	static class UAccelByteBlueprintsCloudStorage* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsCloudStorage>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsCloudStorage;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsCredentials
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsCredentials final : public UBlueprintFunctionLibrary
-{
-public:
-	static class FString GetOAuthClientId();
-	static class FString GetOAuthClientSecret();
-	static class FString GetUserDisplayName();
-	static class FString GetUserEmailAddress();
-	static class FString GetUserId();
-	static class FString GetUserName();
-	static class FString GetUserNamespace();
-	static class FString GetUserSessionId();
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsCredentials")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsCredentials")
-	}
-	static class UAccelByteBlueprintsCredentials* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsCredentials>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsCredentials;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsCurrency
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsCurrency final : public UBlueprintFunctionLibrary
-{
-public:
-	static void GetCurrencyList(const class FString& Namespace, const TDelegate<void(const TArray<struct FAccelByteModelsCurrencyList>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteCurrencyType CurrencyType);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsCurrency")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsCurrency")
-	}
-	static class UAccelByteBlueprintsCurrency* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsCurrency>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsCurrency;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsEntitlement
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsEntitlement final : public UBlueprintFunctionLibrary
-{
-public:
-	static void QueryUserEntitlements(const class FString& EntitlementName, const class FString& ItemId, int32 Page, int32 Size, const TDelegate<void(const struct FAccelByteModelsEntitlementPagingSlicedResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteEntitlementClass EntitlementClass, EAccelByteAppType AppType);
-	static void QueryUserEntitlementsMany(const class FString& EntitlementName, const TArray<class FString>& ItemIds, int32 Page, int32 Size, const TDelegate<void(const struct FAccelByteModelsEntitlementPagingSlicedResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, EAccelByteEntitlementClass EntitlementClass, EAccelByteAppType AppType);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsEntitlement")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsEntitlement")
-	}
-	static class UAccelByteBlueprintsEntitlement* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsEntitlement>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsEntitlement;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsGameProfile
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsGameProfile final : public UBlueprintFunctionLibrary
-{
-public:
-	static void BatchGetPublicGameProfiles(const TArray<class FString>& UserIds, const TDelegate<void(const TArray<struct FAccelByteModelsPublicGameProfile>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void CreateGameProfile(const struct FAccelByteModelsGameProfileRequest& GameProfileRequest, const TDelegate<void(const struct FAccelByteModelsGameProfile& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void DeleteGameProfile(const class FString& ProfileId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetAllGameProfiles(const TDelegate<void(const TArray<struct FAccelByteModelsGameProfile>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetGameProfile(const class FString& ProfileId, const TDelegate<void(const struct FAccelByteModelsGameProfile& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetGameProfileAttribute(const class FString& ProfileId, const class FString& AttributeName, const TDelegate<void(const struct FAccelByteModelsGameProfileAttribute& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateGameProfile(const class FString& ProfileId, const struct FAccelByteModelsGameProfileRequest& GameProfileRequest, const TDelegate<void(const struct FAccelByteModelsGameProfile& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateGameProfileAttribute(const class FString& ProfileId, const struct FAccelByteModelsGameProfileAttribute& Attribute, const TDelegate<void(const struct FAccelByteModelsGameProfile& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsGameProfile")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsGameProfile")
-	}
-	static class UAccelByteBlueprintsGameProfile* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsGameProfile>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsGameProfile;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsGroup
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsGroup final : public UBlueprintFunctionLibrary
-{
-public:
-	static void CreateGroup(const struct FAccelByteModelsCreateGroupRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void DeleteGroup(const class FString& GroupId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void DeleteGroupPredefinedRule(const class FString& GroupId, const EAccelByteAllowedAction& AllowedAction, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetGroup(const class FString& GroupId, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetGroupList(const struct FAccelByteModelsGetGroupListRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGetGroupListResponse& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateGroup(const class FString& GroupId, const bool bCompletelyReplace, const struct FAccelByteModelsGroupUpdatable& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateGroupCustomAttributes(const class FString& GroupId, const struct FAccelByteModelsUpdateGroupCustomAttributesRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateGroupCustomRule(const class FString& GroupId, const struct FAccelByteModelsUpdateCustomRulesRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateGroupPredefinedRule(const class FString& GroupId, const EAccelByteAllowedAction& AllowedAction, const struct FAccelByteModelsUpdateGroupPredefinedRuleRequest& RequestContent, const TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsGroup")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsGroup")
-	}
-	static class UAccelByteBlueprintsGroup* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsGroup>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsGroup;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsItem
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsItem final : public UBlueprintFunctionLibrary
-{
-public:
-	static void GetItemById(const class FString& ItemId, const class FString& Region, const class FString& Language, const TDelegate<void(const struct FAccelByteModelsPopulatedItemInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetItemsByCriteria(const struct FAccelByteModelsItemCriteria& ItemCriteria, const int32& Offset, const int32& Limit, const TArray<EAccelByteItemListSortBy>& SortBy, const TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void SearchItem(const class FString& Language, const class FString& Keyword, int32 Page, int32 Size, const class FString& Region, const TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-	void GetItemByAppId(const class FString& AppId, const class FString& Region, const class FString& Language, const TDelegate<void(const struct FAccelByteModelsItemInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsItem")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsItem")
-	}
-	static class UAccelByteBlueprintsItem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsItem>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsItem;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsLobby
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsLobby final : public UBlueprintFunctionLibrary
-{
-public:
-	static void AcceptFriend(const class FString& UserId);
-	static void BindEvent(const TDelegate<void()>& OnConnectSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnConnectError, const TDelegate<void(int32 StatusCode, const class FString& Reason, bool WasClean)>& OnConnectionClosed, const TDelegate<void(const struct FAccelByteModelsLeavePartyNotice& Result)>& OnLeavePartyNotice, const TDelegate<void(const struct FAccelByteModelsInvitationNotice& Result)>& OnInvitePartyInvitationNotice, const TDelegate<void(const struct FAccelByteModelsPartyGetInvitedNotice& Result)>& OnInvitePartyGetInvitedNotice, const TDelegate<void(const struct FAccelByteModelsPartyJoinNotice& Result)>& OnInvitePartyJoinNotice, const TDelegate<void(const struct FAccelByteModelsGotKickedFromPartyNotice& Result)>& OnInvitePartyKickedNotice, const TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Result)>& OnPartyConnectNotice, const TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Result)>& OnPartyDisconnectNotice, const TDelegate<void(const struct FAccelByteModelsPersonalMessageNotice& Result)>& OnPrivateMessageNotice, const TDelegate<void(const struct FAccelByteModelsPartyMessageNotice& Result)>& OnPartyMessageNotice, const TDelegate<void(const struct FAccelByteModelsUsersPresenceNotice& Result)>& OnUserPresenceNotice, const TDelegate<void(const struct FAccelByteModelsNotificationMessage& Result)>& OnNotificationMessage, const TDelegate<void(const struct FAccelByteModelsMatchmakingNotice& Result)>& OnMatchmakingNotice, const TDelegate<void(const struct FAccelByteModelsReadyConsentNotice& Result)>& OnReadyConsentNotice, const TDelegate<void(const struct FAccelByteModelsRematchmakingNotice& Result)>& OnRematchmakingNotice, const TDelegate<void(const struct FAccelByteModelsDsNotice& Result)>& OnDsNotice, const TDelegate<void(const struct FAccelByteModelsAcceptFriendsNotif& Result)>& OnAcceptFriendsNotifDelegate, const TDelegate<void(const struct FAccelByteModelsRequestFriendsNotif& Result)>& OnRequestFriendsNotifDelegate, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnParsingError);
-	static void CancelFriendRequest(const class FString& UserId);
-	static void Connect();
-	static void Disconnect();
-	static void GetAllAsyncNotification();
-	static void GetFriendshipStatus(const class FString& UserId);
-	static bool IsConnected();
-	static void ListIncomingFriends();
-	static void ListOutgoingFriends();
-	static void LoadFriendsList();
-	static void RejectFriend(const class FString& UserId);
-	static void RequestFriend(const class FString& UserId);
-	static void SendAcceptInvitationRequest(const class FString& PartyId, const class FString& InvitationToken);
-	static void SendCancelMatchmaking(const class FString& GameMode);
-	static void SendCreatePartyRequest();
-	static void SendGetOnlineUsersRequest();
-	static void SendInfoPartyRequest();
-	static void SendInviteToPartyRequest(const class FString& UserId);
-	static void SendKickPartyMemberRequest(const class FString& UserId);
-	static void SendLeavePartyRequest();
-	static void SendPartyMessage(const class FString& Message);
-	static void SendPing();
-	static void SendPrivateMessage(const class FString& UserId, const class FString& Message);
-	static void SendReadyConsentRequest(const class FString& MatchId);
-	static void SendRejectConsentRequest(const class FString& MatchId);
-	static void SendStartMatchmaking(const class FString& GameMode);
-	static void SetAcceptFriendResponseDelegate(TDelegate<void(const struct FAccelByteModelsAcceptFriendsResponse& Result)> OnAcceptFriendsResponse);
-	static void SetCancelFriendRequestResponseDelegate(TDelegate<void(const struct FAccelByteModelsCancelFriendsResponse& Result)> OnCancelFriendsResponse);
-	static void SetCancelMatchmakingResponseDelegate(TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Result)> OnMatchmakingCancel);
-	static void SetCreatePartyResponseDelegate(TDelegate<void(const struct FAccelByteModelsCreatePartyResponse& Result)> OnCreatePartyResponse);
-	static void SetDsNotifDelegate(TDelegate<void(const struct FAccelByteModelsDsNotice& Result)> OnDsNotice);
-	static void SetGetAllUserPresenceResponseDelegate(TDelegate<void(const struct FAccelByteModelsGetOnlineUsersResponse& Result)> OnGetAllUserPresenceResponse);
-	static void SetGetFriendshipStatusResponseDelegate(TDelegate<void(const struct FAccelByteModelsGetFriendshipStatusResponse& Result)> OnGetFriendshipStatusResponse);
-	static void SetInfoPartyResponseDelegate(TDelegate<void(const struct FAccelByteModelsInfoPartyResponse& Result)> OnInfoPartyResponse);
-	static void SetInvitePartyJoinResponseDelegate(TDelegate<void(const struct FAccelByteModelsPartyJoinResponse& Result)> OnInvitePartyJoinResponse);
-	static void SetInvitePartyKickMemberResponseDelegate(TDelegate<void(const struct FAccelByteModelsKickPartyMemberResponse& Result)> OnInvitePartyKickMemberResponse);
-	static void SetInvitePartyResponseDelegate(TDelegate<void(const struct FAccelByteModelsPartyInviteResponse& Result)> OnInvitePartyResponse);
-	static void SetLeavePartyResponseDelegate(TDelegate<void(const struct FAccelByteModelsLeavePartyResponse& Result)> OnLeavePartyResponse);
-	static void SetListIncomingFriendsResponseDelegate(TDelegate<void(const struct FAccelByteModelsListIncomingFriendsResponse& Result)> OnListIncomingFriendsResponse);
-	static void SetListOutgoingFriendsResponseDelegate(TDelegate<void(const struct FAccelByteModelsListOutgoingFriendsResponse& Result)> OnListOutgoingFriendsResponse);
-	static void SetLoadFriendsListResponseDelegate(TDelegate<void(const struct FAccelByteModelsLoadFriendListResponse& Result)> OnLoadFriendListResponse);
-	static void SetMatchmakingNotifDelegate(TDelegate<void(const struct FAccelByteModelsMatchmakingNotice& Result)> OnMatchmakingNotice);
-	static void SetPartyMessageResponseDelegate(TDelegate<void(const struct FAccelByteModelsPartyMessageResponse& Result)> OnPartyMessageResponse);
-	static void SetPresenceStatus(EAvailability State, const class FString& Activity);
-	static void SetPrivateMessageResponseDelegate(TDelegate<void(const struct FAccelByteModelsPersonalMessageResponse& Result)> OnPrivateMessageResponse);
-	static void SetReadyConsentNotifDelegate(TDelegate<void(const struct FAccelByteModelsReadyConsentNotice& Result)> OnReadyConsentNotice);
-	static void SetReadyConsentResponseDelegate(TDelegate<void(const struct FAccelByteModelsReadyConsentRequest& Result)> OnReadyConsentResponse);
-	static void SetRejectConsentNotifDelegate(TDelegate<void(const struct FAccelByteModelsRejectConsentNotice& Result)> OnRejectConsentNotice);
-	static void SetRejectConsentResponseDelegate(TDelegate<void(const struct FAccelByteModelsRejectConsentRequest& Result)> OnRejectConsentResponse);
-	static void SetRejectFriendResponseDelegate(TDelegate<void(const struct FAccelByteModelsRejectFriendsResponse& Result)> OnRejectFriendsResponse);
-	static void SetRematchmakingNotifDelegate(TDelegate<void(const struct FAccelByteModelsRematchmakingNotice& Result)> OnRematchmakingNotice);
-	static void SetRequestFriendResponseDelegate(TDelegate<void(const struct FAccelByteModelsRequestFriendsResponse& Result)> OnRequestFriendsResponseDelegate);
-	static void SetStartMatchmakingResponseDelegate(TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Result)> OnMatchmakingStart);
-	static void SetUnfriendResponseDelegate(TDelegate<void(const struct FAccelByteModelsUnfriendResponse& Result)> OnUnfriendResponse);
-	static void SetUserPresenceResponseDelegate(TDelegate<void(const struct FAccelByteModelsSetOnlineUsersResponse& Result)> OnUserPresenceResponse);
-	static void UnbindDelegates();
-	static void Unfriend(const class FString& UserId);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsLobby")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsLobby")
-	}
-	static class UAccelByteBlueprintsLobby* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsLobby>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsLobby;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsOrder
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsOrder final : public UBlueprintFunctionLibrary
-{
-public:
-	static void CancelOrder(const class FString& OrderNo, const TDelegate<void(const struct FAccelByteModelsOrderInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void CreateNewOrder(const struct FAccelByteModelsOrderCreate& OrderCreate, const TDelegate<void(const struct FAccelByteModelsOrderInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetUserOrder(const class FString& OrderNo, const TDelegate<void(const struct FAccelByteModelsOrderInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetUserOrderHistory(const class FString& OrderNo, const TDelegate<void(const TArray<struct FAccelByteModelsOrderHistoryInfo>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetUserOrders(int32 Page, int32 Size, const TDelegate<void(const struct FAccelByteModelsPagedOrderInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsOrder")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsOrder")
-	}
-	static class UAccelByteBlueprintsOrder* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsOrder>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsOrder;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsReward
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsReward final : public UBlueprintFunctionLibrary
-{
-public:
-	static void GetRewardByRewardCode(const class FString& RewardCode, const TDelegate<void(const struct FAccelByteModelsRewardInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetRewardByRewardId(const class FString& RewardId, const TDelegate<void(const struct FAccelByteModelsRewardInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void QueryRewards(const class FString& EventTopic, int32 Offset, int32 Limit, const EAccelByteRewardListSortBy& SortBy, const TDelegate<void(const struct FAccelByteModelsQueryReward& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsReward")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsReward")
-	}
-	static class UAccelByteBlueprintsReward* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsReward>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsReward;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsServerCredentials
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsServerCredentials final : public UBlueprintFunctionLibrary
-{
-public:
-	static class FString GetClientAccessToken();
-	static class FString GetClientNamespace();
-	static class FString GetMatchId();
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsServerCredentials")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsServerCredentials")
-	}
-	static class UAccelByteBlueprintsServerCredentials* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsServerCredentials>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsServerCredentials;
+DUMPER7_ASSERTS_UAccelByteInstance;
 
 // Class AccelByteUe4Sdk.AccelByteServerSettings
-// 0x0198 (0x01C8 - 0x0030)
+// 0x01A8 (0x01D8 - 0x0030)
 class UAccelByteServerSettings : public UObject
 {
 public:
@@ -1957,28 +1768,29 @@ public:
 	class FString                                 RedirectURI;                                       // 0x0078(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 BaseUrl;                                           // 0x0088(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 IamServerUrl;                                      // 0x0098(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DSMControllerServerUrl;                            // 0x00A8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 StatisticServerUrl;                                // 0x00B8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 PlatformServerUrl;                                 // 0x00C8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 QosManagerServerUrl;                               // 0x00D8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GameTelemetryServerUrl;                            // 0x00E8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AchievementServerUrl;                              // 0x00F8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UGCServerUrl;                                      // 0x0108(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchmakingServerUrl;                              // 0x0118(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 LobbyServerUrl;                                    // 0x0128(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CloudSaveServerUrl;                                // 0x0138(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SeasonPassServerUrl;                               // 0x0148(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SessionBrowserServerUrl;                           // 0x0158(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SessionServerUrl;                                  // 0x0168(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ChatServerUrl;                                     // 0x0178(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         QosPingTimeout;                                    // 0x0188(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18C[0x4];                                      // 0x018C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 DSHubServerUrl;                                    // 0x0190(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchmakingV2ServerUrl;                            // 0x01A0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AMSServerWatchdogUrl;                              // 0x01B0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AMSHeartbeatInterval;                              // 0x01C0(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSendPredefinedEvent;                              // 0x01C4(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 BasicServerUrl;                                    // 0x00A8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DSMControllerServerUrl;                            // 0x00B8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 StatisticServerUrl;                                // 0x00C8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PlatformServerUrl;                                 // 0x00D8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 QosManagerServerUrl;                               // 0x00E8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GameTelemetryServerUrl;                            // 0x00F8(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AchievementServerUrl;                              // 0x0108(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UGCServerUrl;                                      // 0x0118(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchmakingServerUrl;                              // 0x0128(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LobbyServerUrl;                                    // 0x0138(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CloudSaveServerUrl;                                // 0x0148(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SeasonPassServerUrl;                               // 0x0158(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SessionBrowserServerUrl;                           // 0x0168(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SessionServerUrl;                                  // 0x0178(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ChatServerUrl;                                     // 0x0188(0x0010)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         QosPingTimeout;                                    // 0x0198(0x0004)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 DSHubServerUrl;                                    // 0x01A0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchmakingV2ServerUrl;                            // 0x01B0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AMSServerWatchdogUrl;                              // 0x01C0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AMSHeartbeatInterval;                              // 0x01D0(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSendPredefinedEvent;                              // 0x01D4(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -1997,7 +1809,7 @@ public:
 DUMPER7_ASSERTS_UAccelByteServerSettings;
 
 // Class AccelByteUe4Sdk.AccelByteServerSettingsDev
-// 0x0000 (0x01C8 - 0x01C8)
+// 0x0000 (0x01D8 - 0x01D8)
 class UAccelByteServerSettingsDev final : public UAccelByteServerSettings
 {
 public:
@@ -2017,7 +1829,7 @@ public:
 DUMPER7_ASSERTS_UAccelByteServerSettingsDev;
 
 // Class AccelByteUe4Sdk.AccelByteServerSettingsCert
-// 0x0000 (0x01C8 - 0x01C8)
+// 0x0000 (0x01D8 - 0x01D8)
 class UAccelByteServerSettingsCert final : public UAccelByteServerSettings
 {
 public:
@@ -2037,7 +1849,7 @@ public:
 DUMPER7_ASSERTS_UAccelByteServerSettingsCert;
 
 // Class AccelByteUe4Sdk.AccelByteServerSettingsProd
-// 0x0000 (0x01C8 - 0x01C8)
+// 0x0000 (0x01D8 - 0x01D8)
 class UAccelByteServerSettingsProd final : public UAccelByteServerSettings
 {
 public:
@@ -2056,82 +1868,8 @@ public:
 };
 DUMPER7_ASSERTS_UAccelByteServerSettingsProd;
 
-// Class AccelByteUe4Sdk.AccelByteBlueprintsServerSettings
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsServerSettings final : public UBlueprintFunctionLibrary
-{
-public:
-	static class FString GetAchievementServerUrl();
-	static class FString GetAMSServerWatchdogUrl();
-	static class FString GetChatServerUrl();
-	static class FString GetClientId();
-	static class FString GetClientSecret();
-	static class FString GetCloudSaveServerUrl();
-	static class FString GetDSHubServerUrl();
-	static class FString GetDSMControllerServerUrl();
-	static class FString GetGameTelemetryServerUrl();
-	static class FString GetGDPRServerUrl();
-	static class FString GetIamServerUrl();
-	static class FString GetLobbyServerUrl();
-	static class FString GetMatchmakingServerUrl();
-	static class FString GetMatchmakingV2ServerUrl();
-	static class FString GetNamespace();
-	static class FString GetPlatformServerUrl();
-	static class FString GetPublisherNamespace();
-	static class FString GetQosManagerServerUrl();
-	static float GetQosPingTimeout();
-	static class FString GetSeasonPassServerUrl();
-	static class FString GetSessionBrowserServerUrl();
-	static class FString GetSessionServerUrl();
-	static class FString GetStatisticServerUrl();
-	static class FString GetUGCServerUrl();
-	static bool IsSendPredefinedEvent();
-	static void ResetSettings(const ESettingsEnvironment Environment);
-	static void SetAchievementServerUrl(const class FString& AchievementServerUrl);
-	static void SetAMSServerWatchdogUrl(const class FString& AMSServerUrl);
-	static void SetChatServerUrl(const class FString& ChatServerUrl);
-	static void SetClientId(const class FString& ClientId);
-	static void SetClientSecret(const class FString& ClientSecret);
-	static void SetCloudSaveServerUrl(const class FString& CloudServerUrl);
-	static void SetDSHubServerUrl(const class FString& DSHubServerUrl);
-	static void SetDSMControllerServerUrl(const class FString& DSMControllerServerUrl);
-	static void SetGameTelemetryServerUrl(const class FString& GameTelemetryServerUrl);
-	static void SetIamServerUrl(const class FString& IamServerUrl);
-	static void SetLobbyServerUrl(const class FString& LobbyServerUrl);
-	static void SetMatchmakingServerUrl(const class FString& MatchmakingServerurl);
-	static void SetMatchmakingV2ServerUrl(const class FString& MatchmakingV2ServerUrl);
-	static void SetNamespace(const class FString& Namespace);
-	static void SetPlatformServerUrl(const class FString& PlatformServerUrl);
-	static void SetPublisherNamespace(const class FString& PublisherNamespace);
-	static void SetQosManagerServerUrl(const class FString& PlatformServerUrl);
-	static void SetQosPingTimeout(const float& QosPingTimeout);
-	static void SetSeasonPassServerUrl(const class FString& SessionPassServerUrl);
-	static void SetSendPredefinedEvent(bool bEnabled);
-	static void SetSessionBrowserServerUrl(const class FString& SessionBrowserServerUrl);
-	static void SetSessionServerUrl(const class FString& SessionServerUrl);
-	static void SetStatisticServerUrl(const class FString& StatisticServerUrl);
-	static void SetUGCServerUrl(const class FString& UGCServerUrl);
-
-	void SetGDPRServerUrl(const class FString& GDPRServerUrl);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsServerSettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsServerSettings")
-	}
-	static class UAccelByteBlueprintsServerSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsServerSettings>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsServerSettings;
-
 // Class AccelByteUe4Sdk.AccelByteSettings
-// 0x0200 (0x0230 - 0x0030)
+// 0x0238 (0x0268 - 0x0030)
 class UAccelByteSettings : public UObject
 {
 public:
@@ -2159,20 +1897,25 @@ public:
 	class FString                                 SessionBrowserServerUrl;                           // 0x0180(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 TurnManagerServerUrl;                              // 0x0190(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UGCServerUrl;                                      // 0x01A0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReportingServerUrl;                                // 0x01B0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SessionServerUrl;                                  // 0x01C0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchmakingV2ServerUrl;                            // 0x01D0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AppId;                                             // 0x01E0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CustomerName;                                      // 0x01F0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SettingsEnvironment;                               // 0x0200(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 HeartBeatData;                                     // 0x0210(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         QosLatencyPollIntervalSecs;                        // 0x0220(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         QosServerLatencyPollIntervalSecs;                  // 0x0224(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         QosPingTimeout;                                    // 0x0228(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableHttpCache;                                  // 0x022C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EHttpCacheType                                HttpCacheType;                                     // 0x022D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSendPredefinedEvent;                              // 0x022E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bServerUseAMS;                                     // 0x022F(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryServerUrl;                                // 0x01B0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReportingServerUrl;                                // 0x01C0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SessionServerUrl;                                  // 0x01D0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchmakingV2ServerUrl;                            // 0x01E0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ChallengeServerUrl;                                // 0x01F0(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LoginQueueServerUrl;                               // 0x0200(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AppId;                                             // 0x0210(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CustomerName;                                      // 0x0220(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SettingsEnvironment;                               // 0x0230(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 HeartBeatData;                                     // 0x0240(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         QosLatencyPollIntervalSecs;                        // 0x0250(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         QosServerLatencyPollIntervalSecs;                  // 0x0254(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         QosPingTimeout;                                    // 0x0258(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableHttpCache;                                  // 0x025C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EHttpCacheType                                HttpCacheType;                                     // 0x025D(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSendPredefinedEvent;                              // 0x025E(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bServerUseAMS;                                     // 0x025F(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableGameTelemetryCache;                         // 0x0260(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -2191,7 +1934,7 @@ public:
 DUMPER7_ASSERTS_UAccelByteSettings;
 
 // Class AccelByteUe4Sdk.AccelByteSettingsDev
-// 0x0000 (0x0230 - 0x0230)
+// 0x0000 (0x0268 - 0x0268)
 class UAccelByteSettingsDev final : public UAccelByteSettings
 {
 public:
@@ -2211,7 +1954,7 @@ public:
 DUMPER7_ASSERTS_UAccelByteSettingsDev;
 
 // Class AccelByteUe4Sdk.AccelByteSettingsCert
-// 0x0000 (0x0230 - 0x0230)
+// 0x0000 (0x0268 - 0x0268)
 class UAccelByteSettingsCert final : public UAccelByteSettings
 {
 public:
@@ -2231,7 +1974,7 @@ public:
 DUMPER7_ASSERTS_UAccelByteSettingsCert;
 
 // Class AccelByteUe4Sdk.AccelByteSettingsProd
-// 0x0000 (0x0230 - 0x0230)
+// 0x0000 (0x0268 - 0x0268)
 class UAccelByteSettingsProd final : public UAccelByteSettings
 {
 public:
@@ -2255,75 +1998,8 @@ DUMPER7_ASSERTS_UAccelByteSettingsProd;
 class UAccelByteBlueprintsSettings final : public UBlueprintFunctionLibrary
 {
 public:
-	static class FString GetAchievementServerUrl();
-	static class FString GetAppId();
-	static class FString GetBasicServerUrl();
-	static class FString GetChatServerUrl();
-	static class FString GetClientId();
-	static class FString GetClientSecret();
-	static class FString GetCloudSaveServerUrl();
-	static class FString GetCloudStorageServerUrl();
-	static class FString GetCustomerName();
-	static class FString GetGameProfileServerUrl();
-	static class FString GetGameTelemetryServerUrl();
-	static class FString GetGDPRServerUrl();
-	static class FString GetGroupServerUrl();
-	static class FString GetHeartBeatData();
-	static EHttpCacheType GetHttpCacheType();
-	static class FString GetIamServerUrl();
-	static class FString GetLeaderboardServerUrl();
-	static class FString GetLobbyServerUrl();
-	static class FString GetMatchmakingV2ServerUrl();
 	static class FString GetNamespace();
-	static class FString GetPlatformServerUrl();
-	static class FString GetPublisherNamespace();
-	static float GetQosLatencyPollIntervalSecs();
-	static class FString GetQosManagerServerUrl();
-	static float GetQosPingTimeout();
-	static float GetQosServerLatencyPollIntervalSecs();
-	static class FString GetReportingServerUrl();
-	static class FString GetSessionBrowserServerUrl();
-	static class FString GetSessionServerUrl();
 	static class FString GetSettingsEnvironment();
-	static class FString GetStatisticServerUrl();
-	static class FString GetTurnManagerServerUrl();
-	static class FString GetUGCServerUrl();
-	static bool IsHttpCacheEnabled();
-	static bool IsSendPredefinedEvent();
-	static bool IsServerUseAMS();
-	static void ResetSettings(const ESettingsEnvironment Environment);
-	static void SetAchievementServerUrl(const class FString& CloudSaveServerUrl);
-	static void SetAppId(const class FString& AppId);
-	static void SetBasicServerUrl(const class FString& BasicServerUrl);
-	static void SetChatServerUrl(const class FString& ChatServerUrl);
-	static void SetClientId(const class FString& ClientId);
-	static void SetClientSecret(const class FString& ClientSecret);
-	static void SetCloudSaveServerUrl(const class FString& CloudSaveServerUrl);
-	static void SetCloudStorageServerUrl(const class FString& CloudStorageServerUrl);
-	static void SetGameProfileServerUrl(const class FString& GameProfileServerUrl);
-	static void SetGameTelemetryServerUrl(const class FString& GameTelemetryServerUrl);
-	static void SetGDPRServerUrl(const class FString& GDPRServerUrl);
-	static void SetGroupServerUrl(const class FString& GroupServerUrl);
-	static void SetHttpCacheType(EHttpCacheType Type);
-	static void SetIamServerUrl(const class FString& IamServerUrl);
-	static void SetLeaderboardServerUrl(const class FString& LeaderboardServerUrl);
-	static void SetLobbyServerUrl(const class FString& LobbyServerUrl);
-	static void SetMatchmakingV2ServerUrl(const class FString& MatchmakingV2ServerUrl);
-	static void SetNamespace(const class FString& Namespace);
-	static void SetPlatformServerUrl(const class FString& PlatformServerUrl);
-	static void SetPublisherNamespace(const class FString& PublisherNamespace);
-	static void SetQosLatencyPollIntervalSecs(const float& QosLatencyPollIntervalSecs);
-	static void SetQosManagerServerUrl(const class FString& QosManagerServerUrl);
-	static void SetQosPingTimeout(const float& QosPingTimeout);
-	static void SetReportingServerUrl(const class FString& ReportingServerUrl);
-	static void SetSeasonPassServerUrl(const class FString& SeasonPassServerUrl);
-	static void SetServerQosLatencyPollIntervalSecs(const float& QosServerLatencyPollIntervalSecs);
-	static void SetServerUseAMS(bool bEnable);
-	static void SetSessionBrowserServerUrl(const class FString& SessionBrowserServerUrl);
-	static void SetSessionServerUrl(const class FString& SessionServerUrl);
-	static void SetStatisticServerUrl(const class FString& StatisticServerUrl);
-	static void SetTurnManagerServerUrl(const class FString& TurnManagerServerUrl);
-	static void SetUGCServerUrl(const class FString& UGCServerUrl);
 
 public:
 	static class UClass* StaticClass()
@@ -2340,128 +2016,5 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UAccelByteBlueprintsSettings;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsStatistic
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsStatistic final : public UBlueprintFunctionLibrary
-{
-public:
-	static void CreateUserStatItems(const TArray<class FString>& StatCodes, const TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetAllUserStatItems(const TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetGlobalStatItemsByStatCode(const class FString& StatCode, const TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetUserStatItems(const TArray<class FString>& StatCodes, const TArray<class FString>& Tags, const TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void IncrementUserStatItems(const TArray<struct FAccelByteModelsBulkStatItemInc>& Data, const TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsStatistic")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsStatistic")
-	}
-	static class UAccelByteBlueprintsStatistic* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsStatistic>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsStatistic;
-
-// Class AccelByteUe4Sdk.BPUser
-// 0x0000 (0x0030 - 0x0030)
-class UBPUser final : public UBlueprintFunctionLibrary
-{
-public:
-	static void ForgetAllCredentials();
-	static void GetPlatformLinks(const TDelegate<void(const struct FPagedPlatformLinks& PlatformLinks)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetUserEligibleToPlay(const TDelegate<void(const bool Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void LinkOtherPlatform(EAccelBytePlatformType PlatformType, const class FString& Ticket, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void LoginWithDeviceId(const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void LoginWithOtherPlatform(EAccelBytePlatformType PlatformType, const class FString& Token, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError, bool bCreateHeadless);
-	static void LoginWithUsername(const class FString& Username, const class FString& Password, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void Logout(const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void Register(const class FString& Username, const class FString& Password, const class FString& DisplayName, const class FString& Country, const class FString& DateOfBirth, const TDelegate<void(const struct FRegisterResponse& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void ResetPassword(const class FString& VerificationCode, const class FString& EmailAddress, const class FString& NewPassword, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void SendResetPasswordCode(const class FString& EmailAddress, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void SendUpgradeVerificationCode(const class FString& EmailAddress, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void SendVerificationCode(const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UnlinkAllOtherPlatform(EAccelBytePlatformType PlatformType, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)>& OnError);
-	static void UnlinkAllOtherPlatformId(const class FString& PlatformId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)>& OnError);
-	static void UnlinkOtherPlatform(EAccelBytePlatformType PlatformType, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UnlinkOtherPlatformId(const class FString& PlatformId, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)>& OnError);
-	static void UnlinkOtherPlatformWithCustomErrorHandler(EAccelBytePlatformType PlatformType, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)>& OnError);
-	static void Upgrade(const class FString& Username, const class FString& Password, const TDelegate<void(const struct FAccountUserData& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpgradeAndVerify(const class FString& Username, const class FString& Password, const class FString& VerificationCode, const TDelegate<void(const struct FAccountUserData& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void Verify(const class FString& VerificationCode, const TDelegate<void()>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("BPUser")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"BPUser")
-	}
-	static class UBPUser* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UBPUser>();
-	}
-};
-DUMPER7_ASSERTS_UBPUser;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsUserProfile
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsUserProfile final : public UBlueprintFunctionLibrary
-{
-public:
-	static void CreateUserProfile(const struct FAccelByteModelsUserProfileCreateRequest& ProfileCreateRequest, const TDelegate<void(const struct FAccelByteModelsUserProfileInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GenerateUploadURL(const class FString& Folder, EAccelByteFileType FileType, const TDelegate<void(const struct FAccelByteModelsUserProfileUploadURLResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GenerateUploadURLForUserContent(const class FString& UserId, EAccelByteFileType FileType, const TDelegate<void(const struct FAccelByteModelsUserProfileUploadURLResult& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetPrivateCustomAttributes(const TDelegate<void(const struct FJsonObjectWrapper& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetUserProfile(const TDelegate<void(const struct FAccelByteModelsUserProfileInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdatePrivateCustomAttributes(const struct FJsonObjectWrapper& PrivateCustomAttributesUpdateRequest, const TDelegate<void(const struct FJsonObjectWrapper& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void UpdateUserProfile(const struct FAccelByteModelsUserProfileUpdateRequest& ProfileUpdateRequest, const TDelegate<void(const struct FAccelByteModelsUserProfileInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsUserProfile")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsUserProfile")
-	}
-	static class UAccelByteBlueprintsUserProfile* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsUserProfile>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsUserProfile;
-
-// Class AccelByteUe4Sdk.AccelByteBlueprintsWallet
-// 0x0000 (0x0030 - 0x0030)
-class UAccelByteBlueprintsWallet final : public UBlueprintFunctionLibrary
-{
-public:
-	static void GetWalletInfoByCurrencyCode(const class FString& CurrencyCode, const TDelegate<void(const struct FAccelByteModelsWalletInfo& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-	static void GetWalletInfoByCurrencyCodeV2(const class FString& CurrencyCode, const TDelegate<void(const struct FAccelByteModelsWalletInfoResponse& Result)>& OnSuccess, const TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)>& OnError);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("AccelByteBlueprintsWallet")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"AccelByteBlueprintsWallet")
-	}
-	static class UAccelByteBlueprintsWallet* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UAccelByteBlueprintsWallet>();
-	}
-};
-DUMPER7_ASSERTS_UAccelByteBlueprintsWallet;
 
 SDK_NAMESPACE_END

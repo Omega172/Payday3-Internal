@@ -10,21 +10,22 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
-// Enum Foliage.EFoliageScaling
+// Enum Foliage.FoliageVertexColorMask
 // NumValues: 0x0006
-enum class EFoliageScaling : uint8
+enum class EFoliageVertexColorMask : uint8
 {
-	Uniform                                  = 0,
-	Free                                     = 1,
-	LockXY                                   = 2,
-	LockXZ                                   = 3,
-	LockYZ                                   = 4,
-	EFoliageScaling_MAX                      = 5,
+	FOLIAGEVERTEXCOLORMASK_Disabled          = 0,
+	FOLIAGEVERTEXCOLORMASK_Red               = 1,
+	FOLIAGEVERTEXCOLORMASK_Green             = 2,
+	FOLIAGEVERTEXCOLORMASK_Blue              = 3,
+	FOLIAGEVERTEXCOLORMASK_Alpha             = 4,
+	FOLIAGEVERTEXCOLORMASK_MAX               = 5,
 };
 
 // Enum Foliage.EVertexColorMaskChannel
@@ -39,16 +40,26 @@ enum class EVertexColorMaskChannel : uint8
 	EVertexColorMaskChannel_MAX              = 5,
 };
 
-// Enum Foliage.FoliageVertexColorMask
+// Enum Foliage.EFoliageScaling
 // NumValues: 0x0006
-enum class EFoliageVertexColorMask : uint8
+enum class EFoliageScaling : uint8
 {
-	FOLIAGEVERTEXCOLORMASK_Disabled          = 0,
-	FOLIAGEVERTEXCOLORMASK_Red               = 1,
-	FOLIAGEVERTEXCOLORMASK_Green             = 2,
-	FOLIAGEVERTEXCOLORMASK_Blue              = 3,
-	FOLIAGEVERTEXCOLORMASK_Alpha             = 4,
-	FOLIAGEVERTEXCOLORMASK_MAX               = 5,
+	Uniform                                  = 0,
+	Free                                     = 1,
+	LockXY                                   = 2,
+	LockXZ                                   = 3,
+	LockYZ                                   = 4,
+	EFoliageScaling_MAX                      = 5,
+};
+
+// Enum Foliage.ESimulationOverlap
+// NumValues: 0x0004
+enum class ESimulationOverlap : uint8
+{
+	CollisionOverlap                         = 0,
+	ShadeOverlap                             = 1,
+	None                                     = 2,
+	ESimulationOverlap_MAX                   = 3,
 };
 
 // Enum Foliage.ESimulationQuery
@@ -62,15 +73,18 @@ enum class ESimulationQuery : uint8
 	ESimulationQuery_MAX                     = 4,
 };
 
-// Enum Foliage.ESimulationOverlap
-// NumValues: 0x0004
-enum class ESimulationOverlap : uint8
+// ScriptStruct Foliage.FoliageTypeObject
+// 0x0020 (0x0020 - 0x0000)
+struct FFoliageTypeObject final
 {
-	CollisionOverlap                         = 0,
-	ShadeOverlap                             = 1,
-	None                                     = 2,
-	ESimulationOverlap_MAX                   = 3,
+public:
+	class UObject*                                FoliageTypeObject;                                 // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UFoliageType*                           TypeInstance;                                      // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	bool                                          bIsAsset;                                          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UFoliageType_InstancedStaticMesh> Type;                                        // 0x0018(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
+DUMPER7_ASSERTS_FFoliageTypeObject;
 
 // ScriptStruct Foliage.FoliageVertexColorChannelMask
 // 0x000C (0x000C - 0x0000)
@@ -85,32 +99,32 @@ public:
 };
 DUMPER7_ASSERTS_FFoliageVertexColorChannelMask;
 
-// ScriptStruct Foliage.FoliageTypeObject
-// 0x0020 (0x0020 - 0x0000)
-struct FFoliageTypeObject final
-{
-public:
-	class UObject*                                FoliageTypeObject;                                 // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UFoliageType*                           TypeInstance;                                      // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsAsset;                                          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UFoliageType_InstancedStaticMesh> Type;                                        // 0x0018(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-DUMPER7_ASSERTS_FFoliageTypeObject;
-
 // ScriptStruct Foliage.ProceduralFoliageInstance
-// 0x0050 (0x0050 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct FProceduralFoliageInstance final
 {
 public:
-	struct FQuat                                  Rotation;                                          // 0x0000(0x0010)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0010(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Age;                                               // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Normal;                                            // 0x0020(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Scale;                                             // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UFoliageType*                           Type;                                              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FQuat                                  Rotation;                                          // 0x0000(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Age;                                               // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Normal;                                            // 0x0040(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Scale;                                             // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFoliageType*                           Type;                                              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_68[0x18];                                      // 0x0068(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FProceduralFoliageInstance;
+
+// ScriptStruct Foliage.FoliageDensityFalloff
+// 0x0090 (0x0090 - 0x0000)
+struct FFoliageDensityFalloff final
+{
+public:
+	bool                                          bUseFalloffCurve;                                  // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRuntimeFloatCurve                     FalloffCurve;                                      // 0x0008(0x0088)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FFoliageDensityFalloff;
 
 SDK_NAMESPACE_END

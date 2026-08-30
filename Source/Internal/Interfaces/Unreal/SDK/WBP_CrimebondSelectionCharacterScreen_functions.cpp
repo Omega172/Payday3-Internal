@@ -16,21 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.BP_OnCurrentPackChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundlePackData*               PackData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCrimeBondProgression&  Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_CrimebondSelectionCharacterScreen_C::ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen(int32 EntryPoint)
+void UWBP_CrimebondSelectionCharacterScreen_C::BP_OnCurrentPackChanged(int32 NewIndex, class USBZBundlePackData* PackData, const struct FSBZCrimeBondProgression& Progression)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen");
+		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "BP_OnCurrentPackChanged");
 
-	Params::WBP_CrimebondSelectionCharacterScreen_C_ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen Parms{};
+	Params::WBP_CrimebondSelectionCharacterScreen_C_BP_OnCurrentPackChanged Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewIndex = NewIndex;
+	Parms.PackData = PackData;
+	Parms.Progression = std::move(Progression);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,25 +80,21 @@ void UWBP_CrimebondSelectionCharacterScreen_C::BP_OnSelectionConfirmed(int32 Ind
 }
 
 
-// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.BP_OnCurrentPackChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZBundlePackData*               PackData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCrimeBondProgression&  Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondSelectionCharacterScreen_C::BP_OnCurrentPackChanged(int32 NewIndex, class USBZBundlePackData* PackData, const struct FSBZCrimeBondProgression& Progression)
+void UWBP_CrimebondSelectionCharacterScreen_C::ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "BP_OnCurrentPackChanged");
+		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen");
 
-	Params::WBP_CrimebondSelectionCharacterScreen_C_BP_OnCurrentPackChanged Parms{};
+	Params::WBP_CrimebondSelectionCharacterScreen_C_ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen Parms{};
 
-	Parms.NewIndex = NewIndex;
-	Parms.PackData = PackData;
-	Parms.Progression = std::move(Progression);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -120,20 +120,6 @@ void UWBP_CrimebondSelectionCharacterScreen_C::OnControlReferenceClicked(class F
 }
 
 
-// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CrimebondSelectionCharacterScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -154,30 +140,24 @@ void UWBP_CrimebondSelectionCharacterScreen_C::OnGainedStackFocused(const class 
 }
 
 
-// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.PrePush_221874EE489B48DA0A9E608F6ACE6CA2
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_CrimebondSelectionCharacterScreen_C::PrePush_221874EE489B48DA0A9E608F6ACE6CA2(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_CrimebondSelectionCharacterScreen_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "PrePush_221874EE489B48DA0A9E608F6ACE6CA2");
+		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "OnLostStackFocused");
 
-	Params::WBP_CrimebondSelectionCharacterScreen_C_PrePush_221874EE489B48DA0A9E608F6ACE6CA2 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.PostPush_221874EE489B48DA0A9E608F6ACE6CA2
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondSelectionCharacterScreen_C::PostPush_221874EE489B48DA0A9E608F6ACE6CA2(class USBZMenuStackScreenWidget* MenuWidget)
 {
@@ -194,10 +174,30 @@ void UWBP_CrimebondSelectionCharacterScreen_C::PostPush_221874EE489B48DA0A9E608F
 }
 
 
+// Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.PrePush_221874EE489B48DA0A9E608F6ACE6CA2
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondSelectionCharacterScreen_C::PrePush_221874EE489B48DA0A9E608F6ACE6CA2(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondSelectionCharacterScreen_C", "PrePush_221874EE489B48DA0A9E608F6ACE6CA2");
+
+	Params::WBP_CrimebondSelectionCharacterScreen_C_PrePush_221874EE489B48DA0A9E608F6ACE6CA2 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C.UpdatePackVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBundlePackData*               InPackDat                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundlePackData*               InPackDat                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZCrimeBondProgression&  InPackProgression                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
 void UWBP_CrimebondSelectionCharacterScreen_C::UpdatePackVisuals(class USBZBundlePackData* InPackDat, const struct FSBZCrimeBondProgression& InPackProgression)

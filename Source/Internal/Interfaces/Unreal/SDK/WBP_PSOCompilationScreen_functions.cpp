@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_PSOCompilationScreen.WBP_PSOCompilationScreen_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PSOCompilationScreen_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PSOCompilationScreen_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PSOCompilationScreen.WBP_PSOCompilationScreen_C.ExecuteUbergraph_WBP_PSOCompilationScreen
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,10 +50,24 @@ void UWBP_PSOCompilationScreen_C::ExecuteUbergraph_WBP_PSOCompilationScreen(int3
 }
 
 
+// Function WBP_PSOCompilationScreen.WBP_PSOCompilationScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PSOCompilationScreen_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PSOCompilationScreen_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PSOCompilationScreen.WBP_PSOCompilationScreen_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PSOCompilationScreen_C::PreConstruct(bool IsDesignTime)
 {
@@ -75,34 +103,6 @@ void UWBP_PSOCompilationScreen_C::UpdatePSOProgress(int32 CurrentProgress, int32
 	Parms.TotalRemaining = TotalRemaining;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PSOCompilationScreen.WBP_PSOCompilationScreen_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PSOCompilationScreen_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PSOCompilationScreen_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PSOCompilationScreen.WBP_PSOCompilationScreen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PSOCompilationScreen_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PSOCompilationScreen_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

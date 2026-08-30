@@ -39,7 +39,7 @@ void ABP_BaseBagSecured_C::ExecuteUbergraph_BP_BaseBagSecured(int32 EntryPoint)
 // Function BP_BaseBagSecured.BP_BaseBagSecured_C.OnPlaced
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABP_BaseBagSecured_C::OnPlaced(bool bDoCosmetics)
 {

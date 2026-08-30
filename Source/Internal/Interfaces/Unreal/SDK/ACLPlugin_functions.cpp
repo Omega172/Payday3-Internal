@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function ACLPlugin.AnimationCompressionLibraryDatabase.GetVisualFidelity
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAnimationCompressionLibraryDatabase*DatabaseAsset                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAnimationCompressionLibraryDatabase*DatabaseAsset                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EACLVisualFidelity                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 EACLVisualFidelity UAnimationCompressionLibraryDatabase::GetVisualFidelity(class UAnimationCompressionLibraryDatabase* DatabaseAsset)
@@ -47,9 +47,9 @@ EACLVisualFidelity UAnimationCompressionLibraryDatabase::GetVisualFidelity(class
 // Function ACLPlugin.AnimationCompressionLibraryDatabase.SetVisualFidelity
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// class UAnimationCompressionLibraryDatabase*DatabaseAsset                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAnimationCompressionLibraryDatabase*DatabaseAsset                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EACLVisualFidelityChangeResult*         Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EACLVisualFidelity                      VisualFidelity                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 

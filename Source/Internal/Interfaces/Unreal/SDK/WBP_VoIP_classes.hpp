@@ -17,30 +17,30 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_VoIP.WBP_VoIP_C
-// 0x0030 (0x02C0 - 0x0290)
+// 0x0030 (0x0320 - 0x02F0)
 class UWBP_VoIP_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 SoundIconOFF;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SoundIconOn;                                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FString                                 EOSProdUID;                                        // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          IsMuted;                                           // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsBlocked;                                         // 0x02B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsTalking;                                         // 0x02BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 SoundIconOFF;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SoundIconOn;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FString                                 EOSProdUID;                                        // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          IsMuted;                                           // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsBlocked;                                         // 0x0319(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsTalking;                                         // 0x031A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void CheckState();
 	void ExecuteUbergraph_WBP_VoIP(int32 EntryPoint);
-	void VoicechatParticipantsChanged(const class FString& EOSId, bool Joined);
-	void SetStateVisibility();
+	void InitialVOIPSetup();
 	void PlayerBlockUpdated(const class FString& EOSProdID, bool bIsBlocked);
 	void PlayerMuteUpdated(const class FString& EOSProdID, bool bIsMuted);
-	void InitialVOIPSetup();
-	void Update_VOIP_UI();
 	void PlayerTalkingUpdated(const class FString& ChannelName, const class FString& PlayerName, bool bIsTalking);
 	void PreConstruct(bool IsDesignTime);
-	void CheckState();
+	void SetStateVisibility();
+	void Update_VOIP_UI();
 	void UpdateTalkingIndicator(const class FString& InPlayerName, bool IsTalking_0);
+	void VoicechatParticipantJoined(const class FString& EOSId);
 
 public:
 	static class UClass* StaticClass()

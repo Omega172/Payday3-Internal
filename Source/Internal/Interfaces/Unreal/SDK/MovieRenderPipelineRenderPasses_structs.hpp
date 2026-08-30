@@ -13,24 +13,44 @@
 
 SDK_NAMESPACE_START
 
+// Enum MovieRenderPipelineRenderPasses.EMovieGraphPathTracerDenoiserType
+// NumValues: 0x0003
+enum class EMovieGraphPathTracerDenoiserType : uint8
+{
+	Spatial                                  = 0,
+	Temporal                                 = 1,
+	EMovieGraphPathTracerDenoiserType_MAX    = 2,
+};
+
 // Enum MovieRenderPipelineRenderPasses.EEXRCompressionFormat
-// NumValues: 0x0004
+// NumValues: 0x000C
 enum class EEXRCompressionFormat : uint8
 {
 	None                                     = 0,
-	PIZ                                      = 1,
-	ZIP                                      = 2,
-	EEXRCompressionFormat_MAX                = 3,
+	RLE                                      = 1,
+	ZIPS                                     = 2,
+	ZIP                                      = 3,
+	PIZ                                      = 4,
+	PXR24                                    = 5,
+	B44                                      = 6,
+	B44A                                     = 7,
+	DWAA                                     = 8,
+	DWAB                                     = 9,
+	Max                                      = 10,
+	EEXRCompressionFormat_MAX                = 11,
 };
 
 // ScriptStruct MovieRenderPipelineRenderPasses.MoviePipelinePostProcessPass
-// 0x0038 (0x0038 - 0x0000)
+// 0x0050 (0x0050 - 0x0000)
 struct FMoviePipelinePostProcessPass final
 {
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UMaterialInterface>      Material;                                          // 0x0008(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterialInterface>      Material;                                          // 0x0018(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bHighPrecisionOutput;                              // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FMoviePipelinePostProcessPass;
 

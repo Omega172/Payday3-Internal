@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function AssetRegistry.AssetRegistryHelpers.CreateAssetData
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const class UObject*                    InAsset                                                (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    InAsset                                                (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bAllowBlueprintClass                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FAssetData                       ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -46,11 +46,39 @@ struct FAssetData UAssetRegistryHelpers::CreateAssetData(const class UObject* In
 }
 
 
+// Function AssetRegistry.AssetRegistryHelpers.FindAssetNativeClass
+// (Final, RequiredAPI, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FAssetData&                AssetData                                              (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UClass*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UClass* UAssetRegistryHelpers::FindAssetNativeClass(const struct FAssetData& AssetData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "FindAssetNativeClass");
+
+	Params::AssetRegistryHelpers_FindAssetNativeClass Parms{};
+
+	Parms.AssetData = std::move(AssetData);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AssetRegistry.AssetRegistryHelpers.GetAsset
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
 // const struct FAssetData&                InAssetData                                            (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetData)
 {
@@ -77,7 +105,7 @@ class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetD
 // Function AssetRegistry.AssetRegistryHelpers.GetAssetRegistry
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// TScriptInterface<class IAssetRegistry>  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, NativeAccessSpecifierPublic)
+// TScriptInterface<class IAssetRegistry>  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 TScriptInterface<class IAssetRegistry> UAssetRegistryHelpers::GetAssetRegistry()
 {
@@ -99,11 +127,40 @@ TScriptInterface<class IAssetRegistry> UAssetRegistryHelpers::GetAssetRegistry()
 }
 
 
+// Function AssetRegistry.AssetRegistryHelpers.GetBlueprintAssets
+// (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// const struct FARFilter&                 InFilter                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<struct FAssetData>*              OutAssetData                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UAssetRegistryHelpers::GetBlueprintAssets(const struct FARFilter& InFilter, TArray<struct FAssetData>* OutAssetData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetBlueprintAssets");
+
+	Params::AssetRegistryHelpers_GetBlueprintAssets Parms{};
+
+	Parms.InFilter = std::move(InFilter);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAssetData != nullptr)
+		*OutAssetData = std::move(Parms.OutAssetData);
+}
+
+
 // Function AssetRegistry.AssetRegistryHelpers.GetClass
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
 // const struct FAssetData&                InAssetData                                            (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UClass*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UClass*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UClass* UAssetRegistryHelpers::GetClass(const struct FAssetData& InAssetData)
 {
@@ -359,6 +416,66 @@ struct FARFilter UAssetRegistryHelpers::SetFilterTagsAndValues(const struct FARF
 }
 
 
+// Function AssetRegistry.AssetRegistryHelpers.SortByAssetName
+// (Final, RequiredAPI, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<struct FAssetData>&              Assets                                                 (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// EAssetRegistrySortOrder                 SortOrder                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAssetRegistryHelpers::SortByAssetName(TArray<struct FAssetData>& Assets, EAssetRegistrySortOrder SortOrder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "SortByAssetName");
+
+	Params::AssetRegistryHelpers_SortByAssetName Parms{};
+
+	Parms.Assets = std::move(Assets);
+	Parms.SortOrder = SortOrder;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	Assets = std::move(Parms.Assets);
+}
+
+
+// Function AssetRegistry.AssetRegistryHelpers.SortByPredicate
+// (Final, RequiredAPI, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<struct FAssetData>&              Assets                                                 (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// TDelegate<void(const struct FAssetData& Left, const struct FAssetData& Right)>SortingPredicate                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EAssetRegistrySortOrder                 SortOrder                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAssetRegistryHelpers::SortByPredicate(TArray<struct FAssetData>& Assets, TDelegate<void(const struct FAssetData& Left, const struct FAssetData& Right)> SortingPredicate, EAssetRegistrySortOrder SortOrder)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "SortByPredicate");
+
+	Params::AssetRegistryHelpers_SortByPredicate Parms{};
+
+	Parms.Assets = std::move(Assets);
+	Parms.SortingPredicate = SortingPredicate;
+	Parms.SortOrder = SortOrder;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	Assets = std::move(Parms.Assets);
+}
+
+
 // Function AssetRegistry.AssetRegistryHelpers.ToSoftObjectPath
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -469,8 +586,9 @@ void IAssetRegistry::ScanModifiedAssetFiles(const TArray<class FString>& InFileP
 // Parameters:
 // const TArray<class FString>&            InPaths                                                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 // bool                                    bForceRescan                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIgnoreDenyListScanFilters                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IAssetRegistry::ScanPathsSynchronous(const TArray<class FString>& InPaths, bool bForceRescan)
+void IAssetRegistry::ScanPathsSynchronous(const TArray<class FString>& InPaths, bool bForceRescan, bool bIgnoreDenyListScanFilters)
 {
 	static class UFunction* Func = nullptr;
 
@@ -481,6 +599,7 @@ void IAssetRegistry::ScanPathsSynchronous(const TArray<class FString>& InPaths, 
 
 	Parms.InPaths = std::move(InPaths);
 	Parms.bForceRescan = bForceRescan;
+	Parms.bIgnoreDenyListScanFilters = bIgnoreDenyListScanFilters;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -530,6 +649,31 @@ void IAssetRegistry::WaitForCompletion()
 	Func->FunctionFlags |= 0x400;
 
 	AsUObject()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AssetRegistry.AssetRegistry.WaitForPackage
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    PackageName                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::WaitForPackage(const class FString& PackageName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "WaitForPackage");
+
+	Params::AssetRegistry_WaitForPackage Parms{};
+
+	Parms.PackageName = std::move(PackageName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -593,6 +737,38 @@ void IAssetRegistry::GetAllCachedPaths(TArray<class FString>* OutPathList) const
 }
 
 
+// Function AssetRegistry.AssetRegistry.GetAncestorClassNames
+// (Native, Public, HasOutParams, BlueprintCallable, Const)
+// Parameters:
+// const struct FTopLevelAssetPath&        ClassPathName                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FTopLevelAssetPath>*      OutAncestorClassNames                                  (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IAssetRegistry::GetAncestorClassNames(const struct FTopLevelAssetPath& ClassPathName, TArray<struct FTopLevelAssetPath>* OutAncestorClassNames) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAncestorClassNames");
+
+	Params::AssetRegistry_GetAncestorClassNames Parms{};
+
+	Parms.ClassPathName = std::move(ClassPathName);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAncestorClassNames != nullptr)
+		*OutAncestorClassNames = std::move(Parms.OutAncestorClassNames);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AssetRegistry.AssetRegistry.GetAssetByObjectPath
 // (Native, Public, HasDefaults, BlueprintCallable, Const)
 // Parameters:
@@ -628,9 +804,10 @@ struct FAssetData IAssetRegistry::GetAssetByObjectPath(const class FName ObjectP
 // Parameters:
 // const struct FARFilter&                 Filter                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // TArray<struct FAssetData>*              OutAssetData                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    bSkipARFilteredAssets                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool IAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAssetData>* OutAssetData) const
+bool IAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAssetData>* OutAssetData, bool bSkipARFilteredAssets) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -640,6 +817,7 @@ bool IAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAs
 	Params::AssetRegistry_GetAssets Parms{};
 
 	Parms.Filter = std::move(Filter);
+	Parms.bSkipARFilteredAssets = bSkipARFilteredAssets;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -658,12 +836,12 @@ bool IAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAs
 // Function AssetRegistry.AssetRegistry.GetAssetsByClass
 // (Native, Public, HasOutParams, BlueprintCallable, Const)
 // Parameters:
-// class FName                             ClassName                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FTopLevelAssetPath&        ClassPathName                                          (Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<struct FAssetData>*              OutAssetData                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // bool                                    bSearchSubClasses                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool IAssetRegistry::GetAssetsByClass(class FName ClassName, TArray<struct FAssetData>* OutAssetData, bool bSearchSubClasses) const
+bool IAssetRegistry::GetAssetsByClass(const struct FTopLevelAssetPath& ClassPathName, TArray<struct FAssetData>* OutAssetData, bool bSearchSubClasses) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -672,7 +850,7 @@ bool IAssetRegistry::GetAssetsByClass(class FName ClassName, TArray<struct FAsse
 
 	Params::AssetRegistry_GetAssetsByClass Parms{};
 
-	Parms.ClassName = ClassName;
+	Parms.ClassPathName = std::move(ClassPathName);
 	Parms.bSearchSubClasses = bSearchSubClasses;
 
 	auto Flgs = Func->FunctionFlags;
@@ -695,9 +873,10 @@ bool IAssetRegistry::GetAssetsByClass(class FName ClassName, TArray<struct FAsse
 // class FName                             PackageName                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<struct FAssetData>*              OutAssetData                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // bool                                    bIncludeOnlyOnDiskAssets                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bSkipARFilteredAssets                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool IAssetRegistry::GetAssetsByPackageName(class FName PackageName, TArray<struct FAssetData>* OutAssetData, bool bIncludeOnlyOnDiskAssets) const
+bool IAssetRegistry::GetAssetsByPackageName(class FName PackageName, TArray<struct FAssetData>* OutAssetData, bool bIncludeOnlyOnDiskAssets, bool bSkipARFilteredAssets) const
 {
 	static class UFunction* Func = nullptr;
 
@@ -708,6 +887,7 @@ bool IAssetRegistry::GetAssetsByPackageName(class FName PackageName, TArray<stru
 
 	Parms.PackageName = PackageName;
 	Parms.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
+	Parms.bSkipARFilteredAssets = bSkipARFilteredAssets;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -744,6 +924,107 @@ bool IAssetRegistry::GetAssetsByPath(class FName PackagePath, TArray<struct FAss
 	Parms.PackagePath = PackagePath;
 	Parms.bRecursive = bRecursive;
 	Parms.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAssetData != nullptr)
+		*OutAssetData = std::move(Parms.OutAssetData);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AssetRegistry.AssetRegistry.GetAssetsByPaths
+// (Native, Public, HasOutParams, BlueprintCallable, Const)
+// Parameters:
+// const TArray<class FName>&              PackagePaths                                           (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FAssetData>*              OutAssetData                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    bRecursive                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIncludeOnlyOnDiskAssets                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IAssetRegistry::GetAssetsByPaths(const TArray<class FName>& PackagePaths, TArray<struct FAssetData>* OutAssetData, bool bRecursive, bool bIncludeOnlyOnDiskAssets) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByPaths");
+
+	Params::AssetRegistry_GetAssetsByPaths Parms{};
+
+	Parms.PackagePaths = std::move(PackagePaths);
+	Parms.bRecursive = bRecursive;
+	Parms.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAssetData != nullptr)
+		*OutAssetData = std::move(Parms.OutAssetData);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AssetRegistry.AssetRegistry.GetDerivedClassNames
+// (Native, Public, HasOutParams, BlueprintCallable, Const)
+// Parameters:
+// const TArray<struct FTopLevelAssetPath>&ClassNames                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const TSet<struct FTopLevelAssetPath>&  ExcludedClassNames                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TSet<struct FTopLevelAssetPath>*        OutDerivedClassNames                                   (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void IAssetRegistry::GetDerivedClassNames(const TArray<struct FTopLevelAssetPath>& ClassNames, const TSet<struct FTopLevelAssetPath>& ExcludedClassNames, TSet<struct FTopLevelAssetPath>* OutDerivedClassNames) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetDerivedClassNames");
+
+	Params::AssetRegistry_GetDerivedClassNames Parms{};
+
+	Parms.ClassNames = std::move(ClassNames);
+	Parms.ExcludedClassNames = std::move(ExcludedClassNames);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutDerivedClassNames != nullptr)
+		*OutDerivedClassNames = std::move(Parms.OutDerivedClassNames);
+}
+
+
+// Function AssetRegistry.AssetRegistry.GetInMemoryAssets
+// (Native, Public, HasOutParams, HasDefaults, BlueprintCallable, Const)
+// Parameters:
+// const struct FARFilter&                 Filter                                                 (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// TArray<struct FAssetData>*              OutAssetData                                           (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// bool                                    bSkipARFilteredAssets                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IAssetRegistry::GetInMemoryAssets(const struct FARFilter& Filter, TArray<struct FAssetData>* OutAssetData, bool bSkipARFilteredAssets) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetInMemoryAssets");
+
+	Params::AssetRegistry_GetInMemoryAssets Parms{};
+
+	Parms.Filter = std::move(Filter);
+	Parms.bSkipARFilteredAssets = bSkipARFilteredAssets;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -833,6 +1114,88 @@ bool IAssetRegistry::IsLoadingAssets() const
 		Func = AsUObject()->Class->GetFunction("AssetRegistry", "IsLoadingAssets");
 
 	Params::AssetRegistry_IsLoadingAssets Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AssetRegistry.AssetRegistry.IsSearchAllAssets
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IAssetRegistry::IsSearchAllAssets() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "IsSearchAllAssets");
+
+	Params::AssetRegistry_IsSearchAllAssets Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AssetRegistry.AssetRegistry.IsSearchAsync
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool IAssetRegistry::IsSearchAsync() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "IsSearchAsync");
+
+	Params::AssetRegistry_IsSearchAsync Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AssetRegistry.AssetRegistry.K2_GetAssetByObjectPath
+// (RequiredAPI, Native, Public, HasOutParams, HasDefaults, BlueprintCallable, Const)
+// Parameters:
+// const struct FSoftObjectPath&           ObjectPath                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bIncludeOnlyOnDiskAssets                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bSkipARFilteredAssets                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAssetData                       ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FAssetData IAssetRegistry::K2_GetAssetByObjectPath(const struct FSoftObjectPath& ObjectPath, bool bIncludeOnlyOnDiskAssets, bool bSkipARFilteredAssets) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("AssetRegistry", "K2_GetAssetByObjectPath");
+
+	Params::AssetRegistry_K2_GetAssetByObjectPath Parms{};
+
+	Parms.ObjectPath = std::move(ObjectPath);
+	Parms.bIncludeOnlyOnDiskAssets = bIncludeOnlyOnDiskAssets;
+	Parms.bSkipARFilteredAssets = bSkipARFilteredAssets;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

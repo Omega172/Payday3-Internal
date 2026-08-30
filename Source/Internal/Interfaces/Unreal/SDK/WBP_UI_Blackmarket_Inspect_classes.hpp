@@ -18,25 +18,25 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C
-// 0x0060 (0x03C8 - 0x0368)
+// 0x0060 (0x0428 - 0x03C8)
 class UWBP_UI_Blackmarket_Inspect_C final : public USBZBlackMarketInspectWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       intro;                                             // 0x0370(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_WeaponSlotDisplayPanel_C*       WBP_UI_WeaponSlotDisplayPanel;                     // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZModularPartSlotBase*                PatternSlot;                                       // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZSuitConfig                         TempSuitConfig;                                    // 0x0390(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FSBZButtonControlReference>     ControlsReferenceArray;                            // 0x03B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       intro;                                             // 0x03D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_WeaponSlotDisplayPanel_C*       WBP_UI_WeaponSlotDisplayPanel;                     // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZModularPartSlotBase*                PatternSlot;                                       // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FSBZSuitConfig                         TempSuitConfig;                                    // 0x03F0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FSBZButtonControlReference>     ControlsReferenceArray;                            // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	bool CanInspectItem(const class USBZInventoryBaseData* InInspectData);
 	void ExecuteUbergraph_WBP_UI_Blackmarket_Inspect(int32 EntryPoint);
-	void SetVisualsForInspect();
-	void OnLostStackFocused();
 	void OnControlReferenceClicked(class FName ActionName);
 	void OnGainedStackFocused(const class FName& PreviousValue);
-	bool CanInspectItem(const class USBZInventoryBaseData* InInspectData);
+	void OnLostStackFocused();
+	void SetVisualsForInspect();
 
 public:
 	static class UClass* StaticClass()

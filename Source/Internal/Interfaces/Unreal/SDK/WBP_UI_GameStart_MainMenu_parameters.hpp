@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused;
+
 // Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.ExecuteUbergraph_WBP_UI_GameStart_MainMenu
 // 0x0014 (0x0014 - 0x0000)
 struct WBP_UI_GameStart_MainMenu_C_ExecuteUbergraph_WBP_UI_GameStart_MainMenu final
@@ -24,15 +33,6 @@ public:
 	class FName                                   K2Node_Event_PreviousValue;                        // 0x0008(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_GameStart_MainMenu_C_ExecuteUbergraph_WBP_UI_GameStart_MainMenu;
-
-// Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

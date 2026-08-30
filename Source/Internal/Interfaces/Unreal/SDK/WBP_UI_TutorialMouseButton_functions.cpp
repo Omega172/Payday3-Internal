@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_TutorialMouseButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_TutorialMouseButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.ExecuteUbergraph_WBP_UI_TutorialMouseButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,23 +56,17 @@ void UWBP_UI_TutorialMouseButton_C::ExecuteUbergraph_WBP_UI_TutorialMouseButton(
 }
 
 
-// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.PreConstruct
+// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_TutorialMouseButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_TutorialMouseButton_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "OnInitialized");
 
-	Params::WBP_UI_TutorialMouseButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -70,55 +84,21 @@ void UWBP_UI_TutorialMouseButton_C::OnShowingTutorialChanged()
 }
 
 
-// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.OnInitialized
+// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_TutorialMouseButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_TutorialMouseButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_TutorialMouseButton_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "PreConstruct");
 
-	Params::WBP_UI_TutorialMouseButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_TutorialMouseButton_C_PreConstruct Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.SetHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_TutorialMouseButton_C::SetHovered(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "SetHovered");
-
-	Params::WBP_UI_TutorialMouseButton_C_SetHovered Parms{};
-
-	Parms.bIsHovered = bIsHovered;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -127,7 +107,7 @@ void UWBP_UI_TutorialMouseButton_C::SetHovered(bool bIsHovered)
 // Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.SetActive
 // (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_TutorialMouseButton_C::SetActive(bool bIsActive)
 {
@@ -139,6 +119,26 @@ void UWBP_UI_TutorialMouseButton_C::SetActive(bool bIsActive)
 	Params::WBP_UI_TutorialMouseButton_C_SetActive Parms{};
 
 	Parms.bIsActive = bIsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_TutorialMouseButton.WBP_UI_TutorialMouseButton_C.SetHovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_TutorialMouseButton_C::SetHovered(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_TutorialMouseButton_C", "SetHovered");
+
+	Params::WBP_UI_TutorialMouseButton_C_SetHovered Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

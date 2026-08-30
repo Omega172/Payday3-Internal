@@ -19,33 +19,33 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C
-// 0x0050 (0x0378 - 0x0328)
+// 0x0050 (0x03D8 - 0x0388)
 class UWBP_UI_Inventory_LoadoutDisplayPanel_C final : public USBZMainMenuLoadoutDisplayWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_UI_LoadoutCustomization_ItemButton_C* Button_Mask;                                    // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_LoadoutSkillsButton_C* Button_Skills;                                    // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class USBZMenuButton* Button, bool bIsFocused, ESBZInventoryEquipmentType ButtonType)> OnButtonFocusChanged; // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              SkillButtonSelected;                               // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TArray<class USBZSkillData*>                  RT_Skills;                                         // 0x0360(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	ESBZInventoryEquipmentType                    PreviousSkillButton;                               // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_UI_LoadoutCustomization_ItemButton_C* Button_Mask;                                    // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_LoadoutSkillsButton_C* Button_Skills;                                    // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class USBZMenuButton* Button, bool bIsFocused, ESBZInventoryEquipmentType ButtonType)> OnButtonFocusChanged; // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              SkillButtonSelected;                               // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TArray<class USBZSkillData*>                  RT_Skills;                                         // 0x03C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	ESBZInventoryEquipmentType                    PreviousSkillButton;                               // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutDisplayPanel(int32 EntryPoint);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnNewConfigUpdated(const struct FSBZPlayerLoadoutConfig& PlayerLoadoutConfig);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutDisplayPanel(int32 EntryPoint);
 	void GiveKeyboardFocus();
-	void PlayDisplayAnimation();
 	class UWidget* NavFromSkills(EUINavigation Navigation_0);
+	void OnNewConfigUpdated(const struct FSBZPlayerLoadoutConfig& PlayerLoadoutConfig);
+	void PlayDisplayAnimation();
 
 public:
 	static class UClass* StaticClass()

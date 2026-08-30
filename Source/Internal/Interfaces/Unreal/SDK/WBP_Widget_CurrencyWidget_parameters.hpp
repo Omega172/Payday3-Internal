@@ -26,17 +26,17 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         K2Node_Event_NewValue;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsInitial_2;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsInitial_2;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0014(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_1;             // 0x0024(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_2;             // 0x0034(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZCurrencyCode                              K2Node_Event_InCurrencyType;                       // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsInitial_1;                         // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsAfforded;                        // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsInitial;                           // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bIsInitial_1;                         // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsAfforded;                        // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsInitial;                           // 0x0047(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_ExecuteUbergraph_WBP_Widget_CurrencyWidget;
 
@@ -45,8 +45,8 @@ DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_ExecuteUbergraph_WBP_Widget_Currency
 struct WBP_Widget_CurrencyWidget_C_OnAffordedChanged final
 {
 public:
-	bool                                          bInIsAfforded;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bIsInitial;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsAfforded;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitial;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_OnAffordedChanged;
 
@@ -56,18 +56,9 @@ struct WBP_Widget_CurrencyWidget_C_OnCurrencyTypeChanged final
 {
 public:
 	ESBZCurrencyCode                              InCurrencyType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitial;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsInitial;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_OnCurrencyTypeChanged;
-
-// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Widget_CurrencyWidget_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_PreConstruct;
 
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.OnCurrencyValueChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -75,51 +66,50 @@ struct WBP_Widget_CurrencyWidget_C_OnCurrencyValueChanged final
 {
 public:
 	int64                                         NewValue;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitial;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsInitial;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_OnCurrencyValueChanged;
 
+// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Widget_CurrencyWidget_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_PreConstruct;
+
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.SetCurrencyText
-// 0x0020 (0x0020 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct WBP_Widget_CurrencyWidget_C_SetCurrencyText final
 {
 public:
 	int64                                         InValue;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0008(0x0018)()
+	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0008(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_SetCurrencyText;
 
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.SetFontAndColor
-// 0x0090 (0x0090 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct WBP_Widget_CurrencyWidget_C_SetFontAndColor final
 {
 public:
 	struct FSlateFontInfo                         InSlateFont;                                       // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FSlateColor                            InSlateColor;                                      // 0x0060(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm)
-	float                                         FontSize;                                          // 0x0088(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            InSlateColor;                                      // 0x0060(0x0014)(BlueprintVisible, BlueprintReadOnly, Parm)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        FontSize;                                          // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_SetFontAndColor;
 
-// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.UpdateCurrencyIcon
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_Widget_CurrencyWidget_C_UpdateCurrencyIcon final
-{
-public:
-	struct FLinearColor                           IconColor;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_UpdateCurrencyIcon;
-
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.SetForbidden
-// 0x0040 (0x0040 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_Widget_CurrencyWidget_C_SetForbidden final
 {
 public:
-	bool                                          IsForbidden;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsForbidden;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0004(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_SetForbidden;
 
@@ -131,9 +121,19 @@ public:
 	ESBZCurrencyCode                              InCurrency;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	int64                                         InCost;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_UpdateCost;
+
+// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.UpdateCurrencyIcon
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_Widget_CurrencyWidget_C_UpdateCurrencyIcon final
+{
+public:
+	struct FLinearColor                           IconColor;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Widget_CurrencyWidget_C_UpdateCurrencyIcon;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

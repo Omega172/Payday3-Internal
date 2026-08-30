@@ -16,78 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponPartProgressionButton_C::ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton");
-
-	Params::WBP_UI_WeaponPartProgressionButton_C_ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_WeaponPartProgressionButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "PreConstruct");
-
-	Params::WBP_UI_WeaponPartProgressionButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_WeaponPartProgressionButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponPartProgressionButton_C::DisabledButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "DisabledButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.ButtonDisabledChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_WeaponPartProgressionButton_C::ButtonDisabledChanged(bool bInIsDisabled)
 {
@@ -99,6 +31,26 @@ void UWBP_UI_WeaponPartProgressionButton_C::ButtonDisabledChanged(bool bInIsDisa
 	Params::WBP_UI_WeaponPartProgressionButton_C_ButtonDisabledChanged Parms{};
 
 	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponPartProgressionButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_WeaponPartProgressionButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -118,101 +70,35 @@ void UWBP_UI_WeaponPartProgressionButton_C::DefaultButtonSet()
 }
 
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnEquippedChanged
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.DisabledButtonSelected
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsEquipped                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_WeaponPartProgressionButton_C::OnEquippedChanged(bool bInIsEquipped)
+void UWBP_UI_WeaponPartProgressionButton_C::DisabledButtonSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "OnEquippedChanged");
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "DisabledButtonSelected");
 
-	Params::WBP_UI_WeaponPartProgressionButton_C_OnEquippedChanged Parms{};
-
-	Parms.bInIsEquipped = bInIsEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.WeaponPartProgressionInitialized
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FSBZWeaponPartProgressionCurrent&InWeaponPartProgression                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponPartProgressionButton_C::WeaponPartProgressionInitialized(const struct FSBZWeaponPartProgressionCurrent& InWeaponPartProgression)
+void UWBP_UI_WeaponPartProgressionButton_C::ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "WeaponPartProgressionInitialized");
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton");
 
-	Params::WBP_UI_WeaponPartProgressionButton_C_WeaponPartProgressionInitialized Parms{};
+	Params::WBP_UI_WeaponPartProgressionButton_C_ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton Parms{};
 
-	Parms.InWeaponPartProgression = std::move(InWeaponPartProgression);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_WeaponPartProgressionButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_WeaponPartProgressionButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_WeaponPartProgressionButton_C::OnFocusChanged(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "OnFocusChanged");
-
-	Params::WBP_UI_WeaponPartProgressionButton_C_OnFocusChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.InitItem
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponPartProgressionButton_C::InitItem(class USBZInventoryBaseData* InItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "InitItem");
-
-	Params::WBP_UI_WeaponPartProgressionButton_C_InitItem Parms{};
-
-	Parms.InItemData = InItemData;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -238,24 +124,30 @@ void UWBP_UI_WeaponPartProgressionButton_C::InitButtonState(const struct FSBZWea
 }
 
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetDefaultButton
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.InitItem
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponPartProgressionButton_C::SetDefaultButton()
+void UWBP_UI_WeaponPartProgressionButton_C::InitItem(class USBZInventoryBaseData* InItemData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetDefaultButton");
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "InitItem");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_WeaponPartProgressionButton_C_InitItem Parms{};
+
+	Parms.InItemData = InItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnDisabledChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InDisabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InDisabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_WeaponPartProgressionButton_C::OnDisabledChanged(bool InDisabled)
 {
@@ -272,17 +164,77 @@ void UWBP_UI_WeaponPartProgressionButton_C::OnDisabledChanged(bool InDisabled)
 }
 
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetLockedByDLC
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnEquippedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsEquipped                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponPartProgressionButton_C::SetLockedByDLC()
+void UWBP_UI_WeaponPartProgressionButton_C::OnEquippedChanged(bool bInIsEquipped)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetLockedByDLC");
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "OnEquippedChanged");
+
+	Params::WBP_UI_WeaponPartProgressionButton_C_OnEquippedChanged Parms{};
+
+	Parms.bInIsEquipped = bInIsEquipped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponPartProgressionButton_C::OnFocusChanged(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "OnFocusChanged");
+
+	Params::WBP_UI_WeaponPartProgressionButton_C_OnFocusChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_WeaponPartProgressionButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponPartProgressionButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "PreConstruct");
+
+	Params::WBP_UI_WeaponPartProgressionButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -308,23 +260,31 @@ void UWBP_UI_WeaponPartProgressionButton_C::SetCurrencyTypeAndValue(int64 InCurr
 }
 
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetLockedByLevel
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InLockedLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetDefault
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_WeaponPartProgressionButton_C::SetLockedByLevel(int32 InLockedLevel)
+void UWBP_UI_WeaponPartProgressionButton_C::SetDefault()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetLockedByLevel");
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetDefault");
 
-	Params::WBP_UI_WeaponPartProgressionButton_C_SetLockedByLevel Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InLockedLevel = InLockedLevel;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetDefaultButton
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_WeaponPartProgressionButton_C::SetDefaultButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetDefaultButton");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -370,17 +330,57 @@ void UWBP_UI_WeaponPartProgressionButton_C::SetFocused()
 }
 
 
-// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetDefault
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetLockedByDLC
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_WeaponPartProgressionButton_C::SetDefault()
+void UWBP_UI_WeaponPartProgressionButton_C::SetLockedByDLC()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetDefault");
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetLockedByDLC");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.SetLockedByLevel
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InLockedLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponPartProgressionButton_C::SetLockedByLevel(int32 InLockedLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "SetLockedByLevel");
+
+	Params::WBP_UI_WeaponPartProgressionButton_C_SetLockedByLevel Parms{};
+
+	Parms.InLockedLevel = InLockedLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponPartProgressionButton.WBP_UI_WeaponPartProgressionButton_C.WeaponPartProgressionInitialized
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZWeaponPartProgressionCurrent&InWeaponPartProgression                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_WeaponPartProgressionButton_C::WeaponPartProgressionInitialized(const struct FSBZWeaponPartProgressionCurrent& InWeaponPartProgression)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponPartProgressionButton_C", "WeaponPartProgressionInitialized");
+
+	Params::WBP_UI_WeaponPartProgressionButton_C_WeaponPartProgressionInitialized Parms{};
+
+	Parms.InWeaponPartProgression = std::move(InWeaponPartProgression);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

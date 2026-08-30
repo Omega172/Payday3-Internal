@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlaceableSensorTool.GA_PlaceableSensorTool_C
-// 0x0000 (0x0560 - 0x0560)
+// 0x0000 (0x0580 - 0x0580)
 class UGA_PlaceableSensorTool_C final : public USBZPlaceSensorToolAbility
 {
 public:

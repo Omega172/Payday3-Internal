@@ -19,51 +19,51 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C
-// 0x0058 (0x03A0 - 0x0348)
+// 0x0060 (0x0408 - 0x03A8)
 class UWBP_UI_HUD_Chat_C final : public USBZHUDChatWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_TextInputBackground;                         // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBox_Text;                                    // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class URichTextBlock*                         Text_BlockChat;                                    // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	float                                         DisplayTimer;                                      // 0x0368(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Tweakable_TimeShown;                               // 0x036C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInit;                                           // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_371[0x7];                                      // 0x0371(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTagContainer                  GameplayTags;                                      // 0x0378(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         MaxCount;                                          // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_TextInputBackground;                         // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBox_Text;                                    // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class URichTextBlock*                         Text_BlockChat;                                    // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	double                                        DisplayTimer;                                      // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Tweakable_TimeShown;                               // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInit;                                           // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  GameplayTags;                                      // 0x03E0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         MaxCount;                                          // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void AddText(const class FText& NewMessage);
+	void BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
+	void CallReceived(const struct FSBZPlayerCallEvent& CallEventData);
+	void CrewAIMessageReceived(const struct FSBZAICrewChatEvent& ChatEventData);
 	void ExecuteUbergraph_WBP_UI_HUD_Chat(int32 EntryPoint);
-	void PlayerMessageReceived(const struct FSBZChatMessage& InChatMessage);
+	void GetMoodText(class FText& InText, bool IsGood, class FText* OutText);
+	void KeyItemCountChanged(const struct FSBZKeyItemCountChangedEvent& KeyItemCountChangedEventData);
+	void OnAICrewDefeatStateChanged(const struct FSBZAICrewDefeatStateChangedData& InData);
+	void OnChatDisabledChanged(bool bIsDisabled);
+	void OnChatFocusChanged(bool bHasFocus);
+	void OnInitialized();
+	void OnPlayerDefeatStateChanged(const struct FSBZPlayerDefeatStateChangedData& InData);
 	void OnPlayerJoinedTheHeist(const class FText& JoinedPlayerName);
 	void OnPlayerStateRemoved(const struct FSBZPlayerStateRemovedEvent& PlayerStateRemovedData);
-	void CallReceived(const struct FSBZPlayerCallEvent& CallEventData);
-	void KeyItemCountChanged(const struct FSBZKeyItemCountChangedEvent& KeyItemCountChangedEventData);
-	void SystemMessageReceived(const struct FSBZSystemChatEvent& ChatEventData);
-	void CrewAIMessageReceived(const struct FSBZAICrewChatEvent& ChatEventData);
 	void PingReceived(const struct FSBZPlayerPingEvent& PingEventData);
-	void OnAICrewDefeatStateChanged(const struct FSBZAICrewDefeatStateChangedData& InData);
-	void OnPlayerDefeatStateChanged(const struct FSBZPlayerDefeatStateChangedData& InData);
-	void VotingMessageReceived(const struct FSBZVotingChatEvent& ChatEventData);
-	void OnChatDisabledChanged(bool bIsDisabled);
-	void OnInitialized();
-	void BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
-	void OnChatFocusChanged(bool bHasFocus);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void PlayerMessageReceived(const struct FSBZChatMessage& InChatMessage);
 	void Process_Player_Message(const struct FSBZChatMessage& InMessageChat);
-	void ResetTimer();
-	void ProcessPing(const struct FSBZPlayerPingEvent& PIngEvent);
-	void ProcessKeyItemPickUp(const struct FSBZKeyItemCountChangedEvent& InKeyItemEvent);
 	void ProcessCall(const struct FSBZPlayerCallEvent& CallEvent);
 	void ProcessCrewAIMessage(const struct FSBZAICrewChatEvent& InMessageChat);
+	void ProcessDefeatChange(class APlayerState* PlayerState, class ASBZAICrewState* AICrewState, EPD3DefeatState OldDefeatState, EPD3DefeatState NewDefeatState, bool IsInitialStateChange);
+	void ProcessKeyItemPickUp(const struct FSBZKeyItemCountChangedEvent& InKeyItemEvent);
+	void ProcessPing(const struct FSBZPlayerPingEvent& PIngEvent);
+	void ProcessPlayerJoinedHeist(const class FText& InPlayerJoinedName);
 	void ProcessSystemMessage(const struct FSBZSystemChatEvent& InMessageChat);
 	void ProcessVotingMessage(const struct FSBZVotingChatEvent& InMessageChat);
-	void GetMoodText(class FText& InText, bool IsGood, class FText* OutText);
-	void AddText(const class FText& NewMessage);
-	void ProcessDefeatChange(class APlayerState* PlayerState, class ASBZAICrewState* AICrewState, EPD3DefeatState OldDefeatState, EPD3DefeatState NewDefeatState, bool IsInitialStateChange);
-	void ProcessPlayerJoinedHeist(const class FText& InPlayerJoinedName);
+	void ResetTimer();
+	void SystemMessageReceived(const struct FSBZSystemChatEvent& ChatEventData);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void VotingMessageReceived(const struct FSBZVotingChatEvent& ChatEventData);
 
 public:
 	static class UClass* StaticClass()

@@ -16,197 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.ToggleContractorMute
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::ToggleContractorMute()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "ToggleContractorMute");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetSpeak
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ContractorSpeak                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::SetSpeak(bool ContractorSpeak)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "SetSpeak");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_SetSpeak Parms{};
-
-	Parms.ContractorSpeak = ContractorSpeak;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "PreConstruct");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnPartyCreated
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnPartyCreated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnPartyCreated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.UpdateSoloModeButtonState
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::UpdateSoloModeButtonState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "UpdateSoloModeButtonState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnAddedToStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnAddedToStack");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -224,77 +58,23 @@ void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen
 }
 
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnMatchmakingStarted
-// (Event, Public, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnMatchmakingStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnMatchmakingStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -320,66 +100,10 @@ void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen
 }
 
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnGainedStackFocused");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -396,91 +120,121 @@ void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen
 }
 
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.StopContractorSound
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistInspectScreen_C::StopContractorSound()
+void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "StopContractorSound");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnAddedToStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnAddedToStack");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.PlayContractorSound
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::PlayContractorSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "PlayContractorSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.Update Level Data
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          Difficulty                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeNet_HeistInspectScreen_C::Update_Level_Data(ESBZDifficulty Difficulty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "Update Level Data");
-
-	Params::WBP_CrimeNet_HeistInspectScreen_C_Update_Level_Data Parms{};
-
-	Parms.Difficulty = Difficulty;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -504,10 +258,188 @@ void UWBP_CrimeNet_HeistInspectScreen_C::OnControlsReferenceClicked(class FName 
 }
 
 
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnGainedStackFocused");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnMatchmakingStarted
+// (Event, Public, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnMatchmakingStarted()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnMatchmakingStarted");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnPartyCreated
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnPartyCreated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnPartyCreated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::OnRemovedFromStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "OnRemovedFromStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.PlayContractorSound
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::PlayContractorSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "PlayContractorSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "PreConstruct");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::RefreshVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "RefreshVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetMatchmakingState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Force_Disable_Matchmaking                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Force_Disable_Matchmaking                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimeNet_HeistInspectScreen_C::SetMatchmakingState(bool Force_Disable_Matchmaking)
 {
@@ -524,15 +456,83 @@ void UWBP_CrimeNet_HeistInspectScreen_C::SetMatchmakingState(bool Force_Disable_
 }
 
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetSpeak
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ContractorSpeak                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistInspectScreen_C::RefreshVisuals()
+void UWBP_CrimeNet_HeistInspectScreen_C::SetSpeak(bool ContractorSpeak)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "RefreshVisuals");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "SetSpeak");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_SetSpeak Parms{};
+
+	Parms.ContractorSpeak = ContractorSpeak;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.StopContractorSound
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::StopContractorSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "StopContractorSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.ToggleContractorMute
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::ToggleContractorMute()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "ToggleContractorMute");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.Update Level Data
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZDifficulty                          Difficulty                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::Update_Level_Data(ESBZDifficulty Difficulty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "Update Level Data");
+
+	Params::WBP_CrimeNet_HeistInspectScreen_C_Update_Level_Data Parms{};
+
+	Parms.Difficulty = Difficulty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.UpdateSoloModeButtonState
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistInspectScreen_C::UpdateSoloModeButtonState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistInspectScreen_C", "UpdateSoloModeButtonState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

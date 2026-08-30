@@ -39,7 +39,7 @@ void UWBP_UI_HUD_AxisInput_C::ExecuteUbergraph_WBP_UI_HUD_AxisInput(int32 EntryP
 // Function WBP_UI_HUD_AxisInput.WBP_UI_HUD_AxisInput_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_AxisInput_C::PreConstruct(bool IsDesignTime)
 {

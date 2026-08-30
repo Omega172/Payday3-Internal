@@ -16,6 +16,86 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExecuteUbergraph_WBP_UI_Player_Customization_Mask
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,93 +116,65 @@ void UWBP_UI_Player_Customization_Mask_C::ExecuteUbergraph_WBP_UI_Player_Customi
 }
 
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitApplyButtonNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+class UWidget* UWBP_UI_Player_Customization_Mask_C::ExitApplyButtonNavigation(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "ExitApplyButtonNavigation");
 
-	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Player_Customization_Mask_C_ExitApplyButtonNavigation Parms{};
 
-	Parms.Button = Button;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitVerticalListNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+class UWidget* UWBP_UI_Player_Customization_Mask_C::ExitVerticalListNavigation(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "ExitVerticalListNavigation");
 
-	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Player_Customization_Mask_C_ExitVerticalListNavigation Parms{};
 
-	Parms.Button = Button;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.NonPatternButtonPressed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_Player_Customization_Mask_C::NonPatternButtonPressed(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "NonPatternButtonPressed");
 
-	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Player_Customization_Mask_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Player_Customization_Mask_C::BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Player_Customization_Mask_C_NonPatternButtonPressed Parms{};
 
 	Parms.Button = Button;
 
@@ -150,20 +202,6 @@ void UWBP_UI_Player_Customization_Mask_C::OnControlsReferenceClicked(class FName
 }
 
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Player_Customization_Mask_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -184,15 +222,29 @@ void UWBP_UI_Player_Customization_Mask_C::OnGainedStackFocused(const class FName
 }
 
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ShowMaskOnly
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Player_Customization_Mask_C::ShowMaskOnly()
+void UWBP_UI_Player_Customization_Mask_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "ShowMaskOnly");
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Player_Customization_Mask_C::OnRemovedFromStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "OnRemovedFromStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -212,69 +264,17 @@ void UWBP_UI_Player_Customization_Mask_C::RevertBodyAndEquipped()
 }
 
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.NonPatternButtonPressed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ShowMaskOnly
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Player_Customization_Mask_C::NonPatternButtonPressed(class USBZMenuButton* Button)
+void UWBP_UI_Player_Customization_Mask_C::ShowMaskOnly()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "NonPatternButtonPressed");
+		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "ShowMaskOnly");
 
-	Params::WBP_UI_Player_Customization_Mask_C_NonPatternButtonPressed Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitVerticalListNavigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_Player_Customization_Mask_C::ExitVerticalListNavigation(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "ExitVerticalListNavigation");
-
-	Params::WBP_UI_Player_Customization_Mask_C_ExitVerticalListNavigation Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitApplyButtonNavigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_Player_Customization_Mask_C::ExitApplyButtonNavigation(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Player_Customization_Mask_C", "ExitApplyButtonNavigation");
-
-	Params::WBP_UI_Player_Customization_Mask_C_ExitApplyButtonNavigation Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

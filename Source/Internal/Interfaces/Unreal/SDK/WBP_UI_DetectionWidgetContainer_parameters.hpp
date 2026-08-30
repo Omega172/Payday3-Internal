@@ -20,7 +20,7 @@ struct WBP_UI_DetectionWidgetContainer_C_ExecuteUbergraph_WBP_UI_DetectionWidget
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bObserved;                            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bObserved;                            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_DetectionWidgetContainer_C_ExecuteUbergraph_WBP_UI_DetectionWidgetContainer;
 
@@ -29,7 +29,7 @@ DUMPER7_ASSERTS_WBP_UI_DetectionWidgetContainer_C_ExecuteUbergraph_WBP_UI_Detect
 struct WBP_UI_DetectionWidgetContainer_C_OnObservedChanged final
 {
 public:
-	bool                                          bObserved;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bObserved;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_DetectionWidgetContainer_C_OnObservedChanged;
 

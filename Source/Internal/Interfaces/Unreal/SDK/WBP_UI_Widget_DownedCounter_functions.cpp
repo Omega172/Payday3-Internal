@@ -16,92 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.ExecuteUbergraph_WBP_UI_Widget_DownedCounter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_DownedCounter_C::ExecuteUbergraph_WBP_UI_Widget_DownedCounter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "ExecuteUbergraph_WBP_UI_Widget_DownedCounter");
-
-	Params::WBP_UI_Widget_DownedCounter_C_ExecuteUbergraph_WBP_UI_Widget_DownedCounter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.OnSetup
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   PrimaryValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   SecondaryValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_DownedCounter_C::OnSetup(float PrimaryValue, float SecondaryValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "OnSetup");
-
-	Params::WBP_UI_Widget_DownedCounter_C_OnSetup Parms{};
-
-	Parms.PrimaryValue = PrimaryValue;
-	Parms.SecondaryValue = SecondaryValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.OnSecondaryAttributeUpdate
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   OldValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_DownedCounter_C::OnSecondaryAttributeUpdate(float NewValue, float OldValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "OnSecondaryAttributeUpdate");
-
-	Params::WBP_UI_Widget_DownedCounter_C_OnSecondaryAttributeUpdate Parms{};
-
-	Parms.NewValue = NewValue;
-	Parms.OldValue = OldValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.OnPrimaryAttributeUpdate
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   OldValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_DownedCounter_C::OnPrimaryAttributeUpdate(float NewValue, float OldValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "OnPrimaryAttributeUpdate");
-
-	Params::WBP_UI_Widget_DownedCounter_C_OnPrimaryAttributeUpdate Parms{};
-
-	Parms.NewValue = NewValue;
-	Parms.OldValue = OldValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.ChangeValueWithAnim
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -139,6 +53,92 @@ void UWBP_UI_Widget_DownedCounter_C::ChangeValueWithoutAnim(int32 Value)
 	Params::WBP_UI_Widget_DownedCounter_C_ChangeValueWithoutAnim Parms{};
 
 	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.ExecuteUbergraph_WBP_UI_Widget_DownedCounter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_DownedCounter_C::ExecuteUbergraph_WBP_UI_Widget_DownedCounter(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "ExecuteUbergraph_WBP_UI_Widget_DownedCounter");
+
+	Params::WBP_UI_Widget_DownedCounter_C_ExecuteUbergraph_WBP_UI_Widget_DownedCounter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.OnPrimaryAttributeUpdate
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   OldValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_DownedCounter_C::OnPrimaryAttributeUpdate(float NewValue, float OldValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "OnPrimaryAttributeUpdate");
+
+	Params::WBP_UI_Widget_DownedCounter_C_OnPrimaryAttributeUpdate Parms{};
+
+	Parms.NewValue = NewValue;
+	Parms.OldValue = OldValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.OnSecondaryAttributeUpdate
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   OldValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_DownedCounter_C::OnSecondaryAttributeUpdate(float NewValue, float OldValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "OnSecondaryAttributeUpdate");
+
+	Params::WBP_UI_Widget_DownedCounter_C_OnSecondaryAttributeUpdate Parms{};
+
+	Parms.NewValue = NewValue;
+	Parms.OldValue = OldValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_DownedCounter.WBP_UI_Widget_DownedCounter_C.OnSetup
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   PrimaryValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   SecondaryValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_DownedCounter_C::OnSetup(float PrimaryValue, float SecondaryValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DownedCounter_C", "OnSetup");
+
+	Params::WBP_UI_Widget_DownedCounter_C_OnSetup Parms{};
+
+	Parms.PrimaryValue = PrimaryValue;
+	Parms.SecondaryValue = SecondaryValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

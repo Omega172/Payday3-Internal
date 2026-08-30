@@ -36,30 +36,10 @@ void UWBP_CustomSpriteActionInput_C::ExecuteUbergraph_WBP_CustomSpriteActionInpu
 }
 
 
-// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.SetInverted
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsInverted_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CustomSpriteActionInput_C::SetInverted(bool bIsInverted_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomSpriteActionInput_C", "SetInverted");
-
-	Params::WBP_CustomSpriteActionInput_C_SetInverted Parms{};
-
-	Parms.bIsInverted_0 = bIsInverted_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CustomSpriteActionInput_C::PreConstruct(bool IsDesignTime)
 {
@@ -71,6 +51,26 @@ void UWBP_CustomSpriteActionInput_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_CustomSpriteActionInput_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.SetInverted
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsInverted_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteActionInput_C::SetInverted(bool bIsInverted_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CustomSpriteActionInput_C", "SetInverted");
+
+	Params::WBP_CustomSpriteActionInput_C_SetInverted Parms{};
+
+	Parms.bIsInverted_0 = bIsInverted_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

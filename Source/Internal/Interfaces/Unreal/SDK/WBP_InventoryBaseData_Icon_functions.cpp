@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.EmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_InventoryBaseData_Icon_C::EmptySet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InventoryBaseData_Icon_C", "EmptySet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.ExecuteUbergraph_WBP_InventoryBaseData_Icon
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,30 +50,10 @@ void UWBP_InventoryBaseData_Icon_C::ExecuteUbergraph_WBP_InventoryBaseData_Icon(
 }
 
 
-// Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.SetSizeFromResource
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          InputObject                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InventoryBaseData_Icon_C::SetSizeFromResource(class UObject* InputObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryBaseData_Icon_C", "SetSizeFromResource");
-
-	Params::WBP_InventoryBaseData_Icon_C_SetSizeFromResource Parms{};
-
-	Parms.InputObject = InputObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.OnImageLoaded
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          LoadedObject                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          LoadedObject                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InventoryBaseData_Icon_C::OnImageLoaded(class UObject* LoadedObject)
 {
@@ -79,7 +73,7 @@ void UWBP_InventoryBaseData_Icon_C::OnImageLoaded(class UObject* LoadedObject)
 // Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.OnLoadingChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsLoading                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsLoading                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InventoryBaseData_Icon_C::OnLoadingChanged(bool bIsLoading)
 {
@@ -96,24 +90,10 @@ void UWBP_InventoryBaseData_Icon_C::OnLoadingChanged(bool bIsLoading)
 }
 
 
-// Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.EmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_InventoryBaseData_Icon_C::EmptySet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryBaseData_Icon_C", "EmptySet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InventoryBaseData_Icon_C::PreConstruct(bool IsDesignTime)
 {
@@ -147,7 +127,7 @@ void UWBP_InventoryBaseData_Icon_C::SetEmptyIcon()
 // Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     InSprite                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InSprite                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InventoryBaseData_Icon_C::SetIcon(class UPaperSprite* InSprite)
 {
@@ -159,6 +139,26 @@ void UWBP_InventoryBaseData_Icon_C::SetIcon(class UPaperSprite* InSprite)
 	Params::WBP_InventoryBaseData_Icon_C_SetIcon Parms{};
 
 	Parms.InSprite = InSprite;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C.SetSizeFromResource
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          InputObject                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InventoryBaseData_Icon_C::SetSizeFromResource(class UObject* InputObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InventoryBaseData_Icon_C", "SetSizeFromResource");
+
+	Params::WBP_InventoryBaseData_Icon_C_SetSizeFromResource Parms{};
+
+	Parms.InputObject = InputObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -19,9 +19,9 @@ SDK_NAMESPACE_START
 // Function BPL_WeaponStatsLibrary.BPL_WeaponStatsLibrary_C.GenerateWeaponModStatsString
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZBaseWeaponData*         WeaponData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZEquippablePartDataAsset*ModData                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseWeaponData*         WeaponData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZEquippablePartDataAsset*ModData                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FString*                          OutString                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
 void UBPL_WeaponStatsLibrary_C::GenerateWeaponModStatsString(const class USBZBaseWeaponData* WeaponData, const class USBZEquippablePartDataAsset* ModData, class UObject* __WorldContext, class FString* OutString)

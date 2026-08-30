@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlayerEndCycleReload.GA_PlayerEndCycleReload_C
-// 0x0000 (0x0508 - 0x0508)
+// 0x0000 (0x0500 - 0x0500)
 class UGA_PlayerEndCycleReload_C final : public USBZPlayerEndCycleRangedWeaponAbility
 {
 public:

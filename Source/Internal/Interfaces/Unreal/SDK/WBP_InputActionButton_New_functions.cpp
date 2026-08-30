@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InputActionButton_New_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputActionButton_New_C", "ButtonHoveredChanged");
+
+	Params::WBP_InputActionButton_New_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ExecuteUbergraph_WBP_InputActionButton_New
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,21 +56,41 @@ void UWBP_InputActionButton_New_C::ExecuteUbergraph_WBP_InputActionButton_New(in
 }
 
 
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.OnFocusChanged
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    NewFocus                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InputActionButton_New_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_InputActionButton_New_C::OnFocusChanged(bool NewFocus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputActionButton_New_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_InputActionButton_New_C", "OnFocusChanged");
 
-	Params::WBP_InputActionButton_New_C_ButtonHoveredChanged Parms{};
+	Params::WBP_InputActionButton_New_C_OnFocusChanged Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.NewFocus = NewFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InputActionButton_New_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InputActionButton_New_C", "PreConstruct");
+
+	Params::WBP_InputActionButton_New_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,50 +116,10 @@ void UWBP_InputActionButton_New_C::Set_Text(const class FText& InText)
 }
 
 
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_InputActionButton_New_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputActionButton_New_C", "PreConstruct");
-
-	Params::WBP_InputActionButton_New_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.OnFocusChanged
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewFocus                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_InputActionButton_New_C::OnFocusChanged(bool NewFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InputActionButton_New_C", "OnFocusChanged");
-
-	Params::WBP_InputActionButton_New_C_OnFocusChanged Parms{};
-
-	Parms.NewFocus = NewFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.SetActionEnabled
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InputActionButton_New_C::SetActionEnabled(bool bIsEnabled_0)
 {

@@ -17,109 +17,52 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.ExecuteUbergraph_WBP_CrimebondBundlePacksScreen
-// 0x0218 (0x0218 - 0x0000)
-struct WBP_CrimebondBundlePacksScreen_C_ExecuteUbergraph_WBP_CrimebondBundlePacksScreen final
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class USBZMenuStackScreenWidget* MenuWidget)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor)
-	class USBZMenuStackScreenWidget*              K2Node_CustomEvent_MenuWidget_1;                   // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuStackScreenWidget*              K2Node_CustomEvent_MenuWidget;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class USBZMenuStackScreenWidget* MenuWidget)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0028(0x0014)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuStackScreenWidget*              Temp_object_Variable;                              // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_CrimebondSelectionCharacterScreen_C* K2Node_DynamicCast_AsWBP_Crimebond_Selection_Character_Screen; // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x005C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x006C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Event_PreviousValue;                        // 0x00A0(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x00AC(0x0014)(ZeroConstructor, NoDestructor)
-	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00D0(0x0038)()
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0110(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0120(0x0028)()
-	class USBZAsyncAction_PushDynamicScreen*      CallFunc_SBZAsyncAction_PushDynamicScreen_ReturnValue; // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0160(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetCurrentPackIndex_ReturnValue;          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_NewIndex;                             // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZBundlePackData*                     K2Node_Event_PackData;                             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZCrimeBondProgression               K2Node_Event_Progression;                          // 0x0188(0x0008)(NoDestructor)
-	class USBZBundlePackData*                     CallFunc_GetCurrentPackData_ReturnValue;           // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZCrimeBondProgression               CallFunc_GetCurrentPackProgression_ReturnValue;    // 0x0198(0x0008)(NoDestructor)
-	class USBZBundlePackData*                     CallFunc_GetCurrentPackData_ReturnValue_1;         // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x01A8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x01C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D9[0x7];                                      // 0x01D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x01E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Play2DSound_ReturnValue;                  // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Play2DSound_ReturnValue_1;                // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Play2DSound_ReturnValue_2;                // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Play2DSound_ReturnValue_3;                // 0x0204(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Play2DSound_ReturnValue_4;                // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0210(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_ExecuteUbergraph_WBP_CrimebondBundlePacksScreen;
+DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
 
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BP_OnCurrentPackChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -128,19 +71,76 @@ struct WBP_CrimebondBundlePacksScreen_C_BP_OnCurrentPackChanged final
 public:
 	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBundlePackData*                     PackData;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBundlePackData*                     PackData;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSBZCrimeBondProgression               Progression;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BP_OnCurrentPackChanged;
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.ExecuteUbergraph_WBP_CrimebondBundlePacksScreen
+// 0x0210 (0x0210 - 0x0000)
+struct WBP_CrimebondBundlePacksScreen_C_ExecuteUbergraph_WBP_CrimebondBundlePacksScreen final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZMenuStackScreenWidget* MenuWidget)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              K2Node_CustomEvent_MenuWidget_1;                   // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              K2Node_CustomEvent_MenuWidget;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZMenuStackScreenWidget* MenuWidget)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0028(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuStackScreenWidget*              Temp_object_Variable;                              // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_CrimebondSelectionCharacterScreen_C* K2Node_DynamicCast_AsWBP_Crimebond_Selection_Character_Screen; // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x005C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x006C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Event_PreviousValue;                        // 0x00A0(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x00AC(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00D0(0x0030)()
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0118(0x0028)()
+	class USBZAsyncAction_PushDynamicScreen*      CallFunc_SBZAsyncAction_PushDynamicScreen_ReturnValue; // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0158(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetCurrentPackIndex_ReturnValue;          // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_NewIndex;                             // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBundlePackData*                     K2Node_Event_PackData;                             // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZCrimeBondProgression               K2Node_Event_Progression;                          // 0x0180(0x0008)(NoDestructor)
+	class USBZBundlePackData*                     CallFunc_GetCurrentPackData_ReturnValue;           // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZCrimeBondProgression               CallFunc_GetCurrentPackProgression_ReturnValue;    // 0x0190(0x0008)(NoDestructor)
+	class USBZBundlePackData*                     CallFunc_GetCurrentPackData_ReturnValue_1;         // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x01B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x01E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Play2DSound_ReturnValue;                  // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Play2DSound_ReturnValue_1;                // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Play2DSound_ReturnValue_2;                // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Play2DSound_ReturnValue_3;                // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Play2DSound_ReturnValue_4;                // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_ExecuteUbergraph_WBP_CrimebondBundlePacksScreen;
 
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.OnControlReferenceClicked
 // 0x000C (0x000C - 0x0000)
@@ -160,23 +160,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_OnGainedStackFocused;
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondBundlePacksScreen_C_PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7;
-
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.PostPush_5AFE4DE64DF8EA2F4F95289E8417F6E7
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_CrimebondBundlePacksScreen_C_PostPush_5AFE4DE64DF8EA2F4F95289E8417F6E7 final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_PostPush_5AFE4DE64DF8EA2F4F95289E8417F6E7;
+
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondBundlePacksScreen_C_PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7;
 
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.UpdateSelectedPackVisuals
 // 0x0020 (0x0020 - 0x0000)
@@ -186,8 +186,8 @@ public:
 	int32                                         PackIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSBZCrimeBondProgression               InProgression;                                     // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBundlePackData*                     InPackData;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZBundlePackData*                     InPackData;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CrimebondBundlePacksScreen_C_UpdateSelectedPackVisuals;
 

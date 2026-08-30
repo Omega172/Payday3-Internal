@@ -16,6 +16,126 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ChoiceIndexVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ChoiceIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::ChoiceIndexVisuals(int32 ChoiceIndex_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ChoiceIndexVisuals");
+
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_ChoiceIndexVisuals Parms{};
+
+	Parms.ChoiceIndex_0 = ChoiceIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ExecuteUbergraph_WBP_Settings_UpscalingModeChoiceButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,143 +156,75 @@ void UWBP_Settings_UpscalingModeChoiceButton_C::ExecuteUbergraph_WBP_Settings_Up
 }
 
 
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.SettingChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.InitializeVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_UpscalingModeChoiceButton_C::SettingChanged()
+void UWBP_Settings_UpscalingModeChoiceButton_C::InitializeVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "SettingChanged");
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "InitializeVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.OptionNamesChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::OptionNamesChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "OptionNamesChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.SelectionNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::SelectionNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "SelectionNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.On Hover Visuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_UpscalingModeChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_Settings_UpscalingModeChoiceButton_C::On_Hover_Visuals(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "On Hover Visuals");
 
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_On_Hover_Visuals Parms{};
 
-	Parms.Button = Button;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_UpscalingModeChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_Settings_UpscalingModeChoiceButton_C::OnDisabledVisuals(bool bIsDisabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "OnDisabledVisuals");
 
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_OnDisabledVisuals Parms{};
 
-	Parms.Button = Button;
+	Parms.bIsDisabled_0 = bIsDisabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.OnFocusedVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_UpscalingModeChoiceButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_Settings_UpscalingModeChoiceButton_C::OnFocusedVisuals(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "OnFocusedVisuals");
 
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_Settings_UpscalingModeChoiceButton_C_OnFocusedVisuals Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ButtonDisabledChanged");
-
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -192,10 +244,24 @@ void UWBP_Settings_UpscalingModeChoiceButton_C::OnInitialized()
 }
 
 
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.OptionNamesChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::OptionNamesChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "OptionNamesChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_UpscalingModeChoiceButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -226,109 +292,29 @@ void UWBP_Settings_UpscalingModeChoiceButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.On Hover Visuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.SelectionNameChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_UpscalingModeChoiceButton_C::On_Hover_Visuals(bool bIsHovered)
+void UWBP_Settings_UpscalingModeChoiceButton_C::SelectionNameChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "On Hover Visuals");
-
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_On_Hover_Visuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.OnFocusedVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "OnFocusedVisuals");
-
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "OnDisabledVisuals");
-
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.ChoiceIndexVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ChoiceIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::ChoiceIndexVisuals(int32 ChoiceIndex_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "ChoiceIndexVisuals");
-
-	Params::WBP_Settings_UpscalingModeChoiceButton_C_ChoiceIndexVisuals Parms{};
-
-	Parms.ChoiceIndex_0 = ChoiceIndex_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.InitializeVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_UpscalingModeChoiceButton_C::InitializeVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "InitializeVisuals");
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "SelectionNameChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.UpdateSettingNameText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.SettingChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_UpscalingModeChoiceButton_C::UpdateSettingNameText()
+void UWBP_Settings_UpscalingModeChoiceButton_C::SettingChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "UpdateSettingNameText");
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "SettingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -343,6 +329,20 @@ void UWBP_Settings_UpscalingModeChoiceButton_C::UpdateOptionsText()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "UpdateOptionsText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_UpscalingModeChoiceButton.WBP_Settings_UpscalingModeChoiceButton_C.UpdateSettingNameText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_UpscalingModeChoiceButton_C::UpdateSettingNameText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_UpscalingModeChoiceButton_C", "UpdateSettingNameText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

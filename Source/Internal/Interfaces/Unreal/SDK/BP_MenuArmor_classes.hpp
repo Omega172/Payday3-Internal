@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MenuArmor.BP_MenuArmor_C
-// 0x0000 (0x02C0 - 0x02C0)
+// 0x0000 (0x0340 - 0x0340)
 class ABP_MenuArmor_C final : public ASBZMenuArmor
 {
 public:

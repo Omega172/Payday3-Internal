@@ -10,13 +10,32 @@
 
 #include "Basic.hpp"
 
+#include "SocketSubsystemEOS_classes.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_classes.hpp"
 #include "OnlineSubsystemEOS_structs.hpp"
-#include "OnlineSubsystemUtils_classes.hpp"
 
 
 SDK_NAMESPACE_START
+
+// Class OnlineSubsystemEOS.NetDriverEOS
+// 0x0000 (0x09B0 - 0x09B0)
+class UNetDriverEOS final : public UNetDriverEOSBase
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NetDriverEOS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetDriverEOS")
+	}
+	static class UNetDriverEOS* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNetDriverEOS>();
+	}
+};
+DUMPER7_ASSERTS_UNetDriverEOS;
 
 // Class OnlineSubsystemEOS.EOSArtifactSettings
 // 0x0000 (0x0038 - 0x0038)
@@ -39,29 +58,33 @@ public:
 DUMPER7_ASSERTS_UEOSArtifactSettings;
 
 // Class OnlineSubsystemEOS.EOSSettings
-// 0x0068 (0x0098 - 0x0030)
-class UEOSSettings final : public UObject
+// 0x0098 (0x00D8 - 0x0040)
+class UEOSSettings final : public URuntimeOptionsBase
 {
 public:
-	class FString                                 CacheDir;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DefaultArtifactName;                               // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TickBudgetInMilliseconds;                          // 0x0050(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableOverlay;                                    // 0x0054(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableSocialOverlay;                              // 0x0055(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bShouldEnforceBeingLaunchedByEGS;                  // 0x0056(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_57[0x1];                                       // 0x0057(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         TitleStorageTags;                                  // 0x0058(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
-	int32                                         TitleStorageReadChunkLength;                       // 0x0068(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FArtifactSettings>              Artifacts;                                         // 0x0070(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
-	bool                                          bUseEAS;                                           // 0x0080(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseEOSConnect;                                    // 0x0081(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMirrorStatsToEOS;                                 // 0x0082(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMirrorAchievementsToEOS;                          // 0x0083(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseEOSSessions;                                   // 0x0084(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bMirrorPresenceToEAS;                              // 0x0085(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_86[0x2];                                       // 0x0086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 SteamTokenType;                                    // 0x0088(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CacheDir;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DefaultArtifactName;                               // 0x0050(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RTCBackgroundMode;                                 // 0x0060(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TickBudgetInMilliseconds;                          // 0x0070(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableOverlay;                                    // 0x0074(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableSocialOverlay;                              // 0x0075(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableEditorOverlay;                              // 0x0076(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bPreferPersistentAuth;                             // 0x0077(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         TitleStorageTags;                                  // 0x0078(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+	int32                                         TitleStorageReadChunkLength;                       // 0x0088(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FArtifactSettings>              Artifacts;                                         // 0x0090(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+	TArray<class FString>                         AuthScopeFlags;                                    // 0x00A0(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, NativeAccessSpecifierPublic)
+	bool                                          bUseEAS;                                           // 0x00B0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseEOSConnect;                                    // 0x00B1(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMirrorStatsToEOS;                                 // 0x00B2(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMirrorAchievementsToEOS;                          // 0x00B3(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseEOSSessions;                                   // 0x00B4(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bMirrorPresenceToEAS;                              // 0x00B5(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseNewLoginFlow;                                  // 0x00B6(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_B7[0x1];                                       // 0x00B7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 SteamTokenType;                                    // 0x00B8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 NintendoTokenType;                                 // 0x00C8(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -78,53 +101,5 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UEOSSettings;
-
-// Class OnlineSubsystemEOS.NetConnectionEOS
-// 0x0008 (0x1CA0 - 0x1C98)
-class UNetConnectionEOS final : public UIpConnection
-{
-public:
-	uint8                                         Pad_1C98[0x8];                                     // 0x1C98(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("NetConnectionEOS")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"NetConnectionEOS")
-	}
-	static class UNetConnectionEOS* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNetConnectionEOS>();
-	}
-};
-DUMPER7_ASSERTS_UNetConnectionEOS;
-
-// Class OnlineSubsystemEOS.NetDriverEOS
-// 0x0008 (0x0800 - 0x07F8)
-class UNetDriverEOS final : public UIpNetDriver
-{
-public:
-	bool                                          bIsPassthrough;                                    // 0x07F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsUsingP2PSockets;                                // 0x07F9(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7FA[0x6];                                      // 0x07FA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("NetDriverEOS")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"NetDriverEOS")
-	}
-	static class UNetDriverEOS* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNetDriverEOS>();
-	}
-};
-DUMPER7_ASSERTS_UNetDriverEOS;
 
 SDK_NAMESPACE_END

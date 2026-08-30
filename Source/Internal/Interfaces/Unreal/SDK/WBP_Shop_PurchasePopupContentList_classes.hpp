@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Shop_PurchasePopupContentList.WBP_Shop_PurchasePopupContentList_C
-// 0x0000 (0x02D8 - 0x02D8)
+// 0x0000 (0x0330 - 0x0330)
 class UWBP_Shop_PurchasePopupContentList_C final : public USBZShopContentListWidget
 {
 public:

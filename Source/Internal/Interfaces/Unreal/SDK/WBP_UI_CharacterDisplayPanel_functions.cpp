@@ -36,21 +36,41 @@ void UWBP_UI_CharacterDisplayPanel_C::ExecuteUbergraph_WBP_UI_CharacterDisplayPa
 }
 
 
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.InitializeCharacterData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZPlayerCharacterData*          InCharacterData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterDisplayPanel_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_CharacterDisplayPanel_C::InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CharacterDisplayPanel_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_CharacterDisplayPanel_C", "InitializeCharacterData");
 
-	Params::WBP_UI_CharacterDisplayPanel_C_PreConstruct Parms{};
+	Params::WBP_UI_CharacterDisplayPanel_C_InitializeCharacterData Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InCharacterData = InCharacterData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnCharacterDataChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZPlayerCharacterData*    InCharacterData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CharacterDisplayPanel_C::OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CharacterDisplayPanel_C", "OnCharacterDataChanged");
+
+	Params::WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged Parms{};
+
+	Parms.InCharacterData = InCharacterData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,41 +90,21 @@ void UWBP_UI_CharacterDisplayPanel_C::OnEmptySet()
 }
 
 
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnCharacterDataChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// const class USBZPlayerCharacterData*    InCharacterData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterDisplayPanel_C::OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData)
+void UWBP_UI_CharacterDisplayPanel_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CharacterDisplayPanel_C", "OnCharacterDataChanged");
+		Func = Class->GetFunction("WBP_UI_CharacterDisplayPanel_C", "PreConstruct");
 
-	Params::WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged Parms{};
+	Params::WBP_UI_CharacterDisplayPanel_C_PreConstruct Parms{};
 
-	Parms.InCharacterData = InCharacterData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.InitializeCharacterData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZPlayerCharacterData*          InCharacterData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CharacterDisplayPanel_C::InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CharacterDisplayPanel_C", "InitializeCharacterData");
-
-	Params::WBP_UI_CharacterDisplayPanel_C_InitializeCharacterData Parms{};
-
-	Parms.InCharacterData = InCharacterData;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

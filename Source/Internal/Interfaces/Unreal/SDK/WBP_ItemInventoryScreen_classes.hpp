@@ -19,81 +19,81 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C
-// 0x0130 (0x0490 - 0x0360)
+// 0x0128 (0x04E8 - 0x03C0)
 class UWBP_ItemInventoryScreen_C final : public USBZNewItemInventoryScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0368(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       Button_Cosmetics;                                  // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       Button_Customize;                                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       Button_Equip;                                      // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       Button_Favorite;                                   // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       Button_GoToStore;                                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       Button_Variant;                                    // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZTileView*                           ModPartsTileView;                                  // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    Navbar_SubCategory;                                // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InputActionButton_New_C*           NewButton_Cosmetics;                               // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InputActionButton_New_C*           NewButton_Customize;                               // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InputActionButton_New_C*           NewButton_Purchase;                                // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InputActionButton_New_C*           NewButton_Variant;                                 // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Description_Requirement;                      // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Subheader;                                    // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               WBox_Buttons;                                      // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ItemInventoryDescription_C*        WBP_ItemInventoryDescription;                      // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemDescriptionBox_C* WBP_UI_Inventory_ItemDescriptionBox;               // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         FocusedButton;                                     // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemSlotButton_C*     ArmorVendorBtn;                                    // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         PreviousSelectedIndex;                             // 0x0418(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   NewVar_0;                                          // 0x0420(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          AnyButtonsVisible;                                 // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ESBZItemCategory, class FName>           CameraMap;                                         // 0x0440(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x03C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       Button_Cosmetics;                                  // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       Button_Customize;                                  // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       Button_Equip;                                      // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       Button_Favorite;                                   // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       Button_GoToStore;                                  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       Button_Variant;                                    // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZTileView*                           ModPartsTileView;                                  // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    Navbar_SubCategory;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InputActionButton_New_C*           NewButton_Cosmetics;                               // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InputActionButton_New_C*           NewButton_Customize;                               // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InputActionButton_New_C*           NewButton_Purchase;                                // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InputActionButton_New_C*           NewButton_Variant;                                 // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Description_Requirement;                      // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Subheader;                                    // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               WBox_Buttons;                                      // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ItemInventoryDescription_C*        WBP_ItemInventoryDescription;                      // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ItemDescriptionBox_C* WBP_UI_Inventory_ItemDescriptionBox;               // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         FocusedButton;                                     // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ItemSlotButton_C*     ArmorVendorBtn;                                    // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         PreviousSelectedIndex;                             // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_47C[0x4];                                      // 0x047C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   NewVar_0;                                          // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          AnyButtonsVisible;                                 // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_491[0x7];                                      // 0x0491(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ESBZItemCategory, class FName>           CameraMap;                                         // 0x0498(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_ItemInventoryScreen(int32 EntryPoint);
-	void BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_ItemInventoryScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
-	void Go_To_Crimebond(class USBZInventoryBaseData* ItemData);
-	void UpdateSelectedItem(bool PrioritizeEquipped);
-	void UpdateCategories();
+	void BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnLostStackFocused();
-	void OnItemsGenerated(ESBZItemCategory ItemCategory, const struct FGameplayTag& SubCategory);
-	void CheatPurchase();
-	void BP_OnItemDoubleClicked(class UObject* Item);
-	void OnInitialized();
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Variant_K2Node_ComponentBoundEvent_10_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Purchase_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Customize_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature();
 	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Customize_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature();
 	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature();
-	void CustomEvent_1(class FName ActionName);
-	void OnBackPressed();
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Variant_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Customize_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature();
 	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Purchase_K2Node_ComponentBoundEvent_4_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Purchase_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Variant_K2Node_ComponentBoundEvent_10_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Variant_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature();
 	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
 	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void PrePush_847D919B458E1CF0F906F39561A0364C(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_847D919B458E1CF0F906F39561A0364C(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_BF69DD8640C11BCDD33B9684CE63FBA7(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_BF69DD8640C11BCDD33B9684CE63FBA7(class USBZMenuStackScreenWidget* MenuWidget);
-	void FetchCategoryTexts(class USBZInventoryCategoryData* CategoryData, TArray<class FText>* CategoryTexts);
-	void IndexOfCategory(class USBZInventoryCategoryData* CategoryData, const struct FGameplayTag& SubCategoryTag, int32* Index_0);
-	void GetWeaponFamilyTag(class USBZInventoryItemDecorator* ItemDeco, struct FGameplayTag* Family);
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
+	void BP_OnItemDoubleClicked(class UObject* Item);
 	void CategoryFromIndex(class USBZInventoryCategoryData* CategoryData, int32 NewParam, struct FGameplayTag* Tag);
-	void OldToNewWeaponTagTranslation(const struct FGameplayTag& WeaponTag, struct FGameplayTag* MetaWeaponTag);
-	void NewToOldWeaponTagTranslation(const struct FGameplayTag& MetaWeaponTag, struct FGameplayTag* WeaponTag);
-	int32 GetSelectedItem(class UObject** ReturnValue1);
-	void TryGoToUnownedItem(class USBZInventoryItemDecorator* Selected_Decorator);
+	void CheatPurchase();
+	void CustomEvent_1(class FName ActionName);
+	void ExecuteUbergraph_WBP_ItemInventoryScreen(int32 EntryPoint);
+	void FetchCategoryTexts(class USBZInventoryCategoryData* CategoryData, TArray<class FText>* CategoryTexts);
 	void GetHighestPrioPlayerItemSource(const struct FSBZStoreBaseItem& SBZStoreBaseItem, ESBZPlayerItemSource* HighestPrioSource);
+	int32 GetSelectedItem(class UObject** ReturnValue1);
+	void GetWeaponFamilyTag(class USBZInventoryItemDecorator* ItemDeco, struct FGameplayTag* Family);
+	void Go_To_Crimebond(class USBZInventoryBaseData* ItemData);
+	void IndexOfCategory(class USBZInventoryCategoryData* CategoryData, const struct FGameplayTag& SubCategoryTag, int32* Index_0);
+	void NewToOldWeaponTagTranslation(const struct FGameplayTag& MetaWeaponTag, struct FGameplayTag* WeaponTag);
+	void OldToNewWeaponTagTranslation(const struct FGameplayTag& WeaponTag, struct FGameplayTag* MetaWeaponTag);
+	void OnBackPressed();
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
+	void OnItemsGenerated(ESBZItemCategory ItemCategory, const struct FGameplayTag& SubCategory);
+	void OnLostStackFocused();
+	void PostPush_847D919B458E1CF0F906F39561A0364C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_BF69DD8640C11BCDD33B9684CE63FBA7(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_847D919B458E1CF0F906F39561A0364C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_BF69DD8640C11BCDD33B9684CE63FBA7(class USBZMenuStackScreenWidget* MenuWidget);
+	void TryGoToUnownedItem(class USBZInventoryItemDecorator* Selected_Decorator);
+	void UpdateCategories();
+	void UpdateSelectedItem(bool PrioritizeEquipped);
 
 public:
 	static class UClass* StaticClass()

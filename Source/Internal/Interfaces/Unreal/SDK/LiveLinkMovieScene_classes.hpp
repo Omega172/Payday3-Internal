@@ -10,31 +10,31 @@
 
 #include "Basic.hpp"
 
+#include "MovieSceneTracks_classes.hpp"
 #include "LiveLinkInterface_structs.hpp"
-#include "CoreUObject_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
 #include "LiveLinkMovieScene_structs.hpp"
-#include "MovieSceneTracks_classes.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkSection
-// 0x0150 (0x0240 - 0x00F0)
+// 0x0150 (0x0250 - 0x0100)
 class UMovieSceneLiveLinkSection final : public UMovieSceneSection
 {
 public:
-	struct FLiveLinkSubjectPreset                 SubjectPreset;                                     // 0x00F0(0x0040)(NoDestructor, NativeAccessSpecifierPublic)
-	TArray<bool>                                  ChannelMask;                                       // 0x0130(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class UMovieSceneLiveLinkSubSection*>  SubSections;                                       // 0x0140(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_150[0x10];                                     // 0x0150(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   SubjectName;                                       // 0x0160(0x000C)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLiveLinkFrameData                     TemplateToPush;                                    // 0x0170(0x0090)(Deprecated, NativeAccessSpecifierPublic)
-	struct FLiveLinkRefSkeleton                   RefSkeleton;                                       // 0x0200(0x0020)(Deprecated, NativeAccessSpecifierPublic)
-	TArray<class FName>                           CurveNames;                                        // 0x0220(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
-	TArray<struct FMovieSceneFloatChannel>        PropertyFloatChannels;                             // 0x0230(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
+	struct FLiveLinkSubjectPreset                 SubjectPreset;                                     // 0x0100(0x0040)(NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	TArray<bool>                                  ChannelMask;                                       // 0x0140(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class UMovieSceneLiveLinkSubSection*>  SubSections;                                       // 0x0150(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_160[0x10];                                     // 0x0160(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   SubjectName;                                       // 0x0170(0x000C)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLiveLinkFrameData                     TemplateToPush;                                    // 0x0180(0x0090)(Deprecated, NativeAccessSpecifierPublic)
+	struct FLiveLinkRefSkeleton                   RefSkeleton;                                       // 0x0210(0x0020)(Deprecated, NativeAccessSpecifierPublic)
+	TArray<class FName>                           CurveNames;                                        // 0x0230(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
+	TArray<struct FMovieSceneFloatChannel>        PropertyFloatChannels;                             // 0x0240(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -58,7 +58,7 @@ class UMovieSceneLiveLinkSubSection : public UObject
 {
 public:
 	struct FLiveLinkSubSectionData                SubSectionData;                                    // 0x0030(0x0010)(NativeAccessSpecifierPublic)
-	TSubclassOf<class ULiveLinkRole>              SubjectRole;                                       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class ULiveLinkRole>              SubjectRole;                                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_48[0x10];                                      // 0x0048(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -147,12 +147,12 @@ public:
 DUMPER7_ASSERTS_UMovieSceneLiveLinkSubSectionProperties;
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkTrack
-// 0x0010 (0x00E0 - 0x00D0)
+// 0x0010 (0x0148 - 0x0138)
 class UMovieSceneLiveLinkTrack final : public UMovieScenePropertyTrack
 {
 public:
-	uint8                                         Pad_D0[0x8];                                       // 0x00D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class ULiveLinkRole>              TrackRole;                                         // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_138[0x8];                                      // 0x0138(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class ULiveLinkRole>              TrackRole;                                         // 0x0140(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()

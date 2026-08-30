@@ -19,23 +19,23 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_CuttingTool.BP_CuttingTool_C
-// 0x0080 (0x0640 - 0x05C0)
+// 0x0080 (0x0730 - 0x06B0)
 class ABP_CuttingTool_C final : public ASBZCuttingTool
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAkComponent*                           Ak;                                                // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FSBZControlsReference                  In_Controls_Reference_Activated;                   // 0x05D0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         ControlID;                                         // 0x0600(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_604[0x4];                                      // 0x0604(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZControlsReference                  In_Controls_Reference_Idle;                        // 0x0608(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAkComponent*                           Ak;                                                // 0x06B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FSBZControlsReference                  In_Controls_Reference_Activated;                   // 0x06C0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         ControlID;                                         // 0x06F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6F4[0x4];                                      // 0x06F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZControlsReference                  In_Controls_Reference_Idle;                        // 0x06F8(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_BP_CuttingTool(int32 EntryPoint);
 	void OnActivatedIdle();
-	void OnReady();
 	void OnActivatedUsing();
 	void OnCanceled();
+	void OnReady();
 
 public:
 	static class UClass* StaticClass()

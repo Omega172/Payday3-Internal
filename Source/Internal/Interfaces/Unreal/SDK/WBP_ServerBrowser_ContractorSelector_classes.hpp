@@ -17,29 +17,29 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C
-// 0x0090 (0x0420 - 0x0390)
+// 0x0090 (0x0480 - 0x03F0)
 class UWBP_ServerBrowser_ContractorSelector_C final : public USBZSelectorWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       DistortionAnim;                                    // 0x0398(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x03A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Image_ContractorIcon;                              // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TinyTop_Text;                                      // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TinyTop_Text_1;                                    // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TinyTop_Text_2;                                    // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TinyTop_Text_3;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<class FString, TSoftObjectPtr<class UPaperSprite>> ContractorIconMap;                       // 0x03D0(0x0050)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       DistortionAnim;                                    // 0x03F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0400(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Image_ContractorIcon;                              // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TinyTop_Text;                                      // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TinyTop_Text_1;                                    // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TinyTop_Text_2;                                    // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TinyTop_Text_3;                                    // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<class FString, TSoftObjectPtr<class UPaperSprite>> ContractorIconMap;                       // 0x0430(0x0050)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector(int32 EntryPoint);
-	void SetContractorSprite(TSoftObjectPtr<class UPaperSprite> ContractorSprite);
-	void PreConstruct(bool IsDesignTime);
-	void UpdateSelectionCount();
-	void OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly);
+	class FText GetContractorName();
 	void OnLoaded_0B3A176146937A1A5B15A0B11F535FAF(class UObject* Loaded);
 	void OnLoaded_51F23A4943941A9E9DE1DBB426DE1827(class UObject* Loaded);
-	class FText GetContractorName();
+	void OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly);
+	void PreConstruct(bool IsDesignTime);
+	void SetContractorSprite(TSoftObjectPtr<class UPaperSprite> ContractorSprite);
+	void UpdateSelectionCount();
 
 public:
 	static class UClass* StaticClass()

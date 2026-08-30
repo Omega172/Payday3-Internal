@@ -18,17 +18,17 @@
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_HandCuffsAnimation.ABP_HandCuffsAnimation_C
-// 0x0180 (0x0450 - 0x02D0)
+// 0x0150 (0x0530 - 0x03E0)
 class UABP_HandCuffsAnimation_C final : public USBZEquippableAnimation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02D8(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0320(0x0060)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0380(0x00D0)()
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x03E0(0x0008)()
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x03E8(0x0008)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x03F0(0x0030)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0420(0x0078)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0498(0x0098)()
 
 public:
-	void ExecuteUbergraph_ABP_HandCuffsAnimation(int32 EntryPoint);
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:

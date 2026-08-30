@@ -16,6 +16,62 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_QuestChallengeButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.ConvertProgressMinMaxToMeters
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeButton_C::ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "ConvertProgressMinMaxToMeters");
+
+	Params::WBP_UI_QuestChallengeButton_C_ConvertProgressMinMaxToMeters Parms{};
+
+	Parms.InMaxValueToUse = InMaxValueToUse;
+	Parms.InMinValueToUse = InMinValueToUse;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.DebugPrint
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    DebugPrints                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeButton_C::DebugPrint(bool DebugPrints)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "DebugPrint");
+
+	Params::WBP_UI_QuestChallengeButton_C_DebugPrint Parms{};
+
+	Parms.DebugPrints = DebugPrints;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.ExecuteUbergraph_WBP_UI_QuestChallengeButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,23 +92,27 @@ void UWBP_UI_QuestChallengeButton_C::ExecuteUbergraph_WBP_UI_QuestChallengeButto
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.IsInfamyReward
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   InInfamyRewardPoints                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   OutIsHasInfamyRewardPoints                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_QuestChallengeButton_C::IsInfamyReward(int32 InInfamyRewardPoints, bool* OutIsHasInfamyRewardPoints)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "IsInfamyReward");
 
-	Params::WBP_UI_QuestChallengeButton_C_PreConstruct Parms{};
+	Params::WBP_UI_QuestChallengeButton_C_IsInfamyReward Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InInfamyRewardPoints = InInfamyRewardPoints;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutIsHasInfamyRewardPoints != nullptr)
+		*OutIsHasInfamyRewardPoints = Parms.OutIsHasInfamyRewardPoints;
 }
 
 
@@ -76,24 +136,10 @@ void UWBP_UI_QuestChallengeButton_C::OnChallengeDataInititalized(const struct FS
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_QuestChallengeButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.OnLoaded_A75A19A9458CB2A30048B3A680327C38
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_QuestChallengeButton_C::OnLoaded_A75A19A9458CB2A30048B3A680327C38(class UObject* Loaded)
 {
@@ -105,6 +151,26 @@ void UWBP_UI_QuestChallengeButton_C::OnLoaded_A75A19A9458CB2A30048B3A680327C38(c
 	Params::WBP_UI_QuestChallengeButton_C_OnLoaded_A75A19A9458CB2A30048B3A680327C38 Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "PreConstruct");
+
+	Params::WBP_UI_QuestChallengeButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -130,21 +196,83 @@ void UWBP_UI_QuestChallengeButton_C::SetChallengeDescription(const struct FSBZCh
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateVisualsBasedStatus
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetCreditsRewardInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZUIQuestChallengeData&  InChallengeData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeButton_C::UpdateVisualsBasedStatus(const struct FSBZUIQuestChallengeData& InChallengeData)
+void UWBP_UI_QuestChallengeButton_C::SetCreditsRewardInfo(int32 InQuantity)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "UpdateVisualsBasedStatus");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetCreditsRewardInfo");
 
-	Params::WBP_UI_QuestChallengeButton_C_UpdateVisualsBasedStatus Parms{};
+	Params::WBP_UI_QuestChallengeButton_C_SetCreditsRewardInfo Parms{};
 
-	Parms.InChallengeData = std::move(InChallengeData);
+	Parms.InQuantity = InQuantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetGoldRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeButton_C::SetGoldRewardInfo(int32 InQuantity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetGoldRewardInfo");
+
+	Params::WBP_UI_QuestChallengeButton_C_SetGoldRewardInfo Parms{};
+
+	Parms.InQuantity = InQuantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetInfamyRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InInfamyRewardPoints                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeButton_C::SetInfamyRewardInfo(int32 InInfamyRewardPoints)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetInfamyRewardInfo");
+
+	Params::WBP_UI_QuestChallengeButton_C_SetInfamyRewardInfo Parms{};
+
+	Parms.InInfamyRewardPoints = InInfamyRewardPoints;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetItemRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   InItemQuantity                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeButton_C::SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetItemRewardInfo");
+
+	Params::WBP_UI_QuestChallengeButton_C_SetItemRewardInfo Parms{};
+
+	Parms.InIconSprite = InIconSprite;
+	Parms.InItemQuantity = InItemQuantity;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -167,28 +295,6 @@ void UWBP_UI_QuestChallengeButton_C::SetProgressBarPercentage(int32 Progress, in
 
 	Parms.Progress = Progress;
 	Parms.TotalProgress = TotalProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.ConvertProgressMinMaxToMeters
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeButton_C::ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "ConvertProgressMinMaxToMeters");
-
-	Params::WBP_UI_QuestChallengeButton_C_ConvertProgressMinMaxToMeters Parms{};
-
-	Parms.InMaxValueToUse = InMaxValueToUse;
-	Parms.InMinValueToUse = InMinValueToUse;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -230,54 +336,10 @@ void UWBP_UI_QuestChallengeButton_C::SetProgressText()
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.IsInfamyReward
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   InInfamyRewardPoints                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   OutIsHasInfamyRewardPoints                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_QuestChallengeButton_C::IsInfamyReward(int32 InInfamyRewardPoints, bool* OutIsHasInfamyRewardPoints)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "IsInfamyReward");
-
-	Params::WBP_UI_QuestChallengeButton_C_IsInfamyReward Parms{};
-
-	Parms.InInfamyRewardPoints = InInfamyRewardPoints;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutIsHasInfamyRewardPoints != nullptr)
-		*OutIsHasInfamyRewardPoints = Parms.OutIsHasInfamyRewardPoints;
-}
-
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetInfamyRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InInfamyRewardPoints                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeButton_C::SetInfamyRewardInfo(int32 InInfamyRewardPoints)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetInfamyRewardInfo");
-
-	Params::WBP_UI_QuestChallengeButton_C_SetInfamyRewardInfo Parms{};
-
-	Parms.InInfamyRewardPoints = InInfamyRewardPoints;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_QuestChallengeButton_C::SetRewardIcon(class UPaperSprite* InIconSprite)
 {
@@ -294,63 +356,21 @@ void UWBP_UI_QuestChallengeButton_C::SetRewardIcon(class UPaperSprite* InIconSpr
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetGoldRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardsSectionVisible
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    RewardsVisible                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeButton_C::SetGoldRewardInfo(int32 InQuantity)
+void UWBP_UI_QuestChallengeButton_C::SetRewardsSectionVisible(bool RewardsVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetGoldRewardInfo");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetRewardsSectionVisible");
 
-	Params::WBP_UI_QuestChallengeButton_C_SetGoldRewardInfo Parms{};
+	Params::WBP_UI_QuestChallengeButton_C_SetRewardsSectionVisible Parms{};
 
-	Parms.InQuantity = InQuantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetCreditsRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeButton_C::SetCreditsRewardInfo(int32 InQuantity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetCreditsRewardInfo");
-
-	Params::WBP_UI_QuestChallengeButton_C_SetCreditsRewardInfo Parms{};
-
-	Parms.InQuantity = InQuantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetItemRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InItemQuantity                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeButton_C::SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetItemRewardInfo");
-
-	Params::WBP_UI_QuestChallengeButton_C_SetItemRewardInfo Parms{};
-
-	Parms.InIconSprite = InIconSprite;
-	Parms.InItemQuantity = InItemQuantity;
+	Parms.RewardsVisible = RewardsVisible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -376,23 +396,17 @@ void UWBP_UI_QuestChallengeButton_C::SetRewardValueVisibility(int32 InItemQuanti
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateRewardIconDimensions
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     Sprite                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetSharedProgression
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_QuestChallengeButton_C::UpdateRewardIconDimensions(class UPaperSprite* Sprite)
+void UWBP_UI_QuestChallengeButton_C::SetSharedProgression()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "UpdateRewardIconDimensions");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetSharedProgression");
 
-	Params::WBP_UI_QuestChallengeButton_C_UpdateRewardIconDimensions Parms{};
-
-	Parms.Sprite = Sprite;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -410,57 +424,43 @@ void UWBP_UI_QuestChallengeButton_C::SetWidgetSize()
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.DebugPrint
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    DebugPrints                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_QuestChallengeButton_C::DebugPrint(bool DebugPrints)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "DebugPrint");
-
-	Params::WBP_UI_QuestChallengeButton_C_DebugPrint Parms{};
-
-	Parms.DebugPrints = DebugPrints;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardsSectionVisible
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateRewardIconDimensions
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    RewardsVisible                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UPaperSprite*                     Sprite                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeButton_C::SetRewardsSectionVisible(bool RewardsVisible)
+void UWBP_UI_QuestChallengeButton_C::UpdateRewardIconDimensions(class UPaperSprite* Sprite)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetRewardsSectionVisible");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "UpdateRewardIconDimensions");
 
-	Params::WBP_UI_QuestChallengeButton_C_SetRewardsSectionVisible Parms{};
+	Params::WBP_UI_QuestChallengeButton_C_UpdateRewardIconDimensions Parms{};
 
-	Parms.RewardsVisible = RewardsVisible;
+	Parms.Sprite = Sprite;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetSharedProgression
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateVisualsBasedStatus
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZUIQuestChallengeData&  InChallengeData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_QuestChallengeButton_C::SetSharedProgression()
+void UWBP_UI_QuestChallengeButton_C::UpdateVisualsBasedStatus(const struct FSBZUIQuestChallengeData& InChallengeData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "SetSharedProgression");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeButton_C", "UpdateVisualsBasedStatus");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_QuestChallengeButton_C_UpdateVisualsBasedStatus Parms{};
+
+	Parms.InChallengeData = std::move(InChallengeData);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

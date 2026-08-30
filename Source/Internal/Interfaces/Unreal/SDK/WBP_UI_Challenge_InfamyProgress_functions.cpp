@@ -36,6 +36,26 @@ void UWBP_UI_Challenge_InfamyProgress_C::ExecuteUbergraph_WBP_UI_Challenge_Infam
 }
 
 
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Get_Image_ProgressBar_Brush_0
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FSlateBrush                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FSlateBrush UWBP_UI_Challenge_InfamyProgress_C::Get_Image_ProgressBar_Brush_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Challenge_InfamyProgress_C", "Get_Image_ProgressBar_Brush_0");
+
+	Params::WBP_UI_Challenge_InfamyProgress_C_Get_Image_ProgressBar_Brush_0 Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.OnInfamyValuesRefreshed
 // (Event, Protected, BlueprintEvent)
 
@@ -67,7 +87,7 @@ void UWBP_UI_Challenge_InfamyProgress_C::OnInitialized()
 // Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Challenge_InfamyProgress_C::PreConstruct(bool IsDesignTime)
 {
@@ -95,26 +115,6 @@ void UWBP_UI_Challenge_InfamyProgress_C::Set_Infamy_Visuals()
 		Func = Class->GetFunction("WBP_UI_Challenge_InfamyProgress_C", "Set Infamy Visuals");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Get_Image_ProgressBar_Brush_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FSlateBrush                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FSlateBrush UWBP_UI_Challenge_InfamyProgress_C::Get_Image_ProgressBar_Brush_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Challenge_InfamyProgress_C", "Get_Image_ProgressBar_Brush_0");
-
-	Params::WBP_UI_Challenge_InfamyProgress_C_Get_Image_ProgressBar_Brush_0 Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

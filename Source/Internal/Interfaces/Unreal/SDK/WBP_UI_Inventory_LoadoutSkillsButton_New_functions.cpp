@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton_New
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,134 +73,6 @@ void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::ExecuteUbergraph_WBP_UI_Invent
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "PreConstruct");
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::OnHover(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "OnHover");
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_OnHover Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::OnFocused(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "OnFocused");
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_OnFocused Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::RefreshVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "RefreshVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -201,6 +113,94 @@ void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::InitializeSkills(const TArray<
 	Parms.EquippedSkillCategoriesCount = std::move(EquippedSkillCategoriesCount);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::OnFocused(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "OnFocused");
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_OnFocused Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::OnHover(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "OnHover");
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "PreConstruct");
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_New_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton_New.WBP_UI_Inventory_LoadoutSkillsButton_New_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_New_C::RefreshVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_LoadoutSkillsButton_New_C", "RefreshVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

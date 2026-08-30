@@ -10,49 +10,49 @@
 
 #include "Basic.hpp"
 
-#include "SBZBackend_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "SBZBackend_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C
-// 0x0068 (0x03A0 - 0x0338)
+// 0x0068 (0x0400 - 0x0398)
 class UWBP_WeaponCustomization_WeaponCosmetics_C final : public USBZWeaponCustomizationSubscreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Inventory_Item_Button_C*           EquippedPart1;                                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Inventory_Item_Button_C*           EquippedPart2;                                     // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Inventory_Item_Button_C*           EquippedPart3;                                     // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Inventory_Item_Button_C*           PreviewPart1;                                      // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Inventory_Item_Button_C*           PreviewPart2;                                      // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Inventory_Item_Button_C*           PreviewPart3;                                      // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Inventory_Module_C*                WBP_Inventory_Module;                              // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   WBP_UI_TextButton;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_Loading_C*               WBP_UI_Widget_Loading;                             // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZWeaponPatternDataConfig*            PatternConfig;                                     // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZStandaloneWeaponDisplay*            WeaponDisplay;                                     // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Inventory_Item_Button_C*           EquippedPart1;                                     // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Inventory_Item_Button_C*           EquippedPart2;                                     // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Inventory_Item_Button_C*           EquippedPart3;                                     // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Inventory_Item_Button_C*           PreviewPart1;                                      // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Inventory_Item_Button_C*           PreviewPart2;                                      // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Inventory_Item_Button_C*           PreviewPart3;                                      // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Inventory_Module_C*                WBP_Inventory_Module;                              // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   WBP_UI_TextButton;                                 // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_Loading_C*               WBP_UI_Widget_Loading;                             // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZWeaponPatternDataConfig*            PatternConfig;                                     // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ASBZStandaloneWeaponDisplay*            WeaponDisplay;                                     // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics(int32 EntryPoint);
-	void OnTryApplyDone(ESBZMetaRequestResult Result);
-	void OnTryApply();
 	void BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature();
-	void OnScreenDisplayed();
-	void BP_Update_Preview_Icon();
-	void OnCosmeticSlotUpdated();
-	void UpdatePreview();
-	void BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void SetupConfigScreen(const class USBZCosmeticsPartSlot* CosmeticSlot_0);
-	void UpdateEquippedIcon();
-	void OnButtonPressed(class USBZMainMenuCosmeticItemButton* CosmeticButton);
 	void BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void SetPreviewWidgetWithValidation(class UWBP_Inventory_Item_Button_C* Widget, const class USBZEquippablePartDataAsset* Data);
+	void BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BP_Update_Preview_Icon();
+	void ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics(int32 EntryPoint);
 	void GetSlotFromDataClass(TSubclassOf<class USBZModularPartDataAsset> SlotClass, class USBZCosmeticsPartSlot** SlotAsset);
 	bool NeedConfig();
+	void OnButtonPressed(class USBZMainMenuCosmeticItemButton* CosmeticButton);
+	void OnCosmeticSlotUpdated();
+	void OnScreenDisplayed();
+	void OnTryApply();
+	void OnTryApplyDone(ESBZMetaRequestResult Result);
+	void SetPreviewWidgetWithValidation(class UWBP_Inventory_Item_Button_C* Widget, const class USBZEquippablePartDataAsset* Data);
+	void SetupConfigScreen(const class USBZCosmeticsPartSlot* CosmeticSlot_0);
+	void UpdateEquippedIcon();
+	void UpdatePreview();
 
 public:
 	static class UClass* StaticClass()

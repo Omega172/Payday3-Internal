@@ -36,6 +36,20 @@ void UWBP_UI_SideBarNotification_C::ExecuteUbergraph_WBP_UI_SideBarNotification(
 }
 
 
+// Function WBP_UI_SideBarNotification.WBP_UI_SideBarNotification_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SideBarNotification_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SideBarNotification_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_SideBarNotification.WBP_UI_SideBarNotification_C.OnNotificationDisplayed
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -59,7 +73,7 @@ void UWBP_UI_SideBarNotification_C::OnNotificationDisplayed(const struct FSBZSid
 // Function WBP_UI_SideBarNotification.WBP_UI_SideBarNotification_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SideBarNotification_C::PreConstruct(bool IsDesignTime)
 {
@@ -73,20 +87,6 @@ void UWBP_UI_SideBarNotification_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SideBarNotification.WBP_UI_SideBarNotification_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_SideBarNotification_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SideBarNotification_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

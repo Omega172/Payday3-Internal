@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function PrefabricatorRuntime.PrefabActor.GetPrefabAsset
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UPrefabricatorAsset*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPrefabricatorAsset*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UPrefabricatorAsset* APrefabActor::GetPrefabAsset()
 {
@@ -184,7 +184,7 @@ void APrefabRandomizer::Randomize(int32 InSeed)
 // Function PrefabricatorRuntime.PrefabricatorEventListener.PostSpawn
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-// class APrefabActor*                     Prefab                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APrefabActor*                     Prefab                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UPrefabricatorEventListener::PostSpawn(class APrefabActor* Prefab)
 {
@@ -209,7 +209,7 @@ void UPrefabricatorEventListener::PostSpawn(class APrefabActor* Prefab)
 // Function PrefabricatorRuntime.PrefabricatorBlueprintLibrary.GetAllAttachedActors
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class AActor*                           Prefab                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Prefab                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<class AActor*>*                  AttachedActors                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 
 void UPrefabricatorBlueprintLibrary::GetAllAttachedActors(class AActor* Prefab, TArray<class AActor*>* AttachedActors)
@@ -238,7 +238,7 @@ void UPrefabricatorBlueprintLibrary::GetAllAttachedActors(class AActor* Prefab, 
 // Function PrefabricatorRuntime.PrefabricatorBlueprintLibrary.RandomizePrefab
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// class APrefabActor*                     PrefabActor                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APrefabActor*                     PrefabActor                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FRandomStream&             InRandom                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 
 void UPrefabricatorBlueprintLibrary::RandomizePrefab(class APrefabActor* PrefabActor, const struct FRandomStream& InRandom)
@@ -265,11 +265,11 @@ void UPrefabricatorBlueprintLibrary::RandomizePrefab(class APrefabActor* PrefabA
 // Function PrefabricatorRuntime.PrefabricatorBlueprintLibrary.SpawnPrefab
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPrefabricatorAssetInterface*     Prefab                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FTransform&                Transform                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPrefabricatorAssetInterface*     Prefab                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FTransform&                Transform                                              (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   Seed                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class APrefabActor*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APrefabActor*                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class APrefabActor* UPrefabricatorBlueprintLibrary::SpawnPrefab(const class UObject* WorldContextObject, class UPrefabricatorAssetInterface* Prefab, const struct FTransform& Transform, int32 Seed)
 {

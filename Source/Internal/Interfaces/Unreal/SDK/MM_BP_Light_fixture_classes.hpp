@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MM_BP_Light_fixture.MM_BP_Light_fixture_C
-// 0x0000 (0x0340 - 0x0340)
+// 0x0000 (0x0440 - 0x0440)
 class AMM_BP_Light_fixture_C final : public ABP_Master_Light_Fixture_C
 {
 public:

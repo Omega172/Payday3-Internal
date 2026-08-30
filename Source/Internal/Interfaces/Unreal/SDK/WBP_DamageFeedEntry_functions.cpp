@@ -36,31 +36,23 @@ void UWBP_DamageFeedEntry_C::ExecuteUbergraph_WBP_DamageFeedEntry(int32 EntryPoi
 }
 
 
-// Function WBP_DamageFeedEntry.WBP_DamageFeedEntry_C.PlayAppearAnimation
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_DamageFeedEntry.WBP_DamageFeedEntry_C.GetEntryType
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DamageFeedEntry_C::PlayAppearAnimation()
+class FName UWBP_DamageFeedEntry_C::GetEntryType()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DamageFeedEntry_C", "PlayAppearAnimation");
+		Func = Class->GetFunction("WBP_DamageFeedEntry_C", "GetEntryType");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_DamageFeedEntry_C_GetEntryType Parms{};
 
+	UObject::ProcessEvent(Func, &Parms);
 
-// Function WBP_DamageFeedEntry.WBP_DamageFeedEntry_C.PlayDisappearAnimation
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DamageFeedEntry_C::PlayDisappearAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DamageFeedEntry_C", "PlayDisappearAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
+	return Parms.ReturnValue;
 }
 
 
@@ -88,23 +80,31 @@ void UWBP_DamageFeedEntry_C::OnDamageDataUpdated(float InDamageAmount, ESBZDamag
 }
 
 
-// Function WBP_DamageFeedEntry.WBP_DamageFeedEntry_C.GetEntryType
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_DamageFeedEntry.WBP_DamageFeedEntry_C.PlayAppearAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-class FName UWBP_DamageFeedEntry_C::GetEntryType() const
+void UWBP_DamageFeedEntry_C::PlayAppearAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DamageFeedEntry_C", "GetEntryType");
+		Func = Class->GetFunction("WBP_DamageFeedEntry_C", "PlayAppearAnimation");
 
-	Params::WBP_DamageFeedEntry_C_GetEntryType Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+// Function WBP_DamageFeedEntry.WBP_DamageFeedEntry_C.PlayDisappearAnimation
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DamageFeedEntry_C::PlayDisappearAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DamageFeedEntry_C", "PlayDisappearAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

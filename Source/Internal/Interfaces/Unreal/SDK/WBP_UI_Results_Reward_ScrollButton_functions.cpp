@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_Reward_ScrollButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_ScrollButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_UI_Results_Reward_ScrollButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_Reward_ScrollButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_ScrollButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Results_Reward_ScrollButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C.ExecuteUbergraph_WBP_UI_Results_Reward_ScrollButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,50 +76,10 @@ void UWBP_UI_Results_Reward_ScrollButton_C::ExecuteUbergraph_WBP_UI_Results_Rewa
 }
 
 
-// Function WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Results_Reward_ScrollButton_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_ScrollButton_C", "ButtonDisabledChanged");
-
-	Params::WBP_UI_Results_Reward_ScrollButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Results_Reward_ScrollButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_ScrollButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Results_Reward_ScrollButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_ScrollButton_C::PreConstruct(bool IsDesignTime)
 {

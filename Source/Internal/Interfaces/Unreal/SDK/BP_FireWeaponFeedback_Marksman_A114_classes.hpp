@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FireWeaponFeedback_Marksman_A114.BP_FireWeaponFeedback_Marksman_A114_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UBP_FireWeaponFeedback_Marksman_A114_C final : public USBZLocalPlayerFeedback
 {
 public:

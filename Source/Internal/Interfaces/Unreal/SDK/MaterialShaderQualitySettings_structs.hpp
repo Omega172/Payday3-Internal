@@ -19,13 +19,13 @@ enum class EMobileShadowQuality : uint8
 {
 	NoFiltering                              = 0,
 	PCF_1x1                                  = 1,
-	PCF_2x2                                  = 2,
-	PCF_3x3                                  = 3,
+	PCF_3x3                                  = 2,
+	PCF_5x5                                  = 3,
 	EMobileShadowQuality_MAX                 = 4,
 };
 
 // ScriptStruct MaterialShaderQualitySettings.MaterialQualityOverrides
-// 0x0009 (0x0009 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct FMaterialQualityOverrides final
 {
 public:
@@ -34,10 +34,9 @@ public:
 	bool                                          bForceFullyRough;                                  // 0x0002(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceNonMetal;                                    // 0x0003(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceDisableLMDirectionality;                     // 0x0004(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceLQReflections;                               // 0x0005(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bForceDisablePreintegratedGF;                      // 0x0006(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bDisableMaterialNormalCalculation;                 // 0x0007(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMobileShadowQuality                          MobileShadowQuality;                               // 0x0008(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bForceDisablePreintegratedGF;                      // 0x0005(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bDisableMaterialNormalCalculation;                 // 0x0006(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMobileShadowQuality                          MobileShadowQuality;                               // 0x0007(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FMaterialQualityOverrides;
 

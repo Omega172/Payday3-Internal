@@ -18,29 +18,29 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C
-// 0x0028 (0x03A0 - 0x0378)
+// 0x0028 (0x0400 - 0x03D8)
 class UWBP_UI_Crimenet_SecurityCompanyDetails_C final : public USBZMenuButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_Background;                                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Highlight;                                   // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CrimeNet_SecurityCompanyDisplay_C* Widget_SecurityCompany;                            // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	ESBZSecurityCompany                           ESecurityCompany;                                  // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_Background;                                  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Highlight;                                   // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CrimeNet_SecurityCompanyDisplay_C* Widget_SecurityCompany;                            // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	ESBZSecurityCompany                           ESecurityCompany;                                  // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails(int32 EntryPoint);
-	void ButtonSelected();
-	void PreConstruct(bool IsDesignTime);
-	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ButtonSelected();
+	void ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails(int32 EntryPoint);
+	void InitSecurityCompany(ESBZSecurityCompany InSecurityCompany);
+	void OnFocus(bool bIsFocused);
+	void OnHover(bool bIsHovered);
 	void OnInitialized();
 	void OnSecurityCompaniesChanged(const TArray<ESBZSecurityCompany>& SecurityCompanies);
-	void OnHover(bool bIsHovered);
-	void OnFocus(bool bIsFocused);
 	void OnSelected();
+	void PreConstruct(bool IsDesignTime);
 	void SetIsActive(bool bIsActive);
-	void InitSecurityCompany(ESBZSecurityCompany InSecurityCompany);
 
 public:
 	static class UClass* StaticClass()

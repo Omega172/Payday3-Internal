@@ -36,21 +36,21 @@ void UWBP_PartyMember_ToolStatus_C::ExecuteUbergraph_WBP_PartyMember_ToolStatus(
 }
 
 
-// Function WBP_PartyMember_ToolStatus.WBP_PartyMember_ToolStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PartyMember_ToolStatus.WBP_PartyMember_ToolStatus_C.OnAmmoInventoryChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   InAmmoInventory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PartyMember_ToolStatus_C::PreConstruct(bool IsDesignTime)
+void UWBP_PartyMember_ToolStatus_C::OnAmmoInventoryChanged(int32 InAmmoInventory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyMember_ToolStatus_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_PartyMember_ToolStatus_C", "OnAmmoInventoryChanged");
 
-	Params::WBP_PartyMember_ToolStatus_C_PreConstruct Parms{};
+	Params::WBP_PartyMember_ToolStatus_C_OnAmmoInventoryChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InAmmoInventory = InAmmoInventory;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,30 +76,10 @@ void UWBP_PartyMember_ToolStatus_C::OnIconChanged(const TSoftObjectPtr<class UPa
 }
 
 
-// Function WBP_PartyMember_ToolStatus.WBP_PartyMember_ToolStatus_C.OnAmmoInventoryChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InAmmoInventory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PartyMember_ToolStatus_C::OnAmmoInventoryChanged(int32 InAmmoInventory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyMember_ToolStatus_C", "OnAmmoInventoryChanged");
-
-	Params::WBP_PartyMember_ToolStatus_C_OnAmmoInventoryChanged Parms{};
-
-	Parms.InAmmoInventory = InAmmoInventory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_PartyMember_ToolStatus.WBP_PartyMember_ToolStatus_C.OnLoaded_BA373E794BE56F89437E66AA1890CF13
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyMember_ToolStatus_C::OnLoaded_BA373E794BE56F89437E66AA1890CF13(class UObject* Loaded)
 {
@@ -111,6 +91,26 @@ void UWBP_PartyMember_ToolStatus_C::OnLoaded_BA373E794BE56F89437E66AA1890CF13(cl
 	Params::WBP_PartyMember_ToolStatus_C_OnLoaded_BA373E794BE56F89437E66AA1890CF13 Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PartyMember_ToolStatus.WBP_PartyMember_ToolStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyMember_ToolStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyMember_ToolStatus_C", "PreConstruct");
+
+	Params::WBP_PartyMember_ToolStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

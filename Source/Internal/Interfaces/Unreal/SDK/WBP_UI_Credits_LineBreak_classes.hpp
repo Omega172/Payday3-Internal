@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Credits_LineBreak.WBP_UI_Credits_LineBreak_C
-// 0x0000 (0x0290 - 0x0290)
+// 0x0000 (0x02F0 - 0x02F0)
 class UWBP_UI_Credits_LineBreak_C final : public USBZWidgetCreditsLinebreak
 {
 public:

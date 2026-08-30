@@ -16,46 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.ExecuteUbergraph_WBP_NewsBanner
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_NewsBanner_C::ExecuteUbergraph_WBP_NewsBanner(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "ExecuteUbergraph_WBP_NewsBanner");
-
-	Params::WBP_NewsBanner_C_ExecuteUbergraph_WBP_NewsBanner Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnGameInstalled
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_NewsBanner_C::OnGameInstalled(bool bIsGameInstallPending)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "OnGameInstalled");
-
-	Params::WBP_NewsBanner_C_OnGameInstalled Parms{};
-
-	Parms.bIsGameInstallPending = bIsGameInstallPending;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_NewsBanner.WBP_NewsBanner_C.CarouselIndexChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -76,26 +36,6 @@ void UWBP_NewsBanner_C::CarouselIndexChanged(int32 NewIndex)
 }
 
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.SetNewsBannerEnabled
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_NewsBanner_C::SetNewsBannerEnabled(bool bInEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "SetNewsBannerEnabled");
-
-	Params::WBP_NewsBanner_C_SetNewsBannerEnabled Parms{};
-
-	Parms.bInEnabled = bInEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_NewsBanner.WBP_NewsBanner_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -110,15 +50,35 @@ void UWBP_NewsBanner_C::Destruct()
 }
 
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_NewsBanner.WBP_NewsBanner_C.ExecuteUbergraph_WBP_NewsBanner
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NewsBanner_C::OnInitialized()
+void UWBP_NewsBanner_C::ExecuteUbergraph_WBP_NewsBanner(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_NewsBanner_C", "ExecuteUbergraph_WBP_NewsBanner");
+
+	Params::WBP_NewsBanner_C_ExecuteUbergraph_WBP_NewsBanner Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.IncrementPage
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_NewsBanner_C::IncrementPage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "IncrementPage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,54 +99,6 @@ void UWBP_NewsBanner_C::NavigateToPage(int32 InNavigateIndex)
 	Params::WBP_NewsBanner_C_NavigateToPage Parms{};
 
 	Parms.InNavigateIndex = InNavigateIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.IncrementPage
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_NewsBanner_C::IncrementPage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "IncrementPage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnDecrementPage
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_NewsBanner_C::OnDecrementPage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "OnDecrementPage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_NewsBanner_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "PreConstruct");
-
-	Params::WBP_NewsBanner_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -214,6 +126,114 @@ void UWBP_NewsBanner_C::OnComplete_20FB66EC40031DB9F52C91B5F92076D7(ESBZOnlineCo
 }
 
 
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnDecrementPage
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_NewsBanner_C::OnDecrementPage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "OnDecrementPage");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnFocusedChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBanner_C::OnFocusedChanged(bool InFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "OnFocusedChanged");
+
+	Params::WBP_NewsBanner_C_OnFocusedChanged Parms{};
+
+	Parms.InFocused = InFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnGameInstalled
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBanner_C::OnGameInstalled(bool bIsGameInstallPending)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "OnGameInstalled");
+
+	Params::WBP_NewsBanner_C_OnGameInstalled Parms{};
+
+	Parms.bIsGameInstallPending = bIsGameInstallPending;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnHoveredChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBanner_C::OnHoveredChanged(bool InHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "OnHoveredChanged");
+
+	Params::WBP_NewsBanner_C_OnHoveredChanged Parms{};
+
+	Parms.InHovered = InHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_NewsBanner_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBanner_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsBanner_C", "PreConstruct");
+
+	Params::WBP_NewsBanner_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_NewsBanner.WBP_NewsBanner_C.RemoveItem
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -234,41 +254,21 @@ void UWBP_NewsBanner_C::RemoveItem(int32 InItemIndexToRemove)
 }
 
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnFocusedChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_NewsBanner.WBP_NewsBanner_C.SetNewsBannerEnabled
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NewsBanner_C::OnFocusedChanged(bool InFocused)
+void UWBP_NewsBanner_C::SetNewsBannerEnabled(bool bInEnabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "OnFocusedChanged");
+		Func = Class->GetFunction("WBP_NewsBanner_C", "SetNewsBannerEnabled");
 
-	Params::WBP_NewsBanner_C_OnFocusedChanged Parms{};
+	Params::WBP_NewsBanner_C_SetNewsBannerEnabled Parms{};
 
-	Parms.InFocused = InFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnHoveredChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_NewsBanner_C::OnHoveredChanged(bool InHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsBanner_C", "OnHoveredChanged");
-
-	Params::WBP_NewsBanner_C_OnHoveredChanged Parms{};
-
-	Parms.InHovered = InHovered;
+	Parms.bInEnabled = bInEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -277,8 +277,8 @@ void UWBP_NewsBanner_C::OnHoveredChanged(bool InHovered)
 // Function WBP_NewsBanner.WBP_NewsBanner_C.UpdateAccessBasedOnPrivilege
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InstallPending                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    TrialVersion                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InstallPending                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    TrialVersion                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_NewsBanner_C::UpdateAccessBasedOnPrivilege(bool InstallPending, bool TrialVersion)
 {

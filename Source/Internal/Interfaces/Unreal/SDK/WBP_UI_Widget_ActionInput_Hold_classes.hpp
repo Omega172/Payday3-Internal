@@ -12,40 +12,40 @@
 
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C
-// 0x0098 (0x0368 - 0x02D0)
+// 0x0098 (0x03C8 - 0x0330)
 class UWBP_UI_Widget_ActionInput_Hold_C final : public USBZActionInputWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_Hold;                                  // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateFontInfo                         Font;                                              // 0x02E8(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	bool                                          bAnimateOnPress;                                   // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          RT_UseInvertOnPress;                               // 0x0349(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_34A[0x2];                                      // 0x034A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           RT_OnPressColor;                                   // 0x034C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35C[0x4];                                      // 0x035C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           RT_CurrentSprite;                                  // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UInvalidationBox*                       InvalidationBox_0;                                 // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_Hold;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateFontInfo                         Font;                                              // 0x0348(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	bool                                          bAnimateOnPress;                                   // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          RT_UseInvertOnPress;                               // 0x03A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AA[0x2];                                      // 0x03AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           RT_OnPressColor;                                   // 0x03AC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPaperSprite*                           RT_CurrentSprite;                                  // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ActionPressed();
+	void ActionReleased();
 	void ExecuteUbergraph_WBP_UI_Widget_ActionInput_Hold(int32 EntryPoint);
 	void OnInitialized();
-	void ActionReleased();
-	void ActionPressed();
 	void PreConstruct(bool IsDesignTime);
-	void UpdateProgress(float Progress);
-	void SetInvertOnPress();
 	void SetColourOnPress(const struct FLinearColor& InLinearColour);
-	void UpdatePressedState();
+	void SetInvertOnPress();
 	void SetProgressBarVisiblity(bool bVisibility);
+	void UpdatePressedState();
+	void UpdateProgress(double Progress);
 
 public:
 	static class UClass* StaticClass()

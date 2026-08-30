@@ -16,21 +16,66 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.ExecuteUbergraph_ABP_TPPlayerBase_Moneybag
-// (Final, UbergraphFunction)
+// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AdjustAttachment
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTransform&                NewStrapTransformOffset                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_TPPlayerBase_Moneybag_C::ExecuteUbergraph_ABP_TPPlayerBase_Moneybag(int32 EntryPoint)
+void UABP_TPPlayerBase_Moneybag_C::AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "ExecuteUbergraph_ABP_TPPlayerBase_Moneybag");
+		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "AdjustAttachment");
 
-	Params::ABP_TPPlayerBase_Moneybag_C_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag Parms{};
+	Params::ABP_TPPlayerBase_Moneybag_C_AdjustAttachment Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Index_0 = Index_0;
+	Parms.NewCount = NewCount;
+	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+
+void UABP_TPPlayerBase_Moneybag_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "AnimGraph");
+
+	Params::ABP_TPPlayerBase_Moneybag_C_AnimGraph Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AttachmentComplete
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USkeletalMeshComponent*           InParentSkeletalMeshComponent                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UABP_TPPlayerBase_Moneybag_C::AttachmentComplete(class USkeletalMeshComponent* InParentSkeletalMeshComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "AttachmentComplete");
+
+	Params::ABP_TPPlayerBase_Moneybag_C_AttachmentComplete Parms{};
+
+	Parms.InParentSkeletalMeshComponent = InParentSkeletalMeshComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -78,68 +123,23 @@ void UABP_TPPlayerBase_Moneybag_C::EvaluateGraphExposedInputs_ExecuteUbergraph_A
 }
 
 
-// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AttachmentComplete
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.ExecuteUbergraph_ABP_TPPlayerBase_Moneybag
+// (Final, UbergraphFunction)
 // Parameters:
-// class USkeletalMeshComponent*           InParentSkeletalMeshComponent                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_TPPlayerBase_Moneybag_C::AttachmentComplete(class USkeletalMeshComponent* InParentSkeletalMeshComponent)
+void UABP_TPPlayerBase_Moneybag_C::ExecuteUbergraph_ABP_TPPlayerBase_Moneybag(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "AttachmentComplete");
+		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "ExecuteUbergraph_ABP_TPPlayerBase_Moneybag");
 
-	Params::ABP_TPPlayerBase_Moneybag_C_AttachmentComplete Parms{};
+	Params::ABP_TPPlayerBase_Moneybag_C_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag Parms{};
 
-	Parms.InParentSkeletalMeshComponent = InParentSkeletalMeshComponent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AdjustAttachment
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FTransform&                NewStrapTransformOffset                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-
-void UABP_TPPlayerBase_Moneybag_C::AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "AdjustAttachment");
-
-	Params::ABP_TPPlayerBase_Moneybag_C_AdjustAttachment Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.NewCount = NewCount;
-	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
-
-void UABP_TPPlayerBase_Moneybag_C::AnimGraph(struct FPoseLink* AnimGraph_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_TPPlayerBase_Moneybag_C", "AnimGraph");
-
-	Params::ABP_TPPlayerBase_Moneybag_C_AnimGraph Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 

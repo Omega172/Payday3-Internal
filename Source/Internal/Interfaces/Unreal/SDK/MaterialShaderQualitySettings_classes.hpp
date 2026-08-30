@@ -10,42 +10,19 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_classes.hpp"
 #include "MaterialShaderQualitySettings_structs.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
-// Class MaterialShaderQualitySettings.MaterialShaderQualitySettings
-// 0x0050 (0x0080 - 0x0030)
-class UMaterialShaderQualitySettings final : public UObject
-{
-public:
-	TMap<class FName, class UShaderPlatformQualitySettings*> ForwardSettingMap;                      // 0x0030(0x0050)(NativeAccessSpecifierPrivate)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MaterialShaderQualitySettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MaterialShaderQualitySettings")
-	}
-	static class UMaterialShaderQualitySettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMaterialShaderQualitySettings>();
-	}
-};
-DUMPER7_ASSERTS_UMaterialShaderQualitySettings;
-
 // Class MaterialShaderQualitySettings.ShaderPlatformQualitySettings
-// 0x0038 (0x0068 - 0x0030)
+// 0x0030 (0x0060 - 0x0030)
 class UShaderPlatformQualitySettings final : public UObject
 {
 public:
-	struct FMaterialQualityOverrides              QualityOverrides[0x4];                             // 0x0030(0x0009)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_54[0x14];                                      // 0x0054(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FMaterialQualityOverrides              QualityOverrides[0x4];                             // 0x0030(0x0008)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_50[0x10];                                      // 0x0050(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +39,28 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UShaderPlatformQualitySettings;
+
+// Class MaterialShaderQualitySettings.MaterialShaderQualitySettings
+// 0x0050 (0x0080 - 0x0030)
+class UMaterialShaderQualitySettings final : public UObject
+{
+public:
+	TMap<class FName, class UShaderPlatformQualitySettings*> ForwardSettingMap;                      // 0x0030(0x0050)(UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MaterialShaderQualitySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MaterialShaderQualitySettings")
+	}
+	static class UMaterialShaderQualitySettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMaterialShaderQualitySettings>();
+	}
+};
+DUMPER7_ASSERTS_UMaterialShaderQualitySettings;
 
 SDK_NAMESPACE_END

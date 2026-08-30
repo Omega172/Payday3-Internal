@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_Notification.WBP_Shop_Notification_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Shop_Notification_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_Notification_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Shop_Notification.WBP_Shop_Notification_C.ExecuteUbergraph_WBP_Shop_Notification
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void UWBP_Shop_Notification_C::ExecuteUbergraph_WBP_Shop_Notification(int32 Entr
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_Notification.WBP_Shop_Notification_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Shop_Notification_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_Notification_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

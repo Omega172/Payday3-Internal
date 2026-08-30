@@ -36,30 +36,10 @@ void UWBP_CrimebondSelection_CharacterBanner_C::ExecuteUbergraph_WBP_CrimebondSe
 }
 
 
-// Function WBP_CrimebondSelection_CharacterBanner.WBP_CrimebondSelection_CharacterBanner_C.ShowNameplateAction
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InShow                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CrimebondSelection_CharacterBanner_C::ShowNameplateAction(bool InShow)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondSelection_CharacterBanner_C", "ShowNameplateAction");
-
-	Params::WBP_CrimebondSelection_CharacterBanner_C_ShowNameplateAction Parms{};
-
-	Parms.InShow = InShow;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CrimebondSelection_CharacterBanner.WBP_CrimebondSelection_CharacterBanner_C.SetAvailability
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Available                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Available                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondSelection_CharacterBanner_C::SetAvailability(bool Available)
 {
@@ -71,6 +51,46 @@ void UWBP_CrimebondSelection_CharacterBanner_C::SetAvailability(bool Available)
 	Params::WBP_CrimebondSelection_CharacterBanner_C_SetAvailability Parms{};
 
 	Parms.Available = Available;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondSelection_CharacterBanner.WBP_CrimebondSelection_CharacterBanner_C.SetName
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_CrimebondSelection_CharacterBanner_C::SetName(const class FText& InText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondSelection_CharacterBanner_C", "SetName");
+
+	Params::WBP_CrimebondSelection_CharacterBanner_C_SetName Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondSelection_CharacterBanner.WBP_CrimebondSelection_CharacterBanner_C.ShowNameplateAction
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InShow                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondSelection_CharacterBanner_C::ShowNameplateAction(bool InShow)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondSelection_CharacterBanner_C", "ShowNameplateAction");
+
+	Params::WBP_CrimebondSelection_CharacterBanner_C_ShowNameplateAction Parms{};
+
+	Parms.InShow = InShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -93,26 +113,6 @@ void UWBP_CrimebondSelection_CharacterBanner_C::UpdateProgress(int32 InCurrentPr
 
 	Parms.InCurrentProgress = InCurrentProgress;
 	Parms.InTargetProgress = InTargetProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondSelection_CharacterBanner.WBP_CrimebondSelection_CharacterBanner_C.SetName
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_CrimebondSelection_CharacterBanner_C::SetName(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondSelection_CharacterBanner_C", "SetName");
-
-	Params::WBP_CrimebondSelection_CharacterBanner_C_SetName Parms{};
-
-	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

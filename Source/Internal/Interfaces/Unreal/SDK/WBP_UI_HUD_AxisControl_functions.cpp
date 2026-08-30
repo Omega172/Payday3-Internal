@@ -53,7 +53,7 @@ void UWBP_UI_HUD_AxisControl_C::OnInitialized()
 // Function WBP_UI_HUD_AxisControl.WBP_UI_HUD_AxisControl_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_AxisControl_C::PreConstruct(bool IsDesignTime)
 {

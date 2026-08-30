@@ -23,7 +23,7 @@ struct WBP_SBZInputKeySelector_C_ExecuteUbergraph_WBP_SBZInputKeySelector final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0008(0x0008)(NoDestructor)
 };
@@ -38,86 +38,86 @@ public:
 };
 DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnFocusLost;
 
+// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnKeyDown
+// 0x0200 (0x0200 - 0x0000)
+struct WBP_SBZInputKeySelector_C_OnKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0080(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnKeyDown_Internal_ReturnValue;           // 0x0140(0x00C0)()
+};
+DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnKeyDown;
+
+// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnKeyUp
+// 0x0200 (0x0200 - 0x0000)
+struct WBP_SBZInputKeySelector_C_OnKeyUp final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0080(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnKeyUp_Internal_ReturnValue;             // 0x0140(0x00C0)()
+};
+DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnKeyUp;
+
+// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnMouseButtonDown
+// 0x0238 (0x0238 - 0x0000)
+struct WBP_SBZInputKeySelector_C_OnMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnMouseButtonDown_Internal_ReturnValue;   // 0x0178(0x00C0)()
+};
+DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnMouseButtonDown;
+
+// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnMouseWheel
+// 0x0238 (0x0238 - 0x0000)
+struct WBP_SBZInputKeySelector_C_OnMouseWheel final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnMouseWheel_Internal_ReturnValue;        // 0x0178(0x00C0)()
+};
+DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnMouseWheel;
+
+// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnPreviewKeyDown
+// 0x0200 (0x0200 - 0x0000)
+struct WBP_SBZInputKeySelector_C_OnPreviewKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0080(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnPreviewKeyDown_Internal_ReturnValue;    // 0x0140(0x00C0)()
+};
+DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnPreviewKeyDown;
+
+// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnPreviewMouseButtonDown
+// 0x0238 (0x0238 - 0x0000)
+struct WBP_SBZInputKeySelector_C_OnPreviewMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_OnPreviewMouseButtonDown_Internal_ReturnValue; // 0x0178(0x00C0)()
+};
+DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnPreviewMouseButtonDown;
+
 // Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_SBZInputKeySelector_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_PreConstruct;
-
-// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnPreviewKeyDown
-// 0x01F8 (0x01F8 - 0x0000)
-struct WBP_SBZInputKeySelector_C_OnPreviewKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_OnPreviewKeyDown_Internal_ReturnValue;    // 0x0138(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnPreviewKeyDown;
-
-// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnKeyDown
-// 0x01F8 (0x01F8 - 0x0000)
-struct WBP_SBZInputKeySelector_C_OnKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_OnKeyDown_Internal_ReturnValue;           // 0x0138(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnKeyDown;
-
-// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnKeyUp
-// 0x01F8 (0x01F8 - 0x0000)
-struct WBP_SBZInputKeySelector_C_OnKeyUp final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0038(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0078(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_OnKeyUp_Internal_ReturnValue;             // 0x0138(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnKeyUp;
-
-// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnPreviewMouseButtonDown
-// 0x0230 (0x0230 - 0x0000)
-struct WBP_SBZInputKeySelector_C_OnPreviewMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_OnPreviewMouseButtonDown_Internal_ReturnValue; // 0x0170(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnPreviewMouseButtonDown;
-
-// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnMouseButtonDown
-// 0x0230 (0x0230 - 0x0000)
-struct WBP_SBZInputKeySelector_C_OnMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_OnMouseButtonDown_Internal_ReturnValue;   // 0x0170(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnMouseButtonDown;
-
-// Function WBP_SBZInputKeySelector.WBP_SBZInputKeySelector_C.OnMouseWheel
-// 0x0230 (0x0230 - 0x0000)
-struct WBP_SBZInputKeySelector_C_OnMouseWheel final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_OnMouseWheel_Internal_ReturnValue;        // 0x0170(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_SBZInputKeySelector_C_OnMouseWheel;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

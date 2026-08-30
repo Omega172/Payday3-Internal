@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_ItemDescription_StatModule_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ItemDescription_StatModule_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,28 +50,14 @@ void UWBP_UI_Inventory_ItemDescription_StatModule_C::ExecuteUbergraph_WBP_UI_Inv
 }
 
 
-// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_ItemDescription_StatModule_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ItemDescription_StatModule_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.SetStat
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   Addition                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Addition                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const class FText&                      StatName                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_Inventory_ItemDescription_StatModule_C::SetStat(float BaseValue, float Addition, const class FText& StatName)
+void UWBP_UI_Inventory_ItemDescription_StatModule_C::SetStat(double BaseValue, double Addition, const class FText& StatName)
 {
 	static class UFunction* Func = nullptr;
 

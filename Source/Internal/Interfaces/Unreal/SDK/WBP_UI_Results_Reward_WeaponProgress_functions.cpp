@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.AddModUnlocks
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_WeaponProgress_C::AddModUnlocks()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "AddModUnlocks");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.AnimateBarsAndText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_WeaponProgress_C::AnimateBarsAndText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "AnimateBarsAndText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_WeaponProgress
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,30 +64,10 @@ void UWBP_UI_Results_Reward_WeaponProgress_C::ExecuteUbergraph_WBP_UI_Results_Re
 }
 
 
-// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Results_Reward_WeaponProgress_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "PreConstruct");
-
-	Params::WBP_UI_Results_Reward_WeaponProgress_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.OnLoaded_BE567583454F8E94170EB98A814612C2
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_WeaponProgress_C::OnLoaded_BE567583454F8E94170EB98A814612C2(class UObject* Loaded)
 {
@@ -90,48 +98,6 @@ void UWBP_UI_Results_Reward_WeaponProgress_C::PlayAppearAnim()
 }
 
 
-// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.AddModUnlocks
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_WeaponProgress_C::AddModUnlocks()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "AddModUnlocks");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.ShowMods
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_WeaponProgress_C::ShowMods()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "ShowMods");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.AnimateBarsAndText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_WeaponProgress_C::AnimateBarsAndText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "AnimateBarsAndText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.PlayLevelUpAnim
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -146,29 +112,49 @@ void UWBP_UI_Results_Reward_WeaponProgress_C::PlayLevelUpAnim()
 }
 
 
-// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Results_Reward_WeaponProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress_0()
+void UWBP_UI_Results_Reward_WeaponProgress_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress_0");
+		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "PreConstruct");
+
+	Params::WBP_UI_Results_Reward_WeaponProgress_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_WeaponProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress_1
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Results_Reward_WeaponProgress.WBP_UI_Results_Reward_WeaponProgress_C.ShowMods
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Results_Reward_WeaponProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress_1()
+void UWBP_UI_Results_Reward_WeaponProgress_C::ShowMods()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_WeaponProgress_1");
+		Func = Class->GetFunction("WBP_UI_Results_Reward_WeaponProgress_C", "ShowMods");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

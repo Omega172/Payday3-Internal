@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.EmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DiscardItemPopUpBody_C::EmptySet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DiscardItemPopUpBody_C", "EmptySet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.ExecuteUbergraph_WBP_UI_DiscardItemPopUpBody
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,24 +50,10 @@ void UWBP_UI_DiscardItemPopUpBody_C::ExecuteUbergraph_WBP_UI_DiscardItemPopUpBod
 }
 
 
-// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.EmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DiscardItemPopUpBody_C::EmptySet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DiscardItemPopUpBody_C", "EmptySet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.SpriteLoaded
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_DiscardItemPopUpBody_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
 {

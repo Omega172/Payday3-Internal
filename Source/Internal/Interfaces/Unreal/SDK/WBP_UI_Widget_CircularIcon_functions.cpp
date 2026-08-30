@@ -16,41 +16,41 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_CircularIcon.WBP_UI_Widget_CircularIcon_C.ExecuteUbergraph_WBP_UI_Widget_CircularIcon
-// (Final, UbergraphFunction)
+// Function WBP_UI_Widget_CircularIcon.WBP_UI_Widget_CircularIcon_C.SetIcon
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_CircularIcon_C::ExecuteUbergraph_WBP_UI_Widget_CircularIcon(int32 EntryPoint)
+void UWBP_UI_Widget_CircularIcon_C::SetIcon(class UPaperSprite* InIcon)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CircularIcon_C", "ExecuteUbergraph_WBP_UI_Widget_CircularIcon");
+		Func = Class->GetFunction("WBP_UI_Widget_CircularIcon_C", "SetIcon");
 
-	Params::WBP_UI_Widget_CircularIcon_C_ExecuteUbergraph_WBP_UI_Widget_CircularIcon Parms{};
+	Params::WBP_UI_Widget_CircularIcon_C_SetIcon Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InIcon = InIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Widget_CircularIcon.WBP_UI_Widget_CircularIcon_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_CircularIcon.WBP_UI_Widget_CircularIcon_C.SetSelected
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_CircularIcon_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Widget_CircularIcon_C::SetSelected(bool bIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CircularIcon_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_Widget_CircularIcon_C", "SetSelected");
 
-	Params::WBP_UI_Widget_CircularIcon_C_PreConstruct Parms{};
+	Params::WBP_UI_Widget_CircularIcon_C_SetSelected Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -71,46 +71,6 @@ void UWBP_UI_Widget_CircularIcon_C::SetText(const class FText& InText)
 	Params::WBP_UI_Widget_CircularIcon_C_SetText Parms{};
 
 	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_CircularIcon.WBP_UI_Widget_CircularIcon_C.SetSelected
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_CircularIcon_C::SetSelected(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CircularIcon_C", "SetSelected");
-
-	Params::WBP_UI_Widget_CircularIcon_C_SetSelected Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_CircularIcon.WBP_UI_Widget_CircularIcon_C.SetIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     InIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_CircularIcon_C::SetIcon(class UPaperSprite* InIcon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CircularIcon_C", "SetIcon");
-
-	Params::WBP_UI_Widget_CircularIcon_C_SetIcon Parms{};
-
-	Parms.InIcon = InIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

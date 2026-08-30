@@ -10,13 +10,22 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
+
+// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.ButtonHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MouseOnly_TextButton_C_ButtonHoveredChanged final
+{
+public:
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_ButtonHoveredChanged;
 
 // Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.ExecuteUbergraph_WBP_MouseOnly_TextButton
 // 0x000C (0x000C - 0x0000)
@@ -24,41 +33,34 @@ struct WBP_MouseOnly_TextButton_C_ExecuteUbergraph_WBP_MouseOnly_TextButton fina
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_ExecuteUbergraph_WBP_MouseOnly_TextButton;
-
-// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MouseOnly_TextButton_C_ButtonHoveredChanged final
-{
-public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_ButtonHoveredChanged;
 
 // Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_MouseOnly_TextButton_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_PreConstruct;
 
-// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_MouseOnly_TextButton_C_SetText final
+// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetColours
+// 0x0034 (0x0034 - 0x0000)
+struct WBP_MouseOnly_TextButton_C_SetColours final
 {
 public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FLinearColor                           InFontColor;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           InBackgroundColor;                                 // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0014)()
 };
-DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_SetText;
+DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_SetColours;
 
 // Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetFont
 // 0x0060 (0x0060 - 0x0000)
@@ -69,16 +71,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_SetFont;
 
-// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetColours
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_MouseOnly_TextButton_C_SetColours final
+// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MouseOnly_TextButton_C_SetText final
 {
 public:
-	struct FLinearColor                           InFontColor;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           InBackgroundColor;                                 // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_SetColours;
+DUMPER7_ASSERTS_WBP_MouseOnly_TextButton_C_SetText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

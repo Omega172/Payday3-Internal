@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_Popup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Popup_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.ExecuteUbergraph_WBP_ServerBrowser_Popup
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,20 +50,6 @@ void UWBP_ServerBrowser_Popup_C::ExecuteUbergraph_WBP_ServerBrowser_Popup(int32 
 }
 
 
-// Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_Popup_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Popup_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.RemoveFontMaterial
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -64,15 +64,15 @@ void UWBP_ServerBrowser_Popup_C::RemoveFontMaterial()
 }
 
 
-// Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup_0
+// Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_Popup_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup_0()
+void UWBP_ServerBrowser_Popup_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Popup_C", "SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup_0");
+		Func = Class->GetFunction("WBP_ServerBrowser_Popup_C", "SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

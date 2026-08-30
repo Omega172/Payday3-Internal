@@ -36,41 +36,21 @@ void UWBP_CustomSpriteInputKey_C::ExecuteUbergraph_WBP_CustomSpriteInputKey(int3
 }
 
 
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetSprite
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.OnKeyIconChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class UPaperSprite*               Sprite                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     NewActionKeyIcon                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomSpriteInputKey_C::SetSprite(const class UPaperSprite* Sprite)
+void UWBP_CustomSpriteInputKey_C::OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomSpriteInputKey_C", "SetSprite");
+		Func = Class->GetFunction("WBP_CustomSpriteInputKey_C", "OnKeyIconChanged");
 
-	Params::WBP_CustomSpriteInputKey_C_SetSprite Parms{};
+	Params::WBP_CustomSpriteInputKey_C_OnKeyIconChanged Parms{};
 
-	Parms.Sprite = Sprite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetInverted
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInInverted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_CustomSpriteInputKey_C::SetInverted(bool bInInverted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomSpriteInputKey_C", "SetInverted");
-
-	Params::WBP_CustomSpriteInputKey_C_SetInverted Parms{};
-
-	Parms.bInInverted = bInInverted;
+	Parms.NewActionKeyIcon = NewActionKeyIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -79,7 +59,7 @@ void UWBP_CustomSpriteInputKey_C::SetInverted(bool bInInverted)
 // Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CustomSpriteInputKey_C::PreConstruct(bool IsDesignTime)
 {
@@ -96,21 +76,41 @@ void UWBP_CustomSpriteInputKey_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.OnKeyIconChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetInverted
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     NewActionKeyIcon                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInInverted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomSpriteInputKey_C::OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon)
+void UWBP_CustomSpriteInputKey_C::SetInverted(bool bInInverted)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CustomSpriteInputKey_C", "OnKeyIconChanged");
+		Func = Class->GetFunction("WBP_CustomSpriteInputKey_C", "SetInverted");
 
-	Params::WBP_CustomSpriteInputKey_C_OnKeyIconChanged Parms{};
+	Params::WBP_CustomSpriteInputKey_C_SetInverted Parms{};
 
-	Parms.NewActionKeyIcon = NewActionKeyIcon;
+	Parms.bInInverted = bInInverted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetSprite
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UPaperSprite*               Sprite                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteInputKey_C::SetSprite(const class UPaperSprite* Sprite)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CustomSpriteInputKey_C", "SetSprite");
+
+	Params::WBP_CustomSpriteInputKey_C_SetSprite Parms{};
+
+	Parms.Sprite = Sprite;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -24,16 +24,6 @@ enum class ESequenceTimeUnit : uint8
 	ESequenceTimeUnit_MAX                    = 2,
 };
 
-// ScriptStruct SequencerScripting.SequencerBindingProxy
-// 0x0018 (0x0018 - 0x0000)
-struct FSequencerBindingProxy final
-{
-public:
-	struct FGuid                                  BindingID;                                         // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UMovieSceneSequence*                    Sequence;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSequencerBindingProxy;
-
 // ScriptStruct SequencerScripting.SequencerScriptingRange
 // 0x0014 (0x0014 - 0x0000)
 struct FSequencerScriptingRange final
@@ -44,7 +34,7 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InclusiveStart;                                    // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ExclusiveEnd;                                      // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameRate                             InternalRate;                                      // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameRate                             InternalRate;                                      // 0x000C(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FSequencerScriptingRange;
 

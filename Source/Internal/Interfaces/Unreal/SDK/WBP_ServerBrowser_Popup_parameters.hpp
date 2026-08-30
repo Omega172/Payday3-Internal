@@ -17,15 +17,15 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.ExecuteUbergraph_WBP_ServerBrowser_Popup
-// 0x0088 (0x0088 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct WBP_ServerBrowser_Popup_C_ExecuteUbergraph_WBP_ServerBrowser_Popup final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0008(0x0018)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0028(0x0060)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0008(0x0010)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0020(0x0060)(HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_Popup_C_ExecuteUbergraph_WBP_ServerBrowser_Popup;
 

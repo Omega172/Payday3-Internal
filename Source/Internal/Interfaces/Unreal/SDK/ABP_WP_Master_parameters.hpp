@@ -16,16 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function ABP_WP_Master.ABP_WP_Master_C.ExecuteUbergraph_ABP_WP_Master
-// 0x0008 (0x0008 - 0x0000)
-struct ABP_WP_Master_C_ExecuteUbergraph_ABP_WP_Master final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_WP_Master_C_ExecuteUbergraph_ABP_WP_Master;
-
 // Function ABP_WP_Master.ABP_WP_Master_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
 struct ABP_WP_Master_C_AnimGraph final
@@ -34,6 +24,16 @@ public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 DUMPER7_ASSERTS_ABP_WP_Master_C_AnimGraph;
+
+// Function ABP_WP_Master.ABP_WP_Master_C.ExecuteUbergraph_ABP_WP_Master
+// 0x0008 (0x0008 - 0x0000)
+struct ABP_WP_Master_C_ExecuteUbergraph_ABP_WP_Master final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_WP_Master_C_ExecuteUbergraph_ABP_WP_Master;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

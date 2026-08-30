@@ -36,45 +36,59 @@ void UWBP_UI_Widget_DebugWidgetScreen_C::ExecuteUbergraph_WBP_UI_Widget_DebugWid
 }
 
 
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.InitializeHudData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_DebugWidgetScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_UI_Widget_DebugWidgetScreen_C::InitializeHudData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "Tick");
+		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "InitializeHudData");
 
-	Params::WBP_UI_Widget_DebugWidgetScreen_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnCinematicMode
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Widget_DebugWidgetScreen_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Widget_DebugWidgetScreen_C::OnCinematicMode()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "OnCinematicMode");
 
-	Params::WBP_UI_Widget_DebugWidgetScreen_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnFullscreenMode
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Widget_DebugWidgetScreen_C::OnFullscreenMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "OnFullscreenMode");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_DebugWidgetScreen_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -98,48 +112,6 @@ void UWBP_UI_Widget_DebugWidgetScreen_C::OnMissionSeedSet(int32 MissionSeed_0)
 }
 
 
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_DebugWidgetScreen_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnFullscreenMode
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Widget_DebugWidgetScreen_C::OnFullscreenMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "OnFullscreenMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnCinematicMode
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Widget_DebugWidgetScreen_C::OnCinematicMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "OnCinematicMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.OnWatermarkMode
 // (Event, Protected, BlueprintEvent)
 
@@ -154,17 +126,45 @@ void UWBP_UI_Widget_DebugWidgetScreen_C::OnWatermarkMode()
 }
 
 
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.InitializeHudData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_DebugWidgetScreen_C::InitializeHudData()
+void UWBP_UI_Widget_DebugWidgetScreen_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "InitializeHudData");
+		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_DebugWidgetScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_DebugWidgetScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_DebugWidgetScreen_C", "Tick");
+
+	Params::WBP_UI_Widget_DebugWidgetScreen_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

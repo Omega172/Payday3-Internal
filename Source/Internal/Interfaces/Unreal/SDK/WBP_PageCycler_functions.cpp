@@ -16,61 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PageCycler.WBP_PageCycler_C.ExecuteUbergraph_WBP_PageCycler
-// (Final, UbergraphFunction)
+// Function WBP_PageCycler.WBP_PageCycler_C.CreateAndAddPageCount
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycler_C::ExecuteUbergraph_WBP_PageCycler(int32 EntryPoint)
+void UWBP_PageCycler_C::CreateAndAddPageCount(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "ExecuteUbergraph_WBP_PageCycler");
+		Func = Class->GetFunction("WBP_PageCycler_C", "CreateAndAddPageCount");
 
-	Params::WBP_PageCycler_C_ExecuteUbergraph_WBP_PageCycler Parms{};
+	Params::WBP_PageCycler_C_CreateAndAddPageCount Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PageCycler_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "PreConstruct");
-
-	Params::WBP_PageCycler_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.OnInputTypeChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bKeyboardMouseInput                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PageCycler_C::OnInputTypeChanged(bool bKeyboardMouseInput)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "OnInputTypeChanged");
-
-	Params::WBP_PageCycler_C_OnInputTypeChanged Parms{};
-
-	Parms.bKeyboardMouseInput = bKeyboardMouseInput;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -104,49 +64,21 @@ void UWBP_PageCycler_C::EnableActionNavigation()
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.OnRightNavigationPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PageCycler_C::OnRightNavigationPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "OnRightNavigationPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.OnLeftNavigationPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PageCycler_C::OnLeftNavigationPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "OnLeftNavigationPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.UpdateActiveIndex
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PageCycler.WBP_PageCycler_C.ExecuteUbergraph_WBP_PageCycler
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   InNewIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycler_C::UpdateActiveIndex(int32 InNewIndex)
+void UWBP_PageCycler_C::ExecuteUbergraph_WBP_PageCycler(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "UpdateActiveIndex");
+		Func = Class->GetFunction("WBP_PageCycler_C", "ExecuteUbergraph_WBP_PageCycler");
 
-	Params::WBP_PageCycler_C_UpdateActiveIndex Parms{};
+	Params::WBP_PageCycler_C_ExecuteUbergraph_WBP_PageCycler Parms{};
 
-	Parms.InNewIndex = InNewIndex;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -172,6 +104,40 @@ void UWBP_PageCycler_C::OnAddedPage(int32 InIndex)
 }
 
 
+// Function WBP_PageCycler.WBP_PageCycler_C.OnInputTypeChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bKeyboardMouseInput                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageCycler_C::OnInputTypeChanged(bool bKeyboardMouseInput)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageCycler_C", "OnInputTypeChanged");
+
+	Params::WBP_PageCycler_C_OnInputTypeChanged Parms{};
+
+	Parms.bKeyboardMouseInput = bKeyboardMouseInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PageCycler.WBP_PageCycler_C.OnLeftNavigationPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PageCycler_C::OnLeftNavigationPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageCycler_C", "OnLeftNavigationPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PageCycler.WBP_PageCycler_C.OnNavItemClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -192,21 +158,55 @@ void UWBP_PageCycler_C::OnNavItemClicked(int32 InIndex)
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.CreateAndAddPageCount
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PageCycler.WBP_PageCycler_C.OnRightNavigationPressed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PageCycler_C::CreateAndAddPageCount(int32 Index_0)
+void UWBP_PageCycler_C::OnRightNavigationPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycler_C", "CreateAndAddPageCount");
+		Func = Class->GetFunction("WBP_PageCycler_C", "OnRightNavigationPressed");
 
-	Params::WBP_PageCycler_C_CreateAndAddPageCount Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Index_0 = Index_0;
+
+// Function WBP_PageCycler.WBP_PageCycler_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageCycler_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageCycler_C", "PreConstruct");
+
+	Params::WBP_PageCycler_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PageCycler.WBP_PageCycler_C.UpdateActiveIndex
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InNewIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageCycler_C::UpdateActiveIndex(int32 InNewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageCycler_C", "UpdateActiveIndex");
+
+	Params::WBP_PageCycler_C_UpdateActiveIndex Parms{};
+
+	Parms.InNewIndex = InNewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

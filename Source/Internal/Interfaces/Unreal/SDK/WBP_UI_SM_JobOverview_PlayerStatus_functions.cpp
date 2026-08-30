@@ -39,7 +39,7 @@ void UWBP_UI_SM_JobOverview_PlayerStatus_C::ExecuteUbergraph_WBP_UI_SM_JobOvervi
 // Function WBP_UI_SM_JobOverview_PlayerStatus.WBP_UI_SM_JobOverview_PlayerStatus_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SM_JobOverview_PlayerStatus_C::PreConstruct(bool IsDesignTime)
 {

@@ -16,6 +16,108 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_StoryButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_ServerBrowser_StoryButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_StoryButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_ServerBrowser_StoryButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_StoryButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_ServerBrowser_StoryButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_StoryButton_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_StoryButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_StoryButton_C::DisabledButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "DisabledButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ExecuteUbergraph_WBP_ServerBrowser_StoryButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,41 +138,21 @@ void UWBP_ServerBrowser_StoryButton_C::ExecuteUbergraph_WBP_ServerBrowser_StoryB
 }
 
 
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.OnDisabledChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InDisabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_StoryButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_ServerBrowser_StoryButton_C::OnDisabledChanged(bool InDisabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "OnDisabledChanged");
 
-	Params::WBP_ServerBrowser_StoryButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_ServerBrowser_StoryButton_C_OnDisabledChanged Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_StoryButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "PreConstruct");
-
-	Params::WBP_ServerBrowser_StoryButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InDisabled = InDisabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -79,7 +161,7 @@ void UWBP_ServerBrowser_StoryButton_C::PreConstruct(bool IsDesignTime)
 // Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.OnFocusChanged
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_StoryButton_C::OnFocusChanged(bool bIsFocused)
 {
@@ -96,65 +178,23 @@ void UWBP_ServerBrowser_StoryButton_C::OnFocusChanged(bool bIsFocused)
 }
 
 
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_StoryButton_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_StoryButton_C::DisabledButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "DisabledButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.OnFocusedChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_StoryButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_ServerBrowser_StoryButton_C::OnFocusedChanged(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "OnFocusedChanged");
 
-	Params::WBP_ServerBrowser_StoryButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_ServerBrowser_StoryButton_C_OnFocusedChanged Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_StoryButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -172,30 +212,10 @@ void UWBP_ServerBrowser_StoryButton_C::OnHeistDataInitialized()
 }
 
 
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_StoryButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_ServerBrowser_StoryButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.OnLoaded_2AEE3D384A6280472CCD6BB641BB60CC
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_StoryButton_C::OnLoaded_2AEE3D384A6280472CCD6BB641BB60CC(class UObject* Loaded)
 {
@@ -212,43 +232,37 @@ void UWBP_ServerBrowser_StoryButton_C::OnLoaded_2AEE3D384A6280472CCD6BB641BB60CC
 }
 
 
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.OnFocusedChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_StoryButton_C::OnFocusedChanged(bool bIsFocused)
+void UWBP_ServerBrowser_StoryButton_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "OnFocusedChanged");
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "PreConstruct");
 
-	Params::WBP_ServerBrowser_StoryButton_C_OnFocusedChanged Parms{};
+	Params::WBP_ServerBrowser_StoryButton_C_PreConstruct Parms{};
 
-	Parms.bIsFocused = bIsFocused;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.OnDisabledChanged
+// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ResetDisabledState
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InDisabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_ServerBrowser_StoryButton_C::OnDisabledChanged(bool InDisabled)
+void UWBP_ServerBrowser_StoryButton_C::ResetDisabledState()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "OnDisabledChanged");
+		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ResetDisabledState");
 
-	Params::WBP_ServerBrowser_StoryButton_C_OnDisabledChanged Parms{};
-
-	Parms.InDisabled = InDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -269,7 +283,7 @@ void UWBP_ServerBrowser_StoryButton_C::SetButtonLocked()
 // Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.SetBWEffect
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bHasSubFocus                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHasSubFocus                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_StoryButton_C::SetBWEffect(bool bHasSubFocus)
 {
@@ -283,20 +297,6 @@ void UWBP_ServerBrowser_StoryButton_C::SetBWEffect(bool bHasSubFocus)
 	Parms.bHasSubFocus = bHasSubFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_StoryButton.WBP_ServerBrowser_StoryButton_C.ResetDisabledState
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_StoryButton_C::ResetDisabledState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_StoryButton_C", "ResetDisabledState");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,6 +16,60 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_Replay_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_MainMenu_Replay_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_Replay_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_MainMenu_Replay_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_Replay_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ExecuteUbergraph_WBP_UI_MainMenu_Replay
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,75 +90,21 @@ void UWBP_UI_MainMenu_Replay_C::ExecuteUbergraph_WBP_UI_MainMenu_Replay(int32 En
 }
 
 
-// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.InitReplayInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FSBZReplayInfo&            InReplayInfor                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_MainMenu_Replay_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_MainMenu_Replay_C::InitReplayInfo(const struct FSBZReplayInfo& InReplayInfor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "InitReplayInfo");
 
-	Params::WBP_UI_MainMenu_Replay_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_MainMenu_Replay_C_InitReplayInfo Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_Replay_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_MainMenu_Replay_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_MainMenu_Replay_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_Replay_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "PreConstruct");
-
-	Params::WBP_UI_MainMenu_Replay_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InReplayInfor = std::move(InReplayInfor);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -124,21 +124,21 @@ void UWBP_UI_MainMenu_Replay_C::OnInitialized()
 }
 
 
-// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.SetStateHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_Replay_C::SetStateHover(bool bInIsHovered)
+void UWBP_UI_MainMenu_Replay_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "SetStateHover");
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "PreConstruct");
 
-	Params::WBP_UI_MainMenu_Replay_C_SetStateHover Parms{};
+	Params::WBP_UI_MainMenu_Replay_C_PreConstruct Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -147,7 +147,7 @@ void UWBP_UI_MainMenu_Replay_C::SetStateHover(bool bInIsHovered)
 // Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.SetStateFocused
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_Replay_C::SetStateFocused(bool bIsFocused)
 {
@@ -164,21 +164,21 @@ void UWBP_UI_MainMenu_Replay_C::SetStateFocused(bool bIsFocused)
 }
 
 
-// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.InitReplayInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_Replay.WBP_UI_MainMenu_Replay_C.SetStateHover
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZReplayInfo&            InReplayInfor                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_Replay_C::InitReplayInfo(const struct FSBZReplayInfo& InReplayInfor)
+void UWBP_UI_MainMenu_Replay_C::SetStateHover(bool bInIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "InitReplayInfo");
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replay_C", "SetStateHover");
 
-	Params::WBP_UI_MainMenu_Replay_C_InitReplayInfo Parms{};
+	Params::WBP_UI_MainMenu_Replay_C_SetStateHover Parms{};
 
-	Parms.InReplayInfor = std::move(InReplayInfor);
+	Parms.bInIsHovered = bInIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

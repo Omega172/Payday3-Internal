@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FSBZArmorConfig&           ArmorConfig                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    IsLoadout                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsLoadout                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ArmorChunk_EquippedDisplay_C::SetSlotData(const struct FSBZArmorConfig& ArmorConfig, bool IsLoadout)
 {

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass Settings_GroupTitle.Settings_GroupTitle_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0370 - 0x0370)
 class USettings_GroupTitle_C final : public UTextBlock
 {
 public:

@@ -36,80 +36,6 @@ void UWBP_UI_Results_PlayerStatus_C::ExecuteUbergraph_WBP_UI_Results_PlayerStatu
 }
 
 
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Results_PlayerStatus_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "PreConstruct");
-
-	Params::WBP_UI_Results_PlayerStatus_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.UpdateInfamyLevel
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZPlayerState*                  PlayerState_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_PlayerStatus_C::UpdateInfamyLevel(class ASBZPlayerState* PlayerState_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "UpdateInfamyLevel");
-
-	Params::WBP_UI_Results_PlayerStatus_C_UpdateInfamyLevel Parms{};
-
-	Parms.PlayerState_0 = PlayerState_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.SetAccelByteDisplayName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    AccelByteDisplayName_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_PlayerStatus_C::SetAccelByteDisplayName(const class FString& AccelByteDisplayName_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "SetAccelByteDisplayName");
-
-	Params::WBP_UI_Results_PlayerStatus_C_SetAccelByteDisplayName Parms{};
-
-	Parms.AccelByteDisplayName_0 = std::move(AccelByteDisplayName_0);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.UpdateTextNebulaPlayerName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_PlayerStatus_C::UpdateTextNebulaPlayerName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "UpdateTextNebulaPlayerName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.GetPlayerStats
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -119,20 +45,6 @@ void UWBP_UI_Results_PlayerStatus_C::GetPlayerStats()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "GetPlayerStats");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.SetPlayerStats
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_PlayerStatus_C::SetPlayerStats()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "SetPlayerStats");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -166,8 +78,8 @@ void UWBP_UI_Results_PlayerStatus_C::GetStatByIndex(int32 Index_0, int32* Value)
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZUITextBlock**                 Text                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZUITextBlock**                 Title                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZUITextBlock**                 Text                                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZUITextBlock**                 Title                                                  (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_PlayerStatus_C::GetTextByIndex(int32 Index_0, class USBZUITextBlock** Text, class USBZUITextBlock** Title)
 {
@@ -187,60 +99,6 @@ void UWBP_UI_Results_PlayerStatus_C::GetTextByIndex(int32 Index_0, class USBZUIT
 
 	if (Title != nullptr)
 		*Title = Parms.Title;
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.SetCategoryWon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_PlayerStatus_C::SetCategoryWon(int32 Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "SetCategoryWon");
-
-	Params::WBP_UI_Results_PlayerStatus_C_SetCategoryWon Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.OnPlayerLeave
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_PlayerStatus_C::OnPlayerLeave(class AActor* DestroyedActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "OnPlayerLeave");
-
-	Params::WBP_UI_Results_PlayerStatus_C_OnPlayerLeave Parms{};
-
-	Parms.DestroyedActor = DestroyedActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.PlayAddedAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_PlayerStatus_C::PlayAddedAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "PlayAddedAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -281,6 +139,148 @@ void UWBP_UI_Results_PlayerStatus_C::On_Left_P2PSession()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "On Left P2PSession");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.OnPlayerLeave
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_PlayerStatus_C::OnPlayerLeave(class AActor* DestroyedActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "OnPlayerLeave");
+
+	Params::WBP_UI_Results_PlayerStatus_C_OnPlayerLeave Parms{};
+
+	Parms.DestroyedActor = DestroyedActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.PlayAddedAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_PlayerStatus_C::PlayAddedAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "PlayAddedAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_PlayerStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "PreConstruct");
+
+	Params::WBP_UI_Results_PlayerStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.SetAccelByteDisplayName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    AccelByteDisplayName_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_PlayerStatus_C::SetAccelByteDisplayName(const class FString& AccelByteDisplayName_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "SetAccelByteDisplayName");
+
+	Params::WBP_UI_Results_PlayerStatus_C_SetAccelByteDisplayName Parms{};
+
+	Parms.AccelByteDisplayName_0 = std::move(AccelByteDisplayName_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.SetCategoryWon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_PlayerStatus_C::SetCategoryWon(int32 Selection)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "SetCategoryWon");
+
+	Params::WBP_UI_Results_PlayerStatus_C_SetCategoryWon Parms{};
+
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.SetPlayerStats
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_PlayerStatus_C::SetPlayerStats()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "SetPlayerStats");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.UpdateInfamyLevel
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZPlayerState*                  PlayerState_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_PlayerStatus_C::UpdateInfamyLevel(class ASBZPlayerState* PlayerState_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "UpdateInfamyLevel");
+
+	Params::WBP_UI_Results_PlayerStatus_C_UpdateInfamyLevel Parms{};
+
+	Parms.PlayerState_0 = PlayerState_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_PlayerStatus.WBP_UI_Results_PlayerStatus_C.UpdateTextNebulaPlayerName
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_PlayerStatus_C::UpdateTextNebulaPlayerName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_PlayerStatus_C", "UpdateTextNebulaPlayerName");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

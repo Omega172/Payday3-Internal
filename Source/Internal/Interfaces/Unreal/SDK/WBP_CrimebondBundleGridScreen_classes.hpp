@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C
-// 0x0018 (0x0360 - 0x0348)
+// 0x0018 (0x03C0 - 0x03A8)
 class UWBP_CrimebondBundleGridScreen_C final : public USBZBundleGridScreenWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Show;                                              // 0x0350(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Show;                                              // 0x03B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CrimebondBundleGridScreen(int32 EntryPoint);
-	void BP_OnDecoSelected(class USBZInventoryItemDecorator* Deco);
 	void BP_OnBundleApplied(const class USBZItemBundleData* InBundleData);
+	void BP_OnDecoSelected(class USBZInventoryItemDecorator* Deco);
+	void ExecuteUbergraph_WBP_CrimebondBundleGridScreen(int32 EntryPoint);
 	void OnControlReferencedPressed(class FName ActionName);
 	void OnGainedStackFocused(const class FName& PreviousValue);
 	void UpdateInspectAction(class USBZInventoryItemDecorator* InDecorator);

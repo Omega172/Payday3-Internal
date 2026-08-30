@@ -16,95 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function ConstructionSystemRuntime.ConstructionSystemSaveSystem.HandleConstructionSystemLevelLoad
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UConstructionSystemSaveSystem::HandleConstructionSystemLevelLoad(const class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ConstructionSystemSaveSystem", "HandleConstructionSystemLevelLoad");
-
-	Params::ConstructionSystemSaveSystem_HandleConstructionSystemLevelLoad Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ConstructionSystemRuntime.ConstructionSystemSaveSystem.LoadConstructionSystemLevel
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FName&                      LevelName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bAbsolute                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    SaveSlotName                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   UserIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UConstructionSystemSaveSystem::LoadConstructionSystemLevel(const class UObject* WorldContextObject, const class FName& LevelName, bool bAbsolute, const class FString& SaveSlotName, int32 UserIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ConstructionSystemSaveSystem", "LoadConstructionSystemLevel");
-
-	Params::ConstructionSystemSaveSystem_LoadConstructionSystemLevel Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.LevelName = LevelName;
-	Parms.bAbsolute = bAbsolute;
-	Parms.SaveSlotName = std::move(SaveSlotName);
-	Parms.UserIndex = UserIndex;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ConstructionSystemRuntime.ConstructionSystemSaveSystem.SaveConstructionSystemLevel
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    SaveSlotName                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   UserIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bSavePlayerState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UConstructionSystemSaveSystem::SaveConstructionSystemLevel(const class UObject* WorldContextObject, const class FString& SaveSlotName, int32 UserIndex, bool bSavePlayerState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ConstructionSystemSaveSystem", "SaveConstructionSystemLevel");
-
-	Params::ConstructionSystemSaveSystem_SaveConstructionSystemLevel Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.SaveSlotName = std::move(SaveSlotName);
-	Parms.UserIndex = UserIndex;
-	Parms.bSavePlayerState = bSavePlayerState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function ConstructionSystemRuntime.ConstructionSystemBuildTool.HandleInput_ConstructAtCursor
 // (Final, Native, Private)
 
@@ -190,7 +101,7 @@ void UConstructionSystemBuildTool::HandleInput_RotateCursorStep(float NumSteps)
 // Function ConstructionSystemRuntime.ConstructionSystemBuildTool.SetActivePrefab
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UPrefabricatorAssetInterface*     InActivePrefabAsset                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPrefabricatorAssetInterface*     InActivePrefabAsset                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UConstructionSystemBuildTool::SetActivePrefab(class UPrefabricatorAssetInterface* InActivePrefabAsset)
 {
@@ -259,7 +170,7 @@ void UConstructionSystemComponent::EnableConstructionSystem(EConstructionSystemT
 // Function ConstructionSystemRuntime.ConstructionSystemComponent.GetActiveTool
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UConstructionSystemTool*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UConstructionSystemTool*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UConstructionSystemTool* UConstructionSystemComponent::GetActiveTool()
 {
@@ -285,7 +196,7 @@ class UConstructionSystemTool* UConstructionSystemComponent::GetActiveTool()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // EConstructionSystemToolType             InToolType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UConstructionSystemTool*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UConstructionSystemTool*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UConstructionSystemTool* UConstructionSystemComponent::GetTool(EConstructionSystemToolType InToolType)
 {
@@ -435,10 +346,99 @@ void UConstructionSystemRemoveTool::HandleInput_RemoveAtCursor()
 }
 
 
+// Function ConstructionSystemRuntime.ConstructionSystemSaveSystem.HandleConstructionSystemLevelLoad
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UConstructionSystemSaveSystem::HandleConstructionSystemLevelLoad(const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ConstructionSystemSaveSystem", "HandleConstructionSystemLevelLoad");
+
+	Params::ConstructionSystemSaveSystem_HandleConstructionSystemLevelLoad Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ConstructionSystemRuntime.ConstructionSystemSaveSystem.LoadConstructionSystemLevel
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FName&                      LevelName                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bAbsolute                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    SaveSlotName                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   UserIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UConstructionSystemSaveSystem::LoadConstructionSystemLevel(const class UObject* WorldContextObject, const class FName& LevelName, bool bAbsolute, const class FString& SaveSlotName, int32 UserIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ConstructionSystemSaveSystem", "LoadConstructionSystemLevel");
+
+	Params::ConstructionSystemSaveSystem_LoadConstructionSystemLevel Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.LevelName = LevelName;
+	Parms.bAbsolute = bAbsolute;
+	Parms.SaveSlotName = std::move(SaveSlotName);
+	Parms.UserIndex = UserIndex;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ConstructionSystemRuntime.ConstructionSystemSaveSystem.SaveConstructionSystemLevel
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    SaveSlotName                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   UserIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bSavePlayerState                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UConstructionSystemSaveSystem::SaveConstructionSystemLevel(const class UObject* WorldContextObject, const class FString& SaveSlotName, int32 UserIndex, bool bSavePlayerState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("ConstructionSystemSaveSystem", "SaveConstructionSystemLevel");
+
+	Params::ConstructionSystemSaveSystem_SaveConstructionSystemLevel Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.SaveSlotName = std::move(SaveSlotName);
+	Parms.UserIndex = UserIndex;
+	Parms.bSavePlayerState = bSavePlayerState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function ConstructionSystemRuntime.ConstructionSystemBuildUI.SetConstructionSystem
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UConstructionSystemComponent*     ConstructionSystem                                     (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UConstructionSystemComponent*     ConstructionSystem                                     (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void IConstructionSystemBuildUI::SetConstructionSystem(class UConstructionSystemComponent* ConstructionSystem)
 {
@@ -458,7 +458,7 @@ void IConstructionSystemBuildUI::SetConstructionSystem(class UConstructionSystem
 // Function ConstructionSystemRuntime.ConstructionSystemBuildUI.SetUIAsset
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UConstructionSystemUIAsset*       UIAsset                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UConstructionSystemUIAsset*       UIAsset                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void IConstructionSystemBuildUI::SetUIAsset(class UConstructionSystemUIAsset* UIAsset)
 {

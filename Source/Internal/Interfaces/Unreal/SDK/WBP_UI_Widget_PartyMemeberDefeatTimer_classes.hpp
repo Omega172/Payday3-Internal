@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_PartyMemeberDefeatTimer.WBP_UI_Widget_PartyMemeberDefeatTimer_C
-// 0x0000 (0x02A8 - 0x02A8)
+// 0x0000 (0x0308 - 0x0308)
 class UWBP_UI_Widget_PartyMemeberDefeatTimer_C final : public UPD3DefeatTimerWidget
 {
 public:

@@ -16,6 +16,28 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.DisplaySkillsScreen
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FSBZPlayerLoadoutConfig&         NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Loadout_SkillsCustomization_C::DisplaySkillsScreen(struct FSBZPlayerLoadoutConfig& NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Loadout_SkillsCustomization_C", "DisplaySkillsScreen");
+
+	Params::WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen Parms{};
+
+	Parms.NewParam = std::move(NewParam);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	NewParam = std::move(Parms.NewParam);
+}
+
+
 // Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.ExecuteUbergraph_WBP_UI_Loadout_SkillsCustomization
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,34 +55,6 @@ void UWBP_UI_Loadout_SkillsCustomization_C::ExecuteUbergraph_WBP_UI_Loadout_Skil
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnTutorialHidden
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Loadout_SkillsCustomization_C::OnTutorialHidden()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Loadout_SkillsCustomization_C", "OnTutorialHidden");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Loadout_SkillsCustomization_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Loadout_SkillsCustomization_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -104,32 +98,38 @@ void UWBP_UI_Loadout_SkillsCustomization_C::OnGainedStackFocused(const class FNa
 }
 
 
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.DisplaySkillsScreen
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FSBZPlayerLoadoutConfig&         NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Loadout_SkillsCustomization_C::DisplaySkillsScreen(struct FSBZPlayerLoadoutConfig& NewParam)
+void UWBP_UI_Loadout_SkillsCustomization_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Loadout_SkillsCustomization_C", "DisplaySkillsScreen");
+		Func = Class->GetFunction("WBP_UI_Loadout_SkillsCustomization_C", "OnLostStackFocused");
 
-	Params::WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewParam = std::move(NewParam);
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnTutorialHidden
+// (Event, Protected, BlueprintEvent)
 
-	NewParam = std::move(Parms.NewParam);
+void UWBP_UI_Loadout_SkillsCustomization_C::OnTutorialHidden()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Loadout_SkillsCustomization_C", "OnTutorialHidden");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.Set Equip Skills
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZSkill*&                 Skill                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZSkill*&                 Skill                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 // uint8                                   SkillState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Loadout_SkillsCustomization_C::Set_Equip_Skills(const class USBZSkill*& Skill, uint8 SkillState)

@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "GameplayCameras_classes.hpp"
+#include "EngineCameras_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CS_FireWeapon_Revolver_Bullkick500.CS_FireWeapon_Revolver_Bullkick500_C
-// 0x0000 (0x01B0 - 0x01B0)
-class UCS_FireWeapon_Revolver_Bullkick500_C final : public UMatineeCameraShake
+// 0x0000 (0x01F0 - 0x01F0)
+class UCS_FireWeapon_Revolver_Bullkick500_C final : public ULegacyCameraShake
 {
 public:
 	static class UClass* StaticClass()

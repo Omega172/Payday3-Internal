@@ -82,6 +82,7 @@ DWORD WINAPI FrameworkMainThread(LPVOID lpParam)
 	Framework::renderer.get()->Destroy();
 
 #if ENGINE_UNREAL
+	Utils::LogDebug("Destroying AimbotHooks...");
 	Framework::aimbotHooks.get()->Destroy();
 #endif
 

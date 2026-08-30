@@ -16,6 +16,84 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature");
+
+	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.CosmeticButton = CosmeticButton;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+
+	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MaskCustomization_Pattern_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ExecuteUbergraph_WBP_MaskCustomization_Pattern
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -56,64 +134,6 @@ void UWBP_MaskCustomization_Pattern_C::OnControlsReferenceClicked(class FName Ac
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature");
-
-	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.CosmeticButton = CosmeticButton;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -134,131 +154,15 @@ void UWBP_MaskCustomization_Pattern_C::OnGainedStackFocused(const class FName& P
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
+void UWBP_MaskCustomization_Pattern_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MaskCustomization_Pattern_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "PreConstruct");
-
-	Params::WBP_MaskCustomization_Pattern_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ShowDescriptionForButton
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMainMenuCosmeticItemButton*   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MaskCustomization_Pattern_C::ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "ShowDescriptionForButton");
-
-	Params::WBP_MaskCustomization_Pattern_C_ShowDescriptionForButton Parms{};
-
-	Parms.InputPin = InputPin;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnSprayCanSelectorFocusChanged");
-
-	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorFocusChanged Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorButtonSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnSprayCanSelectorButtonSelected");
-
-	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorButtonSelected Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.SetPreviewMaskParts
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::SetPreviewMaskParts()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "SetPreviewMaskParts");
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -289,6 +193,102 @@ void UWBP_MaskCustomization_Pattern_C::OnSprayCanIndexForwards()
 		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnSprayCanIndexForwards");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorButtonSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnSprayCanSelectorButtonSelected");
+
+	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorButtonSelected Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "OnSprayCanSelectorFocusChanged");
+
+	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorFocusChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "PreConstruct");
+
+	Params::WBP_MaskCustomization_Pattern_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.SetPreviewMaskParts
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MaskCustomization_Pattern_C::SetPreviewMaskParts()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "SetPreviewMaskParts");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ShowDescriptionForButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCosmeticItemButton*   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MaskCustomization_Pattern_C", "ShowDescriptionForButton");
+
+	Params::WBP_MaskCustomization_Pattern_C_ShowDescriptionForButton Parms{};
+
+	Parms.InputPin = InputPin;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

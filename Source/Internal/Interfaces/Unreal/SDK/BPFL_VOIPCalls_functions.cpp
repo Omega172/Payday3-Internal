@@ -19,10 +19,10 @@ SDK_NAMESPACE_START
 // Function BPFL_VOIPCalls.BPFL_VOIPCalls_C.CanPlayerTalk
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UObject*                    WorldContextObject                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const class FString&                    Epic_ID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   AbleToTalk                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   AbleToTalk                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBPFL_VOIPCalls_C::CanPlayerTalk(const class UObject* WorldContextObject, const class FString& Epic_ID, class UObject* __WorldContext, bool* AbleToTalk)
 {
@@ -47,8 +47,8 @@ void UBPFL_VOIPCalls_C::CanPlayerTalk(const class UObject* WorldContextObject, c
 // Function BPFL_VOIPCalls.BPFL_VOIPCalls_C.IsPlayerInChannel
 // (Static, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   InVoiceChannel                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   InVoiceChannel                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBPFL_VOIPCalls_C::IsPlayerInChannel(class UObject* __WorldContext, bool* InVoiceChannel)
 {

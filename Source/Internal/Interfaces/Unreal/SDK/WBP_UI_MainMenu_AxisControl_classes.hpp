@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_MainMenu_AxisControl.WBP_UI_MainMenu_AxisControl_C
-// 0x0000 (0x02C0 - 0x02C0)
+// 0x0000 (0x0320 - 0x0320)
 class UWBP_UI_MainMenu_AxisControl_C final : public USBZControlsReferenceAxisWidget
 {
 public:

@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.ExecuteUbergraph_BPW_UI_MatchMakingCancel
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBPW_UI_MatchMakingCancel_C::ExecuteUbergraph_BPW_UI_MatchMakingCancel(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPW_UI_MatchMakingCancel_C", "ExecuteUbergraph_BPW_UI_MatchMakingCancel");
-
-	Params::BPW_UI_MatchMakingCancel_C_ExecuteUbergraph_BPW_UI_MatchMakingCancel Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.BndEvt__BPW_UI_MatchMakingCancel_WBP_UI_Widget_ActionInput_Hold_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
 // (BlueprintEvent)
 
@@ -67,7 +47,7 @@ void UBPW_UI_MatchMakingCancel_C::BndEvt__BPW_UI_MatchMakingCancel_WBP_UI_Widget
 // Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.ButtonHoveredChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBPW_UI_MatchMakingCancel_C::ButtonHoveredChanged(bool bInIsHovered)
 {
@@ -79,6 +59,26 @@ void UBPW_UI_MatchMakingCancel_C::ButtonHoveredChanged(bool bInIsHovered)
 	Params::BPW_UI_MatchMakingCancel_C_ButtonHoveredChanged Parms{};
 
 	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.ExecuteUbergraph_BPW_UI_MatchMakingCancel
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBPW_UI_MatchMakingCancel_C::ExecuteUbergraph_BPW_UI_MatchMakingCancel(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BPW_UI_MatchMakingCancel_C", "ExecuteUbergraph_BPW_UI_MatchMakingCancel");
+
+	Params::BPW_UI_MatchMakingCancel_C_ExecuteUbergraph_BPW_UI_MatchMakingCancel Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

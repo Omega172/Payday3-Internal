@@ -18,12 +18,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C
-// 0x0010 (0x02E0 - 0x02D0)
+// 0x0010 (0x0370 - 0x0360)
 class ABP_Tool_Base_Ghost_C : public ASBZGhostTool
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMaterialInterface*                     DefaultMaterial;                                   // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMaterialInterface*                     DefaultMaterial;                                   // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_Tool_Base_Ghost(int32 EntryPoint);

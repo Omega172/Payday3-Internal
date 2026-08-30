@@ -16,23 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_LoadingScreen.WBP_UI_Widget_LoadingScreen_C.ExecuteUbergraph_WBP_UI_Widget_LoadingScreen
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Widget_LoadingScreen.WBP_UI_Widget_LoadingScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Widget_LoadingScreen_C::ExecuteUbergraph_WBP_UI_Widget_LoadingScreen(int32 EntryPoint)
+void UWBP_UI_Widget_LoadingScreen_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_LoadingScreen_C", "ExecuteUbergraph_WBP_UI_Widget_LoadingScreen");
+		Func = Class->GetFunction("WBP_UI_Widget_LoadingScreen_C", "Construct");
 
-	Params::WBP_UI_Widget_LoadingScreen_C_ExecuteUbergraph_WBP_UI_Widget_LoadingScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -50,17 +44,23 @@ void UWBP_UI_Widget_LoadingScreen_C::Destruct()
 }
 
 
-// Function WBP_UI_Widget_LoadingScreen.WBP_UI_Widget_LoadingScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_LoadingScreen.WBP_UI_Widget_LoadingScreen_C.ExecuteUbergraph_WBP_UI_Widget_LoadingScreen
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_LoadingScreen_C::Construct()
+void UWBP_UI_Widget_LoadingScreen_C::ExecuteUbergraph_WBP_UI_Widget_LoadingScreen(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_LoadingScreen_C", "Construct");
+		Func = Class->GetFunction("WBP_UI_Widget_LoadingScreen_C", "ExecuteUbergraph_WBP_UI_Widget_LoadingScreen");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_LoadingScreen_C_ExecuteUbergraph_WBP_UI_Widget_LoadingScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

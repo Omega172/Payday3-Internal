@@ -39,7 +39,7 @@ void UWBP_InfamyPoints_C::ExecuteUbergraph_WBP_InfamyPoints(int32 EntryPoint)
 // Function WBP_InfamyPoints.WBP_InfamyPoints_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InfamyPoints_C::PreConstruct(bool IsDesignTime)
 {

@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function WBP_Tooltip.WBP_Tooltip_C.InitData
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryBaseData*            InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Tooltip_C::InitData(class USBZInventoryBaseData* InData)
 {

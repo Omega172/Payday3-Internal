@@ -16,21 +16,141 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.ExecuteUbergraph_WBP_UI_Skills_Description
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillProgress
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Description_C::ExecuteUbergraph_WBP_UI_Skills_Description(int32 EntryPoint)
+void UWBP_UI_Skills_Description_C::SetSkillProgress(class UWBP_UI_Skills_Button_C* SkillButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "ExecuteUbergraph_WBP_UI_Skills_Description");
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillProgress");
 
-	Params::WBP_UI_Skills_Description_C_ExecuteUbergraph_WBP_UI_Skills_Description Parms{};
+	Params::WBP_UI_Skills_Description_C_SetSkillProgress Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetState
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Skills_Button_C*          SkillsButton                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetState(class UWBP_UI_Skills_Button_C* SkillsButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetState");
+
+	Params::WBP_UI_Skills_Description_C_SetState Parms{};
+
+	Parms.SkillsButton = SkillsButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillImage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetSkillImage(class UWBP_UI_Skills_Button_C* SkillButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillImage");
+
+	Params::WBP_UI_Skills_Description_C_SetSkillImage Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillDescription
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetSkillDescription(class UWBP_UI_Skills_Button_C* SkillButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillDescription");
+
+	Params::WBP_UI_Skills_Description_C_SetSkillDescription Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetSkillInfo(class UWBP_UI_Skills_Button_C* SkillButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillInfo");
+
+	Params::WBP_UI_Skills_Description_C_SetSkillInfo Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSkillData*                    Skill_data                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetSkillInfoOld(class USBZSkillData* Skill_data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillInfoOld");
+
+	Params::WBP_UI_Skills_Description_C_SetSkillInfoOld Parms{};
+
+	Parms.Skill_data = Skill_data;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetFocusedButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Skills_Button_C*          Skill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetFocusedButton(class UWBP_UI_Skills_Button_C* Skill)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetFocusedButton");
+
+	Params::WBP_UI_Skills_Description_C_SetFocusedButton Parms{};
+
+	Parms.Skill = Skill;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,141 +178,21 @@ void UWBP_UI_Skills_Description_C::Tick(const struct FGeometry& MyGeometry, floa
 }
 
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetFocusedButton
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.ExecuteUbergraph_WBP_UI_Skills_Description
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UWBP_UI_Skills_Button_C*          Skill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Description_C::SetFocusedButton(class UWBP_UI_Skills_Button_C* Skill)
+void UWBP_UI_Skills_Description_C::ExecuteUbergraph_WBP_UI_Skills_Description(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetFocusedButton");
+		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "ExecuteUbergraph_WBP_UI_Skills_Description");
 
-	Params::WBP_UI_Skills_Description_C_SetFocusedButton Parms{};
+	Params::WBP_UI_Skills_Description_C_ExecuteUbergraph_WBP_UI_Skills_Description Parms{};
 
-	Parms.Skill = Skill;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSkillData*                    Skill_data                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetSkillInfoOld(class USBZSkillData* Skill_data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillInfoOld");
-
-	Params::WBP_UI_Skills_Description_C_SetSkillInfoOld Parms{};
-
-	Parms.Skill_data = Skill_data;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetSkillInfo(class UWBP_UI_Skills_Button_C* SkillButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillInfo");
-
-	Params::WBP_UI_Skills_Description_C_SetSkillInfo Parms{};
-
-	Parms.SkillButton = SkillButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillDescription
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetSkillDescription(class UWBP_UI_Skills_Button_C* SkillButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillDescription");
-
-	Params::WBP_UI_Skills_Description_C_SetSkillDescription Parms{};
-
-	Parms.SkillButton = SkillButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillImage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetSkillImage(class UWBP_UI_Skills_Button_C* SkillButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillImage");
-
-	Params::WBP_UI_Skills_Description_C_SetSkillImage Parms{};
-
-	Parms.SkillButton = SkillButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetState
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillsButton                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetState(class UWBP_UI_Skills_Button_C* SkillsButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetState");
-
-	Params::WBP_UI_Skills_Description_C_SetState Parms{};
-
-	Parms.SkillsButton = SkillsButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillProgress
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetSkillProgress(class UWBP_UI_Skills_Button_C* SkillButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Skills_Description_C", "SetSkillProgress");
-
-	Params::WBP_UI_Skills_Description_C_SetSkillProgress Parms{};
-
-	Parms.SkillButton = SkillButton;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

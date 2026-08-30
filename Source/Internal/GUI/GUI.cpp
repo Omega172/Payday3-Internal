@@ -2,6 +2,7 @@
 #include "../Features/Player/Player.hpp"
 #include "../Features/Visuals/Visuals.hpp"
 #include "../Features/Aimbot/Aimbot.hpp"
+#include "../Interfaces/Unreal/Unreal.hpp"
 
 void GUI::Render()
 {
@@ -85,6 +86,12 @@ void GUI::Render()
 					Utils::OpenFolder(optPath.value());
 			});
 			GuiDeveloperPage->AddElement(GuiOpenLogsFolder.get());
+
+			vtableprint->SetCallback([]()
+			{
+				// Ignore this, I used it earlier
+			});
+			GuiDeveloperPage->AddElement(vtableprint.get());
 
 			GuiSettingsPage->SetPageId(GuiSettings->GetPageId());
 

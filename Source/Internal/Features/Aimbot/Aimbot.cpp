@@ -124,12 +124,14 @@ void Aimbot::Render()
 	const float deltaYaw = NormalizeAngle(desiredRotation.Yaw - rotCameraRotation.Yaw) * alpha;
 	const float deltaPitch = NormalizeAngle(desiredRotation.Pitch - rotCameraRotation.Pitch) * alpha;
 
-	if (m_pAimbotType->GetSelectedIndex() == 0 && ImGui::IsMouseDown(ImGuiMouseButton_Left))
+	ShouldOverrideView = false;
+	if (CurrentAimbotType() == 0 && ImGui::IsMouseDown(ImGuiMouseButton_Left))
 	{
+		ShouldOverrideView = true;
 		OverrideLocation = optTarget->AimWorldLocation;
 		OverrideRotation = desiredRotation;
 	}
-	else if (m_pAimbotType->GetSelectedIndex() == 1)
+	else if (CurrentAimbotType() == 1)
 	{
 		pPlayerController->AddYawInput(deltaYaw);
 		pPlayerController->AddPitchInput(-deltaPitch);

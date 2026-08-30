@@ -24,10 +24,34 @@ struct WBP_HUDOverlay_QuestWidget_C_ExecuteUbergraph_WBP_HUDOverlay_QuestWidget 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetUserId_ReturnValue;                    // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_StriStri_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FString                                 CallFunc_GetLocalAccelByteUserId_ReturnValue;      // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_StriStri_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_ExecuteUbergraph_WBP_HUDOverlay_QuestWidget;
+
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeData
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeData final
+{
+public:
+	struct FSBZUIQuestChallengeData               InQuestChallenge;                                  // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   OutText;                                           // 0x0038(0x0010)(Parm, OutParm)
+	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x0050(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeData;
+
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeNotificationData
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeNotificationData final
+{
+public:
+	struct FSBZQuestChallengeNotificationData     InQuestNotifChallenge;                             // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   OutText;                                           // 0x0050(0x0010)(Parm, OutParm)
+	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x0068(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeNotificationData;
 
 // Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.Initialize
 // 0x00C0 (0x00C0 - 0x0000)
@@ -35,24 +59,24 @@ struct WBP_HUDOverlay_QuestWidget_C_Initialize final
 {
 public:
 	int32                                         ActiveQuestCount;                                  // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FSBZQuestChallengeCompletedData& QuestChallengeCompletedData)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor)
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FSBZQuestChallengeNotificationData& QuestChallengeUpdatedData)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0020(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FSBZQuestChallengeCompletedData& QuestChallengeCompletedData)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FSBZQuestChallengeNotificationData& QuestChallengeUpdatedData)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0020(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue_1;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue_2;                        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue_3;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue_1;                        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue_2;                        // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue_3;                        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FSBZQuestChallenge>             CallFunc_GetActiveChallenges_OutQuestChallengeArray; // 0x0050(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZUIQuestData                        CallFunc_GetQuestData_OutQuestData;                // 0x0068(0x0050)()
-	bool                                          CallFunc_GetQuestData_ReturnValue;                 // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetQuestData_ReturnValue;                 // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_Initialize;
 
 // Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.InitializeQuest
-// 0x0278 (0x0278 - 0x0000)
+// 0x02A8 (0x02A8 - 0x0000)
 struct WBP_HUDOverlay_QuestWidget_C_InitializeQuest final
 {
 public:
@@ -61,132 +85,119 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0098(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00D8(0x0040)(HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0120(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0160(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01A0(0x0010)(ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x01B0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01C0(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01D8(0x0018)()
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetChallengeDescriptionTextFromQuestChallengeData_OutText; // 0x01F8(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_212[0x6];                                      // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x0224(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZUIQuestChallengeData               CallFunc_GetUIQuestChallengeData_outUIQuestChallengeData; // 0x0238(0x0038)()
-	bool                                          CallFunc_GetUIQuestChallengeData_ReturnValue;      // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0095(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0096(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_97[0x1];                                       // 0x0097(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0048)(HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0100(0x0048)(HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0160(0x0010)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_2;            // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0178(0x0048)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_3;            // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x01D0(0x0048)(HasGetValueTypeHash)
+	class FText                                   CallFunc_GetChallengeDescriptionTextFromQuestChallengeData_OutText; // 0x0218(0x0010)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0228(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0238(0x0010)()
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x0254(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_261[0x7];                                      // 0x0261(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZUIQuestChallengeData               CallFunc_GetUIQuestChallengeData_outUIQuestChallengeData; // 0x0268(0x0038)()
+	bool                                          CallFunc_GetUIQuestChallengeData_ReturnValue;      // 0x02A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A1[0x3];                                      // 0x02A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x02A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_InitializeQuest;
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeData
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeData final
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnChallengeCompleted
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_HUDOverlay_QuestWidget_C_OnChallengeCompleted final
 {
 public:
-	struct FSBZUIQuestChallengeData               InQuestChallenge;                                  // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   OutText;                                           // 0x0038(0x0018)(Parm, OutParm)
-	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x0058(0x0018)()
+	struct FSBZQuestChallengeCompletedData        QuestChallengeCompletedData;                       // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00AA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeData;
+DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_OnChallengeCompleted;
 
 // Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnChallengesUpdated
-// 0x0148 (0x0148 - 0x0000)
+// 0x0140 (0x0140 - 0x0000)
 struct WBP_HUDOverlay_QuestWidget_C_OnChallengesUpdated final
 {
 public:
-	struct FSBZQuestChallengeNotificationData     QuestChallengeUpdatedData;                         // 0x0000(0x0058)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class FString                                 ProgressionString;                                 // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZQuestChallenge>             CallFunc_GetActiveChallenges_OutQuestChallengeArray; // 0x0080(0x0010)(ReferenceParm)
-	struct FSBZQuestUIChallengeProgressionValue   CallFunc_Array_Get_Item;                           // 0x0090(0x0014)(NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x00A8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0128(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0138(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FSBZQuestChallengeNotificationData     QuestChallengeUpdatedData;                         // 0x0000(0x0050)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FString                                 ProgressionString;                                 // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZQuestChallenge>             CallFunc_GetActiveChallenges_OutQuestChallengeArray; // 0x0078(0x0010)(ReferenceParm)
+	struct FSBZQuestUIChallengeProgressionValue   CallFunc_Array_Get_Item;                           // 0x0088(0x0014)(NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x00A0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x00C0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_OnChallengesUpdated;
 
 // Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.UpdateQuest
-// 0x0240 (0x0240 - 0x0000)
+// 0x0268 (0x0268 - 0x0000)
 struct WBP_HUDOverlay_QuestWidget_C_UpdateQuest final
 {
 public:
-	struct FSBZQuestChallengeNotificationData     NotifData;                                         // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZUIQuestData                        CallFunc_GetQuestData_OutQuestData;                // 0x0060(0x0050)()
-	bool                                          CallFunc_GetQuestData_ReturnValue;                 // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00B8(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00F8(0x0040)(HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0140(0x0040)(HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0180(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_184[0x4];                                      // 0x0184(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0188(0x0010)(ReferenceParm)
-	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A0(0x0018)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x01C0(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_GetChallengeDescriptionTextFromQuestChallengeNotificationData_OutText; // 0x0200(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0218(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0228(0x0018)()
+	struct FSBZQuestChallengeNotificationData     NotifData;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class USBZQuestManager*                       CallFunc_Get_ReturnValue;                          // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZUIQuestData                        CallFunc_GetQuestData_OutQuestData;                // 0x0058(0x0050)()
+	bool                                          CallFunc_GetQuestData_ReturnValue;                 // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00C0(0x0048)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0108(0x0048)(HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_2;            // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0168(0x0048)(HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01B8(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1CC[0x4];                                      // 0x01CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01D0(0x0010)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_3;            // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x01E8(0x0048)(HasGetValueTypeHash)
+	class FText                                   CallFunc_GetChallengeDescriptionTextFromQuestChallengeNotificationData_OutText; // 0x0230(0x0010)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0240(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0250(0x0010)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_UpdateQuest;
-
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnChallengeCompleted
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_HUDOverlay_QuestWidget_C_OnChallengeCompleted final
-{
-public:
-	struct FSBZQuestChallengeCompletedData        QuestChallengeCompletedData;                       // 0x0000(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_OnChallengeCompleted;
-
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeNotificationData
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeNotificationData final
-{
-public:
-	struct FSBZQuestChallengeNotificationData     InQuestNotifChallenge;                             // 0x0000(0x0058)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   OutText;                                           // 0x0058(0x0018)(Parm, OutParm)
-	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x0078(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeNotificationData;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

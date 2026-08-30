@@ -16,57 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SM_CrimeNetHeistSelection_C::ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection(int32 EntryPoint)
+void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection");
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_SM_CrimeNetHeistSelection_C_ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection Parms{};
+	Params::WBP_SM_CrimeNetHeistSelection_C_BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnSoloModePopupClosed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SM_CrimeNetHeistSelection_C::OnSoloModePopupClosed(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnSoloModePopupClosed");
-
-	Params::WBP_SM_CrimeNetHeistSelection_C_OnSoloModePopupClosed Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SM_CrimeNetHeistSelection_C::OnAddedToStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnAddedToStack");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -90,33 +56,19 @@ void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_WBP
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SM_CrimeNetHeistSelection_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_SM_CrimeNetHeistSelection_C_BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_SM_CrimeNetHeistSelection_C_BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -124,25 +76,11 @@ void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_But
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SM_CrimeNetHeistSelection_C::OnBackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnBackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -155,26 +93,6 @@ void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Wid
 
 	Parms.Button = Button;
 	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SM_CrimeNetHeistSelection_C::OnControlsReferenceClicked(class FName ActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnControlsReferenceClicked");
-
-	Params::WBP_SM_CrimeNetHeistSelection_C_OnControlsReferenceClicked Parms{};
-
-	Parms.ActionName = ActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -200,21 +118,69 @@ void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Wid
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SM_CrimeNetHeistSelection_C::BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_SM_CrimeNetHeistSelection_C::ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection");
 
-	Params::WBP_SM_CrimeNetHeistSelection_C_BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_SM_CrimeNetHeistSelection_C_ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection Parms{};
 
-	Parms.Button = Button;
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_SM_CrimeNetHeistSelection_C::OnAddedToStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnAddedToStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_SM_CrimeNetHeistSelection_C::OnBackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnBackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SM_CrimeNetHeistSelection_C::OnControlsReferenceClicked(class FName ActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnControlsReferenceClicked");
+
+	Params::WBP_SM_CrimeNetHeistSelection_C_OnControlsReferenceClicked Parms{};
+
+	Parms.ActionName = ActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -240,31 +206,11 @@ void UWBP_SM_CrimeNetHeistSelection_C::OnGainedStackFocused(const class FName& P
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnHeistButtonSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMainMenuCrimeNetHeistButton*  SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SM_CrimeNetHeistSelection_C::OnHeistButtonSelected(class USBZMainMenuCrimeNetHeistButton* SelectedButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnHeistButtonSelected");
-
-	Params::WBP_SM_CrimeNetHeistSelection_C_OnHeistButtonSelected Parms{};
-
-	Parms.SelectedButton = SelectedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnHeistButtonFocused
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_SM_CrimeNetHeistSelection_C::OnHeistButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
 {
@@ -277,6 +223,26 @@ void UWBP_SM_CrimeNetHeistSelection_C::OnHeistButtonFocused(class USBZMenuButton
 
 	Parms.MenuButton = MenuButton;
 	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnHeistButtonSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCrimeNetHeistButton*  SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SM_CrimeNetHeistSelection_C::OnHeistButtonSelected(class USBZMainMenuCrimeNetHeistButton* SelectedButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnHeistButtonSelected");
+
+	Params::WBP_SM_CrimeNetHeistSelection_C_OnHeistButtonSelected Parms{};
+
+	Parms.SelectedButton = SelectedButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -316,21 +282,35 @@ void UWBP_SM_CrimeNetHeistSelection_C::OnLostStackFocused()
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.TryDisplayPopUp
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInPopUp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_SM_CrimeNetHeistSelection_C::TryDisplayPopUp(bool bInPopUp)
+void UWBP_SM_CrimeNetHeistSelection_C::OnRemovedFromStack()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "TryDisplayPopUp");
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnRemovedFromStack");
 
-	Params::WBP_SM_CrimeNetHeistSelection_C_TryDisplayPopUp Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bInPopUp = bInPopUp;
+
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.OnSoloModePopupClosed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SM_CrimeNetHeistSelection_C::OnSoloModePopupClosed(class FName ClosingActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "OnSoloModePopupClosed");
+
+	Params::WBP_SM_CrimeNetHeistSelection_C_OnSoloModePopupClosed Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -350,23 +330,17 @@ void UWBP_SM_CrimeNetHeistSelection_C::RefreshVisuals()
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.SetMatchmakingState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Force_Disable_Matchmaking                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.SetButtonFocus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_SM_CrimeNetHeistSelection_C::SetMatchmakingState(bool Force_Disable_Matchmaking)
+void UWBP_SM_CrimeNetHeistSelection_C::SetButtonFocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "SetMatchmakingState");
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "SetButtonFocus");
 
-	Params::WBP_SM_CrimeNetHeistSelection_C_SetMatchmakingState Parms{};
-
-	Parms.Force_Disable_Matchmaking = Force_Disable_Matchmaking;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -398,17 +372,43 @@ void UWBP_SM_CrimeNetHeistSelection_C::SetHeistButtonControlsReference()
 }
 
 
-// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.SetButtonFocus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.SetMatchmakingState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Force_Disable_Matchmaking                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SM_CrimeNetHeistSelection_C::SetButtonFocus()
+void UWBP_SM_CrimeNetHeistSelection_C::SetMatchmakingState(bool Force_Disable_Matchmaking)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "SetButtonFocus");
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "SetMatchmakingState");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_SM_CrimeNetHeistSelection_C_SetMatchmakingState Parms{};
+
+	Parms.Force_Disable_Matchmaking = Force_Disable_Matchmaking;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C.TryDisplayPopUp
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInPopUp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SM_CrimeNetHeistSelection_C::TryDisplayPopUp(bool bInPopUp)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SM_CrimeNetHeistSelection_C", "TryDisplayPopUp");
+
+	Params::WBP_SM_CrimeNetHeistSelection_C_TryDisplayPopUp Parms{};
+
+	Parms.bInPopUp = bInPopUp;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

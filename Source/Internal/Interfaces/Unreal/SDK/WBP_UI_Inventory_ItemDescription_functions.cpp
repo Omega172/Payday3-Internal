@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function WBP_UI_Inventory_ItemDescription.WBP_UI_Inventory_ItemDescription_C.SetInventoryItem
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryBaseData*            InInventoryItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InInventoryItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_ItemDescription_C::SetInventoryItem(class USBZInventoryBaseData* InInventoryItem)
 {
@@ -39,7 +39,7 @@ void UWBP_UI_Inventory_ItemDescription_C::SetInventoryItem(class USBZInventoryBa
 // Function WBP_UI_Inventory_ItemDescription.WBP_UI_Inventory_ItemDescription_C.SetIsOwned
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_ItemDescription_C::SetIsOwned(bool bIsOwned)
 {

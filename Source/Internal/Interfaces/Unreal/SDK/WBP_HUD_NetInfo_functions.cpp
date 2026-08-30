@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HUD_NetInfo.WBP_HUD_NetInfo_C.BP_OnServerRegionChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_HUD_NetInfo_C::BP_OnServerRegionChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_NetInfo_C", "BP_OnServerRegionChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HUD_NetInfo.WBP_HUD_NetInfo_C.BP_OnValidPlayerState
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_HUD_NetInfo_C::BP_OnValidPlayerState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_NetInfo_C", "BP_OnValidPlayerState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HUD_NetInfo.WBP_HUD_NetInfo_C.ExecuteUbergraph_WBP_HUD_NetInfo
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,20 +64,6 @@ void UWBP_HUD_NetInfo_C::ExecuteUbergraph_WBP_HUD_NetInfo(int32 EntryPoint)
 }
 
 
-// Function WBP_HUD_NetInfo.WBP_HUD_NetInfo_C.BP_OnServerRegionChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_HUD_NetInfo_C::BP_OnServerRegionChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_NetInfo_C", "BP_OnServerRegionChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HUD_NetInfo.WBP_HUD_NetInfo_C.OnPingValueChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -67,20 +81,6 @@ void UWBP_HUD_NetInfo_C::OnPingValueChanged(const int32 PingValue_0)
 	Parms.PingValue_0 = PingValue_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HUD_NetInfo.WBP_HUD_NetInfo_C.BP_OnValidPlayerState
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_HUD_NetInfo_C::BP_OnValidPlayerState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_NetInfo_C", "BP_OnValidPlayerState");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

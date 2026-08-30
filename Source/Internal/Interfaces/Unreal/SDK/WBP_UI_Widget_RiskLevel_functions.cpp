@@ -36,104 +36,6 @@ void UWBP_UI_Widget_RiskLevel_C::ExecuteUbergraph_WBP_UI_Widget_RiskLevel(int32 
 }
 
 
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnNormalSet_K2Node_WidgetAnimationEvent_0
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnNormalSet_K2Node_WidgetAnimationEvent_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnNormalSet_K2Node_WidgetAnimationEvent_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnMayhemSet_K2Node_WidgetAnimationEvent_7
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnMayhemSet_K2Node_WidgetAnimationEvent_7()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnMayhemSet_K2Node_WidgetAnimationEvent_7");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnVeryHardSet_K2Node_WidgetAnimationEvent_6
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnVeryHardSet_K2Node_WidgetAnimationEvent_6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnVeryHardSet_K2Node_WidgetAnimationEvent_6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnOverkillSet_K2Node_WidgetAnimationEvent_5
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnOverkillSet_K2Node_WidgetAnimationEvent_5()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnOverkillSet_K2Node_WidgetAnimationEvent_5");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnOneDownSet_K2Node_WidgetAnimationEvent_4
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnOneDownSet_K2Node_WidgetAnimationEvent_4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnOneDownSet_K2Node_WidgetAnimationEvent_4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnHardSet_K2Node_WidgetAnimationEvent_2
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnHardSet_K2Node_WidgetAnimationEvent_2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnHardSet_K2Node_WidgetAnimationEvent_2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnDeathWishSet_K2Node_WidgetAnimationEvent_1
-// (BlueprintEvent)
-
-void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnDeathWishSet_K2Node_WidgetAnimationEvent_1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnDeathWishSet_K2Node_WidgetAnimationEvent_1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.GetDifficultyName
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -181,6 +83,104 @@ void UWBP_UI_Widget_RiskLevel_C::PlayFadeInAnimation()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "PlayFadeInAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnDeathWishSet_K2Node_WidgetAnimationEvent_1
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnDeathWishSet_K2Node_WidgetAnimationEvent_1()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnDeathWishSet_K2Node_WidgetAnimationEvent_1");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnHardSet_K2Node_WidgetAnimationEvent_2
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnHardSet_K2Node_WidgetAnimationEvent_2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnHardSet_K2Node_WidgetAnimationEvent_2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnMayhemSet_K2Node_WidgetAnimationEvent_7
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnMayhemSet_K2Node_WidgetAnimationEvent_7()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnMayhemSet_K2Node_WidgetAnimationEvent_7");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnNormalSet_K2Node_WidgetAnimationEvent_0
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnNormalSet_K2Node_WidgetAnimationEvent_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnNormalSet_K2Node_WidgetAnimationEvent_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnOneDownSet_K2Node_WidgetAnimationEvent_4
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnOneDownSet_K2Node_WidgetAnimationEvent_4()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnOneDownSet_K2Node_WidgetAnimationEvent_4");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnOverkillSet_K2Node_WidgetAnimationEvent_5
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnOverkillSet_K2Node_WidgetAnimationEvent_5()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnOverkillSet_K2Node_WidgetAnimationEvent_5");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RiskLevel.WBP_UI_Widget_RiskLevel_C.WidgetAnimationEvt_OnVeryHardSet_K2Node_WidgetAnimationEvent_6
+// (BlueprintEvent)
+
+void UWBP_UI_Widget_RiskLevel_C::WidgetAnimationEvt_OnVeryHardSet_K2Node_WidgetAnimationEvent_6()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RiskLevel_C", "WidgetAnimationEvt_OnVeryHardSet_K2Node_WidgetAnimationEvent_6");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

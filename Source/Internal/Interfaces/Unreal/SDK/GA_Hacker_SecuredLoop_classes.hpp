@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Hacker_SecuredLoop.GA_Hacker_SecuredLoop_C
-// 0x0000 (0x0500 - 0x0500)
+// 0x0000 (0x04F8 - 0x04F8)
 class UGA_Hacker_SecuredLoop_C final : public USBZHackerSecuredLoopAbility
 {
 public:

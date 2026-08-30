@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -18,112 +19,115 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ExecuteUbergraph_WBP_UI_QuestChallengeReward
-// 0x0040 (0x0040 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_UI_QuestChallengeReward_C_ExecuteUbergraph_WBP_UI_QuestChallengeReward final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsLoading;                           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            K2Node_Event_NewItem;                              // 0x0018(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetPaperSpriteSourceSize_ReturnValue;     // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsLoading;                           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_Event_LoadedObject;                         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	const class USBZInventoryBaseData*            K2Node_Event_NewItem;                              // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_Event_LoadedObject;                         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDeprecateSlateVector2D                K2Node_SetFieldsInStruct_ImageSize_ImplicitCast;   // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_ExecuteUbergraph_WBP_UI_QuestChallengeReward;
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnImageLoaded
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_QuestChallengeReward_C_OnImageLoaded final
-{
-public:
-	class UObject*                                LoadedObject;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_OnImageLoaded;
 
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ItemInitialized
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_QuestChallengeReward_C_ItemInitialized final
 {
 public:
-	const class USBZInventoryBaseData*            NewItem;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZInventoryBaseData*            NewItem;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_ItemInitialized;
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnImageLoaded
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_QuestChallengeReward_C_OnImageLoaded final
+{
+public:
+	class UObject*                                LoadedObject;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_OnImageLoaded;
 
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnLoadingChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_QuestChallengeReward_C_OnLoadingChanged final
 {
 public:
-	bool                                          bIsLoading;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsLoading;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_OnLoadingChanged;
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SpriteLoaded
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_QuestChallengeReward_C_SpriteLoaded final
-{
-public:
-	class UPaperSprite*                           OutLoadedSprite;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SpriteLoaded;
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIcon
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_UI_QuestChallengeReward_C_SetIcon final
-{
-public:
-	class UPaperSprite*                           InSprite;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0028)()
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0048(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SetIcon;
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetName
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_QuestChallengeReward_C_SetName final
-{
-public:
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0000(0x0018)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SetName;
 
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetClaimed
 // 0x0005 (0x0005 - 0x0000)
 struct WBP_UI_QuestChallengeReward_C_SetClaimed final
 {
 public:
-	bool                                          IsClaimed;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsClaimed;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SetClaimed;
 
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIcon
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_UI_QuestChallengeReward_C_SetIcon final
+{
+public:
+	class UPaperSprite*                           InSprite;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x000C(0x0014)()
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SetIcon;
+
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIconTexture
-// 0x0060 (0x0060 - 0x0000)
+// 0x0038 (0x0038 - 0x0000)
 struct WBP_UI_QuestChallengeReward_C_SetIconTexture final
 {
 public:
-	class UTexture2D*                             InTexture;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0038(0x0028)()
+	class UTexture2D*                             InTexture;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x000C(0x0014)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0020(0x0014)()
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SetIconTexture;
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_QuestChallengeReward_C_SetName final
+{
+public:
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0000(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SetName;
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SpriteLoaded
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_QuestChallengeReward_C_SpriteLoaded final
+{
+public:
+	class UPaperSprite*                           OutLoadedSprite;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeReward_C_SpriteLoaded;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

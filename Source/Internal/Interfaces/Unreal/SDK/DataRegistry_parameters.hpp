@@ -23,7 +23,7 @@ struct DataRegistrySubsystem_AcquireItemBP final
 {
 public:
 	struct FDataRegistryId                        ItemId;                                            // 0x0000(0x0018)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)> AcquireCallback; // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)> AcquireCallback; // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x002C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -100,6 +100,19 @@ public:
 };
 DUMPER7_ASSERTS_DataRegistrySubsystem_FindCachedItemBP;
 
+// Function DataRegistry.DataRegistrySubsystem.FindCachedItemFromLookupBP
+// 0x0048 (0x0048 - 0x0000)
+struct DataRegistrySubsystem_FindCachedItemFromLookupBP final
+{
+public:
+	struct FDataRegistryId                        ItemId;                                            // 0x0000(0x0018)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDataRegistryLookup                    ResolvedLookup;                                    // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EDataRegistrySubsystemGetItemResult           OutResult;                                         // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTableRowBase                          OutItem;                                           // 0x0040(0x0008)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_DataRegistrySubsystem_FindCachedItemFromLookupBP;
+
 // Function DataRegistry.DataRegistrySubsystem.GetCachedItemBP
 // 0x0028 (0x0028 - 0x0000)
 struct DataRegistrySubsystem_GetCachedItemBP final
@@ -124,6 +137,17 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_DataRegistrySubsystem_GetCachedItemFromLookupBP;
+
+// Function DataRegistry.DataRegistrySubsystem.GetPossibleDataRegistryIdList
+// 0x0020 (0x0020 - 0x0000)
+struct DataRegistrySubsystem_GetPossibleDataRegistryIdList final
+{
+public:
+	struct FDataRegistryType                      RegistryType;                                      // 0x0000(0x000C)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FDataRegistryId>                OutIdList;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_DataRegistrySubsystem_GetPossibleDataRegistryIdList;
 
 // Function DataRegistry.DataRegistrySubsystem.IsValidDataRegistryId
 // 0x001C (0x001C - 0x0000)

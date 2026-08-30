@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_GenericContainerButton.WBP_UI_GenericContainerButton_C
-// 0x0008 (0x02B8 - 0x02B0)
+// 0x0008 (0x0318 - 0x0310)
 class UWBP_UI_GenericContainerButton_C final : public USBZMenuMouseButton
 {
 public:
-	class UNamedSlot*                             ButtonContainer;                                   // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UNamedSlot*                             ButtonContainer;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

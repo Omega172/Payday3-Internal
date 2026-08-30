@@ -19,30 +19,31 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_PartyMemberWeaponStatus.WBP_UI_Widget_PartyMemberWeaponStatus_C
-// 0x00A8 (0x0368 - 0x02C0)
+// 0x0078 (0x0398 - 0x0320)
 class UWBP_UI_Widget_PartyMemberWeaponStatus_C final : public UPD3WeaponStatusWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       OnPickUpAnimation;                                 // 0x02C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Background_I;                                      // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_AmmoBag;                                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_AmmoBagBackground;                            // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateColor                            NormalTextColor;                                   // 0x02E8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FSlateColor                            LowTextColor;                                      // 0x0310(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FSlateColor                            CriticalTextColor;                                 // 0x0338(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	float                                         EquippedOpacity;                                   // 0x0360(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UnequippedOpacity;                                 // 0x0364(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OnPickUpAnimation;                                 // 0x0328(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Background_I;                                      // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_AmmoBag;                                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_AmmoBagBackground;                            // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateColor                            NormalTextColor;                                   // 0x0348(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FSlateColor                            LowTextColor;                                      // 0x035C(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FSlateColor                            CriticalTextColor;                                 // 0x0370(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        EquippedOpacity;                                   // 0x0388(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        UnequippedOpacity;                                 // 0x0390(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_PartyMemberWeaponStatus(int32 EntryPoint);
 	void OnAmmoAdded(int32 AmmoAddedCount, bool bIsFireRangedWeaponScope);
-	void OnInitialized();
-	void OnAmmoTotalStateChanged(EPD3AmmoState NewState);
 	void OnAmmoTotalChanged(int32 AmmoTotalChanged);
+	void OnAmmoTotalStateChanged(EPD3AmmoState NewState);
 	void OnEquippedChanged(bool bIsEquippedNewValue);
-	void SetEquipped(bool IsEquipped);
+	void OnInitialized();
 	void SetAmmoState(class UTextBlock* TextBlock, EPD3AmmoState Index_0);
+	void SetEquipped(bool IsEquipped);
 	void SetText(int32 AmmoValue);
 
 public:

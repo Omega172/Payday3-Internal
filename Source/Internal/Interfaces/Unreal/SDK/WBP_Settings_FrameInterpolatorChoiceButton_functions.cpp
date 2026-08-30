@@ -16,6 +16,126 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ChoiceIndexVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ChoiceIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::ChoiceIndexVisuals(int32 ChoiceIndex_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ChoiceIndexVisuals");
+
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ChoiceIndexVisuals Parms{};
+
+	Parms.ChoiceIndex_0 = ChoiceIndex_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ExecuteUbergraph_WBP_Settings_FrameInterpolatorChoiceButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,143 +156,75 @@ void UWBP_Settings_FrameInterpolatorChoiceButton_C::ExecuteUbergraph_WBP_Setting
 }
 
 
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.SettingChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.InitializeVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::SettingChanged()
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::InitializeVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "SettingChanged");
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "InitializeVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OptionNamesChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::OptionNamesChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OptionNamesChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.SelectionNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::SelectionNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "SelectionNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnDisabledVisuals(bool bIsDisabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OnDisabledVisuals");
 
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_OnDisabledVisuals Parms{};
 
-	Parms.Button = Button;
+	Parms.bIsDisabled_0 = bIsDisabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OnFocusedVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnFocusedVisuals(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OnFocusedVisuals");
 
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_OnFocusedVisuals Parms{};
 
-	Parms.Button = Button;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnHoverVisuals(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OnHoverVisuals");
 
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_OnHoverVisuals Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ButtonDisabledChanged");
-
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -192,10 +244,24 @@ void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnInitialized()
 }
 
 
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OptionNamesChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::OptionNamesChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OptionNamesChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_FrameInterpolatorChoiceButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -226,109 +292,29 @@ void UWBP_Settings_FrameInterpolatorChoiceButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.SelectionNameChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnHoverVisuals(bool bIsHovered)
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::SelectionNameChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OnHoverVisuals");
-
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OnFocusedVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OnFocusedVisuals");
-
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "OnDisabledVisuals");
-
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.ChoiceIndexVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ChoiceIndex_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::ChoiceIndexVisuals(int32 ChoiceIndex_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "ChoiceIndexVisuals");
-
-	Params::WBP_Settings_FrameInterpolatorChoiceButton_C_ChoiceIndexVisuals Parms{};
-
-	Parms.ChoiceIndex_0 = ChoiceIndex_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.InitializeVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::InitializeVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "InitializeVisuals");
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "SelectionNameChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.UpdateSettingNameText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.SettingChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_FrameInterpolatorChoiceButton_C::UpdateSettingNameText()
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::SettingChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "UpdateSettingNameText");
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "SettingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -343,6 +329,20 @@ void UWBP_Settings_FrameInterpolatorChoiceButton_C::UpdateOptionsText()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "UpdateOptionsText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_FrameInterpolatorChoiceButton.WBP_Settings_FrameInterpolatorChoiceButton_C.UpdateSettingNameText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_FrameInterpolatorChoiceButton_C::UpdateSettingNameText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_FrameInterpolatorChoiceButton_C", "UpdateSettingNameText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

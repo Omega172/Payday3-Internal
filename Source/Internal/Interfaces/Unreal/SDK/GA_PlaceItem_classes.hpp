@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlaceItem.GA_PlaceItem_C
-// 0x0000 (0x0540 - 0x0540)
+// 0x0000 (0x0550 - 0x0550)
 class UGA_PlaceItem_C final : public USBZPlaceItemAbility
 {
 public:

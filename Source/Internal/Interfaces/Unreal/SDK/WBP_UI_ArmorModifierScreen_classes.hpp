@@ -18,31 +18,31 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C
-// 0x0060 (0x03B0 - 0x0350)
+// 0x0060 (0x0408 - 0x03A8)
 class UWBP_UI_ArmorModifierScreen_C final : public USBZMainMenuArmorModifierScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0358(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class USBZUITextBlock*                        ArmorHeader_T;                                     // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemDescriptionBox_C* Inventory_ItemDescriptionBox;                      // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TitleHeader_T;                                     // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ArmorChunk_PlateDetails_C*         WBP_ArmorChunk_PlateDetails;                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMainMenuArmorChunkButton*           ActiveButton;                                      // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZArmorConfig                        ArmorConfig;                                       // 0x0390(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x03B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class USBZUITextBlock*                        ArmorHeader_T;                                     // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ItemDescriptionBox_C* Inventory_ItemDescriptionBox;                      // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TitleHeader_T;                                     // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ArmorChunk_PlateDetails_C*         WBP_ArmorChunk_PlateDetails;                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMainMenuArmorChunkButton*           ActiveButton;                                      // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZArmorConfig                        ArmorConfig;                                       // 0x03E8(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_UI_ArmorModifierScreen(int32 EntryPoint);
+	void NewArmorChunkSlotFocused(const class USBZMainMenuArmorChunkButton* NewFocusedButton);
 	void OnArmorChunkSlotButtonEquipped(const class USBZMainMenuArmorChunkButton* EquippedButton);
+	void OnArmorChunkSlotButtonSelected(const class USBZMainMenuArmorChunkButton* SelectedButton);
 	void OnBackPressed();
 	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnArmorChunkSlotButtonSelected(const class USBZMainMenuArmorChunkButton* SelectedButton);
-	void NewArmorChunkSlotFocused(const class USBZMainMenuArmorChunkButton* NewFocusedButton);
-	void SetDefaultFocus();
-	void OnLostStackFocused();
 	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
 	void PreConstruct(bool IsDesignTime);
+	void SetDefaultFocus();
 	void UpdateActiveButtonControlsReference();
 
 public:

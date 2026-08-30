@@ -39,7 +39,7 @@ void UWBP_UI_HUD_Overlay_Objective_C::ExecuteUbergraph_WBP_UI_HUD_Overlay_Object
 // Function WBP_UI_HUD_Overlay_Objective.WBP_UI_HUD_Overlay_Objective_C.ObjectiveActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZObjective*                    Param_ObjectiveActivated_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZObjective*                    Param_ObjectiveActivated_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_Overlay_Objective_C::ObjectiveActivated(class ASBZObjective* Param_ObjectiveActivated_0)
 {
@@ -59,7 +59,7 @@ void UWBP_UI_HUD_Overlay_Objective_C::ObjectiveActivated(class ASBZObjective* Pa
 // Function WBP_UI_HUD_Overlay_Objective.WBP_UI_HUD_Overlay_Objective_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_Overlay_Objective_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
 {
@@ -93,7 +93,7 @@ void UWBP_UI_HUD_Overlay_Objective_C::OnObjectiveRemoved()
 // Function WBP_UI_HUD_Overlay_Objective.WBP_UI_HUD_Overlay_Objective_C.SetObjectiveIntel
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASBZObjective*                    Objective_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZObjective*                    Objective_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_Overlay_Objective_C::SetObjectiveIntel(class ASBZObjective* Objective_0)
 {

@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.BP_OnOverskillEnabledChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsEnabled                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_RequestOverkillWeapon_C::BP_OnOverskillEnabledChanged(bool bInIsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "BP_OnOverskillEnabledChanged");
+
+	Params::WBP_UI_Widget_RequestOverkillWeapon_C_BP_OnOverskillEnabledChanged Parms{};
+
+	Parms.bInIsEnabled = bInIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.ExecuteUbergraph_WBP_UI_Widget_RequestOverkillWeapon
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,26 +51,6 @@ void UWBP_UI_Widget_RequestOverkillWeapon_C::ExecuteUbergraph_WBP_UI_Widget_Requ
 	Params::WBP_UI_Widget_RequestOverkillWeapon_C_ExecuteUbergraph_WBP_UI_Widget_RequestOverkillWeapon Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.BP_OnOverskillEnabledChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsEnabled                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_RequestOverkillWeapon_C::BP_OnOverskillEnabledChanged(bool bInIsEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "BP_OnOverskillEnabledChanged");
-
-	Params::WBP_UI_Widget_RequestOverkillWeapon_C_BP_OnOverskillEnabledChanged Parms{};
-
-	Parms.bInIsEnabled = bInIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -84,20 +84,6 @@ void UWBP_UI_Widget_RequestOverkillWeapon_C::OnOverkillDataChanged()
 }
 
 
-// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.OnOverkillRequested
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Widget_RequestOverkillWeapon_C::OnOverkillRequested()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "OnOverkillRequested");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.OnOverkillProgressChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -115,6 +101,20 @@ void UWBP_UI_Widget_RequestOverkillWeapon_C::OnOverkillProgressChanged(float New
 	Parms.NewProgress = NewProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.OnOverkillRequested
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Widget_RequestOverkillWeapon_C::OnOverkillRequested()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "OnOverkillRequested");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -146,15 +146,29 @@ void UWBP_UI_Widget_RequestOverkillWeapon_C::OnOverkillWeaponRequestReady()
 }
 
 
-// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.StartLoopAnimReady
+// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.SequenceEvent__ENTRYPOINTWBP_UI_Widget_RequestOverkillWeapon
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_RequestOverkillWeapon_C::StartLoopAnimReady()
+void UWBP_UI_Widget_RequestOverkillWeapon_C::SequenceEvent__ENTRYPOINTWBP_UI_Widget_RequestOverkillWeapon()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "StartLoopAnimReady");
+		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "SequenceEvent__ENTRYPOINTWBP_UI_Widget_RequestOverkillWeapon");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.SetNotReady
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_RequestOverkillWeapon_C::SetNotReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "SetNotReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -182,29 +196,15 @@ void UWBP_UI_Widget_RequestOverkillWeapon_C::SetProgressBarColors(const struct F
 }
 
 
-// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.SetNotReady
+// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.StartLoopAnimReady
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_RequestOverkillWeapon_C::SetNotReady()
+void UWBP_UI_Widget_RequestOverkillWeapon_C::StartLoopAnimReady()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "SetNotReady");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RequestOverkillWeapon.WBP_UI_Widget_RequestOverkillWeapon_C.SequenceEvent__ENTRYPOINTWBP_UI_Widget_RequestOverkillWeapon_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_RequestOverkillWeapon_C::SequenceEvent__ENTRYPOINTWBP_UI_Widget_RequestOverkillWeapon_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "SequenceEvent__ENTRYPOINTWBP_UI_Widget_RequestOverkillWeapon_0");
+		Func = Class->GetFunction("WBP_UI_Widget_RequestOverkillWeapon_C", "StartLoopAnimReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

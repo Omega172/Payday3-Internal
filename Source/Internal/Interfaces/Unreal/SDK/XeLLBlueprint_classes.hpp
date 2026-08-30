@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "XeLLBlueprint_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -32,6 +32,7 @@ public:
 	static float GetSimulationLatencyInMs();
 	static TArray<EXeLLMode> GetSupportedXeLLModes();
 	static EXeLLMode GetXeLLMode();
+	static bool IsXeLLAvailable();
 	static bool IsXeLLSupported();
 	static void SetFlashIndicatorEnabled(const bool bEnabled);
 	static void SetXeLLMode(const EXeLLMode Mode);

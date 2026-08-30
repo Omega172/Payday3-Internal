@@ -36,6 +36,28 @@ void UWBP_UI_Widget_EscapeCounter_C::ExecuteUbergraph_WBP_UI_Widget_EscapeCounte
 }
 
 
+// Function WBP_UI_Widget_EscapeCounter.WBP_UI_Widget_EscapeCounter_C.OnAllPlayersLeftVolume
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   PlayersInVolumeOnLeft                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TotalPlayers                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_EscapeCounter_C::OnAllPlayersLeftVolume(int32 PlayersInVolumeOnLeft, int32 TotalPlayers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_EscapeCounter_C", "OnAllPlayersLeftVolume");
+
+	Params::WBP_UI_Widget_EscapeCounter_C_OnAllPlayersLeftVolume Parms{};
+
+	Parms.PlayersInVolumeOnLeft = PlayersInVolumeOnLeft;
+	Parms.TotalPlayers = TotalPlayers;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_EscapeCounter.WBP_UI_Widget_EscapeCounter_C.OnEscapeTimerChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -100,32 +122,10 @@ void UWBP_UI_Widget_EscapeCounter_C::OnPlayersEnteredVolume(int32 PlayersInVolum
 }
 
 
-// Function WBP_UI_Widget_EscapeCounter.WBP_UI_Widget_EscapeCounter_C.OnAllPlayersLeftVolume
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   PlayersInVolumeOnLeft                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TotalPlayers                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_EscapeCounter_C::OnAllPlayersLeftVolume(int32 PlayersInVolumeOnLeft, int32 TotalPlayers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_EscapeCounter_C", "OnAllPlayersLeftVolume");
-
-	Params::WBP_UI_Widget_EscapeCounter_C_OnAllPlayersLeftVolume Parms{};
-
-	Parms.PlayersInVolumeOnLeft = PlayersInVolumeOnLeft;
-	Parms.TotalPlayers = TotalPlayers;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_EscapeCounter.WBP_UI_Widget_EscapeCounter_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_EscapeCounter_C::PreConstruct(bool IsDesignTime)
 {

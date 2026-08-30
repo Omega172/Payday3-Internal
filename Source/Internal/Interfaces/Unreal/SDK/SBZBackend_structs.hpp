@@ -16,18 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Enum SBZBackend.EOnlineSubsystemSBZPlatform
-// NumValues: 0x0006
-enum class EOnlineSubsystemSBZPlatform : uint8
-{
-	Null                                     = 0,
-	Steam                                    = 1,
-	XSX                                      = 2,
-	PS5                                      = 3,
-	EOS                                      = 4,
-	MAX                                      = 5,
-};
-
 // Enum SBZBackend.ESBZSettingsEnvironment
 // NumValues: 0x0008
 enum class ESBZSettingsEnvironment : uint8
@@ -42,32 +30,39 @@ enum class ESBZSettingsEnvironment : uint8
 	ESBZSettingsEnvironment_MAX              = 7,
 };
 
-// Enum SBZBackend.ESBZBackendSessionMemberStatus
-// NumValues: 0x000C
-enum class ESBZBackendSessionMemberStatus : uint8
+// Enum SBZBackend.EOnlineSubsystemSBZPlatform
+// NumValues: 0x0006
+enum class EOnlineSubsystemSBZPlatform : uint8
 {
-	EMPTY                                    = 0,
-	INVITED                                  = 1,
-	JOINED                                   = 2,
-	CONNECTED                                = 3,
-	LEFT                                     = 4,
-	DROPPED                                  = 5,
-	REJECTED                                 = 6,
-	KICKED                                   = 7,
-	TIMEOUT                                  = 8,
-	DISCONNECTED                             = 9,
-	TERMINATED                               = 10,
-	ESBZBackendSessionMemberStatus_MAX       = 11,
+	Null                                     = 0,
+	Steam                                    = 1,
+	XSX                                      = 2,
+	PS5                                      = 3,
+	EOS                                      = 4,
+	MAX                                      = 5,
 };
 
-// Enum SBZBackend.ESBZBackendHostingProvider
-// NumValues: 0x0004
-enum class ESBZBackendHostingProvider : uint8
+// Enum SBZBackend.ESBZBackendFirstPartyPlatform
+// NumValues: 0x0006
+enum class ESBZBackendFirstPartyPlatform : uint8
+{
+	Null                                     = 0,
+	Steam                                    = 1,
+	XBL                                      = 2,
+	PSN                                      = 3,
+	EOS                                      = 4,
+	MAX                                      = 5,
+};
+
+// Enum SBZBackend.ESBZMatchmakingProvider
+// NumValues: 0x0005
+enum class ESBZMatchmakingProvider : uint8
 {
 	Accelbyte                                = 0,
 	AmazonGameLift                           = 1,
 	EdgeGap                                  = 2,
-	MAX                                      = 3,
+	EOS                                      = 3,
+	MAX                                      = 4,
 };
 
 // Enum SBZBackend.ESBZBackendResultCode
@@ -116,27 +111,32 @@ enum class ESBZBackendResultCode : uint8
 	ESBZBackendResultCode_MAX                = 39,
 };
 
-// Enum SBZBackend.ESBZMatchmakingProvider
-// NumValues: 0x0005
-enum class ESBZMatchmakingProvider : uint8
+// Enum SBZBackend.ESBZBackendHostingProvider
+// NumValues: 0x0004
+enum class ESBZBackendHostingProvider : uint8
 {
 	Accelbyte                                = 0,
 	AmazonGameLift                           = 1,
 	EdgeGap                                  = 2,
-	EOS                                      = 3,
-	MAX                                      = 4,
+	MAX                                      = 3,
 };
 
-// Enum SBZBackend.ESBZBackendFirstPartyPlatform
-// NumValues: 0x0006
-enum class ESBZBackendFirstPartyPlatform : uint8
+// Enum SBZBackend.ESBZBackendSessionMemberStatus
+// NumValues: 0x000C
+enum class ESBZBackendSessionMemberStatus : uint8
 {
-	Null                                     = 0,
-	Steam                                    = 1,
-	XBL                                      = 2,
-	PSN                                      = 3,
-	EOS                                      = 4,
-	MAX                                      = 5,
+	EMPTY                                    = 0,
+	INVITED                                  = 1,
+	JOINED                                   = 2,
+	CONNECTED                                = 3,
+	LEFT                                     = 4,
+	DROPPED                                  = 5,
+	REJECTED                                 = 6,
+	KICKED                                   = 7,
+	TIMEOUT                                  = 8,
+	DISCONNECTED                             = 9,
+	TERMINATED                               = 10,
+	ESBZBackendSessionMemberStatus_MAX       = 11,
 };
 
 // Enum SBZBackend.ESBZBanType
@@ -163,308 +163,19 @@ enum class ESBZChatRoomType : uint8
 	ESBZChatRoomType_MAX                     = 5,
 };
 
-// Enum SBZBackend.ESBZWalletTable
-// NumValues: 0x000B
-enum class ESBZWalletTable : uint8
-{
-	Playstation                              = 0,
-	Xbox                                     = 1,
-	Steam                                    = 2,
-	Epic                                     = 3,
-	IOS                                      = 4,
-	GooglePlay                               = 5,
-	Twitch                                   = 6,
-	System                                   = 7,
-	Nintendo                                 = 8,
-	Other                                    = 9,
-	ESBZWalletTable_MAX                      = 10,
-};
-
-// Enum SBZBackend.ESBZSubscriptionSummarySubscribedBy
-// NumValues: 0x0004
-enum class ESBZSubscriptionSummarySubscribedBy : uint8
-{
-	NONE                                     = 0,
-	USER                                     = 1,
-	PLATFORM                                 = 2,
-	ESBZSubscriptionSummarySubscribedBy_MAX  = 3,
-};
-
-// Enum SBZBackend.ESBZSubscriptionSummaryStatus
-// NumValues: 0x0006
-enum class ESBZSubscriptionSummaryStatus : uint8
-{
-	NONE                                     = 0,
-	INIT                                     = 1,
-	ACTIVE                                   = 2,
-	CANCELLED                                = 3,
-	EXPIRED                                  = 4,
-	ESBZSubscriptionSummaryStatus_MAX        = 5,
-};
-
-// Enum SBZBackend.ESBZPlatformRewardOrigin
-// NumValues: 0x000D
-enum class ESBZPlatformRewardOrigin : uint8
-{
-	NONE                                     = 0,
-	Playstation                              = 1,
-	Xbox                                     = 2,
-	Steam                                    = 3,
-	Epic                                     = 4,
-	IOS                                      = 5,
-	GooglePlay                               = 6,
-	Twitch                                   = 7,
-	Nintendo                                 = 8,
-	Oculus                                   = 9,
-	System                                   = 10,
-	Other                                    = 11,
-	ESBZPlatformRewardOrigin_MAX             = 12,
-};
-
-// Enum SBZBackend.ESBZPlatformRewardSource
-// NumValues: 0x0012
-enum class ESBZPlatformRewardSource : uint8
-{
-	NONE                                     = 0,
-	PURCHASE                                 = 1,
-	IAP                                      = 2,
-	PROMOTION                                = 3,
-	ACHIEVEMENT                              = 4,
-	REFERRAL_BONUS                           = 5,
-	REDEEM_CODE                              = 6,
-	REWARD                                   = 7,
-	GIFT                                     = 8,
-	DLC                                      = 9,
-	OTHER                                    = 10,
-	SELL_BACK                                = 11,
-	CONSUME_ENTITLEMENT                      = 12,
-	ORDER_REVOCATION                         = 13,
-	DLC_REVOCATION                           = 14,
-	PAYMENT                                  = 15,
-	EXPIRATION                               = 16,
-	ESBZPlatformRewardSource_MAX             = 17,
-};
-
-// Enum SBZBackend.ESBZPlatformRewardType
-// NumValues: 0x0004
-enum class ESBZPlatformRewardType : uint8
-{
-	NONE                                     = 0,
-	ITEM                                     = 1,
-	CURRENCY                                 = 2,
-	ESBZPlatformRewardType_MAX               = 3,
-};
-
-// Enum SBZBackend.ESBZEntitlementUpdatedAction
-// NumValues: 0x000C
-enum class ESBZEntitlementUpdatedAction : uint8
-{
-	Grant                                    = 0,
-	Sell                                     = 1,
-	Split                                    = 2,
-	Delete                                   = 3,
-	Update                                   = 4,
-	Transfer                                 = 5,
-	Consume                                  = 6,
-	Revoke                                   = 7,
-	Disable                                  = 8,
-	Enable                                   = 9,
-	Unknown                                  = 10,
-	ESBZEntitlementUpdatedAction_MAX         = 11,
-};
-
-// Enum SBZBackend.ESBZUserEntitlementOrigin
-// NumValues: 0x000D
-enum class ESBZUserEntitlementOrigin : uint8
-{
-	NONE                                     = 0,
-	Playstation                              = 1,
-	Xbox                                     = 2,
-	Steam                                    = 3,
-	Epic                                     = 4,
-	IOS                                      = 5,
-	GooglePlay                               = 6,
-	Twitch                                   = 7,
-	Nintendo                                 = 8,
-	Oculus                                   = 9,
-	System                                   = 10,
-	Other                                    = 11,
-	ESBZUserEntitlementOrigin_MAX            = 12,
-};
-
-// Enum SBZBackend.ESBZLootBoxRewardType
-// NumValues: 0x0004
-enum class ESBZLootBoxRewardType : uint8
-{
-	PROBABILITY_GROUP                        = 0,
-	REWARD_GROUP                             = 1,
-	REWARD                                   = 2,
-	ESBZLootBoxRewardType_MAX                = 3,
-};
-
-// Enum SBZBackend.ESBZEntitlementSource
-// NumValues: 0x000B
-enum class ESBZEntitlementSource : uint8
-{
-	NONE                                     = 0,
-	PURCHASE                                 = 1,
-	IAP                                      = 2,
-	PROMOTION                                = 3,
-	ACHIEVEMENT                              = 4,
-	REFERRAL_BONUS                           = 5,
-	REDEEM_CODE                              = 6,
-	REWARD                                   = 7,
-	GIFT                                     = 8,
-	OTHER                                    = 9,
-	ESBZEntitlementSource_MAX                = 10,
-};
-
-// Enum SBZBackend.ESBZEntitlementStatus
-// NumValues: 0x0006
-enum class ESBZEntitlementStatus : uint8
-{
-	NONE                                     = 0,
-	ACTIVE                                   = 1,
-	INACTIVE                                 = 2,
-	CONSUMED                                 = 3,
-	REVOKED                                  = 4,
-	ESBZEntitlementStatus_MAX                = 5,
-};
-
-// Enum SBZBackend.ESBZItemStatus
-// NumValues: 0x0004
-enum class ESBZItemStatus : uint8
-{
-	NONE                                     = 0,
-	ACTIVE                                   = 1,
-	INACTIVE                                 = 2,
-	ESBZItemStatus_MAX                       = 3,
-};
-
-// Enum SBZBackend.ESBZCycle
-// NumValues: 0x0007
-enum class ESBZCycle : uint8
-{
-	DAILY                                    = 0,
-	WEEKLY                                   = 1,
-	MONTHLY                                  = 2,
-	QUARTERLY                                = 3,
-	YEARLY                                   = 4,
-	ANNUALLY                                 = 5,
-	ESBZCycle_MAX                            = 6,
-};
-
-// Enum SBZBackend.ESBZCommerceItemType
-// NumValues: 0x000D
-enum class ESBZCommerceItemType : uint8
-{
-	NONE                                     = 0,
-	APP                                      = 1,
-	COINS                                    = 2,
-	INGAMEITEM                               = 3,
-	BUNDLE                                   = 4,
-	CODE                                     = 5,
-	SUBSCRIPTION                             = 6,
-	SEASON                                   = 7,
-	MEDIA                                    = 8,
-	OPTIONBOX                                = 9,
-	EXTENSION                                = 10,
-	LOOTBOX                                  = 11,
-	ESBZCommerceItemType_MAX                 = 12,
-};
-
-// Enum SBZBackend.ESBZEntitlementType
-// NumValues: 0x0004
-enum class ESBZEntitlementType : uint8
-{
-	NONE                                     = 0,
-	DURABLE                                  = 1,
-	CONSUMABLE                               = 2,
-	ESBZEntitlementType_MAX                  = 3,
-};
-
-// Enum SBZBackend.ESBZPlatformSync
-// NumValues: 0x0006
-enum class ESBZPlatformSync : uint8
-{
-	STEAM                                    = 0,
-	XBOX_LIVE                                = 1,
-	PLAYSTATION                              = 2,
-	EPIC_GAMES                               = 3,
-	OTHER                                    = 4,
-	ESBZPlatformSync_MAX                     = 5,
-};
-
-// Enum SBZBackend.ESBZAppType
-// NumValues: 0x0006
-enum class ESBZAppType : uint8
-{
-	NONE                                     = 0,
-	GAME                                     = 1,
-	SOFTWARE                                 = 2,
-	DLC                                      = 3,
-	DEMO                                     = 4,
-	ESBZAppType_MAX                          = 5,
-};
-
-// Enum SBZBackend.ESBZEntitlementClass
+// Enum SBZBackend.ESBZCreditUserWalletSource
 // NumValues: 0x0009
-enum class ESBZEntitlementClass : uint8
+enum class ESBZCreditUserWalletSource : uint8
 {
-	NONE                                     = 0,
-	APP                                      = 1,
-	ENTITLEMENT                              = 2,
-	CODE                                     = 3,
-	SUBSCRIPTION                             = 4,
-	MEDIA                                    = 5,
-	OPTIONBOX                                = 6,
-	LOOTBOX                                  = 7,
-	ESBZEntitlementClass_MAX                 = 8,
-};
-
-// Enum SBZBackend.ESBZOrderStatus
-// NumValues: 0x000D
-enum class ESBZOrderStatus : uint8
-{
-	NONE                                     = 0,
-	INIT                                     = 1,
-	CHARGED                                  = 2,
-	CHARGEBACK                               = 3,
-	CHARGEBACK_REVERSED                      = 4,
-	FULFILLED                                = 5,
-	FULFILL_FAILED                           = 6,
-	REFUNDING                                = 7,
-	REFUNDED                                 = 8,
-	REFUND_FAILED                            = 9,
-	CLOSED                                   = 10,
-	DELETED                                  = 11,
-	ESBZOrderStatus_MAX                      = 12,
-};
-
-// Enum SBZBackend.ESBZItemCurrencyType
-// NumValues: 0x0004
-enum class ESBZItemCurrencyType : uint8
-{
-	NONE                                     = 0,
-	REAL                                     = 1,
-	VIRTUAL                                  = 2,
-	ESBZItemCurrencyType_MAX                 = 3,
-};
-
-// Enum SBZBackend.ESBZPaymentProvider
-// NumValues: 0x000A
-enum class ESBZPaymentProvider : uint8
-{
-	NONE                                     = 0,
-	WALLET                                   = 1,
-	XSOLLA                                   = 2,
-	ADYEN                                    = 3,
-	STRIPE                                   = 4,
-	CHECKOUT                                 = 5,
-	ALIPAY                                   = 6,
-	WXPAY                                    = 7,
-	PAYPAL                                   = 8,
-	ESBZPaymentProvider_MAX                  = 9,
+	PURCHASE                                 = 0,
+	IAP                                      = 1,
+	PROMOTION                                = 2,
+	ACHIEVEMENT                              = 3,
+	REFERRAL_BONUS                           = 4,
+	REDEEM_CODE                              = 5,
+	REFUND                                   = 6,
+	OTHER                                    = 7,
+	ESBZCreditUserWalletSource_MAX           = 8,
 };
 
 // Enum SBZBackend.ESBZItemSource
@@ -491,30 +202,319 @@ enum class ESBZItemSource : uint8
 	ESBZItemSource_MAX                       = 17,
 };
 
-// Enum SBZBackend.ESBZCreditUserWalletSource
-// NumValues: 0x0009
-enum class ESBZCreditUserWalletSource : uint8
+// Enum SBZBackend.ESBZPaymentProvider
+// NumValues: 0x000A
+enum class ESBZPaymentProvider : uint8
 {
-	PURCHASE                                 = 0,
-	IAP                                      = 1,
-	PROMOTION                                = 2,
-	ACHIEVEMENT                              = 3,
-	REFERRAL_BONUS                           = 4,
-	REDEEM_CODE                              = 5,
-	REFUND                                   = 6,
-	OTHER                                    = 7,
-	ESBZCreditUserWalletSource_MAX           = 8,
+	NONE                                     = 0,
+	WALLET                                   = 1,
+	XSOLLA                                   = 2,
+	ADYEN                                    = 3,
+	STRIPE                                   = 4,
+	CHECKOUT                                 = 5,
+	ALIPAY                                   = 6,
+	WXPAY                                    = 7,
+	PAYPAL                                   = 8,
+	ESBZPaymentProvider_MAX                  = 9,
 };
 
-// Enum SBZBackend.ESBZRelationshipStatusCode
-// NumValues: 0x0005
-enum class ESBZRelationshipStatusCode : uint8
+// Enum SBZBackend.ESBZItemCurrencyType
+// NumValues: 0x0004
+enum class ESBZItemCurrencyType : uint8
 {
-	NotFriend                                = 0,
-	Outgoing                                 = 1,
-	Incoming                                 = 2,
-	Friend                                   = 3,
-	ESBZRelationshipStatusCode_MAX           = 4,
+	NONE                                     = 0,
+	REAL                                     = 1,
+	VIRTUAL                                  = 2,
+	ESBZItemCurrencyType_MAX                 = 3,
+};
+
+// Enum SBZBackend.ESBZOrderStatus
+// NumValues: 0x000D
+enum class ESBZOrderStatus : uint8
+{
+	NONE                                     = 0,
+	INIT                                     = 1,
+	CHARGED                                  = 2,
+	CHARGEBACK                               = 3,
+	CHARGEBACK_REVERSED                      = 4,
+	FULFILLED                                = 5,
+	FULFILL_FAILED                           = 6,
+	REFUNDING                                = 7,
+	REFUNDED                                 = 8,
+	REFUND_FAILED                            = 9,
+	CLOSED                                   = 10,
+	DELETED                                  = 11,
+	ESBZOrderStatus_MAX                      = 12,
+};
+
+// Enum SBZBackend.ESBZEntitlementClass
+// NumValues: 0x0009
+enum class ESBZEntitlementClass : uint8
+{
+	NONE                                     = 0,
+	APP                                      = 1,
+	ENTITLEMENT                              = 2,
+	CODE                                     = 3,
+	SUBSCRIPTION                             = 4,
+	MEDIA                                    = 5,
+	OPTIONBOX                                = 6,
+	LOOTBOX                                  = 7,
+	ESBZEntitlementClass_MAX                 = 8,
+};
+
+// Enum SBZBackend.ESBZAppType
+// NumValues: 0x0006
+enum class ESBZAppType : uint8
+{
+	NONE                                     = 0,
+	GAME                                     = 1,
+	SOFTWARE                                 = 2,
+	DLC                                      = 3,
+	DEMO                                     = 4,
+	ESBZAppType_MAX                          = 5,
+};
+
+// Enum SBZBackend.ESBZPlatformSync
+// NumValues: 0x0006
+enum class ESBZPlatformSync : uint8
+{
+	STEAM                                    = 0,
+	XBOX_LIVE                                = 1,
+	PLAYSTATION                              = 2,
+	EPIC_GAMES                               = 3,
+	OTHER                                    = 4,
+	ESBZPlatformSync_MAX                     = 5,
+};
+
+// Enum SBZBackend.ESBZEntitlementType
+// NumValues: 0x0004
+enum class ESBZEntitlementType : uint8
+{
+	NONE                                     = 0,
+	DURABLE                                  = 1,
+	CONSUMABLE                               = 2,
+	ESBZEntitlementType_MAX                  = 3,
+};
+
+// Enum SBZBackend.ESBZCommerceItemType
+// NumValues: 0x000D
+enum class ESBZCommerceItemType : uint8
+{
+	NONE                                     = 0,
+	APP                                      = 1,
+	COINS                                    = 2,
+	INGAMEITEM                               = 3,
+	BUNDLE                                   = 4,
+	CODE                                     = 5,
+	SUBSCRIPTION                             = 6,
+	SEASON                                   = 7,
+	MEDIA                                    = 8,
+	OPTIONBOX                                = 9,
+	EXTENSION                                = 10,
+	LOOTBOX                                  = 11,
+	ESBZCommerceItemType_MAX                 = 12,
+};
+
+// Enum SBZBackend.ESBZCycle
+// NumValues: 0x0007
+enum class ESBZCycle : uint8
+{
+	DAILY                                    = 0,
+	WEEKLY                                   = 1,
+	MONTHLY                                  = 2,
+	QUARTERLY                                = 3,
+	YEARLY                                   = 4,
+	ANNUALLY                                 = 5,
+	ESBZCycle_MAX                            = 6,
+};
+
+// Enum SBZBackend.ESBZItemStatus
+// NumValues: 0x0004
+enum class ESBZItemStatus : uint8
+{
+	NONE                                     = 0,
+	ACTIVE                                   = 1,
+	INACTIVE                                 = 2,
+	ESBZItemStatus_MAX                       = 3,
+};
+
+// Enum SBZBackend.ESBZEntitlementStatus
+// NumValues: 0x0006
+enum class ESBZEntitlementStatus : uint8
+{
+	NONE                                     = 0,
+	ACTIVE                                   = 1,
+	INACTIVE                                 = 2,
+	CONSUMED                                 = 3,
+	REVOKED                                  = 4,
+	ESBZEntitlementStatus_MAX                = 5,
+};
+
+// Enum SBZBackend.ESBZEntitlementSource
+// NumValues: 0x000B
+enum class ESBZEntitlementSource : uint8
+{
+	NONE                                     = 0,
+	PURCHASE                                 = 1,
+	IAP                                      = 2,
+	PROMOTION                                = 3,
+	ACHIEVEMENT                              = 4,
+	REFERRAL_BONUS                           = 5,
+	REDEEM_CODE                              = 6,
+	REWARD                                   = 7,
+	GIFT                                     = 8,
+	OTHER                                    = 9,
+	ESBZEntitlementSource_MAX                = 10,
+};
+
+// Enum SBZBackend.ESBZLootBoxRewardType
+// NumValues: 0x0004
+enum class ESBZLootBoxRewardType : uint8
+{
+	PROBABILITY_GROUP                        = 0,
+	REWARD_GROUP                             = 1,
+	REWARD                                   = 2,
+	ESBZLootBoxRewardType_MAX                = 3,
+};
+
+// Enum SBZBackend.ESBZUserEntitlementOrigin
+// NumValues: 0x000D
+enum class ESBZUserEntitlementOrigin : uint8
+{
+	NONE                                     = 0,
+	Playstation                              = 1,
+	Xbox                                     = 2,
+	Steam                                    = 3,
+	Epic                                     = 4,
+	IOS                                      = 5,
+	GooglePlay                               = 6,
+	Twitch                                   = 7,
+	Nintendo                                 = 8,
+	Oculus                                   = 9,
+	System                                   = 10,
+	Other                                    = 11,
+	ESBZUserEntitlementOrigin_MAX            = 12,
+};
+
+// Enum SBZBackend.ESBZEntitlementUpdatedAction
+// NumValues: 0x000C
+enum class ESBZEntitlementUpdatedAction : uint8
+{
+	Grant                                    = 0,
+	Sell                                     = 1,
+	Split                                    = 2,
+	Delete                                   = 3,
+	Update                                   = 4,
+	Transfer                                 = 5,
+	Consume                                  = 6,
+	Revoke                                   = 7,
+	Disable                                  = 8,
+	Enable                                   = 9,
+	Unknown                                  = 10,
+	ESBZEntitlementUpdatedAction_MAX         = 11,
+};
+
+// Enum SBZBackend.ESBZPlatformRewardType
+// NumValues: 0x0004
+enum class ESBZPlatformRewardType : uint8
+{
+	NONE                                     = 0,
+	ITEM                                     = 1,
+	CURRENCY                                 = 2,
+	ESBZPlatformRewardType_MAX               = 3,
+};
+
+// Enum SBZBackend.ESBZPlatformRewardSource
+// NumValues: 0x0012
+enum class ESBZPlatformRewardSource : uint8
+{
+	NONE                                     = 0,
+	PURCHASE                                 = 1,
+	IAP                                      = 2,
+	PROMOTION                                = 3,
+	ACHIEVEMENT                              = 4,
+	REFERRAL_BONUS                           = 5,
+	REDEEM_CODE                              = 6,
+	REWARD                                   = 7,
+	GIFT                                     = 8,
+	DLC                                      = 9,
+	OTHER                                    = 10,
+	SELL_BACK                                = 11,
+	CONSUME_ENTITLEMENT                      = 12,
+	ORDER_REVOCATION                         = 13,
+	DLC_REVOCATION                           = 14,
+	PAYMENT                                  = 15,
+	EXPIRATION                               = 16,
+	ESBZPlatformRewardSource_MAX             = 17,
+};
+
+// Enum SBZBackend.ESBZPlatformRewardOrigin
+// NumValues: 0x000D
+enum class ESBZPlatformRewardOrigin : uint8
+{
+	NONE                                     = 0,
+	Playstation                              = 1,
+	Xbox                                     = 2,
+	Steam                                    = 3,
+	Epic                                     = 4,
+	IOS                                      = 5,
+	GooglePlay                               = 6,
+	Twitch                                   = 7,
+	Nintendo                                 = 8,
+	Oculus                                   = 9,
+	System                                   = 10,
+	Other                                    = 11,
+	ESBZPlatformRewardOrigin_MAX             = 12,
+};
+
+// Enum SBZBackend.ESBZSubscriptionSummaryStatus
+// NumValues: 0x0006
+enum class ESBZSubscriptionSummaryStatus : uint8
+{
+	NONE                                     = 0,
+	INIT                                     = 1,
+	ACTIVE                                   = 2,
+	CANCELLED                                = 3,
+	EXPIRED                                  = 4,
+	ESBZSubscriptionSummaryStatus_MAX        = 5,
+};
+
+// Enum SBZBackend.ESBZSubscriptionSummarySubscribedBy
+// NumValues: 0x0004
+enum class ESBZSubscriptionSummarySubscribedBy : uint8
+{
+	NONE                                     = 0,
+	USER                                     = 1,
+	PLATFORM                                 = 2,
+	ESBZSubscriptionSummarySubscribedBy_MAX  = 3,
+};
+
+// Enum SBZBackend.ESBZWalletTable
+// NumValues: 0x000B
+enum class ESBZWalletTable : uint8
+{
+	Playstation                              = 0,
+	Xbox                                     = 1,
+	Steam                                    = 2,
+	Epic                                     = 3,
+	IOS                                      = 4,
+	GooglePlay                               = 5,
+	Twitch                                   = 6,
+	System                                   = 7,
+	Nintendo                                 = 8,
+	Other                                    = 9,
+	ESBZWalletTable_MAX                      = 10,
+};
+
+// Enum SBZBackend.ESBZReportingCategory
+// NumValues: 0x0005
+enum class ESBZReportingCategory : uint8
+{
+	UGC                                      = 0,
+	USER                                     = 1,
+	CHAT                                     = 2,
+	EXTENSION                                = 3,
+	ESBZReportingCategory_MAX                = 4,
 };
 
 // Enum SBZBackend.ESBZAvailability
@@ -529,15 +529,15 @@ enum class ESBZAvailability : uint8
 	ESBZAvailability_MAX                     = 5,
 };
 
-// Enum SBZBackend.ESBZReportingCategory
+// Enum SBZBackend.ESBZRelationshipStatusCode
 // NumValues: 0x0005
-enum class ESBZReportingCategory : uint8
+enum class ESBZRelationshipStatusCode : uint8
 {
-	UGC                                      = 0,
-	USER                                     = 1,
-	CHAT                                     = 2,
-	EXTENSION                                = 3,
-	ESBZReportingCategory_MAX                = 4,
+	NotFriend                                = 0,
+	Outgoing                                 = 1,
+	Incoming                                 = 2,
+	Friend                                   = 3,
+	ESBZRelationshipStatusCode_MAX           = 4,
 };
 
 // Enum SBZBackend.ESBZBanReason
@@ -560,34 +560,17 @@ enum class ESBZBanReason : uint8
 	ESBZBanReason_MAX                        = 13,
 };
 
-// Enum SBZBackend.ESBZBackendPartyMemberStatus
-// NumValues: 0x000C
-enum class ESBZBackendPartyMemberStatus : uint8
+// Enum SBZBackend.ESBZOnlineJoinType
+// NumValues: 0x0007
+enum class ESBZOnlineJoinType : uint8
 {
-	Empty                                    = 0,
-	Invited                                  = 1,
-	Joined                                   = 2,
-	Connected                                = 3,
-	Left                                     = 4,
-	Dropped                                  = 5,
-	Rejected                                 = 6,
-	Kicked                                   = 7,
-	Timeout                                  = 8,
-	Disconnected                             = 9,
-	Terminated                               = 10,
-	ESBZBackendPartyMemberStatus_MAX         = 11,
-};
-
-// Enum SBZBackend.ESBZPartyLeaveResult
-// NumValues: 0x0006
-enum class ESBZPartyLeaveResult : uint8
-{
-	Success                                  = 0,
-	Failure                                  = 1,
-	SessionIsNotAvailable                    = 2,
-	NotInParty                               = 3,
-	LeaveInProgress                          = 4,
-	ESBZPartyLeaveResult_MAX                 = 5,
+	Debug_DEPRECATED                         = 0,
+	Public                                   = 1,
+	Private                                  = 2,
+	FriendsOnly                              = 3,
+	InviteOnly                               = 4,
+	Default                                  = 1,
+	ESBZOnlineJoinType_MAX                   = 5,
 };
 
 // Enum SBZBackend.ESBZPartyCreateResult
@@ -605,17 +588,34 @@ enum class ESBZPartyCreateResult : uint8
 	ESBZPartyCreateResult_MAX                = 8,
 };
 
-// Enum SBZBackend.ESBZOnlineJoinType
-// NumValues: 0x0007
-enum class ESBZOnlineJoinType : uint8
+// Enum SBZBackend.ESBZPartyLeaveResult
+// NumValues: 0x0006
+enum class ESBZPartyLeaveResult : uint8
 {
-	Debug_DEPRECATED                         = 0,
-	Public                                   = 1,
-	Private                                  = 2,
-	FriendsOnly                              = 3,
-	InviteOnly                               = 4,
-	Default                                  = 1,
-	ESBZOnlineJoinType_MAX                   = 5,
+	Success                                  = 0,
+	Failure                                  = 1,
+	SessionIsNotAvailable                    = 2,
+	NotInParty                               = 3,
+	LeaveInProgress                          = 4,
+	ESBZPartyLeaveResult_MAX                 = 5,
+};
+
+// Enum SBZBackend.ESBZBackendPartyMemberStatus
+// NumValues: 0x000C
+enum class ESBZBackendPartyMemberStatus : uint8
+{
+	Empty                                    = 0,
+	Invited                                  = 1,
+	Joined                                   = 2,
+	Connected                                = 3,
+	Left                                     = 4,
+	Dropped                                  = 5,
+	Rejected                                 = 6,
+	Kicked                                   = 7,
+	Timeout                                  = 8,
+	Disconnected                             = 9,
+	Terminated                               = 10,
+	ESBZBackendPartyMemberStatus_MAX         = 11,
 };
 
 // Enum SBZBackend.ESBZLoginType
@@ -745,34 +745,45 @@ enum class ESBZMetaRequestResult : uint8
 	ESBZMetaRequestResult_MAX                = 65,
 };
 
-// ScriptStruct SBZBackend.SBZBackendSessionParty
-// 0x0020 (0x0020 - 0x0000)
-struct FSBZBackendSessionParty final
+// ScriptStruct SBZBackend.SBZMatchInfo
+// 0x0098 (0x0098 - 0x0000)
+struct FSBZMatchInfo final
 {
 public:
-	class FString                                 PartyID;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         UserIDs;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	class FString                                 IP;                                                // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PortGame;                                          // 0x0010(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PortBeacon;                                        // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchID;                                           // 0x0018(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ServerVersion;                                     // 0x0028(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Region;                                            // 0x0038(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GameSessionCode;                                   // 0x0048(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GameConnectString;                                 // 0x0058(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BeaconConnectString;                               // 0x0068(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DifficultyIdx;                                     // 0x0078(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 SecurityCompanies;                                 // 0x0080(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         LevelIdx;                                          // 0x0090(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSBZBackendSessionParty;
+DUMPER7_ASSERTS_FSBZMatchInfo;
 
-// ScriptStruct SBZBackend.SBZUserCurrentPlatform
-// 0x0020 (0x0020 - 0x0000)
-struct FSBZUserCurrentPlatform final
+// ScriptStruct SBZBackend.SBZOrderCreate
+// 0x0070 (0x0070 - 0x0000)
+struct FSBZOrderCreate final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrentPlatform;                                   // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Quantity;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Price;                                             // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DiscountedPrice;                                   // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CurrencyCode;                                      // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Region;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Language;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ReturnUrl;                                         // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SectionId;                                         // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZUserCurrentPlatform;
-
-// ScriptStruct SBZBackend.SBZBulkUserCurrentPlatformResponse
-// 0x0010 (0x0010 - 0x0000)
-struct FSBZBulkUserCurrentPlatformResponse final
-{
-public:
-	TArray<struct FSBZUserCurrentPlatform>        Data;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBulkUserCurrentPlatformResponse;
+DUMPER7_ASSERTS_FSBZOrderCreate;
 
 // ScriptStruct SBZBackend.SBZQosServer
 // 0x0048 (0x0048 - 0x0000)
@@ -797,74 +808,53 @@ public:
 };
 DUMPER7_ASSERTS_FSBZQosServerList;
 
-// ScriptStruct SBZBackend.SBZBackendSessionTeam
+// ScriptStruct SBZBackend.SBZPlatformRewardCurrency
 // 0x0020 (0x0020 - 0x0000)
-struct FSBZBackendSessionTeam final
+struct FSBZPlatformRewardCurrency final
 {
 public:
-	TArray<class FString>                         UserIDs;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FSBZBackendSessionParty>        Parties;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	class FString                                 Namespace;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencyCode;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZBackendSessionTeam;
+DUMPER7_ASSERTS_FSBZPlatformRewardCurrency;
 
-// ScriptStruct SBZBackend.SBZUserPlatformInfo
+// ScriptStruct SBZBackend.SBZPlatformRewardItem
 // 0x0030 (0x0030 - 0x0000)
-struct alignas(0x08) FSBZUserPlatformInfo final
+struct FSBZPlatformRewardItem final
 {
 public:
-	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 ItemType;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemSku;                                           // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZUserPlatformInfo;
+DUMPER7_ASSERTS_FSBZPlatformRewardItem;
 
-// ScriptStruct SBZBackend.SBZUserPlatformInfoData
-// 0x0050 (0x0050 - 0x0000)
-struct FSBZUserPlatformInfoData final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DisplayName;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSBZUserPlatformInfo>           PlatformInfos;                                     // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	class FString                                 UserName;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AvatarURL;                                         // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZUserPlatformInfoData;
-
-// ScriptStruct SBZBackend.SBZBackendMatchmakingTicketPlayerData
-// 0x0030 (0x0030 - 0x0000)
-struct FSBZBackendMatchmakingTicketPlayerData final
-{
-public:
-	class FString                                 PlayerID;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     Attributes;                                        // 0x0010(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBackendMatchmakingTicketPlayerData;
-
-// ScriptStruct SBZBackend.SBZBackendMatchmakingTicket
-// 0x0088 (0x0088 - 0x0000)
-struct FSBZBackendMatchmakingTicket final
-{
-public:
-	class FString                                 TicketID;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchPool;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              CreatedAt;                                         // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, int32>                    Latencies;                                         // 0x0028(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	TArray<struct FSBZBackendMatchmakingTicketPlayerData> Players;                                   // 0x0078(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBackendMatchmakingTicket;
-
-// ScriptStruct SBZBackend.SBZBackendBackfillProposal
+// ScriptStruct SBZBackend.SBZPlatformReward
 // 0x0060 (0x0060 - 0x0000)
-struct FSBZBackendBackfillProposal final
+struct FSBZPlatformReward final
 {
 public:
-	class FString                                 BackfillTicketID;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ProposalID;                                        // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchPool;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchSessionID;                                    // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSBZBackendSessionTeam>         ProposedTeams;                                     // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FSBZBackendMatchmakingTicket>   AddedTickets;                                      // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	ESBZPlatformRewardType                        Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPlatformRewardItem                 Item;                                              // 0x0008(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FSBZPlatformRewardCurrency             Currency;                                          // 0x0038(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         Quantity;                                          // 0x0058(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSBZBackendBackfillProposal;
+DUMPER7_ASSERTS_FSBZPlatformReward;
+
+// ScriptStruct SBZBackend.SBZFulfillRewards
+// 0x0038 (0x0038 - 0x0000)
+struct FSBZFulfillRewards final
+{
+public:
+	TArray<struct FSBZPlatformReward>             Rewards;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	ESBZPlatformRewardSource                      Source;                                            // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZPlatformRewardOrigin                      Origin;                                            // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FJsonObjectWrapper                     Metadata;                                          // 0x0018(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZFulfillRewards;
 
 // ScriptStruct SBZBackend.SBZBackendSessionMember
 // 0x0040 (0x0040 - 0x0000)
@@ -880,220 +870,6 @@ public:
 	class FString                                 PlatformUserID;                                    // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FSBZBackendSessionMember;
-
-// ScriptStruct SBZBackend.SBZMatchInfo
-// 0x0098 (0x0098 - 0x0000)
-struct FSBZMatchInfo final
-{
-public:
-	class FString                                 IP;                                                // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PortGame;                                          // 0x0010(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PortBeacon;                                        // 0x0014(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 MatchID;                                           // 0x0018(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ServerVersion;                                     // 0x0028(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Region;                                            // 0x0038(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GameSessionCode;                                   // 0x0048(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GameConnectString;                                 // 0x0058(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BeaconConnectString;                               // 0x0068(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DifficultyIdx;                                     // 0x0078(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 SecurityCompanies;                                 // 0x0080(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         LevelIdx;                                          // 0x0090(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZMatchInfo;
-
-// ScriptStruct SBZBackend.SBZBanUserResponse
-// 0x0028 (0x0028 - 0x0000)
-struct FSBZBanUserResponse final
-{
-public:
-	class FString                                 BanId;                                             // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserId;                                            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bSuccess;                                          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZBanUserResponse;
-
-// ScriptStruct SBZBackend.SBZBanUserRequest
-// 0x0030 (0x0030 - 0x0000)
-struct FSBZBanUserRequest final
-{
-public:
-	ESBZBanType                                   BanType;                                           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZBanReason                                 Reason;                                            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Comment;                                           // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EndDate;                                           // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          SkipNotif;                                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZBanUserRequest;
-
-// ScriptStruct SBZBackend.SBZOrderCurrencySummary
-// 0x0040 (0x0040 - 0x0000)
-struct FSBZOrderCurrencySummary final
-{
-public:
-	class FString                                 CurrencyCode;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencySymbol;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZItemCurrencyType                          CurrencyType;                                      // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Namespace;                                         // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Decimals;                                          // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZOrderCurrencySummary;
-
-// ScriptStruct SBZBackend.SBZOrderSummary
-// 0x0068 (0x0068 - 0x0000)
-struct FSBZOrderSummary final
-{
-public:
-	struct FSBZOrderCurrencySummary               Currency;                                          // 0x0000(0x0040)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     Ext;                                               // 0x0040(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	bool                                          Free;                                              // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZOrderSummary;
-
-// ScriptStruct SBZBackend.SBZFulfillmentRequest
-// 0x0130 (0x0130 - 0x0000)
-struct FSBZFulfillmentRequest final
-{
-public:
-	class FString                                 ItemId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Quantity;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 OrderNo;                                           // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZItemSource                                Source;                                            // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Region;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 StoreId;                                           // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemSku;                                           // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSBZOrderSummary                       Order;                                             // 0x0070(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDateTime                              StartDate;                                         // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              EndDate;                                           // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Duration;                                          // 0x00E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZPlatformRewardOrigin                      Origin;                                            // 0x00EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FJsonObjectWrapper                     Metadata;                                          // 0x00F0(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OverrideBundleItemQty;                             // 0x0110(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZFulfillmentRequest;
-
-// ScriptStruct SBZBackend.SBZCreditUserWalletRequest
-// 0x0028 (0x0028 - 0x0000)
-struct FSBZCreditUserWalletRequest final
-{
-public:
-	int64                                         Amount;                                            // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZCreditUserWalletSource                    Source;                                            // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Reason;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZWalletTable                               Origin;                                            // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZCreditUserWalletRequest;
-
-// ScriptStruct SBZBackend.SBZEntitlementSummary
-// 0x0001 (0x0001 - 0x0000)
-struct FSBZEntitlementSummary final
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZEntitlementSummary;
-
-// ScriptStruct SBZBackend.SBZCreditSummary
-// 0x0001 (0x0001 - 0x0000)
-struct FSBZCreditSummary final
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZCreditSummary;
-
-// ScriptStruct SBZBackend.SBZSubscriptionSummary
-// 0x0070 (0x0070 - 0x0000)
-struct FSBZSubscriptionSummary final
-{
-public:
-	class FString                                 Id;                                                // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Namespace;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserId;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Sku;                                               // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZSubscriptionSummaryStatus                 Status;                                            // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              CurrentPeriodStart;                                // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              CurrentPeriodEnd;                                  // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZSubscriptionSummarySubscribedBy           SubscribedBy;                                      // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZSubscriptionSummary;
-
-// ScriptStruct SBZBackend.SBZFulfillmentResult
-// 0x0050 (0x0050 - 0x0000)
-struct FSBZFulfillmentResult final
-{
-public:
-	class FString                                 Namespace;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSBZEntitlementSummary>         EntitlementSummaries;                              // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FSBZCreditSummary>              CreditSummaries;                                   // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FSBZSubscriptionSummary>        SubscriptionSummaries;                             // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZFulfillmentResult;
-
-// ScriptStruct SBZBackend.SBZEntitlementUpdate
-// 0x00F0 (0x00F0 - 0x0000)
-struct FSBZEntitlementUpdate final
-{
-public:
-	class FString                                 Id;                                                // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Namespace;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZEntitlementClass                          Clazz;                                             // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZEntitlementType                           Type;                                              // 0x0021(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZEntitlementStatus                         Status;                                            // 0x0022(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 AppId;                                             // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZAppType                                   AppType;                                           // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Sku;                                               // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserId;                                            // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 GrantedCode;                                       // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemNamespace;                                     // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Name;                                              // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         UseCount;                                          // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZEntitlementSource                         Source;                                            // 0x00A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              StartDate;                                         // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              EndDate;                                           // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              GrantedAt;                                         // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              CreatedAt;                                         // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              UpdatedAt;                                         // 0x00C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZUserEntitlementOrigin                     Origin;                                            // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CollectionId;                                      // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Stackable;                                         // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         StackedUseCount;                                   // 0x00EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZEntitlementUpdate;
-
-// ScriptStruct SBZBackend.SBZEntitlementUpdatedNotification
-// 0x0018 (0x0018 - 0x0000)
-struct FSBZEntitlementUpdatedNotification final
-{
-public:
-	ESBZEntitlementUpdatedAction                  Action;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZEntitlementUpdate>          Data;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZEntitlementUpdatedNotification;
 
 // ScriptStruct SBZBackend.SBZItemBoxItem
 // 0x0048 (0x0048 - 0x0000)
@@ -1199,6 +975,325 @@ public:
 };
 DUMPER7_ASSERTS_FSBZEntitlementItemSnapshot;
 
+// ScriptStruct SBZBackend.SBZBackendSessionParty
+// 0x0020 (0x0020 - 0x0000)
+struct FSBZBackendSessionParty final
+{
+public:
+	class FString                                 PartyID;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         UserIDs;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBackendSessionParty;
+
+// ScriptStruct SBZBackend.SBZBulkStatItemOperationResult
+// 0x0078 (0x0078 - 0x0000)
+struct FSBZBulkStatItemOperationResult final
+{
+public:
+	TMap<class FString, class FString>            Details;                                           // 0x0000(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 StatCode;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Success;                                           // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 UserId;                                            // 0x0068(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBulkStatItemOperationResult;
+
+// ScriptStruct SBZBackend.SBZBackendSessionTeam
+// 0x0020 (0x0020 - 0x0000)
+struct FSBZBackendSessionTeam final
+{
+public:
+	TArray<class FString>                         UserIDs;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FSBZBackendSessionParty>        Parties;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBackendSessionTeam;
+
+// ScriptStruct SBZBackend.SBZUserCurrentPlatform
+// 0x0020 (0x0020 - 0x0000)
+struct FSBZUserCurrentPlatform final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrentPlatform;                                   // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZUserCurrentPlatform;
+
+// ScriptStruct SBZBackend.SBZBackendMatchmakingTicketPlayerData
+// 0x0030 (0x0030 - 0x0000)
+struct FSBZBackendMatchmakingTicketPlayerData final
+{
+public:
+	class FString                                 PlayerID;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     Attributes;                                        // 0x0010(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBackendMatchmakingTicketPlayerData;
+
+// ScriptStruct SBZBackend.SBZBackendMatchmakingTicket
+// 0x0088 (0x0088 - 0x0000)
+struct FSBZBackendMatchmakingTicket final
+{
+public:
+	class FString                                 TicketID;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchPool;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              CreatedAt;                                         // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TMap<class FString, int32>                    Latencies;                                         // 0x0028(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TArray<struct FSBZBackendMatchmakingTicketPlayerData> Players;                                   // 0x0078(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBackendMatchmakingTicket;
+
+// ScriptStruct SBZBackend.SBZBackendBackfillProposal
+// 0x0060 (0x0060 - 0x0000)
+struct FSBZBackendBackfillProposal final
+{
+public:
+	class FString                                 BackfillTicketID;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ProposalID;                                        // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchPool;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MatchSessionID;                                    // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSBZBackendSessionTeam>         ProposedTeams;                                     // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FSBZBackendMatchmakingTicket>   AddedTickets;                                      // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBackendBackfillProposal;
+
+// ScriptStruct SBZBackend.SBZBanUserRequest
+// 0x0030 (0x0030 - 0x0000)
+struct FSBZBanUserRequest final
+{
+public:
+	ESBZBanType                                   BanType;                                           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZBanReason                                 Reason;                                            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Comment;                                           // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EndDate;                                           // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          SkipNotif;                                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZBanUserRequest;
+
+// ScriptStruct SBZBackend.SBZBanUserResponse
+// 0x0028 (0x0028 - 0x0000)
+struct FSBZBanUserResponse final
+{
+public:
+	class FString                                 BanId;                                             // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bSuccess;                                          // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZBanUserResponse;
+
+// ScriptStruct SBZBackend.SBZOrderCurrencySummary
+// 0x0040 (0x0040 - 0x0000)
+struct FSBZOrderCurrencySummary final
+{
+public:
+	class FString                                 CurrencyCode;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencySymbol;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZItemCurrencyType                          CurrencyType;                                      // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Namespace;                                         // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Decimals;                                          // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZOrderCurrencySummary;
+
+// ScriptStruct SBZBackend.SBZOrderBundleItemInfo
+// 0x0040 (0x0040 - 0x0000)
+struct FSBZOrderBundleItemInfo final
+{
+public:
+	int32                                         Price;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DiscountedPrice;                                   // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemName;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemSku;                                           // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Quantity;                                          // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Purchased;                                         // 0x003C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZOrderBundleItemInfo;
+
+// ScriptStruct SBZBackend.SBZOrderInfo
+// 0x0378 (0x0378 - 0x0000)
+struct FSBZOrderInfo final
+{
+public:
+	class FString                                 OrderNo;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PaymentOrderNo;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Namespace;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Sandbox;                                           // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Quantity;                                          // 0x0054(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Price;                                             // 0x0058(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DiscountedPrice;                                   // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Vat;                                               // 0x0060(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SalesTax;                                          // 0x0064(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZPaymentProvider                           PaymentProvider;                                   // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         PaymentProviderFee;                                // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PaymentMethodFee;                                  // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZOrderCurrencySummary               Currency;                                          // 0x0078(0x0040)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 PaymentStationUrl;                                 // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSBZEntitlementItemSnapshot            ItemSnapshot;                                      // 0x00C8(0x01E8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	class FString                                 Region;                                            // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Language;                                          // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZOrderStatus                               Status;                                            // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 StatusReason;                                      // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              CreatedTime;                                       // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              ChargedTime;                                       // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              FulfilledTime;                                     // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              RefundedTime;                                      // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              ChargebackTime;                                    // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              ChargebackReversedTime;                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              ExpireTime;                                        // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         PaymentRemainSeconds;                              // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FJsonObjectWrapper                     Ext;                                               // 0x0328(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	int32                                         TotalTax;                                          // 0x0348(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         TotalPrice;                                        // 0x034C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SubtotalPrice;                                     // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_354[0x4];                                      // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZOrderBundleItemInfo>        OrderBundleItemInfos;                              // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FDateTime                              CreatedAt;                                         // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              UpdatedAt;                                         // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZOrderInfo;
+
+// ScriptStruct SBZBackend.SBZPlayStationDLCSync
+// 0x0004 (0x0004 - 0x0000)
+struct FSBZPlayStationDLCSync final
+{
+public:
+	int32                                         ServiceLabel;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZPlayStationDLCSync;
+
+// ScriptStruct SBZBackend.SBZEntitlementSyncBase
+// 0x0070 (0x0070 - 0x0000)
+struct FSBZEntitlementSyncBase final
+{
+public:
+	class FString                                 ProductId;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Price;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CurrencyCode;                                      // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 XstsToken;                                         // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ServiceLabel;                                      // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Region;                                            // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Language;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EpicGamesJwtToken;                                 // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZEntitlementSyncBase;
+
+// ScriptStruct SBZBackend.SBZTimeLimitedBalance
+// 0x0020 (0x0020 - 0x0000)
+struct FSBZTimeLimitedBalance final
+{
+public:
+	int64                                         Balance;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BalanceSource;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              ExpiredAt;                                         // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZTimeLimitedBalance;
+
+// ScriptStruct SBZBackend.SBZWalletInfo
+// 0x00A0 (0x00A0 - 0x0000)
+struct FSBZWalletInfo final
+{
+public:
+	class FString                                 Id;                                                // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Namespace;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencyCode;                                      // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencySymbol;                                    // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Balance;                                           // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 BalanceOrigin;                                     // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSBZTimeLimitedBalance>         TimeLimitedBalances;                               // 0x0068(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FDateTime                              CreatedAt;                                         // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              UpdatedAt;                                         // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         TotalPermanentBalance;                             // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         TotalTimeLimitedBalance;                           // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZItemStatus                                Status;                                            // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZWalletInfo;
+
+// ScriptStruct SBZBackend.SBZWalletInfoResponse
+// 0x0070 (0x0070 - 0x0000)
+struct FSBZWalletInfoResponse final
+{
+public:
+	class FString                                 Namespace;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencyCode;                                      // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CurrencySymbol;                                    // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Balance;                                           // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSBZWalletInfo>                 WalletInfos;                                       // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	ESBZItemStatus                                WalletStatus;                                      // 0x0058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZItemStatus                                Status;                                            // 0x0059(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Id;                                                // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZWalletInfoResponse;
+
+// ScriptStruct SBZBackend.SBZItemInfo
+// 0x0160 (0x0160 - 0x0000)
+struct FSBZItemInfo final
+{
+public:
+	class FString                                 Title;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Description;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LongDescription;                                   // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AppId;                                             // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Sku;                                               // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Namespace;                                         // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZEntitlementType                           EntitlementType;                                   // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         UseCount;                                          // 0x0084(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Stackable;                                         // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CategoryPath;                                      // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZItemStatus                                Status;                                            // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZCommerceItemType                          ItemType;                                          // 0x00A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         Tags;                                              // 0x00A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FSBZItemRegionDataItem>         RegionData;                                        // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         MaxCountPerUser;                                   // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         ItemIds;                                           // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TMap<class FString, int32>                    ItemQty;                                           // 0x00E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     Ext;                                               // 0x0130(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDateTime                              CreatedAt;                                         // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              UpdatedAt;                                         // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZItemInfo;
+
+// ScriptStruct SBZBackend.SBZItemCriteria
+// 0x0070 (0x0070 - 0x0000)
+struct FSBZItemCriteria final
+{
+public:
+	class FString                                 StoreId;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZCommerceItemType                          ItemType;                                          // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZAppType                                   AppType;                                           // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Region;                                            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Language;                                          // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CategoryPath;                                      // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          IncludeSubCategoryItem;                            // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         Tags;                                              // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Features;                                          // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZItemCriteria;
+
 // ScriptStruct SBZBackend.SBZEntitlementReward
 // 0x0028 (0x0028 - 0x0000)
 struct FSBZEntitlementReward final
@@ -1293,278 +1388,164 @@ public:
 };
 DUMPER7_ASSERTS_FSBZEntitlementInfo;
 
-// ScriptStruct SBZBackend.SBZItemCriteria
+// ScriptStruct SBZBackend.SBZEntitlementUpdate
+// 0x00F0 (0x00F0 - 0x0000)
+struct FSBZEntitlementUpdate final
+{
+public:
+	class FString                                 Id;                                                // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Namespace;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZEntitlementClass                          Clazz;                                             // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZEntitlementType                           Type;                                              // 0x0021(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZEntitlementStatus                         Status;                                            // 0x0022(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 AppId;                                             // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZAppType                                   AppType;                                           // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Sku;                                               // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemId;                                            // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GrantedCode;                                       // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemNamespace;                                     // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name;                                              // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         UseCount;                                          // 0x00A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZEntitlementSource                         Source;                                            // 0x00A4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              StartDate;                                         // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              EndDate;                                           // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              GrantedAt;                                         // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              CreatedAt;                                         // 0x00C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              UpdatedAt;                                         // 0x00C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZUserEntitlementOrigin                     Origin;                                            // 0x00D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D1[0x7];                                       // 0x00D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CollectionId;                                      // 0x00D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          Stackable;                                         // 0x00E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_E9[0x3];                                       // 0x00E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         StackedUseCount;                                   // 0x00EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZEntitlementUpdate;
+
+// ScriptStruct SBZBackend.SBZEntitlementUpdatedNotification
+// 0x0018 (0x0018 - 0x0000)
+struct FSBZEntitlementUpdatedNotification final
+{
+public:
+	ESBZEntitlementUpdatedAction                  Action;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZEntitlementUpdate>          Data;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZEntitlementUpdatedNotification;
+
+// ScriptStruct SBZBackend.SBZSubscriptionSummary
 // 0x0070 (0x0070 - 0x0000)
-struct FSBZItemCriteria final
-{
-public:
-	class FString                                 StoreId;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZCommerceItemType                          ItemType;                                          // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZAppType                                   AppType;                                           // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Region;                                            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CategoryPath;                                      // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          IncludeSubCategoryItem;                            // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         Tags;                                              // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Features;                                          // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZItemCriteria;
-
-// ScriptStruct SBZBackend.SBZItemInfo
-// 0x0160 (0x0160 - 0x0000)
-struct FSBZItemInfo final
-{
-public:
-	class FString                                 Title;                                             // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Description;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 LongDescription;                                   // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AppId;                                             // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Sku;                                               // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Namespace;                                         // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Name;                                              // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZEntitlementType                           EntitlementType;                                   // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         UseCount;                                          // 0x0084(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Stackable;                                         // 0x0088(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CategoryPath;                                      // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZItemStatus                                Status;                                            // 0x00A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZCommerceItemType                          ItemType;                                          // 0x00A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         Tags;                                              // 0x00A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FSBZItemRegionDataItem>         RegionData;                                        // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                         MaxCountPerUser;                                   // 0x00C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         ItemIds;                                           // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TMap<class FString, int32>                    ItemQty;                                           // 0x00E0(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     Ext;                                               // 0x0130(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FDateTime                              CreatedAt;                                         // 0x0150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              UpdatedAt;                                         // 0x0158(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZItemInfo;
-
-// ScriptStruct SBZBackend.SBZTimeLimitedBalance
-// 0x0020 (0x0020 - 0x0000)
-struct FSBZTimeLimitedBalance final
-{
-public:
-	int64                                         Balance;                                           // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BalanceSource;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              ExpiredAt;                                         // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZTimeLimitedBalance;
-
-// ScriptStruct SBZBackend.SBZWalletInfo
-// 0x00A0 (0x00A0 - 0x0000)
-struct FSBZWalletInfo final
+struct FSBZSubscriptionSummary final
 {
 public:
 	class FString                                 Id;                                                // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Namespace;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencyCode;                                      // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencySymbol;                                    // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int64                                         Balance;                                           // 0x0050(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 BalanceOrigin;                                     // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSBZTimeLimitedBalance>         TimeLimitedBalances;                               // 0x0068(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FDateTime                              CreatedAt;                                         // 0x0078(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              UpdatedAt;                                         // 0x0080(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int64                                         TotalPermanentBalance;                             // 0x0088(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int64                                         TotalTimeLimitedBalance;                           // 0x0090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZItemStatus                                Status;                                            // 0x0098(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 ItemId;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Sku;                                               // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZSubscriptionSummaryStatus                 Status;                                            // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              CurrentPeriodStart;                                // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              CurrentPeriodEnd;                                  // 0x0060(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZSubscriptionSummarySubscribedBy           SubscribedBy;                                      // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSBZWalletInfo;
+DUMPER7_ASSERTS_FSBZSubscriptionSummary;
 
-// ScriptStruct SBZBackend.SBZWalletInfoResponse
-// 0x0070 (0x0070 - 0x0000)
-struct FSBZWalletInfoResponse final
+// ScriptStruct SBZBackend.SBZEntitlementSummary
+// 0x0001 (0x0001 - 0x0000)
+struct FSBZEntitlementSummary final
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZEntitlementSummary;
+
+// ScriptStruct SBZBackend.SBZCreditSummary
+// 0x0001 (0x0001 - 0x0000)
+struct FSBZCreditSummary final
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSBZCreditSummary;
+
+// ScriptStruct SBZBackend.SBZFulfillmentResult
+// 0x0050 (0x0050 - 0x0000)
+struct FSBZFulfillmentResult final
 {
 public:
 	class FString                                 Namespace;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencyCode;                                      // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencySymbol;                                    // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int64                                         Balance;                                           // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FSBZWalletInfo>                 WalletInfos;                                       // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	ESBZItemStatus                                WalletStatus;                                      // 0x0058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZItemStatus                                Status;                                            // 0x0059(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Id;                                                // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSBZEntitlementSummary>         EntitlementSummaries;                              // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FSBZCreditSummary>              CreditSummaries;                                   // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FSBZSubscriptionSummary>        SubscriptionSummaries;                             // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZWalletInfoResponse;
+DUMPER7_ASSERTS_FSBZFulfillmentResult;
 
-// ScriptStruct SBZBackend.SBZEntitlementSyncBase
-// 0x0070 (0x0070 - 0x0000)
-struct FSBZEntitlementSyncBase final
+// ScriptStruct SBZBackend.SBZCreditUserWalletRequest
+// 0x0028 (0x0028 - 0x0000)
+struct FSBZCreditUserWalletRequest final
 {
 public:
-	class FString                                 ProductId;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Price;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CurrencyCode;                                      // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 XstsToken;                                         // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ServiceLabel;                                      // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Region;                                            // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EpicGamesJwtToken;                                 // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Amount;                                            // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZCreditUserWalletSource                    Source;                                            // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 Reason;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZWalletTable                               Origin;                                            // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSBZEntitlementSyncBase;
+DUMPER7_ASSERTS_FSBZCreditUserWalletRequest;
 
-// ScriptStruct SBZBackend.SBZPlayStationDLCSync
-// 0x0004 (0x0004 - 0x0000)
-struct FSBZPlayStationDLCSync final
+// ScriptStruct SBZBackend.SBZOrderSummary
+// 0x0068 (0x0068 - 0x0000)
+struct FSBZOrderSummary final
 {
 public:
-	int32                                         ServiceLabel;                                      // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSBZOrderCurrencySummary               Currency;                                          // 0x0000(0x0040)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     Ext;                                               // 0x0040(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	bool                                          Free;                                              // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSBZPlayStationDLCSync;
+DUMPER7_ASSERTS_FSBZOrderSummary;
 
-// ScriptStruct SBZBackend.SBZOrderBundleItemInfo
-// 0x0040 (0x0040 - 0x0000)
-struct FSBZOrderBundleItemInfo final
-{
-public:
-	int32                                         Price;                                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DiscountedPrice;                                   // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemName;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemSku;                                           // 0x0028(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Quantity;                                          // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Purchased;                                         // 0x003C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZOrderBundleItemInfo;
-
-// ScriptStruct SBZBackend.SBZOrderInfo
-// 0x0378 (0x0378 - 0x0000)
-struct FSBZOrderInfo final
-{
-public:
-	class FString                                 OrderNo;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 PaymentOrderNo;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Namespace;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserId;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Sandbox;                                           // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Quantity;                                          // 0x0054(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Price;                                             // 0x0058(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DiscountedPrice;                                   // 0x005C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Vat;                                               // 0x0060(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SalesTax;                                          // 0x0064(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZPaymentProvider                           PaymentProvider;                                   // 0x0068(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         PaymentProviderFee;                                // 0x006C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PaymentMethodFee;                                  // 0x0070(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZOrderCurrencySummary               Currency;                                          // 0x0078(0x0040)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 PaymentStationUrl;                                 // 0x00B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSBZEntitlementItemSnapshot            ItemSnapshot;                                      // 0x00C8(0x01E8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 Region;                                            // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZOrderStatus                               Status;                                            // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D1[0x7];                                      // 0x02D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 StatusReason;                                      // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              CreatedTime;                                       // 0x02E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              ChargedTime;                                       // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              FulfilledTime;                                     // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              RefundedTime;                                      // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              ChargebackTime;                                    // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              ChargebackReversedTime;                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              ExpireTime;                                        // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PaymentRemainSeconds;                              // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FJsonObjectWrapper                     Ext;                                               // 0x0328(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         TotalTax;                                          // 0x0348(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         TotalPrice;                                        // 0x034C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SubtotalPrice;                                     // 0x0350(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_354[0x4];                                      // 0x0354(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZOrderBundleItemInfo>        OrderBundleItemInfos;                              // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FDateTime                              CreatedAt;                                         // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              UpdatedAt;                                         // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZOrderInfo;
-
-// ScriptStruct SBZBackend.SBZOrderCreate
-// 0x0070 (0x0070 - 0x0000)
-struct FSBZOrderCreate final
+// ScriptStruct SBZBackend.SBZFulfillmentRequest
+// 0x0130 (0x0130 - 0x0000)
+struct FSBZFulfillmentRequest final
 {
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Quantity;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Price;                                             // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DiscountedPrice;                                   // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CurrencyCode;                                      // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 OrderNo;                                           // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZItemSource                                Source;                                            // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Region;                                            // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ReturnUrl;                                         // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SectionId;                                         // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 StoreId;                                           // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ItemSku;                                           // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSBZOrderSummary                       Order;                                             // 0x0070(0x0068)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FDateTime                              StartDate;                                         // 0x00D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              EndDate;                                           // 0x00E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Duration;                                          // 0x00E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZPlatformRewardOrigin                      Origin;                                            // 0x00EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FJsonObjectWrapper                     Metadata;                                          // 0x00F0(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OverrideBundleItemQty;                             // 0x0110(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZOrderCreate;
+DUMPER7_ASSERTS_FSBZFulfillmentRequest;
 
-// ScriptStruct SBZBackend.SBZPlatformRewardItem
+// ScriptStruct SBZBackend.SBZUserPlatformInfo
 // 0x0030 (0x0030 - 0x0000)
-struct FSBZPlatformRewardItem final
+struct alignas(0x08) FSBZUserPlatformInfo final
 {
 public:
-	class FString                                 ItemType;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemSku;                                           // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSBZPlatformRewardItem;
-
-// ScriptStruct SBZBackend.SBZPlatformRewardCurrency
-// 0x0020 (0x0020 - 0x0000)
-struct FSBZPlatformRewardCurrency final
-{
-public:
-	class FString                                 Namespace;                                         // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CurrencyCode;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZPlatformRewardCurrency;
-
-// ScriptStruct SBZBackend.SBZPlatformReward
-// 0x0060 (0x0060 - 0x0000)
-struct FSBZPlatformReward final
-{
-public:
-	ESBZPlatformRewardType                        Type;                                              // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPlatformRewardItem                 Item;                                              // 0x0008(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FSBZPlatformRewardCurrency             Currency;                                          // 0x0038(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	int32                                         Quantity;                                          // 0x0058(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSBZPlatformReward;
-
-// ScriptStruct SBZBackend.SBZFulfillRewards
-// 0x0038 (0x0038 - 0x0000)
-struct FSBZFulfillRewards final
-{
-public:
-	TArray<struct FSBZPlatformReward>             Rewards;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	ESBZPlatformRewardSource                      Source;                                            // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ESBZPlatformRewardOrigin                      Origin;                                            // 0x0011(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FJsonObjectWrapper                     Metadata;                                          // 0x0018(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZFulfillRewards;
-
-// ScriptStruct SBZBackend.SBZBackendNotificationMessage
-// 0x0020 (0x0020 - 0x0000)
-struct FSBZBackendNotificationMessage final
-{
-public:
-	class FString                                 Topic;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Payload;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBackendNotificationMessage;
+DUMPER7_ASSERTS_FSBZUserPlatformInfo;
 
 // ScriptStruct SBZBackend.SBZUserBannedNotification
 // 0x0018 (0x0018 - 0x0000)
@@ -1577,6 +1558,16 @@ public:
 };
 DUMPER7_ASSERTS_FSBZUserBannedNotification;
 
+// ScriptStruct SBZBackend.SBZBackendNotificationMessage
+// 0x0020 (0x0020 - 0x0000)
+struct FSBZBackendNotificationMessage final
+{
+public:
+	class FString                                 Topic;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Payload;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBackendNotificationMessage;
+
 // ScriptStruct SBZBackend.SBZPlayerDataStorageRecord
 // 0x0030 (0x0030 - 0x0000)
 struct FSBZPlayerDataStorageRecord final
@@ -1588,15 +1579,14 @@ public:
 };
 DUMPER7_ASSERTS_FSBZPlayerDataStorageRecord;
 
-// ScriptStruct SBZBackend.SBZLoginFieldInfo
-// 0x0020 (0x0020 - 0x0000)
-struct FSBZLoginFieldInfo final
+// ScriptStruct SBZBackend.SBZAccountUserData
+// 0x0010 (0x0010 - 0x0000)
+struct FSBZAccountUserData final
 {
 public:
-	class FString                                 Username;                                          // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Password;                                          // 0x0010(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Username;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZLoginFieldInfo;
+DUMPER7_ASSERTS_FSBZAccountUserData;
 
 // ScriptStruct SBZBackend.SBZRegisterResponse
 // 0x0080 (0x0080 - 0x0000)
@@ -1614,43 +1604,15 @@ public:
 };
 DUMPER7_ASSERTS_FSBZRegisterResponse;
 
-// ScriptStruct SBZBackend.SBZAccountUserData
-// 0x0010 (0x0010 - 0x0000)
-struct FSBZAccountUserData final
+// ScriptStruct SBZBackend.SBZLoginFieldInfo
+// 0x0020 (0x0020 - 0x0000)
+struct FSBZLoginFieldInfo final
 {
 public:
-	class FString                                 Username;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Username;                                          // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Password;                                          // 0x0010(0x0010)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZAccountUserData;
-
-// ScriptStruct SBZBackend.SBZStatItemValueResponse
-// 0x0088 (0x0088 - 0x0000)
-struct FSBZStatItemValueResponse final
-{
-public:
-	class FString                                 StatCode;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 UserId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Value;                                             // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDateTime                              CreatedAt;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              UpdatedAt;                                         // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Namespace;                                         // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 StatName;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Tags;                                              // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     AdditionalData;                                    // 0x0068(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZStatItemValueResponse;
-
-// ScriptStruct SBZBackend.SBZBulkStatItemInc
-// 0x0018 (0x0018 - 0x0000)
-struct FSBZBulkStatItemInc final
-{
-public:
-	float                                         Inc;                                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 StatCode;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBulkStatItemInc;
+DUMPER7_ASSERTS_FSBZLoginFieldInfo;
 
 // ScriptStruct SBZBackend.SBZUserStatItemInfo
 // 0x0098 (0x0098 - 0x0000)
@@ -1670,18 +1632,34 @@ public:
 };
 DUMPER7_ASSERTS_FSBZUserStatItemInfo;
 
-// ScriptStruct SBZBackend.SBZBulkStatItemOperationResult
-// 0x0078 (0x0078 - 0x0000)
-struct FSBZBulkStatItemOperationResult final
+// ScriptStruct SBZBackend.SBZBulkStatItemInc
+// 0x0018 (0x0018 - 0x0000)
+struct FSBZBulkStatItemInc final
 {
 public:
-	TMap<class FString, class FString>            Details;                                           // 0x0000(0x0050)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	class FString                                 StatCode;                                          // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          Success;                                           // 0x0060(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 UserId;                                            // 0x0068(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Inc;                                               // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 StatCode;                                          // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FSBZBulkStatItemOperationResult;
+DUMPER7_ASSERTS_FSBZBulkStatItemInc;
+
+// ScriptStruct SBZBackend.SBZStatItemValueResponse
+// 0x0088 (0x0088 - 0x0000)
+struct FSBZStatItemValueResponse final
+{
+public:
+	class FString                                 StatCode;                                          // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Value;                                             // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              CreatedAt;                                         // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              UpdatedAt;                                         // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Namespace;                                         // 0x0038(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 StatName;                                          // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Tags;                                              // 0x0058(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     AdditionalData;                                    // 0x0068(0x0020)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZStatItemValueResponse;
 
 // ScriptStruct SBZBackend.SBZServerTime
 // 0x0008 (0x0008 - 0x0000)
@@ -1691,56 +1669,6 @@ public:
 	struct FDateTime                              CurrentTime;                                       // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FSBZServerTime;
-
-// ScriptStruct SBZBackend.SBZCountryInfo
-// 0x0040 (0x0040 - 0x0000)
-struct FSBZCountryInfo final
-{
-public:
-	class FString                                 CountryCode;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CountryName;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 State;                                             // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 City;                                              // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZCountryInfo;
-
-// ScriptStruct SBZBackend.SBZPlatformUserIdMap
-// 0x0030 (0x0030 - 0x0000)
-struct FSBZPlatformUserIdMap final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 PlatformUserId;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 PlatformId;                                        // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZPlatformUserIdMap;
-
-// ScriptStruct SBZBackend.SBZBulkPlatformUserIdResponse
-// 0x0010 (0x0010 - 0x0000)
-struct FSBZBulkPlatformUserIdResponse final
-{
-public:
-	TArray<struct FSBZPlatformUserIdMap>          UserIdPlatforms;                                   // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBulkPlatformUserIdResponse;
-
-// ScriptStruct SBZBackend.SBZBulkGetUsersPlatformInfoResponse
-// 0x0010 (0x0010 - 0x0000)
-struct FSBZBulkGetUsersPlatformInfoResponse final
-{
-public:
-	TArray<struct FSBZUserPlatformInfoData>       Data;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBulkGetUsersPlatformInfoResponse;
-
-// ScriptStruct SBZBackend.SBZBulkUserCurrentPlatformRequest
-// 0x0010 (0x0010 - 0x0000)
-struct FSBZBulkUserCurrentPlatformRequest final
-{
-public:
-	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSBZBulkUserCurrentPlatformRequest;
 
 // ScriptStruct SBZBackend.SBZUserInfo
 // 0x00A0 (0x00A0 - 0x0000)
@@ -1764,6 +1692,78 @@ public:
 	TArray<struct FSBZUserInfo>                   Data;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FSBZListBulkUserInfo;
+
+// ScriptStruct SBZBackend.SBZBulkUserCurrentPlatformRequest
+// 0x0010 (0x0010 - 0x0000)
+struct FSBZBulkUserCurrentPlatformRequest final
+{
+public:
+	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBulkUserCurrentPlatformRequest;
+
+// ScriptStruct SBZBackend.SBZBulkUserCurrentPlatformResponse
+// 0x0010 (0x0010 - 0x0000)
+struct FSBZBulkUserCurrentPlatformResponse final
+{
+public:
+	TArray<struct FSBZUserCurrentPlatform>        Data;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBulkUserCurrentPlatformResponse;
+
+// ScriptStruct SBZBackend.SBZUserPlatformInfoData
+// 0x0050 (0x0050 - 0x0000)
+struct FSBZUserPlatformInfoData final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DisplayName;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FSBZUserPlatformInfo>           PlatformInfos;                                     // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	class FString                                 UserName;                                          // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AvatarURL;                                         // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZUserPlatformInfoData;
+
+// ScriptStruct SBZBackend.SBZBulkGetUsersPlatformInfoResponse
+// 0x0010 (0x0010 - 0x0000)
+struct FSBZBulkGetUsersPlatformInfoResponse final
+{
+public:
+	TArray<struct FSBZUserPlatformInfoData>       Data;                                              // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBulkGetUsersPlatformInfoResponse;
+
+// ScriptStruct SBZBackend.SBZPlatformUserIdMap
+// 0x0030 (0x0030 - 0x0000)
+struct FSBZPlatformUserIdMap final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PlatformUserId;                                    // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PlatformId;                                        // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZPlatformUserIdMap;
+
+// ScriptStruct SBZBackend.SBZBulkPlatformUserIdResponse
+// 0x0010 (0x0010 - 0x0000)
+struct FSBZBulkPlatformUserIdResponse final
+{
+public:
+	TArray<struct FSBZPlatformUserIdMap>          UserIdPlatforms;                                   // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZBulkPlatformUserIdResponse;
+
+// ScriptStruct SBZBackend.SBZCountryInfo
+// 0x0040 (0x0040 - 0x0000)
+struct FSBZCountryInfo final
+{
+public:
+	class FString                                 CountryCode;                                       // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CountryName;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 State;                                             // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 City;                                              // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSBZCountryInfo;
 
 // ScriptStruct SBZBackend.SBZGameRecord
 // 0x0058 (0x0058 - 0x0000)

@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_MainMenu_Credits_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Credits_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.ExecuteUbergraph_WBP_UI_MainMenu_Credits
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,40 +45,6 @@ void UWBP_UI_MainMenu_Credits_C::ExecuteUbergraph_WBP_UI_MainMenu_Credits(int32 
 	Params::WBP_UI_MainMenu_Credits_C_ExecuteUbergraph_WBP_UI_MainMenu_Credits Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_MainMenu_Credits_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Credits_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_Credits_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Credits_C", "OnGainedStackFocused");
-
-	Params::WBP_UI_MainMenu_Credits_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -90,15 +70,35 @@ void UWBP_UI_MainMenu_Credits_C::OnControlsReferenceClicked(class FName InAction
 }
 
 
-// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_Credits_C::Construct()
+void UWBP_UI_MainMenu_Credits_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Credits_C", "Construct");
+		Func = Class->GetFunction("WBP_UI_MainMenu_Credits_C", "OnGainedStackFocused");
+
+	Params::WBP_UI_MainMenu_Credits_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_Credits_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Credits_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

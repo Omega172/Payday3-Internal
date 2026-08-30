@@ -17,21 +17,21 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C
-// 0x0020 (0x02B0 - 0x0290)
+// 0x0020 (0x0310 - 0x02F0)
 class UWBP_Loadout_RenamePopup_C final : public USBZWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_TextEntry_Button_C*                Textbox_LoadoutName;                               // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_LoadoutButton_C* Owner_LoadoutButton;                         // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                         MaxStrLen;                                         // 0x02A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_TextEntry_Button_C*                Textbox_LoadoutName;                               // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_LoadoutButton_C* Owner_LoadoutButton;                         // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                         MaxStrLen;                                         // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
 	void ExecuteUbergraph_WBP_Loadout_RenamePopup(int32 EntryPoint);
 	void OnInitialized();
-	void UpdateName(const class FText& Text);
-	void Construct();
 	void ShowCurrentName(const class FText& InText);
+	void UpdateName(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()

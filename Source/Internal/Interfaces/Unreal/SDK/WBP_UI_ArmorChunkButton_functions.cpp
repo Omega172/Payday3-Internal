@@ -16,60 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ExecuteUbergraph_WBP_UI_ArmorChunkButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ArmorChunkButton_C::ExecuteUbergraph_WBP_UI_ArmorChunkButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "ExecuteUbergraph_WBP_UI_ArmorChunkButton");
-
-	Params::WBP_UI_ArmorChunkButton_C_ExecuteUbergraph_WBP_UI_ArmorChunkButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.DefaultButtonSet
-// (BlueprintEvent)
-
-void UWBP_UI_ArmorChunkButton_C::DefaultButtonSet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "DefaultButtonSet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnEquippedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsEquipped                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ArmorChunkButton_C::OnEquippedChanged(bool bInIsEquipped)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "OnEquippedChanged");
-
-	Params::WBP_UI_ArmorChunkButton_C_OnEquippedChanged Parms{};
-
-	Parms.bInIsEquipped = bInIsEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ArmorChunkInitialized
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -93,7 +39,7 @@ void UWBP_UI_ArmorChunkButton_C::ArmorChunkInitialized(const struct FSBZArmorChu
 // Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ArmorChunkButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
@@ -105,6 +51,80 @@ void UWBP_UI_ArmorChunkButton_C::ButtonFocusedChanged(bool bInHasFocus)
 	Params::WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged Parms{};
 
 	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.DefaultButtonSet
+// (BlueprintEvent)
+
+void UWBP_UI_ArmorChunkButton_C::DefaultButtonSet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "DefaultButtonSet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ExecuteUbergraph_WBP_UI_ArmorChunkButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ArmorChunkButton_C::ExecuteUbergraph_WBP_UI_ArmorChunkButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "ExecuteUbergraph_WBP_UI_ArmorChunkButton");
+
+	Params::WBP_UI_ArmorChunkButton_C_ExecuteUbergraph_WBP_UI_ArmorChunkButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnEquippedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsEquipped                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ArmorChunkButton_C::OnEquippedChanged(bool bInIsEquipped)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "OnEquippedChanged");
+
+	Params::WBP_UI_ArmorChunkButton_C_OnEquippedChanged Parms{};
+
+	Parms.bInIsEquipped = bInIsEquipped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ArmorChunkButton_C::OnFocusChanged(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "OnFocusChanged");
+
+	Params::WBP_UI_ArmorChunkButton_C_OnFocusChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -127,7 +147,7 @@ void UWBP_UI_ArmorChunkButton_C::OnInitialized()
 // Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ArmorChunkButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -139,26 +159,6 @@ void UWBP_UI_ArmorChunkButton_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_ArmorChunkButton_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ArmorChunkButton_C::OnFocusChanged(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorChunkButton_C", "OnFocusChanged");
-
-	Params::WBP_UI_ArmorChunkButton_C_OnFocusChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

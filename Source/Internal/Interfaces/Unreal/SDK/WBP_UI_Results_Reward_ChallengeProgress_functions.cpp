@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.AnimationRewardProgression
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_ChallengeProgress_C::AnimationRewardProgression()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_ChallengeProgress_C", "AnimationRewardProgression");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,10 +50,24 @@ void UWBP_UI_Results_Reward_ChallengeProgress_C::ExecuteUbergraph_WBP_UI_Results
 }
 
 
+// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.PlayAppearAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_ChallengeProgress_C::PlayAppearAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_ChallengeProgress_C", "PlayAppearAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_ChallengeProgress_C::PreConstruct(bool IsDesignTime)
 {
@@ -60,7 +88,7 @@ void UWBP_UI_Results_Reward_ChallengeProgress_C::PreConstruct(bool IsDesignTime)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FSBZChallengeData&         InChallengeData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    IsHackUntilAccelbyteFix                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsHackUntilAccelbyteFix                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_ChallengeProgress_C::SetData(const struct FSBZChallengeData& InChallengeData, bool IsHackUntilAccelbyteFix)
 {
@@ -75,34 +103,6 @@ void UWBP_UI_Results_Reward_ChallengeProgress_C::SetData(const struct FSBZChalle
 	Parms.IsHackUntilAccelbyteFix = IsHackUntilAccelbyteFix;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.AnimationRewardProgression
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_ChallengeProgress_C::AnimationRewardProgression()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_ChallengeProgress_C", "AnimationRewardProgression");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.PlayAppearAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_ChallengeProgress_C::PlayAppearAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_ChallengeProgress_C", "PlayAppearAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

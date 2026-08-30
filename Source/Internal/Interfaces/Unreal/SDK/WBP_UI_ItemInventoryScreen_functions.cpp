@@ -36,81 +36,17 @@ void UWBP_UI_ItemInventoryScreen_C::ExecuteUbergraph_WBP_UI_ItemInventoryScreen(
 }
 
 
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnEmptySlotFocus
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.HandleVendorButton
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_ItemInventoryScreen_C::OnEmptySlotFocus(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_ItemInventoryScreen_C::HandleVendorButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnEmptySlotFocus");
-
-	Params::WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotsUpdated
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_ItemInventoryScreen_C::OnItemSlotsUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotsUpdated");
+		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "HandleVendorButton");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotButtonSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ItemInventoryScreen_C::OnItemSlotButtonSelected(class USBZMenuButton* SelectedButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotButtonSelected");
-
-	Params::WBP_UI_ItemInventoryScreen_C_OnItemSlotButtonSelected Parms{};
-
-	Parms.SelectedButton = SelectedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ItemInventoryScreen_C::OnItemSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotButtonFocusedChanged");
-
-	Params::WBP_UI_ItemInventoryScreen_C_OnItemSlotButtonFocusedChanged Parms{};
-
-	Parms.SelectedButton = SelectedButton;
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -134,17 +70,25 @@ void UWBP_UI_ItemInventoryScreen_C::OnControlsReferenceClicked(class FName InAct
 }
 
 
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnEmptySlotFocus
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ItemInventoryScreen_C::OnLostStackFocused()
+void UWBP_UI_ItemInventoryScreen_C::OnEmptySlotFocus(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnEmptySlotFocus");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -168,6 +112,48 @@ void UWBP_UI_ItemInventoryScreen_C::OnGainedStackFocused(const class FName& Prev
 }
 
 
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ItemInventoryScreen_C::OnItemSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotButtonFocusedChanged");
+
+	Params::WBP_UI_ItemInventoryScreen_C_OnItemSlotButtonFocusedChanged Parms{};
+
+	Parms.SelectedButton = SelectedButton;
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotButtonSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ItemInventoryScreen_C::OnItemSlotButtonSelected(class USBZMenuButton* SelectedButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotButtonSelected");
+
+	Params::WBP_UI_ItemInventoryScreen_C_OnItemSlotButtonSelected Parms{};
+
+	Parms.SelectedButton = SelectedButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotScreenDisplayed
 // (Event, Protected, BlueprintEvent)
 
@@ -177,6 +163,34 @@ void UWBP_UI_ItemInventoryScreen_C::OnItemSlotScreenDisplayed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotScreenDisplayed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotsUpdated
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_ItemInventoryScreen_C::OnItemSlotsUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnItemSlotsUpdated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_ItemInventoryScreen_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,7 +213,7 @@ void UWBP_UI_ItemInventoryScreen_C::OnPressCustomize()
 // Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OpenArmorVendor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ItemInventoryScreen_C::OpenArmorVendor(class USBZMenuButton* Button)
 {
@@ -225,20 +239,6 @@ void UWBP_UI_ItemInventoryScreen_C::SetControlReferences()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "SetControlReferences");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.HandleVendorButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ItemInventoryScreen_C::HandleVendorButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "HandleVendorButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

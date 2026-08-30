@@ -16,6 +16,41 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.CreateNewMod
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Inventory_ModGridIcon_C** OutWidget                                              (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_HorizontalModGrid_C::CreateNewMod(class UWBP_UI_Inventory_ModGridIcon_C** OutWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_HorizontalModGrid_C", "CreateNewMod");
+
+	Params::WBP_UI_Inventory_HorizontalModGrid_C_CreateNewMod Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutWidget != nullptr)
+		*OutWidget = Parms.OutWidget;
+}
+
+
+// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.DisplayGrid
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_HorizontalModGrid_C::DisplayGrid()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_HorizontalModGrid_C", "DisplayGrid");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,24 +71,10 @@ void UWBP_UI_Inventory_HorizontalModGrid_C::ExecuteUbergraph_WBP_UI_Inventory_Ho
 }
 
 
-// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.DisplayGrid
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_HorizontalModGrid_C::DisplayGrid()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_HorizontalModGrid_C", "DisplayGrid");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_HorizontalModGrid_C::PreConstruct(bool IsDesignTime)
 {
@@ -67,27 +88,6 @@ void UWBP_UI_Inventory_HorizontalModGrid_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.CreateNewMod
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Inventory_ModGridIcon_C** OutWidget                                              (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_HorizontalModGrid_C::CreateNewMod(class UWBP_UI_Inventory_ModGridIcon_C** OutWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_HorizontalModGrid_C", "CreateNewMod");
-
-	Params::WBP_UI_Inventory_HorizontalModGrid_C_CreateNewMod Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutWidget != nullptr)
-		*OutWidget = Parms.OutWidget;
 }
 
 

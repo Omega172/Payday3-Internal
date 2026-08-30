@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -21,35 +21,17 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.ExecuteUbergraph_WBP_UI_Widget_RoomStatus
-// 0x0030 (0x0030 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_UI_Widget_RoomStatus_C_ExecuteUbergraph_WBP_UI_Widget_RoomStatus final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZRoomVolume*                         K2Node_Event_RoomVolume;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetRoomName_ReturnValue;                  // 0x0010(0x0018)()
-	ESBZRoomType                                  K2Node_Event_InRoomType;                           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZRoomVolume*                         K2Node_Event_RoomVolume;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetRoomName_ReturnValue;                  // 0x0010(0x0010)()
+	ESBZRoomType                                  K2Node_Event_InRoomType;                           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_ExecuteUbergraph_WBP_UI_Widget_RoomStatus;
-
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomTypeChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_RoomStatus_C_OnRoomTypeChanged final
-{
-public:
-	ESBZRoomType                                  InRoomType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_OnRoomTypeChanged;
-
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_RoomStatus_C_OnRoomChanged final
-{
-public:
-	class ASBZRoomVolume*                         RoomVolume;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_OnRoomChanged;
 
 // Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.GetColorForState
 // 0x0048 (0x0048 - 0x0000)
@@ -60,15 +42,47 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           RoomTypeColor;                                     // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0014(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_1;             // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_2;             // 0x0038(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_GetColorForState;
 
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Widget_RoomStatus_C_OnRoomChanged final
+{
+public:
+	class ASBZRoomVolume*                         RoomVolume;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_OnRoomChanged;
+
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomTypeChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_RoomStatus_C_OnRoomTypeChanged final
+{
+public:
+	ESBZRoomType                                  InRoomType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_OnRoomTypeChanged;
+
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.SetRoomName
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_UI_Widget_RoomStatus_C_SetRoomName final
+{
+public:
+	class FText                                   InRoomName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_SetRoomName;
+
 // Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.SetRoomTypeText
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x0098 (0x0098 - 0x0000)
 struct WBP_UI_Widget_RoomStatus_C_SetRoomTypeText final
 {
 public:
@@ -76,38 +90,23 @@ public:
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetColorForState_RoomTypeColor;           // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0018(0x0028)()
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRoomType                                  Temp_byte_Variable_4;                              // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0048(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0060(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0078(0x0018)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0090(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x00A8(0x0018)()
-	ESBZRoomType                                  Temp_byte_Variable_5;                              // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRoomType                                  Temp_byte_Variable_4;                              // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0030(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0040(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0050(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0060(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0010)()
+	ESBZRoomType                                  Temp_byte_Variable_5;                              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_SetRoomTypeText;
-
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.SetRoomName
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_UI_Widget_RoomStatus_C_SetRoomName final
-{
-public:
-	class FText                                   InRoomName;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_RoomStatus_C_SetRoomName;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

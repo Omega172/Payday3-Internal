@@ -10,222 +10,222 @@
 
 #include "Basic.hpp"
 
-#include "SBZBackend_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ServerBrowser_Screen.WBP_ServerBrowser_Screen_C
-// 0x03C0 (0x0A70 - 0x06B0)
+// 0x03B8 (0x0AE0 - 0x0728)
 class UWBP_ServerBrowser_Screen_C final : public USBZServerBrowserScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Spectrum;                                          // 0x06B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FilterOff;                                         // 0x06C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       DescriptionIntro;                                  // 0x06C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FilterOn;                                          // 0x06D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ListChange;                                        // 0x06D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       TabChange;                                         // 0x06E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x06E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       NoHeistBlink;                                      // 0x06F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       OutroVideoLockedPressed;                           // 0x06F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       IntroVideoLockedPressed;                           // 0x0700(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 BackdropImage_I;                                   // 0x0708(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_GenericContainerButton_C*       Button_ContractorSoundContainer;                   // 0x0710(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistIntroStory;                            // 0x0718(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistOutroStory;                            // 0x0720(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     CancelMm_Button;                                   // 0x0728(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Character_Comms;                                   // 0x0730(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_ContractorSelector_C* ContractorSelector;                               // 0x0738(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  DifficultySelector;                                // 0x0740(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               EQ_Overlay;                                        // 0x0748(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_FilterBar_C*         FilterBar;                                         // 0x0750(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_ContractorOptions_C* FilterBox;                                         // 0x0758(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               FilterBox_O;                                       // 0x0760(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FiltersBlackout_I;                                 // 0x0768(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 HeistBackground_I;                                 // 0x0770(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     HeistDetails_Button;                               // 0x0778(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HostDetails_Hb;                                    // 0x0780(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     HostHeist_Button;                                  // 0x0788(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Host;                                         // 0x0790(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_6;                                           // 0x0798(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_8;                                           // 0x07A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_150;                                         // 0x07A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_191;                                         // 0x07B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_351;                                         // 0x07B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1332;                                        // 0x07C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_HeistBanner;                                 // 0x07C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     JoinHeist_Button;                                  // 0x07D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               ModdedLobby_O;                                     // 0x07D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        ModdedLobby_T;                                     // 0x07E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Navbar_C*            Navbar_Collections;                                // 0x07E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Navbar_C*            Navbar_HeistModes;                                 // 0x07F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     NeedDcl_Button;                                    // 0x07F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NoHeistFound_O;                                    // 0x0800(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NoMods_O;                                          // 0x0808(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NoModsPopUp_O;                                     // 0x0810(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_HeistDetailsPopup;                         // 0x0818(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_HeistInspectPanel;                         // 0x0820(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  PermissionSelector;                                // 0x0828(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               PopupBackDrop_O;                                   // 0x0830(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  PopUpDifficulty;                                   // 0x0838(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        PopUpDifficutly_T;                                 // 0x0840(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           Root_Canvas;                                       // 0x0848(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        ScreenTitle_T;                                     // 0x0850(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Smash_And_Grab_Title;                              // 0x0858(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Smash_And_Grab_Title_Description;                  // 0x0860(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SoundIconOFF;                                      // 0x0868(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SoundIconOn;                                       // 0x0870(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  TacticSelector;                                    // 0x0878(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_ContractorName;                               // 0x0880(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_DifficultyDescription;                        // 0x0888(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Host;                                         // 0x0890(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelDescription;                             // 0x0898(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelName;                                    // 0x08A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelName_1;                                  // 0x08A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_LevelName_InPopup_1;                          // 0x08B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_NoModifiers;                                  // 0x08B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_PayoutMax;                                    // 0x08C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PayoutMax_InPopup;                            // 0x08C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_PayoutMin;                                    // 0x08D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PayoutMin_InPopup;                            // 0x08D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_PeopleNum;                                    // 0x08E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Playstyle;                                    // 0x08E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_HeistList;                             // 0x08F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_SecurityCompanies;                     // 0x08F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_SecurityCompanies_InPopup;             // 0x0900(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_IntroMotion_C*       WBP_ServerBrowser_IntroMotion;                     // 0x0908(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_LeftPanel;                          // 0x0910(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x0918(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentlyPlayedSoundID;                            // 0x0920(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_924[0x4];                                      // 0x0924(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RT_HeistDetailsPopupOpened;                        // 0x0930(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_931[0x7];                                      // 0x0931(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ESBZDifficulty, class FText>             DifficultyDescriptions;                            // 0x0938(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_ServerBrowser_Popup_C*             JoinFailPopUp;                                     // 0x0988(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 UsedIndices;                                       // 0x0990(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<int32>                                 SavedIndices;                                      // 0x09A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          ReadyToPlacePins;                                  // 0x09B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9B1[0x7];                                      // 0x09B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class USBZServerBrowserHeistMapWidget*, class USBZServerBrowserHeistButton*> PinsToBePlaced; // 0x09B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class ABP_MapPinManager_C*                    MapPinManagerRef;                                  // 0x0A08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              MapPinOffset;                                      // 0x0A10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Popup_C*             SoloInPartyPopup;                                  // 0x0A18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   PreviousCollectionFilter;                          // 0x0A20(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           FilterSettingsTimer;                               // 0x0A38(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           ServerRefreshCooldown;                             // 0x0A40(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FString                                 PreviousLanguage;                                  // 0x0A48(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          WillPlacePins;                                     // 0x0A58(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A59[0x7];                                      // 0x0A59(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZServerBrowserHeistCollection> collection;                                      // 0x0A60(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0728(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Spectrum;                                          // 0x0730(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FilterOff;                                         // 0x0738(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       DescriptionIntro;                                  // 0x0740(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FilterOn;                                          // 0x0748(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ListChange;                                        // 0x0750(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       TabChange;                                         // 0x0758(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0760(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       NoHeistBlink;                                      // 0x0768(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       OutroVideoLockedPressed;                           // 0x0770(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       IntroVideoLockedPressed;                           // 0x0778(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 BackdropImage_I;                                   // 0x0780(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_GenericContainerButton_C*       Button_ContractorSoundContainer;                   // 0x0788(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistIntroStory;                            // 0x0790(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistOutroStory;                            // 0x0798(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     CancelMm_Button;                                   // 0x07A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Character_Comms;                                   // 0x07A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_ContractorSelector_C* ContractorSelector;                               // 0x07B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  DifficultySelector;                                // 0x07B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               EQ_Overlay;                                        // 0x07C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_FilterBar_C*         FilterBar;                                         // 0x07C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_ContractorOptions_C* FilterBox;                                         // 0x07D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               FilterBox_O;                                       // 0x07D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FiltersBlackout_I;                                 // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HeistBackground_I;                                 // 0x07E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     HeistDetails_Button;                               // 0x07F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HostDetails_Hb;                                    // 0x07F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     HostHeist_Button;                                  // 0x0800(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Host;                                         // 0x0808(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_6;                                           // 0x0810(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_8;                                           // 0x0818(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_150;                                         // 0x0820(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_191;                                         // 0x0828(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_351;                                         // 0x0830(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1332;                                        // 0x0838(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_HeistBanner;                                 // 0x0840(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     JoinHeist_Button;                                  // 0x0848(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               ModdedLobby_O;                                     // 0x0850(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        ModdedLobby_T;                                     // 0x0858(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Navbar_C*            Navbar_Collections;                                // 0x0860(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Navbar_C*            Navbar_HeistModes;                                 // 0x0868(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     NeedDcl_Button;                                    // 0x0870(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NoHeistFound_O;                                    // 0x0878(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NoMods_O;                                          // 0x0880(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NoModsPopUp_O;                                     // 0x0888(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_HeistDetailsPopup;                         // 0x0890(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_HeistInspectPanel;                         // 0x0898(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  PermissionSelector;                                // 0x08A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               PopupBackDrop_O;                                   // 0x08A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  PopUpDifficulty;                                   // 0x08B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        PopUpDifficutly_T;                                 // 0x08B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Root_Canvas;                                       // 0x08C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        ScreenTitle_T;                                     // 0x08C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         Smash_And_Grab_Title;                              // 0x08D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         Smash_And_Grab_Title_Description;                  // 0x08D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SoundIconOFF;                                      // 0x08E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SoundIconOn;                                       // 0x08E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  TacticSelector;                                    // 0x08F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_ContractorName;                               // 0x08F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_DifficultyDescription;                        // 0x0900(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Host;                                         // 0x0908(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LevelDescription;                             // 0x0910(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LevelName;                                    // 0x0918(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LevelName_1;                                  // 0x0920(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_LevelName_InPopup_1;                          // 0x0928(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_NoModifiers;                                  // 0x0930(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_PayoutMax;                                    // 0x0938(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_PayoutMax_InPopup;                            // 0x0940(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_PayoutMin;                                    // 0x0948(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_PayoutMin_InPopup;                            // 0x0950(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_PeopleNum;                                    // 0x0958(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Playstyle;                                    // 0x0960(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_HeistList;                             // 0x0968(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_SecurityCompanies;                     // 0x0970(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_SecurityCompanies_InPopup;             // 0x0978(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_IntroMotion_C*       WBP_ServerBrowser_IntroMotion;                     // 0x0980(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_LeftPanel;                          // 0x0988(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x0990(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentlyPlayedSoundID;                            // 0x0998(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99C[0x4];                                      // 0x099C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x09A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          RT_HeistDetailsPopupOpened;                        // 0x09A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9A9[0x7];                                      // 0x09A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ESBZDifficulty, class FText>             DifficultyDescriptions;                            // 0x09B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_ServerBrowser_Popup_C*             JoinFailPopUp;                                     // 0x0A00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 UsedIndices;                                       // 0x0A08(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<int32>                                 SavedIndices;                                      // 0x0A18(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          ReadyToPlacePins;                                  // 0x0A28(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A29[0x7];                                      // 0x0A29(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class USBZServerBrowserHeistMapWidget*, class USBZServerBrowserHeistButton*> PinsToBePlaced; // 0x0A30(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class ABP_MapPinManager_C*                    MapPinManagerRef;                                  // 0x0A80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              MapPinOffset;                                      // 0x0A88(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Popup_C*             SoloInPartyPopup;                                  // 0x0A98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   PreviousCollectionFilter;                          // 0x0AA0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FTimerHandle                           ServerRefreshCooldown;                             // 0x0AB0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FString                                 PreviousLanguage;                                  // 0x0AB8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          WillPlacePins;                                     // 0x0AC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC9[0x7];                                      // 0x0AC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZServerBrowserHeistCollection> collection;                                      // 0x0AD0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_ServerBrowser_Screen(int32 EntryPoint);
-	void OnServerBrowserJoinError();
-	void OnStateMachineEnteredGameStart();
-	void BndEvt__WBP_ServerBrowser_Screen_NeedDcl_Button_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ReenableRefresh();
-	void BndEvt__WBP_ServerBrowser_Screen_FilterBar_K2Node_ComponentBoundEvent_11_ServersRefreshRequested__DelegateSignature();
-	void BP_OnHostableHeistDataUpdated(const TArray<struct FSBZServerBrowserHeistCollection>& OutHostableHeistCollections);
-	void BndEvt__WBP_ServerBrowser_Screen_TacticSelector_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_TacticSelector_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature(int32 SelectionIndex);
-	void IntroAnimationFinished();
-	void IntroAnimation();
-	void ManualPlaceMapPins(class USBZServerBrowserHeistMapWidget* TargetPin, class USBZServerBrowserHeistButton* Connected_HeistButton, int32 Index_0);
-	void PlaceMapPin(class USBZServerBrowserHeistMapWidget* TargetPin, class USBZServerBrowserHeistButton* ConnectedHeistButton);
-	void BndEvt__WBP_ServerBrowser_Screen_FilterBox_K2Node_ComponentBoundEvent_16_SendFiltersToApply__DelegateSignature(TArray<struct FSBZServerBrowserHeistLevel>& HeistDataFilters, int32 DifficultyFilterIndex, int32 TacticFilterIndex, bool ShowModdedLobbies);
-	void BndEvt__WBP_ServerBrowser_Screen_PopUpDifficulty_K2Node_ComponentBoundEvent_15_OptionSelected__DelegateSignature(int32 SelectionIndex);
-	void BndEvt__WBP_ServerBrowser_Screen_PermissionSelector_K2Node_ComponentBoundEvent_14_OptionSelected__DelegateSignature(int32 SelectionIndex);
-	void BndEvt__WBP_ServerBrowser_Screen_DifficultySelector_K2Node_ComponentBoundEvent_13_OptionSelected__DelegateSignature(int32 SelectionIndex);
-	void BndEvt__WBP_ServerBrowser_Screen_FilterBar_K2Node_ComponentBoundEvent_9_OnFilterButtonSelected__DelegateSignature();
-	void OnMatchmakingPopUpClosed(class FName ClosingActionName);
-	void OnMatchmakingStopped(ESBZOnlineCode ErrorCode);
-	void PreConstruct(bool IsDesignTime);
-	void BndEvt__WBP_ServerBrowser_Screen_PopUpDifficulty_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_PermissionFilter_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_DifficultyFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_CancelMm_Button_K2Node_ComponentBoundEvent_27_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_Screen_CancelMm_Button_K2Node_ComponentBoundEvent_26_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_JoinHeist_Button_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_Screen_JoinHeist_Button_K2Node_ComponentBoundEvent_21_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_Heist_Button_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_Screen_Heist_Button_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_HeistDetails_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_Screen_HeistDetails_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnServersRefreshRequested();
-	void OnHeistModeChanged();
-	void BndEvt__WBP_ServerBrowser_Screen_Navbar_HeistTypes_K2Node_ComponentBoundEvent_20_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void OnInitialized();
-	void BndEvt__WBP_ServerBrowser_Screen_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Screen_Button_IntroStory_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnMatchmakingStarted();
-	void BndEvt__WBP_ServerBrowser_Screen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void OnBackPressed();
-	void OnHeistButtonSelected(class USBZServerBrowserHeistButton* SelectedButton);
-	void OnHeistButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
-	void OnAddedToStack();
-	void OnRemovedFromStack();
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnHeistCollectionChanged(const struct FSBZServerBrowserHeistCollection& ActiveHeistCollection);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void StopContractorSound();
-	void PlayContractorSound();
-	void SetSpeak(bool ContractorSpeak);
-	void ToggleContractorMute();
+	void AddPinToCanvas(class USBZServerBrowserHeistMapWidget* InMapPin, const struct FVector& WorldPositionToConvert);
+	void BindSoloModeReentry();
 	void BndEvt__WBP_ServerBrowser_Screen_Button_ContractorSoundContainer_K2Node_ComponentBoundEvent_21_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button);
+	void BndEvt__WBP_ServerBrowser_Screen_Button_IntroStory_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_CancelMm_Button_K2Node_ComponentBoundEvent_26_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_CancelMm_Button_K2Node_ComponentBoundEvent_27_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Screen_DifficultyFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_DifficultySelector_K2Node_ComponentBoundEvent_13_OptionSelected__DelegateSignature(int32 SelectionIndex);
+	void BndEvt__WBP_ServerBrowser_Screen_FilterBar_K2Node_ComponentBoundEvent_11_ServersRefreshRequested__DelegateSignature();
+	void BndEvt__WBP_ServerBrowser_Screen_FilterBar_K2Node_ComponentBoundEvent_9_OnFilterButtonSelected__DelegateSignature();
+	void BndEvt__WBP_ServerBrowser_Screen_FilterBox_K2Node_ComponentBoundEvent_16_SendFiltersToApply__DelegateSignature(TArray<struct FSBZServerBrowserHeistLevel>& HeistDataFilters, int32 DifficultyFilterIndex, int32 TacticFilterIndex, bool ShowModdedLobbies);
+	void BndEvt__WBP_ServerBrowser_Screen_Heist_Button_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_Heist_Button_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Screen_HeistDetails_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_HeistDetails_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Screen_JoinHeist_Button_K2Node_ComponentBoundEvent_21_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_JoinHeist_Button_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Screen_Navbar_HeistTypes_K2Node_ComponentBoundEvent_20_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_ServerBrowser_Screen_NeedDcl_Button_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Screen_PermissionFilter_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_PermissionSelector_K2Node_ComponentBoundEvent_14_OptionSelected__DelegateSignature(int32 SelectionIndex);
+	void BndEvt__WBP_ServerBrowser_Screen_PopUpDifficulty_K2Node_ComponentBoundEvent_15_OptionSelected__DelegateSignature(int32 SelectionIndex);
+	void BndEvt__WBP_ServerBrowser_Screen_PopUpDifficulty_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_TacticSelector_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature(int32 SelectionIndex);
+	void BndEvt__WBP_ServerBrowser_Screen_TacticSelector_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_Screen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BP_OnHostableHeistDataUpdated(const TArray<struct FSBZServerBrowserHeistCollection>& OutHostableHeistCollections);
+	bool CanInteractWithMatchmakingButtons();
+	void Check_New_Player();
+	void CheckModdedStatus();
+	bool DoesCollectionContainsStoryModeContent();
+	void ExecuteUbergraph_WBP_ServerBrowser_Screen(int32 EntryPoint);
+	ESBZDifficulty GetDifficultyPerHeistType();
+	ESBZOnlineJoinType GetLobbyTypePerHeistType();
+	void GetRandomIndex(int32* Output);
+	class FString GetSecurityCompanyName(class USBZSecurityCompanyVisualsWidget* Widget);
+	ESBZOnlineTacticType GetTacticPerHeistType();
+	void HandleButtonActionKeys(class UWBP_ServerBrowser_InspectButton_C* Button);
+	void HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled);
+	void HandleHeistModeChanged();
+	void InitializeSecurityCompanies(class UVerticalBox* SecurityCompaniesContainer, bool bUseTitleOnly);
+	void InitialPinPlacement();
+	void IntroAnimation();
+	void IntroAnimationFinished();
+	bool IsHeistListVisible();
+	class UWidget* LoopHeistScrollBox(EUINavigation Navigation_0);
+	void ManualPlaceMapPins(class USBZServerBrowserHeistMapWidget* TargetPin, class USBZServerBrowserHeistButton* Connected_HeistButton, int32 Index_0);
+	void OnAddedToStack();
+	void OnBackPressed();
+	void OnControlsReferenceClicked(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnHeistButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
+	void OnHeistButtonSelected(class USBZServerBrowserHeistButton* SelectedButton);
+	void OnHeistCollectionChanged(const struct FSBZServerBrowserHeistCollection& ActiveHeistCollection);
+	void OnHeistModeChanged();
+	void OnInitialized();
+	void OnInviteRecieved(const class FString& FromPlayerId);
 	void OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA(class UObject* Loaded);
 	void OnLoaded_CFD0D7B04B17F532FED779AC3A58815E(class UObject* Loaded);
-	void UpdateMenuControlsReference();
-	void HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled);
+	void OnLostStackFocused();
+	void OnMatchmakingPopUpClosed(class FName ClosingActionName);
+	void OnMatchmakingStarted();
+	void OnMatchmakingStopped(ESBZOnlineCode ErrorCode);
+	void OnPinsPlacementFinished();
+	void OnRemovedFromStack();
+	void OnServerBrowserJoinError();
+	void OnServersRefreshRequested();
+	void OnServersUpdatedDone();
+	void OnSoloInPartyPopupClosed(class FName ClosingActionName);
+	void OnStateMachineEnteredGameStart();
+	void PlaceMapPin(class USBZServerBrowserHeistMapWidget* TargetPin, class USBZServerBrowserHeistButton* ConnectedHeistButton);
+	void PlayContractorSound();
+	void PreConstruct(bool IsDesignTime);
+	void ReenableRefresh();
+	void RefreshServers(bool* Success);
+	void Reset_Widgets_State_on_Collection_Change();
+	void Reset_Widgets_State_on_Heist_Mode_Change(int32 HeistModeIndex);
+	void ResetAvailablePinIndices();
+	void SecondaryInteraction();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Screen();
+	void ServerRefreshTimeout();
 	void Set_Heist_Button_Focus();
 	void SetFocusOnFirstVisibleHeistButton();
-	void Toggle_Heists_Left_Panel(bool DisplayHeistDetails);
-	void UpdateHeistInspectPanel(ESBZDifficulty Difficulty, ESBZOnlineTacticType Tactic);
-	void ToggleStoryMode();
-	void InitializeSecurityCompanies(class UVerticalBox* SecurityCompaniesContainer, bool bUseTitleOnly);
-	void UpdateSecurityCompaniesForDifficulty(class UVerticalBox* SecurityCompaniesContainer, class UWidget* NoMods, ESBZDifficulty InDifficulty);
-	class FString GetSecurityCompanyName(class USBZSecurityCompanyVisualsWidget* Widget);
-	void UpdateHeistDetailsPopup(ESBZDifficulty Difficulty);
-	void ToggleHeistDetailsPopup(bool bShowPopup);
-	void SecondaryInteraction();
-	void TertiaryInteraction();
-	void SwitchRegions();
-	bool DoesCollectionContainsStoryModeContent();
-	ESBZDifficulty GetDifficultyPerHeistType();
-	ESBZOnlineTacticType GetTacticPerHeistType();
-	ESBZOnlineJoinType GetLobbyTypePerHeistType();
-	bool IsHeistListVisible();
-	void HandleHeistModeChanged();
-	void Reset_Widgets_State_on_Heist_Mode_Change(int32 HeistModeIndex);
-	void Reset_Widgets_State_on_Collection_Change();
-	void HandleButtonActionKeys(class UWBP_ServerBrowser_InspectButton_C* Button);
-	class UWidget* LoopHeistScrollBox(EUINavigation Navigation_0);
-	void ShowFilterBox();
 	void SetSoloModeOptions();
-	void GetRandomIndex(int32* Output);
-	void InitialPinPlacement();
-	void AddPinToCanvas(class USBZServerBrowserHeistMapWidget* InMapPin, const struct FVector& WorldPositionToConvert);
-	void ResetAvailablePinIndices();
+	void SetSpeak(bool ContractorSpeak);
+	void ShowFilterBox();
 	void SoloModeInPartyPopup();
-	void OnSoloInPartyPopupClosed(class FName ClosingActionName);
-	void OnInviteRecieved(const class FString& FromPlayerId);
-	void RefreshServers(bool* Success);
-	void ServerRefreshTimeout();
-	bool CanInteractWithMatchmakingButtons();
-	void BindSoloModeReentry();
-	void Check_New_Player();
-	void OnPinsPlacementFinished();
-	void CheckModdedStatus();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Screen_0();
+	void StopContractorSound();
+	void SwitchRegions();
+	void TertiaryInteraction();
+	void Toggle_Heists_Left_Panel(bool DisplayHeistDetails);
+	void ToggleContractorMute();
+	void ToggleHeistDetailsPopup(bool bShowPopup);
+	void ToggleStoryMode();
+	void UpdateHeistDetailsPopup(ESBZDifficulty Difficulty);
+	void UpdateHeistInspectPanel(ESBZDifficulty Difficulty, ESBZOnlineTacticType Tactic);
+	void UpdateMenuControlsReference();
+	void UpdateSecurityCompaniesForDifficulty(class UVerticalBox* SecurityCompaniesContainer, class UWidget* NoMods, ESBZDifficulty InDifficulty);
 
 public:
 	static class UClass* StaticClass()

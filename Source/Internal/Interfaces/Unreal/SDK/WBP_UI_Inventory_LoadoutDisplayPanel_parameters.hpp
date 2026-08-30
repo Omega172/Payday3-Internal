@@ -17,6 +17,95 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
+
 // Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutDisplayPanel
 // 0x0138 (0x0138 - 0x0000)
 struct WBP_UI_Inventory_LoadoutDisplayPanel_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutDisplayPanel final
@@ -24,43 +113,46 @@ struct WBP_UI_Inventory_LoadoutDisplayPanel_C_ExecuteUbergraph_WBP_UI_Inventory_
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_8;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_7;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_8;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_7;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_7;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_6;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_7;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_6;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_6;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_5;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_6;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_5;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_4;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_4;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_3;           // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_3;           // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_2;           // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_2;           // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FSBZPlayerLoadoutConfig                K2Node_Event_PlayerLoadoutConfig;                  // 0x0080(0x00A8)(ConstParm)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0128(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutDisplayPanel;
 
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.NavFromSkills
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Inventory_LoadoutDisplayPanel_C_NavFromSkills final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_NavFromSkills;
 
 // Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.OnNewConfigUpdated
 // 0x00A8 (0x00A8 - 0x0000)
@@ -70,98 +162,6 @@ public:
 	struct FSBZPlayerLoadoutConfig                PlayerLoadoutConfig;                               // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_OnNewConfigUpdated;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_LoadoutDisplayPanel.WBP_UI_Inventory_LoadoutDisplayPanel_C.NavFromSkills
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_Inventory_LoadoutDisplayPanel_C_NavFromSkills final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutDisplayPanel_C_NavFromSkills;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

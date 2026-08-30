@@ -16,40 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_HeistStates_Assault.WBP_HeistStates_Assault_C.ExecuteUbergraph_WBP_HeistStates_Assault
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_HeistStates_Assault_C::ExecuteUbergraph_WBP_HeistStates_Assault(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Assault_C", "ExecuteUbergraph_WBP_HeistStates_Assault");
-
-	Params::WBP_HeistStates_Assault_C_ExecuteUbergraph_WBP_HeistStates_Assault Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HeistStates_Assault.WBP_HeistStates_Assault_C.Init
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_Assault_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Assault_C", "Init");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HeistStates_Assault.WBP_HeistStates_Assault_C.DramaUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -70,6 +36,26 @@ void UWBP_HeistStates_Assault_C::DramaUpdated(float NewDramaScale)
 }
 
 
+// Function WBP_HeistStates_Assault.WBP_HeistStates_Assault_C.ExecuteUbergraph_WBP_HeistStates_Assault
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HeistStates_Assault_C::ExecuteUbergraph_WBP_HeistStates_Assault(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Assault_C", "ExecuteUbergraph_WBP_HeistStates_Assault");
+
+	Params::WBP_HeistStates_Assault_C_ExecuteUbergraph_WBP_HeistStates_Assault Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_HeistStates_Assault.WBP_HeistStates_Assault_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -79,6 +65,20 @@ void UWBP_HeistStates_Assault_C::Hide()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_HeistStates_Assault_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HeistStates_Assault.WBP_HeistStates_Assault_C.Init
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_Assault_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Assault_C", "Init");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

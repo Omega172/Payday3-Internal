@@ -17,15 +17,16 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_HUD_AbilityActionInput.WBP_UI_HUD_AbilityActionInput_C.ExecuteUbergraph_WBP_UI_HUD_AbilityActionInput
-// 0x001C (0x001C - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_UI_HUD_AbilityActionInput_C_ExecuteUbergraph_WBP_UI_HUD_AbilityActionInput final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0004(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInCanActivate;                       // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bInCanActivate;                       // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_HUD_AbilityActionInput_C_ExecuteUbergraph_WBP_UI_HUD_AbilityActionInput;
 
@@ -34,7 +35,7 @@ DUMPER7_ASSERTS_WBP_UI_HUD_AbilityActionInput_C_ExecuteUbergraph_WBP_UI_HUD_Abil
 struct WBP_UI_HUD_AbilityActionInput_C_OnActivateAbilityStateChanged final
 {
 public:
-	bool                                          bInCanActivate;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInCanActivate;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_HUD_AbilityActionInput_C_OnActivateAbilityStateChanged;
 

@@ -16,6 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Widget_MarkerContainer.WBP_UI_Widget_MarkerContainer_C.BP_OnInsideVolumeChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Widget_MarkerContainer_C_BP_OnInsideVolumeChanged final
+{
+public:
+	bool                                          bInsideVolume;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_MarkerContainer_C_BP_OnInsideVolumeChanged;
+
 // Function WBP_UI_Widget_MarkerContainer.WBP_UI_Widget_MarkerContainer_C.ExecuteUbergraph_WBP_UI_Widget_MarkerContainer
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_UI_Widget_MarkerContainer_C_ExecuteUbergraph_WBP_UI_Widget_MarkerContainer final
@@ -24,26 +35,15 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInsideVolume;                        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bInsideVolume;                        // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMarkerDataAsset*              K2Node_Event_MarkerDataAsset;                      // 0x0018(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	const class USBZMarkerDataAsset*              K2Node_Event_MarkerDataAsset;                      // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_MarkerContainer_C_ExecuteUbergraph_WBP_UI_Widget_MarkerContainer;
-
-// Function WBP_UI_Widget_MarkerContainer.WBP_UI_Widget_MarkerContainer_C.BP_OnInsideVolumeChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Widget_MarkerContainer_C_BP_OnInsideVolumeChanged final
-{
-public:
-	bool                                          bInsideVolume;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_MarkerContainer_C_BP_OnInsideVolumeChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

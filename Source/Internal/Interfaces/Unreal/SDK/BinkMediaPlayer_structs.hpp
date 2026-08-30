@@ -13,16 +13,14 @@
 
 SDK_NAMESPACE_START
 
-// Enum BinkMediaPlayer.EBinkMediaPlayerBinkDrawStyle
-// NumValues: 0x0006
-enum class EBinkMediaPlayerBinkDrawStyle : uint8
+// Enum BinkMediaPlayer.EBinkMediaPlayerBinkBufferModes
+// NumValues: 0x0004
+enum class EBinkMediaPlayerBinkBufferModes : uint8
 {
-	BMASM_Bink_DS_RenderToTexture            = 0,
-	BMASM_Bink_DS_OverlayFillScreenWithAspectRatio = 1,
-	BMASM_Bink_DS_OverlayOriginalMovieSize   = 2,
-	BMASM_Bink_DS_OverlayFillScreen          = 3,
-	BMASM_Bink_DS_OverlaySpecificDestinationRectangle = 4,
-	BMASM_Bink_DS_MAX                        = 5,
+	BMASM_Bink_Stream                        = 0,
+	BMASM_Bink_PreloadAll                    = 1,
+	BMASM_Bink_StreamUntilResident           = 2,
+	BMASM_Bink_MAX                           = 3,
 };
 
 // Enum BinkMediaPlayer.EBinkMediaPlayerBinkSoundTrack
@@ -39,14 +37,26 @@ enum class EBinkMediaPlayerBinkSoundTrack : uint8
 	BMASM_Bink_Sound_MAX                     = 7,
 };
 
-// Enum BinkMediaPlayer.EBinkMediaPlayerBinkBufferModes
-// NumValues: 0x0004
-enum class EBinkMediaPlayerBinkBufferModes : uint8
+// Enum BinkMediaPlayer.EBinkMediaPlayerBinkDrawStyle
+// NumValues: 0x0006
+enum class EBinkMediaPlayerBinkDrawStyle : uint8
 {
-	BMASM_Bink_Stream                        = 0,
-	BMASM_Bink_PreloadAll                    = 1,
-	BMASM_Bink_StreamUntilResident           = 2,
-	BMASM_Bink_MAX                           = 3,
+	BMASM_Bink_DS_RenderToTexture            = 0,
+	BMASM_Bink_DS_OverlayFillScreenWithAspectRatio = 1,
+	BMASM_Bink_DS_OverlayOriginalMovieSize   = 2,
+	BMASM_Bink_DS_OverlayFillScreen          = 3,
+	BMASM_Bink_DS_OverlaySpecificDestinationRectangle = 4,
+	BMASM_Bink_DS_MAX                        = 5,
+};
+
+// Enum BinkMediaPlayer.EBinkMoviePlayerBinkBufferModes
+// NumValues: 0x0004
+enum class EBinkMoviePlayerBinkBufferModes : uint8
+{
+	MP_Bink_Stream                           = 0,
+	MP_Bink_PreloadAll                       = 1,
+	MP_Bink_StreamUntilResident              = 2,
+	MP_Bink_MAX                              = 3,
 };
 
 // Enum BinkMediaPlayer.EBinkMoviePlayerBinkSoundTrack
@@ -61,16 +71,6 @@ enum class EBinkMoviePlayerBinkSoundTrack : uint8
 	MP_Bink_Sound_71                         = 5,
 	MP_Bink_Sound_71LanguageOverride         = 6,
 	MP_Bink_Sound_MAX                        = 7,
-};
-
-// Enum BinkMediaPlayer.EBinkMoviePlayerBinkBufferModes
-// NumValues: 0x0004
-enum class EBinkMoviePlayerBinkBufferModes : uint8
-{
-	MP_Bink_Stream                           = 0,
-	MP_Bink_PreloadAll                       = 1,
-	MP_Bink_StreamUntilResident              = 2,
-	MP_Bink_MAX                              = 3,
 };
 
 SDK_NAMESPACE_END

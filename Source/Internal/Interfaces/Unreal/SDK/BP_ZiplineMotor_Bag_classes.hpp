@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ZiplineMotor_Bag.BP_ZiplineMotor_Bag_C
-// 0x0010 (0x0330 - 0x0320)
+// 0x0010 (0x03E0 - 0x03D0)
 class ABP_ZiplineMotor_Bag_C final : public ASBZZiplineMotor
 {
 public:
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

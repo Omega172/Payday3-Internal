@@ -36,25 +36,51 @@ void UWBP_UI_SM_Gamestart_Debug_C::ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug(in
 }
 
 
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.InitMatchmakingGroup
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   inMMakingGroup                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Gamestart_Debug_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_UI_SM_Gamestart_Debug_C::InitMatchmakingGroup(int32 inMMakingGroup)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "Tick");
+		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "InitMatchmakingGroup");
 
-	Params::WBP_UI_SM_Gamestart_Debug_C_Tick Parms{};
+	Params::WBP_UI_SM_Gamestart_Debug_C_InitMatchmakingGroup Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.inMMakingGroup = inMMakingGroup;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.InitVersionString
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_Gamestart_Debug_C::InitVersionString()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "InitVersionString");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_Gamestart_Debug_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -92,17 +118,25 @@ void UWBP_UI_SM_Gamestart_Debug_C::OnTick()
 }
 
 
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnInitialized
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Gamestart_Debug_C::OnInitialized()
+void UWBP_UI_SM_Gamestart_Debug_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "Tick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_SM_Gamestart_Debug_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -117,40 +151,6 @@ void UWBP_UI_SM_Gamestart_Debug_C::UpdateGameState()
 		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "UpdateGameState");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.InitVersionString
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Gamestart_Debug_C::InitVersionString()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "InitVersionString");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.InitMatchmakingGroup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   inMMakingGroup                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_Gamestart_Debug_C::InitMatchmakingGroup(int32 inMMakingGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_Gamestart_Debug_C", "InitMatchmakingGroup");
-
-	Params::WBP_UI_SM_Gamestart_Debug_C_InitMatchmakingGroup Parms{};
-
-	Parms.inMMakingGroup = inMMakingGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

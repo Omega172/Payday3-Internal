@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_CustodyTimer.WBP_UI_Widget_CustodyTimer_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_CustodyTimer_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_CustodyTimer_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_CustodyTimer.WBP_UI_Widget_CustodyTimer_C.ExecuteUbergraph_WBP_UI_Widget_CustodyTimer
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void UWBP_UI_Widget_CustodyTimer_C::ExecuteUbergraph_WBP_UI_Widget_CustodyTimer(
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_CustodyTimer.WBP_UI_Widget_CustodyTimer_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_CustodyTimer_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CustodyTimer_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

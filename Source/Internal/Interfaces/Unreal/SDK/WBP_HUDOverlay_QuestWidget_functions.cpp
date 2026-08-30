@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_HUDOverlay_QuestWidget_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.ExecuteUbergraph_WBP_HUDOverlay_QuestWidget
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,31 +50,51 @@ void UWBP_HUDOverlay_QuestWidget_C::ExecuteUbergraph_WBP_HUDOverlay_QuestWidget(
 }
 
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FSBZUIQuestChallengeData&  InQuestChallenge                                       (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText*                            OutText                                                (Parm, OutParm)
 
-void UWBP_HUDOverlay_QuestWidget_C::Destruct()
+void UWBP_HUDOverlay_QuestWidget_C::GetChallengeDescriptionTextFromQuestChallengeData(const struct FSBZUIQuestChallengeData& InQuestChallenge, class FText* OutText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "Destruct");
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "GetChallengeDescriptionTextFromQuestChallengeData");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeData Parms{};
+
+	Parms.InQuestChallenge = std::move(InQuestChallenge);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutText != nullptr)
+		*OutText = std::move(Parms.OutText);
 }
 
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeNotificationData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FSBZQuestChallengeNotificationData&InQuestNotifChallenge                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText*                            OutText                                                (Parm, OutParm)
 
-void UWBP_HUDOverlay_QuestWidget_C::OnInitialized()
+void UWBP_HUDOverlay_QuestWidget_C::GetChallengeDescriptionTextFromQuestChallengeNotificationData(const struct FSBZQuestChallengeNotificationData& InQuestNotifChallenge, class FText* OutText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "GetChallengeDescriptionTextFromQuestChallengeNotificationData");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeNotificationData Parms{};
+
+	Parms.InQuestNotifChallenge = std::move(InQuestNotifChallenge);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutText != nullptr)
+		*OutText = std::move(Parms.OutText);
 }
 
 
@@ -98,27 +132,23 @@ void UWBP_HUDOverlay_QuestWidget_C::InitializeQuest(const struct FSBZUIQuestData
 }
 
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnChallengeCompleted
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZUIQuestChallengeData&  InQuestChallenge                                       (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText*                            OutText                                                (Parm, OutParm)
+// const struct FSBZQuestChallengeCompletedData&QuestChallengeCompletedData                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_HUDOverlay_QuestWidget_C::GetChallengeDescriptionTextFromQuestChallengeData(const struct FSBZUIQuestChallengeData& InQuestChallenge, class FText* OutText)
+void UWBP_HUDOverlay_QuestWidget_C::OnChallengeCompleted(const struct FSBZQuestChallengeCompletedData& QuestChallengeCompletedData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "GetChallengeDescriptionTextFromQuestChallengeData");
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "OnChallengeCompleted");
 
-	Params::WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeData Parms{};
+	Params::WBP_HUDOverlay_QuestWidget_C_OnChallengeCompleted Parms{};
 
-	Parms.InQuestChallenge = std::move(InQuestChallenge);
+	Parms.QuestChallengeCompletedData = std::move(QuestChallengeCompletedData);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutText != nullptr)
-		*OutText = std::move(Parms.OutText);
 }
 
 
@@ -142,23 +172,31 @@ void UWBP_HUDOverlay_QuestWidget_C::OnChallengesUpdated(const struct FSBZQuestCh
 }
 
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.UpdateQuest
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZQuestChallengeNotificationData&NotifData                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_HUDOverlay_QuestWidget_C::UpdateQuest(const struct FSBZQuestChallengeNotificationData& NotifData)
+void UWBP_HUDOverlay_QuestWidget_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "UpdateQuest");
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "OnInitialized");
 
-	Params::WBP_HUDOverlay_QuestWidget_C_UpdateQuest Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NotifData = std::move(NotifData);
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.SetNoActiveContract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_HUDOverlay_QuestWidget_C::SetNoActiveContract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "SetNoActiveContract");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -176,61 +214,23 @@ void UWBP_HUDOverlay_QuestWidget_C::SetQuestName()
 }
 
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.OnChallengeCompleted
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.UpdateQuest
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZQuestChallengeCompletedData&QuestChallengeCompletedData                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FSBZQuestChallengeNotificationData&NotifData                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_HUDOverlay_QuestWidget_C::OnChallengeCompleted(const struct FSBZQuestChallengeCompletedData& QuestChallengeCompletedData)
+void UWBP_HUDOverlay_QuestWidget_C::UpdateQuest(const struct FSBZQuestChallengeNotificationData& NotifData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "OnChallengeCompleted");
+		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "UpdateQuest");
 
-	Params::WBP_HUDOverlay_QuestWidget_C_OnChallengeCompleted Parms{};
+	Params::WBP_HUDOverlay_QuestWidget_C_UpdateQuest Parms{};
 
-	Parms.QuestChallengeCompletedData = std::move(QuestChallengeCompletedData);
+	Parms.NotifData = std::move(NotifData);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.GetChallengeDescriptionTextFromQuestChallengeNotificationData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const struct FSBZQuestChallengeNotificationData&InQuestNotifChallenge                                  (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText*                            OutText                                                (Parm, OutParm)
-
-void UWBP_HUDOverlay_QuestWidget_C::GetChallengeDescriptionTextFromQuestChallengeNotificationData(const struct FSBZQuestChallengeNotificationData& InQuestNotifChallenge, class FText* OutText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "GetChallengeDescriptionTextFromQuestChallengeNotificationData");
-
-	Params::WBP_HUDOverlay_QuestWidget_C_GetChallengeDescriptionTextFromQuestChallengeNotificationData Parms{};
-
-	Parms.InQuestNotifChallenge = std::move(InQuestNotifChallenge);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutText != nullptr)
-		*OutText = std::move(Parms.OutText);
-}
-
-
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.SetNoActiveContract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_HUDOverlay_QuestWidget_C::SetNoActiveContract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUDOverlay_QuestWidget_C", "SetNoActiveContract");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

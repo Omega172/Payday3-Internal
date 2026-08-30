@@ -19,13 +19,13 @@ SDK_NAMESPACE_START
 // Function TimeEnhancements.CurveFloatDelegateTimer.CreateCurveFloatDelegateTimer
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Period                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   DelayToFirstExecution                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UCurveFloat*                Curve                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UCurveFloat*                Curve                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bLoops                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   CurveDuration                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UCurveFloatDelegateTimer*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UCurveFloatDelegateTimer*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UCurveFloatDelegateTimer* UCurveFloatDelegateTimer::CreateCurveFloatDelegateTimer(class UObject* WorldContextObject, float Period, float DelayToFirstExecution, const class UCurveFloat* Curve, bool bLoops, float CurveDuration)
 {
@@ -57,7 +57,7 @@ class UCurveFloatDelegateTimer* UCurveFloatDelegateTimer::CreateCurveFloatDelega
 // Function TimeEnhancements.CurveFloatDelegateTimer.DestroyCurveFloatDelegateTimer
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UCurveFloatDelegateTimer*         Object                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UCurveFloatDelegateTimer*         Object                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UCurveFloatDelegateTimer::DestroyCurveFloatDelegateTimer(class UCurveFloatDelegateTimer* Object)
 {
@@ -82,7 +82,7 @@ void UCurveFloatDelegateTimer::DestroyCurveFloatDelegateTimer(class UCurveFloatD
 // Function TimeEnhancements.CurveFloatDelegateTimer.FireCurveEvalTick
 // (Final, Native, Private)
 // Parameters:
-// const class UDelegateTimer*             Timer                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UDelegateTimer*             Timer                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ElapsedTime                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   TimeSinceLast                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -111,10 +111,10 @@ void UCurveFloatDelegateTimer::FireCurveEvalTick(const class UDelegateTimer* Tim
 // Function TimeEnhancements.DelegateTimer.CreateDelegateTimer
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Period                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   DelayToFirstExecution                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UDelegateTimer*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UDelegateTimer*                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UDelegateTimer* UDelegateTimer::CreateDelegateTimer(class UObject* WorldContextObject, float Period, float DelayToFirstExecution)
 {
@@ -143,7 +143,7 @@ class UDelegateTimer* UDelegateTimer::CreateDelegateTimer(class UObject* WorldCo
 // Function TimeEnhancements.DelegateTimer.DestroyDelegateTimer
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UDelegateTimer*                   Object                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UDelegateTimer*                   Object                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UDelegateTimer::DestroyDelegateTimer(class UDelegateTimer* Object)
 {

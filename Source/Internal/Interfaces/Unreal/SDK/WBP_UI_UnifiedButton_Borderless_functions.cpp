@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_UnifiedButton_Borderless.WBP_UI_UnifiedButton_Borderless_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_UnifiedButton_Borderless_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_UnifiedButton_Borderless_C", "ButtonDisabledChanged");
+
+	Params::WBP_UI_UnifiedButton_Borderless_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_UnifiedButton_Borderless.WBP_UI_UnifiedButton_Borderless_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_UnifiedButton_Borderless_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_UnifiedButton_Borderless_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_UnifiedButton_Borderless_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_UnifiedButton_Borderless.WBP_UI_UnifiedButton_Borderless_C.ExecuteUbergraph_WBP_UI_UnifiedButton_Borderless
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,50 +76,10 @@ void UWBP_UI_UnifiedButton_Borderless_C::ExecuteUbergraph_WBP_UI_UnifiedButton_B
 }
 
 
-// Function WBP_UI_UnifiedButton_Borderless.WBP_UI_UnifiedButton_Borderless_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_UnifiedButton_Borderless_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_UnifiedButton_Borderless_C", "ButtonDisabledChanged");
-
-	Params::WBP_UI_UnifiedButton_Borderless_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_UnifiedButton_Borderless.WBP_UI_UnifiedButton_Borderless_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_UnifiedButton_Borderless_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_UnifiedButton_Borderless_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_UnifiedButton_Borderless_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_UnifiedButton_Borderless.WBP_UI_UnifiedButton_Borderless_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_UnifiedButton_Borderless_C::PreConstruct(bool IsDesignTime)
 {

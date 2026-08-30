@@ -21,8 +21,7 @@ namespace VisualsHelpers
 
 		float flWidth = flHeight * flWidthRatio;
 		float flCenter = (vec2Bottom.X + vec2Top.X) / 2.0f;
-		return ImVec4{ flCenter - (flWidth / 2.0f), std::min(vec2Bottom.Y, vec2Top.Y),
-					   flCenter + (flWidth / 2.0f), std::max(vec2Bottom.Y, vec2Top.Y) };
+		return ImVec4{flCenter - (flWidth / 2.0f), static_cast<float>(std::min(vec2Bottom.Y, vec2Top.Y)), flCenter + (flWidth / 2.0f), static_cast<float>(std::max(vec2Bottom.Y, vec2Top.Y))};
 	}
 
 	std::optional<ImVec4> CalculateScreenBoxForCharacter(SDK::USkeletalMeshComponent* pMeshComponent,

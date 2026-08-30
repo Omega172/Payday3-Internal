@@ -17,11 +17,11 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_CrewCarryStatusItem.WBP_UI_Widget_CrewCarryStatusItem_C
-// 0x0008 (0x0298 - 0x0290)
+// 0x0008 (0x02F8 - 0x02F0)
 class UWBP_UI_Widget_CrewCarryStatusItem_C final : public UUserWidget
 {
 public:
-	class UImage*                                 BagIcon;                                           // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 BagIcon;                                           // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void OnChanged(class USBZCarryType* Type, bool IsAdded);

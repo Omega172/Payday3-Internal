@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ThePunchHeavyCameraFeedback_Left.ThePunchHeavyCameraFeedback_Left_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UThePunchHeavyCameraFeedback_Left_C final : public USBZLocalPlayerFeedback
 {
 public:

@@ -16,232 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature Parms{};
-
-	Parms.ActiveItemData = ActiveItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnControlsReferenceClicked");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SM_LoadoutCustomization_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnGainedStackFocused");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// ESBZInventoryEquipmentType              ButtonType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsFocused, ESBZInventoryEquipmentType ButtonType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsFocused = bIsFocused;
-	Parms.ButtonType = ButtonType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SM_LoadoutCustomization_C::OnAddedToStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnAddedToStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature Parms{};
-
-	Parms.ActiveItemData = ActiveItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature Parms{};
-
-	Parms.ActiveItemData = ActiveItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature Parms{};
-
-	Parms.ActiveItemData = ActiveItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature Parms{};
-
-	Parms.ActiveItemData = ActiveItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -264,6 +38,144 @@ void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget
 }
 
 
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature Parms{};
+
+	Parms.ActiveItemData = ActiveItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature Parms{};
+
+	Parms.ActiveItemData = ActiveItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZInventoryEquipmentType              ButtonType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsFocused, ESBZInventoryEquipmentType ButtonType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsFocused = bIsFocused;
+	Parms.ButtonType = ButtonType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature Parms{};
+
+	Parms.ActiveItemData = ActiveItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature Parms{};
+
+	Parms.ActiveItemData = ActiveItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature Parms{};
+
+	Parms.ActiveItemData = ActiveItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -278,21 +190,21 @@ void UWBP_UI_SM_LoadoutCustomization_C::Construct()
 }
 
 
-// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.SetDisabledState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bIsDisabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_LoadoutCustomization_C::SetDisabledState(bool bIsDisabled)
+void UWBP_UI_SM_LoadoutCustomization_C::ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "SetDisabledState");
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization");
 
-	Params::WBP_UI_SM_LoadoutCustomization_C_SetDisabledState Parms{};
+	Params::WBP_UI_SM_LoadoutCustomization_C_ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization Parms{};
 
-	Parms.bIsDisabled = bIsDisabled;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -319,6 +231,94 @@ void UWBP_UI_SM_LoadoutCustomization_C::GetWeaponConfig(ESBZEquippableLoadoutSlo
 
 	if (Equippable_Config != nullptr)
 		*Equippable_Config = std::move(Parms.Equippable_Config);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SM_LoadoutCustomization_C::OnAddedToStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnAddedToStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::OnControlsReferenceClicked(class FName InActionInput)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnControlsReferenceClicked");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_OnControlsReferenceClicked Parms{};
+
+	Parms.InActionInput = InActionInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnGainedStackFocused");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SM_LoadoutCustomization_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_LoadoutCustomization.WBP_UI_SM_LoadoutCustomization_C.SetDisabledState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_LoadoutCustomization_C::SetDisabledState(bool bIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_LoadoutCustomization_C", "SetDisabledState");
+
+	Params::WBP_UI_SM_LoadoutCustomization_C_SetDisabledState Parms{};
+
+	Parms.bIsDisabled = bIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

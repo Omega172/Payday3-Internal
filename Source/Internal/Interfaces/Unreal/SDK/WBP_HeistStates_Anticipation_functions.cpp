@@ -36,6 +36,34 @@ void UWBP_HeistStates_Anticipation_C::ExecuteUbergraph_WBP_HeistStates_Anticipat
 }
 
 
+// Function WBP_HeistStates_Anticipation.WBP_HeistStates_Anticipation_C.Hide
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_Anticipation_C::Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Anticipation_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HeistStates_Anticipation.WBP_HeistStates_Anticipation_C.Init
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_Anticipation_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Anticipation_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HeistStates_Anticipation.WBP_HeistStates_Anticipation_C.OnPhaseTimerUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -56,20 +84,6 @@ void UWBP_HeistStates_Anticipation_C::OnPhaseTimerUpdated(int32 RemainingSeconds
 }
 
 
-// Function WBP_HeistStates_Anticipation.WBP_HeistStates_Anticipation_C.Hide
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_Anticipation_C::Hide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Anticipation_C", "Hide");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HeistStates_Anticipation.WBP_HeistStates_Anticipation_C.Show
 // (BlueprintCallable, BlueprintEvent)
 
@@ -79,20 +93,6 @@ void UWBP_HeistStates_Anticipation_C::Show()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_HeistStates_Anticipation_C", "Show");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HeistStates_Anticipation.WBP_HeistStates_Anticipation_C.Init
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_Anticipation_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Anticipation_C", "Init");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

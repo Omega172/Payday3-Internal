@@ -36,34 +36,12 @@ void UWBP_ShopScreen_C::ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint)
 }
 
 
-// Function WBP_ShopScreen.WBP_ShopScreen_C.OnShopScreenOpened
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   CategoryIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPlayAnimation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ShopScreen_C::OnShopScreenOpened(int32 CategoryIndex, bool bPlayAnimation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ShopScreen_C", "OnShopScreenOpened");
-
-	Params::WBP_ShopScreen_C_OnShopScreenOpened Parms{};
-
-	Parms.CategoryIndex = CategoryIndex;
-	Parms.bPlayAnimation = bPlayAnimation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ShopScreen.WBP_ShopScreen_C.OnActiveCategoryUpdated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZShopCategoryData*       NewCategory                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZShopCategoryData*       NewCategory                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   NewCategoryIndex                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bWasChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bWasChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ShopScreen_C::OnActiveCategoryUpdated(const class USBZShopCategoryData* NewCategory, int32 NewCategoryIndex, bool bWasChanged)
 {
@@ -77,6 +55,28 @@ void UWBP_ShopScreen_C::OnActiveCategoryUpdated(const class USBZShopCategoryData
 	Parms.NewCategory = NewCategory;
 	Parms.NewCategoryIndex = NewCategoryIndex;
 	Parms.bWasChanged = bWasChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ShopScreen.WBP_ShopScreen_C.OnShopScreenOpened
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   CategoryIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bPlayAnimation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ShopScreen_C::OnShopScreenOpened(int32 CategoryIndex, bool bPlayAnimation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ShopScreen_C", "OnShopScreenOpened");
+
+	Params::WBP_ShopScreen_C_OnShopScreenOpened Parms{};
+
+	Parms.CategoryIndex = CategoryIndex;
+	Parms.bPlayAnimation = bPlayAnimation;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

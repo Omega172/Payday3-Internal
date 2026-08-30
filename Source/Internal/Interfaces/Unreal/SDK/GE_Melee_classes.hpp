@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Melee.GE_Melee_C
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0B30 - 0x0B30)
 class UGE_Melee_C final : public UGameplayEffect
 {
 public:

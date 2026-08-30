@@ -36,6 +36,26 @@ void UWBP_UI_Widget_Reticle_C::ExecuteUbergraph_WBP_UI_Widget_Reticle(int32 Entr
 }
 
 
+// Function WBP_UI_Widget_Reticle.WBP_UI_Widget_Reticle_C.OnCrossHairScaleChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   CurrentSpread                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Reticle_C::OnCrossHairScaleChanged(float CurrentSpread)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Reticle_C", "OnCrossHairScaleChanged");
+
+	Params::WBP_UI_Widget_Reticle_C_OnCrossHairScaleChanged Parms{};
+
+	Parms.CurrentSpread = CurrentSpread;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_Reticle.WBP_UI_Widget_Reticle_C.OnCrosshairSettingsChanged
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -59,7 +79,7 @@ void UWBP_UI_Widget_Reticle_C::OnCrosshairSettingsChanged(const struct FSBZCross
 // Function WBP_UI_Widget_Reticle.WBP_UI_Widget_Reticle_C.OnCrossHairVisibilityChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsVisible                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsVisible                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Reticle_C::OnCrossHairVisibilityChanged(bool bIsVisible)
 {
@@ -71,26 +91,6 @@ void UWBP_UI_Widget_Reticle_C::OnCrossHairVisibilityChanged(bool bIsVisible)
 	Params::WBP_UI_Widget_Reticle_C_OnCrossHairVisibilityChanged Parms{};
 
 	Parms.bIsVisible = bIsVisible;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Reticle.WBP_UI_Widget_Reticle_C.OnCrossHairScaleChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   CurrentSpread                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_Reticle_C::OnCrossHairScaleChanged(float CurrentSpread)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Reticle_C", "OnCrossHairScaleChanged");
-
-	Params::WBP_UI_Widget_Reticle_C_OnCrossHairScaleChanged Parms{};
-
-	Parms.CurrentSpread = CurrentSpread;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

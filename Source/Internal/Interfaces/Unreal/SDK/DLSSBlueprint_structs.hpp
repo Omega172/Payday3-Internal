@@ -13,6 +13,20 @@
 
 SDK_NAMESPACE_START
 
+// Enum DLSSBlueprint.UDLSSSupport
+// NumValues: 0x0008
+enum class EUDLSSSupport : uint8
+{
+	Supported                                = 0,
+	NotSupported                             = 1,
+	NotSupportedIncompatibleHardware         = 2,
+	NotSupportedDriverOutOfDate              = 3,
+	NotSupportedOperatingSystemOutOfDate     = 4,
+	NotSupportedByPlatformAtBuildTime        = 5,
+	NotSupportedIncompatibleAPICaptureToolActive = 6,
+	UDLSSSupport_MAX                         = 7,
+};
+
 // Enum DLSSBlueprint.UDLSSMode
 // NumValues: 0x0009
 enum class EUDLSSMode : uint8
@@ -26,20 +40,6 @@ enum class EUDLSSMode : uint8
 	Performance                              = 6,
 	UltraPerformance                         = 7,
 	UDLSSMode_MAX                            = 8,
-};
-
-// Enum DLSSBlueprint.UDLSSSupport
-// NumValues: 0x0008
-enum class EUDLSSSupport : uint8
-{
-	Supported                                = 0,
-	NotSupported                             = 1,
-	NotSupportedIncompatibleHardware         = 2,
-	NotSupportedDriverOutOfDate              = 3,
-	NotSupportedOperatingSystemOutOfDate     = 4,
-	NotSupportedByPlatformAtBuildTime        = 5,
-	NotSupportedIncompatibleAPICaptureToolActive = 6,
-	UDLSSSupport_MAX                         = 7,
 };
 
 SDK_NAMESPACE_END

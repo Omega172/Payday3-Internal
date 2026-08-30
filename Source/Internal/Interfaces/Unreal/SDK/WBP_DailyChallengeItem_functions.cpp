@@ -16,50 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.ExecuteUbergraph_WBP_DailyChallengeItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengeItem_C::ExecuteUbergraph_WBP_DailyChallengeItem(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "ExecuteUbergraph_WBP_DailyChallengeItem");
-
-	Params::WBP_DailyChallengeItem_C_ExecuteUbergraph_WBP_DailyChallengeItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.OnInstallGame
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_DailyChallengeItem_C::OnInstallGame(bool bIsGameInstallPending)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "OnInstallGame");
-
-	Params::WBP_DailyChallengeItem_C_OnInstallGame Parms{};
-
-	Parms.bIsGameInstallPending = bIsGameInstallPending;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.BndEvt__WBP_DailyChallengeItem_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_DailyChallengeItem_C::BndEvt__WBP_DailyChallengeItem_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button_0)
 {
@@ -76,31 +36,11 @@ void UWBP_DailyChallengeItem_C::BndEvt__WBP_DailyChallengeItem_Button_K2Node_Com
 }
 
 
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_DailyChallengeItem_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "PreConstruct");
-
-	Params::WBP_DailyChallengeItem_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.BndEvt__WBP_DailyChallenges_ChallengeButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_DailyChallengeItem_C::BndEvt__WBP_DailyChallenges_ChallengeButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button_0, bool bIsEnabled_0)
 {
@@ -132,6 +72,48 @@ void UWBP_DailyChallengeItem_C::Construct()
 }
 
 
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.ConvertProgressMinMaxToMeters
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeItem_C::ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "ConvertProgressMinMaxToMeters");
+
+	Params::WBP_DailyChallengeItem_C_ConvertProgressMinMaxToMeters Parms{};
+
+	Parms.InMaxValueToUse = InMaxValueToUse;
+	Parms.InMinValueToUse = InMinValueToUse;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.ExecuteUbergraph_WBP_DailyChallengeItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeItem_C::ExecuteUbergraph_WBP_DailyChallengeItem(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "ExecuteUbergraph_WBP_DailyChallengeItem");
+
+	Params::WBP_DailyChallengeItem_C_ExecuteUbergraph_WBP_DailyChallengeItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.InitializeChallenge
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -147,6 +129,74 @@ void UWBP_DailyChallengeItem_C::InitializeChallenge(const struct FSBZChallengeDa
 	Params::WBP_DailyChallengeItem_C_InitializeChallenge Parms{};
 
 	Parms.InChallengeData = std::move(InChallengeData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.OnChallengeItemReset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengeItem_C::OnChallengeItemReset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "OnChallengeItemReset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.OnChallengeRerollPressed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengeItem_C::OnChallengeRerollPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "OnChallengeRerollPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.OnInstallGame
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeItem_C::OnInstallGame(bool bIsGameInstallPending)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "OnInstallGame");
+
+	Params::WBP_DailyChallengeItem_C_OnInstallGame Parms{};
+
+	Parms.bIsGameInstallPending = bIsGameInstallPending;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeItem_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "PreConstruct");
+
+	Params::WBP_DailyChallengeItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -172,59 +222,41 @@ void UWBP_DailyChallengeItem_C::SetChallengeText(const struct FSBZChallengeData&
 }
 
 
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetProgressText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengeItem_C::SetProgressText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetProgressText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetProgressMinMax
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetFocused
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengeItem_C::SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse)
+void UWBP_DailyChallengeItem_C::SetFocused(bool IsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetProgressMinMax");
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetFocused");
 
-	Params::WBP_DailyChallengeItem_C_SetProgressMinMax Parms{};
+	Params::WBP_DailyChallengeItem_C_SetFocused Parms{};
 
-	Parms.InMaxValueToUse = InMaxValueToUse;
-	Parms.InMinValueToUse = InMinValueToUse;
+	Parms.IsFocused = IsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.ConvertProgressMinMaxToMeters
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetIsCompleted
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InCompleted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengeItem_C::ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse)
+void UWBP_DailyChallengeItem_C::SetIsCompleted(bool InCompleted)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "ConvertProgressMinMaxToMeters");
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetIsCompleted");
 
-	Params::WBP_DailyChallengeItem_C_ConvertProgressMinMaxToMeters Parms{};
+	Params::WBP_DailyChallengeItem_C_SetIsCompleted Parms{};
 
-	Parms.InMaxValueToUse = InMaxValueToUse;
-	Parms.InMinValueToUse = InMinValueToUse;
+	Parms.InCompleted = InCompleted;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -252,17 +284,59 @@ void UWBP_DailyChallengeItem_C::SetProgressBarPercentage(int32 Progress, int32 T
 }
 
 
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetupInfamyReward
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetProgressMinMax
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengeItem_C::SetupInfamyReward()
+void UWBP_DailyChallengeItem_C::SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetupInfamyReward");
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetProgressMinMax");
+
+	Params::WBP_DailyChallengeItem_C_SetProgressMinMax Parms{};
+
+	Parms.InMaxValueToUse = InMaxValueToUse;
+	Parms.InMinValueToUse = InMinValueToUse;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetProgressText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengeItem_C::SetProgressText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetProgressText");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetResetAvailable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InResetAvailable                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeItem_C::SetResetAvailable(bool InResetAvailable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetResetAvailable");
+
+	Params::WBP_DailyChallengeItem_C_SetResetAvailable Parms{};
+
+	Parms.InResetAvailable = InResetAvailable;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -280,6 +354,20 @@ void UWBP_DailyChallengeItem_C::SetupCurrencyReward()
 }
 
 
+// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetupInfamyReward
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengeItem_C::SetupInfamyReward()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetupInfamyReward");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetupProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -291,94 +379,6 @@ void UWBP_DailyChallengeItem_C::SetupProgress()
 		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetupProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_DailyChallengeItem_C::SetFocused(bool IsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetFocused");
-
-	Params::WBP_DailyChallengeItem_C_SetFocused Parms{};
-
-	Parms.IsFocused = IsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.OnChallengeRerollPressed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengeItem_C::OnChallengeRerollPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "OnChallengeRerollPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.OnChallengeItemReset
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengeItem_C::OnChallengeItemReset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "OnChallengeItemReset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetResetAvailable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InResetAvailable                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_DailyChallengeItem_C::SetResetAvailable(bool InResetAvailable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetResetAvailable");
-
-	Params::WBP_DailyChallengeItem_C_SetResetAvailable Parms{};
-
-	Parms.InResetAvailable = InResetAvailable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengeItem.WBP_DailyChallengeItem_C.SetIsCompleted
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InCompleted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_DailyChallengeItem_C::SetIsCompleted(bool InCompleted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeItem_C", "SetIsCompleted");
-
-	Params::WBP_DailyChallengeItem_C_SetIsCompleted Parms{};
-
-	Parms.InCompleted = InCompleted;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

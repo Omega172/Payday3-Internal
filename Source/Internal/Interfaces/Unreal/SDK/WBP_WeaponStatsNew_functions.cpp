@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.DamageDistToText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FSBZDamageDistance>&      DamageDists                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   Pellets                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            Text                                                   (Parm, OutParm)
+
+void UWBP_WeaponStatsNew_C::DamageDistToText(TArray<struct FSBZDamageDistance>& DamageDists, int32 Pellets, class FText* Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "DamageDistToText");
+
+	Params::WBP_WeaponStatsNew_C_DamageDistToText Parms{};
+
+	Parms.DamageDists = std::move(DamageDists);
+	Parms.Pellets = Pellets;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	DamageDists = std::move(Parms.DamageDists);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
+}
+
+
 // Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.ExecuteUbergraph_WBP_WeaponStatsNew
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,86 +64,16 @@ void UWBP_WeaponStatsNew_C::ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint
 }
 
 
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.OnUpdateVisuals
-// (Event, Public, BlueprintEvent)
-
-void UWBP_WeaponStatsNew_C::OnUpdateVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "OnUpdateVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.UpdateWeaponStatVisualsNew
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WeaponStatsNew_C::UpdateWeaponStatVisualsNew()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "UpdateWeaponStatVisualsNew");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStatNew
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTextBlock*                       TextBlock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetWeaponStatNew(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, float BaseStat, float CompareStat)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "SetWeaponStatNew");
-
-	Params::WBP_WeaponStatsNew_C_SetWeaponStatNew Parms{};
-
-	Parms.ProgressBarA = ProgressBarA;
-	Parms.ProgressBarB = ProgressBarB;
-	Parms.TextBlock = TextBlock;
-	Parms.BaseStat = BaseStat;
-	Parms.CompareStat = CompareStat;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetAmmoStatNew
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WeaponStatsNew_C::SetAmmoStatNew()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "SetAmmoStatNew");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetAverageDamageAndFireRate
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FSBZEquippableConfig&      SBZEquippableConfig                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// float*                                  Damage                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float*                                  Rounds_Per_Minute                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Damage                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Rounds_Per_Minute                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32*                                  ProjectilesPerFiredRound                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText*                            DamageText                                             (Parm, OutParm)
 
-void UWBP_WeaponStatsNew_C::GetAverageDamageAndFireRate(const struct FSBZEquippableConfig& SBZEquippableConfig, float* Damage, float* Rounds_Per_Minute, int32* ProjectilesPerFiredRound, class FText* DamageText)
+void UWBP_WeaponStatsNew_C::GetAverageDamageAndFireRate(const struct FSBZEquippableConfig& SBZEquippableConfig, double* Damage, double* Rounds_Per_Minute, int32* ProjectilesPerFiredRound, class FText* DamageText)
 {
 	static class UFunction* Func = nullptr;
 
@@ -139,32 +97,6 @@ void UWBP_WeaponStatsNew_C::GetAverageDamageAndFireRate(const struct FSBZEquippa
 
 	if (DamageText != nullptr)
 		*DamageText = std::move(Parms.DamageText);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStat
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, float BaseStat, float CompareStat)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "SetWeaponStat");
-
-	Params::WBP_WeaponStatsNew_C_SetWeaponStat Parms{};
-
-	Parms.ProgressBarA = ProgressBarA;
-	Parms.ProgressBarB = ProgressBarB;
-	Parms.BaseStat = BaseStat;
-	Parms.CompareStat = CompareStat;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -192,31 +124,99 @@ void UWBP_WeaponStatsNew_C::GetDamageWithFalloff(const struct FSBZEquippableConf
 }
 
 
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.DamageDistToText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FSBZDamageDistance>&      DamageDists                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   Pellets                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            Text                                                   (Parm, OutParm)
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.OnUpdateVisuals
+// (Event, Public, BlueprintEvent)
 
-void UWBP_WeaponStatsNew_C::DamageDistToText(TArray<struct FSBZDamageDistance>& DamageDists, int32 Pellets, class FText* Text)
+void UWBP_WeaponStatsNew_C::OnUpdateVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "DamageDistToText");
+		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "OnUpdateVisuals");
 
-	Params::WBP_WeaponStatsNew_C_DamageDistToText Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DamageDists = std::move(DamageDists);
-	Parms.Pellets = Pellets;
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetAmmoStatNew
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WeaponStatsNew_C::SetAmmoStatNew()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "SetAmmoStatNew");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStat
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "SetWeaponStat");
+
+	Params::WBP_WeaponStatsNew_C_SetWeaponStat Parms{};
+
+	Parms.ProgressBarA = ProgressBarA;
+	Parms.ProgressBarB = ProgressBarB;
+	Parms.BaseStat = BaseStat;
+	Parms.CompareStat = CompareStat;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	DamageDists = std::move(Parms.DamageDists);
 
-	if (Text != nullptr)
-		*Text = std::move(Parms.Text);
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStatNew
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UTextBlock*                       TextBlock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetWeaponStatNew(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, double BaseStat, double CompareStat)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "SetWeaponStatNew");
+
+	Params::WBP_WeaponStatsNew_C_SetWeaponStatNew Parms{};
+
+	Parms.ProgressBarA = ProgressBarA;
+	Parms.ProgressBarB = ProgressBarB;
+	Parms.TextBlock = TextBlock;
+	Parms.BaseStat = BaseStat;
+	Parms.CompareStat = CompareStat;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.UpdateWeaponStatVisualsNew
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WeaponStatsNew_C::UpdateWeaponStatVisualsNew()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponStatsNew_C", "UpdateWeaponStatVisualsNew");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

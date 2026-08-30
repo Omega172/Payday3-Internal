@@ -16,51 +16,11 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.ExecuteUbergraph_WBP_CrimebondBundlePacksScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondBundlePacksScreen_C::ExecuteUbergraph_WBP_CrimebondBundlePacksScreen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "ExecuteUbergraph_WBP_CrimebondBundlePacksScreen");
-
-	Params::WBP_CrimebondBundlePacksScreen_C_ExecuteUbergraph_WBP_CrimebondBundlePacksScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -78,10 +38,52 @@ void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_A
 }
 
 
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowButton_Right_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -98,23 +100,21 @@ void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_A
 }
 
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_ArrowLeft_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -152,7 +152,7 @@ void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_W
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZBundlePackData*               PackData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundlePackData*               PackData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZCrimeBondProgression&  Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
 void UWBP_CrimebondBundlePacksScreen_C::BP_OnCurrentPackChanged(int32 NewIndex, class USBZBundlePackData* PackData, const struct FSBZCrimeBondProgression& Progression)
@@ -172,6 +172,26 @@ void UWBP_CrimebondBundlePacksScreen_C::BP_OnCurrentPackChanged(int32 NewIndex, 
 }
 
 
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.ExecuteUbergraph_WBP_CrimebondBundlePacksScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondBundlePacksScreen_C::ExecuteUbergraph_WBP_CrimebondBundlePacksScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "ExecuteUbergraph_WBP_CrimebondBundlePacksScreen");
+
+	Params::WBP_CrimebondBundlePacksScreen_C_ExecuteUbergraph_WBP_CrimebondBundlePacksScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.InitializePacks
 // (BlueprintCallable, BlueprintEvent)
 
@@ -181,40 +201,6 @@ void UWBP_CrimebondBundlePacksScreen_C::InitializePacks()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "InitializePacks");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondBundlePacksScreen_C::BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_CrimebondBundlePacksScreen_C_BndEvt__WBP_CrimebondBundlePacksScreen_EnterButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.ShowInspectScreenForBundle
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimebondBundlePacksScreen_C::ShowInspectScreenForBundle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "ShowInspectScreenForBundle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -240,20 +226,6 @@ void UWBP_CrimebondBundlePacksScreen_C::OnControlReferenceClicked(class FName Ac
 }
 
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CrimebondBundlePacksScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -274,30 +246,24 @@ void UWBP_CrimebondBundlePacksScreen_C::OnGainedStackFocused(const class FName& 
 }
 
 
-// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_CrimebondBundlePacksScreen_C::PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_CrimebondBundlePacksScreen_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7");
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "OnLostStackFocused");
 
-	Params::WBP_CrimebondBundlePacksScreen_C_PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.PostPush_5AFE4DE64DF8EA2F4F95289E8417F6E7
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondBundlePacksScreen_C::PostPush_5AFE4DE64DF8EA2F4F95289E8417F6E7(class USBZMenuStackScreenWidget* MenuWidget)
 {
@@ -314,12 +280,46 @@ void UWBP_CrimebondBundlePacksScreen_C::PostPush_5AFE4DE64DF8EA2F4F95289E8417F6E
 }
 
 
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondBundlePacksScreen_C::PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7");
+
+	Params::WBP_CrimebondBundlePacksScreen_C_PrePush_5AFE4DE64DF8EA2F4F95289E8417F6E7 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.ShowInspectScreenForBundle
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimebondBundlePacksScreen_C::ShowInspectScreenForBundle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimebondBundlePacksScreen_C", "ShowInspectScreenForBundle");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CrimebondBundlePacksScreen.WBP_CrimebondBundlePacksScreen_C.UpdateSelectedPackVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   PackIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZCrimeBondProgression&  InProgression                                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// class USBZBundlePackData*               InPackData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundlePackData*               InPackData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondBundlePacksScreen_C::UpdateSelectedPackVisuals(int32 PackIndex, const struct FSBZCrimeBondProgression& InProgression, class USBZBundlePackData* InPackData)
 {

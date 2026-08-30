@@ -15,15 +15,13 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_ViewTargetContainer.WBP_UI_ViewTargetContainer_C.ExecuteUbergraph_WBP_UI_ViewTargetContainer
-// 0x0028 (0x0028 - 0x0000)
+// 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_ViewTargetContainer_C_ExecuteUbergraph_WBP_UI_ViewTargetContainer final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsSecurityCamera;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsSecurityCamera;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_ViewTargetContainer_C_ExecuteUbergraph_WBP_UI_ViewTargetContainer;
 
@@ -32,9 +30,18 @@ DUMPER7_ASSERTS_WBP_UI_ViewTargetContainer_C_ExecuteUbergraph_WBP_UI_ViewTargetC
 struct WBP_UI_ViewTargetContainer_C_OnIsSecurityCameraChanged final
 {
 public:
-	bool                                          bInIsSecurityCamera;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsSecurityCamera;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_ViewTargetContainer_C_OnIsSecurityCameraChanged;
+
+// Function WBP_UI_ViewTargetContainer.WBP_UI_ViewTargetContainer_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ViewTargetContainer_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ViewTargetContainer_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

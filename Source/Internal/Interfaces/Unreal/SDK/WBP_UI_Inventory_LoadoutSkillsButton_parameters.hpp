@@ -17,26 +17,12 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_LoadoutSkillsButton_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton;
-
 // Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonFocusedChanged;
 
@@ -45,68 +31,42 @@ DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonFocusedChanged;
 struct WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_LoadoutSkillsButton_C_PreConstruct final
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_LoadoutSkillsButton_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_PreConstruct;
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnHover
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_LoadoutSkillsButton_C_OnHover final
-{
-public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_OnHover;
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnFocused
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Inventory_LoadoutSkillsButton_C_OnFocused final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_OnFocused;
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.RefreshVisuals
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_Inventory_LoadoutSkillsButton_C_RefreshVisuals final
-{
-public:
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_RefreshVisuals;
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton;
 
 // Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.InitializeSkillPointsVisual
-// 0x0078 (0x0078 - 0x0000)
+// 0x0080 (0x0080 - 0x0000)
 struct WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkillPointsVisual final
 {
 public:
 	int32                                         SkillPointsRemaining;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkillPointsVisual;
 
 // Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.InitializeSkills
-// 0x0078 (0x0078 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkills final
 {
 public:
@@ -115,19 +75,60 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZSkillManager*                       CallFunc_GetSkillManager_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZSkillManager*                       CallFunc_GetSkillManager_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetEarnedSkillPoints_ReturnValue;         // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0038(0x0018)()
-	TArray<class USBZUITextBlock*>                K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUITextBlock*                        CallFunc_Array_Get_Item;                           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0038(0x0010)()
+	TArray<class USBZUITextBlock*>                K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUITextBlock*                        CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkills;
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnFocused
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Inventory_LoadoutSkillsButton_C_OnFocused final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_OnFocused;
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnHover
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_LoadoutSkillsButton_C_OnHover final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_OnHover;
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_LoadoutSkillsButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_PreConstruct;
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.RefreshVisuals
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_Inventory_LoadoutSkillsButton_C_RefreshVisuals final
+{
+public:
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_C_RefreshVisuals;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

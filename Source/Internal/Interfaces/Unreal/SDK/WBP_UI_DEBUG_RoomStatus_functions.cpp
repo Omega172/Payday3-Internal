@@ -53,7 +53,7 @@ void UWBP_UI_DEBUG_RoomStatus_C::OnInitialized()
 // Function WBP_UI_DEBUG_RoomStatus.WBP_UI_DEBUG_RoomStatus_C.OnRoomChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZRoomVolume*                   RoomVolume                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZRoomVolume*                   RoomVolume                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_DEBUG_RoomStatus_C::OnRoomChanged(class ASBZRoomVolume* RoomVolume)
 {

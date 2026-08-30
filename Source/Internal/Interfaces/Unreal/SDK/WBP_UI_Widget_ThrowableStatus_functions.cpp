@@ -36,26 +36,6 @@ void UWBP_UI_Widget_ThrowableStatus_C::ExecuteUbergraph_WBP_UI_Widget_ThrowableS
 }
 
 
-// Function WBP_UI_Widget_ThrowableStatus.WBP_UI_Widget_ThrowableStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_ThrowableStatus_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ThrowableStatus_C", "PreConstruct");
-
-	Params::WBP_UI_Widget_ThrowableStatus_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_ThrowableStatus.WBP_UI_Widget_ThrowableStatus_C.OnAmmoAdded
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 
@@ -113,7 +93,7 @@ void UWBP_UI_Widget_ThrowableStatus_C::OnIconChanged(const TSoftObjectPtr<class 
 // Function WBP_UI_Widget_ThrowableStatus.WBP_UI_Widget_ThrowableStatus_C.OnLoaded_518521A6441661765F2132899331E941
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ThrowableStatus_C::OnLoaded_518521A6441661765F2132899331E941(class UObject* Loaded)
 {
@@ -125,6 +105,26 @@ void UWBP_UI_Widget_ThrowableStatus_C::OnLoaded_518521A6441661765F2132899331E941
 	Params::WBP_UI_Widget_ThrowableStatus_C_OnLoaded_518521A6441661765F2132899331E941 Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_ThrowableStatus.WBP_UI_Widget_ThrowableStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_ThrowableStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ThrowableStatus_C", "PreConstruct");
+
+	Params::WBP_UI_Widget_ThrowableStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoginScreenBase_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoginScreenBase_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.ExecuteUbergraph_WBP_UI_LoginScreenBase
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,40 +64,6 @@ void UWBP_UI_LoginScreenBase_C::ExecuteUbergraph_WBP_UI_LoginScreenBase(int32 En
 }
 
 
-// Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_LoginScreenBase_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_LoginScreenBase_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "PreConstruct");
-
-	Params::WBP_UI_LoginScreenBase_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.InitializeLoginMenu
 // (Event, Public, BlueprintEvent)
 
@@ -79,20 +73,6 @@ void UWBP_UI_LoginScreenBase_C::InitializeLoginMenu()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "InitializeLoginMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_LoginScreenBase_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,6 +107,26 @@ void UWBP_UI_LoginScreenBase_C::OnLoginError(const class FText& ErrorMessage)
 	Params::WBP_UI_LoginScreenBase_C_OnLoginError Parms{};
 
 	Parms.ErrorMessage = std::move(ErrorMessage);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_LoginScreenBase.WBP_UI_LoginScreenBase_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoginScreenBase_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreenBase_C", "PreConstruct");
+
+	Params::WBP_UI_LoginScreenBase_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

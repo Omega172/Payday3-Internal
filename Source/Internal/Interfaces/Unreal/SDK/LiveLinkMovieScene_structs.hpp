@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MovieSceneTracks_structs.hpp"
 #include "LiveLinkInterface_structs.hpp"
 #include "MovieScene_structs.hpp"
-#include "MovieSceneTracks_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -46,7 +46,7 @@ DUMPER7_ASSERTS_FLiveLinkSubSectionData;
 struct FMovieSceneLiveLinkSectionTemplate final : public FMovieScenePropertySectionTemplate
 {
 public:
-	struct FLiveLinkSubjectPreset                 SubjectPreset;                                     // 0x0040(0x0040)(NoDestructor, NativeAccessSpecifierPublic)
+	struct FLiveLinkSubjectPreset                 SubjectPreset;                                     // 0x0040(0x0040)(NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 	TArray<bool>                                  ChannelMask;                                       // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FLiveLinkSubSectionData>        SubSectionsData;                                   // 0x0090(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A0[0x28];                                      // 0x00A0(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])

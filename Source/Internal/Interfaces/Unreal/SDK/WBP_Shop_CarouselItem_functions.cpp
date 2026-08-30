@@ -36,32 +36,12 @@ void UWBP_Shop_CarouselItem_C::ExecuteUbergraph_WBP_Shop_CarouselItem(int32 Entr
 }
 
 
-// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateImagePadding
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bFill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_CarouselItem_C::OnUpdateImagePadding(bool bFill)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_CarouselItem_C", "OnUpdateImagePadding");
-
-	Params::WBP_Shop_CarouselItem_C_OnUpdateImagePadding Parms{};
-
-	Parms.bFill = bFill;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnShow
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsLast                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bCanBeInspected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsLast                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanBeInspected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_CarouselItem_C::OnShow(bool bIsLast, bool bCanBeInspected, bool bIsVendorPermission)
 {
@@ -80,10 +60,30 @@ void UWBP_Shop_CarouselItem_C::OnShow(bool bIsLast, bool bCanBeInspected, bool b
 }
 
 
+// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateImagePadding
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bFill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_CarouselItem_C::OnUpdateImagePadding(bool bFill)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_CarouselItem_C", "OnUpdateImagePadding");
+
+	Params::WBP_Shop_CarouselItem_C_OnUpdateImagePadding Parms{};
+
+	Parms.bFill = bFill;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateOwnershipStatus
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_CarouselItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
 {

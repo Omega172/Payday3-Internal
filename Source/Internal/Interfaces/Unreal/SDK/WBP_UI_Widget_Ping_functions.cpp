@@ -36,6 +36,26 @@ void UWBP_UI_Widget_Ping_C::ExecuteUbergraph_WBP_UI_Widget_Ping(int32 EntryPoint
 }
 
 
+// Function WBP_UI_Widget_Ping.WBP_UI_Widget_Ping_C.OnPingQualityChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const EPingQuality                      PingQuality                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Ping_C::OnPingQualityChanged(const EPingQuality PingQuality)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Ping_C", "OnPingQualityChanged");
+
+	Params::WBP_UI_Widget_Ping_C_OnPingQualityChanged Parms{};
+
+	Parms.PingQuality = PingQuality;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_Ping.WBP_UI_Widget_Ping_C.OnPingValueChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -59,7 +79,7 @@ void UWBP_UI_Widget_Ping_C::OnPingValueChanged(const int32 PingValue)
 // Function WBP_UI_Widget_Ping.WBP_UI_Widget_Ping_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Ping_C::PreConstruct(bool IsDesignTime)
 {
@@ -71,26 +91,6 @@ void UWBP_UI_Widget_Ping_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_Widget_Ping_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Ping.WBP_UI_Widget_Ping_C.OnPingQualityChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const EPingQuality                      PingQuality                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_Ping_C::OnPingQualityChanged(const EPingQuality PingQuality)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Ping_C", "OnPingQualityChanged");
-
-	Params::WBP_UI_Widget_Ping_C_OnPingQualityChanged Parms{};
-
-	Parms.PingQuality = PingQuality;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

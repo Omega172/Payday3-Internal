@@ -16,158 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter");
-
-	Params::WBP_ServerBrowser_DifficultyFilter_C_ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Reset
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "Reset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "ButtonFocusedChanged");
-
-	Params::WBP_ServerBrowser_DifficultyFilter_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.SetReadOnly
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsReadOnly                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::SetReadOnly(bool IsReadOnly)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "SetReadOnly");
-
-	Params::WBP_ServerBrowser_DifficultyFilter_C_SetReadOnly Parms{};
-
-	Parms.IsReadOnly = IsReadOnly;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectionOptionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "OnSelectionOptionChanged");
-
-	Params::WBP_ServerBrowser_DifficultyFilter_C_OnSelectionOptionChanged Parms{};
-
-	Parms.InCurrentIndex = InCurrentIndex;
-	Parms.bOverrideReadOnly = bOverrideReadOnly;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedRight
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "OnSelectedRight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedLeft
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "OnSelectedLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -196,10 +44,156 @@ void UWBP_ServerBrowser_DifficultyFilter_C::BndEvt__WBP_ServerBrowser_Difficulty
 }
 
 
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BuildOptionsArray
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::BuildOptionsArray()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "BuildOptionsArray");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "ButtonFocusedChanged");
+
+	Params::WBP_ServerBrowser_DifficultyFilter_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter");
+
+	Params::WBP_ServerBrowser_DifficultyFilter_C_ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.MakeInLine
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::MakeInLine()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "MakeInLine");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedLeft
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedLeft()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "OnSelectedLeft");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedRight
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedRight()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "OnSelectedRight");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectionOptionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "OnSelectionOptionChanged");
+
+	Params::WBP_ServerBrowser_DifficultyFilter_C_OnSelectionOptionChanged Parms{};
+
+	Parms.InCurrentIndex = InCurrentIndex;
+	Parms.bOverrideReadOnly = bOverrideReadOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_DifficultyFilter_C::PreConstruct(bool IsDesignTime)
 {
@@ -216,17 +210,37 @@ void UWBP_ServerBrowser_DifficultyFilter_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BuildOptionsArray
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Reset
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::BuildOptionsArray()
+void UWBP_ServerBrowser_DifficultyFilter_C::Reset()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "BuildOptionsArray");
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.SetReadOnly
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsReadOnly                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::SetReadOnly(bool IsReadOnly)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "SetReadOnly");
+
+	Params::WBP_ServerBrowser_DifficultyFilter_C_SetReadOnly Parms{};
+
+	Parms.IsReadOnly = IsReadOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -239,20 +253,6 @@ void UWBP_ServerBrowser_DifficultyFilter_C::UpdateVisuals()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "UpdateVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.MakeInLine
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::MakeInLine()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_DifficultyFilter_C", "MakeInLine");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

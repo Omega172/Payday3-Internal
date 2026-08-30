@@ -36,20 +36,6 @@ void UWBP_HeistStates_FBI_C::ExecuteUbergraph_WBP_HeistStates_FBI(int32 EntryPoi
 }
 
 
-// Function WBP_HeistStates_FBI.WBP_HeistStates_FBI_C.HideDescriptiveText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_FBI_C::HideDescriptiveText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_FBI_C", "HideDescriptiveText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HeistStates_FBI.WBP_HeistStates_FBI_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -64,15 +50,15 @@ void UWBP_HeistStates_FBI_C::Hide()
 }
 
 
-// Function WBP_HeistStates_FBI.WBP_HeistStates_FBI_C.Show
+// Function WBP_HeistStates_FBI.WBP_HeistStates_FBI_C.HideDescriptiveText
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_HeistStates_FBI_C::Show()
+void UWBP_HeistStates_FBI_C::HideDescriptiveText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_FBI_C", "Show");
+		Func = Class->GetFunction("WBP_HeistStates_FBI_C", "HideDescriptiveText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,6 +73,20 @@ void UWBP_HeistStates_FBI_C::Init()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_HeistStates_FBI_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HeistStates_FBI.WBP_HeistStates_FBI_C.Show
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_FBI_C::Show()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_FBI_C", "Show");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

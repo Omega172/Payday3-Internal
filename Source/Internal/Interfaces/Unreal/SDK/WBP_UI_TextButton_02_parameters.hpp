@@ -16,35 +16,12 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.ExecuteUbergraph_WBP_UI_TextButton_02
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_UI_TextButton_02_C_ExecuteUbergraph_WBP_UI_TextButton_02 final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsDisabled;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       K2Node_DynamicCast_AsCanvas_Panel_Slot;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ExecuteUbergraph_WBP_UI_TextButton_02;
-
 // Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.ButtonDisabledChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_TextButton_02_C_ButtonDisabledChanged final
 {
 public:
-	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ButtonDisabledChanged;
 
@@ -53,7 +30,7 @@ DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ButtonDisabledChanged;
 struct WBP_UI_TextButton_02_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ButtonFocusedChanged;
 
@@ -62,88 +39,113 @@ DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ButtonFocusedChanged;
 struct WBP_UI_TextButton_02_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ButtonHoveredChanged;
 
-// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_TextButton_02_C_PreConstruct final
+// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.ExecuteUbergraph_WBP_UI_TextButton_02
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_TextButton_02_C_ExecuteUbergraph_WBP_UI_TextButton_02 final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsDisabled;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0010(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B[0x5];                                       // 0x001B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCanvasPanelSlot*                       K2Node_DynamicCast_AsCanvas_Panel_Slot;            // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_ExecuteUbergraph_WBP_UI_TextButton_02;
+
+// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.GetText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_TextButton_02_C_GetText final
+{
+public:
+	class FText                                   OutText;                                           // 0x0000(0x0010)(Parm, OutParm)
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0010(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_GetText;
 
 // Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_TextButton_02_C_OnAnimationFinished final
 {
 public:
-	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_OnAnimationFinished;
+
+// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.OnDisabledVisuals
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_TextButton_02_C_OnDisabledVisuals final
+{
+public:
+	bool                                          bIsDisabled_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_OnDisabledVisuals;
+
+// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.OnFocusedVisuals
+// 0x002C (0x002C - 0x0000)
+struct WBP_UI_TextButton_02_C_OnFocusedVisuals final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0018(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_OnFocusedVisuals;
 
 // Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.OnHoverVisuals
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_TextButton_02_C_OnHoverVisuals final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_OnHoverVisuals;
 
-// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.OnFocusedVisuals
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_UI_TextButton_02_C_OnFocusedVisuals final
+// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_TextButton_02_C_PreConstruct final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0030(0x0028)()
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_OnFocusedVisuals;
-
-// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.OnDisabledVisuals
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_TextButton_02_C_OnDisabledVisuals final
-{
-public:
-	bool                                          bIsDisabled_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SelectFloat_ReturnValue;                  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_OnDisabledVisuals;
+DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_PreConstruct;
 
 // Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.RefreshVisual
 // 0x0002 (0x0002 - 0x0000)
 struct WBP_UI_TextButton_02_C_RefreshVisual final
 {
 public:
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_RefreshVisual;
 
 // Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.SetButtonText
-// 0x0018 (0x0018 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct WBP_UI_TextButton_02_C_SetButtonText final
 {
 public:
-	class FText                                   InButtonText;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   InButtonText;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_SetButtonText;
-
-// Function WBP_UI_TextButton_02.WBP_UI_TextButton_02_C.GetText
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_TextButton_02_C_GetText final
-{
-public:
-	class FText                                   OutText;                                           // 0x0000(0x0018)(Parm, OutParm)
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0018(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_TextButton_02_C_GetText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

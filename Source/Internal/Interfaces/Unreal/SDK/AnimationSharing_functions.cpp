@@ -16,6 +16,68 @@
 
 SDK_NAMESPACE_START
 
+// Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
+// (Native, Event, Public, BlueprintEvent)
+// Parameters:
+// class UEnum*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimationSharingStateProcessor", "GetAnimationStateEnum");
+
+	Params::AnimationSharingStateProcessor_GetAnimationStateEnum Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
+// (Native, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// int32*                                  OutState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   CurrentState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint8                                   OnDemandState                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   bShouldProcess                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAnimationSharingStateProcessor::ProcessActorState(int32* OutState, class AActor* InActor, uint8 CurrentState, uint8 OnDemandState, bool* bShouldProcess)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AnimationSharingStateProcessor", "ProcessActorState");
+
+	Params::AnimationSharingStateProcessor_ProcessActorState Parms{};
+
+	Parms.InActor = InActor;
+	Parms.CurrentState = CurrentState;
+	Parms.OnDemandState = OnDemandState;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutState != nullptr)
+		*OutState = Parms.OutState;
+
+	if (bShouldProcess != nullptr)
+		*bShouldProcess = Parms.bShouldProcess;
+}
+
+
 // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
 // (Final, Native, Protected, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -70,8 +132,8 @@ bool UAnimationSharingManager::AnimationSharingEnabled()
 // Function AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UAnimationSharingSetup*     Setup                                                  (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAnimationSharingSetup*     Setup                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* WorldContextObject, const class UAnimationSharingSetup* Setup)
@@ -100,8 +162,8 @@ bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* Worl
 // Function AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAnimationSharingManager*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAnimationSharingManager*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingManager(class UObject* WorldContextObject)
 {
@@ -128,8 +190,8 @@ class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingMan
 // Function AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                           InActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class USkeleton*                  SharingSkeleton                                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           InActor                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class USkeleton*                  SharingSkeleton                                        (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAnimationSharingManager::RegisterActorWithSkeletonBP(class AActor* InActor, const class USkeleton* SharingSkeleton)
 {
@@ -149,68 +211,6 @@ void UAnimationSharingManager::RegisterActorWithSkeletonBP(class AActor* InActor
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
-// (Native, Event, Public, BlueprintEvent)
-// Parameters:
-// class UEnum*                            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimationSharingStateProcessor", "GetAnimationStateEnum");
-
-	Params::AnimationSharingStateProcessor_GetAnimationStateEnum Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
-// (Native, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// int32*                                  OutState                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           InActor                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint8                                   CurrentState                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// uint8                                   OnDemandState                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool*                                   bShouldProcess                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAnimationSharingStateProcessor::ProcessActorState(int32* OutState, class AActor* InActor, uint8 CurrentState, uint8 OnDemandState, bool* bShouldProcess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimationSharingStateProcessor", "ProcessActorState");
-
-	Params::AnimationSharingStateProcessor_ProcessActorState Parms{};
-
-	Parms.InActor = InActor;
-	Parms.CurrentState = CurrentState;
-	Parms.OnDemandState = OnDemandState;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (OutState != nullptr)
-		*OutState = Parms.OutState;
-
-	if (bShouldProcess != nullptr)
-		*bShouldProcess = Parms.bShouldProcess;
 }
 
 

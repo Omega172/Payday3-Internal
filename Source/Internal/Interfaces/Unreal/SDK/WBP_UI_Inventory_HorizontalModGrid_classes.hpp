@@ -17,20 +17,20 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C
-// 0x0028 (0x02D0 - 0x02A8)
+// 0x0028 (0x0330 - 0x0308)
 class UWBP_UI_Inventory_HorizontalModGrid_C final : public USBZMainMenuWeaponInventoryModGridWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UHorizontalBox*                         HorizontalBox_0;                                   // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class USBZInventoryBaseData*>          EditorArray;                                       // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         Index_0;                                           // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UHorizontalBox*                         HorizontalBox_0;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<TSoftObjectPtr<class USBZInventoryBaseData>> EditorArray;                                 // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         Index_0;                                           // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid(int32 EntryPoint);
-	void DisplayGrid();
-	void PreConstruct(bool IsDesignTime);
 	void CreateNewMod(class UWBP_UI_Inventory_ModGridIcon_C** OutWidget);
+	void DisplayGrid();
+	void ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Shop_Carousel.WBP_Shop_Carousel_C
-// 0x0000 (0x0388 - 0x0388)
+// 0x0000 (0x03E8 - 0x03E8)
 class UWBP_Shop_Carousel_C final : public USBZShopCarouselWidget
 {
 public:

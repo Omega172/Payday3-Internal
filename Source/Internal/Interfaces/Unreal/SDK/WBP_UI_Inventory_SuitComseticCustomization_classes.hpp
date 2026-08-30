@@ -17,28 +17,28 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C
-// 0x0040 (0x0400 - 0x03C0)
+// 0x0040 (0x0440 - 0x0400)
 class UWBP_UI_Inventory_SuitComseticCustomization_C final : public USBZMainMenuSuitCosmeticCustomizationScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UCanvasPanel*                           CanvasPanel_Body;                                  // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_CosmeticType;                                 // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_EquippedItemName;                             // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemDescription_C*    Widget_FocusedDescription;                         // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_InventoryBaseData_Icon_C*          Widget_ImageIcon;                                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                RT_WidgetPopUp;                                    // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCanvasPanel*                           CanvasPanel_Body;                                  // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_CosmeticType;                                 // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_EquippedItemName;                             // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ItemDescription_C*    Widget_FocusedDescription;                         // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_InventoryBaseData_Icon_C*          Widget_ImageIcon;                                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                RT_WidgetPopUp;                                    // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization(int32 EntryPoint);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnInitialized();
 	void BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0);
 	void EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
+	void ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization(int32 EntryPoint);
 	void InitializeVisuals();
+	void OnControlsReferenceClicked(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
+	void OnLostStackFocused();
 
 public:
 	static class UClass* StaticClass()

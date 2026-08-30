@@ -13,8 +13,18 @@
 
 SDK_NAMESPACE_START
 
+// Enum DLSS.EDLSSSettingOverride
+// NumValues: 0x0004
+enum class EDLSSSettingOverride : uint8
+{
+	Enabled                                  = 0,
+	Disabled                                 = 1,
+	UseProjectSettings                       = 2,
+	EDLSSSettingOverride_MAX                 = 3,
+};
+
 // Enum DLSS.EDLSSPreset
-// NumValues: 0x0009
+// NumValues: 0x0011
 enum class EDLSSPreset : uint8
 {
 	Default                                  = 0,
@@ -25,17 +35,62 @@ enum class EDLSSPreset : uint8
 	E                                        = 5,
 	F                                        = 6,
 	G                                        = 7,
-	EDLSSPreset_MAX                          = 8,
+	H                                        = 8,
+	I                                        = 9,
+	J                                        = 10,
+	K                                        = 11,
+	L                                        = 12,
+	M                                        = 13,
+	N                                        = 14,
+	O                                        = 15,
+	MAX                                      = 16,
 };
 
-// Enum DLSS.EDLSSSettingOverride
-// NumValues: 0x0004
-enum class EDLSSSettingOverride : uint8
+// Enum DLSS.EDLSSRRPreset
+// NumValues: 0x0011
+enum class EDLSSRRPreset : uint8
 {
-	Enabled                                  = 0,
-	Disabled                                 = 1,
-	UseProjectSettings                       = 2,
-	EDLSSSettingOverride_MAX                 = 3,
+	Default                                  = 0,
+	A                                        = 1,
+	B                                        = 2,
+	C                                        = 3,
+	D                                        = 4,
+	E                                        = 5,
+	F                                        = 6,
+	G                                        = 7,
+	H                                        = 8,
+	I                                        = 9,
+	J                                        = 10,
+	K                                        = 11,
+	L                                        = 12,
+	M                                        = 13,
+	N                                        = 14,
+	O                                        = 15,
+	MAX                                      = 16,
 };
+
+// Enum DLSS.EDLSSUpscalerModularFeatureQuality
+// NumValues: 0x0009
+enum class EDLSSUpscalerModularFeatureQuality : uint8
+{
+	Auto                                     = 0,
+	UltraQuality                             = 1,
+	Quality                                  = 2,
+	Balanced                                 = 3,
+	Performance                              = 4,
+	UltraPerformance                         = 5,
+	DLAA                                     = 6,
+	Count                                    = 7,
+	EDLSSUpscalerModularFeatureQuality_MAX   = 8,
+};
+
+// ScriptStruct DLSS.DLSSUpscalerModularFeatureSettings
+// 0x0001 (0x0001 - 0x0000)
+struct FDLSSUpscalerModularFeatureSettings final
+{
+public:
+	EDLSSUpscalerModularFeatureQuality            Quality;                                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDLSSUpscalerModularFeatureSettings;
 
 SDK_NAMESPACE_END

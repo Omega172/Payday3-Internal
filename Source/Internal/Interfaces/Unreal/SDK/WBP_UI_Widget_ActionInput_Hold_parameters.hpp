@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -23,7 +23,7 @@ struct WBP_UI_Widget_ActionInput_Hold_C_ExecuteUbergraph_WBP_UI_Widget_ActionInp
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_ExecuteUbergraph_WBP_UI_Widget_ActionInput_Hold;
 
@@ -32,18 +32,9 @@ DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_ExecuteUbergraph_WBP_UI_Widget_
 struct WBP_UI_Widget_ActionInput_Hold_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_PreConstruct;
-
-// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.UpdateProgress
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Widget_ActionInput_Hold_C_UpdateProgress final
-{
-public:
-	float                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_UpdateProgress;
 
 // Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.SetColourOnPress
 // 0x0010 (0x0010 - 0x0000)
@@ -59,13 +50,23 @@ DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_SetColourOnPress;
 struct WBP_UI_Widget_ActionInput_Hold_C_SetProgressBarVisiblity final
 {
 public:
-	bool                                          bVisibility;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bVisibility;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_SetProgressBarVisiblity;
+
+// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.UpdateProgress
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Widget_ActionInput_Hold_C_UpdateProgress final
+{
+public:
+	double                                        Progress;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_ActionInput_Hold_C_UpdateProgress;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

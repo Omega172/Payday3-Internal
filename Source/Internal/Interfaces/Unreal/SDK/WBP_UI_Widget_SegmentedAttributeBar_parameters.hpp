@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.ExecuteUbergraph_WBP_UI_Widget_SegmentedAttributeBar
-// 0x0050 (0x0050 - 0x0000)
+// 0x0078 (0x0078 - 0x0000)
 struct WBP_UI_Widget_SegmentedAttributeBar_C_ExecuteUbergraph_WBP_UI_Widget_SegmentedAttributeBar final
 {
 public:
@@ -32,15 +32,53 @@ public:
 	float                                         K2Node_Event_NewValue;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_OldPercentage;                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_NewPercentage;                        // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_StartOffset;                          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_EndOffset;                            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0034(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_MaxAttribute_ImplicitCast;      // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_CurrentPercent_ImplicitCast;    // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_CurrentPercent_ImplicitCast_1;  // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_MaxAttribute_ImplicitCast_1;    // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_CurrentPercent_ImplicitCast_2;  // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_ExecuteUbergraph_WBP_UI_Widget_SegmentedAttributeBar;
+
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnCurrentAttributeUpdate
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Widget_SegmentedAttributeBar_C_OnCurrentAttributeUpdate final
+{
+public:
+	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         OldPercentage;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewPercentage;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnCurrentAttributeUpdate;
+
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnMaxAttributeUpdate
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Widget_SegmentedAttributeBar_C_OnMaxAttributeUpdate final
+{
+public:
+	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         OldPercentage;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewPercentage;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnMaxAttributeUpdate;
+
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnSetup
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Widget_SegmentedAttributeBar_C_OnSetup final
+{
+public:
+	float                                         CurrentValueSetup;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         MaxValueSetup;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PercentageSetup;                                   // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnSetup;
 
 // Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnTraumaRatioChanged
 // 0x0008 (0x0008 - 0x0000)
@@ -57,49 +95,28 @@ DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnTraumaRatioChanged;
 struct WBP_UI_Widget_SegmentedAttributeBar_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_PreConstruct;
 
-// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnMaxAttributeUpdate
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.SetShaderParams
 // 0x000C (0x000C - 0x0000)
-struct WBP_UI_Widget_SegmentedAttributeBar_C_OnMaxAttributeUpdate final
+struct WBP_UI_Widget_SegmentedAttributeBar_C_SetShaderParams final
 {
 public:
-	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         OldPercentage;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewPercentage;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_1; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast_2; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnMaxAttributeUpdate;
-
-// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnCurrentAttributeUpdate
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Widget_SegmentedAttributeBar_C_OnCurrentAttributeUpdate final
-{
-public:
-	float                                         NewValue;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         OldPercentage;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewPercentage;                                     // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnCurrentAttributeUpdate;
-
-// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnSetup
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Widget_SegmentedAttributeBar_C_OnSetup final
-{
-public:
-	float                                         CurrentValueSetup;                                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         MaxValueSetup;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PercentageSetup;                                   // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_OnSetup;
+DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_SetShaderParams;
 
 // Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.SetShaderProgress
-// 0x0004 (0x0004 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct WBP_UI_Widget_SegmentedAttributeBar_C_SetShaderProgress final
 {
 public:
-	float                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Progress;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_SetShaderProgress;
 
@@ -108,10 +125,10 @@ DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_SetShaderProgress;
 struct WBP_UI_Widget_SegmentedAttributeBar_C_UpdateVisibility final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_SegmentedAttributeBar_C_UpdateVisibility;

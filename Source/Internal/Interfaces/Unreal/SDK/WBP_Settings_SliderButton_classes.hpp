@@ -18,44 +18,44 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Settings_SliderButton.WBP_Settings_SliderButton_C
-// 0x0040 (0x0468 - 0x0428)
+// 0x0040 (0x04B0 - 0x0470)
 class UWBP_Settings_SliderButton_C final : public USBZSettingsButtonSlider
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0428(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Border_Image;                                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Background;                                  // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_BG;                                          // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USlider*                                Slider_Value;                                      // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_SettingName;                                  // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_SettingTextValue;                             // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FColor                                 ColorSlider;                                       // 0x0460(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0470(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Border_Image;                                      // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Background;                                  // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_BG;                                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USlider*                                Slider_Value;                                      // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_SettingName;                                  // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_SettingTextValue;                             // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FColor                                 ColorSlider;                                       // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Settings_SliderButton(int32 EntryPoint);
-	void SettingChanged();
-	void SelectionNameChanged();
-	void IncrementSliderValueChanged();
-	void MinSliderValueChanged();
-	void MaxSliderValueChanged();
 	void BndEvt__WBP_Settings_SliderButton_Slider_Value_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature(float Value);
-	void ButtonHoveredChanged(bool bInIsHovered);
-	void ButtonFocusedChanged(bool bInHasFocus);
 	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ExecuteUbergraph_WBP_Settings_SliderButton(int32 EntryPoint);
+	void GetFractionCount(int32* Num);
+	void GetValueFractionCount(double Value, int32* Count);
+	void IncrementSliderValueChanged();
+	void InitializeVisuals();
+	void MaxSliderValueChanged();
+	void MinSliderValueChanged();
+	void OnDisabledVisuals(bool bIsDisabled_0);
+	void OnFocusedVisuals(bool bIsFocused);
+	void OnHoverVisuals(bool bIsHovered);
 	void OnInitialized();
 	void PreConstruct(bool IsDesignTime);
 	void RefreshVisuals();
-	void OnHoverVisuals(bool bIsHovered);
-	void OnFocusedVisuals(bool bIsFocused);
-	void OnDisabledVisuals(bool bIsDisabled_0);
-	void InitializeVisuals();
-	void UpdateMinSliderValue();
+	void SelectionNameChanged();
+	void SettingChanged();
 	void UpdateMaxSliderValue();
-	void UpdateSliderStepSize();
+	void UpdateMinSliderValue();
 	void UpdateSettingNameText();
+	void UpdateSliderStepSize();
 	void UpdateSliderValue();
-	void GetFractionCount(int32* Num);
-	void GetValueFractionCount(float Value, int32* Count);
 
 public:
 	static class UClass* StaticClass()

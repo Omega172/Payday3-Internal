@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_DamageIndicatorContainer.WBP_UI_Widget_DamageIndicatorContainer_C
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0330 - 0x0330)
 class UWBP_UI_Widget_DamageIndicatorContainer_C final : public USBZHUDDamageTakenIndicatorContainerWidget
 {
 public:

@@ -39,7 +39,7 @@ void UWBP_InfoAction_C::ExecuteUbergraph_WBP_InfoAction(int32 EntryPoint)
 // Function WBP_InfoAction.WBP_InfoAction_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_InfoAction_C::PreConstruct(bool IsDesignTime)
 {

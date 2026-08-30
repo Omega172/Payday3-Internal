@@ -25,10 +25,10 @@ public:
 	int32                                         CallFunc_Play2DSound_ReturnValue;                  // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Play2DSound_ReturnValue_1;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FSBZUIStackChangedEvent& StackEvent)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0014)(ZeroConstructor, NoDestructor)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FSBZUIStackChangedEvent& StackEvent)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSBZUIStackChangedEvent                K2Node_CustomEvent_StackEvent;                     // 0x002C(0x001C)(NoDestructor)
-	bool                                          CallFunc_HasStackFocus_ReturnValue;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasStackFocus_ReturnValue;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_NavBar_C_ExecuteUbergraph_WBP_UI_NavBar;
 

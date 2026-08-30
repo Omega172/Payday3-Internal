@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlaceECMJammer.GA_PlaceECMJammer_C
-// 0x0000 (0x0560 - 0x0560)
+// 0x0000 (0x0580 - 0x0580)
 class UGA_PlaceECMJammer_C final : public USBZPlaceECMJammerAbility
 {
 public:

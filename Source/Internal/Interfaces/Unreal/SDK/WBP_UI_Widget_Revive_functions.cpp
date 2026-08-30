@@ -39,7 +39,7 @@ void UWBP_UI_Widget_Revive_C::ExecuteUbergraph_WBP_UI_Widget_Revive(int32 EntryP
 // Function WBP_UI_Widget_Revive.WBP_UI_Widget_Revive_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Revive_C::PreConstruct(bool IsDesignTime)
 {

@@ -16,142 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ExecuteUbergraph_WBP_UI_DifficultySelectorWidget
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_DifficultySelectorWidget_C::ExecuteUbergraph_WBP_UI_DifficultySelectorWidget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "ExecuteUbergraph_WBP_UI_DifficultySelectorWidget");
-
-	Params::WBP_UI_DifficultySelectorWidget_C_ExecuteUbergraph_WBP_UI_DifficultySelectorWidget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_DifficultySelectorWidget_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "PreConstruct");
-
-	Params::WBP_UI_DifficultySelectorWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_DifficultySelectorWidget_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_DifficultySelectorWidget_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_DifficultySelectorWidget_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_DifficultySelectorWidget_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectedRight
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_C::OnSelectedRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnSelectedRight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectedLeft
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_C::OnSelectedLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnSelectedLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
 
@@ -180,43 +44,75 @@ void UWBP_UI_DifficultySelectorWidget_C::BndEvt__WBP_UI_Menus_Options_Selector_B
 }
 
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectionOptionChanged
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DifficultySelectorWidget_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
+void UWBP_UI_DifficultySelectorWidget_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnSelectionOptionChanged");
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "ButtonFocusedChanged");
 
-	Params::WBP_UI_DifficultySelectorWidget_C_OnSelectionOptionChanged Parms{};
+	Params::WBP_UI_DifficultySelectorWidget_C_ButtonFocusedChanged Parms{};
 
-	Parms.InCurrentIndex = InCurrentIndex;
-	Parms.bOverrideReadOnly = bOverrideReadOnly;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.UpdateDifficultyVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DifficultySelectorWidget_C::UpdateDifficultyVisuals(ESBZDifficulty InDifficulty)
+void UWBP_UI_DifficultySelectorWidget_C::ButtonHoveredChanged(bool bInIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "UpdateDifficultyVisuals");
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "ButtonHoveredChanged");
 
-	Params::WBP_UI_DifficultySelectorWidget_C_UpdateDifficultyVisuals Parms{};
+	Params::WBP_UI_DifficultySelectorWidget_C_ButtonHoveredChanged Parms{};
 
-	Parms.InDifficulty = InDifficulty;
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ExecuteUbergraph_WBP_UI_DifficultySelectorWidget
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_C::ExecuteUbergraph_WBP_UI_DifficultySelectorWidget(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "ExecuteUbergraph_WBP_UI_DifficultySelectorWidget");
+
+	Params::WBP_UI_DifficultySelectorWidget_C_ExecuteUbergraph_WBP_UI_DifficultySelectorWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -243,10 +139,94 @@ void UWBP_UI_DifficultySelectorWidget_C::GetDifficulty(ESBZDifficulty* NewParam)
 }
 
 
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectedLeft
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_C::OnSelectedLeft()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnSelectedLeft");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectedRight
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_C::OnSelectedRight()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnSelectedRight");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectionOptionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "OnSelectionOptionChanged");
+
+	Params::WBP_UI_DifficultySelectorWidget_C_OnSelectionOptionChanged Parms{};
+
+	Parms.InCurrentIndex = InCurrentIndex;
+	Parms.bOverrideReadOnly = bOverrideReadOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "PreConstruct");
+
+	Params::WBP_UI_DifficultySelectorWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.SetFocusVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InIsFocused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InIsFocused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_DifficultySelectorWidget_C::SetFocusVisuals(bool InIsFocused)
 {
@@ -266,7 +246,7 @@ void UWBP_UI_DifficultySelectorWidget_C::SetFocusVisuals(bool InIsFocused)
 // Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.SetHoveredVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InIsHovered                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InIsHovered                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_DifficultySelectorWidget_C::SetHoveredVisuals(bool InIsHovered)
 {
@@ -278,6 +258,26 @@ void UWBP_UI_DifficultySelectorWidget_C::SetHoveredVisuals(bool InIsHovered)
 	Params::WBP_UI_DifficultySelectorWidget_C_SetHoveredVisuals Parms{};
 
 	Parms.InIsHovered = InIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.UpdateDifficultyVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_C::UpdateDifficultyVisuals(ESBZDifficulty InDifficulty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DifficultySelectorWidget_C", "UpdateDifficultyVisuals");
+
+	Params::WBP_UI_DifficultySelectorWidget_C_UpdateDifficultyVisuals Parms{};
+
+	Parms.InDifficulty = InDifficulty;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

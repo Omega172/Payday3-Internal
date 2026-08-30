@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.ExecuteUbergraph_WBP_UI_Widget_PlayerStatusWidget
-// 0x00D0 (0x00D0 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct WBP_UI_Widget_PlayerStatusWidget_C_ExecuteUbergraph_WBP_UI_Widget_PlayerStatusWidget final
 {
 public:
@@ -28,39 +28,39 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPD3DefeatState                               Temp_byte_Variable_2;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPD3DefeatState                               Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPD3GameIntensityAnalyzer*              CallFunc_GetGameIntensityAnalyzer_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           K2Node_Event_InNewHeisterIcon;                     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UPD3GameIntensityAnalyzer*              CallFunc_GetGameIntensityAnalyzer_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           K2Node_Event_InNewHeisterIcon;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1; // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	EPD3DefeatState                               K2Node_CustomEvent_Old;                            // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPD3DefeatState                               K2Node_CustomEvent_New;                            // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EPD3DefeatState Old, EPD3DefeatState New)> K2Node_CreateDelegate_OutputDelegate;  // 0x0044(0x0014)(ZeroConstructor, NoDestructor)
-	class UWBP_UI_Widget_PlayerDefeatState_C*     K2Node_DynamicCast_AsWBP_UI_Widget_Player_Defeat_State; // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(EPD3DefeatState Old, EPD3DefeatState New)> K2Node_CreateDelegate_OutputDelegate;  // 0x0044(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Widget_PlayerDefeatState_C*     K2Node_DynamicCast_AsWBP_UI_Widget_Player_Defeat_State; // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_Widget_PlayerDefeatState_C*     K2Node_DynamicCast_AsWBP_UI_Widget_Player_Defeat_State_1; // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_73[0x5];                                       // 0x0073(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default;                             // 0x0078(0x0028)()
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_Select_Default_2;                           // 0x00A8(0x0028)()
+	class UWBP_UI_Widget_PlayerDefeatState_C*     K2Node_DynamicCast_AsWBP_UI_Widget_Player_Defeat_State_1; // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_73[0x1];                                       // 0x0073(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default;                             // 0x0074(0x0014)()
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_Select_Default_2;                           // 0x008C(0x0014)()
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_ExecuteUbergraph_WBP_UI_Widget_PlayerStatusWidget;
 
-// Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_PlayerStatusWidget_C_PreConstruct final
+// Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.OnHeisterIconChangedEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Widget_PlayerStatusWidget_C_OnHeisterIconChangedEvent final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UPaperSprite*                           InNewHeisterIcon;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_OnHeisterIconChangedEvent;
 
 // Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.OnStateChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -72,21 +72,21 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_OnStateChanged;
 
-// Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.OnHeisterIconChangedEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_PlayerStatusWidget_C_OnHeisterIconChangedEvent final
+// Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_PlayerStatusWidget_C_PreConstruct final
 {
 public:
-	class UPaperSprite*                           InNewHeisterIcon;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_OnHeisterIconChangedEvent;
+DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_PreConstruct;
 
 // Function WBP_UI_Widget_PlayerStatusWidget.WBP_UI_Widget_PlayerStatusWidget_C.SetEOSProdUID
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_UI_Widget_PlayerStatusWidget_C_SetEOSProdUID final
 {
 public:
-	class ASBZPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerState*                        CallFunc_GetLocalPlayerState_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetEOSProductUserId_ReturnValue;          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_PlayerStatusWidget_C_SetEOSProdUID;

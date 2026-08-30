@@ -17,19 +17,19 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BaseValuableBag.BP_BaseValuableBag_C
-// 0x0020 (0x03C8 - 0x03A8)
+// 0x0020 (0x0448 - 0x0428)
 class ABP_BaseValuableBag_C : public ASBZAttractableBagItem
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_Leak;                                           // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        EndPlayNiagaraTransform;                           // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                         End_Play_Niagara_System;                           // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0428(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      FX_Leak;                                           // 0x0430(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        EndPlayNiagaraTransform;                           // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         End_Play_Niagara_System;                           // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void BP_OnZiplineAttachmentChanged(bool bIsAttached);
 	void ExecuteUbergraph_BP_BaseValuableBag(int32 EntryPoint);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void BP_OnZiplineAttachmentChanged(bool bIsAttached);
 
 public:
 	static class UClass* StaticClass()

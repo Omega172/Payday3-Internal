@@ -15,26 +15,6 @@
 
 SDK_NAMESPACE_START
 
-// Class JsonUtilities.JsonUtilitiesDummyObject
-// 0x0000 (0x0030 - 0x0030)
-class UJsonUtilitiesDummyObject final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("JsonUtilitiesDummyObject")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"JsonUtilitiesDummyObject")
-	}
-	static class UJsonUtilitiesDummyObject* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UJsonUtilitiesDummyObject>();
-	}
-};
-DUMPER7_ASSERTS_UJsonUtilitiesDummyObject;
-
 // Class JsonUtilities.SBZJSonSerializeVariablesInterface
 // 0x0000 (0x0000 - 0x0000)
 class ISBZJSonSerializeVariablesInterface final
@@ -63,5 +43,25 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ISBZJSonSerializeVariablesInterface;
+
+// Class JsonUtilities.JsonUtilitiesDummyObject
+// 0x0000 (0x0030 - 0x0030)
+class UJsonUtilitiesDummyObject final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("JsonUtilitiesDummyObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JsonUtilitiesDummyObject")
+	}
+	static class UJsonUtilitiesDummyObject* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UJsonUtilitiesDummyObject>();
+	}
+};
+DUMPER7_ASSERTS_UJsonUtilitiesDummyObject;
 
 SDK_NAMESPACE_END

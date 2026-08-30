@@ -17,21 +17,21 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C
-// 0x0038 (0x02F0 - 0x02B8)
+// 0x0038 (0x0350 - 0x0318)
 class UWBP_UI_Widget_PartyMemberRevive_C final : public UPD3ReviveInteractionWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_ReviveGauge;                                 // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               ReviveGauge_Material;                              // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnReviveStartedDispatcher;                         // 0x02D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void()>              OnReviveEndedDispatcher;                           // 0x02E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_ReviveGauge;                                 // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               ReviveGauge_Material;                              // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnReviveStartedDispatcher;                         // 0x0330(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void()>              OnReviveEndedDispatcher;                           // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Widget_PartyMemberRevive(int32 EntryPoint);
-	void OnReviveInteractionStarted();
-	void OnReviveInteractionEnded();
 	void Construct();
+	void ExecuteUbergraph_WBP_UI_Widget_PartyMemberRevive(int32 EntryPoint);
+	void OnReviveInteractionEnded();
+	void OnReviveInteractionStarted();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:

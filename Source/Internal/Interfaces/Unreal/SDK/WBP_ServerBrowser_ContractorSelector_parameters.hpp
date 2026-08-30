@@ -21,32 +21,78 @@ struct WBP_ServerBrowser_ContractorSelector_C_ExecuteUbergraph_WBP_ServerBrowser
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Event_InCurrentIndex;                       // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bOverrideReadOnly;                    // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bOverrideReadOnly;                    // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         CallFunc_Map_Keys_Keys;                            // 0x0020(0x0010)(ReferenceParm)
 	TArray<class FString>                         CallFunc_Map_Keys_Keys_1;                          // 0x0030(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0044(0x0014)(ZeroConstructor, NoDestructor)
-	class UObject*                                Temp_object_Variable_1;                            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0044(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Temp_object_Variable_1;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UPaperSprite>            CallFunc_Map_Find_Value;                           // 0x0070(0x0030)(HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_CustomEvent_Loaded_1;                       // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UObject*                                K2Node_CustomEvent_Loaded_1;                       // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UPaperSprite>            K2Node_CustomEvent_ContractorSprite;               // 0x00C0(0x0030)(HasGetValueTypeHash)
-	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_1;            // 0x00F8(0x0014)(ZeroConstructor, NoDestructor)
+	class UObject*                                CallFunc_LoadAsset_Blocking_ReturnValue;           // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_1;            // 0x00F8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.GetContractorName
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_GetContractorName final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_GetContractorName;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_0B3A176146937A1A5B15A0B11F535FAF
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_51F23A4943941A9E9DE1DBB426DE1827
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnSelectionOptionChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged final
+{
+public:
+	int32                                         InCurrentIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bOverrideReadOnly;                                 // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_PreConstruct;
 
 // Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.SetContractorSprite
 // 0x0030 (0x0030 - 0x0000)
@@ -56,52 +102,6 @@ public:
 	TSoftObjectPtr<class UPaperSprite>            ContractorSprite;                                  // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_PreConstruct;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnSelectionOptionChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged final
-{
-public:
-	int32                                         InCurrentIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bOverrideReadOnly;                                 // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_0B3A176146937A1A5B15A0B11F535FAF
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_51F23A4943941A9E9DE1DBB426DE1827
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.GetContractorName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_GetContractorName final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_GetContractorName;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

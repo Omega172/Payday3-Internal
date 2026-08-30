@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MoneyBagSecured.BP_MoneyBagSecured_C
-// 0x0000 (0x02C0 - 0x02C0)
+// 0x0000 (0x0340 - 0x0340)
 class ABP_MoneyBagSecured_C final : public ABP_BaseBagSecured_C
 {
 public:

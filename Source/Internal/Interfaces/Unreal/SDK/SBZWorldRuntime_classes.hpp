@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 class USBZWorldRuntimeBase : public UObject
 {
 public:
-	TSubclassOf<class USBZWorldRuntimeBase>       WorldRuntimeClass;                                 // 0x0030(0x0008)(Edit, ZeroConstructor, Config, GlobalConfig, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class USBZWorldRuntimeBase>       WorldRuntimeClass;                                 // 0x0030(0x0008)(Edit, ZeroConstructor, Config, GlobalConfig, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class USBZWorldRuntimeBase* GetWorldRuntime(const class UObject* WorldContextObject);

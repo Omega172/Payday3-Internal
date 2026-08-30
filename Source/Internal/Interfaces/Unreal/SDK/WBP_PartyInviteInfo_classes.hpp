@@ -19,29 +19,29 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PartyInviteInfo.WBP_PartyInviteInfo_C
-// 0x0038 (0x02E8 - 0x02B0)
+// 0x0038 (0x0348 - 0x0310)
 class UWBP_PartyInviteInfo_C final : public USBZMenuMouseButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       OnFocused;                                         // 0x02B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Widget_ActionInput_C*           ActionKey;                                         // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        ActionName_T;                                      // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 DarkBackground_I;                                  // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 PartyAmountBkg_I;                                  // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        PartyAmountCount_T;                                // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OnFocused;                                         // 0x0318(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Widget_ActionInput_C*           ActionKey;                                         // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        ActionName_T;                                      // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 DarkBackground_I;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PartyAmountBkg_I;                                  // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        PartyAmountCount_T;                                // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PartyInviteInfo(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered);
-	void EnableInput(bool InEnable);
 	void BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ButtonSelected();
+	void EnableInput(bool InEnable);
+	void ExecuteUbergraph_WBP_PartyInviteInfo(int32 EntryPoint);
+	void OnInitialized();
 	void OnInstallStateChanged(bool bIsGameInstallPending);
 	void OnPartyInfoUpdated();
 	void OnPlayerPartyChanged(const class FString& PlayerId);
 	void OnPrivilegeChanged(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
-	void OnInitialized();
-	void ButtonSelected();
 	void PreConstruct(bool IsDesignTime);
 	void UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion);
 

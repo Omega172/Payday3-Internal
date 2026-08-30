@@ -16,21 +16,105 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.ExecuteUbergraph_WBP_ServerBrowser_Navbar
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_Navbar_C::ExecuteUbergraph_WBP_ServerBrowser_Navbar(int32 EntryPoint)
+void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "ExecuteUbergraph_WBP_ServerBrowser_Navbar");
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_ServerBrowser_Navbar_C_ExecuteUbergraph_WBP_ServerBrowser_Navbar Parms{};
+	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature");
+
+	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature Parms{};
+
+	Parms.InVisibility = InVisibility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -64,133 +148,76 @@ void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_Widget_TabFor
 }
 
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.ExecuteUbergraph_WBP_ServerBrowser_Navbar
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_ServerBrowser_Navbar_C::ExecuteUbergraph_WBP_ServerBrowser_Navbar(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "ExecuteUbergraph_WBP_ServerBrowser_Navbar");
 
-	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_ServerBrowser_Navbar_C_ExecuteUbergraph_WBP_ServerBrowser_Navbar Parms{};
 
-	Parms.Button = Button;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.GetButtonName
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText*                            ButtonName                                             (Parm, OutParm)
 
-void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_ServerBrowser_Navbar_C::GetButtonName(class FText* ButtonName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "GetButtonName");
 
-	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Params::WBP_ServerBrowser_Navbar_C_GetButtonName Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (ButtonName != nullptr)
+		*ButtonName = std::move(Parms.ButtonName);
 }
 
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_Navbar_C::BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature");
-
-	Params::WBP_ServerBrowser_Navbar_C_BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.RebuildNavbar
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_Navbar_C::RebuildNavbar()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "RebuildNavbar");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.RefreshButtons
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.NavBarButtonClicked
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   OutNavBarIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_Navbar_C::RefreshButtons()
+void UWBP_ServerBrowser_Navbar_C::NavBarButtonClicked(int32 OutNavBarIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "RefreshButtons");
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "NavBarButtonClicked");
+
+	Params::WBP_ServerBrowser_Navbar_C_NavBarButtonClicked Parms{};
+
+	Parms.OutNavBarIndex = OutNavBarIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_Navbar_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -224,44 +251,10 @@ void UWBP_ServerBrowser_Navbar_C::OnTabForward()
 }
 
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_Navbar_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.NavBarButtonClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OutNavBarIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_Navbar_C::NavBarButtonClicked(int32 OutNavBarIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "NavBarButtonClicked");
-
-	Params::WBP_ServerBrowser_Navbar_C_NavBarButtonClicked Parms{};
-
-	Parms.OutNavBarIndex = OutNavBarIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_Navbar_C::PreConstruct(bool IsDesignTime)
 {
@@ -278,25 +271,31 @@ void UWBP_ServerBrowser_Navbar_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.UpdateIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewActiveIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsInitial                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.RebuildNavbar
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_Navbar_C::UpdateIndex(int32 NewActiveIndex, bool IsInitial)
+void UWBP_ServerBrowser_Navbar_C::RebuildNavbar()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "UpdateIndex");
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "RebuildNavbar");
 
-	Params::WBP_ServerBrowser_Navbar_C_UpdateIndex Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewActiveIndex = NewActiveIndex;
-	Parms.IsInitial = IsInitial;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.RefreshButtons
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_Navbar_C::RefreshButtons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "RefreshButtons");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -320,31 +319,10 @@ void UWBP_ServerBrowser_Navbar_C::SetMaxCount(int32 InMaxCount)
 }
 
 
-// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.GetButtonName
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText*                            ButtonName                                             (Parm, OutParm)
-
-void UWBP_ServerBrowser_Navbar_C::GetButtonName(class FText* ButtonName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "GetButtonName");
-
-	Params::WBP_ServerBrowser_Navbar_C_GetButtonName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ButtonName != nullptr)
-		*ButtonName = std::move(Parms.ButtonName);
-}
-
-
 // Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.SetNavIcons
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Condition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    Condition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_Navbar_C::SetNavIcons(bool Condition)
 {
@@ -356,6 +334,28 @@ void UWBP_ServerBrowser_Navbar_C::SetNavIcons(bool Condition)
 	Params::WBP_ServerBrowser_Navbar_C_SetNavIcons Parms{};
 
 	Parms.Condition = Condition;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_Navbar.WBP_ServerBrowser_Navbar_C.UpdateIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewActiveIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsInitial                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_Navbar_C::UpdateIndex(int32 NewActiveIndex, bool IsInitial)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_Navbar_C", "UpdateIndex");
+
+	Params::WBP_ServerBrowser_Navbar_C_UpdateIndex Parms{};
+
+	Parms.NewActiveIndex = NewActiveIndex;
+	Parms.IsInitial = IsInitial;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

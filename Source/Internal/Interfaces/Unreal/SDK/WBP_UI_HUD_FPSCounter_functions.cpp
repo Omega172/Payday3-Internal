@@ -39,7 +39,7 @@ void UWBP_UI_HUD_FPSCounter_C::ExecuteUbergraph_WBP_UI_HUD_FPSCounter(int32 Entr
 // Function WBP_UI_HUD_FPSCounter.WBP_UI_HUD_FPSCounter_C.OnDisplayedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisplaying                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsDisplaying                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_FPSCounter_C::OnDisplayedChanged(bool bInIsDisplaying)
 {

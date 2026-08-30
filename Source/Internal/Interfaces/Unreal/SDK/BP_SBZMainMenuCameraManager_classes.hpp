@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SBZMainMenuCameraManager.BP_SBZMainMenuCameraManager_C
-// 0x0008 (0x0328 - 0x0320)
+// 0x0008 (0x03A8 - 0x03A0)
 class ABP_SBZMainMenuCameraManager_C final : public ASBZMainMenuCameraManager
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0320(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

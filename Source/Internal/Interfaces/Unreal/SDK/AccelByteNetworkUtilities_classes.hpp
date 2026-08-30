@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // Class AccelByteNetworkUtilities.IpConnectionAccelByte
-// 0x0018 (0x1CB0 - 0x1C98)
+// 0x0018 (0x1ED8 - 0x1EC0)
 class UIpConnectionAccelByte final : public UIpConnection
 {
 public:
-	uint8                                         Pad_1C98[0x18];                                    // 0x1C98(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1EC0[0x18];                                    // 0x1EC0(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -39,11 +39,11 @@ public:
 DUMPER7_ASSERTS_UIpConnectionAccelByte;
 
 // Class AccelByteNetworkUtilities.IpNetDriverAccelByte
-// 0x0008 (0x0800 - 0x07F8)
+// 0x0008 (0x09B0 - 0x09A8)
 class UIpNetDriverAccelByte final : public UIpNetDriver
 {
 public:
-	uint8                                         Pad_7F8[0x8];                                      // 0x07F8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_9A8[0x8];                                      // 0x09A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

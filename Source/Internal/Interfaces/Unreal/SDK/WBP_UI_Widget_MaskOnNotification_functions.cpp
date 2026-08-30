@@ -36,6 +36,26 @@ void UWBP_UI_Widget_MaskOnNotification_C::ExecuteUbergraph_WBP_UI_Widget_MaskOnN
 }
 
 
+// Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.MaskOnChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsPuttingOnMask                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_MaskOnNotification_C::MaskOnChanged(bool bInIsPuttingOnMask)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_MaskOnNotification_C", "MaskOnChanged");
+
+	Params::WBP_UI_Widget_MaskOnNotification_C_MaskOnChanged Parms{};
+
+	Parms.bInIsPuttingOnMask = bInIsPuttingOnMask;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.OnProgressChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -51,26 +71,6 @@ void UWBP_UI_Widget_MaskOnNotification_C::OnProgressChanged(float InProgress)
 	Params::WBP_UI_Widget_MaskOnNotification_C_OnProgressChanged Parms{};
 
 	Parms.InProgress = InProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.MaskOnChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsPuttingOnMask                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_MaskOnNotification_C::MaskOnChanged(bool bInIsPuttingOnMask)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_MaskOnNotification_C", "MaskOnChanged");
-
-	Params::WBP_UI_Widget_MaskOnNotification_C_MaskOnChanged Parms{};
-
-	Parms.bInIsPuttingOnMask = bInIsPuttingOnMask;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

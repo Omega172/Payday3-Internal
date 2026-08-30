@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Customizable_Mask.BP_Customizable_Mask_C
-// 0x0000 (0x0348 - 0x0348)
+// 0x0000 (0x03C8 - 0x03C8)
 class ABP_Customizable_Mask_C final : public ASBZMask
 {
 public:

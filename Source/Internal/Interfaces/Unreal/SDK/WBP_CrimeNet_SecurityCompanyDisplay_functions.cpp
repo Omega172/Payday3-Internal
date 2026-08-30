@@ -36,20 +36,6 @@ void UWBP_CrimeNet_SecurityCompanyDisplay_C::ExecuteUbergraph_WBP_CrimeNet_Secur
 }
 
 
-// Function WBP_CrimeNet_SecurityCompanyDisplay.WBP_CrimeNet_SecurityCompanyDisplay_C.OnSecurityCompanyAssetStartedLoad
-// (Event, Public, BlueprintEvent)
-
-void UWBP_CrimeNet_SecurityCompanyDisplay_C::OnSecurityCompanyAssetStartedLoad()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_SecurityCompanyDisplay_C", "OnSecurityCompanyAssetStartedLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_CrimeNet_SecurityCompanyDisplay.WBP_CrimeNet_SecurityCompanyDisplay_C.OnEmptySet
 // (Event, Public, BlueprintEvent)
 
@@ -73,6 +59,20 @@ void UWBP_CrimeNet_SecurityCompanyDisplay_C::OnSecurityCompanyAssetLoaded()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_CrimeNet_SecurityCompanyDisplay_C", "OnSecurityCompanyAssetLoaded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_SecurityCompanyDisplay.WBP_CrimeNet_SecurityCompanyDisplay_C.OnSecurityCompanyAssetStartedLoad
+// (Event, Public, BlueprintEvent)
+
+void UWBP_CrimeNet_SecurityCompanyDisplay_C::OnSecurityCompanyAssetStartedLoad()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_SecurityCompanyDisplay_C", "OnSecurityCompanyAssetStartedLoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

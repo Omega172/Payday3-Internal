@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Loadout_RenamePopup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Loadout_RenamePopup_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ExecuteUbergraph_WBP_Loadout_RenamePopup
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -50,40 +64,6 @@ void UWBP_Loadout_RenamePopup_C::OnInitialized()
 }
 
 
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.UpdateName
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Loadout_RenamePopup_C::UpdateName(const class FText& Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Loadout_RenamePopup_C", "UpdateName");
-
-	Params::WBP_Loadout_RenamePopup_C_UpdateName Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Loadout_RenamePopup_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Loadout_RenamePopup_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ShowCurrentName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -99,6 +79,26 @@ void UWBP_Loadout_RenamePopup_C::ShowCurrentName(const class FText& InText)
 	Params::WBP_Loadout_RenamePopup_C_ShowCurrentName Parms{};
 
 	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.UpdateName
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Loadout_RenamePopup_C::UpdateName(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Loadout_RenamePopup_C", "UpdateName");
+
+	Params::WBP_Loadout_RenamePopup_C_UpdateName Parms{};
+
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

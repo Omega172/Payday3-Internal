@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -20,139 +20,80 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton
-// 0x001C (0x001C - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton final
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonFocusedChanged final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsJoinBlocked_bIsJoinBlocked;             // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonFocusedChanged;
 
 // Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonFocusedChanged final
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton
+// 0x001C (0x001C - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsJoinBlocked_bIsJoinBlocked;             // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonFocusedChanged;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_PreConstruct;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetSessionInfo
-// 0x0600 (0x0600 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetSessionInfo final
-{
-public:
-	struct FSBZOnlineSearchResult                 SBZOnlineSearchResult;                             // 0x0000(0x01F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x01F8(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0210(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0228(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0268(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02A8(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x02B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02C8(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x02E0(0x0018)()
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F9[0x7];                                      // 0x02F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0300(0x0040)(HasGetValueTypeHash)
-	struct FSoftObjectPath                        CallFunc_LevelIdxToPath_ReturnValue;               // 0x0340(0x0020)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1; // 0x0360(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_BreakSoftObjectPath_PathString;           // 0x0370(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0380(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x0398(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x03B0(0x0040)(HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x03F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_401[0x7];                                      // 0x0401(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FString>                         CallFunc_ParseIntoArray_ReturnValue;               // 0x0408(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x0418(0x0018)()
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0430(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_434[0x4];                                      // 0x0434(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x0438(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_4;          // 0x0478(0x0018)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0490(0x0028)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x04B8(0x0028)()
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x04E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x04E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x04E8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_5;            // 0x0500(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0540(0x0010)(ReferenceParm)
-	ESBZServerSessionType                         Temp_byte_Variable;                                // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_551[0x7];                                      // 0x0551(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0558(0x0018)()
-	class FString                                 K2Node_Select_Default;                             // 0x0570(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_5;          // 0x0580(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_6;            // 0x0598(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x05D8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x05E8(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetSessionInfo;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton;
 
 // Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.GetPartyTypeFromSessionParams
-// 0x0270 (0x0270 - 0x0000)
+// 0x01D8 (0x01D8 - 0x0000)
 struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_GetPartyTypeFromSessionParams final
 {
 public:
 	struct FSBZOnlineSessionParams                SessionParams;                                     // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   ReturnValue;                                       // 0x0088(0x0018)(Parm, OutParm, ReturnParm)
-	class FText                                   SessionPhaseStringIn;                              // 0x00A0(0x0018)(Edit, BlueprintVisible)
-	class UTextBlock*                             SessionPhaseString;                                // 0x00B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x00C0(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x00D8(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x00F0(0x0018)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0108(0x0018)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0120(0x0018)()
-	class FText                                   Temp_text_Variable_5;                              // 0x0138(0x0018)()
-	class FText                                   Temp_text_Variable_6;                              // 0x0150(0x0018)()
-	class FText                                   Temp_text_Variable_7;                              // 0x0168(0x0018)()
-	class FText                                   Temp_text_Variable_8;                              // 0x0180(0x0018)()
-	class FText                                   Temp_text_Variable_9;                              // 0x0198(0x0018)()
-	class FText                                   Temp_text_Variable_10;                             // 0x01B0(0x0018)()
-	class FText                                   Temp_text_Variable_11;                             // 0x01C8(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_12;                             // 0x01E8(0x0018)()
-	bool                                          Temp_bool_Variable_1;                              // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_13;                             // 0x0208(0x0018)()
-	ESBZOnlineSessionPhase                        Temp_byte_Variable;                                // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_221[0x7];                                      // 0x0221(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0228(0x0018)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x0240(0x0018)()
-	class FText                                   K2Node_Select_Default_2;                           // 0x0258(0x0018)()
+	class FText                                   ReturnValue;                                       // 0x0088(0x0010)(Parm, OutParm, ReturnParm)
+	class FText                                   SessionPhaseStringIn;                              // 0x0098(0x0010)(Edit, BlueprintVisible)
+	class UTextBlock*                             SessionPhaseString;                                // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x00B0(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x00C0(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x00D0(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x00E0(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x00F0(0x0010)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0100(0x0010)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0110(0x0010)()
+	class FText                                   Temp_text_Variable_7;                              // 0x0120(0x0010)()
+	class FText                                   Temp_text_Variable_8;                              // 0x0130(0x0010)()
+	class FText                                   Temp_text_Variable_9;                              // 0x0140(0x0010)()
+	class FText                                   Temp_text_Variable_10;                             // 0x0150(0x0010)()
+	class FText                                   Temp_text_Variable_11;                             // 0x0160(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_12;                             // 0x0178(0x0010)()
+	bool                                          Temp_bool_Variable_1;                              // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_13;                             // 0x0190(0x0010)()
+	ESBZOnlineSessionPhase                        Temp_byte_Variable;                                // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x01A8(0x0010)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x01B8(0x0010)()
+	class FText                                   K2Node_Select_Default_2;                           // 0x01C8(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_GetPartyTypeFromSessionParams;
 
 // Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.GetSessionInfo
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0210 (0x0210 - 0x0000)
 struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_GetSessionInfo final
 {
 public:
-	struct FSBZOnlineSearchResult                 SessionInfo;                                       // 0x0000(0x01F8)(Parm, OutParm)
+	struct FSBZOnlineSearchResult                 SessionInfo;                                       // 0x0000(0x0210)(Parm, OutParm)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_GetSessionInfo;
 
@@ -161,63 +102,121 @@ DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_GetSessionInfo;
 struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_IsJoinBlocked final
 {
 public:
-	bool                                          bIsJoinBlocked;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsJoinBlocked;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZOnlineSessionPhase                        Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_3;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_4;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_5;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_6;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_7;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_8;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_9;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_10;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_11;                             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAccelByteMatchmakingDisabled_ReturnValue; // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Select_Default;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_3;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_5;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_6;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_7;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_8;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_9;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_10;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_11;                             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAccelByteMatchmakingDisabled_ReturnValue; // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Select_Default;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_IsJoinBlocked;
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetIsActive
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetIsActive final
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnFocus
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnFocus final
 {
 public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetIsActive;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnFocus;
 
 // Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnHover
 // 0x0005 (0x0005 - 0x0000)
 struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnHover final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnHover;
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnFocus
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnFocus final
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_PreConstruct final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0028(0x0028)()
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnFocus;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_PreConstruct;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetIsActive
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetIsActive final
+{
+public:
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetIsActive;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetSessionInfo
+// 0x05D0 (0x05D0 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetSessionInfo final
+{
+public:
+	struct FSBZOnlineSearchResult                 SBZOnlineSearchResult;                             // 0x0000(0x0210)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0210(0x0010)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0220(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0230(0x0048)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0278(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x02C0(0x0010)(ReferenceParm)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x02D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02E0(0x0010)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x02F0(0x0010)()
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0308(0x0048)(HasGetValueTypeHash)
+	struct FSoftObjectPath                        CallFunc_LevelIdxToPath_ReturnValue;               // 0x0350(0x0028)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue_1; // 0x0378(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_BreakSoftObjectPath_PathString;           // 0x0388(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0398(0x0010)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x03A8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x03B8(0x0048)(HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0400(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_411[0x7];                                      // 0x0411(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         CallFunc_ParseIntoArray_ReturnValue;               // 0x0418(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_3;          // 0x0428(0x0010)()
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_4;            // 0x0440(0x0048)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_4;          // 0x0488(0x0010)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0498(0x0014)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x04AC(0x0014)()
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x04C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x04C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x04C8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_5;            // 0x04D8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0520(0x0010)(ReferenceParm)
+	ESBZServerSessionType                         Temp_byte_Variable;                                // 0x0530(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_531[0x7];                                      // 0x0531(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0538(0x0010)()
+	class FString                                 K2Node_Select_Default;                             // 0x0548(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_5;          // 0x0558(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_6;            // 0x0568(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x05B0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x05C0(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetSessionInfo;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

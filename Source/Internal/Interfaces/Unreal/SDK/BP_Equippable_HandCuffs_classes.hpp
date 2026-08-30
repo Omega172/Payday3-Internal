@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Equippable_HandCuffs.BP_Equippable_HandCuffs_C
-// 0x0000 (0x0480 - 0x0480)
+// 0x0000 (0x0570 - 0x0570)
 class ABP_Equippable_HandCuffs_C final : public ASBZEquippable
 {
 public:

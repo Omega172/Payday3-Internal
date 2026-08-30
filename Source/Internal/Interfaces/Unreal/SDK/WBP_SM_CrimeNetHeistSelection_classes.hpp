@@ -19,52 +19,52 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_SM_CrimeNetHeistSelection.WBP_SM_CrimeNetHeistSelection_C
-// 0x0080 (0x03F8 - 0x0378)
+// 0x0080 (0x0458 - 0x03D8)
 class UWBP_SM_CrimeNetHeistSelection_C final : public USBZMainMenuCrimeNet
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       matchmake_Anim;                                    // 0x0380(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       HeistCategoryChanged;                              // 0x0388(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   Button_CancelMatchmaking;                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Background;                                  // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_CancelMatchmaking;                         // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_HeistPopUp;                                // 0x03A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_HeistCategoryName;                            // 0x03B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_HeistSelectionButtons;                 // 0x03B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_CrimeNet_HeistDescriptionPanel_2_C* WBP_CrimeNet_HeistDescriptionPanel_02;            // 0x03C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x03C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_DifficultySelectorWidget_C*     Widget_DifficultySelection;                        // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          RTMatchMakingModeSelected;                         // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentlyPlayedSoundID;                            // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC[0x4];                                      // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       matchmake_Anim;                                    // 0x03E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       HeistCategoryChanged;                              // 0x03E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   Button_CancelMatchmaking;                          // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Background;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_CancelMatchmaking;                         // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_HeistPopUp;                                // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_HeistCategoryName;                            // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_HeistSelectionButtons;                 // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_CrimeNet_HeistDescriptionPanel_2_C* WBP_CrimeNet_HeistDescriptionPanel_02;            // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x0428(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_DifficultySelectorWidget_C*     Widget_DifficultySelection;                        // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          RTMatchMakingModeSelected;                         // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_439[0x7];                                      // 0x0439(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentlyPlayedSoundID;                            // 0x0448(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44C[0x4];                                      // 0x044C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection(int32 EntryPoint);
-	void OnSoloModePopupClosed(class FName ClosingActionName);
-	void OnAddedToStack();
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void OnRemovedFromStack();
 	void BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnBackPressed();
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_2_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex);
 	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_2_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection(int32 EntryPoint);
+	void OnAddedToStack();
+	void OnBackPressed();
+	void OnControlsReferenceClicked(class FName ActionName);
 	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnHeistButtonSelected(class USBZMainMenuCrimeNetHeistButton* SelectedButton);
 	void OnHeistButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
+	void OnHeistButtonSelected(class USBZMainMenuCrimeNetHeistButton* SelectedButton);
 	void OnHeistCollectionChanged(const struct FSBZHeistCollectionWithOwnership& ActiveHeistCollection);
 	void OnLostStackFocused();
-	void TryDisplayPopUp(bool bInPopUp);
+	void OnRemovedFromStack();
+	void OnSoloModePopupClosed(class FName ClosingActionName);
 	void RefreshVisuals();
-	void SetMatchmakingState(bool Force_Disable_Matchmaking);
+	void SetButtonFocus();
 	void SetButtonFocusAfterStorymodeToggle();
 	void SetHeistButtonControlsReference();
-	void SetButtonFocus();
+	void SetMatchmakingState(bool Force_Disable_Matchmaking);
+	void TryDisplayPopUp(bool bInPopUp);
 
 public:
 	static class UClass* StaticClass()

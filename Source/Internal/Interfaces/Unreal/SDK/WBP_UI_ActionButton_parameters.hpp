@@ -11,55 +11,67 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.ExecuteUbergraph_WBP_UI_ActionButton
-// 0x0148 (0x0148 - 0x0000)
+// 0x0158 (0x0158 - 0x0000)
 struct WBP_UI_ActionButton_C_ExecuteUbergraph_WBP_UI_ActionButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0038)(IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x0040(0x0078)(ConstParm)
-	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00B8(0x0078)(ConstParm)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0134(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0144(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x0040(0x0080)(ConstParm)
+	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C0(0x0080)(ConstParm)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0144(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_ActionButton_C_ExecuteUbergraph_WBP_UI_ActionButton;
 
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseLeave
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_UI_ActionButton_C_OnMouseLeave final
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseButtonDown
+// 0x0238 (0x0238 - 0x0000)
+struct WBP_UI_ActionButton_C_OnMouseButtonDown final
 {
 public:
-	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00B8(0x00C0)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0178(0x00C0)()
 };
-DUMPER7_ASSERTS_WBP_UI_ActionButton_C_OnMouseLeave;
+DUMPER7_ASSERTS_WBP_UI_ActionButton_C_OnMouseButtonDown;
 
 // Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseEnter
-// 0x00B0 (0x00B0 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct WBP_UI_ActionButton_C_OnMouseEnter final
 {
 public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 DUMPER7_ASSERTS_WBP_UI_ActionButton_C_OnMouseEnter;
+
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseLeave
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_UI_ActionButton_C_OnMouseLeave final
+{
+public:
+	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_ActionButton_C_OnMouseLeave;
 
 // Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_ActionButton_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_ActionButton_C_PreConstruct;
 
@@ -68,25 +80,13 @@ DUMPER7_ASSERTS_WBP_UI_ActionButton_C_PreConstruct;
 struct WBP_UI_ActionButton_C_UpdateHover final
 {
 public:
-	bool                                          bIsMouseOver;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsMouseOver;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_ActionButton_C_UpdateHover;
-
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseButtonDown
-// 0x0230 (0x0230 - 0x0000)
-struct WBP_UI_ActionButton_C_OnMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0078)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00B0(0x00C0)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            K2Node_MakeStruct_EventReply;                      // 0x0170(0x00C0)()
-};
-DUMPER7_ASSERTS_WBP_UI_ActionButton_C_OnMouseButtonDown;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

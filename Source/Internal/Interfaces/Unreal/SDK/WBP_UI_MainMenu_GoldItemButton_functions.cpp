@@ -16,6 +16,80 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_UI_MainMenu_GoldItemButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_MainMenu_GoldItemButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_MainMenu_GoldItemButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::DisabledButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "DisabledButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ExecuteUbergraph_WBP_UI_MainMenu_GoldItemButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,57 +110,81 @@ void UWBP_UI_MainMenu_GoldItemButton_C::ExecuteUbergraph_WBP_UI_MainMenu_GoldIte
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.InitializeItemData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_GoldItemButton_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_UI_MainMenu_GoldItemButton_C::InitializeItemData(class USBZInventoryBaseData* InItemData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "Tick");
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "InitializeItemData");
 
-	Params::WBP_UI_MainMenu_GoldItemButton_C_Tick Parms{};
+	Params::WBP_UI_MainMenu_GoldItemButton_C_InitializeItemData Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.InItemData = InItemData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnDisabled
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_GoldItemButton_C::DisabledButtonSelected()
+void UWBP_UI_MainMenu_GoldItemButton_C::OnDisabled(bool bIsDisabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "DisabledButtonSelected");
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnDisabled");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_MainMenu_GoldItemButton_C_OnDisabled Parms{};
+
+	Parms.bIsDisabled_0 = bIsDisabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_GoldItemButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_UI_MainMenu_GoldItemButton_C::OnFocused(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnFocused");
 
-	Params::WBP_UI_MainMenu_GoldItemButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_UI_MainMenu_GoldItemButton_C_OnFocused Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::OnHover(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnHover");
+
+	Params::WBP_UI_MainMenu_GoldItemButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -106,66 +204,6 @@ void UWBP_UI_MainMenu_GoldItemButton_C::OnInitialized()
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnTransactionProgressChanged
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnTransactionProgressChanged");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_OnTransactionProgressChanged Parms{};
-
-	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnPlayerStoreItemDataIntialized
 // (Event, Protected, BlueprintEvent)
 
@@ -180,50 +218,10 @@ void UWBP_UI_MainMenu_GoldItemButton_C::OnPlayerStoreItemDataIntialized()
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "PreConstruct");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::OnFocused(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnFocused");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_OnFocused Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnTransactionInProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsTransactionInProgress                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsTransactionInProgress                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_GoldItemButton_C::OnTransactionInProgress(bool bIsTransactionInProgress)
 {
@@ -240,23 +238,71 @@ void UWBP_UI_MainMenu_GoldItemButton_C::OnTransactionInProgress(bool bIsTransact
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnTransactionProgressChanged
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_GoldItemButton_C::OnHover(bool bIsHovered)
+void UWBP_UI_MainMenu_GoldItemButton_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnHover");
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnTransactionProgressChanged");
 
-	Params::WBP_UI_MainMenu_GoldItemButton_C_OnHover Parms{};
+	Params::WBP_UI_MainMenu_GoldItemButton_C_OnTransactionProgressChanged Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "PreConstruct");
+
+	Params::WBP_UI_MainMenu_GoldItemButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::RefreshVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "RefreshVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.SetGoldProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::SetGoldProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "SetGoldProgress");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -282,74 +328,6 @@ void UWBP_UI_MainMenu_GoldItemButton_C::SetPrice(int64 Price, ESBZCurrencyCode C
 }
 
 
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.InitializeItemData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::InitializeItemData(class USBZInventoryBaseData* InItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "InitializeItemData");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_InitializeItemData Parms{};
-
-	Parms.InItemData = InItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::RefreshVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "RefreshVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.OnDisabled
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::OnDisabled(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "OnDisabled");
-
-	Params::WBP_UI_MainMenu_GoldItemButton_C_OnDisabled Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.SetGoldProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_GoldItemButton_C::SetGoldProgress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "SetGoldProgress");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.SetTimer
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -361,6 +339,28 @@ void UWBP_UI_MainMenu_GoldItemButton_C::SetTimer()
 		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "SetTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_GoldItemButton.WBP_UI_MainMenu_GoldItemButton_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_GoldItemButton_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_GoldItemButton_C", "Tick");
+
+	Params::WBP_UI_MainMenu_GoldItemButton_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

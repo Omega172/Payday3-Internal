@@ -39,8 +39,8 @@ void UWBP_Widget_CurrencyWidget_C::ExecuteUbergraph_WBP_Widget_CurrencyWidget(in
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.OnAffordedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsAfforded                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsInitial                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsAfforded                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitial                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Widget_CurrencyWidget_C::OnAffordedChanged(bool bInIsAfforded, bool bIsInitial)
 {
@@ -62,7 +62,7 @@ void UWBP_Widget_CurrencyWidget_C::OnAffordedChanged(bool bInIsAfforded, bool bI
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // ESBZCurrencyCode                        InCurrencyType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitial                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsInitial                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Widget_CurrencyWidget_C::OnCurrencyTypeChanged(ESBZCurrencyCode InCurrencyType, bool bIsInitial)
 {
@@ -74,6 +74,28 @@ void UWBP_Widget_CurrencyWidget_C::OnCurrencyTypeChanged(ESBZCurrencyCode InCurr
 	Params::WBP_Widget_CurrencyWidget_C_OnCurrencyTypeChanged Parms{};
 
 	Parms.InCurrencyType = InCurrencyType;
+	Parms.bIsInitial = bIsInitial;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.OnCurrencyValueChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int64                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitial                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Widget_CurrencyWidget_C::OnCurrencyValueChanged(int64 NewValue, bool bIsInitial)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Widget_CurrencyWidget_C", "OnCurrencyValueChanged");
+
+	Params::WBP_Widget_CurrencyWidget_C_OnCurrencyValueChanged Parms{};
+
+	Parms.NewValue = NewValue;
 	Parms.bIsInitial = bIsInitial;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -97,7 +119,7 @@ void UWBP_Widget_CurrencyWidget_C::OnInitialized()
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Widget_CurrencyWidget_C::PreConstruct(bool IsDesignTime)
 {
@@ -109,28 +131,6 @@ void UWBP_Widget_CurrencyWidget_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_Widget_CurrencyWidget_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.OnCurrencyValueChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int64                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitial                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Widget_CurrencyWidget_C::OnCurrencyValueChanged(int64 NewValue, bool bIsInitial)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Widget_CurrencyWidget_C", "OnCurrencyValueChanged");
-
-	Params::WBP_Widget_CurrencyWidget_C_OnCurrencyValueChanged Parms{};
-
-	Parms.NewValue = NewValue;
-	Parms.bIsInitial = bIsInitial;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -178,24 +178,10 @@ void UWBP_Widget_CurrencyWidget_C::SetFontAndColor(const struct FSlateFontInfo& 
 }
 
 
-// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.UpdateCurrencyIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Widget_CurrencyWidget_C::UpdateCurrencyIcon()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Widget_CurrencyWidget_C", "UpdateCurrencyIcon");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.SetForbidden
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsForbidden                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsForbidden                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Widget_CurrencyWidget_C::SetForbidden(bool IsForbidden)
 {
@@ -231,6 +217,20 @@ void UWBP_Widget_CurrencyWidget_C::UpdateCost(ESBZCurrencyCode InCurrency, int64
 	Parms.InCost = InCost;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C.UpdateCurrencyIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Widget_CurrencyWidget_C::UpdateCurrencyIcon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Widget_CurrencyWidget_C", "UpdateCurrencyIcon");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

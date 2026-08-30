@@ -16,89 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ExecuteUbergraph_WBP_ServerBrowser_HeistButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_HeistButton_C::ExecuteUbergraph_WBP_ServerBrowser_HeistButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ExecuteUbergraph_WBP_ServerBrowser_HeistButton");
-
-	Params::WBP_ServerBrowser_HeistButton_C_ExecuteUbergraph_WBP_ServerBrowser_HeistButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "PreConstruct");
-
-	Params::WBP_ServerBrowser_HeistButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_HeistButton_C::DisabledButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "DisabledButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_HeistButton_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility)
+void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature Parms{};
+	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.InVisibility = InVisibility;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -124,75 +80,11 @@ void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_But
 }
 
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_ServerBrowser_HeistButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -210,20 +102,20 @@ void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_But
 }
 
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 	Parms.bIsEnabled_0 = bIsEnabled_0;
@@ -232,23 +124,77 @@ void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_But
 }
 
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnFocusChanged
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistButton_C::OnFocusChanged(bool bIsFocused)
+void UWBP_ServerBrowser_HeistButton_C::BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnFocusChanged");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature");
 
-	Params::WBP_ServerBrowser_HeistButton_C_OnFocusChanged Parms{};
+	Params::WBP_ServerBrowser_HeistButton_C_BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature Parms{};
 
-	Parms.bIsFocused = bIsFocused;
+	Parms.InVisibility = InVisibility;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_ServerBrowser_HeistButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_ServerBrowser_HeistButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_HeistButton_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -266,95 +212,35 @@ void UWBP_ServerBrowser_HeistButton_C::Construct()
 }
 
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnHeistDataInitialized
-// (Event, Public, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_ServerBrowser_HeistButton_C::OnHeistDataInitialized()
+void UWBP_ServerBrowser_HeistButton_C::DisabledButtonSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnHeistDataInitialized");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "DisabledButtonSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.ExecuteUbergraph_WBP_ServerBrowser_HeistButton
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_ServerBrowser_HeistButton_C::ExecuteUbergraph_WBP_ServerBrowser_HeistButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ButtonFocusedChanged");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "ExecuteUbergraph_WBP_ServerBrowser_HeistButton");
 
-	Params::WBP_ServerBrowser_HeistButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_ServerBrowser_HeistButton_C_ExecuteUbergraph_WBP_ServerBrowser_HeistButton Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_HeistButton_C::OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6");
-
-	Params::WBP_ServerBrowser_HeistButton_C_OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnFocusedChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistButton_C::OnFocusedChanged(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnFocusedChanged");
-
-	Params::WBP_ServerBrowser_HeistButton_C_OnFocusedChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnStoryButtonFocusedChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistButton_C::OnStoryButtonFocusedChanged(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnStoryButtonFocusedChanged");
-
-	Params::WBP_ServerBrowser_HeistButton_C_OnStoryButtonFocusedChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -374,32 +260,10 @@ void UWBP_ServerBrowser_HeistButton_C::InitializeButtonVisuals()
 }
 
 
-// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnStoryButtonVisibilityChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZServerBrowserStoryModeButton* StoryButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_HeistButton_C::OnStoryButtonVisibilityChanged(ESlateVisibility InVisibility, class USBZServerBrowserStoryModeButton* StoryButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnStoryButtonVisibilityChanged");
-
-	Params::WBP_ServerBrowser_HeistButton_C_OnStoryButtonVisibilityChanged Parms{};
-
-	Parms.InVisibility = InVisibility;
-	Parms.StoryButton = StoryButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.IsStoryButtonsVisibleWithController
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 bool UWBP_ServerBrowser_HeistButton_C::IsStoryButtonsVisibleWithController()
 {
@@ -419,7 +283,7 @@ bool UWBP_ServerBrowser_HeistButton_C::IsStoryButtonsVisibleWithController()
 // Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.IsStoryButtonsVisibleWithMouseAndNotHovered
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 bool UWBP_ServerBrowser_HeistButton_C::IsStoryButtonsVisibleWithMouseAndNotHovered()
 {
@@ -433,6 +297,142 @@ bool UWBP_ServerBrowser_HeistButton_C::IsStoryButtonsVisibleWithMouseAndNotHover
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnFocusChanged
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::OnFocusChanged(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnFocusChanged");
+
+	Params::WBP_ServerBrowser_HeistButton_C_OnFocusChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnFocusedChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::OnFocusedChanged(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnFocusedChanged");
+
+	Params::WBP_ServerBrowser_HeistButton_C_OnFocusedChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnHeistDataInitialized
+// (Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_HeistButton_C::OnHeistDataInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnHeistDataInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6");
+
+	Params::WBP_ServerBrowser_HeistButton_C_OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnStoryButtonFocusedChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::OnStoryButtonFocusedChanged(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnStoryButtonFocusedChanged");
+
+	Params::WBP_ServerBrowser_HeistButton_C_OnStoryButtonFocusedChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.OnStoryButtonVisibilityChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZServerBrowserStoryModeButton* StoryButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::OnStoryButtonVisibilityChanged(ESlateVisibility InVisibility, class USBZServerBrowserStoryModeButton* StoryButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "OnStoryButtonVisibilityChanged");
+
+	Params::WBP_ServerBrowser_HeistButton_C_OnStoryButtonVisibilityChanged Parms{};
+
+	Parms.InVisibility = InVisibility;
+	Parms.StoryButton = StoryButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistButton.WBP_ServerBrowser_HeistButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistButton_C", "PreConstruct");
+
+	Params::WBP_ServerBrowser_HeistButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,6 +16,297 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.AddConfig
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZCosmeticsPartSlot*&     InSlotData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartConfig*&     InConfig                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsPreviewConfig                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZModularPartConfig**           OutConfig                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::AddConfig(const class USBZCosmeticsPartSlot*& InSlotData, const class USBZModularPartConfig*& InConfig, bool IsPreviewConfig, class USBZModularPartConfig** OutConfig)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "AddConfig");
+
+	Params::WBP_UI_Cosmetic_C_AddConfig Parms{};
+
+	Parms.InSlotData = InSlotData;
+	Parms.InConfig = InConfig;
+	Parms.IsPreviewConfig = IsPreviewConfig;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutConfig != nullptr)
+		*OutConfig = Parms.OutConfig;
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.AddFilteredItem
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            Asset                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   AssetCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsStore                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZStoreBaseItem&               StoreData                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Cosmetic_C::AddFilteredItem(class USBZInventoryBaseData* Asset, int32 AssetCount, bool IsStore, struct FSBZStoreBaseItem& StoreData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "AddFilteredItem");
+
+	Params::WBP_UI_Cosmetic_C_AddFilteredItem Parms{};
+
+	Parms.Asset = Asset;
+	Parms.AssetCount = AssetCount;
+	Parms.IsStore = IsStore;
+	Parms.StoreData = std::move(StoreData);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	StoreData = std::move(Parms.StoreData);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.AddItem
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            Asset                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   AssetCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsStore                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZStoreBaseItem&               StoreData                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Cosmetic_C::AddItem(class USBZInventoryBaseData* Asset, int32 AssetCount, bool IsStore, struct FSBZStoreBaseItem& StoreData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "AddItem");
+
+	Params::WBP_UI_Cosmetic_C_AddItem Parms{};
+
+	Parms.Asset = Asset;
+	Parms.AssetCount = AssetCount;
+	Parms.IsStore = IsStore;
+	Parms.StoreData = std::move(StoreData);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	StoreData = std::move(Parms.StoreData);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature");
+
+	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+
+	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature");
+
+	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature");
+
+	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BP_OnApplyPreviewDone
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSuccess                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZMetaRequestResult                   Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::BP_OnApplyPreviewDone(bool bIsSuccess, ESBZMetaRequestResult Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BP_OnApplyPreviewDone");
+
+	Params::WBP_UI_Cosmetic_C_BP_OnApplyPreviewDone Parms{};
+
+	Parms.bIsSuccess = bIsSuccess;
+	Parms.Result = Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BP_OnBuyDone
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSuccess                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZMetaRequestResult                   Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::BP_OnBuyDone(bool bIsSuccess, ESBZMetaRequestResult Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BP_OnBuyDone");
+
+	Params::WBP_UI_Cosmetic_C_BP_OnBuyDone Parms{};
+
+	Parms.bIsSuccess = bIsSuccess;
+	Parms.Result = Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.CleanUnusedSlots
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::CleanUnusedSlots()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "CleanUnusedSlots");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.ClearCache
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::ClearCache()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "ClearCache");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.CreateSummedCost
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Cosmetic_SummedCost_C**   SummedCost                                             (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::CreateSummedCost(class UWBP_UI_Cosmetic_SummedCost_C** SummedCost)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "CreateSummedCost");
+
+	Params::WBP_UI_Cosmetic_C_CreateSummedCost Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SummedCost != nullptr)
+		*SummedCost = Parms.SummedCost;
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.EquipItem
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::EquipItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "EquipItem");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.Event On Control Reference Action
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::Event_On_Control_Reference_Action(class FName ActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "Event On Control Reference Action");
+
+	Params::WBP_UI_Cosmetic_C_Event_On_Control_Reference_Action Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.ExecuteUbergraph_WBP_UI_Cosmetic
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,6 +327,118 @@ void UWBP_UI_Cosmetic_C::ExecuteUbergraph_WBP_UI_Cosmetic(int32 EntryPoint)
 }
 
 
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.FetchCurrent
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::FetchCurrent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "FetchCurrent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.FetchCurrentEquippable
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::FetchCurrentEquippable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "FetchCurrentEquippable");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.FetchCurrentMask
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::FetchCurrentMask()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "FetchCurrentMask");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.GetEquippableConfig
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZCosmeticsPartSlot*      InSlotData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZEquippablePartConfig**        AsSBZEquippable_Part_Config                            (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::GetEquippableConfig(const class USBZCosmeticsPartSlot* InSlotData, class USBZEquippablePartConfig** AsSBZEquippable_Part_Config)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "GetEquippableConfig");
+
+	Params::WBP_UI_Cosmetic_C_GetEquippableConfig Parms{};
+
+	Parms.InSlotData = InSlotData;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AsSBZEquippable_Part_Config != nullptr)
+		*AsSBZEquippable_Part_Config = Parms.AsSBZEquippable_Part_Config;
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.GetFilteredEquippableDataMap
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*>*OutFilteredDataMap                                     (Parm, OutParm)
+
+void UWBP_UI_Cosmetic_C::GetFilteredEquippableDataMap(TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*>* OutFilteredDataMap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "GetFilteredEquippableDataMap");
+
+	Params::WBP_UI_Cosmetic_C_GetFilteredEquippableDataMap Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutFilteredDataMap != nullptr)
+		*OutFilteredDataMap = std::move(Parms.OutFilteredDataMap);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.IsSameData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            Data1                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            Data2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_UI_Cosmetic_C::IsSameData(class USBZInventoryBaseData* Data1, class USBZInventoryBaseData* Data2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "IsSameData");
+
+	Params::WBP_UI_Cosmetic_C_IsSameData Parms{};
+
+	Parms.Data1 = Data1;
+	Parms.Data2 = Data2;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnAddedToStack
 // (Event, Protected, BlueprintEvent)
 
@@ -50,120 +453,10 @@ void UWBP_UI_Cosmetic_C::OnAddedToStack()
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.RefreshOwnedItems
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::RefreshOwnedItems()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "RefreshOwnedItems");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmNotEnoughLevel
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::OnConfirmNotEnoughLevel(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmNotEnoughLevel");
-
-	Params::WBP_UI_Cosmetic_C_OnConfirmNotEnoughLevel Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmNotEnoughResources
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::OnConfirmNotEnoughResources(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmNotEnoughResources");
-
-	Params::WBP_UI_Cosmetic_C_OnConfirmNotEnoughResources Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmBuyError
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::OnConfirmBuyError(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmBuyError");
-
-	Params::WBP_UI_Cosmetic_C_OnConfirmBuyError Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BP_OnBuyDone
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSuccess                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// ESBZMetaRequestResult                   Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::BP_OnBuyDone(bool bIsSuccess, ESBZMetaRequestResult Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BP_OnBuyDone");
-
-	Params::WBP_UI_Cosmetic_C_BP_OnBuyDone Parms{};
-
-	Parms.bIsSuccess = bIsSuccess;
-	Parms.Result = Result;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnAddStoreItem
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class USBZCosmeticsDataAsset*     AssetData                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCosmeticsDataAsset*     AssetData                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZStoreBaseItem&         StoreData                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
 void UWBP_UI_Cosmetic_C::OnAddStoreItem(const class USBZCosmeticsDataAsset* AssetData, const struct FSBZStoreBaseItem& StoreData)
@@ -177,6 +470,26 @@ void UWBP_UI_Cosmetic_C::OnAddStoreItem(const class USBZCosmeticsDataAsset* Asse
 
 	Parms.AssetData = AssetData;
 	Parms.StoreData = std::move(StoreData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmApply
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::OnConfirmApply(class FName ClosingActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmApply");
+
+	Params::WBP_UI_Cosmetic_C_OnConfirmApply Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -222,19 +535,19 @@ void UWBP_UI_Cosmetic_C::OnConfirmBack(class FName ClosingActionName)
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmApply
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmBuyError
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_C::OnConfirmApply(class FName ClosingActionName)
+void UWBP_UI_Cosmetic_C::OnConfirmBuyError(class FName ClosingActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmApply");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmBuyError");
 
-	Params::WBP_UI_Cosmetic_C_OnConfirmApply Parms{};
+	Params::WBP_UI_Cosmetic_C_OnConfirmBuyError Parms{};
 
 	Parms.ClosingActionName = ClosingActionName;
 
@@ -242,151 +555,55 @@ void UWBP_UI_Cosmetic_C::OnConfirmApply(class FName ClosingActionName)
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BP_OnApplyPreviewDone
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSuccess                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// ESBZMetaRequestResult                   Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::BP_OnApplyPreviewDone(bool bIsSuccess, ESBZMetaRequestResult Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BP_OnApplyPreviewDone");
-
-	Params::WBP_UI_Cosmetic_C_BP_OnApplyPreviewDone Parms{};
-
-	Parms.bIsSuccess = bIsSuccess;
-	Parms.Result = Result;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_UI_Cosmetic_C_BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.Event On Control Reference Action
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmNotEnoughLevel
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_C::Event_On_Control_Reference_Action(class FName ActionName)
+void UWBP_UI_Cosmetic_C::OnConfirmNotEnoughLevel(class FName ClosingActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "Event On Control Reference Action");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmNotEnoughLevel");
 
-	Params::WBP_UI_Cosmetic_C_Event_On_Control_Reference_Action Parms{};
+	Params::WBP_UI_Cosmetic_C_OnConfirmNotEnoughLevel Parms{};
 
-	Parms.ActionName = ActionName;
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnConfirmNotEnoughResources
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_C::OnLostStackFocused()
+void UWBP_UI_Cosmetic_C::OnConfirmNotEnoughResources(class FName ClosingActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnConfirmNotEnoughResources");
+
+	Params::WBP_UI_Cosmetic_C_OnConfirmNotEnoughResources Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnFocusGained
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::OnFocusGained()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnFocusGained");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -412,143 +629,194 @@ void UWBP_UI_Cosmetic_C::OnGainedStackFocused(const class FName& PreviousValue)
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnFocusGained
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Cosmetic_C::OnFocusGained()
+void UWBP_UI_Cosmetic_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnFocusGained");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.ClearCache
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::ClearCache()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "ClearCache");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.FetchCurrent
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::FetchCurrent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "FetchCurrent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.FetchCurrentMask
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::FetchCurrentMask()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "FetchCurrentMask");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.FetchCurrentEquippable
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::FetchCurrentEquippable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "FetchCurrentEquippable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.AddConfig
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnItemBoxNavigation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZCosmeticsPartSlot*&     InSlotData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZModularPartConfig*&     InConfig                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsPreviewConfig                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USBZModularPartConfig**           OutConfig                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_C::AddConfig(const class USBZCosmeticsPartSlot*& InSlotData, const class USBZModularPartConfig*& InConfig, bool IsPreviewConfig, class USBZModularPartConfig** OutConfig)
+class UWidget* UWBP_UI_Cosmetic_C::OnItemBoxNavigation(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "AddConfig");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnItemBoxNavigation");
 
-	Params::WBP_UI_Cosmetic_C_AddConfig Parms{};
+	Params::WBP_UI_Cosmetic_C_OnItemBoxNavigation Parms{};
 
-	Parms.InSlotData = InSlotData;
-	Parms.InConfig = InConfig;
-	Parms.IsPreviewConfig = IsPreviewConfig;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (OutConfig != nullptr)
-		*OutConfig = Parms.OutConfig;
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UpdateMaskItems
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnItemFocusChanged
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_C::UpdateMaskItems()
+void UWBP_UI_Cosmetic_C::OnItemFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UpdateMaskItems");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnItemFocusChanged");
+
+	Params::WBP_UI_Cosmetic_C_OnItemFocusChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnItemTriggered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::OnItemTriggered(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnItemTriggered");
+
+	Params::WBP_UI_Cosmetic_C_OnItemTriggered Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnLoadingDone
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsReset                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InIsEnabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_C::OnLoadingDone(bool IsReset, bool InIsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnLoadingDone");
+
+	Params::WBP_UI_Cosmetic_C_OnLoadingDone Parms{};
+
+	Parms.IsReset = IsReset;
+	Parms.InIsEnabled = InIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UpdateEquippableItems
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWrapBox*                         WrapBox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_C::UpdateEquippableItems()
+class UWidget* UWBP_UI_Cosmetic_C::OnNavigation(EUINavigation Navigation_0, class UWrapBox* WrapBox)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UpdateEquippableItems");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnNavigation");
+
+	Params::WBP_UI_Cosmetic_C_OnNavigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+	Parms.WrapBox = WrapBox;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnPreviewChanged
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::OnPreviewChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnPreviewChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.PrePopulateItems
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Cosmetic_C::PrePopulateItems()
+void UWBP_UI_Cosmetic_C::OnRemovedFromStack()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "PrePopulateItems");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnRemovedFromStack");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnStoreItemBoxNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_Cosmetic_C::OnStoreItemBoxNavigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnStoreItemBoxNavigation");
+
+	Params::WBP_UI_Cosmetic_C_OnStoreItemBoxNavigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -580,307 +848,29 @@ void UWBP_UI_Cosmetic_C::PostPopulateItems()
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.AddFilteredItem
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            Asset                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   AssetCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsStore                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSBZStoreBaseItem&               StoreData                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_Cosmetic_C::AddFilteredItem(class USBZInventoryBaseData* Asset, int32 AssetCount, bool IsStore, struct FSBZStoreBaseItem& StoreData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "AddFilteredItem");
-
-	Params::WBP_UI_Cosmetic_C_AddFilteredItem Parms{};
-
-	Parms.Asset = Asset;
-	Parms.AssetCount = AssetCount;
-	Parms.IsStore = IsStore;
-	Parms.StoreData = std::move(StoreData);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	StoreData = std::move(Parms.StoreData);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.AddItem
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            Asset                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   AssetCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsStore                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSBZStoreBaseItem&               StoreData                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_Cosmetic_C::AddItem(class USBZInventoryBaseData* Asset, int32 AssetCount, bool IsStore, struct FSBZStoreBaseItem& StoreData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "AddItem");
-
-	Params::WBP_UI_Cosmetic_C_AddItem Parms{};
-
-	Parms.Asset = Asset;
-	Parms.AssetCount = AssetCount;
-	Parms.IsStore = IsStore;
-	Parms.StoreData = std::move(StoreData);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	StoreData = std::move(Parms.StoreData);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnItemTriggered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::OnItemTriggered(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnItemTriggered");
-
-	Params::WBP_UI_Cosmetic_C_OnItemTriggered Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnItemFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Cosmetic_C::OnItemFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnItemFocusChanged");
-
-	Params::WBP_UI_Cosmetic_C_OnItemFocusChanged Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UnequipItem
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.PrePopulateItems
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Cosmetic_C::UnequipItem()
+void UWBP_UI_Cosmetic_C::PrePopulateItems()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UnequipItem");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "PrePopulateItems");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.EquipItem
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.RefreshOwnedItems
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Cosmetic_C::EquipItem()
+void UWBP_UI_Cosmetic_C::RefreshOwnedItems()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "EquipItem");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.GetEquippableConfig
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZCosmeticsPartSlot*      InSlotData                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZEquippablePartConfig**        AsSBZEquippable_Part_Config                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::GetEquippableConfig(const class USBZCosmeticsPartSlot* InSlotData, class USBZEquippablePartConfig** AsSBZEquippable_Part_Config)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "GetEquippableConfig");
-
-	Params::WBP_UI_Cosmetic_C_GetEquippableConfig Parms{};
-
-	Parms.InSlotData = InSlotData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AsSBZEquippable_Part_Config != nullptr)
-		*AsSBZEquippable_Part_Config = Parms.AsSBZEquippable_Part_Config;
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.SetEquippableSlot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZModularPartDataAsset*   PartData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::SetEquippableSlot(const class USBZModularPartDataAsset* PartData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "SetEquippableSlot");
-
-	Params::WBP_UI_Cosmetic_C_SetEquippableSlot Parms{};
-
-	Parms.PartData = PartData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnPreviewChanged
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::OnPreviewChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnPreviewChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.IsSameData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            Data1                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZInventoryBaseData*            Data2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UWBP_UI_Cosmetic_C::IsSameData(class USBZInventoryBaseData* Data1, class USBZInventoryBaseData* Data2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "IsSameData");
-
-	Params::WBP_UI_Cosmetic_C_IsSameData Parms{};
-
-	Parms.Data1 = Data1;
-	Parms.Data2 = Data2;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.SortChangeList
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          ObjectA                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          ObjectB                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Cosmetic_C::SortChangeList(class UObject* ObjectA, class UObject* ObjectB, bool* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "SortChangeList");
-
-	Params::WBP_UI_Cosmetic_C_SortChangeList Parms{};
-
-	Parms.ObjectA = ObjectA;
-	Parms.ObjectB = ObjectB;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.GetFilteredEquippableDataMap
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*>*OutFilteredDataMap                                     (Parm, OutParm)
-
-void UWBP_UI_Cosmetic_C::GetFilteredEquippableDataMap(TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*>* OutFilteredDataMap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "GetFilteredEquippableDataMap");
-
-	Params::WBP_UI_Cosmetic_C_GetFilteredEquippableDataMap Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutFilteredDataMap != nullptr)
-		*OutFilteredDataMap = std::move(Parms.OutFilteredDataMap);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UpdateSubNavBarCounts
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::UpdateSubNavBarCounts()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UpdateSubNavBarCounts");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnLoadingDone
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsReset                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    InIsEnabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Cosmetic_C::OnLoadingDone(bool IsReset, bool InIsEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnLoadingDone");
-
-	Params::WBP_UI_Cosmetic_C_OnLoadingDone Parms{};
-
-	Parms.IsReset = IsReset;
-	Parms.InIsEnabled = InIsEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.CleanUnusedSlots
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_C::CleanUnusedSlots()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "CleanUnusedSlots");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "RefreshOwnedItems");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -908,95 +898,69 @@ void UWBP_UI_Cosmetic_C::RemoveUnusedSlots(const TArray<class USBZCosmeticsPartS
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnNavigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.SetEnabledState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWrapBox*                         WrapBox                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InIsEnabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_Cosmetic_C::OnNavigation(EUINavigation Navigation_0, class UWrapBox* WrapBox)
+void UWBP_UI_Cosmetic_C::SetEnabledState(bool InIsEnabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnNavigation");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "SetEnabledState");
 
-	Params::WBP_UI_Cosmetic_C_OnNavigation Parms{};
+	Params::WBP_UI_Cosmetic_C_SetEnabledState Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
-	Parms.WrapBox = WrapBox;
+	Parms.InIsEnabled = InIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnItemBoxNavigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.SetEquippableSlot
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartDataAsset*   PartData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_Cosmetic_C::OnItemBoxNavigation(EUINavigation Navigation_0)
+void UWBP_UI_Cosmetic_C::SetEquippableSlot(const class USBZModularPartDataAsset* PartData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnItemBoxNavigation");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "SetEquippableSlot");
 
-	Params::WBP_UI_Cosmetic_C_OnItemBoxNavigation Parms{};
+	Params::WBP_UI_Cosmetic_C_SetEquippableSlot Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
+	Parms.PartData = PartData;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.OnStoreItemBoxNavigation
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.SortChangeList
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ObjectA                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ObjectB                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_Cosmetic_C::OnStoreItemBoxNavigation(EUINavigation Navigation_0)
+void UWBP_UI_Cosmetic_C::SortChangeList(class UObject* ObjectA, class UObject* ObjectB, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "OnStoreItemBoxNavigation");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "SortChangeList");
 
-	Params::WBP_UI_Cosmetic_C_OnStoreItemBoxNavigation Parms{};
+	Params::WBP_UI_Cosmetic_C_SortChangeList Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.CreateSummedCost
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Cosmetic_SummedCost_C**   SummedCost                                             (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_C::CreateSummedCost(class UWBP_UI_Cosmetic_SummedCost_C** SummedCost)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "CreateSummedCost");
-
-	Params::WBP_UI_Cosmetic_C_CreateSummedCost Parms{};
+	Parms.ObjectA = ObjectA;
+	Parms.ObjectB = ObjectB;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (SummedCost != nullptr)
-		*SummedCost = Parms.SummedCost;
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
@@ -1009,6 +973,20 @@ void UWBP_UI_Cosmetic_C::TrySetFocusToLastButton()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "TrySetFocusToLastButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UnequipItem
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::UnequipItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UnequipItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1028,23 +1006,45 @@ void UWBP_UI_Cosmetic_C::UpdateControlReference()
 }
 
 
-// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.SetEnabledState
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UpdateEquippableItems
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InIsEnabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_Cosmetic_C::SetEnabledState(bool InIsEnabled)
+void UWBP_UI_Cosmetic_C::UpdateEquippableItems()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "SetEnabledState");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UpdateEquippableItems");
 
-	Params::WBP_UI_Cosmetic_C_SetEnabledState Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InIsEnabled = InIsEnabled;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UpdateMaskItems
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::UpdateMaskItems()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UpdateMaskItems");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic.WBP_UI_Cosmetic_C.UpdateSubNavBarCounts
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_C::UpdateSubNavBarCounts()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_C", "UpdateSubNavBarCounts");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

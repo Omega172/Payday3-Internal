@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorModCategoryButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorModCategoryButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorModCategoryButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -50,41 +90,21 @@ void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::OnArmorModCategoryDataIntia
 }
 
 
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InIsFocused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::OnFocusChanged(bool InIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorModCategoryButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorModCategoryButton_C", "OnFocusChanged");
 
-	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_OnFocusChanged Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorModCategoryButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.InIsFocused = InIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -107,7 +127,7 @@ void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::OnInitialized()
 // Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -119,26 +139,6 @@ void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::PreConstruct(bool IsDesignT
 	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InIsFocused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MainMenu_Loadout_ArmorModCategoryButton_C::OnFocusChanged(bool InIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorModCategoryButton_C", "OnFocusChanged");
-
-	Params::WBP_MainMenu_Loadout_ArmorModCategoryButton_C_OnFocusChanged Parms{};
-
-	Parms.InIsFocused = InIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

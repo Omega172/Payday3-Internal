@@ -17,19 +17,19 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BackItemBagBase.BP_BackItemBagBase_C
-// 0x0018 (0x0318 - 0x0300)
+// 0x0018 (0x03B0 - 0x0398)
 class ABP_BackItemBagBase_C : public ASBZCarriedBag
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        EndPlayNiagaraTransform;                           // 0x0308(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraSystem*                         End_Play_Niagara_System;                           // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        EndPlayNiagaraTransform;                           // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraSystem*                         End_Play_Niagara_System;                           // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
+	void BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent);
 	void ExecuteUbergraph_BP_BackItemBagBase(int32 EntryPoint);
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent);
-	void BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
 
 public:
 	static class UClass* StaticClass()

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PD3_UIManager.PD3_UIManager_C
-// 0x0000 (0x05D8 - 0x05D8)
+// 0x0000 (0x0590 - 0x0590)
 class UPD3_UIManager_C final : public USBZUIManager
 {
 public:

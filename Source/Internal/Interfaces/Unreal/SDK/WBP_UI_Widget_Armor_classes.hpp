@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_Armor.WBP_UI_Widget_Armor_C
-// 0x0000 (0x0360 - 0x0360)
+// 0x0000 (0x03C0 - 0x03C0)
 class UWBP_UI_Widget_Armor_C final : public USBZArmorWidget
 {
 public:

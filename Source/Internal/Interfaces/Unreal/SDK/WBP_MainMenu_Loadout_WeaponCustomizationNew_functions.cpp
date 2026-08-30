@@ -50,20 +50,6 @@ void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnAddedToStack()
 }
 
 
-// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnBackPressed
 // (Event, Protected, BlueprintEvent)
 
@@ -81,8 +67,8 @@ void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnBackPressed()
 // Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnCategoryButtonFocused
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnCategoryButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
 {
@@ -120,20 +106,6 @@ void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnControlsReferenceClicked(
 }
 
 
-// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -154,15 +126,29 @@ void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnGainedStackFocused(const 
 }
 
 
-// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.UpdateControlsReference
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::UpdateControlsReference()
+void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "UpdateControlsReference");
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnRemovedFromStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "OnRemovedFromStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -177,6 +163,20 @@ void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::SetCategoryPadding()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "SetCategoryPadding");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.UpdateControlsReference
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::UpdateControlsReference()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "UpdateControlsReference");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

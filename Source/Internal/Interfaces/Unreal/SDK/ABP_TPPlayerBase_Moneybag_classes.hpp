@@ -10,41 +10,43 @@
 
 #include "Basic.hpp"
 
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C
-// 0x0FE0 (0x12A0 - 0x02C0)
+// 0x1170 (0x1540 - 0x03D0)
 class UABP_TPPlayerBase_Moneybag_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_2B8[0x8];                                      // 0x02B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x02C8(0x0048)()
-	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0310(0x0960)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0C70(0x0030)()
-	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0CA0(0x01E8)(ContainsInstancedReference)
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0E88(0x0030)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_2;                        // 0x0EB8(0x0138)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x0FF0(0x0138)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x1128(0x0138)()
-	class USkeletalMeshComponent*                 ParentSkeletalMeshComponent;                       // 0x1260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1268[0x8];                                     // 0x1268(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             StrapTransformOffset;                              // 0x1270(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3C8[0x8];                                      // 0x03C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x03D8(0x0008)()
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x03E0(0x0008)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x03E8(0x0030)()
+	uint8                                         Pad_418[0x8];                                      // 0x0418(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0420(0x0AA0)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0EC0(0x0030)()
+	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0EF0(0x0168)(ContainsInstancedReference)
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x1058(0x0030)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_2;                        // 0x1088(0x0170)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x11F8(0x0170)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x1368(0x0170)()
+	class USkeletalMeshComponent*                 ParentSkeletalMeshComponent;                       // 0x14D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             StrapTransformOffset;                              // 0x14E0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_ABP_TPPlayerBase_Moneybag(int32 EntryPoint);
+	void AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AttachmentComplete(class USkeletalMeshComponent* InParentSkeletalMeshComponent);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag_AnimGraphNode_ModifyBone_3E69C58743103825A6B13EB3F5948D6E();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag_AnimGraphNode_ModifyBone_44BAAE3A4110178DD565DDAEA5F5850A();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag_AnimGraphNode_ModifyBone_4ECBE8F8440B514D16F55FA0EB79E92E();
-	void AttachmentComplete(class USkeletalMeshComponent* InParentSkeletalMeshComponent);
-	void AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void ExecuteUbergraph_ABP_TPPlayerBase_Moneybag(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

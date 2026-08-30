@@ -36,6 +36,20 @@ void UWBP_UI_WidgetDebugPing_C::ExecuteUbergraph_WBP_UI_WidgetDebugPing(int32 En
 }
 
 
+// Function WBP_UI_WidgetDebugPing.WBP_UI_WidgetDebugPing_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_WidgetDebugPing_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WidgetDebugPing_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_WidgetDebugPing.WBP_UI_WidgetDebugPing_C.OnPingValueChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -53,20 +67,6 @@ void UWBP_UI_WidgetDebugPing_C::OnPingValueChanged(const int32 PingValue)
 	Parms.PingValue = PingValue;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WidgetDebugPing.WBP_UI_WidgetDebugPing_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_WidgetDebugPing_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WidgetDebugPing_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

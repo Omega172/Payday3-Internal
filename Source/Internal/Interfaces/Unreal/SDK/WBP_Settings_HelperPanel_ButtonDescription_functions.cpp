@@ -16,6 +16,28 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C.ButtonFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSettingsButton*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_HelperPanel_ButtonDescription_C::ButtonFocusChanged(class USBZSettingsButton* Button, bool IsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_HelperPanel_ButtonDescription_C", "ButtonFocusChanged");
+
+	Params::WBP_Settings_HelperPanel_ButtonDescription_C_ButtonFocusChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.IsFocused = IsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C.ExecuteUbergraph_WBP_Settings_HelperPanel_ButtonDescription
 // (Final, UbergraphFunction)
 // Parameters:
@@ -61,28 +83,6 @@ void UWBP_Settings_HelperPanel_ButtonDescription_C::UpdatePanelDescriptions()
 		Func = Class->GetFunction("WBP_Settings_HelperPanel_ButtonDescription_C", "UpdatePanelDescriptions");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C.ButtonFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSettingsButton*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_HelperPanel_ButtonDescription_C::ButtonFocusChanged(class USBZSettingsButton* Button, bool IsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_HelperPanel_ButtonDescription_C", "ButtonFocusChanged");
-
-	Params::WBP_Settings_HelperPanel_ButtonDescription_C_ButtonFocusChanged Parms{};
-
-	Parms.Button = Button;
-	Parms.IsFocused = IsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

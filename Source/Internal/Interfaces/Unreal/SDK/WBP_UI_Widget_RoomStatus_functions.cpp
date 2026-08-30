@@ -36,74 +36,6 @@ void UWBP_UI_Widget_RoomStatus_C::ExecuteUbergraph_WBP_UI_Widget_RoomStatus(int3
 }
 
 
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnHeistGoneLoud
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Widget_RoomStatus_C::OnHeistGoneLoud()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnHeistGoneLoud");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomTypeChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZRoomType                            InRoomType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_RoomStatus_C::OnRoomTypeChanged(ESBZRoomType InRoomType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnRoomTypeChanged");
-
-	Params::WBP_UI_Widget_RoomStatus_C_OnRoomTypeChanged Parms{};
-
-	Parms.InRoomType = InRoomType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnNoRoomData
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Widget_RoomStatus_C::OnNoRoomData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnNoRoomData");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZRoomVolume*                   RoomVolume                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_RoomStatus_C::OnRoomChanged(class ASBZRoomVolume* RoomVolume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnRoomChanged");
-
-	Params::WBP_UI_Widget_RoomStatus_C_OnRoomChanged Parms{};
-
-	Parms.RoomVolume = RoomVolume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.GetColorForState
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -128,21 +60,69 @@ void UWBP_UI_Widget_RoomStatus_C::GetColorForState(ESBZRoomType RoomType_0, stru
 }
 
 
-// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.SetRoomTypeText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZRoomType                            RoomType_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnHeistGoneLoud
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Widget_RoomStatus_C::SetRoomTypeText(ESBZRoomType RoomType_0)
+void UWBP_UI_Widget_RoomStatus_C::OnHeistGoneLoud()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "SetRoomTypeText");
+		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnHeistGoneLoud");
 
-	Params::WBP_UI_Widget_RoomStatus_C_SetRoomTypeText Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.RoomType_0 = RoomType_0;
+
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnNoRoomData
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Widget_RoomStatus_C::OnNoRoomData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnNoRoomData");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZRoomVolume*                   RoomVolume                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_RoomStatus_C::OnRoomChanged(class ASBZRoomVolume* RoomVolume)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnRoomChanged");
+
+	Params::WBP_UI_Widget_RoomStatus_C_OnRoomChanged Parms{};
+
+	Parms.RoomVolume = RoomVolume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.OnRoomTypeChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZRoomType                            InRoomType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_RoomStatus_C::OnRoomTypeChanged(ESBZRoomType InRoomType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "OnRoomTypeChanged");
+
+	Params::WBP_UI_Widget_RoomStatus_C_OnRoomTypeChanged Parms{};
+
+	Parms.InRoomType = InRoomType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -163,6 +143,26 @@ void UWBP_UI_Widget_RoomStatus_C::SetRoomName(const class FText& InRoomName)
 	Params::WBP_UI_Widget_RoomStatus_C_SetRoomName Parms{};
 
 	Parms.InRoomName = std::move(InRoomName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_RoomStatus.WBP_UI_Widget_RoomStatus_C.SetRoomTypeText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZRoomType                            RoomType_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_RoomStatus_C::SetRoomTypeText(ESBZRoomType RoomType_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_RoomStatus_C", "SetRoomTypeText");
+
+	Params::WBP_UI_Widget_RoomStatus_C_SetRoomTypeText Parms{};
+
+	Parms.RoomType_0 = RoomType_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

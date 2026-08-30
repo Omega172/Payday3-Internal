@@ -40,20 +40,19 @@ public:
 DUMPER7_ASSERTS_UAnimationBudgetBlueprintLibrary;
 
 // Class AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
-// 0x0040 (0x1000 - 0x0FC0)
-#pragma pack(push, 0x1)
-class SDK_ALIGN(0x10) USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
+// 0x0030 (0x1010 - 0x0FE0)
+class USkeletalMeshComponentBudgeted : public USkeletalMeshComponent
 {
 public:
-	uint8                                         Pad_FC0[0x24];                                     // 0x0FC0(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bAutoRegisterWithBudgetAllocator : 1;              // 0x0FE4(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bAutoCalculateSignificance : 1;                    // 0x0FE4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bShouldUseActorRenderedFlag : 1;                   // 0x0FE4(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	bool                                          bOptimizeUsingRenderedOnScreen;                    // 0x0FE5(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_FE6[0x2];                                      // 0x0FE6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DistFromCameraToBeConsideredClose;                 // 0x0FE8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RenderedOnScreenTimeTolerance;                     // 0x0FEC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_FF0[0x8];                                      // 0x0FF0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_FE0[0x24];                                     // 0x0FE0(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bAutoRegisterWithBudgetAllocator : 1;              // 0x1004(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bAutoCalculateSignificance : 1;                    // 0x1004(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bShouldUseActorRenderedFlag : 1;                   // 0x1004(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         BitPad_1004_3 : 2;                                 // 0x1004(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         bOptimizeUsingRenderedOnScreen : 1;                // 0x1004(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         Pad_1005[0x3];                                     // 0x1005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DistFromCameraToBeConsideredClose;                 // 0x1008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RenderedOnScreenTimeTolerance;                     // 0x100C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator);
@@ -72,7 +71,6 @@ public:
 		return GetDefaultObjImpl<USkeletalMeshComponentBudgeted>();
 	}
 };
-#pragma pack(pop)
 DUMPER7_ASSERTS_USkeletalMeshComponentBudgeted;
 
 SDK_NAMESPACE_END

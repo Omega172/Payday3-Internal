@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_KeyItemContainer.WBP_UI_KeyItemContainer_C
-// 0x0000 (0x02D0 - 0x02D0)
+// 0x0000 (0x0330 - 0x0330)
 class UWBP_UI_KeyItemContainer_C final : public UPD3KeyItemContainer
 {
 public:

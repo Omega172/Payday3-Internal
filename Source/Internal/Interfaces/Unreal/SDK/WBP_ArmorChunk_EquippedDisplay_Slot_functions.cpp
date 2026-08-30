@@ -39,7 +39,7 @@ void UWBP_ArmorChunk_EquippedDisplay_Slot_C::ExecuteUbergraph_WBP_ArmorChunk_Equ
 // Function WBP_ArmorChunk_EquippedDisplay_Slot.WBP_ArmorChunk_EquippedDisplay_Slot_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ArmorChunk_EquippedDisplay_Slot_C::PreConstruct(bool IsDesignTime)
 {

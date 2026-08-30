@@ -12,29 +12,29 @@
 
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "UMG_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DailyChallengeReward.WBP_DailyChallengeReward_C
-// 0x0058 (0x02E8 - 0x0290)
+// 0x0060 (0x0350 - 0x02F0)
 class UWBP_DailyChallengeReward_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZUITextBlock*                        Amount_T;                                          // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_I;                                            // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSBZChallengeRewardItem                In_Reward_Item;                                    // 0x02A8(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UPaperSprite*                           GoldIcon;                                          // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              ImageSize;                                         // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZUITextBlock*                        Amount_T;                                          // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_I;                                            // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSBZChallengeRewardItem                In_Reward_Item;                                    // 0x0308(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UPaperSprite*                           GoldIcon;                                          // 0x0338(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              ImageSize;                                         // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_DailyChallengeReward(int32 EntryPoint);
+	void InitializeInfamyReward(int32 InInfamy);
 	void InitializeReward(const struct FSBZChallengeRewardItem& InRewardItem);
 	void PreConstruct(bool IsDesignTime);
-	void InitializeInfamyReward(int32 InInfamy);
 
 public:
 	static class UClass* StaticClass()

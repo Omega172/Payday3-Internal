@@ -16,61 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.ExecuteUbergraph_WBP_UI_CreateAccount
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__Button_Back_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_UI_CreateAccount_C::ExecuteUbergraph_WBP_UI_CreateAccount(int32 EntryPoint)
+void UWBP_UI_CreateAccount_C::BndEvt__Button_Back_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "ExecuteUbergraph_WBP_UI_CreateAccount");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__Button_Back_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
 
-	Params::WBP_UI_CreateAccount_C_ExecuteUbergraph_WBP_UI_CreateAccount Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CreateAccount_C::BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
-	Params::WBP_UI_CreateAccount_C_BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CreateAccount_C::BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_CreateAccount_C_BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -90,50 +66,6 @@ void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_Country_K2Node_ComponentBo
 		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_Country_K2Node_ComponentBoundEvent_11_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
 	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_Country_K2Node_ComponentBoundEvent_11_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature");
-
-	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
-
-	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
 	Parms.Text = std::move(Text);
 	Parms.CommitMethod = CommitMethod;
@@ -164,43 +96,23 @@ void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_Displayname_K2Node_Compone
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
-	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_DOB_K2Node_ComponentBoundEvent_10_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
 	Parms.Text = std::move(Text);
 	Parms.CommitMethod = CommitMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CreateAccount_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "OnGainedStackFocused");
-
-	Params::WBP_UI_CreateAccount_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -220,28 +132,6 @@ void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_Email_K2Node_ComponentBoun
 		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_6_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
 	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_6_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature");
-
-	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_ConfirmPassword_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
 	Parms.Text = std::move(Text);
 	Parms.CommitMethod = CommitMethod;
@@ -272,29 +162,119 @@ void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_Password_K2Node_ComponentB
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__Button_Back_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CreateAccount_C::BndEvt__Button_Back_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
+void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__Button_Back_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_Username_K2Node_ComponentBoundEvent_5_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CreateAccount_C::OnLostStackFocused()
+void UWBP_UI_CreateAccount_C::BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::WBP_UI_CreateAccount_C_BndEvt__EditableTextBox_VerifyInput_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CreateAccount_C::BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_CreateAccount_C_BndEvt__WBP_UI_CreateAccount_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CreateAccount_C::BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_CreateAccount_C_BndEvt__WBP_UI_CreateAccount_Button_VerifyAccount_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.ExecuteUbergraph_WBP_UI_CreateAccount
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CreateAccount_C::ExecuteUbergraph_WBP_UI_CreateAccount(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "ExecuteUbergraph_WBP_UI_CreateAccount");
+
+	Params::WBP_UI_CreateAccount_C_ExecuteUbergraph_WBP_UI_CreateAccount Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.GetDefaultUsername
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_CreateAccount_C::GetDefaultUsername()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "GetDefaultUsername");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -314,38 +294,37 @@ void UWBP_UI_CreateAccount_C::OnBackPressed()
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.TogglePopUp
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CreateAccount_C::TogglePopUp()
+void UWBP_UI_CreateAccount_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "TogglePopUp");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "OnGainedStackFocused");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_CreateAccount_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.SubmitRegistrationForm
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   bWasSuccessful                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_CreateAccount_C::SubmitRegistrationForm(bool* bWasSuccessful)
+void UWBP_UI_CreateAccount_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "SubmitRegistrationForm");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "OnLostStackFocused");
 
-	Params::WBP_UI_CreateAccount_C_SubmitRegistrationForm Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bWasSuccessful != nullptr)
-		*bWasSuccessful = Parms.bWasSuccessful;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -363,15 +342,36 @@ void UWBP_UI_CreateAccount_C::PasswordCheck()
 }
 
 
-// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.GetDefaultUsername
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.SubmitRegistrationForm
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bWasSuccessful                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CreateAccount_C::GetDefaultUsername()
+void UWBP_UI_CreateAccount_C::SubmitRegistrationForm(bool* bWasSuccessful)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "GetDefaultUsername");
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "SubmitRegistrationForm");
+
+	Params::WBP_UI_CreateAccount_C_SubmitRegistrationForm Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bWasSuccessful != nullptr)
+		*bWasSuccessful = Parms.bWasSuccessful;
+}
+
+
+// Function WBP_UI_CreateAccount.WBP_UI_CreateAccount_C.TogglePopUp
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_CreateAccount_C::TogglePopUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CreateAccount_C", "TogglePopUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

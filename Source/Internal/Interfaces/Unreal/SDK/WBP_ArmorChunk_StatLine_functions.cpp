@@ -39,7 +39,7 @@ void UWBP_ArmorChunk_StatLine_C::ExecuteUbergraph_WBP_ArmorChunk_StatLine(int32 
 // Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ArmorChunk_StatLine_C::PreConstruct(bool IsDesignTime)
 {
@@ -56,52 +56,12 @@ void UWBP_ArmorChunk_StatLine_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetValue
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ArmorChunk_StatLine_C::SetValue(int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ArmorChunk_StatLine_C", "SetValue");
-
-	Params::WBP_ArmorChunk_StatLine_C_SetValue Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetPlateRegen
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   PlateRegen                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ArmorChunk_StatLine_C::SetPlateRegen(float PlateRegen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ArmorChunk_StatLine_C", "SetPlateRegen");
-
-	Params::WBP_ArmorChunk_StatLine_C_SetPlateRegen Parms{};
-
-	Parms.PlateRegen = PlateRegen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetAmmoCapacity
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   AmmoCap                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  AmmoCap                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ArmorChunk_StatLine_C::SetAmmoCapacity(float AmmoCap)
+void UWBP_ArmorChunk_StatLine_C::SetAmmoCapacity(double AmmoCap)
 {
 	static class UFunction* Func = nullptr;
 
@@ -111,6 +71,26 @@ void UWBP_ArmorChunk_StatLine_C::SetAmmoCapacity(float AmmoCap)
 	Params::WBP_ArmorChunk_StatLine_C_SetAmmoCapacity Parms{};
 
 	Parms.AmmoCap = AmmoCap;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetPlateRegen
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  PlateRegen                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ArmorChunk_StatLine_C::SetPlateRegen(double PlateRegen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ArmorChunk_StatLine_C", "SetPlateRegen");
+
+	Params::WBP_ArmorChunk_StatLine_C_SetPlateRegen Parms{};
+
+	Parms.PlateRegen = PlateRegen;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -131,6 +111,26 @@ void UWBP_ArmorChunk_StatLine_C::SetSpeedPenalty(ESBZArmorSpeedPenalty SpeedPena
 	Params::WBP_ArmorChunk_StatLine_C_SetSpeedPenalty Parms{};
 
 	Parms.SpeedPenalty = SpeedPenalty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetValue
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ArmorChunk_StatLine_C::SetValue(int32 Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ArmorChunk_StatLine_C", "SetValue");
+
+	Params::WBP_ArmorChunk_StatLine_C_SetValue Parms{};
+
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

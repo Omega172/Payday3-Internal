@@ -295,24 +295,25 @@ public:
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_SetPolygonPolygonGroup;
 
-// Function MeshDescription.MeshDescriptionBase.SetPolygonVertexInstance
-// 0x000C (0x000C - 0x0000)
-struct MeshDescriptionBase_SetPolygonVertexInstance final
+// Function MeshDescription.MeshDescriptionBase.SetPolygonVertexInstances
+// 0x0018 (0x0018 - 0x0000)
+struct MeshDescriptionBase_SetPolygonVertexInstances final
 {
 public:
 	struct FPolygonID                             PolygonID;                                         // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PerimeterIndex;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVertexInstanceID                      VertexInstanceID;                                  // 0x0008(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FVertexInstanceID>              VertexInstanceIDs;                                 // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_MeshDescriptionBase_SetPolygonVertexInstance;
+DUMPER7_ASSERTS_MeshDescriptionBase_SetPolygonVertexInstances;
 
 // Function MeshDescription.MeshDescriptionBase.SetVertexPosition
-// 0x0010 (0x0010 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct MeshDescriptionBase_SetVertexPosition final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Position;                                          // 0x0004(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Position;                                          // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_SetVertexPosition;
 
@@ -337,6 +338,15 @@ public:
 	TArray<struct FTriangleID>                    OutConnectedTriangleIDs;                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_GetEdgeConnectedTriangles;
+
+// Function MeshDescription.MeshDescriptionBase.GetEdgeCount
+// 0x0004 (0x0004 - 0x0000)
+struct MeshDescriptionBase_GetEdgeCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshDescriptionBase_GetEdgeCount;
 
 // Function MeshDescription.MeshDescriptionBase.GetEdgeVertex
 // 0x000C (0x000C - 0x0000)
@@ -491,6 +501,24 @@ public:
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_GetPolygonAdjacentPolygons;
 
+// Function MeshDescription.MeshDescriptionBase.GetPolygonCount
+// 0x0004 (0x0004 - 0x0000)
+struct MeshDescriptionBase_GetPolygonCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshDescriptionBase_GetPolygonCount;
+
+// Function MeshDescription.MeshDescriptionBase.GetPolygonGroupCount
+// 0x0004 (0x0004 - 0x0000)
+struct MeshDescriptionBase_GetPolygonGroupCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshDescriptionBase_GetPolygonGroupCount;
+
 // Function MeshDescription.MeshDescriptionBase.GetPolygonGroupPolygons
 // 0x0018 (0x0018 - 0x0000)
 struct MeshDescriptionBase_GetPolygonGroupPolygons final
@@ -577,6 +605,15 @@ public:
 	TArray<struct FTriangleID>                    OutTriangleIDs;                                    // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_GetTriangleAdjacentTriangles;
+
+// Function MeshDescription.MeshDescriptionBase.GetTriangleCount
+// 0x0004 (0x0004 - 0x0000)
+struct MeshDescriptionBase_GetTriangleCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshDescriptionBase_GetTriangleCount;
 
 // Function MeshDescription.MeshDescriptionBase.GetTriangleEdges
 // 0x0018 (0x0018 - 0x0000)
@@ -686,6 +723,15 @@ public:
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_GetVertexConnectedTriangles;
 
+// Function MeshDescription.MeshDescriptionBase.GetVertexCount
+// 0x0004 (0x0004 - 0x0000)
+struct MeshDescriptionBase_GetVertexCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshDescriptionBase_GetVertexCount;
+
 // Function MeshDescription.MeshDescriptionBase.GetVertexInstanceConnectedPolygons
 // 0x0018 (0x0018 - 0x0000)
 struct MeshDescriptionBase_GetVertexInstanceConnectedPolygons final
@@ -707,6 +753,15 @@ public:
 	TArray<struct FTriangleID>                    OutConnectedTriangleIDs;                           // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_GetVertexInstanceConnectedTriangles;
+
+// Function MeshDescription.MeshDescriptionBase.GetVertexInstanceCount
+// 0x0004 (0x0004 - 0x0000)
+struct MeshDescriptionBase_GetVertexInstanceCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshDescriptionBase_GetVertexInstanceCount;
 
 // Function MeshDescription.MeshDescriptionBase.GetVertexInstanceForPolygonVertex
 // 0x000C (0x000C - 0x0000)
@@ -763,12 +818,13 @@ public:
 DUMPER7_ASSERTS_MeshDescriptionBase_GetVertexPairEdge;
 
 // Function MeshDescription.MeshDescriptionBase.GetVertexPosition
-// 0x0010 (0x0010 - 0x0000)
+// 0x0020 (0x0020 - 0x0000)
 struct MeshDescriptionBase_GetVertexPosition final
 {
 public:
 	struct FVertexID                              VertexID;                                          // 0x0000(0x0004)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReturnValue;                                       // 0x0004(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ReturnValue;                                       // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MeshDescriptionBase_GetVertexPosition;
 

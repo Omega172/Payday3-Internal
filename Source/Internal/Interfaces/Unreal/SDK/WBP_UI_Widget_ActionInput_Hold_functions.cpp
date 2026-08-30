@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.ActionPressed
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_ActionInput_Hold_C::ActionPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "ActionPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.ActionReleased
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_ActionInput_Hold_C::ActionReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "ActionReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.ExecuteUbergraph_WBP_UI_Widget_ActionInput_Hold
 // (Final, UbergraphFunction)
 // Parameters:
@@ -50,38 +78,10 @@ void UWBP_UI_Widget_ActionInput_Hold_C::OnInitialized()
 }
 
 
-// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.ActionReleased
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_ActionInput_Hold_C::ActionReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "ActionReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.ActionPressed
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_ActionInput_Hold_C::ActionPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "ActionPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ActionInput_Hold_C::PreConstruct(bool IsDesignTime)
 {
@@ -95,40 +95,6 @@ void UWBP_UI_Widget_ActionInput_Hold_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.UpdateProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_ActionInput_Hold_C::UpdateProgress(float Progress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "UpdateProgress");
-
-	Params::WBP_UI_Widget_ActionInput_Hold_C_UpdateProgress Parms{};
-
-	Parms.Progress = Progress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.SetInvertOnPress
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_ActionInput_Hold_C::SetInvertOnPress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "SetInvertOnPress");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -152,6 +118,40 @@ void UWBP_UI_Widget_ActionInput_Hold_C::SetColourOnPress(const struct FLinearCol
 }
 
 
+// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.SetInvertOnPress
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_ActionInput_Hold_C::SetInvertOnPress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "SetInvertOnPress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.SetProgressBarVisiblity
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bVisibility                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_ActionInput_Hold_C::SetProgressBarVisiblity(bool bVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "SetProgressBarVisiblity");
+
+	Params::WBP_UI_Widget_ActionInput_Hold_C_SetProgressBarVisiblity Parms{};
+
+	Parms.bVisibility = bVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.UpdatePressedState
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -166,21 +166,21 @@ void UWBP_UI_Widget_ActionInput_Hold_C::UpdatePressedState()
 }
 
 
-// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.SetProgressBarVisiblity
+// Function WBP_UI_Widget_ActionInput_Hold.WBP_UI_Widget_ActionInput_Hold_C.UpdateProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bVisibility                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// double                                  Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_ActionInput_Hold_C::SetProgressBarVisiblity(bool bVisibility)
+void UWBP_UI_Widget_ActionInput_Hold_C::UpdateProgress(double Progress)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "SetProgressBarVisiblity");
+		Func = Class->GetFunction("WBP_UI_Widget_ActionInput_Hold_C", "UpdateProgress");
 
-	Params::WBP_UI_Widget_ActionInput_Hold_C_SetProgressBarVisiblity Parms{};
+	Params::WBP_UI_Widget_ActionInput_Hold_C_UpdateProgress Parms{};
 
-	Parms.bVisibility = bVisibility;
+	Parms.Progress = Progress;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

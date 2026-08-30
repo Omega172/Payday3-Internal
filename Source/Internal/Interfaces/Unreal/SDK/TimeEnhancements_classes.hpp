@@ -80,15 +80,15 @@ public:
 DUMPER7_ASSERTS_UDelegateTimer;
 
 // Class TimeEnhancements.FiniteStateMachineComponent
-// 0x0038 (0x00F8 - 0x00C0)
+// 0x0038 (0x00E0 - 0x00A8)
 class UFiniteStateMachineComponent final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(class UFiniteStateMachineComponent* FSM, class FName State, EFiniteStateMachineStateEvent StateEvent)> StateEvent; // 0x00C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	class FName                                   InitialState;                                      // 0x00D0(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   State;                                             // 0x00DC(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   LocalState;                                        // 0x00E8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(class UFiniteStateMachineComponent* FSM, class FName State, EFiniteStateMachineStateEvent StateEvent)> StateEvent; // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	class FName                                   InitialState;                                      // 0x00B8(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   State;                                             // 0x00C4(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   LocalState;                                        // 0x00D0(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRep_State();

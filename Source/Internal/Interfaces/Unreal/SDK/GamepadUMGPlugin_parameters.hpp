@@ -19,7 +19,7 @@ SDK_PARAM_NAMESPACE_START
 struct VirtualCursorFunctionLibrary_DisableVirtualCursor final
 {
 public:
-	class APlayerController*                      PC;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PC;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_VirtualCursorFunctionLibrary_DisableVirtualCursor;
 
@@ -28,7 +28,7 @@ DUMPER7_ASSERTS_VirtualCursorFunctionLibrary_DisableVirtualCursor;
 struct VirtualCursorFunctionLibrary_EnableVirtualCursor final
 {
 public:
-	class APlayerController*                      PC;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PC;                                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_VirtualCursorFunctionLibrary_EnableVirtualCursor;
 

@@ -18,28 +18,28 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C
-// 0x0080 (0x0320 - 0x02A0)
+// 0x0080 (0x0380 - 0x0300)
 class UWBP_UI_Overskill_Level_C final : public USBZOverskillWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Background_I;                                      // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                                Border_B;                                          // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        LevelNumber_T;                                     // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 LockIcon_I;                                        // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<struct FLinearColor, class FText>        UnlockedColor;                                     // 0x02C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         IndexValue;                                        // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSmallBox;                                       // 0x031C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Background_I;                                      // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                                Border_B;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        LevelNumber_T;                                     // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 LockIcon_I;                                        // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<struct FLinearColor, class FText>        UnlockedColor;                                     // 0x0328(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         IndexValue;                                        // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSmallBox;                                       // 0x037C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Overskill_Level(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress);
-	void SetLevelVisuals(int32 Index_0);
-	void SetColorVisuals(bool IsLocked);
+	void GetCurrentLevel(double Progress_0, int32* CurrentLevel);
 	void GetKeyColor(struct FLinearColor* OutColor);
 	void GetValueText(class FText* OutText);
-	void GetCurrentLevel(float Progress_0, int32* CurrentLevel);
+	void OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress);
+	void PreConstruct(bool IsDesignTime);
+	void SetColorVisuals(bool IsLocked);
+	void SetLevelVisuals(int32 Index_0);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_SM_ActionPhaseMenu.WBP_UI_SM_ActionPhaseMenu_C.BP_OnPausedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsPaused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_ActionPhaseMenu_C::BP_OnPausedChanged(bool bInIsPaused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseMenu_C", "BP_OnPausedChanged");
+
+	Params::WBP_UI_SM_ActionPhaseMenu_C_BP_OnPausedChanged Parms{};
+
+	Parms.bInIsPaused = bInIsPaused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_SM_ActionPhaseMenu.WBP_UI_SM_ActionPhaseMenu_C.ExecuteUbergraph_WBP_UI_SM_ActionPhaseMenu
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,44 +56,10 @@ void UWBP_UI_SM_ActionPhaseMenu_C::ExecuteUbergraph_WBP_UI_SM_ActionPhaseMenu(in
 }
 
 
-// Function WBP_UI_SM_ActionPhaseMenu.WBP_UI_SM_ActionPhaseMenu_C.OnSocialsMenuActionPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_ActionPhaseMenu_C::OnSocialsMenuActionPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseMenu_C", "OnSocialsMenuActionPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_ActionPhaseMenu.WBP_UI_SM_ActionPhaseMenu_C.BP_OnPausedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsPaused                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_SM_ActionPhaseMenu_C::BP_OnPausedChanged(bool bInIsPaused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseMenu_C", "BP_OnPausedChanged");
-
-	Params::WBP_UI_SM_ActionPhaseMenu_C_BP_OnPausedChanged Parms{};
-
-	Parms.bInIsPaused = bInIsPaused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_SM_ActionPhaseMenu.WBP_UI_SM_ActionPhaseMenu_C.OnMenuShown
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsShown                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsShown                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SM_ActionPhaseMenu_C::OnMenuShown(bool bIsShown)
 {
@@ -87,6 +73,20 @@ void UWBP_UI_SM_ActionPhaseMenu_C::OnMenuShown(bool bIsShown)
 	Parms.bIsShown = bIsShown;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_ActionPhaseMenu.WBP_UI_SM_ActionPhaseMenu_C.OnSocialsMenuActionPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_ActionPhaseMenu_C::OnSocialsMenuActionPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseMenu_C", "OnSocialsMenuActionPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

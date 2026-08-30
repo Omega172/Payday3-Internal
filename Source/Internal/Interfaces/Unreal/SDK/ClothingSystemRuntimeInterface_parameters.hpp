@@ -17,11 +17,11 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.EnableGravityOverride
-// 0x000C (0x000C - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct ClothingSimulationInteractor_EnableGravityOverride final
 {
 public:
-	struct FVector                                InVector;                                          // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                InVector;                                          // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ClothingSimulationInteractor_EnableGravityOverride;
 
@@ -33,6 +33,15 @@ public:
 	float                                         InStiffness;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ClothingSimulationInteractor_SetAnimDriveSpringStiffness;
+
+// Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetMaxNumIterations
+// 0x0004 (0x0004 - 0x0000)
+struct ClothingSimulationInteractor_SetMaxNumIterations final
+{
+public:
+	int32                                         MaxNumIterations;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ClothingSimulationInteractor_SetMaxNumIterations;
 
 // Function ClothingSystemRuntimeInterface.ClothingSimulationInteractor.SetNumIterations
 // 0x0004 (0x0004 - 0x0000)
@@ -58,7 +67,7 @@ struct ClothingSimulationInteractor_GetClothingInteractor final
 {
 public:
 	class FString                                 ClothingAssetName;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClothingInteractor*                    ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClothingInteractor*                    ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ClothingSimulationInteractor_GetClothingInteractor;
 

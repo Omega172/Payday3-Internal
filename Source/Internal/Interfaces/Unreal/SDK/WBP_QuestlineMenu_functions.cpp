@@ -16,6 +16,74 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.AddQuestButtonToCorrectChapter
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_QuestLine_Item_C*            QuestLineItem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::AddQuestButtonToCorrectChapter(class UWBP_QuestLine_Item_C* QuestLineItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "AddQuestButtonToCorrectChapter");
+
+	Params::WBP_QuestlineMenu_C_AddQuestButtonToCorrectChapter Parms{};
+
+	Parms.QuestLineItem = QuestLineItem;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.ClaimReward
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_QuestLine_Item_C*            QuestItemButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::ClaimReward(class UWBP_QuestLine_Item_C* QuestItemButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "ClaimReward");
+
+	Params::WBP_QuestlineMenu_C_ClaimReward Parms{};
+
+	Parms.QuestItemButton = QuestItemButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.ClearChaptersOfChildren
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QuestlineMenu_C::ClearChaptersOfChildren()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "ClearChaptersOfChildren");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_QuestlineMenu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.ExecuteUbergraph_WBP_QuestlineMenu
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,17 +104,47 @@ void UWBP_QuestlineMenu_C::ExecuteUbergraph_WBP_QuestlineMenu(int32 EntryPoint)
 }
 
 
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.GetControlsReferenceForQuest
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FSBZUIQuestData&           SBZUIQuestData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FSBZButtonControlReference>*ControlsRefArray                                       (Parm, OutParm)
 
-void UWBP_QuestlineMenu_C::OnLostStackFocused()
+void UWBP_QuestlineMenu_C::GetControlsReferenceForQuest(const struct FSBZUIQuestData& SBZUIQuestData, TArray<struct FSBZButtonControlReference>* ControlsRefArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "GetControlsReferenceForQuest");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_QuestlineMenu_C_GetControlsReferenceForQuest Parms{};
+
+	Parms.SBZUIQuestData = std::move(SBZUIQuestData);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ControlsRefArray != nullptr)
+		*ControlsRefArray = std::move(Parms.ControlsRefArray);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnControlsReferencePressed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::OnControlsReferencePressed(class FName ActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnControlsReferencePressed");
+
+	Params::WBP_QuestlineMenu_C_OnControlsReferencePressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -70,24 +168,86 @@ void UWBP_QuestlineMenu_C::OnGainedStackFocused(const class FName& PreviousValue
 }
 
 
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_QuestlineMenu_C::Construct()
+void UWBP_QuestlineMenu_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "Construct");
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnQuestButtonHoverChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::OnQuestButtonHoverChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnQuestButtonHoverChanged");
+
+	Params::WBP_QuestlineMenu_C_OnQuestButtonHoverChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnQuestButtonSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::OnQuestButtonSelected(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnQuestButtonSelected");
+
+	Params::WBP_QuestlineMenu_C_OnQuestButtonSelected Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnRewardClaimed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_QuestLine_Item_C*            ClaimedQuestItemButton                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::OnRewardClaimed(class UWBP_QuestLine_Item_C* ClaimedQuestItemButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnRewardClaimed");
+
+	Params::WBP_QuestlineMenu_C_OnRewardClaimed Parms{};
+
+	Parms.ClaimedQuestItemButton = ClaimedQuestItemButton;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestlineMenu_C::PreConstruct(bool IsDesignTime)
 {
@@ -118,63 +278,21 @@ void UWBP_QuestlineMenu_C::RefreshQuestButtons()
 }
 
 
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.SetQuestButtonActive
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.RemoveButtonFromChapter
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_QuestLine_Item_C*            QuestItemButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_QuestLine_Item_C*            QuestLineItem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestlineMenu_C::SetQuestButtonActive(class UWBP_QuestLine_Item_C* QuestItemButton)
+void UWBP_QuestlineMenu_C::RemoveButtonFromChapter(class UWBP_QuestLine_Item_C* QuestLineItem)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "SetQuestButtonActive");
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "RemoveButtonFromChapter");
 
-	Params::WBP_QuestlineMenu_C_SetQuestButtonActive Parms{};
+	Params::WBP_QuestlineMenu_C_RemoveButtonFromChapter Parms{};
 
-	Parms.QuestItemButton = QuestItemButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnQuestButtonSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestlineMenu_C::OnQuestButtonSelected(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnQuestButtonSelected");
-
-	Params::WBP_QuestlineMenu_C_OnQuestButtonSelected Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnQuestButtonHoverChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_QuestlineMenu_C::OnQuestButtonHoverChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnQuestButtonHoverChanged");
-
-	Params::WBP_QuestlineMenu_C_OnQuestButtonHoverChanged Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.QuestLineItem = QuestLineItem;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -183,7 +301,7 @@ void UWBP_QuestlineMenu_C::OnQuestButtonHoverChanged(class USBZMenuButton* Butto
 // Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.Set Quest Focused
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_QuestLine_Item_C*            QuestItemButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_QuestLine_Item_C*            QuestItemButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestlineMenu_C::Set_Quest_Focused(class UWBP_QuestLine_Item_C* QuestItemButton)
 {
@@ -197,124 +315,6 @@ void UWBP_QuestlineMenu_C::Set_Quest_Focused(class UWBP_QuestLine_Item_C* QuestI
 	Parms.QuestItemButton = QuestItemButton;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnControlsReferencePressed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestlineMenu_C::OnControlsReferencePressed(class FName ActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnControlsReferencePressed");
-
-	Params::WBP_QuestlineMenu_C_OnControlsReferencePressed Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.GetControlsReferenceForQuest
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const struct FSBZUIQuestData&           SBZUIQuestData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<struct FSBZButtonControlReference>*ControlsRefArray                                       (Parm, OutParm)
-
-void UWBP_QuestlineMenu_C::GetControlsReferenceForQuest(const struct FSBZUIQuestData& SBZUIQuestData, TArray<struct FSBZButtonControlReference>* ControlsRefArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "GetControlsReferenceForQuest");
-
-	Params::WBP_QuestlineMenu_C_GetControlsReferenceForQuest Parms{};
-
-	Parms.SBZUIQuestData = std::move(SBZUIQuestData);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ControlsRefArray != nullptr)
-		*ControlsRefArray = std::move(Parms.ControlsRefArray);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.ClaimReward
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_QuestLine_Item_C*            QuestItemButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestlineMenu_C::ClaimReward(class UWBP_QuestLine_Item_C* QuestItemButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "ClaimReward");
-
-	Params::WBP_QuestlineMenu_C_ClaimReward Parms{};
-
-	Parms.QuestItemButton = QuestItemButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.OnRewardClaimed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_QuestLine_Item_C*            ClaimedQuestItemButton                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestlineMenu_C::OnRewardClaimed(class UWBP_QuestLine_Item_C* ClaimedQuestItemButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "OnRewardClaimed");
-
-	Params::WBP_QuestlineMenu_C_OnRewardClaimed Parms{};
-
-	Parms.ClaimedQuestItemButton = ClaimedQuestItemButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.AddQuestButtonToCorrectChapter
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_QuestLine_Item_C*            QuestLineItem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestlineMenu_C::AddQuestButtonToCorrectChapter(class UWBP_QuestLine_Item_C* QuestLineItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "AddQuestButtonToCorrectChapter");
-
-	Params::WBP_QuestlineMenu_C_AddQuestButtonToCorrectChapter Parms{};
-
-	Parms.QuestLineItem = QuestLineItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.ClearChaptersOfChildren
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_QuestlineMenu_C::ClearChaptersOfChildren()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "ClearChaptersOfChildren");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -332,11 +332,31 @@ void UWBP_QuestlineMenu_C::SetFocusToQuestlineButton()
 }
 
 
+// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.SetQuestButtonActive
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_QuestLine_Item_C*            QuestItemButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestlineMenu_C::SetQuestButtonActive(class UWBP_QuestLine_Item_C* QuestItemButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestlineMenu_C", "SetQuestButtonActive");
+
+	Params::WBP_QuestlineMenu_C_SetQuestButtonActive Parms{};
+
+	Parms.QuestItemButton = QuestItemButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.TrySetFocusOnGoToObjectButton
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UWBP_QuestLine_ChapterGroup_C*>&QuestLineGroup                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// bool*                                   bIsSuccessful                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsSuccessful                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestlineMenu_C::TrySetFocusOnGoToObjectButton(TArray<class UWBP_QuestLine_ChapterGroup_C*>& QuestLineGroup, bool* bIsSuccessful)
 {
@@ -355,26 +375,6 @@ void UWBP_QuestlineMenu_C::TrySetFocusOnGoToObjectButton(TArray<class UWBP_Quest
 
 	if (bIsSuccessful != nullptr)
 		*bIsSuccessful = Parms.bIsSuccessful;
-}
-
-
-// Function WBP_QuestlineMenu.WBP_QuestlineMenu_C.RemoveButtonFromChapter
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_QuestLine_Item_C*            QuestLineItem                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestlineMenu_C::RemoveButtonFromChapter(class UWBP_QuestLine_Item_C* QuestLineItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestlineMenu_C", "RemoveButtonFromChapter");
-
-	Params::WBP_QuestlineMenu_C_RemoveButtonFromChapter Parms{};
-
-	Parms.QuestLineItem = QuestLineItem;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

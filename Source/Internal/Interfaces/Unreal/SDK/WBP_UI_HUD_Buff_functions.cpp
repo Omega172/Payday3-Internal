@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.CreateCooldownMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_HUD_Buff_C::CreateCooldownMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Buff_C", "CreateCooldownMaterial");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.ExecuteUbergraph_WBP_UI_HUD_Buff
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -96,10 +110,24 @@ void UWBP_UI_HUD_Buff_C::OnEffectValueChanged(float InNewEffectValue)
 }
 
 
+// Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_HUD_Buff_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Buff_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_Buff_C::PreConstruct(bool IsDesignTime)
 {
@@ -116,58 +144,10 @@ void UWBP_UI_HUD_Buff_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_HUD_Buff_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Buff_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.CreateCooldownMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_HUD_Buff_C::CreateCooldownMaterial()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Buff_C", "CreateCooldownMaterial");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.UpdateCooldownValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_HUD_Buff_C::UpdateCooldownValue(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Buff_C", "UpdateCooldownValue");
-
-	Params::WBP_UI_HUD_Buff_C_UpdateCooldownValue Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.SetUpVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     InIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InIcon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FLinearColor&              InColour                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_Buff_C::SetUpVisuals(class UPaperSprite* InIcon, const struct FLinearColor& InColour)
@@ -181,6 +161,26 @@ void UWBP_UI_HUD_Buff_C::SetUpVisuals(class UPaperSprite* InIcon, const struct F
 
 	Parms.InIcon = InIcon;
 	Parms.InColour = std::move(InColour);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Buff.WBP_UI_HUD_Buff_C.UpdateCooldownValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_HUD_Buff_C::UpdateCooldownValue(double NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Buff_C", "UpdateCooldownValue");
+
+	Params::WBP_UI_HUD_Buff_C_UpdateCooldownValue Parms{};
+
+	Parms.NewValue = NewValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

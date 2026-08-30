@@ -39,7 +39,7 @@ void UWBP_ConfirmationPopup_InventoryItemDisplay_C::ExecuteUbergraph_WBP_Confirm
 // Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.InitializeItem
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZInventoryBaseData*      InventoryItem                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZInventoryBaseData*      InventoryItem                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int64                                   Cost                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int64                                   DiscountedPrice                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

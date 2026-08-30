@@ -36,6 +36,26 @@ void UWBP_UI_CosmeticButtonSprayCanSlots_C::ExecuteUbergraph_WBP_UI_CosmeticButt
 }
 
 
+// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.HoverChangedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CosmeticButtonSprayCanSlots_C::HoverChangedVisuals(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CosmeticButtonSprayCanSlots_C", "HoverChangedVisuals");
+
+	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_HoverChangedVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.OnCosmeticItemDataInitialized
 // (Event, Protected, BlueprintEvent)
 
@@ -53,7 +73,7 @@ void UWBP_UI_CosmeticButtonSprayCanSlots_C::OnCosmeticItemDataInitialized()
 // Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_CosmeticButtonSprayCanSlots_C::PreConstruct(bool IsDesignTime)
 {
@@ -65,26 +85,6 @@ void UWBP_UI_CosmeticButtonSprayCanSlots_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.HoverChangedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_CosmeticButtonSprayCanSlots_C::HoverChangedVisuals(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CosmeticButtonSprayCanSlots_C", "HoverChangedVisuals");
-
-	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_HoverChangedVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

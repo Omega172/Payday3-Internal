@@ -10,7 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Landscape_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -34,39 +36,12 @@ public:
 };
 DUMPER7_ASSERTS_LandscapeProxy_ChangeLODDistanceFactor;
 
-// Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize
-// 0x0004 (0x0004 - 0x0000)
-struct LandscapeProxy_ChangeTessellationComponentScreenSize final
-{
-public:
-	float                                         InTessellationComponentScreenSize;                 // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LandscapeProxy_ChangeTessellationComponentScreenSize;
-
-// Function Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff
-// 0x0004 (0x0004 - 0x0000)
-struct LandscapeProxy_ChangeTessellationComponentScreenSizeFalloff final
-{
-public:
-	float                                         InUseTessellationComponentScreenSizeFalloff;       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LandscapeProxy_ChangeTessellationComponentScreenSizeFalloff;
-
-// Function Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff
-// 0x0001 (0x0001 - 0x0000)
-struct LandscapeProxy_ChangeUseTessellationComponentScreenSizeFalloff final
-{
-public:
-	bool                                          InComponentScreenSizeToUseSubSections;             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LandscapeProxy_ChangeUseTessellationComponentScreenSizeFalloff;
-
 // Function Landscape.LandscapeProxy.EditorApplySpline
 // 0x0040 (0x0040 - 0x0000)
 struct LandscapeProxy_EditorApplySpline final
 {
 public:
-	class USplineComponent*                       InSplineComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USplineComponent*                       InSplineComponent;                                 // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StartWidth;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         EndWidth;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StartSideFalloff;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -77,7 +52,7 @@ public:
 	bool                                          bRaiseHeights;                                     // 0x0024(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLowerHeights;                                     // 0x0025(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULandscapeLayerInfoObject*              PaintLayer;                                        // 0x0028(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULandscapeLayerInfoObject*              PaintLayer;                                        // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   EditLayerName;                                     // 0x0030(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -88,16 +63,25 @@ DUMPER7_ASSERTS_LandscapeProxy_EditorApplySpline;
 struct LandscapeProxy_EditorSetLandscapeMaterial final
 {
 public:
-	class UMaterialInterface*                     NewLandscapeMaterial;                              // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     NewLandscapeMaterial;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeProxy_EditorSetLandscapeMaterial;
+
+// Function Landscape.LandscapeProxy.GetLandscapeActor
+// 0x0008 (0x0008 - 0x0000)
+struct LandscapeProxy_GetLandscapeActor final
+{
+public:
+	class ALandscape*                             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeProxy_GetLandscapeActor;
 
 // Function Landscape.LandscapeProxy.LandscapeExportHeightmapToRenderTarget
 // 0x0010 (0x0010 - 0x0000)
 struct LandscapeProxy_LandscapeExportHeightmapToRenderTarget final
 {
 public:
-	class UTextureRenderTarget2D*                 InRenderTarget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 InRenderTarget;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InExportHeightIntoRGChannel;                       // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InExportLandscapeProxies;                          // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000A(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -122,7 +106,7 @@ struct LandscapeProxy_SetLandscapeMaterialTextureParameterValue final
 public:
 	class FName                                   ParameterName;                                     // 0x0000(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               Value;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture*                               Value;                                             // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeProxy_SetLandscapeMaterialTextureParameterValue;
 
@@ -136,63 +120,108 @@ public:
 };
 DUMPER7_ASSERTS_LandscapeProxy_SetLandscapeMaterialVectorParameterValue;
 
-// Function Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
-// 0x0010 (0x0010 - 0x0000)
-struct LandscapeBlueprintBrushBase_GetBlueprintRenderDependencies final
+// Function Landscape.LandscapeProxy.SetVirtualTextureRenderPassType
+// 0x0001 (0x0001 - 0x0000)
+struct LandscapeProxy_SetVirtualTextureRenderPassType final
 {
 public:
-	TArray<class UObject*>                        OutStreamableAssets;                               // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+	ERuntimeVirtualTextureMainPassType            InType;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_GetBlueprintRenderDependencies;
+DUMPER7_ASSERTS_LandscapeProxy_SetVirtualTextureRenderPassType;
 
-// Function Landscape.LandscapeBlueprintBrushBase.Initialize
-// 0x0040 (0x0040 - 0x0000)
-struct LandscapeBlueprintBrushBase_Initialize final
+// Function Landscape.Landscape.RenderHeightmap
+// 0x00A0 (0x00A0 - 0x0000)
+struct Landscape_RenderHeightmap final
 {
 public:
-	struct FTransform                             InLandscapeTransform;                              // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	struct FIntPoint                              InLandscapeSize;                                   // 0x0030(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FIntPoint                              InLandscapeRenderTargetSize;                       // 0x0038(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTransform                             InWorldTransform;                                  // 0x0000(0x0060)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBox2D                                 InExtents;                                         // 0x0060(0x0028)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 OutRenderTarget;                                   // 0x0088(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0090(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_91[0xF];                                       // 0x0091(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_Initialize;
+DUMPER7_ASSERTS_Landscape_RenderHeightmap;
 
-// Function Landscape.LandscapeBlueprintBrushBase.Render
-// 0x0028 (0x0028 - 0x0000)
-struct LandscapeBlueprintBrushBase_Render final
+// Function Landscape.Landscape.RenderWeightmap
+// 0x00B0 (0x00B0 - 0x0000)
+struct Landscape_RenderWeightmap final
 {
 public:
-	bool                                          InIsHeightmap;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTransform                             InWorldTransform;                                  // 0x0000(0x0060)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBox2D                                 InExtents;                                         // 0x0060(0x0028)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class FName                                   InWeightmapLayerName;                              // 0x0088(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 OutRenderTarget;                                   // 0x0098(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A1[0xF];                                       // 0x00A1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_Landscape_RenderWeightmap;
+
+// Function Landscape.Landscape.RenderWeightmaps
+// 0x00B0 (0x00B0 - 0x0000)
+struct Landscape_RenderWeightmaps final
+{
+public:
+	struct FTransform                             InWorldTransform;                                  // 0x0000(0x0060)(Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FBox2D                                 InExtents;                                         // 0x0060(0x0028)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<class FName>                           InWeightmapLayerNames;                             // 0x0088(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget*                   OutRenderTarget;                                   // 0x0098(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x00A0(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_A1[0xF];                                       // 0x00A1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_Landscape_RenderWeightmaps;
+
+// Function Landscape.Landscape.GetTargetLayerNames
+// 0x0018 (0x0018 - 0x0000)
+struct Landscape_GetTargetLayerNames final
+{
+public:
+	bool                                          bInIncludeVisibilityLayer;                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 InCombinedResult;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   InWeightmapLayerName;                              // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_Render;
+DUMPER7_ASSERTS_Landscape_GetTargetLayerNames;
 
 // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct LandscapeComponent_EditorGetPaintLayerWeightAtLocation final
 {
 public:
-	struct FVector                                InLocation;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULandscapeLayerInfoObject*              PaintLayer;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FVector                                InLocation;                                        // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULandscapeLayerInfoObject*              PaintLayer;                                        // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_LandscapeComponent_EditorGetPaintLayerWeightAtLocation;
 
 // Function Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation
-// 0x001C (0x001C - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct LandscapeComponent_EditorGetPaintLayerWeightByNameAtLocation final
 {
 public:
-	struct FVector                                InLocation;                                        // 0x0000(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   InPaintLayerName;                                  // 0x000C(0x000C)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                InLocation;                                        // 0x0000(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   InPaintLayerName;                                  // 0x0018(0x000C)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeComponent_EditorGetPaintLayerWeightByNameAtLocation;
+
+// Function Landscape.LandscapeComponent.SetForcedLOD
+// 0x0004 (0x0004 - 0x0000)
+struct LandscapeComponent_SetForcedLOD final
+{
+public:
+	int32                                         InForcedLOD;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeComponent_SetForcedLOD;
+
+// Function Landscape.LandscapeComponent.SetLODBias
+// 0x0004 (0x0004 - 0x0000)
+struct LandscapeComponent_SetLODBias final
+{
+public:
+	int32                                         InLODBias;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeComponent_SetLODBias;
 
 // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic
 // 0x0010 (0x0010 - 0x0000)
@@ -201,7 +230,7 @@ struct LandscapeComponent_GetMaterialInstanceDynamic final
 public:
 	int32                                         InIndex;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInstanceDynamic*               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeComponent_GetMaterialInstanceDynamic;
 
@@ -210,7 +239,7 @@ DUMPER7_ASSERTS_LandscapeComponent_GetMaterialInstanceDynamic;
 struct LandscapeHeightfieldCollisionComponent_GetRenderComponent final
 {
 public:
-	class ULandscapeComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULandscapeComponent*                    ReturnValue;                                       // 0x0000(0x0008)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeHeightfieldCollisionComponent_GetRenderComponent;
 
@@ -222,6 +251,60 @@ public:
 	TArray<class USplineMeshComponent*>           ReturnValue;                                       // 0x0000(0x0010)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_LandscapeSplinesComponent_GetSplineMeshComponents;
+
+// Function Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
+// 0x0010 (0x0010 - 0x0000)
+struct LandscapeBlueprintBrushBase_GetBlueprintRenderDependencies final
+{
+public:
+	TArray<class UObject*>                        OutStreamableAssets;                               // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_GetBlueprintRenderDependencies;
+
+// Function Landscape.LandscapeBlueprintBrushBase.Initialize
+// 0x0070 (0x0070 - 0x0000)
+struct LandscapeBlueprintBrushBase_Initialize final
+{
+public:
+	struct FTransform                             InLandscapeTransform;                              // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FIntPoint                              InLandscapeSize;                                   // 0x0060(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FIntPoint                              InLandscapeRenderTargetSize;                       // 0x0068(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_Initialize;
+
+// Function Landscape.LandscapeBlueprintBrushBase.Render
+// 0x0028 (0x0028 - 0x0000)
+struct LandscapeBlueprintBrushBase_Render final
+{
+public:
+	bool                                          InIsHeightmap;                                     // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 InCombinedResult;                                  // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   InWeightmapLayerName;                              // 0x0010(0x000C)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_Render;
+
+// Function Landscape.LandscapeBlueprintBrushBase.RenderLayer
+// 0x0090 (0x0090 - 0x0000)
+struct LandscapeBlueprintBrushBase_RenderLayer final
+{
+public:
+	struct FLandscapeBrushParameters              InParameters;                                      // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	class UTextureRenderTarget2D*                 ReturnValue;                                       // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_RenderLayer;
+
+// Function Landscape.LandscapeBlueprintBrushBase.RequestLandscapeUpdate
+// 0x0001 (0x0001 - 0x0000)
+struct LandscapeBlueprintBrushBase_RequestLandscapeUpdate final
+{
+public:
+	bool                                          bInUserTriggered;                                  // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LandscapeBlueprintBrushBase_RequestLandscapeUpdate;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

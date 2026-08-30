@@ -14,24 +14,14 @@
 SDK_NAMESPACE_START
 
 // Enum GameplayTasks.ETaskResourceOverlapPolicy
-// NumValues: 0x0003
+// NumValues: 0x0005
 enum class ETaskResourceOverlapPolicy : uint8
 {
 	StartOnTop                               = 0,
 	StartAtEnd                               = 1,
-	ETaskResourceOverlapPolicy_MAX           = 2,
-};
-
-// Enum GameplayTasks.EGameplayTaskRunResult
-// NumValues: 0x0006
-enum class EGameplayTaskRunResult : uint8
-{
-	Error                                    = 0,
-	Failed                                   = 1,
-	Success_Paused                           = 2,
-	Success_Active                           = 3,
-	Success_Finished                         = 4,
-	EGameplayTaskRunResult_MAX               = 5,
+	RequestCancelAndStartOnTop               = 2,
+	RequestCancelAndStartAtEnd               = 3,
+	ETaskResourceOverlapPolicy_MAX           = 4,
 };
 
 // Enum GameplayTasks.EGameplayTaskState
@@ -44,6 +34,18 @@ enum class EGameplayTaskState : uint8
 	Active                                   = 3,
 	Finished                                 = 4,
 	EGameplayTaskState_MAX                   = 5,
+};
+
+// Enum GameplayTasks.EGameplayTaskRunResult
+// NumValues: 0x0006
+enum class EGameplayTaskRunResult : uint8
+{
+	Error                                    = 0,
+	Failed                                   = 1,
+	Success_Paused                           = 2,
+	Success_Active                           = 3,
+	Success_Finished                         = 4,
+	EGameplayTaskRunResult_MAX               = 5,
 };
 
 // ScriptStruct GameplayTasks.GameplayResourceSet

@@ -19,39 +19,100 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.ButtonDisabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_ButtonDisabledChanged final
+{
+public:
+	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_ButtonDisabledChanged;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_ButtonFocusedChanged;
+
 // Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.ExecuteUbergraph_WBP_UI_MainMenu_StoreItemButton
-// 0x0118 (0x0118 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct WBP_UI_MainMenu_StoreItemButton_C_ExecuteUbergraph_WBP_UI_MainMenu_StoreItemButton final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZItemLockReason                            Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsTransactionInProgress;           // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsTransactionInProgress_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsDisabled;                        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsTransactionInProgress;           // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsTransactionInProgress_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsDisabled;                        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0018)()
-	class FText                                   Temp_text_Variable;                                // 0x0088(0x0018)()
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_1;                              // 0x00A8(0x0018)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_2;                              // 0x00C8(0x0018)()
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0018)()
-	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0100(0x0008)(NoDestructor)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue_1;       // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0048)(HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0070(0x0010)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x00A0(0x0010)()
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_2;                              // 0x00B8(0x0010)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_3;                              // 0x00D0(0x0010)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default;                             // 0x00E8(0x0010)()
+	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x00F8(0x0008)(NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue_1;       // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_ExecuteUbergraph_WBP_UI_MainMenu_StoreItemButton;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.InitializeItemData
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_InitializeItemData final
+{
+public:
+	class USBZInventoryBaseData*                  InItemData;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0008(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_InitializeItemData;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnDisabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_OnDisabledChanged final
+{
+public:
+	bool                                          bInDisabled;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnDisabledChanged;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnFocusChanged
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_OnFocusChanged final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnFocusChanged;
 
 // Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -62,76 +123,84 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnFocusLost;
 
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.ButtonDisabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_ButtonDisabledChanged final
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnTransactionInProgress
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_OnTransactionInProgress final
 {
 public:
-	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsTransactionInProgress;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_ButtonDisabledChanged;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnTransactionInProgress;
 
 // Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnTransactionProgressChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_MainMenu_StoreItemButton_C_OnTransactionProgressChanged final
 {
 public:
-	bool                                          bInIsTransactionInProgress;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsTransactionInProgress;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnTransactionProgressChanged;
-
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_ButtonFocusedChanged final
-{
-public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_ButtonFocusedChanged;
 
 // Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_MainMenu_StoreItemButton_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_PreConstruct;
 
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnFocusChanged
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_OnFocusChanged final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnFocusChanged;
-
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnTransactionInProgress
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.Set New Visuals
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_OnTransactionInProgress final
+struct WBP_UI_MainMenu_StoreItemButton_C_Set_New_Visuals final
 {
 public:
-	bool                                          bIsTransactionInProgress;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Is_Mask_Of_The_Week;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnTransactionInProgress;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_Set_New_Visuals;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.SetDefault
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_SetDefault final
+{
+public:
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_SetDefault;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.SetDisabled
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_SetDisabled final
+{
+public:
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_SetDisabled;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.SetDisabledFocused
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_SetDisabledFocused final
+{
+public:
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_SetDisabledFocused;
+
+// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.SetFocused
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_MainMenu_StoreItemButton_C_SetFocused final
+{
+public:
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_SetFocused;
 
 // Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.SetPrice
-// 0x0048 (0x0048 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct WBP_UI_MainMenu_StoreItemButton_C_SetPrice final
 {
 public:
@@ -141,45 +210,14 @@ public:
 	int64                                         DiscountedPrice;                                   // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         DiscountedAmount;                                  // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         DiscountedPercentage;                              // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_23[0x5];                                       // 0x0023(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0028(0x0018)()
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0028(0x0010)()
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_SetPrice;
-
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.InitializeItemData
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_InitializeItemData final
-{
-public:
-	class USBZInventoryBaseData*                  InItemData;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0008(0x0018)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_InitializeItemData;
-
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.OnDisabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_OnDisabledChanged final
-{
-public:
-	bool                                          bInDisabled;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_OnDisabledChanged;
-
-// Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.Set New Visuals
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_StoreItemButton_C_Set_New_Visuals final
-{
-public:
-	bool                                          Is_Mask_Of_The_Week;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_Set_New_Visuals;
 
 // Function WBP_UI_MainMenu_StoreItemButton.WBP_UI_MainMenu_StoreItemButton_C.SetWeaponType
 // 0x0002 (0x0002 - 0x0000)
@@ -187,7 +225,7 @@ struct WBP_UI_MainMenu_StoreItemButton_C_SetWeaponType final
 {
 public:
 	ESBZItemCategory                              InItemCategory;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_StoreItemButton_C_SetWeaponType;
 

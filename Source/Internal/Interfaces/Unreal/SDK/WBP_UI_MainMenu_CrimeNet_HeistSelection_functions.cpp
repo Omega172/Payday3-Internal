@@ -16,41 +16,127 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection(int32 EntryPoint)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.UpdateHeistIcon
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// TSoftObjectPtr<class UPaperSprite>      InSoftObjectReference                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::UpdateHeistIcon(TSoftObjectPtr<class UPaperSprite> InSoftObjectReference)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "UpdateHeistIcon");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_UpdateHeistIcon Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.InSoftObjectReference = InSoftObjectReference;
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,65 +162,137 @@ void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNe
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnHeistButtonSelected
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.DisplayActiveOnMap
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_UI_MainMenu_CrimeNet_HeistButton_C*HeistButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnHeistButtonSelected(class USBZMenuButton* Button)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::DisplayActiveOnMap(class UWBP_UI_MainMenu_CrimeNet_HeistButton_C* HeistButton, bool bIsActive)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnHeistButtonSelected");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "DisplayActiveOnMap");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnHeistButtonSelected Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_DisplayActiveOnMap Parms{};
 
-	Parms.Button = Button;
+	Parms.HeistButton = HeistButton;
+	Parms.bIsActive = bIsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnHeistButtonFocused
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.DisplayHeistSelection
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsGameStart                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnHeistButtonFocused(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::DisplayHeistSelection(bool bIsGameStart)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnHeistButtonFocused");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "DisplayHeistSelection");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnHeistButtonFocused Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_DisplayHeistSelection Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.bIsGameStart = bIsGameStart;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnControlsReferenceHeistSelectionClicked
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.DisplayPopUp
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bShouldDisplay                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnControlsReferenceHeistSelectionClicked(class FName InActionInput)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::DisplayPopUp(bool bShouldDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnControlsReferenceHeistSelectionClicked");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "DisplayPopUp");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnControlsReferenceHeistSelectionClicked Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_DisplayPopUp Parms{};
 
-	Parms.InActionInput = InActionInput;
+	Parms.bShouldDisplay = bShouldDisplay;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.InitializeLevelButtons
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::InitializeLevelButtons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "InitializeLevelButtons");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.InitializeLevelList
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      LevelListName                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// TArray<struct FSoftObjectPath>&         LevelPathList                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::InitializeLevelList(const class FText& LevelListName, TArray<struct FSoftObjectPath>& LevelPathList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "InitializeLevelList");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_InitializeLevelList Parms{};
+
+	Parms.LevelListName = std::move(LevelListName);
+	Parms.LevelPathList = std::move(LevelPathList);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	LevelPathList = std::move(Parms.LevelPathList);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnBackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnBackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -178,143 +336,23 @@ void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnControlsReferenceClicked(clas
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnControlsReferenceHeistSelectionClicked
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnControlsReferenceHeistSelectionClicked(class FName InActionInput)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnControlsReferenceHeistSelectionClicked");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnControlsReferenceHeistSelectionClicked Parms{};
 
-	Parms.Button = Button;
+	Parms.InActionInput = InActionInput;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnBackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnBackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -338,6 +376,68 @@ void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnGainedStackFocused(const clas
 }
 
 
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnHeistButtonFocused
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnHeistButtonFocused(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnHeistButtonFocused");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnHeistButtonFocused Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnHeistButtonSelected
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnHeistButtonSelected(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnHeistButtonSelected");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnHeistButtonSelected Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnLoaded_E6648CEA45447C8A0D6DA58373B5830A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnLoaded_E6648CEA45447C8A0D6DA58373B5830A(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnLoaded_E6648CEA45447C8A0D6DA58373B5830A");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnLoaded_E6648CEA45447C8A0D6DA58373B5830A Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
@@ -355,7 +455,7 @@ void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnLostStackFocused()
 // Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::PreConstruct(bool IsDesignTime)
 {
@@ -372,75 +472,43 @@ void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.OnLoaded_E6648CEA45447C8A0D6DA58373B5830A
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.SetTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Timer                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsStealth                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::SetTimer(double Timer, bool bIsStealth)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "SetTimer");
+
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_SetTimer Parms{};
+
+	Parms.Timer = Timer;
+	Parms.bIsStealth = bIsStealth;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.UpdateHeistIcon
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UPaperSprite>      InSoftObjectReference                                  (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::OnLoaded_E6648CEA45447C8A0D6DA58373B5830A(class UObject* Loaded)
+void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::UpdateHeistIcon(TSoftObjectPtr<class UPaperSprite> InSoftObjectReference)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "OnLoaded_E6648CEA45447C8A0D6DA58373B5830A");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "UpdateHeistIcon");
 
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_OnLoaded_E6648CEA45447C8A0D6DA58373B5830A Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_UpdateHeistIcon Parms{};
 
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.InitializeLevelButtons
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::InitializeLevelButtons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "InitializeLevelButtons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.DisplayPopUp
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bShouldDisplay                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::DisplayPopUp(bool bShouldDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "DisplayPopUp");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_DisplayPopUp Parms{};
-
-	Parms.bShouldDisplay = bShouldDisplay;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.DisplayHeistSelection
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGameStart                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::DisplayHeistSelection(bool bIsGameStart)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "DisplayHeistSelection");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_DisplayHeistSelection Parms{};
-
-	Parms.bIsGameStart = bIsGameStart;
+	Parms.InSoftObjectReference = InSoftObjectReference;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -457,74 +525,6 @@ void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::UpdateLevelDescriptionPanel()
 		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "UpdateLevelDescriptionPanel");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.InitializeLevelList
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      LevelListName                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// TArray<struct FSoftObjectPath>&         LevelPathList                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::InitializeLevelList(const class FText& LevelListName, TArray<struct FSoftObjectPath>& LevelPathList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "InitializeLevelList");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_InitializeLevelList Parms{};
-
-	Parms.LevelListName = std::move(LevelListName);
-	Parms.LevelPathList = std::move(LevelPathList);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	LevelPathList = std::move(Parms.LevelPathList);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.DisplayActiveOnMap
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_MainMenu_CrimeNet_HeistButton_C*HeistButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::DisplayActiveOnMap(class UWBP_UI_MainMenu_CrimeNet_HeistButton_C* HeistButton, bool bIsActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "DisplayActiveOnMap");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_DisplayActiveOnMap Parms{};
-
-	Parms.HeistButton = HeistButton;
-	Parms.bIsActive = bIsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistSelection.WBP_UI_MainMenu_CrimeNet_HeistSelection_C.SetTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   Timer                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsStealth                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_HeistSelection_C::SetTimer(float Timer, bool bIsStealth)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_HeistSelection_C", "SetTimer");
-
-	Params::WBP_UI_MainMenu_CrimeNet_HeistSelection_C_SetTimer Parms{};
-
-	Parms.Timer = Timer;
-	Parms.bIsStealth = bIsStealth;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

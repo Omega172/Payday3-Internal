@@ -36,20 +36,6 @@ void UWBP_ConsumableStatusWidget_C::ExecuteUbergraph_WBP_ConsumableStatusWidget(
 }
 
 
-// Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.OnLoadoutLoaded
-// (BlueprintEvent)
-
-void UWBP_ConsumableStatusWidget_C::OnLoadoutLoaded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConsumableStatusWidget_C", "OnLoadoutLoaded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.OnConsumableCountChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -90,26 +76,6 @@ void UWBP_ConsumableStatusWidget_C::OnIconChanged(const TSoftObjectPtr<class UPa
 }
 
 
-// Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ConsumableStatusWidget_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConsumableStatusWidget_C", "PreConstruct");
-
-	Params::WBP_ConsumableStatusWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -127,7 +93,7 @@ void UWBP_ConsumableStatusWidget_C::OnInitialized()
 // Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.OnLoaded_AC50E81B4B424534C6A1EBB9707D1E24
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ConsumableStatusWidget_C::OnLoaded_AC50E81B4B424534C6A1EBB9707D1E24(class UObject* Loaded)
 {
@@ -139,6 +105,40 @@ void UWBP_ConsumableStatusWidget_C::OnLoaded_AC50E81B4B424534C6A1EBB9707D1E24(cl
 	Params::WBP_ConsumableStatusWidget_C_OnLoaded_AC50E81B4B424534C6A1EBB9707D1E24 Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.OnLoadoutLoaded
+// (BlueprintEvent)
+
+void UWBP_ConsumableStatusWidget_C::OnLoadoutLoaded()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ConsumableStatusWidget_C", "OnLoadoutLoaded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ConsumableStatusWidget.WBP_ConsumableStatusWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ConsumableStatusWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ConsumableStatusWidget_C", "PreConstruct");
+
+	Params::WBP_ConsumableStatusWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

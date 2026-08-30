@@ -127,7 +127,7 @@ bool UEyeTrackerFunctionLibrary::IsStereoGazeDataAvailable()
 // Function EyeTracker.EyeTrackerFunctionLibrary.SetEyeTrackedPlayer
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class APlayerController*                PlayerController                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APlayerController*                PlayerController                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UEyeTrackerFunctionLibrary::SetEyeTrackedPlayer(class APlayerController* PlayerController)
 {

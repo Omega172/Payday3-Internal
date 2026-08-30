@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // Class TcpMessaging.TcpMessagingSettings
-// 0x0030 (0x0060 - 0x0030)
+// 0x0038 (0x0068 - 0x0030)
 class UTcpMessagingSettings final : public UObject
 {
 public:
@@ -25,8 +25,9 @@ public:
 	class FString                                 ListenEndpoint;                                    // 0x0038(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class FString>                         ConnectToEndpoints;                                // 0x0048(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPrivate)
 	int32                                         ConnectionRetryDelay;                              // 0x0058(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bStopServiceWhenAppDeactivates;                    // 0x005C(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	int32                                         ConnectionRetryPeriod;                             // 0x005C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bStopServiceWhenAppDeactivates;                    // 0x0060(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

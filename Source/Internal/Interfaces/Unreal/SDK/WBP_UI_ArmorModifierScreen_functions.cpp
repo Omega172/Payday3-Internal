@@ -36,10 +36,30 @@ void UWBP_UI_ArmorModifierScreen_C::ExecuteUbergraph_WBP_UI_ArmorModifierScreen(
 }
 
 
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.NewArmorChunkSlotFocused
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZMainMenuArmorChunkButton*NewFocusedButton                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ArmorModifierScreen_C::NewArmorChunkSlotFocused(const class USBZMainMenuArmorChunkButton* NewFocusedButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "NewArmorChunkSlotFocused");
+
+	Params::WBP_UI_ArmorModifierScreen_C_NewArmorChunkSlotFocused Parms{};
+
+	Parms.NewFocusedButton = NewFocusedButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonEquipped
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZMainMenuArmorChunkButton*EquippedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMainMenuArmorChunkButton*EquippedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ArmorModifierScreen_C::OnArmorChunkSlotButtonEquipped(const class USBZMainMenuArmorChunkButton* EquippedButton)
 {
@@ -51,6 +71,26 @@ void UWBP_UI_ArmorModifierScreen_C::OnArmorChunkSlotButtonEquipped(const class U
 	Params::WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonEquipped Parms{};
 
 	Parms.EquippedButton = EquippedButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZMainMenuArmorChunkButton*SelectedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ArmorModifierScreen_C::OnArmorChunkSlotButtonSelected(const class USBZMainMenuArmorChunkButton* SelectedButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "OnArmorChunkSlotButtonSelected");
+
+	Params::WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonSelected Parms{};
+
+	Parms.SelectedButton = SelectedButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -90,74 +130,6 @@ void UWBP_UI_ArmorModifierScreen_C::OnControlsReferenceClicked(class FName InAct
 }
 
 
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuArmorChunkButton*SelectedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ArmorModifierScreen_C::OnArmorChunkSlotButtonSelected(const class USBZMainMenuArmorChunkButton* SelectedButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "OnArmorChunkSlotButtonSelected");
-
-	Params::WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonSelected Parms{};
-
-	Parms.SelectedButton = SelectedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.NewArmorChunkSlotFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuArmorChunkButton*NewFocusedButton                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ArmorModifierScreen_C::NewArmorChunkSlotFocused(const class USBZMainMenuArmorChunkButton* NewFocusedButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "NewArmorChunkSlotFocused");
-
-	Params::WBP_UI_ArmorModifierScreen_C_NewArmorChunkSlotFocused Parms{};
-
-	Parms.NewFocusedButton = NewFocusedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.SetDefaultFocus
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_ArmorModifierScreen_C::SetDefaultFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "SetDefaultFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_ArmorModifierScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -178,10 +150,24 @@ void UWBP_UI_ArmorModifierScreen_C::OnGainedStackFocused(const class FName& Prev
 }
 
 
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_ArmorModifierScreen_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ArmorModifierScreen_C::PreConstruct(bool IsDesignTime)
 {
@@ -195,6 +181,20 @@ void UWBP_UI_ArmorModifierScreen_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.SetDefaultFocus
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_ArmorModifierScreen_C::SetDefaultFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ArmorModifierScreen_C", "SetDefaultFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

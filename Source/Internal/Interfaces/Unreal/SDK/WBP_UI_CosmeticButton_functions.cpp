@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CosmeticButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_CosmeticButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CosmeticButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_CosmeticButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ExecuteUbergraph_WBP_UI_CosmeticButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,61 +76,41 @@ void UWBP_UI_CosmeticButton_C::ExecuteUbergraph_WBP_UI_CosmeticButton(int32 Entr
 }
 
 
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.OnItemCountChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.FocusedChangedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InItemCount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CosmeticButton_C::OnItemCountChanged(int32 InItemCount)
+void UWBP_UI_CosmeticButton_C::FocusedChangedVisuals(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "OnItemCountChanged");
+		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "FocusedChangedVisuals");
 
-	Params::WBP_UI_CosmeticButton_C_OnItemCountChanged Parms{};
+	Params::WBP_UI_CosmeticButton_C_FocusedChangedVisuals Parms{};
 
-	Parms.InItemCount = InItemCount;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.HoverChangedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CosmeticButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_CosmeticButton_C::HoverChangedVisuals(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "HoverChangedVisuals");
 
-	Params::WBP_UI_CosmeticButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_CosmeticButton_C_HoverChangedVisuals Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_CosmeticButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_CosmeticButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -124,10 +144,30 @@ void UWBP_UI_CosmeticButton_C::OnInitialized()
 }
 
 
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.OnItemCountChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   InItemCount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CosmeticButton_C::OnItemCountChanged(int32 InItemCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "OnItemCountChanged");
+
+	Params::WBP_UI_CosmeticButton_C_OnItemCountChanged Parms{};
+
+	Parms.InItemCount = InItemCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_CosmeticButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -155,46 +195,6 @@ void UWBP_UI_CosmeticButton_C::SetRarityColour()
 		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "SetRarityColour");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.FocusedChangedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_CosmeticButton_C::FocusedChangedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "FocusedChangedVisuals");
-
-	Params::WBP_UI_CosmeticButton_C_FocusedChangedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.HoverChangedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_CosmeticButton_C::HoverChangedVisuals(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_CosmeticButton_C", "HoverChangedVisuals");
-
-	Params::WBP_UI_CosmeticButton_C_HoverChangedVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

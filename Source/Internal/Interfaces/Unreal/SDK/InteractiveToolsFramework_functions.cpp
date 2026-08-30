@@ -17,7 +17,7 @@
 SDK_NAMESPACE_START
 
 // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateHoverState
-// (Final, Native, Public)
+// (Native, Public)
 // Parameters:
 // bool                                    bHoveringIn                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -42,7 +42,7 @@ void UGizmoBaseComponent::UpdateHoverState(bool bHoveringIn)
 
 
 // Function InteractiveToolsFramework.GizmoBaseComponent.UpdateWorldLocalState
-// (Final, Native, Public)
+// (Native, Public)
 // Parameters:
 // bool                                    bWorldIn                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -69,7 +69,7 @@ void UGizmoBaseComponent::UpdateWorldLocalState(bool bWorldIn)
 // Function InteractiveToolsFramework.GizmoTransformSource.SetTransform
 // (Native, Public, HasOutParams, HasDefaults)
 // Parameters:
-// const struct FTransform&                NewTransform                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const struct FTransform&                NewTransform                                           (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void IGizmoTransformSource::SetTransform(const struct FTransform& NewTransform)
 {
@@ -94,7 +94,7 @@ void IGizmoTransformSource::SetTransform(const struct FTransform& NewTransform)
 // Function InteractiveToolsFramework.GizmoTransformSource.GetTransform
 // (Native, Public, HasDefaults, Const)
 // Parameters:
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 struct FTransform IGizmoTransformSource::GetTransform() const
 {
@@ -222,11 +222,11 @@ bool IGizmoAxisSource::HasTangentVectors() const
 
 
 // Function InteractiveToolsFramework.GizmoClickTarget.UpdateHoverState
-// (Native, Public, Const)
+// (Native, Public)
 // Parameters:
 // bool                                    bHovering                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void IGizmoClickTarget::UpdateHoverState(bool bHovering) const
+void IGizmoClickTarget::UpdateHoverState(bool bHovering)
 {
 	static class UFunction* Func = nullptr;
 
@@ -236,6 +236,139 @@ void IGizmoClickTarget::UpdateHoverState(bool bHovering) const
 	Params::GizmoClickTarget_UpdateHoverState Parms{};
 
 	Parms.bHovering = bHovering;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function InteractiveToolsFramework.GizmoClickTarget.UpdateInteractingState
+// (Native, Public)
+// Parameters:
+// bool                                    bInteracting                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGizmoClickTarget::UpdateInteractingState(bool bInteracting)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GizmoClickTarget", "UpdateInteractingState");
+
+	Params::GizmoClickTarget_UpdateInteractingState Parms{};
+
+	Parms.bInteracting = bInteracting;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
+// (Native, Public)
+// Parameters:
+// bool                                    bHittable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint32                                  InPartIdentifier                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGizmoClickMultiTarget::UpdateHittableState(bool bHittable, uint32 InPartIdentifier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GizmoClickMultiTarget", "UpdateHittableState");
+
+	Params::GizmoClickMultiTarget_UpdateHittableState Parms{};
+
+	Parms.bHittable = bHittable;
+	Parms.InPartIdentifier = InPartIdentifier;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
+// (Native, Public)
+// Parameters:
+// bool                                    bHovering                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint32                                  InPartIdentifier                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGizmoClickMultiTarget::UpdateHoverState(bool bHovering, uint32 InPartIdentifier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GizmoClickMultiTarget", "UpdateHoverState");
+
+	Params::GizmoClickMultiTarget_UpdateHoverState Parms{};
+
+	Parms.bHovering = bHovering;
+	Parms.InPartIdentifier = InPartIdentifier;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
+// (Native, Public)
+// Parameters:
+// bool                                    bInteracting                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint32                                  InPartIdentifier                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGizmoClickMultiTarget::UpdateInteractingState(bool bInteracting, uint32 InPartIdentifier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GizmoClickMultiTarget", "UpdateInteractingState");
+
+	Params::GizmoClickMultiTarget_UpdateInteractingState Parms{};
+
+	Parms.bInteracting = bInteracting;
+	Parms.InPartIdentifier = InPartIdentifier;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	AsUObject()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
+// (Native, Public)
+// Parameters:
+// bool                                    bVisible                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// uint32                                  InPartIdentifier                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void IGizmoRenderMultiTarget::UpdateVisibilityState(bool bVisible, uint32 InPartIdentifier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = AsUObject()->Class->GetFunction("GizmoRenderMultiTarget", "UpdateVisibilityState");
+
+	Params::GizmoRenderMultiTarget_UpdateVisibilityState Parms{};
+
+	Parms.bVisible = bVisible;
+	Parms.InPartIdentifier = InPartIdentifier;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

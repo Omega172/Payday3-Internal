@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ECMGhost.BP_ECMGhost_C
-// 0x0000 (0x02E0 - 0x02E0)
+// 0x0000 (0x0370 - 0x0370)
 class ABP_ECMGhost_C final : public ABP_Tool_Base_Ghost_C
 {
 public:

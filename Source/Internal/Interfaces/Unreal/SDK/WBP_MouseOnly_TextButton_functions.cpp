@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MouseOnly_TextButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_MouseOnly_TextButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.ExecuteUbergraph_WBP_MouseOnly_TextButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -50,30 +70,10 @@ void UWBP_MouseOnly_TextButton_C::OnInitialized()
 }
 
 
-// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MouseOnly_TextButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_MouseOnly_TextButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MouseOnly_TextButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -90,21 +90,23 @@ void UWBP_MouseOnly_TextButton_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetColours
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FLinearColor&              InFontColor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              InBackgroundColor                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MouseOnly_TextButton_C::SetText(const class FText& InText)
+void UWBP_MouseOnly_TextButton_C::SetColours(const struct FLinearColor& InFontColor, const struct FLinearColor& InBackgroundColor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "SetText");
+		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "SetColours");
 
-	Params::WBP_MouseOnly_TextButton_C_SetText Parms{};
+	Params::WBP_MouseOnly_TextButton_C_SetColours Parms{};
 
-	Parms.InText = std::move(InText);
+	Parms.InFontColor = std::move(InFontColor);
+	Parms.InBackgroundColor = std::move(InBackgroundColor);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -130,6 +132,26 @@ void UWBP_MouseOnly_TextButton_C::SetFont(const struct FSlateFontInfo& InFont)
 }
 
 
+// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_MouseOnly_TextButton_C::SetText(const class FText& InText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "SetText");
+
+	Params::WBP_MouseOnly_TextButton_C_SetText Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.TextValue
 // (Public, BlueprintCallable, BlueprintEvent, BlueprintPure)
 
@@ -141,28 +163,6 @@ void UWBP_MouseOnly_TextButton_C::TextValue()
 		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "TextValue");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C.SetColours
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              InFontColor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              InBackgroundColor                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MouseOnly_TextButton_C::SetColours(const struct FLinearColor& InFontColor, const struct FLinearColor& InBackgroundColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MouseOnly_TextButton_C", "SetColours");
-
-	Params::WBP_MouseOnly_TextButton_C_SetColours Parms{};
-
-	Parms.InFontColor = std::move(InFontColor);
-	Parms.InBackgroundColor = std::move(InBackgroundColor);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_FullscreenVideo.WBP_FullscreenVideo_C
-// 0x0000 (0x0388 - 0x0388)
+// 0x0000 (0x03E8 - 0x03E8)
 class UWBP_FullscreenVideo_C final : public USBZFullscreenVideoWidget
 {
 public:

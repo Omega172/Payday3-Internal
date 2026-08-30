@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C
-// 0x0008 (0x0368 - 0x0360)
+// 0x0008 (0x03C8 - 0x03C0)
 class UWBP_UI_MainMenu_Credits_C final : public USBZMainMenuCredits
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_UI_MainMenu_Credits(int32 EntryPoint);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnControlsReferenceClicked(class FName InActionInput);
 	void Construct();
+	void ExecuteUbergraph_WBP_UI_MainMenu_Credits(int32 EntryPoint);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
 
 public:
 	static class UClass* StaticClass()

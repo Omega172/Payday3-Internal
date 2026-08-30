@@ -39,7 +39,7 @@ void UWBP_CrimeNet_HeistDescriptionPanel_2_C::ExecuteUbergraph_WBP_CrimeNet_Heis
 // Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.InitializeHeistData
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPD3HeistDataAsset*               InHeistData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPD3HeistDataAsset*               InHeistData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimeNet_HeistDescriptionPanel_2_C::InitializeHeistData(class UPD3HeistDataAsset* InHeistData)
 {
@@ -73,7 +73,7 @@ void UWBP_CrimeNet_HeistDescriptionPanel_2_C::OnInitialized()
 // Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.OnLoaded_60A324174F38BA985051939D434488B5
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimeNet_HeistDescriptionPanel_2_C::OnLoaded_60A324174F38BA985051939D434488B5(class UObject* Loaded)
 {
@@ -90,23 +90,21 @@ void UWBP_CrimeNet_HeistDescriptionPanel_2_C::OnLoaded_60A324174F38BA985051939D4
 }
 
 
-// Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.UpdatePanelTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.SetDifficulty
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Timer                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsStealth                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistDescriptionPanel_2_C::UpdatePanelTimer(float Timer, bool bIsStealth)
+void UWBP_CrimeNet_HeistDescriptionPanel_2_C::SetDifficulty(ESBZDifficulty InDifficulty)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "UpdatePanelTimer");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "SetDifficulty");
 
-	Params::WBP_CrimeNet_HeistDescriptionPanel_2_C_UpdatePanelTimer Parms{};
+	Params::WBP_CrimeNet_HeistDescriptionPanel_2_C_SetDifficulty Parms{};
 
-	Parms.Timer = Timer;
-	Parms.bIsStealth = bIsStealth;
+	Parms.InDifficulty = InDifficulty;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -146,37 +144,25 @@ void UWBP_CrimeNet_HeistDescriptionPanel_2_C::UpdateDifficultyVisuals(ESBZDiffic
 }
 
 
-// Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.SetDifficulty
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.UpdatePanelTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Timer                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsStealth                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistDescriptionPanel_2_C::SetDifficulty(ESBZDifficulty InDifficulty)
+void UWBP_CrimeNet_HeistDescriptionPanel_2_C::UpdatePanelTimer(double Timer, bool bIsStealth)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "SetDifficulty");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "UpdatePanelTimer");
 
-	Params::WBP_CrimeNet_HeistDescriptionPanel_2_C_SetDifficulty Parms{};
+	Params::WBP_CrimeNet_HeistDescriptionPanel_2_C_UpdatePanelTimer Parms{};
 
-	Parms.InDifficulty = InDifficulty;
+	Parms.Timer = Timer;
+	Parms.bIsStealth = bIsStealth;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.UpdateTimers
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistDescriptionPanel_2_C::UpdateTimers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "UpdateTimers");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -189,6 +175,20 @@ void UWBP_CrimeNet_HeistDescriptionPanel_2_C::UpdateSecuirtyCompanies()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "UpdateSecuirtyCompanies");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistDescriptionPanel_2.WBP_CrimeNet_HeistDescriptionPanel_2_C.UpdateTimers
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistDescriptionPanel_2_C::UpdateTimers()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_2_C", "UpdateTimers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,21 +16,43 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.ExecuteUbergraph_WBP_UI_Widget_Waypoint
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnDataSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMarkerDataAsset*        InMarkerAsset                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_Waypoint_C::ExecuteUbergraph_WBP_UI_Widget_Waypoint(int32 EntryPoint)
+void UWBP_UI_Widget_Waypoint_C::BP_OnDataSet(const class USBZMarkerDataAsset* InMarkerAsset)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Waypoint_C", "ExecuteUbergraph_WBP_UI_Widget_Waypoint");
+		Func = Class->GetFunction("WBP_UI_Widget_Waypoint_C", "BP_OnDataSet");
 
-	Params::WBP_UI_Widget_Waypoint_C_ExecuteUbergraph_WBP_UI_Widget_Waypoint Parms{};
+	Params::WBP_UI_Widget_Waypoint_C_BP_OnDataSet Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InMarkerAsset = InMarkerAsset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnMarkerTextVisibleChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bShowMarkerText                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          DataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Waypoint_C::BP_OnMarkerTextVisibleChanged(bool bShowMarkerText, class UObject* DataObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Waypoint_C", "BP_OnMarkerTextVisibleChanged");
+
+	Params::WBP_UI_Widget_Waypoint_C_BP_OnMarkerTextVisibleChanged Parms{};
+
+	Parms.bShowMarkerText = bShowMarkerText;
+	Parms.DataObject = DataObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,23 +78,21 @@ void UWBP_UI_Widget_Waypoint_C::BP_OnProgressChanged(float NewProgress)
 }
 
 
-// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnMarkerTextVisibleChanged
-// (Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.ExecuteUbergraph_WBP_UI_Widget_Waypoint
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bShowMarkerText                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                          DataObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_Waypoint_C::BP_OnMarkerTextVisibleChanged(bool bShowMarkerText, class UObject* DataObject)
+void UWBP_UI_Widget_Waypoint_C::ExecuteUbergraph_WBP_UI_Widget_Waypoint(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Waypoint_C", "BP_OnMarkerTextVisibleChanged");
+		Func = Class->GetFunction("WBP_UI_Widget_Waypoint_C", "ExecuteUbergraph_WBP_UI_Widget_Waypoint");
 
-	Params::WBP_UI_Widget_Waypoint_C_BP_OnMarkerTextVisibleChanged Parms{};
+	Params::WBP_UI_Widget_Waypoint_C_ExecuteUbergraph_WBP_UI_Widget_Waypoint Parms{};
 
-	Parms.bShowMarkerText = bShowMarkerText;
-	Parms.DataObject = DataObject;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -81,7 +101,7 @@ void UWBP_UI_Widget_Waypoint_C::BP_OnMarkerTextVisibleChanged(bool bShowMarkerTe
 // Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Waypoint_C::PreConstruct(bool IsDesignTime)
 {
@@ -93,26 +113,6 @@ void UWBP_UI_Widget_Waypoint_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_Widget_Waypoint_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnDataSet
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMarkerDataAsset*        InMarkerAsset                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_Waypoint_C::BP_OnDataSet(const class USBZMarkerDataAsset* InMarkerAsset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Waypoint_C", "BP_OnDataSet");
-
-	Params::WBP_UI_Widget_Waypoint_C_BP_OnDataSet Parms{};
-
-	Parms.InMarkerAsset = InMarkerAsset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

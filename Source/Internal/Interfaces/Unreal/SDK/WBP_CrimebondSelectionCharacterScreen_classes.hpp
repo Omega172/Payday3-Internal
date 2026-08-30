@@ -17,27 +17,27 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CrimebondSelectionCharacterScreen.WBP_CrimebondSelectionCharacterScreen_C
-// 0x0030 (0x03A8 - 0x0378)
+// 0x0030 (0x0408 - 0x03D8)
 class UWBP_CrimebondSelectionCharacterScreen_C final : public USBZBundleEntrySelectionWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Show;                                              // 0x0380(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Progression_Text;                                  // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAkAudioEvent*                          Navigate_Sound;                                    // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         LastIndex;                                         // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Show;                                              // 0x03E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Progression_Text;                                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAkAudioEvent*                          Navigate_Sound;                                    // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         LastIndex;                                         // 0x0400(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen(int32 EntryPoint);
+	void BP_OnCurrentPackChanged(int32 NewIndex, class USBZBundlePackData* PackData, const struct FSBZCrimeBondProgression& Progression);
 	void BP_OnSelectionChanged(int32 NewIndex);
 	void BP_OnSelectionConfirmed(int32 Index_0);
-	void BP_OnCurrentPackChanged(int32 NewIndex, class USBZBundlePackData* PackData, const struct FSBZCrimeBondProgression& Progression);
+	void ExecuteUbergraph_WBP_CrimebondSelectionCharacterScreen(int32 EntryPoint);
 	void OnControlReferenceClicked(class FName ActionName);
-	void OnLostStackFocused();
 	void OnGainedStackFocused(const class FName& PreviousValue);
-	void PrePush_221874EE489B48DA0A9E608F6ACE6CA2(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnLostStackFocused();
 	void PostPush_221874EE489B48DA0A9E608F6ACE6CA2(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_221874EE489B48DA0A9E608F6ACE6CA2(class USBZMenuStackScreenWidget* MenuWidget);
 	void UpdatePackVisuals(class USBZBundlePackData* InPackDat, const struct FSBZCrimeBondProgression& InPackProgression);
 
 public:

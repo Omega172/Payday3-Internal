@@ -17,19 +17,30 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.ExecuteUbergraph_WBP_UI_Widget_MaskOnNotification
-// 0x0010 (0x0010 - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct WBP_UI_Widget_MaskOnNotification_C_ExecuteUbergraph_WBP_UI_Widget_MaskOnNotification final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_InProgress;                           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsPuttingOnMask;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bInIsPuttingOnMask;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_UpdateProgress_Progress_ImplicitCast;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_MaskOnNotification_C_ExecuteUbergraph_WBP_UI_Widget_MaskOnNotification;
+
+// Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.MaskOnChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_MaskOnNotification_C_MaskOnChanged final
+{
+public:
+	bool                                          bInIsPuttingOnMask;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_MaskOnNotification_C_MaskOnChanged;
 
 // Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.OnProgressChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -39,15 +50,6 @@ public:
 	float                                         InProgress;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_MaskOnNotification_C_OnProgressChanged;
-
-// Function WBP_UI_Widget_MaskOnNotification.WBP_UI_Widget_MaskOnNotification_C.MaskOnChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_MaskOnNotification_C_MaskOnChanged final
-{
-public:
-	bool                                          bInIsPuttingOnMask;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_MaskOnNotification_C_MaskOnChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -54,7 +54,7 @@ void UWBP_Widget_VoipWidget_C::OnInitialized()
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    bPlayerTalking                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bPlayerTalking                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Widget_VoipWidget_C::OnPlayerTalkingChangedEvent(const class FString& PlayerName, bool bPlayerTalking)
 {

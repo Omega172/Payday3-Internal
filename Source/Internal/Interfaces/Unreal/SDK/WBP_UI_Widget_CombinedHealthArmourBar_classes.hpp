@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_CombinedHealthArmourBar.WBP_UI_Widget_CombinedHealthArmourBar_C
-// 0x0000 (0x02B8 - 0x02B8)
+// 0x0000 (0x0318 - 0x0318)
 class UWBP_UI_Widget_CombinedHealthArmourBar_C final : public UPD3HUDPlayerCombinedHealthWidget
 {
 public:

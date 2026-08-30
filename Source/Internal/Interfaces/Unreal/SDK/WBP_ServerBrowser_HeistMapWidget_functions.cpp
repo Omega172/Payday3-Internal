@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistMapWidget_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "ButtonHoveredChanged");
+
+	Params::WBP_ServerBrowser_HeistMapWidget_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,26 +56,6 @@ void UWBP_ServerBrowser_HeistMapWidget_C::ExecuteUbergraph_WBP_ServerBrowser_Hei
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistMapWidget_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "PreConstruct");
-
-	Params::WBP_ServerBrowser_HeistMapWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.OnHeistDataInitialized
 // (Event, Public, BlueprintEvent)
 
@@ -67,46 +67,6 @@ void UWBP_ServerBrowser_HeistMapWidget_C::OnHeistDataInitialized()
 		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "OnHeistDataInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistMapWidget_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "ButtonHoveredChanged");
-
-	Params::WBP_ServerBrowser_HeistMapWidget_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetSelected
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsSelected                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_HeistMapWidget_C::SetSelected(bool bInIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "SetSelected");
-
-	Params::WBP_ServerBrowser_HeistMapWidget_C_SetSelected Parms{};
-
-	Parms.bInIsSelected = bInIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -124,10 +84,30 @@ void UWBP_ServerBrowser_HeistMapWidget_C::OnInitialized()
 }
 
 
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistMapWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "PreConstruct");
+
+	Params::WBP_ServerBrowser_HeistMapWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetActive
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_HeistMapWidget_C::SetActive(bool bIsActive)
 {
@@ -144,27 +124,37 @@ void UWBP_ServerBrowser_HeistMapWidget_C::SetActive(bool bIsActive)
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.UpdatePinVisual
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetSelected
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   InPlayerCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// ESBZHeistPlaystyle                      InHeistPlaystyle                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsSelected                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle)
+void UWBP_ServerBrowser_HeistMapWidget_C::SetSelected(bool bInIsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "UpdatePinVisual");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "SetSelected");
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_UpdatePinVisual Parms{};
+	Params::WBP_ServerBrowser_HeistMapWidget_C_SetSelected Parms{};
 
-	Parms.InPlayerCount = InPlayerCount;
-	Parms.InHovered = InHovered;
-	Parms.InHeistPlaystyle = InHeistPlaystyle;
+	Parms.bInIsSelected = bInIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetupPinMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_HeistMapWidget_C::SetupPinMaterial()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "SetupPinMaterial");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -188,17 +178,27 @@ void UWBP_ServerBrowser_HeistMapWidget_C::ShowDifficultyVisual(ESBZDifficulty In
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetupPinMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.UpdatePinVisual
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InPlayerCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZHeistPlaystyle                      InHeistPlaystyle                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::SetupPinMaterial()
+void UWBP_ServerBrowser_HeistMapWidget_C::UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "SetupPinMaterial");
+		Func = Class->GetFunction("WBP_ServerBrowser_HeistMapWidget_C", "UpdatePinVisual");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ServerBrowser_HeistMapWidget_C_UpdatePinVisual Parms{};
+
+	Parms.InPlayerCount = InPlayerCount;
+	Parms.InHovered = InHovered;
+	Parms.InHeistPlaystyle = InHeistPlaystyle;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

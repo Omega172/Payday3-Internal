@@ -18,50 +18,51 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_SM_JobOverview_PlayerStatus.WBP_UI_SM_JobOverview_PlayerStatus_C.ExecuteUbergraph_WBP_UI_SM_JobOverview_PlayerStatus
-// 0x0280 (0x0280 - 0x0000)
+// 0x0238 (0x0238 - 0x0000)
 struct WBP_UI_SM_JobOverview_PlayerStatus_C_ExecuteUbergraph_WBP_UI_SM_JobOverview_PlayerStatus final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPlayerReadyInfo                    K2Node_Event_InPlayerReadyInfo;                    // 0x0018(0x0098)(ConstParm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00B0(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00F0(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ReferenceParm)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0120(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0138(0x0018)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           CallFunc_GetSpriteForNebula_ReturnValue;           // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           CallFunc_GetSpriteForPlatform_ReturnValue;         // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0170(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0188(0x0018)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_2;                              // 0x01A8(0x0018)()
-	class FText                                   CallFunc_GetLocalizedPlayerNoName_ReturnValue;     // 0x01C0(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x01D8(0x0018)()
-	ESBZFirstPartyPlatform                        CallFunc_GetFirstPartyPlatform_ReturnValue;        // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_3;                              // 0x01F8(0x0018)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_4;                              // 0x0218(0x0018)()
-	TScriptInterface<class ISlateTextureAtlasInterface> K2Node_Select_Default_1;                     // 0x0230(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-	ESBZFirstPartyPlatform                        CallFunc_GetFirstPartyPlatform_ReturnValue_1;      // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_242[0x6];                                      // 0x0242(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_2;                           // 0x0248(0x0018)()
-	EPlayerReadyStatusValue                       Temp_byte_Variable;                                // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_262[0x6];                                      // 0x0262(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_3;                           // 0x0268(0x0018)()
+	struct FSBZPlayerReadyInfo                    K2Node_Event_InPlayerReadyInfo;                    // 0x0018(0x00A0)(ConstParm)
+	bool                                          Temp_bool_Variable_2;                              // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00C8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D8(0x0048)(HasGetValueTypeHash)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0128(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0010)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0148(0x0010)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0160(0x0010)()
+	class UPaperSprite*                           CallFunc_GetSpriteForNebula_ReturnValue;           // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           CallFunc_GetSpriteForPlatform_ReturnValue;         // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_1;                              // 0x0180(0x0010)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedPlayerNoName_ReturnValue;     // 0x0198(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x01A8(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x01B8(0x0010)()
+	ESBZFirstPartyPlatform                        CallFunc_GetFirstPartyPlatform_ReturnValue;        // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_3;                              // 0x01D0(0x0010)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_4;                              // 0x01E8(0x0010)()
+	TScriptInterface<class ISlateTextureAtlasInterface> K2Node_Select_Default_1;                     // 0x01F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	ESBZFirstPartyPlatform                        CallFunc_GetFirstPartyPlatform_ReturnValue_1;      // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0209(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20A[0x6];                                      // 0x020A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_2;                           // 0x0210(0x0010)()
+	EPlayerReadyStatusValue                       Temp_byte_Variable;                                // 0x0220(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0221(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_222[0x6];                                      // 0x0222(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_3;                           // 0x0228(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_SM_JobOverview_PlayerStatus_C_ExecuteUbergraph_WBP_UI_SM_JobOverview_PlayerStatus;
 
@@ -70,16 +71,16 @@ DUMPER7_ASSERTS_WBP_UI_SM_JobOverview_PlayerStatus_C_ExecuteUbergraph_WBP_UI_SM_
 struct WBP_UI_SM_JobOverview_PlayerStatus_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_SM_JobOverview_PlayerStatus_C_PreConstruct;
 
 // Function WBP_UI_SM_JobOverview_PlayerStatus.WBP_UI_SM_JobOverview_PlayerStatus_C.SetPlayerInfo
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct WBP_UI_SM_JobOverview_PlayerStatus_C_SetPlayerInfo final
 {
 public:
-	struct FSBZPlayerReadyInfo                    InPlayerReadyInfo;                                 // 0x0000(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FSBZPlayerReadyInfo                    InPlayerReadyInfo;                                 // 0x0000(0x00A0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 DUMPER7_ASSERTS_WBP_UI_SM_JobOverview_PlayerStatus_C_SetPlayerInfo;
 

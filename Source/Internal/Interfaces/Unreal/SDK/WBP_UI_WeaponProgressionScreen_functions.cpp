@@ -36,6 +36,40 @@ void UWBP_UI_WeaponProgressionScreen_C::ExecuteUbergraph_WBP_UI_WeaponProgressio
 }
 
 
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.FocusedWeaponPartChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZWeaponPartDataAsset*    FocusedWeaponPart                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponProgressionScreen_C::FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "FocusedWeaponPartChanged");
+
+	Params::WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged Parms{};
+
+	Parms.FocusedWeaponPart = FocusedWeaponPart;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponProgressionScreen_C::OnAddedToStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "OnAddedToStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnControlsReferencePressed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -56,55 +90,21 @@ void UWBP_UI_WeaponProgressionScreen_C::OnControlsReferencePressed(class FName A
 }
 
 
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponProgressionScreen_C::OnAddedToStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "OnAddedToStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.FocusedWeaponPartChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class USBZWeaponPartDataAsset*    FocusedWeaponPart                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponProgressionScreen_C::FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart)
+void UWBP_UI_WeaponProgressionScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "FocusedWeaponPartChanged");
+		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "OnGainedStackFocused");
 
-	Params::WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged Parms{};
+	Params::WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused Parms{};
 
-	Parms.FocusedWeaponPart = FocusedWeaponPart;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_WeaponProgressionScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "PreConstruct");
-
-	Params::WBP_UI_WeaponProgressionScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -124,21 +124,21 @@ void UWBP_UI_WeaponProgressionScreen_C::OnLostStackFocused()
 }
 
 
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponProgressionScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_UI_WeaponProgressionScreen_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "OnGainedStackFocused");
+		Func = Class->GetFunction("WBP_UI_WeaponProgressionScreen_C", "PreConstruct");
 
-	Params::WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused Parms{};
+	Params::WBP_UI_WeaponProgressionScreen_C_PreConstruct Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -36,30 +36,10 @@ void UWBP_ItemInventoryDescription_C::ExecuteUbergraph_WBP_ItemInventoryDescript
 }
 
 
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.SetItemDecorator
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInventoryDescription_C::SetItemDecorator(class USBZInventoryItemDecorator* ItemDeco)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemInventoryDescription_C", "SetItemDecorator");
-
-	Params::WBP_ItemInventoryDescription_C_SetItemDecorator Parms{};
-
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ItemInventoryDescription_C::PreConstruct(bool IsDesignTime)
 {
@@ -76,10 +56,44 @@ void UWBP_ItemInventoryDescription_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.Refresh Container Visibility
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ItemInventoryDescription_C::Refresh_Container_Visibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemInventoryDescription_C", "Refresh Container Visibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.SetItemDecorator
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInventoryDescription_C::SetItemDecorator(class USBZInventoryItemDecorator* ItemDeco)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemInventoryDescription_C", "SetItemDecorator");
+
+	Params::WBP_ItemInventoryDescription_C_SetItemDecorator Parms{};
+
+	Parms.ItemDeco = ItemDeco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.UpdateWeaponLevell
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryItemDecorator*       Item_Deco                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       Item_Deco                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ItemInventoryDescription_C::UpdateWeaponLevell(class USBZInventoryItemDecorator* Item_Deco)
 {
@@ -93,20 +107,6 @@ void UWBP_ItemInventoryDescription_C::UpdateWeaponLevell(class USBZInventoryItem
 	Parms.Item_Deco = Item_Deco;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.Refresh Container Visibility
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ItemInventoryDescription_C::Refresh_Container_Visibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemInventoryDescription_C", "Refresh Container Visibility");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

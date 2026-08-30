@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // const struct FDataRegistryId&           ItemId                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)>AcquireCallback                                        (Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+// TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)>AcquireCallback                                        (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UDataRegistrySubsystem::AcquireItemBP(const struct FDataRegistryId& ItemId, TDelegate<void(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistryAcquireStatus Status)> AcquireCallback)
@@ -232,6 +232,41 @@ void UDataRegistrySubsystem::FindCachedItemBP(const struct FDataRegistryId& Item
 }
 
 
+// Function DataRegistry.DataRegistrySubsystem.FindCachedItemFromLookupBP
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDataRegistryId&           ItemId                                                 (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FDataRegistryLookup&       ResolvedLookup                                         (ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// EDataRegistrySubsystemGetItemResult*    OutResult                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FTableRowBase*                   OutItem                                                (Parm, OutParm, NativeAccessSpecifierPublic)
+
+void UDataRegistrySubsystem::FindCachedItemFromLookupBP(const struct FDataRegistryId& ItemId, const struct FDataRegistryLookup& ResolvedLookup, EDataRegistrySubsystemGetItemResult* OutResult, struct FTableRowBase* OutItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("DataRegistrySubsystem", "FindCachedItemFromLookupBP");
+
+	Params::DataRegistrySubsystem_FindCachedItemFromLookupBP Parms{};
+
+	Parms.ItemId = std::move(ItemId);
+	Parms.ResolvedLookup = std::move(ResolvedLookup);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutResult != nullptr)
+		*OutResult = Parms.OutResult;
+
+	if (OutItem != nullptr)
+		*OutItem = std::move(Parms.OutItem);
+}
+
+
 // Function DataRegistry.DataRegistrySubsystem.GetCachedItemBP
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -295,6 +330,35 @@ bool UDataRegistrySubsystem::GetCachedItemFromLookupBP(const struct FDataRegistr
 		*OutItem = std::move(Parms.OutItem);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function DataRegistry.DataRegistrySubsystem.GetPossibleDataRegistryIdList
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FDataRegistryType&         RegistryType                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<struct FDataRegistryId>*         OutIdList                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UDataRegistrySubsystem::GetPossibleDataRegistryIdList(const struct FDataRegistryType& RegistryType, TArray<struct FDataRegistryId>* OutIdList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("DataRegistrySubsystem", "GetPossibleDataRegistryIdList");
+
+	Params::DataRegistrySubsystem_GetPossibleDataRegistryIdList Parms{};
+
+	Parms.RegistryType = std::move(RegistryType);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutIdList != nullptr)
+		*OutIdList = std::move(Parms.OutIdList);
 }
 
 

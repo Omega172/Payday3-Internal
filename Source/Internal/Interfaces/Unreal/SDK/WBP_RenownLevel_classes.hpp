@@ -18,30 +18,30 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_RenownLevel.WBP_RenownLevel_C
-// 0x0028 (0x02B8 - 0x0290)
+// 0x0028 (0x0318 - 0x02F0)
 class UWBP_RenownLevel_C final : public USBZWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_Icon;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        SBZText_LevelCounter;                              // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZRenownData*                         RenownData;                                        // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         EditorRenownLevel;                                 // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocalClient;                                    // 0x02B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_Icon;                                        // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        SBZText_LevelCounter;                              // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZRenownData*                         RenownData;                                        // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         EditorRenownLevel;                                 // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocalClient;                                    // 0x0314(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_RenownLevel(int32 EntryPoint);
-	void Destruct();
 	void Construct();
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-	void SetIconAndLevel(int32 InLevel);
+	void Destruct();
+	void ExecuteUbergraph_WBP_RenownLevel(int32 EntryPoint);
 	void GetIcon(int32 InRenownLevel, class UPaperSprite** OutSprite);
 	void GetTierColor(int32 InRenownLevel, struct FSlateColor* OutColor);
-	void UpdateVisuals(int32 InLevel);
-	void UpdateRenown();
-	void SetRenown(int32 InRenown);
+	void OnInitialized();
 	void OnRenownChanged(int32 NewLevel, int32 PreviousLevel);
+	void PreConstruct(bool IsDesignTime);
+	void SetIconAndLevel(int32 InLevel);
+	void SetRenown(int32 InRenown);
+	void UpdateRenown();
+	void UpdateVisuals(int32 InLevel);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,66 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PreplanningItemButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,81 +96,41 @@ void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ExecuteUbergraph_WBP_
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnFocused(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "OnFocused");
 
-	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnFocused Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.SetRemoveAssetButton
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnHovered
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsRemoveAssetButton                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::SetRemoveAssetButton(bool bIsRemoveAssetButton)
+void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnHovered(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "SetRemoveAssetButton");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "OnHovered");
 
-	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_SetRemoveAssetButton Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnHovered Parms{};
 
-	Parms.bIsRemoveAssetButton = bIsRemoveAssetButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -133,7 +153,7 @@ void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnInitialized()
 // Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnPrePlanningItemInitialized
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZPreplanningAssetData*   InPreplanningData                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZPreplanningAssetData*   InPreplanningData                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnPrePlanningItemInitialized(const class USBZPreplanningAssetData* InPreplanningData)
 {
@@ -153,7 +173,7 @@ void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnPrePlanningItemInit
 // Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -184,41 +204,21 @@ void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.SetRemoveAssetButton
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsRemoveAssetButton                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnFocused(bool bIsFocused)
+void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::SetRemoveAssetButton(bool bIsRemoveAssetButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "OnFocused");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "SetRemoveAssetButton");
 
-	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnFocused Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_SetRemoveAssetButton Parms{};
 
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_PreplanningItemButton_C::OnHovered(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C", "OnHovered");
-
-	Params::WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnHovered Parms{};
-
-	Parms.bIsHovered = bIsHovered;
+	Parms.bIsRemoveAssetButton = bIsRemoveAssetButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

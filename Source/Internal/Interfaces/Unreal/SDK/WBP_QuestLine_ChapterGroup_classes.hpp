@@ -18,19 +18,19 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C
-// 0x0038 (0x02C8 - 0x0290)
+// 0x0030 (0x0320 - 0x02F0)
 class UWBP_QuestLine_ChapterGroup_C final : public USBZWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_QuestLine_Item_Chapter_C*          ChapterName;                                       // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VB_QuestItems;                                     // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   ChapterText;                                       // 0x02A8(0x0018)(Edit, BlueprintVisible)
-	bool                                          ShowText;                                          // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_QuestLine_Item_Chapter_C*          ChapterName;                                       // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VB_QuestItems;                                     // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   ChapterText;                                       // 0x0308(0x0010)(Edit, BlueprintVisible)
+	bool                                          ShowText;                                          // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void SetChapterText(const class FText& InputText);
 	void SetTextVisible(bool IsTextVisible);

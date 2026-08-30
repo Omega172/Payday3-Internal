@@ -11,40 +11,44 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_WP_Master.ABP_WP_Master_C
-// 0x12C0 (0x1640 - 0x0380)
+// 0x17F0 (0x1C90 - 0x04A0)
 class UABP_WP_Master_C final : public USBZWeaponAnimation
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0388(0x0048)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot_1;                              // 0x03D0(0x0060)()
-	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0430(0x0060)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x0490(0x00D0)()
-	struct FSBZAnimNode_BoneKeepRefPose           SBZAnimGraphNode_BoneKeepRefPose;                  // 0x0560(0x0108)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0668(0x0030)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0698(0x0030)()
-	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x06C8(0x00D0)()
-	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0798(0x00E8)()
-	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0880(0x0960)()
-	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x11E0(0x00D8)()
-	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x12B8(0x0168)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x1420(0x0040)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x1460(0x0040)()
-	struct FAnimNode_Inertialization              AnimGraphNode_Inertialization;                     // 0x14A0(0x0080)()
-	struct FSBZAnimNode_CopyBoneDeltaMultiTargets SBZAnimGraphNode_CopyBoneDeltaMultiTargets;        // 0x1520(0x0120)()
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x04A8(0x0008)()
+	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x04B0(0x0008)()
+	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x04B8(0x0030)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot_1;                              // 0x04E8(0x0078)()
+	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0560(0x0078)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer_1;                    // 0x05D8(0x0098)()
+	struct FSBZAnimNode_BoneKeepRefPose           SBZAnimGraphNode_BoneKeepRefPose;                  // 0x0670(0x0108)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x0778(0x0030)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x07A8(0x0030)()
+	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x07D8(0x0098)()
+	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0870(0x00E8)()
+	uint8                                         Pad_958[0x8];                                      // 0x0958(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0960(0x0AA0)()
+	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x1400(0x00D8)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x14D8(0x0090)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x1568(0x0040)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x15A8(0x0040)()
+	uint8                                         Pad_15E8[0x8];                                     // 0x15E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_Inertialization              AnimGraphNode_Inertialization;                     // 0x15F0(0x0580)()
+	struct FSBZAnimNode_CopyBoneDeltaMultiTargets SBZAnimGraphNode_CopyBoneDeltaMultiTargets;        // 0x1B70(0x0120)()
 
 public:
-	void ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
 	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
+	void ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -36,6 +36,20 @@ void UWBP_HeistStates_FirstReponse_C::ExecuteUbergraph_WBP_HeistStates_FirstRepo
 }
 
 
+// Function WBP_HeistStates_FirstReponse.WBP_HeistStates_FirstReponse_C.Hide
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_FirstReponse_C::Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_FirstReponse_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HeistStates_FirstReponse.WBP_HeistStates_FirstReponse_C.HideDescriptiveText
 // (BlueprintCallable, BlueprintEvent)
 
@@ -59,20 +73,6 @@ void UWBP_HeistStates_FirstReponse_C::Show()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_HeistStates_FirstReponse_C", "Show");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HeistStates_FirstReponse.WBP_HeistStates_FirstReponse_C.Hide
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_FirstReponse_C::Hide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_FirstReponse_C", "Hide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

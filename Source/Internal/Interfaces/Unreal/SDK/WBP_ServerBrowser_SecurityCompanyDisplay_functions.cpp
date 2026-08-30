@@ -36,20 +36,6 @@ void UWBP_ServerBrowser_SecurityCompanyDisplay_C::ExecuteUbergraph_WBP_ServerBro
 }
 
 
-// Function WBP_ServerBrowser_SecurityCompanyDisplay.WBP_ServerBrowser_SecurityCompanyDisplay_C.OnSecurityCompanyAssetStartedLoad
-// (Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_SecurityCompanyDisplay_C::OnSecurityCompanyAssetStartedLoad()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_SecurityCompanyDisplay_C", "OnSecurityCompanyAssetStartedLoad");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ServerBrowser_SecurityCompanyDisplay.WBP_ServerBrowser_SecurityCompanyDisplay_C.OnEmptySet
 // (Event, Public, BlueprintEvent)
 
@@ -73,6 +59,20 @@ void UWBP_ServerBrowser_SecurityCompanyDisplay_C::OnSecurityCompanyAssetLoaded()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_ServerBrowser_SecurityCompanyDisplay_C", "OnSecurityCompanyAssetLoaded");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_SecurityCompanyDisplay.WBP_ServerBrowser_SecurityCompanyDisplay_C.OnSecurityCompanyAssetStartedLoad
+// (Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_SecurityCompanyDisplay_C::OnSecurityCompanyAssetStartedLoad()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_SecurityCompanyDisplay_C", "OnSecurityCompanyAssetStartedLoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Hacker_RoutedPing.GA_Hacker_RoutedPing_C
-// 0x0000 (0x0500 - 0x0500)
+// 0x0000 (0x04F8 - 0x04F8)
 class UGA_Hacker_RoutedPing_C final : public USBZHackerRoutedPingAbility
 {
 public:

@@ -16,6 +16,28 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_MarkerContainer.WBP_UI_Widget_MarkerContainer_C.BP_OnInsideVolumeChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInsideVolume                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_MarkerContainer_C::BP_OnInsideVolumeChanged(bool bInsideVolume, const class USBZMarkerDataAsset* MarkerDataAsset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_MarkerContainer_C", "BP_OnInsideVolumeChanged");
+
+	Params::WBP_UI_Widget_MarkerContainer_C_BP_OnInsideVolumeChanged Parms{};
+
+	Parms.bInsideVolume = bInsideVolume;
+	Parms.MarkerDataAsset = MarkerDataAsset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_MarkerContainer.WBP_UI_Widget_MarkerContainer_C.ExecuteUbergraph_WBP_UI_Widget_MarkerContainer
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,28 +53,6 @@ void UWBP_UI_Widget_MarkerContainer_C::ExecuteUbergraph_WBP_UI_Widget_MarkerCont
 	Params::WBP_UI_Widget_MarkerContainer_C_ExecuteUbergraph_WBP_UI_Widget_MarkerContainer Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_MarkerContainer.WBP_UI_Widget_MarkerContainer_C.BP_OnInsideVolumeChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInsideVolume                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_MarkerContainer_C::BP_OnInsideVolumeChanged(bool bInsideVolume, const class USBZMarkerDataAsset* MarkerDataAsset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_MarkerContainer_C", "BP_OnInsideVolumeChanged");
-
-	Params::WBP_UI_Widget_MarkerContainer_C_BP_OnInsideVolumeChanged Parms{};
-
-	Parms.bInsideVolume = bInsideVolume;
-	Parms.MarkerDataAsset = MarkerDataAsset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

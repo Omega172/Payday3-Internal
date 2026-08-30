@@ -16,21 +16,41 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton
-// (Final, UbergraphFunction)
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton(int32 EntryPoint)
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "ButtonFocusedChanged");
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -50,95 +70,21 @@ void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ButtonSelected()
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton");
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "PreConstruct");
-
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetSessionInfo
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZOnlineSearchResult&    SBZOnlineSearchResult                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::SetSessionInfo(const struct FSBZOnlineSearchResult& SBZOnlineSearchResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "SetSessionInfo");
-
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetSessionInfo Parms{};
-
-	Parms.SBZOnlineSearchResult = std::move(SBZOnlineSearchResult);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -191,7 +137,7 @@ void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::GetSessionInfo(struct FSBZOnlineS
 // Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.IsJoinBlocked
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   bIsJoinBlocked                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsJoinBlocked                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::IsJoinBlocked(bool* bIsJoinBlocked)
 {
@@ -209,21 +155,21 @@ void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::IsJoinBlocked(bool* bIsJoinBlocke
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetIsActive
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnFocus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::SetIsActive(bool bIsActive)
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::OnFocus(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "SetIsActive");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "OnFocus");
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetIsActive Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnFocus Parms{};
 
-	Parms.bIsActive = bIsActive;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -232,7 +178,7 @@ void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::SetIsActive(bool bIsActive)
 // Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnHover
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::OnHover(bool bIsHovered)
 {
@@ -249,21 +195,75 @@ void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::OnHover(bool bIsHovered)
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnFocus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::OnFocus(bool bIsFocused)
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "OnFocus");
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "OnInitialized");
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_OnFocus Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsFocused = bIsFocused;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "PreConstruct");
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetIsActive
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::SetIsActive(bool bIsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "SetIsActive");
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetIsActive Parms{};
+
+	Parms.bIsActive = bIsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerButton.WBP_UI_MainMenu_CrimeNet_ServerButton_C.SetSessionInfo
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZOnlineSearchResult&    SBZOnlineSearchResult                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerButton_C::SetSessionInfo(const struct FSBZOnlineSearchResult& SBZOnlineSearchResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_CrimeNet_ServerButton_C", "SetSessionInfo");
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerButton_C_SetSessionInfo Parms{};
+
+	Parms.SBZOnlineSearchResult = std::move(SBZOnlineSearchResult);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

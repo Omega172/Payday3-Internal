@@ -16,6 +16,41 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_DailyChallengesContainer_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.CreateChallengeButton
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_DailyChallengeItem_C**       OutChallengeButtonWidget                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesContainer_C::CreateChallengeButton(class UWBP_DailyChallengeItem_C** OutChallengeButtonWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "CreateChallengeButton");
+
+	Params::WBP_DailyChallengesContainer_C_CreateChallengeButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutChallengeButtonWidget != nullptr)
+		*OutChallengeButtonWidget = Parms.OutChallengeButtonWidget;
+}
+
+
 // Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.ExecuteUbergraph_WBP_DailyChallengesContainer
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,78 +71,17 @@ void UWBP_DailyChallengesContainer_C::ExecuteUbergraph_WBP_DailyChallengesContai
 }
 
 
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.InitializeDailyChallenges
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DailyChallengesContainer_C::PreConstruct(bool IsDesignTime)
+void UWBP_DailyChallengesContainer_C::InitializeDailyChallenges()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "PreConstruct");
-
-	Params::WBP_DailyChallengesContainer_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_DailyChallengesContainer_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "Construct");
+		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "InitializeDailyChallenges");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.CreateChallengeButton
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_DailyChallengeItem_C**       OutChallengeButtonWidget                               (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengesContainer_C::CreateChallengeButton(class UWBP_DailyChallengeItem_C** OutChallengeButtonWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "CreateChallengeButton");
-
-	Params::WBP_DailyChallengesContainer_C_CreateChallengeButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutChallengeButtonWidget != nullptr)
-		*OutChallengeButtonWidget = Parms.OutChallengeButtonWidget;
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnChallengeRerollPressed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_DailyChallengeItem_C*        ChallengeButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengesContainer_C::OnChallengeRerollPressed(class UWBP_DailyChallengeItem_C* ChallengeButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "OnChallengeRerollPressed");
-
-	Params::WBP_DailyChallengesContainer_C_OnChallengeRerollPressed Parms{};
-
-	Parms.ChallengeButton = ChallengeButton;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -131,6 +105,26 @@ void UWBP_DailyChallengesContainer_C::OnChallengeRerollPopupClosed(class FName C
 }
 
 
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnChallengeRerollPressed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_DailyChallengeItem_C*        ChallengeButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesContainer_C::OnChallengeRerollPressed(class UWBP_DailyChallengeItem_C* ChallengeButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "OnChallengeRerollPressed");
+
+	Params::WBP_DailyChallengesContainer_C_OnChallengeRerollPressed Parms{};
+
+	Parms.ChallengeButton = ChallengeButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnDailyChallengesUpdated
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -145,17 +139,23 @@ void UWBP_DailyChallengesContainer_C::OnDailyChallengesUpdated()
 }
 
 
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.InitializeDailyChallenges
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengesContainer_C::InitializeDailyChallenges()
+void UWBP_DailyChallengesContainer_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "InitializeDailyChallenges");
+		Func = Class->GetFunction("WBP_DailyChallengesContainer_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_DailyChallengesContainer_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

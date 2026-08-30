@@ -17,15 +17,15 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C
-// 0x0008 (0x02C8 - 0x02C0)
+// 0x0008 (0x0328 - 0x0320)
 class UWBP_UI_MainMenu_ControlsReference_C final : public USBZControlsReferenceWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference(int32 EntryPoint);
 	void DisplayControlsReference(const struct FSBZControlsReference& InControlsReference);
+	void ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference(int32 EntryPoint);
 	void HideControlsReference();
 
 public:

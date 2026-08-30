@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FireWeaponFeedback_OVK_HET5.BP_FireWeaponFeedback_OVK_HET5_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UBP_FireWeaponFeedback_OVK_HET5_C final : public USBZLocalPlayerFeedback
 {
 public:

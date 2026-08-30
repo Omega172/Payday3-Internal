@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_Throwable_FragGrenade.GE_Throwable_FragGrenade_C
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0B30 - 0x0B30)
 class UGE_Throwable_FragGrenade_C final : public UGameplayEffect
 {
 public:

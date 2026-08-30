@@ -36,6 +36,20 @@ void UWBP_UI_InteractionMode_C::ExecuteUbergraph_WBP_UI_InteractionMode(int32 En
 }
 
 
+// Function WBP_UI_InteractionMode.WBP_UI_InteractionMode_C.OnActionReleased
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_InteractionMode_C::OnActionReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_InteractionMode_C", "OnActionReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_InteractionMode.WBP_UI_InteractionMode_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -53,7 +67,7 @@ void UWBP_UI_InteractionMode_C::OnInitialized()
 // Function WBP_UI_InteractionMode.WBP_UI_InteractionMode_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_InteractionMode_C::PreConstruct(bool IsDesignTime)
 {
@@ -74,7 +88,7 @@ void UWBP_UI_InteractionMode_C::PreConstruct(bool IsDesignTime)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FSBZInteractModeDisplayData&InInteractionModeData                                  (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    bIsCasing                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsCasing                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_InteractionMode_C::SetNewInteractionModeData(const struct FSBZInteractModeDisplayData& InInteractionModeData, bool bIsCasing)
 {
@@ -95,9 +109,9 @@ void UWBP_UI_InteractionMode_C::SetNewInteractionModeData(const struct FSBZInter
 // Function WBP_UI_InteractionMode.WBP_UI_InteractionMode_C.UpdateProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   InNewProgress                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InNewProgress                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_InteractionMode_C::UpdateProgress(float InNewProgress)
+void UWBP_UI_InteractionMode_C::UpdateProgress(double InNewProgress)
 {
 	static class UFunction* Func = nullptr;
 
@@ -109,20 +123,6 @@ void UWBP_UI_InteractionMode_C::UpdateProgress(float InNewProgress)
 	Parms.InNewProgress = InNewProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_InteractionMode.WBP_UI_InteractionMode_C.OnActionReleased
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_InteractionMode_C::OnActionReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_InteractionMode_C", "OnActionReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

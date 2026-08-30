@@ -36,21 +36,21 @@ void UWBP_PartyMember_ThrowableStatus_C::ExecuteUbergraph_WBP_PartyMember_Throwa
 }
 
 
-// Function WBP_PartyMember_ThrowableStatus.WBP_PartyMember_ThrowableStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PartyMember_ThrowableStatus.WBP_PartyMember_ThrowableStatus_C.OnAmmoInventoryChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   InAmmoInventory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PartyMember_ThrowableStatus_C::PreConstruct(bool IsDesignTime)
+void UWBP_PartyMember_ThrowableStatus_C::OnAmmoInventoryChanged(int32 InAmmoInventory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyMember_ThrowableStatus_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_PartyMember_ThrowableStatus_C", "OnAmmoInventoryChanged");
 
-	Params::WBP_PartyMember_ThrowableStatus_C_PreConstruct Parms{};
+	Params::WBP_PartyMember_ThrowableStatus_C_OnAmmoInventoryChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InAmmoInventory = InAmmoInventory;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,30 +76,10 @@ void UWBP_PartyMember_ThrowableStatus_C::OnIconChanged(const TSoftObjectPtr<clas
 }
 
 
-// Function WBP_PartyMember_ThrowableStatus.WBP_PartyMember_ThrowableStatus_C.OnAmmoInventoryChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InAmmoInventory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PartyMember_ThrowableStatus_C::OnAmmoInventoryChanged(int32 InAmmoInventory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyMember_ThrowableStatus_C", "OnAmmoInventoryChanged");
-
-	Params::WBP_PartyMember_ThrowableStatus_C_OnAmmoInventoryChanged Parms{};
-
-	Parms.InAmmoInventory = InAmmoInventory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_PartyMember_ThrowableStatus.WBP_PartyMember_ThrowableStatus_C.OnLoaded_BC3BA34548858F44694E15B4D6B41A9D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyMember_ThrowableStatus_C::OnLoaded_BC3BA34548858F44694E15B4D6B41A9D(class UObject* Loaded)
 {
@@ -111,6 +91,26 @@ void UWBP_PartyMember_ThrowableStatus_C::OnLoaded_BC3BA34548858F44694E15B4D6B41A
 	Params::WBP_PartyMember_ThrowableStatus_C_OnLoaded_BC3BA34548858F44694E15B4D6B41A9D Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PartyMember_ThrowableStatus.WBP_PartyMember_ThrowableStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyMember_ThrowableStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyMember_ThrowableStatus_C", "PreConstruct");
+
+	Params::WBP_PartyMember_ThrowableStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

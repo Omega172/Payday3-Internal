@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Overskill_NavBar_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Overskill_NavBar_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.ExecuteUbergraph_WBP_UI_Overskill_NavBar
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,29 +64,39 @@ void UWBP_UI_Overskill_NavBar_C::ExecuteUbergraph_WBP_UI_Overskill_NavBar(int32 
 }
 
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.GetRomanNumeral
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            LevelText                                              (Parm, OutParm)
 
-void UWBP_UI_Overskill_NavBar_C::Destruct()
+void UWBP_UI_Overskill_NavBar_C::GetRomanNumeral(int32 Index_0, class FText* LevelText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "Destruct");
+		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "GetRomanNumeral");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Overskill_NavBar_C_GetRomanNumeral Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (LevelText != nullptr)
+		*LevelText = std::move(Parms.LevelText);
 }
 
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabUp
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Overskill_NavBar_C::OnTabUp()
+void UWBP_UI_Overskill_NavBar_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "OnTabUp");
+		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,15 +116,35 @@ void UWBP_UI_Overskill_NavBar_C::OnTabDown()
 }
 
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   SelectedIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_NavBar_C::OnInitialized()
+void UWBP_UI_Overskill_NavBar_C::OnTabSelected(int32 SelectedIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "OnTabSelected");
+
+	Params::WBP_UI_Overskill_NavBar_C_OnTabSelected Parms{};
+
+	Parms.SelectedIndex = SelectedIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabUp
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Overskill_NavBar_C::OnTabUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "OnTabUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,7 +153,7 @@ void UWBP_UI_Overskill_NavBar_C::OnInitialized()
 // Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Overskill_NavBar_C::PreConstruct(bool IsDesignTime)
 {
@@ -109,20 +167,6 @@ void UWBP_UI_Overskill_NavBar_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Overskill_NavBar_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -163,50 +207,6 @@ void UWBP_UI_Overskill_NavBar_C::UpdateIndex(int32 NewActiveIndex)
 	Parms.NewActiveIndex = NewActiveIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SelectedIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_NavBar_C::OnTabSelected(int32 SelectedIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "OnTabSelected");
-
-	Params::WBP_UI_Overskill_NavBar_C_OnTabSelected Parms{};
-
-	Parms.SelectedIndex = SelectedIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.GetRomanNumeral
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            LevelText                                              (Parm, OutParm)
-
-void UWBP_UI_Overskill_NavBar_C::GetRomanNumeral(int32 Index_0, class FText* LevelText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_NavBar_C", "GetRomanNumeral");
-
-	Params::WBP_UI_Overskill_NavBar_C_GetRomanNumeral Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (LevelText != nullptr)
-		*LevelText = std::move(Parms.LevelText);
 }
 
 

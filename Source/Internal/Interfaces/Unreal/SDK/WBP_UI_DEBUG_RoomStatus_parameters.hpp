@@ -17,20 +17,20 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_DEBUG_RoomStatus.WBP_UI_DEBUG_RoomStatus_C.ExecuteUbergraph_WBP_UI_DEBUG_RoomStatus
-// 0x00F8 (0x00F8 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct WBP_UI_DEBUG_RoomStatus_C_ExecuteUbergraph_WBP_UI_DEBUG_RoomStatus final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_GetCurrentLevelName_ReturnValue;          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
-	class ASBZRoomVolume*                         K2Node_Event_RoomVolume;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0038(0x0040)(HasGetValueTypeHash)
-	class FText                                   CallFunc_GetRoomName_ReturnValue;                  // 0x0078(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0090(0x0040)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0010)()
+	class ASBZRoomVolume*                         K2Node_Event_RoomVolume;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0030(0x0048)(HasGetValueTypeHash)
+	class FText                                   CallFunc_GetRoomName_ReturnValue;                  // 0x0078(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0088(0x0048)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00D0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_DEBUG_RoomStatus_C_ExecuteUbergraph_WBP_UI_DEBUG_RoomStatus;
 
@@ -39,7 +39,7 @@ DUMPER7_ASSERTS_WBP_UI_DEBUG_RoomStatus_C_ExecuteUbergraph_WBP_UI_DEBUG_RoomStat
 struct WBP_UI_DEBUG_RoomStatus_C_OnRoomChanged final
 {
 public:
-	class ASBZRoomVolume*                         RoomVolume;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZRoomVolume*                         RoomVolume;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_DEBUG_RoomStatus_C_OnRoomChanged;
 

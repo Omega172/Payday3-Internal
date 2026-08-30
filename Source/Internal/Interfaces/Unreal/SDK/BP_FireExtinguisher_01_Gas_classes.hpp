@@ -18,18 +18,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FireExtinguisher_01_Gas.BP_FireExtinguisher_01_Gas_C
-// 0x0018 (0x04B8 - 0x04A0)
+// 0x0018 (0x0548 - 0x0530)
 class ABP_FireExtinguisher_01_Gas_C final : public ASBZExplosiveTrap
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        Locator;                                           // 0x04A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x04B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0530(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        Locator;                                           // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0540(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_FireExtinguisher_01_Gas(int32 EntryPoint);
-	void BP_OnExplosion(bool bDoCosmetics);
 	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
+	void BP_OnExplosion(bool bDoCosmetics);
+	void ExecuteUbergraph_BP_FireExtinguisher_01_Gas(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

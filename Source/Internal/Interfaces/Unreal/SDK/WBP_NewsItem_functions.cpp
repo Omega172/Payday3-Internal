@@ -36,30 +36,10 @@ void UWBP_NewsItem_C::ExecuteUbergraph_WBP_NewsItem(int32 EntryPoint)
 }
 
 
-// Function WBP_NewsItem.WBP_NewsItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_NewsItem_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NewsItem_C", "PreConstruct");
-
-	Params::WBP_NewsItem_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_NewsItem.WBP_NewsItem_C.OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_NewsItem_C::OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED(class UObject* Loaded)
 {
@@ -71,6 +51,26 @@ void UWBP_NewsItem_C::OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED(class UObject* L
 	Params::WBP_NewsItem_C_OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsItem.WBP_NewsItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsItem_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NewsItem_C", "PreConstruct");
+
+	Params::WBP_NewsItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

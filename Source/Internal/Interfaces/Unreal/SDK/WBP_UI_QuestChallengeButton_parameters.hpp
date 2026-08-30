@@ -10,122 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "UMG_structs.hpp"
-#include "Starbreeze_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "Slate_structs.hpp"
+#include "Starbreeze_structs.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.ExecuteUbergraph_WBP_UI_QuestChallengeButton
-// 0x0178 (0x0178 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_ExecuteUbergraph_WBP_UI_QuestChallengeButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0030(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStretch                                      Temp_byte_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EStretch                                      Temp_byte_Variable_1;                              // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZUIQuestChallengeData               K2Node_Event_InQuestChallengeData;                 // 0x0048(0x0038)(ConstParm)
-	EStretch                                      K2Node_Select_Default;                             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue_1;              // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZChallengeData                      CallFunc_GetChallengeData_ReturnValue;             // 0x0090(0x00A8)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsInfamyReward_OutIsHasInfamyRewardPoints; // 0x013A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x013B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x013C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_143[0x5];                                      // 0x0143(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable;                              // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           K2Node_DynamicCast_AsPaper_Sprite;                 // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0161(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_162[0x2];                                      // 0x0162(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x0164(0x0014)(ZeroConstructor, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_ExecuteUbergraph_WBP_UI_QuestChallengeButton;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_PreConstruct;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.OnChallengeDataInititalized
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_OnChallengeDataInititalized final
-{
-public:
-	struct FSBZUIQuestChallengeData               InQuestChallengeData;                              // 0x0000(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_OnChallengeDataInititalized;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.OnLoaded_A75A19A9458CB2A30048B3A680327C38
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_OnLoaded_A75A19A9458CB2A30048B3A680327C38 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_OnLoaded_A75A19A9458CB2A30048B3A680327C38;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetChallengeDescription
-// 0x00C8 (0x00C8 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetChallengeDescription final
-{
-public:
-	struct FSBZChallengeData                      Challenge;                                         // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x00B0(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetChallengeDescription;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateVisualsBasedStatus
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_UpdateVisualsBasedStatus final
-{
-public:
-	struct FSBZUIQuestChallengeData               InChallengeData;                                   // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0040(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_UpdateVisualsBasedStatus;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetProgressBarPercentage
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetProgressBarPercentage final
-{
-public:
-	int32                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TotalProgress;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SafeDivide_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetProgressBarPercentage;
 
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.ConvertProgressMinMaxToMeters
 // 0x0008 (0x0008 - 0x0000)
@@ -137,146 +31,12 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_ConvertProgressMinMaxToMeters;
 
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetProgressMinMax
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetProgressMinMax final
-{
-public:
-	int32                                         InMaxValueToUse;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InMinValueToUse;                                   // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetProgressMinMax;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetProgressText
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetProgressText final
-{
-public:
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0040(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetProgressText;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.IsInfamyReward
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_IsInfamyReward final
-{
-public:
-	int32                                         InInfamyRewardPoints;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          OutIsHasInfamyRewardPoints;                        // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_IsInfamyReward;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetInfamyRewardInfo
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetInfamyRewardInfo final
-{
-public:
-	int32                                         InInfamyRewardPoints;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         L_InfamyRewardPoints;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetInfamyRewardInfo;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardIcon
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetRewardIcon final
-{
-public:
-	class UPaperSprite*                           InIconSprite;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetRewardIcon;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetGoldRewardInfo
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetGoldRewardInfo final
-{
-public:
-	int32                                         InQuantity;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0058(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetGoldRewardInfo;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetCreditsRewardInfo
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetCreditsRewardInfo final
-{
-public:
-	int32                                         InQuantity;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0058(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetCreditsRewardInfo;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetItemRewardInfo
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetItemRewardInfo final
-{
-public:
-	class UPaperSprite*                           InIconSprite;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InItemQuantity;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetItemRewardInfo;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardValueVisibility
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_SetRewardValueVisibility final
-{
-public:
-	int32                                         InItemQuantity;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetRewardValueVisibility;
-
-// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateRewardIconDimensions
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_QuestChallengeButton_C_UpdateRewardIconDimensions final
-{
-public:
-	class UPaperSprite*                           Sprite;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetPaperSpriteSourceSize_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X;                          // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SafeDivide_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_X_1;                        // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakVector2D_Y_1;                        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_UpdateRewardIconDimensions;
-
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.DebugPrint
 // 0x0298 (0x0298 - 0x0000)
 struct WBP_UI_QuestChallengeButton_C_DebugPrint final
 {
 public:
-	bool                                          DebugPrints;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          DebugPrints;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ChallengeProgressionArrayText;                     // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -317,43 +77,290 @@ public:
 	uint8                                         Pad_254[0x4];                                      // 0x0254(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_18;             // 0x0258(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_19;             // 0x0268(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_20;             // 0x0280(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_DebugPrint;
 
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.ExecuteUbergraph_WBP_UI_QuestChallengeButton
+// 0x0160 (0x0160 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_ExecuteUbergraph_WBP_UI_QuestChallengeButton final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStretch                                      Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EStretch                                      Temp_byte_Variable_1;                              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZUIQuestChallengeData               K2Node_Event_InQuestChallengeData;                 // 0x0030(0x0038)(ConstParm)
+	EStretch                                      K2Node_Select_Default;                             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue_1;              // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZChallengeData                      CallFunc_GetChallengeData_ReturnValue;             // 0x0078(0x00A8)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInfamyReward_OutIsHasInfamyRewardPoints; // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0123(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12B[0x5];                                      // 0x012B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable;                              // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           K2Node_DynamicCast_AsPaper_Sprite;                 // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0149(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14A[0x2];                                      // 0x014A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate;              // 0x014C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_ExecuteUbergraph_WBP_UI_QuestChallengeButton;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.IsInfamyReward
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_IsInfamyReward final
+{
+public:
+	int32                                         InInfamyRewardPoints;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          OutIsHasInfamyRewardPoints;                        // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_IsInfamyReward;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.OnChallengeDataInititalized
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_OnChallengeDataInititalized final
+{
+public:
+	struct FSBZUIQuestChallengeData               InQuestChallengeData;                              // 0x0000(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_OnChallengeDataInititalized;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.OnLoaded_A75A19A9458CB2A30048B3A680327C38
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_OnLoaded_A75A19A9458CB2A30048B3A680327C38 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_OnLoaded_A75A19A9458CB2A30048B3A680327C38;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_PreConstruct;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetChallengeDescription
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetChallengeDescription final
+{
+public:
+	struct FSBZChallengeData                      Challenge;                                         // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x00B0(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetChallengeDescription;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetCreditsRewardInfo
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetCreditsRewardInfo final
+{
+public:
+	int32                                         InQuantity;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetCreditsRewardInfo;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetGoldRewardInfo
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetGoldRewardInfo final
+{
+public:
+	int32                                         InQuantity;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetGoldRewardInfo;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetInfamyRewardInfo
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetInfamyRewardInfo final
+{
+public:
+	int32                                         InInfamyRewardPoints;                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         L_InfamyRewardPoints;                              // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0020(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ReferenceParm)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetInfamyRewardInfo;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetItemRewardInfo
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetItemRewardInfo final
+{
+public:
+	class UPaperSprite*                           InIconSprite;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         InItemQuantity;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0018(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0070(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetItemRewardInfo;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetProgressBarPercentage
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetProgressBarPercentage final
+{
+public:
+	int32                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TotalProgress;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SafeDivide_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetProgressBarPercentage;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetProgressMinMax
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetProgressMinMax final
+{
+public:
+	int32                                         InMaxValueToUse;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InMinValueToUse;                                   // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetProgressMinMax;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetProgressText
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetProgressText final
+{
+public:
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0058(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetProgressText;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardIcon
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetRewardIcon final
+{
+public:
+	class UPaperSprite*                           InIconSprite;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetRewardIcon;
+
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardsSectionVisible
 // 0x0005 (0x0005 - 0x0000)
 struct WBP_UI_QuestChallengeButton_C_SetRewardsSectionVisible final
 {
 public:
-	bool                                          RewardsVisible;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          RewardsVisible;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetRewardsSectionVisible;
 
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetRewardValueVisibility
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_SetRewardValueVisibility final
+{
+public:
+	int32                                         InItemQuantity;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetRewardValueVisibility;
+
 // Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.SetSharedProgression
 // 0x00E0 (0x00E0 - 0x0000)
 struct WBP_UI_QuestChallengeButton_C_SetSharedProgression final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameRecordsManager*                 CallFunc_Get_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZGameRecordsManager*                 CallFunc_Get_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSBZChallengeData                      CallFunc_GetChallengeData_ReturnValue;             // 0x0010(0x00A8)()
 	TArray<class FString>                         CallFunc_GetSharedProgressionStatArray_ReturnValue; // 0x00B8(0x0010)(ConstParm, ReferenceParm)
 	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_SetSharedProgression;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateRewardIconDimensions
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_UpdateRewardIconDimensions final
+{
+public:
+	class UPaperSprite*                           Sprite;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetPaperSpriteSourceSize_ReturnValue;     // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X;                          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SafeDivide_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X_1;                        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y_1;                        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_BreakVector2D_InVec_ImplicitCast;         // 0x0058(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_UpdateRewardIconDimensions;
+
+// Function WBP_UI_QuestChallengeButton.WBP_UI_QuestChallengeButton_C.UpdateVisualsBasedStatus
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_UI_QuestChallengeButton_C_UpdateVisualsBasedStatus final
+{
+public:
+	struct FSBZUIQuestChallengeData               InChallengeData;                                   // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x003B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x003C(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_QuestChallengeButton_C_UpdateVisualsBasedStatus;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

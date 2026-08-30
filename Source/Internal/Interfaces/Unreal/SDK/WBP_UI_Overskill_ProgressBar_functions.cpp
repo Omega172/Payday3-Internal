@@ -39,7 +39,7 @@ void UWBP_UI_Overskill_ProgressBar_C::ExecuteUbergraph_WBP_UI_Overskill_Progress
 // Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Overskill_ProgressBar_C::PreConstruct(bool IsDesignTime)
 {
@@ -59,10 +59,10 @@ void UWBP_UI_Overskill_ProgressBar_C::PreConstruct(bool IsDesignTime)
 // Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.Set Progress
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   InXp                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   InProgressPercent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InXp                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InProgressPercent                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_ProgressBar_C::Set_Progress(float InXp, float InProgressPercent)
+void UWBP_UI_Overskill_ProgressBar_C::Set_Progress(double InXp, double InProgressPercent)
 {
 	static class UFunction* Func = nullptr;
 

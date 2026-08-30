@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C.ExecuteUbergraph_WBP_UI_SM_ActionPhase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_ActionPhase_C::ExecuteUbergraph_WBP_UI_SM_ActionPhase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhase_C", "ExecuteUbergraph_WBP_UI_SM_ActionPhase");
-
-	Params::WBP_UI_SM_ActionPhase_C_ExecuteUbergraph_WBP_UI_SM_ActionPhase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C.BP_CloseHUDOverlay
 // (Event, Protected, BlueprintEvent)
 
@@ -78,17 +58,23 @@ void UWBP_UI_SM_ActionPhase_C::Destruct()
 }
 
 
-// Function WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C.ExecuteUbergraph_WBP_UI_SM_ActionPhase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_ActionPhase_C::OnInitialized()
+void UWBP_UI_SM_ActionPhase_C::ExecuteUbergraph_WBP_UI_SM_ActionPhase(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhase_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhase_C", "ExecuteUbergraph_WBP_UI_SM_ActionPhase");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_SM_ActionPhase_C_ExecuteUbergraph_WBP_UI_SM_ActionPhase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -112,10 +98,24 @@ void UWBP_UI_SM_ActionPhase_C::OnHUDContextChanged(const struct FSBZUIHUDContext
 }
 
 
+// Function WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_ActionPhase_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhase_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C.SetPlayerHUDDisplayed
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFullHUD                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFullHUD                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SM_ActionPhase_C::SetPlayerHUDDisplayed(bool bIsFullHUD)
 {

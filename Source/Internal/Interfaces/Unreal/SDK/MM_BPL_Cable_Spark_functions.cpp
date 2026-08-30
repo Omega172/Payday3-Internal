@@ -50,6 +50,20 @@ void AMM_BPL_Cable_Spark_C::ReceiveBeginPlay()
 }
 
 
+// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void AMM_BPL_Cable_Spark_C::Timeline_0__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__SparkTrigger__EventFunc
 // (BlueprintEvent)
 
@@ -73,20 +87,6 @@ void AMM_BPL_Cable_Spark_C::Timeline_0__UpdateFunc()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void AMM_BPL_Cable_Spark_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

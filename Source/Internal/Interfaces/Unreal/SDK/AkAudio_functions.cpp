@@ -16,159 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function AkAudio.AkGameObject.PostAkEvent
-// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const class FString&                    in_EventName                                           (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function AkAudio.AkPortalComponent.DisablePortal
+// (Final, Native, Public, BlueprintCallable)
 
-int32 UAkGameObject::PostAkEvent(class UAkAudioEvent* AkEvent, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const class FString& in_EventName)
+void UAkPortalComponent::DisablePortal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "PostAkEvent");
-
-	Params::AkGameObject_PostAkEvent Parms{};
-
-	Parms.AkEvent = AkEvent;
-	Parms.CallbackMask = CallbackMask;
-	Parms.PostEventCallback = PostEventCallback;
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.in_EventName = std::move(in_EventName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkGameObject.PostAkEventAsync
-// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-void UAkGameObject::PostAkEventAsync(const class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, int32* PlayingID, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "PostAkEventAsync");
-
-	Params::AkGameObject_PostAkEventAsync Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.AkEvent = AkEvent;
-	Parms.CallbackMask = CallbackMask;
-	Parms.PostEventCallback = PostEventCallback;
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.LatentInfo = std::move(LatentInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PlayingID != nullptr)
-		*PlayingID = Parms.PlayingID;
-}
-
-
-// Function AkAudio.AkGameObject.PostAssociatedAkEvent
-// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UAkGameObject::PostAssociatedAkEvent(int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const TArray<struct FAkExternalSourceInfo>& ExternalSources)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "PostAssociatedAkEvent");
-
-	Params::AkGameObject_PostAssociatedAkEvent Parms{};
-
-	Parms.CallbackMask = CallbackMask;
-	Parms.PostEventCallback = PostEventCallback;
-	Parms.ExternalSources = std::move(ExternalSources);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
-// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameObject::PostAssociatedAkEventAsync(const class UObject* WorldContextObject, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo, int32* PlayingID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "PostAssociatedAkEventAsync");
-
-	Params::AkGameObject_PostAssociatedAkEventAsync Parms{};
-
-	Parms.WorldContextObject = WorldContextObject;
-	Parms.CallbackMask = CallbackMask;
-	Parms.PostEventCallback = PostEventCallback;
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.LatentInfo = std::move(LatentInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PlayingID != nullptr)
-		*PlayingID = Parms.PlayingID;
-}
-
-
-// Function AkAudio.AkGameObject.Stop
-// (BlueprintCosmetic, Native, Public, BlueprintCallable)
-
-void UAkGameObject::Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "Stop");
+		Func = Class->GetFunction("AkPortalComponent", "DisablePortal");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -179,91 +35,40 @@ void UAkGameObject::Stop()
 }
 
 
-// Function AkAudio.AkGameObject.GetRTPCValue
-// (Final, BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ERTPCValueType                          InputValueType                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float*                                  Value                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// ERTPCValueType*                         OutputValueType                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    RTPC                                                   (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayingID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// Function AkAudio.AkPortalComponent.EnablePortal
+// (Final, Native, Public, BlueprintCallable)
 
-void UAkGameObject::GetRTPCValue(class UAkRtpc* RTPCValue, ERTPCValueType InputValueType, float* Value, ERTPCValueType* OutputValueType, const class FString& RTPC, int32 PlayingID) const
+void UAkPortalComponent::EnablePortal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "GetRTPCValue");
-
-	Params::AkGameObject_GetRTPCValue Parms{};
-
-	Parms.RTPCValue = RTPCValue;
-	Parms.InputValueType = InputValueType;
-	Parms.RTPC = std::move(RTPC);
-	Parms.PlayingID = PlayingID;
+		Func = Class->GetFunction("AkPortalComponent", "EnablePortal");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (Value != nullptr)
-		*Value = Parms.Value;
-
-	if (OutputValueType != nullptr)
-		*OutputValueType = Parms.OutputValueType;
-}
-
-
-// Function AkAudio.AkGameObject.SetRTPCValue
-// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, Const)
-// Parameters:
-// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   InterpolationTimeMs                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    RTPC                                                   (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameObject::SetRTPCValue(class UAkRtpc* RTPCValue, float Value, int32 InterpolationTimeMs, const class FString& RTPC) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkGameObject", "SetRTPCValue");
-
-	Params::AkGameObject_SetRTPCValue Parms{};
-
-	Parms.RTPCValue = RTPCValue;
-	Parms.Value = Value;
-	Parms.InterpolationTimeMs = InterpolationTimeMs;
-	Parms.RTPC = std::move(RTPC);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
 
 
-// Function AkAudio.AkRoomComponent.SetGeometryComponent
+// Function AkAudio.AkPortalComponent.SetDynamic
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAkAcousticTextureSetComponent*   textureSetComponent                                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInDynamic                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAkRoomComponent::SetGeometryComponent(class UAkAcousticTextureSetComponent* textureSetComponent)
+void UAkPortalComponent::SetDynamic(bool bInDynamic)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkRoomComponent", "SetGeometryComponent");
+		Func = Class->GetFunction("AkPortalComponent", "SetDynamic");
 
-	Params::AkRoomComponent_SetGeometryComponent Parms{};
+	Params::AkPortalComponent_SetDynamic Parms{};
 
-	Parms.textureSetComponent = textureSetComponent;
+	Parms.bInDynamic = bInDynamic;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -274,19 +79,251 @@ void UAkRoomComponent::SetGeometryComponent(class UAkAcousticTextureSetComponent
 }
 
 
-// Function AkAudio.AkRoomComponent.GetPrimitiveParent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function AkAudio.AkPortalComponent.SetPortalOcclusion
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UPrimitiveComponent*              ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InPortalOcclusion                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UPrimitiveComponent* UAkRoomComponent::GetPrimitiveParent() const
+void UAkPortalComponent::SetPortalOcclusion(float InPortalOcclusion)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkRoomComponent", "GetPrimitiveParent");
+		Func = Class->GetFunction("AkPortalComponent", "SetPortalOcclusion");
 
-	Params::AkRoomComponent_GetPrimitiveParent Parms{};
+	Params::AkPortalComponent_SetPortalOcclusion Parms{};
+
+	Parms.InPortalOcclusion = InPortalOcclusion;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkPortalComponent.GetCurrentState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EAkAcousticPortalState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EAkAcousticPortalState UAkPortalComponent::GetCurrentState() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkPortalComponent", "GetCurrentState");
+
+	Params::AkPortalComponent_GetCurrentState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkPortalComponent.GetPortalOcclusion
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+float UAkPortalComponent::GetPortalOcclusion() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkPortalComponent", "GetPortalOcclusion");
+
+	Params::AkPortalComponent_GetPortalOcclusion Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkPortalComponent.GetPrimitiveParent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UPrimitiveComponent*              ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UPrimitiveComponent* UAkPortalComponent::GetPrimitiveParent() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkPortalComponent", "GetPrimitiveParent");
+
+	Params::AkPortalComponent_GetPrimitiveParent Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkPortalComponent.PortalPlacementValid
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkPortalComponent::PortalPlacementValid() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkPortalComponent", "PortalPlacementValid");
+
+	Params::AkPortalComponent_PortalPlacementValid Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAcousticPortal.DisablePortal
+// (Final, Native, Public, BlueprintCallable)
+
+void AAkAcousticPortal::DisablePortal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAcousticPortal", "DisablePortal");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkAcousticPortal.EnablePortal
+// (Final, Native, Public, BlueprintCallable)
+
+void AAkAcousticPortal::EnablePortal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAcousticPortal", "EnablePortal");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkAcousticPortal.GetCurrentState
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// EAkAcousticPortalState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+EAkAcousticPortalState AAkAcousticPortal::GetCurrentState() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAcousticPortal", "GetCurrentState");
+
+	Params::AkAcousticPortal_GetCurrentState Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioType.LoadData
+// (Native, Public, BlueprintCallable)
+
+void UAkAudioType::LoadData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioType", "LoadData");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkAudioType.UnloadData
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bAsync                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkAudioType::UnloadData(bool bAsync)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioType", "UnloadData");
+
+	Params::AkAudioType_UnloadData Parms{};
+
+	Parms.bAsync = bAsync;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkAudioType.GetWwiseShortID
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioType::GetWwiseShortID() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioType", "GetWwiseShortID");
+
+	Params::AkAudioType_GetWwiseShortID Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -337,207 +374,6 @@ void AAkAmbientSound::StopAmbientSound()
 }
 
 
-// Function AkAudio.AkPortalComponent.ClosePortal
-// (Final, Native, Public, BlueprintCallable)
-
-void UAkPortalComponent::ClosePortal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkPortalComponent", "ClosePortal");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkPortalComponent.OpenPortal
-// (Final, Native, Public, BlueprintCallable)
-
-void UAkPortalComponent::OpenPortal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkPortalComponent", "OpenPortal");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkPortalComponent.GetCurrentState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EAkAcousticPortalState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EAkAcousticPortalState UAkPortalComponent::GetCurrentState() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkPortalComponent", "GetCurrentState");
-
-	Params::AkPortalComponent_GetCurrentState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkPortalComponent.GetPrimitiveParent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// class UPrimitiveComponent*              ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UPrimitiveComponent* UAkPortalComponent::GetPrimitiveParent() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkPortalComponent", "GetPrimitiveParent");
-
-	Params::AkPortalComponent_GetPrimitiveParent Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkPortalComponent.PortalPlacementValid
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-bool UAkPortalComponent::PortalPlacementValid() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkPortalComponent", "PortalPlacementValid");
-
-	Params::AkPortalComponent_PortalPlacementValid Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkAcousticPortal.ClosePortal
-// (Final, Native, Public, BlueprintCallable)
-
-void AAkAcousticPortal::ClosePortal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkAcousticPortal", "ClosePortal");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkAcousticPortal.OpenPortal
-// (Final, Native, Public, BlueprintCallable)
-
-void AAkAcousticPortal::OpenPortal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkAcousticPortal", "OpenPortal");
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkAcousticPortal.SetExtent
-// (Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
-// Parameters:
-// const struct FVector&                   Extent                                                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void AAkAcousticPortal::SetExtent(const struct FVector& Extent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkAcousticPortal", "SetExtent");
-
-	Params::AkAcousticPortal_SetExtent Parms{};
-
-	Parms.Extent = std::move(Extent);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkAcousticPortal.GetCurrentState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// EAkAcousticPortalState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-EAkAcousticPortalState AAkAcousticPortal::GetCurrentState() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkAcousticPortal", "GetCurrentState");
-
-	Params::AkAcousticPortal_GetCurrentState Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering
 // (Final, Native, Public)
 // Parameters:
@@ -563,19 +399,30 @@ void UAkAndroidInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
 }
 
 
-// Function AkAudio.AkAudioEvent.GetIsInfinite
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function AkAudio.AkAudioEvent.ExecuteAction
+// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EAkActionOnEventType              ActionType                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             PlayingID                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             TransitionDuration                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const EAkCurveInterpolation             FadeCurve                                              (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UAkAudioEvent::GetIsInfinite() const
+int32 UAkAudioEvent::ExecuteAction(const EAkActionOnEventType ActionType, const class AActor* Actor, const int32 PlayingID, const int32 TransitionDuration, const EAkCurveInterpolation FadeCurve)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkAudioEvent", "GetIsInfinite");
+		Func = Class->GetFunction("AkAudioEvent", "ExecuteAction");
 
-	Params::AkAudioEvent_GetIsInfinite Parms{};
+	Params::AkAudioEvent_ExecuteAction Parms{};
+
+	Parms.ActionType = ActionType;
+	Parms.Actor = Actor;
+	Parms.PlayingID = PlayingID;
+	Parms.TransitionDuration = TransitionDuration;
+	Parms.FadeCurve = FadeCurve;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -588,19 +435,427 @@ bool UAkAudioEvent::GetIsInfinite() const
 }
 
 
-// Function AkAudio.AkAudioEvent.GetMaxAttenuationRadius
+// Function AkAudio.AkAudioEvent.PostAtLocation
+// (Final, BlueprintCosmetic, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
+// Parameters:
+// const struct FVector&                   Location                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FRotator&                  Orientation                                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             CallbackMask                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostAtLocation(const struct FVector& Location, const struct FRotator& Orientation, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& Callback, const int32 CallbackMask, const class UObject* WorldContextObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostAtLocation");
+
+	Params::AkAudioEvent_PostAtLocation Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Orientation = std::move(Orientation);
+	Parms.Callback = Callback;
+	Parms.CallbackMask = CallbackMask;
+	Parms.WorldContextObject = WorldContextObject;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioEvent.PostOnActor
+// (Final, BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&Delegate                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             CallbackMask                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bStopWhenAttachedObjectDestroyed                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostOnActor(const class AActor* Actor, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& Delegate, const int32 CallbackMask, const bool bStopWhenAttachedObjectDestroyed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostOnActor");
+
+	Params::AkAudioEvent_PostOnActor Parms{};
+
+	Parms.Actor = Actor;
+	Parms.Delegate = Delegate;
+	Parms.CallbackMask = CallbackMask;
+	Parms.bStopWhenAttachedObjectDestroyed = bStopWhenAttachedObjectDestroyed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioEvent.PostOnActorAndWait
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class AActor*                     Actor                                                  (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bStopWhenAttachedObjectDestroyed                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLatentActionInfo&         LatentActionInfo                                       (ConstParm, Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostOnActorAndWait(const class AActor* Actor, const bool bStopWhenAttachedObjectDestroyed, const struct FLatentActionInfo& LatentActionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostOnActorAndWait");
+
+	Params::AkAudioEvent_PostOnActorAndWait Parms{};
+
+	Parms.Actor = Actor;
+	Parms.bStopWhenAttachedObjectDestroyed = bStopWhenAttachedObjectDestroyed;
+	Parms.LatentActionInfo = std::move(LatentActionInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioEvent.PostOnComponent
+// (Final, BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UAkComponent*                     Component                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&Delegate                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             CallbackMask                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bStopWhenAttachedObjectDestroyed                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostOnComponent(class UAkComponent* Component, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& Delegate, const int32 CallbackMask, const bool bStopWhenAttachedObjectDestroyed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostOnComponent");
+
+	Params::AkAudioEvent_PostOnComponent Parms{};
+
+	Parms.Component = Component;
+	Parms.Delegate = Delegate;
+	Parms.CallbackMask = CallbackMask;
+	Parms.bStopWhenAttachedObjectDestroyed = bStopWhenAttachedObjectDestroyed;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioEvent.PostOnComponentAndWait
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAkComponent*                     Component                                              (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const bool                              bStopWhenAttachedObjectDestroyed                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLatentActionInfo&         LatentActionInfo                                       (ConstParm, Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostOnComponentAndWait(class UAkComponent* Component, const bool bStopWhenAttachedObjectDestroyed, const struct FLatentActionInfo& LatentActionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostOnComponentAndWait");
+
+	Params::AkAudioEvent_PostOnComponentAndWait Parms{};
+
+	Parms.Component = Component;
+	Parms.bStopWhenAttachedObjectDestroyed = bStopWhenAttachedObjectDestroyed;
+	Parms.LatentActionInfo = std::move(LatentActionInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioEvent.PostOnGameObject
+// (Final, BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UAkGameObject*                    GameObject                                             (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&Delegate                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             CallbackMask                                           (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostOnGameObject(class UAkGameObject* GameObject, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& Delegate, const int32 CallbackMask)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostOnGameObject");
+
+	Params::AkAudioEvent_PostOnGameObject Parms{};
+
+	Parms.GameObject = GameObject;
+	Parms.Delegate = Delegate;
+	Parms.CallbackMask = CallbackMask;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkAudioEvent.PostOnGameObjectAndWait
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAkGameObject*                    GameObject                                             (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLatentActionInfo&         LatentActionInfo                                       (ConstParm, Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkAudioEvent::PostOnGameObjectAndWait(class UAkGameObject* GameObject, const struct FLatentActionInfo& LatentActionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkAudioEvent", "PostOnGameObjectAndWait");
+
+	Params::AkAudioEvent_PostOnGameObjectAndWait Parms{};
+
+	Parms.GameObject = GameObject;
+	Parms.LatentActionInfo = std::move(LatentActionInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGameObject.PostAkEvent
+// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkGameObject::PostAkEvent(class UAkAudioEvent* AkEvent, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGameObject", "PostAkEvent");
+
+	Params::AkGameObject_PostAkEvent Parms{};
+
+	Parms.AkEvent = AkEvent;
+	Parms.CallbackMask = CallbackMask;
+	Parms.PostEventCallback = PostEventCallback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGameObject.PostAkEventAsync
+// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
+
+void UAkGameObject::PostAkEventAsync(const class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, int32* PlayingID, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const struct FLatentActionInfo& LatentInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGameObject", "PostAkEventAsync");
+
+	Params::AkGameObject_PostAkEventAsync Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.AkEvent = AkEvent;
+	Parms.CallbackMask = CallbackMask;
+	Parms.PostEventCallback = PostEventCallback;
+	Parms.LatentInfo = std::move(LatentInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (PlayingID != nullptr)
+		*PlayingID = Parms.PlayingID;
+}
+
+
+// Function AkAudio.AkGameObject.PostAssociatedAkEvent
+// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+int32 UAkGameObject::PostAssociatedAkEvent(int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGameObject", "PostAssociatedAkEvent");
+
+	Params::AkGameObject_PostAssociatedAkEvent Parms{};
+
+	Parms.CallbackMask = CallbackMask;
+	Parms.PostEventCallback = PostEventCallback;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGameObject.PostAssociatedAkEventAsync
+// (BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameObject::PostAssociatedAkEventAsync(const class UObject* WorldContextObject, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const struct FLatentActionInfo& LatentInfo, int32* PlayingID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGameObject", "PostAssociatedAkEventAsync");
+
+	Params::AkGameObject_PostAssociatedAkEventAsync Parms{};
+
+	Parms.WorldContextObject = WorldContextObject;
+	Parms.CallbackMask = CallbackMask;
+	Parms.PostEventCallback = PostEventCallback;
+	Parms.LatentInfo = std::move(LatentInfo);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (PlayingID != nullptr)
+		*PlayingID = Parms.PlayingID;
+}
+
+
+// Function AkAudio.AkGameObject.SetAttenuationScalingFactor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InAttenuationScalingFactor                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameObject::SetAttenuationScalingFactor(float InAttenuationScalingFactor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGameObject", "SetAttenuationScalingFactor");
+
+	Params::AkGameObject_SetAttenuationScalingFactor Parms{};
+
+	Parms.InAttenuationScalingFactor = InAttenuationScalingFactor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameObject.Stop
+// (BlueprintCosmetic, Native, Public, BlueprintCallable)
+
+void UAkGameObject::Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGameObject", "Stop");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameObject.GetAttenuationScalingFactor
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UAkAudioEvent::GetMaxAttenuationRadius() const
+float UAkGameObject::GetAttenuationScalingFactor() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkAudioEvent", "GetMaxAttenuationRadius");
+		Func = Class->GetFunction("AkGameObject", "GetAttenuationScalingFactor");
 
-	Params::AkAudioEvent_GetMaxAttenuationRadius Parms{};
+	Params::AkGameObject_GetAttenuationScalingFactor Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -613,19 +868,29 @@ float UAkAudioEvent::GetMaxAttenuationRadius() const
 }
 
 
-// Function AkAudio.AkAudioEvent.GetMaximumDuration
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function AkAudio.AkGameObject.GetRTPCValue
+// (Final, BlueprintCosmetic, Native, Public, HasOutParams, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ERTPCValueType                          InputValueType                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float*                                  Value                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// ERTPCValueType*                         OutputValueType                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    RTPC                                                   (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   PlayingID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UAkAudioEvent::GetMaximumDuration() const
+void UAkGameObject::GetRTPCValue(class UAkRtpc* RTPCValue, ERTPCValueType InputValueType, float* Value, ERTPCValueType* OutputValueType, const class FString& RTPC, int32 PlayingID) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkAudioEvent", "GetMaximumDuration");
+		Func = Class->GetFunction("AkGameObject", "GetRTPCValue");
 
-	Params::AkAudioEvent_GetMaximumDuration Parms{};
+	Params::AkGameObject_GetRTPCValue Parms{};
+
+	Parms.RTPCValue = RTPCValue;
+	Parms.InputValueType = InputValueType;
+	Parms.RTPC = std::move(RTPC);
+	Parms.PlayingID = PlayingID;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -634,75 +899,35 @@ float UAkAudioEvent::GetMaximumDuration() const
 
 	Func->FunctionFlags = Flgs;
 
-	return Parms.ReturnValue;
+	if (Value != nullptr)
+		*Value = Parms.Value;
+
+	if (OutputValueType != nullptr)
+		*OutputValueType = Parms.OutputValueType;
 }
 
 
-// Function AkAudio.AkAudioEvent.GetMinimumDuration
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Function AkAudio.AkGameObject.SetRTPCValue
+// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   InterpolationTimeMs                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    RTPC                                                   (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-float UAkAudioEvent::GetMinimumDuration() const
+void UAkGameObject::SetRTPCValue(class UAkRtpc* RTPCValue, float Value, int32 InterpolationTimeMs, const class FString& RTPC) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkAudioEvent", "GetMinimumDuration");
+		Func = Class->GetFunction("AkGameObject", "SetRTPCValue");
 
-	Params::AkAudioEvent_GetMinimumDuration Parms{};
+	Params::AkGameObject_SetRTPCValue Parms{};
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkComponent.EnableDebugSoundObstruction
-// (Final, Exec, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVal                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::EnableDebugSoundObstruction(bool bVal)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "EnableDebugSoundObstruction");
-
-	Params::AkComponent_EnableDebugSoundObstruction Parms{};
-
-	Parms.bVal = bVal;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkComponent.EnableSoundObstruction
-// (Final, Exec, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVal                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::EnableSoundObstruction(bool bVal)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "EnableSoundObstruction");
-
-	Params::AkComponent_EnableSoundObstruction Parms{};
-
-	Parms.bVal = bVal;
+	Parms.RTPCValue = RTPCValue;
+	Parms.Value = Value;
+	Parms.InterpolationTimeMs = InterpolationTimeMs;
+	Parms.RTPC = std::move(RTPC);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -738,6 +963,31 @@ void UAkComponent::EnableSoundSourceFilter(bool bVal)
 }
 
 
+// Function AkAudio.AkComponent.GetOcclusionCollisionChannel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// ECollisionChannel                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+ECollisionChannel UAkComponent::GetOcclusionCollisionChannel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkComponent", "GetOcclusionCollisionChannel");
+
+	Params::AkComponent_GetOcclusionCollisionChannel Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AkAudio.AkComponent.GetSoundSourceFilter
 // (Final, Exec, Native, Public, BlueprintCallable)
 // Parameters:
@@ -764,15 +1014,13 @@ void UAkComponent::GetSoundSourceFilter(bool bVal)
 
 
 // Function AkAudio.AkComponent.PostAkEventAndWaitForEnd
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    in_EventName                                           (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkComponent::PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, const class FString& in_EventName, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo)
+int32 UAkComponent::PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, const struct FLatentActionInfo& LatentInfo)
 {
 	static class UFunction* Func = nullptr;
 
@@ -782,70 +1030,7 @@ int32 UAkComponent::PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, const
 	Params::AkComponent_PostAkEventAndWaitForEnd Parms{};
 
 	Parms.AkEvent = AkEvent;
-	Parms.in_EventName = std::move(in_EventName);
-	Parms.ExternalSources = std::move(ExternalSources);
 	Parms.LatentInfo = std::move(LatentInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-void UAkComponent::PostAkEventAndWaitForEndAsync(class UAkAudioEvent* AkEvent, int32* PlayingID, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "PostAkEventAndWaitForEndAsync");
-
-	Params::AkComponent_PostAkEventAndWaitForEndAsync Parms{};
-
-	Parms.AkEvent = AkEvent;
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.LatentInfo = std::move(LatentInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PlayingID != nullptr)
-		*PlayingID = Parms.PlayingID;
-}
-
-
-// Function AkAudio.AkComponent.PostAkEventByName
-// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    in_EventName                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-int32 UAkComponent::PostAkEventByName(const class FString& in_EventName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "PostAkEventByName");
-
-	Params::AkComponent_PostAkEventByName Parms{};
-
-	Parms.in_EventName = std::move(in_EventName);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -859,13 +1044,12 @@ int32 UAkComponent::PostAkEventByName(const class FString& in_EventName)
 
 
 // Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 // const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkComponent::PostAssociatedAkEventAndWaitForEnd(const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo)
+int32 UAkComponent::PostAssociatedAkEventAndWaitForEnd(const struct FLatentActionInfo& LatentInfo)
 {
 	static class UFunction* Func = nullptr;
 
@@ -874,7 +1058,6 @@ int32 UAkComponent::PostAssociatedAkEventAndWaitForEnd(const TArray<struct FAkEx
 
 	Params::AkComponent_PostAssociatedAkEventAndWaitForEnd Parms{};
 
-	Parms.ExternalSources = std::move(ExternalSources);
 	Parms.LatentInfo = std::move(LatentInfo);
 
 	auto Flgs = Func->FunctionFlags;
@@ -888,41 +1071,10 @@ int32 UAkComponent::PostAssociatedAkEventAndWaitForEnd(const TArray<struct FAkEx
 }
 
 
-// Function AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
-// (Final, Native, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-void UAkComponent::PostAssociatedAkEventAndWaitForEndAsync(int32* PlayingID, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "PostAssociatedAkEventAndWaitForEndAsync");
-
-	Params::AkComponent_PostAssociatedAkEventAndWaitForEndAsync Parms{};
-
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.LatentInfo = std::move(LatentInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PlayingID != nullptr)
-		*PlayingID = Parms.PlayingID;
-}
-
-
 // Function AkAudio.AkComponent.PostTrigger
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAkTrigger*                       TriggerValue                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkTrigger*                       TriggerValue                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const class FString&                    Trigger                                                (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkComponent::PostTrigger(class UAkTrigger* TriggerValue, const class FString& Trigger)
@@ -936,31 +1088,6 @@ void UAkComponent::PostTrigger(class UAkTrigger* TriggerValue, const class FStri
 
 	Parms.TriggerValue = TriggerValue;
 	Parms.Trigger = std::move(Trigger);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkComponent.SetAttenuationScalingFactor
-// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// Parameters:
-// float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::SetAttenuationScalingFactor(float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "SetAttenuationScalingFactor");
-
-	Params::AkComponent_SetAttenuationScalingFactor Parms{};
-
-	Parms.Value = Value;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1011,6 +1138,31 @@ void UAkComponent::SetEarlyReflectionsVolume(float SendVolume)
 	Params::AkComponent_SetEarlyReflectionsVolume Parms{};
 
 	Parms.SendVolume = SendVolume;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkComponent.SetEnableSpotReflectors
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    in_enable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkComponent::SetEnableSpotReflectors(bool in_enable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkComponent", "SetEnableSpotReflectors");
+
+	Params::AkComponent_SetEnableSpotReflectors Parms{};
+
+	Parms.in_enable = in_enable;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1155,7 +1307,7 @@ void UAkComponent::SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed)
 // Function AkAudio.AkComponent.SetSwitch
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAkSwitchValue*                   SwitchValue                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkSwitchValue*                   SwitchValue                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const class FString&                    SwitchGroup                                            (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const class FString&                    SwitchState                                            (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -1171,31 +1323,6 @@ void UAkComponent::SetSwitch(class UAkSwitchValue* SwitchValue, const class FStr
 	Parms.SwitchValue = SwitchValue;
 	Parms.SwitchGroup = std::move(SwitchGroup);
 	Parms.SwitchState = std::move(SwitchState);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkComponent.ShowAudioBank
-// (Final, Exec, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVal                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::ShowAudioBank(bool bVal)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "ShowAudioBank");
-
-	Params::AkComponent_ShowAudioBank Parms{};
-
-	Parms.bVal = bVal;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1285,33 +1412,6 @@ void UAkComponent::ShowSoundEvent(bool bVal)
 }
 
 
-// Function AkAudio.AkComponent.ShowSoundObstruction
-// (Final, Exec, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    bVal                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   Radius                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::ShowSoundObstruction(bool bVal, float Radius)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "ShowSoundObstruction");
-
-	Params::AkComponent_ShowSoundObstruction Parms{};
-
-	Parms.bVal = bVal;
-	Parms.Radius = Radius;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AkAudio.AkComponent.ShowStaticSoundAttenuation
 // (Final, Exec, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1356,66 +1456,6 @@ void UAkComponent::ShowStaticSoundSource(bool bVal, float Radius)
 
 	Parms.bVal = bVal;
 	Parms.Radius = Radius;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkComponent.UseEarlyReflections
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class UAkAuxBus*                        AuxBus                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Order                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   BusSendGain                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MaxPathLength                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    SpotReflectors                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    AuxBusName                                             (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::UseEarlyReflections(class UAkAuxBus* AuxBus, int32 Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, const class FString& AuxBusName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "UseEarlyReflections");
-
-	Params::AkComponent_UseEarlyReflections Parms{};
-
-	Parms.AuxBus = AuxBus;
-	Parms.Order = Order;
-	Parms.BusSendGain = BusSendGain;
-	Parms.MaxPathLength = MaxPathLength;
-	Parms.SpotReflectors = SpotReflectors;
-	Parms.AuxBusName = std::move(AuxBusName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkComponent.UseReverbVolumes
-// (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// Parameters:
-// bool                                    inUseReverbVolumes                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkComponent::UseReverbVolumes(bool inUseReverbVolumes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkComponent", "UseReverbVolumes");
-
-	Params::AkComponent_UseReverbVolumes Parms{};
-
-	Parms.inUseReverbVolumes = inUseReverbVolumes;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1704,10 +1744,11 @@ bool UAkCheckBox::IsPressed() const
 // Function AkAudio.AkGameplayStatics.AddOutput
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FAkOutputSettings&         in_Settings                                            (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAkOutputSettings&         in_Settings                                            (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// struct FAkOutputDeviceID*               out_DeviceID                                           (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// TArray<class UAkComponent*>&            in_ListenerIDs                                         (Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::AddOutput(const struct FAkOutputSettings& in_Settings)
+void UAkGameplayStatics::AddOutput(const struct FAkOutputSettings& in_Settings, struct FAkOutputDeviceID* out_DeviceID, TArray<class UAkComponent*>& in_ListenerIDs)
 {
 	static class UFunction* Func = nullptr;
 
@@ -1717,6 +1758,7 @@ int32 UAkGameplayStatics::AddOutput(const struct FAkOutputSettings& in_Settings)
 	Params::AkGameplayStatics_AddOutput Parms{};
 
 	Parms.in_Settings = std::move(in_Settings);
+	Parms.in_ListenerIDs = std::move(in_ListenerIDs);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1725,7 +1767,10 @@ int32 UAkGameplayStatics::AddOutput(const struct FAkOutputSettings& in_Settings)
 
 	Func->FunctionFlags = Flgs;
 
-	return Parms.ReturnValue;
+	in_ListenerIDs = std::move(Parms.in_ListenerIDs);
+
+	if (out_DeviceID != nullptr)
+		*out_DeviceID = std::move(Parms.out_DeviceID);
 }
 
 
@@ -1757,7 +1802,7 @@ void UAkGameplayStatics::AddOutputCaptureMarker(const class FString& MarkerText)
 // Function AkAudio.AkGameplayStatics.CancelEventCallback
 // (Final, BlueprintCosmetic, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::CancelEventCallback(const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback)
 {
@@ -1779,15 +1824,15 @@ void UAkGameplayStatics::CancelEventCallback(const TDelegate<void(EAkCallbackTyp
 }
 
 
-// Function AkAudio.AkGameplayStatics.ClearBanks
+// Function AkAudio.AkGameplayStatics.ClearSoundBanksAndMedia
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 
-void UAkGameplayStatics::ClearBanks()
+void UAkGameplayStatics::ClearSoundBanksAndMedia()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "ClearBanks");
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "ClearSoundBanksAndMedia");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1798,78 +1843,12 @@ void UAkGameplayStatics::ClearBanks()
 }
 
 
-// Function AkAudio.AkGameplayStatics.ExecuteActionOnEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAkActionOnEventType                    ActionType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   TransitionDuration                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAkCurveInterpolation                   FadeCurve                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayingID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::ExecuteActionOnEvent(class UAkAudioEvent* AkEvent, EAkActionOnEventType ActionType, class AActor* Actor, int32 TransitionDuration, EAkCurveInterpolation FadeCurve, int32 PlayingID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "ExecuteActionOnEvent");
-
-	Params::AkGameplayStatics_ExecuteActionOnEvent Parms{};
-
-	Parms.AkEvent = AkEvent;
-	Parms.ActionType = ActionType;
-	Parms.Actor = Actor;
-	Parms.TransitionDuration = TransitionDuration;
-	Parms.FadeCurve = FadeCurve;
-	Parms.PlayingID = PlayingID;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.ExecuteActionOnPlayingID
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// EAkActionOnEventType                    ActionType                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   PlayingID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   TransitionDuration                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// EAkCurveInterpolation                   FadeCurve                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::ExecuteActionOnPlayingID(EAkActionOnEventType ActionType, int32 PlayingID, int32 TransitionDuration, EAkCurveInterpolation FadeCurve)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "ExecuteActionOnPlayingID");
-
-	Params::AkGameplayStatics_ExecuteActionOnPlayingID Parms{};
-
-	Parms.ActionType = ActionType;
-	Parms.PlayingID = PlayingID;
-	Parms.TransitionDuration = TransitionDuration;
-	Parms.FadeCurve = FadeCurve;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AkAudio.AkGameplayStatics.GetAkAudioTypeUserData
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class UAkAudioType*               Instance                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UClass*                     Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAkAudioType*               Instance                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UClass*                     Type                                                   (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UObject* UAkGameplayStatics::GetAkAudioTypeUserData(const class UAkAudioType* Instance, const class UClass* Type)
 {
@@ -1897,12 +1876,12 @@ class UObject* UAkGameplayStatics::GetAkAudioTypeUserData(const class UAkAudioTy
 // Function AkAudio.AkGameplayStatics.GetAkComponent
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// class USceneComponent*                  AttachToComponent                                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class USceneComponent*                  AttachToComponent                                      (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool*                                   ComponentCreated                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             AttachPointName                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EAttachLocation                         LocationType                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkComponent*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UAkComponent* UAkGameplayStatics::GetAkComponent(class USceneComponent* AttachToComponent, bool* ComponentCreated, class FName AttachPointName, const struct FVector& Location, EAttachLocation LocationType)
 {
@@ -1927,36 +1906,6 @@ class UAkComponent* UAkGameplayStatics::GetAkComponent(class USceneComponent* At
 
 	if (ComponentCreated != nullptr)
 		*ComponentCreated = Parms.ComponentCreated;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkGameplayStatics.GetAkMediaAssetUserData
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class UAkMediaAsset*              Instance                                               (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class UClass*                     Type                                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class UObject* UAkGameplayStatics::GetAkMediaAssetUserData(const class UAkMediaAsset* Instance, const class UClass* Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "GetAkMediaAssetUserData");
-
-	Params::AkGameplayStatics_GetAkMediaAssetUserData Parms{};
-
-	Parms.Instance = Instance;
-	Parms.Type = Type;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 }
@@ -2012,19 +1961,19 @@ class FString UAkGameplayStatics::GetCurrentAudioCulture()
 }
 
 
-// Function AkAudio.AkGameplayStatics.GetOcclusionScalingFactor
+// Function AkAudio.AkGameplayStatics.GetCurrentOutdoorsRoomParameters
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAkOutdoorsRoomParameters        ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 
-float UAkGameplayStatics::GetOcclusionScalingFactor()
+struct FAkOutdoorsRoomParameters UAkGameplayStatics::GetCurrentOutdoorsRoomParameters()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "GetOcclusionScalingFactor");
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "GetCurrentOutdoorsRoomParameters");
 
-	Params::AkGameplayStatics_GetOcclusionScalingFactor Parms{};
+	Params::AkGameplayStatics_GetCurrentOutdoorsRoomParameters Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2037,15 +1986,49 @@ float UAkGameplayStatics::GetOcclusionScalingFactor()
 }
 
 
+// Function AkAudio.AkGameplayStatics.GetOrCreateAkComponent
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class USceneComponent*                  AttachToComponent                                      (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool*                                   ComponentCreated                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class FName                             AttachPointName                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UAkComponent* UAkGameplayStatics::GetOrCreateAkComponent(class USceneComponent* AttachToComponent, bool* ComponentCreated, class FName AttachPointName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "GetOrCreateAkComponent");
+
+	Params::AkGameplayStatics_GetOrCreateAkComponent Parms{};
+
+	Parms.AttachToComponent = AttachToComponent;
+	Parms.AttachPointName = AttachPointName;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (ComponentCreated != nullptr)
+		*ComponentCreated = Parms.ComponentCreated;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AkAudio.AkGameplayStatics.GetRTPCValue
 // (Final, BlueprintCosmetic, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   PlayingID                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // ERTPCValueType                          InputValueType                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float*                                  Value                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // ERTPCValueType*                         OutputValueType                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             RTPC                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::GetRTPCValue(class UAkRtpc* RTPCValue, int32 PlayingID, ERTPCValueType InputValueType, float* Value, ERTPCValueType* OutputValueType, class AActor* Actor, class FName RTPC)
@@ -2083,9 +2066,9 @@ void UAkGameplayStatics::GetRTPCValue(class UAkRtpc* RTPCValue, int32 PlayingID,
 // Parameters:
 // TArray<float>*                          SpeakerAngles                                          (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // float*                                  HeightAngle                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    DeviceShareset                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    DeviceShareSet                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAkGameplayStatics::GetSpeakerAngles(TArray<float>* SpeakerAngles, float* HeightAngle, const class FString& DeviceShareset)
+void UAkGameplayStatics::GetSpeakerAngles(TArray<float>* SpeakerAngles, float* HeightAngle, const class FString& DeviceShareSet)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2094,7 +2077,7 @@ void UAkGameplayStatics::GetSpeakerAngles(TArray<float>* SpeakerAngles, float* H
 
 	Params::AkGameplayStatics_GetSpeakerAngles Parms{};
 
-	Parms.DeviceShareset = std::move(DeviceShareset);
+	Parms.DeviceShareSet = std::move(DeviceShareSet);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2139,7 +2122,7 @@ bool UAkGameplayStatics::IsEditor()
 // Function AkAudio.AkGameplayStatics.IsGame
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UAkGameplayStatics::IsGame(class UObject* WorldContextObject)
@@ -2164,116 +2147,6 @@ bool UAkGameplayStatics::IsGame(class UObject* WorldContextObject)
 }
 
 
-// Function AkAudio.AkGameplayStatics.LoadBank
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UAkAudioBank*                     Bank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    BankName                                               (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::LoadBank(class UAkAudioBank* Bank, const class FString& BankName, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "LoadBank");
-
-	Params::AkGameplayStatics_LoadBank Parms{};
-
-	Parms.Bank = Bank;
-	Parms.BankName = std::move(BankName);
-	Parms.LatentInfo = std::move(LatentInfo);
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.LoadBankAsync
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UAkAudioBank*                     Bank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkResult Result)>&BankLoadedCallback                                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::LoadBankAsync(class UAkAudioBank* Bank, const TDelegate<void(EAkResult Result)>& BankLoadedCallback)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "LoadBankAsync");
-
-	Params::AkGameplayStatics_LoadBankAsync Parms{};
-
-	Parms.Bank = Bank;
-	Parms.BankLoadedCallback = BankLoadedCallback;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.LoadBankByName
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    BankName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::LoadBankByName(const class FString& BankName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "LoadBankByName");
-
-	Params::AkGameplayStatics_LoadBankByName Parms{};
-
-	Parms.BankName = std::move(BankName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.LoadBanks
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// const TArray<class UAkAudioBank*>&      SoundBanks                                             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-// bool                                    SynchronizeSoundBanks                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::LoadBanks(const TArray<class UAkAudioBank*>& SoundBanks, bool SynchronizeSoundBanks)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "LoadBanks");
-
-	Params::AkGameplayStatics_LoadBanks Parms{};
-
-	Parms.SoundBanks = std::move(SoundBanks);
-	Parms.SynchronizeSoundBanks = SynchronizeSoundBanks;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
 // Function AkAudio.AkGameplayStatics.LoadInitBank
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 
@@ -2294,17 +2167,15 @@ void UAkGameplayStatics::LoadInitBank()
 
 
 // Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEvent
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bStopWhenAttachedToDestroyed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const class FString&                    EventName                                              (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const class FString& EventName, const struct FLatentActionInfo& LatentInfo)
+int32 UAkGameplayStatics::PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, const struct FLatentActionInfo& LatentInfo)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2316,8 +2187,6 @@ int32 UAkGameplayStatics::PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent,
 	Parms.AkEvent = AkEvent;
 	Parms.Actor = Actor;
 	Parms.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.EventName = std::move(EventName);
 	Parms.LatentInfo = std::move(LatentInfo);
 
 	auto Flgs = Func->FunctionFlags;
@@ -2331,56 +2200,17 @@ int32 UAkGameplayStatics::PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent,
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostAndWaitForEndOfEventAsync
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32*                                  PlayingID                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bStopWhenAttachedToDestroyed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::PostAndWaitForEndOfEventAsync(class UAkAudioEvent* AkEvent, class AActor* Actor, int32* PlayingID, bool bStopWhenAttachedToDestroyed, const TArray<struct FAkExternalSourceInfo>& ExternalSources, const struct FLatentActionInfo& LatentInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "PostAndWaitForEndOfEventAsync");
-
-	Params::AkGameplayStatics_PostAndWaitForEndOfEventAsync Parms{};
-
-	Parms.AkEvent = AkEvent;
-	Parms.Actor = Actor;
-	Parms.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-	Parms.ExternalSources = std::move(ExternalSources);
-	Parms.LatentInfo = std::move(LatentInfo);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (PlayingID != nullptr)
-		*PlayingID = Parms.PlayingID;
-}
-
-
 // Function AkAudio.AkGameplayStatics.PostEvent
 // (Final, BlueprintCosmetic, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bStopWhenAttachedToDestroyed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    EventName                                              (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const TArray<struct FAkExternalSourceInfo>& ExternalSources, bool bStopWhenAttachedToDestroyed, const class FString& EventName)
+int32 UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, bool bStopWhenAttachedToDestroyed)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2393,9 +2223,7 @@ int32 UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* 
 	Parms.Actor = Actor;
 	Parms.CallbackMask = CallbackMask;
 	Parms.PostEventCallback = PostEventCallback;
-	Parms.ExternalSources = std::move(ExternalSources);
 	Parms.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-	Parms.EventName = std::move(EventName);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2411,14 +2239,13 @@ int32 UAkGameplayStatics::PostEvent(class UAkAudioEvent* AkEvent, class AActor* 
 // Function AkAudio.AkGameplayStatics.PostEventAtLocation
 // (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FRotator&                  Orientation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// const class FString&                    EventName                                              (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const class FString& EventName, class UObject* WorldContextObject)
+int32 UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2430,7 +2257,6 @@ int32 UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, cons
 	Parms.AkEvent = AkEvent;
 	Parms.Location = std::move(Location);
 	Parms.Orientation = std::move(Orientation);
-	Parms.EventName = std::move(EventName);
 	Parms.WorldContextObject = WorldContextObject;
 
 	auto Flgs = Func->FunctionFlags;
@@ -2444,61 +2270,26 @@ int32 UAkGameplayStatics::PostEventAtLocation(class UAkAudioEvent* AkEvent, cons
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostEventAtLocationByName
-// (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function AkAudio.AkGameplayStatics.PostEventOutdoors
+// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const class FString&                    EventName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FRotator&                  Orientation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::PostEventAtLocationByName(const class FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "PostEventAtLocationByName");
-
-	Params::AkGameplayStatics_PostEventAtLocationByName Parms{};
-
-	Parms.EventName = std::move(EventName);
-	Parms.Location = std::move(Location);
-	Parms.Orientation = std::move(Orientation);
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.PostEventAttached
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class FName                             AttachPointName                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bStopWhenAttachedToDestroyed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    EventName                                              (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, class FName AttachPointName, bool bStopWhenAttachedToDestroyed, const class FString& EventName)
+int32 UAkGameplayStatics::PostEventOutdoors(class UAkAudioEvent* AkEvent, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "PostEventAttached");
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "PostEventOutdoors");
 
-	Params::AkGameplayStatics_PostEventAttached Parms{};
+	Params::AkGameplayStatics_PostEventOutdoors Parms{};
 
 	Parms.AkEvent = AkEvent;
-	Parms.Actor = Actor;
-	Parms.AttachPointName = AttachPointName;
-	Parms.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-	Parms.EventName = std::move(EventName);
+	Parms.CallbackMask = CallbackMask;
+	Parms.PostEventCallback = PostEventCallback;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2508,43 +2299,14 @@ int32 UAkGameplayStatics::PostEventAttached(class UAkAudioEvent* AkEvent, class 
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function AkAudio.AkGameplayStatics.PostEventByName
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    EventName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bStopWhenAttachedToDestroyed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::PostEventByName(const class FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "PostEventByName");
-
-	Params::AkGameplayStatics_PostEventByName Parms{};
-
-	Parms.EventName = std::move(EventName);
-	Parms.Actor = Actor;
-	Parms.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
 // Function AkAudio.AkGameplayStatics.PostTrigger
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkTrigger*                       TriggerValue                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkTrigger*                       TriggerValue                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             Trigger                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::PostTrigger(class UAkTrigger* TriggerValue, class AActor* Actor, class FName Trigger)
@@ -2570,12 +2332,11 @@ void UAkGameplayStatics::PostTrigger(class UAkTrigger* TriggerValue, class AActo
 
 
 // Function AkAudio.AkGameplayStatics.RemoveOutput
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const struct FAkOutputDeviceID&         ID                                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAkOutputDeviceID&         in_OutputDeviceId                                      (Parm, NoDestructor, NativeAccessSpecifierPublic)
 
-int32 UAkGameplayStatics::RemoveOutput(const struct FAkOutputDeviceID& ID)
+void UAkGameplayStatics::RemoveOutput(const struct FAkOutputDeviceID& in_OutputDeviceId)
 {
 	static class UFunction* Func = nullptr;
 
@@ -2584,7 +2345,7 @@ int32 UAkGameplayStatics::RemoveOutput(const struct FAkOutputDeviceID& ID)
 
 	Params::AkGameplayStatics_RemoveOutput Parms{};
 
-	Parms.ID = std::move(ID);
+	Parms.in_OutputDeviceId = std::move(in_OutputDeviceId);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2592,15 +2353,13 @@ int32 UAkGameplayStatics::RemoveOutput(const struct FAkOutputDeviceID& ID)
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 
 // Function AkAudio.AkGameplayStatics.ReplaceMainOutput
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FAkOutputSettings&         MainOutputSettings                                     (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAkOutputSettings&         MainOutputSettings                                     (ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::ReplaceMainOutput(const struct FAkOutputSettings& MainOutputSettings)
 {
@@ -2622,12 +2381,31 @@ void UAkGameplayStatics::ReplaceMainOutput(const struct FAkOutputSettings& MainO
 }
 
 
+// Function AkAudio.AkGameplayStatics.ResetOutdoorsRoomParams
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+
+void UAkGameplayStatics::ResetOutdoorsRoomParams()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "ResetOutdoorsRoomParams");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AkAudio.AkGameplayStatics.ResetRTPCValue
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   InterpolationTimeMs                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             RTPC                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::ResetRTPCValue(class UAkRtpc* RTPCValue, int32 InterpolationTimeMs, class AActor* Actor, class FName RTPC)
@@ -2650,6 +2428,70 @@ void UAkGameplayStatics::ResetRTPCValue(class UAkRtpc* RTPCValue, int32 Interpol
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameplayStatics.SetActorMixerEffect
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const struct FAkUniqueID&               InAudioNodeID                                          (ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
+// const int32                             InEffectIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAkEffectShareSet*          InEffectShareSet                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGameplayStatics::SetActorMixerEffect(const struct FAkUniqueID& InAudioNodeID, const int32 InEffectIndex, const class UAkEffectShareSet* InEffectShareSet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetActorMixerEffect");
+
+	Params::AkGameplayStatics_SetActorMixerEffect Parms{};
+
+	Parms.InAudioNodeID = std::move(InAudioNodeID);
+	Parms.InEffectIndex = InEffectIndex;
+	Parms.InEffectShareSet = InEffectShareSet;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGameplayStatics.SetAuxBusEffect
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class UAkAuxBus*                  InAuxBus                                               (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             InEffectIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAkEffectShareSet*          InEffectShareSet                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGameplayStatics::SetAuxBusEffect(const class UAkAuxBus* InAuxBus, const int32 InEffectIndex, const class UAkEffectShareSet* InEffectShareSet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetAuxBusEffect");
+
+	Params::AkGameplayStatics_SetAuxBusEffect Parms{};
+
+	Parms.InAuxBus = InAuxBus;
+	Parms.InEffectIndex = InEffectIndex;
+	Parms.InEffectShareSet = InEffectShareSet;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -2680,12 +2522,76 @@ void UAkGameplayStatics::SetBusConfig(const class FString& BusName, EAkChannelCo
 }
 
 
+// Function AkAudio.AkGameplayStatics.SetBusEffectByID
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const struct FAkUniqueID&               InBusID                                                (ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
+// const int32                             InEffectIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAkEffectShareSet*          InEffectShareSet                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGameplayStatics::SetBusEffectByID(const struct FAkUniqueID& InBusID, const int32 InEffectIndex, const class UAkEffectShareSet* InEffectShareSet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetBusEffectByID");
+
+	Params::AkGameplayStatics_SetBusEffectByID Parms{};
+
+	Parms.InBusID = std::move(InBusID);
+	Parms.InEffectIndex = InEffectIndex;
+	Parms.InEffectShareSet = InEffectShareSet;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGameplayStatics.SetBusEffectByName
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const class FString&                    InBusName                                              (ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const int32                             InEffectIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAkEffectShareSet*          InEffectShareSet                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGameplayStatics::SetBusEffectByName(const class FString& InBusName, const int32 InEffectIndex, const class UAkEffectShareSet* InEffectShareSet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetBusEffectByName");
+
+	Params::AkGameplayStatics_SetBusEffectByName Parms{};
+
+	Parms.InBusName = std::move(InBusName);
+	Parms.InEffectIndex = InEffectIndex;
+	Parms.InEffectShareSet = InEffectShareSet;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AkAudio.AkGameplayStatics.SetCurrentAudioCulture
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // const class FString&                    AudioCulture                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetCurrentAudioCulture(const class FString& AudioCulture, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
 {
@@ -2713,7 +2619,7 @@ void UAkGameplayStatics::SetCurrentAudioCulture(const class FString& AudioCultur
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
 // const class FString&                    AudioCulture                                           (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(bool Succeeded)>&  Completed                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void(bool Succeeded)>&  Completed                                              (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetCurrentAudioCultureAsync(const class FString& AudioCulture, const TDelegate<void(bool Succeeded)>& Completed)
 {
@@ -2736,11 +2642,65 @@ void UAkGameplayStatics::SetCurrentAudioCultureAsync(const class FString& AudioC
 }
 
 
+// Function AkAudio.AkGameplayStatics.SetDiffractionOrder
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InDiffractionOrder                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInUpdatePaths                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::SetDiffractionOrder(int32 InDiffractionOrder, bool bInUpdatePaths)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetDiffractionOrder");
+
+	Params::AkGameplayStatics_SetDiffractionOrder Parms{};
+
+	Parms.InDiffractionOrder = InDiffractionOrder;
+	Parms.bInUpdatePaths = bInUpdatePaths;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameplayStatics.SetDistanceProbe
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           Listener                                               (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           DistanceProbe                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::SetDistanceProbe(class AActor* Listener, class AActor* DistanceProbe)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetDistanceProbe");
+
+	Params::AkGameplayStatics_SetDistanceProbe Parms{};
+
+	Parms.Listener = Listener;
+	Parms.DistanceProbe = DistanceProbe;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AkAudio.AkGameplayStatics.SetGameObjectToPortalObstruction
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkPortalComponent*               PortalComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkPortalComponent*               PortalComponent                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ObstructionValue                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetGameObjectToPortalObstruction(class UAkComponent* GameObjectAkComponent, class UAkPortalComponent* PortalComponent, float ObstructionValue)
@@ -2765,10 +2725,60 @@ void UAkGameplayStatics::SetGameObjectToPortalObstruction(class UAkComponent* Ga
 }
 
 
+// Function AkAudio.AkGameplayStatics.SetLoadBalancingSpread
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InNbFrames                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::SetLoadBalancingSpread(int32 InNbFrames)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetLoadBalancingSpread");
+
+	Params::AkGameplayStatics_SetLoadBalancingSpread Parms{};
+
+	Parms.InNbFrames = InNbFrames;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameplayStatics.SetMaxEmitterRoomAuxSends
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InMaxEmitterRoomAuxSends                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::SetMaxEmitterRoomAuxSends(int32 InMaxEmitterRoomAuxSends)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetMaxEmitterRoomAuxSends");
+
+	Params::AkGameplayStatics_SetMaxEmitterRoomAuxSends Parms{};
+
+	Parms.InMaxEmitterRoomAuxSends = InMaxEmitterRoomAuxSends;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AkAudio.AkGameplayStatics.SetMultipleChannelEmitterPositions
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const TArray<EAkChannelConfiguration>&  ChannelMasks                                           (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // const TArray<struct FTransform>&        Positions                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // EAkMultiPositionType                    MultiPositionType                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2799,7 +2809,7 @@ void UAkGameplayStatics::SetMultipleChannelEmitterPositions(class UAkComponent* 
 // Function AkAudio.AkGameplayStatics.SetMultipleChannelMaskEmitterPositions
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const TArray<struct FAkChannelMask>&    ChannelMasks                                           (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // const TArray<struct FTransform>&        Positions                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // EAkMultiPositionType                    MultiPositionType                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2830,7 +2840,7 @@ void UAkGameplayStatics::SetMultipleChannelMaskEmitterPositions(class UAkCompone
 // Function AkAudio.AkGameplayStatics.SetMultiplePositions
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     GameObjectAkComponent                                  (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const TArray<struct FTransform>&        Positions                                              (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 // EAkMultiPositionType                    MultiPositionType                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -2856,11 +2866,36 @@ void UAkGameplayStatics::SetMultiplePositions(class UAkComponent* GameObjectAkCo
 }
 
 
+// Function AkAudio.AkGameplayStatics.SetNumberOfPrimaryRays
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// int32                                   InNbPrimaryRays                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGameplayStatics::SetNumberOfPrimaryRays(int32 InNbPrimaryRays)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetNumberOfPrimaryRays");
+
+	Params::AkGameplayStatics_SetNumberOfPrimaryRays Parms{};
+
+	Parms.InNbPrimaryRays = InNbPrimaryRays;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AkAudio.AkGameplayStatics.SetOcclusionRefreshInterval
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // float                                   RefreshInterval                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetOcclusionRefreshInterval(float RefreshInterval, class AActor* Actor)
 {
@@ -2883,21 +2918,21 @@ void UAkGameplayStatics::SetOcclusionRefreshInterval(float RefreshInterval, clas
 }
 
 
-// Function AkAudio.AkGameplayStatics.SetOcclusionScalingFactor
+// Function AkAudio.AkGameplayStatics.SetOutdoorsRoomParameters
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// float                                   ScalingFactor                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAkOutdoorsRoomParameters& InOutdoorsRoomParameters                               (Parm, NoDestructor, NativeAccessSpecifierPublic)
 
-void UAkGameplayStatics::SetOcclusionScalingFactor(float ScalingFactor)
+void UAkGameplayStatics::SetOutdoorsRoomParameters(const struct FAkOutdoorsRoomParameters& InOutdoorsRoomParameters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetOcclusionScalingFactor");
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetOutdoorsRoomParameters");
 
-	Params::AkGameplayStatics_SetOcclusionScalingFactor Parms{};
+	Params::AkGameplayStatics_SetOutdoorsRoomParameters Parms{};
 
-	Parms.ScalingFactor = ScalingFactor;
+	Parms.InOutdoorsRoomParameters = std::move(InOutdoorsRoomParameters);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2912,7 +2947,7 @@ void UAkGameplayStatics::SetOcclusionScalingFactor(float ScalingFactor)
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // float                                   BusVolume                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetOutputBusVolume(float BusVolume, class AActor* Actor)
 {
@@ -2932,6 +2967,38 @@ void UAkGameplayStatics::SetOutputBusVolume(float BusVolume, class AActor* Actor
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameplayStatics.SetOutputDeviceEffect
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// const struct FAkOutputDeviceID&         InDeviceID                                             (ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
+// const int32                             InEffectIndex                                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UAkEffectShareSet*          InEffectShareSet                                       (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGameplayStatics::SetOutputDeviceEffect(const struct FAkOutputDeviceID& InDeviceID, const int32 InEffectIndex, const class UAkEffectShareSet* InEffectShareSet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "SetOutputDeviceEffect");
+
+	Params::AkGameplayStatics_SetOutputDeviceEffect Parms{};
+
+	Parms.InDeviceID = std::move(InDeviceID);
+	Parms.InEffectIndex = InEffectIndex;
+	Parms.InEffectShareSet = InEffectShareSet;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -2963,7 +3030,7 @@ void UAkGameplayStatics::SetPanningRule(EPanningRule PanRule)
 // Function AkAudio.AkGameplayStatics.SetPortalObstructionAndOcclusion
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkPortalComponent*               PortalComponent                                        (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkPortalComponent*               PortalComponent                                        (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ObstructionValue                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   OcclusionValue                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -2992,8 +3059,8 @@ void UAkGameplayStatics::SetPortalObstructionAndOcclusion(class UAkPortalCompone
 // Function AkAudio.AkGameplayStatics.SetPortalToPortalObstruction
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkPortalComponent*               PortalComponent0                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkPortalComponent*               PortalComponent1                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkPortalComponent*               PortalComponent0                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkPortalComponent*               PortalComponent1                                       (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   ObstructionValue                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetPortalToPortalObstruction(class UAkPortalComponent* PortalComponent0, class UAkPortalComponent* PortalComponent1, float ObstructionValue)
@@ -3048,10 +3115,10 @@ void UAkGameplayStatics::SetReflectionsOrder(int32 Order, bool RefreshPaths)
 // Function AkAudio.AkGameplayStatics.SetRTPCValue
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkRtpc*                          RTPCValue                                              (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Value                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   InterpolationTimeMs                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             RTPC                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::SetRTPCValue(class UAkRtpc* RTPCValue, float Value, int32 InterpolationTimeMs, class AActor* Actor, class FName RTPC)
@@ -3083,9 +3150,9 @@ void UAkGameplayStatics::SetRTPCValue(class UAkRtpc* RTPCValue, float Value, int
 // Parameters:
 // const TArray<float>&                    SpeakerAngles                                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 // float                                   HeightAngle                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    DeviceShareset                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class FString&                    DeviceShareSet                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAkGameplayStatics::SetSpeakerAngles(const TArray<float>& SpeakerAngles, float HeightAngle, const class FString& DeviceShareset)
+void UAkGameplayStatics::SetSpeakerAngles(const TArray<float>& SpeakerAngles, float HeightAngle, const class FString& DeviceShareSet)
 {
 	static class UFunction* Func = nullptr;
 
@@ -3096,7 +3163,7 @@ void UAkGameplayStatics::SetSpeakerAngles(const TArray<float>& SpeakerAngles, fl
 
 	Parms.SpeakerAngles = std::move(SpeakerAngles);
 	Parms.HeightAngle = HeightAngle;
-	Parms.DeviceShareset = std::move(DeviceShareset);
+	Parms.DeviceShareSet = std::move(DeviceShareSet);
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3110,7 +3177,7 @@ void UAkGameplayStatics::SetSpeakerAngles(const TArray<float>& SpeakerAngles, fl
 // Function AkAudio.AkGameplayStatics.SetState
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkStateValue*                    StateValue                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkStateValue*                    StateValue                                             (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             StateGroup                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             State                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -3139,8 +3206,8 @@ void UAkGameplayStatics::SetState(class UAkStateValue* StateValue, class FName S
 // Function AkAudio.AkGameplayStatics.SetSwitch
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UAkSwitchValue*                   SwitchValue                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkSwitchValue*                   SwitchValue                                            (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             SwitchGroup                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class FName                             SwitchState                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
@@ -3170,15 +3237,15 @@ void UAkGameplayStatics::SetSwitch(class UAkSwitchValue* SwitchValue, class AAct
 // Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation
 // (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FRotator&                  Orientation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // bool                                    AutoPost                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const class FString&                    EventName                                              (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // ESBZAkPoolType                          Type                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    AutoDestroy                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkComponent*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkComponent*                     ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UAkComponent* UAkGameplayStatics::SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, bool AutoPost, const class FString& EventName, ESBZAkPoolType Type, bool AutoDestroy)
 {
@@ -3212,7 +3279,7 @@ class UAkComponent* UAkGameplayStatics::SpawnAkComponentAtLocation(class UObject
 // Function AkAudio.AkGameplayStatics.StartAllAmbientSounds
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::StartAllAmbientSounds(class UObject* WorldContextObject)
 {
@@ -3287,7 +3354,7 @@ void UAkGameplayStatics::StartProfilerCapture(const class FString& Filename)
 // Function AkAudio.AkGameplayStatics.StopActor
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::StopActor(class AActor* Actor)
 {
@@ -3331,7 +3398,7 @@ void UAkGameplayStatics::StopAll()
 // Function AkAudio.AkGameplayStatics.StopAllAmbientSounds
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::StopAllAmbientSounds(class UObject* WorldContextObject)
 {
@@ -3348,6 +3415,25 @@ void UAkGameplayStatics::StopAllAmbientSounds(class UObject* WorldContextObject)
 	Func->FunctionFlags |= 0x400;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGameplayStatics.StopOutdoors
+// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+
+void UAkGameplayStatics::StopOutdoors()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "StopOutdoors");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -3391,121 +3477,20 @@ void UAkGameplayStatics::StopProfilerCapture()
 }
 
 
-// Function AkAudio.AkGameplayStatics.UnloadBank
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UAkAudioBank*                     Bank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    BankName                                               (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FLatentActionInfo&         LatentInfo                                             (Parm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::UnloadBank(class UAkAudioBank* Bank, const class FString& BankName, const struct FLatentActionInfo& LatentInfo, class UObject* WorldContextObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "UnloadBank");
-
-	Params::AkGameplayStatics_UnloadBank Parms{};
-
-	Parms.Bank = Bank;
-	Parms.BankName = std::move(BankName);
-	Parms.LatentInfo = std::move(LatentInfo);
-	Parms.WorldContextObject = WorldContextObject;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.UnloadBankAsync
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
-// Parameters:
-// class UAkAudioBank*                     Bank                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkResult Result)>&BankUnloadedCallback                                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::UnloadBankAsync(class UAkAudioBank* Bank, const TDelegate<void(EAkResult Result)>& BankUnloadedCallback)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "UnloadBankAsync");
-
-	Params::AkGameplayStatics_UnloadBankAsync Parms{};
-
-	Parms.Bank = Bank;
-	Parms.BankUnloadedCallback = BankUnloadedCallback;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.UnloadBankByName
+// Function AkAudio.AkGameplayStatics.UnloadInitBank
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// const class FString&                    BankName                                               (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAkGameplayStatics::UnloadBankByName(const class FString& BankName)
+void UAkGameplayStatics::UnloadInitBank()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "UnloadBankByName");
-
-	Params::AkGameplayStatics_UnloadBankByName Parms{};
-
-	Parms.BankName = std::move(BankName);
+		Func = StaticClass()->GetFunction("AkGameplayStatics", "UnloadInitBank");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkGameplayStatics.UseEarlyReflections
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkAuxBus*                        AuxBus                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// int32                                   Order                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   BusSendGain                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// float                                   MaxPathLength                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    SpotReflectors                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const class FString&                    AuxBusName                                             (Parm, ZeroConstructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkGameplayStatics::UseEarlyReflections(class AActor* Actor, class UAkAuxBus* AuxBus, int32 Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, const class FString& AuxBusName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AkGameplayStatics", "UseEarlyReflections");
-
-	Params::AkGameplayStatics_UseEarlyReflections Parms{};
-
-	Parms.Actor = Actor;
-	Parms.AuxBus = AuxBus;
-	Parms.Order = Order;
-	Parms.BusSendGain = BusSendGain;
-	Parms.MaxPathLength = MaxPathLength;
-	Parms.SpotReflectors = SpotReflectors;
-	Parms.AuxBusName = std::move(AuxBusName);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
+	GetDefaultObj()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -3515,7 +3500,7 @@ void UAkGameplayStatics::UseEarlyReflections(class AActor* Actor, class UAkAuxBu
 // (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                                    inUseReverbVolumes                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkGameplayStatics::UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor)
 {
@@ -3839,6 +3824,38 @@ void UAkGeometryComponent::ConvertMesh()
 }
 
 
+// Function AkAudio.AkGeometryComponent.GetAcousticPropertiesOverride
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*               InMaterialInterface                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAkGeometrySurfaceOverride*      OutAcousticPropertiesOverride                          (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGeometryComponent::GetAcousticPropertiesOverride(class UMaterialInterface* InMaterialInterface, struct FAkGeometrySurfaceOverride* OutAcousticPropertiesOverride)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGeometryComponent", "GetAcousticPropertiesOverride");
+
+	Params::AkGeometryComponent_GetAcousticPropertiesOverride Parms{};
+
+	Parms.InMaterialInterface = InMaterialInterface;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAcousticPropertiesOverride != nullptr)
+		*OutAcousticPropertiesOverride = std::move(Parms.OutAcousticPropertiesOverride);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AkAudio.AkGeometryComponent.RemoveGeometry
 // (Final, Native, Public, BlueprintCallable)
 
@@ -3877,6 +3894,171 @@ void UAkGeometryComponent::SendGeometry()
 }
 
 
+// Function AkAudio.AkGeometryComponent.SetAcousticPropertiesOverride
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*               InMaterialInterface                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FAkGeometrySurfaceOverride&InAcousticPropertiesOverride                           (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// struct FAkGeometrySurfaceOverride*      OutAcousticPropertiesOverride                          (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGeometryComponent::SetAcousticPropertiesOverride(class UMaterialInterface* InMaterialInterface, const struct FAkGeometrySurfaceOverride& InAcousticPropertiesOverride, struct FAkGeometrySurfaceOverride* OutAcousticPropertiesOverride)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGeometryComponent", "SetAcousticPropertiesOverride");
+
+	Params::AkGeometryComponent_SetAcousticPropertiesOverride Parms{};
+
+	Parms.InMaterialInterface = InMaterialInterface;
+	Parms.InAcousticPropertiesOverride = std::move(InAcousticPropertiesOverride);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAcousticPropertiesOverride != nullptr)
+		*OutAcousticPropertiesOverride = std::move(Parms.OutAcousticPropertiesOverride);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGeometryComponent.SetAcousticTextureOverride
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*               InMaterialInterface                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAcousticTexture*               InAcousticTexture                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAkGeometrySurfaceOverride*      OutAcousticPropertiesOverride                          (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGeometryComponent::SetAcousticTextureOverride(class UMaterialInterface* InMaterialInterface, class UAkAcousticTexture* InAcousticTexture, struct FAkGeometrySurfaceOverride* OutAcousticPropertiesOverride)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGeometryComponent", "SetAcousticTextureOverride");
+
+	Params::AkGeometryComponent_SetAcousticTextureOverride Parms{};
+
+	Parms.InMaterialInterface = InMaterialInterface;
+	Parms.InAcousticTexture = InAcousticTexture;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAcousticPropertiesOverride != nullptr)
+		*OutAcousticPropertiesOverride = std::move(Parms.OutAcousticPropertiesOverride);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGeometryComponent.SetEnableDiffraction
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInEnableDiffraction                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInEnableDiffractionOnBoundaryEdges                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkGeometryComponent::SetEnableDiffraction(bool bInEnableDiffraction, bool bInEnableDiffractionOnBoundaryEdges)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGeometryComponent", "SetEnableDiffraction");
+
+	Params::AkGeometryComponent_SetEnableDiffraction Parms{};
+
+	Parms.bInEnableDiffraction = bInEnableDiffraction;
+	Parms.bInEnableDiffractionOnBoundaryEdges = bInEnableDiffractionOnBoundaryEdges;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkGeometryComponent.SetEnableTransmissionLossOverride
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*               InMaterialInterface                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInEnableTransmissionLossOverride                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAkGeometrySurfaceOverride*      OutAcousticPropertiesOverride                          (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGeometryComponent::SetEnableTransmissionLossOverride(class UMaterialInterface* InMaterialInterface, bool bInEnableTransmissionLossOverride, struct FAkGeometrySurfaceOverride* OutAcousticPropertiesOverride)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGeometryComponent", "SetEnableTransmissionLossOverride");
+
+	Params::AkGeometryComponent_SetEnableTransmissionLossOverride Parms{};
+
+	Parms.InMaterialInterface = InMaterialInterface;
+	Parms.bInEnableTransmissionLossOverride = bInEnableTransmissionLossOverride;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAcousticPropertiesOverride != nullptr)
+		*OutAcousticPropertiesOverride = std::move(Parms.OutAcousticPropertiesOverride);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AkAudio.AkGeometryComponent.SetTransmissionLossOverride
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*               InMaterialInterface                                    (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InTransmissionLoss                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInEnableTransmissionLossOverride                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FAkGeometrySurfaceOverride*      OutAcousticPropertiesOverride                          (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UAkGeometryComponent::SetTransmissionLossOverride(class UMaterialInterface* InMaterialInterface, float InTransmissionLoss, bool bInEnableTransmissionLossOverride, struct FAkGeometrySurfaceOverride* OutAcousticPropertiesOverride)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkGeometryComponent", "SetTransmissionLossOverride");
+
+	Params::AkGeometryComponent_SetTransmissionLossOverride Parms{};
+
+	Parms.InMaterialInterface = InMaterialInterface;
+	Parms.InTransmissionLoss = InTransmissionLoss;
+	Parms.bInEnableTransmissionLossOverride = bInEnableTransmissionLossOverride;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (OutAcousticPropertiesOverride != nullptr)
+		*OutAcousticPropertiesOverride = std::move(Parms.OutAcousticPropertiesOverride);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function AkAudio.AkGeometryComponent.UpdateGeometry
 // (Final, Native, Public, BlueprintCallable)
 
@@ -3891,31 +4073,6 @@ void UAkGeometryComponent::UpdateGeometry()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering
-// (Final, Native, Public)
-// Parameters:
-// bool                                    NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkHololensInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkHololensInitializationSettings", "MigrateMultiCoreRendering");
-
-	Params::AkHololensInitializationSettings_MigrateMultiCoreRendering Parms{};
-
-	Parms.NewValue = NewValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -4186,7 +4343,7 @@ class FString UAkItemProperties::GetSelectedProperty() const
 // Function AkAudio.AkLateReverbComponent.AssociateAkTextureSetComponent
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAkAcousticTextureSetComponent*   textureSetComponent                                    (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAcousticTextureSetComponent*   textureSetComponent                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UAkLateReverbComponent::AssociateAkTextureSetComponent(class UAkAcousticTextureSetComponent* textureSetComponent)
 {
@@ -4198,6 +4355,56 @@ void UAkLateReverbComponent::AssociateAkTextureSetComponent(class UAkAcousticTex
 	Params::AkLateReverbComponent_AssociateAkTextureSetComponent Parms{};
 
 	Parms.textureSetComponent = textureSetComponent;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkLateReverbComponent.SetAutoAssignAuxBus
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInEnable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkLateReverbComponent::SetAutoAssignAuxBus(bool bInEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkLateReverbComponent", "SetAutoAssignAuxBus");
+
+	Params::AkLateReverbComponent_SetAutoAssignAuxBus Parms{};
+
+	Parms.bInEnable = bInEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkLinuxArm64InitializationSettings.MigrateMultiCoreRendering
+// (Final, Native, Public)
+// Parameters:
+// bool                                    NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkLinuxArm64InitializationSettings::MigrateMultiCoreRendering(bool NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkLinuxArm64InitializationSettings", "MigrateMultiCoreRendering");
+
+	Params::AkLinuxArm64InitializationSettings_MigrateMultiCoreRendering Parms{};
+
+	Parms.NewValue = NewValue;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4280,6 +4487,277 @@ void UAkPS4InitializationSettings::MigrateMultiCoreRendering(bool NewValue)
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.RemoveReverbZone
+// (Final, Native, Public, BlueprintCallable)
+
+void UAkRoomComponent::RemoveReverbZone()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "RemoveReverbZone");
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, nullptr);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetAuxSendLevel
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InAuxSendLevel                                         (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetAuxSendLevel(float InAuxSendLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetAuxSendLevel");
+
+	Params::AkRoomComponent_SetAuxSendLevel Parms{};
+
+	Parms.InAuxSendLevel = InAuxSendLevel;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetDynamic
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInDynamic                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetDynamic(bool bInDynamic)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetDynamic");
+
+	Params::AkRoomComponent_SetDynamic Parms{};
+
+	Parms.bInDynamic = bInDynamic;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetEnable
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInEnable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetEnable(bool bInEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetEnable");
+
+	Params::AkRoomComponent_SetEnable Parms{};
+
+	Parms.bInEnable = bInEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetEnableReverbZone
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInEnableReverbZone                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetEnableReverbZone(bool bInEnableReverbZone)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetEnableReverbZone");
+
+	Params::AkRoomComponent_SetEnableReverbZone Parms{};
+
+	Parms.bInEnableReverbZone = bInEnableReverbZone;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetGeometryComponent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class UAkAcousticTextureSetComponent*   textureSetComponent                                    (Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetGeometryComponent(class UAkAcousticTextureSetComponent* textureSetComponent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetGeometryComponent");
+
+	Params::AkRoomComponent_SetGeometryComponent Parms{};
+
+	Parms.textureSetComponent = textureSetComponent;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetReverbZone
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const class UAkRoomComponent*           InParentRoom                                           (ConstParm, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// float                                   InTransitionRegionWidth                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetReverbZone(const class UAkRoomComponent* InParentRoom, float InTransitionRegionWidth)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetReverbZone");
+
+	Params::AkRoomComponent_SetReverbZone Parms{};
+
+	Parms.InParentRoom = InParentRoom;
+	Parms.InTransitionRegionWidth = InTransitionRegionWidth;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.SetTransmissionLoss
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InTransmissionLoss                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::SetTransmissionLoss(float InTransmissionLoss)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "SetTransmissionLoss");
+
+	Params::AkRoomComponent_SetTransmissionLoss Parms{};
+
+	Parms.InTransmissionLoss = InTransmissionLoss;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.UpdateParentRoomActor
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AActor*                           InParentRoomActor                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::UpdateParentRoomActor(class AActor* InParentRoomActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "UpdateParentRoomActor");
+
+	Params::AkRoomComponent_UpdateParentRoomActor Parms{};
+
+	Parms.InParentRoomActor = InParentRoomActor;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.UpdateTransitionRegionWidth
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// float                                   InTransitionRegionWidth                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkRoomComponent::UpdateTransitionRegionWidth(float InTransitionRegionWidth)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "UpdateTransitionRegionWidth");
+
+	Params::AkRoomComponent_UpdateTransitionRegionWidth Parms{};
+
+	Parms.InTransitionRegionWidth = InTransitionRegionWidth;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkRoomComponent.GetPrimitiveParent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class UPrimitiveComponent*              ReturnValue                                            (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UPrimitiveComponent* UAkRoomComponent::GetPrimitiveParent() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkRoomComponent", "GetPrimitiveParent");
+
+	Params::AkRoomComponent_GetPrimitiveParent Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
 }
 
 
@@ -4596,6 +5074,203 @@ void UAkSurfaceReflectorSetComponent::SendSurfaceReflectorSet()
 }
 
 
+// Function AkAudio.AkSurfaceReflectorSetComponent.SetAcousticTexture
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<int32>&                          InSurfaceIndexesToEdit                                 (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// class UAkAcousticTexture*               InAcousticTexture                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInEnableSurface                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::SetAcousticTexture(TArray<int32>& InSurfaceIndexesToEdit, class UAkAcousticTexture* InAcousticTexture, bool bInEnableSurface)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "SetAcousticTexture");
+
+	Params::AkSurfaceReflectorSetComponent_SetAcousticTexture Parms{};
+
+	Parms.InSurfaceIndexesToEdit = std::move(InSurfaceIndexesToEdit);
+	Parms.InAcousticTexture = InAcousticTexture;
+	Parms.bInEnableSurface = bInEnableSurface;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	InSurfaceIndexesToEdit = std::move(Parms.InSurfaceIndexesToEdit);
+}
+
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.SetEnable
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInEnable                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::SetEnable(bool bInEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "SetEnable");
+
+	Params::AkSurfaceReflectorSetComponent_SetEnable Parms{};
+
+	Parms.bInEnable = bInEnable;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.SetEnableDiffraction
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// bool                                    bInEnableDiffraction                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInEnableDiffractionOnBoundaryEdges                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::SetEnableDiffraction(bool bInEnableDiffraction, bool bInEnableDiffractionOnBoundaryEdges)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "SetEnableDiffraction");
+
+	Params::AkSurfaceReflectorSetComponent_SetEnableDiffraction Parms{};
+
+	Parms.bInEnableDiffraction = bInEnableDiffraction;
+	Parms.bInEnableDiffractionOnBoundaryEdges = bInEnableDiffractionOnBoundaryEdges;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.SetEnableSurface
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<int32>&                          InSurfaceIndexesToEdit                                 (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// bool                                    bInEnableSurface                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::SetEnableSurface(TArray<int32>& InSurfaceIndexesToEdit, bool bInEnableSurface)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "SetEnableSurface");
+
+	Params::AkSurfaceReflectorSetComponent_SetEnableSurface Parms{};
+
+	Parms.InSurfaceIndexesToEdit = std::move(InSurfaceIndexesToEdit);
+	Parms.bInEnableSurface = bInEnableSurface;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	InSurfaceIndexesToEdit = std::move(Parms.InSurfaceIndexesToEdit);
+}
+
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.SetSurfaceProperties
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<int32>&                          InSurfaceIndexesToEdit                                 (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// const struct FAkSurfacePoly&            InSurfaceProperties                                    (Parm, NoDestructor, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::SetSurfaceProperties(TArray<int32>& InSurfaceIndexesToEdit, const struct FAkSurfacePoly& InSurfaceProperties)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "SetSurfaceProperties");
+
+	Params::AkSurfaceReflectorSetComponent_SetSurfaceProperties Parms{};
+
+	Parms.InSurfaceIndexesToEdit = std::move(InSurfaceIndexesToEdit);
+	Parms.InSurfaceProperties = std::move(InSurfaceProperties);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	InSurfaceIndexesToEdit = std::move(Parms.InSurfaceIndexesToEdit);
+}
+
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.SetTransmissionLoss
+// (Final, Native, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// TArray<int32>&                          InSurfaceIndexesToEdit                                 (Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+// float                                   InTransmissionLoss                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bInEnableSurface                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::SetTransmissionLoss(TArray<int32>& InSurfaceIndexesToEdit, float InTransmissionLoss, bool bInEnableSurface)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "SetTransmissionLoss");
+
+	Params::AkSurfaceReflectorSetComponent_SetTransmissionLoss Parms{};
+
+	Parms.InSurfaceIndexesToEdit = std::move(InSurfaceIndexesToEdit);
+	Parms.InTransmissionLoss = InTransmissionLoss;
+	Parms.bInEnableSurface = bInEnableSurface;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	InSurfaceIndexesToEdit = std::move(Parms.InSurfaceIndexesToEdit);
+}
+
+
+// Function AkAudio.AkSurfaceReflectorSetComponent.UpdateAcousticProperties
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// const TArray<struct FAkSurfacePoly>&    in_AcousticPolys                                       (Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+
+void UAkSurfaceReflectorSetComponent::UpdateAcousticProperties(const TArray<struct FAkSurfacePoly>& in_AcousticPolys)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AkSurfaceReflectorSetComponent", "UpdateAcousticProperties");
+
+	Params::AkSurfaceReflectorSetComponent_UpdateAcousticProperties Parms{};
+
+	Parms.in_AcousticPolys = std::move(in_AcousticPolys);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
 // Function AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet
 // (Final, Native, Public, BlueprintCallable)
 
@@ -4610,31 +5285,6 @@ void UAkSurfaceReflectorSetComponent::UpdateSurfaceReflectorSet()
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, nullptr);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering
-// (Final, Native, Public)
-// Parameters:
-// bool                                    NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkSwitchInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkSwitchInitializationSettings", "MigrateMultiCoreRendering");
-
-	Params::AkSwitchInitializationSettings_MigrateMultiCoreRendering Parms{};
-
-	Parms.NewValue = NewValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -4759,7 +5409,7 @@ int32 UAkWaapiCalls::GetSubscriptionID(const struct FAkWaapiSubscriptionId& Subs
 // Function AkAudio.AkWaapiCalls.RegisterWaapiConnectionLostCallback
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const TDelegate<void()>&                Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void()>&                Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UAkWaapiCalls::RegisterWaapiConnectionLostCallback(const TDelegate<void()>& Callback)
@@ -4787,7 +5437,7 @@ bool UAkWaapiCalls::RegisterWaapiConnectionLostCallback(const TDelegate<void()>&
 // Function AkAudio.AkWaapiCalls.RegisterWaapiProjectLoadedCallback
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const TDelegate<void()>&                Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void()>&                Callback                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 bool UAkWaapiCalls::RegisterWaapiProjectLoadedCallback(const TDelegate<void()>& Callback)
@@ -4844,7 +5494,7 @@ void UAkWaapiCalls::SetSubscriptionID(const struct FAkWaapiSubscriptionId& Subsc
 // Parameters:
 // const struct FAkWaapiUri&               WaapiUri                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 // const struct FAKWaapiJsonObject&        WaapiOptions                                           (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const TDelegate<void(const struct FAkWaapiSubscriptionId& SubscriptionId, const struct FAKWaapiJsonObject& WaapiJsonObject)>&CallBack                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+// const TDelegate<void(const struct FAkWaapiSubscriptionId& SubscriptionId, const struct FAKWaapiJsonObject& WaapiJsonObject)>&CallBack                                               (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FAkWaapiSubscriptionId*          SubscriptionId                                         (Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 // bool*                                   SubscriptionDone                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // struct FAKWaapiJsonObject               ReturnValue                                            (Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
@@ -5601,44 +6251,19 @@ void UAkXboxOneGDKInitializationSettings::MigrateMultiCoreRendering(bool NewValu
 }
 
 
-// Function AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering
+// Function AkAudio.AkXboxSeriesXInitializationSettings.MigrateMultiCoreRendering
 // (Final, Native, Public)
 // Parameters:
 // bool                                    NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UAkXboxOneInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
+void UAkXboxSeriesXInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AkXboxOneInitializationSettings", "MigrateMultiCoreRendering");
+		Func = Class->GetFunction("AkXboxSeriesXInitializationSettings", "MigrateMultiCoreRendering");
 
-	Params::AkXboxOneInitializationSettings_MigrateMultiCoreRendering Parms{};
-
-	Parms.NewValue = NewValue;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function AkAudio.AkXSXInitializationSettings.MigrateMultiCoreRendering
-// (Final, Native, Public)
-// Parameters:
-// bool                                    NewValue                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UAkXSXInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AkXSXInitializationSettings", "MigrateMultiCoreRendering");
-
-	Params::AkXSXInitializationSettings_MigrateMultiCoreRendering Parms{};
+	Params::AkXboxSeriesXInitializationSettings_MigrateMultiCoreRendering Parms{};
 
 	Parms.NewValue = NewValue;
 
@@ -5654,16 +6279,15 @@ void UAkXSXInitializationSettings::MigrateMultiCoreRendering(bool NewValue)
 // Function AkAudio.PostEventAsync.PostEventAsync
 // (Final, BlueprintCosmetic, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           Actor                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           Actor                                                  (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // int32                                   CallbackMask                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
-// const TArray<struct FAkExternalSourceInfo>&ExternalSources                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, AdvancedDisplay, NativeAccessSpecifierPublic)
+// const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>&PostEventCallback                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bStopWhenAttachedToDestroyed                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPostEventAsync*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPostEventAsync*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UPostEventAsync* UPostEventAsync::PostEventAsync(const class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class AActor* Actor, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, const TArray<struct FAkExternalSourceInfo>& ExternalSources, bool bStopWhenAttachedToDestroyed)
+class UPostEventAsync* UPostEventAsync::PostEventAsync(const class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class AActor* Actor, int32 CallbackMask, const TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)>& PostEventCallback, bool bStopWhenAttachedToDestroyed)
 {
 	static class UFunction* Func = nullptr;
 
@@ -5677,7 +6301,6 @@ class UPostEventAsync* UPostEventAsync::PostEventAsync(const class UObject* Worl
 	Parms.Actor = Actor;
 	Parms.CallbackMask = CallbackMask;
 	Parms.PostEventCallback = PostEventCallback;
-	Parms.ExternalSources = std::move(ExternalSources);
 	Parms.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
 
 	auto Flgs = Func->FunctionFlags;
@@ -5713,11 +6336,11 @@ void UPostEventAsync::PollPostEventFuture()
 // Function AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
 // (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UAkAudioEvent*                    AkEvent                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FVector&                   Location                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // const struct FRotator&                  Orientation                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-// class UPostEventAtLocationAsync*        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPostEventAtLocationAsync*        ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UPostEventAtLocationAsync* UPostEventAtLocationAsync::PostEventAtLocationAsync(const class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation)
 {

@@ -36,40 +36,6 @@ void UWBP_UI_Widget_ToolStatus_C::ExecuteUbergraph_WBP_UI_Widget_ToolStatus(int3
 }
 
 
-// Function WBP_UI_Widget_ToolStatus.WBP_UI_Widget_ToolStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_ToolStatus_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ToolStatus_C", "PreConstruct");
-
-	Params::WBP_UI_Widget_ToolStatus_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_ToolStatus.WBP_UI_Widget_ToolStatus_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_ToolStatus_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ToolStatus_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_ToolStatus.WBP_UI_Widget_ToolStatus_C.OnAmmoInventoryChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -110,10 +76,24 @@ void UWBP_UI_Widget_ToolStatus_C::OnIconChanged(const TSoftObjectPtr<class UPape
 }
 
 
+// Function WBP_UI_Widget_ToolStatus.WBP_UI_Widget_ToolStatus_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_ToolStatus_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ToolStatus_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_ToolStatus.WBP_UI_Widget_ToolStatus_C.OnLoaded_A0844DD742EC9339633A2895004DB1BB
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ToolStatus_C::OnLoaded_A0844DD742EC9339633A2895004DB1BB(class UObject* Loaded)
 {
@@ -125,6 +105,26 @@ void UWBP_UI_Widget_ToolStatus_C::OnLoaded_A0844DD742EC9339633A2895004DB1BB(clas
 	Params::WBP_UI_Widget_ToolStatus_C_OnLoaded_A0844DD742EC9339633A2895004DB1BB Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_ToolStatus.WBP_UI_Widget_ToolStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_ToolStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ToolStatus_C", "PreConstruct");
+
+	Params::WBP_UI_Widget_ToolStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

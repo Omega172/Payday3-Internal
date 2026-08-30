@@ -17,12 +17,12 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Loadout_ConfirmationPopup.WBP_Loadout_ConfirmationPopup_C
-// 0x0010 (0x0338 - 0x0328)
+// 0x0010 (0x0398 - 0x0388)
 class UWBP_Loadout_ConfirmationPopup_C final : public USBZLoadoutConfirmationPopupBody
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_ConfirmationPopup_InventoryItemDisplay_C* WBP_ConfirmationPopup_InventoryItemDisplay; // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_ConfirmationPopup_InventoryItemDisplay_C* WBP_ConfirmationPopup_InventoryItemDisplay; // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_Loadout_ConfirmationPopup(int32 EntryPoint);

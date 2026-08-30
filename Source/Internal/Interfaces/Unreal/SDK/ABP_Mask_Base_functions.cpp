@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_Mask_Base.ABP_Mask_Base_C.ExecuteUbergraph_ABP_Mask_Base
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_Mask_Base_C::ExecuteUbergraph_ABP_Mask_Base(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Mask_Base_C", "ExecuteUbergraph_ABP_Mask_Base");
-
-	Params::ABP_Mask_Base_C_ExecuteUbergraph_ABP_Mask_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ABP_Mask_Base.ABP_Mask_Base_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:

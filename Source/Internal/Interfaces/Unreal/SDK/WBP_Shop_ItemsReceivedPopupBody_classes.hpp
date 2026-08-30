@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Shop_ItemsReceivedPopupBody.WBP_Shop_ItemsReceivedPopupBody_C
-// 0x0000 (0x0300 - 0x0300)
+// 0x0000 (0x0340 - 0x0340)
 class UWBP_Shop_ItemsReceivedPopupBody_C final : public USBZShopPurchaseCompletePopupBody
 {
 public:

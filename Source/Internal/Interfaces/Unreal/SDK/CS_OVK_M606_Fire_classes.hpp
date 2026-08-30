@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "GameplayCameras_classes.hpp"
+#include "EngineCameras_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CS_OVK_M606_Fire.CS_OVK_M606_Fire_C
-// 0x0000 (0x01B0 - 0x01B0)
-class UCS_OVK_M606_Fire_C final : public UMatineeCameraShake
+// 0x0000 (0x01F0 - 0x01F0)
+class UCS_OVK_M606_Fire_C final : public ULegacyCameraShake
 {
 public:
 	static class UClass* StaticClass()

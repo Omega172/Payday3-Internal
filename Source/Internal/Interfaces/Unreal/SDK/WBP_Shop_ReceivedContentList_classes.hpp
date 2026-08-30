@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Shop_ReceivedContentList.WBP_Shop_ReceivedContentList_C
-// 0x0000 (0x02D8 - 0x02D8)
+// 0x0000 (0x0330 - 0x0330)
 class UWBP_Shop_ReceivedContentList_C final : public USBZShopContentListWidget
 {
 public:

@@ -16,6 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C.ButtonFocusChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Settings_HelperPanel_ButtonDescription_C_ButtonFocusChanged final
+{
+public:
+	class USBZSettingsButton*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFocused;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Settings_HelperPanel_ButtonDescription_C_ButtonFocusChanged;
+
 // Function WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C.ExecuteUbergraph_WBP_Settings_HelperPanel_ButtonDescription
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_Settings_HelperPanel_ButtonDescription_C_ExecuteUbergraph_WBP_Settings_HelperPanel_ButtonDescription final
@@ -31,21 +42,10 @@ struct WBP_Settings_HelperPanel_ButtonDescription_C_UpdatePanelDescriptions fina
 {
 public:
 	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Settings_HelperPanel_ButtonDescription_C_UpdatePanelDescriptions;
-
-// Function WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C.ButtonFocusChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Settings_HelperPanel_ButtonDescription_C_ButtonFocusChanged final
-{
-public:
-	class USBZSettingsButton*                     Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsFocused;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Settings_HelperPanel_ButtonDescription_C_ButtonFocusChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

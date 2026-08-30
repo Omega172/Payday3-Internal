@@ -15,6 +15,55 @@
 
 SDK_NAMESPACE_START
 
+// Enum Paper2D.ESpriteCollisionMode
+// NumValues: 0x0004
+enum class ESpriteCollisionMode : uint8
+{
+	None                                     = 0,
+	Use2DPhysics                             = 1,
+	Use3DPhysics                             = 2,
+	ESpriteCollisionMode_MAX                 = 3,
+};
+
+// Enum Paper2D.ESpriteShapeType
+// NumValues: 0x0004
+enum class ESpriteShapeType : uint8
+{
+	Box                                      = 0,
+	Circle                                   = 1,
+	Polygon                                  = 2,
+	ESpriteShapeType_MAX                     = 3,
+};
+
+// Enum Paper2D.ESpritePolygonMode
+// NumValues: 0x0006
+enum class ESpritePolygonMode : uint8
+{
+	SourceBoundingBox                        = 0,
+	TightBoundingBox                         = 1,
+	ShrinkWrapped                            = 2,
+	FullyCustom                              = 3,
+	Diced                                    = 4,
+	ESpritePolygonMode_MAX                   = 5,
+};
+
+// Enum Paper2D.ESpritePivotMode
+// NumValues: 0x000B
+enum class ESpritePivotMode : uint8
+{
+	Top_Left                                 = 0,
+	Top_Center                               = 1,
+	Top_Right                                = 2,
+	Center_Left                              = 3,
+	Center_Center                            = 4,
+	Center_Right                             = 5,
+	Bottom_Left                              = 6,
+	Bottom_Center                            = 7,
+	Bottom_Right                             = 8,
+	Custom                                   = 9,
+	ESpritePivotMode_MAX                     = 10,
+};
+
 // Enum Paper2D.EFlipbookCollisionMode
 // NumValues: 0x0004
 enum class EFlipbookCollisionMode : uint8
@@ -45,55 +94,6 @@ enum class ETileMapProjectionMode : uint8
 	ETileMapProjectionMode_MAX               = 4,
 };
 
-// Enum Paper2D.ESpritePivotMode
-// NumValues: 0x000B
-enum class ESpritePivotMode : uint8
-{
-	Top_Left                                 = 0,
-	Top_Center                               = 1,
-	Top_Right                                = 2,
-	Center_Left                              = 3,
-	Center_Center                            = 4,
-	Center_Right                             = 5,
-	Bottom_Left                              = 6,
-	Bottom_Center                            = 7,
-	Bottom_Right                             = 8,
-	Custom                                   = 9,
-	ESpritePivotMode_MAX                     = 10,
-};
-
-// Enum Paper2D.ESpritePolygonMode
-// NumValues: 0x0006
-enum class ESpritePolygonMode : uint8
-{
-	SourceBoundingBox                        = 0,
-	TightBoundingBox                         = 1,
-	ShrinkWrapped                            = 2,
-	FullyCustom                              = 3,
-	Diced                                    = 4,
-	ESpritePolygonMode_MAX                   = 5,
-};
-
-// Enum Paper2D.ESpriteShapeType
-// NumValues: 0x0004
-enum class ESpriteShapeType : uint8
-{
-	Box                                      = 0,
-	Circle                                   = 1,
-	Polygon                                  = 2,
-	ESpriteShapeType_MAX                     = 3,
-};
-
-// Enum Paper2D.ESpriteCollisionMode
-// NumValues: 0x0004
-enum class ESpriteCollisionMode : uint8
-{
-	None                                     = 0,
-	Use2DPhysics                             = 1,
-	Use3DPhysics                             = 2,
-	ESpriteCollisionMode_MAX                 = 3,
-};
-
 // ScriptStruct Paper2D.IntMargin
 // 0x0010 (0x0010 - 0x0000)
 struct FIntMargin final
@@ -106,108 +106,32 @@ public:
 };
 DUMPER7_ASSERTS_FIntMargin;
 
-// ScriptStruct Paper2D.PaperFlipbookKeyFrame
-// 0x0010 (0x0010 - 0x0000)
-struct FPaperFlipbookKeyFrame final
+// ScriptStruct Paper2D.SpriteDrawCallRecord
+// 0x0140 (0x0140 - 0x0000)
+struct alignas(0x10) FSpriteDrawCallRecord final
 {
 public:
-	class UPaperSprite*                           Sprite;                                            // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         FrameRun;                                          // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FVector                                Destination;                                       // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture*                               BaseTexture;                                       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_20[0x30];                                      // 0x0020(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FColor                                 Color;                                             // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0xEC];                                      // 0x0054(0x00EC)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FPaperFlipbookKeyFrame;
-
-// ScriptStruct Paper2D.SpriteInstanceData
-// 0x0050 (0x0050 - 0x0000)
-struct FSpriteInstanceData final
-{
-public:
-	struct FMatrix                                Transform;                                         // 0x0000(0x0040)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class UPaperSprite*                           SourceSprite;                                      // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FColor                                 VertexColor;                                       // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaterialIndex;                                     // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSpriteInstanceData;
-
-// ScriptStruct Paper2D.PaperSpriteSocket
-// 0x0040 (0x0040 - 0x0000)
-struct FPaperSpriteSocket final
-{
-public:
-	struct FTransform                             LocalTransform;                                    // 0x0000(0x0030)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class FName                                   SocketName;                                        // 0x0030(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPaperSpriteSocket;
-
-// ScriptStruct Paper2D.PaperSpriteAtlasSlot
-// 0x0048 (0x0048 - 0x0000)
-struct FPaperSpriteAtlasSlot final
-{
-public:
-	TSoftObjectPtr<class UPaperSprite>            SpriteRef;                                         // 0x0000(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         AtlasIndex;                                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         X;                                                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Y;                                                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Width;                                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Height;                                            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPaperSpriteAtlasSlot;
-
-// ScriptStruct Paper2D.PaperTerrainMaterialRule
-// 0x0038 (0x0038 - 0x0000)
-struct FPaperTerrainMaterialRule final
-{
-public:
-	class UPaperSprite*                           StartCap;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPaperSprite*>                   Body;                                              // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	class UPaperSprite*                           EndCap;                                            // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MinimumAngle;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaximumAngle;                                      // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bEnableCollision;                                  // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CollisionOffset;                                   // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DrawOrder;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPaperTerrainMaterialRule;
-
-// ScriptStruct Paper2D.PaperTileInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FPaperTileInfo final
-{
-public:
-	class UPaperTileSet*                          TileSet;                                           // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         PackedTileIndex;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPaperTileInfo;
-
-// ScriptStruct Paper2D.PaperTileSetTerrain
-// 0x0018 (0x0018 - 0x0000)
-struct FPaperTileSetTerrain final
-{
-public:
-	class FString                                 TerrainName;                                       // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CenterTileIndex;                                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPaperTileSetTerrain;
+DUMPER7_ASSERTS_FSpriteDrawCallRecord;
 
 // ScriptStruct Paper2D.SpriteGeometryShape
-// 0x0030 (0x0030 - 0x0000)
+// 0x0040 (0x0040 - 0x0000)
 struct FSpriteGeometryShape final
 {
 public:
 	ESpriteShapeType                              ShapeType;                                         // 0x0000(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FVector2D>                      Vertices;                                          // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FVector2D                              BoxSize;                                           // 0x0018(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              BoxPosition;                                       // 0x0020(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Rotation;                                          // 0x0028(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bNegativeWinding;                                  // 0x002C(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              BoxSize;                                           // 0x0018(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              BoxPosition;                                       // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Rotation;                                          // 0x0038(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bNegativeWinding;                                  // 0x003C(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FSpriteGeometryShape;
 
@@ -230,6 +154,75 @@ public:
 };
 DUMPER7_ASSERTS_FSpriteGeometryCollection;
 
+// ScriptStruct Paper2D.SpriteAssetInitParameters
+// 0x0040 (0x0040 - 0x0000)
+struct alignas(0x08) FSpriteAssetInitParameters final
+{
+public:
+	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSpriteAssetInitParameters;
+
+// ScriptStruct Paper2D.PaperFlipbookKeyFrame
+// 0x0010 (0x0010 - 0x0000)
+struct FPaperFlipbookKeyFrame final
+{
+public:
+	class UPaperSprite*                           Sprite;                                            // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	int32                                         FrameRun;                                          // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPaperFlipbookKeyFrame;
+
+// ScriptStruct Paper2D.SpriteInstanceData
+// 0x0090 (0x0090 - 0x0000)
+struct FSpriteInstanceData final
+{
+public:
+	struct FMatrix                                Transform;                                         // 0x0000(0x0080)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	class UPaperSprite*                           SourceSprite;                                      // 0x0080(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	struct FColor                                 VertexColor;                                       // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaterialIndex;                                     // 0x008C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSpriteInstanceData;
+
+// ScriptStruct Paper2D.PaperSpriteSocket
+// 0x0070 (0x0070 - 0x0000)
+struct FPaperSpriteSocket final
+{
+public:
+	struct FTransform                             LocalTransform;                                    // 0x0000(0x0060)(Edit, BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   SocketName;                                        // 0x0060(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPaperSpriteSocket;
+
+// ScriptStruct Paper2D.PaperSpriteAtlasSlot
+// 0x0048 (0x0048 - 0x0000)
+struct FPaperSpriteAtlasSlot final
+{
+public:
+	TSoftObjectPtr<class UPaperSprite>            SpriteRef;                                         // 0x0000(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         AtlasIndex;                                        // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         X;                                                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Y;                                                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Width;                                             // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Height;                                            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPaperSpriteAtlasSlot;
+
+// ScriptStruct Paper2D.PaperTileInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FPaperTileInfo final
+{
+public:
+	class UPaperTileSet*                          TileSet;                                           // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	int32                                         PackedTileIndex;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPaperTileInfo;
+
 // ScriptStruct Paper2D.PaperTileMetadata
 // 0x0048 (0x0048 - 0x0000)
 struct FPaperTileMetadata final
@@ -243,27 +236,33 @@ public:
 };
 DUMPER7_ASSERTS_FPaperTileMetadata;
 
-// ScriptStruct Paper2D.SpriteDrawCallRecord
-// 0x00D0 (0x00D0 - 0x0000)
-struct alignas(0x10) FSpriteDrawCallRecord final
+// ScriptStruct Paper2D.PaperTileSetTerrain
+// 0x0018 (0x0018 - 0x0000)
+struct FPaperTileSetTerrain final
 {
 public:
-	struct FVector                                Destination;                                       // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture*                               BaseTexture;                                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FColor                                 Color;                                             // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4C[0x84];                                      // 0x004C(0x0084)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FString                                 TerrainName;                                       // 0x0000(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CenterTileIndex;                                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSpriteDrawCallRecord;
+DUMPER7_ASSERTS_FPaperTileSetTerrain;
 
-// ScriptStruct Paper2D.SpriteAssetInitParameters
-// 0x0040 (0x0040 - 0x0000)
-struct alignas(0x08) FSpriteAssetInitParameters final
+// ScriptStruct Paper2D.PaperTerrainMaterialRule
+// 0x0038 (0x0038 - 0x0000)
+struct FPaperTerrainMaterialRule final
 {
 public:
-	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UPaperSprite*                           StartCap;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UPaperSprite*>                   Body;                                              // 0x0008(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class UPaperSprite*                           EndCap;                                            // 0x0018(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	float                                         MinimumAngle;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaximumAngle;                                      // 0x0024(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bEnableCollision;                                  // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CollisionOffset;                                   // 0x002C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DrawOrder;                                         // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FSpriteAssetInitParameters;
+DUMPER7_ASSERTS_FPaperTerrainMaterialRule;
 
 SDK_NAMESPACE_END

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_Subtitles.WBP_UI_Widget_Subtitles_C
-// 0x0000 (0x0360 - 0x0360)
+// 0x0000 (0x03C0 - 0x03C0)
 class UWBP_UI_Widget_Subtitles_C final : public USBZSubtitleWidget
 {
 public:

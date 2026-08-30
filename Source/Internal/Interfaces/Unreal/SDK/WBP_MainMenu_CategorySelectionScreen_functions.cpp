@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_MainMenu_CategorySelectionScreen_C::BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.ExecuteUbergraph_WBP_MainMenu_CategorySelectionScreen
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,71 +50,17 @@ void UWBP_MainMenu_CategorySelectionScreen_C::ExecuteUbergraph_WBP_MainMenu_Cate
 }
 
 
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MainMenu_CategorySelectionScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "PreConstruct");
-
-	Params::WBP_MainMenu_CategorySelectionScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_CategorySelectionScreen_C::BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnLostStackFocused
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnAddedToStack
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_MainMenu_CategorySelectionScreen_C::OnLostStackFocused()
+void UWBP_MainMenu_CategorySelectionScreen_C::OnAddedToStack()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "OnAddedToStack");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_CategorySelectionScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "OnGainedStackFocused");
-
-	Params::WBP_MainMenu_CategorySelectionScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -124,17 +84,57 @@ void UWBP_MainMenu_CategorySelectionScreen_C::OnControlsReferencePressed(class F
 }
 
 
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_CategorySelectionScreen_C::OnAddedToStack()
+void UWBP_MainMenu_CategorySelectionScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "OnAddedToStack");
+		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "OnGainedStackFocused");
+
+	Params::WBP_MainMenu_CategorySelectionScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_CategorySelectionScreen_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_CategorySelectionScreen_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_CategorySelectionScreen_C", "PreConstruct");
+
+	Params::WBP_MainMenu_CategorySelectionScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -36,6 +36,40 @@ void UWBP_UI_RemoteCameraWidget_C::ExecuteUbergraph_WBP_UI_RemoteCameraWidget(in
 }
 
 
+// Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.OnFocusedChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_RemoteCameraWidget_C::OnFocusedChanged(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_RemoteCameraWidget_C", "OnFocusedChanged");
+
+	Params::WBP_UI_RemoteCameraWidget_C_OnFocusedChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.OnNewTarget
+// (Event, Public, BlueprintEvent)
+
+void UWBP_UI_RemoteCameraWidget_C::OnNewTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_RemoteCameraWidget_C", "OnNewTarget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.SecurityCameraRuntimeStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -76,64 +110,10 @@ void UWBP_UI_RemoteCameraWidget_C::SecurityCameraStateChanged(ESBZCameraState Cu
 }
 
 
-// Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.OnNewTarget
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_RemoteCameraWidget_C::OnNewTarget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_RemoteCameraWidget_C", "OnNewTarget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.OnFocusedChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_RemoteCameraWidget_C::OnFocusedChanged(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_RemoteCameraWidget_C", "OnFocusedChanged");
-
-	Params::WBP_UI_RemoteCameraWidget_C_OnFocusedChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.SetFocusedWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_RemoteCameraWidget_C::SetFocusedWidget(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_RemoteCameraWidget_C", "SetFocusedWidget");
-
-	Params::WBP_UI_RemoteCameraWidget_C_SetFocusedWidget Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.SetCameraDestroyed
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsCameraDestroyed                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsCameraDestroyed                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_RemoteCameraWidget_C::SetCameraDestroyed(bool bIsCameraDestroyed)
 {
@@ -145,6 +125,26 @@ void UWBP_UI_RemoteCameraWidget_C::SetCameraDestroyed(bool bIsCameraDestroyed)
 	Params::WBP_UI_RemoteCameraWidget_C_SetCameraDestroyed Parms{};
 
 	Parms.bIsCameraDestroyed = bIsCameraDestroyed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_RemoteCameraWidget.WBP_UI_RemoteCameraWidget_C.SetFocusedWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_RemoteCameraWidget_C::SetFocusedWidget(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_RemoteCameraWidget_C", "SetFocusedWidget");
+
+	Params::WBP_UI_RemoteCameraWidget_C_SetFocusedWidget Parms{};
+
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -18,64 +18,64 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C
-// 0x0088 (0x0318 - 0x0290)
+// 0x0088 (0x0378 - 0x02F0)
 class UWBP_UI_Widget_SM_MatchmakingStatus_C final : public USBZMainMenuMatchmakingStatusWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       AppearIntro;                                       // 0x0298(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Notification;                                      // 0x02A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        BottomBar_Ws;                                      // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBPW_UI_MatchMakingCancel_C*            CancelButton;                                      // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Notification;                                // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UInvalidationBox*                       InvalidationBox_Widget;                            // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           MainBar_VB;                                        // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UProgressBar*                           ProgressBar_LevelLoading;                          // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Difficulty;                                   // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_LobbyTimer;                                   // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_MatchmakingHeader;                            // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_MatchmakingState;                             // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_Loading_C*               Widget_Loading;                                    // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          RT_IsInLobby;                                      // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           HoldTimer;                                         // 0x0308(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                         HoldIncrement;                                     // 0x0310(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       AppearIntro;                                       // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Notification;                                      // 0x0300(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        BottomBar_Ws;                                      // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBPW_UI_MatchMakingCancel_C*            CancelButton;                                      // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Notification;                                // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UInvalidationBox*                       InvalidationBox_Widget;                            // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           MainBar_VB;                                        // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UProgressBar*                           ProgressBar_LevelLoading;                          // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Difficulty;                                   // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_LobbyTimer;                                   // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_MatchmakingHeader;                            // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_MatchmakingState;                             // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_Loading_C*               Widget_Loading;                                    // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          RT_IsInLobby;                                      // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_361[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           HoldTimer;                                         // 0x0368(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	double                                        HoldIncrement;                                     // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Widget_SM_MatchmakingStatus(int32 EntryPoint);
+	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_3_OnHold__DelegateSignature();
+	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_4_OnRelease__DelegateSignature();
 	void ClearUpdatingProgress();
 	void Destruct();
-	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_4_OnRelease__DelegateSignature();
-	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_3_OnHold__DelegateSignature();
-	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnInitialized();
-	void OnTravelToGameStarted();
-	void OnPlayerReady();
-	void OnLocalClientReady_Event_0(ESBZOnlineCode ErrorCode);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void OnLobbyExited();
-	void OnMatchFound();
-	void PreConstruct(bool IsDesignTime);
-	void OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress);
-	void OnAsyncLoadingCancel();
-	void OnAsyncLoadingDone();
-	void OnExitedMatchmaking();
-	void OnEnteredMatchmaking();
-	void OnLobbyEvent(ESBZOnlineCode ErrorCode);
-	void OnUIStackChanged(const struct FSBZUIStackChangedEvent& StackEvent);
-	void OnLobbyEntered();
+	void DisplayNotifications(bool bShowNotification);
+	void ExecuteUbergraph_WBP_UI_Widget_SM_MatchmakingStatus(int32 EntryPoint);
+	void GetMatchJoiningText(class FText* Output_Text, class FText* OutDifficultyText);
 	void InitalizeLookingForMatch();
 	void InitalizeMatch_found();
+	void InitalizeNoneState();
 	void InitializeLobbyLoadingState();
-	void UpdateLobbyHeader();
 	void InitializeLobbyOnGoingIntoGame();
 	void InitializeLobbyOnLoaded();
-	void InitalizeNoneState();
-	void UpdateTimer();
-	void DisplayNotifications(bool bShowNotification);
 	void InitializeLobbyOnPlayerReadiedUp();
-	void GetMatchJoiningText(class FText* Output_Text, class FText* OutDifficultyText);
+	void OnAsyncLoadingCancel();
+	void OnAsyncLoadingDone();
+	void OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress);
+	void OnEnteredMatchmaking();
+	void OnExitedMatchmaking();
+	void OnInitialized();
+	void OnLobbyEntered();
+	void OnLobbyEvent(ESBZOnlineCode ErrorCode);
+	void OnLobbyExited();
+	void OnLocalClientReady_Event_0(ESBZOnlineCode ErrorCode);
+	void OnMatchFound();
+	void OnPlayerReady();
+	void OnTravelToGameStarted();
+	void OnUIStackChanged(const struct FSBZUIStackChangedEvent& StackEvent);
+	void PreConstruct(bool IsDesignTime);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void UpdateHoldValue();
+	void UpdateLobbyHeader();
+	void UpdateTimer();
 
 public:
 	static class UClass* StaticClass()

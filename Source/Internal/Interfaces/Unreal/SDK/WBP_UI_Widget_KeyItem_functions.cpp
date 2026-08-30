@@ -36,20 +36,6 @@ void UWBP_UI_Widget_KeyItem_C::ExecuteUbergraph_WBP_UI_Widget_KeyItem(int32 Entr
 }
 
 
-// Function WBP_UI_Widget_KeyItem.WBP_UI_Widget_KeyItem_C.OnKeyItemDataCleared
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Widget_KeyItem_C::OnKeyItemDataCleared()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_KeyItem_C", "OnKeyItemDataCleared");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_KeyItem.WBP_UI_Widget_KeyItem_C.OnKeyItemCountChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -70,10 +56,24 @@ void UWBP_UI_Widget_KeyItem_C::OnKeyItemCountChanged(int32 InKeyItemCount)
 }
 
 
+// Function WBP_UI_Widget_KeyItem.WBP_UI_Widget_KeyItem_C.OnKeyItemDataCleared
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Widget_KeyItem_C::OnKeyItemDataCleared()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_KeyItem_C", "OnKeyItemDataCleared");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_KeyItem.WBP_UI_Widget_KeyItem_C.OnKeyItemPickedUp
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZKeyItemData*                  InKeyItemData                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZKeyItemData*                  InKeyItemData                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   InitialCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_KeyItem_C::OnKeyItemPickedUp(class USBZKeyItemData* InKeyItemData, int32 InitialCount)

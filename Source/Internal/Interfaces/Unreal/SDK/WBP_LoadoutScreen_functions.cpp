@@ -16,30 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.ExecuteUbergraph_WBP_LoadoutScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::ExecuteUbergraph_WBP_LoadoutScreen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "ExecuteUbergraph_WBP_LoadoutScreen");
-
-	Params::WBP_LoadoutScreen_C_ExecuteUbergraph_WBP_LoadoutScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_Armor_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_Armor_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -56,84 +36,10 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_Armor_K2Node_ComponentB
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_LoadoutScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_CosmeticMask_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_CosmeticMask_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -153,7 +59,7 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_CosmeticMask_K2Node_Com
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_ItemTool_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_ItemTool_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -173,7 +79,7 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_ItemTool_K2Node_Compone
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_Placeable_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_Placeable_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -193,7 +99,7 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_Placeable_K2Node_Compon
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_Throwable_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_Throwable_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -213,8 +119,8 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_Throwable_K2Node_Compon
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -232,11 +138,53 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_C
 }
 
 
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_WeaponSecondary_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponSecondary_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -254,19 +202,19 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponSecondary_K2Node_
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -274,23 +222,41 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSki
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -318,37 +284,156 @@ void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_SelectorButton_LoadoutSelec
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.UpdateLoadout
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_LoadoutScreen_C::UpdateLoadout()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "UpdateLoadout");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.ExecuteUbergraph_WBP_LoadoutScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::ExecuteUbergraph_WBP_LoadoutScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "ExecuteUbergraph_WBP_LoadoutScreen");
+
+	Params::WBP_LoadoutScreen_C_ExecuteUbergraph_WBP_LoadoutScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.GetActiveItemData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZItemCategory                        NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData**           ItemData                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::GetActiveItemData(ESBZItemCategory NewParam, class USBZInventoryBaseData** ItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "GetActiveItemData");
+
+	Params::WBP_LoadoutScreen_C_GetActiveItemData Parms{};
+
+	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ItemData != nullptr)
+		*ItemData = Parms.ItemData;
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.GetActiveWeaponData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZEquippableLoadoutSlot               EquippableSlot                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData**           Equippable_Data                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::GetActiveWeaponData(ESBZEquippableLoadoutSlot EquippableSlot, class USBZInventoryBaseData** Equippable_Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "GetActiveWeaponData");
+
+	Params::WBP_LoadoutScreen_C_GetActiveWeaponData Parms{};
+
+	Parms.EquippableSlot = EquippableSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Equippable_Data != nullptr)
+		*Equippable_Data = Parms.Equippable_Data;
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.GetCharacterData
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bIsValid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData**           CharacterData                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::GetCharacterData(bool* bIsValid, class USBZInventoryBaseData** CharacterData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "GetCharacterData");
+
+	Params::WBP_LoadoutScreen_C_GetCharacterData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsValid != nullptr)
+		*bIsValid = Parms.bIsValid;
+
+	if (CharacterData != nullptr)
+		*CharacterData = Parms.CharacterData;
 }
 
 
@@ -367,26 +452,6 @@ void UWBP_LoadoutScreen_C::OnCancelPressed(class FName ActionName)
 	Params::WBP_LoadoutScreen_C_OnCancelPressed Parms{};
 
 	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_LoadoutScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PreConstruct");
-
-	Params::WBP_LoadoutScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -412,110 +477,24 @@ void UWBP_LoadoutScreen_C::OnGainedStackFocused(const class FName& PreviousValue
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_LoadoutScreen_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "OnLostStackFocused");
 
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_LoadoutScreen_C_BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_712E58A24F6E1C53C5C6188598195E6D
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_712E58A24F6E1C53C5C6188598195E6D");
-
-	Params::WBP_LoadoutScreen_C_PrePush_712E58A24F6E1C53C5C6188598195E6D Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_712E58A24F6E1C53C5C6188598195E6D
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_712E58A24F6E1C53C5C6188598195E6D");
-
-	Params::WBP_LoadoutScreen_C_PostPush_712E58A24F6E1C53C5C6188598195E6D Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_1FA6473E480112BAD7BABD9A31693EFB
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_1FA6473E480112BAD7BABD9A31693EFB");
-
-	Params::WBP_LoadoutScreen_C_PrePush_1FA6473E480112BAD7BABD9A31693EFB Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_1FA6473E480112BAD7BABD9A31693EFB
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::PostPush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget)
 {
@@ -532,70 +511,10 @@ void UWBP_LoadoutScreen_C::PostPush_1FA6473E480112BAD7BABD9A31693EFB(class USBZM
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_8D9CEAB74A2AE8ED253297937E14F4A7
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_8D9CEAB74A2AE8ED253297937E14F4A7");
-
-	Params::WBP_LoadoutScreen_C_PrePush_8D9CEAB74A2AE8ED253297937E14F4A7 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_8D9CEAB74A2AE8ED253297937E14F4A7
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_8D9CEAB74A2AE8ED253297937E14F4A7");
-
-	Params::WBP_LoadoutScreen_C_PostPush_8D9CEAB74A2AE8ED253297937E14F4A7 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_29B7319B48379564A0BD399AF91D3783
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_29B7319B48379564A0BD399AF91D3783");
-
-	Params::WBP_LoadoutScreen_C_PrePush_29B7319B48379564A0BD399AF91D3783 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_29B7319B48379564A0BD399AF91D3783
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::PostPush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget)
 {
@@ -612,230 +531,10 @@ void UWBP_LoadoutScreen_C::PostPush_29B7319B48379564A0BD399AF91D3783(class USBZM
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_681260894A4881FE3571E39F9AC3CC1C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_681260894A4881FE3571E39F9AC3CC1C");
-
-	Params::WBP_LoadoutScreen_C_PrePush_681260894A4881FE3571E39F9AC3CC1C Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_681260894A4881FE3571E39F9AC3CC1C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_681260894A4881FE3571E39F9AC3CC1C");
-
-	Params::WBP_LoadoutScreen_C_PostPush_681260894A4881FE3571E39F9AC3CC1C Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_8F444FD14D7C1386F6281987AA6F9779
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_8F444FD14D7C1386F6281987AA6F9779");
-
-	Params::WBP_LoadoutScreen_C_PrePush_8F444FD14D7C1386F6281987AA6F9779 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_8F444FD14D7C1386F6281987AA6F9779
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_8F444FD14D7C1386F6281987AA6F9779");
-
-	Params::WBP_LoadoutScreen_C_PostPush_8F444FD14D7C1386F6281987AA6F9779 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_DBA56ACC4F8063E4539CB4A6BA879C64
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_DBA56ACC4F8063E4539CB4A6BA879C64");
-
-	Params::WBP_LoadoutScreen_C_PrePush_DBA56ACC4F8063E4539CB4A6BA879C64 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_DBA56ACC4F8063E4539CB4A6BA879C64
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_DBA56ACC4F8063E4539CB4A6BA879C64");
-
-	Params::WBP_LoadoutScreen_C_PostPush_DBA56ACC4F8063E4539CB4A6BA879C64 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_591CDFAC4E87819FC621E488FA859D41
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_591CDFAC4E87819FC621E488FA859D41");
-
-	Params::WBP_LoadoutScreen_C_PrePush_591CDFAC4E87819FC621E488FA859D41 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_591CDFAC4E87819FC621E488FA859D41
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_591CDFAC4E87819FC621E488FA859D41");
-
-	Params::WBP_LoadoutScreen_C_PostPush_591CDFAC4E87819FC621E488FA859D41 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_69CC72D6427035E37D7C5E8C5E1F7F09
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_69CC72D6427035E37D7C5E8C5E1F7F09");
-
-	Params::WBP_LoadoutScreen_C_PrePush_69CC72D6427035E37D7C5E8C5E1F7F09 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_69CC72D6427035E37D7C5E8C5E1F7F09
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PostPush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_69CC72D6427035E37D7C5E8C5E1F7F09");
-
-	Params::WBP_LoadoutScreen_C_PostPush_69CC72D6427035E37D7C5E8C5E1F7F09 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_493EF86A497FE264CAFF169D32C37AE3
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_LoadoutScreen_C::PrePush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_493EF86A497FE264CAFF169D32C37AE3");
-
-	Params::WBP_LoadoutScreen_C_PrePush_493EF86A497FE264CAFF169D32C37AE3 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_493EF86A497FE264CAFF169D32C37AE3
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_LoadoutScreen_C::PostPush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget)
 {
@@ -852,76 +551,377 @@ void UWBP_LoadoutScreen_C::PostPush_493EF86A497FE264CAFF169D32C37AE3(class USBZM
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.GetActiveWeaponData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_591CDFAC4E87819FC621E488FA859D41
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZEquippableLoadoutSlot               EquippableSlot                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZInventoryBaseData**           Equippable_Data                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LoadoutScreen_C::GetActiveWeaponData(ESBZEquippableLoadoutSlot EquippableSlot, class USBZInventoryBaseData** Equippable_Data)
+void UWBP_LoadoutScreen_C::PostPush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "GetActiveWeaponData");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_591CDFAC4E87819FC621E488FA859D41");
 
-	Params::WBP_LoadoutScreen_C_GetActiveWeaponData Parms{};
+	Params::WBP_LoadoutScreen_C_PostPush_591CDFAC4E87819FC621E488FA859D41 Parms{};
 
-	Parms.EquippableSlot = EquippableSlot;
+	Parms.MenuWidget = MenuWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Equippable_Data != nullptr)
-		*Equippable_Data = Parms.Equippable_Data;
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.GetActiveItemData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_681260894A4881FE3571E39F9AC3CC1C
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZItemCategory                        NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZInventoryBaseData**           ItemData                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LoadoutScreen_C::GetActiveItemData(ESBZItemCategory NewParam, class USBZInventoryBaseData** ItemData)
+void UWBP_LoadoutScreen_C::PostPush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "GetActiveItemData");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_681260894A4881FE3571E39F9AC3CC1C");
 
-	Params::WBP_LoadoutScreen_C_GetActiveItemData Parms{};
+	Params::WBP_LoadoutScreen_C_PostPush_681260894A4881FE3571E39F9AC3CC1C Parms{};
 
-	Parms.NewParam = NewParam;
+	Parms.MenuWidget = MenuWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (ItemData != nullptr)
-		*ItemData = Parms.ItemData;
 }
 
 
-// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.GetCharacterData
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_69CC72D6427035E37D7C5E8C5E1F7F09
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   bIsValid                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USBZInventoryBaseData**           CharacterData                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LoadoutScreen_C::GetCharacterData(bool* bIsValid, class USBZInventoryBaseData** CharacterData)
+void UWBP_LoadoutScreen_C::PostPush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutScreen_C", "GetCharacterData");
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_69CC72D6427035E37D7C5E8C5E1F7F09");
 
-	Params::WBP_LoadoutScreen_C_GetCharacterData Parms{};
+	Params::WBP_LoadoutScreen_C_PostPush_69CC72D6427035E37D7C5E8C5E1F7F09 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (bIsValid != nullptr)
-		*bIsValid = Parms.bIsValid;
 
-	if (CharacterData != nullptr)
-		*CharacterData = Parms.CharacterData;
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_712E58A24F6E1C53C5C6188598195E6D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PostPush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_712E58A24F6E1C53C5C6188598195E6D");
+
+	Params::WBP_LoadoutScreen_C_PostPush_712E58A24F6E1C53C5C6188598195E6D Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_8D9CEAB74A2AE8ED253297937E14F4A7
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PostPush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_8D9CEAB74A2AE8ED253297937E14F4A7");
+
+	Params::WBP_LoadoutScreen_C_PostPush_8D9CEAB74A2AE8ED253297937E14F4A7 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_8F444FD14D7C1386F6281987AA6F9779
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PostPush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_8F444FD14D7C1386F6281987AA6F9779");
+
+	Params::WBP_LoadoutScreen_C_PostPush_8F444FD14D7C1386F6281987AA6F9779 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PostPush_DBA56ACC4F8063E4539CB4A6BA879C64
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PostPush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PostPush_DBA56ACC4F8063E4539CB4A6BA879C64");
+
+	Params::WBP_LoadoutScreen_C_PostPush_DBA56ACC4F8063E4539CB4A6BA879C64 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PreConstruct");
+
+	Params::WBP_LoadoutScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_1FA6473E480112BAD7BABD9A31693EFB
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_1FA6473E480112BAD7BABD9A31693EFB");
+
+	Params::WBP_LoadoutScreen_C_PrePush_1FA6473E480112BAD7BABD9A31693EFB Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_29B7319B48379564A0BD399AF91D3783
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_29B7319B48379564A0BD399AF91D3783");
+
+	Params::WBP_LoadoutScreen_C_PrePush_29B7319B48379564A0BD399AF91D3783 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_493EF86A497FE264CAFF169D32C37AE3
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_493EF86A497FE264CAFF169D32C37AE3");
+
+	Params::WBP_LoadoutScreen_C_PrePush_493EF86A497FE264CAFF169D32C37AE3 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_591CDFAC4E87819FC621E488FA859D41
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_591CDFAC4E87819FC621E488FA859D41");
+
+	Params::WBP_LoadoutScreen_C_PrePush_591CDFAC4E87819FC621E488FA859D41 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_681260894A4881FE3571E39F9AC3CC1C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_681260894A4881FE3571E39F9AC3CC1C");
+
+	Params::WBP_LoadoutScreen_C_PrePush_681260894A4881FE3571E39F9AC3CC1C Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_69CC72D6427035E37D7C5E8C5E1F7F09
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_69CC72D6427035E37D7C5E8C5E1F7F09");
+
+	Params::WBP_LoadoutScreen_C_PrePush_69CC72D6427035E37D7C5E8C5E1F7F09 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_712E58A24F6E1C53C5C6188598195E6D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_712E58A24F6E1C53C5C6188598195E6D");
+
+	Params::WBP_LoadoutScreen_C_PrePush_712E58A24F6E1C53C5C6188598195E6D Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_8D9CEAB74A2AE8ED253297937E14F4A7
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_8D9CEAB74A2AE8ED253297937E14F4A7");
+
+	Params::WBP_LoadoutScreen_C_PrePush_8D9CEAB74A2AE8ED253297937E14F4A7 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_8F444FD14D7C1386F6281987AA6F9779
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_8F444FD14D7C1386F6281987AA6F9779");
+
+	Params::WBP_LoadoutScreen_C_PrePush_8F444FD14D7C1386F6281987AA6F9779 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.PrePush_DBA56ACC4F8063E4539CB4A6BA879C64
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LoadoutScreen_C::PrePush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "PrePush_DBA56ACC4F8063E4539CB4A6BA879C64");
+
+	Params::WBP_LoadoutScreen_C_PrePush_DBA56ACC4F8063E4539CB4A6BA879C64 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LoadoutScreen.WBP_LoadoutScreen_C.UpdateLoadout
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_LoadoutScreen_C::UpdateLoadout()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LoadoutScreen_C", "UpdateLoadout");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

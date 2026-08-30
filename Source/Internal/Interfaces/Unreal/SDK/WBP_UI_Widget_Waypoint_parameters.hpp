@@ -16,32 +16,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.ExecuteUbergraph_WBP_UI_Widget_Waypoint
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_UI_Widget_Waypoint_C_ExecuteUbergraph_WBP_UI_Widget_Waypoint final
+// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnDataSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Widget_Waypoint_C_BP_OnDataSet final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bShowMarkerText;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                K2Node_Event_DataObject;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0010(0x0018)()
-	TScriptInterface<class ISBZMarkerInfoInterface> K2Node_DynamicCast_AsSBZMarker_Info_Interface;   // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetMarkerText_ReturnValue;                // 0x0040(0x0018)()
-	const class USBZMarkerDataAsset*              K2Node_Event_InMarkerAsset;                        // 0x0058(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_63[0x1];                                       // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_NewProgress;                          // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZMarkerDataAsset*              InMarkerAsset;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_ExecuteUbergraph_WBP_UI_Widget_Waypoint;
+DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_BP_OnDataSet;
+
+// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnMarkerTextVisibleChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Widget_Waypoint_C_BP_OnMarkerTextVisibleChanged final
+{
+public:
+	bool                                          bShowMarkerText;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                DataObject;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_BP_OnMarkerTextVisibleChanged;
 
 // Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnProgressChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -52,34 +45,41 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_BP_OnProgressChanged;
 
-// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnMarkerTextVisibleChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Widget_Waypoint_C_BP_OnMarkerTextVisibleChanged final
+// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.ExecuteUbergraph_WBP_UI_Widget_Waypoint
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_UI_Widget_Waypoint_C_ExecuteUbergraph_WBP_UI_Widget_Waypoint final
 {
 public:
-	bool                                          bShowMarkerText;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                DataObject;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bShowMarkerText;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                K2Node_Event_DataObject;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetEmptyText_ReturnValue;                 // 0x0010(0x0010)()
+	TScriptInterface<class ISBZMarkerInfoInterface> K2Node_DynamicCast_AsSBZMarker_Info_Interface;   // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetMarkerText_ReturnValue;                // 0x0038(0x0010)()
+	const class USBZMarkerDataAsset*              K2Node_Event_InMarkerAsset;                        // 0x0048(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_53[0x1];                                       // 0x0053(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_NewProgress;                          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_BP_OnMarkerTextVisibleChanged;
+DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_ExecuteUbergraph_WBP_UI_Widget_Waypoint;
 
 // Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Widget_Waypoint_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_PreConstruct;
-
-// Function WBP_UI_Widget_Waypoint.WBP_UI_Widget_Waypoint_C.BP_OnDataSet
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_Waypoint_C_BP_OnDataSet final
-{
-public:
-	const class USBZMarkerDataAsset*              InMarkerAsset;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_Waypoint_C_BP_OnDataSet;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

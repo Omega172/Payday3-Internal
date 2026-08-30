@@ -18,18 +18,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ECMJammer.BP_ECMJammer_C
-// 0x0020 (0x05E0 - 0x05C0)
+// 0x0020 (0x06D0 - 0x06B0)
 class ABP_ECMJammer_C final : public ASBZECMJammer
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Interactable_Collision;                            // 0x05C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x05D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Interactable_Collision;                            // 0x06B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x06C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_ECMJammer(int32 EntryPoint);
-	void OnActivatedUsing();
 	void OnActivated();
+	void OnActivatedUsing();
 	void OnJammerEffectEnded();
 
 public:

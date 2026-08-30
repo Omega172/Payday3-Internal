@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "GameplayCameras_classes.hpp"
+#include "EngineCameras_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CS_FragGrenade.CS_FragGrenade_C
-// 0x0000 (0x01B0 - 0x01B0)
-class UCS_FragGrenade_C final : public UMatineeCameraShake
+// 0x0000 (0x01F0 - 0x01F0)
+class UCS_FragGrenade_C final : public ULegacyCameraShake
 {
 public:
 	static class UClass* StaticClass()

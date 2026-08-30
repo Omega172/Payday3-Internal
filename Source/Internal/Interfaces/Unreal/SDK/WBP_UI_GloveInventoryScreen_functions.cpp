@@ -16,6 +16,73 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GloveInventoryScreen_C::BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GloveInventoryScreen_C::BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.Do Custom Navigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_GloveInventoryScreen_C::Do_Custom_Navigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "Do Custom Navigation");
+
+	Params::WBP_UI_GloveInventoryScreen_C_Do_Custom_Navigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.ExecuteUbergraph_WBP_UI_GloveInventoryScreen
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,121 +103,11 @@ void UWBP_UI_GloveInventoryScreen_C::ExecuteUbergraph_WBP_UI_GloveInventoryScree
 }
 
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPriceChanged
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZInventorySlotStoreItem&Item                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_GloveInventoryScreen_C::OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnSlotPriceChanged");
-
-	Params::WBP_UI_GloveInventoryScreen_C_OnSlotPriceChanged Parms{};
-
-	Parms.Item = std::move(Item);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnTryBuyGloveSlot
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_GloveInventoryScreen_C::OnTryBuyGloveSlot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnTryBuyGloveSlot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_GloveInventoryScreen_C::BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPurchaseComplete
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_GloveInventoryScreen_C::OnSlotPurchaseComplete(bool bWasSuccessful)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnSlotPurchaseComplete");
-
-	Params::WBP_UI_GloveInventoryScreen_C_OnSlotPurchaseComplete Parms{};
-
-	Parms.bWasSuccessful = bWasSuccessful;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnItemDiscarded
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_GloveInventoryScreen_C::OnItemDiscarded(bool bWasSuccessful)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnItemDiscarded");
-
-	Params::WBP_UI_GloveInventoryScreen_C_OnItemDiscarded Parms{};
-
-	Parms.bWasSuccessful = bWasSuccessful;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnDiscardPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_GloveInventoryScreen_C::OnDiscardPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnDiscardPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.GloveSlotButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   InFocusedButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   InFocusedButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_GloveInventoryScreen_C::GloveSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton, bool bIsFocused)
 {
@@ -163,48 +120,6 @@ void UWBP_UI_GloveInventoryScreen_C::GloveSlotButtonFocusedChanged(class USBZMen
 
 	Parms.InFocusedButton = InFocusedButton;
 	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_GloveInventoryScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnGainedStackFocused");
-
-	Params::WBP_UI_GloveInventoryScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_GloveInventoryScreen_C::BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -230,6 +145,20 @@ void UWBP_UI_GloveInventoryScreen_C::OnControlsReferenceClicked(class FName Acti
 }
 
 
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnDiscardPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_GloveInventoryScreen_C::OnDiscardPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnDiscardPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnEmptySlotSelected
 // (Event, Protected, BlueprintEvent)
 
@@ -241,6 +170,46 @@ void UWBP_UI_GloveInventoryScreen_C::OnEmptySlotSelected()
 		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnEmptySlotSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GloveInventoryScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnGainedStackFocused");
+
+	Params::WBP_UI_GloveInventoryScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnItemDiscarded
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GloveInventoryScreen_C::OnItemDiscarded(bool bWasSuccessful)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnItemDiscarded");
+
+	Params::WBP_UI_GloveInventoryScreen_C_OnItemDiscarded Parms{};
+
+	Parms.bWasSuccessful = bWasSuccessful;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -258,26 +227,77 @@ void UWBP_UI_GloveInventoryScreen_C::OnLostStackFocused()
 }
 
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.Do Custom Navigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPriceChanged
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZInventorySlotStoreItem&Item                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-class UWidget* UWBP_UI_GloveInventoryScreen_C::Do_Custom_Navigation(EUINavigation Navigation_0)
+void UWBP_UI_GloveInventoryScreen_C::OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "Do Custom Navigation");
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnSlotPriceChanged");
 
-	Params::WBP_UI_GloveInventoryScreen_C_Do_Custom_Navigation Parms{};
+	Params::WBP_UI_GloveInventoryScreen_C_OnSlotPriceChanged Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
+	Parms.Item = std::move(Item);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	return Parms.ReturnValue;
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPurchaseComplete
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GloveInventoryScreen_C::OnSlotPurchaseComplete(bool bWasSuccessful)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnSlotPurchaseComplete");
+
+	Params::WBP_UI_GloveInventoryScreen_C_OnSlotPurchaseComplete Parms{};
+
+	Parms.bWasSuccessful = bWasSuccessful;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnTryBuyGloveSlot
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_GloveInventoryScreen_C::OnTryBuyGloveSlot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "OnTryBuyGloveSlot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.SetActiveButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   NewButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GloveInventoryScreen_C::SetActiveButton(class USBZMenuButton* NewButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "SetActiveButton");
+
+	Params::WBP_UI_GloveInventoryScreen_C_SetActiveButton Parms{};
+
+	Parms.NewButton = NewButton;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -292,26 +312,6 @@ void UWBP_UI_GloveInventoryScreen_C::UpdateBuyButtonControls()
 		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "UpdateBuyButtonControls");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.SetActiveButton
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   NewButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_GloveInventoryScreen_C::SetActiveButton(class USBZMenuButton* NewButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_GloveInventoryScreen_C", "SetActiveButton");
-
-	Params::WBP_UI_GloveInventoryScreen_C_SetActiveButton Parms{};
-
-	Parms.NewButton = NewButton;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

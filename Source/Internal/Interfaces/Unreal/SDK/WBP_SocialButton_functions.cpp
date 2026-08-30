@@ -16,6 +16,60 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_SocialButton.WBP_SocialButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SocialButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SocialButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_SocialButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SocialButton.WBP_SocialButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SocialButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SocialButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_SocialButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SocialButton.WBP_SocialButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_SocialButton_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SocialButton_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_SocialButton.WBP_SocialButton_C.ExecuteUbergraph_WBP_SocialButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,74 +90,6 @@ void UWBP_SocialButton_C::ExecuteUbergraph_WBP_SocialButton(int32 EntryPoint)
 }
 
 
-// Function WBP_SocialButton.WBP_SocialButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SocialButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_SocialButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SocialButton.WBP_SocialButton_C.ToggleSocials
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_SocialButton_C::ToggleSocials()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "ToggleSocials");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SocialButton.WBP_SocialButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SocialButton_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SocialButton.WBP_SocialButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SocialButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_SocialButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_SocialButton.WBP_SocialButton_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -118,11 +104,31 @@ void UWBP_SocialButton_C::OnInitialized()
 }
 
 
+// Function WBP_SocialButton.WBP_SocialButton_C.OnInstallStateChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SocialButton_C::OnInstallStateChanged(bool bIsGameInstallPending)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SocialButton_C", "OnInstallStateChanged");
+
+	Params::WBP_SocialButton_C_OnInstallStateChanged Parms{};
+
+	Parms.bIsGameInstallPending = bIsGameInstallPending;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_SocialButton.WBP_SocialButton_C.OnPrivilegeQueried
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // ESBZUserPrivilegesProxy                 Privilege                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPrivilegeAllowed                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bPrivilegeAllowed                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_SocialButton_C::OnPrivilegeQueried(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed)
 {
@@ -140,47 +146,17 @@ void UWBP_SocialButton_C::OnPrivilegeQueried(ESBZUserPrivilegesProxy Privilege, 
 }
 
 
-// Function WBP_SocialButton.WBP_SocialButton_C.OnInstallStateChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SocialButton_C::OnInstallStateChanged(bool bIsGameInstallPending)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "OnInstallStateChanged");
-
-	Params::WBP_SocialButton_C_OnInstallStateChanged Parms{};
-
-	Parms.bIsGameInstallPending = bIsGameInstallPending;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SocialButton.WBP_SocialButton_C.UpdateAccessBasedOnPrivilege
+// Function WBP_SocialButton.WBP_SocialButton_C.SetDefaultVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanPlayOnline                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    InstallPending                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    TrialVersion                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_SocialButton_C::UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion)
+void UWBP_SocialButton_C::SetDefaultVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "UpdateAccessBasedOnPrivilege");
+		Func = Class->GetFunction("WBP_SocialButton_C", "SetDefaultVisuals");
 
-	Params::WBP_SocialButton_C_UpdateAccessBasedOnPrivilege Parms{};
-
-	Parms.CanPlayOnline = CanPlayOnline;
-	Parms.InstallPending = InstallPending;
-	Parms.TrialVersion = TrialVersion;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -198,17 +174,41 @@ void UWBP_SocialButton_C::SetFocusedVisuals()
 }
 
 
-// Function WBP_SocialButton.WBP_SocialButton_C.SetDefaultVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_SocialButton.WBP_SocialButton_C.ToggleSocials
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_SocialButton_C::SetDefaultVisuals()
+void UWBP_SocialButton_C::ToggleSocials()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SocialButton_C", "SetDefaultVisuals");
+		Func = Class->GetFunction("WBP_SocialButton_C", "ToggleSocials");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SocialButton.WBP_SocialButton_C.UpdateAccessBasedOnPrivilege
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanPlayOnline                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InstallPending                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    TrialVersion                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SocialButton_C::UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SocialButton_C", "UpdateAccessBasedOnPrivilege");
+
+	Params::WBP_SocialButton_C_UpdateAccessBasedOnPrivilege Parms{};
+
+	Parms.CanPlayOnline = CanPlayOnline;
+	Parms.InstallPending = InstallPending;
+	Parms.TrialVersion = TrialVersion;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

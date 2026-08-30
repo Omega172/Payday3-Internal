@@ -36,26 +36,6 @@ void UWBP_Currency_Icon_C::ExecuteUbergraph_WBP_Currency_Icon(int32 EntryPoint)
 }
 
 
-// Function WBP_Currency_Icon.WBP_Currency_Icon_C.SetCurrency
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCurrencyCode                        Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Currency_Icon_C::SetCurrency(ESBZCurrencyCode Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Currency_Icon_C", "SetCurrency");
-
-	Params::WBP_Currency_Icon_C_SetCurrency Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Currency_Icon.WBP_Currency_Icon_C.GetColorByCurrency
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -77,6 +57,26 @@ void UWBP_Currency_Icon_C::GetColorByCurrency(ESBZCurrencyCode Currency, struct 
 
 	if (CurrencyColor != nullptr)
 		*CurrencyColor = std::move(Parms.CurrencyColor);
+}
+
+
+// Function WBP_Currency_Icon.WBP_Currency_Icon_C.SetCurrency
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCurrencyCode                        Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Currency_Icon_C::SetCurrency(ESBZCurrencyCode Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Currency_Icon_C", "SetCurrency");
+
+	Params::WBP_Currency_Icon_C_SetCurrency Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

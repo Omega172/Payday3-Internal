@@ -94,8 +94,8 @@ void UGridlyBPFunctionLibrary::UpdateLocalizationPreview(const TArray<struct FPo
 // Function Gridly.GridlyTask_DownloadLocalizedTexts.DownloadLocalizedTexts
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject_0                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGridlyTask_DownloadLocalizedTexts*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject_0                                   (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGridlyTask_DownloadLocalizedTexts*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UGridlyTask_DownloadLocalizedTexts* UGridlyTask_DownloadLocalizedTexts::DownloadLocalizedTexts(const class UObject* WorldContextObject_0)
 {
@@ -122,9 +122,9 @@ class UGridlyTask_DownloadLocalizedTexts* UGridlyTask_DownloadLocalizedTexts::Do
 // Function Gridly.GridlyTask_ImportDataTableFromGridly.ImportDataTableFromGridly
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject_0                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGridlyDataTable*                 GridlyDataTable_0                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UGridlyTask_ImportDataTableFromGridly*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject_0                                   (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGridlyDataTable*                 GridlyDataTable_0                                      (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UGridlyTask_ImportDataTableFromGridly*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UGridlyTask_ImportDataTableFromGridly* UGridlyTask_ImportDataTableFromGridly::ImportDataTableFromGridly(const class UObject* WorldContextObject_0, class UGridlyDataTable* GridlyDataTable_0)
 {
@@ -152,8 +152,8 @@ class UGridlyTask_ImportDataTableFromGridly* UGridlyTask_ImportDataTableFromGrid
 // Function Gridly.SBZGridlyTask_DownloadGridlyNativeCulture.DownloadLocalizedTexts
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// const class UObject*                    WorldContextObject_0                                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class USBZGridlyTask_DownloadGridlyNativeCulture*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject_0                                   (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class USBZGridlyTask_DownloadGridlyNativeCulture*ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class USBZGridlyTask_DownloadGridlyNativeCulture* USBZGridlyTask_DownloadGridlyNativeCulture::DownloadLocalizedTexts(const class UObject* WorldContextObject_0)
 {

@@ -17,21 +17,21 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C
-// 0x0020 (0x02B8 - 0x0298)
+// 0x0020 (0x0318 - 0x02F8)
 class UWBP_UI_CharacterDisplayPanel_C final : public USBZMainMenuCharacterDisplayPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZUITextBlock*                        Text_CharacterBio;                                 // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_CharacterNAme;                                // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_CharacterNationality;                         // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZUITextBlock*                        Text_CharacterBio;                                 // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_CharacterNAme;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_CharacterNationality;                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_CharacterDisplayPanel(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void OnEmptySet();
-	void OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData);
 	void InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData);
+	void OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData);
+	void OnEmptySet();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

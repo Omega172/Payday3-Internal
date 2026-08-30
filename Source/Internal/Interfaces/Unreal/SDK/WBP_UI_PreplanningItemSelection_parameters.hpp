@@ -18,66 +18,70 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.ExecuteUbergraph_WBP_UI_PreplanningItemSelection
-// 0x0188 (0x0188 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_ExecuteUbergraph_WBP_UI_PreplanningItemSelection final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.SetSoloModeVisuals
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_SetSoloModeVisuals final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FUniqueNetIdRepl                       K2Node_Event_PlayerID_1;                           // 0x0008(0x0028)(ConstParm, HasGetValueTypeHash)
-	const class USBZPreplanningAssetData*         K2Node_Event_PreplanningAsset;                     // 0x0030(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FUniqueNetIdRepl                       K2Node_Event_PlayerID;                             // 0x0038(0x0028)(ConstParm, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerIndex_Index;                     // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPlayerIndex_Index_1;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_Event_InButton;                             // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsFocused;                           // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMainMenuPrePlanningItemSelectionButton* K2Node_DynamicCast_AsSBZMain_Menu_Pre_Planning_Item_Selection_Button; // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZPreplanningAssetData*         CallFunc_GetPreplanningItem_ReturnValue;           // 0x0088(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x00A0(0x0014)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00B8(0x0038)()
-	int32                                         Temp_int_Variable;                                 // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZBaseInventoryItemVisualsWidget*     K2Node_Select_Default;                             // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZBaseInventoryItemVisualsWidget*     K2Node_Select_Default_1;                           // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bEnabled;                             // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10A[0x6];                                      // 0x010A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0110(0x0038)()
-	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0160(0x0028)()
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSoloGameEnabled_ReturnValue;            // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_ExecuteUbergraph_WBP_UI_PreplanningItemSelection;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_SetSoloModeVisuals;
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningSelectionEnabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.UpdatePreplanningDescription
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription final
 {
 public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZPreplanningAssetData*               InPreplanning;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription;
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_PreConstruct final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.GetPlayerIndex
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_GetPlayerIndex final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FUniqueNetIdRepl                       InPlayerID;                                        // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FUniqueNetIdRepl>               CallFunc_Map_Keys_Keys;                            // 0x0038(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_GetPlayerIndex;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetAddedByPlayer
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer final
+{
+public:
+	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	const class USBZPreplanningAssetData*         PreplanningAsset;                                  // 0x0030(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetRemovedByPlayer
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer final
+{
+public:
+	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPrePlanningItemButtonFocused
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused final
+{
+public:
+	class USBZMenuButton*                         InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused;
 
 // Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnControlsReferenceClicked
 // 0x000C (0x000C - 0x0000)
@@ -88,70 +92,66 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked;
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPrePlanningItemButtonFocused
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_PreConstruct final
 {
 public:
-	class USBZMenuButton*                         InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_PreConstruct;
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetRemovedByPlayer
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningSelectionEnabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged final
 {
 public:
-	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged;
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetAddedByPlayer
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.ExecuteUbergraph_WBP_UI_PreplanningItemSelection
+// 0x0188 (0x0188 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_ExecuteUbergraph_WBP_UI_PreplanningItemSelection final
 {
 public:
-	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	const class USBZPreplanningAssetData*         PreplanningAsset;                                  // 0x0028(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FUniqueNetIdRepl                       K2Node_Event_PlayerID_1;                           // 0x0008(0x0030)(ConstParm, HasGetValueTypeHash)
+	const class USBZPreplanningAssetData*         K2Node_Event_PreplanningAsset;                     // 0x0038(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FUniqueNetIdRepl                       K2Node_Event_PlayerID;                             // 0x0040(0x0030)(ConstParm, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerIndex_Index;                     // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPlayerIndex_Index_1;                   // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_Event_InButton;                             // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsFocused;                           // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMainMenuPrePlanningItemSelectionButton* K2Node_DynamicCast_AsSBZMain_Menu_Pre_Planning_Item_Selection_Button; // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZPreplanningAssetData*         CallFunc_GetPreplanningItem_ReturnValue;           // 0x0098(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x00A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x00B0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C5[0x3];                                       // 0x00C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00C8(0x0030)()
+	int32                                         Temp_int_Variable;                                 // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInventoryItemVisualsWidget*     K2Node_Select_Default;                             // 0x0100(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInventoryItemVisualsWidget*     K2Node_Select_Default_1;                           // 0x0108(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bEnabled;                             // 0x0111(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_112[0x6];                                      // 0x0112(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0118(0x0030)()
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0150(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0160(0x0028)()
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.GetPlayerIndex
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_GetPlayerIndex final
-{
-public:
-	struct FUniqueNetIdRepl                       InPlayerID;                                        // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         Index_0;                                           // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FUniqueNetIdRepl>               CallFunc_Map_Keys_Keys;                            // 0x0030(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_GetPlayerIndex;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.UpdatePreplanningDescription
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription final
-{
-public:
-	class USBZPreplanningAssetData*               InPreplanning;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.SetSoloModeVisuals
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_SetSoloModeVisuals final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSoloGameEnabled_ReturnValue;            // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_SetSoloModeVisuals;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_ExecuteUbergraph_WBP_UI_PreplanningItemSelection;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

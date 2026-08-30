@@ -17,11 +17,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MainMenu_Van_01.BP_MainMenu_Van_01_C
-// 0x0008 (0x02C0 - 0x02B8)
+// 0x0008 (0x0340 - 0x0338)
 class ABP_MainMenu_Van_01_C final : public AStaticMeshActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_BP_MainMenu_Van_01(int32 EntryPoint);

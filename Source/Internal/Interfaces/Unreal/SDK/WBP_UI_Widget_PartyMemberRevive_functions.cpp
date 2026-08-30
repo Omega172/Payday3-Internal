@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_PartyMemberRevive_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_PartyMemberRevive_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C.ExecuteUbergraph_WBP_UI_Widget_PartyMemberRevive
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,20 +50,6 @@ void UWBP_UI_Widget_PartyMemberRevive_C::ExecuteUbergraph_WBP_UI_Widget_PartyMem
 }
 
 
-// Function WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C.OnReviveInteractionStarted
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_PartyMemberRevive_C::OnReviveInteractionStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyMemberRevive_C", "OnReviveInteractionStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C.OnReviveInteractionEnded
 // (Event, Public, BlueprintEvent)
 
@@ -64,15 +64,15 @@ void UWBP_UI_Widget_PartyMemberRevive_C::OnReviveInteractionEnded()
 }
 
 
-// Function WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_PartyMemberRevive.WBP_UI_Widget_PartyMemberRevive_C.OnReviveInteractionStarted
+// (Event, Public, BlueprintEvent)
 
-void UWBP_UI_Widget_PartyMemberRevive_C::Construct()
+void UWBP_UI_Widget_PartyMemberRevive_C::OnReviveInteractionStarted()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_PartyMemberRevive_C", "Construct");
+		Func = Class->GetFunction("WBP_UI_Widget_PartyMemberRevive_C", "OnReviveInteractionStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

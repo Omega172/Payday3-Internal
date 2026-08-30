@@ -18,22 +18,22 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_SM_ActionPhase.WBP_UI_SM_ActionPhase_C
-// 0x0020 (0x04E0 - 0x04C0)
+// 0x0020 (0x0540 - 0x0520)
 class UWBP_UI_SM_ActionPhase_C final : public USBZActionPhaseBaseWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZUITextBlock*                        SoloModeBetaTag_T;                                 // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_SM_ActionPhaseMenu_C*           Widget_PauseMenu;                                  // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ViewTargetContainer_C*          Widget_ViewTargets;                                // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0520(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZUITextBlock*                        SoloModeBetaTag_T;                                 // 0x0528(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_SM_ActionPhaseMenu_C*           Widget_PauseMenu;                                  // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ViewTargetContainer_C*          Widget_ViewTargets;                                // 0x0538(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_SM_ActionPhase(int32 EntryPoint);
 	void BP_CloseHUDOverlay();
 	void BP_OpenHUDOverlay();
 	void Destruct();
-	void OnInitialized();
+	void ExecuteUbergraph_WBP_UI_SM_ActionPhase(int32 EntryPoint);
 	void OnHUDContextChanged(const struct FSBZUIHUDContext& OnHUDContextChanged_0);
+	void OnInitialized();
 	void SetPlayerHUDDisplayed(bool bIsFullHUD);
 
 public:

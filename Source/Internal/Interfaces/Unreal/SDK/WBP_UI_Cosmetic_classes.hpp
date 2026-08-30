@@ -10,148 +10,148 @@
 
 #include "Basic.hpp"
 
-#include "SBZBackend_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Cosmetic.WBP_UI_Cosmetic_C
-// 0x0648 (0x09F0 - 0x03A8)
+// 0x0640 (0x0A40 - 0x0400)
 class UWBP_UI_Cosmetic_C final : public USBZMainMenuCosmetic
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       change_Tab;                                        // 0x03B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x03B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       NewAnimation;                                      // 0x03C0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       HideTooltip;                                       // 0x03C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Loading;                                           // 0x03D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UVerticalBox*                           ChangeListBox;                                     // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               ChangeOverlay;                                     // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    EquippableNavBar;                                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_85;                                          // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_149;                                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               ItemBox;                                           // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ItemScrollBox;                                     // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             LoadingText;                                       // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        MainNavBarSwitcher;                                // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    MaskNavBar;                                        // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    PatternNavBar;                                     // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    StickerNavBar;                                     // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               StoreItemBox;                                      // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        SubNavBarSwitcher;                                 // 0x0458(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TooltipDescription;                                // 0x0460(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             TooltipName;                                       // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               TooltipOverlay;                                    // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        WeaponHeader_T;                                    // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            DefaultButtonControlsReference;                    // 0x0488(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            DefaultSelectButtonControlsReference;              // 0x04B0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ApplyButtonControlsReference;                      // 0x04D8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ApplysSelectButtonControlsReference;               // 0x0500(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ControllerDefaultButtonControlsReference;          // 0x0528(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ControllerDefaultSelectButtonControlsReference;    // 0x0550(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ControllerApplysSelectButtonControlsReference;     // 0x0578(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ControllerApplyButtonControlsReference;            // 0x05A0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x05C8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USBZCosmeticsPartSlot*                  SlotData;                                          // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Cosmetic_Item_C*                EquippedItem;                                      // 0x05F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*> CurrentDataMap;              // 0x0600(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*> PreviewDataMap;              // 0x0650(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartConfig*> PreviewPartConfigMap;           // 0x06A0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*> BuyDataMap;                  // 0x06F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class USBZCosmeticsPartSlot*, struct FSBZStoreBaseItem> BuyStoreDataMap;                    // 0x0740(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USBZModularPartDataAsset*               CurrentData;                                       // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZModularPartDataAsset*               PreviewData;                                       // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZStandaloneWeaponDisplay*            PreviewEquippable;                                 // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class USBZCosmeticsPartSlot*>          MaskPatternColorSlotDataArray;                     // 0x07A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class USBZCosmeticsPartSlot*>          EquippablePatternColorSlotDataArray;               // 0x07B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSBZEquippableConfig                   CurrentEquippableConfig;                           // 0x07C8(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USBZCosmeticsPartSlot*                  MaskPatternSlot;                                   // 0x0850(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZCosmeticsPartSlot*                  EquippablePatternSlot;                             // 0x0858(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsChanged;                                         // 0x0860(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsPopup;                                           // 0x0861(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_862[0x6];                                      // 0x0862(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZStoreBaseItem                      NoStoreData;                                       // 0x0868(0x0128)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<class USBZCosmeticsPartSlot*>          EquippableStickerSlotDataArray;                    // 0x0990(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsEnoughResources;                                 // 0x09A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          IsEnoughLevel;                                     // 0x09A1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9A2[0x2];                                      // 0x09A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MaxPatternCount;                                   // 0x09A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxStickerCount;                                   // 0x09A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9AC[0x4];                                      // 0x09AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CashCost;                                          // 0x09B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         GoldCost;                                          // 0x09B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         CreditCost;                                        // 0x09C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MinLevel;                                          // 0x09C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9CC[0x4];                                      // 0x09CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   RequirementText;                                   // 0x09D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_UI_Cosmetic_Item_C*                FocusedButton;                                     // 0x09E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0400(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       change_Tab;                                        // 0x0408(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0410(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       NewAnimation;                                      // 0x0418(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       HideTooltip;                                       // 0x0420(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Loading;                                           // 0x0428(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UVerticalBox*                           ChangeListBox;                                     // 0x0430(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               ChangeOverlay;                                     // 0x0438(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    EquippableNavBar;                                  // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image;                                             // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1;                                           // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_85;                                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_149;                                         // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               ItemBox;                                           // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ItemScrollBox;                                     // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             LoadingText;                                       // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        MainNavBarSwitcher;                                // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    MaskNavBar;                                        // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    PatternNavBar;                                     // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    StickerNavBar;                                     // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWrapBox*                               StoreItemBox;                                      // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        SubNavBarSwitcher;                                 // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TooltipDescription;                                // 0x04B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             TooltipName;                                       // 0x04C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               TooltipOverlay;                                    // 0x04C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x04D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        WeaponHeader_T;                                    // 0x04D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            DefaultButtonControlsReference;                    // 0x04E0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            DefaultSelectButtonControlsReference;              // 0x0508(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ApplyButtonControlsReference;                      // 0x0530(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ApplysSelectButtonControlsReference;               // 0x0558(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ControllerDefaultButtonControlsReference;          // 0x0580(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ControllerDefaultSelectButtonControlsReference;    // 0x05A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ControllerApplysSelectButtonControlsReference;     // 0x05D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ControllerApplyButtonControlsReference;            // 0x05F8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x0620(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USBZCosmeticsPartSlot*                  SlotData;                                          // 0x0648(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Cosmetic_Item_C*                EquippedItem;                                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*> CurrentDataMap;              // 0x0658(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*> PreviewDataMap;              // 0x06A8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartConfig*> PreviewPartConfigMap;           // 0x06F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*> BuyDataMap;                  // 0x0748(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class USBZCosmeticsPartSlot*, struct FSBZStoreBaseItem> BuyStoreDataMap;                    // 0x0798(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USBZModularPartDataAsset*               CurrentData;                                       // 0x07E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class USBZModularPartDataAsset*               PreviewData;                                       // 0x07F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class ASBZStandaloneWeaponDisplay*            PreviewEquippable;                                 // 0x07F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class USBZCosmeticsPartSlot*>          MaskPatternColorSlotDataArray;                     // 0x0800(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class USBZCosmeticsPartSlot*>          EquippablePatternColorSlotDataArray;               // 0x0810(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSBZEquippableConfig                   CurrentEquippableConfig;                           // 0x0820(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USBZCosmeticsPartSlot*                  MaskPatternSlot;                                   // 0x08A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class USBZCosmeticsPartSlot*                  EquippablePatternSlot;                             // 0x08B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsChanged;                                         // 0x08B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPopup;                                           // 0x08B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8BA[0x6];                                      // 0x08BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZStoreBaseItem                      NoStoreData;                                       // 0x08C0(0x0128)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<class USBZCosmeticsPartSlot*>          EquippableStickerSlotDataArray;                    // 0x09E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsEnoughResources;                                 // 0x09F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnoughLevel;                                     // 0x09F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9FA[0x2];                                      // 0x09FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MaxPatternCount;                                   // 0x09FC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxStickerCount;                                   // 0x0A00(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A04[0x4];                                      // 0x0A04(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CashCost;                                          // 0x0A08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         GoldCost;                                          // 0x0A10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CreditCost;                                        // 0x0A18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MinLevel;                                          // 0x0A20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A24[0x4];                                      // 0x0A24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   RequirementText;                                   // 0x0A28(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_UI_Cosmetic_Item_C*                FocusedButton;                                     // 0x0A38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Cosmetic(int32 EntryPoint);
-	void OnAddedToStack();
-	void OnRemovedFromStack();
-	void RefreshOwnedItems();
-	void OnConfirmNotEnoughLevel(class FName ClosingActionName);
-	void OnConfirmNotEnoughResources(class FName ClosingActionName);
-	void OnConfirmBuyError(class FName ClosingActionName);
-	void BP_OnBuyDone(bool bIsSuccess, ESBZMetaRequestResult Result);
-	void OnAddStoreItem(const class USBZCosmeticsDataAsset* AssetData, const struct FSBZStoreBaseItem& StoreData);
-	void OnConfirmApplyError(class FName ClosingActionName);
-	void OnConfirmBack(class FName ClosingActionName);
-	void OnConfirmApply(class FName ClosingActionName);
-	void BP_OnApplyPreviewDone(bool bIsSuccess, ESBZMetaRequestResult Result);
-	void BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void OnInitialized();
-	void Event_On_Control_Reference_Action(class FName ActionName);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnFocusGained();
-	void ClearCache();
-	void FetchCurrent();
-	void FetchCurrentMask();
-	void FetchCurrentEquippable();
 	void AddConfig(const class USBZCosmeticsPartSlot*& InSlotData, const class USBZModularPartConfig*& InConfig, bool IsPreviewConfig, class USBZModularPartConfig** OutConfig);
-	void UpdateMaskItems();
-	void UpdateEquippableItems();
-	void PrePopulateItems();
-	void PopulateItems();
-	void PostPopulateItems();
 	void AddFilteredItem(class USBZInventoryBaseData* Asset, int32 AssetCount, bool IsStore, struct FSBZStoreBaseItem& StoreData);
 	void AddItem(class USBZInventoryBaseData* Asset, int32 AssetCount, bool IsStore, struct FSBZStoreBaseItem& StoreData);
-	void OnItemTriggered(class USBZMenuButton* Button);
-	void OnItemFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void UnequipItem();
-	void EquipItem();
-	void GetEquippableConfig(const class USBZCosmeticsPartSlot* InSlotData, class USBZEquippablePartConfig** AsSBZEquippable_Part_Config);
-	void SetEquippableSlot(const class USBZModularPartDataAsset* PartData);
-	void OnPreviewChanged();
-	bool IsSameData(class USBZInventoryBaseData* Data1, class USBZInventoryBaseData* Data2);
-	void SortChangeList(class UObject* ObjectA, class UObject* ObjectB, bool* Result);
-	void GetFilteredEquippableDataMap(TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*>* OutFilteredDataMap);
-	void UpdateSubNavBarCounts();
-	void OnLoadingDone(bool IsReset, bool InIsEnabled);
+	void BndEvt__WBP_UI_Cosmetic_MaskNavBar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_Cosmetic_PatternNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_Cosmetic_StickerNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_Cosmetic_WeaponNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BP_OnApplyPreviewDone(bool bIsSuccess, ESBZMetaRequestResult Result);
+	void BP_OnBuyDone(bool bIsSuccess, ESBZMetaRequestResult Result);
 	void CleanUnusedSlots();
-	void RemoveUnusedSlots(const TArray<class USBZCosmeticsPartSlot*>& SlotArray, int32 Count);
-	class UWidget* OnNavigation(EUINavigation Navigation_0, class UWrapBox* WrapBox);
-	class UWidget* OnItemBoxNavigation(EUINavigation Navigation_0);
-	class UWidget* OnStoreItemBoxNavigation(EUINavigation Navigation_0);
+	void ClearCache();
 	void CreateSummedCost(class UWBP_UI_Cosmetic_SummedCost_C** SummedCost);
-	void TrySetFocusToLastButton();
-	void UpdateControlReference();
+	void EquipItem();
+	void Event_On_Control_Reference_Action(class FName ActionName);
+	void ExecuteUbergraph_WBP_UI_Cosmetic(int32 EntryPoint);
+	void FetchCurrent();
+	void FetchCurrentEquippable();
+	void FetchCurrentMask();
+	void GetEquippableConfig(const class USBZCosmeticsPartSlot* InSlotData, class USBZEquippablePartConfig** AsSBZEquippable_Part_Config);
+	void GetFilteredEquippableDataMap(TMap<class USBZCosmeticsPartSlot*, class USBZModularPartDataAsset*>* OutFilteredDataMap);
+	bool IsSameData(class USBZInventoryBaseData* Data1, class USBZInventoryBaseData* Data2);
+	void OnAddedToStack();
+	void OnAddStoreItem(const class USBZCosmeticsDataAsset* AssetData, const struct FSBZStoreBaseItem& StoreData);
+	void OnConfirmApply(class FName ClosingActionName);
+	void OnConfirmApplyError(class FName ClosingActionName);
+	void OnConfirmBack(class FName ClosingActionName);
+	void OnConfirmBuyError(class FName ClosingActionName);
+	void OnConfirmNotEnoughLevel(class FName ClosingActionName);
+	void OnConfirmNotEnoughResources(class FName ClosingActionName);
+	void OnFocusGained();
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
+	class UWidget* OnItemBoxNavigation(EUINavigation Navigation_0);
+	void OnItemFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void OnItemTriggered(class USBZMenuButton* Button);
+	void OnLoadingDone(bool IsReset, bool InIsEnabled);
+	void OnLostStackFocused();
+	class UWidget* OnNavigation(EUINavigation Navigation_0, class UWrapBox* WrapBox);
+	void OnPreviewChanged();
+	void OnRemovedFromStack();
+	class UWidget* OnStoreItemBoxNavigation(EUINavigation Navigation_0);
+	void PopulateItems();
+	void PostPopulateItems();
+	void PrePopulateItems();
+	void RefreshOwnedItems();
+	void RemoveUnusedSlots(const TArray<class USBZCosmeticsPartSlot*>& SlotArray, int32 Count);
 	void SetEnabledState(bool InIsEnabled);
+	void SetEquippableSlot(const class USBZModularPartDataAsset* PartData);
+	void SortChangeList(class UObject* ObjectA, class UObject* ObjectB, bool* Result);
+	void TrySetFocusToLastButton();
+	void UnequipItem();
+	void UpdateControlReference();
+	void UpdateEquippableItems();
+	void UpdateMaskItems();
+	void UpdateSubNavBarCounts();
 
 public:
 	static class UClass* StaticClass()

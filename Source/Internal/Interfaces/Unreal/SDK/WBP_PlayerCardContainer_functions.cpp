@@ -16,61 +16,208 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.ExecuteUbergraph_WBP_PlayerCardContainer
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.NavigateCards
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::ExecuteUbergraph_WBP_PlayerCardContainer(int32 EntryPoint)
+class UWidget* UWBP_PlayerCardContainer_C::NavigateCards(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "ExecuteUbergraph_WBP_PlayerCardContainer");
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "NavigateCards");
 
-	Params::WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer Parms{};
+	Params::WBP_PlayerCardContainer_C_NavigateCards Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFilterTextChanged
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_PlayerCardContainer_C::OnFilterTextChanged(const class FText& InText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnFilterTextChanged");
+
+	Params::WBP_PlayerCardContainer_C_OnFilterTextChanged Parms{};
+
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardFocused
-// (Event, Public, BlueprintEvent)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetSearchingVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    SearchStarted                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::OnPlayerCardFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
+void UWBP_PlayerCardContainer_C::SetSearchingVisuals(bool SearchStarted)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnPlayerCardFocused");
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "SetSearchingVisuals");
 
-	Params::WBP_PlayerCardContainer_C_OnPlayerCardFocused Parms{};
+	Params::WBP_PlayerCardContainer_C_SetSearchingVisuals Parms{};
 
-	Parms.MenuButton = MenuButton;
-	Parms.bIsFocused = bIsFocused;
+	Parms.SearchStarted = SearchStarted;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.InitPlatformFilterButtons
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::InitPlatformFilterButtons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "InitPlatformFilterButtons");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.LockScrollBar
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    LockScroll_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::LockScrollBar(bool LockScroll_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "LockScrollBar");
+
+	Params::WBP_PlayerCardContainer_C_LockScrollBar Parms{};
+
+	Parms.LockScroll_0 = LockScroll_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateFocus
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Social_PlayerCard_C*      DestructedContextedMenu                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_UI_Social_ContextButton_C*   DestructedContextedFocusedButton                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bIsFocusUpdated                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::UpdateFocus(class UWBP_UI_Social_PlayerCard_C* DestructedContextedMenu, class UWBP_UI_Social_ContextButton_C* DestructedContextedFocusedButton, bool* bIsFocusUpdated)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "UpdateFocus");
+
+	Params::WBP_PlayerCardContainer_C_UpdateFocus Parms{};
+
+	Parms.DestructedContextedMenu = DestructedContextedMenu;
+	Parms.DestructedContextedFocusedButton = DestructedContextedFocusedButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsFocusUpdated != nullptr)
+		*bIsFocusUpdated = Parms.bIsFocusUpdated;
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetResultsWidgetSwitcherIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::SetResultsWidgetSwitcherIndex()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "SetResultsWidgetSwitcherIndex");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleFocusUpdateRequested
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::HandleFocusUpdateRequested()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "HandleFocusUpdateRequested");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleButtonFocusChanged
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_PlayerCardContainer_C::HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "HandleButtonFocusChanged");
+
+	Params::WBP_PlayerCardContainer_C_HandleButtonFocusChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.IsButtonEnabled = IsButtonEnabled;
+	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HideOpenedContextMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::HideOpenedContextMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "HideOpenedContextMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -78,23 +225,275 @@ void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButto
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardDataUpdated
+// (Event, Public, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::OnPlayerCardDataUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnPlayerCardDataUpdated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateContainerEntries
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::UpdateContainerEntries()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "UpdateContainerEntries");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPartyPanelRefreshComplete
+// (Event, Public, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::OnPartyPanelRefreshComplete()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnPartyPanelRefreshComplete");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFocusUpdateRequested
+// (Event, Public, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::OnFocusUpdateRequested()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnFocusUpdateRequested");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// float                                   CurrentOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature Parms{};
+
+	Parms.CurrentOffset = CurrentOffset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -120,21 +519,65 @@ void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_SBZScrollBox_11
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// float                                   CurrentOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature Parms{};
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.CurrentOffset = CurrentOffset;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardFocused
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::OnPlayerCardFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnPlayerCardFocused");
+
+	Params::WBP_PlayerCardContainer_C_OnPlayerCardFocused Parms{};
+
+	Parms.MenuButton = MenuButton;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -143,7 +586,7 @@ void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ScrollBox_Playe
 // Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PlayerCardContainer_C::PreConstruct(bool IsDesignTime)
 {
@@ -160,466 +603,23 @@ void UWBP_PlayerCardContainer_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.ExecuteUbergraph_WBP_PlayerCardContainer
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_PlayerCardContainer_C::ExecuteUbergraph_WBP_PlayerCardContainer(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "ExecuteUbergraph_WBP_PlayerCardContainer");
 
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFocusUpdateRequested
-// (Event, Public, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::OnFocusUpdateRequested()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnFocusUpdateRequested");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardDataUpdated
-// (Event, Public, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::OnPlayerCardDataUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnPlayerCardDataUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPartyPanelRefreshComplete
-// (Event, Public, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::OnPartyPanelRefreshComplete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnPartyPanelRefreshComplete");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateContainerEntries
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::UpdateContainerEntries()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "UpdateContainerEntries");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HideOpenedContextMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::HideOpenedContextMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "HideOpenedContextMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleButtonFocusChanged
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_PlayerCardContainer_C::HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "HandleButtonFocusChanged");
-
-	Params::WBP_PlayerCardContainer_C_HandleButtonFocusChanged Parms{};
-
-	Parms.Button = Button;
-	Parms.IsButtonEnabled = IsButtonEnabled;
-	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleFocusUpdateRequested
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::HandleFocusUpdateRequested()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "HandleFocusUpdateRequested");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetResultsWidgetSwitcherIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::SetResultsWidgetSwitcherIndex()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "SetResultsWidgetSwitcherIndex");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateFocus
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Social_PlayerCard_C*      DestructedContextedMenu                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_UI_Social_ContextButton_C*   DestructedContextedFocusedButton                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   bIsFocusUpdated                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PlayerCardContainer_C::UpdateFocus(class UWBP_UI_Social_PlayerCard_C* DestructedContextedMenu, class UWBP_UI_Social_ContextButton_C* DestructedContextedFocusedButton, bool* bIsFocusUpdated)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "UpdateFocus");
-
-	Params::WBP_PlayerCardContainer_C_UpdateFocus Parms{};
-
-	Parms.DestructedContextedMenu = DestructedContextedMenu;
-	Parms.DestructedContextedFocusedButton = DestructedContextedFocusedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsFocusUpdated != nullptr)
-		*bIsFocusUpdated = Parms.bIsFocusUpdated;
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.LockScrollBar
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    LockScroll_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PlayerCardContainer_C::LockScrollBar(bool LockScroll_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "LockScrollBar");
-
-	Params::WBP_PlayerCardContainer_C_LockScrollBar Parms{};
-
-	Parms.LockScroll_0 = LockScroll_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.InitPlatformFilterButtons
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::InitPlatformFilterButtons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "InitPlatformFilterButtons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetSearchingVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    SearchStarted                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PlayerCardContainer_C::SetSearchingVisuals(bool SearchStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "SetSearchingVisuals");
-
-	Params::WBP_PlayerCardContainer_C_SetSearchingVisuals Parms{};
-
-	Parms.SearchStarted = SearchStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFilterTextChanged
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_PlayerCardContainer_C::OnFilterTextChanged(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "OnFilterTextChanged");
-
-	Params::WBP_PlayerCardContainer_C_OnFilterTextChanged Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.NavigateCards
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_PlayerCardContainer_C::NavigateCards(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerCardContainer_C", "NavigateCards");
-
-	Params::WBP_PlayerCardContainer_C_NavigateCards Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

@@ -11,23 +11,23 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SBZSmallCosmeticDestruction_fading_classes.hpp"
 #include "Starbreeze_structs.hpp"
+#include "SBZSmallCosmeticDestruction_fading_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Binder_01_C_SmallDestruction.BP_Binder_01_C_SmallDestruction_C
-// 0x0010 (0x02F0 - 0x02E0)
+// 0x0010 (0x0370 - 0x0360)
 class ABP_Binder_01_C_SmallDestruction_C final : public ASBZSmallCosmeticDestruction_fading_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Binder_01_C_SmallDestruction_C;  // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Binder_01_C_SmallDestruction_C;  // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Binder_01_C_SmallDestruction(int32 EntryPoint);
 	void BndEvt__BP_Binder_01_C_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
+	void ExecuteUbergraph_BP_Binder_01_C_SmallDestruction(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

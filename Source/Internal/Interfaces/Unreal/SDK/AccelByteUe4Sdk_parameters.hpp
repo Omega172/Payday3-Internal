@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "JsonUtilities_structs.hpp"
 #include "AccelByteUe4Sdk_structs.hpp"
+#include "JsonUtilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
@@ -24,8 +24,8 @@ struct ABAchievement_ClaimGlobalAchievements final
 {
 public:
 	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAchievement_ClaimGlobalAchievements;
 
@@ -35,8 +35,8 @@ struct ABAchievement_GetAchievement final
 {
 public:
 	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMultiLanguageAchievement& Response)> OnSuccess;      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMultiLanguageAchievement& Response)> OnSuccess;      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAchievement_GetAchievement;
 
@@ -48,8 +48,8 @@ public:
 	class FString                                 Name_0;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteAchievementListSortBy               SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedPublicTag& Response)> OnSuccess;            // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedPublicTag& Response)> OnSuccess;            // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -64,8 +64,8 @@ public:
 	class FString                                 Language;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteAchievementListSortBy               SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedPublicAchievement& Response)> OnSuccess;    // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedPublicAchievement& Response)> OnSuccess;    // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -83,8 +83,8 @@ public:
 	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteGlobalAchievementContributorsSortBy SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementContributors& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementContributors& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -100,8 +100,8 @@ public:
 	EAccelByteGlobalAchievementStatus             AchievementStatus;                                 // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteGlobalAchievementListSortBy         SortBy;                                            // 0x0011(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedUserGlobalAchievement& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedUserGlobalAchievement& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -116,8 +116,8 @@ public:
 	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteGlobalAchievementContributorsSortBy SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementUserContributed& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementUserContributed& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -131,8 +131,8 @@ struct ABAchievement_QueryUserAchievements final
 public:
 	EAccelByteAchievementListSortBy               SortBy;                                            // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Response)> OnSuccess;      // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Response)> OnSuccess;      // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          PreferUnlocked;                                    // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -141,14 +141,31 @@ public:
 };
 DUMPER7_ASSERTS_ABAchievement_QueryUserAchievements;
 
+// Function AccelByteUe4Sdk.ABAchievement.QueryUserAchievementsV2
+// 0x0048 (0x0048 - 0x0000)
+struct ABAchievement_QueryUserAchievementsV2 final
+{
+public:
+	EAccelByteGlobalAchievementListSortBy         SortBy;                                            // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Response)> OnSuccess;      // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          PreferUnlocked;                                    // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 TagQuery;                                          // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABAchievement_QueryUserAchievementsV2;
+
 // Function AccelByteUe4Sdk.ABAchievement.UnlockAchievement
 // 0x0038 (0x0038 - 0x0000)
 struct ABAchievement_UnlockAchievement final
 {
 public:
 	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAchievement_UnlockAchievement;
 
@@ -158,8 +175,8 @@ struct ABAgreement_AcceptPolicyVersion final
 {
 public:
 	class FString                                 LocalizedPolicyVersionId;                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAgreement_AcceptPolicyVersion;
 
@@ -169,10 +186,21 @@ struct ABAgreement_BulkAcceptPolicyVersions final
 {
 public:
 	struct FArrayModelsAcceptAgreementRequest     AgreementRequests;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsAcceptAgreementResponse& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsAcceptAgreementResponse& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAgreement_BulkAcceptPolicyVersions;
+
+// Function AccelByteUe4Sdk.ABAgreement.ChangePolicyPreferences
+// 0x0038 (0x0038 - 0x0000)
+struct ABAgreement_ChangePolicyPreferences final
+{
+public:
+	TArray<struct FAccelByteModelsChangeAgreementRequest> ChangeAgreementRequests;                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABAgreement_ChangePolicyPreferences;
 
 // Function AccelByteUe4Sdk.ABAgreement.GetLegalDocument
 // 0x0038 (0x0038 - 0x0000)
@@ -180,8 +208,8 @@ struct ABAgreement_GetLegalDocument final
 {
 public:
 	class FString                                 Url;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const class FString& Response)> OnSuccess;                                        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& Response)> OnSuccess;                                        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAgreement_GetLegalDocument;
 
@@ -193,8 +221,8 @@ public:
 	EAccelByteAgreementPolicyType                 AgreementPolicyType;                               // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DefaultOnEmpty;                                    // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAgreement_GetLegalPolicies;
 
@@ -207,8 +235,8 @@ public:
 	EAccelByteAgreementPolicyType                 AgreementPolicyType;                               // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DefaultOnEmpty;                                    // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABAgreement_GetLegalPoliciesByCountry;
@@ -224,8 +252,8 @@ public:
 	TArray<class FString>                         Tags;                                              // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          DefaultOnEmpty;                                    // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABAgreement_GetLegalPoliciesByCountryAndTags;
@@ -239,11 +267,45 @@ public:
 	EAccelByteAgreementPolicyType                 AgreementPolicyType;                               // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          DefaultOnEmpty;                                    // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABAgreement_GetLegalPoliciesByNamespace;
+
+// Function AccelByteUe4Sdk.ABAgreement.GetLegalPoliciesByNamespaceAndCountry
+// 0x0050 (0x0050 - 0x0000)
+struct ABAgreement_GetLegalPoliciesByNamespaceAndCountry final
+{
+public:
+	class FString                                 Namespace;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CountryCode;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteAgreementPolicyType                 AgreementPolicyType;                               // 0x0020(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          DefaultOnEmpty;                                    // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABAgreement_GetLegalPoliciesByNamespaceAndCountry;
+
+// Function AccelByteUe4Sdk.ABAgreement.GetLegalPoliciesByNamespaceCountryAndTags
+// 0x0068 (0x0068 - 0x0000)
+struct ABAgreement_GetLegalPoliciesByNamespaceCountryAndTags final
+{
+public:
+	class FString                                 Namespace;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CountryCode;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteAgreementPolicyType                 AgreementPolicyType;                               // 0x0020(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         Tags;                                              // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          DefaultOnEmpty;                                    // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0050(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABAgreement_GetLegalPoliciesByNamespaceCountryAndTags;
 
 // Function AccelByteUe4Sdk.ABAgreement.GetLegalPoliciesByTags
 // 0x0048 (0x0048 - 0x0000)
@@ -255,8 +317,8 @@ public:
 	TArray<class FString>                         tags;                                              // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          DefaultOnEmpty;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsPublicPolicyResponse& Response)> OnSuccess;              // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABAgreement_GetLegalPoliciesByTags;
@@ -267,8 +329,8 @@ struct ABAgreement_QueryLegalEligibilities final
 {
 public:
 	class FString                                 Namespace;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsRetrieveUserEligibilitiesResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsRetrieveUserEligibilitiesResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABAgreement_QueryLegalEligibilities;
 
@@ -278,8 +340,8 @@ struct ABBinaryCloudSave_BulkGetCurrentUserBinaryRecords final
 {
 public:
 	TArray<class FString>                         Keys;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListUserBinaryRecords& Response)> OnSuccess;         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListUserBinaryRecords& Response)> OnSuccess;         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_BulkGetCurrentUserBinaryRecords;
 
@@ -289,8 +351,8 @@ struct ABBinaryCloudSave_BulkGetGameBinaryRecords final
 {
 public:
 	TArray<class FString>                         Keys;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListGameBinaryRecords& Response)> OnSuccess;         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListGameBinaryRecords& Response)> OnSuccess;         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_BulkGetGameBinaryRecords;
 
@@ -301,8 +363,8 @@ struct ABBinaryCloudSave_BulkGetPublicUserBinaryRecordsByKeys final
 public:
 	TArray<class FString>                         Keys;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListUserBinaryRecords& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListUserBinaryRecords& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_BulkGetPublicUserBinaryRecordsByKeys;
 
@@ -313,8 +375,8 @@ struct ABBinaryCloudSave_BulkGetPublicUserBinaryRecordsByUserIds final
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         UserIds;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListUserBinaryRecords& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListUserBinaryRecords& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_BulkGetPublicUserBinaryRecordsByUserIds;
 
@@ -324,8 +386,8 @@ struct ABBinaryCloudSave_BulkQueryCurrentUserBinaryRecords final
 {
 public:
 	class FString                                 Query;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPaginatedUserBinaryRecords& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedUserBinaryRecords& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0038(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -337,8 +399,8 @@ struct ABBinaryCloudSave_BulkQueryGameBinaryRecords final
 {
 public:
 	class FString                                 Query;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPaginatedGameBinaryRecords& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedGameBinaryRecords& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0038(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -350,8 +412,8 @@ struct ABBinaryCloudSave_BulkQueryPublicUserBinaryRecords final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPaginatedUserBinaryRecords& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedUserBinaryRecords& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0038(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -363,8 +425,8 @@ struct ABBinaryCloudSave_DeleteUserBinaryRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_DeleteUserBinaryRecord;
 
@@ -374,8 +436,8 @@ struct ABBinaryCloudSave_GetCurrentUserBinaryRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_GetCurrentUserBinaryRecord;
 
@@ -385,8 +447,8 @@ struct ABBinaryCloudSave_GetGameBinaryRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameBinaryRecord& Response)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGameBinaryRecord& Response)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_GetGameBinaryRecord;
 
@@ -397,8 +459,8 @@ struct ABBinaryCloudSave_GetPublicUserBinaryRecord final
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_GetPublicUserBinaryRecord;
 
@@ -409,8 +471,8 @@ struct ABBinaryCloudSave_RequestUserBinaryRecordPresignedUrl final
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FileType;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsBinaryInfo& Response)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBinaryInfo& Response)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_RequestUserBinaryRecordPresignedUrl;
 
@@ -423,8 +485,8 @@ public:
 	bool                                          bIsPublic;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FileType;                                          // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_SaveUserBinaryRecord;
 
@@ -436,8 +498,8 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FileType;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FileLocation;                                      // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_UpdateUserBinaryRecordFile;
 
@@ -449,8 +511,8 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsPublic;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserBinaryRecord& Response)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABBinaryCloudSave_UpdateUserBinaryRecordMetadata;
@@ -461,8 +523,8 @@ struct ABBlock_BlockPlayer final
 {
 public:
 	struct FBlockPlayerRequest                    Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsBlockPlayerResponse& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBlockPlayerResponse& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBlock_BlockPlayer;
 
@@ -471,8 +533,8 @@ DUMPER7_ASSERTS_ABBlock_BlockPlayer;
 struct ABBlock_GetListOfBlockedUsers final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsListBlockedUserResponse& Response)> OnResponse;      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListBlockedUserResponse& Response)> OnResponse;      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBlock_GetListOfBlockedUsers;
 
@@ -481,8 +543,8 @@ DUMPER7_ASSERTS_ABBlock_GetListOfBlockedUsers;
 struct ABBlock_GetListOfBlockers final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsListBlockerResponse& Response)> OnResponse;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListBlockerResponse& Response)> OnResponse;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBlock_GetListOfBlockers;
 
@@ -491,7 +553,7 @@ DUMPER7_ASSERTS_ABBlock_GetListOfBlockers;
 struct ABBlock_SetBlockPlayerNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsBlockPlayerNotif& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBlockPlayerNotif& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBlock_SetBlockPlayerNotifDelegate;
 
@@ -500,7 +562,7 @@ DUMPER7_ASSERTS_ABBlock_SetBlockPlayerNotifDelegate;
 struct ABBlock_SetUnblockPlayerNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUnblockPlayerNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUnblockPlayerNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBlock_SetUnblockPlayerNotifDelegate;
 
@@ -510,8 +572,8 @@ struct ABBlock_UnblockPlayer final
 {
 public:
 	struct FUnblockPlayerRequest                  Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUnblockPlayerResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUnblockPlayerResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABBlock_UnblockPlayer;
 
@@ -522,8 +584,8 @@ struct ABCatalog_GetCategory final
 public:
 	class FString                                 CategoryPath;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsCategoryInfo& Response)> OnSuccess;                  // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsCategoryInfo& Response)> OnSuccess;                  // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetCategory;
 
@@ -534,8 +596,8 @@ struct ABCatalog_GetChildCategories final
 public:
 	class FString                                 CategoryPath;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsCategoryInfoResponse& Response)> OnSuccess;              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsCategoryInfoResponse& Response)> OnSuccess;              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetChildCategories;
 
@@ -546,8 +608,8 @@ struct ABCatalog_GetDescendantCategories final
 public:
 	class FString                                 CategoryPath;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsCategoryInfoResponse& Response)> OnSuccess;              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsCategoryInfoResponse& Response)> OnSuccess;              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetDescendantCategories;
 
@@ -559,8 +621,8 @@ public:
 	class FString                                 AppId;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Region;                                            // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemInfo& Response)> OnSuccess;                      // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsItemInfo& Response)> OnSuccess;                      // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetItemByAppId;
 
@@ -575,8 +637,8 @@ public:
 	class FString                                 StoreId;                                           // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bPopulateBundle;                                   // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPopulatedItemInfo& Response)> OnSuccess;             // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0058(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPopulatedItemInfo& Response)> OnSuccess;             // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0058(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCatalog_GetItemById;
@@ -587,8 +649,8 @@ struct ABCatalog_GetItemDynamicData final
 {
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemDynamicData& Response)> OnSuccess;               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsItemDynamicData& Response)> OnSuccess;               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetItemDynamicData;
 
@@ -600,9 +662,9 @@ public:
 	struct FAccelByteModelsItemCriteria           ItemCriteria;                                      // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0090(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0094(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EAccelByteItemListSortBy>              SortBy;                                            // 0x0098(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Response)> OnSuccess;        // 0x00A8(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<EAccelByteItemListSortBy>              SortBy;                                            // 0x0098(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Response)> OnSuccess;        // 0x00A8(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetItemsByCriteria;
 
@@ -612,8 +674,8 @@ struct ABCatalog_GetRootCategories final
 {
 public:
 	class FString                                 Language;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsCategoryInfoResponse& Response)> OnSuccess;              // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsCategoryInfoResponse& Response)> OnSuccess;              // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_GetRootCategories;
 
@@ -627,10 +689,122 @@ public:
 	int32                                         Offset;                                            // 0x0020(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0024(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Region;                                            // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Response)> OnSuccess;        // 0x0038(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Response)> OnSuccess;        // 0x0038(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCatalog_SearchItem;
+
+// Function AccelByteUe4Sdk.ABChallenge.ClaimReward
+// 0x0038 (0x0038 - 0x0000)
+struct ABChallenge_ClaimReward final
+{
+public:
+	struct FAccelByteModelsChallengeRewardClaimRequest Request;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsChallengeReward>& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_ClaimReward;
+
+// Function AccelByteUe4Sdk.ABChallenge.EvaluateChallengeProgress
+// 0x0028 (0x0028 - 0x0000)
+struct ABChallenge_EvaluateChallengeProgress final
+{
+public:
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_EvaluateChallengeProgress;
+
+// Function AccelByteUe4Sdk.ABChallenge.GetChallengeList
+// 0x0060 (0x0060 - 0x0000)
+struct ABChallenge_GetChallengeList final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsGetChallengesResponse& Response)> OnSuccess;         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         OptionalTags;                                      // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	EAccelByteModelsChallengeSortBy               SortBy;                                            // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteModelsChallengeStatus               Status;                                            // 0x0039(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3A[0x6];                                       // 0x003A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         Offset;                                            // 0x0040(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Limit;                                             // 0x0048(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Keyword;                                           // 0x0050(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_GetChallengeList;
+
+// Function AccelByteUe4Sdk.ABChallenge.GetChallengeProgress
+// 0x0068 (0x0068 - 0x0000)
+struct ABChallenge_GetChallengeProgress final
+{
+public:
+	class FString                                 ChallengeCode;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 GoalCode;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsChallengeProgressResponse& Response)> OnSuccess;     // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         OptionalTags;                                      // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	int64                                         Offset;                                            // 0x0058(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Limit;                                             // 0x0060(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_GetChallengeProgress;
+
+// Function AccelByteUe4Sdk.ABChallenge.GetChallenges
+// 0x0040 (0x0040 - 0x0000)
+struct ABChallenge_GetChallenges final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsGetChallengesResponse& Response)> OnSuccess;         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteModelsChallengeSortBy               SortBy;                                            // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteModelsChallengeStatus               Status;                                            // 0x0029(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         Offset;                                            // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Limit;                                             // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_GetChallenges;
+
+// Function AccelByteUe4Sdk.ABChallenge.GetPreviousChallengeProgresses
+// 0x0070 (0x0070 - 0x0000)
+struct ABChallenge_GetPreviousChallengeProgresses final
+{
+public:
+	class FString                                 ChallengeCode;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Index_0;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsChallengeProgressResponse& Response)> OnSuccess;     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FString>                         OptionalTags;                                      // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class FString                                 GoalCode;                                          // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Offset;                                            // 0x0060(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Limit;                                             // 0x0068(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_GetPreviousChallengeProgresses;
+
+// Function AccelByteUe4Sdk.ABChallenge.GetRewards
+// 0x0040 (0x0040 - 0x0000)
+struct ABChallenge_GetRewards final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsChallengeGetRewardStatusResponse& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteModelsChallengeRewardStatus         Status;                                            // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteModelsChallengeSortBy               SortBy;                                            // 0x0029(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         Offset;                                            // 0x0030(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int64                                         Limit;                                             // 0x0038(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABChallenge_GetRewards;
+
+// Function AccelByteUe4Sdk.ABCloudSave.BulkGetCurrentPlayerPublicRecordKeys
+// 0x0030 (0x0030 - 0x0000)
+struct ABCloudSave_BulkGetCurrentPlayerPublicRecordKeys final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPublicUserRecordKeysResponse& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0028(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABCloudSave_BulkGetCurrentPlayerPublicRecordKeys;
 
 // Function AccelByteUe4Sdk.ABCloudSave.BulkGetGameRecords
 // 0x0038 (0x0038 - 0x0000)
@@ -638,8 +812,8 @@ struct ABCloudSave_BulkGetGameRecords final
 {
 public:
 	TArray<class FString>                         Keys;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListGameRecords& Response)> OnSuccess;               // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListGameRecords& Response)> OnSuccess;               // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_BulkGetGameRecords;
 
@@ -649,8 +823,8 @@ struct ABCloudSave_BulkGetOtherPlayerPublicRecordKeys final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPublicUserRecordKeysResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPublicUserRecordKeysResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0038(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -663,8 +837,8 @@ struct ABCloudSave_BulkGetOtherPlayerPublicRecords final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Keys;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FListAccelByteModelsUserRecord& Response)> OnSuccess;                // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FListAccelByteModelsUserRecord& Response)> OnSuccess;                // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_BulkGetOtherPlayerPublicRecords;
 
@@ -674,8 +848,8 @@ struct ABCloudSave_BulkGetUserRecords final
 {
 public:
 	TArray<class FString>                         Keys;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FListAccelByteModelsUserRecord& Response)> OnSuccess;                // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FListAccelByteModelsUserRecord& Response)> OnSuccess;                // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_BulkGetUserRecords;
 
@@ -685,8 +859,8 @@ struct ABCloudSave_DeleteGameRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_DeleteGameRecord;
 
@@ -696,8 +870,8 @@ struct ABCloudSave_DeleteUserRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_DeleteUserRecord;
 
@@ -707,8 +881,8 @@ struct ABCloudSave_GetGameRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameRecord& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGameRecord& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_GetGameRecord;
 
@@ -719,8 +893,8 @@ struct ABCloudSave_GetPublicUserRecord final
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserRecord& Response)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserRecord& Response)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_GetPublicUserRecord;
 
@@ -730,8 +904,8 @@ struct ABCloudSave_GetUserRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserRecord& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserRecord& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_GetUserRecord;
 
@@ -741,9 +915,9 @@ struct ABCloudSave_ReplaceGameRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceGameRecord;
 
@@ -753,10 +927,10 @@ struct ABCloudSave_ReplaceGameRecordCheckLatest final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              LastUpdated;                                       // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDateTime                              LastUpdated;                                       // 0x0010(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceGameRecordCheckLatest;
 
@@ -768,10 +942,10 @@ public:
 	int32                                         TryAttempt;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Key;                                               // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FJsonObjectWrapper& Response)> PayloadModifier;                      // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FJsonObjectWrapper& Response)> PayloadModifier;                      // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceGameRecordCheckLatestRetry;
@@ -782,11 +956,11 @@ struct ABCloudSave_ReplaceUserRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(Parm, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          IsPublic;                                          // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0048(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0048(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceUserRecord;
@@ -797,10 +971,10 @@ struct ABCloudSave_ReplaceUserRecordCheckLatest final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              LastUpdated;                                       // 0x0010(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDateTime                              LastUpdated;                                       // 0x0010(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceUserRecordCheckLatest;
 
@@ -812,10 +986,10 @@ public:
 	int32                                         TryAttempt;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Key;                                               // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FJsonObjectWrapper& Response)> PayloadModifier;                      // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FJsonObjectWrapper& Response)> PayloadModifier;                      // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceUserRecordCheckLatestRetry;
@@ -828,10 +1002,10 @@ public:
 	int32                                         TryAttempt;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Key;                                               // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FJsonObjectWrapper& Response)> PayloadModifier;                      // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsReplaceUserRecordResponse& Response)> OnSuccess;     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FJsonObjectWrapper& Response)> PayloadModifier;                      // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsReplaceUserRecordResponse& Response)> OnSuccess;     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceUserRecordCheckLatestRetryWithResponse;
@@ -842,10 +1016,10 @@ struct ABCloudSave_ReplaceUserRecordCheckLatestWithResponse final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FDateTime                              LastUpdated;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsReplaceUserRecordResponse& Response)> OnSuccess;     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDateTime                              LastUpdated;                                       // 0x0010(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0018(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsReplaceUserRecordResponse& Response)> OnSuccess;     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_ReplaceUserRecordCheckLatestWithResponse;
 
@@ -855,9 +1029,9 @@ struct ABCloudSave_SaveGameRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCloudSave_SaveGameRecord;
 
@@ -867,11 +1041,11 @@ struct ABCloudSave_SaveUserRecord final
 {
 public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(Parm, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     RecordRequest;                                     // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          IsPublic;                                          // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0048(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0048(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCloudSave_SaveUserRecord;
@@ -881,8 +1055,8 @@ DUMPER7_ASSERTS_ABCloudSave_SaveUserRecord;
 struct ABCurrency_GetCurrencyList final
 {
 public:
-	TDelegate<void(const struct FArrayModelsCurrencyList& Response)> OnSuccess;                      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsCurrencyList& Response)> OnSuccess;                      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteCurrencyType                        CurrencyType;                                      // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -895,8 +1069,8 @@ struct ABEntitlement_ConsumeUserEntitlement final
 public:
 	class FString                                 EntitlementId;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UseCount;                                          // 0x0010(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementInfo& Response)> OnSuccess;               // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementInfo& Response)> OnSuccess;               // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABEntitlement_ConsumeUserEntitlement;
@@ -908,8 +1082,8 @@ struct ABEntitlement_CreateDistributionReceiver final
 public:
 	class FString                                 ExtUserId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsAttributes             Attributes;                                        // 0x0010(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0050(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0050(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_CreateDistributionReceiver;
 
@@ -920,10 +1094,26 @@ struct ABEntitlement_DeleteDistributionReceiver final
 public:
 	class FString                                 ExtUserId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_DeleteDistributionReceiver;
+
+// Function AccelByteUe4Sdk.ABEntitlement.GetCurrentUserEntitlementHistory
+// 0x0048 (0x0048 - 0x0000)
+struct ABEntitlement_GetCurrentUserEntitlementHistory final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsUserEntitlementHistoryPagingResult& Response)> OnSuccess; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteEntitlementClass                    EntitlementClass;                                  // 0x0028(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDateTime                              StartDate;                                         // 0x0030(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                              EndDate;                                           // 0x0038(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0044(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABEntitlement_GetCurrentUserEntitlementHistory;
 
 // Function AccelByteUe4Sdk.ABEntitlement.GetDistributionReceiver
 // 0x0048 (0x0048 - 0x0000)
@@ -932,8 +1122,8 @@ struct ABEntitlement_GetDistributionReceiver final
 public:
 	class FString                                 PublisherNamespace;                                // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PublisherUserId;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsDistributionReceiver& Response)> OnSuccess;              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsDistributionReceiver& Response)> OnSuccess;              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_GetDistributionReceiver;
 
@@ -943,10 +1133,23 @@ struct ABEntitlement_GetUserEntitlementById final
 {
 public:
 	class FString                                 Entitlementid;                                     // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementInfo& Response)> OnSuccess;               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementInfo& Response)> OnSuccess;               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_GetUserEntitlementById;
+
+// Function AccelByteUe4Sdk.ABEntitlement.GetUserEntitlementByIds
+// 0x0040 (0x0040 - 0x0000)
+struct ABEntitlement_GetUserEntitlementByIds final
+{
+public:
+	TArray<class FString>                         EntitlementIds;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsEntitlementInfo>& Response)> OnSuccess;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAvailablePlatformOnly;                            // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABEntitlement_GetUserEntitlementByIds;
 
 // Function AccelByteUe4Sdk.ABEntitlement.GetUserEntitlementOwnershipAny
 // 0x0058 (0x0058 - 0x0000)
@@ -956,8 +1159,8 @@ public:
 	TArray<class FString>                         ItemIds;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         AppIds;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Skus;                                              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_GetUserEntitlementOwnershipAny;
 
@@ -967,8 +1170,8 @@ struct ABEntitlement_GetUserEntitlementOwnershipByAppId final
 {
 public:
 	class FString                                 AppId;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_GetUserEntitlementOwnershipByAppId;
 
@@ -978,8 +1181,8 @@ struct ABEntitlement_GetUserEntitlementOwnershipByItemId final
 {
 public:
 	class FString                                 ItemId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_GetUserEntitlementOwnershipByItemId;
 
@@ -989,8 +1192,8 @@ struct ABEntitlement_GetUserEntitlementOwnershipBySku final
 {
 public:
 	class FString                                 Sku;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementOwnership& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_GetUserEntitlementOwnershipBySku;
 
@@ -1003,8 +1206,8 @@ public:
 	TArray<class FString>                         ItemIds;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0020(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0024(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementPagingSlicedResult& Response)> OnSuccess; // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsEntitlementPagingSlicedResult& Response)> OnSuccess; // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteEntitlementClass                    EntitlementClass;                                  // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteAppType                             AppType;                                           // 0x0051(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -1017,30 +1220,30 @@ struct ABEntitlement_SyncMobilePlatformPurchaseApple final
 {
 public:
 	struct FAccelByteModelsPlatformSyncMobileApple SyncRequest;                                      // 0x0000(0x0058)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0058(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0058(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_SyncMobilePlatformPurchaseApple;
 
 // Function AccelByteUe4Sdk.ABEntitlement.SyncMobilePlatformPurchaseGoogle
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct ABEntitlement_SyncMobilePlatformPurchaseGoogle final
 {
 public:
-	struct FAccelByteModelsPlatformSyncMobileGoogle SyncRequest;                                     // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0070(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsPlatformSyncMobileGoogle SyncRequest;                                     // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0078(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_SyncMobilePlatformPurchaseGoogle;
 
 // Function AccelByteUe4Sdk.ABEntitlement.SyncMobilePlatformPurchaseGooglePlay
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A0 (0x00A0 - 0x0000)
 struct ABEntitlement_SyncMobilePlatformPurchaseGooglePlay final
 {
 public:
-	struct FAccelByteModelsPlatformSyncMobileGoogle SyncRequest;                                     // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPlatformSyncMobileGoogleResponse& Response)> OnSuccess; // 0x0070(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsPlatformSyncMobileGoogle SyncRequest;                                     // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPlatformSyncMobileGoogleResponse& Response)> OnSuccess; // 0x0078(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_SyncMobilePlatformPurchaseGooglePlay;
 
@@ -1051,8 +1254,8 @@ struct ABEntitlement_SyncPlatformPurchase final
 public:
 	EAccelBytePlatformSync                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_SyncPlatformPurchase;
 
@@ -1061,11 +1264,11 @@ DUMPER7_ASSERTS_ABEntitlement_SyncPlatformPurchase;
 struct ABEntitlement_SyncPlatformPurchaseSingleItem final
 {
 public:
-	struct FAccelByteModelsEntitlementSyncBase    EntitlementSyncBase;                               // 0x0000(0x0070)(Parm, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsEntitlementSyncBase    EntitlementSyncBase;                               // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	EAccelBytePlatformSync                        PlatformType;                                      // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0088(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0088(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABEntitlement_SyncPlatformPurchaseSingleItem;
@@ -1076,8 +1279,8 @@ struct ABEntitlement_SyncTwitchDropEntitlement final
 {
 public:
 	struct FAccelByteModelsTwitchDropEntitlement  TwitchDropModel;                                   // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_SyncTwitchDropEntitlement;
 
@@ -1088,8 +1291,8 @@ struct ABEntitlement_UpdateDistributionReceiver final
 public:
 	class FString                                 ExtUserId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsAttributes             Attributes;                                        // 0x0010(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0050(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0050(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_UpdateDistributionReceiver;
 
@@ -1099,8 +1302,8 @@ struct ABEntitlement_ValidateUserItemPurchaseCondition final
 {
 public:
 	TArray<class FString>                         Items;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsPlatformValidateUserItemPurchaseResponse>& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsPlatformValidateUserItemPurchaseResponse>& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABEntitlement_ValidateUserItemPurchaseCondition;
 
@@ -1109,9 +1312,9 @@ DUMPER7_ASSERTS_ABEntitlement_ValidateUserItemPurchaseCondition;
 struct ABFriends_AcceptFriend final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsAcceptFriendsResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsAcceptFriendsResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_AcceptFriend;
 
@@ -1120,9 +1323,9 @@ DUMPER7_ASSERTS_ABFriends_AcceptFriend;
 struct ABFriends_BulkFriendRequest final
 {
 public:
-	struct FAccelByteModelsBulkFriendsRequest     UserIds;                                           // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsBulkFriendsRequest     UserIds;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_BulkFriendRequest;
 
@@ -1131,9 +1334,9 @@ DUMPER7_ASSERTS_ABFriends_BulkFriendRequest;
 struct ABFriends_CancelFriendRequest final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsCancelFriendsResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsCancelFriendsResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_CancelFriendRequest;
 
@@ -1142,9 +1345,9 @@ DUMPER7_ASSERTS_ABFriends_CancelFriendRequest;
 struct ABFriends_GetFriendshipStatus final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetFriendshipStatusResponse& Response)> OnResponse;  // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetFriendshipStatusResponse& Response)> OnResponse;  // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_GetFriendshipStatus;
 
@@ -1153,8 +1356,8 @@ DUMPER7_ASSERTS_ABFriends_GetFriendshipStatus;
 struct ABFriends_ListIncomingFriends final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsListIncomingFriendsResponse& Response)> OnResponse;  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListIncomingFriendsResponse& Response)> OnResponse;  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_ListIncomingFriends;
 
@@ -1163,8 +1366,8 @@ DUMPER7_ASSERTS_ABFriends_ListIncomingFriends;
 struct ABFriends_ListOutgoingFriends final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsListOutgoingFriendsResponse& Response)> OnResponse;  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListOutgoingFriendsResponse& Response)> OnResponse;  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_ListOutgoingFriends;
 
@@ -1173,8 +1376,8 @@ DUMPER7_ASSERTS_ABFriends_ListOutgoingFriends;
 struct ABFriends_LoadFriendsList final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsLoadFriendListResponse& Response)> OnResponse;       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLoadFriendListResponse& Response)> OnResponse;       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_LoadFriendsList;
 
@@ -1183,9 +1386,9 @@ DUMPER7_ASSERTS_ABFriends_LoadFriendsList;
 struct ABFriends_RejectFriend final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRejectFriendsResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRejectFriendsResponse& Response)> OnResponse;        // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_RejectFriend;
 
@@ -1194,9 +1397,9 @@ DUMPER7_ASSERTS_ABFriends_RejectFriend;
 struct ABFriends_RequestFriend final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRequestFriendsResponse& Response)> OnResponse;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRequestFriendsResponse& Response)> OnResponse;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_RequestFriend;
 
@@ -1205,7 +1408,7 @@ DUMPER7_ASSERTS_ABFriends_RequestFriend;
 struct ABFriends_SetOnCancelFriendsNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsCancelFriendsNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsCancelFriendsNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_SetOnCancelFriendsNotifDelegate;
 
@@ -1214,7 +1417,7 @@ DUMPER7_ASSERTS_ABFriends_SetOnCancelFriendsNotifDelegate;
 struct ABFriends_SetOnFriendRequestAcceptedNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsAcceptFriendsNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsAcceptFriendsNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_SetOnFriendRequestAcceptedNotifDelegate;
 
@@ -1223,7 +1426,7 @@ DUMPER7_ASSERTS_ABFriends_SetOnFriendRequestAcceptedNotifDelegate;
 struct ABFriends_SetOnIncomingRequestFriendsNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsRequestFriendsNotif& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRequestFriendsNotif& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_SetOnIncomingRequestFriendsNotifDelegate;
 
@@ -1232,7 +1435,7 @@ DUMPER7_ASSERTS_ABFriends_SetOnIncomingRequestFriendsNotifDelegate;
 struct ABFriends_SetOnRejectFriendsNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsRejectFriendsNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRejectFriendsNotif& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_SetOnRejectFriendsNotifDelegate;
 
@@ -1241,7 +1444,7 @@ DUMPER7_ASSERTS_ABFriends_SetOnRejectFriendsNotifDelegate;
 struct ABFriends_SetOnUnfriendNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUnfriendNotif& Notif)> OnNotif;                      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUnfriendNotif& Notif)> OnNotif;                      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_SetOnUnfriendNotifDelegate;
 
@@ -1250,9 +1453,9 @@ DUMPER7_ASSERTS_ABFriends_SetOnUnfriendNotifDelegate;
 struct ABFriends_Unfriend final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUnfriendResponse& Response)> OnResponse;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUnfriendResponse& Response)> OnResponse;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFriends_Unfriend;
 
@@ -1264,8 +1467,8 @@ public:
 	class FString                                 Code;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Region;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsFulfillmentResult& Response)> OnSuccess;             // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsFulfillmentResult& Response)> OnSuccess;             // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABFulfillment_RedeemCode;
 
@@ -1275,8 +1478,8 @@ struct ABGroup_AcceptGroupInvitation final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_AcceptGroupInvitation;
 
@@ -1285,9 +1488,9 @@ DUMPER7_ASSERTS_ABGroup_AcceptGroupInvitation;
 struct ABGroup_AcceptGroupJoinRequest final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_AcceptGroupJoinRequest;
 
@@ -1297,8 +1500,8 @@ struct ABGroup_AcceptV2GroupInvitation final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_AcceptV2GroupInvitation;
 
@@ -1309,8 +1512,8 @@ struct ABGroup_AcceptV2GroupJoinRequest final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_AcceptV2GroupJoinRequest;
 
@@ -1321,8 +1524,8 @@ struct ABGroup_AssignMemberRole final
 public:
 	class FString                                 MemberRoleId;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUserIdWrapper          RequestContent;                                    // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_AssignMemberRole;
 
@@ -1334,8 +1537,8 @@ public:
 	class FString                                 MemberRoleId;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUserIdWrapper          RequestContent;                                    // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_AssignV2MemberRole;
 
@@ -1346,8 +1549,8 @@ struct ABGroup_CancelGroupMemberInvitation final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_CancelGroupMemberInvitation;
 
@@ -1357,8 +1560,8 @@ struct ABGroup_CancelJoinGroupRequest final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_CancelJoinGroupRequest;
 
@@ -1368,8 +1571,8 @@ struct ABGroup_CreateGroup final
 {
 public:
 	struct FAccelByteModelsCreateGroupRequest     RequestContent;                                    // 0x0000(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x00B0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00C4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x00B0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00C4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_CreateGroup;
 
@@ -1379,8 +1582,8 @@ struct ABGroup_CreateV2Group final
 {
 public:
 	struct FAccelByteModelsCreateGroupRequest     RequestContent;                                    // 0x0000(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x00B0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00C4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x00B0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00C4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_CreateV2Group;
 
@@ -1390,8 +1593,8 @@ struct ABGroup_DeleteGroup final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_DeleteGroup;
 
@@ -1403,8 +1606,8 @@ public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteAllowedAction                       AllowedAction;                                     // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABGroup_DeleteGroupPredefinedRule;
@@ -1416,8 +1619,8 @@ struct ABGroup_DeleteMemberRole final
 public:
 	class FString                                 MemberRoleId;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUserIdWrapper          RequestContent;                                    // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_DeleteMemberRole;
 
@@ -1427,8 +1630,8 @@ struct ABGroup_DeleteV2Group final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_DeleteV2Group;
 
@@ -1440,8 +1643,8 @@ public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteAllowedAction                       AllowedAction;                                     // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABGroup_DeleteV2GroupPredefinedRule;
@@ -1454,8 +1657,8 @@ public:
 	class FString                                 MemberRoleId;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUserIdWrapper          RequestContent;                                    // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_DeleteV2MemberRole;
 
@@ -1465,8 +1668,8 @@ struct ABGroup_GetAllMemberRoles final
 {
 public:
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetMemberRolesListResponse& Response)> OnSuccess;    // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetMemberRolesListResponse& Response)> OnSuccess;    // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetAllMemberRoles;
 
@@ -1476,8 +1679,8 @@ struct ABGroup_GetGroup final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetGroup;
 
@@ -1488,8 +1691,8 @@ struct ABGroup_GetGroupInviteRequestList final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0010(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetGroupInviteRequestList;
 
@@ -1500,8 +1703,8 @@ struct ABGroup_GetGroupJoinRequestList final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0010(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetGroupJoinRequestList;
 
@@ -1512,8 +1715,8 @@ struct ABGroup_GetGroupJoinRequests final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0010(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetGroupJoinRequests;
 
@@ -1523,8 +1726,8 @@ struct ABGroup_GetGroupList final
 {
 public:
 	struct FAccelByteModelsGetGroupListRequest    RequestContent;                                    // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetGroupListResponse& Response)> OnSuccess;          // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetGroupListResponse& Response)> OnSuccess;          // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetGroupList;
 
@@ -1535,8 +1738,8 @@ struct ABGroup_GetGroupMembersListByGroupId final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsGetGroupMembersListByGroupIdRequest RequestContent;                       // 0x0010(0x000C)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetGroupMemberListResponse& Response)> OnSuccess;    // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetGroupMemberListResponse& Response)> OnSuccess;    // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABGroup_GetGroupMembersListByGroupId;
@@ -1546,9 +1749,9 @@ DUMPER7_ASSERTS_ABGroup_GetGroupMembersListByGroupId;
 struct ABGroup_GetGroupsByGroupIds final
 {
 public:
-	TArray<class FString>                         GroupIds;                                          // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetGroupListResponse& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         GroupIds;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetGroupListResponse& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetGroupsByGroupIds;
 
@@ -1558,8 +1761,8 @@ struct ABGroup_GetMemberRoles final
 {
 public:
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetMemberRolesListResponse& Response)> OnSuccess;    // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetMemberRolesListResponse& Response)> OnSuccess;    // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetMemberRoles;
 
@@ -1569,8 +1772,8 @@ struct ABGroup_GetMyJoinedGroupInfo final
 {
 public:
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetGroupMemberListResponse& Response)> OnSuccess;    // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetGroupMemberListResponse& Response)> OnSuccess;    // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetMyJoinedGroupInfo;
 
@@ -1580,8 +1783,8 @@ struct ABGroup_GetMyJoinGroupRequest final
 {
 public:
 	struct FAccelByteModelsLimitOffsetRequest     RequestContent;                                    // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetMemberRequestsListResponse& Response)> OnSuccess; // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetMyJoinGroupRequest;
 
@@ -1591,8 +1794,8 @@ struct ABGroup_GetUserGroupInfoByUserId final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetUserGroupInfoByUserId;
 
@@ -1603,8 +1806,8 @@ struct ABGroup_GetUserGroupStatusInfo final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetUserGroupInfoResponse& Response)> OnSuccess;      // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_GetUserGroupStatusInfo;
 
@@ -1613,9 +1816,9 @@ DUMPER7_ASSERTS_ABGroup_GetUserGroupStatusInfo;
 struct ABGroup_InviteUserToGroup final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_InviteUserToGroup;
 
@@ -1626,8 +1829,8 @@ struct ABGroup_InviteUserToV2Group final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_InviteUserToV2Group;
 
@@ -1637,8 +1840,8 @@ struct ABGroup_JoinGroup final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsJoinGroupResponse& Response)> OnSuccess;             // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsJoinGroupResponse& Response)> OnSuccess;             // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_JoinGroup;
 
@@ -1648,8 +1851,8 @@ struct ABGroup_JoinV2Group final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsJoinGroupResponse& Response)> OnSuccess;             // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsJoinGroupResponse& Response)> OnSuccess;             // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_JoinV2Group;
 
@@ -1658,9 +1861,9 @@ DUMPER7_ASSERTS_ABGroup_JoinV2Group;
 struct ABGroup_KickGroupMember final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsKickGroupMemberResponse& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsKickGroupMemberResponse& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_KickGroupMember;
 
@@ -1671,8 +1874,8 @@ struct ABGroup_KickV2GroupMember final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsKickGroupMemberResponse& Response)> OnSuccess;       // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsKickGroupMemberResponse& Response)> OnSuccess;       // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_KickV2GroupMember;
 
@@ -1681,8 +1884,8 @@ DUMPER7_ASSERTS_ABGroup_KickV2GroupMember;
 struct ABGroup_LeaveGroup final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_LeaveGroup;
 
@@ -1692,8 +1895,8 @@ struct ABGroup_LeaveV2Group final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_LeaveV2Group;
 
@@ -1703,8 +1906,8 @@ struct ABGroup_RejectGroupInvitation final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_RejectGroupInvitation;
 
@@ -1713,9 +1916,9 @@ DUMPER7_ASSERTS_ABGroup_RejectGroupInvitation;
 struct ABGroup_RejectGroupJoinRequest final
 {
 public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_RejectGroupJoinRequest;
 
@@ -1725,8 +1928,8 @@ struct ABGroup_RejectV2GroupInvitation final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_RejectV2GroupInvitation;
 
@@ -1737,8 +1940,8 @@ struct ABGroup_RejectV2GroupJoinRequest final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GroupId;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMemberRequestGroupResponse& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_RejectV2GroupJoinRequest;
 
@@ -1750,9 +1953,9 @@ public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCompletelyReplace;                                // 0x0010(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAccelByteModelsGroupUpdatable         RequestContent;                                    // 0x0018(0x0068)(Parm, OutParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsGroupUpdatable         RequestContent;                                    // 0x0018(0x0068)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateGroup;
 
@@ -1762,9 +1965,9 @@ struct ABGroup_UpdateGroupCustomAttributes final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAccelByteModelsUpdateGroupCustomAttributesRequest RequestContent;                        // 0x0010(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsUpdateGroupCustomAttributesRequest RequestContent;                        // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateGroupCustomAttributes;
 
@@ -1774,9 +1977,9 @@ struct ABGroup_UpdateGroupCustomRule final
 {
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAccelByteModelsUpdateCustomRulesRequest RequestContent;                                  // 0x0010(0x0020)(Parm, OutParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsUpdateCustomRulesRequest RequestContent;                                  // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateGroupCustomRule;
 
@@ -1789,8 +1992,8 @@ public:
 	EAccelByteAllowedAction                       AllowedAction;                                     // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAccelByteModelsUpdateGroupPredefinedRuleRequest RequestContent;                          // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateGroupPredefinedRule;
 
@@ -1801,8 +2004,8 @@ struct ABGroup_UpdateV2Group final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUpdateGroupRequest     RequestContent;                                    // 0x0010(0x0048)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0058(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0058(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateV2Group;
 
@@ -1813,8 +2016,8 @@ struct ABGroup_UpdateV2GroupCustomAttributes final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUpdateGroupCustomAttributesRequest RequestContent;                        // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateV2GroupCustomAttributes;
 
@@ -1825,8 +2028,8 @@ struct ABGroup_UpdateV2GroupCustomRule final
 public:
 	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUpdateCustomRulesRequest RequestContent;                                  // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateV2GroupCustomRule;
 
@@ -1839,10 +2042,149 @@ public:
 	EAccelByteAllowedAction                       AllowedAction;                                     // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAccelByteModelsUpdateGroupPredefinedRuleRequest RequestContent;                          // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGroupInformation& Response)> OnSuccess;              // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABGroup_UpdateV2GroupPredefinedRule;
+
+// Function AccelByteUe4Sdk.ABInventory.BulkDeleteInventoryItems
+// 0x0048 (0x0048 - 0x0000)
+struct ABInventory_BulkDeleteInventoryItems final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAccelByteModelsDeleteUserInventoryItemsRequest> DeletedItemsRequest;              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsDeleteUserInventoryItemResponse>& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_BulkDeleteInventoryItems;
+
+// Function AccelByteUe4Sdk.ABInventory.BulkUpdateInventoryItems
+// 0x0048 (0x0048 - 0x0000)
+struct ABInventory_BulkUpdateInventoryItems final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAccelByteModelsUpdateUserInventoryItemRequest> UpdatedItemsRequest;               // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUpdateUserInventoryItemResponse>& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_BulkUpdateInventoryItems;
+
+// Function AccelByteUe4Sdk.ABInventory.ConsumeUserInventoryItem
+// 0x0060 (0x0060 - 0x0000)
+struct ABInventory_ConsumeUserInventoryItem final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsConsumeUserItemsRequest ConsumedItemsRequest;                             // 0x0010(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)> OnSuccess;              // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_ConsumeUserInventoryItem;
+
+// Function AccelByteUe4Sdk.ABInventory.GetInventoryConfigurations
+// 0x0048 (0x0048 - 0x0000)
+struct ABInventory_GetInventoryConfigurations final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsInventoryConfigurationsPagingResponse& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteInventoryConfigurationSortBy        SortBy;                                            // 0x0028(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 InventoryConfigurationCode;                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_GetInventoryConfigurations;
+
+// Function AccelByteUe4Sdk.ABInventory.GetInventoryTags
+// 0x0034 (0x0034 - 0x0000)
+struct ABInventory_GetInventoryTags final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsInventoryTagPagingResponse& Response)> OnSuccess;    // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteInventoryUtilitiesSortBy            SortBy;                                            // 0x0028(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_GetInventoryTags;
+
+// Function AccelByteUe4Sdk.ABInventory.GetItemTypes
+// 0x0034 (0x0034 - 0x0000)
+struct ABInventory_GetItemTypes final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsItemTypePagingResponse& Response)> OnSuccess;        // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteInventoryUtilitiesSortBy            SortBy;                                            // 0x0028(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_GetItemTypes;
+
+// Function AccelByteUe4Sdk.ABInventory.GetUserInventories
+// 0x0048 (0x0048 - 0x0000)
+struct ABInventory_GetUserInventories final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsUserInventoriesPagingResponse& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUserInventoriesSortBy               SortBy;                                            // 0x0028(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 InventoryConfigurationCode;                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_GetUserInventories;
+
+// Function AccelByteUe4Sdk.ABInventory.GetUserInventoryAllItems
+// 0x0068 (0x0068 - 0x0000)
+struct ABInventory_GetUserInventoryAllItems final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemsPagingResponse& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUserItemsSortBy                     SortBy;                                            // 0x0038(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 SourceItemId;                                      // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Tags;                                              // 0x0058(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_GetUserInventoryAllItems;
+
+// Function AccelByteUe4Sdk.ABInventory.GetUserInventoryItem
+// 0x0058 (0x0058 - 0x0000)
+struct ABInventory_GetUserInventoryItem final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SlotId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SourceItemId;                                      // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_GetUserInventoryItem;
+
+// Function AccelByteUe4Sdk.ABInventory.MoveItemsBetweenInventories
+// 0x0058 (0x0058 - 0x0000)
+struct ABInventory_MoveItemsBetweenInventories final
+{
+public:
+	class FString                                 TargetInventoryId;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsMoveUserItemsBetweenInventoriesRequest MoveItemsRequest;                  // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMoveUserItemsBetweenInventoriesResponse& Response)> OnSuccess; // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABInventory_MoveItemsBetweenInventories;
 
 // Function AccelByteUe4Sdk.ABLeaderboard.GetBulkUserRankingV3
 // 0x0048 (0x0048 - 0x0000)
@@ -1851,8 +2193,8 @@ struct ABLeaderboard_GetBulkUserRankingV3 final
 public:
 	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 LeaderboardCode;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsBulkUserRankingDataV3& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBulkUserRankingDataV3& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetBulkUserRankingV3;
 
@@ -1863,10 +2205,33 @@ struct ABLeaderboard_GetLeaderboards final
 public:
 	int32                                         Offset;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPaginatedLeaderboardData& Response)> OnSuccess;      // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedLeaderboardData& Response)> OnSuccess;      // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetLeaderboards;
+
+// Function AccelByteUe4Sdk.ABLeaderboard.GetLeaderboardsV3
+// 0x0030 (0x0030 - 0x0000)
+struct ABLeaderboard_GetLeaderboardsV3 final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsPaginatedLeaderboardData& Response)> OnSuccess;      // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABLeaderboard_GetLeaderboardsV3;
+
+// Function AccelByteUe4Sdk.ABLeaderboard.GetLeaderboardV3
+// 0x0038 (0x0038 - 0x0000)
+struct ABLeaderboard_GetLeaderboardV3 final
+{
+public:
+	class FString                                 LeaderboardCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBaseLeaderboardData& Response)> OnSuccess;           // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABLeaderboard_GetLeaderboardV3;
 
 // Function AccelByteUe4Sdk.ABLeaderboard.GetRankingByCycle
 // 0x0050 (0x0050 - 0x0000)
@@ -1877,10 +2242,24 @@ public:
 	class FString                                 CycleId;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)> OnSuccess;    // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)> OnSuccess;    // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetRankingByCycle;
+
+// Function AccelByteUe4Sdk.ABLeaderboard.GetRankingByCycleV3
+// 0x0050 (0x0050 - 0x0000)
+struct ABLeaderboard_GetRankingByCycleV3 final
+{
+public:
+	class FString                                 LeaderboardCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 CycleId;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)> OnSuccess;    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABLeaderboard_GetRankingByCycleV3;
 
 // Function AccelByteUe4Sdk.ABLeaderboard.GetRankings
 // 0x0048 (0x0048 - 0x0000)
@@ -1892,8 +2271,8 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Offset;                                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResult& Response)> OnSuccess;      // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResult& Response)> OnSuccess;      // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetRankings;
@@ -1906,8 +2285,8 @@ public:
 	class FString                                 LeaderboardCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)> OnSuccess;    // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeaderboardRankingResultV3& Response)> OnSuccess;    // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetRankingsV3;
 
@@ -1918,8 +2297,8 @@ struct ABLeaderboard_GetUserRanking final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LeaderboardCode;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserRankingData& Response)> OnSuccess;               // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserRankingData& Response)> OnSuccess;               // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetUserRanking;
 
@@ -1930,8 +2309,8 @@ struct ABLeaderboard_GetUserRankingV3 final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LeaderboardCode;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserRankingDataV3& Response)> OnSuccess;             // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserRankingDataV3& Response)> OnSuccess;             // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLeaderboard_GetUserRankingV3;
 
@@ -1941,8 +2320,8 @@ struct ABMatchmaking_CancelMatchmaking final
 {
 public:
 	struct FCancelMatchmakingRequest              Request;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Response)> OnResponse;          // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Response)> OnResponse;          // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_CancelMatchmaking;
 
@@ -1951,7 +2330,7 @@ DUMPER7_ASSERTS_ABMatchmaking_CancelMatchmaking;
 struct ABMatchmaking_SetOnDs final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsDsNotice& Notif)> OnNotif;                           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsDsNotice& Notif)> OnNotif;                           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetOnDs;
 
@@ -1960,7 +2339,7 @@ DUMPER7_ASSERTS_ABMatchmaking_SetOnDs;
 struct ABMatchmaking_SetOnMatchmaking final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsMatchmakingNotice& Notif)> OnNotif;                  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMatchmakingNotice& Notif)> OnNotif;                  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetOnMatchmaking;
 
@@ -1969,7 +2348,7 @@ DUMPER7_ASSERTS_ABMatchmaking_SetOnMatchmaking;
 struct ABMatchmaking_SetOnRematchmaking final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsRematchmakingNotice& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRematchmakingNotice& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetOnRematchmaking;
 
@@ -1978,7 +2357,7 @@ DUMPER7_ASSERTS_ABMatchmaking_SetOnRematchmaking;
 struct ABMatchmaking_SetOnSetReadyConsent final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsReadyConsentNotice& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsReadyConsentNotice& Notif)> OnNotif;                 // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetOnSetReadyConsent;
 
@@ -1987,7 +2366,7 @@ DUMPER7_ASSERTS_ABMatchmaking_SetOnSetReadyConsent;
 struct ABMatchmaking_SetOnSetRejectConsent final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsRejectConsentNotice& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRejectConsentNotice& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetOnSetRejectConsent;
 
@@ -1997,8 +2376,8 @@ struct ABMatchmaking_SetReadyConsent final
 {
 public:
 	struct FSetReadyConsentRequest                Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsReadyConsentRequest& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsReadyConsentRequest& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetReadyConsent;
 
@@ -2008,8 +2387,8 @@ struct ABMatchmaking_SetRejectConsent final
 {
 public:
 	struct FSetRejectConsentRequest               Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRejectConsentRequest& Response)> OnResponse;         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRejectConsentRequest& Response)> OnResponse;         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_SetRejectConsent;
 
@@ -2019,8 +2398,8 @@ struct ABMatchmaking_StartMatchmaking final
 {
 public:
 	struct FStartMatchmakingRequest               Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMatchmaking_StartMatchmaking;
 
@@ -2030,8 +2409,8 @@ struct ABMessage_SendChannelMessage final
 {
 public:
 	struct FSendChannelMessageRequest             Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsChannelMessageResponse& Response)> OnResponse;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsChannelMessageResponse& Response)> OnResponse;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SendChannelMessage;
@@ -2041,8 +2420,8 @@ DUMPER7_ASSERTS_ABMessage_SendChannelMessage;
 struct ABMessage_SendJoinDefaultChannelChatRequest final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsJoinDefaultChannelResponse& Response)> OnResponse;   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsJoinDefaultChannelResponse& Response)> OnResponse;   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SendJoinDefaultChannelChatRequest;
@@ -2053,8 +2432,8 @@ struct ABMessage_SendPartyMessage final
 {
 public:
 	struct FSendPartyMessageRequest               Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyMessageResponse& Response)> OnResponse;         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyMessageResponse& Response)> OnResponse;         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SendPartyMessage;
@@ -2065,8 +2444,8 @@ struct ABMessage_SendPrivateMessage final
 {
 public:
 	struct FSendPrivateMessageRequest             Request;                                           // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPersonalMessageResponse& Response)> OnResponse;      // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPersonalMessageResponse& Response)> OnResponse;      // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0048(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SendPrivateMessage;
@@ -2076,7 +2455,7 @@ DUMPER7_ASSERTS_ABMessage_SendPrivateMessage;
 struct ABMessage_SetChannelMessageNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsChannelMessageNotice& Notif)> OnNotif;               // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsChannelMessageNotice& Notif)> OnNotif;               // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SetChannelMessageNotifDelegate;
 
@@ -2085,7 +2464,7 @@ DUMPER7_ASSERTS_ABMessage_SetChannelMessageNotifDelegate;
 struct ABMessage_SetMessageNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsNotificationMessage& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsNotificationMessage& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SetMessageNotifDelegate;
 
@@ -2094,7 +2473,7 @@ DUMPER7_ASSERTS_ABMessage_SetMessageNotifDelegate;
 struct ABMessage_SetOnPartyChatNotification final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyMessageNotice& Notif)> OnPartyChatNotif;        // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyMessageNotice& Notif)> OnPartyChatNotif;        // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SetOnPartyChatNotification;
 
@@ -2103,7 +2482,7 @@ DUMPER7_ASSERTS_ABMessage_SetOnPartyChatNotification;
 struct ABMessage_SetPrivateMessageNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPersonalMessageNotice& Notif)> OnNotif;              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPersonalMessageNotice& Notif)> OnNotif;              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABMessage_SetPrivateMessageNotifDelegate;
 
@@ -2113,19 +2492,19 @@ struct ABOrder_CancelOrder final
 {
 public:
 	class FString                                 OrderNo;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess;                     // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess;                     // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABOrder_CancelOrder;
 
 // Function AccelByteUe4Sdk.ABOrder.CreateNewOrder
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct ABOrder_CreateNewOrder final
 {
 public:
-	struct FAccelByteModelsOrderCreate            OrderCreateRequest;                                // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess;                     // 0x0070(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsOrderCreate            OrderCreateRequest;                                // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess;                     // 0x0080(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABOrder_CreateNewOrder;
 
@@ -2135,8 +2514,8 @@ struct ABOrder_GetUserOrder final
 {
 public:
 	class FString                                 OrderNo;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess;                     // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsOrderInfo& Response)> OnSuccess;                     // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABOrder_GetUserOrder;
 
@@ -2146,8 +2525,8 @@ struct ABOrder_GetUserOrderHistory final
 {
 public:
 	class FString                                 OrderNo;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsOrderHistoryInfo& Response)> OnSuccess;                  // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsOrderHistoryInfo& Response)> OnSuccess;                  // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABOrder_GetUserOrderHistory;
 
@@ -2158,18 +2537,29 @@ struct ABOrder_GetUserOrders final
 public:
 	int32                                         Page;                                              // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Size;                                              // 0x0004(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPagedOrderInfo& Response)> OnSuccess;                // 0x0008(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPagedOrderInfo& Response)> OnSuccess;                // 0x0008(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABOrder_GetUserOrders;
+
+// Function AccelByteUe4Sdk.ABOrder.PreviewUserOrder
+// 0x0068 (0x0068 - 0x0000)
+struct ABOrder_PreviewUserOrder final
+{
+public:
+	struct FAccelByteModelsUserPreviewOrderRequest OrderPreviewRequest;                              // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserPreviewOrderResponse& Response)> OnSuccess;      // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABOrder_PreviewUserOrder;
 
 // Function AccelByteUe4Sdk.ABParty.CreateParty
 // 0x0028 (0x0028 - 0x0000)
 struct ABParty_CreateParty final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsCreatePartyResponse& Response)> OnResponse;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsCreatePartyResponse& Response)> OnResponse;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_CreateParty;
 
@@ -2179,8 +2569,8 @@ struct ABParty_GetPartyData final
 {
 public:
 	struct FGetPartyDataRequest                   Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyData& Response)> OnResponse;                    // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyData& Response)> OnResponse;                    // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_GetPartyData;
 
@@ -2190,8 +2580,8 @@ struct ABParty_GetPartyStorage final
 {
 public:
 	struct FGetPartyStorageRequest                Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnResponse;               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnResponse;               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_GetPartyStorage;
 
@@ -2200,8 +2590,8 @@ DUMPER7_ASSERTS_ABParty_GetPartyStorage;
 struct ABParty_PartyDeleteCode final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyDeleteCodeResponse& Response)> OnResponse;      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDeleteCodeResponse& Response)> OnResponse;      // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyDeleteCode;
 
@@ -2210,8 +2600,8 @@ DUMPER7_ASSERTS_ABParty_PartyDeleteCode;
 struct ABParty_PartyGenerateCode final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyGenerateCodeResponse& Response)> OnResponse;    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyGenerateCodeResponse& Response)> OnResponse;    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyGenerateCode;
 
@@ -2220,8 +2610,8 @@ DUMPER7_ASSERTS_ABParty_PartyGenerateCode;
 struct ABParty_PartyGetCode final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyGetCodeResponse& Response)> OnResponse;         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyGetCodeResponse& Response)> OnResponse;         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyGetCode;
 
@@ -2230,8 +2620,8 @@ DUMPER7_ASSERTS_ABParty_PartyGetCode;
 struct ABParty_PartyInfo final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsInfoPartyResponse& Response)> OnResponse;            // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsInfoPartyResponse& Response)> OnResponse;            // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyInfo;
 
@@ -2240,9 +2630,9 @@ DUMPER7_ASSERTS_ABParty_PartyInfo;
 struct ABParty_PartyInvite final
 {
 public:
-	struct FPartyInviteRequest                    Request;                                           // 0x0000(0x0010)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyInviteResponse& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPartyInviteRequest                    Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyInviteResponse& Response)> OnResponse;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyInvite;
 
@@ -2252,8 +2642,8 @@ struct ABParty_PartyJoin final
 {
 public:
 	struct FPartyJoinRequest                      Request;                                           // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyJoinResponse& Response)> OnResponse;            // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyJoinResponse& Response)> OnResponse;            // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyJoin;
 
@@ -2263,8 +2653,8 @@ struct ABParty_PartyJoinViaCode final
 {
 public:
 	struct FPartyJoinViaCodeRequest               Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyJoinResponse& Response)> OnResponse;            // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyJoinResponse& Response)> OnResponse;            // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyJoinViaCode;
 
@@ -2274,8 +2664,8 @@ struct ABParty_PartyKick final
 {
 public:
 	struct FPartyKickRequest                      Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsKickPartyMemberResponse& Response)> OnResponse;      // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsKickPartyMemberResponse& Response)> OnResponse;      // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyKick;
 
@@ -2284,8 +2674,8 @@ DUMPER7_ASSERTS_ABParty_PartyKick;
 struct ABParty_PartyLeave final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsLeavePartyResponse& Response)> OnResponse;           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeavePartyResponse& Response)> OnResponse;           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyLeave;
 
@@ -2295,8 +2685,8 @@ struct ABParty_PartyPromoteLeader final
 {
 public:
 	struct FPartyPromoteLeaderRequest             Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyPromoteLeaderResponse& Response)> OnResponse;   // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyPromoteLeaderResponse& Response)> OnResponse;   // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyPromoteLeader;
 
@@ -2305,9 +2695,9 @@ DUMPER7_ASSERTS_ABParty_PartyPromoteLeader;
 struct ABParty_PartyReject final
 {
 public:
-	struct FPartyRejectRequest                    Request;                                           // 0x0000(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyRejectResponse& Response)> OnResponse;          // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FPartyRejectRequest                    Request;                                           // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyRejectResponse& Response)> OnResponse;          // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_PartyReject;
 
@@ -2316,7 +2706,7 @@ DUMPER7_ASSERTS_ABParty_PartyReject;
 struct ABParty_SetOnPartyDataUpdate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Notif)> OnNotif;                     // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Notif)> OnNotif;                     // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyDataUpdate;
 
@@ -2325,7 +2715,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyDataUpdate;
 struct ABParty_SetOnPartyDataUpdateNotifDelegate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Notif)> OnNotif;                     // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Notif)> OnNotif;                     // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyDataUpdateNotifDelegate;
 
@@ -2334,7 +2724,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyDataUpdateNotifDelegate;
 struct ABParty_SetOnPartyGetInvited final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyGetInvitedNotice& Notif)> OnNotif;              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyGetInvitedNotice& Notif)> OnNotif;              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyGetInvited;
 
@@ -2343,7 +2733,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyGetInvited;
 struct ABParty_SetOnPartyInvite final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsInvitationNotice& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsInvitationNotice& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyInvite;
 
@@ -2352,7 +2742,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyInvite;
 struct ABParty_SetOnPartyJoin final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyJoinNotice& Notif)> OnNotif;                    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyJoinNotice& Notif)> OnNotif;                    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyJoin;
 
@@ -2361,7 +2751,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyJoin;
 struct ABParty_SetOnPartyKick final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsGotKickedFromPartyNotice& Notif)> OnNotif;           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGotKickedFromPartyNotice& Notif)> OnNotif;           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyKick;
 
@@ -2370,7 +2760,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyKick;
 struct ABParty_SetOnPartyLeave final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsLeavePartyNotice& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeavePartyNotice& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyLeave;
 
@@ -2379,7 +2769,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyLeave;
 struct ABParty_SetOnPartyMemberConnect final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Notif)> OnNotif;        // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Notif)> OnNotif;        // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyMemberConnect;
 
@@ -2388,7 +2778,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyMemberConnect;
 struct ABParty_SetOnPartyMemberDisconnect final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Notif)> OnNotif;        // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Notif)> OnNotif;        // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyMemberDisconnect;
 
@@ -2397,7 +2787,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyMemberDisconnect;
 struct ABParty_SetOnPartyMemberLeave final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsLeavePartyNotice& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLeavePartyNotice& Notif)> OnNotif;                   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyMemberLeave;
 
@@ -2406,7 +2796,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyMemberLeave;
 struct ABParty_SetOnPartyReject final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyRejectNotice& Notif)> OnNotif;                  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyRejectNotice& Notif)> OnNotif;                  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyReject;
 
@@ -2415,7 +2805,7 @@ DUMPER7_ASSERTS_ABParty_SetOnPartyReject;
 struct ABParty_SetOnPartyUpdate final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsPartyNotif& Notif)> OnNotif;                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyNotif& Notif)> OnNotif;                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABParty_SetOnPartyUpdate;
 
@@ -2426,8 +2816,8 @@ struct ABParty_SetPartySizeLimit final
 public:
 	class FString                                 PartyId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0010(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABParty_SetPartySizeLimit;
@@ -2438,8 +2828,8 @@ struct ABParty_WritePartyStorage final
 {
 public:
 	struct FWritePartyStorageRequest              Request;                                           // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnResponse;               // 0x0060(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnResponse;               // 0x0060(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABParty_WritePartyStorage;
@@ -2450,18 +2840,29 @@ struct ABPresence_BulkGetUserPresence final
 {
 public:
 	struct FBulkGetUserPresenceRequest            Request;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsBulkUserStatusNotif& Response)> OnResponse;          // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBulkUserStatusNotif& Response)> OnResponse;          // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABPresence_BulkGetUserPresence;
+
+// Function AccelByteUe4Sdk.ABPresence.BulkGetUserPresenceV2
+// 0x0040 (0x0040 - 0x0000)
+struct ABPresence_BulkGetUserPresenceV2 final
+{
+public:
+	struct FBulkGetUserPresenceRequest            Request;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsBulkUserStatusNotif& Response)> OnResponse;          // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABPresence_BulkGetUserPresenceV2;
 
 // Function AccelByteUe4Sdk.ABPresence.GetAllFriendsStatus
 // 0x0028 (0x0028 - 0x0000)
 struct ABPresence_GetAllFriendsStatus final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsGetOnlineUsersResponse& Response)> OnResponse;       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetOnlineUsersResponse& Response)> OnResponse;       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABPresence_GetAllFriendsStatus;
 
@@ -2470,7 +2871,7 @@ DUMPER7_ASSERTS_ABPresence_GetAllFriendsStatus;
 struct ABPresence_SetOnFriendStatusNotif final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUsersPresenceNotice& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUsersPresenceNotice& Notif)> OnNotif;                // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABPresence_SetOnFriendStatusNotif;
 
@@ -2480,8 +2881,8 @@ struct ABPresence_SetPresenceStatus final
 {
 public:
 	struct FAccelBytePresenceStatus               Request;                                           // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSetOnlineUsersResponse& Response)> OnResponse;       // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSetOnlineUsersResponse& Response)> OnResponse;       // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABPresence_SetPresenceStatus;
 
@@ -2491,8 +2892,8 @@ struct ABReward_GetRewardByRewardCode final
 {
 public:
 	class FString                                 RewardCode;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRewardInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRewardInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABReward_GetRewardByRewardCode;
 
@@ -2502,8 +2903,8 @@ struct ABReward_GetRewardByRewardId final
 {
 public:
 	class FString                                 RewardId;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRewardInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRewardInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABReward_GetRewardByRewardId;
 
@@ -2517,8 +2918,8 @@ public:
 	int32                                         Limit;                                             // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteRewardListSortBy                    SortBy;                                            // 0x0018(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsQueryReward& Response)> OnSuccess;                   // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsQueryReward& Response)> OnSuccess;                   // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABReward_QueryRewards;
@@ -2528,8 +2929,8 @@ DUMPER7_ASSERTS_ABReward_QueryRewards;
 struct ABSeasonPass_BulkClaimRewards final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsSeasonClaimRewardResponse& Response)> OnSuccess;     // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSeasonClaimRewardResponse& Response)> OnSuccess;     // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSeasonPass_BulkClaimRewards;
 
@@ -2539,8 +2940,8 @@ struct ABSeasonPass_ClaimRewards final
 {
 public:
 	struct FAccelByteModelsSeasonClaimRewardRequest RewardRequest;                                   // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSeasonClaimRewardResponse& Response)> OnSuccess;     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSeasonClaimRewardResponse& Response)> OnSuccess;     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSeasonPass_ClaimRewards;
 
@@ -2550,8 +2951,8 @@ struct ABSeasonPass_GetCurrentSeason final
 {
 public:
 	class FString                                 Language;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSeasonInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSeasonInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSeasonPass_GetCurrentSeason;
 
@@ -2560,8 +2961,8 @@ DUMPER7_ASSERTS_ABSeasonPass_GetCurrentSeason;
 struct ABSeasonPass_GetCurrentUserSeason final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUserSeasonInfo& Response)> OnSuccess;                // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserSeasonInfo& Response)> OnSuccess;                // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSeasonPass_GetCurrentUserSeason;
 
@@ -2571,8 +2972,8 @@ struct ABSeasonPass_GetUserSeason final
 {
 public:
 	class FString                                 SeasonId;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserSeasonInfo& Response)> OnSuccess;                // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserSeasonInfo& Response)> OnSuccess;                // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSeasonPass_GetUserSeason;
 
@@ -2583,10 +2984,224 @@ struct ABServerAchievement_UnlockAchievement final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 AchievementCode;                                   // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerAchievement_UnlockAchievement;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.BulkGetPlayerRecordSize
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_BulkGetPlayerRecordSize final
+{
+public:
+	struct FAccelByteModelsBulkGetPlayerRecordSizeRequest GetPlayerRecordSizeRequest;                // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedBulkGetPlayerRecordSizeResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_BulkGetPlayerRecordSize;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.BulkGetUserRecord
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_BulkGetUserRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         UserIds;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUserRecord>& Response)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_BulkGetUserRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.BulkGetUserRecordsByKeys
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_BulkGetUserRecordsByKeys final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Keys;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsAdminGetUserRecords& Response)> OnSuccess;           // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_BulkGetUserRecordsByKeys;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.BulkReplaceUserRecord
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_BulkReplaceUserRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsBulkReplaceUserRecordRequest Request;                                     // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsBulkReplaceUserRecordResponse>& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_BulkReplaceUserRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.DeleteAdminGameRecord
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_DeleteAdminGameRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_DeleteAdminGameRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.DeleteAdminGameRecordTTLConfig
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_DeleteAdminGameRecordTTLConfig final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_DeleteAdminGameRecordTTLConfig;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.DeleteAdminUserRecord
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_DeleteAdminUserRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_DeleteAdminUserRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.DeleteGameRecord
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_DeleteGameRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_DeleteGameRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.DeleteGameRecordTTLConfig
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_DeleteGameRecordTTLConfig final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_DeleteGameRecordTTLConfig;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.DeleteUserRecord
+// 0x0050 (0x0050 - 0x0000)
+struct ABServerCloudsave_DeleteUserRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsPublic;                                         // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             OnSuccess;                                         // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerCloudsave_DeleteUserRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.GetGameRecord
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_GetGameRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGameRecord& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_GetGameRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.GetPublicUserRecord
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_GetPublicUserRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserRecord& Response)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_GetPublicUserRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.GetUserRecord
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_GetUserRecord final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserRecord& Response)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_GetUserRecord;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.QueryAdminGameRecordKeys
+// 0x0030 (0x0030 - 0x0000)
+struct ABServerCloudsave_QueryAdminGameRecordKeys final
+{
+public:
+	int32                                         Limit;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedRecordsKey& Response)> OnSuccess;           // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_QueryAdminGameRecordKeys;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.QueryAdminGameRecordsByKey
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerCloudsave_QueryAdminGameRecordsByKey final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsAdminGameRecord& Response)> OnSuccess;               // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_QueryAdminGameRecordsByKey;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.QueryAdminUserRecordKeys
+// 0x0040 (0x0040 - 0x0000)
+struct ABServerCloudsave_QueryAdminUserRecordKeys final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPaginatedGetAdminUserRecordKeysResponse& Response)> OnSuccess; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_QueryAdminUserRecordKeys;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.QueryAdminUserRecordsByKey
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerCloudsave_QueryAdminUserRecordsByKey final
+{
+public:
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsAdminUserRecord& Response)> OnSuccess;               // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_QueryAdminUserRecordsByKey;
+
+// Function AccelByteUe4Sdk.ABServerCloudsave.RetrieveGameRecordsKey
+// 0x0040 (0x0040 - 0x0000)
+struct ABServerCloudsave_RetrieveGameRecordsKey final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsPaginatedRecordsKey& Response)> OnSuccess;           // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Query;                                             // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerCloudsave_RetrieveGameRecordsKey;
 
 // Function AccelByteUe4Sdk.ABServerDSM.ConfigureAutoShutdown
 // 0x0008 (0x0008 - 0x0000)
@@ -2604,8 +3219,8 @@ struct ABServerDSM_DeregisterLocalServerFromDSM final
 {
 public:
 	class FString                                 ServerName;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_DeregisterLocalServerFromDSM;
 
@@ -2623,8 +3238,8 @@ DUMPER7_ASSERTS_ABServerDSM_GetPlayerNum;
 struct ABServerDSM_GetServerInfo final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsServerInfo& Response)> OnSuccess;                    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsServerInfo& Response)> OnSuccess;                    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_GetServerInfo;
 
@@ -2633,8 +3248,8 @@ DUMPER7_ASSERTS_ABServerDSM_GetServerInfo;
 struct ABServerDSM_GetSessionId final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsServerSessionResponse& Response)> OnSuccess;         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsServerSessionResponse& Response)> OnSuccess;         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_GetSessionId;
 
@@ -2647,8 +3262,8 @@ public:
 	int32                                         Port;                                              // 0x0010(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ServerName;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_RegisterLocalServerToDSM;
 
@@ -2658,8 +3273,8 @@ struct ABServerDSM_RegisterServerToDSM final
 {
 public:
 	int32                                         Port;                                              // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_RegisterServerToDSM;
 
@@ -2671,8 +3286,8 @@ public:
 	bool                                          KillMe;                                            // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 MatchId;                                           // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_SendShutdownToDSM;
 
@@ -2681,7 +3296,7 @@ DUMPER7_ASSERTS_ABServerDSM_SendShutdownToDSM;
 struct ABServerDSM_SetOnAutoShutdownErrorDelegate final
 {
 public:
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnShutdownError;             // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnShutdownError;             // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_SetOnAutoShutdownErrorDelegate;
 
@@ -2690,7 +3305,7 @@ DUMPER7_ASSERTS_ABServerDSM_SetOnAutoShutdownErrorDelegate;
 struct ABServerDSM_SetOnAutoShutdownResponse final
 {
 public:
-	TDelegate<void()>                             OnAutoShutdown;                                    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnAutoShutdown;                                    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_SetOnAutoShutdownResponse;
 
@@ -2699,7 +3314,7 @@ DUMPER7_ASSERTS_ABServerDSM_SetOnAutoShutdownResponse;
 struct ABServerDSM_SetServerName final
 {
 public:
-	class FString                                 Name_0;                                            // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerDSM_SetServerName;
 
@@ -2712,14 +3327,235 @@ public:
 };
 DUMPER7_ASSERTS_ABServerDSM_SetServerType;
 
+// Function AccelByteUe4Sdk.ABServerEntitlement.GetUserEntitlementHistory
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerEntitlement_GetUserEntitlementHistory final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 EntitlementId;                                     // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUserEntitlementHistory>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerEntitlement_GetUserEntitlementHistory;
+
+// Function AccelByteUe4Sdk.ABServerInventory.BulkDeleteUserInventoryItems
+// 0x0058 (0x0058 - 0x0000)
+struct ABServerInventory_BulkDeleteUserInventoryItems final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryId;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAccelByteModelsDeleteUserInventoryItemsRequest> DeletedItemsRequest;              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsDeleteUserInventoryItemResponse>& Response)> OnSuccess; // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_BulkDeleteUserInventoryItems;
+
+// Function AccelByteUe4Sdk.ABServerInventory.BulkSaveInventoryItems
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerInventory_BulkSaveInventoryItems final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAccelByteModelsSaveInventoryItemRequest> SaveItemsRequests;                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsBulkSaveInventoryItems>& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_BulkSaveInventoryItems;
+
+// Function AccelByteUe4Sdk.ABServerInventory.BulkSaveInventoryItemsByInventoryId
+// 0x0058 (0x0058 - 0x0000)
+struct ABServerInventory_BulkSaveInventoryItemsByInventoryId final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryId;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAccelByteModelsSaveInventoryItemByInventoryIdRequest> SaveItemsRequests;          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsBulkSaveInventoryItems>& Response)> OnSuccess; // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_BulkSaveInventoryItemsByInventoryId;
+
+// Function AccelByteUe4Sdk.ABServerInventory.BulkUpdateInventoryItems
+// 0x0058 (0x0058 - 0x0000)
+struct ABServerInventory_BulkUpdateInventoryItems final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryId;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FAccelByteModelsUpdateInventoryItemRequest> UpdatedItemsRequest;                   // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUpdateUserInventoryItemResponse>& Response)> OnSuccess; // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_BulkUpdateInventoryItems;
+
+// Function AccelByteUe4Sdk.ABServerInventory.ConsumeInventoryItem
+// 0x0070 (0x0070 - 0x0000)
+struct ABServerInventory_ConsumeInventoryItem final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryId;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsConsumeUserItemsRequest ConsumedItemsRequest;                             // 0x0020(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)> OnSuccess;              // 0x0048(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x005C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_ConsumeInventoryItem;
+
+// Function AccelByteUe4Sdk.ABServerInventory.CreateInventory
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerInventory_CreateInventory final
+{
+public:
+	struct FAccelByteModelsCreateInventoryRequest CreateInventoryRequest;                            // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserInventoryResponse& Response)> OnSuccess;         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_CreateInventory;
+
+// Function AccelByteUe4Sdk.ABServerInventory.DeleteInventory
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerInventory_DeleteInventory final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsDeleteInventoryRequest DeleteInventoryRequest;                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_DeleteInventory;
+
+// Function AccelByteUe4Sdk.ABServerInventory.GetInventories
+// 0x0058 (0x0058 - 0x0000)
+struct ABServerInventory_GetInventories final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsUserInventoriesPagingResponse& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 UserId;                                            // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryConfigurationCode;                        // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteInventoriesSortBy                   SortBy;                                            // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerInventory_GetInventories;
+
+// Function AccelByteUe4Sdk.ABServerInventory.GetInventory
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerInventory_GetInventory final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserInventoryResponse& Response)> OnSuccess;         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_GetInventory;
+
+// Function AccelByteUe4Sdk.ABServerInventory.GetInventoryAllItems
+// 0x0068 (0x0068 - 0x0000)
+struct ABServerInventory_GetInventoryAllItems final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemsPagingResponse& Response)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUserItemsSortBy                     SortBy;                                            // 0x0038(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 SourceItemId;                                      // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Tags;                                              // 0x0058(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_GetInventoryAllItems;
+
+// Function AccelByteUe4Sdk.ABServerInventory.GetInventoryItem
+// 0x0058 (0x0058 - 0x0000)
+struct ABServerInventory_GetInventoryItem final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SlotId;                                            // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SourceItemId;                                      // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)> OnSuccess;              // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_GetInventoryItem;
+
+// Function AccelByteUe4Sdk.ABServerInventory.SaveInventoryItem
+// 0x00E8 (0x00E8 - 0x0000)
+struct ABServerInventory_SaveInventoryItem final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsSaveInventoryItemRequest SaveItemRequest;                                 // 0x0010(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)> OnSuccess;              // 0x00C0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00D4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_SaveInventoryItem;
+
+// Function AccelByteUe4Sdk.ABServerInventory.SaveInventoryItemByInventoryId
+// 0x00E8 (0x00E8 - 0x0000)
+struct ABServerInventory_SaveInventoryItemByInventoryId final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryId;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsSaveInventoryItemByInventoryIdRequest SaveItemRequest;                    // 0x0020(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserItemResponse& Response)> OnSuccess;              // 0x00C0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00D4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_SaveInventoryItemByInventoryId;
+
+// Function AccelByteUe4Sdk.ABServerInventory.SyncUserEntitlement
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerInventory_SyncUserEntitlement final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerInventory_SyncUserEntitlement;
+
+// Function AccelByteUe4Sdk.ABServerInventory.UpdateAllUserInventories
+// 0x0050 (0x0050 - 0x0000)
+struct ABServerInventory_UpdateAllUserInventories final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InventoryConfigurationCode;                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsUpdateInventoryRequest UpdateInventoryRequest;                            // 0x0020(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUserInventoryResponse>& Response)> OnSuccess; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerInventory_UpdateAllUserInventories;
+
+// Function AccelByteUe4Sdk.ABServerInventory.UpdateInventory
+// 0x0040 (0x0040 - 0x0000)
+struct ABServerInventory_UpdateInventory final
+{
+public:
+	class FString                                 InventoryId;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsUpdateInventoryRequest UpdateInventoryRequest;                            // 0x0010(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserInventoryResponse& Response)> OnSuccess;         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerInventory_UpdateInventory;
+
 // Function AccelByteUe4Sdk.ABServerLobby.GetListOfBlockedUsers
 // 0x0038 (0x0038 - 0x0000)
 struct ABServerLobby_GetListOfBlockedUsers final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListBlockedUserResponse& Response)> OnSuccess;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListBlockedUserResponse& Response)> OnSuccess;       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_GetListOfBlockedUsers;
 
@@ -2729,8 +3565,8 @@ struct ABServerLobby_GetListOfBlockers final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsListBlockerResponse& Response)> OnSuccess;           // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsListBlockerResponse& Response)> OnSuccess;           // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_GetListOfBlockers;
 
@@ -2740,8 +3576,8 @@ struct ABServerLobby_GetPartyDataByUserId final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsDataPartyResponse& Response)> OnSuccess;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsDataPartyResponse& Response)> OnSuccess;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_GetPartyDataByUserId;
 
@@ -2751,8 +3587,8 @@ struct ABServerLobby_GetPartyStorage final
 {
 public:
 	class FString                                 PartyId;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnSuccess;                // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnSuccess;                // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_GetPartyStorage;
 
@@ -2763,8 +3599,8 @@ struct ABServerLobby_GetSessionAttribute final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetSessionAttributeResponse& Response)> OnSuccess;   // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetSessionAttributeResponse& Response)> OnSuccess;   // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_GetSessionAttribute;
 
@@ -2774,8 +3610,8 @@ struct ABServerLobby_GetSessionAttributeAll final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetSessionAttributeAllResponse& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetSessionAttributeAllResponse& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_GetSessionAttributeAll;
 
@@ -2786,8 +3622,8 @@ struct ABServerLobby_SetSessionAttribute final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<class FString, class FString>            Attributes;                                        // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0060(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0060(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_SetSessionAttribute;
 
@@ -2799,8 +3635,8 @@ public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_SetSessionAttributeString;
 
@@ -2810,10 +3646,10 @@ struct ABServerLobby_WritePartyStorage final
 {
 public:
 	class FString                                 PartyId;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FJsonObjectWrapper& Payload)> PayloadModifier;                       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FJsonObjectWrapper& Payload)> PayloadModifier;                       // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RetryAttempt;                                      // 0x0024(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnSuccess;                // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsPartyDataNotif& Response)> OnSuccess;                // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerLobby_WritePartyStorage;
 
@@ -2824,8 +3660,8 @@ struct ABServerMatchmaking_ActivateSessionStatusPolling final
 public:
 	class FString                                 MatchId;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         IntervalSec;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResult& Response)> OnSuccess;             // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMatchmakingResult& Response)> OnSuccess;             // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_ActivateSessionStatusPolling;
@@ -2839,8 +3675,8 @@ public:
 	class FString                                 MatchId;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 OptionalPartyId;                                   // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0040(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0040(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_AddUserToSession;
 
@@ -2850,8 +3686,8 @@ struct ABServerMatchmaking_DequeueJoinableSession final
 {
 public:
 	class FString                                 MatchId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_DequeueJoinableSession;
 
@@ -2861,8 +3697,8 @@ struct ABServerMatchmaking_EnqueueJoinableSession final
 {
 public:
 	struct FAccelByteModelsMatchmakingResult      MatchmakingResult;                                 // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x00C8(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00DC(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x00C8(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00DC(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_EnqueueJoinableSession;
 
@@ -2872,8 +3708,8 @@ struct ABServerMatchmaking_QuerySessionStatus final
 {
 public:
 	class FString                                 MatchId;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResult& Response)> OnSuccess;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMatchmakingResult& Response)> OnSuccess;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_QuerySessionStatus;
 
@@ -2883,8 +3719,8 @@ struct ABServerMatchmaking_RebalanceMatchmakingBasedOnMMR final
 {
 public:
 	class FString                                 MatchId;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResult& Response)> OnSuccess;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsMatchmakingResult& Response)> OnSuccess;             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_RebalanceMatchmakingBasedOnMMR;
 
@@ -2897,8 +3733,8 @@ public:
 	class FString                                 MatchId;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsMatchmakingResult      OptionalBody;                                      // 0x0030(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x00F8(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x010C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x00F8(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x010C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerMatchmaking_RemoveUserFromSession;
 
@@ -2907,8 +3743,8 @@ DUMPER7_ASSERTS_ABServerMatchmaking_RemoveUserFromSession;
 struct ABServerOauth2_GetJwks final
 {
 public:
-	TDelegate<void(const struct FJwkSet& Response)> OnSuccess;                                       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FJwkSet& Response)> OnSuccess;                                       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerOauth2_GetJwks;
 
@@ -2917,8 +3753,8 @@ DUMPER7_ASSERTS_ABServerOauth2_GetJwks;
 struct ABServerOauth2_LoginWithClientCredentials final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerOauth2_LoginWithClientCredentials;
 
@@ -2935,9 +3771,9 @@ public:
 	int32                                         MaxSpectator;                                      // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0050(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0050(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_CreateGameSessionPrivate;
 
@@ -2951,9 +3787,9 @@ public:
 	class FString                                 GameVersion;                                       // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BotCount;                                          // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxPlayer;                                         // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0038(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0058(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0038(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0058(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_CreateGameSessionPublic;
 
@@ -2962,9 +3798,9 @@ DUMPER7_ASSERTS_ABServerSessionBrowser_CreateGameSessionPublic;
 struct ABServerSessionBrowser_CreateGameSessionTypeSpecificByStruct final
 {
 public:
-	struct FAccelByteModelsSessionBrowserCreateRequest CreateSessionRequest;                         // 0x0000(0x00A8)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x00A8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsSessionBrowserCreateRequest CreateSessionRequest;                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x00A8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_CreateGameSessionTypeSpecificByStruct;
 
@@ -2983,9 +3819,9 @@ public:
 	int32                                         MaxSpectator;                                      // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0058(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0058(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_CreateGameSessionTypeSpecifiedByEnum;
 
@@ -3003,9 +3839,9 @@ public:
 	int32                                         MaxSpectator;                                      // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0060(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0060(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_CreateGameSessionTypeSpecifiedByString;
 
@@ -3017,8 +3853,8 @@ public:
 	EAccelByteSessionType                         SessionType;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 GameMode;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0044(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3033,8 +3869,8 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 GameMode;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MatchExist;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0054(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3047,8 +3883,8 @@ struct ABServerSessionBrowser_GetGameSessionsByTypeString final
 public:
 	class FString                                 SessionTypeString;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GameMode;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3062,8 +3898,8 @@ public:
 	class FString                                 SessionTypeString;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GameMode;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MatchExist;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0058(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x005C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3075,8 +3911,8 @@ struct ABServerSessionBrowser_GetRecentPlayer final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserRecentPlayerGetResult& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserRecentPlayerGetResult& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3089,8 +3925,8 @@ struct ABServerSessionBrowser_JoinSession final
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_JoinSession;
 
@@ -3103,8 +3939,8 @@ public:
 	class FString                                 PlayerToAdd;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AsSpectator;                                       // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_RegisterPlayer;
@@ -3115,8 +3951,8 @@ struct ABServerSessionBrowser_RemoveGameSession final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_RemoveGameSession;
 
@@ -3127,8 +3963,8 @@ struct ABServerSessionBrowser_UnregisterPlayer final
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PlayerToRemove;                                    // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_UnregisterPlayer;
 
@@ -3140,8 +3976,8 @@ public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxPlayer;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CurrentPlayerCount;                                // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_UpdateGameSession;
 
@@ -3152,8 +3988,8 @@ struct ABServerSessionBrowser_UpdateGameSessionByStruct final
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsSessionBrowserUpdateRequest UpdateSessionRequest;                         // 0x0010(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerSessionBrowser_UpdateGameSessionByStruct;
 
@@ -3164,8 +4000,8 @@ struct ABServerStatistic_BulkFetchStatItemsValue final
 public:
 	class FString                                 StatCode;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         UserIds;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsStatItemValueResponse>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsStatItemValueResponse>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerStatistic_BulkFetchStatItemsValue;
 
@@ -3176,8 +4012,8 @@ struct ABServerStatistic_CreateUserStatItems final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         StatCodes;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerStatistic_CreateUserStatItems;
 
@@ -3187,8 +4023,8 @@ struct ABServerStatistic_GetAllUserStatItems final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteStatisticSortBy                     SortBy;                                            // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3202,8 +4038,8 @@ struct ABServerStatistic_GetGlobalStatItemsByStatCode final
 {
 public:
 	class FString                                 StatCode;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Response)> OnSuccess;   // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Response)> OnSuccess;   // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerStatistic_GetGlobalStatItemsByStatCode;
 
@@ -3215,8 +4051,8 @@ public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         StatCodes;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Tags;                                              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0058(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x005C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteStatisticSortBy                     SortBy;                                            // 0x0060(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3230,8 +4066,8 @@ struct ABServerStatistic_IncrementManyUsersStatItems final
 {
 public:
 	TArray<struct FAccelByteModelsBulkUserStatItemInc> Data;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerStatistic_IncrementManyUsersStatItems;
 
@@ -3242,10 +4078,35 @@ struct ABServerStatistic_IncrementUserStatItems final
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FAccelByteModelsBulkStatItemInc> Data;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Response)> OnSuccess; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerStatistic_IncrementUserStatItems;
+
+// Function AccelByteUe4Sdk.ABServerStatistic.ListGlobalStatItems
+// 0x0030 (0x0030 - 0x0000)
+struct ABServerStatistic_ListGlobalStatItems final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerStatistic_ListGlobalStatItems;
+
+// Function AccelByteUe4Sdk.ABServerStatistic.ListGlobalStatItemsWithFilter
+// 0x0040 (0x0040 - 0x0000)
+struct ABServerStatistic_ListGlobalStatItemsWithFilter final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         StatCodes;                                         // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerStatistic_ListGlobalStatItemsWithFilter;
 
 // Function AccelByteUe4Sdk.ABServerUGC.DeleteContentByShareCode
 // 0x0058 (0x0058 - 0x0000)
@@ -3255,8 +4116,8 @@ public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ChannelId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ShareCode;                                         // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerUGC_DeleteContentByShareCode;
 
@@ -3269,10 +4130,169 @@ public:
 	class FString                                 ChannelId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ShareCode;                                         // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCUpdateRequest       ModifyRequest;                                     // 0x0030(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00E8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00FC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00E8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00FC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABServerUGC_ModifyContentByShareCode;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetContentBulk
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerUGC_PublicGetContentBulk final
+{
+public:
+	TArray<class FString>                         ContentIds;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetContentBulk;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetContentBulkByIdsV2
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerUGC_PublicGetContentBulkByIdsV2 final
+{
+public:
+	TArray<class FString>                         ContentIds;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)> OnSuccess;  // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetContentBulkByIdsV2;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetContentByContentId
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerUGC_PublicGetContentByContentId final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetContentByContentId;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetContentByContentIdV2
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerUGC_PublicGetContentByContentIdV2 final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetContentByContentIdV2;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetContentByShareCode
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerUGC_PublicGetContentByShareCode final
+{
+public:
+	class FString                                 ShareCode;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetContentByShareCode;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetContentByShareCodeV2
+// 0x0038 (0x0038 - 0x0000)
+struct ABServerUGC_PublicGetContentByShareCodeV2 final
+{
+public:
+	class FString                                 ShareCode;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetContentByShareCodeV2;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetUserContent
+// 0x0040 (0x0040 - 0x0000)
+struct ABServerUGC_PublicGetUserContent final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentPageResponse& Response)> OnSuccess;        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetUserContent;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicGetUserContentsV2
+// 0x0040 (0x0040 - 0x0000)
+struct ABServerUGC_PublicGetUserContentsV2 final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicGetUserContentsV2;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicSearchAllContents
+// 0x00A0 (0x00A0 - 0x0000)
+struct ABServerUGC_PublicSearchAllContents final
+{
+public:
+	struct FAccelByteModelsUGCSearchContentsRequest Request;                                         // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0098(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x009C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicSearchAllContents;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicSearchContents
+// 0x00A0 (0x00A0 - 0x0000)
+struct ABServerUGC_PublicSearchContents final
+{
+public:
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Creator;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Type;                                              // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Subtype;                                           // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Tags;                                              // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          IsOfficial;                                        // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 UserId;                                            // 0x0058(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0068(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x007C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUgcSortBy                           SortBy;                                            // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUgcOrderBy                          OrderBy;                                           // 0x0091(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_92[0x2];                                       // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x0094(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0098(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicSearchContents;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicSearchContentsSpecificToChannelV2
+// 0x0048 (0x0048 - 0x0000)
+struct ABServerUGC_PublicSearchContentsSpecificToChannelV2 final
+{
+public:
+	class FString                                 ChannelId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUGCContentSortByV2                  SortBy;                                            // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicSearchContentsSpecificToChannelV2;
+
+// Function AccelByteUe4Sdk.ABServerUGC.PublicSearchContentsV2
+// 0x0078 (0x0078 - 0x0000)
+struct ABServerUGC_PublicSearchContentsV2 final
+{
+public:
+	struct FAccelByteModelsUGCFilterRequestV2     Filter;                                            // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0068(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x006C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUGCContentSortByV2                  SortBy;                                            // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABServerUGC_PublicSearchContentsV2;
 
 // Function AccelByteUe4Sdk.ABServerUGC.SearchContents
 // 0x00A0 (0x00A0 - 0x0000)
@@ -3280,8 +4300,8 @@ struct ABServerUGC_SearchContents final
 {
 public:
 	struct FAccelByteModelsUGCSearchContentsRequest Request;                                         // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0098(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x009C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3294,8 +4314,8 @@ struct ABServerUGC_SearchContentsSpecificToChannel final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCSearchContentsRequest Request;                                         // 0x0010(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x00A8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x00AC(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3306,8 +4326,8 @@ DUMPER7_ASSERTS_ABServerUGC_SearchContentsSpecificToChannel;
 struct ABSessionAttribute_GetAllSessionAttribute final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsGetAllSessionAttributesResponse& Response)> OnResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetAllSessionAttributesResponse& Response)> OnResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionAttribute_GetAllSessionAttribute;
@@ -3318,8 +4338,8 @@ struct ABSessionAttribute_GetSessionAttribute final
 {
 public:
 	struct FGetSessionAttributeRequest            Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetSessionAttributesResponse& Response)> OnResponse; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGetSessionAttributesResponse& Response)> OnResponse; // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionAttribute_GetSessionAttribute;
@@ -3330,8 +4350,8 @@ struct ABSessionAttribute_SetSessionAttribute final
 {
 public:
 	struct FSetSessionAttributeRequest            Request;                                           // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSetSessionAttributesResponse& Response)> OnResponse; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSetSessionAttributesResponse& Response)> OnResponse; // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0048(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionAttribute_SetSessionAttribute;
@@ -3349,9 +4369,9 @@ public:
 	int32                                         MaxSpectator;                                      // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0050(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0050(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_CreateGameSessionPrivate;
 
@@ -3365,9 +4385,9 @@ public:
 	class FString                                 GameVersion;                                       // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BotCount;                                          // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxPlayer;                                         // 0x0034(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0038(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0058(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0038(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0058(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x006C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_CreateGameSessionPublic;
 
@@ -3376,9 +4396,9 @@ DUMPER7_ASSERTS_ABSessionBrowser_CreateGameSessionPublic;
 struct ABSessionBrowser_CreateGameSessionTypeSpecificByStruct final
 {
 public:
-	struct FAccelByteModelsSessionBrowserCreateRequest CreateSessionRequest;                         // 0x0000(0x00A8)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x00A8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsSessionBrowserCreateRequest CreateSessionRequest;                         // 0x0000(0x00A8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x00A8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_CreateGameSessionTypeSpecificByStruct;
 
@@ -3397,9 +4417,9 @@ public:
 	int32                                         MaxSpectator;                                      // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0048(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0058(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0058(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_CreateGameSessionTypeSpecifiedByEnum;
 
@@ -3417,9 +4437,9 @@ public:
 	int32                                         MaxSpectator;                                      // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Password;                                          // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0060(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     OtherSettings;                                     // 0x0060(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_CreateGameSessionTypeSpecifiedByString;
 
@@ -3429,8 +4449,8 @@ struct ABSessionBrowser_GetGameSession final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_GetGameSession;
 
@@ -3442,8 +4462,8 @@ public:
 	EAccelByteSessionType                         SessionType;                                       // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 GameMode;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0040(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0044(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3458,8 +4478,8 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 GameMode;                                          // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MatchExist;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0050(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0054(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3472,8 +4492,8 @@ struct ABSessionBrowser_GetGameSessionsByTypeString final
 public:
 	class FString                                 SessionTypeString;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GameMode;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3487,8 +4507,8 @@ public:
 	class FString                                 SessionTypeString;                                 // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 GameMode;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MatchExist;                                        // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetResult& Response)> OnSuccess;       // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0058(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x005C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3499,9 +4519,9 @@ DUMPER7_ASSERTS_ABSessionBrowser_GetGameSessionsByTypeStringAndMatchExist;
 struct ABSessionBrowser_GetGameSessionsByUserIds final
 {
 public:
-	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetByUserIdsResult& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserGetByUserIdsResult& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_GetGameSessionsByUserIds;
 
@@ -3511,8 +4531,8 @@ struct ABSessionBrowser_GetRecentPlayer final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserRecentPlayerGetResult& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserRecentPlayerGetResult& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3525,8 +4545,8 @@ struct ABSessionBrowser_JoinSession final
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_JoinSession;
 
@@ -3539,8 +4559,8 @@ public:
 	class FString                                 PlayerToAdd;                                       // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AsSpectator;                                       // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABSessionBrowser_RegisterPlayer;
@@ -3551,8 +4571,8 @@ struct ABSessionBrowser_RemoveGameSession final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_RemoveGameSession;
 
@@ -3563,8 +4583,8 @@ struct ABSessionBrowser_UnregisterPlayer final
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PlayerToRemove;                                    // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserAddPlayerResponse& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_UnregisterPlayer;
 
@@ -3576,8 +4596,8 @@ public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxPlayer;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CurrentPlayerCount;                                // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_UpdateGameSession;
 
@@ -3588,8 +4608,8 @@ struct ABSessionBrowser_UpdateGameSessionByStruct final
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsSessionBrowserUpdateRequest UpdateSessionRequest;                         // 0x0010(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_UpdateGameSessionByStruct;
 
@@ -3599,9 +4619,9 @@ struct ABSessionBrowser_UpdateGameSettings final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TMap<class FString, class FString>            Settings;                                          // 0x0010(0x0050)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TMap<class FString, class FString>            Settings;                                          // 0x0010(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_UpdateGameSettings;
 
@@ -3611,9 +4631,9 @@ struct ABSessionBrowser_UpdateGameSettingsByJsonObject final
 {
 public:
 	class FString                                 SessionId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FJsonObjectWrapper                     Settings;                                          // 0x0010(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	struct FJsonObjectWrapper                     Settings;                                          // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsSessionBrowserData& Response)> OnSuccess;            // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSessionBrowser_UpdateGameSettingsByJsonObject;
 
@@ -3632,7 +4652,7 @@ DUMPER7_ASSERTS_ABSignaling_SendSignalingMessage;
 struct ABSignaling_SetSignalingP2PNotif final
 {
 public:
-	TDelegate<void(const class FString& UserID, const class FString& Message)> OnNotif;              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const class FString& UserID, const class FString& Message)> OnNotif;              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABSignaling_SetSignalingP2PNotif;
 
@@ -3641,10 +4661,10 @@ DUMPER7_ASSERTS_ABSignaling_SetSignalingP2PNotif;
 struct ABStatistic_BulkFetchStatItemsValue final
 {
 public:
-	class FString                                 StatCode;                                          // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 StatCode;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         UserIds;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsStatItemValueResponse>& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsStatItemValueResponse>& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABStatistic_BulkFetchStatItemsValue;
 
@@ -3654,8 +4674,8 @@ struct ABStatistic_CreateUserStatItems final
 {
 public:
 	TArray<class FString>                         StatCodes;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsBulkStatItemOperationResultResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsBulkStatItemOperationResultResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABStatistic_CreateUserStatItems;
 
@@ -3664,8 +4684,8 @@ DUMPER7_ASSERTS_ABStatistic_CreateUserStatItems;
 struct ABStatistic_GetAllUserStatItems final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteStatisticSortBy                     SortBy;                                            // 0x0030(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3679,8 +4699,8 @@ struct ABStatistic_GetGlobalStatItemsByStatCode final
 {
 public:
 	class FString                                 StatCode;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Response)> OnSuccess;   // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Response)> OnSuccess;   // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABStatistic_GetGlobalStatItemsByStatCode;
 
@@ -3691,8 +4711,8 @@ struct ABStatistic_GetUserStatItems final
 public:
 	TArray<class FString>                         StatCodes;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Tags;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteStatisticSortBy                     SortBy;                                            // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3706,10 +4726,35 @@ struct ABStatistic_IncrementUserStatItems final
 {
 public:
 	TArray<struct FAccelByteModelsBulkStatItemInc> Data;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FArrayModelsBulkStatItemOperationResultResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FArrayModelsBulkStatItemOperationResultResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABStatistic_IncrementUserStatItems;
+
+// Function AccelByteUe4Sdk.ABStatistic.ListGlobalStatItems
+// 0x0030 (0x0030 - 0x0000)
+struct ABStatistic_ListGlobalStatItems final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABStatistic_ListGlobalStatItems;
+
+// Function AccelByteUe4Sdk.ABStatistic.ListGlobalStatItemsWithFilter
+// 0x0040 (0x0040 - 0x0000)
+struct ABStatistic_ListGlobalStatItemsWithFilter final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsGlobalStatItemPagingSlicedResult& Response)> OnSuccess; // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         StatCodesFilter;                                   // 0x0028(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABStatistic_ListGlobalStatItemsWithFilter;
 
 // Function AccelByteUe4Sdk.ABUGC.AddDownloadContentCountV2
 // 0x0038 (0x0038 - 0x0000)
@@ -3717,8 +4762,8 @@ struct ABUGC_AddDownloadContentCountV2 final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCAddDownloadContentCountResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCAddDownloadContentCountResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_AddDownloadContentCountV2;
 
@@ -3728,8 +4773,8 @@ struct ABUGC_BulkGetContentByShareCode final
 {
 public:
 	TArray<class FString>                         ShareCodes;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_BulkGetContentByShareCode;
 
@@ -3739,8 +4784,8 @@ struct ABUGC_BulkGetContentByShareCodeV2 final
 {
 public:
 	TArray<class FString>                         ShareCodes;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)> OnSuccess;  // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)> OnSuccess;  // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_BulkGetContentByShareCodeV2;
 
@@ -3750,8 +4795,8 @@ struct ABUGC_CreateChannel final
 {
 public:
 	class FString                                 ChannelName;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCChannelResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCChannelResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_CreateChannel;
 
@@ -3767,8 +4812,8 @@ public:
 	TArray<class FString>                         Tags;                                              // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Preview;                                           // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 FileExtension;                                     // 0x0060(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentType;                                       // 0x0098(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_CreateContent;
@@ -3780,8 +4825,8 @@ struct ABUGC_CreateContentByStruct final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCRequest             UGCRequest;                                        // 0x0010(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00C0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00D4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00C0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00D4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_CreateContentByStruct;
 
@@ -3792,8 +4837,8 @@ struct ABUGC_CreateContentV2 final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsCreateUGCRequestV2     CreateRequest;                                     // 0x0010(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCCreateUGCResponseV2& Response)> OnSuccess;        // 0x0090(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00A4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCCreateUGCResponseV2& Response)> OnSuccess;        // 0x0090(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00A4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_CreateContentV2;
 
@@ -3803,8 +4848,8 @@ struct ABUGC_DeleteChannel final
 {
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_DeleteChannel;
 
@@ -3815,8 +4860,8 @@ struct ABUGC_DeleteContent final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_DeleteContent;
 
@@ -3827,8 +4872,8 @@ struct ABUGC_DeleteContentByShareCode final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ShareCode;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_DeleteContentByShareCode;
 
@@ -3839,8 +4884,8 @@ struct ABUGC_DeleteContentScreenshotV2 final
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ScreenshotId;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_DeleteContentScreenshotV2;
 
@@ -3851,10 +4896,21 @@ struct ABUGC_DeleteContentV2 final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_DeleteContentV2;
+
+// Function AccelByteUe4Sdk.ABUGC.DeleteStagingContent
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_DeleteStagingContent final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_DeleteStagingContent;
 
 // Function AccelByteUe4Sdk.ABUGC.GenerateUploadContentURLV2
 // 0x0068 (0x0068 - 0x0000)
@@ -3864,8 +4920,8 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUploadContentURLRequestV2 UploadRequest;                                  // 0x0020(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCUploadContentURLResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUploadContentURLResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GenerateUploadContentURLV2;
 
@@ -3874,8 +4930,8 @@ DUMPER7_ASSERTS_ABUGC_GenerateUploadContentURLV2;
 struct ABUGC_GetChannels final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUGCChannelsPagingResponse& Response)> OnSuccess;     // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCChannelsPagingResponse& Response)> OnSuccess;     // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ChannelName;                                       // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3888,12 +4944,23 @@ struct ABUGC_GetChannelsByUserId final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCChannelsPagingResponse& Response)> OnSuccess;     // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCChannelsPagingResponse& Response)> OnSuccess;     // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetChannelsByUserId;
+
+// Function AccelByteUe4Sdk.ABUGC.GetContentBulk
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_GetContentBulk final
+{
+public:
+	TArray<class FString>                         ContentIds;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_GetContentBulk;
 
 // Function AccelByteUe4Sdk.ABUGC.GetContentBulkByIdsV2
 // 0x0038 (0x0038 - 0x0000)
@@ -3901,8 +4968,8 @@ struct ABUGC_GetContentBulkByIdsV2 final
 {
 public:
 	TArray<class FString>                         ContentIds;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)> OnSuccess;  // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)> OnSuccess;  // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentBulkByIdsV2;
 
@@ -3912,8 +4979,8 @@ struct ABUGC_GetContentByContentId final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentByContentId;
 
@@ -3923,8 +4990,8 @@ struct ABUGC_GetContentByContentIdV2 final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentByContentIdV2;
 
@@ -3934,8 +5001,8 @@ struct ABUGC_GetContentByShareCode final
 {
 public:
 	class FString                                 ShareCode;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentByShareCode;
 
@@ -3945,8 +5012,8 @@ struct ABUGC_GetContentByShareCodeV2 final
 {
 public:
 	class FString                                 ShareCode;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentByShareCodeV2;
 
@@ -3956,8 +5023,8 @@ struct ABUGC_GetContentPreviewAsIntArray final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<uint8>& Response)> OnSuccess;                                        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<uint8>& Response)> OnSuccess;                                        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentPreviewAsIntArray;
 
@@ -3967,8 +5034,8 @@ struct ABUGC_GetContentPreviewAsStruct final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCPreview& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCPreview& Response)> OnSuccess;                    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetContentPreviewAsStruct;
 
@@ -3978,8 +5045,8 @@ struct ABUGC_GetListContentDownloaderV2 final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCGetPaginatedContentDownloaderResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCGetPaginatedContentDownloaderResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 UserId;                                            // 0x0038(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x004C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3994,8 +5061,8 @@ struct ABUGC_GetListContentLikerV2 final
 {
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCGetPaginatedContentLikerResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCGetPaginatedContentLikerResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4007,20 +5074,47 @@ struct ABUGC_GetListFollowers final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCGetListFollowersPagingResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCGetListFollowersPagingResponse& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetListFollowers;
+
+// Function AccelByteUe4Sdk.ABUGC.GetStagingContentById
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_GetStagingContentById final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCStagingContentResponse& Response)> OnSuccess;     // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_GetStagingContentById;
+
+// Function AccelByteUe4Sdk.ABUGC.GetStagingContents
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_GetStagingContents final
+{
+public:
+	EStagingContentRequestStatus                  Status;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FAccelByteModelsUGCPaginatedListStagingContentResponse& Response)> OnSuccess; // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteStagingContentUtilitiesSortBy       SortBy;                                            // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUGC_GetStagingContents;
 
 // Function AccelByteUe4Sdk.ABUGC.GetTags
 // 0x0030 (0x0030 - 0x0000)
 struct ABUGC_GetTags final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUGCTagsPagingResponse& Response)> OnSuccess;         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCTagsPagingResponse& Response)> OnSuccess;         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4031,12 +5125,25 @@ DUMPER7_ASSERTS_ABUGC_GetTags;
 struct ABUGC_GetTypes final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsUGCTypesPagingResponse& Response)> OnSuccess;        // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCTypesPagingResponse& Response)> OnSuccess;        // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x002C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_GetTypes;
+
+// Function AccelByteUe4Sdk.ABUGC.GetUserContent
+// 0x0040 (0x0040 - 0x0000)
+struct ABUGC_GetUserContent final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentPageResponse& Response)> OnSuccess;        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_GetUserContent;
 
 // Function AccelByteUe4Sdk.ABUGC.GetUserContentsV2
 // 0x0040 (0x0040 - 0x0000)
@@ -4044,8 +5151,8 @@ struct ABUGC_GetUserContentsV2 final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4064,8 +5171,8 @@ public:
 	TArray<class FString>                         Tags;                                              // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Preview;                                           // 0x0060(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 FileExtension;                                     // 0x0070(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentType;                                       // 0x00A8(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContent;
@@ -4078,8 +5185,8 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ShareCode;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCUpdateRequest       ModifyRequest;                                     // 0x0020(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00D8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00EC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00D8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00EC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContentByShareCode;
 
@@ -4091,8 +5198,8 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCRequest             UGCRequest;                                        // 0x0020(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00D0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00E4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00D0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00E4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContentByStruct;
 
@@ -4104,8 +5211,8 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCUpdateRequest       UGCRequest;                                        // 0x0020(0x00B8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00D8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00EC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x00D8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00EC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContentByUpdateStruct;
 
@@ -4117,8 +5224,8 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCModifyContentShareCodeRequest ModifyContentShareCodeRequest;           // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCResponse& Response)> OnSuccess;                   // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContentShareCode;
 
@@ -4130,8 +5237,8 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCModifyContentShareCodeRequest ModifyContentShareCodeRequest;           // 0x0020(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCCreateUGCResponseV2& Response)> OnSuccess;        // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCCreateUGCResponseV2& Response)> OnSuccess;        // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContentShareCodeV2;
 
@@ -4143,10 +5250,169 @@ public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsModifyUGCRequestV2     ModifyRequest;                                     // 0x0020(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCModifyUGCResponseV2& Response)> OnSuccess;        // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCModifyUGCResponseV2& Response)> OnSuccess;        // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_ModifyContentV2;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetContentBulk
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_PublicGetContentBulk final
+{
+public:
+	TArray<class FString>                         ContentIds;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponse>& Response)> OnSuccess;    // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetContentBulk;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetContentBulkByIdsV2
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_PublicGetContentBulkByIdsV2 final
+{
+public:
+	TArray<class FString>                         ContentIds;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const TArray<struct FAccelByteModelsUGCContentResponseV2>& Response)> OnSuccess;  // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetContentBulkByIdsV2;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetContentByContentId
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_PublicGetContentByContentId final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetContentByContentId;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetContentByContentIdV2
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_PublicGetContentByContentIdV2 final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetContentByContentIdV2;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetContentByShareCode
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_PublicGetContentByShareCode final
+{
+public:
+	class FString                                 ShareCode;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponse& Response)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetContentByShareCode;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetContentByShareCodeV2
+// 0x0038 (0x0038 - 0x0000)
+struct ABUGC_PublicGetContentByShareCodeV2 final
+{
+public:
+	class FString                                 ShareCode;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentResponseV2& Response)> OnSuccess;          // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetContentByShareCodeV2;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetUserContent
+// 0x0040 (0x0040 - 0x0000)
+struct ABUGC_PublicGetUserContent final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCContentPageResponse& Response)> OnSuccess;        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetUserContent;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicGetUserContentsV2
+// 0x0040 (0x0040 - 0x0000)
+struct ABUGC_PublicGetUserContentsV2 final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicGetUserContentsV2;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicSearchAllContents
+// 0x00A0 (0x00A0 - 0x0000)
+struct ABUGC_PublicSearchAllContents final
+{
+public:
+	struct FAccelByteModelsUGCSearchContentsRequest Request;                                         // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0098(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x009C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_PublicSearchAllContents;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicSearchContents
+// 0x00A0 (0x00A0 - 0x0000)
+struct ABUGC_PublicSearchContents final
+{
+public:
+	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Creator;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Type;                                              // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Subtype;                                           // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FString>                         Tags;                                              // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          IsOfficial;                                        // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 UserId;                                            // 0x0058(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0068(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x007C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUgcSortBy                           SortBy;                                            // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUgcOrderBy                          OrderBy;                                           // 0x0091(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_92[0x2];                                       // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Limit;                                             // 0x0094(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x0098(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUGC_PublicSearchContents;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicSearchContentsSpecificToChannelV2
+// 0x0048 (0x0048 - 0x0000)
+struct ABUGC_PublicSearchContentsSpecificToChannelV2 final
+{
+public:
+	class FString                                 ChannelId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUGCContentSortByV2                  SortBy;                                            // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUGC_PublicSearchContentsSpecificToChannelV2;
+
+// Function AccelByteUe4Sdk.ABUGC.PublicSearchContentsV2
+// 0x0078 (0x0078 - 0x0000)
+struct ABUGC_PublicSearchContentsV2 final
+{
+public:
+	struct FAccelByteModelsUGCFilterRequestV2     Filter;                                            // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Limit;                                             // 0x0068(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Offset;                                            // 0x006C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteUGCContentSortByV2                  SortBy;                                            // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUGC_PublicSearchContentsV2;
 
 // Function AccelByteUe4Sdk.ABUGC.SearchAllContents
 // 0x00A0 (0x00A0 - 0x0000)
@@ -4154,8 +5420,8 @@ struct ABUGC_SearchAllContents final
 {
 public:
 	struct FAccelByteModelsUGCSearchContentsRequest Request;                                         // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0098(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x009C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4174,8 +5440,8 @@ public:
 	bool                                          IsOfficial;                                        // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 UserId;                                            // 0x0058(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0068(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x007C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0068(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x007C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteUgcSortBy                           SortBy;                                            // 0x0090(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteUgcOrderBy                          OrderBy;                                           // 0x0091(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_92[0x2];                                       // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4192,8 +5458,8 @@ struct ABUGC_SearchContentsByChannelId final
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCSearchContentsRequest Request;                                         // 0x0010(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x00A8(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x00AC(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4213,8 +5479,8 @@ public:
 	bool                                          IsOfficial;                                        // 0x0060(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 UserId;                                            // 0x0068(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponse& Response)> OnSuccess; // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteUgcSortBy                           SortBy;                                            // 0x00A0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteUgcOrderBy                          OrderBy;                                           // 0x00A1(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A2[0x2];                                       // 0x00A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4230,8 +5496,8 @@ struct ABUGC_SearchContentsSpecificToChannelV2 final
 {
 public:
 	class FString                                 ChannelId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0038(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x003C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteUGCContentSortByV2                  SortBy;                                            // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4245,8 +5511,8 @@ struct ABUGC_SearchContentsV2 final
 {
 public:
 	struct FAccelByteModelsUGCFilterRequestV2     Filter;                                            // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCSearchContentsPagingResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Limit;                                             // 0x0068(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x006C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteUGCContentSortByV2                  SortBy;                                            // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -4263,8 +5529,8 @@ public:
 	class FString                                 ContentId;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FileExtension;                                     // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 S3Key;                                             // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCUpdateContentFileLocationResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUpdateContentFileLocationResponseV2& Response)> OnSuccess; // 0x0040(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_UpdateContentFileLocationV2;
 
@@ -4275,8 +5541,8 @@ struct ABUGC_UpdateContentScreenshotV2 final
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCUpdateScreenshotsV2 ScreenshotsRequest;                                // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCUpdateScreenshotsV2& Response)> OnSuccess;        // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUpdateScreenshotsV2& Response)> OnSuccess;        // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_UpdateContentScreenshotV2;
 
@@ -4288,8 +5554,8 @@ public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFollowStatus;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsUGCUpdateFollowStatusToUserResponse& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUpdateFollowStatusToUserResponse& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABUGC_UpdateFollowStatusToUser;
@@ -4302,8 +5568,8 @@ public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLikeStatus;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsUGCUpdateLikeStatusToContentResponse& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUpdateLikeStatusToContentResponse& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABUGC_UpdateLikeStatusToContent;
@@ -4316,11 +5582,23 @@ public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLikeStatus;                                       // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsUGCUpdateLikeStatusToContentResponse& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUpdateLikeStatusToContentResponse& Response)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABUGC_UpdateLikeStatusToContentV2;
+
+// Function AccelByteUe4Sdk.ABUGC.UpdateStagingContent
+// 0x0058 (0x0058 - 0x0000)
+struct ABUGC_UpdateStagingContent final
+{
+public:
+	class FString                                 ContentId;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FAccelByteModelsUGCUpdateContentFileLocationRequestV2 UpdateRequest;                      // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCStagingContentResponse& Response)> OnSuccess;     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUGC_UpdateStagingContent;
 
 // Function AccelByteUe4Sdk.ABUGC.UploadContentScreenshotV2
 // 0x0048 (0x0048 - 0x0000)
@@ -4329,8 +5607,8 @@ struct ABUGC_UploadContentScreenshotV2 final
 public:
 	class FString                                 ContentId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FAccelByteModelsUGCUploadScreenshotsRequestV2 ScreenshotsRequest;                         // 0x0010(0x0010)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUGCUpdateContentScreenshotResponse& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsUGCUpdateContentScreenshotResponse& Response)> OnSuccess; // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUGC_UploadContentScreenshotV2;
 
@@ -4342,21 +5620,10 @@ public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         OtherPlatformUserId;                               // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FBulkPlatformUserIdResponse& Response)> OnSuccess;                   // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FBulkPlatformUserIdResponse& Response)> OnSuccess;                   // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_BulkGetUserByOtherPlatformUserIds;
-
-// Function AccelByteUe4Sdk.ABUser.BulkGetUserInfo
-// 0x0038 (0x0038 - 0x0000)
-struct ABUser_BulkGetUserInfo final
-{
-public:
-	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FListBulkUserInfo& Response)> OnSuccess;                             // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_ABUser_BulkGetUserInfo;
 
 // Function AccelByteUe4Sdk.ABUser.ForcedLinkOtherPlatform
 // 0x0040 (0x0040 - 0x0000)
@@ -4366,8 +5633,8 @@ public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PlatformUserId;                                    // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FAccountLinkConflictErrorJson& Response)> OnError; // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FAccountLinkConflictErrorJson& Response)> OnError; // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_ForcedLinkOtherPlatform;
 
@@ -4376,8 +5643,8 @@ DUMPER7_ASSERTS_ABUser_ForcedLinkOtherPlatform;
 struct ABUser_GetCountryFromIP final
 {
 public:
-	TDelegate<void(const struct FCountryInfo& Response)> OnSuccess;                                  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FCountryInfo& Response)> OnSuccess;                                  // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_GetCountryFromIP;
 
@@ -4386,33 +5653,30 @@ DUMPER7_ASSERTS_ABUser_GetCountryFromIP;
 struct ABUser_GetData final
 {
 public:
-	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_GetData;
+
+// Function AccelByteUe4Sdk.ABUser.GetDataWithLinkedPlatform
+// 0x0028 (0x0028 - 0x0000)
+struct ABUser_GetDataWithLinkedPlatform final
+{
+public:
+	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_GetDataWithLinkedPlatform;
 
 // Function AccelByteUe4Sdk.ABUser.GetPlatformLinks
 // 0x0028 (0x0028 - 0x0000)
 struct ABUser_GetPlatformLinks final
 {
 public:
-	TDelegate<void(const struct FPagedPlatformLinks& Response)> OnSuccess;                           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FPagedPlatformLinks& Response)> OnSuccess;                           // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_GetPlatformLinks;
-
-// Function AccelByteUe4Sdk.ABUser.GetUserByOtherPlatformUserId
-// 0x0040 (0x0040 - 0x0000)
-struct ABUser_GetUserByOtherPlatformUserId final
-{
-public:
-	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 OtherPlatformUserId;                               // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_ABUser_GetUserByOtherPlatformUserId;
 
 // Function AccelByteUe4Sdk.ABUser.GetUserByUserId
 // 0x0038 (0x0038 - 0x0000)
@@ -4420,8 +5684,8 @@ struct ABUser_GetUserByUserId final
 {
 public:
 	class FString                                 UserId;                                            // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FSimpleUserData& Response)> OnSuccess;                               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FSimpleUserData& Response)> OnSuccess;                               // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_GetUserByUserId;
 
@@ -4430,10 +5694,21 @@ DUMPER7_ASSERTS_ABUser_GetUserByUserId;
 struct ABUser_GetUserEligibleToPlay final
 {
 public:
-	TDelegate<void(bool Response)>                OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(bool Response)>                OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_GetUserEligibleToPlay;
+
+// Function AccelByteUe4Sdk.ABUser.GetUserOtherPlatformBasicPublicInfo
+// 0x0048 (0x0048 - 0x0000)
+struct ABUser_GetUserOtherPlatformBasicPublicInfo final
+{
+public:
+	struct FPlatformAccountInfoRequest            Request;                                           // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccountUserPlatformInfosResponse& Response)> OnSuccess;             // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_GetUserOtherPlatformBasicPublicInfo;
 
 // Function AccelByteUe4Sdk.ABUser.LinkOtherPlatform
 // 0x0040 (0x0040 - 0x0000)
@@ -4443,8 +5718,8 @@ public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Ticket;                                            // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FAccountLinkConflictErrorJson& Response)> OnError; // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FAccountLinkConflictErrorJson& Response)> OnError; // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_LinkOtherPlatform;
 
@@ -4453,31 +5728,62 @@ DUMPER7_ASSERTS_ABUser_LinkOtherPlatform;
 struct ABUser_LoginByExchangeCodeForToken final
 {
 public:
-	class FString                                 Code;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 Code;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_LoginByExchangeCodeForToken;
+
+// Function AccelByteUe4Sdk.ABUser.LoginByExchangeCodeForTokenV4
+// 0x0038 (0x0038 - 0x0000)
+struct ABUser_LoginByExchangeCodeForTokenV4 final
+{
+public:
+	class FString                                 Code;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_LoginByExchangeCodeForTokenV4;
 
 // Function AccelByteUe4Sdk.ABUser.LoginWithDeviceId
 // 0x0028 (0x0028 - 0x0000)
 struct ABUser_LoginWithDeviceId final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_LoginWithDeviceId;
+
+// Function AccelByteUe4Sdk.ABUser.LoginWithDeviceIdV4
+// 0x0028 (0x0028 - 0x0000)
+struct ABUser_LoginWithDeviceIdV4 final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_LoginWithDeviceIdV4;
 
 // Function AccelByteUe4Sdk.ABUser.LoginWithLauncher
 // 0x0028 (0x0028 - 0x0000)
 struct ABUser_LoginWithLauncher final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_LoginWithLauncher;
+
+// Function AccelByteUe4Sdk.ABUser.LoginWithLauncherV4
+// 0x0028 (0x0028 - 0x0000)
+struct ABUser_LoginWithLauncherV4 final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_LoginWithLauncherV4;
 
 // Function AccelByteUe4Sdk.ABUser.LoginWithOtherPlatform
 // 0x0048 (0x0048 - 0x0000)
@@ -4487,8 +5793,8 @@ public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PlatformToken;                                     // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCreateHeadless;                                   // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
@@ -4501,22 +5807,61 @@ struct ABUser_LoginWithOtherPlatformId final
 public:
 	class FString                                 PlatformId;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 PlatformToken;                                     // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bCreateHeadless;                                   // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABUser_LoginWithOtherPlatformId;
+
+// Function AccelByteUe4Sdk.ABUser.LoginWithOtherPlatformIdV4
+// 0x0050 (0x0050 - 0x0000)
+struct ABUser_LoginWithOtherPlatformIdV4 final
+{
+public:
+	class FString                                 PlatformId;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PlatformToken;                                     // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCreateHeadless;                                   // 0x0048(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUser_LoginWithOtherPlatformIdV4;
+
+// Function AccelByteUe4Sdk.ABUser.LoginWithOtherPlatformV4
+// 0x0048 (0x0048 - 0x0000)
+struct ABUser_LoginWithOtherPlatformV4 final
+{
+public:
+	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 PlatformToken;                                     // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x002C(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCreateHeadless;                                   // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUser_LoginWithOtherPlatformV4;
 
 // Function AccelByteUe4Sdk.ABUser.LoginWithRefreshToken
 // 0x0028 (0x0028 - 0x0000)
 struct ABUser_LoginWithRefreshToken final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_LoginWithRefreshToken;
+
+// Function AccelByteUe4Sdk.ABUser.LoginWithRefreshTokenV4
+// 0x0028 (0x0028 - 0x0000)
+struct ABUser_LoginWithRefreshTokenV4 final
+{
+public:
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_LoginWithRefreshTokenV4;
 
 // Function AccelByteUe4Sdk.ABUser.LoginWithUsername
 // 0x0048 (0x0048 - 0x0000)
@@ -4525,18 +5870,30 @@ struct ABUser_LoginWithUsername final
 public:
 	class FString                                 Username;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_LoginWithUsername;
+
+// Function AccelByteUe4Sdk.ABUser.LoginWithUsernameV4
+// 0x0048 (0x0048 - 0x0000)
+struct ABUser_LoginWithUsernameV4 final
+{
+public:
+	class FString                                 Username;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Password;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_LoginWithUsernameV4;
 
 // Function AccelByteUe4Sdk.ABUser.Logout
 // 0x0028 (0x0028 - 0x0000)
 struct ABUser_Logout final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Logout;
 
@@ -4550,8 +5907,8 @@ public:
 	class FString                                 DisplayName;                                       // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Country;                                           // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DateOfBirth;                                       // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess;                             // 0x0050(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess;                             // 0x0050(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Register;
 
@@ -4566,19 +5923,19 @@ public:
 	class FString                                 DisplayName;                                       // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Country;                                           // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DateOfBirth;                                       // 0x0050(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess;                             // 0x0060(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess;                             // 0x0060(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Registerv2;
 
 // Function AccelByteUe4Sdk.ABUser.Registerv3
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00C8 (0x00C8 - 0x0000)
 struct ABUser_Registerv3 final
 {
 public:
-	struct FRegisterRequestv3                     RegisterRequest;                                   // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess;                             // 0x0080(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FRegisterRequestv3                     RegisterRequest;                                   // 0x0000(0x00A0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FRegisterResponse& Response)> OnSuccess;                             // 0x00A0(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00B4(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Registerv3;
 
@@ -4590,8 +5947,8 @@ public:
 	class FString                                 VerificationCode;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 EmailAddress;                                      // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 NewPassword;                                       // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_ResetPassword;
 
@@ -4601,10 +5958,40 @@ struct ABUser_SearchUsers final
 {
 public:
 	class FString                                 Query;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess;                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess;                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_SearchUsers;
+
+// Function AccelByteUe4Sdk.ABUser.SearchUsersByOtherPlatformId
+// 0x0050 (0x0050 - 0x0000)
+struct ABUser_SearchUsersByOtherPlatformId final
+{
+public:
+	class FString                                 Query;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 PlatformId;                                        // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteSearchPlatformType                  PlatformBy;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess;                         // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0038(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUser_SearchUsersByOtherPlatformId;
+
+// Function AccelByteUe4Sdk.ABUser.SearchUsersByOtherPlatformType
+// 0x0040 (0x0040 - 0x0000)
+struct ABUser_SearchUsersByOtherPlatformType final
+{
+public:
+	class FString                                 Query;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelBytePlatformType                        PlatformType;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAccelByteSearchPlatformType                  PlatformBy;                                        // 0x0011(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess;                         // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_ABUser_SearchUsersByOtherPlatformType;
 
 // Function AccelByteUe4Sdk.ABUser.SearchUsersByType
 // 0x0040 (0x0040 - 0x0000)
@@ -4614,8 +6001,8 @@ public:
 	class FString                                 Query;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAccelByteSearchType                          By;                                                // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess;                         // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FPagedPublicUsersInfo& Response)> OnSuccess;                         // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABUser_SearchUsersByType;
@@ -4626,8 +6013,8 @@ struct ABUser_SendResetPasswordCode final
 {
 public:
 	class FString                                 EmailAddress;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_SendResetPasswordCode;
 
@@ -4636,8 +6023,8 @@ DUMPER7_ASSERTS_ABUser_SendResetPasswordCode;
 struct ABUser_SendUpdateEmailVerificationCode final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_SendUpdateEmailVerificationCode;
 
@@ -4647,8 +6034,8 @@ struct ABUser_SendUpgradeVerificationCode final
 {
 public:
 	class FString                                 EmailAddress;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_SendUpgradeVerificationCode;
 
@@ -4657,8 +6044,8 @@ DUMPER7_ASSERTS_ABUser_SendUpgradeVerificationCode;
 struct ABUser_SendVerificationCode final
 {
 public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_SendVerificationCode;
 
@@ -4667,11 +6054,22 @@ DUMPER7_ASSERTS_ABUser_SendVerificationCode;
 struct ABUser_TryRelogin final
 {
 public:
-	class FString                                 PlatformUserID;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	class FString                                 PlatformUserID;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_TryRelogin;
+
+// Function AccelByteUe4Sdk.ABUser.TryReloginV4
+// 0x0038 (0x0038 - 0x0000)
+struct ABUser_TryReloginV4 final
+{
+public:
+	class FString                                 PlatformUserID;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsLoginQueueTicketInfo& Response)> OnSuccess;          // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrrMessage, const struct FErrorOAuthInfo& ErrorInfo)> OnError; // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_TryReloginV4;
 
 // Function AccelByteUe4Sdk.ABUser.UnlinkAllOtherPlatform
 // 0x002C (0x002C - 0x0000)
@@ -4680,8 +6078,8 @@ struct ABUser_UnlinkAllOtherPlatform final
 public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UnlinkAllOtherPlatform;
 
@@ -4691,8 +6089,8 @@ struct ABUser_UnlinkAllOtherPlatformId final
 {
 public:
 	class FString                                 PlatformId;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UnlinkAllOtherPlatformId;
 
@@ -4703,8 +6101,8 @@ struct ABUser_UnlinkOtherPlatform final
 public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UnlinkOtherPlatform;
 
@@ -4714,8 +6112,8 @@ struct ABUser_UnlinkOtherPlatformId final
 {
 public:
 	class FString                                 PlatformId;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UnlinkOtherPlatformId;
 
@@ -4726,8 +6124,8 @@ struct ABUser_UnlinkOtherPlatformWithCustomErrorHandler final
 public:
 	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0018(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UnlinkOtherPlatformWithCustomErrorHandler;
 
@@ -4736,20 +6134,20 @@ DUMPER7_ASSERTS_ABUser_UnlinkOtherPlatformWithCustomErrorHandler;
 struct ABUser_UpdateEmail final
 {
 public:
-	struct FUpdateEmailRequest                    UpdateEmailRequest;                                // 0x0000(0x0020)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUpdateEmailRequest                    UpdateEmailRequest;                                // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UpdateEmail;
 
 // Function AccelByteUe4Sdk.ABUser.UpdateUser
-// 0x0098 (0x0098 - 0x0000)
+// 0x00A8 (0x00A8 - 0x0000)
 struct ABUser_UpdateUser final
 {
 public:
-	struct FUserUpdateRequest                     UpdateRequest;                                     // 0x0000(0x0070)(Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0070(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	struct FUserUpdateRequest                     UpdateRequest;                                     // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0080(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UpdateUser;
 
@@ -4760,8 +6158,8 @@ struct ABUser_Upgrade final
 public:
 	class FString                                 Username;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0020(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Upgrade;
 
@@ -4773,8 +6171,8 @@ public:
 	class FString                                 Username;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 VerificationCode;                                  // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_UpgradeAndVerify;
 
@@ -4786,10 +6184,21 @@ public:
 	class FString                                 EmailAddress;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Username;                                          // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Password;                                          // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccountUserData& Response)> OnSuccess;                              // 0x0030(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Upgradev2;
+
+// Function AccelByteUe4Sdk.ABUser.ValidateUserInput
+// 0x0068 (0x0068 - 0x0000)
+struct ABUser_ValidateUserInput final
+{
+public:
+	struct FUserInputValidationRequest            UserInputValidationRequest;                        // 0x0000(0x0040)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FUserInputValidationResponse& Response)> OnSuccess;                  // 0x0040(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0054(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ABUser_ValidateUserInput;
 
 // Function AccelByteUe4Sdk.ABUser.Verify
 // 0x0038 (0x0038 - 0x0000)
@@ -4797,8 +6206,8 @@ struct ABUser_Verify final
 {
 public:
 	class FString                                 VerificationCode;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABUser_Verify;
 
@@ -4926,8 +6335,8 @@ struct ABWallet_GetWalletInfoByCurrencyCode final
 {
 public:
 	class FString                                 CurrencyCode;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsWalletInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsWalletInfo& Response)> OnSuccess;                    // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABWallet_GetWalletInfoByCurrencyCode;
 
@@ -4937,144 +6346,10 @@ struct ABWallet_GetWalletInfoByCurrencyCodeV2 final
 {
 public:
 	class FString                                 CurrencyCode;                                      // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsWalletInfoResponse& Response)> OnSuccess;            // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsWalletInfoResponse& Response)> OnSuccess;            // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABWallet_GetWalletInfoByCurrencyCodeV2;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.ClaimGlobalAchievements
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsAchievement_ClaimGlobalAchievements final
-{
-public:
-	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_ClaimGlobalAchievements;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.GetAchievement
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsAchievement_GetAchievement final
-{
-public:
-	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMultiLanguageAchievement& Result)> OnSuccess;        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_GetAchievement;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.GetTags
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsAchievement_GetTags final
-{
-public:
-	class FString                                 Name_0;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteAchievementListSortBy               SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedPublicTag& Result)> OnSuccess;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_GetTags;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.QueryAchievements
-// 0x0060 (0x0060 - 0x0000)
-struct AccelByteBlueprintsAchievement_QueryAchievements final
-{
-public:
-	class FString                                 Language;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteAchievementListSortBy               SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedPublicAchievement& Result)> OnSuccess;      // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 TagQuery;                                          // 0x0048(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bGlobal;                                           // 0x0058(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_QueryAchievements;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.QueryGlobalAchievementContributors
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsAchievement_QueryGlobalAchievementContributors final
-{
-public:
-	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteGlobalAchievementContributorsSortBy SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementContributors& Result)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_QueryGlobalAchievementContributors;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.QueryGlobalAchievements
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsAchievement_QueryGlobalAchievements final
-{
-public:
-	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteGlobalAchievementStatus             AchievementStatus;                                 // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteGlobalAchievementListSortBy         SortBy;                                            // 0x0011(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedUserGlobalAchievement& Result)> OnSuccess;  // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_QueryGlobalAchievements;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.QueryGlobalAchievementUserContributed
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsAchievement_QueryGlobalAchievementUserContributed final
-{
-public:
-	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteGlobalAchievementContributorsSortBy SortBy;                                            // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedGlobalAchievementUserContributed& Result)> OnSuccess; // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x003C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0040(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_QueryGlobalAchievementUserContributed;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.QueryUserAchievements
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsAchievement_QueryUserAchievements final
-{
-public:
-	EAccelByteAchievementListSortBy               SortBy;                                            // 0x0000(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsPaginatedUserAchievement& Result)> OnSuccess;        // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x002C(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0030(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          preferUnlocked;                                    // 0x0034(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 TagQuery;                                          // 0x0038(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_QueryUserAchievements;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsAchievement.UnlockAchievement
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsAchievement_UnlockAchievement final
-{
-public:
-	class FString                                 AchievementCode;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsAchievement_UnlockAchievement;
 
 // Function AccelByteUe4Sdk.ABCredentials.GetAccessToken
 // 0x0010 (0x0010 - 0x0000)
@@ -5086,20 +6361,20 @@ public:
 DUMPER7_ASSERTS_ABCredentials_GetAccessToken;
 
 // Function AccelByteUe4Sdk.ABCredentials.GetAccountUserData
-// 0x01A0 (0x01A0 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct ABCredentials_GetAccountUserData final
 {
 public:
-	struct FAccountUserData                       ReturnValue;                                       // 0x0000(0x01A0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FAccountUserData                       ReturnValue;                                       // 0x0000(0x01C0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCredentials_GetAccountUserData;
 
 // Function AccelByteUe4Sdk.ABCredentials.GetAuthToken
-// 0x00D0 (0x00D0 - 0x0000)
+// 0x0110 (0x0110 - 0x0000)
 struct ABCredentials_GetAuthToken final
 {
 public:
-	struct FOauth2Token                           ReturnValue;                                       // 0x0000(0x00D0)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FOauth2Token                           ReturnValue;                                       // 0x0000(0x0110)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCredentials_GetAuthToken;
 
@@ -5203,22 +6478,22 @@ public:
 DUMPER7_ASSERTS_ABCredentials_ScheduleRefreshToken;
 
 // Function AccelByteUe4Sdk.ABCredentials.SetAccountUserData
-// 0x01A0 (0x01A0 - 0x0000)
+// 0x01C0 (0x01C0 - 0x0000)
 struct ABCredentials_SetAccountUserData final
 {
 public:
-	struct FAccountUserData                       InAccountUserData;                                 // 0x0000(0x01A0)(Parm, NativeAccessSpecifierPublic)
+	struct FAccountUserData                       InAccountUserData;                                 // 0x0000(0x01C0)(Parm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABCredentials_SetAccountUserData;
 
 // Function AccelByteUe4Sdk.ABCredentials.SetAuthToken
-// 0x00D8 (0x00D8 - 0x0000)
+// 0x0118 (0x0118 - 0x0000)
 struct ABCredentials_SetAuthToken final
 {
 public:
-	struct FOauth2Token                           NewAuthToken;                                      // 0x0000(0x00D0)(Parm, NativeAccessSpecifierPublic)
-	float                                         CurrentTime;                                       // 0x00D0(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D4[0x4];                                       // 0x00D4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FOauth2Token                           NewAuthToken;                                      // 0x0000(0x0110)(Parm, NativeAccessSpecifierPublic)
+	float                                         CurrentTime;                                       // 0x0110(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_ABCredentials_SetAuthToken;
 
@@ -5249,16 +6524,6 @@ public:
 };
 DUMPER7_ASSERTS_ABCredentials_SetUserEmailAddress;
 
-// Function AccelByteUe4Sdk.ABMultiRegistry.GetApiClient
-// 0x0018 (0x0018 - 0x0000)
-struct ABMultiRegistry_GetApiClient final
-{
-public:
-	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UABApiClient*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_ABMultiRegistry_GetApiClient;
-
 // Function AccelByteUe4Sdk.ABLobby.IsConnected
 // 0x0001 (0x0001 - 0x0000)
 struct ABLobby_IsConnected final
@@ -5274,8 +6539,8 @@ struct ABLobby_RefreshToken final
 {
 public:
 	struct FRefreshTokenRequest                   Request;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRefreshTokenResponse& Response)> OnResponse;         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsRefreshTokenResponse& Response)> OnResponse;         // 0x0010(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLobby_RefreshToken;
@@ -5295,7 +6560,7 @@ DUMPER7_ASSERTS_ABLobby_RequestDS;
 struct ABLobby_SetOnConnected final
 {
 public:
-	TDelegate<void()>                             OnConnected;                                       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void()>                             OnConnected;                                       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLobby_SetOnConnected;
 
@@ -5304,7 +6569,7 @@ DUMPER7_ASSERTS_ABLobby_SetOnConnected;
 struct ABLobby_SetOnConnectFailed final
 {
 public:
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnConnectError;              // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnConnectError;              // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLobby_SetOnConnectFailed;
 
@@ -5313,7 +6578,7 @@ DUMPER7_ASSERTS_ABLobby_SetOnConnectFailed;
 struct ABLobby_SetOnConnectionClosed final
 {
 public:
-	TDelegate<void(int32 StatusCode, const class FString& Reason, bool bWasClean)> OnConnectionClosed; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 StatusCode, const class FString& Reason, bool bWasClean)> OnConnectionClosed; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLobby_SetOnConnectionClosed;
 
@@ -5322,7 +6587,7 @@ DUMPER7_ASSERTS_ABLobby_SetOnConnectionClosed;
 struct ABLobby_SetOnDisconnect final
 {
 public:
-	TDelegate<void(const struct FAccelByteModelsDisconnectNotif& Notif)> OnDisconnected;             // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(const struct FAccelByteModelsDisconnectNotif& Notif)> OnDisconnected;             // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLobby_SetOnDisconnect;
 
@@ -5331,7 +6596,7 @@ DUMPER7_ASSERTS_ABLobby_SetOnDisconnect;
 struct ABLobby_SetOnErrorNotification final
 {
 public:
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnErrorNotification;         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnErrorNotification;         // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ABLobby_SetOnErrorNotification;
 
@@ -5353,1703 +6618,34 @@ public:
 };
 DUMPER7_ASSERTS_ABServerCredentials_GetAccessToken;
 
-// Function AccelByteUe4Sdk.ServerMultiRegistry.GetServerApiClient
+// Function AccelByteUe4Sdk.AccelByteInstance.CreateAccelByteInstance
+// 0x0008 (0x0008 - 0x0000)
+struct AccelByteInstance_CreateAccelByteInstance final
+{
+public:
+	class UAccelByteInstance*                     ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AccelByteInstance_CreateAccelByteInstance;
+
+// Function AccelByteUe4Sdk.AccelByteInstance.GetApiClient
 // 0x0018 (0x0018 - 0x0000)
-struct ServerMultiRegistry_GetServerApiClient final
+struct AccelByteInstance_GetApiClient final
 {
 public:
-	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UServerApiClient*                       ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UABApiClient*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_ServerMultiRegistry_GetServerApiClient;
+DUMPER7_ASSERTS_AccelByteInstance_GetApiClient;
 
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCategory.GetCategory
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsCategory_GetCategory final
-{
-public:
-	class FString                                 ParentPath;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsCategoryInfo& Result)> OnSuccess;                    // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCategory_GetCategory;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCategory.GetChildCategories
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsCategory_GetChildCategories final
-{
-public:
-	class FString                                 Language;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CategoryPath;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsCategoryInfo>& Result)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCategory_GetChildCategories;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCategory.GetDescendantCategories
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsCategory_GetDescendantCategories final
-{
-public:
-	class FString                                 Language;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CategoryPath;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsCategoryInfo>& Result)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCategory_GetDescendantCategories;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCategory.GetRootCategories
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsCategory_GetRootCategories final
-{
-public:
-	class FString                                 Language;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsCategoryInfo>& Result)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCategory_GetRootCategories;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage.CreateSlot
-// 0x0078 (0x0078 - 0x0000)
-struct AccelByteBlueprintsCloudStorage_CreateSlot final
-{
-public:
-	TArray<uint8>                                 Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class FString                                 FileName;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Tags;                                              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class FString                                 Label;                                             // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CustomAttribute;                                   // 0x0040(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSlot& Result)> OnSuccess;                            // 0x0050(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCloudStorage_CreateSlot;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage.DeleteSlot
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsCloudStorage_DeleteSlot final
-{
-public:
-	class FString                                 SlotId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCloudStorage_DeleteSlot;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage.GetAllSlots
-// 0x0028 (0x0028 - 0x0000)
-struct AccelByteBlueprintsCloudStorage_GetAllSlots final
-{
-public:
-	TDelegate<void(const TArray<struct FAccelByteModelsSlot>& Result)> OnSuccess;                    // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCloudStorage_GetAllSlots;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage.GetSlot
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsCloudStorage_GetSlot final
-{
-public:
-	class FString                                 SlotId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<uint8>& Result)>  OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCloudStorage_GetSlot;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage.UpdateSlot
-// 0x0088 (0x0088 - 0x0000)
-struct AccelByteBlueprintsCloudStorage_UpdateSlot final
-{
-public:
-	class FString                                 SlotId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FileName;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<uint8>                                 Data;                                              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Tags;                                              // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class FString                                 Label;                                             // 0x0040(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CustomAttribute;                                   // 0x0050(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSlot& Result)> OnSuccess;                            // 0x0060(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0074(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCloudStorage_UpdateSlot;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCloudStorage.UpdateSlotMetadata
-// 0x0078 (0x0078 - 0x0000)
-struct AccelByteBlueprintsCloudStorage_UpdateSlotMetadata final
-{
-public:
-	class FString                                 SlotId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 FileName;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Tags;                                              // 0x0020(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class FString                                 Label;                                             // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 CustomAttribute;                                   // 0x0040(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsSlot& Result)> OnSuccess;                            // 0x0050(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCloudStorage_UpdateSlotMetadata;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetOAuthClientId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetOAuthClientId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetOAuthClientId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetOAuthClientSecret
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetOAuthClientSecret final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetOAuthClientSecret;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetUserDisplayName
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetUserDisplayName final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetUserDisplayName;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetUserEmailAddress
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetUserEmailAddress final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetUserEmailAddress;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetUserId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetUserId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetUserId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetUserName
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetUserName final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetUserName;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetUserNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetUserNamespace final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetUserNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCredentials.GetUserSessionId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsCredentials_GetUserSessionId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCredentials_GetUserSessionId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsCurrency.GetCurrencyList
-// 0x0040 (0x0040 - 0x0000)
-struct AccelByteBlueprintsCurrency_GetCurrencyList final
-{
-public:
-	class FString                                 Namespace;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsCurrencyList>& Result)> OnSuccess;            // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	EAccelByteCurrencyType                        CurrencyType;                                      // 0x0038(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsCurrency_GetCurrencyList;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsEntitlement.QueryUserEntitlements
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsEntitlement_QueryUserEntitlements final
-{
-public:
-	class FString                                 EntitlementName;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 ItemId;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Page;                                              // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Size;                                              // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementPagingSlicedResult& Result)> OnSuccess;   // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	EAccelByteEntitlementClass                    EntitlementClass;                                  // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteAppType                             AppType;                                           // 0x0051(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsEntitlement_QueryUserEntitlements;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsEntitlement.QueryUserEntitlementsMany
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsEntitlement_QueryUserEntitlementsMany final
-{
-public:
-	class FString                                 EntitlementName;                                   // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FString>                         ItemIds;                                           // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	int32                                         Page;                                              // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Size;                                              // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsEntitlementPagingSlicedResult& Result)> OnSuccess;   // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	EAccelByteEntitlementClass                    EntitlementClass;                                  // 0x0050(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteAppType                             AppType;                                           // 0x0051(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsEntitlement_QueryUserEntitlementsMany;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.BatchGetPublicGameProfiles
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsGameProfile_BatchGetPublicGameProfiles final
-{
-public:
-	TArray<class FString>                         UserIds;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsPublicGameProfile>& Result)> OnSuccess;       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_BatchGetPublicGameProfiles;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.CreateGameProfile
-// 0x00B8 (0x00B8 - 0x0000)
-struct AccelByteBlueprintsGameProfile_CreateGameProfile final
-{
-public:
-	struct FAccelByteModelsGameProfileRequest     GameProfileRequest;                                // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameProfile& Result)> OnSuccess;                     // 0x0090(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00A4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_CreateGameProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.DeleteGameProfile
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsGameProfile_DeleteGameProfile final
-{
-public:
-	class FString                                 ProfileId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_DeleteGameProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.GetAllGameProfiles
-// 0x0028 (0x0028 - 0x0000)
-struct AccelByteBlueprintsGameProfile_GetAllGameProfiles final
-{
-public:
-	TDelegate<void(const TArray<struct FAccelByteModelsGameProfile>& Result)> OnSuccess;             // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_GetAllGameProfiles;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.GetGameProfile
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsGameProfile_GetGameProfile final
-{
-public:
-	class FString                                 ProfileId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameProfile& Result)> OnSuccess;                     // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_GetGameProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.GetGameProfileAttribute
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsGameProfile_GetGameProfileAttribute final
-{
-public:
-	class FString                                 ProfileId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AttributeName;                                     // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameProfileAttribute& Result)> OnSuccess;            // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_GetGameProfileAttribute;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.UpdateGameProfile
-// 0x00C8 (0x00C8 - 0x0000)
-struct AccelByteBlueprintsGameProfile_UpdateGameProfile final
-{
-public:
-	class FString                                 ProfileId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAccelByteModelsGameProfileRequest     GameProfileRequest;                                // 0x0010(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameProfile& Result)> OnSuccess;                     // 0x00A0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00B4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_UpdateGameProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGameProfile.UpdateGameProfileAttribute
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsGameProfile_UpdateGameProfileAttribute final
-{
-public:
-	class FString                                 ProfileId;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAccelByteModelsGameProfileAttribute   Attribute;                                         // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGameProfile& Result)> OnSuccess;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGameProfile_UpdateGameProfileAttribute;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.CreateGroup
-// 0x00D8 (0x00D8 - 0x0000)
-struct AccelByteBlueprintsGroup_CreateGroup final
-{
-public:
-	struct FAccelByteModelsCreateGroupRequest     RequestContent;                                    // 0x0000(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)> OnSuccess;                // 0x00B0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00C4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_CreateGroup;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.DeleteGroup
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsGroup_DeleteGroup final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_DeleteGroup;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.DeleteGroupPredefinedRule
-// 0x0040 (0x0040 - 0x0000)
-struct AccelByteBlueprintsGroup_DeleteGroupPredefinedRule final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteAllowedAction                       AllowedAction;                                     // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_DeleteGroupPredefinedRule;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.GetGroup
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsGroup_GetGroup final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)> OnSuccess;                // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_GetGroup;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.GetGroupList
-// 0x0050 (0x0050 - 0x0000)
-struct AccelByteBlueprintsGroup_GetGroupList final
-{
-public:
-	struct FAccelByteModelsGetGroupListRequest    RequestContent;                                    // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGetGroupListResponse& Result)> OnSuccess;            // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_GetGroupList;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.UpdateGroup
-// 0x00A8 (0x00A8 - 0x0000)
-struct AccelByteBlueprintsGroup_UpdateGroup final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bCompletelyReplace;                                // 0x0010(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAccelByteModelsGroupUpdatable         RequestContent;                                    // 0x0018(0x0068)(ConstParm, Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)> OnSuccess;                // 0x0080(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0094(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_UpdateGroup;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.UpdateGroupCustomAttributes
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsGroup_UpdateGroupCustomAttributes final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAccelByteModelsUpdateGroupCustomAttributesRequest RequestContent;                        // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)> OnSuccess;                // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_UpdateGroupCustomAttributes;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.UpdateGroupCustomRule
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsGroup_UpdateGroupCustomRule final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FAccelByteModelsUpdateCustomRulesRequest RequestContent;                                  // 0x0010(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)> OnSuccess;                // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_UpdateGroupCustomRule;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsGroup.UpdateGroupPredefinedRule
-// 0x0050 (0x0050 - 0x0000)
-struct AccelByteBlueprintsGroup_UpdateGroupPredefinedRule final
-{
-public:
-	class FString                                 GroupId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteAllowedAction                       AllowedAction;                                     // 0x0010(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAccelByteModelsUpdateGroupPredefinedRuleRequest RequestContent;                          // 0x0018(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGroupInformation& Result)> OnSuccess;                // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsGroup_UpdateGroupPredefinedRule;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsItem.GetItemById
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsItem_GetItemById final
-{
-public:
-	class FString                                 ItemId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Region;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPopulatedItemInfo& Result)> OnSuccess;               // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsItem_GetItemById;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsItem.GetItemsByCriteria
-// 0x00D0 (0x00D0 - 0x0000)
-struct AccelByteBlueprintsItem_GetItemsByCriteria final
-{
-public:
-	struct FAccelByteModelsItemCriteria           ItemCriteria;                                      // 0x0000(0x0090)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x0090(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0094(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<EAccelByteItemListSortBy>              SortBy;                                            // 0x0098(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Result)> OnSuccess;          // 0x00A8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00BC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsItem_GetItemsByCriteria;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsItem.SearchItem
-// 0x0060 (0x0060 - 0x0000)
-struct AccelByteBlueprintsItem_SearchItem final
-{
-public:
-	class FString                                 Language;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Keyword;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Page;                                              // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Size;                                              // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Region;                                            // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemPagingSlicedResult& Result)> OnSuccess;          // 0x0038(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x004C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsItem_SearchItem;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsItem.GetItemByAppId
-// 0x0058 (0x0058 - 0x0000)
-struct AccelByteBlueprintsItem_GetItemByAppId final
-{
-public:
-	class FString                                 AppId;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Region;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Language;                                          // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsItemInfo& Result)> OnSuccess;                        // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsItem_GetItemByAppId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.AcceptFriend
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_AcceptFriend final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_AcceptFriend;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.BindEvent
-// 0x01A4 (0x01A4 - 0x0000)
-struct AccelByteBlueprintsLobby_BindEvent final
-{
-public:
-	TDelegate<void()>                             OnConnectSuccess;                                  // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnConnectError;              // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 StatusCode, const class FString& Reason, bool WasClean)> OnConnectionClosed; // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsLeavePartyNotice& Result)> OnLeavePartyNotice;       // 0x003C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsInvitationNotice& Result)> OnInvitePartyInvitationNotice; // 0x0050(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyGetInvitedNotice& Result)> OnInvitePartyGetInvitedNotice; // 0x0064(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyJoinNotice& Result)> OnInvitePartyJoinNotice;   // 0x0078(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGotKickedFromPartyNotice& Result)> OnInvitePartyKickedNotice; // 0x008C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Result)> OnPartyConnectNotice; // 0x00A0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyMemberConnectionNotice& Result)> OnPartyDisconnectNotice; // 0x00B4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPersonalMessageNotice& Result)> OnPrivateMessageNotice; // 0x00C8(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPartyMessageNotice& Result)> OnPartyMessageNotice;   // 0x00DC(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUsersPresenceNotice& Result)> OnUserPresenceNotice;  // 0x00F0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsNotificationMessage& Result)> OnNotificationMessage; // 0x0104(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsMatchmakingNotice& Result)> OnMatchmakingNotice;     // 0x0118(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsReadyConsentNotice& Result)> OnReadyConsentNotice;   // 0x012C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRematchmakingNotice& Result)> OnRematchmakingNotice; // 0x0140(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsDsNotice& Result)> OnDsNotice;                       // 0x0154(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsAcceptFriendsNotif& Result)> OnAcceptFriendsNotifDelegate; // 0x0168(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRequestFriendsNotif& Result)> OnRequestFriendsNotifDelegate; // 0x017C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnParsingError;              // 0x0190(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_BindEvent;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.CancelFriendRequest
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_CancelFriendRequest final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_CancelFriendRequest;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.GetFriendshipStatus
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_GetFriendshipStatus final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_GetFriendshipStatus;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.IsConnected
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsLobby_IsConnected final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_IsConnected;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.RejectFriend
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_RejectFriend final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_RejectFriend;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.RequestFriend
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_RequestFriend final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_RequestFriend;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendAcceptInvitationRequest
-// 0x0020 (0x0020 - 0x0000)
-struct AccelByteBlueprintsLobby_SendAcceptInvitationRequest final
-{
-public:
-	class FString                                 PartyId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InvitationToken;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendAcceptInvitationRequest;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendCancelMatchmaking
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendCancelMatchmaking final
-{
-public:
-	class FString                                 GameMode;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendCancelMatchmaking;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendInviteToPartyRequest
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendInviteToPartyRequest final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendInviteToPartyRequest;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendKickPartyMemberRequest
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendKickPartyMemberRequest final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendKickPartyMemberRequest;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendPartyMessage
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendPartyMessage final
-{
-public:
-	class FString                                 Message;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendPartyMessage;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendPrivateMessage
-// 0x0020 (0x0020 - 0x0000)
-struct AccelByteBlueprintsLobby_SendPrivateMessage final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Message;                                           // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendPrivateMessage;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendReadyConsentRequest
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendReadyConsentRequest final
-{
-public:
-	class FString                                 MatchId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendReadyConsentRequest;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendRejectConsentRequest
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendRejectConsentRequest final
-{
-public:
-	class FString                                 MatchId;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendRejectConsentRequest;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SendStartMatchmaking
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_SendStartMatchmaking final
-{
-public:
-	class FString                                 GameMode;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SendStartMatchmaking;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetAcceptFriendResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetAcceptFriendResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsAcceptFriendsResponse& Result)> OnAcceptFriendsResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetAcceptFriendResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetCancelFriendRequestResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetCancelFriendRequestResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsCancelFriendsResponse& Result)> OnCancelFriendsResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetCancelFriendRequestResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetCancelMatchmakingResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetCancelMatchmakingResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Result)> OnMatchmakingCancel;   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetCancelMatchmakingResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetCreatePartyResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetCreatePartyResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsCreatePartyResponse& Result)> OnCreatePartyResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetCreatePartyResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetDsNotifDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetDsNotifDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsDsNotice& Result)> OnDsNotice;                       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetDsNotifDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetGetAllUserPresenceResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetGetAllUserPresenceResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsGetOnlineUsersResponse& Result)> OnGetAllUserPresenceResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetGetAllUserPresenceResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetGetFriendshipStatusResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetGetFriendshipStatusResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsGetFriendshipStatusResponse& Result)> OnGetFriendshipStatusResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetGetFriendshipStatusResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetInfoPartyResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetInfoPartyResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsInfoPartyResponse& Result)> OnInfoPartyResponse;     // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetInfoPartyResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetInvitePartyJoinResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetInvitePartyJoinResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsPartyJoinResponse& Result)> OnInvitePartyJoinResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetInvitePartyJoinResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetInvitePartyKickMemberResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetInvitePartyKickMemberResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsKickPartyMemberResponse& Result)> OnInvitePartyKickMemberResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetInvitePartyKickMemberResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetInvitePartyResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetInvitePartyResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsPartyInviteResponse& Result)> OnInvitePartyResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetInvitePartyResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetLeavePartyResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetLeavePartyResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsLeavePartyResponse& Result)> OnLeavePartyResponse;   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetLeavePartyResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetListIncomingFriendsResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetListIncomingFriendsResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsListIncomingFriendsResponse& Result)> OnListIncomingFriendsResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetListIncomingFriendsResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetListOutgoingFriendsResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetListOutgoingFriendsResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsListOutgoingFriendsResponse& Result)> OnListOutgoingFriendsResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetListOutgoingFriendsResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetLoadFriendsListResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetLoadFriendsListResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsLoadFriendListResponse& Result)> OnLoadFriendListResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetLoadFriendsListResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetMatchmakingNotifDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetMatchmakingNotifDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsMatchmakingNotice& Result)> OnMatchmakingNotice;     // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetMatchmakingNotifDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetPartyMessageResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetPartyMessageResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsPartyMessageResponse& Result)> OnPartyMessageResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetPartyMessageResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetPresenceStatus
+// Function AccelByteUe4Sdk.AccelByteInstance.GetServerApiClient
 // 0x0018 (0x0018 - 0x0000)
-struct AccelByteBlueprintsLobby_SetPresenceStatus final
+struct AccelByteInstance_GetServerApiClient final
 {
 public:
-	EAvailability                                 State;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Activity;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 Key;                                               // 0x0000(0x0010)(ConstParm, Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UServerApiClient*                       ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetPresenceStatus;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetPrivateMessageResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetPrivateMessageResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsPersonalMessageResponse& Result)> OnPrivateMessageResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetPrivateMessageResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetReadyConsentNotifDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetReadyConsentNotifDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsReadyConsentNotice& Result)> OnReadyConsentNotice;   // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetReadyConsentNotifDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetReadyConsentResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetReadyConsentResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsReadyConsentRequest& Result)> OnReadyConsentResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetReadyConsentResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetRejectConsentNotifDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetRejectConsentNotifDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsRejectConsentNotice& Result)> OnRejectConsentNotice; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetRejectConsentNotifDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetRejectConsentResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetRejectConsentResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsRejectConsentRequest& Result)> OnRejectConsentResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetRejectConsentResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetRejectFriendResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetRejectFriendResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsRejectFriendsResponse& Result)> OnRejectFriendsResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetRejectFriendResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetRematchmakingNotifDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetRematchmakingNotifDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsRematchmakingNotice& Result)> OnRematchmakingNotice; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetRematchmakingNotifDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetRequestFriendResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetRequestFriendResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsRequestFriendsResponse& Result)> OnRequestFriendsResponseDelegate; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetRequestFriendResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetStartMatchmakingResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetStartMatchmakingResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsMatchmakingResponse& Result)> OnMatchmakingStart;    // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetStartMatchmakingResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetUnfriendResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetUnfriendResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsUnfriendResponse& Result)> OnUnfriendResponse;       // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetUnfriendResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.SetUserPresenceResponseDelegate
-// 0x0014 (0x0014 - 0x0000)
-struct AccelByteBlueprintsLobby_SetUserPresenceResponseDelegate final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsSetOnlineUsersResponse& Result)> OnUserPresenceResponse; // 0x0000(0x0014)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_SetUserPresenceResponseDelegate;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsLobby.Unfriend
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsLobby_Unfriend final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsLobby_Unfriend;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsOrder.CancelOrder
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsOrder_CancelOrder final
-{
-public:
-	class FString                                 OrderNo;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsOrderInfo& Result)> OnSuccess;                       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsOrder_CancelOrder;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsOrder.CreateNewOrder
-// 0x0098 (0x0098 - 0x0000)
-struct AccelByteBlueprintsOrder_CreateNewOrder final
-{
-public:
-	struct FAccelByteModelsOrderCreate            OrderCreate;                                       // 0x0000(0x0070)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsOrderInfo& Result)> OnSuccess;                       // 0x0070(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0084(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsOrder_CreateNewOrder;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsOrder.GetUserOrder
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsOrder_GetUserOrder final
-{
-public:
-	class FString                                 OrderNo;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsOrderInfo& Result)> OnSuccess;                       // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsOrder_GetUserOrder;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsOrder.GetUserOrderHistory
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsOrder_GetUserOrderHistory final
-{
-public:
-	class FString                                 OrderNo;                                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsOrderHistoryInfo>& Result)> OnSuccess;        // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsOrder_GetUserOrderHistory;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsOrder.GetUserOrders
-// 0x0030 (0x0030 - 0x0000)
-struct AccelByteBlueprintsOrder_GetUserOrders final
-{
-public:
-	int32                                         Page;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Size;                                              // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsPagedOrderInfo& Result)> OnSuccess;                  // 0x0008(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsOrder_GetUserOrders;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsReward.GetRewardByRewardCode
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsReward_GetRewardByRewardCode final
-{
-public:
-	class FString                                 RewardCode;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRewardInfo& Result)> OnSuccess;                      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsReward_GetRewardByRewardCode;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsReward.GetRewardByRewardId
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsReward_GetRewardByRewardId final
-{
-public:
-	class FString                                 RewardId;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsRewardInfo& Result)> OnSuccess;                      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsReward_GetRewardByRewardId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsReward.QueryRewards
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsReward_QueryRewards final
-{
-public:
-	class FString                                 EventTopic;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Offset;                                            // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Limit;                                             // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteRewardListSortBy                    SortBy;                                            // 0x0018(0x0001)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsQueryReward& Result)> OnSuccess;                     // 0x001C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsReward_QueryRewards;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerCredentials.GetClientAccessToken
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerCredentials_GetClientAccessToken final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerCredentials_GetClientAccessToken;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerCredentials.GetClientNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerCredentials_GetClientNamespace final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerCredentials_GetClientNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerCredentials.GetMatchId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerCredentials_GetMatchId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerCredentials_GetMatchId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetAchievementServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetAchievementServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetAchievementServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetAMSServerWatchdogUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetAMSServerWatchdogUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetAMSServerWatchdogUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetChatServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetChatServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetChatServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetClientId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetClientId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetClientId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetClientSecret
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetClientSecret final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetClientSecret;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetCloudSaveServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetCloudSaveServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetCloudSaveServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetDSHubServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetDSHubServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetDSHubServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetDSMControllerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetDSMControllerServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetDSMControllerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetGameTelemetryServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetGameTelemetryServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetGameTelemetryServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetGDPRServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetGDPRServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetGDPRServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetIamServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetIamServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetIamServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetLobbyServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetLobbyServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetLobbyServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetMatchmakingServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetMatchmakingServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetMatchmakingServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetMatchmakingV2ServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetMatchmakingV2ServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetMatchmakingV2ServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetNamespace final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetPlatformServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetPlatformServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetPlatformServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetPublisherNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetPublisherNamespace final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetPublisherNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetQosManagerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetQosManagerServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetQosManagerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetQosPingTimeout
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetQosPingTimeout final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetQosPingTimeout;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetSeasonPassServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetSeasonPassServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetSeasonPassServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetSessionBrowserServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetSessionBrowserServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetSessionBrowserServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetSessionServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetSessionServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetSessionServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetStatisticServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetStatisticServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetStatisticServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.GetUGCServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_GetUGCServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_GetUGCServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.IsSendPredefinedEvent
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsServerSettings_IsSendPredefinedEvent final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_IsSendPredefinedEvent;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.ResetSettings
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsServerSettings_ResetSettings final
-{
-public:
-	ESettingsEnvironment                          Environment;                                       // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_ResetSettings;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetAchievementServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetAchievementServerUrl final
-{
-public:
-	class FString                                 AchievementServerUrl;                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetAchievementServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetAMSServerWatchdogUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetAMSServerWatchdogUrl final
-{
-public:
-	class FString                                 AMSServerUrl;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetAMSServerWatchdogUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetChatServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetChatServerUrl final
-{
-public:
-	class FString                                 ChatServerUrl;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetChatServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetClientId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetClientId final
-{
-public:
-	class FString                                 ClientId;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetClientId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetClientSecret
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetClientSecret final
-{
-public:
-	class FString                                 ClientSecret;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetClientSecret;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetCloudSaveServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetCloudSaveServerUrl final
-{
-public:
-	class FString                                 CloudServerUrl;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetCloudSaveServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetDSHubServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetDSHubServerUrl final
-{
-public:
-	class FString                                 DSHubServerUrl;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetDSHubServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetDSMControllerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetDSMControllerServerUrl final
-{
-public:
-	class FString                                 DSMControllerServerUrl;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetDSMControllerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetGameTelemetryServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetGameTelemetryServerUrl final
-{
-public:
-	class FString                                 GameTelemetryServerUrl;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetGameTelemetryServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetIamServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetIamServerUrl final
-{
-public:
-	class FString                                 IamServerUrl;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetIamServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetLobbyServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetLobbyServerUrl final
-{
-public:
-	class FString                                 LobbyServerUrl;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetLobbyServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetMatchmakingServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetMatchmakingServerUrl final
-{
-public:
-	class FString                                 MatchmakingServerurl;                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetMatchmakingServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetMatchmakingV2ServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetMatchmakingV2ServerUrl final
-{
-public:
-	class FString                                 MatchmakingV2ServerUrl;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetMatchmakingV2ServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetNamespace final
-{
-public:
-	class FString                                 Namespace;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetPlatformServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetPlatformServerUrl final
-{
-public:
-	class FString                                 PlatformServerUrl;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetPlatformServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetPublisherNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetPublisherNamespace final
-{
-public:
-	class FString                                 PublisherNamespace;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetPublisherNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetQosManagerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetQosManagerServerUrl final
-{
-public:
-	class FString                                 PlatformServerUrl;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetQosManagerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetQosPingTimeout
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetQosPingTimeout final
-{
-public:
-	float                                         QosPingTimeout;                                    // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetQosPingTimeout;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetSeasonPassServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetSeasonPassServerUrl final
-{
-public:
-	class FString                                 SessionPassServerUrl;                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetSeasonPassServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetSendPredefinedEvent
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetSendPredefinedEvent final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetSendPredefinedEvent;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetSessionBrowserServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetSessionBrowserServerUrl final
-{
-public:
-	class FString                                 SessionBrowserServerUrl;                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetSessionBrowserServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetSessionServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetSessionServerUrl final
-{
-public:
-	class FString                                 SessionServerUrl;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetSessionServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetStatisticServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetStatisticServerUrl final
-{
-public:
-	class FString                                 StatisticServerUrl;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetStatisticServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetUGCServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetUGCServerUrl final
-{
-public:
-	class FString                                 UGCServerUrl;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetUGCServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsServerSettings.SetGDPRServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsServerSettings_SetGDPRServerUrl final
-{
-public:
-	class FString                                 GDPRServerUrl;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsServerSettings_SetGDPRServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetAchievementServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetAchievementServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetAchievementServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetAppId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetAppId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetAppId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetBasicServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetBasicServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetBasicServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetChatServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetChatServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetChatServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetClientId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetClientId final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetClientId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetClientSecret
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetClientSecret final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetClientSecret;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetCloudSaveServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetCloudSaveServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetCloudSaveServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetCloudStorageServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetCloudStorageServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetCloudStorageServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetCustomerName
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetCustomerName final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetCustomerName;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetGameProfileServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetGameProfileServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetGameProfileServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetGameTelemetryServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetGameTelemetryServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetGameTelemetryServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetGDPRServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetGDPRServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetGDPRServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetGroupServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetGroupServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetGroupServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetHeartBeatData
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetHeartBeatData final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetHeartBeatData;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetHttpCacheType
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_GetHttpCacheType final
-{
-public:
-	EHttpCacheType                                ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetHttpCacheType;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetIamServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetIamServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetIamServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetLeaderboardServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetLeaderboardServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetLeaderboardServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetLobbyServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetLobbyServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetLobbyServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetMatchmakingV2ServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetMatchmakingV2ServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetMatchmakingV2ServerUrl;
+DUMPER7_ASSERTS_AccelByteInstance_GetServerApiClient;
 
 // Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetNamespace
 // 0x0010 (0x0010 - 0x0000)
@@ -7060,87 +6656,6 @@ public:
 };
 DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetNamespace;
 
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetPlatformServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetPlatformServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetPlatformServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetPublisherNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetPublisherNamespace final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetPublisherNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetQosLatencyPollIntervalSecs
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsSettings_GetQosLatencyPollIntervalSecs final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetQosLatencyPollIntervalSecs;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetQosManagerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetQosManagerServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetQosManagerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetQosPingTimeout
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsSettings_GetQosPingTimeout final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetQosPingTimeout;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetQosServerLatencyPollIntervalSecs
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsSettings_GetQosServerLatencyPollIntervalSecs final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetQosServerLatencyPollIntervalSecs;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetReportingServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetReportingServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetReportingServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetSessionBrowserServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetSessionBrowserServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetSessionBrowserServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetSessionServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetSessionServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetSessionServerUrl;
-
 // Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetSettingsEnvironment
 // 0x0010 (0x0010 - 0x0000)
 struct AccelByteBlueprintsSettings_GetSettingsEnvironment final
@@ -7149,749 +6664,6 @@ public:
 	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetSettingsEnvironment;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetStatisticServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetStatisticServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetStatisticServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetTurnManagerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetTurnManagerServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetTurnManagerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.GetUGCServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_GetUGCServerUrl final
-{
-public:
-	class FString                                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_GetUGCServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.IsHttpCacheEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_IsHttpCacheEnabled final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_IsHttpCacheEnabled;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.IsSendPredefinedEvent
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_IsSendPredefinedEvent final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_IsSendPredefinedEvent;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.IsServerUseAMS
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_IsServerUseAMS final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_IsServerUseAMS;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.ResetSettings
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_ResetSettings final
-{
-public:
-	ESettingsEnvironment                          Environment;                                       // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_ResetSettings;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetAchievementServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetAchievementServerUrl final
-{
-public:
-	class FString                                 CloudSaveServerUrl;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetAchievementServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetAppId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetAppId final
-{
-public:
-	class FString                                 AppId;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetAppId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetBasicServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetBasicServerUrl final
-{
-public:
-	class FString                                 BasicServerUrl;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetBasicServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetChatServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetChatServerUrl final
-{
-public:
-	class FString                                 ChatServerUrl;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetChatServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetClientId
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetClientId final
-{
-public:
-	class FString                                 ClientId;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetClientId;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetClientSecret
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetClientSecret final
-{
-public:
-	class FString                                 ClientSecret;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetClientSecret;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetCloudSaveServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetCloudSaveServerUrl final
-{
-public:
-	class FString                                 CloudSaveServerUrl;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetCloudSaveServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetCloudStorageServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetCloudStorageServerUrl final
-{
-public:
-	class FString                                 CloudStorageServerUrl;                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetCloudStorageServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetGameProfileServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetGameProfileServerUrl final
-{
-public:
-	class FString                                 GameProfileServerUrl;                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetGameProfileServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetGameTelemetryServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetGameTelemetryServerUrl final
-{
-public:
-	class FString                                 GameTelemetryServerUrl;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetGameTelemetryServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetGDPRServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetGDPRServerUrl final
-{
-public:
-	class FString                                 GDPRServerUrl;                                     // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetGDPRServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetGroupServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetGroupServerUrl final
-{
-public:
-	class FString                                 GroupServerUrl;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetGroupServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetHttpCacheType
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_SetHttpCacheType final
-{
-public:
-	EHttpCacheType                                Type;                                              // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetHttpCacheType;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetIamServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetIamServerUrl final
-{
-public:
-	class FString                                 IamServerUrl;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetIamServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetLeaderboardServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetLeaderboardServerUrl final
-{
-public:
-	class FString                                 LeaderboardServerUrl;                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetLeaderboardServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetLobbyServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetLobbyServerUrl final
-{
-public:
-	class FString                                 LobbyServerUrl;                                    // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetLobbyServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetMatchmakingV2ServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetMatchmakingV2ServerUrl final
-{
-public:
-	class FString                                 MatchmakingV2ServerUrl;                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetMatchmakingV2ServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetNamespace final
-{
-public:
-	class FString                                 Namespace;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetPlatformServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetPlatformServerUrl final
-{
-public:
-	class FString                                 PlatformServerUrl;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetPlatformServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetPublisherNamespace
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetPublisherNamespace final
-{
-public:
-	class FString                                 PublisherNamespace;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetPublisherNamespace;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetQosLatencyPollIntervalSecs
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsSettings_SetQosLatencyPollIntervalSecs final
-{
-public:
-	float                                         QosLatencyPollIntervalSecs;                        // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetQosLatencyPollIntervalSecs;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetQosManagerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetQosManagerServerUrl final
-{
-public:
-	class FString                                 QosManagerServerUrl;                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetQosManagerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetQosPingTimeout
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsSettings_SetQosPingTimeout final
-{
-public:
-	float                                         QosPingTimeout;                                    // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetQosPingTimeout;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetReportingServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetReportingServerUrl final
-{
-public:
-	class FString                                 ReportingServerUrl;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetReportingServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetSeasonPassServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetSeasonPassServerUrl final
-{
-public:
-	class FString                                 SeasonPassServerUrl;                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetSeasonPassServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetServerQosLatencyPollIntervalSecs
-// 0x0004 (0x0004 - 0x0000)
-struct AccelByteBlueprintsSettings_SetServerQosLatencyPollIntervalSecs final
-{
-public:
-	float                                         QosServerLatencyPollIntervalSecs;                  // 0x0000(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetServerQosLatencyPollIntervalSecs;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetServerUseAMS
-// 0x0001 (0x0001 - 0x0000)
-struct AccelByteBlueprintsSettings_SetServerUseAMS final
-{
-public:
-	bool                                          bEnable;                                           // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetServerUseAMS;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetSessionBrowserServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetSessionBrowserServerUrl final
-{
-public:
-	class FString                                 SessionBrowserServerUrl;                           // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetSessionBrowserServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetSessionServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetSessionServerUrl final
-{
-public:
-	class FString                                 SessionServerUrl;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetSessionServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetStatisticServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetStatisticServerUrl final
-{
-public:
-	class FString                                 StatisticServerUrl;                                // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetStatisticServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetTurnManagerServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetTurnManagerServerUrl final
-{
-public:
-	class FString                                 TurnManagerServerUrl;                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetTurnManagerServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsSettings.SetUGCServerUrl
-// 0x0010 (0x0010 - 0x0000)
-struct AccelByteBlueprintsSettings_SetUGCServerUrl final
-{
-public:
-	class FString                                 UGCServerUrl;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsSettings_SetUGCServerUrl;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsStatistic.CreateUserStatItems
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsStatistic_CreateUserStatItems final
-{
-public:
-	TArray<class FString>                         StatCodes;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Result)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsStatistic_CreateUserStatItems;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsStatistic.GetAllUserStatItems
-// 0x0028 (0x0028 - 0x0000)
-struct AccelByteBlueprintsStatistic_GetAllUserStatItems final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Result)> OnSuccess;  // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsStatistic_GetAllUserStatItems;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsStatistic.GetGlobalStatItemsByStatCode
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsStatistic_GetGlobalStatItemsByStatCode final
-{
-public:
-	class FString                                 StatCode;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsGlobalStatItemValueResponse& Result)> OnSuccess;     // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsStatistic_GetGlobalStatItemsByStatCode;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsStatistic.GetUserStatItems
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsStatistic_GetUserStatItems final
-{
-public:
-	TArray<class FString>                         StatCodes;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<class FString>                         Tags;                                              // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserStatItemPagingSlicedResult& Result)> OnSuccess;  // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsStatistic_GetUserStatItems;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsStatistic.IncrementUserStatItems
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsStatistic_IncrementUserStatItems final
-{
-public:
-	TArray<struct FAccelByteModelsBulkStatItemInc> Data;                                             // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const TArray<struct FAccelByteModelsBulkStatItemOperationResult>& Result)> OnSuccess; // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsStatistic_IncrementUserStatItems;
-
-// Function AccelByteUe4Sdk.BPUser.GetPlatformLinks
-// 0x0028 (0x0028 - 0x0000)
-struct BPUser_GetPlatformLinks final
-{
-public:
-	TDelegate<void(const struct FPagedPlatformLinks& PlatformLinks)> OnSuccess;                      // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_GetPlatformLinks;
-
-// Function AccelByteUe4Sdk.BPUser.GetUserEligibleToPlay
-// 0x0028 (0x0028 - 0x0000)
-struct BPUser_GetUserEligibleToPlay final
-{
-public:
-	TDelegate<void(const bool Result)>            OnSuccess;                                         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_GetUserEligibleToPlay;
-
-// Function AccelByteUe4Sdk.BPUser.LinkOtherPlatform
-// 0x0040 (0x0040 - 0x0000)
-struct BPUser_LinkOtherPlatform final
-{
-public:
-	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Ticket;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_LinkOtherPlatform;
-
-// Function AccelByteUe4Sdk.BPUser.LoginWithDeviceId
-// 0x0028 (0x0028 - 0x0000)
-struct BPUser_LoginWithDeviceId final
-{
-public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_LoginWithDeviceId;
-
-// Function AccelByteUe4Sdk.BPUser.LoginWithOtherPlatform
-// 0x0048 (0x0048 - 0x0000)
-struct BPUser_LoginWithOtherPlatform final
-{
-public:
-	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 Token;                                             // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x002C(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          bCreateHeadless;                                   // 0x0040(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_BPUser_LoginWithOtherPlatform;
-
-// Function AccelByteUe4Sdk.BPUser.LoginWithUsername
-// 0x0048 (0x0048 - 0x0000)
-struct BPUser_LoginWithUsername final
-{
-public:
-	class FString                                 Username;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Password;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_LoginWithUsername;
-
-// Function AccelByteUe4Sdk.BPUser.Logout
-// 0x0028 (0x0028 - 0x0000)
-struct BPUser_Logout final
-{
-public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_Logout;
-
-// Function AccelByteUe4Sdk.BPUser.Register
-// 0x0078 (0x0078 - 0x0000)
-struct BPUser_Register final
-{
-public:
-	class FString                                 Username;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Password;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DisplayName;                                       // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Country;                                           // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 DateOfBirth;                                       // 0x0040(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FRegisterResponse& Result)> OnSuccess;                               // 0x0050(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0064(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_Register;
-
-// Function AccelByteUe4Sdk.BPUser.ResetPassword
-// 0x0058 (0x0058 - 0x0000)
-struct BPUser_ResetPassword final
-{
-public:
-	class FString                                 VerificationCode;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 EmailAddress;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 NewPassword;                                       // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_ResetPassword;
-
-// Function AccelByteUe4Sdk.BPUser.SendResetPasswordCode
-// 0x0038 (0x0038 - 0x0000)
-struct BPUser_SendResetPasswordCode final
-{
-public:
-	class FString                                 EmailAddress;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_SendResetPasswordCode;
-
-// Function AccelByteUe4Sdk.BPUser.SendUpgradeVerificationCode
-// 0x0038 (0x0038 - 0x0000)
-struct BPUser_SendUpgradeVerificationCode final
-{
-public:
-	class FString                                 EmailAddress;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_SendUpgradeVerificationCode;
-
-// Function AccelByteUe4Sdk.BPUser.SendVerificationCode
-// 0x0028 (0x0028 - 0x0000)
-struct BPUser_SendVerificationCode final
-{
-public:
-	TDelegate<void()>                             OnSuccess;                                         // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_SendVerificationCode;
-
-// Function AccelByteUe4Sdk.BPUser.UnlinkAllOtherPlatform
-// 0x002C (0x002C - 0x0000)
-struct BPUser_UnlinkAllOtherPlatform final
-{
-public:
-	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_UnlinkAllOtherPlatform;
-
-// Function AccelByteUe4Sdk.BPUser.UnlinkAllOtherPlatformId
-// 0x0038 (0x0038 - 0x0000)
-struct BPUser_UnlinkAllOtherPlatformId final
-{
-public:
-	class FString                                 PlatformId;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_UnlinkAllOtherPlatformId;
-
-// Function AccelByteUe4Sdk.BPUser.UnlinkOtherPlatform
-// 0x002C (0x002C - 0x0000)
-struct BPUser_UnlinkOtherPlatform final
-{
-public:
-	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_UnlinkOtherPlatform;
-
-// Function AccelByteUe4Sdk.BPUser.UnlinkOtherPlatformId
-// 0x0038 (0x0038 - 0x0000)
-struct BPUser_UnlinkOtherPlatformId final
-{
-public:
-	class FString                                 PlatformId;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_UnlinkOtherPlatformId;
-
-// Function AccelByteUe4Sdk.BPUser.UnlinkOtherPlatformWithCustomErrorHandler
-// 0x002C (0x002C - 0x0000)
-struct BPUser_UnlinkOtherPlatformWithCustomErrorHandler final
-{
-public:
-	EAccelBytePlatformType                        PlatformType;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             OnSuccess;                                         // 0x0004(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage, const struct FJsonObjectWrapper& ErrorObject)> OnError; // 0x0018(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_UnlinkOtherPlatformWithCustomErrorHandler;
-
-// Function AccelByteUe4Sdk.BPUser.Upgrade
-// 0x0048 (0x0048 - 0x0000)
-struct BPUser_Upgrade final
-{
-public:
-	class FString                                 Username;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Password;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Result)> OnSuccess;                                // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_Upgrade;
-
-// Function AccelByteUe4Sdk.BPUser.UpgradeAndVerify
-// 0x0058 (0x0058 - 0x0000)
-struct BPUser_UpgradeAndVerify final
-{
-public:
-	class FString                                 Username;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 Password;                                          // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 VerificationCode;                                  // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccountUserData& Result)> OnSuccess;                                // 0x0030(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0044(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_UpgradeAndVerify;
-
-// Function AccelByteUe4Sdk.BPUser.Verify
-// 0x0038 (0x0038 - 0x0000)
-struct BPUser_Verify final
-{
-public:
-	class FString                                 VerificationCode;                                  // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void()>                             OnSuccess;                                         // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_BPUser_Verify;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.CreateUserProfile
-// 0x00E8 (0x00E8 - 0x0000)
-struct AccelByteBlueprintsUserProfile_CreateUserProfile final
-{
-public:
-	struct FAccelByteModelsUserProfileCreateRequest ProfileCreateRequest;                            // 0x0000(0x00C0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserProfileInfo& Result)> OnSuccess;                 // 0x00C0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00D4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_CreateUserProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.GenerateUploadURL
-// 0x0040 (0x0040 - 0x0000)
-struct AccelByteBlueprintsUserProfile_GenerateUploadURL final
-{
-public:
-	class FString                                 Folder;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteFileType                            FileType;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsUserProfileUploadURLResult& Result)> OnSuccess;      // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_GenerateUploadURL;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.GenerateUploadURLForUserContent
-// 0x0040 (0x0040 - 0x0000)
-struct AccelByteBlueprintsUserProfile_GenerateUploadURLForUserContent final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAccelByteFileType                            FileType;                                          // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FAccelByteModelsUserProfileUploadURLResult& Result)> OnSuccess;      // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0028(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_GenerateUploadURLForUserContent;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.GetPrivateCustomAttributes
-// 0x0028 (0x0028 - 0x0000)
-struct AccelByteBlueprintsUserProfile_GetPrivateCustomAttributes final
-{
-public:
-	TDelegate<void(const struct FJsonObjectWrapper& Result)> OnSuccess;                              // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_GetPrivateCustomAttributes;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.GetUserProfile
-// 0x0028 (0x0028 - 0x0000)
-struct AccelByteBlueprintsUserProfile_GetUserProfile final
-{
-public:
-	TDelegate<void(const struct FAccelByteModelsUserProfileInfo& Result)> OnSuccess;                 // 0x0000(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0014(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_GetUserProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.UpdatePrivateCustomAttributes
-// 0x0048 (0x0048 - 0x0000)
-struct AccelByteBlueprintsUserProfile_UpdatePrivateCustomAttributes final
-{
-public:
-	struct FJsonObjectWrapper                     PrivateCustomAttributesUpdateRequest;              // 0x0000(0x0020)(ConstParm, Parm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FJsonObjectWrapper& Result)> OnSuccess;                              // 0x0020(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0034(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_UpdatePrivateCustomAttributes;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsUserProfile.UpdateUserProfile
-// 0x00F8 (0x00F8 - 0x0000)
-struct AccelByteBlueprintsUserProfile_UpdateUserProfile final
-{
-public:
-	struct FAccelByteModelsUserProfileUpdateRequest ProfileUpdateRequest;                            // 0x0000(0x00D0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsUserProfileInfo& Result)> OnSuccess;                 // 0x00D0(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x00E4(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsUserProfile_UpdateUserProfile;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsWallet.GetWalletInfoByCurrencyCode
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsWallet_GetWalletInfoByCurrencyCode final
-{
-public:
-	class FString                                 CurrencyCode;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsWalletInfo& Result)> OnSuccess;                      // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsWallet_GetWalletInfoByCurrencyCode;
-
-// Function AccelByteUe4Sdk.AccelByteBlueprintsWallet.GetWalletInfoByCurrencyCodeV2
-// 0x0038 (0x0038 - 0x0000)
-struct AccelByteBlueprintsWallet_GetWalletInfoByCurrencyCodeV2 final
-{
-public:
-	class FString                                 CurrencyCode;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TDelegate<void(const struct FAccelByteModelsWalletInfoResponse& Result)> OnSuccess;              // 0x0010(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	TDelegate<void(int32 ErrorCode, const class FString& ErrorMessage)> OnError;                     // 0x0024(0x0014)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AccelByteBlueprintsWallet_GetWalletInfoByCurrencyCodeV2;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

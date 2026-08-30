@@ -16,6 +16,29 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.CanInspectItem
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      InInspectData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_UI_Blackmarket_Inspect_C::CanInspectItem(const class USBZInventoryBaseData* InInspectData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Blackmarket_Inspect_C", "CanInspectItem");
+
+	Params::WBP_UI_Blackmarket_Inspect_C_CanInspectItem Parms{};
+
+	Parms.InInspectData = InInspectData;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.ExecuteUbergraph_WBP_UI_Blackmarket_Inspect
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -33,34 +56,6 @@ void UWBP_UI_Blackmarket_Inspect_C::ExecuteUbergraph_WBP_UI_Blackmarket_Inspect(
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.SetVisualsForInspect
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Blackmarket_Inspect_C::SetVisualsForInspect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Blackmarket_Inspect_C", "SetVisualsForInspect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Blackmarket_Inspect_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Blackmarket_Inspect_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -104,26 +99,31 @@ void UWBP_UI_Blackmarket_Inspect_C::OnGainedStackFocused(const class FName& Prev
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.CanInspectItem
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      InInspectData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-bool UWBP_UI_Blackmarket_Inspect_C::CanInspectItem(const class USBZInventoryBaseData* InInspectData)
+void UWBP_UI_Blackmarket_Inspect_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Blackmarket_Inspect_C", "CanInspectItem");
+		Func = Class->GetFunction("WBP_UI_Blackmarket_Inspect_C", "OnLostStackFocused");
 
-	Params::WBP_UI_Blackmarket_Inspect_C_CanInspectItem Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InInspectData = InInspectData;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.SetVisualsForInspect
+// (BlueprintCallable, BlueprintEvent)
 
-	return Parms.ReturnValue;
+void UWBP_UI_Blackmarket_Inspect_C::SetVisualsForInspect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Blackmarket_Inspect_C", "SetVisualsForInspect");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,6 +16,48 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.CosmeticButton = CosmeticButton;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZCosmeticsDataAsset*     InEquippedItem                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "EquippedItemChanged");
+
+	Params::WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged Parms{};
+
+	Parms.InEquippedItem = InEquippedItem;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -33,6 +75,20 @@ void UWBP_UI_Inventory_SuitComseticCustomization_C::ExecuteUbergraph_WBP_UI_Inve
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::InitializeVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "InitializeVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -56,76 +112,6 @@ void UWBP_UI_Inventory_SuitComseticCustomization_C::OnControlsReferenceClicked(c
 }
 
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.CosmeticButton = CosmeticButton;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZCosmeticsDataAsset*     InEquippedItem                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "EquippedItemChanged");
-
-	Params::WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged Parms{};
-
-	Parms.InEquippedItem = InEquippedItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -146,15 +132,29 @@ void UWBP_UI_Inventory_SuitComseticCustomization_C::OnGainedStackFocused(const c
 }
 
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Inventory_SuitComseticCustomization_C::InitializeVisuals()
+void UWBP_UI_Inventory_SuitComseticCustomization_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "InitializeVisuals");
+		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_SuitComseticCustomization_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -19,28 +19,28 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C
-// 0x03C0 (0x0F70 - 0x0BB0)
+// 0x03C0 (0x0FE8 - 0x0C28)
 class ACH_UI_MM_BundleCharacter_C final : public ASBZBundleMannequin
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0BB0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USpotLightComponent*                    SpotLight;                                         // 0x0BB8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZMouseInteractionComponent*          MouseInteraction;                                  // 0x0BC0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractableComponent*              Interactable;                                      // 0x0BC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UTextRenderComponent*                   Label;                                             // 0x0BD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	ESBZMainMenuAnimationName                     SelectedAnimation;                                 // 0x0BD8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BD9[0x7];                                      // 0x0BD9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZBundleMannequinEntry               MannequinnEntry;                                   // 0x0BE0(0x0390)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0C28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USpotLightComponent*                    SpotLight;                                         // 0x0C30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZMouseInteractionComponent*          MouseInteraction;                                  // 0x0C38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractableComponent*              Interactable;                                      // 0x0C40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UTextRenderComponent*                   Label;                                             // 0x0C48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	ESBZMainMenuAnimationName                     SelectedAnimation;                                 // 0x0C50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C51[0x7];                                      // 0x0C51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZBundleMannequinEntry               MannequinnEntry;                                   // 0x0C58(0x0390)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_CH_UI_MM_BundleCharacter(int32 EntryPoint);
+	void BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 	void BP_OnMannequinReady();
 	void BP_OnStateChanged(ESBZBundleMannequinState InState);
-	void BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void ExecuteUbergraph_CH_UI_MM_BundleCharacter(int32 EntryPoint);
 	void SetLabel(const class FText& Label_0);
-	void UpdateSpotlight();
-	void UpdateNameplate();
 	void UpdateBannerInfo();
+	void UpdateNameplate();
+	void UpdateSpotlight();
 
 public:
 	static class UClass* StaticClass()

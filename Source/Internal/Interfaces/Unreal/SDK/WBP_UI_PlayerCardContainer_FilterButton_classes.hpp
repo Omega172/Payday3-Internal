@@ -18,23 +18,23 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_PlayerCardContainer_FilterButton.WBP_UI_PlayerCardContainer_FilterButton_C
-// 0x0048 (0x03C0 - 0x0378)
+// 0x0048 (0x0420 - 0x03D8)
 class UWBP_UI_PlayerCardContainer_FilterButton_C final : public USBZMenuButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Icon_Image;                                        // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPaperSprite*                           ButtonIcon;                                        // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           ActiveColor;                                       // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           InactiveColor;                                     // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           HoverColor;                                        // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Icon_Image;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPaperSprite*                           ButtonIcon;                                        // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           ActiveColor;                                       // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           InactiveColor;                                     // 0x0400(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           HoverColor;                                        // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_PlayerCardContainer_FilterButton(int32 EntryPoint);
 	void ButtonDisabledChanged(bool bInIsDisabled);
 	void ButtonFocusedChanged(bool bInHasFocus);
-	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_UI_PlayerCardContainer_FilterButton(int32 EntryPoint);
 	void OnReferenceSelected(class FName ActionName);
+	void PreConstruct(bool IsDesignTime);
 	void SetIcon(class UPaperSprite* Icon);
 
 public:

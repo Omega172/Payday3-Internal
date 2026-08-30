@@ -17,73 +17,73 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser
-// 0x0740 (0x0740 - 0x0000)
+// 0x0750 (0x0750 - 0x0000)
 struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Event_PreviousValue;                        // 0x0004(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0014)(ZeroConstructor, NoDestructor)
+	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue_1;               // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue_1;               // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZOnlineCode                                Temp_byte_Variable;                                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsJoinBlocked_bIsJoinBlocked;             // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsJoinBlocked_bIsJoinBlocked;             // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSBZOnlineSearchResult>         Temp_struct_Variable;                              // 0x0058(0x0010)(ReferenceParm)
 	struct FSBZOnlineSessionParams                K2Node_MakeStruct_SBZOnlineSessionParams;          // 0x0068(0x0088)()
-	struct FSBZOnlineSearchResult                 CallFunc_Array_Get_Item;                           // 0x00F0(0x01F8)()
-	class USBZSessionUpdateListCallbackProxy*     CallFunc_SessionUpdateList_ReturnValue;            // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x02F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsRequestInProgress_ReturnValue;          // 0x02F5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2F6[0x2];                                      // 0x02F6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZOnlineSearchResult                 K2Node_CustomEvent_RemoteSessionInfo;              // 0x02F8(0x01F8)(ConstParm)
-	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode;                      // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4F1[0x3];                                      // 0x04F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x04F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x04F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x04F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4FA[0x2];                                      // 0x04FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x04FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZOnlineCode ErrorCode)>     K2Node_CreateDelegate_OutputDelegate_1;            // 0x0500(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const struct FSBZOnlineSearchResult& RemoteSessionInfo)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0514(0x0014)(ZeroConstructor, NoDestructor)
-	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode_1;                    // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_529[0x7];                                      // 0x0529(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZOnlineSearchResult>         K2Node_CustomEvent_Results;                        // 0x0530(0x0010)(ConstParm, ReferenceParm)
-	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* CallFunc_SpawnObject_ReturnValue;                // 0x0540(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0548(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x0550(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x055C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_55D[0x3];                                      // 0x055D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0560(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0568(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0574(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_575[0x3];                                      // 0x0575(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0578(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x058C(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_5;            // 0x05A0(0x0014)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_5B4[0x4];                                      // 0x05B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x05B8(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x05F0(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0628(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x0660(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0698(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x06A8(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x06B8(0x0028)()
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference_1;    // 0x06E0(0x0028)()
-	TDelegate<void(class USBZMenuButton* Button, bool bIsEnabled)> K2Node_CreateDelegate_OutputDelegate_6; // 0x0708(0x0014)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_71C[0x4];                                      // 0x071C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_CustomEvent_Button;                         // 0x0720(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsEnabled;                     // 0x0728(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_729[0x7];                                      // 0x0729(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* K2Node_DynamicCast_AsWBP_UI_Main_Menu_Crime_Net_Server_Button; // 0x0730(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0738(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FSBZOnlineSearchResult                 CallFunc_Array_Get_Item;                           // 0x00F0(0x0210)()
+	class USBZSessionUpdateListCallbackProxy*     CallFunc_SessionUpdateList_ReturnValue;            // 0x0300(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x030C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRequestInProgress_ReturnValue;          // 0x030D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_30E[0x2];                                      // 0x030E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZOnlineSearchResult                 K2Node_CustomEvent_RemoteSessionInfo;              // 0x0310(0x0210)(ConstParm)
+	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode;                      // 0x0520(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_521[0x3];                                      // 0x0521(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0524(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0529(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52A[0x2];                                      // 0x052A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x052C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZOnlineCode ErrorCode)>     K2Node_CreateDelegate_OutputDelegate_1;            // 0x0530(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FSBZOnlineSearchResult& RemoteSessionInfo)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0544(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode_1;                    // 0x0558(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_559[0x7];                                      // 0x0559(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZOnlineSearchResult>         K2Node_CustomEvent_Results;                        // 0x0560(0x0010)(ConstParm, ReferenceParm)
+	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* CallFunc_SpawnObject_ReturnValue;                // 0x0570(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0578(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x0580(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x058C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_58D[0x3];                                      // 0x058D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0590(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0598(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x05A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5A5[0x3];                                      // 0x05A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results)> K2Node_CreateDelegate_OutputDelegate_3; // 0x05A8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_4;            // 0x05BC(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_5;            // 0x05D0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5E4[0x4];                                      // 0x05E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x05E8(0x0030)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0618(0x0030)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0648(0x0030)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x0678(0x0030)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x06A8(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x06B8(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x06C8(0x0028)()
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference_1;    // 0x06F0(0x0028)()
+	TDelegate<void(class USBZMenuButton* Button, bool bIsEnabled)> K2Node_CreateDelegate_OutputDelegate_6; // 0x0718(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72C[0x4];                                      // 0x072C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_CustomEvent_Button;                         // 0x0730(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsEnabled;                     // 0x0738(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_739[0x7];                                      // 0x0739(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* K2Node_DynamicCast_AsWBP_UI_Main_Menu_Crime_Net_Server_Button; // 0x0740(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0748(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser;
 
@@ -92,46 +92,10 @@ DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI
 struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInviteFinished
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnJoinStarted
-// 0x01F8 (0x01F8 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted final
-{
-public:
-	struct FSBZOnlineSearchResult                 RemoteSessionInfo;                                 // 0x0000(0x01F8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused;
 
 // Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A
 // 0x0018 (0x0018 - 0x0000)
@@ -143,6 +107,42 @@ public:
 	TArray<struct FSBZOnlineSearchResult>         Results;                                           // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInviteFinished
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnJoinStarted
+// 0x0210 (0x0210 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted final
+{
+public:
+	struct FSBZOnlineSearchResult                 RemoteSessionInfo;                                 // 0x0000(0x0210)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

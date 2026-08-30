@@ -18,27 +18,27 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_ActionNotification.WBP_UI_Widget_ActionNotification_C
-// 0x0048 (0x03A8 - 0x0360)
+// 0x0040 (0x03E0 - 0x03A0)
 class UWBP_UI_Widget_ActionNotification_C final : public UPD3ActionNotificationWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Show;                                              // 0x0368(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class URichTextBlock*                         Action_Text;                                       // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Background;                                  // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         NotificationQueue_HB;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               Dynamic_Material_Background;                       // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   DramaNotificationStyle;                            // 0x0390(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Show;                                              // 0x03A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class URichTextBlock*                         Action_Text;                                       // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Background;                                  // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         NotificationQueue_HB;                              // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               Dynamic_Material_Background;                       // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FText                                   DramaNotificationStyle;                            // 0x03D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	void DisplayNotification(const struct FSBZHUDNotificationData& InNotification);
 	void ExecuteUbergraph_WBP_UI_Widget_ActionNotification(int32 EntryPoint);
-	void UpdateDisplayedNotificationText(const class FText& InText);
-	void PreConstruct(bool IsDesignTime);
+	void Finished_95C5AD0D41C8E43D64146BA29E2C58DF();
+	void Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6();
 	void OnInitialized();
 	void OnNotificationAdded(const struct FSBZHUDNotificationData& InNotificationAdded);
-	void DisplayNotification(const struct FSBZHUDNotificationData& InNotification);
-	void Finished_B29F93DF4BA5CDDAC31AABA9898C1FE6();
-	void Finished_95C5AD0D41C8E43D64146BA29E2C58DF();
+	void PreConstruct(bool IsDesignTime);
+	void UpdateDisplayedNotificationText(const class FText& InText);
 	void UpdateQueue();
 
 public:

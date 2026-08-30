@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_QuestLine_ChapterGroup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestLine_ChapterGroup_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,24 +50,10 @@ void UWBP_QuestLine_ChapterGroup_C::ExecuteUbergraph_WBP_QuestLine_ChapterGroup(
 }
 
 
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_QuestLine_ChapterGroup_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_ChapterGroup_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestLine_ChapterGroup_C::PreConstruct(bool IsDesignTime)
 {
@@ -93,7 +93,7 @@ void UWBP_QuestLine_ChapterGroup_C::SetChapterText(const class FText& InputText)
 // Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetTextVisible
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsTextVisible                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsTextVisible                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestLine_ChapterGroup_C::SetTextVisible(bool IsTextVisible)
 {

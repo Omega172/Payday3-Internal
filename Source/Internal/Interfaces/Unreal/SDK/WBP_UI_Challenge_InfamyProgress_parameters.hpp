@@ -24,41 +24,43 @@ struct WBP_UI_Challenge_InfamyProgress_C_ExecuteUbergraph_WBP_UI_Challenge_Infam
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Challenge_InfamyProgress_C_ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress;
+
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Get_Image_ProgressBar_Brush_0
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_UI_Challenge_InfamyProgress_C_Get_Image_ProgressBar_Brush_0 final
+{
+public:
+	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x00C0)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_WBP_UI_Challenge_InfamyProgress_C_Get_Image_ProgressBar_Brush_0;
 
 // Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Challenge_InfamyProgress_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Challenge_InfamyProgress_C_PreConstruct;
 
 // Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Set Infamy Visuals
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x00C0 (0x00C0 - 0x0000)
 struct WBP_UI_Challenge_InfamyProgress_C_Set_Infamy_Visuals final
 {
 public:
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0040(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0048)(HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0058(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_Challenge_InfamyProgress_C_Set_Infamy_Visuals;
-
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Get_Image_ProgressBar_Brush_0
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_UI_Challenge_InfamyProgress_C_Get_Image_ProgressBar_Brush_0 final
-{
-public:
-	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x0090)(Parm, OutParm, ReturnParm)
-};
-DUMPER7_ASSERTS_WBP_UI_Challenge_InfamyProgress_C_Get_Image_ProgressBar_Brush_0;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -17,16 +17,16 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C
-// 0x0010 (0x0300 - 0x02F0)
+// 0x0010 (0x0360 - 0x0350)
 class UWBP_UI_SuitCosmeticPurchasePopUp_C final : public USBZBaseInventoryItemVisualsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_SuitCosmeticPurchasePopUp(int32 EntryPoint);
 	void EmptySet();
+	void ExecuteUbergraph_WBP_UI_SuitCosmeticPurchasePopUp(int32 EntryPoint);
 	void SpriteLoaded(class UPaperSprite* OutLoadedSprite);
 
 public:

@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function GamepadUMGPlugin.VirtualCursorFunctionLibrary.DisableVirtualCursor
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class APlayerController*                PC                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APlayerController*                PC                                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UVirtualCursorFunctionLibrary::DisableVirtualCursor(class APlayerController* PC)
 {
@@ -44,7 +44,7 @@ void UVirtualCursorFunctionLibrary::DisableVirtualCursor(class APlayerController
 // Function GamepadUMGPlugin.VirtualCursorFunctionLibrary.EnableVirtualCursor
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-// class APlayerController*                PC                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class APlayerController*                PC                                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UVirtualCursorFunctionLibrary::EnableVirtualCursor(class APlayerController* PC)
 {

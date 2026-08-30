@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,43 +50,15 @@ void UWBP_UI_Widget_SM_Matchmaking_C::ExecuteUbergraph_WBP_UI_Widget_SM_Matchmak
 }
 
 
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.GoToLobby
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_SM_Matchmaking_C::Destruct()
+void UWBP_UI_Widget_SM_Matchmaking_C::GoToLobby()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnMatchmakingCanceled
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchmakingCanceled()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnMatchmakingCanceled");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnStateMachineEnteredMatchmaking_Event_0
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::OnStateMachineEnteredMatchmaking_Event_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnStateMachineEnteredMatchmaking_Event_0");
+		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "GoToLobby");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,26 +75,6 @@ void UWBP_UI_Widget_SM_Matchmaking_C::OnExitedMatchmaking()
 		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnExitedMatchmaking");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnPopUpButtonPressed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::OnPopUpButtonPressed(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnPopUpButtonPressed");
-
-	Params::WBP_UI_Widget_SM_Matchmaking_C_OnPopUpButtonPressed Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -140,15 +106,49 @@ void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchFound()
 }
 
 
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.GoToLobby
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnMatchmakingCanceled
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_SM_Matchmaking_C::GoToLobby()
+void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchmakingCanceled()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "GoToLobby");
+		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnMatchmakingCanceled");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnPopUpButtonPressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::OnPopUpButtonPressed(class FName ClosingActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnPopUpButtonPressed");
+
+	Params::WBP_UI_Widget_SM_Matchmaking_C_OnPopUpButtonPressed Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnStateMachineEnteredMatchmaking_Event_0
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::OnStateMachineEnteredMatchmaking_Event_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SM_Matchmaking_C", "OnStateMachineEnteredMatchmaking_Event_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -39,7 +39,7 @@ void UWBP_UI_ViewTargetContainer_C::ExecuteUbergraph_WBP_UI_ViewTargetContainer(
 // Function WBP_UI_ViewTargetContainer.WBP_UI_ViewTargetContainer_C.OnIsSecurityCameraChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsSecurityCamera                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsSecurityCamera                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ViewTargetContainer_C::OnIsSecurityCameraChanged(bool bInIsSecurityCamera)
 {
@@ -51,6 +51,26 @@ void UWBP_UI_ViewTargetContainer_C::OnIsSecurityCameraChanged(bool bInIsSecurity
 	Params::WBP_UI_ViewTargetContainer_C_OnIsSecurityCameraChanged Parms{};
 
 	Parms.bInIsSecurityCamera = bInIsSecurityCamera;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ViewTargetContainer.WBP_UI_ViewTargetContainer_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ViewTargetContainer_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ViewTargetContainer_C", "PreConstruct");
+
+	Params::WBP_UI_ViewTargetContainer_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

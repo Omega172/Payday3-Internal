@@ -35,48 +35,48 @@ public:
 DUMPER7_ASSERTS_GizmoBaseComponent_UpdateWorldLocalState;
 
 // Function InteractiveToolsFramework.GizmoTransformSource.SetTransform
-// 0x0030 (0x0030 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct GizmoTransformSource_SetTransform final
 {
 public:
-	struct FTransform                             NewTransform;                                      // 0x0000(0x0030)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FTransform                             NewTransform;                                      // 0x0000(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoTransformSource_SetTransform;
 
 // Function InteractiveToolsFramework.GizmoTransformSource.GetTransform
-// 0x0030 (0x0030 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct GizmoTransformSource_GetTransform final
 {
 public:
-	struct FTransform                             ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoTransformSource_GetTransform;
 
 // Function InteractiveToolsFramework.GizmoAxisSource.GetDirection
-// 0x000C (0x000C - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct GizmoAxisSource_GetDirection final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoAxisSource_GetDirection;
 
 // Function InteractiveToolsFramework.GizmoAxisSource.GetOrigin
-// 0x000C (0x000C - 0x0000)
+// 0x0018 (0x0018 - 0x0000)
 struct GizmoAxisSource_GetOrigin final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoAxisSource_GetOrigin;
 
 // Function InteractiveToolsFramework.GizmoAxisSource.GetTangentVectors
-// 0x0018 (0x0018 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct GizmoAxisSource_GetTangentVectors final
 {
 public:
-	struct FVector                                TangentXOut;                                       // 0x0000(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                TangentYOut;                                       // 0x000C(0x000C)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TangentXOut;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                TangentYOut;                                       // 0x0018(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoAxisSource_GetTangentVectors;
 
@@ -98,6 +98,59 @@ public:
 };
 DUMPER7_ASSERTS_GizmoClickTarget_UpdateHoverState;
 
+// Function InteractiveToolsFramework.GizmoClickTarget.UpdateInteractingState
+// 0x0001 (0x0001 - 0x0000)
+struct GizmoClickTarget_UpdateInteractingState final
+{
+public:
+	bool                                          bInteracting;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoClickTarget_UpdateInteractingState;
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHittableState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoClickMultiTarget_UpdateHittableState final
+{
+public:
+	bool                                          bHittable;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoClickMultiTarget_UpdateHittableState;
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateHoverState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoClickMultiTarget_UpdateHoverState final
+{
+public:
+	bool                                          bHovering;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoClickMultiTarget_UpdateHoverState;
+
+// Function InteractiveToolsFramework.GizmoClickMultiTarget.UpdateInteractingState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoClickMultiTarget_UpdateInteractingState final
+{
+public:
+	bool                                          bInteracting;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoClickMultiTarget_UpdateInteractingState;
+
+// Function InteractiveToolsFramework.GizmoRenderMultiTarget.UpdateVisibilityState
+// 0x0008 (0x0008 - 0x0000)
+struct GizmoRenderMultiTarget_UpdateVisibilityState final
+{
+public:
+	bool                                          bVisible;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        InPartIdentifier;                                  // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_GizmoRenderMultiTarget_UpdateVisibilityState;
+
 // Function InteractiveToolsFramework.GizmoFloatParameterSource.SetParameter
 // 0x0004 (0x0004 - 0x0000)
 struct GizmoFloatParameterSource_SetParameter final
@@ -117,20 +170,20 @@ public:
 DUMPER7_ASSERTS_GizmoFloatParameterSource_GetParameter;
 
 // Function InteractiveToolsFramework.GizmoVec2ParameterSource.SetParameter
-// 0x0008 (0x0008 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct GizmoVec2ParameterSource_SetParameter final
 {
 public:
-	struct FVector2D                              NewValue;                                          // 0x0000(0x0008)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              NewValue;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoVec2ParameterSource_SetParameter;
 
 // Function InteractiveToolsFramework.GizmoVec2ParameterSource.GetParameter
-// 0x0008 (0x0008 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct GizmoVec2ParameterSource_GetParameter final
 {
 public:
-	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GizmoVec2ParameterSource_GetParameter;
 

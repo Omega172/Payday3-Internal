@@ -17,36 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.ExecuteUbergraph_ABP_TPPlayerBase_Moneybag
-// 0x0028 (0x0028 - 0x0000)
-struct ABP_TPPlayerBase_Moneybag_C_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ABP_TPPlayerBase_Moneybag_C_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag;
-
-// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AttachmentComplete
-// 0x0008 (0x0008 - 0x0000)
-struct ABP_TPPlayerBase_Moneybag_C_AttachmentComplete final
-{
-public:
-	class USkeletalMeshComponent*                 InParentSkeletalMeshComponent;                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ABP_TPPlayerBase_Moneybag_C_AttachmentComplete;
-
 // Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AdjustAttachment
-// 0x0040 (0x0040 - 0x0000)
+// 0x0070 (0x0070 - 0x0000)
 struct ABP_TPPlayerBase_Moneybag_C_AdjustAttachment final
 {
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NewCount;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             NewStrapTransformOffset;                           // 0x0010(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FTransform                             NewStrapTransformOffset;                           // 0x0010(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_ABP_TPPlayerBase_Moneybag_C_AdjustAttachment;
 
@@ -58,6 +37,28 @@ public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
 DUMPER7_ASSERTS_ABP_TPPlayerBase_Moneybag_C_AnimGraph;
+
+// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.AttachmentComplete
+// 0x0008 (0x0008 - 0x0000)
+struct ABP_TPPlayerBase_Moneybag_C_AttachmentComplete final
+{
+public:
+	class USkeletalMeshComponent*                 InParentSkeletalMeshComponent;                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_TPPlayerBase_Moneybag_C_AttachmentComplete;
+
+// Function ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C.ExecuteUbergraph_ABP_TPPlayerBase_Moneybag
+// 0x0050 (0x0050 - 0x0000)
+struct ABP_TPPlayerBase_Moneybag_C_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_TPPlayerBase_Moneybag_C_ExecuteUbergraph_ABP_TPPlayerBase_Moneybag;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Order_Investigate.BP_Order_Investigate_C
-// 0x0000 (0x01B8 - 0x01B8)
+// 0x0000 (0x01C0 - 0x01C0)
 class UBP_Order_Investigate_C final : public USBZAIOrder_Investigate
 {
 public:

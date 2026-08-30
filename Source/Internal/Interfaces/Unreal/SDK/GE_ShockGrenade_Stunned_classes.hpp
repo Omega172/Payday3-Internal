@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GE_ShockGrenade_Stunned.GE_ShockGrenade_Stunned_C
-// 0x0000 (0x08C0 - 0x08C0)
+// 0x0000 (0x0B30 - 0x0B30)
 class UGE_ShockGrenade_Stunned_C final : public UGameplayEffect
 {
 public:

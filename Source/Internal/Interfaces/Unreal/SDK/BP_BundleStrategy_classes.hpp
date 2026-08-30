@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BundleStrategy.BP_BundleStrategy_C
-// 0x0000 (0x0300 - 0x0300)
+// 0x0000 (0x02E8 - 0x02E8)
 class UBP_BundleStrategy_C final : public USBZBundleItemStrategy
 {
 public:

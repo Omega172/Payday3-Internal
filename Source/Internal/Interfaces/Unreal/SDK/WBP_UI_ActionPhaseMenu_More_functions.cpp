@@ -16,41 +16,43 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ActionPhaseMenu_More_C::ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More(int32 EntryPoint)
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More");
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_UI_ActionPhaseMenu_More_C_ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More Parms{};
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.CustomEvent_1
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ActionPhaseMenu_More_C::CustomEvent_1(class FName ClosingActionName)
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "CustomEvent_1");
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_UI_ActionPhaseMenu_More_C_CustomEvent_1 Parms{};
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.ClosingActionName = ClosingActionName;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -59,7 +61,7 @@ void UWBP_UI_ActionPhaseMenu_More_C::CustomEvent_1(class FName ClosingActionName
 // Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_HostRestartHeist_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_HostRestartHeist_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -79,8 +81,8 @@ void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_
 // Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_HostRestartHeist_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_HostRestartHeist_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -98,10 +100,136 @@ void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_
 }
 
 
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_Socials_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_Socials_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -132,28 +260,6 @@ void UWBP_UI_ActionPhaseMenu_More_C::CloseMenu()
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.CustomEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -174,19 +280,19 @@ void UWBP_UI_ActionPhaseMenu_More_C::CustomEvent(class FName ClosingActionName)
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.OnQuitConfirmed
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.CustomEvent_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ActionPhaseMenu_More_C::OnQuitConfirmed(class FName ClosingActionName)
+void UWBP_UI_ActionPhaseMenu_More_C::CustomEvent_1(class FName ClosingActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "OnQuitConfirmed");
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "CustomEvent_1");
 
-	Params::WBP_UI_ActionPhaseMenu_More_C_OnQuitConfirmed Parms{};
+	Params::WBP_UI_ActionPhaseMenu_More_C_CustomEvent_1 Parms{};
 
 	Parms.ClosingActionName = ClosingActionName;
 
@@ -194,63 +300,21 @@ void UWBP_UI_ActionPhaseMenu_More_C::OnQuitConfirmed(class FName ClosingActionNa
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_ActionPhaseMenu_More_C::ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More");
 
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_ActionPhaseMenu_More_C_ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More Parms{};
 
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -276,20 +340,6 @@ void UWBP_UI_ActionPhaseMenu_More_C::OnControlsReferencePressed(class FName Acti
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_ActionPhaseMenu_More_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -310,85 +360,35 @@ void UWBP_UI_ActionPhaseMenu_More_C::OnGainedStackFocused(const class FName& Pre
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_ActionPhaseMenu_More_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "OnLostStackFocused");
 
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.OnQuitConfirmed
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_ActionPhaseMenu_More_C::OnQuitConfirmed(class FName ClosingActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "OnQuitConfirmed");
 
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_ActionPhaseMenu_More_C_OnQuitConfirmed Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionPhaseMenu_More.WBP_UI_ActionPhaseMenu_More_C.BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ActionPhaseMenu_More_C::BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ActionPhaseMenu_More_C", "BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_ActionPhaseMenu_More_C_BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

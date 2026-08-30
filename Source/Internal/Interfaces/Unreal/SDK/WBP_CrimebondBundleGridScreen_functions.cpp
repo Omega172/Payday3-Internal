@@ -16,21 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C.ExecuteUbergraph_WBP_CrimebondBundleGridScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C.BP_OnBundleApplied
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZItemBundleData*         InBundleData                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondBundleGridScreen_C::ExecuteUbergraph_WBP_CrimebondBundleGridScreen(int32 EntryPoint)
+void UWBP_CrimebondBundleGridScreen_C::BP_OnBundleApplied(const class USBZItemBundleData* InBundleData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundleGridScreen_C", "ExecuteUbergraph_WBP_CrimebondBundleGridScreen");
+		Func = Class->GetFunction("WBP_CrimebondBundleGridScreen_C", "BP_OnBundleApplied");
 
-	Params::WBP_CrimebondBundleGridScreen_C_ExecuteUbergraph_WBP_CrimebondBundleGridScreen Parms{};
+	Params::WBP_CrimebondBundleGridScreen_C_BP_OnBundleApplied Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InBundleData = InBundleData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,7 +39,7 @@ void UWBP_CrimebondBundleGridScreen_C::ExecuteUbergraph_WBP_CrimebondBundleGridS
 // Function WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C.BP_OnDecoSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZInventoryItemDecorator*       Deco                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       Deco                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondBundleGridScreen_C::BP_OnDecoSelected(class USBZInventoryItemDecorator* Deco)
 {
@@ -56,21 +56,21 @@ void UWBP_CrimebondBundleGridScreen_C::BP_OnDecoSelected(class USBZInventoryItem
 }
 
 
-// Function WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C.BP_OnBundleApplied
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C.ExecuteUbergraph_WBP_CrimebondBundleGridScreen
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class USBZItemBundleData*         InBundleData                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondBundleGridScreen_C::BP_OnBundleApplied(const class USBZItemBundleData* InBundleData)
+void UWBP_CrimebondBundleGridScreen_C::ExecuteUbergraph_WBP_CrimebondBundleGridScreen(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimebondBundleGridScreen_C", "BP_OnBundleApplied");
+		Func = Class->GetFunction("WBP_CrimebondBundleGridScreen_C", "ExecuteUbergraph_WBP_CrimebondBundleGridScreen");
 
-	Params::WBP_CrimebondBundleGridScreen_C_BP_OnBundleApplied Parms{};
+	Params::WBP_CrimebondBundleGridScreen_C_ExecuteUbergraph_WBP_CrimebondBundleGridScreen Parms{};
 
-	Parms.InBundleData = InBundleData;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -119,7 +119,7 @@ void UWBP_CrimebondBundleGridScreen_C::OnGainedStackFocused(const class FName& P
 // Function WBP_CrimebondBundleGridScreen.WBP_CrimebondBundleGridScreen_C.UpdateInspectAction
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryItemDecorator*       InDecorator                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       InDecorator                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimebondBundleGridScreen_C::UpdateInspectAction(class USBZInventoryItemDecorator* InDecorator)
 {

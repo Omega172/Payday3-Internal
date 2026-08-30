@@ -16,6 +16,94 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SecondaryButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_SecondaryButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SecondaryButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_SecondaryButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SecondaryButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_SecondaryButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_SecondaryButton_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_SecondaryButton_C::DisabledButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "DisabledButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_SecondaryButton.WBP_SecondaryButton_C.ExecuteUbergraph_WBP_SecondaryButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,21 +124,82 @@ void UWBP_SecondaryButton_C::ExecuteUbergraph_WBP_SecondaryButton(int32 EntryPoi
 }
 
 
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.GetText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText*                            OutText                                                (Parm, OutParm)
 
-void UWBP_SecondaryButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_SecondaryButton_C::GetText(class FText* OutText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "GetText");
 
-	Params::WBP_SecondaryButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_SecondaryButton_C_GetText Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutText != nullptr)
+		*OutText = std::move(Parms.OutText);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SecondaryButton_C::OnDisabledVisuals(bool bIsDisabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "OnDisabledVisuals");
+
+	Params::WBP_SecondaryButton_C_OnDisabledVisuals Parms{};
+
+	Parms.bIsDisabled_0 = bIsDisabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.OnFocusedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SecondaryButton_C::OnFocusedVisuals(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "OnFocusedVisuals");
+
+	Params::WBP_SecondaryButton_C_OnFocusedVisuals Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SecondaryButton_C::OnHoverVisuals(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "OnHoverVisuals");
+
+	Params::WBP_SecondaryButton_C_OnHoverVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -73,7 +222,7 @@ void UWBP_SecondaryButton_C::OnInitialized()
 // Function WBP_SecondaryButton.WBP_SecondaryButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_SecondaryButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -90,134 +239,6 @@ void UWBP_SecondaryButton_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SecondaryButton_C::DisabledButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "DisabledButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SecondaryButton_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SecondaryButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_SecondaryButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SecondaryButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_SecondaryButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SecondaryButton_C::OnHoverVisuals(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "OnHoverVisuals");
-
-	Params::WBP_SecondaryButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.OnFocusedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SecondaryButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "OnFocusedVisuals");
-
-	Params::WBP_SecondaryButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_SecondaryButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "OnDisabledVisuals");
-
-	Params::WBP_SecondaryButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_SecondaryButton.WBP_SecondaryButton_C.RefreshVisual
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -227,6 +248,20 @@ void UWBP_SecondaryButton_C::RefreshVisual()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_SecondaryButton_C", "RefreshVisual");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ResetToDefaultButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SecondaryButton_C::ResetToDefaultButtonText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SecondaryButton_C", "ResetToDefaultButtonText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,41 +284,6 @@ void UWBP_SecondaryButton_C::SetButtonText(const class FText& InButtonText)
 	Parms.InButtonText = std::move(InButtonText);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.ResetToDefaultButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_SecondaryButton_C::ResetToDefaultButtonText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "ResetToDefaultButtonText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SecondaryButton.WBP_SecondaryButton_C.GetText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText*                            OutText                                                (Parm, OutParm)
-
-void UWBP_SecondaryButton_C::GetText(class FText* OutText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SecondaryButton_C", "GetText");
-
-	Params::WBP_SecondaryButton_C_GetText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutText != nullptr)
-		*OutText = std::move(Parms.OutText);
 }
 
 

@@ -18,42 +18,42 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C
-// 0x0078 (0x03E0 - 0x0368)
+// 0x0070 (0x0438 - 0x03C8)
 class UWBP_Settings_Screen_Category_C final : public USBZSettingsCategoryScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       TabChange;                                         // 0x0370(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x0378(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Background;                                        // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_250;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_Subtitles_C*             Subtitles;                                         // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZSettingsButton*                     ActiveButton;                                      // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZSettingsButtonActionClick*          ActiveActionClickButton;                           // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SettingsCategoryName;                              // 0x03B0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Settings_HelperPanel_ReticlePreview_C* ReticlePreviewPanel;                           // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   InTitleName;                                       // 0x03C8(0x0018)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       TabChange;                                         // 0x03D0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x03D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Background;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_250;                                         // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_Subtitles_C*             Subtitles;                                         // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZSettingsButton*                     ActiveButton;                                      // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZSettingsButtonActionClick*          ActiveActionClickButton;                           // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SettingsCategoryName;                              // 0x0410(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Settings_HelperPanel_ReticlePreview_C* ReticlePreviewPanel;                           // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   InTitleName;                                       // 0x0428(0x0010)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_WBP_Settings_Screen_Category(int32 EntryPoint);
-	void OnAcceptPressed();
-	void OnTertiaryPressed();
-	void OnSecondaryPressed();
-	void OnPopUpClosed();
-	void OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton);
-	void OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
-	void OnInitialized();
-	void OnControlRefrencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
 	void Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused);
 	void Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button);
-	void Update_Menu_Control_Reference();
-	void Update_Helper_Panels_Visibility(class USBZMenuButton* Button, bool IsButtonFocused);
-	void On_Focused_Input_Actions(bool IsFocused);
 	void Is_Reticle_Helper_Panel_Visible(bool* Visible);
+	void On_Focused_Input_Actions(bool IsFocused);
+	void OnAcceptPressed();
+	void OnControlRefrencePressed(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
+	void OnLostStackFocused();
+	void OnPopUpClosed();
+	void OnSecondaryPressed();
+	void OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton);
+	void OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
+	void OnTertiaryPressed();
+	void Update_Helper_Panels_Visibility(class USBZMenuButton* Button, bool IsButtonFocused);
+	void Update_Menu_Control_Reference();
 
 public:
 	static class UClass* StaticClass()

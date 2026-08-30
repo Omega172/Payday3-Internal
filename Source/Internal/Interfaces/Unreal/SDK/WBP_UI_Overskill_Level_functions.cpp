@@ -36,85 +36,27 @@ void UWBP_UI_Overskill_Level_C::ExecuteUbergraph_WBP_UI_Overskill_Level(int32 En
 }
 
 
-// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.GetCurrentLevel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// double                                  Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  CurrentLevel                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Level_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Overskill_Level_C::GetCurrentLevel(double Progress_0, int32* CurrentLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "GetCurrentLevel");
 
-	Params::WBP_UI_Overskill_Level_C_PreConstruct Parms{};
+	Params::WBP_UI_Overskill_Level_C_GetCurrentLevel Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.OnOverskillChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZOverskillData*          InOverskillData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Level_C::OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "OnOverskillChanged");
-
-	Params::WBP_UI_Overskill_Level_C_OnOverskillChanged Parms{};
-
-	Parms.InOverskillData = InOverskillData;
-	Parms.InProgress = InProgress;
+	Parms.Progress_0 = Progress_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.SetLevelVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Level_C::SetLevelVisuals(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "SetLevelVisuals");
-
-	Params::WBP_UI_Overskill_Level_C_SetLevelVisuals Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.SetColorVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsLocked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Overskill_Level_C::SetColorVisuals(bool IsLocked)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "SetColorVisuals");
-
-	Params::WBP_UI_Overskill_Level_C_SetColorVisuals Parms{};
-
-	Parms.IsLocked = IsLocked;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (CurrentLevel != nullptr)
+		*CurrentLevel = Parms.CurrentLevel;
 }
 
 
@@ -160,27 +102,85 @@ void UWBP_UI_Overskill_Level_C::GetValueText(class FText* OutText)
 }
 
 
-// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.GetCurrentLevel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.OnOverskillChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// float                                   Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  CurrentLevel                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZOverskillData*          InOverskillData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Level_C::GetCurrentLevel(float Progress_0, int32* CurrentLevel)
+void UWBP_UI_Overskill_Level_C::OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "GetCurrentLevel");
+		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "OnOverskillChanged");
 
-	Params::WBP_UI_Overskill_Level_C_GetCurrentLevel Parms{};
+	Params::WBP_UI_Overskill_Level_C_OnOverskillChanged Parms{};
 
-	Parms.Progress_0 = Progress_0;
+	Parms.InOverskillData = InOverskillData;
+	Parms.InProgress = InProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (CurrentLevel != nullptr)
-		*CurrentLevel = Parms.CurrentLevel;
+
+// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Level_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "PreConstruct");
+
+	Params::WBP_UI_Overskill_Level_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.SetColorVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsLocked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Level_C::SetColorVisuals(bool IsLocked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "SetColorVisuals");
+
+	Params::WBP_UI_Overskill_Level_C_SetColorVisuals Parms{};
+
+	Parms.IsLocked = IsLocked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_Level.WBP_UI_Overskill_Level_C.SetLevelVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Level_C::SetLevelVisuals(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Level_C", "SetLevelVisuals");
+
+	Params::WBP_UI_Overskill_Level_C_SetLevelVisuals Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

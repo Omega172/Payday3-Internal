@@ -19,31 +19,31 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MainMenu.MainMenu_C
-// 0x0070 (0x0370 - 0x0300)
+// 0x0078 (0x03F8 - 0x0380)
 class AMainMenu_C final : public ASBZLevelScriptMainMenuActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector2D                              PreviousMousePos;                                  // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACH_UI_MM_PlayerCharacter_C*            CH_UI_MM_Local_PlayerCharacter_EdGraph_0_RefProperty; // 0x0310(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACineCameraActor*                       Generic2_CineCamera_EdGraph_1_RefProperty;         // 0x0318(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACineCameraActor*                       CrimeNet_CineCamera_EdGraph_1_RefProperty;         // 0x0320(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACineCameraActor*                       SuitCustomize_CineCamera_EdGraph_1_RefProperty;    // 0x0328(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACineCameraActor*                       CrimebondPackBundle_EdGraph_1_RefProperty;         // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACineCameraActor*                       CrimebondBundleSelecting_EdGraph_1_RefProperty;    // 0x0338(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           CustomizationItemCamera_EdGraph_1_RefProperty;     // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           LobbyCamera_2_EdGraph_1_RefProperty;               // 0x0348(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           InventoryPlayerCharacterCamera_EdGraph_1_RefProperty; // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           ChallengesCamera_EdGraph_1_RefProperty;            // 0x0358(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           ServerBrowserCamera_EdGraph_1_RefProperty;         // 0x0360(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ACameraActor*                           PlayerCharacterCamera_EdGraph_1_RefProperty;       // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0380(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector2D                              PreviousMousePos;                                  // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ACH_UI_MM_PlayerCharacter_C*            CH_UI_MM_Local_PlayerCharacter_TickRotation_MERGED_RefProperty; // 0x0398(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACineCameraActor*                       Generic2_CineCamera_SetActiveCamera_MERGED_RefProperty; // 0x03A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACineCameraActor*                       CrimeNet_CineCamera_SetActiveCamera_MERGED_RefProperty; // 0x03A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACineCameraActor*                       SuitCustomize_CineCamera_SetActiveCamera_MERGED_RefProperty; // 0x03B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACineCameraActor*                       CrimebondPackBundle_SetActiveCamera_MERGED_RefProperty; // 0x03B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACineCameraActor*                       CrimebondBundleSelecting_SetActiveCamera_MERGED_RefProperty; // 0x03C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           CustomizationItemCamera_SetActiveCamera_MERGED_RefProperty; // 0x03C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           LobbyCamera_2_SetActiveCamera_MERGED_RefProperty;  // 0x03D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           InventoryPlayerCharacterCamera_SetActiveCamera_MERGED_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           ChallengesCamera_SetActiveCamera_MERGED_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           ServerBrowserCamera_SetActiveCamera_MERGED_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ACameraActor*                           PlayerCharacterCamera_SetActiveCamera_MERGED_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_MainMenu(int32 EntryPoint);
 	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
-	void TickRotation(float DeltaTime);
 	void SetActiveCamera(class FName NewValue, class FName PreviousValue);
+	void TickRotation(double DeltaTime);
 
 public:
 	static class UClass* StaticClass()

@@ -11,34 +11,34 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_InventoryBaseData_Icon.WBP_InventoryBaseData_Icon_C
-// 0x0030 (0x0320 - 0x02F0)
+// 0x0038 (0x0388 - 0x0350)
 class UWBP_InventoryBaseData_Icon_C final : public USBZBaseInventoryItemVisualsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector2D                              ImageSize;                                         // 0x02F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bUseImageSize;                                     // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           EmptySprite;                                       // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           EmptyIconColor;                                    // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector2D                              ImageSize;                                         // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseImageSize;                                     // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_369[0x7];                                      // 0x0369(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPaperSprite*                           EmptySprite;                                       // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           EmptyIconColor;                                    // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void EmptySet();
 	void ExecuteUbergraph_WBP_InventoryBaseData_Icon(int32 EntryPoint);
-	void SetSizeFromResource(class UObject* InputObject);
 	void OnImageLoaded(class UObject* LoadedObject);
 	void OnLoadingChanged(bool bIsLoading);
-	void EmptySet();
 	void PreConstruct(bool IsDesignTime);
 	void SetEmptyIcon();
 	void SetIcon(class UPaperSprite* InSprite);
+	void SetSizeFromResource(class UObject* InputObject);
 
 public:
 	static class UClass* StaticClass()

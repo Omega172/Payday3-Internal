@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_Debug_MainMenuVersionText__C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Debug_MainMenuVersionText__C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -50,24 +64,10 @@ void UWBP_UI_Widget_Debug_MainMenuVersionText__C::OnInitialized()
 }
 
 
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_Debug_MainMenuVersionText__C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Debug_MainMenuVersionText__C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Debug_MainMenuVersionText__C::PreConstruct(bool IsDesignTime)
 {

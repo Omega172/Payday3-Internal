@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.EmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_QuestChallengeReward_C::EmptySet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "EmptySet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ExecuteUbergraph_WBP_UI_QuestChallengeReward
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,30 +50,10 @@ void UWBP_UI_QuestChallengeReward_C::ExecuteUbergraph_WBP_UI_QuestChallengeRewar
 }
 
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnImageLoaded
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UObject*                          LoadedObject                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeReward_C::OnImageLoaded(class UObject* LoadedObject)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "OnImageLoaded");
-
-	Params::WBP_UI_QuestChallengeReward_C_OnImageLoaded Parms{};
-
-	Parms.LoadedObject = LoadedObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ItemInitialized
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZInventoryBaseData*      NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZInventoryBaseData*      NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_QuestChallengeReward_C::ItemInitialized(const class USBZInventoryBaseData* NewItem)
 {
@@ -76,10 +70,30 @@ void UWBP_UI_QuestChallengeReward_C::ItemInitialized(const class USBZInventoryBa
 }
 
 
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnImageLoaded
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          LoadedObject                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::OnImageLoaded(class UObject* LoadedObject)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "OnImageLoaded");
+
+	Params::WBP_UI_QuestChallengeReward_C_OnImageLoaded Parms{};
+
+	Parms.LoadedObject = LoadedObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnLoadingChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsLoading                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsLoading                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_QuestChallengeReward_C::OnLoadingChanged(bool bIsLoading)
 {
@@ -96,37 +110,23 @@ void UWBP_UI_QuestChallengeReward_C::OnLoadingChanged(bool bIsLoading)
 }
 
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SpriteLoaded
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetClaimed
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsClaimed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeReward_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
+void UWBP_UI_QuestChallengeReward_C::SetClaimed(bool IsClaimed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "SpriteLoaded");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "SetClaimed");
 
-	Params::WBP_UI_QuestChallengeReward_C_SpriteLoaded Parms{};
+	Params::WBP_UI_QuestChallengeReward_C_SetClaimed Parms{};
 
-	Parms.OutLoadedSprite = OutLoadedSprite;
+	Parms.IsClaimed = IsClaimed;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.EmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_QuestChallengeReward_C::EmptySet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "EmptySet");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -147,7 +147,7 @@ void UWBP_UI_QuestChallengeReward_C::SetEmptyIcon()
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIcon
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     InSprite                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InSprite                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_QuestChallengeReward_C::SetIcon(class UPaperSprite* InSprite)
 {
@@ -159,6 +159,26 @@ void UWBP_UI_QuestChallengeReward_C::SetIcon(class UPaperSprite* InSprite)
 	Params::WBP_UI_QuestChallengeReward_C_SetIcon Parms{};
 
 	Parms.InSprite = InSprite;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIconTexture
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTexture2D*                       InTexture                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::SetIconTexture(class UTexture2D* InTexture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "SetIconTexture");
+
+	Params::WBP_UI_QuestChallengeReward_C_SetIconTexture Parms{};
+
+	Parms.InTexture = InTexture;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -178,26 +198,6 @@ void UWBP_UI_QuestChallengeReward_C::SetName()
 }
 
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetClaimed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsClaimed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_QuestChallengeReward_C::SetClaimed(bool IsClaimed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "SetClaimed");
-
-	Params::WBP_UI_QuestChallengeReward_C_SetClaimed Parms{};
-
-	Parms.IsClaimed = IsClaimed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetType
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -212,21 +212,21 @@ void UWBP_UI_QuestChallengeReward_C::SetType()
 }
 
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIconTexture
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SpriteLoaded
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       InTexture                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeReward_C::SetIconTexture(class UTexture2D* InTexture)
+void UWBP_UI_QuestChallengeReward_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "SetIconTexture");
+		Func = Class->GetFunction("WBP_UI_QuestChallengeReward_C", "SpriteLoaded");
 
-	Params::WBP_UI_QuestChallengeReward_C_SetIconTexture Parms{};
+	Params::WBP_UI_QuestChallengeReward_C_SpriteLoaded Parms{};
 
-	Parms.InTexture = InTexture;
+	Parms.OutLoadedSprite = OutLoadedSprite;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

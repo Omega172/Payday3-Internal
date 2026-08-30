@@ -16,6 +16,63 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.CustomBoundryNavigation
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_MainMenu_BlackMarketVendors_C::CustomBoundryNavigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "CustomBoundryNavigation");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_CustomBoundryNavigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.DisplayVendorMessage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      TextToDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::DisplayVendorMessage(const class FText& TextToDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "DisplayVendorMessage");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_DisplayVendorMessage Parms{};
+
+	Parms.TextToDisplay = std::move(TextToDisplay);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.DisplayVendorWelcomeMessage
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::DisplayVendorWelcomeMessage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "DisplayVendorWelcomeMessage");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.ExecuteUbergraph_WBP_UI_MainMenu_BlackMarketVendors
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,23 +93,78 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::ExecuteUbergraph_WBP_UI_MainMenu_Bla
 }
 
 
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnSearchItemFound
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.InitializeIsFetchingData
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZMenuButton*             MenuButton                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFetchingData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnSearchItemFound(const class USBZMenuButton* MenuButton)
+void UWBP_UI_MainMenu_BlackMarketVendors_C::InitializeIsFetchingData(bool bIsFetchingData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnSearchItemFound");
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "InitializeIsFetchingData");
 
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnSearchItemFound Parms{};
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_InitializeIsFetchingData Parms{};
 
-	Parms.MenuButton = MenuButton;
+	Parms.bIsFetchingData = bIsFetchingData;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.InitializeVendorData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZVendorData*                   InVendorData                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::InitializeVendorData(class USBZVendorData* InVendorData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "InitializeVendorData");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_InitializeVendorData Parms{};
+
+	Parms.InVendorData = InVendorData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.MakeControlReferencesBasedOnButtomType
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FSBZButtonControlReference>*ControlsReference                                      (Parm, OutParm)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::MakeControlReferencesBasedOnButtomType(TArray<struct FSBZButtonControlReference>* ControlsReference)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "MakeControlReferencesBasedOnButtomType");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_MakeControlReferencesBasedOnButtomType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ControlsReference != nullptr)
+		*ControlsReference = std::move(Parms.ControlsReference);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.NavToPreviousScreen
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::NavToPreviousScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "NavToPreviousScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -76,6 +188,46 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::OnActiveVendorIndexChanged(int32 Ind
 }
 
 
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnControlsReferenceClicked(class FName InActionInput)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnControlsReferenceClicked");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnControlsReferenceClicked Parms{};
+
+	Parms.InActionInput = InActionInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnGainedStackFocused");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -87,28 +239,6 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::OnInitialized()
 		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnTransactionProgressChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsTransactionSuccessful                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress, bool bIsTransactionSuccessful)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnTransactionProgressChanged");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnTransactionProgressChanged Parms{};
-
-	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
-	Parms.bIsTransactionSuccessful = bIsTransactionSuccessful;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -140,222 +270,6 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::OnLostStackFocused()
 }
 
 
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorButtonFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorButtonFocused");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorButtonFocused Parms{};
-
-	Parms.InButton = InButton;
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorItemButtonFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorItemButtonFocused");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorItemButtonFocused Parms{};
-
-	Parms.InButton = InButton;
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnControlsReferenceClicked");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorItemTransactionComplete
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZMetaRequestResult                   MetaResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZInventoryBaseData*      InventoryItemData                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorItemTransactionComplete(ESBZMetaRequestResult MetaResult, const class USBZInventoryBaseData* InventoryItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorItemTransactionComplete");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorItemTransactionComplete Parms{};
-
-	Parms.MetaResult = MetaResult;
-	Parms.InventoryItemData = InventoryItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnGainedStackFocused");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorChanged
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZBlackMarketUIVendorData&NewVendor                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    bIsRefresh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorChanged(const struct FSBZBlackMarketUIVendorData& NewVendor, bool bIsRefresh)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorChanged");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorChanged Parms{};
-
-	Parms.NewVendor = std::move(NewVendor);
-	Parms.bIsRefresh = bIsRefresh;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.InitializeVendorData
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZVendorData*                   InVendorData                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::InitializeVendorData(class USBZVendorData* InVendorData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "InitializeVendorData");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_InitializeVendorData Parms{};
-
-	Parms.InVendorData = InVendorData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.InitializeIsFetchingData
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFetchingData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::InitializeIsFetchingData(bool bIsFetchingData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "InitializeIsFetchingData");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_InitializeIsFetchingData Parms{};
-
-	Parms.bIsFetchingData = bIsFetchingData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.DisplayVendorWelcomeMessage
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::DisplayVendorWelcomeMessage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "DisplayVendorWelcomeMessage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.DisplayVendorMessage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      TextToDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::DisplayVendorMessage(const class FText& TextToDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "DisplayVendorMessage");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_DisplayVendorMessage Parms{};
-
-	Parms.TextToDisplay = std::move(TextToDisplay);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.SetButtonFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::SetButtonFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "SetButtonFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnPaydayStoreReferencePressed
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -376,74 +290,133 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::OnPaydayStoreReferencePressed(class 
 }
 
 
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OpenPaydayStore
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::OpenPaydayStore()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OpenPaydayStore");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.CustomBoundryNavigation
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnSearchItemFound
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMenuButton*             MenuButton                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_MainMenu_BlackMarketVendors_C::CustomBoundryNavigation(EUINavigation Navigation_0)
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnSearchItemFound(const class USBZMenuButton* MenuButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "CustomBoundryNavigation");
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnSearchItemFound");
 
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_CustomBoundryNavigation Parms{};
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnSearchItemFound Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.SetActiveButton
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   NewButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_BlackMarketVendors_C::SetActiveButton(class USBZMenuButton* NewButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "SetActiveButton");
-
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_SetActiveButton Parms{};
-
-	Parms.NewButton = NewButton;
+	Parms.MenuButton = MenuButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.NavToPreviousScreen
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnTransactionProgressChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsTransactionSuccessful                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_BlackMarketVendors_C::NavToPreviousScreen()
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress, bool bIsTransactionSuccessful)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "NavToPreviousScreen");
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnTransactionProgressChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnTransactionProgressChanged Parms{};
+
+	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
+	Parms.bIsTransactionSuccessful = bIsTransactionSuccessful;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorButtonFocused
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorButtonFocused");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorButtonFocused Parms{};
+
+	Parms.InButton = InButton;
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorChanged
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZBlackMarketUIVendorData&NewVendor                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bIsRefresh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorChanged(const struct FSBZBlackMarketUIVendorData& NewVendor, bool bIsRefresh)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorChanged");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorChanged Parms{};
+
+	Parms.NewVendor = std::move(NewVendor);
+	Parms.bIsRefresh = bIsRefresh;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorItemButtonFocused
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorItemButtonFocused");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorItemButtonFocused Parms{};
+
+	Parms.InButton = InButton;
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OnVendorItemTransactionComplete
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZMetaRequestResult                   MetaResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZInventoryBaseData*      InventoryItemData                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OnVendorItemTransactionComplete(ESBZMetaRequestResult MetaResult, const class USBZInventoryBaseData* InventoryItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OnVendorItemTransactionComplete");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_OnVendorItemTransactionComplete Parms{};
+
+	Parms.MetaResult = MetaResult;
+	Parms.InventoryItemData = InventoryItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -461,31 +434,58 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::OpenInventoryScreen()
 }
 
 
-// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.MakeControlReferencesBasedOnButtomType
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FSBZButtonControlReference>*ControlsReference                                      (Parm, OutParm)
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OpenPaydayStore
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_MainMenu_BlackMarketVendors_C::MakeControlReferencesBasedOnButtomType(TArray<struct FSBZButtonControlReference>* ControlsReference)
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OpenPaydayStore()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "MakeControlReferencesBasedOnButtomType");
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OpenPaydayStore");
 
-	Params::WBP_UI_MainMenu_BlackMarketVendors_C_MakeControlReferencesBasedOnButtomType Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.SetActiveButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   NewButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::SetActiveButton(class USBZMenuButton* NewButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "SetActiveButton");
+
+	Params::WBP_UI_MainMenu_BlackMarketVendors_C_SetActiveButton Parms{};
+
+	Parms.NewButton = NewButton;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (ControlsReference != nullptr)
-		*ControlsReference = std::move(Parms.ControlsReference);
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.SetButtonFocus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::SetButtonFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "SetButtonFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.IsActiveButtonOfBundleType
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool*                                   bIsBundleButton                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsBundleButton                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_BlackMarketVendors_C::IsActiveButtonOfBundleType(bool* bIsBundleButton) const
 {
@@ -506,7 +506,7 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::IsActiveButtonOfBundleType(bool* bIs
 // Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.IsActiveButtonOfFeaturedBundleType
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool*                                   bIsFeaturedButton                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   bIsFeaturedButton                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_MainMenu_BlackMarketVendors_C::IsActiveButtonOfFeaturedBundleType(bool* bIsFeaturedButton) const
 {

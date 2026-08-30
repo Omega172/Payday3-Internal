@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "PacketHandler_classes.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -34,5 +35,28 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UAuthHandlerComponentAccelByteFactory;
+
+// Class OnlineSubsystemAccelByte.OnlineSubsystemAccelByteBlueprint
+// 0x0000 (0x0030 - 0x0030)
+class UOnlineSubsystemAccelByteBlueprint final : public UObject
+{
+public:
+	static class UAccelByteInstance* GetAccelByteInstance(class UObject* WorldContextObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("OnlineSubsystemAccelByteBlueprint")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineSubsystemAccelByteBlueprint")
+	}
+	static class UOnlineSubsystemAccelByteBlueprint* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UOnlineSubsystemAccelByteBlueprint>();
+	}
+};
+DUMPER7_ASSERTS_UOnlineSubsystemAccelByteBlueprint;
 
 SDK_NAMESPACE_END

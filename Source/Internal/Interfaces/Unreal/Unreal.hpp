@@ -99,6 +99,11 @@ public:
 		return pAcknowledgedPawn;
 	}
 
+	static SDK::ASBZPlayerCharacter* GetLocalASBZPlayerCharacter()
+	{
+		return reinterpret_cast<SDK::ASBZPlayerCharacter*>(GetAcknowledgedPawn());
+	}
+
 	static SDK::APlayerCameraManager* GetPlayerCameraManager()
 	{
 		SDK::APlayerController* pPlayerController = GetPlayerController();

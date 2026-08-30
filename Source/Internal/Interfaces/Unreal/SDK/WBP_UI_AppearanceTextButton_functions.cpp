@@ -16,118 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ExecuteUbergraph_WBP_UI_AppearanceTextButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_AppearanceTextButton_C::ExecuteUbergraph_WBP_UI_AppearanceTextButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "ExecuteUbergraph_WBP_UI_AppearanceTextButton");
-
-	Params::WBP_UI_AppearanceTextButton_C_ExecuteUbergraph_WBP_UI_AppearanceTextButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::DisabledButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "DisabledButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_AppearanceTextButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_AppearanceTextButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "PreConstruct");
-
-	Params::WBP_UI_AppearanceTextButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnAnimationFinished
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_AppearanceTextButton_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnAnimationFinished");
-
-	Params::WBP_UI_AppearanceTextButton_C_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonDisabledChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_AppearanceTextButton_C::ButtonDisabledChanged(bool bInIsDisabled)
 {
@@ -147,7 +39,7 @@ void UWBP_UI_AppearanceTextButton_C::ButtonDisabledChanged(bool bInIsDisabled)
 // Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_AppearanceTextButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
@@ -164,111 +56,77 @@ void UWBP_UI_AppearanceTextButton_C::ButtonFocusedChanged(bool bInHasFocus)
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::OnHoverVisuals(bool bIsHovered)
+void UWBP_UI_AppearanceTextButton_C::ButtonHoveredChanged(bool bInIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnHoverVisuals");
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "ButtonHoveredChanged");
 
-	Params::WBP_UI_AppearanceTextButton_C_OnHoverVisuals Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.bInIsHovered = bInIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnFocusedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DefaultEquipped
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bEquipped                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::OnFocusedVisuals(bool bIsFocused)
+void UWBP_UI_AppearanceTextButton_C::DefaultEquipped(bool bEquipped)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnFocusedVisuals");
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "DefaultEquipped");
 
-	Params::WBP_UI_AppearanceTextButton_C_OnFocusedVisuals Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_DefaultEquipped Parms{};
 
-	Parms.bIsFocused = bIsFocused;
+	Parms.bEquipped = bEquipped;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_AppearanceTextButton_C::OnDisabledVisuals(bool bIsDisabled_0)
+void UWBP_UI_AppearanceTextButton_C::DisabledButtonSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnDisabledVisuals");
-
-	Params::WBP_UI_AppearanceTextButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.RefreshVisual
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::RefreshVisual()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "RefreshVisual");
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "DisabledButtonSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.SetButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ExecuteUbergraph_WBP_UI_AppearanceTextButton
+// (Final, UbergraphFunction)
 // Parameters:
-// const class FText&                      InButtonText                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::SetButtonText(const class FText& InButtonText)
+void UWBP_UI_AppearanceTextButton_C::ExecuteUbergraph_WBP_UI_AppearanceTextButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "SetButtonText");
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "ExecuteUbergraph_WBP_UI_AppearanceTextButton");
 
-	Params::WBP_UI_AppearanceTextButton_C_SetButtonText Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_ExecuteUbergraph_WBP_UI_AppearanceTextButton Parms{};
 
-	Parms.InButtonText = std::move(InButtonText);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ResetToDefaultButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::ResetToDefaultButtonText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "ResetToDefaultButtonText");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -293,21 +151,163 @@ void UWBP_UI_AppearanceTextButton_C::GetText(class FText* OutText)
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DefaultEquipped
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bEquipped                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::DefaultEquipped(bool bEquipped)
+void UWBP_UI_AppearanceTextButton_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "DefaultEquipped");
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnAnimationFinished");
 
-	Params::WBP_UI_AppearanceTextButton_C_DefaultEquipped Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_OnAnimationFinished Parms{};
 
-	Parms.bEquipped = bEquipped;
+	Parms.Animation = Animation;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnDisabledVisuals(bool bIsDisabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnDisabledVisuals");
+
+	Params::WBP_UI_AppearanceTextButton_C_OnDisabledVisuals Parms{};
+
+	Parms.bIsDisabled_0 = bIsDisabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnFocusedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnFocusedVisuals(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnFocusedVisuals");
+
+	Params::WBP_UI_AppearanceTextButton_C_OnFocusedVisuals Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnHoverVisuals(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnHoverVisuals");
+
+	Params::WBP_UI_AppearanceTextButton_C_OnHoverVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_AppearanceTextButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "PreConstruct");
+
+	Params::WBP_UI_AppearanceTextButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.RefreshVisual
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_AppearanceTextButton_C::RefreshVisual()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "RefreshVisual");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ResetToDefaultButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_AppearanceTextButton_C::ResetToDefaultButtonText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "ResetToDefaultButtonText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.SetButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InButtonText                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_AppearanceTextButton_C::SetButtonText(const class FText& InButtonText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_AppearanceTextButton_C", "SetButtonText");
+
+	Params::WBP_UI_AppearanceTextButton_C_SetButtonText Parms{};
+
+	Parms.InButtonText = std::move(InButtonText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_VoIP.WBP_VoIP_C.CheckState
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_VoIP_C::CheckState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIP_C", "CheckState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_VoIP.WBP_VoIP_C.ExecuteUbergraph_WBP_VoIP
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,37 +50,15 @@ void UWBP_VoIP_C::ExecuteUbergraph_WBP_VoIP(int32 EntryPoint)
 }
 
 
-// Function WBP_VoIP.WBP_VoIP_C.VoicechatParticipantsChanged
+// Function WBP_VoIP.WBP_VoIP_C.InitialVOIPSetup
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    EOSId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    Joined                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_VoIP_C::VoicechatParticipantsChanged(const class FString& EOSId, bool Joined)
+void UWBP_VoIP_C::InitialVOIPSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIP_C", "VoicechatParticipantsChanged");
-
-	Params::WBP_VoIP_C_VoicechatParticipantsChanged Parms{};
-
-	Parms.EOSId = std::move(EOSId);
-	Parms.Joined = Joined;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VoIP.WBP_VoIP_C.SetStateVisibility
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_VoIP_C::SetStateVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIP_C", "SetStateVisibility");
+		Func = Class->GetFunction("WBP_VoIP_C", "InitialVOIPSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -76,7 +68,7 @@ void UWBP_VoIP_C::SetStateVisibility()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    EOSProdID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    bIsBlocked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsBlocked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_VoIP_C::PlayerBlockUpdated(const class FString& EOSProdID, bool bIsBlocked)
 {
@@ -98,7 +90,7 @@ void UWBP_VoIP_C::PlayerBlockUpdated(const class FString& EOSProdID, bool bIsBlo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    EOSProdID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    bIsMuted                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsMuted                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_VoIP_C::PlayerMuteUpdated(const class FString& EOSProdID, bool bIsMuted)
 {
@@ -116,40 +108,12 @@ void UWBP_VoIP_C::PlayerMuteUpdated(const class FString& EOSProdID, bool bIsMute
 }
 
 
-// Function WBP_VoIP.WBP_VoIP_C.InitialVOIPSetup
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_VoIP_C::InitialVOIPSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIP_C", "InitialVOIPSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_VoIP.WBP_VoIP_C.Update VOIP UI
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_VoIP_C::Update_VOIP_UI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIP_C", "Update VOIP UI");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_VoIP.WBP_VoIP_C.PlayerTalkingUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    ChannelName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    bIsTalking                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsTalking                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_VoIP_C::PlayerTalkingUpdated(const class FString& ChannelName, const class FString& PlayerName, bool bIsTalking)
 {
@@ -171,7 +135,7 @@ void UWBP_VoIP_C::PlayerTalkingUpdated(const class FString& ChannelName, const c
 // Function WBP_VoIP.WBP_VoIP_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_VoIP_C::PreConstruct(bool IsDesignTime)
 {
@@ -188,15 +152,29 @@ void UWBP_VoIP_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_VoIP.WBP_VoIP_C.CheckState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_VoIP.WBP_VoIP_C.SetStateVisibility
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_VoIP_C::CheckState()
+void UWBP_VoIP_C::SetStateVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIP_C", "CheckState");
+		Func = Class->GetFunction("WBP_VoIP_C", "SetStateVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_VoIP.WBP_VoIP_C.Update VOIP UI
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_VoIP_C::Update_VOIP_UI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIP_C", "Update VOIP UI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -206,7 +184,7 @@ void UWBP_VoIP_C::CheckState()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    IsTalking_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsTalking_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_VoIP_C::UpdateTalkingIndicator(const class FString& InPlayerName, bool IsTalking_0)
 {
@@ -219,6 +197,26 @@ void UWBP_VoIP_C::UpdateTalkingIndicator(const class FString& InPlayerName, bool
 
 	Parms.InPlayerName = std::move(InPlayerName);
 	Parms.IsTalking_0 = IsTalking_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VoIP.WBP_VoIP_C.VoicechatParticipantJoined
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    EOSId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_VoIP_C::VoicechatParticipantJoined(const class FString& EOSId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIP_C", "VoicechatParticipantJoined");
+
+	Params::WBP_VoIP_C_VoicechatParticipantJoined Parms{};
+
+	Parms.EOSId = std::move(EOSId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

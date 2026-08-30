@@ -16,21 +16,63 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.ExecuteUbergraph_WBP_UI_SM_JobOverview
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_UI_SM_JobOverview_C::ExecuteUbergraph_WBP_UI_SM_JobOverview(int32 EntryPoint)
+void UWBP_UI_SM_JobOverview_C::BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "ExecuteUbergraph_WBP_UI_SM_JobOverview");
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
 
-	Params::WBP_UI_SM_JobOverview_C_ExecuteUbergraph_WBP_UI_SM_JobOverview Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_SM_JobOverview_C::BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_SM_JobOverview_C::BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_JobOverview_C::BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_SM_JobOverview_C_BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,7 +81,7 @@ void UWBP_UI_SM_JobOverview_C::ExecuteUbergraph_WBP_UI_SM_JobOverview(int32 Entr
 // Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BP_OnIntroSequenceChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SM_JobOverview_C::BP_OnIntroSequenceChanged(bool bIsStarted)
 {
@@ -59,7 +101,7 @@ void UWBP_UI_SM_JobOverview_C::BP_OnIntroSequenceChanged(bool bIsStarted)
 // Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BP_OnPlayerStateCountChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SM_JobOverview_C::BP_OnPlayerStateCountChanged(class ASBZPlayerState* PlayerState)
 {
@@ -79,7 +121,7 @@ void UWBP_UI_SM_JobOverview_C::BP_OnPlayerStateCountChanged(class ASBZPlayerStat
 // Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BP_OnPlayerStateSkipIntroSequenceChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SM_JobOverview_C::BP_OnPlayerStateSkipIntroSequenceChanged(class ASBZPlayerState* PlayerState)
 {
@@ -96,29 +138,15 @@ void UWBP_UI_SM_JobOverview_C::BP_OnPlayerStateSkipIntroSequenceChanged(class AS
 }
 
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_SM_JobOverview_C::BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature()
+void UWBP_UI_SM_JobOverview_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_SM_JobOverview_C::BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__WBP_UI_SM_JobOverview_Button_ActionInput_SkipIntro_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -144,15 +172,89 @@ void UWBP_UI_SM_JobOverview_C::Dummy(class FName ActionName)
 }
 
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.ExecuteUbergraph_WBP_UI_SM_JobOverview
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_JobOverview_C::Destruct()
+void UWBP_UI_SM_JobOverview_C::ExecuteUbergraph_WBP_UI_SM_JobOverview(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "Destruct");
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "ExecuteUbergraph_WBP_UI_SM_JobOverview");
+
+	Params::WBP_UI_SM_JobOverview_C_ExecuteUbergraph_WBP_UI_SM_JobOverview Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.IsSoloIntroVideo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_UI_SM_JobOverview_C::IsSoloIntroVideo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "IsSoloIntroVideo");
+
+	Params::WBP_UI_SM_JobOverview_C_IsSoloIntroVideo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_JobOverview_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnJobOverviewComplete
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EBlackScreenTransitionType              BlackScreenTransitionType                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_JobOverview_C::OnJobOverviewComplete(EBlackScreenTransitionType BlackScreenTransitionType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "OnJobOverviewComplete");
+
+	Params::WBP_UI_SM_JobOverview_C_OnJobOverviewComplete Parms{};
+
+	Parms.BlackScreenTransitionType = BlackScreenTransitionType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnJobOverviewReady
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_JobOverview_C::OnJobOverviewReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "OnJobOverviewReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -192,26 +294,6 @@ void UWBP_UI_SM_JobOverview_C::OnSoloVideoDone()
 }
 
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_JobOverview_C::BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SM_JobOverview_C_BndEvt__WBP_UI_SM_JobOverview_Button_PlayerReady_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnStackChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -232,17 +314,23 @@ void UWBP_UI_SM_JobOverview_C::OnStackChanged(const struct FSBZUIStackChangedEve
 }
 
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.SetPlayerReadyTimeOut
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ReadyTimeoutTime                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_JobOverview_C::BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
+void UWBP_UI_SM_JobOverview_C::SetPlayerReadyTimeOut(int32 ReadyTimeoutTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "SetPlayerReadyTimeOut");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_SM_JobOverview_C_SetPlayerReadyTimeOut Parms{};
+
+	Parms.ReadyTimeoutTime = ReadyTimeoutTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -268,105 +356,17 @@ void UWBP_UI_SM_JobOverview_C::Tick(const struct FGeometry& MyGeometry, float In
 }
 
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.ToggleSkip
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_SM_JobOverview_C::OnInitialized()
+void UWBP_UI_SM_JobOverview_C::ToggleSkip()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "ToggleSkip");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.SetPlayerReadyTimeOut
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ReadyTimeoutTime                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_JobOverview_C::SetPlayerReadyTimeOut(int32 ReadyTimeoutTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "SetPlayerReadyTimeOut");
-
-	Params::WBP_UI_SM_JobOverview_C_SetPlayerReadyTimeOut Parms{};
-
-	Parms.ReadyTimeoutTime = ReadyTimeoutTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnJobOverviewComplete
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EBlackScreenTransitionType              BlackScreenTransitionType                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_JobOverview_C::OnJobOverviewComplete(EBlackScreenTransitionType BlackScreenTransitionType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "OnJobOverviewComplete");
-
-	Params::WBP_UI_SM_JobOverview_C_OnJobOverviewComplete Parms{};
-
-	Parms.BlackScreenTransitionType = BlackScreenTransitionType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.OnJobOverviewReady
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_JobOverview_C::OnJobOverviewReady()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "OnJobOverviewReady");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.UpdateTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_JobOverview_C::UpdateTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "UpdateTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.IsSoloIntroVideo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UWBP_UI_SM_JobOverview_C::IsSoloIntroVideo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "IsSoloIntroVideo");
-
-	Params::WBP_UI_SM_JobOverview_C_IsSoloIntroVideo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -384,15 +384,15 @@ void UWBP_UI_SM_JobOverview_C::UpdateSkipText()
 }
 
 
-// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.ToggleSkip
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SM_JobOverview.WBP_UI_SM_JobOverview_C.UpdateTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_SM_JobOverview_C::ToggleSkip()
+void UWBP_UI_SM_JobOverview_C::UpdateTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "ToggleSkip");
+		Func = Class->GetFunction("WBP_UI_SM_JobOverview_C", "UpdateTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

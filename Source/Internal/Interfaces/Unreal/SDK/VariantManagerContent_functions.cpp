@@ -45,7 +45,7 @@ int32 ULevelVariantSets::GetNumVariantSets()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int32                                   VariantSetIndex                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UVariantSet*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UVariantSet*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UVariantSet* ULevelVariantSets::GetVariantSet(int32 VariantSetIndex)
 {
@@ -73,7 +73,7 @@ class UVariantSet* ULevelVariantSets::GetVariantSet(int32 VariantSetIndex)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // const class FString&                    VariantSetName                                         (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UVariantSet*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UVariantSet*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UVariantSet* ULevelVariantSets::GetVariantSetByName(const class FString& VariantSetName)
 {
@@ -101,7 +101,7 @@ class UVariantSet* ULevelVariantSets::GetVariantSetByName(const class FString& V
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                                    bLoad                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class ULevelVariantSets*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelVariantSets*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class ULevelVariantSets* ALevelVariantSetsActor::GetLevelVariantSets(bool bLoad)
 {
@@ -128,7 +128,7 @@ class ULevelVariantSets* ALevelVariantSetsActor::GetLevelVariantSets(bool bLoad)
 // Function VariantManagerContent.LevelVariantSetsActor.SetLevelVariantSets
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class ULevelVariantSets*                InVariantSets                                          (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelVariantSets*                InVariantSets                                          (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALevelVariantSetsActor::SetLevelVariantSets(class ULevelVariantSets* InVariantSets)
 {
@@ -418,7 +418,7 @@ void UVariant::DeleteDependency(int32 Index_0)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int32                                   ActorIndex                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class AActor*                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class AActor* UVariant::GetActor(int32 ActorIndex)
 {
@@ -473,7 +473,7 @@ struct FVariantDependency UVariant::GetDependency(int32 Index_0)
 // Function VariantManagerContent.Variant.GetDependents
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class ULevelVariantSets*                LevelVariantSets                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelVariantSets*                LevelVariantSets                                       (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                                    bOnlyEnabledDependencies                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<class UVariant*>                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 
@@ -553,7 +553,7 @@ int32 UVariant::GetNumDependencies()
 // Function VariantManagerContent.Variant.GetParent
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class UVariantSet*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UVariantSet*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UVariantSet* UVariant::GetParent()
 {
@@ -578,7 +578,7 @@ class UVariantSet* UVariant::GetParent()
 // Function VariantManagerContent.Variant.GetThumbnail
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UTexture2D* UVariant::GetThumbnail()
 {
@@ -682,8 +682,8 @@ void UVariant::SetDisplayText(const class FText& NewDisplayText)
 // Function VariantManagerContent.Variant.SetThumbnailFromCamera
 // (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FTransform&                CameraTransform                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FTransform&                CameraTransform                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   FOVDegrees                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   MinZ                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Gamma                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -759,7 +759,7 @@ void UVariant::SetThumbnailFromFile(const class FString& FilePath)
 // Function VariantManagerContent.Variant.SetThumbnailFromTexture
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UTexture2D*                       NewThumbnail                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTexture2D*                       NewThumbnail                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UVariant::SetThumbnailFromTexture(class UTexture2D* NewThumbnail)
 {
@@ -828,7 +828,7 @@ class FText UVariant::GetDisplayText() const
 // Function VariantManagerContent.VariantSet.GetParent
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// class ULevelVariantSets*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class ULevelVariantSets*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class ULevelVariantSets* UVariantSet::GetParent()
 {
@@ -853,7 +853,7 @@ class ULevelVariantSets* UVariantSet::GetParent()
 // Function VariantManagerContent.VariantSet.GetThumbnail
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTexture2D*                       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UTexture2D* UVariantSet::GetThumbnail()
 {
@@ -879,7 +879,7 @@ class UTexture2D* UVariantSet::GetThumbnail()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int32                                   VariantIndex                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UVariant*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UVariant*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UVariant* UVariantSet::GetVariant(int32 VariantIndex)
 {
@@ -907,7 +907,7 @@ class UVariant* UVariantSet::GetVariant(int32 VariantIndex)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // const class FString&                    VariantName                                            (Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UVariant*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UVariant*                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class UVariant* UVariantSet::GetVariantByName(const class FString& VariantName)
 {
@@ -959,8 +959,8 @@ void UVariantSet::SetDisplayText(const class FText& NewDisplayText)
 // Function VariantManagerContent.VariantSet.SetThumbnailFromCamera
 // (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// const struct FTransform&                CameraTransform                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const struct FTransform&                CameraTransform                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   FOVDegrees                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   MinZ                                                   (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // float                                   Gamma                                                  (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1036,7 +1036,7 @@ void UVariantSet::SetThumbnailFromFile(const class FString& FilePath)
 // Function VariantManagerContent.VariantSet.SetThumbnailFromTexture
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UTexture2D*                       NewThumbnail                                           (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTexture2D*                       NewThumbnail                                           (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UVariantSet::SetThumbnailFromTexture(class UTexture2D* NewThumbnail)
 {

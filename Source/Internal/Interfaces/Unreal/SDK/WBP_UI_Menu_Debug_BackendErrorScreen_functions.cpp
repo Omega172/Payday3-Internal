@@ -16,6 +16,60 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Menu_Debug_BackendErrorScreen_C::BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Menu_Debug_BackendErrorScreen_C_BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Menu_Debug_BackendErrorScreen_C::BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Menu_Debug_BackendErrorScreen_C_BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Menu_Debug_BackendErrorScreen_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.ExecuteUbergraph_WBP_UI_Menu_Debug_BackendErrorScreen
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,43 +90,17 @@ void UWBP_UI_Menu_Debug_BackendErrorScreen_C::ExecuteUbergraph_WBP_UI_Menu_Debug
 }
 
 
-// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.Fill Version String
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Menu_Debug_BackendErrorScreen_C::BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_Menu_Debug_BackendErrorScreen_C::Fill_Version_String()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "Fill Version String");
 
-	Params::WBP_UI_Menu_Debug_BackendErrorScreen_C_BndEvt__WBP_UI_Menu_Debug_BackendErrorScreen_Button_Quit_1_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Menu_Debug_BackendErrorScreen_C::BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Menu_Debug_BackendErrorScreen_C_BndEvt__WBP_UI_Menu_Debug_NetworkErrorScreen_Button_ReturnToMainMenu_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -85,20 +113,6 @@ void UWBP_UI_Menu_Debug_BackendErrorScreen_C::OnInitialized()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Menu_Debug_BackendErrorScreen_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -126,20 +140,6 @@ struct FEventReply UWBP_UI_Menu_Debug_BackendErrorScreen_C::OnKeyDown(const stru
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Menu_Debug_BackendErrorScreen.WBP_UI_Menu_Debug_BackendErrorScreen_C.Fill Version String
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Menu_Debug_BackendErrorScreen_C::Fill_Version_String()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Menu_Debug_BackendErrorScreen_C", "Fill Version String");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

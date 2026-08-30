@@ -36,6 +36,30 @@ void UWBP_UI_Widget_SegmentedAttributeBar_C::ExecuteUbergraph_WBP_UI_Widget_Segm
 }
 
 
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnCurrentAttributeUpdate
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   OldPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   NewPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SegmentedAttributeBar_C::OnCurrentAttributeUpdate(float NewValue, float OldPercentage, float NewPercentage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "OnCurrentAttributeUpdate");
+
+	Params::WBP_UI_Widget_SegmentedAttributeBar_C_OnCurrentAttributeUpdate Parms{};
+
+	Parms.NewValue = NewValue;
+	Parms.OldPercentage = OldPercentage;
+	Parms.NewPercentage = NewPercentage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -47,48 +71,6 @@ void UWBP_UI_Widget_SegmentedAttributeBar_C::OnInitialized()
 		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnTraumaRatioChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   StartOffset                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   EndOffset                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SegmentedAttributeBar_C::OnTraumaRatioChanged(float StartOffset, float EndOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "OnTraumaRatioChanged");
-
-	Params::WBP_UI_Widget_SegmentedAttributeBar_C_OnTraumaRatioChanged Parms{};
-
-	Parms.StartOffset = StartOffset;
-	Parms.EndOffset = EndOffset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_SegmentedAttributeBar_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "PreConstruct");
-
-	Params::WBP_UI_Widget_SegmentedAttributeBar_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -107,30 +89,6 @@ void UWBP_UI_Widget_SegmentedAttributeBar_C::OnMaxAttributeUpdate(float NewValue
 		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "OnMaxAttributeUpdate");
 
 	Params::WBP_UI_Widget_SegmentedAttributeBar_C_OnMaxAttributeUpdate Parms{};
-
-	Parms.NewValue = NewValue;
-	Parms.OldPercentage = OldPercentage;
-	Parms.NewPercentage = NewPercentage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnCurrentAttributeUpdate
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   OldPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   NewPercentage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SegmentedAttributeBar_C::OnCurrentAttributeUpdate(float NewValue, float OldPercentage, float NewPercentage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "OnCurrentAttributeUpdate");
-
-	Params::WBP_UI_Widget_SegmentedAttributeBar_C_OnCurrentAttributeUpdate Parms{};
 
 	Parms.NewValue = NewValue;
 	Parms.OldPercentage = OldPercentage;
@@ -164,6 +122,48 @@ void UWBP_UI_Widget_SegmentedAttributeBar_C::OnSetup(float CurrentValueSetup, fl
 }
 
 
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.OnTraumaRatioChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   StartOffset                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   EndOffset                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SegmentedAttributeBar_C::OnTraumaRatioChanged(float StartOffset, float EndOffset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "OnTraumaRatioChanged");
+
+	Params::WBP_UI_Widget_SegmentedAttributeBar_C_OnTraumaRatioChanged Parms{};
+
+	Parms.StartOffset = StartOffset;
+	Parms.EndOffset = EndOffset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SegmentedAttributeBar_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SegmentedAttributeBar_C", "PreConstruct");
+
+	Params::WBP_UI_Widget_SegmentedAttributeBar_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.SetShaderParams
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -181,9 +181,9 @@ void UWBP_UI_Widget_SegmentedAttributeBar_C::SetShaderParams()
 // Function WBP_UI_Widget_SegmentedAttributeBar.WBP_UI_Widget_SegmentedAttributeBar_C.SetShaderProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_SegmentedAttributeBar_C::SetShaderProgress(float Progress)
+void UWBP_UI_Widget_SegmentedAttributeBar_C::SetShaderProgress(double Progress)
 {
 	static class UFunction* Func = nullptr;
 

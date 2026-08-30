@@ -19,91 +19,116 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.ExecuteUbergraph_WBP_UI_Widget_HeistState
-// 0x00E0 (0x00E0 - 0x0000)
+// 0x00F0 (0x00F0 - 0x0000)
 struct WBP_UI_Widget_HeistState_C_ExecuteUbergraph_WBP_UI_Widget_HeistState final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0010(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_CustomEvent_OldTime;                        // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_NewTime;                        // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(float OldTime, float NewTime)> K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void(float OldTime, float NewTime)> K2Node_CreateDelegate_OutputDelegate;              // 0x0058(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPD3HeistState                                K2Node_CustomEvent_OldState;                       // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPD3HeistState                                K2Node_CustomEvent_NewState;                       // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         K2Node_CustomEvent_OldNrHostages;                  // 0x006E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         K2Node_CustomEvent_NewNrHostages;                  // 0x006F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(uint8 OldNrHostages, uint8 NewNrHostages)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0070(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EPD3HeistState OldState, EPD3HeistState NewState)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0084(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(ESBZNegotiationTradeType OldType, ESBZNegotiationTradeType NewType)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0098(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void(uint8 OldNrHostages, uint8 NewNrHostages)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0070(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EPD3HeistState OldState, EPD3HeistState NewState)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0084(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZNegotiationTradeType OldType, ESBZNegotiationTradeType NewType)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0098(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESBZNegotiationTradeType                      K2Node_CustomEvent_OldType;                        // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZNegotiationTradeType                      K2Node_CustomEvent_NewType;                        // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_AE[0x2];                                       // 0x00AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APD3HeistGameState*                     K2Node_DynamicCast_AsPD3Heist_Game_State;          // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_bIsActive;                      // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3HeistGameState*                     K2Node_DynamicCast_AsPD3Heist_Game_State;          // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsActive;                      // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C2[0x2];                                       // 0x00C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetNegotiationEndTime_ReturnValue;        // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_GetHostageDemand_ReturnValue;             // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZNegotiationTradeType                      CallFunc_GetNegotiationTradeType_ReturnValue;      // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_CA[0x2];                                       // 0x00CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool bIsActive)>               K2Node_CreateDelegate_OutputDelegate_4;            // 0x00CC(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bIsActive)>               K2Node_CreateDelegate_OutputDelegate_4;            // 0x00CC(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_HeistEndTime_ImplicitCast;      // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_HeistEndTime_ImplicitCast_1;    // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_ExecuteUbergraph_WBP_UI_Widget_HeistState;
+
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnAlarmState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnAlarmState final
+{
+public:
+	struct FSlateColor                            AlarmColor;                                        // 0x0000(0x0014)(Edit, BlueprintVisible)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnAlarmState;
+
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnAnticipationState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnAnticipationState final
+{
+public:
+	struct FSlateColor                            AnticipationColor;                                 // 0x0000(0x0014)(Edit, BlueprintVisible)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnAnticipationState;
+
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnAssaultState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnAssaultState final
+{
+public:
+	struct FSlateColor                            AssaultColor;                                      // 0x0000(0x0014)(Edit, BlueprintVisible)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnAssaultState;
+
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnCasingState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnCasingState final
+{
+public:
+	struct FSlateColor                            CasingColor;                                       // 0x0000(0x0014)(Edit, BlueprintVisible)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnCasingState;
+
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnControlState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnControlState final
+{
+public:
+	struct FSlateColor                            ControlColor;                                      // 0x0000(0x0014)(Edit, BlueprintVisible)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnControlState;
 
 // Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnFBIActivationChanged_Event_0
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Widget_HeistState_C_OnFBIActivationChanged_Event_0 final
 {
 public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnFBIActivationChanged_Event_0;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnNegotiationTradeTypeChanged
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnNegotiationTradeTypeChanged final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnFBIActive
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnFBIActive final
 {
 public:
-	ESBZNegotiationTradeType                      OldType;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZNegotiationTradeType                      NewType;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            FBIColor;                                          // 0x0000(0x0014)(Edit, BlueprintVisible)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnNegotiationTradeTypeChanged;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnFBIActive;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnHostageDemandChanged
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnHostageDemandChanged final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnFirstRespondersState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnFirstRespondersState final
 {
 public:
-	uint8                                         OldNrHostages;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         NewNrHostages;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            FirstResponseColor;                                // 0x0000(0x0014)(Edit, BlueprintVisible)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnHostageDemandChanged;
-
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnNegotiationTimeChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnNegotiationTimeChanged final
-{
-public:
-	float                                         OldTime;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NewTime;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnNegotiationTimeChanged;
-
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_UI_Widget_HeistState_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_Tick;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnFirstRespondersState;
 
 // Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnHeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -115,128 +140,105 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnHeistStateChanged;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnAssaultState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnAssaultState final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnHostageDemandChanged
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnHostageDemandChanged final
 {
 public:
-	struct FSlateColor                            AssaultColor;                                      // 0x0000(0x0028)(Edit, BlueprintVisible)
+	uint8                                         OldNrHostages;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         NewNrHostages;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnAssaultState;
-
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnCasingState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnCasingState final
-{
-public:
-	struct FSlateColor                            CasingColor;                                       // 0x0000(0x0028)(Edit, BlueprintVisible)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnCasingState;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnHostageDemandChanged;
 
 // Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnNegotiationState
-// 0x0028 (0x0028 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct WBP_UI_Widget_HeistState_C_OnNegotiationState final
 {
 public:
-	struct FSlateColor                            NegotiationColor;                                  // 0x0000(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            NegotiationColor;                                  // 0x0000(0x0014)(Edit, BlueprintVisible)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnNegotiationState;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.UpdateNegotiation
-// 0x00E8 (0x00E8 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_UpdateNegotiation final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnNegotiationTimeChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnNegotiationTimeChanged final
 {
 public:
-	class FText                                   Temp_text_Variable;                                // 0x0000(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetServerWorldTimeSeconds_ReturnValue;    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_FormatIntToTimerText_ReturnValue;         // 0x0038(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x0050(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B8(0x0018)()
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x00D0(0x0018)()
+	float                                         OldTime;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         NewTime;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_UpdateNegotiation;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnNegotiationTimeChanged;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnSearchState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnSearchState final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnNegotiationTradeTypeChanged
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnNegotiationTradeTypeChanged final
 {
 public:
-	struct FSlateColor                            SearchColor;                                       // 0x0000(0x0028)(Edit, BlueprintVisible)
+	ESBZNegotiationTradeType                      OldType;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZNegotiationTradeType                      NewType;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnSearchState;
-
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnAnticipationState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnAnticipationState final
-{
-public:
-	struct FSlateColor                            AnticipationColor;                                 // 0x0000(0x0028)(Edit, BlueprintVisible)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnAnticipationState;
-
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnControlState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnControlState final
-{
-public:
-	struct FSlateColor                            ControlColor;                                      // 0x0000(0x0028)(Edit, BlueprintVisible)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnControlState;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnNegotiationTradeTypeChanged;
 
 // Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnPointOfNoReturn
-// 0x0028 (0x0028 - 0x0000)
+// 0x0014 (0x0014 - 0x0000)
 struct WBP_UI_Widget_HeistState_C_OnPointOfNoReturn final
 {
 public:
-	struct FSlateColor                            PointOfNoReturnColor;                              // 0x0000(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            PointOfNoReturnColor;                              // 0x0000(0x0014)(Edit, BlueprintVisible)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnPointOfNoReturn;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnFirstRespondersState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnFirstRespondersState final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnSearchState
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_OnSearchState final
 {
 public:
-	struct FSlateColor                            FirstResponseColor;                                // 0x0000(0x0028)(Edit, BlueprintVisible)
+	struct FSlateColor                            SearchColor;                                       // 0x0000(0x0014)(Edit, BlueprintVisible)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnFirstRespondersState;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnSearchState;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnAlarmState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnAlarmState final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct WBP_UI_Widget_HeistState_C_Tick final
 {
 public:
-	struct FSlateColor                            AlarmColor;                                        // 0x0000(0x0028)(Edit, BlueprintVisible)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnAlarmState;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_Tick;
 
 // Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.UpdateHeistStateText
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_UI_Widget_HeistState_C_UpdateHeistStateText final
 {
 public:
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_UpdateHeistStateText;
 
-// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.OnFBIActive
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_HeistState_C_OnFBIActive final
+// Function WBP_UI_Widget_HeistState.WBP_UI_Widget_HeistState_C.UpdateNegotiation
+// 0x00D0 (0x00D0 - 0x0000)
+struct WBP_UI_Widget_HeistState_C_UpdateNegotiation final
 {
 public:
-	struct FSlateColor                            FBIColor;                                          // 0x0000(0x0028)(Edit, BlueprintVisible)
+	class FText                                   Temp_text_Variable;                                // 0x0000(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameStateBase*                         CallFunc_GetGameState_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetServerWorldTimeSeconds_ReturnValue;    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_FormatIntToTimerText_ReturnValue;         // 0x0038(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00A0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0010)()
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x00C0(0x0010)()
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_OnFBIActive;
+DUMPER7_ASSERTS_WBP_UI_Widget_HeistState_C_UpdateNegotiation;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

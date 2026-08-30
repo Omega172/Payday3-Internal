@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_RangedWeapon_AssaultRifle_CAR4.BP_RangedWeapon_AssaultRifle_CAR4_C
-// 0x0000 (0x0700 - 0x0700)
+// 0x0000 (0x0810 - 0x0810)
 class ABP_RangedWeapon_AssaultRifle_CAR4_C final : public ASBZRangedWeapon
 {
 public:

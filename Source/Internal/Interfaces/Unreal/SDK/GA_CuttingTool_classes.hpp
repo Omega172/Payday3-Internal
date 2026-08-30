@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_CuttingTool.GA_CuttingTool_C
-// 0x0000 (0x0530 - 0x0530)
+// 0x0000 (0x0538 - 0x0538)
 class UGA_CuttingTool_C final : public USBZCuttingToolAbility
 {
 public:

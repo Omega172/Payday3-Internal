@@ -16,6 +16,54 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_DailyChallengesPreview_C::BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_DailyChallengesPreview_C::BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.EnableInput
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesPreview_C::EnableInput(bool InEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "EnableInput");
+
+	Params::WBP_DailyChallengesPreview_C_EnableInput Parms{};
+
+	Parms.InEnable = InEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.ExecuteUbergraph_WBP_DailyChallengesPreview
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,43 +84,17 @@ void UWBP_DailyChallengesPreview_C::ExecuteUbergraph_WBP_DailyChallengesPreview(
 }
 
 
-// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.EnableInput
+// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.OnDailyChallengesUpdated
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_DailyChallengesPreview_C::EnableInput(bool InEnable)
+void UWBP_DailyChallengesPreview_C::OnDailyChallengesUpdated()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "EnableInput");
+		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "OnDailyChallengesUpdated");
 
-	Params::WBP_DailyChallengesPreview_C_EnableInput Parms{};
-
-	Parms.InEnable = InEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.OnInstallStateChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_DailyChallengesPreview_C::OnInstallStateChanged(bool bIsGameInstallPending)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "OnInstallStateChanged");
-
-	Params::WBP_DailyChallengesPreview_C_OnInstallStateChanged Parms{};
-
-	Parms.bIsGameInstallPending = bIsGameInstallPending;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -90,31 +112,23 @@ void UWBP_DailyChallengesPreview_C::OnInitialized()
 }
 
 
-// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.OnDailyChallengesUpdated
+// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.OnInstallStateChanged
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengesPreview_C::OnDailyChallengesUpdated()
+void UWBP_DailyChallengesPreview_C::OnInstallStateChanged(bool bIsGameInstallPending)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "OnDailyChallengesUpdated");
+		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "OnInstallStateChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_DailyChallengesPreview_C_OnInstallStateChanged Parms{};
 
+	Parms.bIsGameInstallPending = bIsGameInstallPending;
 
-// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_DailyChallengesPreview_C::BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -132,24 +146,10 @@ void UWBP_DailyChallengesPreview_C::OpenChallengesScreen()
 }
 
 
-// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_DailyChallengesPreview_C::BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_DailyChallengesPreview_C::PreConstruct(bool IsDesignTime)
 {
@@ -166,20 +166,6 @@ void UWBP_DailyChallengesPreview_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.UpdateChallengesFromData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengesPreview_C::UpdateChallengesFromData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "UpdateChallengesFromData");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.Update Visibility
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -189,6 +175,20 @@ void UWBP_DailyChallengesPreview_C::Update_Visibility()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "Update Visibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C.UpdateChallengesFromData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengesPreview_C::UpdateChallengesFromData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengesPreview_C", "UpdateChallengesFromData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -36,31 +36,102 @@ void UWBP_Local_Navbar_C::ExecuteUbergraph_WBP_Local_Navbar(int32 EntryPoint)
 }
 
 
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.RebuildNavbar
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.GetActiveButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USBZLocalNavbarButton**           ActiveButton                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Local_Navbar_C::RebuildNavbar()
+void UWBP_Local_Navbar_C::GetActiveButton(class USBZLocalNavbarButton** ActiveButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "RebuildNavbar");
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "GetActiveButton");
+
+	Params::WBP_Local_Navbar_C_GetActiveButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ActiveButton != nullptr)
+		*ActiveButton = Parms.ActiveButton;
+}
+
+
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.GetNavBarButtonFromIndex
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZLocalNavbarButton**           NavBarButton                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Local_Navbar_C::GetNavBarButtonFromIndex(int32 Index_0, class USBZLocalNavbarButton** NavBarButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "GetNavBarButtonFromIndex");
+
+	Params::WBP_Local_Navbar_C_GetNavBarButtonFromIndex Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NavBarButton != nullptr)
+		*NavBarButton = Parms.NavBarButton;
+}
+
+
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.NavBarButtonClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   OutNavBarIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Local_Navbar_C::NavBarButtonClicked(int32 OutNavBarIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "NavBarButtonClicked");
+
+	Params::WBP_Local_Navbar_C_NavBarButtonClicked Parms{};
+
+	Parms.OutNavBarIndex = OutNavBarIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Local_Navbar_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.RefreshButtons
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.OnNavbarButtonPressed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Local_Navbar_C::RefreshButtons()
+void UWBP_Local_Navbar_C::OnNavbarButtonPressed(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "RefreshButtons");
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "OnNavbarButtonPressed");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Local_Navbar_C_OnNavbarButtonPressed Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -92,44 +163,10 @@ void UWBP_Local_Navbar_C::OnTabForward()
 }
 
 
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Local_Navbar_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.NavBarButtonClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OutNavBarIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Local_Navbar_C::NavBarButtonClicked(int32 OutNavBarIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "NavBarButtonClicked");
-
-	Params::WBP_Local_Navbar_C_NavBarButtonClicked Parms{};
-
-	Parms.OutNavBarIndex = OutNavBarIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Local_Navbar.WBP_Local_Navbar_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Local_Navbar_C::PreConstruct(bool IsDesignTime)
 {
@@ -146,27 +183,31 @@ void UWBP_Local_Navbar_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.UpdateIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewActiveIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsInitial                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    UpdateVisualsOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.RebuildNavbar
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Local_Navbar_C::UpdateIndex(int32 NewActiveIndex, bool IsInitial, bool UpdateVisualsOnly)
+void UWBP_Local_Navbar_C::RebuildNavbar()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "UpdateIndex");
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "RebuildNavbar");
 
-	Params::WBP_Local_Navbar_C_UpdateIndex Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewActiveIndex = NewActiveIndex;
-	Parms.IsInitial = IsInitial;
-	Parms.UpdateVisualsOnly = UpdateVisualsOnly;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.RefreshButtons
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Local_Navbar_C::RefreshButtons()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "RefreshButtons");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -190,68 +231,27 @@ void UWBP_Local_Navbar_C::SetMaxCount(int32 InMaxCount)
 }
 
 
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.OnNavbarButtonPressed
+// Function WBP_Local_Navbar.WBP_Local_Navbar_C.UpdateIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewActiveIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsInitial                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    UpdateVisualsOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Local_Navbar_C::OnNavbarButtonPressed(class USBZMenuButton* Button)
+void UWBP_Local_Navbar_C::UpdateIndex(int32 NewActiveIndex, bool IsInitial, bool UpdateVisualsOnly)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "OnNavbarButtonPressed");
+		Func = Class->GetFunction("WBP_Local_Navbar_C", "UpdateIndex");
 
-	Params::WBP_Local_Navbar_C_OnNavbarButtonPressed Parms{};
+	Params::WBP_Local_Navbar_C_UpdateIndex Parms{};
 
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.GetActiveButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class USBZLocalNavbarButton**           ActiveButton                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Local_Navbar_C::GetActiveButton(class USBZLocalNavbarButton** ActiveButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "GetActiveButton");
-
-	Params::WBP_Local_Navbar_C_GetActiveButton Parms{};
+	Parms.NewActiveIndex = NewActiveIndex;
+	Parms.IsInitial = IsInitial;
+	Parms.UpdateVisualsOnly = UpdateVisualsOnly;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (ActiveButton != nullptr)
-		*ActiveButton = Parms.ActiveButton;
-}
-
-
-// Function WBP_Local_Navbar.WBP_Local_Navbar_C.GetNavBarButtonFromIndex
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZLocalNavbarButton**           NavBarButton                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Local_Navbar_C::GetNavBarButtonFromIndex(int32 Index_0, class USBZLocalNavbarButton** NavBarButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Local_Navbar_C", "GetNavBarButtonFromIndex");
-
-	Params::WBP_Local_Navbar_C_GetNavBarButtonFromIndex Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NavBarButton != nullptr)
-		*NavBarButton = Parms.NavBarButton;
 }
 
 

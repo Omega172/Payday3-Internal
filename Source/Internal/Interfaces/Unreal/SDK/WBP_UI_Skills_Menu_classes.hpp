@@ -19,55 +19,55 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Skills_Menu.WBP_UI_Skills_Menu_C
-// 0x00F8 (0x03D8 - 0x02E0)
+// 0x00F8 (0x0438 - 0x0340)
 class UWBP_UI_Skills_Menu_C final : public USBZMenuStackScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Buff_Info_C*                       BuffInformation;                                   // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image;                                             // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1;                                           // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_2;                                           // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_85;                                          // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_125;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_175;                                         // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_961;                                         // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             SkillLineScrollBox;                                // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        SkillPointsLabel;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Skills_Description_C*           WBP_UI_Skills_Description;                         // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class USBZSkillData*>                  PlayerSkills;                                      // 0x0340(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMap<class USBZSkillData*, class UWBP_UI_Skills_Button_C*> SkillMap;                             // 0x0350(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class UWBP_UI_Loadout_SkillsCustomization_C*  parent;                                            // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FoundResearchedLine;                               // 0x03A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3A9[0x7];                                      // 0x03A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USBZSkillLine*>                  SkillLines;                                        // 0x03B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_UI_Skills_Line_C*                  MarkedSkillLine;                                   // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Skills_Button_C*                FocusedButton;                                     // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Skills_Line_C*                  CurrentFocusedSkillLine;                           // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Buff_Info_C*                       BuffInformation;                                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image;                                             // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_1;                                           // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_2;                                           // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_85;                                          // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_125;                                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_175;                                         // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_961;                                         // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             SkillLineScrollBox;                                // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        SkillPointsLabel;                                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Skills_Description_C*           WBP_UI_Skills_Description;                         // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class USBZSkillData*>                  PlayerSkills;                                      // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMap<class USBZSkillData*, class UWBP_UI_Skills_Button_C*> SkillMap;                             // 0x03B0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class UWBP_UI_Loadout_SkillsCustomization_C*  parent;                                            // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          FoundResearchedLine;                               // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USBZSkillLine*>                  SkillLines;                                        // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_UI_Skills_Line_C*                  MarkedSkillLine;                                   // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Skills_Button_C*                FocusedButton;                                     // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Skills_Line_C*                  CurrentFocusedSkillLine;                           // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Skills_Menu(int32 EntryPoint);
-	void OnInstallStateChanged(bool bIsGameInstallPending);
-	void PreConstruct(bool IsDesignTime);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void Construct();
-	void Init(class UWBP_UI_Loadout_SkillsCustomization_C* parent_0);
-	void ShowScreen(const TArray<class USBZSkillData*>& PlayerSkills_0);
-	void SetEquipSkill(class USBZSkill* Skill, ESBZSkillState SkillState);
-	void DebugSetResearch();
-	void SetSkillLineResearchMarker(class UWBP_UI_Skills_Line_C* SkillLineWidget);
-	void SetButtonFocus();
-	void SetAcedSkills();
-	void CanSelectSkill(class UWBP_UI_Skills_Button_C* Skill, ESBZSkillEquipResult* Result);
-	void UpdateSkillPoints();
-	void SetActiveSkills();
-	void SetFocusedSkillLine(class UWBP_UI_Skills_Line_C* FocusedSkillLine, class UWBP_UI_Skills_Button_C* OldFocusedButton, class UWBP_UI_Skills_Button_C* CurrentFocusedButton, class UWBP_UI_Skills_Button_C** NewFocusedButton);
-	void SetFocusedButton(class UWBP_UI_Skills_Button_C* InButton, bool bWasHoveredFocus);
-	void ResetSkills();
-	void DescriptionScrollAxisChanged(float Value);
-	void UpdateControlsReference();
-	void TryToResetSkills();
 	void OnResetSkillsPopupClosed(class FName ClosingActionName);
+	void TryToResetSkills();
+	void UpdateControlsReference();
+	void DescriptionScrollAxisChanged(double Value);
+	void ResetSkills();
+	void SetFocusedButton(class UWBP_UI_Skills_Button_C* InButton, bool bWasHoveredFocus);
+	void SetFocusedSkillLine(class UWBP_UI_Skills_Line_C* FocusedSkillLine, class UWBP_UI_Skills_Button_C* OldFocusedButton, class UWBP_UI_Skills_Button_C* CurrentFocusedButton, class UWBP_UI_Skills_Button_C** NewFocusedButton);
+	void SetActiveSkills();
+	void UpdateSkillPoints();
+	void CanSelectSkill(class UWBP_UI_Skills_Button_C* Skill, ESBZSkillEquipResult* Result);
+	void SetAcedSkills();
+	void SetButtonFocus();
+	void SetSkillLineResearchMarker(class UWBP_UI_Skills_Line_C* SkillLineWidget);
+	void DebugSetResearch();
+	void SetEquipSkill(class USBZSkill* Skill, ESBZSkillState SkillState);
+	void ShowScreen(const TArray<class USBZSkillData*>& PlayerSkills_0);
+	void Init(class UWBP_UI_Loadout_SkillsCustomization_C* parent_0);
+	void Construct();
+	void OnControlsReferenceClicked(class FName ActionName);
+	void PreConstruct(bool IsDesignTime);
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void ExecuteUbergraph_WBP_UI_Skills_Menu(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

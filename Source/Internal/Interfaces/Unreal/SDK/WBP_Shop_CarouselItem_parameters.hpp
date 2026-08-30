@@ -20,40 +20,40 @@ struct WBP_Shop_CarouselItem_C_ExecuteUbergraph_WBP_Shop_CarouselItem final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bFill;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsOwned;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsLast;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bCanBeInspected;                      // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsVendorPermission;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_bFill;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsOwned;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsLast;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bCanBeInspected;                      // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsVendorPermission;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_CarouselItem_C_ExecuteUbergraph_WBP_Shop_CarouselItem;
-
-// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateImagePadding
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_CarouselItem_C_OnUpdateImagePadding final
-{
-public:
-	bool                                          bFill;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Shop_CarouselItem_C_OnUpdateImagePadding;
 
 // Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnShow
 // 0x0003 (0x0003 - 0x0000)
 struct WBP_Shop_CarouselItem_C_OnShow final
 {
 public:
-	bool                                          bIsLast;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bCanBeInspected;                                   // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          bIsVendorPermission;                               // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsLast;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanBeInspected;                                   // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsVendorPermission;                               // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_CarouselItem_C_OnShow;
+
+// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateImagePadding
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_CarouselItem_C_OnUpdateImagePadding final
+{
+public:
+	bool                                          bFill;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_CarouselItem_C_OnUpdateImagePadding;
 
 // Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateOwnershipStatus
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_Shop_CarouselItem_C_OnUpdateOwnershipStatus final
 {
 public:
-	bool                                          bIsOwned;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsOwned;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_CarouselItem_C_OnUpdateOwnershipStatus;
 

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DamageFeedContainer.WBP_DamageFeedContainer_C
-// 0x0000 (0x0318 - 0x0318)
+// 0x0000 (0x0378 - 0x0378)
 class UWBP_DamageFeedContainer_C final : public USBZDamageFeedContainer
 {
 public:

@@ -16,6 +16,66 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mask_Customization_Slot_Button_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "ButtonFocusedChanged");
+
+	Params::WBP_Mask_Customization_Slot_Button_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mask_Customization_Slot_Button_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "ButtonHoveredChanged");
+
+	Params::WBP_Mask_Customization_Slot_Button_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.CosmeticPartSlotChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// const class USBZCosmeticsPartSlot*      InCosmeticPartSlot                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mask_Customization_Slot_Button_C::CosmeticPartSlotChanged(const class USBZCosmeticsPartSlot* InCosmeticPartSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "CosmeticPartSlotChanged");
+
+	Params::WBP_Mask_Customization_Slot_Button_C_CosmeticPartSlotChanged Parms{};
+
+	Parms.InCosmeticPartSlot = InCosmeticPartSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ExecuteUbergraph_WBP_Mask_Customization_Slot_Button
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,115 +96,21 @@ void UWBP_Mask_Customization_Slot_Button_C::ExecuteUbergraph_WBP_Mask_Customizat
 }
 
 
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Mask_Customization_Slot_Button_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ItemInSlotChanged
-// (Event, Public, BlueprintEvent)
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.FocusChangedVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZInventoryBaseData*      InItemBaseData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mask_Customization_Slot_Button_C::ItemInSlotChanged(const class USBZInventoryBaseData* InItemBaseData)
+void UWBP_Mask_Customization_Slot_Button_C::FocusChangedVisuals(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "ItemInSlotChanged");
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "FocusChangedVisuals");
 
-	Params::WBP_Mask_Customization_Slot_Button_C_ItemInSlotChanged Parms{};
+	Params::WBP_Mask_Customization_Slot_Button_C_FocusChangedVisuals Parms{};
 
-	Parms.InItemBaseData = InItemBaseData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.CosmeticPartSlotChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// const class USBZCosmeticsPartSlot*      InCosmeticPartSlot                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Mask_Customization_Slot_Button_C::CosmeticPartSlotChanged(const class USBZCosmeticsPartSlot* InCosmeticPartSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "CosmeticPartSlotChanged");
-
-	Params::WBP_Mask_Customization_Slot_Button_C_CosmeticPartSlotChanged Parms{};
-
-	Parms.InCosmeticPartSlot = InCosmeticPartSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Mask_Customization_Slot_Button_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "ButtonFocusedChanged");
-
-	Params::WBP_Mask_Customization_Slot_Button_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Mask_Customization_Slot_Button_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "PreConstruct");
-
-	Params::WBP_Mask_Customization_Slot_Button_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Mask_Customization_Slot_Button_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "ButtonHoveredChanged");
-
-	Params::WBP_Mask_Customization_Slot_Button_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -153,7 +119,7 @@ void UWBP_Mask_Customization_Slot_Button_C::ButtonHoveredChanged(bool bInIsHover
 // Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.HoveredChangedVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsHovered_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsHovered_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Mask_Customization_Slot_Button_C::HoveredChangedVisuals(bool IsHovered_0)
 {
@@ -170,21 +136,55 @@ void UWBP_Mask_Customization_Slot_Button_C::HoveredChangedVisuals(bool IsHovered
 }
 
 
-// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.FocusChangedVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.ItemInSlotChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class USBZInventoryBaseData*      InItemBaseData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Mask_Customization_Slot_Button_C::FocusChangedVisuals(bool bIsFocused)
+void UWBP_Mask_Customization_Slot_Button_C::ItemInSlotChanged(const class USBZInventoryBaseData* InItemBaseData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "FocusChangedVisuals");
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "ItemInSlotChanged");
 
-	Params::WBP_Mask_Customization_Slot_Button_C_FocusChangedVisuals Parms{};
+	Params::WBP_Mask_Customization_Slot_Button_C_ItemInSlotChanged Parms{};
 
-	Parms.bIsFocused = bIsFocused;
+	Parms.InItemBaseData = InItemBaseData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Mask_Customization_Slot_Button_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Mask_Customization_Slot_Button.WBP_Mask_Customization_Slot_Button_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Mask_Customization_Slot_Button_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Mask_Customization_Slot_Button_C", "PreConstruct");
+
+	Params::WBP_Mask_Customization_Slot_Button_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

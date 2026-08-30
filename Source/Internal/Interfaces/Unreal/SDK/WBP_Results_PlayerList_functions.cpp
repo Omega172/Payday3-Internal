@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.AddInBotCards
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Results_PlayerList_C::AddInBotCards()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Results_PlayerList_C", "AddInBotCards");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.AddInPlayerCards
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Results_PlayerList_C::AddInPlayerCards()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Results_PlayerList_C", "AddInPlayerCards");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.ExecuteUbergraph_WBP_Results_PlayerList
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,11 +64,25 @@ void UWBP_Results_PlayerList_C::ExecuteUbergraph_WBP_Results_PlayerList(int32 En
 }
 
 
+// Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.HighlightTopStat
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Results_PlayerList_C::HighlightTopStat()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Results_PlayerList_C", "HighlightTopStat");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.OnMergePartyUpdated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 // const class FString&                    PlayerDisplayName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const bool                              bIsMergePartySelected                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const bool                              bIsMergePartySelected                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Results_PlayerList_C::OnMergePartyUpdated(const class FString& PlayerDisplayName, const bool bIsMergePartySelected)
 {
@@ -61,8 +103,8 @@ void UWBP_Results_PlayerList_C::OnMergePartyUpdated(const class FString& PlayerD
 // Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.OnPlayerMergePartyChanged
 // (BlueprintEvent)
 // Parameters:
-// class ASBZPlayerState*                  InPlayerState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInMergeParty                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class ASBZPlayerState*                  InPlayerState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInMergeParty                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Results_PlayerList_C::OnPlayerMergePartyChanged(class ASBZPlayerState* InPlayerState, bool bInMergeParty)
 {
@@ -119,48 +161,6 @@ void UWBP_Results_PlayerList_C::OnSetup(const TArray<class ASBZPlayerState*>& Pl
 	Parms.AICrewStateArray = std::move(AICrewStateArray);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.HighlightTopStat
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_PlayerList_C::HighlightTopStat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_PlayerList_C", "HighlightTopStat");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.AddInPlayerCards
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_PlayerList_C::AddInPlayerCards()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_PlayerList_C", "AddInPlayerCards");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_PlayerList.WBP_Results_PlayerList_C.AddInBotCards
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_PlayerList_C::AddInBotCards()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_PlayerList_C", "AddInBotCards");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Credits_SubTitle.WBP_UI_Credits_SubTitle_C
-// 0x0000 (0x0298 - 0x0298)
+// 0x0000 (0x02F8 - 0x02F8)
 class UWBP_UI_Credits_SubTitle_C final : public USBZWidgetCreditsText
 {
 public:

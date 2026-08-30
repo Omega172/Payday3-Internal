@@ -18,40 +18,40 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C
-// 0x0070 (0x03A8 - 0x0338)
+// 0x0070 (0x0408 - 0x0398)
 class UWBP_UI_PreplanningItemSelection_C final : public USBZMainMenuPrePlanningItemSelectionWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0338(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_3;                                           // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_4;                                           // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_5;                                           // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_6;                                           // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_193;                                         // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Overlay;                                     // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_FocusedAssetDescription;                      // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer1;                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer2;                       // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer3;                       // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer4;                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         ActiveButton;                                      // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_C*         PreplanningMenuParent;                             // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_3;                                           // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_4;                                           // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_5;                                           // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_6;                                           // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_193;                                         // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Overlay;                                     // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_FocusedAssetDescription;                      // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer1;                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer2;                       // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer3;                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_PreplanningItemVisuals_C*       Widget_SelectedAssetPlayer4;                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         ActiveButton;                                      // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_C*         PreplanningMenuParent;                             // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_PreplanningItemSelection(int32 EntryPoint);
-	void Destruct();
-	void OnPreplanningSelectionEnabledChanged(bool bEnabled);
-	void PreConstruct(bool IsDesignTime);
-	void OnPreplanningAssetDeclinedByServer();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnPrePlanningItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
-	void OnInitialized();
-	void OnPreplanningAssetRemovedByPlayer(const struct FUniqueNetIdRepl& PlayerID);
-	void OnPreplanningAssetAddedByPlayer(const struct FUniqueNetIdRepl& PlayerID, const class USBZPreplanningAssetData* PreplanningAsset);
-	void GetPlayerIndex(const struct FUniqueNetIdRepl& InPlayerID, int32* Index_0);
-	void UpdatePreplanningDescription(class USBZPreplanningAssetData* InPreplanning);
-	void ResetPreplanningSelection();
 	void SetSoloModeVisuals();
+	void ResetPreplanningSelection();
+	void UpdatePreplanningDescription(class USBZPreplanningAssetData* InPreplanning);
+	void GetPlayerIndex(const struct FUniqueNetIdRepl& InPlayerID, int32* Index_0);
+	void OnPreplanningAssetAddedByPlayer(const struct FUniqueNetIdRepl& PlayerID, const class USBZPreplanningAssetData* PreplanningAsset);
+	void OnPreplanningAssetRemovedByPlayer(const struct FUniqueNetIdRepl& PlayerID);
+	void OnInitialized();
+	void OnPrePlanningItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnPreplanningAssetDeclinedByServer();
+	void PreConstruct(bool IsDesignTime);
+	void OnPreplanningSelectionEnabledChanged(bool bEnabled);
+	void Destruct();
+	void ExecuteUbergraph_WBP_UI_PreplanningItemSelection(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

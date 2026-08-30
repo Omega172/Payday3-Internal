@@ -19,35 +19,35 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DailyChallengesPreview.WBP_DailyChallengesPreview_C
-// 0x0050 (0x02E0 - 0x0290)
+// 0x0050 (0x0340 - 0x02F0)
 class UWBP_DailyChallengesPreview_C final : public USBZWidgetBase
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_UI_Menu_ActionInputButton_C*       ActionButton;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           Dailies_VB;                                        // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FName                                   ChallengesStackValue;                              // 0x02A8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxDailiesToShow;                                  // 0x02B4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DailyItemCountLimit;                               // 0x02B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FoundChallengeCount;                               // 0x02BC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         AddedChallengeCount;                               // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C4[0x4];                                      // 0x02C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZChallengeData>              ChallengesNotFound;                                // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          InputEnabled;                                      // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_UI_Menu_ActionInputButton_C*       ActionButton;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           Dailies_VB;                                        // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FName                                   ChallengesStackValue;                              // 0x0308(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxDailiesToShow;                                  // 0x0314(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DailyItemCountLimit;                               // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FoundChallengeCount;                               // 0x031C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31D[0x3];                                      // 0x031D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         AddedChallengeCount;                               // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_324[0x4];                                      // 0x0324(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZChallengeData>              ChallengesNotFound;                                // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          InputEnabled;                                      // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DailyChallengesPreview(int32 EntryPoint);
-	void EnableInput(bool InEnable);
-	void OnInstallStateChanged(bool bIsGameInstallPending);
-	void OnInitialized();
-	void OnDailyChallengesUpdated();
 	void BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void OpenChallengesScreen();
 	void BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature();
+	void EnableInput(bool InEnable);
+	void ExecuteUbergraph_WBP_DailyChallengesPreview(int32 EntryPoint);
+	void OnDailyChallengesUpdated();
+	void OnInitialized();
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void OpenChallengesScreen();
 	void PreConstruct(bool IsDesignTime);
-	void UpdateChallengesFromData();
 	void Update_Visibility();
+	void UpdateChallengesFromData();
 
 public:
 	static class UClass* StaticClass()

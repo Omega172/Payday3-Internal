@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Feedback_OVK_Mamba.BP_Feedback_OVK_Mamba_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UBP_Feedback_OVK_Mamba_C final : public USBZLocalPlayerFeedback
 {
 public:

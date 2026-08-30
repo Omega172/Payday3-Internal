@@ -17,53 +17,55 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_UI_Crimenet_HeistMapWidget_C_ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsSelected;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x000C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0020(0x0028)()
-	const class UPD3HeistDataAsset*               CallFunc_GetHeistData_ReturnValue;                 // 0x0048(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0050(0x0018)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget;
-
 // Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged;
 
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetSelected
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_HeistMapWidget_C_SetSelected final
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_UI_Crimenet_HeistMapWidget_C_ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget final
 {
 public:
-	bool                                          bInIsSelected;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsSelected;                        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
+	const class UPD3HeistDataAsset*               CallFunc_GetHeistData_ReturnValue;                 // 0x0038(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0040(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetSelected;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget;
 
 // Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetActive
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_UI_Crimenet_HeistMapWidget_C_SetActive final
 {
 public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetActive;
+
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetSelected
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Crimenet_HeistMapWidget_C_SetSelected final
+{
+public:
+	bool                                          bInIsSelected;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetSelected;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

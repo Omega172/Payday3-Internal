@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function WBP_UI_Inventory_ItemDescriptionBox.WBP_UI_Inventory_ItemDescriptionBox_C.SetInventoryItem
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryBaseData*            InInventoryItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InInventoryItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZArmorConfig&           ArmorConfig                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_UI_Inventory_ItemDescriptionBox_C::SetInventoryItem(class USBZInventoryBaseData* InInventoryItem, const struct FSBZArmorConfig& ArmorConfig)

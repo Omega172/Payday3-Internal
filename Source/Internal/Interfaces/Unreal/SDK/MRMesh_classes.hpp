@@ -12,11 +12,123 @@
 
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "MRMesh_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "MRMesh_structs.hpp"
 
 
 SDK_NAMESPACE_START
+
+// Class MRMesh.MockDataMeshTrackerComponent
+// 0x0070 (0x02C0 - 0x0250)
+class UMockDataMeshTrackerComponent final : public USceneComponent
+{
+public:
+	TMulticastInlineDelegate<void(int32 Index_0, const TArray<struct FVector>& Vertices, const TArray<int32>& Triangles, const TArray<struct FVector>& Normals, const TArray<float>& Confidence)> OnMeshTrackerUpdated; // 0x0250(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	bool                                          ScanWorld;                                         // 0x0260(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          RequestNormals;                                    // 0x0261(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          RequestVertexConfidence;                           // 0x0262(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EMeshTrackerVertexColorMode                   VertexColorMode;                                   // 0x0263(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_264[0x4];                                      // 0x0264(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FColor>                         BlockVertexColors;                                 // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FLinearColor                           VertexColorFromConfidenceZero;                     // 0x0278(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                           VertexColorFromConfidenceOne;                      // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         UpdateInterval;                                    // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29C[0x4];                                      // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMRMeshComponent*                       MRMesh;                                            // 0x02A0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_2A8[0x18];                                     // 0x02A8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+	void DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MockDataMeshTrackerComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MockDataMeshTrackerComponent")
+	}
+	static class UMockDataMeshTrackerComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMockDataMeshTrackerComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMockDataMeshTrackerComponent;
+
+// Class MRMesh.MRMeshBodyHolder
+// 0x01F0 (0x0220 - 0x0030)
+class UMRMeshBodyHolder final : public UObject
+{
+public:
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBodySetup*                             BodySetup;                                         // 0x0038(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	struct FBodyInstance                          BodyInstance;                                      // 0x0040(0x0178)(Transient, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B8[0x68];                                     // 0x01B8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MRMeshBodyHolder")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MRMeshBodyHolder")
+	}
+	static class UMRMeshBodyHolder* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMRMeshBodyHolder>();
+	}
+};
+DUMPER7_ASSERTS_UMRMeshBodyHolder;
+
+// Class MRMesh.MRMeshComponent
+// 0x0080 (0x05E0 - 0x0560)
+class UMRMeshComponent final : public UPrimitiveComponent
+{
+public:
+	uint8                                         Pad_558[0x8];                                      // 0x0558(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     Material;                                          // 0x0560(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class UMaterialInterface*                     WireframeMaterial;                                 // 0x0568(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	bool                                          bCreateMeshProxySections;                          // 0x0570(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bUpdateNavMeshOnMeshUpdate;                        // 0x0571(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_572[0x1];                                      // 0x0572(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bNeverCreateCollisionMesh;                         // 0x0573(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_574[0x44];                                     // 0x0574(0x0044)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMRMeshBodyHolder*>              BodyHolders;                                       // 0x05B8(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_5C8[0x18];                                     // 0x05C8(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void Clear();
+	void ForceNavMeshUpdate();
+	void RequestNavMeshUpdate();
+	void SetEnableMeshOcclusion(bool bEnable);
+	void SetUseWireframe(bool bUseWireframe);
+	void SetWireframeColor(const struct FLinearColor& InColor);
+	void SetWireframeMaterial(class UMaterialInterface* InMaterial);
+
+	bool GetEnableMeshOcclusion() const;
+	bool GetUseWireframe() const;
+	const struct FLinearColor GetWireframeColor() const;
+	bool IsConnected() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MRMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MRMeshComponent")
+	}
+	static class UMRMeshComponent* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMRMeshComponent>();
+	}
+};
+DUMPER7_ASSERTS_UMRMeshComponent;
 
 // Class MRMesh.MeshReconstructorBase
 // 0x0000 (0x0030 - 0x0030)
@@ -47,89 +159,5 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UMeshReconstructorBase;
-
-// Class MRMesh.MockDataMeshTrackerComponent
-// 0x0070 (0x02A0 - 0x0230)
-class UMockDataMeshTrackerComponent final : public USceneComponent
-{
-public:
-	TMulticastInlineDelegate<void(int32 Index_0, const TArray<struct FVector>& Vertices, const TArray<int32>& Triangles, const TArray<struct FVector>& Normals, const TArray<float>& Confidence)> OnMeshTrackerUpdated; // 0x0228(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	bool                                          ScanWorld;                                         // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          RequestNormals;                                    // 0x0239(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          RequestVertexConfidence;                           // 0x023A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EMeshTrackerVertexColorMode                   VertexColorMode;                                   // 0x023B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FColor>                         BlockVertexColors;                                 // 0x0240(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FLinearColor                           VertexColorFromConfidenceZero;                     // 0x0250(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLinearColor                           VertexColorFromConfidenceOne;                      // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         UpdateInterval;                                    // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_274[0x4];                                      // 0x0274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMRMeshComponent*                       MRMesh;                                            // 0x0278(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_280[0x20];                                     // 0x0280(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-	void DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MockDataMeshTrackerComponent")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MockDataMeshTrackerComponent")
-	}
-	static class UMockDataMeshTrackerComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMockDataMeshTrackerComponent>();
-	}
-};
-DUMPER7_ASSERTS_UMockDataMeshTrackerComponent;
-
-// Class MRMesh.MRMeshComponent
-// 0x00C0 (0x05C0 - 0x0500)
-class UMRMeshComponent final : public UPrimitiveComponent
-{
-public:
-	uint8                                         Pad_500[0x10];                                     // 0x0500(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     Material;                                          // 0x0510(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UMaterialInterface*                     WireframeMaterial;                                 // 0x0518(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCreateMeshProxySections;                          // 0x0520(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bUpdateNavMeshOnMeshUpdate;                        // 0x0521(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bNeverCreateCollisionMesh;                         // 0x0522(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_523[0x5];                                      // 0x0523(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBodySetup*                             CachedBodySetup;                                   // 0x0528(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class UBodySetup*>                     BodySetups;                                        // 0x0530(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_540[0x80];                                     // 0x0540(0x0080)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void Clear();
-	void ForceNavMeshUpdate();
-	void SetEnableMeshOcclusion(bool bEnable);
-	void SetUseWireframe(bool bUseWireframe);
-	void SetWireframeColor(const struct FLinearColor& InColor);
-	void SetWireframeMaterial(class UMaterialInterface* InMaterial);
-
-	bool GetEnableMeshOcclusion() const;
-	bool GetUseWireframe() const;
-	const struct FLinearColor GetWireframeColor() const;
-	bool IsConnected() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MRMeshComponent")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MRMeshComponent")
-	}
-	static class UMRMeshComponent* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMRMeshComponent>();
-	}
-};
-DUMPER7_ASSERTS_UMRMeshComponent;
 
 SDK_NAMESPACE_END

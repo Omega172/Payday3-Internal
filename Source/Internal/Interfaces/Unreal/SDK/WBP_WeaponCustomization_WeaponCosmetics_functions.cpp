@@ -16,6 +16,74 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+
+	Params::WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BP Update Preview Icon
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::BP_Update_Preview_Icon()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BP Update Preview Icon");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -33,6 +101,112 @@ void UWBP_WeaponCustomization_WeaponCosmetics_C::ExecuteUbergraph_WBP_WeaponCust
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.GetSlotFromDataClass
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class USBZModularPartDataAsset>SlotClass                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// class USBZCosmeticsPartSlot**           SlotAsset                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::GetSlotFromDataClass(TSubclassOf<class USBZModularPartDataAsset> SlotClass, class USBZCosmeticsPartSlot** SlotAsset)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "GetSlotFromDataClass");
+
+	Params::WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass Parms{};
+
+	Parms.SlotClass = SlotClass;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SlotAsset != nullptr)
+		*SlotAsset = Parms.SlotAsset;
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.NeedConfig
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_WeaponCustomization_WeaponCosmetics_C::NeedConfig()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "NeedConfig");
+
+	Params::WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnButtonPressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::OnButtonPressed(class USBZMainMenuCosmeticItemButton* CosmeticButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnButtonPressed");
+
+	Params::WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed Parms{};
+
+	Parms.CosmeticButton = CosmeticButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnCosmeticSlotUpdated
+// (Event, Public, BlueprintEvent)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::OnCosmeticSlotUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnCosmeticSlotUpdated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnScreenDisplayed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::OnScreenDisplayed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnScreenDisplayed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnTryApply
+// (Event, Public, BlueprintEvent)
+
+void UWBP_WeaponCustomization_WeaponCosmetics_C::OnTryApply()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnTryApply");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -56,105 +230,23 @@ void UWBP_WeaponCustomization_WeaponCosmetics_C::OnTryApplyDone(ESBZMetaRequestR
 }
 
 
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnTryApply
-// (Event, Public, BlueprintEvent)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::OnTryApply()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnTryApply");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Inventory_Module_K2Node_ComponentBoundEvent_2_OnDefaultButtonPressed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnScreenDisplayed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::OnScreenDisplayed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnScreenDisplayed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BP Update Preview Icon
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::BP_Update_Preview_Icon()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BP Update Preview Icon");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnCosmeticSlotUpdated
-// (Event, Public, BlueprintEvent)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::OnCosmeticSlotUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnCosmeticSlotUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.UpdatePreview
-// (Event, Public, BlueprintEvent)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::UpdatePreview()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "UpdatePreview");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetPreviewWidgetWithValidation
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Inventory_Item_Button_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class USBZEquippablePartDataAsset*Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_WeaponCustomization_WeaponCosmetics_C::SetPreviewWidgetWithValidation(class UWBP_Inventory_Item_Button_C* Widget, const class USBZEquippablePartDataAsset* Data)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "SetPreviewWidgetWithValidation");
 
-	Params::WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation Parms{};
 
-	Parms.Button = Button;
+	Parms.Widget = Widget;
+	Parms.Data = Data;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -163,7 +255,7 @@ void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization
 // Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetupConfigScreen
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZCosmeticsPartSlot*      CosmeticSlot_0                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCosmeticsPartSlot*      CosmeticSlot_0                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_WeaponCustomization_WeaponCosmetics_C::SetupConfigScreen(const class USBZCosmeticsPartSlot* CosmeticSlot_0)
 {
@@ -194,109 +286,17 @@ void UWBP_WeaponCustomization_WeaponCosmetics_C::UpdateEquippedIcon()
 }
 
 
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnButtonPressed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.UpdatePreview
+// (Event, Public, BlueprintEvent)
 
-void UWBP_WeaponCustomization_WeaponCosmetics_C::OnButtonPressed(class USBZMainMenuCosmeticItemButton* CosmeticButton)
+void UWBP_WeaponCustomization_WeaponCosmetics_C::UpdatePreview()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "OnButtonPressed");
+		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "UpdatePreview");
 
-	Params::WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed Parms{};
-
-	Parms.CosmeticButton = CosmeticButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetPreviewWidgetWithValidation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Inventory_Item_Button_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZEquippablePartDataAsset*Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::SetPreviewWidgetWithValidation(class UWBP_Inventory_Item_Button_C* Widget, const class USBZEquippablePartDataAsset* Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "SetPreviewWidgetWithValidation");
-
-	Params::WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation Parms{};
-
-	Parms.Widget = Widget;
-	Parms.Data = Data;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.GetSlotFromDataClass
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class USBZModularPartDataAsset>SlotClass                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-// class USBZCosmeticsPartSlot**           SlotAsset                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponCustomization_WeaponCosmetics_C::GetSlotFromDataClass(TSubclassOf<class USBZModularPartDataAsset> SlotClass, class USBZCosmeticsPartSlot** SlotAsset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "GetSlotFromDataClass");
-
-	Params::WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass Parms{};
-
-	Parms.SlotClass = SlotClass;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SlotAsset != nullptr)
-		*SlotAsset = Parms.SlotAsset;
-}
-
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.NeedConfig
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UWBP_WeaponCustomization_WeaponCosmetics_C::NeedConfig()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeaponCustomization_WeaponCosmetics_C", "NeedConfig");
-
-	Params::WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

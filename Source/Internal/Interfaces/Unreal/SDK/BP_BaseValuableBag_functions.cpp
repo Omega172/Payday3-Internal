@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BaseValuableBag.BP_BaseValuableBag_C.BP_OnZiplineAttachmentChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsAttached                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseValuableBag_C::BP_OnZiplineAttachmentChanged(bool bIsAttached)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BaseValuableBag_C", "BP_OnZiplineAttachmentChanged");
+
+	Params::BP_BaseValuableBag_C_BP_OnZiplineAttachmentChanged Parms{};
+
+	Parms.bIsAttached = bIsAttached;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BaseValuableBag.BP_BaseValuableBag_C.ExecuteUbergraph_BP_BaseValuableBag
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -51,26 +71,6 @@ void ABP_BaseValuableBag_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 	Params::BP_BaseValuableBag_C_ReceiveEndPlay Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseValuableBag.BP_BaseValuableBag_C.BP_OnZiplineAttachmentChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsAttached                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_BaseValuableBag_C::BP_OnZiplineAttachmentChanged(bool bIsAttached)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseValuableBag_C", "BP_OnZiplineAttachmentChanged");
-
-	Params::BP_BaseValuableBag_C_BP_OnZiplineAttachmentChanged Parms{};
-
-	Parms.bIsAttached = bIsAttached;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

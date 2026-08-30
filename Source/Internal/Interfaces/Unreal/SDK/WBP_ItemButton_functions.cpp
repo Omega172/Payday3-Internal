@@ -16,6 +16,94 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ItemButton.WBP_ItemButton_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ItemButton_C::BP_OnEntryReleased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "BP_OnEntryReleased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemButton_C::BP_OnItemSelectionChanged(bool bIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "BP_OnItemSelectionChanged");
+
+	Params::WBP_ItemButton_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemButton_C::ButtonFocusChanging(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "ButtonFocusChanging");
+
+	Params::WBP_ItemButton_C_ButtonFocusChanging Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_ItemButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ItemButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ItemButton.WBP_ItemButton_C.ExecuteUbergraph_WBP_ItemButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,95 +124,91 @@ void UWBP_ItemButton_C::ExecuteUbergraph_WBP_ItemButton(int32 EntryPoint)
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.UpdateArmor
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.GetWeaponConfig
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEquippableLoadoutSlot               ItemSlot                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZWeaponInventorySlot*         Output                                                 (Parm, OutParm)
+// bool*                                   bFound                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::UpdateArmor(class USBZInventoryItemDecorator* ItemDeco)
+void UWBP_ItemButton_C::GetWeaponConfig(ESBZEquippableLoadoutSlot ItemSlot, int32 Index_0, struct FSBZWeaponInventorySlot* Output, bool* bFound)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "UpdateArmor");
+		Func = Class->GetFunction("WBP_ItemButton_C", "GetWeaponConfig");
 
-	Params::WBP_ItemButton_C_UpdateArmor Parms{};
+	Params::WBP_ItemButton_C_GetWeaponConfig Parms{};
 
-	Parms.ItemDeco = ItemDeco;
+	Parms.ItemSlot = ItemSlot;
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Output != nullptr)
+		*Output = std::move(Parms.Output);
+
+	if (bFound != nullptr)
+		*bFound = Parms.bFound;
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.Initialize Item
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            Inventory_Data                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemButton_C::Initialize_Item(class USBZInventoryBaseData* Inventory_Data)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "Initialize Item");
+
+	Params::WBP_ItemButton_C_Initialize_Item Parms{};
+
+	Parms.Inventory_Data = Inventory_Data;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.UpdateMods
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemButton_C::UpdateMods(class USBZInventoryItemDecorator* ItemDeco)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "UpdateMods");
-
-	Params::WBP_ItemButton_C_UpdateMods Parms{};
-
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ItemButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.ButtonFocusChanging
+// Function WBP_ItemButton.WBP_ItemButton_C.OnListItemEquippedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::ButtonFocusChanging(bool bInHasFocus)
+void UWBP_ItemButton_C::OnListItemEquippedChanged(bool bIsEquipped)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "ButtonFocusChanging");
+		Func = Class->GetFunction("WBP_ItemButton_C", "OnListItemEquippedChanged");
 
-	Params::WBP_ItemButton_C_ButtonFocusChanging Parms{};
+	Params::WBP_ItemButton_C_OnListItemEquippedChanged Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.bIsEquipped = bIsEquipped;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.SelectionChanged
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::SelectionChanged(bool IsSelected)
+void UWBP_ItemButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "SelectionChanged");
+		Func = Class->GetFunction("WBP_ItemButton_C", "OnListItemObjectSet");
 
-	Params::WBP_ItemButton_C_SelectionChanged Parms{};
+	Params::WBP_ItemButton_C_OnListItemObjectSet Parms{};
 
-	Parms.IsSelected = IsSelected;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -152,70 +236,10 @@ void UWBP_ItemButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, const s
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.Initialize Item
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            Inventory_Data                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemButton_C::Initialize_Item(class USBZInventoryBaseData* Inventory_Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "Initialize Item");
-
-	Params::WBP_ItemButton_C_Initialize_Item Parms{};
-
-	Parms.Inventory_Data = Inventory_Data;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.UpdateWithItemDecorator
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       List_Item_Object                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemButton_C::UpdateWithItemDecorator(class USBZInventoryItemDecorator* List_Item_Object)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "UpdateWithItemDecorator");
-
-	Params::WBP_ItemButton_C_UpdateWithItemDecorator Parms{};
-
-	Parms.List_Item_Object = List_Item_Object;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.SetEquippedVisuals
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ItemButton_C::SetEquippedVisuals(bool bIsEquipped)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "SetEquippedVisuals");
-
-	Params::WBP_ItemButton_C_SetEquippedVisuals Parms{};
-
-	Parms.bIsEquipped = bIsEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ItemButton.WBP_ItemButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ItemButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -232,19 +256,53 @@ void UWBP_ItemButton_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.OnListItemEquippedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.SelectionChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::OnListItemEquippedChanged(bool bIsEquipped)
+void UWBP_ItemButton_C::SelectionChanged(bool IsSelected)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "OnListItemEquippedChanged");
+		Func = Class->GetFunction("WBP_ItemButton_C", "SelectionChanged");
 
-	Params::WBP_ItemButton_C_OnListItemEquippedChanged Parms{};
+	Params::WBP_ItemButton_C_SelectionChanged Parms{};
+
+	Parms.IsSelected = IsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.SetDefault
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ItemButton_C::SetDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "SetDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ItemButton.WBP_ItemButton_C.SetEquippedVisuals
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemButton_C::SetEquippedVisuals(bool bIsEquipped)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ItemButton_C", "SetEquippedVisuals");
+
+	Params::WBP_ItemButton_C_SetEquippedVisuals Parms{};
 
 	Parms.bIsEquipped = bIsEquipped;
 
@@ -252,75 +310,21 @@ void UWBP_ItemButton_C::OnListItemEquippedChanged(bool bIsEquipped)
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.OnListItemObjectSet
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.SetItemVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_ItemButton_C::SetItemVisuals(class USBZInventoryBaseData* InInventoryData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "OnListItemObjectSet");
+		Func = Class->GetFunction("WBP_ItemButton_C", "SetItemVisuals");
 
-	Params::WBP_ItemButton_C_OnListItemObjectSet Parms{};
+	Params::WBP_ItemButton_C_SetItemVisuals Parms{};
 
-	Parms.ListItemObject = ListItemObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ItemButton_C::BP_OnEntryReleased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "BP_OnEntryReleased");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_ItemButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemButton.WBP_ItemButton_C.BP_OnItemSelectionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ItemButton_C::BP_OnItemSelectionChanged(bool bIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "BP_OnItemSelectionChanged");
-
-	Params::WBP_ItemButton_C_BP_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
+	Parms.InInventoryData = InInventoryData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -329,7 +333,7 @@ void UWBP_ItemButton_C::BP_OnItemSelectionChanged(bool bIsSelected)
 // Function WBP_ItemButton.WBP_ItemButton_C.SetVisualsFromStoreItem
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZStoreBaseItem&         StoreItem                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_ItemButton_C::SetVisualsFromStoreItem(class USBZInventoryItemDecorator* ItemDeco, const struct FSBZStoreBaseItem& StoreItem)
@@ -348,67 +352,63 @@ void UWBP_ItemButton_C::SetVisualsFromStoreItem(class USBZInventoryItemDecorator
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.SetItemVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.UpdateArmor
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::SetItemVisuals(class USBZInventoryBaseData* InInventoryData)
+void UWBP_ItemButton_C::UpdateArmor(class USBZInventoryItemDecorator* ItemDeco)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "SetItemVisuals");
+		Func = Class->GetFunction("WBP_ItemButton_C", "UpdateArmor");
 
-	Params::WBP_ItemButton_C_SetItemVisuals Parms{};
+	Params::WBP_ItemButton_C_UpdateArmor Parms{};
 
-	Parms.InInventoryData = InInventoryData;
+	Parms.ItemDeco = ItemDeco;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.GetWeaponConfig
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.UpdateMods
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZEquippableLoadoutSlot               ItemSlot                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSBZWeaponInventorySlot*         Output                                                 (Parm, OutParm)
-// bool*                                   bFound                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::GetWeaponConfig(ESBZEquippableLoadoutSlot ItemSlot, int32 Index_0, struct FSBZWeaponInventorySlot* Output, bool* bFound)
+void UWBP_ItemButton_C::UpdateMods(class USBZInventoryItemDecorator* ItemDeco)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "GetWeaponConfig");
+		Func = Class->GetFunction("WBP_ItemButton_C", "UpdateMods");
 
-	Params::WBP_ItemButton_C_GetWeaponConfig Parms{};
+	Params::WBP_ItemButton_C_UpdateMods Parms{};
 
-	Parms.ItemSlot = ItemSlot;
-	Parms.Index_0 = Index_0;
+	Parms.ItemDeco = ItemDeco;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Output != nullptr)
-		*Output = std::move(Parms.Output);
-
-	if (bFound != nullptr)
-		*bFound = Parms.bFound;
 }
 
 
-// Function WBP_ItemButton.WBP_ItemButton_C.SetDefault
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemButton.WBP_ItemButton_C.UpdateWithItemDecorator
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       List_Item_Object                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemButton_C::SetDefault()
+void UWBP_ItemButton_C::UpdateWithItemDecorator(class USBZInventoryItemDecorator* List_Item_Object)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ItemButton_C", "SetDefault");
+		Func = Class->GetFunction("WBP_ItemButton_C", "UpdateWithItemDecorator");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ItemButton_C_UpdateWithItemDecorator Parms{};
+
+	Parms.List_Item_Object = List_Item_Object;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

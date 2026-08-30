@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Settings_Screen_CategoryGamepad_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.ExecuteUbergraph_WBP_Settings_Screen_CategoryGamepad
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,129 +50,65 @@ void UWBP_Settings_Screen_CategoryGamepad_C::ExecuteUbergraph_WBP_Settings_Scree
 }
 
 
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnInputTypeChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_Screen_CategoryGamepad_C::OnInputTypeChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnInputTypeChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.RefreshScreen
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_Screen_CategoryGamepad_C::RefreshScreen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "RefreshScreen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnPopUpClosed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_Screen_CategoryGamepad_C::OnPopUpClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnPopUpClosed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnTertiaryPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_Screen_CategoryGamepad_C::OnTertiaryPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnTertiaryPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnSecondaryPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_Screen_CategoryGamepad_C::OnSecondaryPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnSecondaryPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnSettingsButtonChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.Handle Settings Button Focus Changed
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZSettingsButton*               SettingsButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonFocused                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_Screen_CategoryGamepad_C::OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton)
+void UWBP_Settings_Screen_CategoryGamepad_C::Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnSettingsButtonChanged");
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Handle Settings Button Focus Changed");
 
-	Params::WBP_Settings_Screen_CategoryGamepad_C_OnSettingsButtonChanged Parms{};
+	Params::WBP_Settings_Screen_CategoryGamepad_C_Handle_Settings_Button_Focus_Changed Parms{};
 
-	Parms.SettingsButton = SettingsButton;
+	Parms.Button = Button;
+	Parms.IsButtonFocused = IsButtonFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnSettingsButtonFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.Handle Settings Button Value Changed
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZSettingsButton*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_Screen_CategoryGamepad_C::OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
+void UWBP_Settings_Screen_CategoryGamepad_C::Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnSettingsButtonFocused");
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Handle Settings Button Value Changed");
 
-	Params::WBP_Settings_Screen_CategoryGamepad_C_OnSettingsButtonFocused Parms{};
+	Params::WBP_Settings_Screen_CategoryGamepad_C_Handle_Settings_Button_Value_Changed Parms{};
 
-	Parms.MenuButton = MenuButton;
-	Parms.bIsFocused = bIsFocused;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.On Focused Input Actions
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_Screen_CategoryGamepad_C::OnInitialized()
+void UWBP_Settings_Screen_CategoryGamepad_C::On_Focused_Input_Actions(bool IsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "On Focused Input Actions");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Settings_Screen_CategoryGamepad_C_On_Focused_Input_Actions Parms{};
+
+	Parms.IsFocused = IsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -202,6 +152,34 @@ void UWBP_Settings_Screen_CategoryGamepad_C::OnGainedStackFocused(const class FN
 }
 
 
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Settings_Screen_CategoryGamepad_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnInputTypeChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_Screen_CategoryGamepad_C::OnInputTypeChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnInputTypeChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
@@ -216,59 +194,101 @@ void UWBP_Settings_Screen_CategoryGamepad_C::OnLostStackFocused()
 }
 
 
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnPopUpClosed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_Screen_CategoryGamepad_C::Construct()
+void UWBP_Settings_Screen_CategoryGamepad_C::OnPopUpClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Construct");
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnPopUpClosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.Handle Settings Button Focus Changed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonFocused                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnSecondaryPressed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_Screen_CategoryGamepad_C::Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused)
+void UWBP_Settings_Screen_CategoryGamepad_C::OnSecondaryPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Handle Settings Button Focus Changed");
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnSecondaryPressed");
 
-	Params::WBP_Settings_Screen_CategoryGamepad_C_Handle_Settings_Button_Focus_Changed Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Button = Button;
-	Parms.IsButtonFocused = IsButtonFocused;
+
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnSettingsButtonChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZSettingsButton*               SettingsButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_Screen_CategoryGamepad_C::OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnSettingsButtonChanged");
+
+	Params::WBP_Settings_Screen_CategoryGamepad_C_OnSettingsButtonChanged Parms{};
+
+	Parms.SettingsButton = SettingsButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.Handle Settings Button Value Changed
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnSettingsButtonFocused
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZSettingsButton*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_Screen_CategoryGamepad_C::Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button)
+void UWBP_Settings_Screen_CategoryGamepad_C::OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Handle Settings Button Value Changed");
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnSettingsButtonFocused");
 
-	Params::WBP_Settings_Screen_CategoryGamepad_C_Handle_Settings_Button_Value_Changed Parms{};
+	Params::WBP_Settings_Screen_CategoryGamepad_C_OnSettingsButtonFocused Parms{};
 
-	Parms.Button = Button;
+	Parms.MenuButton = MenuButton;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.OnTertiaryPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_Screen_CategoryGamepad_C::OnTertiaryPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "OnTertiaryPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.RefreshScreen
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_Screen_CategoryGamepad_C::RefreshScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "RefreshScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -283,26 +303,6 @@ void UWBP_Settings_Screen_CategoryGamepad_C::Update_Menu_Control_Reference()
 		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "Update Menu Control Reference");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C.On Focused Input Actions
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_Screen_CategoryGamepad_C::On_Focused_Input_Actions(bool IsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_CategoryGamepad_C", "On Focused Input Actions");
-
-	Params::WBP_Settings_Screen_CategoryGamepad_C_On_Focused_Input_Actions Parms{};
-
-	Parms.IsFocused = IsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

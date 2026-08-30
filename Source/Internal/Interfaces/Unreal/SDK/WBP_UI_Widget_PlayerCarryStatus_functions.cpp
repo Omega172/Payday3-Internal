@@ -39,7 +39,7 @@ void UWBP_UI_Widget_PlayerCarryStatus_C::ExecuteUbergraph_WBP_UI_Widget_PlayerCa
 // Function WBP_UI_Widget_PlayerCarryStatus.WBP_UI_Widget_PlayerCarryStatus_C.OnCarryTypeDropped
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZCarryType*              DroppedCarryType                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCarryType*              DroppedCarryType                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_PlayerCarryStatus_C::OnCarryTypeDropped(const class USBZCarryType* DroppedCarryType)
 {
@@ -59,7 +59,7 @@ void UWBP_UI_Widget_PlayerCarryStatus_C::OnCarryTypeDropped(const class USBZCarr
 // Function WBP_UI_Widget_PlayerCarryStatus.WBP_UI_Widget_PlayerCarryStatus_C.OnCarryTypePickedUp
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZCarryType*              PickedUpCarryType                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCarryType*              PickedUpCarryType                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_PlayerCarryStatus_C::OnCarryTypePickedUp(const class USBZCarryType* PickedUpCarryType)
 {

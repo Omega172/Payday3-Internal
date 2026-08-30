@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_NewsItem.WBP_NewsItem_C
-// 0x0040 (0x02D0 - 0x0290)
+// 0x0040 (0x0330 - 0x02F0)
 class UWBP_NewsItem_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 NewsBanner_I;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TSoftObjectPtr<class UPaperSprite>            BannerSprite;                                      // 0x02A0(0x0030)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 NewsBanner_I;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TSoftObjectPtr<class UPaperSprite>            BannerSprite;                                      // 0x0300(0x0030)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_NewsItem(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 	void OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED(class UObject* Loaded);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

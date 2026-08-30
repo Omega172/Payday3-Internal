@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_HelperPanel_ReticlePreview.WBP_Settings_HelperPanel_ReticlePreview_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Settings_HelperPanel_ReticlePreview_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_HelperPanel_ReticlePreview_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_HelperPanel_ReticlePreview.WBP_Settings_HelperPanel_ReticlePreview_C.ExecuteUbergraph_WBP_Settings_HelperPanel_ReticlePreview
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,6 +45,26 @@ void UWBP_Settings_HelperPanel_ReticlePreview_C::ExecuteUbergraph_WBP_Settings_H
 	Params::WBP_Settings_HelperPanel_ReticlePreview_C_ExecuteUbergraph_WBP_Settings_HelperPanel_ReticlePreview Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_HelperPanel_ReticlePreview.WBP_Settings_HelperPanel_ReticlePreview_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_HelperPanel_ReticlePreview_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_HelperPanel_ReticlePreview_C", "PreConstruct");
+
+	Params::WBP_Settings_HelperPanel_ReticlePreview_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -67,40 +101,6 @@ void UWBP_Settings_HelperPanel_ReticlePreview_C::Tick(const struct FGeometry& My
 
 	Parms.MyGeometry = std::move(MyGeometry);
 	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_HelperPanel_ReticlePreview.WBP_Settings_HelperPanel_ReticlePreview_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Settings_HelperPanel_ReticlePreview_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_HelperPanel_ReticlePreview_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_HelperPanel_ReticlePreview.WBP_Settings_HelperPanel_ReticlePreview_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_HelperPanel_ReticlePreview_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_HelperPanel_ReticlePreview_C", "PreConstruct");
-
-	Params::WBP_Settings_HelperPanel_ReticlePreview_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -20,56 +20,56 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C
-// 0x0140 (0x03D0 - 0x0290)
+// 0x0140 (0x0430 - 0x02F0)
 class UWBP_ServerBrowser_ContractorOptions_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Applied;                                           // 0x0298(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x02A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       TabChange;                                         // 0x02A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     ApplyButton;                                       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        ContractorOptions_Ws;                              // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_ContractorSelector_C* ContractorSelector;                               // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  DifficultyFilter;                                  // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZScrollBox*                          Heists_Sb;                                         // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  ModdedFilter;                                      // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  TacticFilter;                                      // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Title_T;                                           // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_YesNo_LineItem_MenuButton_C*       WBP_All_Default;                                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Navbar_C*            WBP_ServerBrowser_Navbar;                          // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<class FString, struct FS_ContractorHeists> ContractorOwnedHeistMap;                         // 0x0300(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FSBZServerBrowserHeistCollection> OwnedHeists;                                     // 0x0350(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          IsConstructed;                                     // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_361[0x7];                                      // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, bool>                     ActiveHeists;                                      // 0x0368(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(TArray<struct FSBZServerBrowserHeistLevel>& HeistDataFilters, int32 DifficultyFilterIndex, int32 TacticFilterIndex, bool ShowModdedLobbies)> SendFiltersToApply; // 0x03B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	bool                                          AllButtonState;                                    // 0x03C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Applied;                                           // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0300(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       TabChange;                                         // 0x0308(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     ApplyButton;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        ContractorOptions_Ws;                              // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_ContractorSelector_C* ContractorSelector;                               // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  DifficultyFilter;                                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZScrollBox*                          Heists_Sb;                                         // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  ModdedFilter;                                      // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  TacticFilter;                                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Title_T;                                           // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_YesNo_LineItem_MenuButton_C*       WBP_All_Default;                                   // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Navbar_C*            WBP_ServerBrowser_Navbar;                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMap<class FString, struct FS_ContractorHeists> ContractorOwnedHeistMap;                         // 0x0360(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FSBZServerBrowserHeistCollection> OwnedHeists;                                     // 0x03B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          IsConstructed;                                     // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FString, bool>                     ActiveHeists;                                      // 0x03C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TMulticastInlineDelegate<void(TArray<struct FSBZServerBrowserHeistLevel>& HeistDataFilters, int32 DifficultyFilterIndex, int32 TacticFilterIndex, bool ShowModdedLobbies)> SendFiltersToApply; // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	bool                                          AllButtonState;                                    // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions(int32 EntryPoint);
-	void BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
-	void ResetAllFilters();
+	void AddDataToSelector();
+	void AddOwnedHeistsToScrollBox();
+	void AllHeistsUpdated(const class FText& HeistTitle, bool IsHeistActive);
 	void BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
 	void BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void PreConstruct(bool IsDesignTime);
-	void AllHeistsUpdated(const class FText& HeistTitle, bool IsHeistActive);
-	void HeistLineItemUpdated(const class FText& HeistTitle, bool IsHeistActive);
-	void UpdateOwnedHeistMap();
-	void PopulateOwnedHeistMap(bool* FoundHeists);
-	void AddDataToSelector();
-	void SetOwnedHeists(TArray<struct FSBZServerBrowserHeistCollection>& InOwnedHeists);
 	void CheckOwnedHeists(const class FString& InHeistToFind, bool* Found, struct FSBZServerBrowserHeistLevel* HeistData);
-	void AddOwnedHeistsToScrollBox();
-	void RevealHeistsForContractor(const class FString& Key);
-	void FindHeistInScrollBox(const class FText& HeistNameToFind, bool* Found, class UWBP_YesNo_LineItem_MenuButton_C** ItemRef);
-	void ResetAllHeistsInScrollBox();
-	void UpdateAllDefaultState();
-	void GetHeistDataForActiveHeists(TArray<struct FSBZServerBrowserHeistLevel>* ActiveHeistData);
 	class UWidget* CustomUpNav_ForItemsBelowScrollbox(EUINavigation Navigation_0);
+	void ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions(int32 EntryPoint);
+	void FindHeistInScrollBox(const class FText& HeistNameToFind, bool* Found, class UWBP_YesNo_LineItem_MenuButton_C** ItemRef);
+	void GetHeistDataForActiveHeists(TArray<struct FSBZServerBrowserHeistLevel>* ActiveHeistData);
+	void HeistLineItemUpdated(const class FText& HeistTitle, bool IsHeistActive);
+	void PopulateOwnedHeistMap(bool* FoundHeists);
+	void PreConstruct(bool IsDesignTime);
+	void ResetAllFilters();
+	void ResetAllHeistsInScrollBox();
+	void RevealHeistsForContractor(const class FString& Key);
 	void SaveCurrentValuesToGameUserSettings();
 	void SetFiltersFromGameUserSettings();
+	void SetOwnedHeists(TArray<struct FSBZServerBrowserHeistCollection>& InOwnedHeists);
+	void UpdateAllDefaultState();
+	void UpdateOwnedHeistMap();
 
 public:
 	static class UClass* StaticClass()

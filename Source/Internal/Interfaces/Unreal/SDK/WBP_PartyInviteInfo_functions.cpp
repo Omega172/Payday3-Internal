@@ -16,6 +16,74 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PartyInviteInfo_C::BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyInviteInfo_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "ButtonHoveredChanged");
+
+	Params::WBP_PartyInviteInfo_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_PartyInviteInfo_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.EnableInput
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyInviteInfo_C::EnableInput(bool InEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "EnableInput");
+
+	Params::WBP_PartyInviteInfo_C_EnableInput Parms{};
+
+	Parms.InEnable = InEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.ExecuteUbergraph_WBP_PartyInviteInfo
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,55 +104,15 @@ void UWBP_PartyInviteInfo_C::ExecuteUbergraph_WBP_PartyInviteInfo(int32 EntryPoi
 }
 
 
-// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PartyInviteInfo_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_PartyInviteInfo_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "ButtonHoveredChanged");
-
-	Params::WBP_PartyInviteInfo_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.EnableInput
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_PartyInviteInfo_C::EnableInput(bool InEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "EnableInput");
-
-	Params::WBP_PartyInviteInfo_C_EnableInput Parms{};
-
-	Parms.InEnable = InEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PartyInviteInfo_C::BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,7 +121,7 @@ void UWBP_PartyInviteInfo_C::BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_Compon
 // Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.OnInstallStateChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyInviteInfo_C::OnInstallStateChanged(bool bIsGameInstallPending)
 {
@@ -148,7 +176,7 @@ void UWBP_PartyInviteInfo_C::OnPlayerPartyChanged(const class FString& PlayerId)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // ESBZUserPrivilegesProxy                 Privilege                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPrivilegeAllowed                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bPrivilegeAllowed                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyInviteInfo_C::OnPrivilegeChanged(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed)
 {
@@ -166,38 +194,10 @@ void UWBP_PartyInviteInfo_C::OnPrivilegeChanged(ESBZUserPrivilegesProxy Privileg
 }
 
 
-// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PartyInviteInfo_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_PartyInviteInfo_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyInviteInfo_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyInviteInfo_C::PreConstruct(bool IsDesignTime)
 {
@@ -217,9 +217,9 @@ void UWBP_PartyInviteInfo_C::PreConstruct(bool IsDesignTime)
 // Function WBP_PartyInviteInfo.WBP_PartyInviteInfo_C.UpdateAccessBasedOnPrivilege
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    CanPlayOnline                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    InstallPending                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    TrialVersion                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    CanPlayOnline                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InstallPending                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    TrialVersion                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyInviteInfo_C::UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion)
 {

@@ -36,71 +36,45 @@ void UWBP_SideModInfoPanel_C::ExecuteUbergraph_WBP_SideModInfoPanel(int32 EntryP
 }
 
 
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToEmpty
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_SideModInfoPanel_C::SetInfoToEmpty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "SetInfoToEmpty");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetWeaponPartDescription
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.GetFirstSkillData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponPartDataAsset*    WeaponPartData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZSkillData**                   SkillData                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SideModInfoPanel_C::SetWeaponPartDescription(const class FText& InText)
+void UWBP_SideModInfoPanel_C::GetFirstSkillData(const class USBZWeaponPartDataAsset* WeaponPartData, class USBZSkillData** SkillData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "SetWeaponPartDescription");
+		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "GetFirstSkillData");
 
-	Params::WBP_SideModInfoPanel_C_SetWeaponPartDescription Parms{};
+	Params::WBP_SideModInfoPanel_C_GetFirstSkillData Parms{};
 
-	Parms.InText = std::move(InText);
+	Parms.WeaponPartData = WeaponPartData;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (SkillData != nullptr)
+		*SkillData = Parms.SkillData;
 }
 
 
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToUnequipMod
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_SideModInfoPanel_C::SetInfoToUnequipMod()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "SetInfoToUnequipMod");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.UpdateModInfoWithEquippablePart
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// const class USBZEquippablePartDataAsset*EquippablePart                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZBaseWeaponData*         ParentWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SideModInfoPanel_C::UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData)
+void UWBP_SideModInfoPanel_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "UpdateModInfoWithEquippablePart");
+		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "PreConstruct");
 
-	Params::WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart Parms{};
+	Params::WBP_SideModInfoPanel_C_PreConstruct Parms{};
 
-	Parms.EquippablePart = EquippablePart;
-	Parms.ParentWeaponData = ParentWeaponData;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -146,47 +120,73 @@ void UWBP_SideModInfoPanel_C::SetHeader(const class FText& InText)
 }
 
 
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToEmpty
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_SideModInfoPanel_C::PreConstruct(bool IsDesignTime)
+void UWBP_SideModInfoPanel_C::SetInfoToEmpty()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "SetInfoToEmpty");
 
-	Params::WBP_SideModInfoPanel_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToUnequipMod
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_SideModInfoPanel_C::SetInfoToUnequipMod()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "SetInfoToUnequipMod");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetWeaponPartDescription
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_SideModInfoPanel_C::SetWeaponPartDescription(const class FText& InText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "SetWeaponPartDescription");
+
+	Params::WBP_SideModInfoPanel_C_SetWeaponPartDescription Parms{};
+
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.GetFirstSkillData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.UpdateModInfoWithEquippablePart
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZWeaponPartDataAsset*    WeaponPartData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZSkillData**                   SkillData                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZEquippablePartDataAsset*EquippablePart                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseWeaponData*         ParentWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SideModInfoPanel_C::GetFirstSkillData(const class USBZWeaponPartDataAsset* WeaponPartData, class USBZSkillData** SkillData)
+void UWBP_SideModInfoPanel_C::UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "GetFirstSkillData");
+		Func = Class->GetFunction("WBP_SideModInfoPanel_C", "UpdateModInfoWithEquippablePart");
 
-	Params::WBP_SideModInfoPanel_C_GetFirstSkillData Parms{};
+	Params::WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart Parms{};
 
-	Parms.WeaponPartData = WeaponPartData;
+	Parms.EquippablePart = EquippablePart;
+	Parms.ParentWeaponData = ParentWeaponData;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (SkillData != nullptr)
-		*SkillData = Parms.SkillData;
 }
 
 

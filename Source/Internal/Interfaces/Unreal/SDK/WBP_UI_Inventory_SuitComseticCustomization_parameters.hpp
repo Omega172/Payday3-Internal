@@ -11,55 +11,94 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Starbreeze_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged final
+{
+public:
+	const class USBZCosmeticsDataAsset*           InEquippedItem;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged;
+
 // Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization
-// 0x01B0 (0x01B0 - 0x0000)
+// 0x0168 (0x0168 - 0x0000)
 struct WBP_UI_Inventory_SuitComseticCustomization_C_ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMainMenuCosmeticItemButton*         K2Node_ComponentBoundEvent_CosmeticButton;         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMainMenuCosmeticItemButton*         K2Node_ComponentBoundEvent_CosmeticButton;         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticItemData_ReturnValue;          // 0x0018(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsDefaultItem_ReturnValue;                // 0x0022(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticItemData_ReturnValue;          // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDefaultItem_ReturnValue;                // 0x0022(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsDataAsset*           K2Node_Event_InEquippedItem;                       // 0x0028(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0030(0x0018)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x004C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0060(0x0028)()
-	class FName                                   K2Node_Event_PreviousValue;                        // 0x0088(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0098(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x00B0(0x0018)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00C8(0x0038)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0100(0x0014)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_115[0x3];                                      // 0x0115(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x0118(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0124(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_125[0x3];                                      // 0x0125(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0128(0x0018)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0140(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0178(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0188(0x0028)()
+	const class USBZCosmeticsDataAsset*           K2Node_Event_InEquippedItem;                       // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0030(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0058(0x0014)()
+	class FName                                   K2Node_Event_PreviousValue;                        // 0x006C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0078(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0088(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0098(0x0030)()
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x00C8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DD[0x3];                                       // 0x00DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x00F0(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0100(0x0030)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0130(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0140(0x0028)()
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization;
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
+// 0x0110 (0x0110 - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals final
+{
+public:
+	uint8                                         Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0038(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0048)(HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default;                             // 0x0098(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals;
 
 // Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnControlsReferenceClicked
 // 0x000C (0x000C - 0x0000)
@@ -70,25 +109,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked;
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged final
-{
-public:
-	const class USBZCosmeticsDataAsset*           InEquippedItem;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged;
-
 // Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnGainedStackFocused
 // 0x000C (0x000C - 0x0000)
 struct WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused final
@@ -97,27 +117,6 @@ public:
 	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused;
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
-// 0x0130 (0x0130 - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals final
-{
-public:
-	uint8                                         Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0018)()
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0050(0x0018)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0070(0x0040)(HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x00B0(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00C8(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0118(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

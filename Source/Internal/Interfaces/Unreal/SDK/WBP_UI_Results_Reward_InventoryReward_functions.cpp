@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_InventoryReward_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_InventoryReward_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.ExecuteUbergraph_WBP_UI_Results_Reward_InventoryReward
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,44 +50,10 @@ void UWBP_UI_Results_Reward_InventoryReward_C::ExecuteUbergraph_WBP_UI_Results_R
 }
 
 
-// Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Results_Reward_InventoryReward_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_InventoryReward_C", "PreConstruct");
-
-	Params::WBP_UI_Results_Reward_InventoryReward_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_InventoryReward_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_InventoryReward_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.OnLoaded_F99AF3214864DD0BF5551FB49B41A8BC
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_InventoryReward_C::OnLoaded_F99AF3214864DD0BF5551FB49B41A8BC(class UObject* Loaded)
 {
@@ -104,17 +84,23 @@ void UWBP_UI_Results_Reward_InventoryReward_C::PlayAppearAnim()
 }
 
 
-// Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_InventoryReward_0
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Results_Reward_InventoryReward.WBP_UI_Results_Reward_InventoryReward_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Results_Reward_InventoryReward_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_InventoryReward_0()
+void UWBP_UI_Results_Reward_InventoryReward_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_InventoryReward_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_InventoryReward_0");
+		Func = Class->GetFunction("WBP_UI_Results_Reward_InventoryReward_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Results_Reward_InventoryReward_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

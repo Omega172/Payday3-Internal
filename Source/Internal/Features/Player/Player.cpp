@@ -7,7 +7,7 @@ namespace
 {
 	SDK::ASBZPlayerCharacter* GetLocalCharacter()
 	{
-		return reinterpret_cast<SDK::ASBZPlayerCharacter*>(Unreal::GetAcknowledgedPawn());
+		return Unreal::GetLocalASBZPlayerCharacter();
 	}
 }
 

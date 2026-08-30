@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_PartyMemberCarryStatus.WBP_UI_Widget_PartyMemberCarryStatus_C
-// 0x0018 (0x0308 - 0x02F0)
+// 0x0018 (0x0368 - 0x0350)
 class UWBP_UI_Widget_PartyMemberCarryStatus_C final : public UPD3HUDPlayerCarryWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UHorizontalBox*                         ItemBox;                                           // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	int32                                         Count;                                             // 0x0300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UHorizontalBox*                         ItemBox;                                           // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	int32                                         Count;                                             // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_PartyMemberCarryStatus(int32 EntryPoint);
-	void OnCarryTypePickedUp(const class USBZCarryType* PickedUpCarryType);
 	void OnCarryTypeDropped(const class USBZCarryType* DroppedCarryType);
+	void OnCarryTypePickedUp(const class USBZCarryType* PickedUpCarryType);
 
 public:
 	static class UClass* StaticClass()

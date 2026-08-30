@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DefaultMeleeImpactFeedback.BP_DefaultMeleeImpactFeedback_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UBP_DefaultMeleeImpactFeedback_C final : public USBZLocalPlayerFeedback
 {
 public:

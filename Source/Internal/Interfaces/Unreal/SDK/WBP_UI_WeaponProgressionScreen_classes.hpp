@@ -17,21 +17,21 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C
-// 0x0010 (0x0328 - 0x0318)
+// 0x0010 (0x0388 - 0x0378)
 class UWBP_UI_WeaponProgressionScreen_C final : public USBZMainMenuWeaponProgressionScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_UI_Inventory_ItemDescription_C*    Widget_ItemDescription;                            // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_UI_Inventory_ItemDescription_C*    Widget_ItemDescription;                            // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_WeaponProgressionScreen(int32 EntryPoint);
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnAddedToStack();
 	void FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart);
-	void PreConstruct(bool IsDesignTime);
-	void OnLostStackFocused();
+	void OnAddedToStack();
+	void OnControlsReferencePressed(class FName ActionName);
 	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

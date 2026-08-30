@@ -115,6 +115,15 @@ public:
 };
 DUMPER7_ASSERTS_XeLLBlueprintLibrary_GetXeLLMode;
 
+// Function XeLLBlueprint.XeLLBlueprintLibrary.IsXeLLAvailable
+// 0x0001 (0x0001 - 0x0000)
+struct XeLLBlueprintLibrary_IsXeLLAvailable final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_XeLLBlueprintLibrary_IsXeLLAvailable;
+
 // Function XeLLBlueprint.XeLLBlueprintLibrary.IsXeLLSupported
 // 0x0001 (0x0001 - 0x0000)
 struct XeLLBlueprintLibrary_IsXeLLSupported final

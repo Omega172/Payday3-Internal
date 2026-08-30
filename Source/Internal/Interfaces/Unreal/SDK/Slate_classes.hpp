@@ -10,219 +10,32 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "SlateCore_classes.hpp"
-#include "CoreUObject_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
-// Class Slate.ButtonWidgetStyle
-// 0x02A8 (0x02E0 - 0x0038)
-class UButtonWidgetStyle final : public USlateWidgetStyleContainerBase
+// Class Slate.ToolMenuBase
+// 0x0000 (0x0030 - 0x0030)
+class UToolMenuBase final : public UObject
 {
-public:
-	struct FButtonStyle                           ButtonStyle;                                       // 0x0038(0x02A8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
 public:
 	static class UClass* StaticClass()
 	{
-		STATIC_CLASS_IMPL("ButtonWidgetStyle")
+		STATIC_CLASS_IMPL("ToolMenuBase")
 	}
 	static const class FName& StaticName()
 	{
-		STATIC_NAME_IMPL(L"ButtonWidgetStyle")
+		STATIC_NAME_IMPL(L"ToolMenuBase")
 	}
-	static class UButtonWidgetStyle* GetDefaultObj()
+	static class UToolMenuBase* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<UButtonWidgetStyle>();
+		return GetDefaultObjImpl<UToolMenuBase>();
 	}
 };
-DUMPER7_ASSERTS_UButtonWidgetStyle;
-
-// Class Slate.CheckBoxWidgetStyle
-// 0x05E0 (0x0618 - 0x0038)
-class UCheckBoxWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FCheckBoxStyle                         CheckBoxStyle;                                     // 0x0038(0x05E0)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("CheckBoxWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"CheckBoxWidgetStyle")
-	}
-	static class UCheckBoxWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UCheckBoxWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UCheckBoxWidgetStyle;
-
-// Class Slate.ComboBoxWidgetStyle
-// 0x0440 (0x0478 - 0x0038)
-class UComboBoxWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FComboBoxStyle                         ComboBoxStyle;                                     // 0x0038(0x0440)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ComboBoxWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ComboBoxWidgetStyle")
-	}
-	static class UComboBoxWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UComboBoxWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UComboBoxWidgetStyle;
-
-// Class Slate.ComboButtonWidgetStyle
-// 0x03F8 (0x0430 - 0x0038)
-class UComboButtonWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FComboButtonStyle                      ComboButtonStyle;                                  // 0x0038(0x03F8)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ComboButtonWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ComboButtonWidgetStyle")
-	}
-	static class UComboButtonWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UComboButtonWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UComboButtonWidgetStyle;
-
-// Class Slate.EditableTextBoxWidgetStyle
-// 0x0868 (0x08A0 - 0x0038)
-class UEditableTextBoxWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FEditableTextBoxStyle                  EditableTextBoxStyle;                              // 0x0038(0x0868)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("EditableTextBoxWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"EditableTextBoxWidgetStyle")
-	}
-	static class UEditableTextBoxWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEditableTextBoxWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UEditableTextBoxWidgetStyle;
-
-// Class Slate.EditableTextWidgetStyle
-// 0x0240 (0x0278 - 0x0038)
-class UEditableTextWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FEditableTextStyle                     EditableTextStyle;                                 // 0x0038(0x0240)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("EditableTextWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"EditableTextWidgetStyle")
-	}
-	static class UEditableTextWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UEditableTextWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UEditableTextWidgetStyle;
-
-// Class Slate.ProgressWidgetStyle
-// 0x01B8 (0x01F0 - 0x0038)
-class UProgressWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FProgressBarStyle                      ProgressBarStyle;                                  // 0x0038(0x01B8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ProgressWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ProgressWidgetStyle")
-	}
-	static class UProgressWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UProgressWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UProgressWidgetStyle;
-
-// Class Slate.ScrollBarWidgetStyle
-// 0x0518 (0x0550 - 0x0038)
-class UScrollBarWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x0038(0x0518)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ScrollBarWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ScrollBarWidgetStyle")
-	}
-	static class UScrollBarWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UScrollBarWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UScrollBarWidgetStyle;
-
-// Class Slate.ScrollBoxWidgetStyle
-// 0x0248 (0x0280 - 0x0038)
-class UScrollBoxWidgetStyle final : public USlateWidgetStyleContainerBase
-{
-public:
-	struct FScrollBoxStyle                        ScrollBoxStyle;                                    // 0x0038(0x0248)(Edit, NativeAccessSpecifierPublic)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ScrollBoxWidgetStyle")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ScrollBoxWidgetStyle")
-	}
-	static class UScrollBoxWidgetStyle* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UScrollBoxWidgetStyle>();
-	}
-};
-DUMPER7_ASSERTS_UScrollBoxWidgetStyle;
+DUMPER7_ASSERTS_UToolMenuBase;
 
 // Class Slate.SlateSettings
 // 0x0008 (0x0038 - 0x0030)
@@ -248,12 +61,229 @@ public:
 };
 DUMPER7_ASSERTS_USlateSettings;
 
+// Class Slate.ButtonWidgetStyle
+// 0x03C8 (0x0400 - 0x0038)
+class UButtonWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           ButtonStyle;                                       // 0x0040(0x03C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ButtonWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonWidgetStyle")
+	}
+	static class UButtonWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UButtonWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UButtonWidgetStyle;
+
+// Class Slate.CheckBoxWidgetStyle
+// 0x0A28 (0x0A60 - 0x0038)
+class UCheckBoxWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FCheckBoxStyle                         CheckBoxStyle;                                     // 0x0040(0x0A20)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("CheckBoxWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CheckBoxWidgetStyle")
+	}
+	static class UCheckBoxWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCheckBoxWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UCheckBoxWidgetStyle;
+
+// Class Slate.ComboBoxWidgetStyle
+// 0x0628 (0x0660 - 0x0038)
+class UComboBoxWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComboBoxStyle                         ComboBoxStyle;                                     // 0x0040(0x0620)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ComboBoxWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComboBoxWidgetStyle")
+	}
+	static class UComboBoxWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UComboBoxWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UComboBoxWidgetStyle;
+
+// Class Slate.ComboButtonWidgetStyle
+// 0x05B8 (0x05F0 - 0x0038)
+class UComboButtonWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComboButtonStyle                      ComboButtonStyle;                                  // 0x0040(0x05B0)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ComboButtonWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComboButtonWidgetStyle")
+	}
+	static class UComboButtonWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UComboButtonWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UComboButtonWidgetStyle;
+
+// Class Slate.EditableTextBoxWidgetStyle
+// 0x0D88 (0x0DC0 - 0x0038)
+class UEditableTextBoxWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEditableTextBoxStyle                  EditableTextBoxStyle;                              // 0x0040(0x0D80)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EditableTextBoxWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableTextBoxWidgetStyle")
+	}
+	static class UEditableTextBoxWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEditableTextBoxWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UEditableTextBoxWidgetStyle;
+
+// Class Slate.EditableTextWidgetStyle
+// 0x02C8 (0x0300 - 0x0038)
+class UEditableTextWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEditableTextStyle                     EditableTextStyle;                                 // 0x0040(0x02C0)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("EditableTextWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditableTextWidgetStyle")
+	}
+	static class UEditableTextWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UEditableTextWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UEditableTextWidgetStyle;
+
+// Class Slate.ProgressWidgetStyle
+// 0x0268 (0x02A0 - 0x0038)
+class UProgressWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FProgressBarStyle                      ProgressBarStyle;                                  // 0x0040(0x0260)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ProgressWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProgressWidgetStyle")
+	}
+	static class UProgressWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UProgressWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UProgressWidgetStyle;
+
+// Class Slate.ScrollBarWidgetStyle
+// 0x06E8 (0x0720 - 0x0038)
+class UScrollBarWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FScrollBarStyle                        ScrollBarStyle;                                    // 0x0040(0x06E0)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ScrollBarWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScrollBarWidgetStyle")
+	}
+	static class UScrollBarWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UScrollBarWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UScrollBarWidgetStyle;
+
+// Class Slate.ScrollBoxWidgetStyle
+// 0x0338 (0x0370 - 0x0038)
+class UScrollBoxWidgetStyle final : public USlateWidgetStyleContainerBase
+{
+public:
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FScrollBoxStyle                        ScrollBoxStyle;                                    // 0x0040(0x0330)(Edit, NativeAccessSpecifierPublic)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ScrollBoxWidgetStyle")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScrollBoxWidgetStyle")
+	}
+	static class UScrollBoxWidgetStyle* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UScrollBoxWidgetStyle>();
+	}
+};
+DUMPER7_ASSERTS_UScrollBoxWidgetStyle;
+
 // Class Slate.SpinBoxWidgetStyle
-// 0x0310 (0x0348 - 0x0038)
+// 0x0598 (0x05D0 - 0x0038)
 class USpinBoxWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FSpinBoxStyle                          SpinBoxStyle;                                      // 0x0038(0x0310)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSpinBoxStyle                          SpinBoxStyle;                                      // 0x0040(0x0590)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -272,11 +302,12 @@ public:
 DUMPER7_ASSERTS_USpinBoxWidgetStyle;
 
 // Class Slate.TextBlockWidgetStyle
-// 0x0290 (0x02C8 - 0x0038)
+// 0x0318 (0x0350 - 0x0038)
 class UTextBlockWidgetStyle final : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FTextBlockStyle                        TextBlockStyle;                                    // 0x0038(0x0290)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_38[0x8];                                       // 0x0038(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTextBlockStyle                        TextBlockStyle;                                    // 0x0040(0x0310)(Edit, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -293,25 +324,5 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UTextBlockWidgetStyle;
-
-// Class Slate.ToolMenuBase
-// 0x0000 (0x0030 - 0x0030)
-class UToolMenuBase final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ToolMenuBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ToolMenuBase")
-	}
-	static class UToolMenuBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UToolMenuBase>();
-	}
-};
-DUMPER7_ASSERTS_UToolMenuBase;
 
 SDK_NAMESPACE_END

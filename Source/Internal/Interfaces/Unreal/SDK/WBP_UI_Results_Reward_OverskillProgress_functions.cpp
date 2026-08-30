@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.AnimateBarsAndText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_OverskillProgress_C::AnimateBarsAndText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "AnimateBarsAndText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_OverskillProgress_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_OverskillProgress
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,6 +64,40 @@ void UWBP_UI_Results_Reward_OverskillProgress_C::ExecuteUbergraph_WBP_UI_Results
 }
 
 
+// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.OnLoaded_A4C630A2453669CD2C86869D10C5A8DF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_Reward_OverskillProgress_C::OnLoaded_A4C630A2453669CD2C86869D10C5A8DF(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "OnLoaded_A4C630A2453669CD2C86869D10C5A8DF");
+
+	Params::WBP_UI_Results_Reward_OverskillProgress_C_OnLoaded_A4C630A2453669CD2C86869D10C5A8DF Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.PlayAppearAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_OverskillProgress_C::PlayAppearAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "PlayAppearAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.PlayLevelUpAnimation
 // (BlueprintCallable, BlueprintEvent)
 
@@ -53,7 +115,7 @@ void UWBP_UI_Results_Reward_OverskillProgress_C::PlayLevelUpAnimation()
 // Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_OverskillProgress_C::PreConstruct(bool IsDesignTime)
 {
@@ -70,37 +132,17 @@ void UWBP_UI_Results_Reward_OverskillProgress_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_OverskillProgress
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Results_Reward_OverskillProgress_C::Construct()
+void UWBP_UI_Results_Reward_OverskillProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_OverskillProgress()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "Construct");
+		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_OverskillProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.OnLoaded_A4C630A2453669CD2C86869D10C5A8DF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_Reward_OverskillProgress_C::OnLoaded_A4C630A2453669CD2C86869D10C5A8DF(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "OnLoaded_A4C630A2453669CD2C86869D10C5A8DF");
-
-	Params::WBP_UI_Results_Reward_OverskillProgress_C_OnLoaded_A4C630A2453669CD2C86869D10C5A8DF Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -121,8 +163,8 @@ void UWBP_UI_Results_Reward_OverskillProgress_C::SetProgress()
 // Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.SetSkillProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZSkill*                        Skill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZSkillData*                    SkillData_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZSkill*                        Skill                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZSkillData*                    SkillData_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_Reward_OverskillProgress_C::SetSkillProgress(class USBZSkill* Skill, class USBZSkillData* SkillData_0)
 {
@@ -137,48 +179,6 @@ void UWBP_UI_Results_Reward_OverskillProgress_C::SetSkillProgress(class USBZSkil
 	Parms.SkillData_0 = SkillData_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.PlayAppearAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_OverskillProgress_C::PlayAppearAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "PlayAppearAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.AnimateBarsAndText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_OverskillProgress_C::AnimateBarsAndText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "AnimateBarsAndText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_OverskillProgress.WBP_UI_Results_Reward_OverskillProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_OverskillProgress_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_OverskillProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_OverskillProgress_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_OverskillProgress_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_OverskillProgress_0");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

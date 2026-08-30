@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_UI_MM_PlayerCharacter.CH_UI_MM_PlayerCharacter_C
-// 0x0000 (0x07D0 - 0x07D0)
+// 0x0000 (0x0850 - 0x0850)
 class ACH_UI_MM_PlayerCharacter_C final : public ASBZMainMenuPlayerCharacter
 {
 public:

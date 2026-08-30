@@ -17,51 +17,51 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Settings_Screen_CategoryGamepad.WBP_Settings_Screen_CategoryGamepad_C
-// 0x00B0 (0x03B0 - 0x0300)
+// 0x00B0 (0x0410 - 0x0360)
 class UWBP_Settings_Screen_CategoryGamepad_C final : public USBZSettingsCategoryScreenGamepad
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0300(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Background;                                        // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Gamepad;                                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadDown;                   // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadLeft;                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadRight;                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadUp;                     // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonBottom;           // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonLeft;             // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonRight;            // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonTop;              // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_LeftShoulder;               // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_LeftThumbstickButton;       // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_LeftTriggerAxis;            // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_RightShoulder;              // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_RightThumbstickButton;      // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_RightTriggerAxis;           // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_SpecialLeft;                // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_SpecialRight;               // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ScrollBox_SettingsItems;                           // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZSettingsButton*                     ActiveButton;                                      // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Background;                                        // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Gamepad;                                     // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadDown;                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadLeft;                   // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadRight;                  // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_DPadUp;                     // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonBottom;           // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonLeft;             // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonRight;            // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_FaceButtonTop;              // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_LeftShoulder;               // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_LeftThumbstickButton;       // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_LeftTriggerAxis;            // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_RightShoulder;              // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_RightThumbstickButton;      // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_RightTriggerAxis;           // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_SpecialLeft;                // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Settings_InputKeyActionBindings_C* InputKeyActionBindings_SpecialRight;               // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ScrollBox_SettingsItems;                           // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZSettingsButton*                     ActiveButton;                                      // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
 	void ExecuteUbergraph_WBP_Settings_Screen_CategoryGamepad(int32 EntryPoint);
+	void Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused);
+	void Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button);
+	void On_Focused_Input_Actions(bool IsFocused);
+	void OnControlRefrencePressed(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
 	void OnInputTypeChanged();
-	void RefreshScreen();
+	void OnLostStackFocused();
 	void OnPopUpClosed();
-	void OnTertiaryPressed();
 	void OnSecondaryPressed();
 	void OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton);
 	void OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
-	void OnInitialized();
-	void OnControlRefrencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void Construct();
-	void Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused);
-	void Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button);
+	void OnTertiaryPressed();
+	void RefreshScreen();
 	void Update_Menu_Control_Reference();
-	void On_Focused_Input_Actions(bool IsFocused);
 
 public:
 	static class UClass* StaticClass()

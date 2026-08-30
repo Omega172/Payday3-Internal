@@ -23,7 +23,7 @@ struct WBP_ArmorChunk_StatLine_C_ExecuteUbergraph_WBP_ArmorChunk_StatLine final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_ExecuteUbergraph_WBP_ArmorChunk_StatLine;
 
@@ -32,65 +32,63 @@ DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_ExecuteUbergraph_WBP_ArmorChunk_StatLi
 struct WBP_ArmorChunk_StatLine_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_PreConstruct;
-
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetValue
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ArmorChunk_StatLine_C_SetValue final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_SetValue;
-
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetPlateRegen
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_ArmorChunk_StatLine_C_SetPlateRegen final
-{
-public:
-	float                                         PlateRegen;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0058(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_SetPlateRegen;
 
 // Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetAmmoCapacity
 // 0x0090 (0x0090 - 0x0000)
 struct WBP_ArmorChunk_StatLine_C_SetAmmoCapacity final
 {
 public:
-	float                                         AmmoCap;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0010(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0078(0x0018)()
+	double                                        AmmoCap;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x0018(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_SetAmmoCapacity;
 
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetPlateRegen
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_ArmorChunk_StatLine_C_SetPlateRegen final
+{
+public:
+	double                                        PlateRegen;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_SetPlateRegen;
+
 // Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetSpeedPenalty
-// 0x0080 (0x0080 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct WBP_ArmorChunk_StatLine_C_SetSpeedPenalty final
 {
 public:
 	ESBZArmorSpeedPenalty                         SpeedPenalty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZArmorSpeedPenalty                         Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0018)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x0068(0x0018)()
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0038(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_SetSpeedPenalty;
+
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetValue
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ArmorChunk_StatLine_C_SetValue final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_ArmorChunk_StatLine_C_SetValue;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_MainMenuButton_C::ButtonFocusChanging(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_MainMenuButton_C", "ButtonFocusChanging");
+
+	Params::WBP_Shop_MainMenuButton_C_ButtonFocusChanging Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ExecuteUbergraph_WBP_Shop_MainMenuButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -61,26 +81,6 @@ void UWBP_Shop_MainMenuButton_C::ShowNewDLCNotification()
 		Func = Class->GetFunction("WBP_Shop_MainMenuButton_C", "ShowNewDLCNotification");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ButtonFocusChanging
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_MainMenuButton_C::ButtonFocusChanging(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_MainMenuButton_C", "ButtonFocusChanging");
-
-	Params::WBP_Shop_MainMenuButton_C_ButtonFocusChanging Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

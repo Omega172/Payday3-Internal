@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "WBP_UI_CosmeticButton_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_UI_CosmeticButton_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C
-// 0x0008 (0x03C8 - 0x03C0)
+// 0x0008 (0x0428 - 0x0420)
 class UWBP_UI_CosmeticButtonSprayCanSlots_C final : public UWBP_UI_CosmeticButton_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_UI_CosmeticButtonSprayCanSlots_C; // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_UI_CosmeticButtonSprayCanSlots_C; // 0x0420(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots(int32 EntryPoint);
+	void HoverChangedVisuals(bool bIsHovered);
 	void OnCosmeticItemDataInitialized();
 	void PreConstruct(bool IsDesignTime);
-	void HoverChangedVisuals(bool bIsHovered);
 
 public:
 	static class UClass* StaticClass()

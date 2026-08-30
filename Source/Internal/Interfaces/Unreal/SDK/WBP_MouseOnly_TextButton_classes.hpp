@@ -18,25 +18,25 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MouseOnly_TextButton.WBP_MouseOnly_TextButton_C
-// 0x0038 (0x02E8 - 0x02B0)
+// 0x0030 (0x0340 - 0x0310)
 class UWBP_MouseOnly_TextButton_C final : public USBZMenuMouseButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Image_77;                                          // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_Background;                                  // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_ButtonText;                                   // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   DefaultText;                                       // 0x02D0(0x0018)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0310(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Image_77;                                          // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_Background;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_ButtonText;                                   // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   DefaultText;                                       // 0x0330(0x0010)(Edit, BlueprintVisible)
 
 public:
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_MouseOnly_TextButton(int32 EntryPoint);
 	void OnInitialized();
-	void ButtonHoveredChanged(bool bInIsHovered);
 	void PreConstruct(bool IsDesignTime);
-	void SetText(const class FText& InText);
-	void SetFont(const struct FSlateFontInfo& InFont);
-	void TextValue();
 	void SetColours(const struct FLinearColor& InFontColor, const struct FLinearColor& InBackgroundColor);
+	void SetFont(const struct FSlateFontInfo& InFont);
+	void SetText(const class FText& InText);
+	void TextValue();
 
 public:
 	static class UClass* StaticClass()

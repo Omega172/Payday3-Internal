@@ -18,35 +18,35 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_WeaponStatsNew.WBP_WeaponStatsNew_C
-// 0x0068 (0x0460 - 0x03F8)
+// 0x0068 (0x04C0 - 0x0458)
 class UWBP_WeaponStatsNew_C final : public USBZMainMenuWeaponStatsWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTextBlock*                             Text_WeaponStat_Ammo_Divider;                      // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_WeaponStat_Ammo_Inventory;                    // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_WeaponStat_Ammo_Mag;                          // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Accuracy;                      // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Ammo;                          // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Damage;                        // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_FireRate;                      // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_FiringMode;                    // 0x0438(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Handling;                      // 0x0440(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Recoil;                        // 0x0448(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Stability;                     // 0x0450(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          bFlipCompare;                                      // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          bUseNewWeaponStatCalcs;                            // 0x0459(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0458(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             Text_WeaponStat_Ammo_Divider;                      // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_WeaponStat_Ammo_Inventory;                    // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_WeaponStat_Ammo_Mag;                          // 0x0470(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Accuracy;                      // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Ammo;                          // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Damage;                        // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_FireRate;                      // 0x0490(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_FiringMode;                    // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Handling;                      // 0x04A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Recoil;                        // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_WeaponStatEntry_C*                 WBP_WeaponStatEntry_Stability;                     // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          bFlipCompare;                                      // 0x04B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bUseNewWeaponStatCalcs;                            // 0x04B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint);
-	void OnUpdateVisuals();
-	void UpdateWeaponStatVisualsNew();
-	void SetWeaponStatNew(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, float BaseStat, float CompareStat);
-	void SetAmmoStatNew();
-	void GetAverageDamageAndFireRate(const struct FSBZEquippableConfig& SBZEquippableConfig, float* Damage, float* Rounds_Per_Minute, int32* ProjectilesPerFiredRound, class FText* DamageText);
-	void SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, float BaseStat, float CompareStat);
-	void GetDamageWithFalloff(const struct FSBZEquippableConfig& SBZEquippableConfig, TArray<struct FSBZDamageDistance>* LocalDamageDistances1);
 	void DamageDistToText(TArray<struct FSBZDamageDistance>& DamageDists, int32 Pellets, class FText* Text);
+	void ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint);
+	void GetAverageDamageAndFireRate(const struct FSBZEquippableConfig& SBZEquippableConfig, double* Damage, double* Rounds_Per_Minute, int32* ProjectilesPerFiredRound, class FText* DamageText);
+	void GetDamageWithFalloff(const struct FSBZEquippableConfig& SBZEquippableConfig, TArray<struct FSBZDamageDistance>* LocalDamageDistances1);
+	void OnUpdateVisuals();
+	void SetAmmoStatNew();
+	void SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat);
+	void SetWeaponStatNew(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, double BaseStat, double CompareStat);
+	void UpdateWeaponStatVisualsNew();
 
 public:
 	static class UClass* StaticClass()

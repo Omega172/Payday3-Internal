@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -62,14 +63,20 @@ enum class EDataRegistryAvailability : uint8
 	EDataRegistryAvailability_MAX            = 6,
 };
 
-// ScriptStruct DataRegistry.DataRegistryIdFormat
-// 0x000C (0x000C - 0x0000)
-struct FDataRegistryIdFormat final
+// ScriptStruct DataRegistry.DataRegistryCachePolicy
+// 0x0014 (0x0014 - 0x0000)
+struct FDataRegistryCachePolicy final
 {
 public:
-	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bCacheIsAlwaysVolatile;                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseCurveTableCacheVersion;                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MinNumberKept;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         MaxNumberKept;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForceKeepSeconds;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ForceReleaseSeconds;                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FDataRegistryIdFormat;
+DUMPER7_ASSERTS_FDataRegistryCachePolicy;
 
 // ScriptStruct DataRegistry.DataRegistryLookup
 // 0x0020 (0x0020 - 0x0000)
@@ -99,6 +106,19 @@ public:
 };
 DUMPER7_ASSERTS_FDataRegistryId;
 
+// ScriptStruct DataRegistry.SoftDataRegistryOrTable
+// 0x0048 (0x0048 - 0x0000)
+struct FSoftDataRegistryOrTable final
+{
+public:
+	bool                                          bUseDataRegistry;                                  // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UDataTable>              Table;                                             // 0x0008(0x0030)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDataRegistryType                      RegistryType;                                      // 0x0038(0x000C)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSoftDataRegistryOrTable;
+
 // ScriptStruct DataRegistry.DataRegistrySource_DataTableRules
 // 0x0008 (0x0008 - 0x0000)
 struct FDataRegistrySource_DataTableRules final
@@ -110,6 +130,15 @@ public:
 };
 DUMPER7_ASSERTS_FDataRegistrySource_DataTableRules;
 
+// ScriptStruct DataRegistry.DataRegistryIdFormat
+// 0x000C (0x000C - 0x0000)
+struct FDataRegistryIdFormat final
+{
+public:
+	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDataRegistryIdFormat;
+
 // ScriptStruct DataRegistry.DataRegistrySourceItemId
 // 0x0050 (0x0050 - 0x0000)
 struct alignas(0x08) FDataRegistrySourceItemId final
@@ -119,19 +148,16 @@ public:
 };
 DUMPER7_ASSERTS_FDataRegistrySourceItemId;
 
-// ScriptStruct DataRegistry.DataRegistryCachePolicy
-// 0x0014 (0x0014 - 0x0000)
-struct FDataRegistryCachePolicy final
+// ScriptStruct DataRegistry.DataRegistryOrTableRow
+// 0x0038 (0x0038 - 0x0000)
+struct FDataRegistryOrTableRow final
 {
 public:
-	bool                                          bCacheIsAlwaysVolatile;                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseCurveTableCacheVersion;                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MinNumberKept;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         MaxNumberKept;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForceKeepSeconds;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ForceReleaseSeconds;                               // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseDataRegistryId;                                // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    DataTableRow;                                      // 0x0008(0x0018)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+	struct FDataRegistryId                        DataRegistryId;                                    // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FDataRegistryCachePolicy;
+DUMPER7_ASSERTS_FDataRegistryOrTableRow;
 
 SDK_NAMESPACE_END

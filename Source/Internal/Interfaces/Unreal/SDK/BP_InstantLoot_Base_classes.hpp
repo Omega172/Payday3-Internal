@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_InstantLoot_Base.BP_InstantLoot_Base_C
-// 0x0000 (0x02E8 - 0x02E8)
+// 0x0000 (0x0368 - 0x0368)
 class ABP_InstantLoot_Base_C : public ASBZInstantLoot
 {
 public:

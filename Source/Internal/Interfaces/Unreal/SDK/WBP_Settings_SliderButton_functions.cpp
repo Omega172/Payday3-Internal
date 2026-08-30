@@ -16,96 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ExecuteUbergraph_WBP_Settings_SliderButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Settings_SliderButton_C::ExecuteUbergraph_WBP_Settings_SliderButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "ExecuteUbergraph_WBP_Settings_SliderButton");
-
-	Params::WBP_Settings_SliderButton_C_ExecuteUbergraph_WBP_Settings_SliderButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.SettingChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_SliderButton_C::SettingChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "SettingChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.SelectionNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_SliderButton_C::SelectionNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "SelectionNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.IncrementSliderValueChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_SliderButton_C::IncrementSliderValueChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "IncrementSliderValueChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.MinSliderValueChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_SliderButton_C::MinSliderValueChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "MinSliderValueChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.MaxSliderValueChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_SliderButton_C::MaxSliderValueChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "MaxSliderValueChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.BndEvt__WBP_Settings_SliderButton_Slider_Value_K2Node_ComponentBoundEvent_0_OnFloatValueChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -126,21 +36,21 @@ void UWBP_Settings_SliderButton_C::BndEvt__WBP_Settings_SliderButton_Slider_Valu
 }
 
 
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ButtonHoveredChanged
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ButtonDisabledChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_SliderButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_Settings_SliderButton_C::ButtonDisabledChanged(bool bInIsDisabled)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "ButtonDisabledChanged");
 
-	Params::WBP_Settings_SliderButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_Settings_SliderButton_C_ButtonDisabledChanged Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.bInIsDisabled = bInIsDisabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -149,7 +59,7 @@ void UWBP_Settings_SliderButton_C::ButtonHoveredChanged(bool bInIsHovered)
 // Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_SliderButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
@@ -166,21 +76,202 @@ void UWBP_Settings_SliderButton_C::ButtonFocusedChanged(bool bInHasFocus)
 }
 
 
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ButtonDisabledChanged
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ButtonHoveredChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_SliderButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_Settings_SliderButton_C::ButtonHoveredChanged(bool bInIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "ButtonHoveredChanged");
 
-	Params::WBP_Settings_SliderButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_Settings_SliderButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.ExecuteUbergraph_WBP_Settings_SliderButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_SliderButton_C::ExecuteUbergraph_WBP_Settings_SliderButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "ExecuteUbergraph_WBP_Settings_SliderButton");
+
+	Params::WBP_Settings_SliderButton_C_ExecuteUbergraph_WBP_Settings_SliderButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.GetFractionCount
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32*                                  Num                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_SliderButton_C::GetFractionCount(int32* Num)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "GetFractionCount");
+
+	Params::WBP_Settings_SliderButton_C_GetFractionCount Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Num != nullptr)
+		*Num = Parms.Num;
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.GetValueFractionCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_SliderButton_C::GetValueFractionCount(double Value, int32* Count)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "GetValueFractionCount");
+
+	Params::WBP_Settings_SliderButton_C_GetValueFractionCount Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Count != nullptr)
+		*Count = Parms.Count;
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.IncrementSliderValueChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_SliderButton_C::IncrementSliderValueChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "IncrementSliderValueChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.InitializeVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_SliderButton_C::InitializeVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "InitializeVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.MaxSliderValueChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_SliderButton_C::MaxSliderValueChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "MaxSliderValueChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.MinSliderValueChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_SliderButton_C::MinSliderValueChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "MinSliderValueChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_SliderButton_C::OnDisabledVisuals(bool bIsDisabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "OnDisabledVisuals");
+
+	Params::WBP_Settings_SliderButton_C_OnDisabledVisuals Parms{};
+
+	Parms.bIsDisabled_0 = bIsDisabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.OnFocusedVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_SliderButton_C::OnFocusedVisuals(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "OnFocusedVisuals");
+
+	Params::WBP_Settings_SliderButton_C_OnFocusedVisuals Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_SliderButton_C::OnHoverVisuals(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "OnHoverVisuals");
+
+	Params::WBP_Settings_SliderButton_C_OnHoverVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -203,7 +294,7 @@ void UWBP_Settings_SliderButton_C::OnInitialized()
 // Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_SliderButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -234,89 +325,29 @@ void UWBP_Settings_SliderButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.SelectionNameChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_SliderButton_C::OnHoverVisuals(bool bIsHovered)
+void UWBP_Settings_SliderButton_C::SelectionNameChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "OnHoverVisuals");
-
-	Params::WBP_Settings_SliderButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.OnFocusedVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_SliderButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "OnFocusedVisuals");
-
-	Params::WBP_Settings_SliderButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_SliderButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "OnDisabledVisuals");
-
-	Params::WBP_Settings_SliderButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.InitializeVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_SliderButton_C::InitializeVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "InitializeVisuals");
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "SelectionNameChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.UpdateMinSliderValue
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.SettingChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_SliderButton_C::UpdateMinSliderValue()
+void UWBP_Settings_SliderButton_C::SettingChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "UpdateMinSliderValue");
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "SettingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -336,15 +367,15 @@ void UWBP_Settings_SliderButton_C::UpdateMaxSliderValue()
 }
 
 
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.UpdateSliderStepSize
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.UpdateMinSliderValue
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_SliderButton_C::UpdateSliderStepSize()
+void UWBP_Settings_SliderButton_C::UpdateMinSliderValue()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "UpdateSliderStepSize");
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "UpdateMinSliderValue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -364,6 +395,20 @@ void UWBP_Settings_SliderButton_C::UpdateSettingNameText()
 }
 
 
+// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.UpdateSliderStepSize
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_SliderButton_C::UpdateSliderStepSize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "UpdateSliderStepSize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.UpdateSliderValue
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -375,51 +420,6 @@ void UWBP_Settings_SliderButton_C::UpdateSliderValue()
 		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "UpdateSliderValue");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.GetFractionCount
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32*                                  Num                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Settings_SliderButton_C::GetFractionCount(int32* Num)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "GetFractionCount");
-
-	Params::WBP_Settings_SliderButton_C_GetFractionCount Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Num != nullptr)
-		*Num = Parms.Num;
-}
-
-
-// Function WBP_Settings_SliderButton.WBP_Settings_SliderButton_C.GetValueFractionCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Settings_SliderButton_C::GetValueFractionCount(float Value, int32* Count)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_SliderButton_C", "GetValueFractionCount");
-
-	Params::WBP_Settings_SliderButton_C_GetValueFractionCount Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Count != nullptr)
-		*Count = Parms.Count;
 }
 
 

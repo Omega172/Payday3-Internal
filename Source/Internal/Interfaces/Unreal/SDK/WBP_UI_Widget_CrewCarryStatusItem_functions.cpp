@@ -19,8 +19,8 @@ SDK_NAMESPACE_START
 // Function WBP_UI_Widget_CrewCarryStatusItem.WBP_UI_Widget_CrewCarryStatusItem_C.OnChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZCarryType*                    Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsAdded                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZCarryType*                    Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsAdded                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_CrewCarryStatusItem_C::OnChanged(class USBZCarryType* Type, bool IsAdded)
 {

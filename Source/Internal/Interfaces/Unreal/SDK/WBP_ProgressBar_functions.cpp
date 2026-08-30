@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ProgressBar.WBP_ProgressBar_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ProgressBar_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ProgressBar_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ProgressBar.WBP_ProgressBar_C.ExecuteUbergraph_WBP_ProgressBar
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void UWBP_ProgressBar_C::ExecuteUbergraph_WBP_ProgressBar(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ProgressBar.WBP_ProgressBar_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ProgressBar_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ProgressBar_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -78,6 +78,26 @@ void UWBP_ProgressBar_C::OnReset()
 }
 
 
+// Function WBP_ProgressBar.WBP_ProgressBar_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ProgressBar_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ProgressBar_C", "PreConstruct");
+
+	Params::WBP_ProgressBar_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ProgressBar.WBP_ProgressBar_C.ValueChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -93,26 +113,6 @@ void UWBP_ProgressBar_C::ValueChanged(float Value)
 	Params::WBP_ProgressBar_C_ValueChanged Parms{};
 
 	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ProgressBar.WBP_ProgressBar_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ProgressBar_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ProgressBar_C", "PreConstruct");
-
-	Params::WBP_ProgressBar_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

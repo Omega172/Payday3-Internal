@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // Class SBZUtilityPlugin.SBZGameModeBase
-// 0x0010 (0x0358 - 0x0348)
+// 0x0010 (0x03D0 - 0x03C0)
 class ASBZGameModeBase : public AGameModeBase
 {
 public:
-	TArray<class AActor*>                         SeamlessActors;                                    // 0x0348(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class AActor*>                         SeamlessActors;                                    // 0x03C0(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -39,11 +39,11 @@ public:
 DUMPER7_ASSERTS_ASBZGameModeBase;
 
 // Class SBZUtilityPlugin.SBZGameSessionBase
-// 0x0020 (0x02E8 - 0x02C8)
+// 0x0020 (0x0378 - 0x0358)
 class ASBZGameSessionBase : public AGameSession
 {
 public:
-	uint8                                         Pad_2C8[0x20];                                     // 0x02C8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_358[0x20];                                     // 0x0358(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

@@ -10,23 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass PD3_GameInstance.PD3_GameInstance_C
-// 0x0008 (0x0628 - 0x0620)
+// 0x0000 (0x0638 - 0x0638)
 class UPD3_GameInstance_C final : public USBZGameInstance
 {
-public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0620(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-
-public:
-	void ExecuteUbergraph_PD3_GameInstance(int32 EntryPoint);
-	void OnFindReplaysComplete(const TArray<struct FSBZReplayInfo>& Replays);
-
 public:
 	static class UClass* StaticClass()
 	{

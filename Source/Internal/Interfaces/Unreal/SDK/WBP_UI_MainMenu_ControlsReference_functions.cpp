@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C.ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_ControlsReference_C::ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_ControlsReference_C", "ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference");
-
-	Params::WBP_UI_MainMenu_ControlsReference_C_ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C.DisplayControlsReference
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -51,6 +31,26 @@ void UWBP_UI_MainMenu_ControlsReference_C::DisplayControlsReference(const struct
 	Params::WBP_UI_MainMenu_ControlsReference_C_DisplayControlsReference Parms{};
 
 	Parms.InControlsReference = std::move(InControlsReference);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_ControlsReference.WBP_UI_MainMenu_ControlsReference_C.ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_ControlsReference_C::ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_ControlsReference_C", "ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference");
+
+	Params::WBP_UI_MainMenu_ControlsReference_C_ExecuteUbergraph_WBP_UI_MainMenu_ControlsReference Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

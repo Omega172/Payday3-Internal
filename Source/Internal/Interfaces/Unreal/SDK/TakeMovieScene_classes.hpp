@@ -10,25 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
 #include "MovieSceneTracks_structs.hpp"
+#include "CoreUObject_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // Class TakeMovieScene.MovieSceneTakeSection
-// 0x0380 (0x0470 - 0x00F0)
+// 0x0750 (0x0850 - 0x0100)
 class UMovieSceneTakeSection final : public UMovieSceneSection
 {
 public:
-	struct FMovieSceneIntegerChannel              HoursCurve;                                        // 0x00F0(0x0090)(NativeAccessSpecifierPublic)
-	struct FMovieSceneIntegerChannel              MinutesCurve;                                      // 0x0180(0x0090)(NativeAccessSpecifierPublic)
-	struct FMovieSceneIntegerChannel              SecondsCurve;                                      // 0x0210(0x0090)(NativeAccessSpecifierPublic)
-	struct FMovieSceneIntegerChannel              FramesCurve;                                       // 0x02A0(0x0090)(NativeAccessSpecifierPublic)
-	struct FMovieSceneFloatChannel                SubFramesCurve;                                    // 0x0330(0x00A0)(NativeAccessSpecifierPublic)
-	struct FMovieSceneStringChannel               Slate;                                             // 0x03D0(0x00A0)(NativeAccessSpecifierPublic)
+	struct FMovieSceneIntegerChannel              HoursCurve;                                        // 0x0100(0x0108)(NativeAccessSpecifierPublic)
+	struct FMovieSceneIntegerChannel              MinutesCurve;                                      // 0x0208(0x0108)(NativeAccessSpecifierPublic)
+	struct FMovieSceneIntegerChannel              SecondsCurve;                                      // 0x0310(0x0108)(NativeAccessSpecifierPublic)
+	struct FMovieSceneIntegerChannel              FramesCurve;                                       // 0x0418(0x0108)(NativeAccessSpecifierPublic)
+	struct FMovieSceneFloatChannel                SubFramesCurve;                                    // 0x0520(0x0110)(NativeAccessSpecifierPublic)
+	struct FMovieSceneFloatChannel                RateCurve;                                         // 0x0630(0x0110)(NativeAccessSpecifierPublic)
+	struct FMovieSceneStringChannel               Slate;                                             // 0x0740(0x0110)(NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -47,7 +48,7 @@ public:
 DUMPER7_ASSERTS_UMovieSceneTakeSection;
 
 // Class TakeMovieScene.MovieSceneTakeSettings
-// 0x0060 (0x0090 - 0x0030)
+// 0x0070 (0x00A0 - 0x0030)
 class UMovieSceneTakeSettings final : public UObject
 {
 public:
@@ -56,7 +57,8 @@ public:
 	class FString                                 SecondsName;                                       // 0x0050(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 FramesName;                                        // 0x0060(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SubFramesName;                                     // 0x0070(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 SlateName;                                         // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RateName;                                          // 0x0080(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 SlateName;                                         // 0x0090(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -75,11 +77,11 @@ public:
 DUMPER7_ASSERTS_UMovieSceneTakeSettings;
 
 // Class TakeMovieScene.MovieSceneTakeTrack
-// 0x0010 (0x00A8 - 0x0098)
+// 0x0010 (0x0110 - 0x0100)
 class UMovieSceneTakeTrack final : public UMovieSceneNameableTrack
 {
 public:
-	TArray<class UMovieSceneSection*>             Sections;                                          // 0x0098(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	TArray<class UMovieSceneSection*>             Sections;                                          // 0x0100(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate, TObjectPtr)
 
 public:
 	static class UClass* StaticClass()

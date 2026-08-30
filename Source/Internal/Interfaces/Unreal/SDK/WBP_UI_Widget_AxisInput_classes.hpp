@@ -17,11 +17,11 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_AxisInput.WBP_UI_Widget_AxisInput_C
-// 0x0008 (0x02C0 - 0x02B8)
+// 0x0008 (0x0320 - 0x0318)
 class UWBP_UI_Widget_AxisInput_C final : public USBZAxisInputWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_AxisInput(int32 EntryPoint);

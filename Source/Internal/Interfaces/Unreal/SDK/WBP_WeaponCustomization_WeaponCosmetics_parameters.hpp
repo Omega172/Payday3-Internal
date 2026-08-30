@@ -17,110 +17,161 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
+
 // Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics
-// 0x02A0 (0x02A0 - 0x0000)
+// 0x0280 (0x0280 - 0x0000)
 struct WBP_WeaponCustomization_WeaponCosmetics_C_ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMainMenuCosmeticItemButton*         K2Node_CustomEvent_CosmeticButton;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticItemData_ReturnValue;          // 0x0020(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZCosmeticsPartSlot*            K2Node_CustomEvent_CosmeticSlot;                   // 0x0028(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMainMenuCosmeticItemButton*         K2Node_CustomEvent_CosmeticButton;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticItemData_ReturnValue;          // 0x0020(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZCosmeticsPartSlot*            K2Node_CustomEvent_CosmeticSlot;                   // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FSBZCosmeticsInventoryItem>     CallFunc_GetCosmeticItems_ReturnValue;             // 0x0030(0x0010)(ReferenceParm)
-	struct FSBZCosmeticPanelInitParams            K2Node_MakeStruct_SBZCosmeticPanelInitParams;      // 0x0040(0x0030)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class USBZMainMenuCosmeticItemButton* CosmeticButton)> K2Node_CreateDelegate_OutputDelegate; // 0x0074(0x0014)(ZeroConstructor, NoDestructor)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0090(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZStandaloneWeaponDisplay*            CallFunc_GetActorOfClass_ReturnValue;              // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZEquippablePartConfig*               CallFunc_GetCosmeticConfig_ReturnValue;            // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticPart_ReturnValue;              // 0x00B0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_BA[0x6];                                       // 0x00BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x00C0(0x0018)(ConstParm)
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue;              // 0x00D8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_1;            // 0x00E0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZEquippablePartConfigGroup          CallFunc_Map_Find_Value;                           // 0x00E8(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_2;            // 0x0100(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_3;            // 0x0108(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FSBZCosmeticPanelInitParams            K2Node_MakeStruct_SBZCosmeticPanelInitParams;      // 0x0040(0x0028)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class USBZMainMenuCosmeticItemButton* CosmeticButton)> K2Node_CreateDelegate_OutputDelegate; // 0x006C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZStandaloneWeaponDisplay*            CallFunc_GetActorOfClass_ReturnValue;              // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZEquippablePartConfig*               CallFunc_GetCosmeticConfig_ReturnValue;            // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticPart_ReturnValue;              // 0x00A8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B2[0x6];                                       // 0x00B2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x00B8(0x0010)(ConstParm)
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue;              // 0x00C8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_1;            // 0x00D0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZEquippablePartConfigGroup          CallFunc_Map_Find_Value;                           // 0x00D8(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_2;            // 0x00F0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_3;            // 0x00F8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue;           // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue;           // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_121[0x7];                                      // 0x0121(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_4;            // 0x0128(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZEquippablePartConfigGroup          CallFunc_Map_Find_Value_1;                         // 0x0130(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_5;            // 0x0148(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue_1;         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<TSubclassOf<class USBZModularPartDataAsset>> CallFunc_GetExpectedParts_ReturnValue;       // 0x0158(0x0010)(ReferenceParm)
-	class USBZWeaponPatternDataConfig*            K2Node_DynamicCast_AsSBZWeapon_Pattern_Data_Config; // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZSprayCanData*                 CallFunc_Array_Get_Item;                           // 0x0178(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZSprayCanData*                 CallFunc_Array_Get_Item_1;                         // 0x0180(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticPart_ReturnValue_1;            // 0x0188(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZEquippablePartConfig*               CallFunc_GetCosmeticConfig_ReturnValue_1;          // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZWeaponPatternDataConfig*            K2Node_DynamicCast_AsSBZWeapon_Pattern_Data_Config_1; // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1A1[0x7];                                      // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZSprayCanData*                 CallFunc_Array_Get_Item_2;                         // 0x01A8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZSprayCanData*                 CallFunc_Array_Get_Item_3;                         // 0x01B0(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x01BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1BE[0x2];                                      // 0x01BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZEquippablePartConfig*               K2Node_Select_Default;                             // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZEquippablePartDataAsset*      K2Node_Select_Default_1;                           // 0x01C8(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_Array_Get_Item_4;                         // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x01E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0208(0x0018)()
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticPart_ReturnValue_2;            // 0x0228(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TSubclassOf<class USBZModularPartDataAsset>> CallFunc_GetExpectedParts_ReturnValue_1;     // 0x0238(0x0010)(ReferenceParm)
-	class UClass*                                 CallFunc_Array_Get_Item_5;                         // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_1;                              // 0x0250(0x0018)(ConstParm)
-	const class USBZCosmeticsPartSlot*            CallFunc_GetSlotFromDataClass_SlotAsset;           // 0x0268(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NeedConfig_ReturnValue;                   // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_27A[0x2];                                      // 0x027A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NeedConfig_ReturnValue_1;                 // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NeedConfig_ReturnValue_2;                 // 0x0281(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0282(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_283[0x1];                                      // 0x0283(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZMetaRequestResult                         K2Node_Event_Result;                               // 0x0288(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_289[0x7];                                      // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0290(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_4;            // 0x0118(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZEquippablePartConfigGroup          CallFunc_Map_Find_Value_1;                         // 0x0120(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue_5;            // 0x0138(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue_1;         // 0x0140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<TSubclassOf<class USBZModularPartDataAsset>> CallFunc_GetExpectedParts_ReturnValue;       // 0x0148(0x0010)(ReferenceParm)
+	class USBZWeaponPatternDataConfig*            K2Node_DynamicCast_AsSBZWeapon_Pattern_Data_Config; // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0160(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_161[0x3];                                      // 0x0161(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0164(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZSprayCanData*                 CallFunc_Array_Get_Item;                           // 0x0168(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZSprayCanData*                 CallFunc_Array_Get_Item_1;                         // 0x0170(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticPart_ReturnValue_1;            // 0x0178(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZEquippablePartConfig*               CallFunc_GetCosmeticConfig_ReturnValue_1;          // 0x0180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponPatternDataConfig*            K2Node_DynamicCast_AsSBZWeapon_Pattern_Data_Config_1; // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZSprayCanData*                 CallFunc_Array_Get_Item_2;                         // 0x0198(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZSprayCanData*                 CallFunc_Array_Get_Item_3;                         // 0x01A0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x01AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AE[0x2];                                      // 0x01AE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZEquippablePartConfig*               K2Node_Select_Default;                             // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZEquippablePartDataAsset*      K2Node_Select_Default_1;                           // 0x01B8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x01C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C4[0x4];                                      // 0x01C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_Array_Get_Item_4;                         // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x01D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x01E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x01F8(0x0010)()
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_20C[0x4];                                      // 0x020C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticPart_ReturnValue_2;            // 0x0210(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_5;                    // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_219[0x7];                                      // 0x0219(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TSubclassOf<class USBZModularPartDataAsset>> CallFunc_GetExpectedParts_ReturnValue_1;     // 0x0220(0x0010)(ReferenceParm)
+	class UClass*                                 CallFunc_Array_Get_Item_5;                         // 0x0230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_1;                              // 0x0238(0x0010)(ConstParm)
+	const class USBZCosmeticsPartSlot*            CallFunc_GetSlotFromDataClass_SlotAsset;           // 0x0248(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NeedConfig_ReturnValue;                   // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0259(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25A[0x2];                                      // 0x025A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NeedConfig_ReturnValue_1;                 // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NeedConfig_ReturnValue_2;                 // 0x0261(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0262(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_263[0x1];                                      // 0x0263(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x0264(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZMetaRequestResult                         K2Node_Event_Result;                               // 0x0268(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_269[0x7];                                      // 0x0269(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0270(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.GetSlotFromDataClass
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass final
+{
+public:
+	TSubclassOf<class USBZModularPartDataAsset>   SlotClass;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class USBZCosmeticsPartSlot*                  SlotAsset;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.NeedConfig
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue;              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NeedConfig_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnButtonPressed
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed final
+{
+public:
+	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed;
 
 // Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnTryApplyDone
 // 0x0001 (0x0001 - 0x0000)
@@ -131,76 +182,25 @@ public:
 };
 DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnTryApplyDone;
 
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetPreviewWidgetWithValidation
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Inventory_Item_Button_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZEquippablePartDataAsset*      Data;                                              // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation;
 
 // Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetupConfigScreen
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_WeaponCustomization_WeaponCosmetics_C_SetupConfigScreen final
 {
 public:
-	const class USBZCosmeticsPartSlot*            CosmeticSlot_0;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZCosmeticsPartSlot*            CosmeticSlot_0;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetupConfigScreen;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnButtonPressed
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed final
-{
-public:
-	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetPreviewWidgetWithValidation
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation final
-{
-public:
-	class UWBP_Inventory_Item_Button_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZEquippablePartDataAsset*      Data;                                              // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.GetSlotFromDataClass
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass final
-{
-public:
-	TSubclassOf<class USBZModularPartDataAsset>   SlotClass;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class USBZCosmeticsPartSlot*                  SlotAsset;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.NeedConfig
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue;              // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NeedConfig_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

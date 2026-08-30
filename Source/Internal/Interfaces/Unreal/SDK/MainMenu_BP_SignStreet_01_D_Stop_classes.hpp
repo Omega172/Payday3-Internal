@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass MainMenu_BP_SignStreet_01_D_Stop.MainMenu_BP_SignStreet_01_D_Stop_C
-// 0x0000 (0x02E0 - 0x02E0)
+// 0x0000 (0x0368 - 0x0368)
 class AMainMenu_BP_SignStreet_01_D_Stop_C final : public ABP_Tintable_Fixture_C
 {
 public:

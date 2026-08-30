@@ -19,7 +19,7 @@ SDK_PARAM_NAMESPACE_START
 struct BP_InstantLoot_MoneyBase_C_UserConstructionScript final
 {
 public:
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_InstantLoot_MoneyBase_C_UserConstructionScript;
 

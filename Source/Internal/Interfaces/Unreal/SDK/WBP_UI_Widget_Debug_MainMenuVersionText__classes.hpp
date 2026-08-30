@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C
-// 0x0020 (0x02B0 - 0x0290)
+// 0x0020 (0x0310 - 0x02F0)
 class UWBP_UI_Widget_Debug_MainMenuVersionText__C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTextBlock*                             txtText;                                           // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FString                                 Text;                                              // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             txtText;                                           // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FString                                 Text;                                              // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
 	void ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_(int32 EntryPoint);
 	void OnInitialized();
-	void Construct();
 	void PreConstruct(bool IsDesignTime);
 	void SetText(const class FString& NewParam);
 

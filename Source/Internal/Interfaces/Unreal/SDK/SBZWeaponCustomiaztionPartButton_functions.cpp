@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function SBZWeaponCustomiaztionPartButton.SBZWeaponCustomiaztionPartButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void USBZWeaponCustomiaztionPartButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SBZWeaponCustomiaztionPartButton_C", "ButtonFocusedChanged");
+
+	Params::SBZWeaponCustomiaztionPartButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function SBZWeaponCustomiaztionPartButton.SBZWeaponCustomiaztionPartButton_C.ExecuteUbergraph_SBZWeaponCustomiaztionPartButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,31 +56,11 @@ void USBZWeaponCustomiaztionPartButton_C::ExecuteUbergraph_SBZWeaponCustomiaztio
 }
 
 
-// Function SBZWeaponCustomiaztionPartButton.SBZWeaponCustomiaztionPartButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void USBZWeaponCustomiaztionPartButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SBZWeaponCustomiaztionPartButton_C", "ButtonFocusedChanged");
-
-	Params::SBZWeaponCustomiaztionPartButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function SBZWeaponCustomiaztionPartButton.SBZWeaponCustomiaztionPartButton_C.Setup
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZModularPartSlot*        WeaponSlot_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class USBZModularPartDataAsset*   Equippable_Part                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartSlot*        WeaponSlot_0                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartDataAsset*   Equippable_Part                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void USBZWeaponCustomiaztionPartButton_C::Setup(const class USBZModularPartSlot* WeaponSlot_0, const class USBZModularPartDataAsset* Equippable_Part)
 {

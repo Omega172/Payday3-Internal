@@ -18,20 +18,20 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Settings_HelperPanel_ButtonDescription.WBP_Settings_HelperPanel_ButtonDescription_C
-// 0x0020 (0x02C8 - 0x02A8)
+// 0x0020 (0x0328 - 0x0308)
 class UWBP_Settings_HelperPanel_ButtonDescription_C final : public USBZSettingHelperPanel
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTextBlock*                             Description;                                       // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             SecondaryDescription;                              // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZSettingsButton*                     CurrentButton;                                     // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             Description;                                       // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             SecondaryDescription;                              // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZSettingsButton*                     CurrentButton;                                     // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ButtonFocusChanged(class USBZSettingsButton* Button, bool IsFocused);
 	void ExecuteUbergraph_WBP_Settings_HelperPanel_ButtonDescription(int32 EntryPoint);
 	void RefreshPanelState();
 	void UpdatePanelDescriptions();
-	void ButtonFocusChanged(class USBZSettingsButton* Button, bool IsFocused);
 
 public:
 	static class UClass* StaticClass()

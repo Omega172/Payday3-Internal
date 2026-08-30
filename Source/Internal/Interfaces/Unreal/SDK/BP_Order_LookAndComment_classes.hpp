@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Order_LookAndComment.BP_Order_LookAndComment_C
-// 0x0000 (0x0150 - 0x0150)
+// 0x0000 (0x0158 - 0x0158)
 class UBP_Order_LookAndComment_C final : public USBZAIOrder_LookAndComment
 {
 public:

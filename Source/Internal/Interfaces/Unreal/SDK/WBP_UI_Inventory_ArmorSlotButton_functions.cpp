@@ -16,6 +16,67 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ArmorSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Inventory_ArmorSlotButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ArmorSlotButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Inventory_ArmorSlotButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.CanCustomize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   CanCustomize_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ArmorSlotButton_C::CanCustomize(bool* CanCustomize_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "CanCustomize");
+
+	Params::WBP_UI_Inventory_ArmorSlotButton_C_CanCustomize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CanCustomize_0 != nullptr)
+		*CanCustomize_0 = Parms.CanCustomize_0;
+}
+
+
 // Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_ArmorSlotButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,23 +97,17 @@ void UWBP_UI_Inventory_ArmorSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_Armo
 }
 
 
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.SetActiveArmorSlot
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsActiveArmorSlot                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.InitializeArmorVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Inventory_ArmorSlotButton_C::SetActiveArmorSlot(bool bIsActiveArmorSlot)
+void UWBP_UI_Inventory_ArmorSlotButton_C::InitializeArmorVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "SetActiveArmorSlot");
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "InitializeArmorVisuals");
 
-	Params::WBP_UI_Inventory_ArmorSlotButton_C_SetActiveArmorSlot Parms{};
-
-	Parms.bIsActiveArmorSlot = bIsActiveArmorSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -70,6 +125,46 @@ void UWBP_UI_Inventory_ArmorSlotButton_C::OnArmorSlotInitialized()
 }
 
 
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ArmorSlotButton_C::OnFocused(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "OnFocused");
+
+	Params::WBP_UI_Inventory_ArmorSlotButton_C_OnFocused Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ArmorSlotButton_C::OnHover(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "OnHover");
+
+	Params::WBP_UI_Inventory_ArmorSlotButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -84,50 +179,10 @@ void UWBP_UI_Inventory_ArmorSlotButton_C::OnInitialized()
 }
 
 
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_ArmorSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Inventory_ArmorSlotButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_ArmorSlotButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Inventory_ArmorSlotButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_ArmorSlotButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -158,46 +213,6 @@ void UWBP_UI_Inventory_ArmorSlotButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_ArmorSlotButton_C::OnHover(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "OnHover");
-
-	Params::WBP_UI_Inventory_ArmorSlotButton_C_OnHover Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_ArmorSlotButton_C::OnFocused(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "OnFocused");
-
-	Params::WBP_UI_Inventory_ArmorSlotButton_C_OnFocused Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.Set Armor Name Colour
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -218,38 +233,23 @@ void UWBP_UI_Inventory_ArmorSlotButton_C::Set_Armor_Name_Colour(const struct FLi
 }
 
 
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.InitializeArmorVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_ArmorSlotButton_C::InitializeArmorVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "InitializeArmorVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.CanCustomize
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_Inventory_ArmorSlotButton.WBP_UI_Inventory_ArmorSlotButton_C.SetActiveArmorSlot
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   CanCustomize_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActiveArmorSlot                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_ArmorSlotButton_C::CanCustomize(bool* CanCustomize_0)
+void UWBP_UI_Inventory_ArmorSlotButton_C::SetActiveArmorSlot(bool bIsActiveArmorSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "CanCustomize");
+		Func = Class->GetFunction("WBP_UI_Inventory_ArmorSlotButton_C", "SetActiveArmorSlot");
 
-	Params::WBP_UI_Inventory_ArmorSlotButton_C_CanCustomize Parms{};
+	Params::WBP_UI_Inventory_ArmorSlotButton_C_SetActiveArmorSlot Parms{};
+
+	Parms.bIsActiveArmorSlot = bIsActiveArmorSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (CanCustomize_0 != nullptr)
-		*CanCustomize_0 = Parms.CanCustomize_0;
 }
 
 

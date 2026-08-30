@@ -16,6 +16,68 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_Results_StayAsParty_C::BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_StayAsParty_C::BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Results_StayAsParty_C_BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Results_StayAsParty_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.EnableAsDefault
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_StayAsParty_C::EnableAsDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "EnableAsDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.ExecuteUbergraph_WBP_UI_Results_StayAsParty
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,17 +98,23 @@ void UWBP_UI_Results_StayAsParty_C::ExecuteUbergraph_WBP_UI_Results_StayAsParty(
 }
 
 
-// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.EnableAsDefault
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.OnStayAsPartyStateUpdated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   PlayerCount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Results_StayAsParty_C::EnableAsDefault()
+void UWBP_UI_Results_StayAsParty_C::OnStayAsPartyStateUpdated(int32 PlayerCount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "EnableAsDefault");
+		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "OnStayAsPartyStateUpdated");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Results_StayAsParty_C_OnStayAsPartyStateUpdated Parms{};
+
+	Parms.PlayerCount = PlayerCount;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -84,92 +152,10 @@ void UWBP_UI_Results_StayAsParty_C::Setup()
 }
 
 
-// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.OnStayAsPartyStateUpdated
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   PlayerCount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_StayAsParty_C::OnStayAsPartyStateUpdated(int32 PlayerCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "OnStayAsPartyStateUpdated");
-
-	Params::WBP_UI_Results_StayAsParty_C_OnStayAsPartyStateUpdated Parms{};
-
-	Parms.PlayerCount = PlayerCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Results_StayAsParty_C::BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Results_StayAsParty_C_BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_YesNoToggleButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Results_StayAsParty_C::BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "BndEvt__WBP_UI_Results_StayAsParty_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Results_StayAsParty_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.TickPartyCountdown
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_StayAsParty_C::TickPartyCountdown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "TickPartyCountdown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.ShouldShowStayAsParty
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   ShouldShow                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   ShouldShow                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Results_StayAsParty_C::ShouldShowStayAsParty(bool* ShouldShow)
 {
@@ -184,6 +170,20 @@ void UWBP_UI_Results_StayAsParty_C::ShouldShowStayAsParty(bool* ShouldShow)
 
 	if (ShouldShow != nullptr)
 		*ShouldShow = Parms.ShouldShow;
+}
+
+
+// Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.TickPartyCountdown
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_StayAsParty_C::TickPartyCountdown()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Results_StayAsParty_C", "TickPartyCountdown");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

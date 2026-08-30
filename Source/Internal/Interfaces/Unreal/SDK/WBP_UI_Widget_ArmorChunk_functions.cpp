@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_ArmorChunk.WBP_UI_Widget_ArmorChunk_C.BP_SetChunkBroken
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsBroken                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_ArmorChunk_C::BP_SetChunkBroken(bool bInIsBroken)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ArmorChunk_C", "BP_SetChunkBroken");
+
+	Params::WBP_UI_Widget_ArmorChunk_C_BP_SetChunkBroken Parms{};
+
+	Parms.bInIsBroken = bInIsBroken;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_ArmorChunk.WBP_UI_Widget_ArmorChunk_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_ArmorChunk_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_ArmorChunk_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_ArmorChunk.WBP_UI_Widget_ArmorChunk_C.ExecuteUbergraph_WBP_UI_Widget_ArmorChunk
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,24 +70,10 @@ void UWBP_UI_Widget_ArmorChunk_C::ExecuteUbergraph_WBP_UI_Widget_ArmorChunk(int3
 }
 
 
-// Function WBP_UI_Widget_ArmorChunk.WBP_UI_Widget_ArmorChunk_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_ArmorChunk_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ArmorChunk_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Widget_ArmorChunk.WBP_UI_Widget_ArmorChunk_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ArmorChunk_C::PreConstruct(bool IsDesignTime)
 {
@@ -65,26 +85,6 @@ void UWBP_UI_Widget_ArmorChunk_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_Widget_ArmorChunk_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_ArmorChunk.WBP_UI_Widget_ArmorChunk_C.BP_SetChunkBroken
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsBroken                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_ArmorChunk_C::BP_SetChunkBroken(bool bInIsBroken)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_ArmorChunk_C", "BP_SetChunkBroken");
-
-	Params::WBP_UI_Widget_ArmorChunk_C_BP_SetChunkBroken Parms{};
-
-	Parms.bInIsBroken = bInIsBroken;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

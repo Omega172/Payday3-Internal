@@ -17,16 +17,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_FireM606.GA_FireM606_C
-// 0x0010 (0x60D0 - 0x60C0)
+// 0x0010 (0x8CD8 - 0x8CC8)
 class UGA_FireM606_C final : public USBZPlayerFireM606RangedWeaponProjectileAbility
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x60C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZRangedWeaponData*                   WeaponData;                                        // 0x60C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8CC8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZRangedWeaponData*                   WeaponData;                                        // 0x8CD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_GA_FireM606(int32 EntryPoint);
 	void BP_OnWeaponFired();
+	void ExecuteUbergraph_GA_FireM606(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

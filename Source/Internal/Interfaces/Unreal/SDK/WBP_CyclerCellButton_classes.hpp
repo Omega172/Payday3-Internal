@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CyclerCellButton.WBP_CyclerCellButton_C
-// 0x0000 (0x02B0 - 0x02B0)
+// 0x0000 (0x0310 - 0x0310)
 class UWBP_CyclerCellButton_C final : public USBZMenuMouseButton
 {
 public:

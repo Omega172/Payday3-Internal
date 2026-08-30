@@ -18,22 +18,22 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ProgressBar.WBP_ProgressBar_C
-// 0x01D0 (0x0490 - 0x02C0)
+// 0x0280 (0x05A0 - 0x0320)
 class UWBP_ProgressBar_C final : public USBZProgressMeter
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UProgressBar*                           Value_ProgressBar;                                 // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FProgressBarStyle                      Style;                                             // 0x02D0(0x01B8)(Edit, BlueprintVisible)
-	float                                         StartValue;                                        // 0x0488(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UProgressBar*                           Value_ProgressBar;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FProgressBarStyle                      Style;                                             // 0x0330(0x0260)(Edit, BlueprintVisible)
+	double                                        StartValue;                                        // 0x0590(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ProgressBar(int32 EntryPoint);
 	void Destruct();
+	void ExecuteUbergraph_WBP_ProgressBar(int32 EntryPoint);
 	void OnFilled();
 	void OnReset();
-	void ValueChanged(float Value);
 	void PreConstruct(bool IsDesignTime);
+	void ValueChanged(float Value);
 
 public:
 	static class UClass* StaticClass()

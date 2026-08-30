@@ -18,19 +18,19 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C
-// 0x0018 (0x02E8 - 0x02D0)
+// 0x0020 (0x0350 - 0x0330)
 class UWBP_CustomSpriteActionInput_C final : public USBZActionInputWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          bIsInverted;                                       // 0x02D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2D9[0x3];                                      // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              FixedSize;                                         // 0x02DC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                          bIsInverted;                                       // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              FixedSize;                                         // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_CustomSpriteActionInput(int32 EntryPoint);
-	void SetInverted(bool bIsInverted_0);
 	void PreConstruct(bool IsDesignTime);
+	void SetInverted(bool bIsInverted_0);
 
 public:
 	static class UClass* StaticClass()

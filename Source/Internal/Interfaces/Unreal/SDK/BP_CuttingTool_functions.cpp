@@ -17,7 +17,7 @@
 SDK_NAMESPACE_START
 
 // Function BP_CuttingTool.BP_CuttingTool_C.ExecuteUbergraph_BP_CuttingTool
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -50,20 +50,6 @@ void ABP_CuttingTool_C::OnActivatedIdle()
 }
 
 
-// Function BP_CuttingTool.BP_CuttingTool_C.OnReady
-// (Event, Protected, BlueprintEvent)
-
-void ABP_CuttingTool_C::OnReady()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CuttingTool_C", "OnReady");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_CuttingTool.BP_CuttingTool_C.OnActivatedUsing
 // (Event, Protected, BlueprintEvent)
 
@@ -87,6 +73,20 @@ void ABP_CuttingTool_C::OnCanceled()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_CuttingTool_C", "OnCanceled");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CuttingTool.BP_CuttingTool_C.OnReady
+// (Event, Protected, BlueprintEvent)
+
+void ABP_CuttingTool_C::OnReady()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CuttingTool_C", "OnReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

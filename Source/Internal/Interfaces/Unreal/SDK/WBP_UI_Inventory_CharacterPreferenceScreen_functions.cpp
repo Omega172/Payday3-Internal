@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.DecrementCharacterPreferenceSlot
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_CharacterPreferenceScreen_C::DecrementCharacterPreferenceSlot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "DecrementCharacterPreferenceSlot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,23 +50,17 @@ void UWBP_UI_Inventory_CharacterPreferenceScreen_C::ExecuteUbergraph_WBP_UI_Inve
 }
 
 
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.UpdateCharacterSlotButtonControlsReference
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZCharacterPreferenceButtonSelectionActionSelectionAction                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.IncrementCharacterPreferenceSlot
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Inventory_CharacterPreferenceScreen_C::UpdateCharacterSlotButtonControlsReference(ESBZCharacterPreferenceButtonSelectionAction SelectionAction)
+void UWBP_UI_Inventory_CharacterPreferenceScreen_C::IncrementCharacterPreferenceSlot()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "UpdateCharacterSlotButtonControlsReference");
+		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "IncrementCharacterPreferenceSlot");
 
-	Params::WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference Parms{};
-
-	Parms.SelectionAction = SelectionAction;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -76,31 +84,23 @@ void UWBP_UI_Inventory_CharacterPreferenceScreen_C::OnControlsReferenceClicked(c
 }
 
 
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.DecrementCharacterPreferenceSlot
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_CharacterPreferenceScreen_C::DecrementCharacterPreferenceSlot()
+void UWBP_UI_Inventory_CharacterPreferenceScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "DecrementCharacterPreferenceSlot");
+		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "OnGainedStackFocused");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused Parms{};
 
+	Parms.PreviousValue = PreviousValue;
 
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.IncrementCharacterPreferenceSlot
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_CharacterPreferenceScreen_C::IncrementCharacterPreferenceSlot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "IncrementCharacterPreferenceSlot");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -132,21 +132,21 @@ void UWBP_UI_Inventory_CharacterPreferenceScreen_C::OnLostStackFocused()
 }
 
 
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.UpdateCharacterSlotButtonControlsReference
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCharacterPreferenceButtonSelectionActionSelectionAction                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_CharacterPreferenceScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_UI_Inventory_CharacterPreferenceScreen_C::UpdateCharacterSlotButtonControlsReference(ESBZCharacterPreferenceButtonSelectionAction SelectionAction)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "OnGainedStackFocused");
+		Func = Class->GetFunction("WBP_UI_Inventory_CharacterPreferenceScreen_C", "UpdateCharacterSlotButtonControlsReference");
 
-	Params::WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused Parms{};
+	Params::WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.SelectionAction = SelectionAction;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

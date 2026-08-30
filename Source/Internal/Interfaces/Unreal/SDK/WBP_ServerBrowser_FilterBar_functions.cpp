@@ -16,61 +16,85 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ExecuteUbergraph_WBP_ServerBrowser_FilterBar
-// (Final, UbergraphFunction)
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_FilterBar_C::ExecuteUbergraph_WBP_ServerBrowser_FilterBar(int32 EntryPoint)
+void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "ExecuteUbergraph_WBP_ServerBrowser_FilterBar");
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_ServerBrowser_FilterBar_C_ExecuteUbergraph_WBP_ServerBrowser_FilterBar Parms{};
+	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HideTitleBar
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    ShouldHideTitle_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_FilterBar_C::HideTitleBar(bool ShouldHideTitle_0)
+void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "HideTitleBar");
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_ServerBrowser_FilterBar_C_HideTitleBar Parms{};
+	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.ShouldHideTitle_0 = ShouldHideTitle_0;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ToggleRefreshButton
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bInIsEnabled                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_FilterBar_C::ToggleRefreshButton(bool bInIsEnabled)
+void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "ToggleRefreshButton");
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_ServerBrowser_FilterBar_C_ToggleRefreshButton Parms{};
+	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.bInIsEnabled = bInIsEnabled;
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -110,105 +134,21 @@ void UWBP_ServerBrowser_FilterBar_C::Destruct()
 }
 
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ExecuteUbergraph_WBP_ServerBrowser_FilterBar
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_ServerBrowser_FilterBar_C::ExecuteUbergraph_WBP_ServerBrowser_FilterBar(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "ExecuteUbergraph_WBP_ServerBrowser_FilterBar");
 
-	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_ServerBrowser_FilterBar_C_ExecuteUbergraph_WBP_ServerBrowser_FilterBar Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_FilterBar_C::BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_FilterBar_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "PreConstruct");
-
-	Params::WBP_ServerBrowser_FilterBar_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -217,8 +157,8 @@ void UWBP_ServerBrowser_FilterBar_C::PreConstruct(bool IsDesignTime)
 // Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HandleButtonFocusChanged
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_FilterBar_C::HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled)
 {
@@ -236,10 +176,50 @@ void UWBP_ServerBrowser_FilterBar_C::HandleButtonFocusChanged(class USBZMenuButt
 }
 
 
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HideTitleBar
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShouldHideTitle_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_FilterBar_C::HideTitleBar(bool ShouldHideTitle_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "HideTitleBar");
+
+	Params::WBP_ServerBrowser_FilterBar_C_HideTitleBar Parms{};
+
+	Parms.ShouldHideTitle_0 = ShouldHideTitle_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_FilterBar_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "PreConstruct");
+
+	Params::WBP_ServerBrowser_FilterBar_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.SwitchToOptions
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_FilterBar_C::SwitchToOptions(bool bIsActive)
 {
@@ -256,6 +236,26 @@ void UWBP_ServerBrowser_FilterBar_C::SwitchToOptions(bool bIsActive)
 }
 
 
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ToggleRefreshButton
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsEnabled                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_FilterBar_C::ToggleRefreshButton(bool bInIsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "ToggleRefreshButton");
+
+	Params::WBP_ServerBrowser_FilterBar_C_ToggleRefreshButton Parms{};
+
+	Parms.bInIsEnabled = bInIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.UpdateFilterNumber
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -267,27 +267,6 @@ void UWBP_ServerBrowser_FilterBar_C::UpdateFilterNumber()
 		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "UpdateFilterNumber");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.NumberOfLevelFiltersActive
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  NumberOfDeactivatedLevels                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_FilterBar_C::NumberOfLevelFiltersActive(int32* NumberOfDeactivatedLevels)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterBar_C", "NumberOfLevelFiltersActive");
-
-	Params::WBP_ServerBrowser_FilterBar_C_NumberOfLevelFiltersActive Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NumberOfDeactivatedLevels != nullptr)
-		*NumberOfDeactivatedLevels = Parms.NumberOfDeactivatedLevels;
 }
 
 

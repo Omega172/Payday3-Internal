@@ -17,37 +17,41 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.ExecuteUbergraph_WBP_UI_Lobby_Player
-// 0x0918 (0x0918 - 0x0000)
+// 0x0948 (0x0948 - 0x0000)
 struct WBP_UI_Lobby_Player_C_ExecuteUbergraph_WBP_UI_Lobby_Player final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0014)(ZeroConstructor, NoDestructor)
+	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZOnlineCode ErrorCode)>     K2Node_CreateDelegate_OutputDelegate_2;            // 0x003C(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void(ESBZOnlineCode ErrorCode)>     K2Node_CreateDelegate_OutputDelegate_2;            // 0x003C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZOnlineCode ErrorCode)>     K2Node_CreateDelegate_OutputDelegate_3;            // 0x0054(0x0014)(ZeroConstructor, NoDestructor)
-	struct FSBZLobbyCharacterInfoUi               CallFunc_GetLobbyInfo_CharacterUIInfo;             // 0x0068(0x0450)()
-	bool                                          CallFunc_GetLobbyInfo_IsValid;                     // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_4B9[0x7];                                      // 0x04B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLobbyCharacterInfoUi               CallFunc_GetLobbyInfo_CharacterUIInfo_1;           // 0x04C0(0x0450)()
-	bool                                          CallFunc_GetLobbyInfo_IsValid_1;                   // 0x0910(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(ESBZOnlineCode ErrorCode)>     K2Node_CreateDelegate_OutputDelegate_3;            // 0x0054(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZLobbyCharacterInfoUi               CallFunc_GetLobbyInfo_CharacterUIInfo;             // 0x0068(0x0468)()
+	bool                                          CallFunc_GetLobbyInfo_IsValid;                     // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLobbyCharacterInfoUi               CallFunc_GetLobbyInfo_CharacterUIInfo_1;           // 0x04D8(0x0468)()
+	bool                                          CallFunc_GetLobbyInfo_IsValid_1;                   // 0x0940(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_ExecuteUbergraph_WBP_UI_Lobby_Player;
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Lobby_Player_C_OnMMStopped final
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.GetLobbyInfo
+// 0x0488 (0x0488 - 0x0000)
+struct WBP_UI_Lobby_Player_C_GetLobbyInfo final
 {
 public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZLobbyCharacterInfoUi               CharacterUIInfo;                                   // 0x0000(0x0468)(Parm, OutParm)
+	bool                                          IsValid;                                           // 0x0468(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZLobbyCharacterInfoUi>       CallFunc_GetUiLobbyInfo_OutInfo;                   // 0x0470(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnMMStopped;
+DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_GetLobbyInfo;
 
 // Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLobbyUpdate
 // 0x0001 (0x0001 - 0x0000)
@@ -58,31 +62,27 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnLobbyUpdate;
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.GetLobbyInfo
-// 0x0470 (0x0470 - 0x0000)
-struct WBP_UI_Lobby_Player_C_GetLobbyInfo final
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Lobby_Player_C_OnMMStopped final
 {
 public:
-	struct FSBZLobbyCharacterInfoUi               CharacterUIInfo;                                   // 0x0000(0x0450)(Parm, OutParm)
-	bool                                          IsValid;                                           // 0x0450(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZLobbyCharacterInfoUi>       CallFunc_GetUiLobbyInfo_OutInfo;                   // 0x0458(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_GetLobbyInfo;
+DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnMMStopped;
 
 // Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.SetPlayerUIInfo
-// 0x04B8 (0x04B8 - 0x0000)
+// 0x04B0 (0x04B0 - 0x0000)
 struct WBP_UI_Lobby_Player_C_SetPlayerUIInfo final
 {
 public:
-	struct FSBZLobbyCharacterInfoUi               InCharacter;                                       // 0x0000(0x0450)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Temp_bool_Variable;                                // 0x0450(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_451[0x7];                                      // 0x0451(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0458(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0470(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0488(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x04A0(0x0018)()
+	struct FSBZLobbyCharacterInfoUi               InCharacter;                                       // 0x0000(0x0468)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          Temp_bool_Variable;                                // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0470(0x0010)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0480(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0490(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x04A0(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_SetPlayerUIInfo;
 

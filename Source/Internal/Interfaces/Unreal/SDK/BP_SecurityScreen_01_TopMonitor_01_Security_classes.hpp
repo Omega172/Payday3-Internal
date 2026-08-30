@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SecurityScreen_01_TopMonitor_01_Security.BP_SecurityScreen_01_TopMonitor_01_Security_C
-// 0x0000 (0x0330 - 0x0330)
+// 0x0000 (0x03F8 - 0x03F8)
 class ABP_SecurityScreen_01_TopMonitor_01_Security_C final : public Abp_screen_C
 {
 public:

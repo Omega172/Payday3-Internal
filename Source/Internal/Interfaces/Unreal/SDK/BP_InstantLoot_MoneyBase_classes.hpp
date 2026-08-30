@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_InstantLoot_MoneyBase.BP_InstantLoot_MoneyBase_C
-// 0x0008 (0x02F0 - 0x02E8)
+// 0x0008 (0x0370 - 0x0368)
 class ABP_InstantLoot_MoneyBase_C : public ABP_InstantLoot_Base_C
 {
 public:
-	class UStaticMeshComponent*                   Loot;                                              // 0x02E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Loot;                                              // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();

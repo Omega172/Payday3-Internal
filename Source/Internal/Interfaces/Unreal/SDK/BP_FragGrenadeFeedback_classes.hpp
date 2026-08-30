@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_FragGrenadeFeedback.BP_FragGrenadeFeedback_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UBP_FragGrenadeFeedback_C final : public USBZLocalPlayerFeedback
 {
 public:

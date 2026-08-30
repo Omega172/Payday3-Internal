@@ -36,6 +36,26 @@ void UWBP_DailyChallengeReward_C::ExecuteUbergraph_WBP_DailyChallengeReward(int3
 }
 
 
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeInfamyReward
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InInfamy                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeReward_C::InitializeInfamyReward(int32 InInfamy)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengeReward_C", "InitializeInfamyReward");
+
+	Params::WBP_DailyChallengeReward_C_InitializeInfamyReward Parms{};
+
+	Parms.InInfamy = InInfamy;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeReward
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -59,7 +79,7 @@ void UWBP_DailyChallengeReward_C::InitializeReward(const struct FSBZChallengeRew
 // Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_DailyChallengeReward_C::PreConstruct(bool IsDesignTime)
 {
@@ -71,26 +91,6 @@ void UWBP_DailyChallengeReward_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_DailyChallengeReward_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeInfamyReward
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InInfamy                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengeReward_C::InitializeInfamyReward(int32 InInfamy)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengeReward_C", "InitializeInfamyReward");
-
-	Params::WBP_DailyChallengeReward_C_InitializeInfamyReward Parms{};
-
-	Parms.InInfamy = InInfamy;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

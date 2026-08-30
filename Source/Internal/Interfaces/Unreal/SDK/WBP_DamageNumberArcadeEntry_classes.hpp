@@ -18,12 +18,12 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DamageNumberArcadeEntry.WBP_DamageNumberArcadeEntry_C
-// 0x0010 (0x0308 - 0x02F8)
+// 0x0010 (0x0380 - 0x0370)
 class UWBP_DamageNumberArcadeEntry_C final : public USBZDamageNumberEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTextBlock*                             Damage_Text;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UTextBlock*                             Damage_Text;                                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_DamageNumberArcadeEntry(int32 EntryPoint);

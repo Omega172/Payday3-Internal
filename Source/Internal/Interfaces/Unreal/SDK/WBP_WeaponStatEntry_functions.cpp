@@ -39,7 +39,7 @@ void UWBP_WeaponStatEntry_C::ExecuteUbergraph_WBP_WeaponStatEntry(int32 EntryPoi
 // Function WBP_WeaponStatEntry.WBP_WeaponStatEntry_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_WeaponStatEntry_C::PreConstruct(bool IsDesignTime)
 {

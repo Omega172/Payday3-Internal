@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_classes.hpp"
-#include "Gridly_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "Gridly_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -121,7 +121,7 @@ public:
 	TMulticastInlineDelegate<void(const TArray<struct FPolyglotTextData>& PolyglotTextDatas, float Progress, const struct FGridlyResult& Error)> OnProgress; // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const TArray<struct FPolyglotTextData>& PolyglotTextDatas, float Progress, const struct FGridlyResult& Error)> OnFail; // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_68[0x40];                                      // 0x0068(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                WorldContextObject;                                // 0x00A8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UObject*                                WorldContextObject;                                // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_B0[0x30];                                      // 0x00B0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -152,9 +152,9 @@ public:
 	TMulticastInlineDelegate<void(const TArray<struct FGridlyTableRow>& GridlyTableRows, float Progress, const struct FGridlyResult& Error)> OnProgress; // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const TArray<struct FGridlyTableRow>& GridlyTableRows, float Progress, const struct FGridlyResult& Error)> OnFail; // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_68[0x40];                                      // 0x0068(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                WorldContextObject;                                // 0x00A8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UObject*                                WorldContextObject;                                // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_B0[0x30];                                      // 0x00B0(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	class UGridlyDataTable*                       GridlyDataTable;                                   // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UGridlyDataTable*                       GridlyDataTable;                                   // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UGridlyTask_ImportDataTableFromGridly* ImportDataTableFromGridly(const class UObject* WorldContextObject_0, class UGridlyDataTable* GridlyDataTable_0);
@@ -184,7 +184,7 @@ public:
 	TMulticastInlineDelegate<void(const TArray<struct FGridlyTableRow>& NativeCultureTextData, float Progress, const struct FGridlyResult& Error)> OnProgress; // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const TArray<struct FGridlyTableRow>& NativeCultureTextData, float Progress, const struct FGridlyResult& Error)> OnFail; // 0x0058(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_68[0x40];                                      // 0x0068(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                WorldContextObject;                                // 0x00A8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UObject*                                WorldContextObject;                                // 0x00A8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_B0[0x30];                                      // 0x00B0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:

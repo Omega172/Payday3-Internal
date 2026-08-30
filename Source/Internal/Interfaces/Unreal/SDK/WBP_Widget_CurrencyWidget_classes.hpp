@@ -19,32 +19,33 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Widget_CurrencyWidget.WBP_Widget_CurrencyWidget_C
-// 0x00D0 (0x0378 - 0x02A8)
+// 0x00B8 (0x03C0 - 0x0308)
 class UWBP_Widget_CurrencyWidget_C final : public USBZCurrencyWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 CashIcon;                                          // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 CreditIcon;                                        // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 GoldIcon;                                          // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        IconSwitcher;                                      // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_CurrencyAmount;                               // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateFontInfo                         WidgetFont;                                        // 0x02D8(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
-	struct FSlateColor                            WidgetColor;                                       // 0x0338(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                   EditorValueT;                                      // 0x0360(0x0018)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 CashIcon;                                          // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 CreditIcon;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 GoldIcon;                                          // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        IconSwitcher;                                      // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_CurrencyAmount;                               // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateFontInfo                         WidgetFont;                                        // 0x0338(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
+	struct FSlateColor                            WidgetColor;                                       // 0x0398(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	uint8                                         Pad_3AC[0x4];                                      // 0x03AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   EditorValueT;                                      // 0x03B0(0x0010)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_WBP_Widget_CurrencyWidget(int32 EntryPoint);
 	void OnAffordedChanged(bool bInIsAfforded, bool bIsInitial);
 	void OnCurrencyTypeChanged(ESBZCurrencyCode InCurrencyType, bool bIsInitial);
+	void OnCurrencyValueChanged(int64 NewValue, bool bIsInitial);
 	void OnInitialized();
 	void PreConstruct(bool IsDesignTime);
-	void OnCurrencyValueChanged(int64 NewValue, bool bIsInitial);
 	void SetCurrencyText(int64 InValue);
 	void SetFontAndColor(const struct FSlateFontInfo& InSlateFont, const struct FSlateColor& InSlateColor);
-	void UpdateCurrencyIcon();
 	void SetForbidden(bool IsForbidden);
 	void UpdateCost(ESBZCurrencyCode InCurrency, int64 InCost);
+	void UpdateCurrencyIcon();
 
 public:
 	static class UClass* StaticClass()

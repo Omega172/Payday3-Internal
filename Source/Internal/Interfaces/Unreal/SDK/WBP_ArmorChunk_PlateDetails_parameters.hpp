@@ -10,44 +10,45 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_ArmorChunk_PlateDetails.WBP_ArmorChunk_PlateDetails_C.SetPlateInfo
-// 0x0218 (0x0218 - 0x0000)
+// 0x01B8 (0x01B8 - 0x0000)
 struct WBP_ArmorChunk_PlateDetails_C_SetPlateInfo final
 {
 public:
 	ESBZArmorChunkType                            PlateType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	ESBZArmorChunkType                            Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0040(0x0018)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0058(0x0018)()
-	ESBZArmorChunkType                            Temp_byte_Variable_1;                              // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0018)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0090(0x0018)()
-	class FText                                   Temp_text_Variable_5;                              // 0x00A8(0x0018)()
-	class FText                                   Temp_text_Variable_6;                              // 0x00C0(0x0018)()
-	class FText                                   Temp_text_Variable_7;                              // 0x00D8(0x0018)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x00F0(0x0018)()
-	class FText                                   Temp_text_Variable_8;                              // 0x0108(0x0018)()
-	const class USBZArmorSettings*                CallFunc_Get_ReturnValue;                          // 0x0120(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZArmorChunkType                            Temp_byte_Variable_2;                              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_129[0x3];                                      // 0x0129(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZArmorChunkTypeData                 CallFunc_GetChunkData_ReturnValue;                 // 0x012C(0x0054)(ConstParm, NoDestructor)
-	class FText                                   K2Node_Select_Default_2;                           // 0x0180(0x0018)()
-	class FText                                   CallFunc_Conv_FloatToText_ReturnValue;             // 0x0198(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x01B0(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01F0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0200(0x0018)()
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	ESBZArmorChunkType                            Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0030(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0040(0x0010)()
+	ESBZArmorChunkType                            Temp_byte_Variable_1;                              // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0058(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0068(0x0010)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0078(0x0010)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0088(0x0010)()
+	class FText                                   Temp_text_Variable_7;                              // 0x0098(0x0010)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x00A8(0x0010)()
+	class FText                                   Temp_text_Variable_8;                              // 0x00B8(0x0010)()
+	const class USBZArmorSettings*                CallFunc_Get_ReturnValue;                          // 0x00C8(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZArmorChunkType                            Temp_byte_Variable_2;                              // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D1[0x3];                                       // 0x00D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZArmorChunkTypeData                 CallFunc_GetChunkData_ReturnValue;                 // 0x00D4(0x0054)(ConstParm, NoDestructor)
+	class FText                                   K2Node_Select_Default_2;                           // 0x0128(0x0010)()
+	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x0138(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0148(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0190(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A0(0x0010)()
+	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast;     // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ArmorChunk_PlateDetails_C_SetPlateInfo;
 

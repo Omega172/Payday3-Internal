@@ -17,26 +17,26 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.ExecuteUbergraph_WBP_TextBasedNewsBanner
-// 0x00C0 (0x00C0 - 0x0000)
+// 0x00B0 (0x00B0 - 0x0000)
 struct WBP_TextBasedNewsBanner_C_ExecuteUbergraph_WBP_TextBasedNewsBanner final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& Title, const class FString& Content)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(const class FString& Title, const class FString& Content)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x001C(0x0038)(IsPlainOldData, NoDestructor)
 	float                                         K2Node_Event_InDeltaTime;                          // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZServerStatusManager*                CallFunc_GetServerStatusManager_ReturnValue;       // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZServerStatusManager*                CallFunc_GetServerStatusManager_ReturnValue;       // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FString                                 K2Node_CustomEvent_Title;                          // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 K2Node_CustomEvent_Content;                        // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0080(0x0018)()
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00A0(0x0018)()
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0080(0x0010)()
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0098(0x0010)()
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_ExecuteUbergraph_WBP_TextBasedNewsBanner;
 
@@ -50,6 +50,26 @@ public:
 };
 DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_On_News_Message_Received;
 
+// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_TextBasedNewsBanner_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_PreConstruct;
+
+// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.SetInformation
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_TextBasedNewsBanner_C_SetInformation final
+{
+public:
+	class FText                                   InTitle;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   InDescription;                                     // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          InShouldShow;                                      // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_SetInformation;
+
 // Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.Tick
 // 0x003C (0x003C - 0x0000)
 struct WBP_TextBasedNewsBanner_C_Tick final
@@ -59,26 +79,6 @@ public:
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_Tick;
-
-// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_TextBasedNewsBanner_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_PreConstruct;
-
-// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.SetInformation
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_TextBasedNewsBanner_C_SetInformation final
-{
-public:
-	class FText                                   InTitle;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   InDescription;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          InShouldShow;                                      // 0x0030(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_TextBasedNewsBanner_C_SetInformation;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

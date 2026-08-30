@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MainMenu_Social_ReportPopup.WBP_MainMenu_Social_ReportPopup_C.ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Social_ReportPopup_C::ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Social_ReportPopup_C", "ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup");
-
-	Params::WBP_MainMenu_Social_ReportPopup_C_ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_MainMenu_Social_ReportPopup.WBP_MainMenu_Social_ReportPopup_C.BndEvt__WBP_MainMenu_Social_ReportPopup_ReportCommentTextField_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextCommittedEvent__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -53,6 +33,26 @@ void UWBP_MainMenu_Social_ReportPopup_C::BndEvt__WBP_MainMenu_Social_ReportPopup
 
 	Parms.Text = std::move(Text);
 	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Social_ReportPopup.WBP_MainMenu_Social_ReportPopup_C.ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Social_ReportPopup_C::ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Social_ReportPopup_C", "ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup");
+
+	Params::WBP_MainMenu_Social_ReportPopup_C_ExecuteUbergraph_WBP_MainMenu_Social_ReportPopup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

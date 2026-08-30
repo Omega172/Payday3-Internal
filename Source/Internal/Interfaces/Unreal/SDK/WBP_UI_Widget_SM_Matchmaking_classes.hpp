@@ -17,23 +17,23 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C
-// 0x0010 (0x02A8 - 0x0298)
+// 0x0010 (0x0308 - 0x02F8)
 class UWBP_UI_Widget_SM_Matchmaking_C final : public USBZInternetStatusWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FTimerHandle                           JoinLobbyTimer;                                    // 0x02A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FTimerHandle                           JoinLobbyTimer;                                    // 0x0300(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking(int32 EntryPoint);
 	void Destruct();
-	void OnMatchmakingCanceled();
-	void OnStateMachineEnteredMatchmaking_Event_0();
+	void ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking(int32 EntryPoint);
+	void GoToLobby();
 	void OnExitedMatchmaking();
-	void OnPopUpButtonPressed(class FName ClosingActionName);
 	void OnInitialized();
 	void OnMatchFound();
-	void GoToLobby();
+	void OnMatchmakingCanceled();
+	void OnPopUpButtonPressed(class FName ClosingActionName);
+	void OnStateMachineEnteredMatchmaking_Event_0();
 
 public:
 	static class UClass* StaticClass()

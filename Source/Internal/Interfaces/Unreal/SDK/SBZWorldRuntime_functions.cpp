@@ -19,8 +19,8 @@ SDK_NAMESPACE_START
 // Function SBZWorldRuntime.SBZWorldRuntimeBase.GetWorldRuntime
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class USBZWorldRuntimeBase*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// const class UObject*                    WorldContextObject                                     (ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class USBZWorldRuntimeBase*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 class USBZWorldRuntimeBase* USBZWorldRuntimeBase::GetWorldRuntime(const class UObject* WorldContextObject)
 {

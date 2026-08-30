@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.CleanWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Lobby_Player_C::CleanWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "CleanWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Lobby_Player_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.ExecuteUbergraph_WBP_UI_Lobby_Player
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,23 +64,42 @@ void UWBP_UI_Lobby_Player_C::ExecuteUbergraph_WBP_UI_Lobby_Player(int32 EntryPoi
 }
 
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.GetLobbyInfo
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZLobbyCharacterInfoUi*        CharacterUIInfo                                        (Parm, OutParm)
+// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Lobby_Player_C::OnMMStopped(ESBZOnlineCode ErrorCode)
+void UWBP_UI_Lobby_Player_C::GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "OnMMStopped");
+		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "GetLobbyInfo");
 
-	Params::WBP_UI_Lobby_Player_C_OnMMStopped Parms{};
-
-	Parms.ErrorCode = ErrorCode;
+	Params::WBP_UI_Lobby_Player_C_GetLobbyInfo Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (CharacterUIInfo != nullptr)
+		*CharacterUIInfo = std::move(Parms.CharacterUIInfo);
+
+	if (IsValid != nullptr)
+		*IsValid = Parms.IsValid;
+}
+
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLeft
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Lobby_Player_C::OnLeft()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "OnLeft");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -76,70 +123,23 @@ void UWBP_UI_Lobby_Player_C::OnLobbyUpdate(ESBZOnlineCode ErrorCode)
 }
 
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLeft
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
 // (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Lobby_Player_C::OnLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "OnLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Lobby_Player_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.GetLobbyInfo
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSBZLobbyCharacterInfoUi*        CharacterUIInfo                                        (Parm, OutParm)
-// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Lobby_Player_C::GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid)
+void UWBP_UI_Lobby_Player_C::OnMMStopped(ESBZOnlineCode ErrorCode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "GetLobbyInfo");
+		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "OnMMStopped");
 
-	Params::WBP_UI_Lobby_Player_C_GetLobbyInfo Parms{};
+	Params::WBP_UI_Lobby_Player_C_OnMMStopped Parms{};
+
+	Parms.ErrorCode = ErrorCode;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (CharacterUIInfo != nullptr)
-		*CharacterUIInfo = std::move(Parms.CharacterUIInfo);
-
-	if (IsValid != nullptr)
-		*IsValid = Parms.IsValid;
-}
-
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.CleanWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Lobby_Player_C::CleanWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Lobby_Player_C", "CleanWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

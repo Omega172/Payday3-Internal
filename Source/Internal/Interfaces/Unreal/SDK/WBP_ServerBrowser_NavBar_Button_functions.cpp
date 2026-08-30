@@ -16,50 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_NavBar_Button_C::ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button");
-
-	Params::WBP_ServerBrowser_NavBar_Button_C_ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_NavBar_Button_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "PreConstruct");
-
-	Params::WBP_ServerBrowser_NavBar_Button_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.ButtonHoveredChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_NavBar_Button_C::ButtonHoveredChanged(bool bInIsHovered)
 {
@@ -90,55 +50,21 @@ void UWBP_ServerBrowser_NavBar_Button_C::ButtonSelected()
 }
 
 
-// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_NavBar_Button_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.SetFocused
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_NavBar_Button_C::SetFocused(bool InFocused)
+void UWBP_ServerBrowser_NavBar_Button_C::ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "SetFocused");
+		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button");
 
-	Params::WBP_ServerBrowser_NavBar_Button_C_SetFocused Parms{};
+	Params::WBP_ServerBrowser_NavBar_Button_C_ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button Parms{};
 
-	Parms.InFocused = InFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.SetHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_NavBar_Button_C::SetHovered(bool InHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "SetHovered");
-
-	Params::WBP_ServerBrowser_NavBar_Button_C_SetHovered Parms{};
-
-	Parms.InHovered = InHovered;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -164,11 +90,45 @@ void UWBP_ServerBrowser_NavBar_Button_C::InitializeButton(const class FText& InT
 }
 
 
+// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ServerBrowser_NavBar_Button_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_NavBar_Button_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "PreConstruct");
+
+	Params::WBP_ServerBrowser_NavBar_Button_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.SetActive
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bHideUnfocused                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHideUnfocused                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_NavBar_Button_C::SetActive(bool InActive, bool bHideUnfocused)
 {
@@ -181,6 +141,46 @@ void UWBP_ServerBrowser_NavBar_Button_C::SetActive(bool InActive, bool bHideUnfo
 
 	Parms.InActive = InActive;
 	Parms.bHideUnfocused = bHideUnfocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.SetFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_NavBar_Button_C::SetFocused(bool InFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "SetFocused");
+
+	Params::WBP_ServerBrowser_NavBar_Button_C_SetFocused Parms{};
+
+	Parms.InFocused = InFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_NavBar_Button.WBP_ServerBrowser_NavBar_Button_C.SetHovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_NavBar_Button_C::SetHovered(bool InHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_NavBar_Button_C", "SetHovered");
+
+	Params::WBP_ServerBrowser_NavBar_Button_C_SetHovered Parms{};
+
+	Parms.InHovered = InHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

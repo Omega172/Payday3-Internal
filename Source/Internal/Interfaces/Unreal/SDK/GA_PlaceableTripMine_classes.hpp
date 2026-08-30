@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlaceableTripMine.GA_PlaceableTripMine_C
-// 0x0000 (0x0560 - 0x0560)
+// 0x0000 (0x0580 - 0x0580)
 class UGA_PlaceableTripMine_C final : public USBZPlaceTripMineAbility
 {
 public:

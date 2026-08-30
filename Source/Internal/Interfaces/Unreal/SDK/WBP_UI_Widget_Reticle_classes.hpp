@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_Reticle.WBP_UI_Widget_Reticle_C
-// 0x0010 (0x02F0 - 0x02E0)
+// 0x0010 (0x0350 - 0x0340)
 class UWBP_UI_Widget_Reticle_C final : public USBZReticleWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_UI_Widget_CrosshairVisuals_C*      Widget_CrosshairVisuals;                           // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_UI_Widget_CrosshairVisuals_C*      Widget_CrosshairVisuals;                           // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_Reticle(int32 EntryPoint);
+	void OnCrossHairScaleChanged(float CurrentSpread);
 	void OnCrosshairSettingsChanged(const struct FSBZCrosshairSettings& CrosshairSettings);
 	void OnCrossHairVisibilityChanged(bool bIsVisible);
-	void OnCrossHairScaleChanged(float CurrentSpread);
 
 public:
 	static class UClass* StaticClass()

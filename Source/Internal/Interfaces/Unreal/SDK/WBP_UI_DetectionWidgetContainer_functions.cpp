@@ -39,7 +39,7 @@ void UWBP_UI_DetectionWidgetContainer_C::ExecuteUbergraph_WBP_UI_DetectionWidget
 // Function WBP_UI_DetectionWidgetContainer.WBP_UI_DetectionWidgetContainer_C.OnObservedChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bObserved                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bObserved                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_DetectionWidgetContainer_C::OnObservedChanged(bool bObserved)
 {

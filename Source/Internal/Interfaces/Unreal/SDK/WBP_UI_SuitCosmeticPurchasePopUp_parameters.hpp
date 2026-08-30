@@ -21,7 +21,7 @@ struct WBP_UI_SuitCosmeticPurchasePopUp_C_ExecuteUbergraph_WBP_UI_SuitCosmeticPu
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_SuitCosmeticPurchasePopUp_C_ExecuteUbergraph_WBP_UI_SuitCosmeticPurchasePopUp;
 
@@ -30,7 +30,7 @@ DUMPER7_ASSERTS_WBP_UI_SuitCosmeticPurchasePopUp_C_ExecuteUbergraph_WBP_UI_SuitC
 struct WBP_UI_SuitCosmeticPurchasePopUp_C_SpriteLoaded final
 {
 public:
-	class UPaperSprite*                           OutLoadedSprite;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           OutLoadedSprite;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_SuitCosmeticPurchasePopUp_C_SpriteLoaded;
 

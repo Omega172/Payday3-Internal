@@ -16,30 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Social_ContextButton.WBP_UI_Social_ContextButton_C.ExecuteUbergraph_WBP_UI_Social_ContextButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Social_ContextButton_C::ExecuteUbergraph_WBP_UI_Social_ContextButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_ContextButton_C", "ExecuteUbergraph_WBP_UI_Social_ContextButton");
-
-	Params::WBP_UI_Social_ContextButton_C_ExecuteUbergraph_WBP_UI_Social_ContextButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Social_ContextButton.WBP_UI_Social_ContextButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Social_ContextButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
@@ -70,21 +50,21 @@ void UWBP_UI_Social_ContextButton_C::ButtonSelected()
 }
 
 
-// Function WBP_UI_Social_ContextButton.WBP_UI_Social_ContextButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Social_ContextButton.WBP_UI_Social_ContextButton_C.ExecuteUbergraph_WBP_UI_Social_ContextButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Social_ContextButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Social_ContextButton_C::ExecuteUbergraph_WBP_UI_Social_ContextButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_ContextButton_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_Social_ContextButton_C", "ExecuteUbergraph_WBP_UI_Social_ContextButton");
 
-	Params::WBP_UI_Social_ContextButton_C_PreConstruct Parms{};
+	Params::WBP_UI_Social_ContextButton_C_ExecuteUbergraph_WBP_UI_Social_ContextButton Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -93,7 +73,7 @@ void UWBP_UI_Social_ContextButton_C::PreConstruct(bool IsDesignTime)
 // Function WBP_UI_Social_ContextButton.WBP_UI_Social_ContextButton_C.OnGainFocus
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    isFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Social_ContextButton_C::OnGainFocus(bool isFocused)
 {
@@ -105,6 +85,26 @@ void UWBP_UI_Social_ContextButton_C::OnGainFocus(bool isFocused)
 	Params::WBP_UI_Social_ContextButton_C_OnGainFocus Parms{};
 
 	Parms.isFocused = isFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_ContextButton.WBP_UI_Social_ContextButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_ContextButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_ContextButton_C", "PreConstruct");
+
+	Params::WBP_UI_Social_ContextButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

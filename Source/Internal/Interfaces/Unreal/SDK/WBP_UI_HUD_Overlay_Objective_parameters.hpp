@@ -21,9 +21,9 @@ struct WBP_UI_HUD_Overlay_Objective_C_ExecuteUbergraph_WBP_UI_HUD_Overlay_Object
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          K2Node_Event_ObjectiveActivated;                   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          K2Node_Event_ObjectiveActivated;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_ExecuteUbergraph_WBP_UI_HUD_Overlay_Objective;
 
@@ -32,7 +32,7 @@ DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_ExecuteUbergraph_WBP_UI_HUD_Overl
 struct WBP_UI_HUD_Overlay_Objective_C_ObjectiveActivated final
 {
 public:
-	class ASBZObjective*                          Param_ObjectiveActivated_0;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          Param_ObjectiveActivated_0;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_ObjectiveActivated;
 
@@ -41,7 +41,7 @@ DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_ObjectiveActivated;
 struct WBP_UI_HUD_Overlay_Objective_C_OnAnimationFinished final
 {
 public:
-	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_OnAnimationFinished;
 
@@ -50,9 +50,9 @@ DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_OnAnimationFinished;
 struct WBP_UI_HUD_Overlay_Objective_C_SetObjectiveIntel final
 {
 public:
-	class ASBZObjective*                          Objective_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class ASBZObjective*                          Objective_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_HUD_Overlay_Objective_C_SetObjectiveIntel;
 

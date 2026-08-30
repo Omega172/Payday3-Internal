@@ -16,6 +16,54 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_PurchasePopupItem_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "ButtonFocusedChanged");
+
+	Params::WBP_Shop_PurchasePopupItem_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.ExecuteUbergraph_WBP_Shop_PurchasePopupItem
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,21 +84,21 @@ void UWBP_Shop_PurchasePopupItem_C::ExecuteUbergraph_WBP_Shop_PurchasePopupItem(
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_PurchasePopupItem_C::PreConstruct(bool IsDesignTime)
+void UWBP_Shop_PurchasePopupItem_C::OnFocusChanged(bool bInHasFocus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "OnFocusChanged");
 
-	Params::WBP_Shop_PurchasePopupItem_C_PreConstruct Parms{};
+	Params::WBP_Shop_PurchasePopupItem_C_OnFocusChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -59,9 +107,9 @@ void UWBP_Shop_PurchasePopupItem_C::PreConstruct(bool IsDesignTime)
 // Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnShow
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsLast                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bCanBeInspected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsLast                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanBeInspected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_PurchasePopupItem_C::OnShow(bool bIsLast, bool bCanBeInspected, bool bIsVendorPermission)
 {
@@ -80,38 +128,10 @@ void UWBP_Shop_PurchasePopupItem_C::OnShow(bool bIsLast, bool bCanBeInspected, b
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnUpdateOwnershipStatus
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_PurchasePopupItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
 {
@@ -128,41 +148,21 @@ void UWBP_Shop_PurchasePopupItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_PurchasePopupItem_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_Shop_PurchasePopupItem_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "ButtonFocusedChanged");
+		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "PreConstruct");
 
-	Params::WBP_Shop_PurchasePopupItem_C_ButtonFocusedChanged Parms{};
+	Params::WBP_Shop_PurchasePopupItem_C_PreConstruct Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_PurchasePopupItem_C::OnFocusChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_PurchasePopupItem_C", "OnFocusChanged");
-
-	Params::WBP_Shop_PurchasePopupItem_C_OnFocusChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

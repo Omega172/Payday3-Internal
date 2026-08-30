@@ -39,7 +39,7 @@ void UWBP_UI_Widget_ActionInput_C::ExecuteUbergraph_WBP_UI_Widget_ActionInput(in
 // Function WBP_UI_Widget_ActionInput.WBP_UI_Widget_ActionInput_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_ActionInput_C::PreConstruct(bool IsDesignTime)
 {

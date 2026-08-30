@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function GA_FireM606.GA_FireM606_C.BP_OnWeaponFired
+// (Event, Protected, BlueprintEvent)
+
+void UGA_FireM606_C::BP_OnWeaponFired()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GA_FireM606_C", "BP_OnWeaponFired");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function GA_FireM606.GA_FireM606_C.ExecuteUbergraph_GA_FireM606
 // (Final, UbergraphFunction)
 // Parameters:
@@ -33,20 +47,6 @@ void UGA_FireM606_C::ExecuteUbergraph_GA_FireM606(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GA_FireM606.GA_FireM606_C.BP_OnWeaponFired
-// (Event, Protected, BlueprintEvent)
-
-void UGA_FireM606_C::BP_OnWeaponFired()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FireM606_C", "BP_OnWeaponFired");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

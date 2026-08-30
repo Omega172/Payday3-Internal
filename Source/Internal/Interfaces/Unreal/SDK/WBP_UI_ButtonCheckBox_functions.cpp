@@ -16,6 +16,60 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ButtonCheckBox_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_ButtonCheckBox_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ButtonCheckBox_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_ButtonCheckBox_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_ButtonCheckBox_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ExecuteUbergraph_WBP_UI_ButtonCheckBox
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,118 +90,10 @@ void UWBP_UI_ButtonCheckBox_C::ExecuteUbergraph_WBP_UI_ButtonCheckBox(int32 Entr
 }
 
 
-// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_ButtonCheckBox_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ButtonCheckBox_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "PreConstruct");
-
-	Params::WBP_UI_ButtonCheckBox_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ButtonCheckBox_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_ButtonCheckBox_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ButtonCheckBox_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_ButtonCheckBox_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_ButtonCheckBox_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.SetCheckBox
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bNewIsChecked                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ButtonCheckBox_C::SetCheckBox(bool bNewIsChecked)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "SetCheckBox");
-
-	Params::WBP_UI_ButtonCheckBox_C_SetCheckBox Parms{};
-
-	Parms.bNewIsChecked = bNewIsChecked;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.OnFocusChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ButtonCheckBox_C::OnFocusChanged(bool bIsFocused)
 {
@@ -167,7 +113,7 @@ void UWBP_UI_ButtonCheckBox_C::OnFocusChanged(bool bIsFocused)
 // Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.OnHoverChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ButtonCheckBox_C::OnHoverChanged(bool bIsHovered)
 {
@@ -179,6 +125,60 @@ void UWBP_UI_ButtonCheckBox_C::OnHoverChanged(bool bIsHovered)
 	Params::WBP_UI_ButtonCheckBox_C_OnHoverChanged Parms{};
 
 	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_ButtonCheckBox_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ButtonCheckBox_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "PreConstruct");
+
+	Params::WBP_UI_ButtonCheckBox_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ButtonCheckBox.WBP_UI_ButtonCheckBox_C.SetCheckBox
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewIsChecked                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ButtonCheckBox_C::SetCheckBox(bool bNewIsChecked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ButtonCheckBox_C", "SetCheckBox");
+
+	Params::WBP_UI_ButtonCheckBox_C_SetCheckBox Parms{};
+
+	Parms.bNewIsChecked = bNewIsChecked;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

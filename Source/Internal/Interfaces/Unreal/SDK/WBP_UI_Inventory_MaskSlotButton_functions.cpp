@@ -16,6 +16,67 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.CanCustomize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   CanCustomize_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::CanCustomize(bool* CanCustomize_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "CanCustomize");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_CanCustomize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CanCustomize_0 != nullptr)
+		*CanCustomize_0 = Parms.CanCustomize_0;
+}
+
+
 // Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_MaskSlotButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,6 +97,101 @@ void UWBP_UI_Inventory_MaskSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_MaskS
 }
 
 
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.Get Mould Mod Data
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USBZModularPartDataAsset**        Part                                                   (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::Get_Mould_Mod_Data(class USBZModularPartDataAsset** Part)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "Get Mould Mod Data");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_Get_Mould_Mod_Data Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Part != nullptr)
+		*Part = Parms.Part;
+}
+
+
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.GetMaskMouldOrData
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+
+class USBZInventoryBaseData* UWBP_UI_Inventory_MaskSlotButton_C::GetMaskMouldOrData()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "GetMaskMouldOrData");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_GetMaskMouldOrData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.InitializeSuitVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::InitializeSuitVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "InitializeSuitVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::OnFocused(bool bIsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "OnFocused");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_OnFocused Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_MaskSlotButton_C::OnHover(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "OnHover");
+
+	Params::WBP_UI_Inventory_MaskSlotButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -47,26 +203,6 @@ void UWBP_UI_Inventory_MaskSlotButton_C::OnInitialized()
 		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.SetActiveMaskSlot
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsActiveMaskSlot                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::SetActiveMaskSlot(bool bIsActiveMaskSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "SetActiveMaskSlot");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_SetActiveMaskSlot Parms{};
-
-	Parms.bIsActiveMaskSlot = bIsActiveMaskSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -84,50 +220,10 @@ void UWBP_UI_Inventory_MaskSlotButton_C::OnMaskSlotInitialized()
 }
 
 
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_MaskSlotButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -158,46 +254,6 @@ void UWBP_UI_Inventory_MaskSlotButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::OnHover(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "OnHover");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_OnHover Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::OnFocused(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "OnFocused");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_OnFocused Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.Set Mask Name Colour
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -218,79 +274,23 @@ void UWBP_UI_Inventory_MaskSlotButton_C::Set_Mask_Name_Colour(const struct FLine
 }
 
 
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.InitializeSuitVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::InitializeSuitVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "InitializeSuitVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.CanCustomize
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.SetActiveMaskSlot
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   CanCustomize_0                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActiveMaskSlot                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_MaskSlotButton_C::CanCustomize(bool* CanCustomize_0)
+void UWBP_UI_Inventory_MaskSlotButton_C::SetActiveMaskSlot(bool bIsActiveMaskSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "CanCustomize");
+		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "SetActiveMaskSlot");
 
-	Params::WBP_UI_Inventory_MaskSlotButton_C_CanCustomize Parms{};
+	Params::WBP_UI_Inventory_MaskSlotButton_C_SetActiveMaskSlot Parms{};
+
+	Parms.bIsActiveMaskSlot = bIsActiveMaskSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (CanCustomize_0 != nullptr)
-		*CanCustomize_0 = Parms.CanCustomize_0;
-}
-
-
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.Get Mould Mod Data
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class USBZModularPartDataAsset**        Part                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_MaskSlotButton_C::Get_Mould_Mod_Data(class USBZModularPartDataAsset** Part)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "Get Mould Mod Data");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_Get_Mould_Mod_Data Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Part != nullptr)
-		*Part = Parms.Part;
-}
-
-
-// Function WBP_UI_Inventory_MaskSlotButton.WBP_UI_Inventory_MaskSlotButton_C.GetMaskMouldOrData
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class USBZInventoryBaseData* UWBP_UI_Inventory_MaskSlotButton_C::GetMaskMouldOrData()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_MaskSlotButton_C", "GetMaskMouldOrData");
-
-	Params::WBP_UI_Inventory_MaskSlotButton_C_GetMaskMouldOrData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

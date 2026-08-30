@@ -16,30 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ExecuteUbergraph_WBP_QuestLine_Item
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_Item_C::ExecuteUbergraph_WBP_QuestLine_Item(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "ExecuteUbergraph_WBP_QuestLine_Item");
-
-	Params::WBP_QuestLine_Item_C_ExecuteUbergraph_WBP_QuestLine_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestLine_Item_C::ButtonFocusedChanged(bool bInHasFocus)
 {
@@ -56,83 +36,21 @@ void UWBP_QuestLine_Item_C::ButtonFocusedChanged(bool bInHasFocus)
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ExecuteUbergraph_WBP_QuestLine_Item
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::PreConstruct(bool IsDesignTime)
+void UWBP_QuestLine_Item_C::ExecuteUbergraph_WBP_QuestLine_Item(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "ExecuteUbergraph_WBP_QuestLine_Item");
 
-	Params::WBP_QuestLine_Item_C_PreConstruct Parms{};
+	Params::WBP_QuestLine_Item_C_ExecuteUbergraph_WBP_QuestLine_Item Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Initialize
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZUIQuestData&           UIQuestData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_Item_C::Initialize(const struct FSBZUIQuestData& UIQuestData, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "Initialize");
-
-	Params::WBP_QuestLine_Item_C_Initialize Parms{};
-
-	Parms.UIQuestData = std::move(UIQuestData);
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetParentMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_QuestlineMenu_C*             QuestLineMenu_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_Item_C::SetParentMenu(class UWBP_QuestlineMenu_C* QuestLineMenu_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "SetParentMenu");
-
-	Params::WBP_QuestLine_Item_C_SetParentMenu Parms{};
-
-	Parms.QuestLineMenu_0 = QuestLineMenu_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetActiveVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_QuestLine_Item_C::SetActiveVisuals(bool IsActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "SetActiveVisuals");
-
-	Params::WBP_QuestLine_Item_C_SetActiveVisuals Parms{};
-
-	Parms.IsActive = IsActive;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -159,10 +77,32 @@ void UWBP_QuestLine_Item_C::GetCompletedChallengeArray(TArray<struct FSBZUIQuest
 }
 
 
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Initialize
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZUIQuestData&           UIQuestData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::Initialize(const struct FSBZUIQuestData& UIQuestData, int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "Initialize");
+
+	Params::WBP_QuestLine_Item_C_Initialize Parms{};
+
+	Parms.UIQuestData = std::move(UIQuestData);
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.OnFocused
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_QuestLine_Item_C::OnFocused(bool IsFocused)
 {
@@ -179,21 +119,55 @@ void UWBP_QuestLine_Item_C::OnFocused(bool IsFocused)
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetCompletedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    Completed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::SetCompletedVisuals(bool Completed)
+void UWBP_QuestLine_Item_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "SetCompletedVisuals");
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "PreConstruct");
 
-	Params::WBP_QuestLine_Item_C_SetCompletedVisuals Parms{};
+	Params::WBP_QuestLine_Item_C_PreConstruct Parms{};
 
-	Parms.Completed = Completed;
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Reinitialize
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QuestLine_Item_C::Reinitialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "Reinitialize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetActiveVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::SetActiveVisuals(bool IsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "SetActiveVisuals");
+
+	Params::WBP_QuestLine_Item_C_SetActiveVisuals Parms{};
+
+	Parms.IsActive = IsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -213,17 +187,43 @@ void UWBP_QuestLine_Item_C::SetClaimedVisuals()
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Reinitialize
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetCompletedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Completed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::Reinitialize()
+void UWBP_QuestLine_Item_C::SetCompletedVisuals(bool Completed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestLine_Item_C", "Reinitialize");
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "SetCompletedVisuals");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_QuestLine_Item_C_SetCompletedVisuals Parms{};
+
+	Parms.Completed = Completed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetParentMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_QuestlineMenu_C*             QuestLineMenu_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::SetParentMenu(class UWBP_QuestlineMenu_C* QuestLineMenu_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_QuestLine_Item_C", "SetParentMenu");
+
+	Params::WBP_QuestLine_Item_C_SetParentMenu Parms{};
+
+	Parms.QuestLineMenu_0 = QuestLineMenu_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

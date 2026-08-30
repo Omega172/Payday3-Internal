@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.EmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SuitCosmeticPurchasePopUp_C::EmptySet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SuitCosmeticPurchasePopUp_C", "EmptySet");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.ExecuteUbergraph_WBP_UI_SuitCosmeticPurchasePopUp
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,24 +50,10 @@ void UWBP_UI_SuitCosmeticPurchasePopUp_C::ExecuteUbergraph_WBP_UI_SuitCosmeticPu
 }
 
 
-// Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.EmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SuitCosmeticPurchasePopUp_C::EmptySet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SuitCosmeticPurchasePopUp_C", "EmptySet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.SpriteLoaded
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SuitCosmeticPurchasePopUp_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
 {

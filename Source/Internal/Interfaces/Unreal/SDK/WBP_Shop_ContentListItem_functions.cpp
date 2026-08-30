@@ -36,31 +36,11 @@ void UWBP_Shop_ContentListItem_C::ExecuteUbergraph_WBP_Shop_ContentListItem(int3
 }
 
 
-// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnUpdateOwnershipStatus
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_ContentListItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_ContentListItem_C", "OnUpdateOwnershipStatus");
-
-	Params::WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus Parms{};
-
-	Parms.bIsOwned = bIsOwned;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnSetHighlighted
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bHighlight                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsInstant                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHighlight                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInstant                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_ContentListItem_C::OnSetHighlighted(bool bHighlight, bool bIsInstant)
 {
@@ -73,6 +53,26 @@ void UWBP_Shop_ContentListItem_C::OnSetHighlighted(bool bHighlight, bool bIsInst
 
 	Parms.bHighlight = bHighlight;
 	Parms.bIsInstant = bIsInstant;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnUpdateOwnershipStatus
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_ContentListItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_ContentListItem_C", "OnUpdateOwnershipStatus");
+
+	Params::WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus Parms{};
+
+	Parms.bIsOwned = bIsOwned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

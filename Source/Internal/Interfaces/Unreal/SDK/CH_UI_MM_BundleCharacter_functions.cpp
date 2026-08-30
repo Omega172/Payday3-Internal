@@ -16,21 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.ExecuteUbergraph_CH_UI_MM_BundleCharacter
-// (Final, UbergraphFunction)
+// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACH_UI_MM_BundleCharacter_C::ExecuteUbergraph_CH_UI_MM_BundleCharacter(int32 EntryPoint)
+void ACH_UI_MM_BundleCharacter_C::BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "ExecuteUbergraph_CH_UI_MM_BundleCharacter");
+		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
 
-	Params::CH_UI_MM_BundleCharacter_C_ExecuteUbergraph_CH_UI_MM_BundleCharacter Parms{};
+	Params::CH_UI_MM_BundleCharacter_C_BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable_0 = Interactable_0;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,25 +74,21 @@ void ACH_UI_MM_BundleCharacter_C::BP_OnStateChanged(ESBZBundleMannequinState InS
 }
 
 
-// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.ExecuteUbergraph_CH_UI_MM_BundleCharacter
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACH_UI_MM_BundleCharacter_C::BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ACH_UI_MM_BundleCharacter_C::ExecuteUbergraph_CH_UI_MM_BundleCharacter(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "ExecuteUbergraph_CH_UI_MM_BundleCharacter");
 
-	Params::CH_UI_MM_BundleCharacter_C_BndEvt__BP_MainMenuPlayerCharacter_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::CH_UI_MM_BundleCharacter_C_ExecuteUbergraph_CH_UI_MM_BundleCharacter Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -114,15 +114,15 @@ void ACH_UI_MM_BundleCharacter_C::SetLabel(const class FText& Label_0)
 }
 
 
-// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.UpdateSpotlight
+// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.UpdateBannerInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ACH_UI_MM_BundleCharacter_C::UpdateSpotlight()
+void ACH_UI_MM_BundleCharacter_C::UpdateBannerInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "UpdateSpotlight");
+		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "UpdateBannerInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -142,15 +142,15 @@ void ACH_UI_MM_BundleCharacter_C::UpdateNameplate()
 }
 
 
-// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.UpdateBannerInfo
+// Function CH_UI_MM_BundleCharacter.CH_UI_MM_BundleCharacter_C.UpdateSpotlight
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ACH_UI_MM_BundleCharacter_C::UpdateBannerInfo()
+void ACH_UI_MM_BundleCharacter_C::UpdateSpotlight()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "UpdateBannerInfo");
+		Func = Class->GetFunction("CH_UI_MM_BundleCharacter_C", "UpdateSpotlight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

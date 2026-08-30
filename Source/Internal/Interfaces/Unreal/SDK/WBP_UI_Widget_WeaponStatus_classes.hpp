@@ -20,44 +20,44 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C
-// 0x0138 (0x03F8 - 0x02C0)
+// 0x00D8 (0x03F8 - 0x0320)
 class UWBP_UI_Widget_WeaponStatus_C final : public UPD3WeaponStatusWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       OnPickUpAnimation;                                 // 0x02C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           Canvas_Root;                                       // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_AmmoBackground;                              // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Infinite_I;                                        // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 OverkillIcon_I;                                    // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_AmmoBag;                                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_AmmoClip;                                  // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_AmmoBag;                                      // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_AmmoBagBackground;                            // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_AmmoClip;                                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_AmmoClipBackground;                           // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_WeaponSlot;                                   // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateColor                            NormalTextColor;                                   // 0x0328(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FSlateColor                            LowTextColor;                                      // 0x0350(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FSlateColor                            CriticalTextColor;                                 // 0x0378(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	float                                         EquippedOpacity;                                   // 0x03A0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         UnequippedOpacity;                                 // 0x03A4(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            WeaponTypeTextColor_Default;                       // 0x03A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            WeaponTypeTextColor_Overkill;                      // 0x03D0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OnPickUpAnimation;                                 // 0x0328(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Image_AmmoBackground;                              // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Infinite_I;                                        // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 OverkillIcon_I;                                    // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_AmmoBag;                                   // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_AmmoClip;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_AmmoBag;                                      // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_AmmoBagBackground;                            // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_AmmoClip;                                     // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_AmmoClipBackground;                           // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_WeaponSlot;                                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateColor                            NormalTextColor;                                   // 0x0380(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FSlateColor                            LowTextColor;                                      // 0x0394(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FSlateColor                            CriticalTextColor;                                 // 0x03A8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	uint8                                         Pad_3BC[0x4];                                      // 0x03BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        EquippedOpacity;                                   // 0x03C0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        UnequippedOpacity;                                 // 0x03C8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            WeaponTypeTextColor_Default;                       // 0x03D0(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            WeaponTypeTextColor_Overkill;                      // 0x03E4(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_WeaponStatus(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void OnAmmoInventoryStateChanged(EPD3AmmoState NewState);
-	void OnAmmoInventoryChanged(int32 AmmoInventoryChanged);
 	void OnAmmoAdded(int32 AmmoAddedCount, bool bIsFireRangedWeaponScope);
-	void OnInitialized();
+	void OnAmmoInventoryChanged(int32 AmmoInventoryChanged);
+	void OnAmmoInventoryStateChanged(EPD3AmmoState NewState);
+	void OnAmmoLoadedChanged(int32 AmmoLoadedChanged);
 	void OnAmmoLoadedStateChanged(EPD3AmmoState NewState);
 	void OnEquippedChanged(bool bIsEquippedNewValue);
-	void OnAmmoLoadedChanged(int32 AmmoLoadedChanged);
-	void SetEquipped(bool IsEquipped);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
 	void SetAmmoState(EPD3AmmoState Index_0, bool bIsAmmoClip);
 	void SetAmmoText(int32 AmmoValue, bool bIsAmmoClip);
+	void SetEquipped(bool IsEquipped);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,40 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_Replays_C::BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_Replays_C_BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_MainMenu_Replays_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.ExecuteUbergraph_WBP_UI_MainMenu_Replays
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -33,60 +67,6 @@ void UWBP_UI_MainMenu_Replays_C::ExecuteUbergraph_WBP_UI_MainMenu_Replays(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_Replays_C::BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_Replays_C_BndEvt__WBP_UI_MainMenu_Replays_Button_GoBack_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_Replays_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "OnControlsReferenceClicked");
-
-	Params::WBP_UI_MainMenu_Replays_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.OnBackPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_Replays_C::OnBackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "OnBackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -112,17 +92,37 @@ void UWBP_UI_MainMenu_Replays_C::On_Found_Replays(TArray<struct FSBZReplayInfo>&
 }
 
 
-// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.OnBackPressed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_MainMenu_Replays_C::OnLostStackFocused()
+void UWBP_UI_MainMenu_Replays_C::OnBackPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "OnBackPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_Replays_C::OnControlsReferenceClicked(class FName InActionInput)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "OnControlsReferenceClicked");
+
+	Params::WBP_UI_MainMenu_Replays_C_OnControlsReferenceClicked Parms{};
+
+	Parms.InActionInput = InActionInput;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -146,15 +146,15 @@ void UWBP_UI_MainMenu_Replays_C::OnGainedStackFocused(const class FName& Previou
 }
 
 
-// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_MainMenu_Replays.WBP_UI_MainMenu_Replays_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_MainMenu_Replays_C::Construct()
+void UWBP_UI_MainMenu_Replays_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "Construct");
+		Func = Class->GetFunction("WBP_UI_MainMenu_Replays_C", "OnLostStackFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

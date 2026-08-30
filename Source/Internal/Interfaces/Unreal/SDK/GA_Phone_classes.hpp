@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Phone.GA_Phone_C
-// 0x0000 (0x0500 - 0x0500)
+// 0x0000 (0x04F8 - 0x04F8)
 class UGA_Phone_C final : public USBZPhoneToolAbility
 {
 public:

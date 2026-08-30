@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "DLSSBlueprint_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -73,21 +73,21 @@ public:
 DUMPER7_ASSERTS_DLSSLibrary_GetDLSSMode;
 
 // Function DLSSBlueprint.DLSSLibrary.GetDLSSModeInformation
-// 0x0024 (0x0024 - 0x0000)
+// 0x0030 (0x0030 - 0x0000)
 struct DLSSLibrary_GetDLSSModeInformation final
 {
 public:
 	EUDLSSMode                                    DLSSMode;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              ScreenResolution;                                  // 0x0004(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsSupported;                                      // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OptimalScreenPercentage;                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsFixedScreenPercentage;                          // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinScreenPercentage;                               // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxScreenPercentage;                               // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         OptimalSharpness;                                  // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              ScreenResolution;                                  // 0x0008(0x0010)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsSupported;                                      // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OptimalScreenPercentage;                           // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsFixedScreenPercentage;                          // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinScreenPercentage;                               // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxScreenPercentage;                               // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         OptimalSharpness;                                  // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DLSSLibrary_GetDLSSModeInformation;
 
@@ -110,15 +110,6 @@ public:
 	float                                         MaxScreenPercentage;                               // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_DLSSLibrary_GetDLSSScreenPercentageRange;
-
-// Function DLSSBlueprint.DLSSLibrary.GetDLSSSharpness
-// 0x0004 (0x0004 - 0x0000)
-struct DLSSLibrary_GetDLSSSharpness final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_DLSSLibrary_GetDLSSSharpness;
 
 // Function DLSSBlueprint.DLSSLibrary.GetSupportedDLSSModes
 // 0x0010 (0x0010 - 0x0000)
@@ -184,6 +175,15 @@ public:
 };
 DUMPER7_ASSERTS_DLSSLibrary_IsDLSSSupported;
 
+// Function DLSSBlueprint.DLSSLibrary.IsRayTracingAvailable
+// 0x0001 (0x0001 - 0x0000)
+struct DLSSLibrary_IsRayTracingAvailable final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_DLSSLibrary_IsRayTracingAvailable;
+
 // Function DLSSBlueprint.DLSSLibrary.QueryDLSSRRSupport
 // 0x0001 (0x0001 - 0x0000)
 struct DLSSLibrary_QueryDLSSRRSupport final
@@ -203,22 +203,15 @@ public:
 DUMPER7_ASSERTS_DLSSLibrary_QueryDLSSSupport;
 
 // Function DLSSBlueprint.DLSSLibrary.SetDLSSMode
-// 0x0001 (0x0001 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct DLSSLibrary_SetDLSSMode final
 {
 public:
-	EUDLSSMode                                    DLSSMode;                                          // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EUDLSSMode                                    DLSSMode;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_DLSSLibrary_SetDLSSMode;
-
-// Function DLSSBlueprint.DLSSLibrary.SetDLSSSharpness
-// 0x0004 (0x0004 - 0x0000)
-struct DLSSLibrary_SetDLSSSharpness final
-{
-public:
-	float                                         Sharpness;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_DLSSLibrary_SetDLSSSharpness;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

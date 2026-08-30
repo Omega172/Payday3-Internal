@@ -53,7 +53,7 @@ void UWBP_UI_CharacterPreferenceDisplay_C::OnInitialized()
 // Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_CharacterPreferenceDisplay_C::PreConstruct(bool IsDesignTime)
 {

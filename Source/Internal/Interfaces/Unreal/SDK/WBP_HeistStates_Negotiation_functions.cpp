@@ -36,28 +36,6 @@ void UWBP_HeistStates_Negotiation_C::ExecuteUbergraph_WBP_HeistStates_Negotiatio
 }
 
 
-// Function WBP_HeistStates_Negotiation.WBP_HeistStates_Negotiation_C.UpdateHostageCount
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// uint8                                   Tradecount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZNegotiationTradeType                InNegotationTradeType                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_HeistStates_Negotiation_C::UpdateHostageCount(uint8 Tradecount, ESBZNegotiationTradeType InNegotationTradeType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Negotiation_C", "UpdateHostageCount");
-
-	Params::WBP_HeistStates_Negotiation_C_UpdateHostageCount Parms{};
-
-	Parms.Tradecount = Tradecount;
-	Parms.InNegotationTradeType = InNegotationTradeType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_HeistStates_Negotiation.WBP_HeistStates_Negotiation_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -83,6 +61,28 @@ void UWBP_HeistStates_Negotiation_C::Show()
 		Func = Class->GetFunction("WBP_HeistStates_Negotiation_C", "Show");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HeistStates_Negotiation.WBP_HeistStates_Negotiation_C.UpdateHostageCount
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// uint8                                   Tradecount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZNegotiationTradeType                InNegotationTradeType                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HeistStates_Negotiation_C::UpdateHostageCount(uint8 Tradecount, ESBZNegotiationTradeType InNegotationTradeType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_Negotiation_C", "UpdateHostageCount");
+
+	Params::WBP_HeistStates_Negotiation_C_UpdateHostageCount Parms{};
+
+	Parms.Tradecount = Tradecount;
+	Parms.InNegotationTradeType = InNegotationTradeType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

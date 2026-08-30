@@ -16,16 +16,18 @@
 SDK_NAMESPACE_START
 
 // Class TLMVoiceChat.TLMVoiceChatSubsystem
-// 0x0230 (0x0268 - 0x0038)
+// 0x0268 (0x02A0 - 0x0038)
 class UTLMVoiceChatSubsystem final : public UGameInstanceSubsystem
 {
 public:
-	uint8                                         Pad_38[0xA8];                                      // 0x0038(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& ChannelName, const class FString& PlayerName, bool bIsTalking)> OnVoiceChatPlayerTalkingUpdatedDelegate; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& EOSProdID, bool bIsMuted)> OnPlayerMuteUpdated; // 0x00F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& EOSProdID, bool bIsBlocked)> OnPlayerBlockUpdated; // 0x0100(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(const class FString& EOSId, bool bJoined)> OnVoiceSessionParticipantsChange_EOSId; // 0x0110(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_120[0x148];                                    // 0x0120(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38[0xC0];                                      // 0x0038(0x00C0)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(const class FString& ChannelName, const class FString& PlayerName, bool bIsTalking)> OnVoiceChatPlayerTalkingUpdatedDelegate; // 0x00F8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EOSProdID, bool bIsMuted)> OnPlayerMuteUpdated; // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EOSProdID, bool bIsBlocked)> OnPlayerBlockUpdated; // 0x0118(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EOSId, bool bJoined)> DEPREACTED_OnVoiceSessionParticipantsChange_EOSId; // 0x0128(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EOSId)> OnVoiceSessionParticipantJoined_EOSId; // 0x0138(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(const class FString& EOSId, int32 LeftReason)> OnVoiceSessionParticipantLeft_EOSId; // 0x0148(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_158[0x148];                                    // 0x0158(0x0148)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool GetAudioInputMute();

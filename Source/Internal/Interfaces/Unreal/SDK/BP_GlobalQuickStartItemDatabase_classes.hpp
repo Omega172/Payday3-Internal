@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_GlobalQuickStartItemDatabase.BP_GlobalQuickStartItemDatabase_C
-// 0x0000 (0x0930 - 0x0930)
+// 0x0000 (0x0960 - 0x0960)
 class UBP_GlobalQuickStartItemDatabase_C final : public USBZGlobalItemDatabase
 {
 public:

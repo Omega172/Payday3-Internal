@@ -291,6 +291,31 @@ EXeLLMode UXeLLBlueprintLibrary::GetXeLLMode()
 }
 
 
+// Function XeLLBlueprint.XeLLBlueprintLibrary.IsXeLLAvailable
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UXeLLBlueprintLibrary::IsXeLLAvailable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("XeLLBlueprintLibrary", "IsXeLLAvailable");
+
+	Params::XeLLBlueprintLibrary_IsXeLLAvailable Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function XeLLBlueprint.XeLLBlueprintLibrary.IsXeLLSupported
 // (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:

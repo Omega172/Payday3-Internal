@@ -36,20 +36,6 @@ void UWBP_HeistStates_PointOfNoReturn_C::ExecuteUbergraph_WBP_HeistStates_PointO
 }
 
 
-// Function WBP_HeistStates_PointOfNoReturn.WBP_HeistStates_PointOfNoReturn_C.HideDescriptiveText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HeistStates_PointOfNoReturn_C::HideDescriptiveText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_PointOfNoReturn_C", "HideDescriptiveText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HeistStates_PointOfNoReturn.WBP_HeistStates_PointOfNoReturn_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
@@ -64,15 +50,15 @@ void UWBP_HeistStates_PointOfNoReturn_C::Hide()
 }
 
 
-// Function WBP_HeistStates_PointOfNoReturn.WBP_HeistStates_PointOfNoReturn_C.Show
+// Function WBP_HeistStates_PointOfNoReturn.WBP_HeistStates_PointOfNoReturn_C.HideDescriptiveText
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_HeistStates_PointOfNoReturn_C::Show()
+void UWBP_HeistStates_PointOfNoReturn_C::HideDescriptiveText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_PointOfNoReturn_C", "Show");
+		Func = Class->GetFunction("WBP_HeistStates_PointOfNoReturn_C", "HideDescriptiveText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,6 +73,20 @@ void UWBP_HeistStates_PointOfNoReturn_C::Init()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_HeistStates_PointOfNoReturn_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HeistStates_PointOfNoReturn.WBP_HeistStates_PointOfNoReturn_C.Show
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HeistStates_PointOfNoReturn_C::Show()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HeistStates_PointOfNoReturn_C", "Show");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

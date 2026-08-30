@@ -10,17 +10,166 @@
 
 #include "Basic.hpp"
 
+#include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "SBZBackend_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature final
+{
+public:
+	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_1_OnTextButtonSubmittedText__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_1_OnTextButtonSubmittedText__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_1_OnTextButtonSubmittedText__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature;
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.ExecuteUbergraph_WBP_UI_LoginScreen
-// 0x0298 (0x0298 - 0x0000)
+// 0x0258 (0x0258 - 0x0000)
 struct WBP_UI_LoginScreen_C_ExecuteUbergraph_WBP_UI_LoginScreen final
 {
 public:
@@ -30,248 +179,99 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_5;                              // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_6;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_1;                              // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_7;                              // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_8;                              // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_9;                              // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_10;                             // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_3;                              // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_11;                             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EUMGSequencePlayMode                          Temp_byte_Variable_12;                             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_PreviousValue;                        // 0x003C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0048(0x0018)()
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_12;              // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_11;              // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_10;              // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_9;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_CustomEvent_Button;                         // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_TextButton_C*                   K2Node_DynamicCast_AsWBP_UI_Text_Button;           // 0x0098(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetText_OutText;                          // 0x00B0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_TextText_ReturnValue;          // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_ComponentBoundEvent_bNewState;              // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_ComponentBoundEvent_Text_1;                 // 0x00E0(0x0018)()
-	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x00F8(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetCurrentText_ReturnValue;               // 0x0130(0x0018)()
-	class FText                                   CallFunc_GetCurrentText_ReturnValue_1;             // 0x0148(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x0160(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_4;          // 0x0170(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FSBZLoginFieldInfo                     K2Node_MakeStruct_SBZLoginFieldInfo;               // 0x0180(0x0020)()
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x01A0(0x0018)()
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_8;               // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_4;           // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0048(0x0010)()
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_12;              // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_11;              // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_10;              // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_9;               // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_CustomEvent_Button;                         // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0080(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8C[0x4];                                       // 0x008C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_TextButton_C*                   K2Node_DynamicCast_AsWBP_UI_Text_Button;           // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetText_OutText;                          // 0x00A8(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_TextText_ReturnValue;          // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bNewState;              // 0x00C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA[0x6];                                       // 0x00CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_ComponentBoundEvent_Text_1;                 // 0x00D0(0x0010)()
+	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x00E0(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x0100(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetCurrentText_ReturnValue;               // 0x0110(0x0010)()
+	class FText                                   CallFunc_GetCurrentText_ReturnValue_1;             // 0x0120(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_4;          // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FSBZLoginFieldInfo                     K2Node_MakeStruct_SBZLoginFieldInfo;               // 0x0150(0x0020)()
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0170(0x0010)()
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_8;               // 0x0180(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_4;           // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_7;               // 0x0190(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_6;               // 0x0198(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetText_ReturnValue_1;                    // 0x01A0(0x0010)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_2;               // 0x01B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlatform                                  CallFunc_GetPlatform_ReturnValue;                  // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C1[0x7];                                      // 0x01C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_7;               // 0x01C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_6;               // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetText_ReturnValue_1;                    // 0x01D8(0x0018)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x01F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_2;               // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlatform                                  CallFunc_GetPlatform_ReturnValue;                  // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_3;               // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_211[0x7];                                      // 0x0211(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0218(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x0220(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_3;           // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_229[0x7];                                      // 0x0229(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0230(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x0238(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_239[0x7];                                      // 0x0239(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x0248(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_2;           // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EUMGSequencePlayMode                          K2Node_Select_Default_2;                           // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_252[0x6];                                      // 0x0252(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x0258(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x0260(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0268(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0278(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0280(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EUMGSequencePlayMode                          K2Node_Select_Default_3;                           // 0x0281(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          K2Node_Select_Default_4;                           // 0x0282(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_283[0x5];                                      // 0x0283(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_2;     // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_3;     // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_3;               // 0x01C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x01E0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_3;           // 0x01E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E9[0x7];                                      // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x01F0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x0208(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_2;           // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          K2Node_Select_Default_2;                           // 0x0211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_212[0x6];                                      // 0x0212(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x0218(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x0220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0228(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x0230(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0238(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          K2Node_Select_Default_3;                           // 0x0241(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          K2Node_Select_Default_4;                           // 0x0242(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_243[0x5];                                      // 0x0243(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_2;     // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_3;     // 0x0250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_ExecuteUbergraph_WBP_UI_LoginScreen;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_1_OnTextButtonSubmittedText__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_1_OnTextButtonSubmittedText__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_1_OnTextButtonSubmittedText__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature final
-{
-public:
-	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature;
 
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.HandleSelectRegionEvent
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_LoginScreen_C_HandleSelectRegionEvent final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_HandleSelectRegionEvent;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.OnGainedStackFocused
 // 0x000C (0x000C - 0x0000)
@@ -288,9 +288,9 @@ struct WBP_UI_LoginScreen_C_Set_Login_Panels_Visibility final
 {
 public:
 	ESlateVisibility                              In_Visibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_LoginScreen_C_Set_Login_Panels_Visibility;
 

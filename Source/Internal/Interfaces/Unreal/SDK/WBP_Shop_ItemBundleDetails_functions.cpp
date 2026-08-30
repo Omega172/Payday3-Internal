@@ -39,7 +39,7 @@ void UWBP_Shop_ItemBundleDetails_C::ExecuteUbergraph_WBP_Shop_ItemBundleDetails(
 // Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.OnUpdateOwnershipStatus
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bOwned                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bOwned                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_ItemBundleDetails_C::OnUpdateOwnershipStatus(bool bOwned)
 {

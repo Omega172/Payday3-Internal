@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Action_Surrender.BP_Action_Surrender_C
-// 0x0000 (0x00D8 - 0x00D8)
+// 0x0000 (0x00E0 - 0x00E0)
 class UBP_Action_Surrender_C final : public USBZAIAction_Surrender
 {
 public:

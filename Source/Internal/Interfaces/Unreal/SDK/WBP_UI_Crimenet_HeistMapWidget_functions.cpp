@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Crimenet_HeistMapWidget_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Crimenet_HeistMapWidget_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -50,46 +70,6 @@ void UWBP_UI_Crimenet_HeistMapWidget_C::OnHeistDataInitialized()
 }
 
 
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Crimenet_HeistMapWidget_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Crimenet_HeistMapWidget_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetSelected
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsSelected                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Crimenet_HeistMapWidget_C::SetSelected(bool bInIsSelected)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Crimenet_HeistMapWidget_C", "SetSelected");
-
-	Params::WBP_UI_Crimenet_HeistMapWidget_C_SetSelected Parms{};
-
-	Parms.bInIsSelected = bInIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -107,7 +87,7 @@ void UWBP_UI_Crimenet_HeistMapWidget_C::OnInitialized()
 // Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetActive
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Crimenet_HeistMapWidget_C::SetActive(bool bIsActive)
 {
@@ -119,6 +99,26 @@ void UWBP_UI_Crimenet_HeistMapWidget_C::SetActive(bool bIsActive)
 	Params::WBP_UI_Crimenet_HeistMapWidget_C_SetActive Parms{};
 
 	Parms.bIsActive = bIsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetSelected
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsSelected                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Crimenet_HeistMapWidget_C::SetSelected(bool bInIsSelected)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Crimenet_HeistMapWidget_C", "SetSelected");
+
+	Params::WBP_UI_Crimenet_HeistMapWidget_C_SetSelected Parms{};
+
+	Parms.bInIsSelected = bInIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

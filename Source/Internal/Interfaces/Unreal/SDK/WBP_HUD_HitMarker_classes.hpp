@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_HUD_HitMarker.WBP_HUD_HitMarker_C
-// 0x0000 (0x0350 - 0x0350)
+// 0x0000 (0x03C0 - 0x03C0)
 class UWBP_HUD_HitMarker_C final : public USBZHUDHitMarkerWidget
 {
 public:

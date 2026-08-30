@@ -18,32 +18,32 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C
-// 0x0030 (0x0318 - 0x02E8)
+// 0x0030 (0x0378 - 0x0348)
 class UWBP_UI_Player_Customization_Mask_C final : public USBZMainMenuMaskCustomization
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_UI_TextButton_C*                   ApplyButton;                                       // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mask_Customization_Slot_Button_C*  GlobalColorButton;                                 // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mask_Customization_Slot_Button_C*  PatternButton;                                     // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox;                                       // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Mask_Customization_Slot_Button_C*  VFXButton;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_UI_TextButton_C*                   ApplyButton;                                       // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mask_Customization_Slot_Button_C*  GlobalColorButton;                                 // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mask_Customization_Slot_Button_C*  PatternButton;                                     // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox;                                       // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Mask_Customization_Slot_Button_C*  VFXButton;                                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Player_Customization_Mask(int32 EntryPoint);
 	void BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnRemovedFromStack();
-	void BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void ShowMaskOnly();
-	void RevertBodyAndEquipped();
-	void NonPatternButtonPressed(class USBZMenuButton* Button);
-	class UWidget* ExitVerticalListNavigation(EUINavigation Navigation_0);
+	void ExecuteUbergraph_WBP_UI_Player_Customization_Mask(int32 EntryPoint);
 	class UWidget* ExitApplyButtonNavigation(EUINavigation Navigation_0);
+	class UWidget* ExitVerticalListNavigation(EUINavigation Navigation_0);
+	void NonPatternButtonPressed(class USBZMenuButton* Button);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
+	void OnRemovedFromStack();
+	void RevertBodyAndEquipped();
+	void ShowMaskOnly();
 
 public:
 	static class UClass* StaticClass()

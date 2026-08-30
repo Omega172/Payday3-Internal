@@ -36,15 +36,15 @@ void UWBP_HeistStates_Alarm_C::ExecuteUbergraph_WBP_HeistStates_Alarm(int32 Entr
 }
 
 
-// Function WBP_HeistStates_Alarm.WBP_HeistStates_Alarm_C.Show
+// Function WBP_HeistStates_Alarm.WBP_HeistStates_Alarm_C.Hide
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_HeistStates_Alarm_C::Show()
+void UWBP_HeistStates_Alarm_C::Hide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Alarm_C", "Show");
+		Func = Class->GetFunction("WBP_HeistStates_Alarm_C", "Hide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,15 +64,15 @@ void UWBP_HeistStates_Alarm_C::HideDescriptiveText()
 }
 
 
-// Function WBP_HeistStates_Alarm.WBP_HeistStates_Alarm_C.Hide
+// Function WBP_HeistStates_Alarm.WBP_HeistStates_Alarm_C.Show
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_HeistStates_Alarm_C::Hide()
+void UWBP_HeistStates_Alarm_C::Show()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HeistStates_Alarm_C", "Hide");
+		Func = Class->GetFunction("WBP_HeistStates_Alarm_C", "Show");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

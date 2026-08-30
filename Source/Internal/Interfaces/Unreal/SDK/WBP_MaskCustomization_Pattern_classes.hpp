@@ -17,35 +17,35 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C
-// 0x0040 (0x03B0 - 0x0370)
+// 0x0040 (0x0408 - 0x03C8)
 class UWBP_MaskCustomization_Pattern_C final : public USBZMaskCustomizationPattern
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UHorizontalBox*                         SprayCanHorizontalBox;                             // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           SprayCanSlotSelectorPanel;                         // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemDescription_C*    WBP_UI_Inventory_ItemDescription;                  // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_ActionInput_Hold_C*      Widget_TabBackward_Hold;                           // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_ActionInput_Hold_C*      Widget_TabForward_Hold;                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_CosmeticButtonSprayCanSlots_C*  FocusedSprayCanButton;                             // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UHorizontalBox*                         SprayCanHorizontalBox;                             // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           SprayCanSlotSelectorPanel;                         // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    WBP_Local_Navbar;                                  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ItemDescription_C*    WBP_UI_Inventory_ItemDescription;                  // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_ActionInput_Hold_C*      Widget_TabBackward_Hold;                           // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_ActionInput_Hold_C*      Widget_TabForward_Hold;                            // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_CosmeticButtonSprayCanSlots_C*  FocusedSprayCanButton;                             // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_MaskCustomization_Pattern(int32 EntryPoint);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
+	void BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
 	void Construct();
-	void PreConstruct(bool IsDesignTime);
-	void ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin);
-	void OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button);
-	void SetPreviewMaskParts();
+	void ExecuteUbergraph_WBP_MaskCustomization_Pattern(int32 EntryPoint);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
 	void OnSprayCanIndexBackwards();
 	void OnSprayCanIndexForwards();
+	void OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button);
+	void OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void PreConstruct(bool IsDesignTime);
+	void SetPreviewMaskParts();
+	void ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin);
 
 public:
 	static class UClass* StaticClass()

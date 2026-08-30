@@ -16,15 +16,15 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_InstantLoot_Money_04.BP_InstantLoot_Money_04_C
-// 0x0008 (0x02F8 - 0x02F0)
+// 0x0008 (0x0378 - 0x0370)
 class ABP_InstantLoot_Money_04_C final : public ABP_InstantLoot_MoneyBase_C
 {
 public:
-	bool                                          Enable_Offset;                                     // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Enable_Offset;                                     // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UserConstructionScript();
 	void Random_Offset(bool EnableOffset);
+	void UserConstructionScript();
 
 public:
 	static class UClass* StaticClass()

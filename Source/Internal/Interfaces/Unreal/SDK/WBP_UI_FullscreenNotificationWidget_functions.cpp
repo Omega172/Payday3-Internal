@@ -59,7 +59,7 @@ void UWBP_UI_FullscreenNotificationWidget_C::OnDisplayedNewActiveNotification(co
 // Function WBP_UI_FullscreenNotificationWidget.WBP_UI_FullscreenNotificationWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_FullscreenNotificationWidget_C::PreConstruct(bool IsDesignTime)
 {

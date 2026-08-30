@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageCycleCounter_C::BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PageCycleCounter_C", "BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_PageCycleCounter_C_BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.ExecuteUbergraph_WBP_PageCycleCounter
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,23 +56,17 @@ void UWBP_PageCycleCounter_C::ExecuteUbergraph_WBP_PageCycleCounter(int32 EntryP
 }
 
 
-// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.SetActive
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PageCycleCounter_C::BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_PageCycleCounter_C::SetActive()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycleCounter_C", "BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_PageCycleCounter_C", "SetActive");
 
-	Params::WBP_PageCycleCounter_C_BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -65,20 +79,6 @@ void UWBP_PageCycleCounter_C::SetInactive()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_PageCycleCounter_C", "SetInactive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.SetActive
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PageCycleCounter_C::SetActive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PageCycleCounter_C", "SetActive");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

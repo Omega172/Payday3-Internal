@@ -18,11 +18,11 @@
 SDK_NAMESPACE_START
 
 // Class SBZLighting.SBZIrradianceOccluder
-// 0x0008 (0x02B0 - 0x02A8)
+// 0x0008 (0x0330 - 0x0328)
 class ASBZIrradianceOccluder final : public AActor
 {
 public:
-	class USBZIrradianceOccluderComponent*        IrradianceOccluderComponent;                       // 0x02A8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZIrradianceOccluderComponent*        IrradianceOccluderComponent;                       // 0x0328(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -41,7 +41,7 @@ public:
 DUMPER7_ASSERTS_ASBZIrradianceOccluder;
 
 // Class SBZLighting.SBZIrradianceOccluderComponent
-// 0x0000 (0x0230 - 0x0230)
+// 0x0000 (0x0250 - 0x0250)
 class USBZIrradianceOccluderComponent final : public USceneComponent
 {
 public:
@@ -61,14 +61,14 @@ public:
 DUMPER7_ASSERTS_USBZIrradianceOccluderComponent;
 
 // Class SBZLighting.SBZLightVisibilityArea
-// 0x0028 (0x02D0 - 0x02A8)
+// 0x0028 (0x0350 - 0x0328)
 class ASBZLightVisibilityArea final : public AActor
 {
 public:
-	TArray<class ALight*>                         Lights;                                            // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class ASBZLightVisibilityShape*>       Shapes;                                            // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	ESBZLightVisibilityAreaAction                 Action;                                            // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C9[0x7];                                      // 0x02C9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class ALight*>                         Lights;                                            // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class ASBZLightVisibilityShape*>       Shapes;                                            // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	ESBZLightVisibilityAreaAction                 Action;                                            // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_349[0x7];                                      // 0x0349(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -87,11 +87,11 @@ public:
 DUMPER7_ASSERTS_ASBZLightVisibilityArea;
 
 // Class SBZLighting.SBZLightVisibilityAreaManager
-// 0x0010 (0x02B8 - 0x02A8)
+// 0x0010 (0x0338 - 0x0328)
 class ASBZLightVisibilityAreaManager final : public AActor
 {
 public:
-	uint8                                         Pad_2A8[0x10];                                     // 0x02A8(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_328[0x10];                                     // 0x0328(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -110,7 +110,7 @@ public:
 DUMPER7_ASSERTS_ASBZLightVisibilityAreaManager;
 
 // Class SBZLighting.SBZLightVisibilityShape
-// 0x0000 (0x02A8 - 0x02A8)
+// 0x0000 (0x0328 - 0x0328)
 class ASBZLightVisibilityShape : public AActor
 {
 public:
@@ -130,11 +130,11 @@ public:
 DUMPER7_ASSERTS_ASBZLightVisibilityShape;
 
 // Class SBZLighting.SBZLightVisibilityBoxShape
-// 0x0008 (0x02B0 - 0x02A8)
+// 0x0008 (0x0330 - 0x0328)
 class ASBZLightVisibilityBoxShape final : public ASBZLightVisibilityShape
 {
 public:
-	class UBoxComponent*                          BoxComponent;                                      // 0x02A8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UBoxComponent*                          BoxComponent;                                      // 0x0328(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
@@ -153,14 +153,14 @@ public:
 DUMPER7_ASSERTS_ASBZLightVisibilityBoxShape;
 
 // Class SBZLighting.SBZSparseIrradianceHintVolume
-// 0x0008 (0x0308 - 0x0300)
+// 0x0008 (0x03A0 - 0x0398)
 class ASBZSparseIrradianceHintVolume final : public AVolume
 {
 public:
-	ESBZSparseIrradianceHintVolumeAction          Action;                                            // 0x0300(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FLightingChannels                      LightingChannels;                                  // 0x0301(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_302[0x2];                                      // 0x0302(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         RepulsionDistance;                                 // 0x0304(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESBZSparseIrradianceHintVolumeAction          Action;                                            // 0x0398(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLightingChannels                      LightingChannels;                                  // 0x0399(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39A[0x2];                                      // 0x039A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         RepulsionDistance;                                 // 0x039C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()

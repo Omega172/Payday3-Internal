@@ -16,6 +16,166 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::WBP_UI_Social_PlayerCard_C_BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature Parms{};
+
+	Parms.bIsOpen = bIsOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonDisabledChanged");
+
+	Params::WBP_UI_Social_PlayerCard_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::ButtonFocusChanging(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonFocusChanging");
+
+	Params::WBP_UI_Social_PlayerCard_C_ButtonFocusChanging Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Social_PlayerCard_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Social_PlayerCard_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Social_PlayerCard_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Social_PlayerCard_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Social_PlayerCard_C::DisabledButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "DisabledButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.DisplayUserStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZUserStatus                          UserStatus                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   LevelIdx                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZUserActivity&          UserActivity                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_Social_PlayerCard_C::DisplayUserStatus(ESBZUserStatus UserStatus, int32 LevelIdx, const struct FSBZUserActivity& UserActivity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "DisplayUserStatus");
+
+	Params::WBP_UI_Social_PlayerCard_C_DisplayUserStatus Parms{};
+
+	Parms.UserStatus = UserStatus;
+	Parms.LevelIdx = LevelIdx;
+	Parms.UserActivity = std::move(UserActivity);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ExecuteUbergraph_WBP_UI_Social_PlayerCard
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,37 +196,113 @@ void UWBP_UI_Social_PlayerCard_C::ExecuteUbergraph_WBP_UI_Social_PlayerCard(int3
 }
 
 
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonFocusChanging
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.FindPlayerForVOIP
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   PlayerFound                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZLobbyCharacterInfoUi*        CharacterInfo                                          (Parm, OutParm)
 
-void UWBP_UI_Social_PlayerCard_C::ButtonFocusChanging(bool bInHasFocus)
+void UWBP_UI_Social_PlayerCard_C::FindPlayerForVOIP(bool* PlayerFound, struct FSBZLobbyCharacterInfoUi* CharacterInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonFocusChanging");
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "FindPlayerForVOIP");
 
-	Params::WBP_UI_Social_PlayerCard_C_ButtonFocusChanging Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
+	Params::WBP_UI_Social_PlayerCard_C_FindPlayerForVOIP Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (PlayerFound != nullptr)
+		*PlayerFound = Parms.PlayerFound;
+
+	if (CharacterInfo != nullptr)
+		*CharacterInfo = std::move(Parms.CharacterInfo);
 }
 
 
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.GetUserId
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FString*                          UserId                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_UI_Social_PlayerCard_C::DisabledButtonSelected()
+void UWBP_UI_Social_PlayerCard_C::GetUserId(class FString* UserId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "DisabledButtonSelected");
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "GetUserId");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Social_PlayerCard_C_GetUserId Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (UserId != nullptr)
+		*UserId = std::move(Parms.UserId);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.IsContextMenuDisplayed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Social_ContextMenu_C**    ContextMenu                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::IsContextMenuDisplayed(class UWBP_UI_Social_ContextMenu_C** ContextMenu)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "IsContextMenuDisplayed");
+
+	Params::WBP_UI_Social_PlayerCard_C_IsContextMenuDisplayed Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ContextMenu != nullptr)
+		*ContextMenu = Parms.ContextMenu;
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.IsSamePlayer
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWBP_UI_Social_PlayerCard_C*      InPlayerCard                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_UI_Social_PlayerCard_C::IsSamePlayer(class UWBP_UI_Social_PlayerCard_C* InPlayerCard)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "IsSamePlayer");
+
+	Params::WBP_UI_Social_PlayerCard_C_IsSamePlayer Parms{};
+
+	Parms.InPlayerCard = InPlayerCard;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.OnContextMenuSpawned
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUserWidget*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UUserWidget* UWBP_UI_Social_PlayerCard_C::OnContextMenuSpawned()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OnContextMenuSpawned");
+
+	Params::WBP_UI_Social_PlayerCard_C_OnContextMenuSpawned Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -81,108 +317,6 @@ void UWBP_UI_Social_PlayerCard_C::OnInitialized()
 		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Social_PlayerCard_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Social_PlayerCard_C::BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature");
-
-	Params::WBP_UI_Social_PlayerCard_C_BndEvt__WBP_UI_Social_PlayerCard_MenuAnchor_112_K2Node_ComponentBoundEvent_1_OnMenuOpenChangedEvent__DelegateSignature Parms{};
-
-	Parms.bIsOpen = bIsOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Social_PlayerCard_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Social_PlayerCard_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonDisabledChanged");
-
-	Params::WBP_UI_Social_PlayerCard_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Social_PlayerCard_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Social_PlayerCard_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Social_PlayerCard_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -206,10 +340,44 @@ void UWBP_UI_Social_PlayerCard_C::OnPlayerDataSet(const struct FSBZUser& InUserE
 }
 
 
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.OnReferenceSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::OnReferenceSelected(class FName ActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OnReferenceSelected");
+
+	Params::WBP_UI_Social_PlayerCard_C_OnReferenceSelected Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.OpenContactsTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Social_PlayerCard_C::OpenContactsTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OpenContactsTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.PlayerCardHover
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InFocus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InFocus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Social_PlayerCard_C::PlayerCardHover(bool InFocus)
 {
@@ -246,45 +414,89 @@ void UWBP_UI_Social_PlayerCard_C::PopulatePlayerData(const struct FSBZFriendList
 }
 
 
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.DisplayUserStatus
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.PopulatePlayerNames
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZUserStatus                          UserStatus                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   LevelIdx                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZUserActivity&          UserActivity                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      PlatformName                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      NebulaName                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UPaperSprite*                     PlatformIcon                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Social_PlayerCard_C::DisplayUserStatus(ESBZUserStatus UserStatus, int32 LevelIdx, const struct FSBZUserActivity& UserActivity)
+void UWBP_UI_Social_PlayerCard_C::PopulatePlayerNames(const class FText& PlatformName, const class FText& NebulaName, class UPaperSprite* PlatformIcon)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "DisplayUserStatus");
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "PopulatePlayerNames");
 
-	Params::WBP_UI_Social_PlayerCard_C_DisplayUserStatus Parms{};
+	Params::WBP_UI_Social_PlayerCard_C_PopulatePlayerNames Parms{};
 
-	Parms.UserStatus = UserStatus;
-	Parms.LevelIdx = LevelIdx;
-	Parms.UserActivity = std::move(UserActivity);
+	Parms.PlatformName = std::move(PlatformName);
+	Parms.NebulaName = std::move(NebulaName);
+	Parms.PlatformIcon = PlatformIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetPlatformName
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.RemoveContextMenu
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InPlatformName                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    RemoveHighlight                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Social_PlayerCard_C::SetPlatformName(const class FText& InPlatformName)
+void UWBP_UI_Social_PlayerCard_C::RemoveContextMenu(bool RemoveHighlight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "SetPlatformName");
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "RemoveContextMenu");
 
-	Params::WBP_UI_Social_PlayerCard_C_SetPlatformName Parms{};
+	Params::WBP_UI_Social_PlayerCard_C_RemoveContextMenu Parms{};
 
-	Parms.InPlatformName = std::move(InPlatformName);
+	Parms.RemoveHighlight = RemoveHighlight;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetBlockedIconVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsBlocked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsPlatformBlocked                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::SetBlockedIconVisibility(bool bIsBlocked, bool bIsPlatformBlocked)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "SetBlockedIconVisibility");
+
+	Params::WBP_UI_Social_PlayerCard_C_SetBlockedIconVisibility Parms{};
+
+	Parms.bIsBlocked = bIsBlocked;
+	Parms.bIsPlatformBlocked = bIsPlatformBlocked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetHostIconVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsPartyLeader                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PartySessionMembers                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Social_PlayerCard_C::SetHostIconVisibility(bool IsPartyLeader, int32 PartySessionMembers)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "SetHostIconVisibility");
+
+	Params::WBP_UI_Social_PlayerCard_C_SetHostIconVisibility Parms{};
+
+	Parms.IsPartyLeader = IsPartyLeader;
+	Parms.PartySessionMembers = PartySessionMembers;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -313,7 +525,7 @@ void UWBP_UI_Social_PlayerCard_C::SetLevel(const class FText& InLevel)
 // Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetPlatformIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     InPlatformIcon                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InPlatformIcon                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Social_PlayerCard_C::SetPlatformIcon(class UPaperSprite* InPlatformIcon)
 {
@@ -330,13 +542,33 @@ void UWBP_UI_Social_PlayerCard_C::SetPlatformIcon(class UPaperSprite* InPlatform
 }
 
 
+// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetPlatformName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InPlatformName                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_Social_PlayerCard_C::SetPlatformName(const class FText& InPlatformName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "SetPlatformName");
+
+	Params::WBP_UI_Social_PlayerCard_C_SetPlatformName Parms{};
+
+	Parms.InPlatformName = std::move(InPlatformName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetStatus
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   LevelIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZUserActivity&          UserActivity                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    IsLocalPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    IsPlatformNameEmpty                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsLocalPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsPlatformNameEmpty                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Social_PlayerCard_C::SetStatus(int32 LevelIndex, const struct FSBZUserActivity& UserActivity, bool IsLocalPlayer, bool IsPlatformNameEmpty)
 {
@@ -356,214 +588,6 @@ void UWBP_UI_Social_PlayerCard_C::SetStatus(int32 LevelIndex, const struct FSBZU
 }
 
 
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetBlockedIconVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsBlocked                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bIsPlatformBlocked                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Social_PlayerCard_C::SetBlockedIconVisibility(bool bIsBlocked, bool bIsPlatformBlocked)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "SetBlockedIconVisibility");
-
-	Params::WBP_UI_Social_PlayerCard_C_SetBlockedIconVisibility Parms{};
-
-	Parms.bIsBlocked = bIsBlocked;
-	Parms.bIsPlatformBlocked = bIsPlatformBlocked;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetHostIconVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsPartyLeader                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   PartySessionMembers                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Social_PlayerCard_C::SetHostIconVisibility(bool IsPartyLeader, int32 PartySessionMembers)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "SetHostIconVisibility");
-
-	Params::WBP_UI_Social_PlayerCard_C_SetHostIconVisibility Parms{};
-
-	Parms.IsPartyLeader = IsPartyLeader;
-	Parms.PartySessionMembers = PartySessionMembers;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.OnReferenceSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Social_PlayerCard_C::OnReferenceSelected(class FName ActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OnReferenceSelected");
-
-	Params::WBP_UI_Social_PlayerCard_C_OnReferenceSelected Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.OnContextMenuSpawned
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UUserWidget*                      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UUserWidget* UWBP_UI_Social_PlayerCard_C::OnContextMenuSpawned()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OnContextMenuSpawned");
-
-	Params::WBP_UI_Social_PlayerCard_C_OnContextMenuSpawned Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.RemoveContextMenu
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    RemoveHighlight                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Social_PlayerCard_C::RemoveContextMenu(bool RemoveHighlight)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "RemoveContextMenu");
-
-	Params::WBP_UI_Social_PlayerCard_C_RemoveContextMenu Parms{};
-
-	Parms.RemoveHighlight = RemoveHighlight;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.IsContextMenuDisplayed
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Social_ContextMenu_C**    ContextMenu                                            (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Social_PlayerCard_C::IsContextMenuDisplayed(class UWBP_UI_Social_ContextMenu_C** ContextMenu)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "IsContextMenuDisplayed");
-
-	Params::WBP_UI_Social_PlayerCard_C_IsContextMenuDisplayed Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ContextMenu != nullptr)
-		*ContextMenu = Parms.ContextMenu;
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.GetUserId
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FString*                          UserId                                                 (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_UI_Social_PlayerCard_C::GetUserId(class FString* UserId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "GetUserId");
-
-	Params::WBP_UI_Social_PlayerCard_C_GetUserId Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (UserId != nullptr)
-		*UserId = std::move(Parms.UserId);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.IsSamePlayer
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWBP_UI_Social_PlayerCard_C*      InPlayerCard                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UWBP_UI_Social_PlayerCard_C::IsSamePlayer(class UWBP_UI_Social_PlayerCard_C* InPlayerCard)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "IsSamePlayer");
-
-	Params::WBP_UI_Social_PlayerCard_C_IsSamePlayer Parms{};
-
-	Parms.InPlayerCard = InPlayerCard;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.OpenContactsTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Social_PlayerCard_C::OpenContactsTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "OpenContactsTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.FindPlayerForVOIP
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   PlayerFound                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSBZLobbyCharacterInfoUi*        CharacterInfo                                          (Parm, OutParm)
-
-void UWBP_UI_Social_PlayerCard_C::FindPlayerForVOIP(bool* PlayerFound, struct FSBZLobbyCharacterInfoUi* CharacterInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "FindPlayerForVOIP");
-
-	Params::WBP_UI_Social_PlayerCard_C_FindPlayerForVOIP Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PlayerFound != nullptr)
-		*PlayerFound = Parms.PlayerFound;
-
-	if (CharacterInfo != nullptr)
-		*CharacterInfo = std::move(Parms.CharacterInfo);
-}
-
-
 // Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.SetupVOIPIndicator
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -578,34 +602,10 @@ void UWBP_UI_Social_PlayerCard_C::SetupVOIPIndicator()
 }
 
 
-// Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.PopulatePlayerNames
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      PlatformName                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      NebulaName                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// class UPaperSprite*                     PlatformIcon                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Social_PlayerCard_C::PopulatePlayerNames(const class FText& PlatformName, const class FText& NebulaName, class UPaperSprite* PlatformIcon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Social_PlayerCard_C", "PopulatePlayerNames");
-
-	Params::WBP_UI_Social_PlayerCard_C_PopulatePlayerNames Parms{};
-
-	Parms.PlatformName = std::move(PlatformName);
-	Parms.NebulaName = std::move(NebulaName);
-	Parms.PlatformIcon = PlatformIcon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Social_PlayerCard.WBP_UI_Social_PlayerCard_C.UpdateLobbyOwnerVisiblity
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InIsHost                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InIsHost                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Social_PlayerCard_C::UpdateLobbyOwnerVisiblity(bool InIsHost)
 {

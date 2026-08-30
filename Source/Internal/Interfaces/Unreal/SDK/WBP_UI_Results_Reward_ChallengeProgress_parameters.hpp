@@ -18,75 +18,75 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_Results_Reward_ChallengeProgress_C_ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0008(0x0028)()
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress;
-
-// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Results_Reward_ChallengeProgress_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_PreConstruct;
-
-// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.SetData
-// 0x01C0 (0x01C0 - 0x0000)
-struct WBP_UI_Results_Reward_ChallengeProgress_C_SetData final
-{
-public:
-	struct FSBZChallengeData                      InChallengeData;                                   // 0x0000(0x00A8)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          IsHackUntilAccelbyteFix;                           // 0x00A8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x00D0(0x0018)()
-	class FText                                   CallFunc_GetChallengeNameText_ReturnValue;         // 0x00E8(0x0018)()
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_10D[0x3];                                      // 0x010D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default;                             // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0118(0x0040)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0158(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0198(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A8(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_SetData;
-
 // Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.AnimationRewardProgression
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_Results_Reward_ChallengeProgress_C_AnimationRewardProgression final
 {
 public:
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_AnimationRewardProgression;
+
+// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Results_Reward_ChallengeProgress_C_ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_ExecuteUbergraph_WBP_UI_Results_Reward_ChallengeProgress;
 
 // Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.PlayAppearAnim
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_Results_Reward_ChallengeProgress_C_PlayAppearAnim final
 {
 public:
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_PlayAppearAnim;
+
+// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Results_Reward_ChallengeProgress_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_PreConstruct;
+
+// Function WBP_UI_Results_Reward_ChallengeProgress.WBP_UI_Results_Reward_ChallengeProgress_C.SetData
+// 0x01C8 (0x01C8 - 0x0000)
+struct WBP_UI_Results_Reward_ChallengeProgress_C_SetData final
+{
+public:
+	struct FSBZChallengeData                      InChallengeData;                                   // 0x0000(0x00A8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          IsHackUntilAccelbyteFix;                           // 0x00A8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Tooltip_C*                         CallFunc_Create_ReturnValue;                       // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZChallengeManager*                   CallFunc_GetChallengeManager_ReturnValue;          // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetChallengeDescriptionTextFormated_ReturnValue; // 0x00D0(0x0010)()
+	class FText                                   CallFunc_GetChallengeNameText_ReturnValue;         // 0x00E0(0x0010)()
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x00F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_101[0x3];                                      // 0x0101(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default;                             // 0x0104(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0118(0x0048)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0160(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x01A8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01B8(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Results_Reward_ChallengeProgress_C_SetData;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

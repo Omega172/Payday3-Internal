@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_ArmorCustomization_C::BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorCustomization
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,11 +50,25 @@ void UWBP_MainMenu_Loadout_ArmorCustomization_C::ExecuteUbergraph_WBP_MainMenu_L
 }
 
 
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnBackPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnBackPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnCategoryButtonFocused
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnCategoryButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
 {
@@ -55,62 +83,6 @@ void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnCategoryButtonFocused(class U
 	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ArmorCustomization_C::BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnTutorialHidden
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnTutorialHidden()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnTutorialHidden");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnBackPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnBackPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -134,20 +106,6 @@ void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnControlsReferenceClicked(clas
 }
 
 
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnGainedStackFocused
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -165,6 +123,48 @@ void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnGainedStackFocused(const clas
 	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnRemovedFromStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnRemovedFromStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnTutorialHidden
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_ArmorCustomization_C::OnTutorialHidden()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_ArmorCustomization_C", "OnTutorialHidden");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

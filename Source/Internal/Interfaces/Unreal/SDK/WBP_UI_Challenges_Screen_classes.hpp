@@ -19,52 +19,52 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C
-// 0x0078 (0x03B8 - 0x0340)
+// 0x0078 (0x0418 - 0x03A0)
 class UWBP_UI_Challenges_Screen_C final : public USBZMainMenuChallengesWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0340(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Tab_Change;                                        // 0x0348(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Page_motion;                                       // 0x0350(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    FilterNavBar;                                      // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 NavigationalArrowLeft_I;                           // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 NavigationalArrowRight_I;                          // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuButton_C*                      NavLeft_B;                                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuButton_C*                      NavRight_B;                                        // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Menu_ActionInputButton_C*       TutorialPopup_Button;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Local_Navbar_C*                    TypeNavBar;                                        // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PageCycler_C*                      WBP_PageCycler;                                    // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          Force_Single_Filter_Status_or_None;                // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           PageTimerHandle;                                   // 0x03A0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TArray<class USBZChallengeCategoryData*>      Category_Data;                                     // 0x03A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Tab_Change;                                        // 0x03A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Page_motion;                                       // 0x03B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    FilterNavBar;                                      // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 NavigationalArrowLeft_I;                           // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 NavigationalArrowRight_I;                          // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuButton_C*                      NavLeft_B;                                         // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuButton_C*                      NavRight_B;                                        // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Menu_ActionInputButton_C*       TutorialPopup_Button;                              // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Local_Navbar_C*                    TypeNavBar;                                        // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PageCycler_C*                      WBP_PageCycler;                                    // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          Force_Single_Filter_Status_or_None;                // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           PageTimerHandle;                                   // 0x0400(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	TArray<class USBZChallengeCategoryData*>      Category_Data;                                     // 0x0408(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Challenges_Screen(int32 EntryPoint);
-	void OnInitialized();
-	void BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnTabBackwardPressed();
-	void OnTabForwardPressed();
-	void ParentStackLostFocus();
-	void ParentStackGainFocus();
-	void OnPagesChanged();
-	void BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature(int32 InNavigateIndex);
-	void BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature();
-	void BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature();
-	void BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void Delegate_PreviousPage();
-	void OnTabBackwardReleased();
+	void BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature();
+	void BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature();
+	void BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature(int32 InNavigateIndex);
 	void Delegate_NextPage();
-	void OnTabForwardReleased();
+	void Delegate_PreviousPage();
+	void ExecuteUbergraph_WBP_UI_Challenges_Screen(int32 EntryPoint);
 	void GetCurrentStatusFilter(EChallengeStatusEnum* NewParam);
-	void UpdatePageCycler();
-	void SetCategories();
-	class UWidget* NavRight(EUINavigation Navigation_0);
 	class UWidget* NavLeft(EUINavigation Navigation_0);
+	class UWidget* NavRight(EUINavigation Navigation_0);
+	void OnInitialized();
+	void OnPagesChanged();
+	void OnTabBackwardPressed();
+	void OnTabBackwardReleased();
+	void OnTabForwardPressed();
+	void OnTabForwardReleased();
+	void ParentStackGainFocus();
+	void ParentStackLostFocus();
+	void SetCategories();
+	void UpdatePageCycler();
 
 public:
 	static class UClass* StaticClass()

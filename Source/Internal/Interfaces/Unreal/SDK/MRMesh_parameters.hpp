@@ -16,39 +16,12 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function MRMesh.MeshReconstructorBase.ConnectMRMesh
-// 0x0008 (0x0008 - 0x0000)
-struct MeshReconstructorBase_ConnectMRMesh final
-{
-public:
-	class UMRMeshComponent*                       Mesh;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MeshReconstructorBase_ConnectMRMesh;
-
-// Function MRMesh.MeshReconstructorBase.IsReconstructionPaused
-// 0x0001 (0x0001 - 0x0000)
-struct MeshReconstructorBase_IsReconstructionPaused final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MeshReconstructorBase_IsReconstructionPaused;
-
-// Function MRMesh.MeshReconstructorBase.IsReconstructionStarted
-// 0x0001 (0x0001 - 0x0000)
-struct MeshReconstructorBase_IsReconstructionStarted final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_MeshReconstructorBase_IsReconstructionStarted;
-
 // Function MRMesh.MockDataMeshTrackerComponent.ConnectMRMesh
 // 0x0008 (0x0008 - 0x0000)
 struct MockDataMeshTrackerComponent_ConnectMRMesh final
 {
 public:
-	class UMRMeshComponent*                       InMRMeshPtr;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMRMeshComponent*                       InMRMeshPtr;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MockDataMeshTrackerComponent_ConnectMRMesh;
 
@@ -57,7 +30,7 @@ DUMPER7_ASSERTS_MockDataMeshTrackerComponent_ConnectMRMesh;
 struct MockDataMeshTrackerComponent_DisconnectMRMesh final
 {
 public:
-	class UMRMeshComponent*                       InMRMeshPtr;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMRMeshComponent*                       InMRMeshPtr;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MockDataMeshTrackerComponent_DisconnectMRMesh;
 
@@ -93,7 +66,7 @@ DUMPER7_ASSERTS_MRMeshComponent_SetWireframeColor;
 struct MRMeshComponent_SetWireframeMaterial final
 {
 public:
-	class UMaterialInterface*                     InMaterial;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMaterialInterface*                     InMaterial;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MRMeshComponent_SetWireframeMaterial;
 
@@ -132,6 +105,33 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MRMeshComponent_IsConnected;
+
+// Function MRMesh.MeshReconstructorBase.ConnectMRMesh
+// 0x0008 (0x0008 - 0x0000)
+struct MeshReconstructorBase_ConnectMRMesh final
+{
+public:
+	class UMRMeshComponent*                       Mesh;                                              // 0x0000(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshReconstructorBase_ConnectMRMesh;
+
+// Function MRMesh.MeshReconstructorBase.IsReconstructionPaused
+// 0x0001 (0x0001 - 0x0000)
+struct MeshReconstructorBase_IsReconstructionPaused final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshReconstructorBase_IsReconstructionPaused;
+
+// Function MRMesh.MeshReconstructorBase.IsReconstructionStarted
+// 0x0001 (0x0001 - 0x0000)
+struct MeshReconstructorBase_IsReconstructionStarted final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_MeshReconstructorBase_IsReconstructionStarted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

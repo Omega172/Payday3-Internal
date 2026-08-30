@@ -53,7 +53,7 @@ void UWBP_UI_SharedHUD_C::OnInitialized()
 // Function WBP_UI_SharedHUD.WBP_UI_SharedHUD_C.SetFullHUD
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFullHUD                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFullHUD                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SharedHUD_C::SetFullHUD(bool bIsFullHUD)
 {
@@ -73,7 +73,7 @@ void UWBP_UI_SharedHUD_C::SetFullHUD(bool bIsFullHUD)
 // Function WBP_UI_SharedHUD.WBP_UI_SharedHUD_C.SetHUDOverlayActive
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SharedHUD_C::SetHUDOverlayActive(bool bIsActive)
 {

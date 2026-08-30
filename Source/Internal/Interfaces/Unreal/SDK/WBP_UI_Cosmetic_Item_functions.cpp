@@ -16,148 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ExecuteUbergraph_WBP_UI_Cosmetic_Item
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::ExecuteUbergraph_WBP_UI_Cosmetic_Item(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ExecuteUbergraph_WBP_UI_Cosmetic_Item");
-
-	Params::WBP_UI_Cosmetic_Item_C_ExecuteUbergraph_WBP_UI_Cosmetic_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_Item_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonAlternativeSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonAlternativeSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonAlternativeSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonHoveredChanged");
-
-	Params::WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Cosmetic_Item_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "PreConstruct");
-
-	Params::WBP_UI_Cosmetic_Item_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnLoaded_DF5A03CE4F55139645004384AEF3E7B8
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::OnLoaded_DF5A03CE4F55139645004384AEF3E7B8(class UObject* Loaded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "OnLoaded_DF5A03CE4F55139645004384AEF3E7B8");
-
-	Params::WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.AddAssetCount
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -178,21 +36,163 @@ void UWBP_UI_Cosmetic_Item_C::AddAssetCount(int32 Count)
 }
 
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.UpdateAssetCount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDesignTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonAlternativeSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Cosmetic_Item_C::UpdateAssetCount(bool bIsDesignTime)
+void UWBP_UI_Cosmetic_Item_C::ButtonAlternativeSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "UpdateAssetCount");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonAlternativeSelected");
 
-	Params::WBP_UI_Cosmetic_Item_C_UpdateAssetCount Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsDesignTime = bIsDesignTime;
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_Item_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ExecuteUbergraph_WBP_UI_Cosmetic_Item
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::ExecuteUbergraph_WBP_UI_Cosmetic_Item(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "ExecuteUbergraph_WBP_UI_Cosmetic_Item");
+
+	Params::WBP_UI_Cosmetic_Item_C_ExecuteUbergraph_WBP_UI_Cosmetic_Item Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InFocus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::OnFocusChanged(bool InFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "OnFocusChanged");
+
+	Params::WBP_UI_Cosmetic_Item_C_OnFocusChanged Parms{};
+
+	Parms.InFocus = InFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_Item_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnLoaded_DF5A03CE4F55139645004384AEF3E7B8
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::OnLoaded_DF5A03CE4F55139645004384AEF3E7B8(class UObject* Loaded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "OnLoaded_DF5A03CE4F55139645004384AEF3E7B8");
+
+	Params::WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "PreConstruct");
+
+	Params::WBP_UI_Cosmetic_Item_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -201,7 +201,7 @@ void UWBP_UI_Cosmetic_Item_C::UpdateAssetCount(bool bIsDesignTime)
 // Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.SetCurrent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsCurrent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsCurrent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Cosmetic_Item_C::SetCurrent(bool IsCurrent)
 {
@@ -218,21 +218,21 @@ void UWBP_UI_Cosmetic_Item_C::SetCurrent(bool IsCurrent)
 }
 
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.UpdateAssetCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InFocus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsDesignTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_Item_C::OnFocusChanged(bool InFocus)
+void UWBP_UI_Cosmetic_Item_C::UpdateAssetCount(bool bIsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "OnFocusChanged");
+		Func = Class->GetFunction("WBP_UI_Cosmetic_Item_C", "UpdateAssetCount");
 
-	Params::WBP_UI_Cosmetic_Item_C_OnFocusChanged Parms{};
+	Params::WBP_UI_Cosmetic_Item_C_UpdateAssetCount Parms{};
 
-	Parms.InFocus = InFocus;
+	Parms.bIsDesignTime = bIsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

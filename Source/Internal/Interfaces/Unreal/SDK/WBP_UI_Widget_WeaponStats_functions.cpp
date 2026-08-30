@@ -50,15 +50,29 @@ void UWBP_UI_Widget_WeaponStats_C::OnUpdateVisuals()
 }
 
 
+// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.SetAmmoStat
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_WeaponStats_C::SetAmmoStat()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "SetAmmoStat");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.SetWeaponStat
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_WeaponStats_C::SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, float BaseStat, float CompareStat)
+void UWBP_UI_Widget_WeaponStats_C::SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat)
 {
 	static class UFunction* Func = nullptr;
 
@@ -73,20 +87,6 @@ void UWBP_UI_Widget_WeaponStats_C::SetWeaponStat(class UProgressBar* ProgressBar
 	Parms.CompareStat = CompareStat;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_WeaponStats.WBP_UI_Widget_WeaponStats_C.SetAmmoStat
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_WeaponStats_C::SetAmmoStat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStats_C", "SetAmmoStat");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

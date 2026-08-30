@@ -282,31 +282,6 @@ void UDLSSLibrary::GetDLSSScreenPercentageRange(float* MinScreenPercentage, floa
 }
 
 
-// Function DLSSBlueprint.DLSSLibrary.GetDLSSSharpness
-// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-float UDLSSLibrary::GetDLSSSharpness()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("DLSSLibrary", "GetDLSSSharpness");
-
-	Params::DLSSLibrary_GetDLSSSharpness Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function DLSSBlueprint.DLSSLibrary.GetSupportedDLSSModes
 // (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -485,6 +460,31 @@ bool UDLSSLibrary::IsDLSSSupported()
 }
 
 
+// Function DLSSBlueprint.DLSSLibrary.IsRayTracingAvailable
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UDLSSLibrary::IsRayTracingAvailable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("DLSSLibrary", "IsRayTracingAvailable");
+
+	Params::DLSSLibrary_IsRayTracingAvailable Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function DLSSBlueprint.DLSSLibrary.QueryDLSSRRSupport
 // (Final, RequiredAPI, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -538,9 +538,10 @@ EUDLSSSupport UDLSSLibrary::QueryDLSSSupport()
 // Function DLSSBlueprint.DLSSLibrary.SetDLSSMode
 // (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
 // Parameters:
+// class UObject*                          WorldContextObject                                     (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // EUDLSSMode                              DLSSMode                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UDLSSLibrary::SetDLSSMode(EUDLSSMode DLSSMode)
+void UDLSSLibrary::SetDLSSMode(class UObject* WorldContextObject, EUDLSSMode DLSSMode)
 {
 	static class UFunction* Func = nullptr;
 
@@ -549,32 +550,8 @@ void UDLSSLibrary::SetDLSSMode(EUDLSSMode DLSSMode)
 
 	Params::DLSSLibrary_SetDLSSMode Parms{};
 
+	Parms.WorldContextObject = WorldContextObject;
 	Parms.DLSSMode = DLSSMode;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function DLSSBlueprint.DLSSLibrary.SetDLSSSharpness
-// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// float                                   Sharpness                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UDLSSLibrary::SetDLSSSharpness(float Sharpness)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("DLSSLibrary", "SetDLSSSharpness");
-
-	Params::DLSSLibrary_SetDLSSSharpness Parms{};
-
-	Parms.Sharpness = Sharpness;
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

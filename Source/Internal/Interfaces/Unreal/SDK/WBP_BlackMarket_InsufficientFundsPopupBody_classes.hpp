@@ -17,12 +17,12 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_BlackMarket_InsufficientFundsPopupBody.WBP_BlackMarket_InsufficientFundsPopupBody_C
-// 0x0010 (0x03F8 - 0x03E8)
+// 0x0010 (0x0458 - 0x0448)
 class UWBP_BlackMarket_InsufficientFundsPopupBody_C final : public USBZBlackMarketConfirmationPopupBody
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWBP_Widget_CurrencyWidget_C*           PriceWidget;                                       // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0448(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWBP_Widget_CurrencyWidget_C*           PriceWidget;                                       // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_BlackMarket_InsufficientFundsPopupBody(int32 EntryPoint);

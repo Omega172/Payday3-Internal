@@ -36,10 +36,112 @@ void UWBP_UI_Widget_SubObjective_C::ExecuteUbergraph_WBP_UI_Widget_SubObjective(
 }
 
 
+// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveActivated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZObjective*                    Param_ObjectiveActivated_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SubObjective_C::ObjectiveActivated(class ASBZObjective* Param_ObjectiveActivated_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveActivated");
+
+	Params::WBP_UI_Widget_SubObjective_C_ObjectiveActivated Parms{};
+
+	Parms.Param_ObjectiveActivated_0 = Param_ObjectiveActivated_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveCompleted
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZObjective*                    Param_ObjectiveCompleted_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SubObjective_C::ObjectiveCompleted(class ASBZObjective* Param_ObjectiveCompleted_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveCompleted");
+
+	Params::WBP_UI_Widget_SubObjective_C_ObjectiveCompleted Parms{};
+
+	Parms.Param_ObjectiveCompleted_0 = Param_ObjectiveCompleted_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveDisabled
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZObjective*                    Param_ObjectiveDisabled_0                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SubObjective_C::ObjectiveDisabled(class ASBZObjective* Param_ObjectiveDisabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveDisabled");
+
+	Params::WBP_UI_Widget_SubObjective_C_ObjectiveDisabled Parms{};
+
+	Parms.Param_ObjectiveDisabled_0 = Param_ObjectiveDisabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveFailed
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZObjective*                    Param_ObjectiveFailed_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SubObjective_C::ObjectiveFailed(class ASBZObjective* Param_ObjectiveFailed_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveFailed");
+
+	Params::WBP_UI_Widget_SubObjective_C_ObjectiveFailed Parms{};
+
+	Parms.Param_ObjectiveFailed_0 = Param_ObjectiveFailed_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.OnObjectiveInitialized
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZObjective*                    ObjectiveInit                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSubObjective                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SubObjective_C::OnObjectiveInitialized(class ASBZObjective* ObjectiveInit, bool bIsSubObjective)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "OnObjectiveInitialized");
+
+	Params::WBP_UI_Widget_SubObjective_C_OnObjectiveInitialized Parms{};
+
+	Parms.ObjectiveInit = ObjectiveInit;
+	Parms.bIsSubObjective = bIsSubObjective;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_SubObjective_C::PreConstruct(bool IsDesignTime)
 {
@@ -81,108 +183,6 @@ void UWBP_UI_Widget_SubObjective_C::WidgetAnimationEvt_FailedAnimation_K2Node_Wi
 		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "WidgetAnimationEvt_FailedAnimation_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveDisabled
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZObjective*                    Param_ObjectiveDisabled_0                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SubObjective_C::ObjectiveDisabled(class ASBZObjective* Param_ObjectiveDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveDisabled");
-
-	Params::WBP_UI_Widget_SubObjective_C_ObjectiveDisabled Parms{};
-
-	Parms.Param_ObjectiveDisabled_0 = Param_ObjectiveDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveFailed
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZObjective*                    Param_ObjectiveFailed_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SubObjective_C::ObjectiveFailed(class ASBZObjective* Param_ObjectiveFailed_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveFailed");
-
-	Params::WBP_UI_Widget_SubObjective_C_ObjectiveFailed Parms{};
-
-	Parms.Param_ObjectiveFailed_0 = Param_ObjectiveFailed_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveCompleted
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZObjective*                    Param_ObjectiveCompleted_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SubObjective_C::ObjectiveCompleted(class ASBZObjective* Param_ObjectiveCompleted_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveCompleted");
-
-	Params::WBP_UI_Widget_SubObjective_C_ObjectiveCompleted Parms{};
-
-	Parms.Param_ObjectiveCompleted_0 = Param_ObjectiveCompleted_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.ObjectiveActivated
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZObjective*                    Param_ObjectiveActivated_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SubObjective_C::ObjectiveActivated(class ASBZObjective* Param_ObjectiveActivated_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "ObjectiveActivated");
-
-	Params::WBP_UI_Widget_SubObjective_C_ObjectiveActivated Parms{};
-
-	Parms.Param_ObjectiveActivated_0 = Param_ObjectiveActivated_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SubObjective.WBP_UI_Widget_SubObjective_C.OnObjectiveInitialized
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class ASBZObjective*                    ObjectiveInit                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSubObjective                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_SubObjective_C::OnObjectiveInitialized(class ASBZObjective* ObjectiveInit, bool bIsSubObjective)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_SubObjective_C", "OnObjectiveInitialized");
-
-	Params::WBP_UI_Widget_SubObjective_C_OnObjectiveInitialized Parms{};
-
-	Parms.ObjectiveInit = ObjectiveInit;
-	Parms.bIsSubObjective = bIsSubObjective;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

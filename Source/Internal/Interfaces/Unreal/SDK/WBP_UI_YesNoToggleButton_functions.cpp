@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_YesNoToggleButton.WBP_UI_YesNoToggleButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_YesNoToggleButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_YesNoToggleButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_YesNoToggleButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_YesNoToggleButton.WBP_UI_YesNoToggleButton_C.ExecuteUbergraph_WBP_UI_YesNoToggleButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,30 +56,10 @@ void UWBP_UI_YesNoToggleButton_C::ExecuteUbergraph_WBP_UI_YesNoToggleButton(int3
 }
 
 
-// Function WBP_UI_YesNoToggleButton.WBP_UI_YesNoToggleButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_YesNoToggleButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_YesNoToggleButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_YesNoToggleButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_YesNoToggleButton.WBP_UI_YesNoToggleButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_YesNoToggleButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -79,7 +79,7 @@ void UWBP_UI_YesNoToggleButton_C::PreConstruct(bool IsDesignTime)
 // Function WBP_UI_YesNoToggleButton.WBP_UI_YesNoToggleButton_C.SetState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_YesNoToggleButton_C::SetState(bool NewState)
 {

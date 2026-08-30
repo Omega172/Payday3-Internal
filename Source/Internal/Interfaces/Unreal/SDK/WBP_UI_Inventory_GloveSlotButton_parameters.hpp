@@ -10,13 +10,31 @@
 
 #include "Basic.hpp"
 
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_GloveSlotButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_ButtonFocusedChanged;
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.CanCustomize
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_GloveSlotButton_C_CanCustomize final
+{
+public:
+	bool                                          bCanCustomize;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_CanCustomize;
 
 // Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton
 // 0x0018 (0x0018 - 0x0000)
@@ -24,101 +42,83 @@ struct WBP_UI_Inventory_GloveSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_Glov
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bIsActiveGloveSlot;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsActiveGloveSlot;                   // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton;
 
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetActiveGloveSlot
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_GloveSlotButton_C_SetActiveGloveSlot final
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.InitializeGloveVisuals
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_Inventory_GloveSlotButton_C_InitializeGloveVisuals final
 {
 public:
-	bool                                          bIsActiveGloveSlot;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	const class USBZGloveData*                    CallFunc_GetGloveInSlot_ReturnValue;               // 0x0000(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZGloveData*                    CallFunc_GetGloveInSlot_ReturnValue_1;             // 0x0010(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0020(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_SetActiveGloveSlot;
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_GloveSlotButton_C_ButtonFocusedChanged final
-{
-public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_ButtonFocusedChanged;
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_GloveSlotButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_InitializeGloveVisuals;
 
 // Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnFocused
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_UI_Inventory_GloveSlotButton_C_OnFocused final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_OnFocused;
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetGloveNameColor
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_UI_Inventory_GloveSlotButton_C_SetGloveNameColor final
-{
-public:
-	struct FLinearColor                           DesiredColor;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_SetGloveNameColor;
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.CanCustomize
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_GloveSlotButton_C_CanCustomize final
-{
-public:
-	bool                                          bCanCustomize;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_CanCustomize;
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.InitializeGloveVisuals
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_Inventory_GloveSlotButton_C_InitializeGloveVisuals final
-{
-public:
-	const class USBZGloveData*                    CallFunc_GetGloveInSlot_ReturnValue;               // 0x0000(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZGloveData*                    CallFunc_GetGloveInSlot_ReturnValue_1;             // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0020(0x0018)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_InitializeGloveVisuals;
 
 // Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnHover
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_UI_Inventory_GloveSlotButton_C_OnHover final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_OnHover;
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_GloveSlotButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_PreConstruct;
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetActiveGloveSlot
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_GloveSlotButton_C_SetActiveGloveSlot final
+{
+public:
+	bool                                          bIsActiveGloveSlot;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_SetActiveGloveSlot;
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetGloveNameColor
+// 0x0024 (0x0024 - 0x0000)
+struct WBP_UI_Inventory_GloveSlotButton_C_SetGloveNameColor final
+{
+public:
+	struct FLinearColor                           DesiredColor;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_GloveSlotButton_C_SetGloveNameColor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

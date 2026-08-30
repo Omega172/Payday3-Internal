@@ -36,6 +36,89 @@ void UWBP_Settings_Screen_Category_C::ExecuteUbergraph_WBP_Settings_Screen_Categ
 }
 
 
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Handle Settings Button Focus Changed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonFocused                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_Screen_Category_C::Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Handle Settings Button Focus Changed");
+
+	Params::WBP_Settings_Screen_Category_C_Handle_Settings_Button_Focus_Changed Parms{};
+
+	Parms.Button = Button;
+	Parms.IsButtonFocused = IsButtonFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Handle Settings Button Value Changed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSettingsButton*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_Screen_Category_C::Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Handle Settings Button Value Changed");
+
+	Params::WBP_Settings_Screen_Category_C_Handle_Settings_Button_Value_Changed Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Is Reticle Helper Panel Visible
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   Visible                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_Screen_Category_C::Is_Reticle_Helper_Panel_Visible(bool* Visible)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Is Reticle Helper Panel Visible");
+
+	Params::WBP_Settings_Screen_Category_C_Is_Reticle_Helper_Panel_Visible Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Visible != nullptr)
+		*Visible = Parms.Visible;
+}
+
+
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.On Focused Input Actions
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_Screen_Category_C::On_Focused_Input_Actions(bool IsFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "On Focused Input Actions");
+
+	Params::WBP_Settings_Screen_Category_C_On_Focused_Input_Actions Parms{};
+
+	Parms.IsFocused = IsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnAcceptPressed
 // (BlueprintCallable, BlueprintEvent)
 
@@ -45,104 +128,6 @@ void UWBP_Settings_Screen_Category_C::OnAcceptPressed()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnAcceptPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnTertiaryPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_Screen_Category_C::OnTertiaryPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnTertiaryPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnSecondaryPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_Screen_Category_C::OnSecondaryPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnSecondaryPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnPopUpClosed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_Screen_Category_C::OnPopUpClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnPopUpClosed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnSettingsButtonChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZSettingsButton*               SettingsButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Settings_Screen_Category_C::OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnSettingsButtonChanged");
-
-	Params::WBP_Settings_Screen_Category_C_OnSettingsButtonChanged Parms{};
-
-	Parms.SettingsButton = SettingsButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnSettingsButtonFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_Screen_Category_C::OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnSettingsButtonFocused");
-
-	Params::WBP_Settings_Screen_Category_C_OnSettingsButtonFocused Parms{};
-
-	Parms.MenuButton = MenuButton;
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Settings_Screen_Category_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -188,6 +173,20 @@ void UWBP_Settings_Screen_Category_C::OnGainedStackFocused(const class FName& Pr
 }
 
 
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Settings_Screen_Category_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
@@ -202,57 +201,85 @@ void UWBP_Settings_Screen_Category_C::OnLostStackFocused()
 }
 
 
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Handle Settings Button Focus Changed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonFocused                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnPopUpClosed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_Screen_Category_C::Handle_Settings_Button_Focus_Changed(class USBZMenuButton* Button, bool IsButtonFocused)
+void UWBP_Settings_Screen_Category_C::OnPopUpClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Handle Settings Button Focus Changed");
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnPopUpClosed");
 
-	Params::WBP_Settings_Screen_Category_C_Handle_Settings_Button_Focus_Changed Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Button = Button;
-	Parms.IsButtonFocused = IsButtonFocused;
+
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnSecondaryPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_Screen_Category_C::OnSecondaryPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnSecondaryPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnSettingsButtonChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZSettingsButton*               SettingsButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_Screen_Category_C::OnSettingsButtonChanged(class USBZSettingsButton* SettingsButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnSettingsButtonChanged");
+
+	Params::WBP_Settings_Screen_Category_C_OnSettingsButtonChanged Parms{};
+
+	Parms.SettingsButton = SettingsButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Handle Settings Button Value Changed
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnSettingsButtonFocused
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZSettingsButton*               Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   MenuButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_Screen_Category_C::Handle_Settings_Button_Value_Changed(class USBZSettingsButton* Button)
+void UWBP_Settings_Screen_Category_C::OnSettingsButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Handle Settings Button Value Changed");
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnSettingsButtonFocused");
 
-	Params::WBP_Settings_Screen_Category_C_Handle_Settings_Button_Value_Changed Parms{};
+	Params::WBP_Settings_Screen_Category_C_OnSettingsButtonFocused Parms{};
 
-	Parms.Button = Button;
+	Parms.MenuButton = MenuButton;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Update Menu Control Reference
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.OnTertiaryPressed
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_Screen_Category_C::Update_Menu_Control_Reference()
+void UWBP_Settings_Screen_Category_C::OnTertiaryPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Update Menu Control Reference");
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "OnTertiaryPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,8 +288,8 @@ void UWBP_Settings_Screen_Category_C::Update_Menu_Control_Reference()
 // Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Update Helper Panels Visibility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonFocused                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonFocused                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_Screen_Category_C::Update_Helper_Panels_Visibility(class USBZMenuButton* Button, bool IsButtonFocused)
 {
@@ -280,44 +307,17 @@ void UWBP_Settings_Screen_Category_C::Update_Helper_Panels_Visibility(class USBZ
 }
 
 
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.On Focused Input Actions
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Update Menu Control Reference
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_Screen_Category_C::On_Focused_Input_Actions(bool IsFocused)
+void UWBP_Settings_Screen_Category_C::Update_Menu_Control_Reference()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "On Focused Input Actions");
+		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Update Menu Control Reference");
 
-	Params::WBP_Settings_Screen_Category_C_On_Focused_Input_Actions Parms{};
-
-	Parms.IsFocused = IsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_Screen_Category.WBP_Settings_Screen_Category_C.Is Reticle Helper Panel Visible
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   Visible                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_Screen_Category_C::Is_Reticle_Helper_Panel_Visible(bool* Visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_Screen_Category_C", "Is Reticle Helper Panel Visible");
-
-	Params::WBP_Settings_Screen_Category_C_Is_Reticle_Helper_Panel_Visible Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Visible != nullptr)
-		*Visible = Parms.Visible;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

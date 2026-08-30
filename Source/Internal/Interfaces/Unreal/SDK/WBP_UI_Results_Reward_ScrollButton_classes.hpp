@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Results_Reward_ScrollButton.WBP_UI_Results_Reward_ScrollButton_C
-// 0x0018 (0x0390 - 0x0378)
+// 0x0018 (0x03F0 - 0x03D8)
 class UWBP_UI_Results_Reward_ScrollButton_C final : public USBZMenuButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Icon_Image;                                        // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	bool                                          IsLeft;                                            // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Icon_Image;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          IsLeft;                                            // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Results_Reward_ScrollButton(int32 EntryPoint);
 	void ButtonDisabledChanged(bool bInIsDisabled);
 	void ButtonFocusedChanged(bool bInHasFocus);
+	void ExecuteUbergraph_WBP_UI_Results_Reward_ScrollButton(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
 	void SetStateColors();
 

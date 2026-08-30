@@ -39,7 +39,7 @@ void UWBP_Blackmarket_PurchaseCount_C::ExecuteUbergraph_WBP_Blackmarket_Purchase
 // Function WBP_Blackmarket_PurchaseCount.WBP_Blackmarket_PurchaseCount_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Blackmarket_PurchaseCount_C::PreConstruct(bool IsDesignTime)
 {
@@ -51,26 +51,6 @@ void UWBP_Blackmarket_PurchaseCount_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_Blackmarket_PurchaseCount_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Blackmarket_PurchaseCount.WBP_Blackmarket_PurchaseCount_C.SetMaxCount
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InMaxCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Blackmarket_PurchaseCount_C::SetMaxCount(int32 InMaxCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Blackmarket_PurchaseCount_C", "SetMaxCount");
-
-	Params::WBP_Blackmarket_PurchaseCount_C_SetMaxCount Parms{};
-
-	Parms.InMaxCount = InMaxCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -105,6 +85,26 @@ void UWBP_Blackmarket_PurchaseCount_C::SetCount(int32 InCount)
 	Params::WBP_Blackmarket_PurchaseCount_C_SetCount Parms{};
 
 	Parms.InCount = InCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Blackmarket_PurchaseCount.WBP_Blackmarket_PurchaseCount_C.SetMaxCount
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InMaxCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Blackmarket_PurchaseCount_C::SetMaxCount(int32 InMaxCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Blackmarket_PurchaseCount_C", "SetMaxCount");
+
+	Params::WBP_Blackmarket_PurchaseCount_C_SetMaxCount Parms{};
+
+	Parms.InMaxCount = InMaxCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

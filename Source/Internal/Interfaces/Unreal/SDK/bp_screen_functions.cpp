@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function bp_screen.bp_screen_C.ExecuteUbergraph_bp_screen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Abp_screen_C::ExecuteUbergraph_bp_screen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("bp_screen_C", "ExecuteUbergraph_bp_screen");
-
-	Params::bp_screen_C_ExecuteUbergraph_bp_screen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function bp_screen.bp_screen_C.BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -53,6 +33,26 @@ void Abp_screen_C::BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoun
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function bp_screen.bp_screen_C.ExecuteUbergraph_bp_screen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Abp_screen_C::ExecuteUbergraph_bp_screen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("bp_screen_C", "ExecuteUbergraph_bp_screen");
+
+	Params::bp_screen_C_ExecuteUbergraph_bp_screen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -19,7 +19,7 @@ SDK_PARAM_NAMESPACE_START
 struct GameMapsSettings_GetGameMapsSettings final
 {
 public:
-	class UGameMapsSettings*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGameMapsSettings*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GameMapsSettings_GetGameMapsSettings;
 

@@ -16,6 +16,54 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.CleanWidget
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::CleanWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "CleanWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PlayerReadyStatus
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,161 +84,11 @@ void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::ExecuteUbergraph_WBP_UI_P
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "PreConstruct");
-
-	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "ButtonFocusedChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnPlayerStatusRemoved_Event
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnPlayerStatusRemoved_Event()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnPlayerStatusRemoved_Event");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnLobbyPlayerStatusUpdated
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnLobbyPlayerStatusUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnLobbyPlayerStatusUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnMMStopped
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnMMStopped(ESBZOnlineCode ErrorCode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnMMStopped");
-
-	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_OnMMStopped Parms{};
-
-	Parms.ErrorCode = ErrorCode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnLobbyUpdate
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnLobbyUpdate(ESBZOnlineCode ErrorCode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnLobbyUpdate");
-
-	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_OnLobbyUpdate Parms{};
-
-	Parms.ErrorCode = ErrorCode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnLeft
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.GetLobbyInfo
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FSBZLobbyCharacterInfoUi*        CharacterUIInfo                                        (Parm, OutParm)
-// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid)
 {
@@ -208,40 +106,6 @@ void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::GetLobbyInfo(struct FSBZL
 
 	if (IsValid != nullptr)
 		*IsValid = Parms.IsValid;
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.CleanWidget
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::CleanWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "CleanWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.SetPlayerUIInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZLobbyCharacterInfoUi&  InCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "SetPlayerUIInfo");
-
-	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_SetPlayerUIInfo Parms{};
-
-	Parms.InCharacter = std::move(InCharacter);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -268,7 +132,7 @@ void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnControlsReferencePresse
 // Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnFocusedVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnFocusedVisuals(bool bIsFocused)
 {
@@ -280,6 +144,122 @@ void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnFocusedVisuals(bool bIs
 	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_OnFocusedVisuals Parms{};
 
 	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnLeft
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnLeft()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnLeft");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnLobbyPlayerStatusUpdated
+// (Event, Public, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnLobbyPlayerStatusUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnLobbyPlayerStatusUpdated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnLobbyUpdate
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnLobbyUpdate(ESBZOnlineCode ErrorCode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnLobbyUpdate");
+
+	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_OnLobbyUpdate Parms{};
+
+	Parms.ErrorCode = ErrorCode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnMMStopped
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnMMStopped(ESBZOnlineCode ErrorCode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnMMStopped");
+
+	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_OnMMStopped Parms{};
+
+	Parms.ErrorCode = ErrorCode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.OnPlayerStatusRemoved_Event
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::OnPlayerStatusRemoved_Event()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "OnPlayerStatusRemoved_Event");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "PreConstruct");
+
+	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -314,6 +294,26 @@ void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::SetLobbyOwnerVisibility(c
 	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_SetLobbyOwnerVisibility Parms{};
 
 	Parms.InUserID = std::move(InUserID);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_PlayerReadyStatus.WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C.SetPlayerUIInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZLobbyCharacterInfoUi&  InCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C::SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C", "SetPlayerUIInfo");
+
+	Params::WBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C_SetPlayerUIInfo Parms{};
+
+	Parms.InCharacter = std::move(InCharacter);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

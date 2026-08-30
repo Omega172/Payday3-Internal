@@ -39,7 +39,7 @@ void UWBP_UI_Inventory_LoadoutSkillsButton_Class_C::ExecuteUbergraph_WBP_UI_Inve
 // Function WBP_UI_Inventory_LoadoutSkillsButton_Class.WBP_UI_Inventory_LoadoutSkillsButton_Class_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_LoadoutSkillsButton_Class_C::PreConstruct(bool IsDesignTime)
 {

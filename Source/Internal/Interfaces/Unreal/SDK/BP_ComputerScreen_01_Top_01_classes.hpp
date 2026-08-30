@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ComputerScreen_01_Top_01.BP_ComputerScreen_01_Top_01_C
-// 0x0000 (0x0330 - 0x0330)
+// 0x0000 (0x03F8 - 0x03F8)
 class ABP_ComputerScreen_01_Top_01_C final : public Abp_screen_C
 {
 public:

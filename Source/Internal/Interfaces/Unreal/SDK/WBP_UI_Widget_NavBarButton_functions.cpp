@@ -36,17 +36,25 @@ void UWBP_UI_Widget_NavBarButton_C::ExecuteUbergraph_WBP_UI_Widget_NavBarButton(
 }
 
 
-// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.OnClicked
-// (Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.InitializeButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// double                                  MinWidth_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_NavBarButton_C::OnClicked()
+void UWBP_UI_Widget_NavBarButton_C::InitializeButton(const class FText& Text, double MinWidth_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "OnClicked");
+		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "InitializeButton");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_NavBarButton_C_InitializeButton Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.MinWidth_0 = MinWidth_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -70,37 +78,17 @@ void UWBP_UI_Widget_NavBarButton_C::OnButtonInitialized(const struct FSBZNavButt
 }
 
 
-// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.OnClicked
+// (Event, Public, BlueprintEvent)
 
-void UWBP_UI_Widget_NavBarButton_C::OnLostStackFocused()
+void UWBP_UI_Widget_NavBarButton_C::OnClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "OnLostStackFocused");
+		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.OnHovered
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_NavBarButton_C::OnHovered(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "OnHovered");
-
-	Params::WBP_UI_Widget_NavBarButton_C_OnHovered Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -124,10 +112,44 @@ void UWBP_UI_Widget_NavBarButton_C::OnGainedStackFocused(const class FName& Prev
 }
 
 
+// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.OnHovered
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_NavBarButton_C::OnHovered(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "OnHovered");
+
+	Params::WBP_UI_Widget_NavBarButton_C_OnHovered Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Widget_NavBarButton_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.SetFocused
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_NavBarButton_C::SetFocused(bool InFocused)
 {
@@ -144,32 +166,10 @@ void UWBP_UI_Widget_NavBarButton_C::SetFocused(bool InFocused)
 }
 
 
-// Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.InitializeButton
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-// float                                   MinWidth_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_NavBarButton_C::InitializeButton(const class FText& Text, float MinWidth_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_NavBarButton_C", "InitializeButton");
-
-	Params::WBP_UI_Widget_NavBarButton_C_InitializeButton Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.MinWidth_0 = MinWidth_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_NavBarButton.WBP_UI_Widget_NavBarButton_C.SetHovered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_NavBarButton_C::SetHovered(bool InHovered)
 {

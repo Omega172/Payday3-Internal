@@ -18,43 +18,43 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_MaskInventoryScreen.WBP_UI_MaskInventoryScreen_C
-// 0x0060 (0x0590 - 0x0530)
+// 0x0060 (0x05D8 - 0x0578)
 class UWBP_UI_MaskInventoryScreen_C final : public USBZMainMenuMaskInventoryScreen
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0530(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0538(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanel*                           CanvasPanel_BuyingSlots;                           // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UButton*                                DummyButton;                                       // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UScrollBox*                             ItemScrollBox;                                     // 0x0550(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0560(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_WeaponSlotDisplayPanel_C*       WBP_UI_WeaponSlotDisplayPanel;                     // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         RT_Focusedbutton;                                  // 0x0570(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   BlackMarketStackValue;                             // 0x0578(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_584[0x4];                                      // 0x0584(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         Last_RT_Focusedbutton;                             // 0x0588(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0578(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0580(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanel*                           CanvasPanel_BuyingSlots;                           // 0x0588(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                DummyButton;                                       // 0x0590(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UScrollBox*                             ItemScrollBox;                                     // 0x0598(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x05A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x05A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_WeaponSlotDisplayPanel_C*       WBP_UI_WeaponSlotDisplayPanel;                     // 0x05B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         RT_Focusedbutton;                                  // 0x05B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   BlackMarketStackValue;                             // 0x05C0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5CC[0x4];                                      // 0x05CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         Last_RT_Focusedbutton;                             // 0x05D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_MaskInventoryScreen(int32 EntryPoint);
 	void BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item);
-	void OnItemDiscarded(bool bWasSuccessful);
 	void BndEvt__WBP_UI_MaskInventoryScreen_Button_DefaultMask_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnEmptySlotSelected();
-	void MaskSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton, bool bIsFocused);
-	void OnEditButtonPressed(int32 MaskSlotIndex);
-	void OnTryBuyMaskSlot();
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnSlotPurchaseComplete(bool bWasSuccessful);
-	void ShowMaskOnly();
-	void RevertBodyAndEquipped();
 	void ControlsReferenceActionPressed(class FName ActionName);
-	void OnDiscardPressed();
-	void GetContextAwareControlReference(class UWBP_UI_Inventory_MaskSlotButton_C* MaskButton, TArray<struct FSBZButtonControlReference>* ControlsReference);
 	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
+	void ExecuteUbergraph_WBP_UI_MaskInventoryScreen(int32 EntryPoint);
+	void GetContextAwareControlReference(class UWBP_UI_Inventory_MaskSlotButton_C* MaskButton, TArray<struct FSBZButtonControlReference>* ControlsReference);
+	void MaskSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton, bool bIsFocused);
+	void OnDiscardPressed();
+	void OnEditButtonPressed(int32 MaskSlotIndex);
+	void OnEmptySlotSelected();
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnItemDiscarded(bool bWasSuccessful);
+	void OnLostStackFocused();
+	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item);
+	void OnSlotPurchaseComplete(bool bWasSuccessful);
+	void OnTryBuyMaskSlot();
+	void RevertBodyAndEquipped();
 	void SetActiveButton(class USBZMenuButton* NewButton);
+	void ShowMaskOnly();
 
 public:
 	static class UClass* StaticClass()

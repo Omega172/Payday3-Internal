@@ -16,57 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.ExecuteUbergraph_WBP_UI_WeaponInventoryScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponInventoryScreen_C::ExecuteUbergraph_WBP_UI_WeaponInventoryScreen(int32 EntryPoint)
+void UWBP_UI_WeaponInventoryScreen_C::BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "ExecuteUbergraph_WBP_UI_WeaponInventoryScreen");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_UI_WeaponInventoryScreen_C_ExecuteUbergraph_WBP_UI_WeaponInventoryScreen Parms{};
+	Params::WBP_UI_WeaponInventoryScreen_C_BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_WeaponInventoryScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "PreConstruct");
-
-	Params::WBP_UI_WeaponInventoryScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponInventoryScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -98,93 +66,90 @@ void UWBP_UI_WeaponInventoryScreen_C::BndEvt__WBP_UI_WeaponInventoryScreen_Custo
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnNewSlotPurchased
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponInventoryScreen_C::OnNewSlotPurchased()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnNewSlotPurchased");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnWeaponSlotScreenDisplayed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponInventoryScreen_C::OnWeaponSlotScreenDisplayed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnWeaponSlotScreenDisplayed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnWeaponInSlotDiscarded
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.BuildControlReference
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsWeaponDiscarded                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   WeaponIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FSBZButtonControlReference>*ActionList_0                                           (Parm, OutParm)
 
-void UWBP_UI_WeaponInventoryScreen_C::OnWeaponInSlotDiscarded(bool bIsWeaponDiscarded)
+void UWBP_UI_WeaponInventoryScreen_C::BuildControlReference(int32 WeaponIndex, TArray<struct FSBZButtonControlReference>* ActionList_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnWeaponInSlotDiscarded");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "BuildControlReference");
 
-	Params::WBP_UI_WeaponInventoryScreen_C_OnWeaponInSlotDiscarded Parms{};
+	Params::WBP_UI_WeaponInventoryScreen_C_BuildControlReference Parms{};
 
-	Parms.bIsWeaponDiscarded = bIsWeaponDiscarded;
+	Parms.WeaponIndex = WeaponIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ActionList_0 != nullptr)
+		*ActionList_0 = std::move(Parms.ActionList_0);
+}
+
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.Do Custom Navigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_WeaponInventoryScreen_C::Do_Custom_Navigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "Do Custom Navigation");
+
+	Params::WBP_UI_WeaponInventoryScreen_C_Do_Custom_Navigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.EnableCustomOptions
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnabled                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponInventoryScreen_C::EnableCustomOptions(bool IsEnabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "EnableCustomOptions");
+
+	Params::WBP_UI_WeaponInventoryScreen_C_EnableCustomOptions Parms{};
+
+	Parms.IsEnabled = IsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnPressCosmetic
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.ExecuteUbergraph_WBP_UI_WeaponInventoryScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponInventoryScreen_C::OnPressCosmetic()
+void UWBP_UI_WeaponInventoryScreen_C::ExecuteUbergraph_WBP_UI_WeaponInventoryScreen(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnPressCosmetic");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "ExecuteUbergraph_WBP_UI_WeaponInventoryScreen");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_UI_WeaponInventoryScreen_C_ExecuteUbergraph_WBP_UI_WeaponInventoryScreen Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnEmptySlotSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponInventoryScreen_C::OnEmptySlotSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnEmptySlotSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnDestroyPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_WeaponInventoryScreen_C::OnDestroyPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnDestroyPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -202,37 +167,49 @@ void UWBP_UI_WeaponInventoryScreen_C::OnActiveWeaponChanged()
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponInventoryScreen_C::BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_WeaponInventoryScreen_C::OnControlsReferenceClicked(class FName InActionInput)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnControlsReferenceClicked");
 
-	Params::WBP_UI_WeaponInventoryScreen_C_BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_WeaponInventoryScreen_C_OnControlsReferenceClicked Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.InActionInput = InActionInput;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnPressCustomize
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnDestroyPressed
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_WeaponInventoryScreen_C::OnPressCustomize()
+void UWBP_UI_WeaponInventoryScreen_C::OnDestroyPressed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnPressCustomize");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnDestroyPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnEmptySlotSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponInventoryScreen_C::OnEmptySlotSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnEmptySlotSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -258,43 +235,111 @@ void UWBP_UI_WeaponInventoryScreen_C::OnGainedStackFocused(const class FName& Pr
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_WeaponInventoryScreen_C::OnControlsReferenceClicked(class FName InActionInput)
+void UWBP_UI_WeaponInventoryScreen_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnControlsReferenceClicked");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnLostStackFocused");
 
-	Params::WBP_UI_WeaponInventoryScreen_C_OnControlsReferenceClicked Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InActionInput = InActionInput;
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnNewSlotPurchased
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponInventoryScreen_C::OnNewSlotPurchased()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnNewSlotPurchased");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnPressCosmetic
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_WeaponInventoryScreen_C::OnPressCosmetic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnPressCosmetic");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnPressCustomize
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_WeaponInventoryScreen_C::OnPressCustomize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnPressCustomize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnWeaponInSlotDiscarded
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsWeaponDiscarded                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponInventoryScreen_C::OnWeaponInSlotDiscarded(bool bIsWeaponDiscarded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnWeaponInSlotDiscarded");
+
+	Params::WBP_UI_WeaponInventoryScreen_C_OnWeaponInSlotDiscarded Parms{};
+
+	Parms.bIsWeaponDiscarded = bIsWeaponDiscarded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.WeaponSlotButtonFocusedChanged
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.OnWeaponSlotScreenDisplayed
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_WeaponInventoryScreen_C::WeaponSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused)
+void UWBP_UI_WeaponInventoryScreen_C::OnWeaponSlotScreenDisplayed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "WeaponSlotButtonFocusedChanged");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "OnWeaponSlotScreenDisplayed");
 
-	Params::WBP_UI_WeaponInventoryScreen_C_WeaponSlotButtonFocusedChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.SelectedButton = SelectedButton;
-	Parms.bIsFocused = bIsFocused;
+
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponInventoryScreen_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "PreConstruct");
+
+	Params::WBP_UI_WeaponInventoryScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -322,33 +367,10 @@ void UWBP_UI_WeaponInventoryScreen_C::RegisterButtons(TArray<struct FSBZButtonCo
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.Do Custom Navigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_WeaponInventoryScreen_C::Do_Custom_Navigation(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "Do Custom Navigation");
-
-	Params::WBP_UI_WeaponInventoryScreen_C_Do_Custom_Navigation Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.SetActiveButton
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   NewButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   NewButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_WeaponInventoryScreen_C::SetActiveButton(class USBZMenuButton* NewButton)
 {
@@ -365,47 +387,25 @@ void UWBP_UI_WeaponInventoryScreen_C::SetActiveButton(class USBZMenuButton* NewB
 }
 
 
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.EnableCustomOptions
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.WeaponSlotButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsEnabled                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   SelectedButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponInventoryScreen_C::EnableCustomOptions(bool IsEnabled)
+void UWBP_UI_WeaponInventoryScreen_C::WeaponSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "EnableCustomOptions");
+		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "WeaponSlotButtonFocusedChanged");
 
-	Params::WBP_UI_WeaponInventoryScreen_C_EnableCustomOptions Parms{};
+	Params::WBP_UI_WeaponInventoryScreen_C_WeaponSlotButtonFocusedChanged Parms{};
 
-	Parms.IsEnabled = IsEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponInventoryScreen.WBP_UI_WeaponInventoryScreen_C.BuildControlReference
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   WeaponIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FSBZButtonControlReference>*ActionList_0                                           (Parm, OutParm)
-
-void UWBP_UI_WeaponInventoryScreen_C::BuildControlReference(int32 WeaponIndex, TArray<struct FSBZButtonControlReference>* ActionList_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponInventoryScreen_C", "BuildControlReference");
-
-	Params::WBP_UI_WeaponInventoryScreen_C_BuildControlReference Parms{};
-
-	Parms.WeaponIndex = WeaponIndex;
+	Parms.SelectedButton = SelectedButton;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (ActionList_0 != nullptr)
-		*ActionList_0 = std::move(Parms.ActionList_0);
 }
 
 

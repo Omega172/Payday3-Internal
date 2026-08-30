@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_HUD_SecureInformation_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_HUD_SecureInformation_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.ExecuteUbergraph_WBP_HUD_SecureInformation
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,52 +64,10 @@ void UWBP_HUD_SecureInformation_C::ExecuteUbergraph_WBP_HUD_SecureInformation(in
 }
 
 
-// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_HUD_SecureInformation_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_HUD_SecureInformation_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.PlaySecureSound
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HUD_SecureInformation_C::PlaySecureSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "PlaySecureSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.OnBagSecured
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// const class USBZBagType*                InBagSecured                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBagType*                InBagSecured                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_HUD_SecureInformation_C::OnBagSecured(const class USBZBagType* InBagSecured)
 {
@@ -93,26 +79,6 @@ void UWBP_HUD_SecureInformation_C::OnBagSecured(const class USBZBagType* InBagSe
 	Params::WBP_HUD_SecureInformation_C_OnBagSecured Parms{};
 
 	Parms.InBagSecured = InBagSecured;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_HUD_SecureInformation_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "PreConstruct");
-
-	Params::WBP_HUD_SecureInformation_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -132,10 +98,58 @@ void UWBP_HUD_SecureInformation_C::OnIntroFinished()
 }
 
 
+// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.OnOutroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HUD_SecureInformation_C::OnOutroFinished()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "OnOutroFinished");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.PlaySecureSound
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_HUD_SecureInformation_C::PlaySecureSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "PlaySecureSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HUD_SecureInformation_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "PreConstruct");
+
+	Params::WBP_HUD_SecureInformation_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.Show
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBagType*                      LootBag                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBagType*                      LootBag                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_HUD_SecureInformation_C::Show(class USBZBagType* LootBag)
 {
@@ -149,20 +163,6 @@ void UWBP_HUD_SecureInformation_C::Show(class USBZBagType* LootBag)
 	Parms.LootBag = LootBag;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_HUD_SecureInformation.WBP_HUD_SecureInformation_C.OnOutroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_HUD_SecureInformation_C::OnOutroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HUD_SecureInformation_C", "OnOutroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

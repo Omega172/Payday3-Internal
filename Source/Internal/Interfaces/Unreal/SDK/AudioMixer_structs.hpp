@@ -13,6 +13,112 @@
 
 SDK_NAMESPACE_START
 
+// Enum AudioMixer.EAudioDeviceChangedRole
+// NumValues: 0x0006
+enum class EAudioDeviceChangedRole : uint8
+{
+	Invalid                                  = 0,
+	Console                                  = 1,
+	Multimedia                               = 2,
+	Communications                           = 3,
+	Count                                    = 4,
+	EAudioDeviceChangedRole_MAX              = 5,
+};
+
+// Enum AudioMixer.EAudioDeviceChangedState
+// NumValues: 0x0007
+enum class EAudioDeviceChangedState : uint8
+{
+	Invalid                                  = 0,
+	Active                                   = 1,
+	Disabled                                 = 2,
+	NotPresent                               = 3,
+	Unplugged                                = 4,
+	Count                                    = 5,
+	EAudioDeviceChangedState_MAX             = 6,
+};
+
+// Enum AudioMixer.EAudioMixerChannelType
+// NumValues: 0x0016
+enum class EAudioMixerChannelType : uint8
+{
+	FrontLeft                                = 0,
+	FrontRight                               = 1,
+	FrontCenter                              = 2,
+	LowFrequency                             = 3,
+	BackLeft                                 = 4,
+	BackRight                                = 5,
+	FrontLeftOfCenter                        = 6,
+	FrontRightOfCenter                       = 7,
+	BackCenter                               = 8,
+	SideLeft                                 = 9,
+	SideRight                                = 10,
+	TopCenter                                = 11,
+	TopFrontLeft                             = 12,
+	TopFrontCenter                           = 13,
+	TopFrontRight                            = 14,
+	TopBackLeft                              = 15,
+	TopBackCenter                            = 16,
+	TopBackRight                             = 17,
+	Unknown                                  = 18,
+	ChannelTypeCount                         = 19,
+	DefaultChannel                           = 0,
+	EAudioMixerChannelType_MAX               = 20,
+};
+
+// Enum AudioMixer.EAudioMixerStreamDataFormatType
+// NumValues: 0x0005
+enum class EAudioMixerStreamDataFormatType : uint8
+{
+	Unknown                                  = 0,
+	Float                                    = 1,
+	Int16                                    = 2,
+	Unsupported                              = 3,
+	EAudioMixerStreamDataFormatType_MAX      = 4,
+};
+
+// Enum AudioMixer.ESwapAudioOutputDeviceResultState
+// NumValues: 0x0004
+enum class ESwapAudioOutputDeviceResultState : uint8
+{
+	Failure                                  = 0,
+	Success                                  = 1,
+	None                                     = 2,
+	ESwapAudioOutputDeviceResultState_MAX    = 3,
+};
+
+// Enum AudioMixer.ERequiredSubmixes
+// NumValues: 0x0006
+enum class ERequiredSubmixes : uint8
+{
+	Main                                     = 0,
+	BaseDefault                              = 1,
+	Reverb                                   = 2,
+	EQ                                       = 3,
+	Count                                    = 4,
+	ERequiredSubmixes_MAX                    = 5,
+};
+
+// Enum AudioMixer.ESourceManagerRenderThreadPhase
+// NumValues: 0x000E
+enum class ESourceManagerRenderThreadPhase : uint8
+{
+	Begin                                    = 0,
+	PumpMpscCmds                             = 1,
+	PumpCmds                                 = 2,
+	ProcessModulators                        = 3,
+	UpdatePendingReleaseData                 = 4,
+	GenerateSrcAudio_WithBusses              = 5,
+	ComputeBusses                            = 6,
+	GenerateSrcAudio_WithoutBusses           = 7,
+	UpdateBusses                             = 8,
+	SpatialInterface_OnAllSourcesProcessed   = 9,
+	SourceDataOverride_OnAllSourcesProcessed = 10,
+	UpdateGameThreadCopies                   = 11,
+	Finished                                 = 12,
+	ESourceManagerRenderThreadPhase_MAX      = 13,
+};
+
 // Enum AudioMixer.EMusicalNoteName
 // NumValues: 0x000D
 enum class EMusicalNoteName : uint8
@@ -32,26 +138,17 @@ enum class EMusicalNoteName : uint8
 	EMusicalNoteName_MAX                     = 12,
 };
 
-// Enum AudioMixer.ESubmixEffectDynamicsKeySource
-// NumValues: 0x0005
-enum class ESubmixEffectDynamicsKeySource : uint8
+// Enum AudioMixer.ESubmixEffectDynamicsProcessorType
+// NumValues: 0x0007
+enum class ESubmixEffectDynamicsProcessorType : uint8
 {
-	Default                                  = 0,
-	AudioBus                                 = 1,
-	Submix                                   = 2,
-	Count                                    = 3,
-	ESubmixEffectDynamicsKeySource_MAX       = 4,
-};
-
-// Enum AudioMixer.ESubmixEffectDynamicsChannelLinkMode
-// NumValues: 0x0005
-enum class ESubmixEffectDynamicsChannelLinkMode : uint8
-{
-	Disabled                                 = 0,
-	Average                                  = 1,
-	Peak                                     = 2,
-	Count                                    = 3,
-	ESubmixEffectDynamicsChannelLinkMode_MAX = 4,
+	Compressor                               = 0,
+	Limiter                                  = 1,
+	Expander                                 = 2,
+	Gate                                     = 3,
+	UpwardsCompressor                        = 4,
+	Count                                    = 5,
+	ESubmixEffectDynamicsProcessorType_MAX   = 6,
 };
 
 // Enum AudioMixer.ESubmixEffectDynamicsPeakMode
@@ -65,27 +162,79 @@ enum class ESubmixEffectDynamicsPeakMode : uint8
 	ESubmixEffectDynamicsPeakMode_MAX        = 4,
 };
 
-// Enum AudioMixer.ESubmixEffectDynamicsProcessorType
-// NumValues: 0x0006
-enum class ESubmixEffectDynamicsProcessorType : uint8
+// Enum AudioMixer.ESubmixEffectDynamicsChannelLinkMode
+// NumValues: 0x0005
+enum class ESubmixEffectDynamicsChannelLinkMode : uint8
 {
-	Compressor                               = 0,
-	Limiter                                  = 1,
-	Expander                                 = 2,
-	Gate                                     = 3,
-	Count                                    = 4,
-	ESubmixEffectDynamicsProcessorType_MAX   = 5,
+	Disabled                                 = 0,
+	Average                                  = 1,
+	Peak                                     = 2,
+	Count                                    = 3,
+	ESubmixEffectDynamicsChannelLinkMode_MAX = 4,
 };
 
-// Enum AudioMixer.EQuarztClockManagerType
-// NumValues: 0x0004
-enum class EQuarztClockManagerType : uint8
+// Enum AudioMixer.ESubmixEffectDynamicsKeySource
+// NumValues: 0x0005
+enum class ESubmixEffectDynamicsKeySource : uint8
 {
-	AudioEngine                              = 0,
-	QuartzSubsystem                          = 1,
-	Count                                    = 2,
-	EQuarztClockManagerType_MAX              = 3,
+	Default                                  = 0,
+	AudioBus                                 = 1,
+	Submix                                   = 2,
+	Count                                    = 3,
+	ESubmixEffectDynamicsKeySource_MAX       = 4,
 };
+
+// ScriptStruct AudioMixer.SubmixEffectEQBand
+// 0x0010 (0x0010 - 0x0000)
+struct FSubmixEffectEQBand final
+{
+public:
+	float                                         Frequency;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Bandwidth;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GainDb;                                            // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         bEnabled : 1;                                      // 0x000C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSubmixEffectEQBand;
+
+// ScriptStruct AudioMixer.SubmixEffectSubmixEQSettings
+// 0x0010 (0x0010 - 0x0000)
+struct FSubmixEffectSubmixEQSettings final
+{
+public:
+	TArray<struct FSubmixEffectEQBand>            EQBands;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSubmixEffectSubmixEQSettings;
+
+// ScriptStruct AudioMixer.AudioOutputDeviceInfo
+// 0x0048 (0x0048 - 0x0000)
+struct FAudioOutputDeviceInfo final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 DeviceId;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         NumChannels;                                       // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SampleRate;                                        // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAudioMixerStreamDataFormatType               Format;                                            // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EAudioMixerChannelType>                OutputChannelArray;                                // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         bIsSystemDefault : 1;                              // 0x0040(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bIsCurrentDevice : 1;                              // 0x0040(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAudioOutputDeviceInfo;
+
+// ScriptStruct AudioMixer.SwapAudioOutputResult
+// 0x0028 (0x0028 - 0x0000)
+struct FSwapAudioOutputResult final
+{
+public:
+	class FString                                 CurrentDeviceId;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 RequestedDeviceId;                                 // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ESwapAudioOutputDeviceResultState             Result;                                            // 0x0020(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSwapAudioOutputResult;
 
 // ScriptStruct AudioMixer.SubmixEffectDynamicProcessorFilterSettings
 // 0x000C (0x000C - 0x0000)
@@ -117,8 +266,8 @@ public:
 	float                                         ReleaseTimeMsec;                                   // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESubmixEffectDynamicsKeySource                KeySource;                                         // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAudioBus*                              ExternalAudioBus;                                  // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USoundSubmix*                           ExternalSubmix;                                    // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAudioBus*                              ExternalAudioBus;                                  // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class USoundSubmix*                           ExternalSubmix;                                    // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         bChannelLinked : 1;                                // 0x0038(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Deprecated, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAnalogMode : 1;                                   // 0x0038(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bBypass : 1;                                       // 0x0038(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -131,28 +280,6 @@ public:
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FSubmixEffectDynamicsProcessorSettings;
-
-// ScriptStruct AudioMixer.SubmixEffectEQBand
-// 0x0010 (0x0010 - 0x0000)
-struct FSubmixEffectEQBand final
-{
-public:
-	float                                         Frequency;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Bandwidth;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GainDb;                                            // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bEnabled : 1;                                      // 0x000C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FSubmixEffectEQBand;
-
-// ScriptStruct AudioMixer.SubmixEffectSubmixEQSettings
-// 0x0010 (0x0010 - 0x0000)
-struct FSubmixEffectSubmixEQSettings final
-{
-public:
-	TArray<struct FSubmixEffectEQBand>            EQBands;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSubmixEffectSubmixEQSettings;
 
 // ScriptStruct AudioMixer.SubmixEffectReverbSettings
 // 0x0040 (0x0040 - 0x0000)

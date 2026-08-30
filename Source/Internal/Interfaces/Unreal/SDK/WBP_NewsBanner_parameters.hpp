@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_NewsBanner.WBP_NewsBanner_C.CarouselIndexChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_NewsBanner_C_CarouselIndexChanged final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_CarouselIndexChanged;
+
 // Function WBP_NewsBanner.WBP_NewsBanner_C.ExecuteUbergraph_WBP_NewsBanner
 // 0x00F8 (0x00F8 - 0x0000)
 struct WBP_NewsBanner_C_ExecuteUbergraph_WBP_NewsBanner final
@@ -27,14 +36,14 @@ public:
 	TArray<struct FSBZNewsDataUIEntry>            Temp_struct_Variable;                              // 0x0008(0x0010)(ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZOnlineCode                                Temp_byte_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZOnlineGetNewsFeedCallbackProxy*     CallFunc_RequestNewsFeed_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZOnlineGetNewsFeedCallbackProxy*     CallFunc_RequestNewsFeed_ReturnValue;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool bIsGameInstallPending)>   K2Node_CreateDelegate_OutputDelegate;              // 0x002C(0x0014)(ZeroConstructor, NoDestructor)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TDelegate<void(bool bIsGameInstallPending)>   K2Node_CreateDelegate_OutputDelegate;              // 0x002C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_CustomEvent_InNavigateIndex;                // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,53 +52,26 @@ public:
 	int32                                         CallFunc_Clamp_ReturnValue;                        // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Clamp_ReturnValue_1;                      // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZOnlineCode                                K2Node_CustomEvent_ErrorCode;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSBZNewsDataUIEntry>            K2Node_CustomEvent_NewsFeedList;                   // 0x0068(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0078(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x008C(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(int32 InNavigateIndex)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x00A0(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0078(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x008C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 InNavigateIndex)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x00A0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRunningTrial_ReturnValue;               // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsGameInstallPending_ReturnValue;         // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_bInEnabled;                     // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRunningTrial_ReturnValue;               // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGameInstallPending_ReturnValue;         // 0x00C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bInEnabled;                     // 0x00C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C3[0x1];                                       // 0x00C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZOnlineCode ErrorCode, const TArray<struct FSBZNewsDataUIEntry>& NewsFeedList)> K2Node_CreateDelegate_OutputDelegate_4; // 0x00C4(0x0014)(ZeroConstructor, NoDestructor)
-	TDelegate<void(int32 NewIndex)>               K2Node_CreateDelegate_OutputDelegate_5;            // 0x00D8(0x0014)(ZeroConstructor, NoDestructor)
+	TDelegate<void(ESBZOnlineCode ErrorCode, const TArray<struct FSBZNewsDataUIEntry>& NewsFeedList)> K2Node_CreateDelegate_OutputDelegate_4; // 0x00C4(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 NewIndex)>               K2Node_CreateDelegate_OutputDelegate_5;            // 0x00D8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_CustomEvent_NewIndex;                       // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_CustomEvent_bIsGameInstallPending;          // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsGameInstallPending;          // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_NewsBanner_C_ExecuteUbergraph_WBP_NewsBanner;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnGameInstalled
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_OnGameInstalled final
-{
-public:
-	bool                                          bIsGameInstallPending;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnGameInstalled;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.CarouselIndexChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_NewsBanner_C_CarouselIndexChanged final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_CarouselIndexChanged;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.SetNewsBannerEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_SetNewsBannerEnabled final
-{
-public:
-	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_SetNewsBannerEnabled;
 
 // Function WBP_NewsBanner.WBP_NewsBanner_C.NavigateToPage
 // 0x0004 (0x0004 - 0x0000)
@@ -99,15 +81,6 @@ public:
 	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_NewsBanner_C_NavigateToPage;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_PreConstruct;
 
 // Function WBP_NewsBanner.WBP_NewsBanner_C.OnComplete_20FB66EC40031DB9F52C91B5F92076D7
 // 0x0018 (0x0018 - 0x0000)
@@ -120,6 +93,42 @@ public:
 };
 DUMPER7_ASSERTS_WBP_NewsBanner_C_OnComplete_20FB66EC40031DB9F52C91B5F92076D7;
 
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_OnFocusedChanged final
+{
+public:
+	bool                                          InFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnFocusedChanged;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnGameInstalled
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_OnGameInstalled final
+{
+public:
+	bool                                          bIsGameInstallPending;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnGameInstalled;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_OnHoveredChanged final
+{
+public:
+	bool                                          InHovered;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnHoveredChanged;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_PreConstruct;
+
 // Function WBP_NewsBanner.WBP_NewsBanner_C.RemoveItem
 // 0x0004 (0x0004 - 0x0000)
 struct WBP_NewsBanner_C_RemoveItem final
@@ -129,33 +138,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_NewsBanner_C_RemoveItem;
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnFocusedChanged
+// Function WBP_NewsBanner.WBP_NewsBanner_C.SetNewsBannerEnabled
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_OnFocusedChanged final
+struct WBP_NewsBanner_C_SetNewsBannerEnabled final
 {
 public:
-	bool                                          InFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnFocusedChanged;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_OnHoveredChanged final
-{
-public:
-	bool                                          InHovered;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnHoveredChanged;
+DUMPER7_ASSERTS_WBP_NewsBanner_C_SetNewsBannerEnabled;
 
 // Function WBP_NewsBanner.WBP_NewsBanner_C.UpdateAccessBasedOnPrivilege
 // 0x0007 (0x0007 - 0x0000)
 struct WBP_NewsBanner_C_UpdateAccessBasedOnPrivilege final
 {
 public:
-	bool                                          InstallPending;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          TrialVersion;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          InstallPending;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TrialVersion;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

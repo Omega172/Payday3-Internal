@@ -61,7 +61,7 @@ void UWBP_UI_Widget_PlayerDefeatState_C::OnDefeatStateChanged(EPD3DefeatState Ol
 // Function WBP_UI_Widget_PlayerDefeatState.WBP_UI_Widget_PlayerDefeatState_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_PlayerDefeatState_C::PreConstruct(bool IsDesignTime)
 {

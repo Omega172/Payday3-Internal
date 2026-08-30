@@ -16,21 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.ExecuteUbergraph_WBP_UI_Overskill_Container
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Container_C::ExecuteUbergraph_WBP_UI_Overskill_Container(int32 EntryPoint)
+void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "ExecuteUbergraph_WBP_UI_Overskill_Container");
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container Parms{};
+	Params::WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -50,31 +50,11 @@ void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_Overskill
 }
 
 
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -112,6 +92,98 @@ void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_WBP_Overs
 }
 
 
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.ExecuteUbergraph_WBP_UI_Overskill_Container
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Container_C::ExecuteUbergraph_WBP_UI_Overskill_Container(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "ExecuteUbergraph_WBP_UI_Overskill_Container");
+
+	Params::WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.GetCurrentLevel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double                                  Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  CurrentLevel                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Container_C::GetCurrentLevel(double Progress_0, int32* CurrentLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "GetCurrentLevel");
+
+	Params::WBP_UI_Overskill_Container_C_GetCurrentLevel Parms{};
+
+	Parms.Progress_0 = Progress_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CurrentLevel != nullptr)
+		*CurrentLevel = Parms.CurrentLevel;
+}
+
+
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.GetProgressBarValue
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double                                  InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 OutProgress                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Container_C::GetProgressBarValue(double InProgress, double* OutProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "GetProgressBarValue");
+
+	Params::WBP_UI_Overskill_Container_C_GetProgressBarValue Parms{};
+
+	Parms.InProgress = InProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutProgress != nullptr)
+		*OutProgress = Parms.OutProgress;
+}
+
+
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.GetSkillDataByIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZSkillData**                   SkillData                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_Container_C::GetSkillDataByIndex(int32 Index_0, class USBZSkillData** SkillData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "GetSkillDataByIndex");
+
+	Params::WBP_UI_Overskill_Container_C_GetSkillDataByIndex Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SkillData != nullptr)
+		*SkillData = Parms.SkillData;
+}
+
+
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
@@ -129,7 +201,7 @@ void UWBP_UI_Overskill_Container_C::OnInitialized()
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.OnOverskillChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZOverskillData*          InOverskillData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZOverskillData*          InOverskillData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                                   InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Overskill_Container_C::OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress)
@@ -148,32 +220,12 @@ void UWBP_UI_Overskill_Container_C::OnOverskillChanged(const class USBZOverskill
 }
 
 
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.UpdateLevelDetails
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Container_C::UpdateLevelDetails(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "UpdateLevelDetails");
-
-	Params::WBP_UI_Overskill_Container_C_UpdateLevelDetails Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.SetBaseInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Container_C::SetBaseInfo(float Progress_0)
+void UWBP_UI_Overskill_Container_C::SetBaseInfo(double Progress_0)
 {
 	static class UFunction* Func = nullptr;
 
@@ -202,75 +254,23 @@ void UWBP_UI_Overskill_Container_C::SetProgressBarDetails()
 }
 
 
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.GetSkillDataByIndex
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.UpdateLevelDetails
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZSkillData**                   SkillData                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Container_C::GetSkillDataByIndex(int32 Index_0, class USBZSkillData** SkillData)
+void UWBP_UI_Overskill_Container_C::UpdateLevelDetails(int32 NewIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "GetSkillDataByIndex");
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "UpdateLevelDetails");
 
-	Params::WBP_UI_Overskill_Container_C_GetSkillDataByIndex Parms{};
+	Params::WBP_UI_Overskill_Container_C_UpdateLevelDetails Parms{};
 
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SkillData != nullptr)
-		*SkillData = Parms.SkillData;
-}
-
-
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.GetCurrentLevel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float                                   Progress_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  CurrentLevel                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Container_C::GetCurrentLevel(float Progress_0, int32* CurrentLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "GetCurrentLevel");
-
-	Params::WBP_UI_Overskill_Container_C_GetCurrentLevel Parms{};
-
-	Parms.Progress_0 = Progress_0;
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (CurrentLevel != nullptr)
-		*CurrentLevel = Parms.CurrentLevel;
-}
-
-
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.GetProgressBarValue
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float                                   InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float*                                  OutProgress                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Container_C::GetProgressBarValue(float InProgress, float* OutProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "GetProgressBarValue");
-
-	Params::WBP_UI_Overskill_Container_C_GetProgressBarValue Parms{};
-
-	Parms.InProgress = InProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutProgress != nullptr)
-		*OutProgress = Parms.OutProgress;
 }
 
 

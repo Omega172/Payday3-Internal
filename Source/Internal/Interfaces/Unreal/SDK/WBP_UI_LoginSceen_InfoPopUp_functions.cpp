@@ -16,21 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C.ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp
-// (Final, UbergraphFunction)
+// Function WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C.BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginSceen_InfoPopUp_C::ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp(int32 EntryPoint)
+void UWBP_UI_LoginSceen_InfoPopUp_C::BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginSceen_InfoPopUp_C", "ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp");
+		Func = Class->GetFunction("WBP_UI_LoginSceen_InfoPopUp_C", "BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_UI_LoginSceen_InfoPopUp_C_ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp Parms{};
+	Params::WBP_UI_LoginSceen_InfoPopUp_C_BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,7 +41,7 @@ void UWBP_UI_LoginSceen_InfoPopUp_C::ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopU
 // Function WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C.BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_LoginSceen_InfoPopUp_C::BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -56,23 +58,21 @@ void UWBP_UI_LoginSceen_InfoPopUp_C::BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_Men
 }
 
 
-// Function WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C.BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C.ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginSceen_InfoPopUp_C::BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_LoginSceen_InfoPopUp_C::ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginSceen_InfoPopUp_C", "BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_LoginSceen_InfoPopUp_C", "ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp");
 
-	Params::WBP_UI_LoginSceen_InfoPopUp_C_BndEvt__WBP_UI_LoginSceen_InfoPopUp_WBP_MenuButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_LoginSceen_InfoPopUp_C_ExecuteUbergraph_WBP_UI_LoginSceen_InfoPopUp Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -95,7 +95,7 @@ void UWBP_UI_LoginSceen_InfoPopUp_C::OnInfoTextInitialized()
 // Function WBP_UI_LoginSceen_InfoPopUp.WBP_UI_LoginSceen_InfoPopUp_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_LoginSceen_InfoPopUp_C::PreConstruct(bool IsDesignTime)
 {

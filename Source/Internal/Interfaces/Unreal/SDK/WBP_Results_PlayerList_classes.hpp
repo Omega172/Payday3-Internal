@@ -17,27 +17,27 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Results_PlayerList.WBP_Results_PlayerList_C
-// 0x0040 (0x02D0 - 0x0290)
+// 0x0040 (0x0330 - 0x02F0)
 class UWBP_Results_PlayerList_C final : public USBZResultScreenPlayerListWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UHorizontalBox*                         PlayerStateBox;                                    // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UWBP_UI_Results_PlayerStatus_C*> Players;                                           // 0x02A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	TArray<class UWBP_UI_Results_AICrewStatus_C*> Bots;                                              // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	int32                                         AddedCardCount;                                    // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         HighlightStatCount;                                // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AppearTime;                                        // 0x02C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UHorizontalBox*                         PlayerStateBox;                                    // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UWBP_UI_Results_PlayerStatus_C*> Players;                                           // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	TArray<class UWBP_UI_Results_AICrewStatus_C*> Bots;                                              // 0x0310(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	int32                                         AddedCardCount;                                    // 0x0320(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         HighlightStatCount;                                // 0x0324(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        AppearTime;                                        // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void AddInBotCards();
+	void AddInPlayerCards();
 	void ExecuteUbergraph_WBP_Results_PlayerList(int32 EntryPoint);
+	void HighlightTopStat();
 	void OnMergePartyUpdated(const class FString& PlayerDisplayName, const bool bIsMergePartySelected);
 	void OnPlayerMergePartyChanged(class ASBZPlayerState* InPlayerState, bool bInMergeParty);
 	void OnSanitizeDisplayNamesComplete(const TMap<int32, class FString>& PlayerIdToAccelByteDisplayNameMap);
 	void OnSetup(const TArray<class ASBZPlayerState*>& PlayerStateArray, const TArray<class ASBZAICrewState*>& AICrewStateArray);
-	void HighlightTopStat();
-	void AddInPlayerCards();
-	void AddInBotCards();
 
 public:
 	static class UClass* StaticClass()

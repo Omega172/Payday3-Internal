@@ -13,40 +13,24 @@
 
 SDK_NAMESPACE_START
 
-// Enum MediaAssets.EMediaWebcamCaptureDeviceFilter
-// NumValues: 0x0006
-enum class EMediaWebcamCaptureDeviceFilter : uint8
+// Enum MediaAssets.MediaTextureOutputFormat
+// NumValues: 0x0003
+enum class EMediaTextureOutputFormat : uint8
 {
-	None                                     = 0,
-	DepthSensor                              = 1,
-	Front                                    = 2,
-	Rear                                     = 4,
-	Unknown                                  = 8,
-	EMediaWebcamCaptureDeviceFilter_MAX      = 9,
+	MTOF_Default                             = 0,
+	MTOF_SRGB_LINOUT                         = 1,
+	MTOF_MAX                                 = 2,
 };
 
-// Enum MediaAssets.EMediaVideoCaptureDeviceFilter
-// NumValues: 0x0006
-enum class EMediaVideoCaptureDeviceFilter : uint8
+// Enum MediaAssets.MediaTextureOrientation
+// NumValues: 0x0005
+enum class EMediaTextureOrientation : uint8
 {
-	None                                     = 0,
-	Card                                     = 1,
-	Software                                 = 2,
-	Unknown                                  = 4,
-	Webcam                                   = 8,
-	EMediaVideoCaptureDeviceFilter_MAX       = 9,
-};
-
-// Enum MediaAssets.EMediaAudioCaptureDeviceFilter
-// NumValues: 0x0006
-enum class EMediaAudioCaptureDeviceFilter : uint8
-{
-	None                                     = 0,
-	Card                                     = 1,
-	Microphone                               = 2,
-	Software                                 = 4,
-	Unknown                                  = 8,
-	EMediaAudioCaptureDeviceFilter_MAX       = 9,
+	MTORI_Original                           = 0,
+	MTORI_CW90                               = 1,
+	MTORI_CW180                              = 2,
+	MTORI_CW270                              = 3,
+	MTORI_MAX                                = 4,
 };
 
 // Enum MediaAssets.EMediaPlayerTrack
@@ -63,15 +47,13 @@ enum class EMediaPlayerTrack : uint8
 	EMediaPlayerTrack_MAX                    = 7,
 };
 
-// Enum MediaAssets.EMediaSoundComponentFFTSize
-// NumValues: 0x0005
-enum class EMediaSoundComponentFFTSize : uint8
+// Enum MediaAssets.EMediaTimeRangeBPType
+// NumValues: 0x0003
+enum class EMediaTimeRangeBPType : uint8
 {
-	Min_64                                   = 0,
-	Small_256                                = 1,
-	Medium_512                               = 2,
-	Large_1024                               = 3,
-	EMediaSoundComponentFFTSize_MAX          = 4,
+	Absolute                                 = 0,
+	Current                                  = 1,
+	EMediaTimeRangeBPType_MAX                = 2,
 };
 
 // Enum MediaAssets.EMediaSoundChannels
@@ -84,35 +66,83 @@ enum class EMediaSoundChannels : uint32
 	EMediaSoundChannels_MAX                  = 3,
 };
 
-// Enum MediaAssets.MediaTextureOrientation
+// Enum MediaAssets.EMediaSoundComponentFFTSize
 // NumValues: 0x0005
-enum class EMediaTextureOrientation : uint8
+enum class EMediaSoundComponentFFTSize : uint8
 {
-	MTORI_Original                           = 0,
-	MTORI_CW90                               = 1,
-	MTORI_CW180                              = 2,
-	MTORI_CW270                              = 3,
-	MTORI_MAX                                = 4,
+	Min_64                                   = 0,
+	Small_256                                = 1,
+	Medium_512                               = 2,
+	Large_1024                               = 3,
+	EMediaSoundComponentFFTSize_MAX          = 4,
 };
 
-// Enum MediaAssets.MediaTextureOutputFormat
-// NumValues: 0x0003
-enum class EMediaTextureOutputFormat : uint8
+// Enum MediaAssets.EMediaTextureVisibleMipsTiles
+// NumValues: 0x0004
+enum class EMediaTextureVisibleMipsTiles : uint8
 {
-	MTOF_Default                             = 0,
-	MTOF_SRGB_LINOUT                         = 1,
-	MTOF_MAX                                 = 2,
+	None                                     = 0,
+	Plane                                    = 1,
+	Sphere                                   = 2,
+	EMediaTextureVisibleMipsTiles_MAX        = 3,
 };
 
-// ScriptStruct MediaAssets.MediaCaptureDevice
-// 0x0028 (0x0028 - 0x0000)
-struct FMediaCaptureDevice final
+// Enum MediaAssets.EMediaAudioCaptureDeviceFilter
+// NumValues: 0x0006
+enum class EMediaAudioCaptureDeviceFilter : uint8
+{
+	None                                     = 0,
+	Card                                     = 1,
+	Microphone                               = 2,
+	Software                                 = 4,
+	Unknown                                  = 8,
+	EMediaAudioCaptureDeviceFilter_MAX       = 9,
+};
+
+// Enum MediaAssets.EMediaVideoCaptureDeviceFilter
+// NumValues: 0x0006
+enum class EMediaVideoCaptureDeviceFilter : uint8
+{
+	None                                     = 0,
+	Card                                     = 1,
+	Software                                 = 2,
+	Unknown                                  = 4,
+	Webcam                                   = 8,
+	EMediaVideoCaptureDeviceFilter_MAX       = 9,
+};
+
+// Enum MediaAssets.EMediaWebcamCaptureDeviceFilter
+// NumValues: 0x0006
+enum class EMediaWebcamCaptureDeviceFilter : uint8
+{
+	None                                     = 0,
+	DepthSensor                              = 1,
+	Front                                    = 2,
+	Rear                                     = 4,
+	Unknown                                  = 8,
+	EMediaWebcamCaptureDeviceFilter_MAX      = 9,
+};
+
+// ScriptStruct MediaAssets.MediaMetadataItemBPT
+// 0x0040 (0x0040 - 0x0000)
+struct FMediaMetadataItemBPT final
 {
 public:
-	class FText                                   DisplayName;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic)
-	class FString                                 Url;                                               // 0x0018(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LanguageCode;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 MimeType;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 StringData;                                        // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 BinaryData;                                        // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FMediaCaptureDevice;
+DUMPER7_ASSERTS_FMediaMetadataItemBPT;
+
+// ScriptStruct MediaAssets.MediaMetadataItemsBPT
+// 0x0010 (0x0010 - 0x0000)
+struct FMediaMetadataItemsBPT final
+{
+public:
+	TArray<struct FMediaMetadataItemBPT>          Items;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMediaMetadataItemsBPT;
 
 // ScriptStruct MediaAssets.MediaSoundComponentSpectralData
 // 0x0008 (0x0008 - 0x0000)
@@ -123,5 +153,26 @@ public:
 	float                                         Magnitude;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FMediaSoundComponentSpectralData;
+
+// ScriptStruct MediaAssets.MediaSourceCacheSettings
+// 0x0008 (0x0008 - 0x0000)
+struct FMediaSourceCacheSettings final
+{
+public:
+	bool                                          bOverride;                                         // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         TimeToLookAhead;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMediaSourceCacheSettings;
+
+// ScriptStruct MediaAssets.MediaCaptureDevice
+// 0x0020 (0x0020 - 0x0000)
+struct FMediaCaptureDevice final
+{
+public:
+	class FText                                   DisplayName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic)
+	class FString                                 Url;                                               // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMediaCaptureDevice;
 
 SDK_NAMESPACE_END

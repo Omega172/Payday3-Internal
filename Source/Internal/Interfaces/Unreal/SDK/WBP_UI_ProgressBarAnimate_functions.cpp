@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.AnimateProgress
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ProgressBarAnimate_C::AnimateProgress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "AnimateProgress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.ExecuteUbergraph_WBP_UI_ProgressBarAnimate
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -33,6 +47,62 @@ void UWBP_UI_ProgressBarAnimate_C::ExecuteUbergraph_WBP_UI_ProgressBarAnimate(in
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ProgressBarAnimate_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "PreConstruct");
+
+	Params::WBP_UI_ProgressBarAnimate_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.SetProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  InPreviousProgress                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InNewPercent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ProgressBarAnimate_C::SetProgress(double InPreviousProgress, double InNewPercent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "SetProgress");
+
+	Params::WBP_UI_ProgressBarAnimate_C_SetProgress Parms{};
+
+	Parms.InPreviousProgress = InPreviousProgress;
+	Parms.InNewPercent = InNewPercent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.StopAnimating
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ProgressBarAnimate_C::StopAnimating()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "StopAnimating");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,62 +128,6 @@ void UWBP_UI_ProgressBarAnimate_C::Tick(const struct FGeometry& MyGeometry, floa
 }
 
 
-// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ProgressBarAnimate_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "PreConstruct");
-
-	Params::WBP_UI_ProgressBarAnimate_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.UpdateProgress
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ProgressBarAnimate_C::UpdateProgress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "UpdateProgress");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.SetProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   InPreviousProgress                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   InNewPercent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ProgressBarAnimate_C::SetProgress(float InPreviousProgress, float InNewPercent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "SetProgress");
-
-	Params::WBP_UI_ProgressBarAnimate_C_SetProgress Parms{};
-
-	Parms.InPreviousProgress = InPreviousProgress;
-	Parms.InNewPercent = InNewPercent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.UpdateColors
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -128,29 +142,15 @@ void UWBP_UI_ProgressBarAnimate_C::UpdateColors()
 }
 
 
-// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.AnimateProgress
+// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.UpdateProgress
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_ProgressBarAnimate_C::AnimateProgress()
+void UWBP_UI_ProgressBarAnimate_C::UpdateProgress()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "AnimateProgress");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ProgressBarAnimate.WBP_UI_ProgressBarAnimate_C.StopAnimating
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ProgressBarAnimate_C::StopAnimating()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "StopAnimating");
+		Func = Class->GetFunction("WBP_UI_ProgressBarAnimate_C", "UpdateProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

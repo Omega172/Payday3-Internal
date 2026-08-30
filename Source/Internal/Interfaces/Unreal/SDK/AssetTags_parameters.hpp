@@ -59,12 +59,12 @@ public:
 DUMPER7_ASSERTS_AssetTagsSubsystem_GetCollectionsContainingAsset;
 
 // Function AssetTags.AssetTagsSubsystem.GetCollectionsContainingAssetData
-// 0x0088 (0x0088 - 0x0000)
+// 0x0090 (0x0090 - 0x0000)
 struct AssetTagsSubsystem_GetCollectionsContainingAssetData final
 {
 public:
-	struct FAssetData                             AssetData;                                         // 0x0000(0x0078)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FName>                           ReturnValue;                                       // 0x0078(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+	struct FAssetData                             AssetData;                                         // 0x0000(0x0080)(ConstParm, Parm, OutParm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           ReturnValue;                                       // 0x0080(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AssetTagsSubsystem_GetCollectionsContainingAssetData;
 
@@ -73,10 +73,20 @@ DUMPER7_ASSERTS_AssetTagsSubsystem_GetCollectionsContainingAssetData;
 struct AssetTagsSubsystem_GetCollectionsContainingAssetPtr final
 {
 public:
-	const class UObject*                          AssetPtr;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          AssetPtr;                                          // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FName>                           ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_AssetTagsSubsystem_GetCollectionsContainingAssetPtr;
+
+// Function AssetTags.AssetTagsSubsystem.K2_GetCollectionsContainingAsset
+// 0x0038 (0x0038 - 0x0000)
+struct AssetTagsSubsystem_K2_GetCollectionsContainingAsset final
+{
+public:
+	struct FSoftObjectPath                        AssetPath;                                         // 0x0000(0x0028)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           ReturnValue;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AssetTagsSubsystem_K2_GetCollectionsContainingAsset;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

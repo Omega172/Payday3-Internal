@@ -36,24 +36,10 @@ void UWBP_UI_PopUpWidget_C::ExecuteUbergraph_WBP_UI_PopUpWidget(int32 EntryPoint
 }
 
 
-// Function WBP_UI_PopUpWidget.WBP_UI_PopUpWidget_C.OnDisplayPopUp
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_PopUpWidget_C::OnDisplayPopUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_PopUpWidget_C", "OnDisplayPopUp");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_PopUpWidget.WBP_UI_PopUpWidget_C.GetBody
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_PopUpWidget_C::GetBody(class UWidget** Widget)
 {
@@ -74,7 +60,7 @@ void UWBP_UI_PopUpWidget_C::GetBody(class UWidget** Widget)
 // Function WBP_UI_PopUpWidget.WBP_UI_PopUpWidget_C.GetBodyClass
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UClass**                          Class_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass**                          Class_0                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_PopUpWidget_C::GetBodyClass(class UClass** Class_0)
 {
@@ -89,6 +75,20 @@ void UWBP_UI_PopUpWidget_C::GetBodyClass(class UClass** Class_0)
 
 	if (Class_0 != nullptr)
 		*Class_0 = Parms.Class_0;
+}
+
+
+// Function WBP_UI_PopUpWidget.WBP_UI_PopUpWidget_C.OnDisplayPopUp
+// (Event, Public, BlueprintEvent)
+
+void UWBP_UI_PopUpWidget_C::OnDisplayPopUp()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_PopUpWidget_C", "OnDisplayPopUp");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

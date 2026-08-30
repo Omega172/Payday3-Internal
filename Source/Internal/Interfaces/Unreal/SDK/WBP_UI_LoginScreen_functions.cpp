@@ -16,83 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.ExecuteUbergraph_WBP_UI_LoginScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::ExecuteUbergraph_WBP_UI_LoginScreen(int32 EntryPoint)
+void UWBP_UI_LoginScreen_C::BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature(bool bNewState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "ExecuteUbergraph_WBP_UI_LoginScreen");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature");
 
-	Params::WBP_UI_LoginScreen_C_ExecuteUbergraph_WBP_UI_LoginScreen Parms{};
+	Params::WBP_UI_LoginScreen_C_BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bNewState = bNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -103,8 +59,8 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuBu
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCode_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -122,31 +78,11 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccountQRCod
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -164,66 +100,90 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBr
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.OnFailedMessageTimerDone
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::OnFailedMessageTimerDone()
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "OnFailedMessageTimerDone");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccountWebBrowser_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.ShowLoginFailedMessage
-// (Event, Public, BlueprintEvent)
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::ShowLoginFailedMessage()
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "ShowLoginFailedMessage");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::Destruct()
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "Destruct");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::OnInitialized()
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
@@ -240,19 +200,19 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_Quit_K2Node_Compon
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -260,20 +220,42 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Forgotten_Password_MenuButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 	Parms.bIsEnabled_0 = bIsEnabled_0;
@@ -302,6 +284,26 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2
 }
 
 
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Email_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_0_OnTextButtonSubmittedText__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -322,21 +324,23 @@ void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoginScreen_C::BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature(bool bNewState)
+void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
 
-	Params::WBP_UI_LoginScreen_C_BndEvt__Button_CheckBox_RememberDetails_K2Node_ComponentBoundEvent_4_OnCheckChanged__DelegateSignature Parms{};
+	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Widget_TextEntry_Password_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.bNewState = bNewState;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -356,10 +360,44 @@ void UWBP_UI_LoginScreen_C::Construct()
 }
 
 
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoginScreen_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.ExecuteUbergraph_WBP_UI_LoginScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoginScreen_C::ExecuteUbergraph_WBP_UI_LoginScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "ExecuteUbergraph_WBP_UI_LoginScreen");
+
+	Params::WBP_UI_LoginScreen_C_ExecuteUbergraph_WBP_UI_LoginScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.HandleSelectRegionEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_LoginScreen_C::HandleSelectRegionEvent(class USBZMenuButton* Button)
 {
@@ -376,83 +414,17 @@ void UWBP_UI_LoginScreen_C::HandleSelectRegionEvent(class USBZMenuButton* Button
 }
 
 
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.OnFailedMessageTimerDone
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_LoginScreen_C::OnFailedMessageTimerDone()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "OnFailedMessageTimerDone");
 
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithDeviceID_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_LoginWithSteam_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_CreateAccount_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_LoginScreen_C::BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_LoginScreen_C_BndEvt__WBP_UI_LoginScreen_Button_Login_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -473,6 +445,20 @@ void UWBP_UI_LoginScreen_C::OnGainedStackFocused(const class FName& PreviousValu
 	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoginScreen_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -507,6 +493,20 @@ void UWBP_UI_LoginScreen_C::Set_Login_Panels_Visibility(ESlateVisibility In_Visi
 	Parms.In_Visibility = In_Visibility;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_LoginScreen.WBP_UI_LoginScreen_C.ShowLoginFailedMessage
+// (Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoginScreen_C::ShowLoginFailedMessage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_LoginScreen_C", "ShowLoginFailedMessage");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

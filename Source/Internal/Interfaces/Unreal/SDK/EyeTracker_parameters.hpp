@@ -17,24 +17,24 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function EyeTracker.EyeTrackerFunctionLibrary.GetGazeData
-// 0x0038 (0x0038 - 0x0000)
+// 0x0060 (0x0060 - 0x0000)
 struct EyeTrackerFunctionLibrary_GetGazeData final
 {
 public:
-	struct FEyeTrackerGazeData                    OutGazeData;                                       // 0x0000(0x0034)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0034(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FEyeTrackerGazeData                    OutGazeData;                                       // 0x0000(0x0058)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0058(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_EyeTrackerFunctionLibrary_GetGazeData;
 
 // Function EyeTracker.EyeTrackerFunctionLibrary.GetStereoGazeData
-// 0x0044 (0x0044 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct EyeTrackerFunctionLibrary_GetStereoGazeData final
 {
 public:
-	struct FEyeTrackerStereoGazeData              OutGazeData;                                       // 0x0000(0x0040)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0040(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	struct FEyeTrackerStereoGazeData              OutGazeData;                                       // 0x0000(0x0080)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0080(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_EyeTrackerFunctionLibrary_GetStereoGazeData;
 
@@ -61,7 +61,7 @@ DUMPER7_ASSERTS_EyeTrackerFunctionLibrary_IsStereoGazeDataAvailable;
 struct EyeTrackerFunctionLibrary_SetEyeTrackedPlayer final
 {
 public:
-	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_EyeTrackerFunctionLibrary_SetEyeTrackedPlayer;
 

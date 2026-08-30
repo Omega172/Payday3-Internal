@@ -22,7 +22,7 @@ class USBZStateMachine : public UObject
 {
 public:
 	uint8                                         Pad_30[0x20];                                      // 0x0030(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZStateMachineState*                  CurrentState;                                      // 0x0050(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZStateMachineState*                  CurrentState;                                      // 0x0050(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FSBZSetStateRequest>            SetStateQueue;                                     // 0x0058(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FName, class USBZStateMachineState*> States;                                          // 0x0070(0x0050)(Transient, NativeAccessSpecifierPrivate)
@@ -48,7 +48,7 @@ DUMPER7_ASSERTS_USBZStateMachine;
 class USBZStateMachineData : public UObject
 {
 public:
-	class USBZStateMachineState*                  PreviousState;                                     // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USBZStateMachineState*                  PreviousState;                                     // 0x0030(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()

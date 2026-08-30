@@ -15,11 +15,11 @@ SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_QuestLine_Item_Chapter.WBP_QuestLine_Item_Chapter_C.SetChapterText
-// 0x0018 (0x0018 - 0x0000)
+// 0x0010 (0x0010 - 0x0000)
 struct WBP_QuestLine_Item_Chapter_C_SetChapterText final
 {
 public:
-	class FText                                   InputText;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   InputText;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 DUMPER7_ASSERTS_WBP_QuestLine_Item_Chapter_C_SetChapterText;
 

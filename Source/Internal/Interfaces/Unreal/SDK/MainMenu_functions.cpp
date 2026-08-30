@@ -70,26 +70,6 @@ void AMainMenu_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function MainMenu.MainMenu_C.TickRotation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AMainMenu_C::TickRotation(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainMenu_C", "TickRotation");
-
-	Params::MainMenu_C_TickRotation Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function MainMenu.MainMenu_C.SetActiveCamera
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -107,6 +87,26 @@ void AMainMenu_C::SetActiveCamera(class FName NewValue, class FName PreviousValu
 
 	Parms.NewValue = NewValue;
 	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainMenu.MainMenu_C.TickRotation
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainMenu_C::TickRotation(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainMenu_C", "TickRotation");
+
+	Params::MainMenu_C_TickRotation Parms{};
+
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

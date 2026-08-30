@@ -15,27 +15,29 @@
 
 SDK_NAMESPACE_START
 
-// ScriptStruct WidgetCarousel.WidgetCarouselNavigationBarStyle
-// 0x0888 (0x0890 - 0x0008)
-struct FWidgetCarouselNavigationBarStyle final : public FSlateWidgetStyle
-{
-public:
-	struct FSlateBrush                            HighlightBrush;                                    // 0x0008(0x0090)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           LeftButtonStyle;                                   // 0x0098(0x02A8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           CenterButtonStyle;                                 // 0x0340(0x02A8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	struct FButtonStyle                           RightButtonStyle;                                  // 0x05E8(0x02A8)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FWidgetCarouselNavigationBarStyle;
-
 // ScriptStruct WidgetCarousel.WidgetCarouselNavigationButtonStyle
-// 0x03C8 (0x03D0 - 0x0008)
+// 0x0548 (0x0550 - 0x0008)
 struct FWidgetCarouselNavigationButtonStyle final : public FSlateWidgetStyle
 {
 public:
-	struct FButtonStyle                           InnerButtonStyle;                                  // 0x0008(0x02A8)(NativeAccessSpecifierPublic)
-	struct FSlateBrush                            NavigationButtonLeftImage;                         // 0x02B0(0x0090)(NativeAccessSpecifierPublic)
-	struct FSlateBrush                            NavigationButtonRightImage;                        // 0x0340(0x0090)(NativeAccessSpecifierPublic)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FButtonStyle                           InnerButtonStyle;                                  // 0x0010(0x03C0)(NativeAccessSpecifierPublic)
+	struct FSlateBrush                            NavigationButtonLeftImage;                         // 0x03D0(0x00C0)(NativeAccessSpecifierPublic)
+	struct FSlateBrush                            NavigationButtonRightImage;                        // 0x0490(0x00C0)(NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FWidgetCarouselNavigationButtonStyle;
+
+// ScriptStruct WidgetCarousel.WidgetCarouselNavigationBarStyle
+// 0x0C08 (0x0C10 - 0x0008)
+struct FWidgetCarouselNavigationBarStyle final : public FSlateWidgetStyle
+{
+public:
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            HighlightBrush;                                    // 0x0010(0x00C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           LeftButtonStyle;                                   // 0x00D0(0x03C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           CenterButtonStyle;                                 // 0x0490(0x03C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FButtonStyle                           RightButtonStyle;                                  // 0x0850(0x03C0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FWidgetCarouselNavigationBarStyle;
 
 SDK_NAMESPACE_END

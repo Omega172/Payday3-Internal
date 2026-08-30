@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_classes.hpp"
+#include "DeveloperSettings_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -37,5 +38,72 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UDeveloperSettings;
+
+// Class DeveloperSettings.DeveloperSettingsBackedByCVars
+// 0x0000 (0x0048 - 0x0048)
+class UDeveloperSettingsBackedByCVars : public UDeveloperSettings
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("DeveloperSettingsBackedByCVars")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeveloperSettingsBackedByCVars")
+	}
+	static class UDeveloperSettingsBackedByCVars* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UDeveloperSettingsBackedByCVars>();
+	}
+};
+DUMPER7_ASSERTS_UDeveloperSettingsBackedByCVars;
+
+// Class DeveloperSettings.PlatformSettings
+// 0x0020 (0x0050 - 0x0030)
+class UPlatformSettings : public UObject
+{
+public:
+	uint8                                         Pad_30[0x20];                                      // 0x0030(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PlatformSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformSettings")
+	}
+	static class UPlatformSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPlatformSettings>();
+	}
+};
+DUMPER7_ASSERTS_UPlatformSettings;
+
+// Class DeveloperSettings.PlatformSettingsManager
+// 0x0060 (0x0090 - 0x0030)
+class UPlatformSettingsManager final : public UObject
+{
+public:
+	TMap<TSubclassOf<class UPlatformSettings>, struct FPlatformSettingsInstances> SettingsMap;       // 0x0030(0x0050)(Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_80[0x10];                                      // 0x0080(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("PlatformSettingsManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlatformSettingsManager")
+	}
+	static class UPlatformSettingsManager* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UPlatformSettingsManager>();
+	}
+};
+DUMPER7_ASSERTS_UPlatformSettingsManager;
 
 SDK_NAMESPACE_END

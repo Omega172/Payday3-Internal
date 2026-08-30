@@ -16,551 +16,187 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnTextCommited
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton(int32 EntryPoint)
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnTextCommited(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnTextCommited");
 
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnTextCommited Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetActive
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetNavKeysPerInput
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsKeyboardMouse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetActive()
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetNavKeysPerInput(bool IsKeyboardMouse)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetActive");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetNavKeysPerInput");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetNavKeysPerInput Parms{};
+
+	Parms.IsKeyboardMouse = IsKeyboardMouse;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BindKeys
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BindKeys(bool IsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BindKeys");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BindKeys Parms{};
+
+	Parms.IsActive = IsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutPopupClosed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnLoadoutPopupClosed(class FName ClosingActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnLoadoutPopupClosed");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnLoadoutPopupClosed Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.CreateRenameLoadoutPopup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::CreateRenameLoadoutPopup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "CreateRenameLoadoutPopup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "PreConstruct");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.DecrementLoadout
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::DecrementLoadout()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "DecrementLoadout");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.IncrementLoadout
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::IncrementLoadout()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "IncrementLoadout");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.DecrementLoadoutIndex
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::DecrementLoadoutIndex()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "DecrementLoadoutIndex");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.IncrementLoadoutIndex
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::IncrementLoadoutIndex()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "IncrementLoadoutIndex");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutDecrement
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnLoadoutDecrement()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnLoadoutDecrement");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutIncrement
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnLoadoutIncrement()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnLoadoutIncrement");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnInputTypeChangedToGamepad
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGamepad                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnInputTypeChangedToGamepad(bool bIsGamepad)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnInputTypeChangedToGamepad");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnInputTypeChangedToGamepad Parms{};
-
-	Parms.bIsGamepad = bIsGamepad;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ActiveLoadoutChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   NewActiveLoadoutIndex                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::ActiveLoadoutChanged(int32 NewActiveLoadoutIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "ActiveLoadoutChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ActiveLoadoutChanged Parms{};
-
-	Parms.NewActiveLoadoutIndex = NewActiveLoadoutIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.FocusedPlayerLoadoutConfigChanged
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayerLoadoutConfig&   NewPlayerLoadout                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::FocusedPlayerLoadoutConfigChanged(const struct FSBZPlayerLoadoutConfig& NewPlayerLoadout)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "FocusedPlayerLoadoutConfigChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_FocusedPlayerLoadoutConfigChanged Parms{};
-
-	Parms.NewPlayerLoadout = std::move(NewPlayerLoadout);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PrePush_57D08016443F7CC905F0FBB992BF540A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::PrePush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "PrePush_57D08016443F7CC905F0FBB992BF540A");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PrePush_57D08016443F7CC905F0FBB992BF540A Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PostPush_57D08016443F7CC905F0FBB992BF540A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::PostPush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "PostPush_57D08016443F7CC905F0FBB992BF540A");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PostPush_57D08016443F7CC905F0FBB992BF540A Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnHoveredStateChanged
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnHoveredStateChanged(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnHoveredStateChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnHoveredStateChanged Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnFocusedStateChanged
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnFocusedStateChanged(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnFocusedStateChanged");
-
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnFocusedStateChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.RefreshVisuals
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetSelectedVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::RefreshVisuals()
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetSelectedVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "RefreshVisuals");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetSelectedVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetDefaultVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetDefaultVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetDefaultVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetDisabledFocusedVisuals
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetDisabledFocusedVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetDisabledFocusedVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetDisabledVisuals
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetDisabledVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetDisabledVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnDisabledChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InIsDisabled                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnDisabledChanged(bool InIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnDisabledChanged");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnDisabledChanged Parms{};
+
+	Parms.InIsDisabled = InIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetWeaponStatusColour
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetWeaponStatusColour()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetWeaponStatusColour");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -586,187 +222,551 @@ void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetLoadoutName(const class FS
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetWeaponStatusColour
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::RefreshVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "RefreshVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnFocusedStateChanged
 // (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetWeaponStatusColour()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetWeaponStatusColour");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnDisabledChanged
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InIsDisabled                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnDisabledChanged(bool InIsDisabled)
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnFocusedStateChanged(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnDisabledChanged");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnFocusedStateChanged");
 
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnDisabledChanged Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnFocusedStateChanged Parms{};
 
-	Parms.InIsDisabled = InIsDisabled;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetDisabledVisuals
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnHoveredStateChanged
 // (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetDisabledVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetDisabledVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetDisabledFocusedVisuals
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetDisabledFocusedVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetDisabledFocusedVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetDefaultVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetDefaultVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetDefaultVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetSelectedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetSelectedVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetSelectedVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.CreateRenameLoadoutPopup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::CreateRenameLoadoutPopup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "CreateRenameLoadoutPopup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutPopupClosed
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnLoadoutPopupClosed(class FName ClosingActionName)
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnHoveredStateChanged(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnLoadoutPopupClosed");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnHoveredStateChanged");
 
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnLoadoutPopupClosed Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnHoveredStateChanged Parms{};
 
-	Parms.ClosingActionName = ClosingActionName;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BindKeys
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PostPush_57D08016443F7CC905F0FBB992BF540A
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BindKeys(bool IsActive)
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::PostPush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BindKeys");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "PostPush_57D08016443F7CC905F0FBB992BF540A");
 
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BindKeys Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PostPush_57D08016443F7CC905F0FBB992BF540A Parms{};
 
-	Parms.IsActive = IsActive;
+	Parms.MenuWidget = MenuWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetNavKeysPerInput
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PrePush_57D08016443F7CC905F0FBB992BF540A
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsKeyboardMouse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetNavKeysPerInput(bool IsKeyboardMouse)
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::PrePush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetNavKeysPerInput");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "PrePush_57D08016443F7CC905F0FBB992BF540A");
 
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetNavKeysPerInput Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PrePush_57D08016443F7CC905F0FBB992BF540A Parms{};
 
-	Parms.IsKeyboardMouse = IsKeyboardMouse;
+	Parms.MenuWidget = MenuWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnTextCommited
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.FocusedPlayerLoadoutConfigChanged
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPlayerLoadoutConfig&   NewPlayerLoadout                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnTextCommited(const class FText& Text, ETextCommit CommitMethod)
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::FocusedPlayerLoadoutConfigChanged(const struct FSBZPlayerLoadoutConfig& NewPlayerLoadout)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnTextCommited");
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "FocusedPlayerLoadoutConfigChanged");
 
-	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnTextCommited Parms{};
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_FocusedPlayerLoadoutConfigChanged Parms{};
 
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
+	Parms.NewPlayerLoadout = std::move(NewPlayerLoadout);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ActiveLoadoutChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   NewActiveLoadoutIndex                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::ActiveLoadoutChanged(int32 NewActiveLoadoutIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "ActiveLoadoutChanged");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ActiveLoadoutChanged Parms{};
+
+	Parms.NewActiveLoadoutIndex = NewActiveLoadoutIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnInputTypeChangedToGamepad
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGamepad                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnInputTypeChangedToGamepad(bool bIsGamepad)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnInputTypeChangedToGamepad");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnInputTypeChangedToGamepad Parms{};
+
+	Parms.bIsGamepad = bIsGamepad;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutIncrement
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnLoadoutIncrement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnLoadoutIncrement");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutDecrement
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnLoadoutDecrement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnLoadoutDecrement");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.IncrementLoadoutIndex
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::IncrementLoadoutIndex()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "IncrementLoadoutIndex");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.DecrementLoadoutIndex
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::DecrementLoadoutIndex()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "DecrementLoadoutIndex");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.IncrementLoadout
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::IncrementLoadout()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "IncrementLoadout");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.DecrementLoadout
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::DecrementLoadout()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "DecrementLoadout");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature Parms{};
+
+	Parms.InVisibility = InVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "PreConstruct");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetActive
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::SetActive()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "SetActive");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Preplanning_MainMenu_LoadoutButton_C::ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_LoadoutButton_C", "ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton");
+
+	Params::WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

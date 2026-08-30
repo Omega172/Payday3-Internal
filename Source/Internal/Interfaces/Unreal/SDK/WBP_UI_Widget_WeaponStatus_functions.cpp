@@ -36,41 +36,23 @@ void UWBP_UI_Widget_WeaponStatus_C::ExecuteUbergraph_WBP_UI_Widget_WeaponStatus(
 }
 
 
-// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Widget_WeaponStatus_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "PreConstruct");
-
-	Params::WBP_UI_Widget_WeaponStatus_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnAmmoInventoryStateChanged
+// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnAmmoAdded
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// EPD3AmmoState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   AmmoAddedCount                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFireRangedWeaponScope                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_WeaponStatus_C::OnAmmoInventoryStateChanged(EPD3AmmoState NewState)
+void UWBP_UI_Widget_WeaponStatus_C::OnAmmoAdded(int32 AmmoAddedCount, bool bIsFireRangedWeaponScope)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnAmmoInventoryStateChanged");
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnAmmoAdded");
 
-	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoInventoryStateChanged Parms{};
+	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoAdded Parms{};
 
-	Parms.NewState = NewState;
+	Parms.AmmoAddedCount = AmmoAddedCount;
+	Parms.bIsFireRangedWeaponScope = bIsFireRangedWeaponScope;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -96,39 +78,43 @@ void UWBP_UI_Widget_WeaponStatus_C::OnAmmoInventoryChanged(int32 AmmoInventoryCh
 }
 
 
-// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnAmmoAdded
+// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnAmmoInventoryStateChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   AmmoAddedCount                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFireRangedWeaponScope                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EPD3AmmoState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_WeaponStatus_C::OnAmmoAdded(int32 AmmoAddedCount, bool bIsFireRangedWeaponScope)
+void UWBP_UI_Widget_WeaponStatus_C::OnAmmoInventoryStateChanged(EPD3AmmoState NewState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnAmmoAdded");
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnAmmoInventoryStateChanged");
 
-	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoAdded Parms{};
+	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoInventoryStateChanged Parms{};
 
-	Parms.AmmoAddedCount = AmmoAddedCount;
-	Parms.bIsFireRangedWeaponScope = bIsFireRangedWeaponScope;
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnAmmoLoadedChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   AmmoLoadedChanged                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_WeaponStatus_C::OnInitialized()
+void UWBP_UI_Widget_WeaponStatus_C::OnAmmoLoadedChanged(int32 AmmoLoadedChanged)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnAmmoLoadedChanged");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoLoadedChanged Parms{};
+
+	Parms.AmmoLoadedChanged = AmmoLoadedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -155,7 +141,7 @@ void UWBP_UI_Widget_WeaponStatus_C::OnAmmoLoadedStateChanged(EPD3AmmoState NewSt
 // Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnEquippedChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsEquippedNewValue                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsEquippedNewValue                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_WeaponStatus_C::OnEquippedChanged(bool bIsEquippedNewValue)
 {
@@ -172,41 +158,35 @@ void UWBP_UI_Widget_WeaponStatus_C::OnEquippedChanged(bool bIsEquippedNewValue)
 }
 
 
-// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnAmmoLoadedChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   AmmoLoadedChanged                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Widget_WeaponStatus_C::OnAmmoLoadedChanged(int32 AmmoLoadedChanged)
+void UWBP_UI_Widget_WeaponStatus_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnAmmoLoadedChanged");
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "OnInitialized");
 
-	Params::WBP_UI_Widget_WeaponStatus_C_OnAmmoLoadedChanged Parms{};
-
-	Parms.AmmoLoadedChanged = AmmoLoadedChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.SetEquipped
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsEquipped                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_WeaponStatus_C::SetEquipped(bool IsEquipped)
+void UWBP_UI_Widget_WeaponStatus_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "SetEquipped");
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "PreConstruct");
 
-	Params::WBP_UI_Widget_WeaponStatus_C_SetEquipped Parms{};
+	Params::WBP_UI_Widget_WeaponStatus_C_PreConstruct Parms{};
 
-	Parms.IsEquipped = IsEquipped;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -216,7 +196,7 @@ void UWBP_UI_Widget_WeaponStatus_C::SetEquipped(bool IsEquipped)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPD3AmmoState                           Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsAmmoClip                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsAmmoClip                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_WeaponStatus_C::SetAmmoState(EPD3AmmoState Index_0, bool bIsAmmoClip)
 {
@@ -238,7 +218,7 @@ void UWBP_UI_Widget_WeaponStatus_C::SetAmmoState(EPD3AmmoState Index_0, bool bIs
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   AmmoValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsAmmoClip                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsAmmoClip                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_WeaponStatus_C::SetAmmoText(int32 AmmoValue, bool bIsAmmoClip)
 {
@@ -251,6 +231,26 @@ void UWBP_UI_Widget_WeaponStatus_C::SetAmmoText(int32 AmmoValue, bool bIsAmmoCli
 
 	Parms.AmmoValue = AmmoValue;
 	Parms.bIsAmmoClip = bIsAmmoClip;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_WeaponStatus.WBP_UI_Widget_WeaponStatus_C.SetEquipped
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEquipped                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_WeaponStatus_C::SetEquipped(bool IsEquipped)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_WeaponStatus_C", "SetEquipped");
+
+	Params::WBP_UI_Widget_WeaponStatus_C_SetEquipped Parms{};
+
+	Parms.IsEquipped = IsEquipped;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

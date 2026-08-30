@@ -16,6 +16,46 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ChallengeCategory_PanelButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_ChallengeCategory_PanelButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ChallengeCategory_PanelButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_UI_ChallengeCategory_PanelButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ExecuteUbergraph_WBP_UI_ChallengeCategory_PanelButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -58,41 +98,61 @@ void UWBP_UI_ChallengeCategory_PanelButton_C::OnChallengeCategoryCountRefreshed(
 }
 
 
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonHoveredChanged
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnChallengeCategoryDataInititalized
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZChallengeCategoryData*        InCategoryData                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ChallengeCategory_PanelButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_ChallengeCategory_PanelButton_C::OnChallengeCategoryDataInititalized(class USBZChallengeCategoryData* InCategoryData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "OnChallengeCategoryDataInititalized");
 
-	Params::WBP_UI_ChallengeCategory_PanelButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryDataInititalized Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.InCategoryData = InCategoryData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnFocusedVisual
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ChallengeCategory_PanelButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_ChallengeCategory_PanelButton_C::OnFocusedVisual(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "ButtonFocusedChanged");
+		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "OnFocusedVisual");
 
-	Params::WBP_UI_ChallengeCategory_PanelButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_ChallengeCategory_PanelButton_C_OnFocusedVisual Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnHoveredVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ChallengeCategory_PanelButton_C::OnHoveredVisuals(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "OnHoveredVisuals");
+
+	Params::WBP_UI_ChallengeCategory_PanelButton_C_OnHoveredVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -115,7 +175,7 @@ void UWBP_UI_ChallengeCategory_PanelButton_C::OnInitialized()
 // Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_ChallengeCategory_PanelButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -127,66 +187,6 @@ void UWBP_UI_ChallengeCategory_PanelButton_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_UI_ChallengeCategory_PanelButton_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnChallengeCategoryDataInititalized
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZChallengeCategoryData*        InCategoryData                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ChallengeCategory_PanelButton_C::OnChallengeCategoryDataInititalized(class USBZChallengeCategoryData* InCategoryData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "OnChallengeCategoryDataInititalized");
-
-	Params::WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryDataInititalized Parms{};
-
-	Parms.InCategoryData = InCategoryData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnFocusedVisual
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ChallengeCategory_PanelButton_C::OnFocusedVisual(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "OnFocusedVisual");
-
-	Params::WBP_UI_ChallengeCategory_PanelButton_C_OnFocusedVisual Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnHoveredVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ChallengeCategory_PanelButton_C::OnHoveredVisuals(bool bIsHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ChallengeCategory_PanelButton_C", "OnHoveredVisuals");
-
-	Params::WBP_UI_ChallengeCategory_PanelButton_C_OnHoveredVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

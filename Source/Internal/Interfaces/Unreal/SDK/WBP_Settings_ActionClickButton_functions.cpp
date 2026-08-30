@@ -16,6 +16,94 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ActionButtonLabelLocalizedChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_ActionClickButton_C::ActionButtonLabelLocalizedChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ActionButtonLabelLocalizedChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.BndEvt__WBP_Settings_ActionClickButton_Button_Action_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Settings_ActionClickButton_C::BndEvt__WBP_Settings_ActionClickButton_Button_Action_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "BndEvt__WBP_Settings_ActionClickButton_Button_Action_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_ActionClickButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_Settings_ActionClickButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_ActionClickButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_Settings_ActionClickButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_ActionClickButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_Settings_ActionClickButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ExecuteUbergraph_WBP_Settings_ActionClickButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,117 +124,75 @@ void UWBP_Settings_ActionClickButton_C::ExecuteUbergraph_WBP_Settings_ActionClic
 }
 
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.BndEvt__WBP_Settings_ActionClickButton_Button_Action_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.InitializeVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_ActionClickButton_C::BndEvt__WBP_Settings_ActionClickButton_Button_Action_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature()
+void UWBP_Settings_ActionClickButton_C::InitializeVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "BndEvt__WBP_Settings_ActionClickButton_Button_Action_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "InitializeVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ActionButtonLabelLocalizedChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_ActionClickButton_C::ActionButtonLabelLocalizedChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ActionButtonLabelLocalizedChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.SettingChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_ActionClickButton_C::SettingChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "SettingChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.SelectionNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_ActionClickButton_C::SelectionNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "SelectionNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_ActionClickButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_Settings_ActionClickButton_C::OnDisabledVisuals(bool bIsDisabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "OnDisabledVisuals");
 
-	Params::WBP_Settings_ActionClickButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_Settings_ActionClickButton_C_OnDisabledVisuals Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.bIsDisabled_0 = bIsDisabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnFocusedVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_ActionClickButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_Settings_ActionClickButton_C::OnFocusedVisuals(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ButtonFocusedChanged");
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "OnFocusedVisuals");
 
-	Params::WBP_Settings_ActionClickButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_Settings_ActionClickButton_C_OnFocusedVisuals Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_ActionClickButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_Settings_ActionClickButton_C::OnHoverVisuals(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "ButtonDisabledChanged");
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "OnHoverVisuals");
 
-	Params::WBP_Settings_ActionClickButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_Settings_ActionClickButton_C_OnHoverVisuals Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -169,7 +215,7 @@ void UWBP_Settings_ActionClickButton_C::OnInitialized()
 // Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_ActionClickButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -200,89 +246,29 @@ void UWBP_Settings_ActionClickButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.SelectionNameChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_ActionClickButton_C::OnHoverVisuals(bool bIsHovered)
+void UWBP_Settings_ActionClickButton_C::SelectionNameChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "OnHoverVisuals");
-
-	Params::WBP_Settings_ActionClickButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnFocusedVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_ActionClickButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "OnFocusedVisuals");
-
-	Params::WBP_Settings_ActionClickButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_ActionClickButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "OnDisabledVisuals");
-
-	Params::WBP_Settings_ActionClickButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.InitializeVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_ActionClickButton_C::InitializeVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "InitializeVisuals");
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "SelectionNameChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.UpdateSettingNameText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.SettingChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_ActionClickButton_C::UpdateSettingNameText()
+void UWBP_Settings_ActionClickButton_C::SettingChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "UpdateSettingNameText");
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "SettingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -297,6 +283,20 @@ void UWBP_Settings_ActionClickButton_C::UpdateActionButtonLabelText()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "UpdateActionButtonLabelText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.UpdateSettingNameText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_ActionClickButton_C::UpdateSettingNameText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_ActionClickButton_C", "UpdateSettingNameText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

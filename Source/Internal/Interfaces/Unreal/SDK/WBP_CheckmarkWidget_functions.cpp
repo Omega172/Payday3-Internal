@@ -39,7 +39,7 @@ void UWBP_CheckmarkWidget_C::ExecuteUbergraph_WBP_CheckmarkWidget(int32 EntryPoi
 // Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CheckmarkWidget_C::PreConstruct(bool IsDesignTime)
 {
@@ -59,7 +59,7 @@ void UWBP_CheckmarkWidget_C::PreConstruct(bool IsDesignTime)
 // Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.SetChecked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InIsChecked                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InIsChecked                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CheckmarkWidget_C::SetChecked(bool InIsChecked)
 {

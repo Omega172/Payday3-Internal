@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Place_TripperLaser.GA_Place_TripperLaser_C
-// 0x0000 (0x0560 - 0x0560)
+// 0x0000 (0x0580 - 0x0580)
 class UGA_Place_TripperLaser_C final : public USBZPlaceTripperAbility
 {
 public:

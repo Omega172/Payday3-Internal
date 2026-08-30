@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ShopScreen.WBP_ShopScreen_C
-// 0x0018 (0x0500 - 0x04E8)
+// 0x0018 (0x0550 - 0x0538)
 class UWBP_ShopScreen_C final : public USBZShopScreenWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       CategoryChange;                                    // 0x04F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x04F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0538(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       CategoryChange;                                    // 0x0540(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0548(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint);
-	void OnShopScreenOpened(int32 CategoryIndex, bool bPlayAnimation);
 	void OnActiveCategoryUpdated(const class USBZShopCategoryData* NewCategory, int32 NewCategoryIndex, bool bWasChanged);
+	void OnShopScreenOpened(int32 CategoryIndex, bool bPlayAnimation);
 
 public:
 	static class UClass* StaticClass()

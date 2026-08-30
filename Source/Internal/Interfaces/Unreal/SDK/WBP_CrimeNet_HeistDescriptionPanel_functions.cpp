@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.Display Panel Animation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistDescriptionPanel_C::Display_Panel_Animation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "Display Panel Animation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.ExecuteUbergraph_WBP_CrimeNet_HeistDescriptionPanel
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,10 +50,33 @@ void UWBP_CrimeNet_HeistDescriptionPanel_C::ExecuteUbergraph_WBP_CrimeNet_HeistD
 }
 
 
+// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.GetSecurityCompanyName
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USBZSecurityCompanyVisualsWidget* Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
+
+class FString UWBP_CrimeNet_HeistDescriptionPanel_C::GetSecurityCompanyName(class USBZSecurityCompanyVisualsWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "GetSecurityCompanyName");
+
+	Params::WBP_CrimeNet_HeistDescriptionPanel_C_GetSecurityCompanyName Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.InitializeHeistData
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPD3HeistDataAsset*               InHeistData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPD3HeistDataAsset*               InHeistData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_CrimeNet_HeistDescriptionPanel_C::InitializeHeistData(class UPD3HeistDataAsset* InHeistData)
 {
@@ -53,6 +90,20 @@ void UWBP_CrimeNet_HeistDescriptionPanel_C::InitializeHeistData(class UPD3HeistD
 	Parms.InHeistData = InHeistData;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.InitializeSecurityCompanies
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistDescriptionPanel_C::InitializeSecurityCompanies()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "InitializeSecurityCompanies");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -70,23 +121,21 @@ void UWBP_CrimeNet_HeistDescriptionPanel_C::OnInitialized()
 }
 
 
-// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.UpdatePanelTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.SetDifficulty
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Timer                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsStealth                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistDescriptionPanel_C::UpdatePanelTimer(float Timer, bool bIsStealth)
+void UWBP_CrimeNet_HeistDescriptionPanel_C::SetDifficulty(ESBZDifficulty InDifficulty)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "UpdatePanelTimer");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "SetDifficulty");
 
-	Params::WBP_CrimeNet_HeistDescriptionPanel_C_UpdatePanelTimer Parms{};
+	Params::WBP_CrimeNet_HeistDescriptionPanel_C_SetDifficulty Parms{};
 
-	Parms.Timer = Timer;
-	Parms.bIsStealth = bIsStealth;
+	Parms.InDifficulty = InDifficulty;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -101,6 +150,20 @@ void UWBP_CrimeNet_HeistDescriptionPanel_C::SetNoHeistData()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "SetNoHeistData");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.Update Security Companies for Difficulty
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeNet_HeistDescriptionPanel_C::Update_Security_Companies_for_Difficulty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "Update Security Companies for Difficulty");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -126,21 +189,23 @@ void UWBP_CrimeNet_HeistDescriptionPanel_C::UpdateDifficultyVisuals(ESBZDifficul
 }
 
 
-// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.SetDifficulty
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.UpdatePanelTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Timer                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsStealth                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeNet_HeistDescriptionPanel_C::SetDifficulty(ESBZDifficulty InDifficulty)
+void UWBP_CrimeNet_HeistDescriptionPanel_C::UpdatePanelTimer(double Timer, bool bIsStealth)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "SetDifficulty");
+		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "UpdatePanelTimer");
 
-	Params::WBP_CrimeNet_HeistDescriptionPanel_C_SetDifficulty Parms{};
+	Params::WBP_CrimeNet_HeistDescriptionPanel_C_UpdatePanelTimer Parms{};
 
-	Parms.InDifficulty = InDifficulty;
+	Parms.Timer = Timer;
+	Parms.bIsStealth = bIsStealth;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -157,71 +222,6 @@ void UWBP_CrimeNet_HeistDescriptionPanel_C::UpdateTimers()
 		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "UpdateTimers");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.InitializeSecurityCompanies
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistDescriptionPanel_C::InitializeSecurityCompanies()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "InitializeSecurityCompanies");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.Display Panel Animation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistDescriptionPanel_C::Display_Panel_Animation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "Display Panel Animation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.Update Security Companies for Difficulty
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeNet_HeistDescriptionPanel_C::Update_Security_Companies_for_Difficulty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "Update Security Companies for Difficulty");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeNet_HeistDescriptionPanel.WBP_CrimeNet_HeistDescriptionPanel_C.GetSecurityCompanyName
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class USBZSecurityCompanyVisualsWidget* Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FString                           ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash)
-
-class FString UWBP_CrimeNet_HeistDescriptionPanel_C::GetSecurityCompanyName(class USBZSecurityCompanyVisualsWidget* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeNet_HeistDescriptionPanel_C", "GetSecurityCompanyName");
-
-	Params::WBP_CrimeNet_HeistDescriptionPanel_C_GetSecurityCompanyName Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

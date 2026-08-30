@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DamageNumberContainer.WBP_DamageNumberContainer_C
-// 0x0000 (0x0300 - 0x0300)
+// 0x0000 (0x0360 - 0x0360)
 class UWBP_DamageNumberContainer_C final : public USBZDamageNumberContainer
 {
 public:

@@ -36,21 +36,55 @@ void UWBP_UI_Widget_Objective_C::ExecuteUbergraph_WBP_UI_Widget_Objective(int32 
 }
 
 
-// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.InitTickingLootVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_Objective_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Widget_Objective_C::InitTickingLootVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "InitTickingLootVisuals");
 
-	Params::WBP_UI_Widget_Objective_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.ObjectiveActivated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class ASBZObjective*                    Param_ObjectiveActivated_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Objective_C::ObjectiveActivated(class ASBZObjective* Param_ObjectiveActivated_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "ObjectiveActivated");
+
+	Params::WBP_UI_Widget_Objective_C_ObjectiveActivated Parms{};
+
+	Parms.Param_ObjectiveActivated_0 = Param_ObjectiveActivated_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Objective_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "OnAnimationFinished");
+
+	Params::WBP_UI_Widget_Objective_C_OnAnimationFinished Parms{};
+
+	Parms.Animation = Animation;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -59,8 +93,8 @@ void UWBP_UI_Widget_Objective_C::PreConstruct(bool IsDesignTime)
 // Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.OnObjectiveInitialized
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class ASBZObjective*                    ObjectiveInit                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSubObjective                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class ASBZObjective*                    ObjectiveInit                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSubObjective                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Objective_C::OnObjectiveInitialized(class ASBZObjective* ObjectiveInit, bool bIsSubObjective)
 {
@@ -75,6 +109,20 @@ void UWBP_UI_Widget_Objective_C::OnObjectiveInitialized(class ASBZObjective* Obj
 	Parms.bIsSubObjective = bIsSubObjective;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.OnObjectiveRemoved
+// (Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_Objective_C::OnObjectiveRemoved()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "OnObjectiveRemoved");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -98,71 +146,23 @@ void UWBP_UI_Widget_Objective_C::OnTickingTypeChanged(ESBZTickingLootType InTick
 }
 
 
-// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.ObjectiveActivated
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class ASBZObjective*                    Param_ObjectiveActivated_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_Objective_C::ObjectiveActivated(class ASBZObjective* Param_ObjectiveActivated_0)
+void UWBP_UI_Widget_Objective_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "ObjectiveActivated");
+		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "PreConstruct");
 
-	Params::WBP_UI_Widget_Objective_C_ObjectiveActivated Parms{};
+	Params::WBP_UI_Widget_Objective_C_PreConstruct Parms{};
 
-	Parms.Param_ObjectiveActivated_0 = Param_ObjectiveActivated_0;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.OnAnimationFinished
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_Objective_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "OnAnimationFinished");
-
-	Params::WBP_UI_Widget_Objective_C_OnAnimationFinished Parms{};
-
-	Parms.Animation = Animation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.OnObjectiveRemoved
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_Objective_C::OnObjectiveRemoved()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "OnObjectiveRemoved");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.InitTickingLootVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_Objective_C::InitTickingLootVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Objective_C", "InitTickingLootVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

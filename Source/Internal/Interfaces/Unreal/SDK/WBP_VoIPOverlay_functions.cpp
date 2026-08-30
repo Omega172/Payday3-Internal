@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.CleanActiveArray
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_VoIPOverlay_C::CleanActiveArray()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "CleanActiveArray");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_VoIPOverlay_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.ExecuteUbergraph_WBP_VoIPOverlay
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,142 +64,12 @@ void UWBP_VoIPOverlay_C::ExecuteUbergraph_WBP_VoIPOverlay(int32 EntryPoint)
 }
 
 
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.PlayersUpdated
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    EOSId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    bJoined                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_VoIPOverlay_C::PlayersUpdated(const class FString& EOSId, bool bJoined)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "PlayersUpdated");
-
-	Params::WBP_VoIPOverlay_C_PlayersUpdated Parms{};
-
-	Parms.EOSId = std::move(EOSId);
-	Parms.bJoined = bJoined;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_VoIPOverlay_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.InitialVOIPSetup
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_VoIPOverlay_C::InitialVOIPSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "InitialVOIPSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.Update VOIP UI
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_VoIPOverlay_C::Update_VOIP_UI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "Update VOIP UI");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.PlayerTalkingUpdated
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    ChannelName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    bIsTalking                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_VoIPOverlay_C::PlayerTalkingUpdated(const class FString& ChannelName, const class FString& PlayerName, bool bIsTalking)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "PlayerTalkingUpdated");
-
-	Params::WBP_VoIPOverlay_C_PlayerTalkingUpdated Parms{};
-
-	Parms.ChannelName = std::move(ChannelName);
-	Parms.PlayerName = std::move(PlayerName);
-	Parms.bIsTalking = bIsTalking;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_VoIPOverlay_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "PreConstruct");
-
-	Params::WBP_VoIPOverlay_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.UpdateTalkingPlayerList
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    PlayerEOSID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool                                    IsTalking                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_VoIPOverlay_C::UpdateTalkingPlayerList(const class FString& PlayerEOSID, bool IsTalking)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "UpdateTalkingPlayerList");
-
-	Params::WBP_VoIPOverlay_C_UpdateTalkingPlayerList Parms{};
-
-	Parms.PlayerEOSID = std::move(PlayerEOSID);
-	Parms.IsTalking = IsTalking;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.FindPlayerUIInfo
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FString&                    InEOSID                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // struct FSBZLobbyCharacterInfoUi*        OutCharacterInfo                                       (Parm, OutParm)
-// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_VoIPOverlay_C::FindPlayerUIInfo(const class FString& InEOSID, struct FSBZLobbyCharacterInfoUi* OutCharacterInfo, bool* Found)
 {
@@ -194,15 +92,95 @@ void UWBP_VoIPOverlay_C::FindPlayerUIInfo(const class FString& InEOSID, struct F
 }
 
 
-// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.CleanActiveArray
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.InitialVOIPSetup
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_VoIPOverlay_C::CleanActiveArray()
+void UWBP_VoIPOverlay_C::InitialVOIPSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_VoIPOverlay_C", "CleanActiveArray");
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "InitialVOIPSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.PlayerLeft
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    EOSId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// int32                                   LeaveReason                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VoIPOverlay_C::PlayerLeft(const class FString& EOSId, int32 LeaveReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "PlayerLeft");
+
+	Params::WBP_VoIPOverlay_C_PlayerLeft Parms{};
+
+	Parms.EOSId = std::move(EOSId);
+	Parms.LeaveReason = LeaveReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.PlayerTalkingUpdated
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    ChannelName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    bIsTalking                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VoIPOverlay_C::PlayerTalkingUpdated(const class FString& ChannelName, const class FString& PlayerName, bool bIsTalking)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "PlayerTalkingUpdated");
+
+	Params::WBP_VoIPOverlay_C_PlayerTalkingUpdated Parms{};
+
+	Parms.ChannelName = std::move(ChannelName);
+	Parms.PlayerName = std::move(PlayerName);
+	Parms.bIsTalking = bIsTalking;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VoIPOverlay_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "PreConstruct");
+
+	Params::WBP_VoIPOverlay_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.Update VOIP UI
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_VoIPOverlay_C::Update_VOIP_UI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "Update VOIP UI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -219,6 +197,28 @@ void UWBP_VoIPOverlay_C::UpdateTalkingPlayerDisplay()
 		Func = Class->GetFunction("WBP_VoIPOverlay_C", "UpdateTalkingPlayerDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_VoIPOverlay.WBP_VoIPOverlay_C.UpdateTalkingPlayerList
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    PlayerEOSID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    IsTalking                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VoIPOverlay_C::UpdateTalkingPlayerList(const class FString& PlayerEOSID, bool IsTalking)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_VoIPOverlay_C", "UpdateTalkingPlayerList");
+
+	Params::WBP_VoIPOverlay_C_UpdateTalkingPlayerList Parms{};
+
+	Parms.PlayerEOSID = std::move(PlayerEOSID);
+	Parms.IsTalking = IsTalking;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

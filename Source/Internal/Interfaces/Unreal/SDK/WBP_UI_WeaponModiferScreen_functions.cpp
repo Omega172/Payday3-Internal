@@ -16,6 +16,48 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ConstructBlotSlotTexts
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZWeaponPartDataAsset*    InWeaponPart                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText*                            OutSlotNames                                           (Parm, OutParm)
+// bool*                                   bHasValues                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::ConstructBlotSlotTexts(const class USBZWeaponPartDataAsset* InWeaponPart, class FText* OutSlotNames, bool* bHasValues)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "ConstructBlotSlotTexts");
+
+	Params::WBP_UI_WeaponModiferScreen_C_ConstructBlotSlotTexts Parms{};
+
+	Parms.InWeaponPart = InWeaponPart;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutSlotNames != nullptr)
+		*OutSlotNames = std::move(Parms.OutSlotNames);
+
+	if (bHasValues != nullptr)
+		*bHasValues = Parms.bHasValues;
+}
+
+
 // Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ExecuteUbergraph_WBP_UI_WeaponModiferScreen
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,21 +78,21 @@ void UWBP_UI_WeaponModiferScreen_C::ExecuteUbergraph_WBP_UI_WeaponModiferScreen(
 }
 
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonEquipped
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.NewWeaponPartFocused
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZMainMenuWeaponPartProgressionButton*EquippedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMainMenuWeaponPartProgressionButton*NewFocusedButton                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonEquipped(const class USBZMainMenuWeaponPartProgressionButton* EquippedButton)
+void UWBP_UI_WeaponModiferScreen_C::NewWeaponPartFocused(const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "OnWeaponPartButtonEquipped");
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "NewWeaponPartFocused");
 
-	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped Parms{};
+	Params::WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused Parms{};
 
-	Parms.EquippedButton = EquippedButton;
+	Parms.NewFocusedButton = NewFocusedButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,40 +112,6 @@ void UWBP_UI_WeaponModiferScreen_C::OnBackPressed()
 }
 
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetDefaultFocus
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::SetDefaultFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "SetDefaultFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuWeaponPartProgressionButton*SelectedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonSelected(const class USBZMainMenuWeaponPartProgressionButton* SelectedButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "OnWeaponPartButtonSelected");
-
-	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected Parms{};
-
-	Parms.SelectedButton = SelectedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnControlsReferenceClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -119,40 +127,6 @@ void UWBP_UI_WeaponModiferScreen_C::OnControlsReferenceClicked(class FName InAct
 	Params::WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked Parms{};
 
 	Parms.InActionInput = InActionInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_WeaponModiferScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "PreConstruct");
-
-	Params::WBP_UI_WeaponModiferScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -178,26 +152,6 @@ void UWBP_UI_WeaponModiferScreen_C::OnGainedStackFocused(const class FName& Prev
 }
 
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.NewWeaponPartFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuWeaponPartProgressionButton*NewFocusedButton                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::NewWeaponPartFocused(const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "NewWeaponPartFocused");
-
-	Params::WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused Parms{};
-
-	Parms.NewFocusedButton = NewFocusedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
@@ -212,43 +166,75 @@ void UWBP_UI_WeaponModiferScreen_C::OnLostStackFocused()
 }
 
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ConstructBlotSlotTexts
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonEquipped
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZWeaponPartDataAsset*    InWeaponPart                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            OutSlotNames                                           (Parm, OutParm)
-// bool*                                   bHasValues                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const class USBZMainMenuWeaponPartProgressionButton*EquippedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponModiferScreen_C::ConstructBlotSlotTexts(const class USBZWeaponPartDataAsset* InWeaponPart, class FText* OutSlotNames, bool* bHasValues)
+void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonEquipped(const class USBZMainMenuWeaponPartProgressionButton* EquippedButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "ConstructBlotSlotTexts");
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "OnWeaponPartButtonEquipped");
 
-	Params::WBP_UI_WeaponModiferScreen_C_ConstructBlotSlotTexts Parms{};
+	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped Parms{};
 
-	Parms.InWeaponPart = InWeaponPart;
+	Parms.EquippedButton = EquippedButton;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutSlotNames != nullptr)
-		*OutSlotNames = std::move(Parms.OutSlotNames);
-
-	if (bHasValues != nullptr)
-		*bHasValues = Parms.bHasValues;
 }
 
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.UpdateActiveButtonControlsReference
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZMainMenuWeaponPartProgressionButton*SelectedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponModiferScreen_C::UpdateActiveButtonControlsReference()
+void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonSelected(const class USBZMainMenuWeaponPartProgressionButton* SelectedButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "UpdateActiveButtonControlsReference");
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "OnWeaponPartButtonSelected");
+
+	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected Parms{};
+
+	Parms.SelectedButton = SelectedButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "PreConstruct");
+
+	Params::WBP_UI_WeaponModiferScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetDefaultFocus
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::SetDefaultFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "SetDefaultFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,6 +249,20 @@ void UWBP_UI_WeaponModiferScreen_C::SetPartPadding()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "SetPartPadding");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.UpdateActiveButtonControlsReference
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::UpdateActiveButtonControlsReference()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WeaponModiferScreen_C", "UpdateActiveButtonControlsReference");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

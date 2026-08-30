@@ -36,21 +36,21 @@ void UWBP_PartyMember_ConsumableStatus_C::ExecuteUbergraph_WBP_PartyMember_Consu
 }
 
 
-// Function WBP_PartyMember_ConsumableStatus.WBP_PartyMember_ConsumableStatus_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PartyMember_ConsumableStatus.WBP_PartyMember_ConsumableStatus_C.OnConsumableCountChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   InAmmoInventory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PartyMember_ConsumableStatus_C::PreConstruct(bool IsDesignTime)
+void UWBP_PartyMember_ConsumableStatus_C::OnConsumableCountChanged(int32 InAmmoInventory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyMember_ConsumableStatus_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_PartyMember_ConsumableStatus_C", "OnConsumableCountChanged");
 
-	Params::WBP_PartyMember_ConsumableStatus_C_PreConstruct Parms{};
+	Params::WBP_PartyMember_ConsumableStatus_C_OnConsumableCountChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InAmmoInventory = InAmmoInventory;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,30 +76,10 @@ void UWBP_PartyMember_ConsumableStatus_C::OnIconChanged(const TSoftObjectPtr<cla
 }
 
 
-// Function WBP_PartyMember_ConsumableStatus.WBP_PartyMember_ConsumableStatus_C.OnConsumableCountChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InAmmoInventory                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PartyMember_ConsumableStatus_C::OnConsumableCountChanged(int32 InAmmoInventory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PartyMember_ConsumableStatus_C", "OnConsumableCountChanged");
-
-	Params::WBP_PartyMember_ConsumableStatus_C_OnConsumableCountChanged Parms{};
-
-	Parms.InAmmoInventory = InAmmoInventory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_PartyMember_ConsumableStatus.WBP_PartyMember_ConsumableStatus_C.OnLoaded_534139B347CE697207941FBEC708B992
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_PartyMember_ConsumableStatus_C::OnLoaded_534139B347CE697207941FBEC708B992(class UObject* Loaded)
 {
@@ -111,6 +91,26 @@ void UWBP_PartyMember_ConsumableStatus_C::OnLoaded_534139B347CE697207941FBEC708B
 	Params::WBP_PartyMember_ConsumableStatus_C_OnLoaded_534139B347CE697207941FBEC708B992 Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PartyMember_ConsumableStatus.WBP_PartyMember_ConsumableStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PartyMember_ConsumableStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PartyMember_ConsumableStatus_C", "PreConstruct");
+
+	Params::WBP_PartyMember_ConsumableStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

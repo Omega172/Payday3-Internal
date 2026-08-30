@@ -36,32 +36,24 @@ void UWBP_NumberCounter_C::ExecuteUbergraph_WBP_NumberCounter(int32 EntryPoint)
 }
 
 
-// Function WBP_NumberCounter.WBP_NumberCounter_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_NumberCounter.WBP_NumberCounter_C.OnRunUpEnded
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_NumberCounter_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_NumberCounter_C::OnRunUpEnded()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumberCounter_C", "Tick");
+		Func = Class->GetFunction("WBP_NumberCounter_C", "OnRunUpEnded");
 
-	Params::WBP_NumberCounter_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_NumberCounter.WBP_NumberCounter_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_NumberCounter_C::PreConstruct(bool IsDesignTime)
 {
@@ -100,20 +92,6 @@ void UWBP_NumberCounter_C::RunUpNumber(int64 StartingValue_0, int64 GoalValue_0)
 }
 
 
-// Function WBP_NumberCounter.WBP_NumberCounter_C.OnRunUpEnded
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_NumberCounter_C::OnRunUpEnded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_NumberCounter_C", "OnRunUpEnded");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_NumberCounter.WBP_NumberCounter_C.SetDisplayValue
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -129,6 +107,28 @@ void UWBP_NumberCounter_C::SetDisplayValue(int64 value)
 	Params::WBP_NumberCounter_C_SetDisplayValue Parms{};
 
 	Parms.value = value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NumberCounter.WBP_NumberCounter_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NumberCounter_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_NumberCounter_C", "Tick");
+
+	Params::WBP_NumberCounter_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

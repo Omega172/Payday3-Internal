@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.DisplayTransition
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_ActionPhaseTransition_C::DisplayTransition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseTransition_C", "DisplayTransition");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.ExecuteUbergraph_WBP_UI_SM_ActionPhaseTransition
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,15 +50,15 @@ void UWBP_UI_SM_ActionPhaseTransition_C::ExecuteUbergraph_WBP_UI_SM_ActionPhaseT
 }
 
 
-// Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.WidgetAnimationEvt_TransitionText_K2Node_WidgetAnimationEvent_5
-// (BlueprintEvent)
+// Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_SM_ActionPhaseTransition_C::WidgetAnimationEvt_TransitionText_K2Node_WidgetAnimationEvent_5()
+void UWBP_UI_SM_ActionPhaseTransition_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseTransition_C", "WidgetAnimationEvt_TransitionText_K2Node_WidgetAnimationEvent_5");
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseTransition_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,29 +78,15 @@ void UWBP_UI_SM_ActionPhaseTransition_C::WidgetAnimationEvt_LevelDataFadeIn_K2No
 }
 
 
-// Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.WidgetAnimationEvt_TransitionText_K2Node_WidgetAnimationEvent_5
+// (BlueprintEvent)
 
-void UWBP_UI_SM_ActionPhaseTransition_C::OnInitialized()
+void UWBP_UI_SM_ActionPhaseTransition_C::WidgetAnimationEvt_TransitionText_K2Node_WidgetAnimationEvent_5()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseTransition_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_ActionPhaseTransition.WBP_UI_SM_ActionPhaseTransition_C.DisplayTransition
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_ActionPhaseTransition_C::DisplayTransition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseTransition_C", "DisplayTransition");
+		Func = Class->GetFunction("WBP_UI_SM_ActionPhaseTransition_C", "WidgetAnimationEvt_TransitionText_K2Node_WidgetAnimationEvent_5");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

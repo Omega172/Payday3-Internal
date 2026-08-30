@@ -36,6 +36,26 @@ void UWBP_DailyChallengePreviewItem_C::ExecuteUbergraph_WBP_DailyChallengePrevie
 }
 
 
+// Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.InitItem
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZChallengeData&         InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_DailyChallengePreviewItem_C::InitItem(const struct FSBZChallengeData& InData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DailyChallengePreviewItem_C", "InitItem");
+
+	Params::WBP_DailyChallengePreviewItem_C_InitItem Parms{};
+
+	Parms.InData = std::move(InData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.UpdateProgress
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -53,26 +73,6 @@ void UWBP_DailyChallengePreviewItem_C::UpdateProgress(int32 InCurrentVal, int32 
 
 	Parms.InCurrentVal = InCurrentVal;
 	Parms.InMaxValue = InMaxValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.InitItem
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZChallengeData&         InData                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_DailyChallengePreviewItem_C::InitItem(const struct FSBZChallengeData& InData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DailyChallengePreviewItem_C", "InitItem");
-
-	Params::WBP_DailyChallengePreviewItem_C_InitItem Parms{};
-
-	Parms.InData = std::move(InData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass ThePunchLightHitCameraFeedback_Right.ThePunchLightHitCameraFeedback_Right_C
-// 0x0000 (0x0308 - 0x0308)
+// 0x0000 (0x0328 - 0x0328)
 class UThePunchLightHitCameraFeedback_Right_C final : public USBZLocalPlayerFeedback
 {
 public:

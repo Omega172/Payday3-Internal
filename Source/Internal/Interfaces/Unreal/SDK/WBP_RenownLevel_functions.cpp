@@ -16,6 +16,34 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_RenownLevel.WBP_RenownLevel_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_RenownLevel_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RenownLevel_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RenownLevel.WBP_RenownLevel_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_RenownLevel_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RenownLevel_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_RenownLevel.WBP_RenownLevel_C.ExecuteUbergraph_WBP_RenownLevel
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,93 +64,11 @@ void UWBP_RenownLevel_C::ExecuteUbergraph_WBP_RenownLevel(int32 EntryPoint)
 }
 
 
-// Function WBP_RenownLevel.WBP_RenownLevel_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RenownLevel_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RenownLevel.WBP_RenownLevel_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RenownLevel_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RenownLevel.WBP_RenownLevel_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RenownLevel_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RenownLevel.WBP_RenownLevel_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_RenownLevel_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "PreConstruct");
-
-	Params::WBP_RenownLevel_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RenownLevel.WBP_RenownLevel_C.SetIconAndLevel
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InLevel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RenownLevel_C::SetIconAndLevel(int32 InLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "SetIconAndLevel");
-
-	Params::WBP_RenownLevel_C_SetIconAndLevel Parms{};
-
-	Parms.InLevel = InLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_RenownLevel.WBP_RenownLevel_C.GetIcon
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int32                                   InRenownLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPaperSprite**                    OutSprite                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite**                    OutSprite                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_RenownLevel_C::GetIcon(int32 InRenownLevel, class UPaperSprite** OutSprite)
 {
@@ -166,37 +112,79 @@ void UWBP_RenownLevel_C::GetTierColor(int32 InRenownLevel, struct FSlateColor* O
 }
 
 
-// Function WBP_RenownLevel.WBP_RenownLevel_C.UpdateVisuals
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InLevel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RenownLevel.WBP_RenownLevel_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_RenownLevel_C::UpdateVisuals(int32 InLevel)
+void UWBP_RenownLevel_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "UpdateVisuals");
+		Func = Class->GetFunction("WBP_RenownLevel_C", "OnInitialized");
 
-	Params::WBP_RenownLevel_C_UpdateVisuals Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InLevel = InLevel;
+
+// Function WBP_RenownLevel.WBP_RenownLevel_C.OnRenownChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   PreviousLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RenownLevel_C::OnRenownChanged(int32 NewLevel, int32 PreviousLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RenownLevel_C", "OnRenownChanged");
+
+	Params::WBP_RenownLevel_C_OnRenownChanged Parms{};
+
+	Parms.NewLevel = NewLevel;
+	Parms.PreviousLevel = PreviousLevel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_RenownLevel.WBP_RenownLevel_C.UpdateRenown
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RenownLevel.WBP_RenownLevel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RenownLevel_C::UpdateRenown()
+void UWBP_RenownLevel_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "UpdateRenown");
+		Func = Class->GetFunction("WBP_RenownLevel_C", "PreConstruct");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_RenownLevel_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RenownLevel.WBP_RenownLevel_C.SetIconAndLevel
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InLevel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RenownLevel_C::SetIconAndLevel(int32 InLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RenownLevel_C", "SetIconAndLevel");
+
+	Params::WBP_RenownLevel_C_SetIconAndLevel Parms{};
+
+	Parms.InLevel = InLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -220,23 +208,35 @@ void UWBP_RenownLevel_C::SetRenown(int32 InRenown)
 }
 
 
-// Function WBP_RenownLevel.WBP_RenownLevel_C.OnRenownChanged
+// Function WBP_RenownLevel.WBP_RenownLevel_C.UpdateRenown
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   PreviousLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RenownLevel_C::OnRenownChanged(int32 NewLevel, int32 PreviousLevel)
+void UWBP_RenownLevel_C::UpdateRenown()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RenownLevel_C", "OnRenownChanged");
+		Func = Class->GetFunction("WBP_RenownLevel_C", "UpdateRenown");
 
-	Params::WBP_RenownLevel_C_OnRenownChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewLevel = NewLevel;
-	Parms.PreviousLevel = PreviousLevel;
+
+// Function WBP_RenownLevel.WBP_RenownLevel_C.UpdateVisuals
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InLevel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RenownLevel_C::UpdateVisuals(int32 InLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RenownLevel_C", "UpdateVisuals");
+
+	Params::WBP_RenownLevel_C_UpdateVisuals Parms{};
+
+	Parms.InLevel = InLevel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

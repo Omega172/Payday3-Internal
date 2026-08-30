@@ -33,6 +33,20 @@ public:
 };
 DUMPER7_ASSERTS_FElementID;
 
+// ScriptStruct MeshDescription.VertexID
+// 0x0000 (0x0004 - 0x0004)
+struct FVertexID final : public FElementID
+{
+};
+DUMPER7_ASSERTS_FVertexID;
+
+// ScriptStruct MeshDescription.VertexInstanceID
+// 0x0000 (0x0004 - 0x0004)
+struct FVertexInstanceID final : public FElementID
+{
+};
+DUMPER7_ASSERTS_FVertexInstanceID;
+
 // ScriptStruct MeshDescription.EdgeID
 // 0x0000 (0x0004 - 0x0004)
 struct FEdgeID final : public FElementID
@@ -40,12 +54,19 @@ struct FEdgeID final : public FElementID
 };
 DUMPER7_ASSERTS_FEdgeID;
 
-// ScriptStruct MeshDescription.VertexID
+// ScriptStruct MeshDescription.UVID
 // 0x0000 (0x0004 - 0x0004)
-struct FVertexID final : public FElementID
+struct FUVID final : public FElementID
 {
 };
-DUMPER7_ASSERTS_FVertexID;
+DUMPER7_ASSERTS_FUVID;
+
+// ScriptStruct MeshDescription.TriangleID
+// 0x0000 (0x0004 - 0x0004)
+struct FTriangleID final : public FElementID
+{
+};
+DUMPER7_ASSERTS_FTriangleID;
 
 // ScriptStruct MeshDescription.PolygonGroupID
 // 0x0000 (0x0004 - 0x0004)
@@ -60,19 +81,5 @@ struct FPolygonID final : public FElementID
 {
 };
 DUMPER7_ASSERTS_FPolygonID;
-
-// ScriptStruct MeshDescription.VertexInstanceID
-// 0x0000 (0x0004 - 0x0004)
-struct FVertexInstanceID final : public FElementID
-{
-};
-DUMPER7_ASSERTS_FVertexInstanceID;
-
-// ScriptStruct MeshDescription.TriangleID
-// 0x0000 (0x0004 - 0x0004)
-struct FTriangleID final : public FElementID
-{
-};
-DUMPER7_ASSERTS_FTriangleID;
 
 SDK_NAMESPACE_END

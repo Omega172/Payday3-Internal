@@ -36,20 +36,6 @@ void UWBP_UI_WidgetPlaceableStatus_C::ExecuteUbergraph_WBP_UI_WidgetPlaceableSta
 }
 
 
-// Function WBP_UI_WidgetPlaceableStatus.WBP_UI_WidgetPlaceableStatus_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_WidgetPlaceableStatus_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WidgetPlaceableStatus_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_WidgetPlaceableStatus.WBP_UI_WidgetPlaceableStatus_C.OnAmmoInventoryChanged
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -90,30 +76,24 @@ void UWBP_UI_WidgetPlaceableStatus_C::OnIconChanged(const TSoftObjectPtr<class U
 }
 
 
-// Function WBP_UI_WidgetPlaceableStatus.WBP_UI_WidgetPlaceableStatus_C.PreConstruct
+// Function WBP_UI_WidgetPlaceableStatus.WBP_UI_WidgetPlaceableStatus_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_WidgetPlaceableStatus_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_WidgetPlaceableStatus_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_WidgetPlaceableStatus_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_UI_WidgetPlaceableStatus_C", "OnInitialized");
 
-	Params::WBP_UI_WidgetPlaceableStatus_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_UI_WidgetPlaceableStatus.WBP_UI_WidgetPlaceableStatus_C.OnLoaded_544E70C143CD46C6006D9DA0806A0FCB
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_WidgetPlaceableStatus_C::OnLoaded_544E70C143CD46C6006D9DA0806A0FCB(class UObject* Loaded)
 {
@@ -125,6 +105,26 @@ void UWBP_UI_WidgetPlaceableStatus_C::OnLoaded_544E70C143CD46C6006D9DA0806A0FCB(
 	Params::WBP_UI_WidgetPlaceableStatus_C_OnLoaded_544E70C143CD46C6006D9DA0806A0FCB Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WidgetPlaceableStatus.WBP_UI_WidgetPlaceableStatus_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WidgetPlaceableStatus_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_WidgetPlaceableStatus_C", "PreConstruct");
+
+	Params::WBP_UI_WidgetPlaceableStatus_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,60 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_FilterButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_ServerBrowser_FilterButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_FilterButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_ServerBrowser_FilterButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_FilterButton_C::ButtonSelected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "ButtonSelected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ExecuteUbergraph_WBP_ServerBrowser_FilterButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,64 +90,24 @@ void UWBP_ServerBrowser_FilterButton_C::ExecuteUbergraph_WBP_ServerBrowser_Filte
 }
 
 
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.HideNumber
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_FilterButton_C::ButtonSelected()
+void UWBP_ServerBrowser_FilterButton_C::HideNumber()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "ButtonSelected");
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "HideNumber");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_FilterButton_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "ButtonDisabledChanged");
-
-	Params::WBP_ServerBrowser_FilterButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_ServerBrowser_FilterButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_ServerBrowser_FilterButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_FilterButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -113,7 +127,7 @@ void UWBP_ServerBrowser_FilterButton_C::PreConstruct(bool IsDesignTime)
 // Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.SetIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     Icon                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     Icon                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ServerBrowser_FilterButton_C::SetIcon(class UPaperSprite* Icon)
 {
@@ -150,17 +164,25 @@ void UWBP_ServerBrowser_FilterButton_C::ShowNumber(int32 InNumber)
 }
 
 
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.HideNumber
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.SpinIcon
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEnable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_FilterButton_C::HideNumber()
+void UWBP_ServerBrowser_FilterButton_C::SpinIcon(bool bEnable, double Speed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "HideNumber");
+		Func = Class->GetFunction("WBP_ServerBrowser_FilterButton_C", "SpinIcon");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ServerBrowser_FilterButton_C_SpinIcon Parms{};
+
+	Parms.bEnable = bEnable;
+	Parms.Speed = Speed;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

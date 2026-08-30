@@ -18,22 +18,22 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C
-// 0x0030 (0x02C0 - 0x0290)
+// 0x0028 (0x0318 - 0x02F0)
 class UWBP_ArmorChunk_StatLine_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZUITextBlock*                        StatName_T;                                        // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        StatValue_T;                                       // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   StatName;                                          // 0x02A8(0x0018)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZUITextBlock*                        StatName_T;                                        // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        StatValue_T;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   StatName;                                          // 0x0308(0x0010)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_WBP_ArmorChunk_StatLine(int32 EntryPoint);
 	void PreConstruct(bool IsDesignTime);
-	void SetValue(int32 Value);
-	void SetPlateRegen(float PlateRegen);
-	void SetAmmoCapacity(float AmmoCap);
+	void SetAmmoCapacity(double AmmoCap);
+	void SetPlateRegen(double PlateRegen);
 	void SetSpeedPenalty(ESBZArmorSpeedPenalty SpeedPenalty);
+	void SetValue(int32 Value);
 
 public:
 	static class UClass* StaticClass()

@@ -20,7 +20,7 @@ struct WBP_UI_Widget_CustodyTimer_C_ExecuteUbergraph_WBP_UI_Widget_CustodyTimer 
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasHardBargain_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasHardBargain_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_CustodyTimer_C_ExecuteUbergraph_WBP_UI_Widget_CustodyTimer;
 

@@ -16,51 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.ExecuteUbergraph_WBP_UI_SocialScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.BindContextMenu
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZPlayerCardContainer*          PlayerCardContainer                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SocialScreen_C::ExecuteUbergraph_WBP_UI_SocialScreen(int32 EntryPoint)
+void UWBP_UI_SocialScreen_C::BindContextMenu(class USBZPlayerCardContainer* PlayerCardContainer)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "ExecuteUbergraph_WBP_UI_SocialScreen");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "BindContextMenu");
 
-	Params::WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen Parms{};
+	Params::WBP_UI_SocialScreen_C_BindContextMenu Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.PlayerCardContainer = PlayerCardContainer;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OpenSearchScreen
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::OpenSearchScreen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OpenSearchScreen");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -84,31 +56,11 @@ void UWBP_UI_SocialScreen_C::BndEvt__WBP_UI_SocialScreen_WBP_Local_Navbar_K2Node
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SocialScreen_C::BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_SocialScreen_C_BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_SocialScreen_C::BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
@@ -126,131 +78,69 @@ void UWBP_UI_SocialScreen_C::BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnUI_CancelPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::OnUI_CancelPressed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnUI_CancelPressed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnControlsReferencePressed
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SocialScreen_C::OnControlsReferencePressed(class FName ActionName)
+void UWBP_UI_SocialScreen_C::BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnControlsReferencePressed");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature");
 
-	Params::WBP_UI_SocialScreen_C_OnControlsReferencePressed Parms{};
+	Params::WBP_UI_SocialScreen_C_BndEvt__WBP_UI_SocialSearchScreen_Widget_SearchUser_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.ActionName = ActionName;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnInitialized
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.CheckPrivilege
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::CheckPrivilege()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "CheckPrivilege");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_SocialScreen_C::OnInitialized()
+void UWBP_UI_SocialScreen_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.ExecuteUbergraph_WBP_UI_SocialScreen
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SocialScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_UI_SocialScreen_C::ExecuteUbergraph_WBP_UI_SocialScreen(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnGainedStackFocused");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "ExecuteUbergraph_WBP_UI_SocialScreen");
 
-	Params::WBP_UI_SocialScreen_C_OnGainedStackFocused Parms{};
+	Params::WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen Parms{};
 
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::OnRemovedFromStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnRemovedFromStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::OnAddedToStack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnAddedToStack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.UpdateMenuControlReference
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_UI_SocialScreen_C::UpdateMenuControlReference(const TMap<class FName, class FText>& ButtonActionDisplayText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "UpdateMenuControlReference");
-
-	Params::WBP_UI_SocialScreen_C_UpdateMenuControlReference Parms{};
-
-	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -259,8 +149,8 @@ void UWBP_UI_SocialScreen_C::UpdateMenuControlReference(const TMap<class FName, 
 // Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.HandleButtonFocusChanged
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
 void UWBP_UI_SocialScreen_C::HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText)
@@ -277,81 +167,6 @@ void UWBP_UI_SocialScreen_C::HandleButtonFocusChanged(class USBZMenuButton* Butt
 	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.IsContextMenuDisplayed
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Social_ContextMenu_C**    ContextMenu                                            (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SocialScreen_C::IsContextMenuDisplayed(class UWBP_UI_Social_ContextMenu_C** ContextMenu)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "IsContextMenuDisplayed");
-
-	Params::WBP_UI_SocialScreen_C_IsContextMenuDisplayed Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ContextMenu != nullptr)
-		*ContextMenu = Parms.ContextMenu;
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.BindContextMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZPlayerCardContainer*          PlayerCardContainer                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SocialScreen_C::BindContextMenu(class USBZPlayerCardContainer* PlayerCardContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "BindContextMenu");
-
-	Params::WBP_UI_SocialScreen_C_BindContextMenu Parms{};
-
-	Parms.PlayerCardContainer = PlayerCardContainer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnContextMenuOpened
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Social_PlayerCard_C*      ActivePlayerCard                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SocialScreen_C::OnContextMenuOpened(class UWBP_UI_Social_PlayerCard_C* ActivePlayerCard)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnContextMenuOpened");
-
-	Params::WBP_UI_SocialScreen_C_OnContextMenuOpened Parms{};
-
-	Parms.ActivePlayerCard = ActivePlayerCard;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.UpdateDefaultFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SocialScreen_C::UpdateDefaultFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "UpdateDefaultFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -375,37 +190,189 @@ void UWBP_UI_SocialScreen_C::HandleSearchTextChanged(const class FText& InText)
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.SetFocusOnActiveContainer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.IsContextMenuDisplayed
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Social_ContextMenu_C**    ContextMenu                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SocialScreen_C::SetFocusOnActiveContainer()
+void UWBP_UI_SocialScreen_C::IsContextMenuDisplayed(class UWBP_UI_Social_ContextMenu_C** ContextMenu)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "SetFocusOnActiveContainer");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "IsContextMenuDisplayed");
+
+	Params::WBP_UI_SocialScreen_C_IsContextMenuDisplayed Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ContextMenu != nullptr)
+		*ContextMenu = Parms.ContextMenu;
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.IsGameStateInHeist
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   IsInHeist                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SocialScreen_C::IsGameStateInHeist(bool* IsInHeist)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "IsGameStateInHeist");
+
+	Params::WBP_UI_SocialScreen_C_IsGameStateInHeist Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsInHeist != nullptr)
+		*IsInHeist = Parms.IsInHeist;
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::OnAddedToStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnAddedToStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.SetActiveTab
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnContextMenuOpened
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_UI_Social_PlayerCard_C*      ActivePlayerCard                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SocialScreen_C::SetActiveTab(int32 NewIndex)
+void UWBP_UI_SocialScreen_C::OnContextMenuOpened(class UWBP_UI_Social_PlayerCard_C* ActivePlayerCard)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "SetActiveTab");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnContextMenuOpened");
 
-	Params::WBP_UI_SocialScreen_C_SetActiveTab Parms{};
+	Params::WBP_UI_SocialScreen_C_OnContextMenuOpened Parms{};
 
-	Parms.NewIndex = NewIndex;
+	Parms.ActivePlayerCard = ActivePlayerCard;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnControlsReferencePressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SocialScreen_C::OnControlsReferencePressed(class FName ActionName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnControlsReferencePressed");
+
+	Params::WBP_UI_SocialScreen_C_OnControlsReferencePressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SocialScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnGainedStackFocused");
+
+	Params::WBP_UI_SocialScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::OnLostStackFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnLostStackFocused");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::OnRemovedFromStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnRemovedFromStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OnUI_CancelPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::OnUI_CancelPressed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OnUI_CancelPressed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.OpenSearchScreen
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::OpenSearchScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "OpenSearchScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -429,24 +396,37 @@ void UWBP_UI_SocialScreen_C::Select_Default_Tab(int32 DefaultTabIndex)
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.IsGameStateInHeist
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.SetActiveTab
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   IsInHeist                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SocialScreen_C::IsGameStateInHeist(bool* IsInHeist)
+void UWBP_UI_SocialScreen_C::SetActiveTab(int32 NewIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "IsGameStateInHeist");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "SetActiveTab");
 
-	Params::WBP_UI_SocialScreen_C_IsGameStateInHeist Parms{};
+	Params::WBP_UI_SocialScreen_C_SetActiveTab Parms{};
+
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (IsInHeist != nullptr)
-		*IsInHeist = Parms.IsInHeist;
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.SetFocusOnActiveContainer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SocialScreen_C::SetFocusOnActiveContainer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "SetFocusOnActiveContainer");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -464,17 +444,37 @@ void UWBP_UI_SocialScreen_C::SetPartyOnly()
 }
 
 
-// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.CheckPrivilege
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.UpdateDefaultFocus
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_SocialScreen_C::CheckPrivilege()
+void UWBP_UI_SocialScreen_C::UpdateDefaultFocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "CheckPrivilege");
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "UpdateDefaultFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.UpdateMenuControlReference
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_SocialScreen_C::UpdateMenuControlReference(const TMap<class FName, class FText>& ButtonActionDisplayText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_SocialScreen_C", "UpdateMenuControlReference");
+
+	Params::WBP_UI_SocialScreen_C_UpdateMenuControlReference Parms{};
+
+	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

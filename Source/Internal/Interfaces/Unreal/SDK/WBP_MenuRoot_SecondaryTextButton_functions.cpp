@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuRoot_SecondaryTextButton_C::ButtonFocusChanging(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuRoot_SecondaryTextButton_C", "ButtonFocusChanging");
+
+	Params::WBP_MenuRoot_SecondaryTextButton_C_ButtonFocusChanging Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.ExecuteUbergraph_WBP_MenuRoot_SecondaryTextButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,30 +56,10 @@ void UWBP_MenuRoot_SecondaryTextButton_C::ExecuteUbergraph_WBP_MenuRoot_Secondar
 }
 
 
-// Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.ButtonFocusChanging
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_MenuRoot_SecondaryTextButton_C::ButtonFocusChanging(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuRoot_SecondaryTextButton_C", "ButtonFocusChanging");
-
-	Params::WBP_MenuRoot_SecondaryTextButton_C_ButtonFocusChanging Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_MenuRoot_SecondaryTextButton_C::PreConstruct(bool IsDesignTime)
 {

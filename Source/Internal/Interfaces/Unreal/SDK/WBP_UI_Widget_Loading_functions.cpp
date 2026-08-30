@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_Loading.WBP_UI_Widget_Loading_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_Loading_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Widget_Loading_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_Widget_Loading.WBP_UI_Widget_Loading_C.ExecuteUbergraph_WBP_UI_Widget_Loading
 // (Final, UbergraphFunction)
 // Parameters:
@@ -39,7 +53,7 @@ void UWBP_UI_Widget_Loading_C::ExecuteUbergraph_WBP_UI_Widget_Loading(int32 Entr
 // Function WBP_UI_Widget_Loading.WBP_UI_Widget_Loading_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_Loading_C::PreConstruct(bool IsDesignTime)
 {
@@ -53,20 +67,6 @@ void UWBP_UI_Widget_Loading_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Loading.WBP_UI_Widget_Loading_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_Loading_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_Loading_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

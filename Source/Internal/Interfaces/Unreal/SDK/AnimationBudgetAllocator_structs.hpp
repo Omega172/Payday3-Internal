@@ -14,7 +14,7 @@
 SDK_NAMESPACE_START
 
 // ScriptStruct AnimationBudgetAllocator.AnimationBudgetAllocatorParameters
-// 0x0050 (0x0050 - 0x0000)
+// 0x0058 (0x0058 - 0x0000)
 struct FAnimationBudgetAllocatorParameters final
 {
 public:
@@ -38,6 +38,8 @@ public:
 	float                                         BudgetFactorBeforeAggressiveReducedWork;           // 0x0044(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReducedWorkThrottleMaxPerFrame;                    // 0x0048(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         BudgetPressureBeforeEmergencyReducedWork;          // 0x004C(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AutoCalculatedSignificanceMaxDistance;             // 0x0050(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAnimationBudgetAllocatorParameters;
 

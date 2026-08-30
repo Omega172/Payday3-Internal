@@ -39,7 +39,7 @@ DUMPER7_ASSERTS_MovieSceneCaptureProtocolBase_IsCapturing;
 struct MovieSceneCapture_GetAudioCaptureProtocol final
 {
 public:
-	class UMovieSceneCaptureProtocolBase*         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneCaptureProtocolBase*         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCapture_GetAudioCaptureProtocol;
 
@@ -48,7 +48,7 @@ DUMPER7_ASSERTS_MovieSceneCapture_GetAudioCaptureProtocol;
 struct MovieSceneCapture_GetImageCaptureProtocol final
 {
 public:
-	class UMovieSceneCaptureProtocolBase*         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneCaptureProtocolBase*         ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCapture_GetImageCaptureProtocol;
 
@@ -57,7 +57,7 @@ DUMPER7_ASSERTS_MovieSceneCapture_GetImageCaptureProtocol;
 struct MovieSceneCapture_SetAudioCaptureProtocolType final
 {
 public:
-	TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCapture_SetAudioCaptureProtocolType;
 
@@ -66,7 +66,7 @@ DUMPER7_ASSERTS_MovieSceneCapture_SetAudioCaptureProtocolType;
 struct MovieSceneCapture_SetImageCaptureProtocolType final
 {
 public:
-	TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCapture_SetImageCaptureProtocolType;
 
@@ -75,7 +75,7 @@ DUMPER7_ASSERTS_MovieSceneCapture_SetImageCaptureProtocolType;
 struct MovieSceneCaptureEnvironment_FindAudioCaptureProtocol final
 {
 public:
-	class UMovieSceneAudioCaptureProtocolBase*    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneAudioCaptureProtocolBase*    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCaptureEnvironment_FindAudioCaptureProtocol;
 
@@ -84,7 +84,7 @@ DUMPER7_ASSERTS_MovieSceneCaptureEnvironment_FindAudioCaptureProtocol;
 struct MovieSceneCaptureEnvironment_FindImageCaptureProtocol final
 {
 public:
-	class UMovieSceneImageCaptureProtocolBase*    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UMovieSceneImageCaptureProtocolBase*    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_MovieSceneCaptureEnvironment_FindImageCaptureProtocol;
 
@@ -140,7 +140,7 @@ DUMPER7_ASSERTS_UserDefinedCaptureProtocol_OnSetup;
 struct UserDefinedCaptureProtocol_ResolveBuffer final
 {
 public:
-	class UTexture*                               Buffer;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture*                               Buffer;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCapturedPixelsID                      BufferID;                                          // 0x0008(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_UserDefinedCaptureProtocol_ResolveBuffer;
@@ -187,7 +187,7 @@ DUMPER7_ASSERTS_UserDefinedCaptureProtocol_OnCanFinalize;
 struct UserDefinedImageCaptureProtocol_GenerateFilenameForBuffer final
 {
 public:
-	class UTexture*                               Buffer;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UTexture*                               Buffer;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FCapturedPixelsID                      StreamID;                                          // 0x0008(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	class FString                                 ReturnValue;                                       // 0x0058(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };

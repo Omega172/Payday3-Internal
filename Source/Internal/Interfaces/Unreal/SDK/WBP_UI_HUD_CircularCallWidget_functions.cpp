@@ -36,37 +36,39 @@ void UWBP_UI_HUD_CircularCallWidget_C::ExecuteUbergraph_WBP_UI_HUD_CircularCallW
 }
 
 
-// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.HackyFunction
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InAngle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 OutAngle                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_HUD_CircularCallWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_UI_HUD_CircularCallWidget_C::HackyFunction(double InAngle, double* OutAngle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "Tick");
+		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "HackyFunction");
 
-	Params::WBP_UI_HUD_CircularCallWidget_C_Tick Parms{};
+	Params::WBP_UI_HUD_CircularCallWidget_C_HackyFunction Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.InAngle = InAngle;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutAngle != nullptr)
+		*OutAngle = Parms.OutAngle;
 }
 
 
-// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.OnNumSectionsChanged
+// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.OnIndexChanged
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_HUD_CircularCallWidget_C::OnNumSectionsChanged()
+void UWBP_UI_HUD_CircularCallWidget_C::OnIndexChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "OnNumSectionsChanged");
+		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "OnIndexChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -81,6 +83,20 @@ void UWBP_UI_HUD_CircularCallWidget_C::OnInitialized()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.OnNumSectionsChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_HUD_CircularCallWidget_C::OnNumSectionsChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "OnNumSectionsChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -106,24 +122,10 @@ void UWBP_UI_HUD_CircularCallWidget_C::OnSelected(int32 SelectedIndex)
 }
 
 
-// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.OnIndexChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_HUD_CircularCallWidget_C::OnIndexChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "OnIndexChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_CircularCallWidget_C::PreConstruct(bool IsDesignTime)
 {
@@ -140,27 +142,25 @@ void UWBP_UI_HUD_CircularCallWidget_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.HackyFunction
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_HUD_CircularCallWidget.WBP_UI_HUD_CircularCallWidget_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// float                                   InAngle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float*                                  OutAngle                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_HUD_CircularCallWidget_C::HackyFunction(float InAngle, float* OutAngle)
+void UWBP_UI_HUD_CircularCallWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "HackyFunction");
+		Func = Class->GetFunction("WBP_UI_HUD_CircularCallWidget_C", "Tick");
 
-	Params::WBP_UI_HUD_CircularCallWidget_C_HackyFunction Parms{};
+	Params::WBP_UI_HUD_CircularCallWidget_C_Tick Parms{};
 
-	Parms.InAngle = InAngle;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutAngle != nullptr)
-		*OutAngle = Parms.OutAngle;
 }
 
 

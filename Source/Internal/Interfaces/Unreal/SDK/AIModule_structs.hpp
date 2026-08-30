@@ -42,25 +42,84 @@ enum class EEnvQueryStatus : uint8
 	EEnvQueryStatus_MAX                      = 6,
 };
 
-// Enum AIModule.EAISenseNotifyType
-// NumValues: 0x0003
-enum class EAISenseNotifyType : uint8
+// Enum AIModule.EAIOptionFlag
+// NumValues: 0x0004
+enum class EAIOptionFlag : uint8
 {
-	OnEveryPerception                        = 0,
-	OnPerceptionChange                       = 1,
-	EAISenseNotifyType_MAX                   = 2,
+	Default                                  = 0,
+	Enable                                   = 1,
+	Disable                                  = 2,
+	MAX                                      = 3,
 };
 
-// Enum AIModule.EAITaskPriority
-// NumValues: 0x0006
-enum class EAITaskPriority : uint8
+// Enum AIModule.FAIDistanceType
+// NumValues: 0x0004
+enum class EFAIDistanceType : uint8
 {
-	Lowest                                   = 0,
-	Low                                      = 64,
-	AutonomousAI                             = 127,
-	High                                     = 192,
-	Ultimate                                 = 254,
-	EAITaskPriority_MAX                      = 255,
+	Distance3D                               = 0,
+	Distance2D                               = 1,
+	DistanceZ                                = 2,
+	MAX                                      = 3,
+};
+
+// Enum AIModule.EPawnActionAbortState
+// NumValues: 0x0006
+enum class EPawnActionAbortState : uint8
+{
+	NeverStarted                             = 0,
+	NotBeingAborted                          = 1,
+	MarkPendingAbort                         = 2,
+	LatentAbortInProgress                    = 3,
+	AbortDone                                = 4,
+	MAX                                      = 5,
+};
+
+// Enum AIModule.EPawnActionResult
+// NumValues: 0x0006
+enum class EPawnActionResult : uint8
+{
+	NotStarted                               = 0,
+	InProgress                               = 1,
+	Success                                  = 2,
+	Failed                                   = 3,
+	Aborted                                  = 4,
+	EPawnActionResult_MAX                    = 5,
+};
+
+// Enum AIModule.EPawnActionEventType
+// NumValues: 0x0007
+enum class EPawnActionEventType : uint8
+{
+	Invalid                                  = 0,
+	FailedToStart                            = 1,
+	InstantAbort                             = 2,
+	FinishedAborting                         = 3,
+	FinishedExecution                        = 4,
+	Push                                     = 5,
+	EPawnActionEventType_MAX                 = 6,
+};
+
+// Enum AIModule.EAIRequestPriority
+// NumValues: 0x0006
+enum class EAIRequestPriority : uint8
+{
+	SoftScript                               = 0,
+	Logic                                    = 1,
+	HardScript                               = 2,
+	Reaction                                 = 3,
+	Ultimate                                 = 4,
+	MAX                                      = 5,
+};
+
+// Enum AIModule.EAILockSource
+// NumValues: 0x0005
+enum class EAILockSource : uint8
+{
+	Animation                                = 0,
+	Logic                                    = 1,
+	Script                                   = 2,
+	Gameplay                                 = 3,
+	MAX                                      = 4,
 };
 
 // Enum AIModule.EGenericAICheck
@@ -77,117 +136,13 @@ enum class EGenericAICheck : uint8
 	MAX                                      = 7,
 };
 
-// Enum AIModule.EAILockSource
-// NumValues: 0x0005
-enum class EAILockSource : uint8
+// Enum AIModule.EBasicKeyOperation
+// NumValues: 0x0003
+enum class EBasicKeyOperation : uint8
 {
-	Animation                                = 0,
-	Logic                                    = 1,
-	Script                                   = 2,
-	Gameplay                                 = 3,
-	MAX                                      = 4,
-};
-
-// Enum AIModule.EAIRequestPriority
-// NumValues: 0x0006
-enum class EAIRequestPriority : uint8
-{
-	SoftScript                               = 0,
-	Logic                                    = 1,
-	HardScript                               = 2,
-	Reaction                                 = 3,
-	Ultimate                                 = 4,
-	MAX                                      = 5,
-};
-
-// Enum AIModule.EPawnActionEventType
-// NumValues: 0x0007
-enum class EPawnActionEventType : uint8
-{
-	Invalid                                  = 0,
-	FailedToStart                            = 1,
-	InstantAbort                             = 2,
-	FinishedAborting                         = 3,
-	FinishedExecution                        = 4,
-	Push                                     = 5,
-	EPawnActionEventType_MAX                 = 6,
-};
-
-// Enum AIModule.EPawnActionResult
-// NumValues: 0x0006
-enum class EPawnActionResult : uint8
-{
-	NotStarted                               = 0,
-	InProgress                               = 1,
-	Success                                  = 2,
-	Failed                                   = 3,
-	Aborted                                  = 4,
-	EPawnActionResult_MAX                    = 5,
-};
-
-// Enum AIModule.EPawnActionAbortState
-// NumValues: 0x0006
-enum class EPawnActionAbortState : uint8
-{
-	NeverStarted                             = 0,
-	NotBeingAborted                          = 1,
-	MarkPendingAbort                         = 2,
-	LatentAbortInProgress                    = 3,
-	AbortDone                                = 4,
-	MAX                                      = 5,
-};
-
-// Enum AIModule.FAIDistanceType
-// NumValues: 0x0004
-enum class EFAIDistanceType : uint8
-{
-	Distance3D                               = 0,
-	Distance2D                               = 1,
-	DistanceZ                                = 2,
-	MAX                                      = 3,
-};
-
-// Enum AIModule.EAIOptionFlag
-// NumValues: 0x0004
-enum class EAIOptionFlag : uint8
-{
-	Default                                  = 0,
-	Enable                                   = 1,
-	Disable                                  = 2,
-	MAX                                      = 3,
-};
-
-// Enum AIModule.EBTFlowAbortMode
-// NumValues: 0x0005
-enum class EBTFlowAbortMode : uint8
-{
-	None                                     = 0,
-	LowerPriority                            = 1,
-	Self                                     = 2,
-	Both                                     = 3,
-	EBTFlowAbortMode_MAX                     = 4,
-};
-
-// Enum AIModule.EBTNodeResult
-// NumValues: 0x0005
-enum class EBTNodeResult : uint8
-{
-	Succeeded                                = 0,
-	Failed                                   = 1,
-	Aborted                                  = 2,
-	InProgress                               = 3,
-	EBTNodeResult_MAX                        = 4,
-};
-
-// Enum AIModule.ETextKeyOperation
-// NumValues: 0x0005
-enum class ETextKeyOperation : uint8
-{
-	Equal                                    = 0,
-	NotEqual                                 = 1,
-	Contain                                  = 2,
-	NotContain                               = 3,
-	ETextKeyOperation_MAX                    = 4,
+	Set                                      = 0,
+	NotSet                                   = 1,
+	EBasicKeyOperation_MAX                   = 2,
 };
 
 // Enum AIModule.EArithmeticKeyOperation
@@ -203,22 +158,244 @@ enum class EArithmeticKeyOperation : uint8
 	EArithmeticKeyOperation_MAX              = 6,
 };
 
-// Enum AIModule.EBasicKeyOperation
-// NumValues: 0x0003
-enum class EBasicKeyOperation : uint8
+// Enum AIModule.ETextKeyOperation
+// NumValues: 0x0005
+enum class ETextKeyOperation : uint8
 {
-	Set                                      = 0,
-	NotSet                                   = 1,
-	EBasicKeyOperation_MAX                   = 2,
+	Equal                                    = 0,
+	NotEqual                                 = 1,
+	Contain                                  = 2,
+	NotContain                               = 3,
+	ETextKeyOperation_MAX                    = 4,
 };
 
-// Enum AIModule.EBTParallelMode
-// NumValues: 0x0003
-enum class EBTParallelMode : uint8
+// Enum AIModule.EEnvTestPurpose
+// NumValues: 0x0004
+enum class EEnvTestPurpose : uint8
 {
-	AbortBackground                          = 0,
-	WaitForBackground                        = 1,
-	EBTParallelMode_MAX                      = 2,
+	Filter                                   = 0,
+	Score                                    = 1,
+	FilterAndScore                           = 2,
+	EEnvTestPurpose_MAX                      = 3,
+};
+
+// Enum AIModule.EEnvTestFilterType
+// NumValues: 0x0005
+enum class EEnvTestFilterType : uint8
+{
+	Minimum                                  = 0,
+	Maximum                                  = 1,
+	Range                                    = 2,
+	Match                                    = 3,
+	EEnvTestFilterType_MAX                   = 4,
+};
+
+// Enum AIModule.EEnvTestScoreEquation
+// NumValues: 0x0006
+enum class EEnvTestScoreEquation : uint8
+{
+	Linear                                   = 0,
+	Square                                   = 1,
+	InverseLinear                            = 2,
+	SquareRoot                               = 3,
+	Constant                                 = 4,
+	EEnvTestScoreEquation_MAX                = 5,
+};
+
+// Enum AIModule.EEnvTestWeight
+// NumValues: 0x0007
+enum class EEnvTestWeight : uint8
+{
+	None                                     = 0,
+	Square                                   = 1,
+	Inverse                                  = 2,
+	Unused                                   = 3,
+	Constant                                 = 4,
+	Skip                                     = 5,
+	EEnvTestWeight_MAX                       = 6,
+};
+
+// Enum AIModule.EEnvTestCost
+// NumValues: 0x0004
+enum class EEnvTestCost : uint8
+{
+	Low                                      = 0,
+	Medium                                   = 1,
+	High                                     = 2,
+	EEnvTestCost_MAX                         = 3,
+};
+
+// Enum AIModule.EEnvTestFilterOperator
+// NumValues: 0x0003
+enum class EEnvTestFilterOperator : uint8
+{
+	AllPass                                  = 0,
+	AnyPass                                  = 1,
+	EEnvTestFilterOperator_MAX               = 2,
+};
+
+// Enum AIModule.EEnvTestScoreOperator
+// NumValues: 0x0005
+enum class EEnvTestScoreOperator : uint8
+{
+	AverageScore                             = 0,
+	MinScore                                 = 1,
+	MaxScore                                 = 2,
+	Multiply                                 = 3,
+	EEnvTestScoreOperator_MAX                = 4,
+};
+
+// Enum AIModule.EEnvQueryRunMode
+// NumValues: 0x0007
+enum class EEnvQueryRunMode : uint8
+{
+	SingleResult                             = 0,
+	RandomBest5Pct                           = 1,
+	RandomBest25Pct                          = 2,
+	AllMatching                              = 3,
+	RandomBest50Pct                          = 4,
+	RandomBest75Pct                          = 5,
+	EEnvQueryRunMode_MAX                     = 6,
+};
+
+// Enum AIModule.EEnvQueryParam
+// NumValues: 0x0004
+enum class EEnvQueryParam : uint8
+{
+	Float                                    = 0,
+	Int                                      = 1,
+	Bool                                     = 2,
+	EEnvQueryParam_MAX                       = 3,
+};
+
+// Enum AIModule.EAIParamType
+// NumValues: 0x0004
+enum class EAIParamType : uint8
+{
+	Float                                    = 0,
+	Int                                      = 1,
+	Bool                                     = 2,
+	MAX                                      = 3,
+};
+
+// Enum AIModule.EEnvQueryTrace
+// NumValues: 0x0006
+enum class EEnvQueryTrace : uint8
+{
+	None                                     = 0,
+	Navigation                               = 1,
+	GeometryByChannel                        = 2,
+	GeometryByProfile                        = 3,
+	NavigationOverLedges                     = 4,
+	EEnvQueryTrace_MAX                       = 5,
+};
+
+// Enum AIModule.EEnvTraceShape
+// NumValues: 0x0005
+enum class EEnvTraceShape : uint8
+{
+	Line                                     = 0,
+	Box                                      = 1,
+	Sphere                                   = 2,
+	Capsule                                  = 3,
+	EEnvTraceShape_MAX                       = 4,
+};
+
+// Enum AIModule.EEnvOverlapShape
+// NumValues: 0x0004
+enum class EEnvOverlapShape : uint8
+{
+	Box                                      = 0,
+	Sphere                                   = 1,
+	Capsule                                  = 2,
+	EEnvOverlapShape_MAX                     = 3,
+};
+
+// Enum AIModule.EEnvDirection
+// NumValues: 0x0003
+enum class EEnvDirection : uint8
+{
+	TwoPoints                                = 0,
+	Rotation                                 = 1,
+	EEnvDirection_MAX                        = 2,
+};
+
+// Enum AIModule.EEnvQueryTestClamping
+// NumValues: 0x0004
+enum class EEnvQueryTestClamping : uint8
+{
+	None                                     = 0,
+	SpecifiedValue                           = 1,
+	FilterThreshold                          = 2,
+	EEnvQueryTestClamping_MAX                = 3,
+};
+
+// Enum AIModule.ETeamAttitude
+// NumValues: 0x0004
+enum class ETeamAttitude : uint8
+{
+	Friendly                                 = 0,
+	Neutral                                  = 1,
+	Hostile                                  = 2,
+	ETeamAttitude_MAX                        = 3,
+};
+
+// Enum AIModule.EPawnSubActionTriggeringPolicy
+// NumValues: 0x0003
+enum class EPawnSubActionTriggeringPolicy : uint8
+{
+	CopyBeforeTriggering                     = 0,
+	ReuseInstances                           = 1,
+	EPawnSubActionTriggeringPolicy_MAX       = 2,
+};
+
+// Enum AIModule.EPawnActionFailHandling
+// NumValues: 0x0003
+enum class EPawnActionFailHandling : uint8
+{
+	RequireSuccess                           = 0,
+	IgnoreFailure                            = 1,
+	EPawnActionFailHandling_MAX              = 2,
+};
+
+// Enum AIModule.EPawnActionMoveMode
+// NumValues: 0x0003
+enum class EPawnActionMoveMode : uint8
+{
+	UsePathfinding                           = 0,
+	StraightLine                             = 1,
+	EPawnActionMoveMode_MAX                  = 2,
+};
+
+// Enum AIModule.EBTNodeResult
+// NumValues: 0x0005
+enum class EBTNodeResult : uint8
+{
+	Succeeded                                = 0,
+	Failed                                   = 1,
+	Aborted                                  = 2,
+	InProgress                               = 3,
+	EBTNodeResult_MAX                        = 4,
+};
+
+// Enum AIModule.EBTFlowAbortMode
+// NumValues: 0x0005
+enum class EBTFlowAbortMode : uint8
+{
+	None                                     = 0,
+	LowerPriority                            = 1,
+	Self                                     = 2,
+	Both                                     = 3,
+	EBTFlowAbortMode_MAX                     = 4,
+};
+
+// Enum AIModule.EBTChildIndex
+// NumValues: 0x0003
+enum class EBTChildIndex : uint8
+{
+	FirstNode                                = 0,
+	TaskNode                                 = 1,
+	EBTChildIndex_MAX                        = 2,
 };
 
 // Enum AIModule.EBTDecoratorLogic
@@ -233,13 +410,13 @@ enum class EBTDecoratorLogic : uint8
 	EBTDecoratorLogic_MAX                    = 5,
 };
 
-// Enum AIModule.EBTChildIndex
+// Enum AIModule.EBTParallelMode
 // NumValues: 0x0003
-enum class EBTChildIndex : uint8
+enum class EBTParallelMode : uint8
 {
-	FirstNode                                = 0,
-	TaskNode                                 = 1,
-	EBTChildIndex_MAX                        = 2,
+	AbortBackground                          = 0,
+	WaitForBackground                        = 1,
+	EBTParallelMode_MAX                      = 2,
 };
 
 // Enum AIModule.EBTBlackboardRestart
@@ -270,15 +447,6 @@ enum class EPathExistanceQueryType : uint8
 	EPathExistanceQueryType_MAX              = 3,
 };
 
-// Enum AIModule.EPointOnCircleSpacingMethod
-// NumValues: 0x0003
-enum class EPointOnCircleSpacingMethod : uint8
-{
-	BySpaceBetween                           = 0,
-	ByNumberOfPoints                         = 1,
-	EPointOnCircleSpacingMethod_MAX          = 2,
-};
-
 // Enum AIModule.EEQSNormalizationType
 // NumValues: 0x0003
 enum class EEQSNormalizationType : uint8
@@ -286,6 +454,25 @@ enum class EEQSNormalizationType : uint8
 	Absolute                                 = 0,
 	RelativeToScores                         = 1,
 	EEQSNormalizationType_MAX                = 2,
+};
+
+// Enum AIModule.EEnvQueryHightlightMode
+// NumValues: 0x0004
+enum class EEnvQueryHightlightMode : uint8
+{
+	All                                      = 0,
+	Best5Pct                                 = 1,
+	Best25Pct                                = 2,
+	EEnvQueryHightlightMode_MAX              = 3,
+};
+
+// Enum AIModule.EPointOnCircleSpacingMethod
+// NumValues: 0x0003
+enum class EPointOnCircleSpacingMethod : uint8
+{
+	BySpaceBetween                           = 0,
+	ByNumberOfPoints                         = 1,
+	EPointOnCircleSpacingMethod_MAX          = 2,
 };
 
 // Enum AIModule.EEnvTestDistance
@@ -318,194 +505,15 @@ enum class EEnvTestPathfinding : uint8
 	EEnvTestPathfinding_MAX                  = 3,
 };
 
-// Enum AIModule.EEnvQueryTestClamping
-// NumValues: 0x0004
-enum class EEnvQueryTestClamping : uint8
-{
-	None                                     = 0,
-	SpecifiedValue                           = 1,
-	FilterThreshold                          = 2,
-	EEnvQueryTestClamping_MAX                = 3,
-};
-
-// Enum AIModule.EEnvDirection
-// NumValues: 0x0003
-enum class EEnvDirection : uint8
-{
-	TwoPoints                                = 0,
-	Rotation                                 = 1,
-	EEnvDirection_MAX                        = 2,
-};
-
-// Enum AIModule.EEnvOverlapShape
-// NumValues: 0x0004
-enum class EEnvOverlapShape : uint8
-{
-	Box                                      = 0,
-	Sphere                                   = 1,
-	Capsule                                  = 2,
-	EEnvOverlapShape_MAX                     = 3,
-};
-
-// Enum AIModule.EEnvTraceShape
+// Enum AIModule.EPathFollowingStatus
 // NumValues: 0x0005
-enum class EEnvTraceShape : uint8
+enum class EPathFollowingStatus : uint8
 {
-	Line                                     = 0,
-	Box                                      = 1,
-	Sphere                                   = 2,
-	Capsule                                  = 3,
-	EEnvTraceShape_MAX                       = 4,
-};
-
-// Enum AIModule.EEnvQueryTrace
-// NumValues: 0x0005
-enum class EEnvQueryTrace : uint8
-{
-	None                                     = 0,
-	Navigation                               = 1,
-	Geometry                                 = 2,
-	NavigationOverLedges                     = 3,
-	EEnvQueryTrace_MAX                       = 4,
-};
-
-// Enum AIModule.EAIParamType
-// NumValues: 0x0004
-enum class EAIParamType : uint8
-{
-	Float                                    = 0,
-	Int                                      = 1,
-	Bool                                     = 2,
-	MAX                                      = 3,
-};
-
-// Enum AIModule.EEnvQueryParam
-// NumValues: 0x0004
-enum class EEnvQueryParam : uint8
-{
-	Float                                    = 0,
-	Int                                      = 1,
-	Bool                                     = 2,
-	EEnvQueryParam_MAX                       = 3,
-};
-
-// Enum AIModule.EEnvQueryRunMode
-// NumValues: 0x0007
-enum class EEnvQueryRunMode : uint8
-{
-	SingleResult                             = 0,
-	RandomBest5Pct                           = 1,
-	RandomBest25Pct                          = 2,
-	AllMatching                              = 3,
-	RandomBest50Pct                          = 4,
-	RandomBest75Pct                          = 5,
-	EEnvQueryRunMode_MAX                     = 6,
-};
-
-// Enum AIModule.EEnvTestScoreOperator
-// NumValues: 0x0005
-enum class EEnvTestScoreOperator : uint8
-{
-	AverageScore                             = 0,
-	MinScore                                 = 1,
-	MaxScore                                 = 2,
-	Multiply                                 = 3,
-	EEnvTestScoreOperator_MAX                = 4,
-};
-
-// Enum AIModule.EEnvTestFilterOperator
-// NumValues: 0x0003
-enum class EEnvTestFilterOperator : uint8
-{
-	AllPass                                  = 0,
-	AnyPass                                  = 1,
-	EEnvTestFilterOperator_MAX               = 2,
-};
-
-// Enum AIModule.EEnvTestCost
-// NumValues: 0x0004
-enum class EEnvTestCost : uint8
-{
-	Low                                      = 0,
-	Medium                                   = 1,
-	High                                     = 2,
-	EEnvTestCost_MAX                         = 3,
-};
-
-// Enum AIModule.EEnvTestWeight
-// NumValues: 0x0007
-enum class EEnvTestWeight : uint8
-{
-	None                                     = 0,
-	Square                                   = 1,
-	Inverse                                  = 2,
-	Unused                                   = 3,
-	Constant                                 = 4,
-	Skip                                     = 5,
-	EEnvTestWeight_MAX                       = 6,
-};
-
-// Enum AIModule.EEnvTestScoreEquation
-// NumValues: 0x0006
-enum class EEnvTestScoreEquation : uint8
-{
-	Linear                                   = 0,
-	Square                                   = 1,
-	InverseLinear                            = 2,
-	SquareRoot                               = 3,
-	Constant                                 = 4,
-	EEnvTestScoreEquation_MAX                = 5,
-};
-
-// Enum AIModule.EEnvTestFilterType
-// NumValues: 0x0005
-enum class EEnvTestFilterType : uint8
-{
-	Minimum                                  = 0,
-	Maximum                                  = 1,
-	Range                                    = 2,
-	Match                                    = 3,
-	EEnvTestFilterType_MAX                   = 4,
-};
-
-// Enum AIModule.EEnvTestPurpose
-// NumValues: 0x0004
-enum class EEnvTestPurpose : uint8
-{
-	Filter                                   = 0,
-	Score                                    = 1,
-	FilterAndScore                           = 2,
-	EEnvTestPurpose_MAX                      = 3,
-};
-
-// Enum AIModule.EEnvQueryHightlightMode
-// NumValues: 0x0004
-enum class EEnvQueryHightlightMode : uint8
-{
-	All                                      = 0,
-	Best5Pct                                 = 1,
-	Best25Pct                                = 2,
-	EEnvQueryHightlightMode_MAX              = 3,
-};
-
-// Enum AIModule.ETeamAttitude
-// NumValues: 0x0004
-enum class ETeamAttitude : uint8
-{
-	Friendly                                 = 0,
-	Neutral                                  = 1,
-	Hostile                                  = 2,
-	ETeamAttitude_MAX                        = 3,
-};
-
-// Enum AIModule.EPathFollowingRequestResult
-// NumValues: 0x0004
-enum class EPathFollowingRequestResult : uint8
-{
-	Failed                                   = 0,
-	AlreadyAtGoal                            = 1,
-	RequestSuccessful                        = 2,
-	EPathFollowingRequestResult_MAX          = 3,
+	Idle                                     = 0,
+	Waiting                                  = 1,
+	Paused                                   = 2,
+	Moving                                   = 3,
+	EPathFollowingStatus_MAX                 = 4,
 };
 
 // Enum AIModule.EPathFollowingAction
@@ -520,302 +528,94 @@ enum class EPathFollowingAction : uint8
 	EPathFollowingAction_MAX                 = 5,
 };
 
-// Enum AIModule.EPathFollowingStatus
-// NumValues: 0x0005
-enum class EPathFollowingStatus : uint8
+// Enum AIModule.EPathFollowingRequestResult
+// NumValues: 0x0004
+enum class EPathFollowingRequestResult : uint8
 {
-	Idle                                     = 0,
-	Waiting                                  = 1,
-	Paused                                   = 2,
-	Moving                                   = 3,
-	EPathFollowingStatus_MAX                 = 4,
+	Failed                                   = 0,
+	AlreadyAtGoal                            = 1,
+	RequestSuccessful                        = 2,
+	EPathFollowingRequestResult_MAX          = 3,
 };
 
-// Enum AIModule.EPawnActionFailHandling
+// Enum AIModule.EAISenseNotifyType
 // NumValues: 0x0003
-enum class EPawnActionFailHandling : uint8
+enum class EAISenseNotifyType : uint8
 {
-	RequireSuccess                           = 0,
-	IgnoreFailure                            = 1,
-	EPawnActionFailHandling_MAX              = 2,
+	OnEveryPerception                        = 0,
+	OnPerceptionChange                       = 1,
+	EAISenseNotifyType_MAX                   = 2,
 };
 
-// Enum AIModule.EPawnSubActionTriggeringPolicy
-// NumValues: 0x0003
-enum class EPawnSubActionTriggeringPolicy : uint8
+// Enum AIModule.EAITaskPriority
+// NumValues: 0x0006
+enum class EAITaskPriority : uint8
 {
-	CopyBeforeTriggering                     = 0,
-	ReuseInstances                           = 1,
-	EPawnSubActionTriggeringPolicy_MAX       = 2,
+	Lowest                                   = 0,
+	Low                                      = 64,
+	AutonomousAI                             = 127,
+	High                                     = 192,
+	Ultimate                                 = 254,
+	EAITaskPriority_MAX                      = 255,
 };
 
-// Enum AIModule.EPawnActionMoveMode
-// NumValues: 0x0003
-enum class EPawnActionMoveMode : uint8
-{
-	UsePathfinding                           = 0,
-	StraightLine                             = 1,
-	EPawnActionMoveMode_MAX                  = 2,
-};
-
-// ScriptStruct AIModule.AIDataProviderValue
-// 0x0028 (0x0028 - 0x0000)
-struct FAIDataProviderValue
+// ScriptStruct AIModule.EnvQueryManagerConfig
+// 0x0030 (0x0030 - 0x0000)
+struct FEnvQueryManagerConfig final
 {
 public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAIDataProvider*                        DataBinding;                                       // 0x0010(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   DataField;                                         // 0x0018(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	float                                         MaxAllowedTestingTime;                             // 0x0000(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bTestQueriesUsingBreadth;                          // 0x0004(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         QueryCountWarningThreshold;                        // 0x0008(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        QueryCountWarningInterval;                         // 0x0010(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        ExecutionTimeWarningSeconds;                       // 0x0018(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        HandlingResultTimeWarningSeconds;                  // 0x0020(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        GenerationTimeWarningSeconds;                      // 0x0028(0x0008)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FAIDataProviderValue;
-
-// ScriptStruct AIModule.AIDataProviderStructValue
-// 0x0010 (0x0038 - 0x0028)
-struct FAIDataProviderStructValue final : public FAIDataProviderValue
-{
-public:
-	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIDataProviderStructValue;
-
-// ScriptStruct AIModule.AIRequestID
-// 0x0004 (0x0004 - 0x0000)
-struct FAIRequestID final
-{
-public:
-	uint32                                        RequestID;                                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-DUMPER7_ASSERTS_FAIRequestID;
-
-// ScriptStruct AIModule.AIDamageEvent
-// 0x0040 (0x0040 - 0x0000)
-struct FAIDamageEvent final
-{
-public:
-	float                                         Amount;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0004(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                HitLocation;                                       // 0x0010(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 DamagedActor;                                      // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Instigator;                                        // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Tag;                                               // 0x0030(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIDamageEvent;
+DUMPER7_ASSERTS_FEnvQueryManagerConfig;
 
 // ScriptStruct AIModule.AIStimulus
-// 0x0058 (0x0058 - 0x0000)
-struct alignas(0x08) FAIStimulus final
+// 0x0078 (0x0078 - 0x0000)
+struct FAIStimulus final
 {
 public:
 	float                                         Age;                                               // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         ExpirationAge;                                     // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         Strength;                                          // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                StimulusLocation;                                  // 0x000C(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ReceiverLocation;                                  // 0x0018(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Tag;                                               // 0x0024(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_30[0x20];                                      // 0x0030(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         BitPad_50_0 : 1;                                   // 0x0050(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
-	uint8                                         bSuccessfullySensed : 1;                           // 0x0050(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                StimulusLocation;                                  // 0x0010(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                ReceiverLocation;                                  // 0x0028(0x0018)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Tag;                                               // 0x0040(0x000C)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4C[0x24];                                      // 0x004C(0x0024)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_70_0 : 1;                                   // 0x0070(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         bSuccessfullySensed : 1;                           // 0x0070(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAIStimulus;
 
 // ScriptStruct AIModule.ActorPerceptionUpdateInfo
-// 0x0068 (0x0068 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct FActorPerceptionUpdateInfo final
 {
 public:
 	int32                                         TargetId;                                          // 0x0000(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class AActor>                  Target;                                            // 0x0004(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAIStimulus                            Stimulus;                                          // 0x0010(0x0058)(BlueprintVisible, NativeAccessSpecifierPublic)
+	struct FAIStimulus                            Stimulus;                                          // 0x0010(0x0078)(BlueprintVisible, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FActorPerceptionUpdateInfo;
 
-// ScriptStruct AIModule.AIDataProviderTypedValue
-// 0x0010 (0x0038 - 0x0028)
-struct FAIDataProviderTypedValue : public FAIDataProviderValue
-{
-public:
-	class UClass*                                 PropertyType;                                      // 0x0028(0x0008)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIDataProviderTypedValue;
-
-// ScriptStruct AIModule.AIDataProviderBoolValue
-// 0x0008 (0x0040 - 0x0038)
-struct FAIDataProviderBoolValue final : public FAIDataProviderTypedValue
-{
-public:
-	bool                                          DefaultValue;                                      // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIDataProviderBoolValue;
-
-// ScriptStruct AIModule.AIDataProviderFloatValue
-// 0x0008 (0x0040 - 0x0038)
-struct FAIDataProviderFloatValue final : public FAIDataProviderTypedValue
-{
-public:
-	float                                         DefaultValue;                                      // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIDataProviderFloatValue;
-
-// ScriptStruct AIModule.AIDataProviderIntValue
-// 0x0008 (0x0040 - 0x0038)
-struct FAIDataProviderIntValue final : public FAIDataProviderTypedValue
-{
-public:
-	int32                                         DefaultValue;                                      // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIDataProviderIntValue;
-
-// ScriptStruct AIModule.ActorPerceptionBlueprintInfo
-// 0x0020 (0x0020 - 0x0000)
-struct FActorPerceptionBlueprintInfo final
-{
-public:
-	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAIStimulus>                    LastSensedStimuli;                                 // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                         bIsHostile : 1;                                    // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FActorPerceptionBlueprintInfo;
-
-// ScriptStruct AIModule.AISenseAffiliationFilter
-// 0x0004 (0x0004 - 0x0000)
-struct alignas(0x04) FAISenseAffiliationFilter final
-{
-public:
-	uint8                                         bDetectEnemies : 1;                                // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bDetectNeutrals : 1;                               // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bDetectFriendlies : 1;                             // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAISenseAffiliationFilter;
-
-// ScriptStruct AIModule.AINoiseEvent
-// 0x0040 (0x0040 - 0x0000)
-struct FAINoiseEvent final
-{
-public:
-	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                NoiseLocation;                                     // 0x0004(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Loudness;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxRange;                                          // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Instigator;                                        // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Tag;                                               // 0x0020(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C[0x14];                                      // 0x002C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAINoiseEvent;
-
-// ScriptStruct AIModule.AIPredictionEvent
-// 0x0018 (0x0018 - 0x0000)
-struct FAIPredictionEvent final
-{
-public:
-	class AActor*                                 Requestor;                                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 PredictedActor;                                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FAIPredictionEvent;
-
-// ScriptStruct AIModule.AISightEvent
-// 0x0018 (0x0018 - 0x0000)
-struct FAISightEvent final
-{
-public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 SeenActor;                                         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 Observer;                                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAISightEvent;
-
-// ScriptStruct AIModule.AITeamStimulusEvent
-// 0x0038 (0x0038 - 0x0000)
-struct FAITeamStimulusEvent final
-{
-public:
-	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Broadcaster;                                       // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AActor*                                 Enemy;                                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAITeamStimulusEvent;
-
-// ScriptStruct AIModule.AITouchEvent
-// 0x0020 (0x0020 - 0x0000)
-struct FAITouchEvent final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 TouchReceiver;                                     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 OtherActor;                                        // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAITouchEvent;
-
-// ScriptStruct AIModule.IntervalCountdown
-// 0x0008 (0x0008 - 0x0000)
-struct FIntervalCountdown final
-{
-public:
-	float                                         Interval;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FIntervalCountdown;
-
 // ScriptStruct AIModule.AIMoveRequest
-// 0x0048 (0x0048 - 0x0000)
-struct FAIMoveRequest final
+// 0x0058 (0x0058 - 0x0000)
+struct alignas(0x08) FAIMoveRequest final
 {
 public:
-	class AActor*                                 GoalActor;                                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_8[0x40];                                       // 0x0008(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TWeakObjectPtr<class AActor>                  GoalActor;                                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_8[0x50];                                       // 0x0008(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAIMoveRequest;
-
-// ScriptStruct AIModule.BehaviorTreeTemplateInfo
-// 0x0018 (0x0018 - 0x0000)
-struct FBehaviorTreeTemplateInfo final
-{
-public:
-	class UBehaviorTree*                          Asset;                                             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBTCompositeNode*                       Template;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FBehaviorTreeTemplateInfo;
-
-// ScriptStruct AIModule.BlackboardKeySelector
-// 0x0030 (0x0030 - 0x0000)
-struct FBlackboardKeySelector final
-{
-public:
-	TArray<class UBlackboardKeyType*>             AllowedTypes;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	class FName                                   SelectedKeyName;                                   // 0x0010(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UBlackboardKeyType>         SelectedKeyType;                                   // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         SelectedKeyID;                                     // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bNoneIsAllowedValue : 1;                           // 0x002C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FBlackboardKeySelector;
-
-// ScriptStruct AIModule.BlackboardEntry
-// 0x0020 (0x0020 - 0x0000)
-struct FBlackboardEntry final
-{
-public:
-	class FName                                   EntryName;                                         // 0x0000(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBlackboardKeyType*                     KeyType;                                           // 0x0010(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bInstanceSynced : 1;                               // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FBlackboardEntry;
 
 // ScriptStruct AIModule.BTDecoratorLogic
 // 0x0004 (0x0004 - 0x0000)
@@ -833,22 +633,452 @@ DUMPER7_ASSERTS_FBTDecoratorLogic;
 struct FBTCompositeChild final
 {
 public:
-	class UBTCompositeNode*                       ChildComposite;                                    // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UBTTaskNode*                            ChildTask;                                         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UBTDecorator*>                   Decorators;                                        // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class UBTCompositeNode*                       ChildComposite;                                    // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UBTTaskNode*                            ChildTask;                                         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<class UBTDecorator*>                   Decorators;                                        // 0x0010(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 	TArray<struct FBTDecoratorLogic>              DecoratorOps;                                      // 0x0020(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FBTCompositeChild;
 
-// ScriptStruct AIModule.CrowdAvoidanceSamplingPattern
-// 0x0020 (0x0020 - 0x0000)
-struct FCrowdAvoidanceSamplingPattern final
+// ScriptStruct AIModule.EnvTraceData
+// 0x0040 (0x0040 - 0x0000)
+struct FEnvTraceData final
 {
 public:
-	TArray<float>                                 Angles;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<float>                                 Radii;                                             // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                         VersionNum;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UNavigationQueryFilter>     NavigationFilter;                                  // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProjectDown;                                       // 0x0010(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ProjectUp;                                         // 0x0014(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtentX;                                           // 0x0018(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtentY;                                           // 0x001C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtentZ;                                           // 0x0020(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PostProjectionVerticalOffset;                      // 0x0024(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ETraceTypeQuery                               TraceChannel;                                      // 0x0028(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECollisionChannel                             SerializedChannel;                                 // 0x0029(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   TraceProfileName;                                  // 0x002C(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEnvTraceShape                                TraceShape;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEnvQueryTrace                                TraceMode;                                         // 0x0039(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bTraceComplex : 1;                                 // 0x003C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bOnlyBlockingHits : 1;                             // 0x003C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bCanTraceOnNavMesh : 1;                            // 0x003C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bCanTraceOnGeometry : 1;                           // 0x003C(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bCanDisableTrace : 1;                              // 0x003C(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bCanProjectDown : 1;                               // 0x003C(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FCrowdAvoidanceSamplingPattern;
+DUMPER7_ASSERTS_FEnvTraceData;
+
+// ScriptStruct AIModule.PawnActionStack
+// 0x0008 (0x0008 - 0x0000)
+struct FPawnActionStack final
+{
+public:
+	class UPawnAction*                            TopAction;                                         // 0x0000(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+};
+DUMPER7_ASSERTS_FPawnActionStack;
+
+// ScriptStruct AIModule.AIRequestID
+// 0x0004 (0x0004 - 0x0000)
+struct FAIRequestID final
+{
+public:
+	uint32                                        RequestID;                                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FAIRequestID;
+
+// ScriptStruct AIModule.IntervalCountdown
+// 0x0008 (0x0008 - 0x0000)
+struct FIntervalCountdown final
+{
+public:
+	float                                         Interval;                                          // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FIntervalCountdown;
+
+// ScriptStruct AIModule.EnvNamedValue
+// 0x0014 (0x0014 - 0x0000)
+struct FEnvNamedValue final
+{
+public:
+	class FName                                   ParamName;                                         // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIParamType                                  ParamType;                                         // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FEnvNamedValue;
+
+// ScriptStruct AIModule.EnvDirection
+// 0x0020 (0x0020 - 0x0000)
+struct FEnvDirection final
+{
+public:
+	TSubclassOf<class UEnvQueryContext>           LineFrom;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           LineTo;                                            // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UEnvQueryContext>           Rotation;                                          // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEnvDirection                                 DirMode;                                           // 0x0018(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FEnvDirection;
+
+// ScriptStruct AIModule.EnvOverlapData
+// 0x0030 (0x0030 - 0x0000)
+struct FEnvOverlapData final
+{
+public:
+	float                                         ExtentX;                                           // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtentY;                                           // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ExtentZ;                                           // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ShapeOffset;                                       // 0x0010(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	ECollisionChannel                             OverlapChannel;                                    // 0x0028(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EEnvOverlapShape                              OverlapShape;                                      // 0x0029(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bOnlyBlockingHits : 1;                             // 0x002C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bOverlapComplex : 1;                               // 0x002C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bSkipOverlapQuerier : 1;                           // 0x002C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FEnvOverlapData;
+
+// ScriptStruct AIModule.EnvQueryResult
+// 0x0040 (0x0040 - 0x0000)
+struct FEnvQueryResult final
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UEnvQueryItemType>          ItemType;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18[0x14];                                      // 0x0018(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         OptionIndex;                                       // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         QueryID;                                           // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_34[0xC];                                       // 0x0034(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FEnvQueryResult;
+
+// ScriptStruct AIModule.BlackboardKeySelector
+// 0x0030 (0x0030 - 0x0000)
+struct FBlackboardKeySelector final
+{
+public:
+	TArray<class UBlackboardKeyType*>             AllowedTypes;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	class FName                                   SelectedKeyName;                                   // 0x0010(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UBlackboardKeyType>         SelectedKeyType;                                   // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SelectedKeyID;                                     // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bNoneIsAllowedValue : 1;                           // 0x002C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FBlackboardKeySelector;
+
+// ScriptStruct AIModule.AIDynamicParam
+// 0x0048 (0x0048 - 0x0000)
+struct FAIDynamicParam final
+{
+public:
+	class FName                                   ParamName;                                         // 0x0000(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAIParamType                                  ParamType;                                         // 0x000C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         bAllowBBKey : 1;                                   // 0x000D(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FBlackboardKeySelector                 BBKey;                                             // 0x0018(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FAIDynamicParam;
+
+// ScriptStruct AIModule.EQSParametrizedQueryExecutionRequest
+// 0x0050 (0x0050 - 0x0000)
+struct FEQSParametrizedQueryExecutionRequest final
+{
+public:
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<struct FAIDynamicParam>                QueryConfig;                                       // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FBlackboardKeySelector                 EQSQueryBlackboardKey;                             // 0x0018(0x0030)(Edit, NativeAccessSpecifierPublic)
+	EEnvQueryRunMode                              RunMode;                                           // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         bUseBBKeyForQueryTemplate : 1;                     // 0x004C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FEQSParametrizedQueryExecutionRequest;
+
+// ScriptStruct AIModule.GenericTeamId
+// 0x0001 (0x0001 - 0x0000)
+struct FGenericTeamId final
+{
+public:
+	uint8                                         TeamID;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FGenericTeamId;
+
+// ScriptStruct AIModule.SimpleIndexedHandleBase
+// 0x0004 (0x0004 - 0x0000)
+struct alignas(0x04) FSimpleIndexedHandleBase
+{
+public:
+	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FSimpleIndexedHandleBase;
+
+// ScriptStruct AIModule.IndexedHandleBase
+// 0x0004 (0x0008 - 0x0004)
+struct FIndexedHandleBase final : public FSimpleIndexedHandleBase
+{
+public:
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FIndexedHandleBase;
+
+// ScriptStruct AIModule.CompactIndexedHandleBase
+// 0x0004 (0x0004 - 0x0000)
+struct alignas(0x02) FCompactIndexedHandleBase final
+{
+public:
+	uint8                                         Pad_0[0x4];                                        // 0x0000(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FCompactIndexedHandleBase;
+
+// ScriptStruct AIModule.SequentialIDBase
+// 0x0004 (0x0004 - 0x0000)
+struct FSequentialIDBase final
+{
+public:
+	uint32                                        Value;                                             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FSequentialIDBase;
+
+// ScriptStruct AIModule.ValueOrBlackboardKeyBase
+// 0x0010 (0x0010 - 0x0000)
+struct FValueOrBlackboardKeyBase
+{
+public:
+	class FName                                   Key;                                               // 0x0000(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FValueOrBlackboardKeyBase;
+
+// ScriptStruct AIModule.ValueOrBBKey_Bool
+// 0x0004 (0x0014 - 0x0010)
+struct FValueOrBBKey_Bool final : public FValueOrBlackboardKeyBase
+{
+public:
+	bool                                          DefaultValue;                                      // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Bool;
+
+// ScriptStruct AIModule.ValueOrBBKey_Class
+// 0x0010 (0x0020 - 0x0010)
+struct FValueOrBBKey_Class final : public FValueOrBlackboardKeyBase
+{
+public:
+	TSubclassOf<class UObject>                    DefaultValue;                                      // 0x0010(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	TSubclassOf<class UObject>                    BaseClass;                                         // 0x0018(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Class;
+
+// ScriptStruct AIModule.ValueOrBBKey_Enum
+// 0x0020 (0x0030 - 0x0010)
+struct FValueOrBBKey_Enum final : public FValueOrBlackboardKeyBase
+{
+public:
+	uint8                                         DefaultValue;                                      // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UEnum*                                  EnumType;                                          // 0x0018(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class FString                                 NativeEnumTypeName;                                // 0x0020(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Enum;
+
+// ScriptStruct AIModule.ValueOrBBKey_Float
+// 0x0004 (0x0014 - 0x0010)
+struct FValueOrBBKey_Float final : public FValueOrBlackboardKeyBase
+{
+public:
+	float                                         DefaultValue;                                      // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Float;
+
+// ScriptStruct AIModule.ValueOrBBKey_Int32
+// 0x0004 (0x0014 - 0x0010)
+struct FValueOrBBKey_Int32 final : public FValueOrBlackboardKeyBase
+{
+public:
+	int32                                         DefaultValue;                                      // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Int32;
+
+// ScriptStruct AIModule.ValueOrBBKey_Name
+// 0x000C (0x001C - 0x0010)
+struct FValueOrBBKey_Name final : public FValueOrBlackboardKeyBase
+{
+public:
+	class FName                                   DefaultValue;                                      // 0x0010(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Name;
+
+// ScriptStruct AIModule.ValueOrBBKey_String
+// 0x0010 (0x0020 - 0x0010)
+struct FValueOrBBKey_String final : public FValueOrBlackboardKeyBase
+{
+public:
+	class FString                                 DefaultValue;                                      // 0x0010(0x0010)(Edit, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_String;
+
+// ScriptStruct AIModule.ValueOrBBKey_Object
+// 0x0010 (0x0020 - 0x0010)
+struct FValueOrBBKey_Object final : public FValueOrBlackboardKeyBase
+{
+public:
+	class UObject*                                DefaultValue;                                      // 0x0010(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	TSubclassOf<class UObject>                    BaseClass;                                         // 0x0018(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Object;
+
+// ScriptStruct AIModule.ValueOrBBKey_Rotator
+// 0x0018 (0x0028 - 0x0010)
+struct FValueOrBBKey_Rotator final : public FValueOrBlackboardKeyBase
+{
+public:
+	struct FRotator                               DefaultValue;                                      // 0x0010(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Rotator;
+
+// ScriptStruct AIModule.ValueOrBBKey_Vector
+// 0x0018 (0x0028 - 0x0010)
+struct FValueOrBBKey_Vector final : public FValueOrBlackboardKeyBase
+{
+public:
+	struct FVector                                DefaultValue;                                      // 0x0010(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Vector;
+
+// ScriptStruct AIModule.ValueOrBBKey_Struct
+// 0x0010 (0x0020 - 0x0010)
+struct FValueOrBBKey_Struct final : public FValueOrBlackboardKeyBase
+{
+public:
+	struct FInstancedStruct                       DefaultValue;                                      // 0x0010(0x0010)(Edit, Protected, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FValueOrBBKey_Struct;
+
+// ScriptStruct AIModule.PawnActionEvent
+// 0x0018 (0x0018 - 0x0000)
+struct FPawnActionEvent final
+{
+public:
+	class UPawnAction*                            Action;                                            // 0x0000(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPawnActionEvent;
+
+// ScriptStruct AIModule.BehaviorTreeTemplateInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FBehaviorTreeTemplateInfo final
+{
+public:
+	class UBehaviorTree*                          Asset;                                             // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class UBTCompositeNode*                       Template;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FBehaviorTreeTemplateInfo;
+
+// ScriptStruct AIModule.BlackboardEntry
+// 0x0020 (0x0020 - 0x0000)
+struct FBlackboardEntry final
+{
+public:
+	class FName                                   EntryName;                                         // 0x0000(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBlackboardKeyType*                     KeyType;                                           // 0x0010(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         bInstanceSynced : 1;                               // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FBlackboardEntry;
+
+// ScriptStruct AIModule.AIDataProviderValue
+// 0x0028 (0x0028 - 0x0000)
+struct FAIDataProviderValue
+{
+public:
+	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAIDataProvider*                        DataBinding;                                       // 0x0010(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class FName                                   DataField;                                         // 0x0018(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDataProviderValue;
+
+// ScriptStruct AIModule.AIDataProviderTypedValue
+// 0x0010 (0x0038 - 0x0028)
+struct FAIDataProviderTypedValue : public FAIDataProviderValue
+{
+public:
+	TSubclassOf<class UObject>                    PropertyType;                                      // 0x0028(0x0008)(ZeroConstructor, Deprecated, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDataProviderTypedValue;
+
+// ScriptStruct AIModule.AIDataProviderStructValue
+// 0x0010 (0x0038 - 0x0028)
+struct FAIDataProviderStructValue final : public FAIDataProviderValue
+{
+public:
+	uint8                                         Pad_28[0x10];                                      // 0x0028(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDataProviderStructValue;
+
+// ScriptStruct AIModule.AIDataProviderIntValue
+// 0x0008 (0x0040 - 0x0038)
+struct FAIDataProviderIntValue final : public FAIDataProviderTypedValue
+{
+public:
+	int32                                         DefaultValue;                                      // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDataProviderIntValue;
+
+// ScriptStruct AIModule.AIDataProviderFloatValue
+// 0x0008 (0x0040 - 0x0038)
+struct FAIDataProviderFloatValue final : public FAIDataProviderTypedValue
+{
+public:
+	float                                         DefaultValue;                                      // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDataProviderFloatValue;
+
+// ScriptStruct AIModule.AIDataProviderBoolValue
+// 0x0008 (0x0040 - 0x0038)
+struct FAIDataProviderBoolValue final : public FAIDataProviderTypedValue
+{
+public:
+	bool                                          DefaultValue;                                      // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDataProviderBoolValue;
+
+// ScriptStruct AIModule.EnvQueryRequest
+// 0x0068 (0x0068 - 0x0000)
+struct FEnvQueryRequest final
+{
+public:
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UObject*                                Owner;                                             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class UWorld*                                 World;                                             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	uint8                                         Pad_18[0x50];                                      // 0x0018(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FEnvQueryRequest;
+
+// ScriptStruct AIModule.EnvQueryInstanceCache
+// 0x0190 (0x0190 - 0x0000)
+struct FEnvQueryInstanceCache final
+{
+public:
+	class UEnvQuery*                              Template;                                          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_8[0x188];                                      // 0x0008(0x0188)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FEnvQueryInstanceCache;
 
 // ScriptStruct AIModule.CrowdAvoidanceConfig
 // 0x001C (0x001C - 0x0000)
@@ -868,179 +1098,125 @@ public:
 };
 DUMPER7_ASSERTS_FCrowdAvoidanceConfig;
 
-// ScriptStruct AIModule.EnvQueryInstanceCache
-// 0x0188 (0x0188 - 0x0000)
-struct FEnvQueryInstanceCache final
-{
-public:
-	class UEnvQuery*                              Template;                                          // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x180];                                      // 0x0008(0x0180)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEnvQueryInstanceCache;
-
-// ScriptStruct AIModule.EnvQueryRequest
-// 0x0068 (0x0068 - 0x0000)
-struct FEnvQueryRequest final
-{
-public:
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UObject*                                Owner;                                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UWorld*                                 World;                                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_18[0x50];                                      // 0x0018(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEnvQueryRequest;
-
-// ScriptStruct AIModule.AIDynamicParam
-// 0x0048 (0x0048 - 0x0000)
-struct FAIDynamicParam final
-{
-public:
-	class FName                                   ParamName;                                         // 0x0000(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIParamType                                  ParamType;                                         // 0x000C(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FBlackboardKeySelector                 BBKey;                                             // 0x0018(0x0030)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FAIDynamicParam;
-
-// ScriptStruct AIModule.EQSParametrizedQueryExecutionRequest
-// 0x0050 (0x0050 - 0x0000)
-struct FEQSParametrizedQueryExecutionRequest final
-{
-public:
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0000(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FAIDynamicParam>                QueryConfig;                                       // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	struct FBlackboardKeySelector                 EQSQueryBlackboardKey;                             // 0x0018(0x0030)(Edit, NativeAccessSpecifierPublic)
-	EEnvQueryRunMode                              RunMode;                                           // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bUseBBKeyForQueryTemplate : 1;                     // 0x004C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEQSParametrizedQueryExecutionRequest;
-
-// ScriptStruct AIModule.EnvQueryResult
-// 0x0040 (0x0040 - 0x0000)
-struct FEnvQueryResult final
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UEnvQueryItemType>          ItemType;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_18[0x14];                                      // 0x0018(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         OptionIndex;                                       // 0x002C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         QueryID;                                           // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_34[0xC];                                       // 0x0034(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEnvQueryResult;
-
-// ScriptStruct AIModule.EnvOverlapData
+// ScriptStruct AIModule.CrowdAvoidanceSamplingPattern
 // 0x0020 (0x0020 - 0x0000)
-struct FEnvOverlapData final
+struct FCrowdAvoidanceSamplingPattern final
 {
 public:
-	float                                         ExtentX;                                           // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtentY;                                           // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtentZ;                                           // 0x0008(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                ShapeOffset;                                       // 0x000C(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECollisionChannel                             OverlapChannel;                                    // 0x0018(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvOverlapShape                              OverlapShape;                                      // 0x0019(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         bOnlyBlockingHits : 1;                             // 0x001C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bOverlapComplex : 1;                               // 0x001C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bSkipOverlapQuerier : 1;                           // 0x001C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<float>                                 Angles;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<float>                                 Radii;                                             // 0x0010(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FEnvOverlapData;
-
-// ScriptStruct AIModule.EnvTraceData
-// 0x0030 (0x0030 - 0x0000)
-struct FEnvTraceData final
-{
-public:
-	int32                                         VersionNum;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UNavigationQueryFilter>     NavigationFilter;                                  // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProjectDown;                                       // 0x0010(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ProjectUp;                                         // 0x0014(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtentX;                                           // 0x0018(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtentY;                                           // 0x001C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ExtentZ;                                           // 0x0020(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PostProjectionVerticalOffset;                      // 0x0024(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ETraceTypeQuery                               TraceChannel;                                      // 0x0028(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	ECollisionChannel                             SerializedChannel;                                 // 0x0029(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvTraceShape                                TraceShape;                                        // 0x002A(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvQueryTrace                                TraceMode;                                         // 0x002B(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bTraceComplex : 1;                                 // 0x002C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bOnlyBlockingHits : 1;                             // 0x002C(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bCanTraceOnNavMesh : 1;                            // 0x002C(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bCanTraceOnGeometry : 1;                           // 0x002C(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bCanDisableTrace : 1;                              // 0x002C(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bCanProjectDown : 1;                               // 0x002C(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEnvTraceData;
-
-// ScriptStruct AIModule.EnvDirection
-// 0x0020 (0x0020 - 0x0000)
-struct FEnvDirection final
-{
-public:
-	TSubclassOf<class UEnvQueryContext>           LineFrom;                                          // 0x0000(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           LineTo;                                            // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UEnvQueryContext>           Rotation;                                          // 0x0010(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EEnvDirection                                 DirMode;                                           // 0x0018(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FEnvDirection;
-
-// ScriptStruct AIModule.EnvNamedValue
-// 0x0014 (0x0014 - 0x0000)
-struct FEnvNamedValue final
-{
-public:
-	class FName                                   ParamName;                                         // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAIParamType                                  ParamType;                                         // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Value;                                             // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FEnvNamedValue;
-
-// ScriptStruct AIModule.GenericTeamId
-// 0x0001 (0x0001 - 0x0000)
-struct FGenericTeamId final
-{
-public:
-	uint8                                         TeamID;                                            // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-};
-DUMPER7_ASSERTS_FGenericTeamId;
-
-// ScriptStruct AIModule.PawnActionStack
-// 0x0008 (0x0008 - 0x0000)
-struct FPawnActionStack final
-{
-public:
-	class UPawnAction*                            TopAction;                                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-};
-DUMPER7_ASSERTS_FPawnActionStack;
-
-// ScriptStruct AIModule.PawnActionEvent
-// 0x0018 (0x0018 - 0x0000)
-struct FPawnActionEvent final
-{
-public:
-	class UPawnAction*                            Action;                                            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPawnActionEvent;
+DUMPER7_ASSERTS_FCrowdAvoidanceSamplingPattern;
 
 // ScriptStruct AIModule.RecastGraphWrapper
-// 0x0098 (0x0098 - 0x0000)
+// 0x00B8 (0x00B8 - 0x0000)
 struct FRecastGraphWrapper final
 {
 public:
-	class ARecastNavMesh*                         RecastNavMeshActor;                                // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_8[0x90];                                       // 0x0008(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class ARecastNavMesh*                         RecastNavMeshActor;                                // 0x0000(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_8[0xB0];                                       // 0x0008(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRecastGraphWrapper;
+
+// ScriptStruct AIModule.ActorPerceptionBlueprintInfo
+// 0x0020 (0x0020 - 0x0000)
+struct FActorPerceptionBlueprintInfo final
+{
+public:
+	class AActor*                                 Target;                                            // 0x0000(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	TArray<struct FAIStimulus>                    LastSensedStimuli;                                 // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                         bIsHostile : 1;                                    // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bIsFriendly : 1;                                   // 0x0018(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FActorPerceptionBlueprintInfo;
+
+// ScriptStruct AIModule.AISenseAffiliationFilter
+// 0x0004 (0x0004 - 0x0000)
+struct alignas(0x04) FAISenseAffiliationFilter final
+{
+public:
+	uint8                                         bDetectEnemies : 1;                                // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bDetectNeutrals : 1;                               // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bDetectFriendlies : 1;                             // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAISenseAffiliationFilter;
+
+// ScriptStruct AIModule.AIDamageEvent
+// 0x0058 (0x0058 - 0x0000)
+struct FAIDamageEvent final
+{
+public:
+	float                                         Amount;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Location;                                          // 0x0008(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                HitLocation;                                       // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 DamagedActor;                                      // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class AActor*                                 Instigator;                                        // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class FName                                   Tag;                                               // 0x0048(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIDamageEvent;
+
+// ScriptStruct AIModule.AINoiseEvent
+// 0x0050 (0x0050 - 0x0000)
+struct FAINoiseEvent final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                NoiseLocation;                                     // 0x0008(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Loudness;                                          // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxRange;                                          // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 Instigator;                                        // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class FName                                   Tag;                                               // 0x0030(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_3C[0x14];                                      // 0x003C(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAINoiseEvent;
+
+// ScriptStruct AIModule.AIPredictionEvent
+// 0x0018 (0x0018 - 0x0000)
+struct FAIPredictionEvent final
+{
+public:
+	class AActor*                                 Requestor;                                         // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class AActor*                                 PredictedActor;                                    // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAIPredictionEvent;
+
+// ScriptStruct AIModule.AISightEvent
+// 0x0018 (0x0018 - 0x0000)
+struct FAISightEvent final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 SeenActor;                                         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class AActor*                                 Observer;                                          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FAISightEvent;
+
+// ScriptStruct AIModule.AITeamStimulusEvent
+// 0x0050 (0x0050 - 0x0000)
+struct FAITeamStimulusEvent final
+{
+public:
+	uint8                                         Pad_0[0x40];                                       // 0x0000(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Broadcaster;                                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	class AActor*                                 Enemy;                                             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FAITeamStimulusEvent;
+
+// ScriptStruct AIModule.AITouchEvent
+// 0x0030 (0x0030 - 0x0000)
+struct FAITouchEvent final
+{
+public:
+	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 TouchReceiver;                                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	class AActor*                                 OtherActor;                                        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FAITouchEvent;
 
 SDK_NAMESPACE_END

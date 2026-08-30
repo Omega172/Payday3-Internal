@@ -48,8 +48,8 @@ DUMPER7_ASSERTS_GridlyBPFunctionLibrary_UpdateLocalizationPreview;
 struct GridlyTask_DownloadLocalizedTexts_DownloadLocalizedTexts final
 {
 public:
-	const class UObject*                          WorldContextObject_0;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGridlyTask_DownloadLocalizedTexts*     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContextObject_0;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGridlyTask_DownloadLocalizedTexts*     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GridlyTask_DownloadLocalizedTexts_DownloadLocalizedTexts;
 
@@ -58,9 +58,9 @@ DUMPER7_ASSERTS_GridlyTask_DownloadLocalizedTexts_DownloadLocalizedTexts;
 struct GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly final
 {
 public:
-	const class UObject*                          WorldContextObject_0;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGridlyDataTable*                       GridlyDataTable_0;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UGridlyTask_ImportDataTableFromGridly*  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContextObject_0;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGridlyDataTable*                       GridlyDataTable_0;                                 // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UGridlyTask_ImportDataTableFromGridly*  ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly;
 
@@ -69,8 +69,8 @@ DUMPER7_ASSERTS_GridlyTask_ImportDataTableFromGridly_ImportDataTableFromGridly;
 struct SBZGridlyTask_DownloadGridlyNativeCulture_DownloadLocalizedTexts final
 {
 public:
-	const class UObject*                          WorldContextObject_0;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USBZGridlyTask_DownloadGridlyNativeCulture* ReturnValue;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	const class UObject*                          WorldContextObject_0;                              // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USBZGridlyTask_DownloadGridlyNativeCulture* ReturnValue;                                   // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_SBZGridlyTask_DownloadGridlyNativeCulture_DownloadLocalizedTexts;
 

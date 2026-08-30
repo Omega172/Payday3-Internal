@@ -18,21 +18,21 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_ScreenTitle.WBP_ScreenTitle_C
-// 0x0030 (0x02C0 - 0x0290)
+// 0x0028 (0x0318 - 0x02F0)
 class UWBP_ScreenTitle_C final : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       title_intro;                                       // 0x0298(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Title_T;                                           // 0x02A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                   TitleText;                                         // 0x02A8(0x0018)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       title_intro;                                       // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Title_T;                                           // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                   TitleText;                                         // 0x0308(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_WBP_ScreenTitle(int32 EntryPoint);
-	void UpdateTitle(const class FText& InText);
 	void Construct();
-	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_ScreenTitle(int32 EntryPoint);
 	void OnOwningStackScreenGainedFocus(const class FName OldStackValue);
+	void PreConstruct(bool IsDesignTime);
+	void UpdateTitle(const class FText& InText);
 
 public:
 	static class UClass* StaticClass()

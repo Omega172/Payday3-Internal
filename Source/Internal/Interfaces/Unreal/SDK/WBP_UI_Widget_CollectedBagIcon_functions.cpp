@@ -16,23 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_CollectedBagIcon.WBP_UI_Widget_CollectedBagIcon_C.ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Widget_CollectedBagIcon.WBP_UI_Widget_CollectedBagIcon_C.CollectBag
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_CollectedBagIcon_C::ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon(int32 EntryPoint)
+void UWBP_UI_Widget_CollectedBagIcon_C::CollectBag()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CollectedBagIcon_C", "ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon");
+		Func = Class->GetFunction("WBP_UI_Widget_CollectedBagIcon_C", "CollectBag");
 
-	Params::WBP_UI_Widget_CollectedBagIcon_C_ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -50,17 +44,23 @@ void UWBP_UI_Widget_CollectedBagIcon_C::Construct()
 }
 
 
-// Function WBP_UI_Widget_CollectedBagIcon.WBP_UI_Widget_CollectedBagIcon_C.CollectBag
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Widget_CollectedBagIcon.WBP_UI_Widget_CollectedBagIcon_C.ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Widget_CollectedBagIcon_C::CollectBag()
+void UWBP_UI_Widget_CollectedBagIcon_C::ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Widget_CollectedBagIcon_C", "CollectBag");
+		Func = Class->GetFunction("WBP_UI_Widget_CollectedBagIcon_C", "ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Widget_CollectedBagIcon_C_ExecuteUbergraph_WBP_UI_Widget_CollectedBagIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

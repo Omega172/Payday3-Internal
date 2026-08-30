@@ -12,52 +12,52 @@
 
 #include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_PartyClientWidget.WBP_UI_Widget_PartyClientWidget_C
-// 0x0178 (0x04C0 - 0x0348)
+// 0x0100 (0x04A8 - 0x03A8)
 class UWBP_UI_Widget_PartyClientWidget_C final : public UPD3HUDPlayerStatusWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0348(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UImage*                                 Background;                                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        DefeatInfo_WS;                                     // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_PlatformIcon;                                // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_PlayerIcon;                                  // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        PlayerLevel_WS;                                    // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_RenownLevel_C*                     RenownLevel;                                       // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_InfamyLevel;                                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_VoIP_C*                            WBP_VoIP;                                          // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPaperSprite*                           InDesignerHeisterIcon;                             // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           DebugInDesignerPlatformIcon;                       // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            Subdued;                                           // 0x03A0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            In_Custody;                                        // 0x03C8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Downed;                                            // 0x03F0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Cuffed;                                            // 0x0418(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Default;                                           // 0x0440(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Tased;                                             // 0x0468(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FLinearColor                           DefaultBkgColor;                                   // 0x0490(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           KnockedBkgColor;                                   // 0x04A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           TasedBkgColor;                                     // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                 Background;                                        // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        DefeatInfo_WS;                                     // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_PlatformIcon;                                // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_PlayerIcon;                                  // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        PlayerLevel_WS;                                    // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_RenownLevel_C*                     RenownLevel;                                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_InfamyLevel;                                  // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_VoIP_C*                            WBP_VoIP;                                          // 0x03E8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPaperSprite*                           InDesignerHeisterIcon;                             // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           DebugInDesignerPlatformIcon;                       // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            Subdued;                                           // 0x0400(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            In_Custody;                                        // 0x0414(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Downed;                                            // 0x0428(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Cuffed;                                            // 0x043C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Default;                                           // 0x0450(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Tased;                                             // 0x0464(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FLinearColor                           DefaultBkgColor;                                   // 0x0478(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           KnockedBkgColor;                                   // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           TasedBkgColor;                                     // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Widget_PartyClientWidget(int32 EntryPoint);
-	void OnReviveEnded();
-	void OnReviveStarted();
-	void Destruct();
-	void OnStateChanged(EPD3DefeatState Old, EPD3DefeatState New);
-	void OnRenownLevelChanged(class ASBZPlayerState* InPlayerState);
-	void OnHeisterIconChangedEvent(class UPaperSprite* InNewHeisterIcon);
 	void Construct();
-	void PreConstruct(bool IsDesignTime);
+	void Destruct();
+	void ExecuteUbergraph_WBP_UI_Widget_PartyClientWidget(int32 EntryPoint);
+	void OnHeisterIconChangedEvent(class UPaperSprite* InNewHeisterIcon);
 	void OnInfamyLevelChanged(class ASBZPlayerState* InPlayerState);
 	void OnPlatformChanged(class ASBZPlayerState* InPlayerState);
+	void OnRenownLevelChanged(class ASBZPlayerState* InPlayerState);
+	void OnReviveEnded();
+	void OnReviveStarted();
+	void OnStateChanged(EPD3DefeatState Old, EPD3DefeatState New);
+	void PreConstruct(bool IsDesignTime);
 	void SetEOSProdUID();
 	void UpdatePlayerLevel(class ASBZPlayerState* InPlayerState);
 

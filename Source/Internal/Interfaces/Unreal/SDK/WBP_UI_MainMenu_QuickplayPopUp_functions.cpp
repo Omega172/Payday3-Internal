@@ -16,6 +16,132 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature");
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,123 +162,46 @@ void UWBP_UI_MainMenu_QuickplayPopUp_C::ExecuteUbergraph_WBP_UI_MainMenu_Quickpl
 }
 
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.LobbyTypeSelectorNavigateDown
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+class UWidget* UWBP_UI_MainMenu_QuickplayPopUp_C::LobbyTypeSelectorNavigateDown(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "LobbyTypeSelectorNavigateDown");
 
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnControlsReferenceClicked
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_MainMenu_QuickplayPopUp_C::OnControlsReferenceClicked(class FName ActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "OnControlsReferenceClicked");
 
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.ActionName = ActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::OnLostStackFocused()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "OnLostStackFocused");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -190,43 +239,17 @@ void UWBP_UI_MainMenu_QuickplayPopUp_C::OnInitialized()
 }
 
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
+void UWBP_UI_MainMenu_QuickplayPopUp_C::OnLostStackFocused()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "OnLostStackFocused");
 
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Update Difficulty Visuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::Update_Difficulty_Visuals(ESBZDifficulty NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "Update Difficulty Visuals");
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_Update_Difficulty_Visuals Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -250,46 +273,23 @@ void UWBP_UI_MainMenu_QuickplayPopUp_C::Set_Difficulty(ESBZDifficulty InDifficul
 }
 
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnControlsReferenceClicked
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Update Difficulty Visuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDifficulty                          NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_QuickplayPopUp_C::OnControlsReferenceClicked(class FName ActionName)
+void UWBP_UI_MainMenu_QuickplayPopUp_C::Update_Difficulty_Visuals(ESBZDifficulty NewParam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "OnControlsReferenceClicked");
+		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "Update Difficulty Visuals");
 
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked Parms{};
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_Update_Difficulty_Visuals Parms{};
 
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.LobbyTypeSelectorNavigateDown
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_MainMenu_QuickplayPopUp_C::LobbyTypeSelectorNavigateDown(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_MainMenu_QuickplayPopUp_C", "LobbyTypeSelectorNavigateDown");
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

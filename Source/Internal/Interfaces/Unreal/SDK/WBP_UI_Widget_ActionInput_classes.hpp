@@ -17,11 +17,11 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_ActionInput.WBP_UI_Widget_ActionInput_C
-// 0x0008 (0x02D8 - 0x02D0)
+// 0x0008 (0x0338 - 0x0330)
 class UWBP_UI_Widget_ActionInput_C final : public USBZActionInputWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_ActionInput(int32 EntryPoint);

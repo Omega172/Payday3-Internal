@@ -16,25 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Results_Payout.WBP_Results_Payout_C.SetPayoutData
+// Function WBP_Results_Payout.WBP_Results_Payout_C.OnAddBag
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZEndMissionResultData&  ResultData                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// int32                                   PlayerId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Results_Payout_C::SetPayoutData(const struct FSBZEndMissionResultData& ResultData, int32 PlayerId)
+void UWBP_Results_Payout_C::OnAddBag()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "SetPayoutData");
+		Func = Class->GetFunction("WBP_Results_Payout_C", "OnAddBag");
 
-	Params::WBP_Results_Payout_C_SetPayoutData Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ResultData = std::move(ResultData);
-	Parms.PlayerId = PlayerId;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Results_Payout.WBP_Results_Payout_C.OnAddSecretBag
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Results_Payout_C::OnAddSecretBag()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Results_Payout_C", "OnAddSecretBag");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -52,29 +58,15 @@ void UWBP_Results_Payout_C::OnShowBags()
 }
 
 
-// Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowTickingLoot
+// Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowBalance
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Results_Payout_C::OnShowTickingLoot()
+void UWBP_Results_Payout_C::OnShowBalance()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowTickingLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowLooseCash
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_Payout_C::OnShowLooseCash()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowLooseCash");
+		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowBalance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -108,6 +100,20 @@ void UWBP_Results_Payout_C::OnShowCustody()
 }
 
 
+// Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowLooseCash
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Results_Payout_C::OnShowLooseCash()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowLooseCash");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowPayout
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -117,34 +123,6 @@ void UWBP_Results_Payout_C::OnShowPayout()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowPayout");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowBalance
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_Payout_C::OnShowBalance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowBalance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_Payout.WBP_Results_Payout_C.OnAddBag
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_Payout_C::OnAddBag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "OnAddBag");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -164,15 +142,15 @@ void UWBP_Results_Payout_C::OnShowSecretBags()
 }
 
 
-// Function WBP_Results_Payout.WBP_Results_Payout_C.OnAddSecretBag
+// Function WBP_Results_Payout.WBP_Results_Payout_C.OnShowTickingLoot
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Results_Payout_C::OnAddSecretBag()
+void UWBP_Results_Payout_C::OnShowTickingLoot()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "OnAddSecretBag");
+		Func = Class->GetFunction("WBP_Results_Payout_C", "OnShowTickingLoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -192,73 +170,39 @@ void UWBP_Results_Payout_C::PayoutFinished()
 }
 
 
-// Function WBP_Results_Payout.WBP_Results_Payout_C.SequenceEvent__ENTRYPOINTWBP_Results_Payout_0
+// Function WBP_Results_Payout.WBP_Results_Payout_C.SequenceEvent__ENTRYPOINTWBP_Results_Payout
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Results_Payout_C::SequenceEvent__ENTRYPOINTWBP_Results_Payout_0()
+void UWBP_Results_Payout_C::SequenceEvent__ENTRYPOINTWBP_Results_Payout()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "SequenceEvent__ENTRYPOINTWBP_Results_Payout_0");
+		Func = Class->GetFunction("WBP_Results_Payout_C", "SequenceEvent__ENTRYPOINTWBP_Results_Payout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Results_Payout.WBP_Results_Payout_C.SequenceEvent__ENTRYPOINTWBP_Results_Payout_1
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Results_Payout.WBP_Results_Payout_C.SetPayoutData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZEndMissionResultData&  ResultData                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   PlayerId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Results_Payout_C::SequenceEvent__ENTRYPOINTWBP_Results_Payout_1()
+void UWBP_Results_Payout_C::SetPayoutData(const struct FSBZEndMissionResultData& ResultData, int32 PlayerId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "SequenceEvent__ENTRYPOINTWBP_Results_Payout_1");
+		Func = Class->GetFunction("WBP_Results_Payout_C", "SetPayoutData");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_Results_Payout_C_SetPayoutData Parms{};
 
+	Parms.ResultData = std::move(ResultData);
+	Parms.PlayerId = PlayerId;
 
-// Function WBP_Results_Payout.WBP_Results_Payout_C.SequenceEvent__ENTRYPOINTWBP_Results_Payout_2
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_Payout_C::SequenceEvent__ENTRYPOINTWBP_Results_Payout_2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "SequenceEvent__ENTRYPOINTWBP_Results_Payout_2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_Payout.WBP_Results_Payout_C.SequenceEvent__ENTRYPOINTWBP_Results_Payout_3
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_Payout_C::SequenceEvent__ENTRYPOINTWBP_Results_Payout_3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "SequenceEvent__ENTRYPOINTWBP_Results_Payout_3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Results_Payout.WBP_Results_Payout_C.SequenceEvent__ENTRYPOINTWBP_Results_Payout_4
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Results_Payout_C::SequenceEvent__ENTRYPOINTWBP_Results_Payout_4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Results_Payout_C", "SequenceEvent__ENTRYPOINTWBP_Results_Payout_4");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -21,15 +21,15 @@
 SDK_NAMESPACE_START
 
 // Class PrefabricatorRuntime.PrefabActor
-// 0x0020 (0x02C8 - 0x02A8)
+// 0x0020 (0x0348 - 0x0328)
 class APrefabActor : public AActor
 {
 public:
-	class UPrefabComponent*                       PrefabComponent;                                   // 0x02A8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                  LastUpdateID;                                      // 0x02B0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         Seed;                                              // 0x02C0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C4[0x3];                                      // 0x02C4(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsLocked;                                         // 0x02C7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UPrefabComponent*                       PrefabComponent;                                   // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  LastUpdateID;                                      // 0x0330(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         Seed;                                              // 0x0340(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_344[0x3];                                      // 0x0344(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsLocked;                                         // 0x0347(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	class UPrefabricatorAsset* GetPrefabAsset();
@@ -55,7 +55,7 @@ public:
 DUMPER7_ASSERTS_APrefabActor;
 
 // Class PrefabricatorRuntime.ReplicablePrefabActor
-// 0x0000 (0x02C8 - 0x02C8)
+// 0x0000 (0x0348 - 0x0348)
 class AReplicablePrefabActor final : public APrefabActor
 {
 public:
@@ -75,12 +75,11 @@ public:
 DUMPER7_ASSERTS_AReplicablePrefabActor;
 
 // Class PrefabricatorRuntime.PrefabComponent
-// 0x0030 (0x0260 - 0x0230)
+// 0x0030 (0x0280 - 0x0250)
 class UPrefabComponent final : public USceneComponent
 {
 public:
-	TSoftObjectPtr<class UPrefabricatorAssetInterface> PrefabAssetInterface;                         // 0x0228(0x0030)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_258[0x8];                                      // 0x0258(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UPrefabricatorAssetInterface> PrefabAssetInterface;                         // 0x0250(0x0030)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -99,12 +98,12 @@ public:
 DUMPER7_ASSERTS_UPrefabComponent;
 
 // Class PrefabricatorRuntime.PrefabDebugActor
-// 0x0018 (0x02C0 - 0x02A8)
+// 0x0018 (0x0340 - 0x0328)
 class APrefabDebugActor final : public AActor
 {
 public:
-	class AActor*                                 Actor;                                             // 0x02A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<uint8>                                 ActorData;                                         // 0x02B0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class AActor*                                 Actor;                                             // 0x0328(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<uint8>                                 ActorData;                                         // 0x0330(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -123,12 +122,12 @@ public:
 DUMPER7_ASSERTS_APrefabDebugActor;
 
 // Class PrefabricatorRuntime.PrefabInstancingBaseActor
-// 0x0060 (0x0308 - 0x02A8)
+// 0x0060 (0x0388 - 0x0328)
 class APrefabInstancingBaseActor : public AActor
 {
 public:
-	TArray<class AStaticMeshActor*>               ReferencedActors;                                  // 0x02A8(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2B8[0x50];                                     // 0x02B8(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TArray<class AStaticMeshActor*>               ReferencedActors;                                  // 0x0328(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_338[0x50];                                     // 0x0338(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	TArray<class AActor*> Uninstancify();
@@ -150,11 +149,11 @@ public:
 DUMPER7_ASSERTS_APrefabInstancingBaseActor;
 
 // Class PrefabricatorRuntime.PrefabHSMIActor
-// 0x0008 (0x0310 - 0x0308)
+// 0x0008 (0x0390 - 0x0388)
 class APrefabHSMIActor final : public APrefabInstancingBaseActor
 {
 public:
-	class UHierarchicalInstancedStaticMeshComponent* HierarchicalInstancedStaticMesh;                // 0x0308(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UHierarchicalInstancedStaticMeshComponent* HierarchicalInstancedStaticMesh;                // 0x0388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -173,16 +172,16 @@ public:
 DUMPER7_ASSERTS_APrefabHSMIActor;
 
 // Class PrefabricatorRuntime.PrefabInstancingActor
-// 0x0058 (0x0300 - 0x02A8)
+// 0x0058 (0x0380 - 0x0328)
 class APrefabInstancingActor final : public AActor
 {
 public:
-	class UInstancedStaticMeshComponent*          InstancedStaticMesh;                               // 0x02A8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UHierarchicalInstancedStaticMeshComponent* HierarchicalInstancedStaticMesh;                // 0x02B0(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bISM;                                              // 0x02B8(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2B9[0x7];                                      // 0x02B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AStaticMeshActor*>               ReferencedActors;                                  // 0x02C0(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2D0[0x30];                                     // 0x02D0(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UInstancedStaticMeshComponent*          InstancedStaticMesh;                               // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UHierarchicalInstancedStaticMeshComponent* HierarchicalInstancedStaticMesh;                // 0x0330(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bISM;                                              // 0x0338(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_339[0x7];                                      // 0x0339(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AStaticMeshActor*>               ReferencedActors;                                  // 0x0340(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_350[0x30];                                     // 0x0350(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -201,11 +200,11 @@ public:
 DUMPER7_ASSERTS_APrefabInstancingActor;
 
 // Class PrefabricatorRuntime.PrefabInstancingMeshActor
-// 0x0008 (0x0310 - 0x0308)
+// 0x0008 (0x0390 - 0x0388)
 class APrefabInstancingMeshActor final : public APrefabInstancingBaseActor
 {
 public:
-	class UInstancedStaticMeshComponent*          InstancedStaticMesh;                               // 0x0308(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UInstancedStaticMeshComponent*          InstancedStaticMesh;                               // 0x0388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
 	static class UClass* StaticClass()
@@ -224,18 +223,18 @@ public:
 DUMPER7_ASSERTS_APrefabInstancingMeshActor;
 
 // Class PrefabricatorRuntime.PrefabRandomizer
-// 0x0040 (0x02E8 - 0x02A8)
+// 0x0040 (0x0368 - 0x0328)
 class APrefabRandomizer final : public AActor
 {
 public:
-	bool                                          bRandomizeOnBeginPlay;                             // 0x02A8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SeedOffset;                                        // 0x02AC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxBuildTimePerFrame;                              // 0x02B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void()>              OnRandomizationComplete;                           // 0x02B8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	bool                                          bFastSyncBuild;                                    // 0x02C8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2C9[0x1F];                                     // 0x02C9(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	bool                                          bRandomizeOnBeginPlay;                             // 0x0328(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_329[0x3];                                      // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SeedOffset;                                        // 0x032C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxBuildTimePerFrame;                              // 0x0330(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_334[0x4];                                      // 0x0334(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void()>              OnRandomizationComplete;                           // 0x0338(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	bool                                          bFastSyncBuild;                                    // 0x0348(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_349[0x1F];                                     // 0x0349(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Randomize(int32 InSeed);
@@ -313,7 +312,7 @@ DUMPER7_ASSERTS_UPrefabricatorEventListener;
 class UPrefabricatorAssetInterface : public UObject
 {
 public:
-	TSubclassOf<class UPrefabricatorEventListener> EventListener;                                    // 0x0030(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSubclassOf<class UPrefabricatorEventListener> EventListener;                                    // 0x0030(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bReplicates;                                       // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -343,7 +342,7 @@ public:
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGuid                                  LastUpdateID;                                      // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UThumbnailInfo*                         ThumbnailInfo;                                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UThumbnailInfo*                         ThumbnailInfo;                                     // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                        Version;                                           // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
@@ -468,7 +467,7 @@ public:
 DUMPER7_ASSERTS_UPrefabricatorSettings;
 
 // Class PrefabricatorRuntime.PrefabSeedLinkerComponent
-// 0x0000 (0x0230 - 0x0230)
+// 0x0000 (0x0250 - 0x0250)
 class UPrefabSeedLinkerComponent final : public USceneComponent
 {
 public:
@@ -488,12 +487,12 @@ public:
 DUMPER7_ASSERTS_UPrefabSeedLinkerComponent;
 
 // Class PrefabricatorRuntime.PrefabSeedLinker
-// 0x0018 (0x02C0 - 0x02A8)
+// 0x0018 (0x0340 - 0x0328)
 class APrefabSeedLinker final : public AActor
 {
 public:
-	TArray<TWeakObjectPtr<class APrefabActor>>    LinkedActors;                                      // 0x02A8(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-	class UPrefabSeedLinkerComponent*             SeedLinkerComponent;                               // 0x02B8(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<TWeakObjectPtr<class APrefabActor>>    LinkedActors;                                      // 0x0328(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+	class UPrefabSeedLinkerComponent*             SeedLinkerComponent;                               // 0x0338(0x0008)(ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()

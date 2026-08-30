@@ -26,6 +26,49 @@ enum class EPrefabricatorPivotPosition : uint8
 	EPrefabricatorPivotPosition_MAX          = 4,
 };
 
+// ScriptStruct PrefabricatorRuntime.PrefabricatorPropertyAssetMapping
+// 0x0048 (0x0048 - 0x0000)
+struct FPrefabricatorPropertyAssetMapping final
+{
+public:
+	struct FSoftObjectPath                        AssetReference;                                    // 0x0000(0x0028)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 AssetClassName;                                    // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   AssetObjectPath;                                   // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bUseQuotes;                                        // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPrefabricatorPropertyAssetMapping;
+
+// ScriptStruct PrefabricatorRuntime.PrefabricatorComponentData
+// 0x00A0 (0x00A0 - 0x0000)
+struct FPrefabricatorComponentData final
+{
+public:
+	struct FTransform                             RelativeTransform;                                 // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ComponentName;                                     // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UClass*                                 ComponentClass;                                    // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UPrefabricatorProperty*>         Properties;                                        // 0x0078(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class FString                                 CustomProperties;                                  // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPrefabricatorComponentData;
+
+// ScriptStruct PrefabricatorRuntime.PrefabricatorActorData
+// 0x00E0 (0x00E0 - 0x0000)
+struct FPrefabricatorActorData final
+{
+public:
+	struct FGuid                                  PrefabItemID;                                      // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTransform                             RelativeTransform;                                 // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 ClassPath;                                         // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftClassPath                         ClassPathRef;                                      // 0x0080(0x0028)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UPrefabricatorProperty*>         Properties;                                        // 0x00A8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FPrefabricatorComponentData>    Components;                                        // 0x00B8(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	class FString                                 CustomProperties;                                  // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D8[0x8];                                       // 0x00D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FPrefabricatorActorData;
+
 // ScriptStruct PrefabricatorRuntime.PrefabricatorAssetCollectionItem
 // 0x0038 (0x0038 - 0x0000)
 struct FPrefabricatorAssetCollectionItem final
@@ -36,47 +79,5 @@ public:
 	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FPrefabricatorAssetCollectionItem;
-
-// ScriptStruct PrefabricatorRuntime.PrefabricatorComponentData
-// 0x0070 (0x0070 - 0x0000)
-struct FPrefabricatorComponentData final
-{
-public:
-	struct FTransform                             RelativeTransform;                                 // 0x0000(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class FString                                 ComponentName;                                     // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UClass*                                 ComponentClass;                                    // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPrefabricatorProperty*>         Properties;                                        // 0x0048(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	class FString                                 CustomProperties;                                  // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPrefabricatorComponentData;
-
-// ScriptStruct PrefabricatorRuntime.PrefabricatorActorData
-// 0x00A0 (0x00A0 - 0x0000)
-struct FPrefabricatorActorData final
-{
-public:
-	struct FGuid                                  PrefabItemID;                                      // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FTransform                             RelativeTransform;                                 // 0x0010(0x0030)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	class FString                                 ClassPath;                                         // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftClassPath                         ClassPathRef;                                      // 0x0050(0x0020)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UPrefabricatorProperty*>         Properties;                                        // 0x0070(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FPrefabricatorComponentData>    Components;                                        // 0x0080(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	class FString                                 CustomProperties;                                  // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FPrefabricatorActorData;
-
-// ScriptStruct PrefabricatorRuntime.PrefabricatorPropertyAssetMapping
-// 0x0040 (0x0040 - 0x0000)
-struct FPrefabricatorPropertyAssetMapping final
-{
-public:
-	struct FSoftObjectPath                        AssetReference;                                    // 0x0000(0x0020)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 AssetClassName;                                    // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   AssetObjectPath;                                   // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bUseQuotes;                                        // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FPrefabricatorPropertyAssetMapping;
 
 SDK_NAMESPACE_END

@@ -16,6 +16,106 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_TwoChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_Settings_TwoChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_TwoChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature");
+
+	Params::WBP_Settings_TwoChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_TwoChoiceButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "ButtonDisabledChanged");
+
+	Params::WBP_Settings_TwoChoiceButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled = bInIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_TwoChoiceButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_Settings_TwoChoiceButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Settings_TwoChoiceButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "ButtonHoveredChanged");
+
+	Params::WBP_Settings_TwoChoiceButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ExecuteUbergraph_WBP_Settings_TwoChoiceButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,157 +136,75 @@ void UWBP_Settings_TwoChoiceButton_C::ExecuteUbergraph_WBP_Settings_TwoChoiceBut
 }
 
 
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.SettingChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.InitializeVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Settings_TwoChoiceButton_C::SettingChanged()
+void UWBP_Settings_TwoChoiceButton_C::InitializeVisuals()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "SettingChanged");
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "InitializeVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OptionTwoNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_TwoChoiceButton_C::OptionTwoNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OptionTwoNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OptionOneNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_TwoChoiceButton_C::OptionOneNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OptionOneNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.SelectionNameChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Settings_TwoChoiceButton_C::SelectionNameChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "SelectionNameChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_TwoChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_Settings_TwoChoiceButton_C::OnDisabledVisuals(bool bIsDisabled_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OnDisabledVisuals");
 
-	Params::WBP_Settings_TwoChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_2_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	Params::WBP_Settings_TwoChoiceButton_C_OnDisabledVisuals Parms{};
 
-	Parms.Button = Button;
+	Parms.bIsDisabled_0 = bIsDisabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OnFocusedVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_TwoChoiceButton_C::BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_Settings_TwoChoiceButton_C::OnFocusedVisuals(bool bIsFocused)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OnFocusedVisuals");
 
-	Params::WBP_Settings_TwoChoiceButton_C_BndEvt__WBP_Settings_TwoChoiceButton_Button_Option1_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	Params::WBP_Settings_TwoChoiceButton_C_OnFocusedVisuals Parms{};
 
-	Parms.Button = Button;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Settings_TwoChoiceButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_Settings_TwoChoiceButton_C::OnHoverVisuals(bool bIsHovered)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "ButtonHoveredChanged");
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OnHoverVisuals");
 
-	Params::WBP_Settings_TwoChoiceButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_Settings_TwoChoiceButton_C_OnHoverVisuals Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_TwoChoiceButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "ButtonFocusedChanged");
-
-	Params::WBP_Settings_TwoChoiceButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_TwoChoiceButton_C::ButtonDisabledChanged(bool bInIsDisabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "ButtonDisabledChanged");
-
-	Params::WBP_Settings_TwoChoiceButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -206,10 +224,38 @@ void UWBP_Settings_TwoChoiceButton_C::OnInitialized()
 }
 
 
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OptionOneNameChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_TwoChoiceButton_C::OptionOneNameChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OptionOneNameChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OptionTwoNameChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Settings_TwoChoiceButton_C::OptionTwoNameChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OptionTwoNameChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_TwoChoiceButton_C::PreConstruct(bool IsDesignTime)
 {
@@ -240,70 +286,38 @@ void UWBP_Settings_TwoChoiceButton_C::RefreshVisuals()
 }
 
 
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.SelectionNameChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_TwoChoiceButton_C::OnHoverVisuals(bool bIsHovered)
+void UWBP_Settings_TwoChoiceButton_C::SelectionNameChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OnHoverVisuals");
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "SelectionNameChanged");
 
-	Params::WBP_Settings_TwoChoiceButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OnFocusedVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.SettingChanged
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Settings_TwoChoiceButton_C::OnFocusedVisuals(bool bIsFocused)
+void UWBP_Settings_TwoChoiceButton_C::SettingChanged()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OnFocusedVisuals");
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "SettingChanged");
 
-	Params::WBP_Settings_TwoChoiceButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Settings_TwoChoiceButton_C::OnDisabledVisuals(bool bIsDisabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "OnDisabledVisuals");
-
-	Params::WBP_Settings_TwoChoiceButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.ToggleValueVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bToggleValue_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bToggleValue_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Settings_TwoChoiceButton_C::ToggleValueVisuals(bool bToggleValue_0)
 {
@@ -317,34 +331,6 @@ void UWBP_Settings_TwoChoiceButton_C::ToggleValueVisuals(bool bToggleValue_0)
 	Parms.bToggleValue_0 = bToggleValue_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.InitializeVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_TwoChoiceButton_C::InitializeVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "InitializeVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.UpdateSettingNameText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Settings_TwoChoiceButton_C::UpdateSettingNameText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "UpdateSettingNameText");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -371,6 +357,20 @@ void UWBP_Settings_TwoChoiceButton_C::UpdateButtonTwoText()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "UpdateButtonTwoText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Settings_TwoChoiceButton.WBP_Settings_TwoChoiceButton_C.UpdateSettingNameText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Settings_TwoChoiceButton_C::UpdateSettingNameText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Settings_TwoChoiceButton_C", "UpdateSettingNameText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

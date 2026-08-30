@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlaceMicroCamera.GA_PlaceMicroCamera_C
-// 0x0000 (0x0560 - 0x0560)
+// 0x0000 (0x0580 - 0x0580)
 class UGA_PlaceMicroCamera_C final : public USBZPlaceMicroCameraAbility
 {
 public:

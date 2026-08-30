@@ -36,20 +36,6 @@ void UWBP_UI_InfamyCircularWidget_C::ExecuteUbergraph_WBP_UI_InfamyCircularWidge
 }
 
 
-// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_InfamyCircularWidget_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_InfamyCircularWidget_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInfamyValuesRefreshed
 // (Event, Protected, BlueprintEvent)
 
@@ -64,10 +50,24 @@ void UWBP_UI_InfamyCircularWidget_C::OnInfamyValuesRefreshed()
 }
 
 
+// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_InfamyCircularWidget_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_InfamyCircularWidget_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_InfamyCircularWidget_C::PreConstruct(bool IsDesignTime)
 {

@@ -17,15 +17,15 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Widget_CustodyTimer.WBP_UI_Widget_CustodyTimer_C
-// 0x0008 (0x02C0 - 0x02B8)
+// 0x0008 (0x0320 - 0x0318)
 class UWBP_UI_Widget_CustodyTimer_C final : public UPD3CustodyTimerWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Widget_CustodyTimer(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_UI_Widget_CustodyTimer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

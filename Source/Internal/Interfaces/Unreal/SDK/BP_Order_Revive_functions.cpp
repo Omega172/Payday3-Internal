@@ -39,7 +39,7 @@ void UBP_Order_Revive_C::ExecuteUbergraph_BP_Order_Revive(int32 EntryPoint)
 // Function BP_Order_Revive.BP_Order_Revive_C.OnStartedBP
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UBP_Order_Revive_C::OnStartedBP(class APawn* Pawn)
 {

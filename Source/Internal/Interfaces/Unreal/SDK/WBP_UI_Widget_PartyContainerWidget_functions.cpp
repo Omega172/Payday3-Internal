@@ -39,7 +39,7 @@ void UWBP_UI_Widget_PartyContainerWidget_C::ExecuteUbergraph_WBP_UI_Widget_Party
 // Function WBP_UI_Widget_PartyContainerWidget.WBP_UI_Widget_PartyContainerWidget_C.OnKeyItemCountChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPD3KeyItemContainer*             InContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPD3KeyItemContainer*             InContainer                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_PartyContainerWidget_C::OnKeyItemCountChanged(class UPD3KeyItemContainer* InContainer)
 {
@@ -59,7 +59,7 @@ void UWBP_UI_Widget_PartyContainerWidget_C::OnKeyItemCountChanged(class UPD3KeyI
 // Function WBP_UI_Widget_PartyContainerWidget.WBP_UI_Widget_PartyContainerWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Widget_PartyContainerWidget_C::PreConstruct(bool IsDesignTime)
 {

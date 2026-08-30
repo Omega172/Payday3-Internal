@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_GameModeMainMenu.BP_GameModeMainMenu_C
-// 0x0008 (0x0368 - 0x0360)
+// 0x0008 (0x03E0 - 0x03D8)
 class ABP_GameModeMainMenu_C final : public ASBZGameModeMainMenu
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()

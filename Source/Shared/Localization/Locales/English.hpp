@@ -125,5 +125,6 @@ Locale_t localeEnglish{
 		{ "VISUALS_ITEM_KEYCARD_COLOR"Hashed, "Keycard Color" },
 		{ "VISUALS_FILTERS"Hashed, ""},
 		{ "VISUALS_ITEM_FILTERS"Hashed, ""},
+		{ "vtableprint"Hashed, "VTable Print" },
 	}),
 };

@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetAccuracyValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<float>*                          OutValueArray                                          (Parm, OutParm)
 
 void UUI_WeaponStatsBlueprint_C::GetAccuracyValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
@@ -43,7 +43,7 @@ void UUI_WeaponStatsBlueprint_C::GetAccuracyValueArray(const class USBZRangedWea
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetDamageValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<float>*                          OutValueArray                                          (Parm, OutParm)
 
 void UUI_WeaponStatsBlueprint_C::GetDamageValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
@@ -67,7 +67,7 @@ void UUI_WeaponStatsBlueprint_C::GetDamageValueArray(const class USBZRangedWeapo
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetFireRateValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<float>*                          OutValueArray                                          (Parm, OutParm)
 
 void UUI_WeaponStatsBlueprint_C::GetFireRateValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
@@ -91,7 +91,7 @@ void UUI_WeaponStatsBlueprint_C::GetFireRateValueArray(const class USBZRangedWea
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetHandlingValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<float>*                          OutValueArray                                          (Parm, OutParm)
 
 void UUI_WeaponStatsBlueprint_C::GetHandlingValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
@@ -115,7 +115,7 @@ void UUI_WeaponStatsBlueprint_C::GetHandlingValueArray(const class USBZRangedWea
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetRecoilValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<float>*                          OutValueArray                                          (Parm, OutParm)
 
 void UUI_WeaponStatsBlueprint_C::GetRecoilValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
@@ -139,7 +139,7 @@ void UUI_WeaponStatsBlueprint_C::GetRecoilValueArray(const class USBZRangedWeapo
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetStabilityValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // TArray<float>*                          OutValueArray                                          (Parm, OutParm)
 
 void UUI_WeaponStatsBlueprint_C::GetStabilityValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const

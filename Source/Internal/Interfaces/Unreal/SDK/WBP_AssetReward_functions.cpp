@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_AssetReward.WBP_AssetReward_C.AddToAssetCount
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   AddAmount                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssetReward_C::AddToAssetCount(int32 AddAmount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssetReward_C", "AddToAssetCount");
+
+	Params::WBP_AssetReward_C_AddToAssetCount Parms{};
+
+	Parms.AddAmount = AddAmount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_AssetReward.WBP_AssetReward_C.ExecuteUbergraph_WBP_AssetReward
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,30 +56,10 @@ void UWBP_AssetReward_C::ExecuteUbergraph_WBP_AssetReward(int32 EntryPoint)
 }
 
 
-// Function WBP_AssetReward.WBP_AssetReward_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_AssetReward_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssetReward_C", "PreConstruct");
-
-	Params::WBP_AssetReward_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_AssetReward.WBP_AssetReward_C.OnLoaded_BA88526C4084A77CB124FAB91DC3BFBA
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_AssetReward_C::OnLoaded_BA88526C4084A77CB124FAB91DC3BFBA(class UObject* Loaded)
 {
@@ -71,6 +71,40 @@ void UWBP_AssetReward_C::OnLoaded_BA88526C4084A77CB124FAB91DC3BFBA(class UObject
 	Params::WBP_AssetReward_C_OnLoaded_BA88526C4084A77CB124FAB91DC3BFBA Parms{};
 
 	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssetReward.WBP_AssetReward_C.PlayAppearAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssetReward_C::PlayAppearAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssetReward_C", "PlayAppearAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssetReward.WBP_AssetReward_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssetReward_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssetReward_C", "PreConstruct");
+
+	Params::WBP_AssetReward_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -99,7 +133,7 @@ void UWBP_AssetReward_C::UpdateAssetCount(int32 InCount)
 // Function WBP_AssetReward.WBP_AssetReward_C.UpdateRewardIconDimensions
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     Sprite                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     Sprite                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_AssetReward_C::UpdateRewardIconDimensions(class UPaperSprite* Sprite)
 {
@@ -113,40 +147,6 @@ void UWBP_AssetReward_C::UpdateRewardIconDimensions(class UPaperSprite* Sprite)
 	Parms.Sprite = Sprite;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssetReward.WBP_AssetReward_C.AddToAssetCount
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   AddAmount                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssetReward_C::AddToAssetCount(int32 AddAmount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssetReward_C", "AddToAssetCount");
-
-	Params::WBP_AssetReward_C_AddToAssetCount Parms{};
-
-	Parms.AddAmount = AddAmount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssetReward.WBP_AssetReward_C.PlayAppearAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssetReward_C::PlayAppearAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssetReward_C", "PlayAppearAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

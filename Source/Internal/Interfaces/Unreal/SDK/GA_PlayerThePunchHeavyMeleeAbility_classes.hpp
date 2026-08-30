@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_PlayerThePunchHeavyMeleeAbility.GA_PlayerThePunchHeavyMeleeAbility_C
-// 0x0000 (0x0518 - 0x0518)
+// 0x0000 (0x0510 - 0x0510)
 class UGA_PlayerThePunchHeavyMeleeAbility_C final : public USBZPlayerThePunchHeavyMeleeAbility
 {
 public:

@@ -17,6 +17,30 @@
 
 SDK_NAMESPACE_START
 
+// Class ClothingSystemRuntimeInterface.ClothingAssetBase
+// 0x0020 (0x0050 - 0x0030)
+class UClothingAssetBase : public UObject
+{
+public:
+	class FString                                 ImportedFilePath;                                  // 0x0030(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FGuid                                  AssetGuid;                                         // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ClothingAssetBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothingAssetBase")
+	}
+	static class UClothingAssetBase* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UClothingAssetBase>();
+	}
+};
+DUMPER7_ASSERTS_UClothingAssetBase;
+
 // Class ClothingSystemRuntimeInterface.ClothConfigBase
 // 0x0000 (0x0030 - 0x0030)
 class UClothConfigBase : public UObject
@@ -57,30 +81,6 @@ public:
 };
 DUMPER7_ASSERTS_UClothSharedSimConfigBase;
 
-// Class ClothingSystemRuntimeInterface.ClothingAssetBase
-// 0x0020 (0x0050 - 0x0030)
-class UClothingAssetBase : public UObject
-{
-public:
-	class FString                                 ImportedFilePath;                                  // 0x0030(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FGuid                                  AssetGuid;                                         // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ClothingAssetBase")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ClothingAssetBase")
-	}
-	static class UClothingAssetBase* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UClothingAssetBase>();
-	}
-};
-DUMPER7_ASSERTS_UClothingAssetBase;
-
 // Class ClothingSystemRuntimeInterface.ClothingSimulationFactory
 // 0x0000 (0x0030 - 0x0030)
 class UClothingSimulationFactory : public UObject
@@ -103,7 +103,7 @@ DUMPER7_ASSERTS_UClothingSimulationFactory;
 
 // Class ClothingSystemRuntimeInterface.ClothingInteractor
 // 0x0008 (0x0038 - 0x0030)
-class UClothingInteractor final : public UObject
+class UClothingInteractor : public UObject
 {
 public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -129,7 +129,7 @@ DUMPER7_ASSERTS_UClothingInteractor;
 class UClothingSimulationInteractor : public UObject
 {
 public:
-	TMap<class FName, class UClothingInteractor*> ClothingInteractors;                               // 0x0030(0x0050)(NativeAccessSpecifierPublic)
+	TMap<class FName, class UClothingInteractor*> ClothingInteractors;                               // 0x0030(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
 	uint8                                         Pad_80[0x18];                                      // 0x0080(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -138,6 +138,7 @@ public:
 	void EnableGravityOverride(const struct FVector& InVector);
 	void PhysicsAssetUpdated();
 	void SetAnimDriveSpringStiffness(float InStiffness);
+	void SetMaxNumIterations(int32 MaxNumIterations);
 	void SetNumIterations(int32 NumIterations);
 	void SetNumSubsteps(int32 NumSubsteps);
 
@@ -170,8 +171,8 @@ DUMPER7_ASSERTS_UClothingSimulationInteractor;
 class UClothPhysicalMeshDataBase_Legacy : public UObject
 {
 public:
-	TArray<struct FVector>                        Vertices;                                          // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        Normals;                                           // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FVector3f>                      Vertices;                                          // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FVector3f>                      Normals;                                           // 0x0040(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<uint32>                                Indices;                                           // 0x0050(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<float>                                 InverseMasses;                                     // 0x0060(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FClothVertBoneData>             BoneData;                                          // 0x0070(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)

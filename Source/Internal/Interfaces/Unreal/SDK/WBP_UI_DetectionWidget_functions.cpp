@@ -36,56 +36,6 @@ void UWBP_UI_DetectionWidget_C::ExecuteUbergraph_WBP_UI_DetectionWidget(int32 En
 }
 
 
-// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnStoppedBeingDetected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DetectionWidget_C::OnStoppedBeingDetected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnStoppedBeingDetected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnPlayerDetected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DetectionWidget_C::OnPlayerDetected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnPlayerDetected");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnNewDetector
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AActor*                           InDetectingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   InDetectionValue                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_DetectionWidget_C::OnNewDetector(class AActor* InDetectingActor, float InDetectionValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnNewDetector");
-
-	Params::WBP_UI_DetectionWidget_C_OnNewDetector Parms{};
-
-	Parms.InDetectingActor = InDetectingActor;
-	Parms.InDetectionValue = InDetectionValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnDetectionValueUpdated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -106,10 +56,74 @@ void UWBP_UI_DetectionWidget_C::OnDetectionValueUpdated(float InDetectionValue)
 }
 
 
+// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_DetectionWidget_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnNewDetector
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                           InDetectingActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   InDetectionValue                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DetectionWidget_C::OnNewDetector(class AActor* InDetectingActor, float InDetectionValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnNewDetector");
+
+	Params::WBP_UI_DetectionWidget_C_OnNewDetector Parms{};
+
+	Parms.InDetectingActor = InDetectingActor;
+	Parms.InDetectionValue = InDetectionValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnPlayerDetected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DetectionWidget_C::OnPlayerDetected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnPlayerDetected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnStoppedBeingDetected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DetectionWidget_C::OnStoppedBeingDetected()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnStoppedBeingDetected");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_DetectionWidget_C::PreConstruct(bool IsDesignTime)
 {
@@ -126,26 +140,12 @@ void UWBP_UI_DetectionWidget_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_DetectionWidget_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_DetectionWidget_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_DetectionWidget.WBP_UI_DetectionWidget_C.UpdateBarVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   InPercent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InPercent                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DetectionWidget_C::UpdateBarVisuals(float InPercent)
+void UWBP_UI_DetectionWidget_C::UpdateBarVisuals(double InPercent)
 {
 	static class UFunction* Func = nullptr;
 

@@ -53,7 +53,7 @@ void UWBP_UI_HUD_Overlay_Right_C::OnInitialized()
 // Function WBP_UI_HUD_Overlay_Right.WBP_UI_HUD_Overlay_Right_C.OnLoaded_45950CCB4250C2A3A91CA382B6A32B48
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_HUD_Overlay_Right_C::OnLoaded_45950CCB4250C2A3A91CA382B6A32B48(class UObject* Loaded)
 {
@@ -70,20 +70,6 @@ void UWBP_UI_HUD_Overlay_Right_C::OnLoaded_45950CCB4250C2A3A91CA382B6A32B48(clas
 }
 
 
-// Function WBP_UI_HUD_Overlay_Right.WBP_UI_HUD_Overlay_Right_C.SetDifficultyText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_HUD_Overlay_Right_C::SetDifficultyText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Overlay_Right_C", "SetDifficultyText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_HUD_Overlay_Right.WBP_UI_HUD_Overlay_Right_C.Set Security Companies
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -93,6 +79,20 @@ void UWBP_UI_HUD_Overlay_Right_C::Set_Security_Companies()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_HUD_Overlay_Right_C", "Set Security Companies");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_HUD_Overlay_Right.WBP_UI_HUD_Overlay_Right_C.SetDifficultyText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_HUD_Overlay_Right_C::SetDifficultyText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Overlay_Right_C", "SetDifficultyText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

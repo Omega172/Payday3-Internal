@@ -36,6 +36,20 @@ void UWBP_TextBasedNewsBanner_C::ExecuteUbergraph_WBP_TextBasedNewsBanner(int32 
 }
 
 
+// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.Hide
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TextBasedNewsBanner_C::Hide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TextBasedNewsBanner_C", "Hide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.On News Message Received
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -58,32 +72,10 @@ void UWBP_TextBasedNewsBanner_C::On_News_Message_Received(const class FString& T
 }
 
 
-// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TextBasedNewsBanner_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TextBasedNewsBanner_C", "Tick");
-
-	Params::WBP_TextBasedNewsBanner_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_TextBasedNewsBanner_C::PreConstruct(bool IsDesignTime)
 {
@@ -105,7 +97,7 @@ void UWBP_TextBasedNewsBanner_C::PreConstruct(bool IsDesignTime)
 // Parameters:
 // const class FText&                      InTitle                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 // const class FText&                      InDescription                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    InShouldShow                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    InShouldShow                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_TextBasedNewsBanner_C::SetInformation(const class FText& InTitle, const class FText& InDescription, bool InShouldShow)
 {
@@ -138,17 +130,25 @@ void UWBP_TextBasedNewsBanner_C::Show()
 }
 
 
-// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.Hide
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_TextBasedNewsBanner.WBP_TextBasedNewsBanner_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TextBasedNewsBanner_C::Hide()
+void UWBP_TextBasedNewsBanner_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TextBasedNewsBanner_C", "Hide");
+		Func = Class->GetFunction("WBP_TextBasedNewsBanner_C", "Tick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_TextBasedNewsBanner_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

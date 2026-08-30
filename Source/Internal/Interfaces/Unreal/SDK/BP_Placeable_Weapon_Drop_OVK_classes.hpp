@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Placeable_Weapon_Drop_OVK.BP_Placeable_Weapon_Drop_OVK_C
-// 0x0000 (0x05A0 - 0x05A0)
+// 0x0000 (0x0690 - 0x0690)
 class ABP_Placeable_Weapon_Drop_OVK_C : public ABP_Placeable_Weapon_Drop_C
 {
 public:

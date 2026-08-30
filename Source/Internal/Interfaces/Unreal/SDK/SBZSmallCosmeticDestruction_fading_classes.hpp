@@ -17,11 +17,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C
-// 0x0008 (0x02E0 - 0x02D8)
+// 0x0008 (0x0360 - 0x0358)
 class ASBZSmallCosmeticDestruction_fading_C : public ASBZSmallCosmeticDestruction
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
 	void ExecuteUbergraph_SBZSmallCosmeticDestruction_fading(int32 EntryPoint);

@@ -16,50 +16,10 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ExecuteUbergraph_WBP_Shop_NavBarButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_NavBarButton_C::ExecuteUbergraph_WBP_Shop_NavBarButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "ExecuteUbergraph_WBP_Shop_NavBarButton");
-
-	Params::WBP_Shop_NavBarButton_C_ExecuteUbergraph_WBP_Shop_NavBarButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetActive
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_NavBarButton_C::SetActive(bool bIsActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "SetActive");
-
-	Params::WBP_Shop_NavBarButton_C_SetActive Parms{};
-
-	Parms.bIsActive = bIsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ButtonHoveredChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_Shop_NavBarButton_C::ButtonHoveredChanged(bool bInIsHovered)
 {
@@ -90,55 +50,21 @@ void UWBP_Shop_NavBarButton_C::ButtonSelected()
 }
 
 
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Shop_NavBarButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetFocused
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ExecuteUbergraph_WBP_Shop_NavBarButton
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_NavBarButton_C::SetFocused(bool InFocused)
+void UWBP_Shop_NavBarButton_C::ExecuteUbergraph_WBP_Shop_NavBarButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "SetFocused");
+		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "ExecuteUbergraph_WBP_Shop_NavBarButton");
 
-	Params::WBP_Shop_NavBarButton_C_SetFocused Parms{};
+	Params::WBP_Shop_NavBarButton_C_ExecuteUbergraph_WBP_Shop_NavBarButton Parms{};
 
-	Parms.InFocused = InFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_Shop_NavBarButton_C::SetHovered(bool InHovered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "SetHovered");
-
-	Params::WBP_Shop_NavBarButton_C_SetHovered Parms{};
-
-	Parms.InHovered = InHovered;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -159,6 +85,80 @@ void UWBP_Shop_NavBarButton_C::InitializeButton(const class FText& ButtonText)
 	Params::WBP_Shop_NavBarButton_C_InitializeButton Parms{};
 
 	Parms.ButtonText = std::move(ButtonText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Shop_NavBarButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetActive
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_NavBarButton_C::SetActive(bool bIsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "SetActive");
+
+	Params::WBP_Shop_NavBarButton_C_SetActive Parms{};
+
+	Parms.bIsActive = bIsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_NavBarButton_C::SetFocused(bool InFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "SetFocused");
+
+	Params::WBP_Shop_NavBarButton_C_SetFocused Parms{};
+
+	Parms.InFocused = InFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetHovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_NavBarButton_C::SetHovered(bool InHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Shop_NavBarButton_C", "SetHovered");
+
+	Params::WBP_Shop_NavBarButton_C_SetHovered Parms{};
+
+	Parms.InHovered = InHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

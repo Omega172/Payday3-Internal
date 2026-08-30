@@ -18,14 +18,14 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MapPinManager.BP_MapPinManager_C
-// 0x0070 (0x0318 - 0x02A8)
+// 0x0070 (0x0398 - 0x0328)
 class ABP_MapPinManager_C final : public AActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMap<class FString, struct FVector>           HostablePinLocations;                              // 0x02B8(0x0050)(Edit, BlueprintVisible)
-	TArray<struct FVector>                        JoinablePinLocations;                              // 0x0308(0x0010)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TMap<class FString, struct FVector>           HostablePinLocations;                              // 0x0338(0x0050)(Edit, BlueprintVisible)
+	TArray<struct FVector>                        JoinablePinLocations;                              // 0x0388(0x0010)(Edit, BlueprintVisible)
 
 public:
 	void ExecuteUbergraph_BP_MapPinManager(int32 EntryPoint);

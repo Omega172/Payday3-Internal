@@ -18,28 +18,29 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_PartyMember_ConsumableStatus.WBP_PartyMember_ConsumableStatus_C
-// 0x00B0 (0x03B8 - 0x0308)
+// 0x0080 (0x03E8 - 0x0368)
 class UWBP_PartyMember_ConsumableStatus_C final : public UPD3ConsumableStatusWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       OnPickUpAnimation;                                 // 0x0310(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Background_I;                                      // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_I;                                            // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Value_T;                                           // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateColor                            NormalTextColor;                                   // 0x0330(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FSlateColor                            LowTextColor;                                      // 0x0358(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	struct FSlateColor                            CriticalTextColor;                                 // 0x0380(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
-	float                                         HasAmmoOpacity;                                    // 0x03A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         NoAmmoOpacity;                                     // 0x03AC(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           DesignerToolIcon;                                  // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       OnPickUpAnimation;                                 // 0x0370(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Background_I;                                      // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_I;                                            // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Value_T;                                           // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateColor                            NormalTextColor;                                   // 0x0390(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FSlateColor                            LowTextColor;                                      // 0x03A4(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	struct FSlateColor                            CriticalTextColor;                                 // 0x03B8(0x0014)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
+	uint8                                         Pad_3CC[0x4];                                      // 0x03CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        HasAmmoOpacity;                                    // 0x03D0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        NoAmmoOpacity;                                     // 0x03D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           DesignerToolIcon;                                  // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_PartyMember_ConsumableStatus(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void OnIconChanged(const TSoftObjectPtr<class UPaperSprite>& InIcon);
 	void OnConsumableCountChanged(int32 InAmmoInventory);
+	void OnIconChanged(const TSoftObjectPtr<class UPaperSprite>& InIcon);
 	void OnLoaded_534139B347CE697207941FBEC708B992(class UObject* Loaded);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

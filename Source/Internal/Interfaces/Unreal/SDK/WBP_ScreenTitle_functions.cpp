@@ -16,6 +16,20 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ScreenTitle.WBP_ScreenTitle_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ScreenTitle_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ScreenTitle_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ScreenTitle.WBP_ScreenTitle_C.ExecuteUbergraph_WBP_ScreenTitle
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -36,44 +50,30 @@ void UWBP_ScreenTitle_C::ExecuteUbergraph_WBP_ScreenTitle(int32 EntryPoint)
 }
 
 
-// Function WBP_ScreenTitle.WBP_ScreenTitle_C.UpdateTitle
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ScreenTitle.WBP_ScreenTitle_C.OnOwningStackScreenGainedFocus
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FName                       OldStackValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ScreenTitle_C::UpdateTitle(const class FText& InText)
+void UWBP_ScreenTitle_C::OnOwningStackScreenGainedFocus(const class FName OldStackValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ScreenTitle_C", "UpdateTitle");
+		Func = Class->GetFunction("WBP_ScreenTitle_C", "OnOwningStackScreenGainedFocus");
 
-	Params::WBP_ScreenTitle_C_UpdateTitle Parms{};
+	Params::WBP_ScreenTitle_C_OnOwningStackScreenGainedFocus Parms{};
 
-	Parms.InText = std::move(InText);
+	Parms.OldStackValue = OldStackValue;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ScreenTitle.WBP_ScreenTitle_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ScreenTitle_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ScreenTitle_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function WBP_ScreenTitle.WBP_ScreenTitle_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_ScreenTitle_C::PreConstruct(bool IsDesignTime)
 {
@@ -90,21 +90,21 @@ void UWBP_ScreenTitle_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_ScreenTitle.WBP_ScreenTitle_C.OnOwningStackScreenGainedFocus
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ScreenTitle.WBP_ScreenTitle_C.UpdateTitle
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FName                       OldStackValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ScreenTitle_C::OnOwningStackScreenGainedFocus(const class FName OldStackValue)
+void UWBP_ScreenTitle_C::UpdateTitle(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ScreenTitle_C", "OnOwningStackScreenGainedFocus");
+		Func = Class->GetFunction("WBP_ScreenTitle_C", "UpdateTitle");
 
-	Params::WBP_ScreenTitle_C_OnOwningStackScreenGainedFocus Parms{};
+	Params::WBP_ScreenTitle_C_UpdateTitle Parms{};
 
-	Parms.OldStackValue = OldStackValue;
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

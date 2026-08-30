@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "ButtonFocusedChanged");
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -36,21 +56,65 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ExecuteUbergraph_WBP_UI_Inventor
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.GetColorByCurrency
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    CurrencyColor                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "ButtonFocusedChanged");
+		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "GetColorByCurrency");
 
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_GetColorByCurrency Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.Currency = Currency;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CurrencyColor != nullptr)
+		*CurrencyColor = std::move(Parms.CurrencyColor);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.InitializeItemData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::InitializeItemData(class USBZInventoryBaseData* InItemData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "InitializeItemData");
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_InitializeItemData Parms{};
+
+	Parms.InItemData = InItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnHover(bool bIsHovered)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "OnHover");
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,26 +134,6 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnInitialized()
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionProgressChanged
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "OnTransactionProgressChanged");
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnTransactionProgressChanged Parms{};
-
-	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnPlayerStoreItemDataIntialized
 // (Event, Protected, BlueprintEvent)
 
@@ -104,30 +148,10 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnPlayerStoreItemDataIntialized(
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "PreConstruct");
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionInProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsTransactionInProgress                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bIsTransactionInProgress                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionInProgress(bool bIsTransactionInProgress)
 {
@@ -144,21 +168,41 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionInProgress(bool bIs
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionProgressChanged
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnHover(bool bIsHovered)
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "OnHover");
+		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "OnTransactionProgressChanged");
 
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnHover Parms{};
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnTransactionProgressChanged Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "PreConstruct");
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -186,30 +230,10 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::SetPrice(int64 Price, ESBZCurren
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.InitializeItemData
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::InitializeItemData(class USBZInventoryBaseData* InItemData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "InitializeItemData");
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_InitializeItemData Parms{};
-
-	Parms.InItemData = InItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.UpdateHighlights
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UWBP_UI_Inventory_StoreWeaponSlotButton_C::UpdateHighlights(bool IsFocused)
 {
@@ -223,30 +247,6 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::UpdateHighlights(bool IsFocused)
 	Parms.IsFocused = IsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.GetColorByCurrency
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor*                    CurrencyColor                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Inventory_StoreWeaponSlotButton_C", "GetColorByCurrency");
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_GetColorByCurrency Parms{};
-
-	Parms.Currency = Currency;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CurrencyColor != nullptr)
-		*CurrencyColor = std::move(Parms.CurrencyColor);
 }
 
 

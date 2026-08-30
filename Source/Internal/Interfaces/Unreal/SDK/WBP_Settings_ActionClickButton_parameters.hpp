@@ -17,54 +17,92 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ExecuteUbergraph_WBP_Settings_ActionClickButton
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Settings_ActionClickButton_C_ExecuteUbergraph_WBP_Settings_ActionClickButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsDisabled;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ExecuteUbergraph_WBP_Settings_ActionClickButton;
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonHoveredChanged
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonDisabledChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Settings_ActionClickButton_C_ButtonHoveredChanged final
+struct WBP_Settings_ActionClickButton_C_ButtonDisabledChanged final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ButtonDisabledChanged;
 
 // Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_Settings_ActionClickButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ButtonFocusedChanged;
 
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonDisabledChanged
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Settings_ActionClickButton_C_ButtonDisabledChanged final
+struct WBP_Settings_ActionClickButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ButtonDisabledChanged;
+DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ButtonHoveredChanged;
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.ExecuteUbergraph_WBP_Settings_ActionClickButton
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Settings_ActionClickButton_C_ExecuteUbergraph_WBP_Settings_ActionClickButton final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsDisabled;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_ExecuteUbergraph_WBP_Settings_ActionClickButton;
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnDisabledVisuals
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Settings_ActionClickButton_C_OnDisabledVisuals final
+{
+public:
+	bool                                          bIsDisabled_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_OnDisabledVisuals;
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnFocusedVisuals
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_Settings_ActionClickButton_C_OnFocusedVisuals final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_1;             // 0x0038(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SettingIsDirty_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x004C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x005C(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_OnFocusedVisuals;
+
+// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnHoverVisuals
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Settings_ActionClickButton_C_OnHoverVisuals final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_OnHoverVisuals;
 
 // Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_Settings_ActionClickButton_C_PreConstruct final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_PreConstruct;
 
@@ -73,49 +111,10 @@ DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_PreConstruct;
 struct WBP_Settings_ActionClickButton_C_RefreshVisuals final
 {
 public:
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_RefreshVisuals;
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnHoverVisuals
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Settings_ActionClickButton_C_OnHoverVisuals final
-{
-public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_OnHoverVisuals;
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnFocusedVisuals
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_Settings_ActionClickButton_C_OnFocusedVisuals final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_1;             // 0x0038(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SettingIsDirty_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x004C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0060(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_OnFocusedVisuals;
-
-// Function WBP_Settings_ActionClickButton.WBP_Settings_ActionClickButton_C.OnDisabledVisuals
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Settings_ActionClickButton_C_OnDisabledVisuals final
-{
-public:
-	bool                                          bIsDisabled_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Settings_ActionClickButton_C_OnDisabledVisuals;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

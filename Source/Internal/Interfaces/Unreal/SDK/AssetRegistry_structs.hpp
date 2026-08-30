@@ -13,6 +13,15 @@
 
 SDK_NAMESPACE_START
 
+// Enum AssetRegistry.EAssetRegistrySortOrder
+// NumValues: 0x0003
+enum class EAssetRegistrySortOrder : uint8
+{
+	Ascending                                = 0,
+	Descending                               = 1,
+	EAssetRegistrySortOrder_MAX              = 2,
+};
+
 // ScriptStruct AssetRegistry.TagAndValue
 // 0x0020 (0x0020 - 0x0000)
 struct FTagAndValue final

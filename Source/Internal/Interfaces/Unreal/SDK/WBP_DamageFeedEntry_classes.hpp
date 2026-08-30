@@ -19,27 +19,26 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_DamageFeedEntry.WBP_DamageFeedEntry_C
-// 0x00E8 (0x0390 - 0x02A8)
+// 0x0088 (0x0390 - 0x0308)
 class UWBP_DamageFeedEntry_C final : public USBZDamageFeedEntry
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       HideAnimation;                                     // 0x02B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ShowAnimation;                                     // 0x02B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UTextBlock*                             Value_T;                                           // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FSlateColor                            Normal;                                            // 0x02C8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Critical;                                          // 0x02F0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Headshot;                                          // 0x0318(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Weakpoint;                                         // 0x0340(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                            Kill;                                              // 0x0368(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0308(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       HideAnimation;                                     // 0x0310(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowAnimation;                                     // 0x0318(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UTextBlock*                             Value_T;                                           // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FSlateColor                            Normal;                                            // 0x0328(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Critical;                                          // 0x033C(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Headshot;                                          // 0x0350(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Weakpoint;                                         // 0x0364(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                            Kill;                                              // 0x0378(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_DamageFeedEntry(int32 EntryPoint);
+	class FName GetEntryType();
+	void OnDamageDataUpdated(float InDamageAmount, ESBZDamageType InDamageType, const struct FLinearColor& InColor);
 	void PlayAppearAnimation();
 	void PlayDisappearAnimation();
-	void OnDamageDataUpdated(float InDamageAmount, ESBZDamageType InDamageType, const struct FLinearColor& InColor);
-
-	class FName GetEntryType() const;
 
 public:
 	static class UClass* StaticClass()
