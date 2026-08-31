@@ -105,7 +105,9 @@ private:
 
 	void noRecoil(bool bEnabled);
 	void noSpread(bool bEnabled);
+	void wallbang(bool bEnabled);
 	void fireRate(bool bEnabled);
+	void ApplyWallbangToFireData(SDK::USBZWeaponFireData* pFire, bool bEnabled, const WeaponDataBackupEntry_t* backup);
 
 	bool g_bDidBackupWeaponData;
 	WeaponDataBackupEntry_t* GetWeaponBackupData(SDK::USBZRangedWeaponData* pWeaponData);

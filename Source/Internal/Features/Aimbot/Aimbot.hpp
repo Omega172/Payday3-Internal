@@ -47,6 +47,7 @@ public:
 	void HandleMenu() override;
 	void Render() override;
 	void Run() override;
+	void UpdateAim();
 	int CurrentAimbotType();
 	RadioButtonIcon* GetMenuButton() const { return m_pMenuButton.get(); }
 	std::string GetName() override { return "Aimbot"; };

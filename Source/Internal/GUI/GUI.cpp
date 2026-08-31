@@ -2,6 +2,7 @@
 #include "../Features/Player/Player.hpp"
 #include "../Features/Visuals/Visuals.hpp"
 #include "../Features/Aimbot/Aimbot.hpp"
+#include "../Features/Misc/ClientMove.hpp"
 #include "../Interfaces/Unreal/Unreal.hpp"
 
 void GUI::Render()
@@ -57,6 +58,7 @@ void GUI::Render()
 			GuiSidebar->AddElement(pPlayer->GetMenuButton());
 			GuiSidebar->AddElement(pVisuals->GetMenuButton());
 			GuiSidebar->AddElement(pAimbot->GetMenuButton());
+			GuiSidebar->AddElement(pClientMove->GetMenuButton());
 			GuiSidebar->AddElement(GuiMiscSeperator.get());
 			GuiSidebar->AddElement(GuiStyle.get());
 			GuiSidebar->AddElement(GuiSettings.get());

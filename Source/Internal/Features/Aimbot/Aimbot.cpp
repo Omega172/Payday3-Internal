@@ -42,7 +42,6 @@ void Aimbot::HandleMenu()
 		m_pTab1Left->AddElement(m_pAimbotEnabled.get());
 		m_pTab1Left->AddElement(m_pAimbotVisibleCheck.get());
 		m_pTab1Left->AddElement(m_pAimbotFOVEnabled.get());
-
 		m_pTab1Right->AddElement(m_pAimbotHotkey.get()); // key defaults unbound, bind it via the UI
 		m_pTab1Right->AddElement(m_pAimbotType.get());
 		m_pTab1Right->AddElement(m_pAimbotTarget.get());
@@ -68,37 +67,45 @@ void Aimbot::HandleMenu()
 	});
 }
 
-void Aimbot::Render()
+void Aimbot::UpdateAim()
 {
-	if (m_pAimbotFOVEnabled->GetValue())
-	{
-		const ImU32 color = ImGui::ColorConvertFloat4ToU32(m_pAimbotFOVColor->GetValue());
-		const float maxScreenDistance = static_cast<float>(m_pFOV->GetValue());
-
-		ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
-		const ImVec2 center = ImGui::GetIO().DisplaySize * 0.5f;
-		pDrawList->AddCircle(center, maxScreenDistance, color, 100, 1.0f);
-	}
+	auto ClearOverride = [this]() {
+		ShouldOverrideView = false;
+	};
 
 	if (!m_pAimbotEnabled->GetValue())
+	{
+		ClearOverride();
 		return;
+	}
 
 	m_pAimbotHotkey->Update();
-	if (!m_pAimbotHotkey->GetValue())
+	const bool bHotkeyOk = m_pAimbotHotkey->GetValue() || (m_pAimbotHotkey->GetKey() == ImGuiKey_None);
+	if (!bHotkeyOk)
+	{
+		ClearOverride();
 		return;
+	}
 
 	SDK::UWorld* pWorld = SDK::UWorld::GetWorld();
 	if (!pWorld)
+	{
+		ClearOverride();
 		return;
+	}
 
 	SDK::APlayerController* pPlayerController = SDK::UGameplayStatics::GetPlayerController(pWorld, 0);
 	if (!pPlayerController || !pPlayerController->PlayerCameraManager)
+	{
+		ClearOverride();
 		return;
+	}
 
 	SDK::FVector vecCameraLocation = pPlayerController->PlayerCameraManager->GetCameraLocation();
 	SDK::FRotator rotCameraRotation = pPlayerController->PlayerCameraManager->GetCameraRotation();
 
 	const float maxScreenDistance = m_pAimbotFOVEnabled->GetValue() ? static_cast<float>(m_pFOV->GetValue()) : std::numeric_limits<float>::max();
+	const bool bVisibleCheck = m_pAimbotVisibleCheck->GetValue();
 
 	const wchar_t* targetPart =
 		m_pAimbotTarget->GetSelectedIndex() == 0 ? L"Head" :
@@ -109,9 +116,12 @@ void Aimbot::Render()
 		m_pAimbotTarget->GetSelectedIndex() == 5 ? L"LeftLeg" :
 		m_pAimbotTarget->GetSelectedIndex() == 6 ? L"RightLeg" : L"Head";
 
-	auto optTarget = TargetingHelpers::SelectBestTarget(pWorld, pPlayerController, true, false, maxScreenDistance, m_pAimbotVisibleCheck->GetValue(), targetPart);
+	auto optTarget = TargetingHelpers::SelectBestTarget(pWorld, pPlayerController, true, false, maxScreenDistance, bVisibleCheck, targetPart);
 	if (!optTarget.has_value())
+	{
+		ClearOverride();
 		return;
+	}
 
 	const SDK::FRotator desiredRotation = SDK::UKismetMathLibrary::FindLookAtRotation(
 		vecCameraLocation,
@@ -124,7 +134,6 @@ void Aimbot::Render()
 	const float deltaYaw = NormalizeAngle(desiredRotation.Yaw - rotCameraRotation.Yaw) * alpha;
 	const float deltaPitch = NormalizeAngle(desiredRotation.Pitch - rotCameraRotation.Pitch) * alpha;
 
-	ShouldOverrideView = false;
 	if (CurrentAimbotType() == 0 && ImGui::IsMouseDown(ImGuiMouseButton_Left))
 	{
 		ShouldOverrideView = true;
@@ -133,9 +142,25 @@ void Aimbot::Render()
 	}
 	else if (CurrentAimbotType() == 1)
 	{
+		ShouldOverrideView = false;
 		pPlayerController->AddYawInput(deltaYaw);
 		pPlayerController->AddPitchInput(-deltaPitch);
 	}
+}
+
+void Aimbot::Render()
+{
+	if (m_pAimbotFOVEnabled->GetValue())
+	{
+		const ImU32 color = ImGui::ColorConvertFloat4ToU32(m_pAimbotFOVColor->GetValue());
+		const float maxScreenDistance = static_cast<float>(m_pFOV->GetValue());
+
+		ImDrawList* pDrawList = ImGui::GetBackgroundDrawList();
+		const ImVec2 center = ImGui::GetIO().DisplaySize * 0.5f;
+		pDrawList->AddCircle(center, maxScreenDistance, color, 100, 1.0f);
+	}
+
+	UpdateAim();
 }
 
 void Aimbot::Run()

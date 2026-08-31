@@ -1389,6 +1389,10 @@ public:
 	{
 		return m_bActive;
 	};
+
+	inline ImGuiKey GetKey() const { return m_eKey; }
+	inline EHotkeyMode GetMode() const { return m_eMode; }
+	inline void SetMode(EHotkeyMode mode) { m_eMode = mode; }
 };
 
 class SliderFloat : public ElementInput<float>

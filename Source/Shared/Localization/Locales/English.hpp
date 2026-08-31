@@ -73,6 +73,17 @@ Locale_t localeEnglish{
 		{ "AIMBOT_FOV"Hashed, "FOV" },
 		{ "AIMBOT_SMOOTHING"Hashed, "Smoothing" },
 
+		{ "CLIENTMOVE_BUTTON"Hashed, "Noclip" },
+		{ "CLIENTMOVE_TAB1"Hashed, "Main" },
+		{ "CLIENTMOVE_TAB1_LEFT"Hashed, "General" },
+		{ "CLIENTMOVE_TAB1_RIGHT"Hashed, "Hotkeys" },
+		{ "CLIENTMOVE_ENABLED"Hashed, "Enabled" },
+		{ "CLIENTMOVE_HOTKEY"Hashed, "Noclip Hold" },
+		{ "CLIENTMOVE_FASTER_HOTKEY"Hashed, "Faster (Hold)" },
+		{ "CLIENTMOVE_SYNC_HOTKEY"Hashed, "Sync Position" },
+		{ "CLIENTMOVE_AUTO_SYNC"Hashed, "Auto Sync On Release" },
+		{ "CLIENTMOVE_SPEED"Hashed, "Fly Speed" },
+
 		{ "PLAYER_BUTTON"Hashed, "Player" },
 		{ "PLAYER_TAB1"Hashed, "Local Player" },
 		{ "PLAYER_TAB2"Hashed, "Players" },
@@ -93,8 +104,11 @@ Locale_t localeEnglish{
 		{ "PLAYER_INF_AMMO"Hashed, "Infinite Ammo" },
 		{ "PLAYER_NO_RECOIL"Hashed, "No Recoil" },
 		{ "PLAYER_NO_SPREAD"Hashed, "No Spread" },
+		{ "PLAYER_WALLBANG"Hashed, "Wallbang (Through Walls)" },
 		{ "PLAYER_FIRE_RATE_SLIDER"Hashed, "Fire Rate Multiplier" },
 		{ "PLAYER_FIRE_RATE"Hashed, "Fire Rate" },
+
+		{ "AIMBOT_WALLBANG"Hashed, "Wallbang (Through Walls)" },
 
 		{ "VISUALS_BUTTON"Hashed, "Visuals" },
 		{ "VISUALS_TAB1"Hashed, "ESP" },
