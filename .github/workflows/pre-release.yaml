@@ -6,11 +6,6 @@ on:
         description: 'Pre-release version (e.g., v1.0.0b)'
         required: true
         type: string
-      is_wingdk:
-        description: 'WinGDK build?'
-        required: false
-        type: boolean
-        default: false
 permissions:
   contents: write
 jobs:
@@ -31,6 +26,32 @@ jobs:
       with:
         xmake-version: latest
         build-cache: true
+    - name: Configure xmake (Debug)
+      timeout-minutes: 15
+      run: |
+        xmake update
+        xmake global --clean
+        xmake config -m debug -a x64 -p windows -y
+    - name: Build project (Debug)
+      timeout-minutes: 20
+      run: xmake build Payday-Internal-v2 Proxy
+    - name: Package Debug artifacts (DLL + PDB)
+      run: |
+        mkdir debug-package
+        xcopy /E /I Build\Debug\Payday-Internal-v2 debug-package\
+        xcopy /E /I Build\Debug\Proxy debug-package\
+        $internalDll = Get-ChildItem debug-package\Payday-Internal-v2.dll -ErrorAction SilentlyContinue
+        $proxyDll = Get-ChildItem debug-package\version.dll -ErrorAction SilentlyContinue
+        if (-not $internalDll) {
+          Write-Error "Payday-Internal-v2.dll was not found in the debug build output."
+          exit 1
+        }
+        if (-not $proxyDll) {
+          Write-Error "version.dll was not found in the debug build output."
+          exit 1
+        }
+        echo "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" > debug-package\BUILD_INFO.txt
+      shell: pwsh
     - name: Configure xmake (Release)
       timeout-minutes: 15
       run: |
@@ -39,37 +60,28 @@ jobs:
         xmake config -m release -a x64 -p windows -y
     - name: Build project (Release)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2
-    - name: Determine WinGDK build
-      id: wingdk
-      run: |
-        $isWinGDK = "${{ github.event.inputs.is_wingdk }}" -eq "true"
-        $suffix = if ($isWinGDK) { "-WinGDK" } else { "" }
-        echo "IS_WINGDK=$isWinGDK" >> $env:GITHUB_OUTPUT
-        echo "SUFFIX=$suffix" >> $env:GITHUB_OUTPUT
-      shell: pwsh
+      run: xmake build Payday-Internal-v2 Proxy
     - name: Package Release artifacts (DLL + PDB)
       run: |
         mkdir release-package
         xcopy /E /I Build\Release\Payday-Internal-v2 release-package\
-        if ("${{ steps.wingdk.outputs.IS_WINGDK }}" -eq "true") {
-          $dll = Get-ChildItem release-package\*-WinGDK.dll -ErrorAction SilentlyContinue
-          if (-not $dll) {
-            Write-Error "is_wingdk was checked but no *-WinGDK.dll was found in the build output. Wrong branch checked out?"
-            exit 1
-          }
-        } else {
-          $dll = Get-ChildItem release-package\Payday-Internal-v2.dll -ErrorAction SilentlyContinue
-          if (-not $dll) {
-            Write-Error "Payday-Internal-v2.dll was not found in the build output."
-            exit 1
-          }
+        xcopy /E /I Build\Release\Proxy release-package\
+        $internalDll = Get-ChildItem release-package\Payday-Internal-v2.dll -ErrorAction SilentlyContinue
+        $proxyDll = Get-ChildItem release-package\version.dll -ErrorAction SilentlyContinue
+        if (-not $internalDll) {
+          Write-Error "Payday-Internal-v2.dll was not found in the release build output."
+          exit 1
+        }
+        if (-not $proxyDll) {
+          Write-Error "version.dll was not found in the release build output."
+          exit 1
         }
         echo "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" > release-package\BUILD_INFO.txt
       shell: pwsh
-    - name: Create ZIP archive
+    - name: Create ZIP archives
       run: |
-        Compress-Archive -Path release-package\* -DestinationPath Payday3-Internal${{ steps.wingdk.outputs.SUFFIX }}-Release.zip
+        Compress-Archive -Path debug-package\* -DestinationPath Payday3-Internal-Debug.zip
+        Compress-Archive -Path release-package\* -DestinationPath Payday3-Internal-Release.zip
       shell: pwsh
     - name: Generate changelog
       id: changelog
@@ -94,27 +106,30 @@ jobs:
         "EOF" >> $env:GITHUB_OUTPUT
       shell: pwsh
     - name: Create Pre-Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ github.event.inputs.version }}
         name: Pre-Release ${{ github.event.inputs.version }}
         draft: false
         prerelease: true
-        files: Payday3-Internal${{ steps.wingdk.outputs.SUFFIX }}-Release.zip
+        files: |
+          Payday3-Internal-Debug.zip
+          Payday3-Internal-Release.zip
         body: |
-          ## Payday3-Internal ${{ github.event.inputs.version }}${{ steps.wingdk.outputs.IS_WINGDK == 'true' && ' (MS Store)' || '' }} (Pre-Release)
-          ![GitHub Downloads (all assets, specific tag)](https://img.shields.io/github/downloads/Omega172/Payday3-Internal/${{ steps.get_version.outputs.VERSION }}/total)
+          ## Payday3-Internal ${{ github.event.inputs.version }} (Pre-Release)
+          ![GitHub Downloads (all assets, specific tag)](https://img.shields.io/github/downloads/Omega172/Payday3-Internal/${{ github.event.inputs.version }}/total)
           
           ⚠️ This is a pre-release build and may be unstable.
           
           ### Packages
-          - **Payday3-Internal${{ steps.wingdk.outputs.SUFFIX }}-Release.zip** - Contains DLL + PDB
+          - **Payday3-Internal-Release.zip** - Release build (Payday-Internal-v2.dll + Proxy version.dll + PDBs)
+          - **Payday3-Internal-Debug.zip** - Debug build (Payday-Internal-v2.dll + Proxy version.dll + PDBs)
           
           ### Changes
           ${{ steps.changelog.outputs.CHANGELOG }}
           
           ### Installation
-          1. Download `Payday3-Internal${{ steps.wingdk.outputs.SUFFIX }}-Release.zip`
+          1. Download `Payday3-Internal-Release.zip` (or `Payday3-Internal-Debug.zip`)
           2. Extract the archive
           3. Follow the instructions in README.md
           

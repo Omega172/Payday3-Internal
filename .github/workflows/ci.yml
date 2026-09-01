@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ main, p2p-beta, proton-debug ]
+    branches: [ v2 ]
   pull_request:
-    branches: [ main, p2p-beta, proton-debug ]
+    branches: [ v2 ]
 jobs:
   build-and-test:
     runs-on: windows-latest
@@ -31,10 +31,20 @@ jobs:
         xmake config -m debug -a x64 -p windows -y -vD
     - name: Build project (Debug)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2
+      run: xmake build Payday-Internal-v2 Proxy
     - name: Run tests
       run: xmake test
       continue-on-error: true
+    - name: Upload Debug build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: payday3-internal-debug
+        path: |
+          Build/Debug/Payday-Internal-v2/**/*.dll
+          Build/Debug/Payday-Internal-v2/**/*.pdb
+          Build/Debug/Proxy/**/*.dll
+          Build/Debug/Proxy/**/*.pdb
+        retention-days: 7
     - name: Configure xmake (Release)
       timeout-minutes: 15
       run: |
@@ -43,11 +53,14 @@ jobs:
         xmake config -m release -a x64 -p windows -y -vD
     - name: Build project (Release)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2
-    - name: Upload build artifacts
+      run: xmake build Payday-Internal-v2 Proxy
+    - name: Upload Release build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: payday3-internal-build
+        name: payday3-internal-release
         path: |
-          Build/Release/**/*.dll
+          Build/Release/Payday-Internal-v2/**/*.dll
+          Build/Release/Payday-Internal-v2/**/*.pdb
+          Build/Release/Proxy/**/*.dll
+          Build/Release/Proxy/**/*.pdb
         retention-days: 7
