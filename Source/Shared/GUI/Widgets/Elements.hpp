@@ -1274,9 +1274,9 @@ public:
 
 		ImGui::SameLine(0.f, 2.f);
 
-		const char* szLabel = GetName().c_str();
-		const auto id = ImGui::GetID(szLabel);
-		ImGui::PushID(szLabel);
+		const std::string sLabel = GetName();
+		const auto id = ImGui::GetID(sLabel.c_str());
+		ImGui::PushID(sLabel.c_str());
 
 		std::string BtnName = (m_bSetting) ? "..." : ImGui::GetKeyName(m_eKey);
 
