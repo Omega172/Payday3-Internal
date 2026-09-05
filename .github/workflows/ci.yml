@@ -31,7 +31,7 @@ jobs:
         xmake config -m debug -a x64 -p windows -y -vD
     - name: Build project (Debug)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2 Proxy
+      run: xmake build -a
     - name: Run tests
       run: xmake test
       continue-on-error: true
@@ -40,10 +40,10 @@ jobs:
       with:
         name: payday3-internal-debug
         path: |
-          Build/Debug/Payday-Internal-v2/**/*.dll
-          Build/Debug/Payday-Internal-v2/**/*.pdb
-          Build/Debug/Proxy/**/*.dll
-          Build/Debug/Proxy/**/*.pdb
+          Build/Debug/Steam/**/*.dll
+          Build/Debug/Steam/**/*.pdb
+          Build/Debug/WinGDK/**/*.dll
+          Build/Debug/WinGDK/**/*.pdb
         retention-days: 7
     - name: Configure xmake (Release)
       timeout-minutes: 15
@@ -53,14 +53,14 @@ jobs:
         xmake config -m release -a x64 -p windows -y -vD
     - name: Build project (Release)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2 Proxy
+      run: xmake build -a
     - name: Upload Release build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: payday3-internal-release
         path: |
-          Build/Release/Payday-Internal-v2/**/*.dll
-          Build/Release/Payday-Internal-v2/**/*.pdb
-          Build/Release/Proxy/**/*.dll
-          Build/Release/Proxy/**/*.pdb
+          Build/Release/Steam/**/*.dll
+          Build/Release/Steam/**/*.pdb
+          Build/Release/WinGDK/**/*.dll
+          Build/Release/WinGDK/**/*.pdb
         retention-days: 7

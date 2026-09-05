@@ -89,12 +89,6 @@ void GUI::Render()
 			});
 			GuiDeveloperPage->AddElement(GuiOpenLogsFolder.get());
 
-			vtableprint->SetCallback([]()
-			{
-				// Ignore this, I used it earlier
-			});
-			GuiDeveloperPage->AddElement(vtableprint.get());
-
 			GuiSettingsPage->SetPageId(GuiSettings->GetPageId());
 
 			GuiUnloadButton->SetCallback([]() {

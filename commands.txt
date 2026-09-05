@@ -1,9 +1,10 @@
 These are scuffed ass powershell commands to "fix" a new dumped sdk
 
-Edit: Please do not use this in v2... If it's needed then I'll delete this line else I'll delete this file.
+Edit: It's still needed in v2 for when the sdk decides to not dump fully.
 
 Nuke all DUMPER7_ASSERTS_*
-Get-ChildItem -Path "C:\Users\Omega\Desktop\GitHub\Payday3-Internal\Source\Payday3-Internal\Dumper-7\SDK" -Recurse -File | ForEach-Object { (Get-Content $_.FullName -Raw) -replace 'DUMPER7_ASSERTS_\w+;\r?\n', '' | Set-Content $_.FullName -NoNewline }
+$SdkPath = Join-Path (Get-Location) "Source\Internal\Interfaces\Unreal\SDK"
+Get-ChildItem -Path $SdkPath -Recurse -File | ForEach-Object { (Get-Content $_.FullName -Raw) -replace 'DUMPER7_ASSERTS_\w+;\r?\n', '' | Set-Content $_.FullName -NoNewline }
 
 Nuke all final keywords from class declarations
-Get-ChildItem -Path "C:\Users\Omega\Desktop\GitHub\Payday3-Internal\Source\Payday3-Internal\Dumper-7\SDK" -Recurse -File | ForEach-Object { (Get-Content $_.FullName -Raw) -replace '(\b(?:class|struct)\b\s+\w+)\s+final\b', '$1' | Set-Content $_.FullName -NoNewline }
+Get-ChildItem -Path $SdkPath -Recurse -File | ForEach-Object { (Get-Content $_.FullName -Raw) -replace '(\b(?:class|struct)\b\s+\w+)\s+final\b', '$1' | Set-Content $_.FullName -NoNewline }

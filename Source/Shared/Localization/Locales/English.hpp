@@ -108,8 +108,6 @@ Locale_t localeEnglish{
 		{ "PLAYER_FIRE_RATE_SLIDER"Hashed, "Fire Rate Multiplier" },
 		{ "PLAYER_FIRE_RATE"Hashed, "Fire Rate" },
 
-		{ "AIMBOT_WALLBANG"Hashed, "Wallbang (Through Walls)" },
-
 		{ "VISUALS_BUTTON"Hashed, "Visuals" },
 		{ "VISUALS_TAB1"Hashed, "ESP" },
 		{ "VISUALS_TAB1_LEFT"Hashed, "General" },
@@ -139,6 +137,5 @@ Locale_t localeEnglish{
 		{ "VISUALS_ITEM_KEYCARD_COLOR"Hashed, "Keycard Color" },
 		{ "VISUALS_FILTERS"Hashed, ""},
 		{ "VISUALS_ITEM_FILTERS"Hashed, ""},
-		{ "vtableprint"Hashed, "VTable Print" },
 	}),
 };

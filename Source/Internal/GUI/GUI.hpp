@@ -47,7 +47,6 @@ namespace GUI
 	inline std::unique_ptr<Page> GuiDeveloperPage = std::make_unique<Page>("DEVELOPER_PAGE", ElementBase::Style_t(), 0, 0);
 	inline std::unique_ptr<Button> GuiConsoleVisibility = std::make_unique<Button>(std::string("CONSOLE_VISIBILITY"), "CONSOLE_HIDE"Hashed);
 	inline std::unique_ptr<Button> GuiOpenLogsFolder = std::make_unique<Button>(std::string("OPEN_LOGS_FOLDER"), "OPEN_LOGS_FOLDER"Hashed);
-	inline std::unique_ptr<Button> vtableprint = std::make_unique<Button>(std::string("VTablePrint"), "VTablePrint"Hashed);
 
 	inline std::unique_ptr<Page> GuiSettingsPage = std::make_unique<Page>("SETTINGS_PAGE", ElementBase::Style_t(), 0, 0);
 

@@ -37,20 +37,20 @@ jobs:
         xmake config -m debug -a x64 -p windows -y
     - name: Build project (Debug)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2 Proxy
+      run: xmake build -a
     - name: Package Debug artifacts (DLL + PDB)
       run: |
         mkdir debug-package
-        xcopy /E /I Build\Debug\Payday-Internal-v2 debug-package\
-        xcopy /E /I Build\Debug\Proxy debug-package\
-        $internalDll = Get-ChildItem debug-package\Payday-Internal-v2.dll -ErrorAction SilentlyContinue
-        $proxyDll = Get-ChildItem debug-package\version.dll -ErrorAction SilentlyContinue
-        if (-not $internalDll) {
-          Write-Error "Payday-Internal-v2.dll was not found in the debug build output."
+        xcopy /E /I Build\Debug\Steam debug-package\Steam\
+        xcopy /E /I Build\Debug\WinGDK debug-package\WinGDK\
+        $internalDlls = @(Get-ChildItem debug-package -Recurse -Filter Payday-Internal-v2.dll)
+        $proxyDlls = @(Get-ChildItem debug-package -Recurse -Filter version.dll)
+        if ($internalDlls.Count -lt 2) {
+          Write-Error "Both Steam and WinGDK Payday-Internal-v2.dll files were not found in the debug build output."
           exit 1
         }
-        if (-not $proxyDll) {
-          Write-Error "version.dll was not found in the debug build output."
+        if ($proxyDlls.Count -lt 2) {
+          Write-Error "Both Steam and WinGDK version.dll files were not found in the debug build output."
           exit 1
         }
         echo "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" > debug-package\BUILD_INFO.txt
@@ -63,20 +63,20 @@ jobs:
         xmake config -m release -a x64 -p windows -y
     - name: Build project (Release)
       timeout-minutes: 20
-      run: xmake build Payday-Internal-v2 Proxy
+      run: xmake build -a
     - name: Package Release artifacts (DLL + PDB)
       run: |
         mkdir release-package
-        xcopy /E /I Build\Release\Payday-Internal-v2 release-package\
-        xcopy /E /I Build\Release\Proxy release-package\
-        $internalDll = Get-ChildItem release-package\Payday-Internal-v2.dll -ErrorAction SilentlyContinue
-        $proxyDll = Get-ChildItem release-package\version.dll -ErrorAction SilentlyContinue
-        if (-not $internalDll) {
-          Write-Error "Payday-Internal-v2.dll was not found in the release build output."
+        xcopy /E /I Build\Release\Steam release-package\Steam\
+        xcopy /E /I Build\Release\WinGDK release-package\WinGDK\
+        $internalDlls = @(Get-ChildItem release-package -Recurse -Filter Payday-Internal-v2.dll)
+        $proxyDlls = @(Get-ChildItem release-package -Recurse -Filter version.dll)
+        if ($internalDlls.Count -lt 2) {
+          Write-Error "Both Steam and WinGDK Payday-Internal-v2.dll files were not found in the release build output."
           exit 1
         }
-        if (-not $proxyDll) {
-          Write-Error "version.dll was not found in the release build output."
+        if ($proxyDlls.Count -lt 2) {
+          Write-Error "Both Steam and WinGDK version.dll files were not found in the release build output."
           exit 1
         }
         echo "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" > release-package\BUILD_INFO.txt

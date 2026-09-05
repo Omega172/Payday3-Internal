@@ -4,14 +4,14 @@
 
 #pragma intrinsic(_ReturnAddress)
 
-#define ACTOR_GETACTOREYESVIEWPOINT_INDEX 0xE2
+//#define ACTOR_GETACTOREYESVIEWPOINT_INDEX 0xE2
 #define APLAYERCONTROLLER_GETPLAYERVIEWPOINT_INDEX 0x106
 
 using GetPlayerViewPointFn = void(*)(SDK::APlayerController*, SDK::FVector*, SDK::FRotator*);
-using GetActorEyesViewPointFn = void(*)(SDK::AActor*, SDK::FVector*, SDK::FRotator*);
+//using GetActorEyesViewPointFn = void(*)(SDK::AActor*, SDK::FVector*, SDK::FRotator*);
 
 static Hooking::Hook<GetPlayerViewPointFn> oGetPlayerViewPoint;
-static Hooking::Hook<GetActorEyesViewPointFn> oGetActorEyesViewPoint;
+//static Hooking::Hook<GetActorEyesViewPointFn> oGetActorEyesViewPoint;
 
 static std::vector<std::pair<uintptr_t, uint64_t>> g_vecRetCounts{};
 static uintptr_t g_pFireRet1 = 0;
@@ -114,24 +114,20 @@ static void hkGetPlayerViewPoint(SDK::APlayerController* pPlayerController, SDK:
 	++g_ullOverridesApplied;
 }
 
-static void hkGetActorEyesViewPoint(SDK::AActor* pActor, SDK::FVector* pLocation, SDK::FRotator* pRotation)
-{
-	oGetActorEyesViewPoint(pActor, pLocation, pRotation);
-	(void)pActor;
-	(void)pLocation;
-	(void)pRotation;
-}
+// static void hkGetActorEyesViewPoint(SDK::AActor* pActor, SDK::FVector* pLocation, SDK::FRotator* pRotation)
+// {
+// 	oGetActorEyesViewPoint(pActor, pLocation, pRotation);
+// 	(void)pActor;
+// 	(void)pLocation;
+// 	(void)pRotation;
+// }
 
 bool AimbotHooks::Setup()
 {
 	if (m_bInstalled)
 		return true;
 
-	SDK::UWorld* pWorld = SDK::UWorld::GetWorld();
-	if (!pWorld)
-		return false;
-
-	SDK::APlayerController* pPlayerController = SDK::UGameplayStatics::GetPlayerController(pWorld, 0);
+	SDK::APlayerController* pPlayerController = Unreal::GetPlayerController();
 	if (!pPlayerController)
 		return false;
 
@@ -139,8 +135,7 @@ bool AimbotHooks::Setup()
 	if (!pPawn)
 		return false;
 
-	if (!Memory::GetVirtualMethod(pPlayerController, APLAYERCONTROLLER_GETPLAYERVIEWPOINT_INDEX)
-		|| !Memory::GetVirtualMethod(pPawn, ACTOR_GETACTOREYESVIEWPOINT_INDEX))
+	if (!Memory::GetVirtualMethod(pPlayerController, APLAYERCONTROLLER_GETPLAYERVIEWPOINT_INDEX)) //|| !Memory::GetVirtualMethod(pPawn, ACTOR_GETACTOREYESVIEWPOINT_INDEX))
 	{
 		Utils::LogError("AimbotHooks: viewpoint vtable slot null");
 		return false;
@@ -158,15 +153,15 @@ bool AimbotHooks::Setup()
 		return false;
 	}
 
-	if (!batch.Install(
-		oGetActorEyesViewPoint,
-		hkGetActorEyesViewPoint,
-		pPawn,
-		ACTOR_GETACTOREYESVIEWPOINT_INDEX))
-	{
-		Utils::LogHook("AActor::GetActorEyesViewPoint", oGetActorEyesViewPoint.GetStatus());
-		return false;
-	}
+	// if (!batch.Install(
+	// 	oGetActorEyesViewPoint,
+	// 	hkGetActorEyesViewPoint,
+	// 	pPawn,
+	// 	ACTOR_GETACTOREYESVIEWPOINT_INDEX))
+	// {
+	// 	Utils::LogHook("AActor::GetActorEyesViewPoint", oGetActorEyesViewPoint.GetStatus());
+	// 	return false;
+	// }
 
 	batch.Commit();
 	ResetSilentCalibration();
@@ -178,7 +173,7 @@ bool AimbotHooks::Setup()
 
 void AimbotHooks::Destroy()
 {
-	oGetActorEyesViewPoint.Remove();
+	// oGetActorEyesViewPoint.Remove();
 	oGetPlayerViewPoint.Remove();
 	ResetSilentCalibration();
 	m_bInstalled = false;

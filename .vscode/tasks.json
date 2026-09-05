@@ -2,104 +2,63 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "xmake: Build (Debug)",
+			"label": "xmake: Build All (Debug)",
 			"type": "shell",
-			"command": "xmake",
-			"args": [
-				"config",
-				"-m",
-				"debug",
-				"-a",
-				"x64",
-				"-p",
-				"windows",
-				"&&",
-				"xmake",
-				"build"
-			],
+			"command": "xmake config -m debug -a x64 -p windows && xmake build all",
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
 			"problemMatcher": [],
-			"detail": "Build in debug mode for Windows x64"
+			"detail": "Build Steam and WinGDK Debug targets"
 		},
 		{
-			"label": "xmake: Build (Release)",
+			"label": "xmake: Build All (Release)",
 			"type": "shell",
-			"command": "xmake",
-			"args": [
-				"config",
-				"-m",
-				"release",
-				"-a",
-				"x64",
-				"-p",
-				"windows",
-				"&&",
-				"xmake",
-				"build"
-			],
+			"command": "xmake config -m release -a x64 -p windows && xmake build all",
 			"group": "build",
 			"problemMatcher": [],
-			"detail": "Build in release mode for Windows x64"
+			"detail": "Build Steam and WinGDK Release targets"
+		},
+		{
+			"label": "xmake: Build Steam (Debug)",
+			"type": "shell",
+			"command": "xmake config -m debug -a x64 -p windows && xmake build Payday-Internal-v2-Steam Proxy-Steam",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Build Steam Debug DLLs"
+		},
+		{
+			"label": "xmake: Build WinGDK (Debug)",
+			"type": "shell",
+			"command": "xmake config -m debug -a x64 -p windows && xmake build Payday-Internal-v2-WinGDK Proxy-WinGDK",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Build WinGDK Debug DLLs"
+		},
+		{
+			"label": "xmake: Rebuild All (Debug)",
+			"type": "shell",
+			"command": "xmake config -m debug -a x64 -p windows && xmake clean && xmake build all",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Clean and rebuild Steam and WinGDK Debug targets"
+		},
+		{
+			"label": "xmake: Rebuild All (Release)",
+			"type": "shell",
+			"command": "xmake config -m release -a x64 -p windows && xmake clean && xmake build all",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Clean and rebuild Steam and WinGDK Release targets"
 		},
 		{
 			"label": "xmake: Clean",
 			"type": "shell",
-			"command": "xmake",
-			"args": [
-				"clean"
-			],
+			"command": "xmake clean",
 			"group": "build",
 			"problemMatcher": [],
-			"detail": "Clean build artifacts"
-		},
-		{
-			"label": "xmake: Rebuild (Debug)",
-			"type": "shell",
-			"command": "xmake",
-			"args": [
-				"config",
-				"-m",
-				"debug",
-				"-a",
-				"x64",
-				"-p",
-				"windows",
-				"&&",
-				"xmake",
-				"clean",
-				"&&",
-				"xmake",
-				"build"
-			],
-			"group": "build",
-			"problemMatcher": [],
-			"detail": "Clean and rebuild in debug mode"
-		},
-		{
-			"label": "xmake: Rebuild (Release)",
-			"type": "shell",
-			"command": "xmake",
-			"args": [
-				"config",
-				"-m",
-				"release",
-				"-a",
-				"x64",
-				"-p",
-				"windows",
-				"&&",
-				"xmake",
-				"clean",
-				"&&",
-				"xmake",
-				"build"
-			],
-			"group": "build",
-			"problemMatcher": [],
-			"detail": "Clean and rebuild in release mode"
+			"detail": "Clean all build artifacts"
 		},
 		{
 			"label": "xmake: Update Compile Commands",

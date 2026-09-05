@@ -371,6 +371,9 @@ static Hooking::Hook<void(WINAPI*)(ID3D12CommandQueue*, UINT, ID3D12CommandList*
 static void WINAPI hkExecuteCommandLists(ID3D12CommandQueue* pCommandQueue, UINT NumCommandLists, ID3D12CommandList* const* ppCommandLists) {
 	std::lock_guard<std::recursive_mutex> lock(g_hookMutex);
 
+	if (g_bShuttingDown)
+		return;
+
 	if (!g_pd3dCommandQueue)
 		g_pd3dCommandQueue = pCommandQueue;
 
@@ -616,10 +619,9 @@ bool RendererHooks::D3D12Setup()
 
 void RendererHooks::D3D12Destroy()
 {
-	g_bShuttingDown = true;
-
 	{
 		std::lock_guard<std::recursive_mutex> lock(g_hookMutex);
+		g_bShuttingDown = true;
 
 		oPresent.Remove();
 		oPresent1.Remove();
