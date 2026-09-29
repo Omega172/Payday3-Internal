@@ -11,12 +11,47 @@
 
 SDK_NAMESPACE_START
 
-class alignas(0x01) FMulticastSparseDelegateProperty_
+class alignas(0x01) FOptionalProperty_4_
+{
+	unsigned __int8 Pad[0x4];
+};
+
+class alignas(0x01) FMulticastSparseDelegateProperty_1_
 {
 	unsigned __int8 Pad[0x1];
 };
 
-class alignas(0x01) FOptionalProperty_
+class alignas(0x01) FOptionalProperty_18_
+{
+	unsigned __int8 Pad[0x18];
+};
+
+class alignas(0x01) FOptionalProperty_10_
+{
+	unsigned __int8 Pad[0x10];
+};
+
+class alignas(0x01) FOptionalProperty_C_
+{
+	unsigned __int8 Pad[0xC];
+};
+
+class alignas(0x01) FOptionalProperty_8_
+{
+	unsigned __int8 Pad[0x8];
+};
+
+class alignas(0x01) FOptionalProperty_40_
+{
+	unsigned __int8 Pad[0x40];
+};
+
+class alignas(0x01) FOptionalProperty_2_
+{
+	unsigned __int8 Pad[0x2];
+};
+
+class alignas(0x01) FOptionalProperty_F0_
 {
 	unsigned __int8 Pad[0xF0];
 };

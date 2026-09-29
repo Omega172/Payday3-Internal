@@ -9,17 +9,307 @@
 // FORWARD DECLARATIONS
 
 
-namespace ABP_DoctorBag_EQP { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPL_SpotEmbedded_Warm_0 { class ABPL_SpotEmbedded_Warm_C; }
 
-namespace ABP_TPPlayerBase_Moneybag { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPL_Fluorescent_Hanging_02_0 { class ABPL_Fluorescent_Hanging_02_C; }
 
-namespace ABP_PlayerMenu { struct FAnimBlueprintGeneratedConstantData; }
+namespace BP_LGT_WallLamp_02_0 { class ABP_LGT_WallLamp_02_C; }
 
-namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
+namespace BPL_CeilingLight { class ABPL_CeilingLight_C; }
 
-namespace ABP_HandCuffsAnimation { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPL_SignExit_B { class ABPL_SignExit_B_C; }
+
+namespace BPL_CeilingLight_1 { class ABPL_CeilingLight_C; }
+
+namespace WBP_HackingTimer { class UWBP_HackingTimer_C; }
+
+namespace BPL_SquareModern_128x64_0 { class ABPL_SquareModern_128x64_C; }
 
 namespace ABP_Mask_Base { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ABP_WP_Master { struct FAnimBlueprintGeneratedConstantData; }
+namespace BPL_Fluorescent_Wall__0 { class ABPL_Fluorescent_Wall__C; }
 
+namespace BP_LGT_SpotLightRail_01_d_01 { class ABP_LGT_SpotLightRail_01_d_01_C; }
+
+namespace BPL_Industrial_PBL_01_0 { class ABPL_Industrial_PBL_01_C; }
+
+namespace CHU_BPL_FloodLampPainting_0 { class ACHU_BPL_FloodLampPainting_C; }
+
+namespace BPL_FluorescentNeon_0 { class ABPL_FluorescentNeon_C; }
+
+namespace CHU_BPL_DeskLamp__0 { class ACHU_BPL_DeskLamp__C; }
+
+namespace BPL_StandingLamp_0 { class ABPL_StandingLamp_C; }
+
+namespace BPL_SignExit_A { class ABPL_SignExit_A_C; }
+
+namespace BPL_SignExit_A_0 { class ABPL_SignExit_A_C; }
+
+namespace BPL_StripLight_Warm_01 { class ABPL_StripLight_Warm_01_C; }
+
+namespace BPL_Industrial_PBL_01 { class ABPL_Industrial_PBL_01_C; }
+
+namespace BPL_SpotEmbedded_Blue_0 { class ABPL_SpotEmbedded_Blue_C; }
+
+namespace BP_LGT_FloodLight_01 { class ABP_LGT_FloodLight_01_C; }
+
+namespace BPL_Industrial_PBL_03_1 { class ABPL_Industrial_PBL_03_C; }
+
+namespace ABP_LoadoutMannequin { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BPL_SocketPanel_0 { class ABPL_SocketPanel_C; }
+
+namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
+
+namespace BPL_Modern_CeilingLight_Long_PBL { class ABPL_Modern_CeilingLight_Long_PBL_C; }
+
+namespace BPL_Fluorescent_Hanging_02 { class ABPL_Fluorescent_Hanging_02_C; }
+
+namespace ABP_WorldBag_01 { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BPL_SignExit_A_1 { class ABPL_SignExit_A_C; }
+
+namespace BPL_Industrial_PBL_03_0 { class ABPL_Industrial_PBL_03_C; }
+
+namespace BPL_CeilingLight_0 { class ABPL_CeilingLight_C; }
+
+namespace ABP_TPPlayerBase_Moneybag { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_0 { class ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C; }
+
+namespace BPL_Fluorescent_Wall_ { class ABPL_Fluorescent_Wall__C; }
+
+namespace BPL_SignExit_B_1 { class ABPL_SignExit_B_C; }
+
+namespace BPL_SquareModern_128x64 { class ABPL_SquareModern_128x64_C; }
+
+namespace BPL_WallLamp_0 { class ABPL_WallLamp_C; }
+
+namespace BP_LGT_WallLamp_02 { class ABP_LGT_WallLamp_02_C; }
+
+namespace ONE_BPL_SignExit_A_0 { class AONE_BPL_SignExit_A_C; }
+
+namespace BPL_Modern_CeilingLight_Long_PBL_0 { class ABPL_Modern_CeilingLight_Long_PBL_C; }
+
+namespace WBP_HackingTimer_0 { class UWBP_HackingTimer_C; }
+
+namespace BPL_Industrial_PBL_04 { class ABPL_Industrial_PBL_04_C; }
+
+namespace BPL_WallLamp { class ABPL_WallLamp_C; }
+
+namespace BPL_SignExit_B_0 { class ABPL_SignExit_B_C; }
+
+namespace BPL_FluorescentNeon { class ABPL_FluorescentNeon_C; }
+
+namespace BPL_Industrial_PBL_04_0 { class ABPL_Industrial_PBL_04_C; }
+
+namespace BPL_SpotEmbedded_Warm { class ABPL_SpotEmbedded_Warm_C; }
+
+namespace BPL_StandingLamp { class ABPL_StandingLamp_C; }
+
+namespace CHU_BPL_DeskLamp_ { class ACHU_BPL_DeskLamp__C; }
+
+namespace CHU_BPL_FloodLampPainting { class ACHU_BPL_FloodLampPainting_C; }
+
+namespace BPL_SocketPanel { class ABPL_SocketPanel_C; }
+
+namespace BPL_Industrial_PBL_03 { class ABPL_Industrial_PBL_03_C; }
+
+namespace BPL_StandingLamp_1 { class ABPL_StandingLamp_C; }
+
+namespace BPL_StripLight_Warm_01_0 { class ABPL_StripLight_Warm_01_C; }
+
+namespace BP_LGT_FloodLight_01_0 { class ABP_LGT_FloodLight_01_C; }
+
+namespace BPL_SpotEmbedded_Blue { class ABPL_SpotEmbedded_Blue_C; }
+
+namespace BPL_StandingLamp_2 { class ABPL_StandingLamp_C; }
+
+namespace BP_LGT_SpotLightRail_01_d_01_0 { class ABP_LGT_SpotLightRail_01_d_01_C; }
+
+namespace ONE_BPL_SignExit_A { class AONE_BPL_SignExit_A_C; }
+
+namespace BP_LGT_FloodLight_01_1 { class ABP_LGT_FloodLight_01_C; }
+
+namespace BP_SBZNiagaraWwise_TrashbinRollout_01_Opened { class ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C; }
+
+
+namespace ABP_GarbageTruck
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_SentryGun
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Car_Base
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Charm_Base
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_DeadBody
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_Moon_Assault
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_AICivilianLinkedAnimation
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_AIArmedLinkedAnimation
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_DoctorBag_EQP
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace CR_FP_Player
+{
+	class URigVMMemory_Literal;
+	class URigVMMemory_Work;
+}
+
+namespace ABP_WP_Master
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Delivery_Drone
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace CR_Moon_Assault
+{
+	class URigVMMemory_Work;
+	class URigVMMemory_Literal;
+}
+
+namespace ABP_Charm_Base_Big
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_HandCuffsAnimation
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Placeable_SentryGun
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_CinematicParts
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace CR_HoldOut_Drone
+{
+	class URigVMMemory_Work;
+	class URigVMMemory_Literal;
+}
+
+namespace ABP_HoldOut_Drone
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_AICrewLinkedAnimation
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace CR_Delivery_Drone
+{
+	class URigVMMemory_Literal;
+	class URigVMMemory_Work;
+}
+
+namespace ABP_TPPlayerLinkedBase
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_Charm_Base_Flat
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_PlayerMenu
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Placeable_EQP
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_FPPlayerBase
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_TPPlayerBase
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_Julius_Sling
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_Helicopter
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
+
+namespace ABP_Charm_Base_Taxi
+{
+	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
+}
