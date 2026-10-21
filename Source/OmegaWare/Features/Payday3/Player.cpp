@@ -104,6 +104,9 @@ namespace OmegaWare
 				m_pAutoSecure = &Config::Add("player.auto_secure_bags", false);
 				m_pReach = &Config::Add("player.reach", false);
 				m_pReachKey = &Config::Add("player.reach_key", Config::stKeybind{ .eMode = Config::EKeybindMode::Hold });
+				m_pSpeedHack = &Config::Add("player.speedhack", false);
+				m_pSpeedMultiplier = &Config::Add("player.speedhack_multiplier", 2.f);
+				m_pSpeedKey = &Config::Add("player.speedhack_key", Config::stKeybind{ .eMode = Config::EKeybindMode::Hold });
 				m_pTeamGodMode = &Config::Add("player.team_godmode", false);
 				m_pTeamInfAmmo = &Config::Add("player.team_inf_ammo", false);
 				m_pTeamInstantInteraction = &Config::Add("player.team_instant_interaction", false);
@@ -202,6 +205,8 @@ namespace OmegaWare
 
 				RunTeammates(pCharacter);
 
+				ApplySpeedHack(pCharacter);
+
 				if (pCharacter && *m_pReach && m_pReachKey->uKey != 0 && m_pReachKey->bActive)
 					GrabThroughWalls(pCharacter);
 
@@ -222,6 +227,9 @@ namespace OmegaWare
 
 			void RestoreAll()
 			{
+				if (m_pSpeedPawn && Payday3::IsAliveActor(m_pSpeedPawn))
+					m_pSpeedPawn->CustomTimeDilation = 1.f;
+				m_pSpeedPawn = nullptr;
 				if (!m_setProtected.empty())
 				{
 					for (SDK::ASBZPlayerCharacter* pTeammate : Teammates(Payday3::GetLocalCharacter()))
@@ -293,15 +301,25 @@ namespace OmegaWare
 					OmegaGUI::ItemTooltip("player.auto_secure_bags_hint"_t);
 					OmegaGUI::Checkbox("player.reach"_l, m_pReach);
 					OmegaGUI::ItemTooltip("player.reach_hint"_t);
+					OmegaGUI::Checkbox("player.speedhack"_l, m_pSpeedHack);
+					OmegaGUI::ItemTooltip("player.speedhack_hint"_t);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("player.section_settings"_l))
 				{
-					const std::array<std::string_view, 2> aTypes = { "player.godmode_set"_t, "player.godmode_block"_t };
-					OmegaGUI::Combo("player.godmode_type"_l, m_pGodModeType, aTypes);
-					if (*m_pReach)
-						Widgets::Keybind("player.reach_key"_l, "player.reach_key", *m_pReachKey);
+					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_godmode", "player.godmode"_t), true))
+					{
+						const std::array<std::string_view, 2> aTypes = { "player.godmode_set"_t, "player.godmode_block"_t };
+						OmegaGUI::Combo("player.godmode_type"_l, m_pGodModeType, aTypes);
+					}
+					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_reach", "player.reach"_t), true))
+						Widgets::Keybind("player.reach_key"_l, *m_pReachKey);
+					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_speedhack", "player.speedhack"_t), true))
+					{
+						OmegaGUI::SliderFloat("player.speedhack_multiplier"_l, m_pSpeedMultiplier, .1f, 10.f, "{:.1f}x");
+						Widgets::Keybind("player.speedhack_key"_l, *m_pSpeedKey);
+					}
 					OmegaGUI::EndSection();
 				}
 				if (OmegaGUI::BeginSection("player.section_name"_l))
@@ -613,6 +631,29 @@ namespace OmegaWare
 				const SDK::EPD3MiniGameState eState = pState->MiniGameState;
 				if (eState == SDK::EPD3MiniGameState::Initiated || eState == SDK::EPD3MiniGameState::InProgress)
 					pState->Server_SetMiniGameState(SDK::EPD3MiniGameState::Success);
+			}
+
+			void ApplySpeedHack(SDK::ASBZPlayerCharacter* pCharacter)
+			{
+				if (m_pSpeedPawn && m_pSpeedPawn != pCharacter)
+				{
+					if (Payday3::IsAliveActor(m_pSpeedPawn))
+						m_pSpeedPawn->CustomTimeDilation = 1.f;
+					m_pSpeedPawn = nullptr;
+				}
+				if (!pCharacter)
+					return;
+				const bool bActive = *m_pSpeedHack && (m_pSpeedKey->uKey == 0 || m_pSpeedKey->bActive);
+				if (bActive)
+				{
+					pCharacter->CustomTimeDilation = std::clamp(*m_pSpeedMultiplier, .1f, 10.f);
+					m_pSpeedPawn = pCharacter;
+				}
+				else if (m_pSpeedPawn == pCharacter)
+				{
+					pCharacter->CustomTimeDilation = 1.f;
+					m_pSpeedPawn = nullptr;
+				}
 			}
 
 			void GrabThroughWalls(SDK::ASBZPlayerCharacter* pCharacter)
@@ -945,6 +986,10 @@ namespace OmegaWare
 			bool* m_pAutoSecure = nullptr;
 			bool* m_pReach = nullptr;
 			Config::stKeybind* m_pReachKey = nullptr;
+			bool* m_pSpeedHack = nullptr;
+			float* m_pSpeedMultiplier = nullptr;
+			Config::stKeybind* m_pSpeedKey = nullptr;
+			SDK::ASBZPlayerCharacter* m_pSpeedPawn = nullptr;
 			SDK::UWorld* m_pReachWorld = nullptr;
 			std::unordered_set<SDK::USBZBaseInteractableComponent*> m_setGrabbed;
 			SDK::UWorld* m_pSecureWorld = nullptr;

@@ -119,9 +119,9 @@ namespace OmegaWare
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("clientmove.section_keys"_l))
 				{
-					Widgets::Keybind("clientmove.key"_l, "clientmove.key", *m_pKey);
-					Widgets::Keybind("clientmove.faster_key"_l, "clientmove.faster_key", *m_pFasterKey);
-					Widgets::Keybind("clientmove.sync_key"_l, "clientmove.sync_key", *m_pSyncKey);
+					Widgets::Keybind("clientmove.key"_l, *m_pKey);
+					Widgets::Keybind("clientmove.faster_key"_l, *m_pFasterKey);
+					Widgets::Keybind("clientmove.sync_key"_l, *m_pSyncKey);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::EndColumns();

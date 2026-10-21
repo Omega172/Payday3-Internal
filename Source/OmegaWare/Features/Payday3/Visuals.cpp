@@ -3,6 +3,8 @@
 #if OMEGAWARE_ENGINE_UNREAL
 
 #include "Config/Config.hpp"
+#include "Core/Framework.hpp"
+#include "Core/Log.hpp"
 #include "Engines/Unreal/Field.hpp"
 #include "Engines/Unreal/ProcessEvent.hpp"
 #include "Features/Feature.hpp"
@@ -14,7 +16,10 @@
 #include <algorithm>
 #include <array>
 #include <atomic>
+#include <cctype>
 #include <cmath>
+#include <fstream>
+#include <mutex>
 #include <format>
 #include <numbers>
 #include <optional>
@@ -249,7 +254,7 @@ namespace OmegaWare
 			{
 				using namespace OmegaLocalization::Literals;
 				OmegaGUI::BeginColumns(2);
-				if (OmegaGUI::BeginSection("visuals.section_general"_l))
+				if (OmegaGUI::BeginSection("visuals.section_characters"_l))
 				{
 					OmegaGUI::Checkbox("visuals.box"_l, m_pBox);
 					OmegaGUI::Checkbox("visuals.name"_l, m_pName);
@@ -258,48 +263,171 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("visuals.armor_bar"_l, m_pArmorBar);
 					OmegaGUI::Checkbox("visuals.skeleton"_l, m_pSkeleton);
 					OmegaGUI::Checkbox("visuals.highlight"_l, m_pHighlight);
+					OmegaGUI::Separator();
+					OmegaGUI::Checkbox("visuals.show_cops"_l, m_pShowCops);
+					OmegaGUI::Checkbox("visuals.show_civilians"_l, m_pShowCivilians);
+					OmegaGUI::EndSection();
+				}
+				if (OmegaGUI::BeginSection("visuals.section_objects"_l))
+				{
 					OmegaGUI::Checkbox("visuals.loot"_l, m_pLoot);
 					OmegaGUI::Checkbox("visuals.items"_l, m_pItems);
 					OmegaGUI::Checkbox("visuals.keycard_readers"_l, m_pReaders);
 					OmegaGUI::Checkbox("visuals.drop_offs"_l, m_pDropOffs);
 					OmegaGUI::EndSection();
 				}
-				if (OmegaGUI::BeginSection("visuals.section_filters"_l))
+				if (OmegaGUI::BeginSection("visuals.section_debug"_l))
 				{
-					OmegaGUI::Checkbox("visuals.show_cops"_l, m_pShowCops);
-					OmegaGUI::Checkbox("visuals.show_civilians"_l, m_pShowCivilians);
-					for (const stItemSetting& rSetting : m_aItems)
-						if (rSetting.pShow && *CategoryToggle(rSetting.eType))
-							OmegaGUI::Checkbox(std::format("{}###{}", OmegaLocalization::Get(rSetting.strShow), rSetting.strShow), rSetting.pShow);
+					if (OmegaGUI::Button("visuals.dump_outlines"_l) && Payday3::IsReady() && !m_bDumpQueued.exchange(true))
+					{
+						if (!Unreal::RunOnGameThread([this] { DumpOutlines(); m_bDumpQueued = false; }))
+							m_bDumpQueued = false;
+					}
+					std::scoped_lock lckDump(m_mtxDump);
+					if (!m_strDumpResult.empty())
+						OmegaGUI::TextWrapped(m_strDumpResult);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("visuals.section_colors"_l))
 				{
-					auto fnPair = [&](bool bShown, std::string_view strCop, std::string_view strCivilian, const stColorPair& stColors) {
-						if (bShown && *m_pShowCops)
-							OmegaGUI::ColorEdit(strCop, stColors.pCop);
-						if (bShown && *m_pShowCivilians)
-							OmegaGUI::ColorEdit(strCivilian, stColors.pCivilian);
+					if (OmegaGUI::CollapsingHeader(std::format("{}###visuals.group_characters", "visuals.section_characters"_t), true) && OmegaGUI::BeginTable("##visuals.character_colors", 3, OmegaGUI::ETableFlags::RowBackground))
+					{
+						OmegaGUI::TableSetupColumn({}, OmegaGUI::ETableColumnFlags::None, 1.3f);
+						OmegaGUI::TableSetupColumn("visuals.show_cops"_t);
+						OmegaGUI::TableSetupColumn("visuals.show_civilians"_t);
+						OmegaGUI::TableHeadersRow();
+						auto fnRow = [](std::string_view strName, std::string_view strCop, OmegaGUI::color* pCop, std::string_view strCivilian, OmegaGUI::color* pCivilian) {
+							OmegaGUI::TableNextRow();
+							OmegaGUI::TableNextColumn();
+							OmegaGUI::TextUnformatted(OmegaLocalization::Get(strName));
+							OmegaGUI::TableNextColumn();
+							OmegaGUI::ColorEdit(std::format("###{}", strCop), pCop);
+							OmegaGUI::TableNextColumn();
+							if (pCivilian)
+								OmegaGUI::ColorEdit(std::format("###{}", strCivilian), pCivilian);
+						};
+						fnRow("visuals.box", "visuals.box_cop_color", m_stBoxColors.pCop, "visuals.box_civilian_color", m_stBoxColors.pCivilian);
+						fnRow("visuals.name", "visuals.name_cop_color", m_stNameColors.pCop, "visuals.name_civilian_color", m_stNameColors.pCivilian);
+						fnRow("visuals.distance", "visuals.distance_cop_color", m_stDistanceColors.pCop, "visuals.distance_civilian_color", m_stDistanceColors.pCivilian);
+						fnRow("visuals.health_bar", "visuals.health_bar_cop_color", m_stHealthColors.pCop, "visuals.health_bar_civilian_color", m_stHealthColors.pCivilian);
+						fnRow("visuals.armor_bar", "visuals.armor_bar_color", m_pArmorColor, {}, nullptr);
+						fnRow("visuals.skeleton", "visuals.skeleton_cop_color", m_stSkeletonColors.pCop, "visuals.skeleton_civilian_color", m_stSkeletonColors.pCivilian);
+						OmegaGUI::EndTable();
+					}
+					auto fnItemGroup = [&](std::string_view strHeader, std::string_view strID, const bool* pCategory) {
+						if (!OmegaGUI::CollapsingHeader(std::format("{}###visuals.group_{}", OmegaLocalization::Get(strHeader), strID), true) || !OmegaGUI::BeginTable(std::format("##visuals.{}_colors", strID), 2, OmegaGUI::ETableFlags::RowBackground))
+							return;
+						OmegaGUI::TableSetupColumn({}, OmegaGUI::ETableColumnFlags::None, 1.3f);
+						OmegaGUI::TableSetupColumn({}, OmegaGUI::ETableColumnFlags::None, 1.f);
+						for (const stItemSetting& rSetting : m_aItems)
+						{
+							if (CategoryToggle(rSetting.eType) != pCategory)
+								continue;
+							OmegaGUI::TableNextRow();
+							OmegaGUI::TableNextColumn();
+							if (rSetting.pShow)
+								OmegaGUI::Checkbox(std::format("{}###{}", OmegaLocalization::Get(rSetting.strShow), rSetting.strShow), rSetting.pShow);
+							else
+								OmegaGUI::TextUnformatted(OmegaLocalization::Get(rSetting.strColor));
+							OmegaGUI::TableNextColumn();
+							OmegaGUI::ColorEdit(std::format("###{}", rSetting.strColor), rSetting.pColor);
+						}
+						if (pCategory == m_pReaders)
+						{
+							OmegaGUI::TableNextRow();
+							OmegaGUI::TableNextColumn();
+							OmegaGUI::TextUnformatted("visuals.drop_off_color"_t);
+							OmegaGUI::TableNextColumn();
+							OmegaGUI::ColorEdit("###visuals.drop_off_color", m_pDropOffColor);
+						}
+						OmegaGUI::EndTable();
 					};
-					fnPair(*m_pBox, "visuals.box_cop_color"_l, "visuals.box_civilian_color"_l, m_stBoxColors);
-					fnPair(*m_pName, "visuals.name_cop_color"_l, "visuals.name_civilian_color"_l, m_stNameColors);
-					fnPair(*m_pDistance, "visuals.distance_cop_color"_l, "visuals.distance_civilian_color"_l, m_stDistanceColors);
-					fnPair(*m_pHealthBar, "visuals.health_bar_cop_color"_l, "visuals.health_bar_civilian_color"_l, m_stHealthColors);
-					if (*m_pArmorBar && *m_pShowCops)
-						OmegaGUI::ColorEdit("visuals.armor_bar_color"_l, m_pArmorColor);
-					fnPair(*m_pSkeleton, "visuals.skeleton_cop_color"_l, "visuals.skeleton_civilian_color"_l, m_stSkeletonColors);
-					for (const stItemSetting& rSetting : m_aItems)
-						if (*CategoryToggle(rSetting.eType) && (!rSetting.pShow || *rSetting.pShow))
-							OmegaGUI::ColorEdit(std::format("{}###{}", OmegaLocalization::Get(rSetting.strColor), rSetting.strColor), rSetting.pColor);
-					if (*m_pDropOffs)
-						OmegaGUI::ColorEdit("visuals.drop_off_color"_l, m_pDropOffColor);
+					fnItemGroup("visuals.loot", "loot", m_pLoot);
+					fnItemGroup("visuals.items", "items", m_pItems);
+					fnItemGroup("visuals.group_objectives", "objectives", m_pReaders);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::EndColumns();
 			}
 
 		private:
+			void DumpOutlines()
+			{
+				const std::filesystem::path pathDump = DataDirectory() / "Logs" / "OutlineDump.txt";
+				std::ofstream fileDump(pathDump, std::ios::trunc);
+				if (!fileDump)
+				{
+					LogError("could not open {} for the outline dump", pathDump.string());
+					return;
+				}
+
+				auto fnLower = [](std::string strText) {
+					std::ranges::transform(strText, strText.begin(), [](unsigned char chLetter) { return static_cast<char>(std::tolower(chLetter)); });
+					return strText;
+				};
+				auto fnMatches = [&](const std::string& strName) {
+					const std::string strLower = fnLower(strName);
+					for (std::string_view strKey : { "outline", "highlight", "mark", "glow", "fresnel" })
+						if (strLower.find(strKey) != std::string::npos)
+							return true;
+					return false;
+				};
+				auto fnColor = [](const SDK::FLinearColor& stColor) {
+					return std::format("({:.3f}, {:.3f}, {:.3f}, {:.3f})", stColor.R, stColor.G, stColor.B, stColor.A);
+				};
+
+				int iAssets = 0;
+				int iMaterials = 0;
+				int iCollections = 0;
+				SDK::TUObjectArray& rObjects = *SDK::UObject::GObjects;
+				for (int iObject = 0; iObject < rObjects.Num(); ++iObject)
+				{
+					SDK::UObject* pObject = rObjects.GetByIndex(iObject);
+					if (!Payday3::IsAlive(pObject) || !Payday3::IsAlive(pObject->Class))
+						continue;
+					const std::string strName = pObject->GetName();
+					if (strName.starts_with("Default__"))
+						continue;
+
+					if (pObject->IsA(SDK::USBZOutlineAsset::StaticClass()))
+					{
+						const auto* pAsset = static_cast<SDK::USBZOutlineAsset*>(pObject);
+						fileDump << std::format("outline asset {}: color index {}, priority {}, distance {:.1f}\n", pObject->GetFullName(), static_cast<int>(pAsset->ColorIndex), pAsset->Priority, pAsset->Distance);
+						++iAssets;
+					}
+					else if (pObject->IsA(SDK::UMaterialParameterCollection::StaticClass()))
+					{
+						auto* pCollection = static_cast<SDK::UMaterialParameterCollection*>(pObject);
+						fileDump << std::format("parameter collection {}\n", pObject->GetFullName());
+						for (int iParameter = 0; iParameter < pCollection->VectorParameters.Num(); ++iParameter)
+							fileDump << std::format("  vector {} = {}\n", pCollection->VectorParameters[iParameter].ParameterName.ToString(), fnColor(pCollection->VectorParameters[iParameter].DefaultValue));
+						for (int iParameter = 0; iParameter < pCollection->ScalarParameters.Num(); ++iParameter)
+							fileDump << std::format("  scalar {} = {:.3f}\n", pCollection->ScalarParameters[iParameter].ParameterName.ToString(), pCollection->ScalarParameters[iParameter].DefaultValue);
+						++iCollections;
+					}
+					else if (pObject->IsA(SDK::UMaterialInstance::StaticClass()) && fnMatches(strName))
+					{
+						auto* pInstance = static_cast<SDK::UMaterialInstance*>(pObject);
+						fileDump << std::format("material instance {} (parent {})\n", pObject->GetFullName(), Payday3::IsAlive(pInstance->Parent) ? pInstance->Parent->GetFullName() : std::string("none"));
+						for (int iParameter = 0; iParameter < pInstance->VectorParameterValues.Num(); ++iParameter)
+							fileDump << std::format("  vector {} = {}\n", pInstance->VectorParameterValues[iParameter].ParameterInfo.Name.ToString(), fnColor(pInstance->VectorParameterValues[iParameter].ParameterValue));
+						for (int iParameter = 0; iParameter < pInstance->ScalarParameterValues.Num(); ++iParameter)
+							fileDump << std::format("  scalar {} = {:.3f}\n", pInstance->ScalarParameterValues[iParameter].ParameterInfo.Name.ToString(), pInstance->ScalarParameterValues[iParameter].ParameterValue);
+						++iMaterials;
+					}
+					else if (pObject->IsA(SDK::UMaterial::StaticClass()) && fnMatches(strName))
+					{
+						fileDump << std::format("material {} (base material, parameters live in its expressions)\n", pObject->GetFullName());
+						++iMaterials;
+					}
+				}
+				fileDump.flush();
+				LogInfo("outline dump: {} outline assets, {} materials, {} parameter collections written to {}", iAssets, iMaterials, iCollections, pathDump.string());
+				std::scoped_lock lckDump(m_mtxDump);
+				m_strDumpResult = OmegaLocalization::Format("visuals.dump_done", iAssets, iMaterials, iCollections, pathDump.string());
+			}
+
 			void MarkCharacters() const
 			{
 				SDK::USBZActorContainer* pPawns = Payday3::GetAllPawns();
@@ -552,6 +680,9 @@ namespace OmegaWare
 
 			SDK::UWorld* m_pLastWorld = nullptr;
 			std::atomic<bool> m_bHighlightQueued = false;
+			std::atomic<bool> m_bDumpQueued = false;
+			std::mutex m_mtxDump;
+			std::string m_strDumpResult;
 			std::unordered_map<SDK::USkeletalMeshComponent*, BoneCache_t> m_mapBones;
 		};
 

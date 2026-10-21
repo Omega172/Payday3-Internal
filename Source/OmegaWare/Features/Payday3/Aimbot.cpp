@@ -219,7 +219,7 @@ namespace OmegaWare
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("aimbot.section_settings"_l))
 				{
-					Widgets::Keybind("aimbot.key"_l, "aimbot.key", *m_pKey);
+					Widgets::Keybind("aimbot.key"_l, *m_pKey);
 					OmegaGUI::TextMuted("aimbot.key_hint"_t);
 					const std::array<std::string_view, 2> aTypes = { "aimbot.type_silent"_t, "aimbot.type_snapping"_t };
 					OmegaGUI::Combo("aimbot.type"_l, m_pType, aTypes);
