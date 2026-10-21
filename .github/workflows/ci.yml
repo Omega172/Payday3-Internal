@@ -10,41 +10,44 @@ permissions:
 jobs:
   build-and-test:
     runs-on: windows-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     strategy:
       fail-fast: false
       matrix:
         build_configuration: [debug, release]
-    env:
-      BUILD_DIR: Build/${{ matrix.build_configuration == 'debug' && 'Debug' || 'Release' }}/x64
     steps:
     - name: Checkout Repository with Submodules
       uses: actions/checkout@v4
       with:
+        path: src
         submodules: recursive
         token: ${{ secrets.OMEGAWARE_REPOSITORIES_TOKEN || github.token }}
+    - name: Checkout Steam SDK (v3)
+      uses: actions/checkout@v4
+      with:
+        ref: v3
+        path: sdk-steam
+        sparse-checkout: Source/Third-Party/Dumper-7
+    - name: Checkout Microsoft Store SDK (v3-ms-store)
+      uses: actions/checkout@v4
+      with:
+        ref: v3-ms-store
+        path: sdk-wingdk
+        sparse-checkout: Source/Third-Party/Dumper-7
     - name: Setup xmake
       uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: latest
-    - name: Configure xmake
-      timeout-minutes: 15
-      run: xmake f -p windows -m ${{ matrix.build_configuration }} -a x64 --proxy=version -y
-    - name: Build project
-      timeout-minutes: 30
-      run: xmake build
-    - name: Run framework tests
+    - name: Build, test and package Steam and WinGDK
+      timeout-minutes: 75
+      shell: pwsh
       run: |
-        & "$env:BUILD_DIR/OmegaWareTests/OmegaWareTests.exe"
+        & ./src/Scripts/BuildStores.ps1 -Modes ${{ matrix.build_configuration }} -SteamSdk sdk-steam/Source/Third-Party/Dumper-7/CppSDK -WinGdkSdk sdk-wingdk/Source/Third-Party/Dumper-7/CppSDK -Out packages
         exit $LASTEXITCODE
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: payday3-internal-${{ matrix.build_configuration }}
-        path: |
-          ${{ env.BUILD_DIR }}/OmegaWare/Payday3-Internal.dll
-          ${{ env.BUILD_DIR }}/OmegaWare/Payday3-Internal.pdb
-          ${{ env.BUILD_DIR }}/OmegaWareProxy/version.dll
-          ${{ env.BUILD_DIR }}/OmegaWareProxy/version.pdb
+        path: packages/${{ matrix.build_configuration }}
         if-no-files-found: error
         retention-days: 7

@@ -11,43 +11,42 @@ permissions:
 jobs:
   build-prerelease:
     runs-on: windows-latest
-    timeout-minutes: 90
+    timeout-minutes: 150
     steps:
     - name: Checkout Repository with Submodules
       uses: actions/checkout@v4
       with:
+        path: src
         submodules: recursive
         fetch-depth: 0
         token: ${{ secrets.OMEGAWARE_REPOSITORIES_TOKEN || github.token }}
+    - name: Checkout Steam SDK (v3)
+      uses: actions/checkout@v4
+      with:
+        ref: v3
+        path: sdk-steam
+        sparse-checkout: Source/Third-Party/Dumper-7
+    - name: Checkout Microsoft Store SDK (v3-ms-store)
+      uses: actions/checkout@v4
+      with:
+        ref: v3-ms-store
+        path: sdk-wingdk
+        sparse-checkout: Source/Third-Party/Dumper-7
     - name: Setup xmake
       uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: latest
-    - name: Build, test and package
-      timeout-minutes: 60
-      run: |
-        foreach ($strMode in @("debug", "release")) {
-          xmake f -p windows -m $strMode -a x64 --proxy=version -y
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          xmake build
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          $strFolder = if ($strMode -eq "debug") { "Debug" } else { "Release" }
-          $strBuild = "Build/$strFolder/x64"
-          & "$strBuild/OmegaWareTests/OmegaWareTests.exe"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          $strPackage = "$strMode-package"
-          New-Item -ItemType Directory -Force "$strPackage/Proxy" | Out-Null
-          Copy-Item "$strBuild/OmegaWare/Payday3-Internal.dll" $strPackage
-          Copy-Item "$strBuild/OmegaWareProxy/version.dll" "$strPackage/Proxy"
-          if (Test-Path "$strBuild/OmegaWare/Payday3-Internal.pdb") { Copy-Item "$strBuild/OmegaWare/Payday3-Internal.pdb" $strPackage }
-          if (Test-Path "$strBuild/OmegaWareProxy/version.pdb") { Copy-Item "$strBuild/OmegaWareProxy/version.pdb" "$strPackage/Proxy" }
-          "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" | Out-File "$strPackage/BUILD_INFO.txt"
-        }
-        Compress-Archive -Path debug-package\* -DestinationPath Payday3-Internal-Debug.zip
-        Compress-Archive -Path release-package\* -DestinationPath Payday3-Internal-Release.zip
+    - name: Build, test and package Steam and WinGDK
+      timeout-minutes: 130
       shell: pwsh
+      run: |
+        & ./src/Scripts/BuildStores.ps1 -Modes debug,release -SteamSdk sdk-steam/Source/Third-Party/Dumper-7/CppSDK -WinGdkSdk sdk-wingdk/Source/Third-Party/Dumper-7/CppSDK -Out packages
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        Compress-Archive -Path packages/debug/* -DestinationPath Payday3-Internal-Debug.zip
+        Compress-Archive -Path packages/release/* -DestinationPath Payday3-Internal-Release.zip
     - name: Generate changelog
       id: changelog
+      working-directory: src
       run: |
         $currentVersion = "${{ github.event.inputs.version }}"
         $allTags = git tag --sort=-creatordate
@@ -85,16 +84,17 @@ jobs:
           ⚠️ This is a pre-release build and may be unstable.
 
           ### Packages
-          - **Payday3-Internal-Release.zip** - Release build (Payday3-Internal.dll + Proxy/version.dll)
-          - **Payday3-Internal-Debug.zip** - Debug build (Payday3-Internal.dll + Proxy/version.dll + PDBs)
+          Each zip has a `Steam` and a `WinGDK` (Microsoft Store) folder; use the one matching your copy of the game.
+          - **Payday3-Internal-Release.zip** - Release builds (`Steam/Payday3-Internal.dll`, `WinGDK/Payday3-Internal-WinGDK.dll`, each with `Proxy/version.dll`)
+          - **Payday3-Internal-Debug.zip** - Debug builds of the same, with PDBs
 
           ### Changes
           ${{ steps.changelog.outputs.CHANGELOG }}
 
           ### Installation
           1. Download `Payday3-Internal-Release.zip` (or `Payday3-Internal-Debug.zip`)
-          2. Extract the archive
-          3. Inject `Payday3-Internal.dll`, or copy `Proxy/version.dll` next to the game executable
+          2. Extract the archive and open the folder for your store (`Steam` or `WinGDK`)
+          3. Inject the DLL in it, or copy its `Proxy/version.dll` next to the game executable
           4. See README.md for details
 
           ### Build Information
