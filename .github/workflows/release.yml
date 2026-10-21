@@ -14,75 +14,38 @@ permissions:
 jobs:
   build-release:
     runs-on: windows-latest
+    timeout-minutes: 90
     steps:
     - name: Checkout Repository with Submodules
       uses: actions/checkout@v4
       with:
-        submodules: recursive  # Fetch submodules recursively
-        fetch-depth: 0  # Ensures a full clone (needed for some submodules)
-    - name: Initialize and Update Submodules (if needed)
-      run: |
-        git submodule sync --recursive
-        git submodule update --init --recursive
+        submodules: recursive
+        fetch-depth: 0
+        token: ${{ secrets.OMEGAWARE_REPOSITORIES_TOKEN || github.token }}
     - name: Setup xmake
       uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: latest
-        build-cache: true
-    - name: Configure xmake (Debug)
-      timeout-minutes: 15
+    - name: Build, test and package
+      timeout-minutes: 60
       run: |
-        xmake update
-        xmake global --clean
-        xmake config -m debug -a x64 -p windows -y
-    - name: Build project (Debug)
-      timeout-minutes: 20
-      run: xmake build -a
-    - name: Package Debug artifacts (DLL + PDB)
-      run: |
-        mkdir debug-package
-        xcopy /E /I Build\Debug\Steam debug-package\Steam\
-        xcopy /E /I Build\Debug\WinGDK debug-package\WinGDK\
-        $internalDlls = @(Get-ChildItem debug-package -Recurse -Filter Payday-Internal-v2.dll)
-        $proxyDlls = @(Get-ChildItem debug-package -Recurse -Filter version.dll)
-        if ($internalDlls.Count -lt 2) {
-          Write-Error "Both Steam and WinGDK Payday-Internal-v2.dll files were not found in the debug build output."
-          exit 1
+        foreach ($strMode in @("debug", "release")) {
+          xmake f -p windows -m $strMode -a x64 --proxy=version -y
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          xmake build
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $strFolder = if ($strMode -eq "debug") { "Debug" } else { "Release" }
+          $strBuild = "Build/$strFolder/x64"
+          & "$strBuild/OmegaWareTests/OmegaWareTests.exe"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $strPackage = "$strMode-package"
+          New-Item -ItemType Directory -Force "$strPackage/Proxy" | Out-Null
+          Copy-Item "$strBuild/OmegaWare/Payday3-Internal.dll" $strPackage
+          Copy-Item "$strBuild/OmegaWareProxy/version.dll" "$strPackage/Proxy"
+          if (Test-Path "$strBuild/OmegaWare/Payday3-Internal.pdb") { Copy-Item "$strBuild/OmegaWare/Payday3-Internal.pdb" $strPackage }
+          if (Test-Path "$strBuild/OmegaWareProxy/version.pdb") { Copy-Item "$strBuild/OmegaWareProxy/version.pdb" "$strPackage/Proxy" }
+          "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" | Out-File "$strPackage/BUILD_INFO.txt"
         }
-        if ($proxyDlls.Count -lt 2) {
-          Write-Error "Both Steam and WinGDK version.dll files were not found in the debug build output."
-          exit 1
-        }
-        echo "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" > debug-package\BUILD_INFO.txt
-      shell: pwsh
-    - name: Configure xmake (Release)
-      timeout-minutes: 15
-      run: |
-        xmake update
-        xmake global --clean
-        xmake config -m release -a x64 -p windows -y
-    - name: Build project (Release)
-      timeout-minutes: 20
-      run: xmake build -a
-    - name: Package Release artifacts (DLL + PDB)
-      run: |
-        mkdir release-package
-        xcopy /E /I Build\Release\Steam release-package\Steam\
-        xcopy /E /I Build\Release\WinGDK release-package\WinGDK\
-        $internalDlls = @(Get-ChildItem release-package -Recurse -Filter Payday-Internal-v2.dll)
-        $proxyDlls = @(Get-ChildItem release-package -Recurse -Filter version.dll)
-        if ($internalDlls.Count -lt 2) {
-          Write-Error "Both Steam and WinGDK Payday-Internal-v2.dll files were not found in the release build output."
-          exit 1
-        }
-        if ($proxyDlls.Count -lt 2) {
-          Write-Error "Both Steam and WinGDK version.dll files were not found in the release build output."
-          exit 1
-        }
-        echo "Build completed on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" > release-package\BUILD_INFO.txt
-      shell: pwsh
-    - name: Create ZIP archives
-      run: |
         Compress-Archive -Path debug-package\* -DestinationPath Payday3-Internal-Debug.zip
         Compress-Archive -Path release-package\* -DestinationPath Payday3-Internal-Release.zip
       shell: pwsh
@@ -131,19 +94,20 @@ jobs:
         body: |
           ## Payday3-Internal ${{ steps.get_version.outputs.VERSION }}
           ![GitHub Downloads (all assets, specific tag)](https://img.shields.io/github/downloads/Omega172/Payday3-Internal/${{ steps.get_version.outputs.VERSION }}/total)
-          
+
           ### Packages
-          - **Payday3-Internal-Release.zip** - Release build (Payday-Internal-v2.dll + Proxy version.dll + PDBs)
-          - **Payday3-Internal-Debug.zip** - Debug build (Payday-Internal-v2.dll + Proxy version.dll + PDBs)
-          
+          - **Payday3-Internal-Release.zip** - Release build (Payday3-Internal.dll + Proxy/version.dll)
+          - **Payday3-Internal-Debug.zip** - Debug build (Payday3-Internal.dll + Proxy/version.dll + PDBs)
+
           ### Changes
           ${{ steps.changelog.outputs.CHANGELOG }}
-          
+
           ### Installation
           1. Download `Payday3-Internal-Release.zip` (or `Payday3-Internal-Debug.zip`)
           2. Extract the archive
-          3. Follow the instructions in README.md
-          
+          3. Inject `Payday3-Internal.dll`, or copy `Proxy/version.dll` next to the game executable
+          4. See README.md for details
+
           ### Build Information
           - Build Date: ${{ github.event.head_commit.timestamp }}
           - Commit: ${{ github.sha }}

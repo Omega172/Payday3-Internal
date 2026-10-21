@@ -14,24 +14,31 @@ When making any changes they should all happen to the main v2 branch, and then m
 to make sure any SDK changes are not merged into the v2-ms-store branch make sure you run `git config merge.ours-sdk.driver true` after checking out the branch for the first time.
 
 ## Want to add a translation?
-Checkout this file [here](https://github.com/Omega172/Payday3-Internal/blob/v2-beta/Source/Shared/Localization/Locales/Locales.hpp)
+Game strings live in [English.hpp](Source/OmegaWare/Locales/English.hpp) next to the framework's own; add a matching `Locales/<Language>.hpp` entry for each key. Missing keys fall back to English.
 
 ## Building
 
-Requires xmake, and an installation of VisualStudio with the C++ build tools for the compiler.
+Built on [OmegaWare-Framework](https://github.com/Omega172/OmegaWare-Framework) v4. Requires xmake, Visual Studio with the C++ build tools and vcpkg (for `nlohmann-json`).
 
 ```cmd
-xmake config -m debug   # or -m release
-xmake build
+git clone --recursive https://github.com/Omega172/Payday3-Internal.git
+Build.bat release x64
 ```
 
-Output: `Build/Debug/` or `Build/Release/`
+In an existing clone run `git submodule update --init --recursive` first. Outputs land in `Build/<Debug|Release>/x64/`:
 
-**Note:** If IntelliSense breaks in VS Code, run `update_compile_commands.bat` to rebuild compile commands and potentially fix IntelliSense.
+| Target | Output |
+|--------|--------|
+| `OmegaWare` | `OmegaWare/Payday3-Internal.dll` for injection |
+| `OmegaWareProxy` | `OmegaWareProxy/version.dll`, drop next to the game executable to load without an injector |
 
-### Dependencies (via xmake repo)
-- minhook
-- imgui (with win32-binding, dx12-binding)
+`Test.bat debug x64` runs the framework's test suite. After adding or moving files run `UpdateCompileCommands.bat` to refresh IntelliSense.
+
+### Dependencies
+- [OmegaWare-GUI](https://github.com/OmegaWareProjects/OmegaWare-GUI), [OmegaWare-RenderHook](https://github.com/OmegaWareProjects/OmegaWare-RenderHook) and [OmegaWare-Localization](https://github.com/OmegaWareProjects/OmegaWare-Localization) as submodules under `Source/Third-Party/OmegaWareProjects/`
+- The Dumper-7 SDK in `Source/Third-Party/Dumper-7/CppSDK` (dumped from the Steam build). The framework checks the SDK's global offsets at startup and scans for them when they do not match, so the WinGDK build uses the same SDK.
+
+After dropping in a new Dumper-7 dump, run `FixSdk.bat`. It gives `FOptionalProperty_` placeholders their real sizes (otherwise Dumper-7's own layout asserts fail) and adds the `_parameters.hpp` includes some `_functions.cpp` files are missing. Running it twice is harmless.
 
 ## Features
 ### Player
@@ -41,11 +48,16 @@ Output: `Build/Debug/` or `Build/Release/`
 - [x] No Screenshake
 - [x] No Fall Damage
 - [x] No Detection
-- [ ] Client Move
-- [ ] Fly
+- [x] Instant Interaction
+- [x] Instant Bag Grab
+- [x] Instant Minigame
+- [x] Custom Display Name
+- [x] Auto Secure Thrown Bags (solo / host)
+- [x] Pick Up Through Walls (experimental, normal pickup range)
+- [x] Client Move (noclip with position sync)
 - [ ] Revive
 
-- [ ] Mods for other players in game (No there won't griefing options so don't ask)
+- [x] Host-only teammate options: godmode, infinite ammo, instant interaction, bring to me (No there won't griefing options so don't ask)
 
 - [x] Instant Reload
 - [x] Infinite Ammo
@@ -62,9 +74,14 @@ Output: `Build/Debug/` or `Build/Release/`
     - [x] Armor Bar
     - [x] Skeleton
     - [x] Highlighting
-- (Cash / Deposit Box / Keycards)
-    - [x] Names
-    - [ ] Bounding Boxes
+- Loot (Cash / Medium Money / Large Money / Jewelry)
+    - [x] Short names, per-type filters and colors
+- Key items (Deposit Boxes / Keycards / QR Phone / USB)
+    - [x] Short names, per-type filters and colors
+- Keycard readers
+    - [x] Short names
+- [x] Drop-off zones
+- [ ] Bounding boxes for items
 
 ### Aimbot
 - [x] Snapping
@@ -73,27 +90,25 @@ Output: `Build/Debug/` or `Build/Release/`
 - [x] Smoothing
 
 ### Misc
-- [ ] Config saving & loading
+- [x] Config saving & loading (profiles in `Documents\Payday3-Internal\<exe>\Configs`)
 
 ### Possible Future Features
 (These are not guaranteed and only ideas that may become features)
 - [ ] Lua scripts
-- [ ] Flying
 - [ ] Player Teleporting (pre-set locations)
-- [ ] Bag Teleporting
+- [X] Bag Teleporting
 - [ ] Heist Automation
 - [ ] Player Hud customisation
-- [ ] Menu customisation
-- [ ] More language support
+- [X] More language support
 - [ ] Other packet sniffing and manipulating features
 
 ## Usage
 
 ### Windows
-- **Build**: Follow the build instructions above to compile the project.
-- **Remove Streamline DLSS**: I have yet to find a fix so stop streamline from crashing the game upon init of the dx12 hook so delete all the files in `C:\Path\To\PAYDAY3\Engine\Plugins\Runtime\Nvidia\Streamline\Binaries\ThirdParty\Win64`
-- **Injection**: Use any DLL injector to inject `Payday3-Internal.dll` into the `PAYDAY3Client-Win64-Shipping.exe` process.
-- **In-Game**: Press `INSERT` to open the menu and `END` to unload the cheat.
+- **Build**: Follow the build instructions above, or download a release.
+- **Injection**: Inject `Payday3-Internal.dll` into `PAYDAY3-Win64-Shipping.exe` (Steam) or `PAYDAY3-WinGDK-Shipping.exe` (Microsoft Store) with any DLL injector, or put the proxy `version.dll` next to the game executable.
+- **DLSS / Frame Generation**: the v4 renderer hook is built to survive Streamline, so deleting the Streamline plugin files should no longer be needed.
+- **In-Game**: Press `INSERT` to open the menu and `END` to unload. Both keys can be changed under settings > keys. Logs, configs and crash dumps go to `Documents\Payday3-Internal\<exe>\`.
 
 ### Proton
 **Note:** v2 hasn't been tested on Proton (but most likely does work).
