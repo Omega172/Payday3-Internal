@@ -30,9 +30,9 @@ public:
 	class FText                                   InTitle;                                           // 0x0400(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ButtonFocusChanging(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_MenuRoot_SecondaryTextButton(int32 EntryPoint);
-	void ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

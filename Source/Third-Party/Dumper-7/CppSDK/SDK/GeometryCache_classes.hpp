@@ -20,45 +20,6 @@
 
 SDK_NAMESPACE_START
 
-// Class GeometryCache.NiagaraGeometryCacheRendererProperties
-// 0x0260 (0x0328 - 0x00C8)
-class UNiagaraGeometryCacheRendererProperties final : public UNiagaraRendererProperties
-{
-public:
-	TArray<struct FNiagaraGeometryCacheReference> GeometryCaches;                                    // 0x00C8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	ENiagaraRendererSourceDataMode                SourceMode;                                        // 0x00D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bIsLooping;                                        // 0x00D9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        ComponentCountLimit;                               // 0x00DC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       PositionBinding;                                   // 0x00E0(0x0040)(Edit, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       RotationBinding;                                   // 0x0120(0x0040)(Edit, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       ScaleBinding;                                      // 0x0160(0x0040)(Edit, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       ElapsedTimeBinding;                                // 0x01A0(0x0040)(Edit, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       EnabledBinding;                                    // 0x01E0(0x0040)(Edit, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       ArrayIndexBinding;                                 // 0x0220(0x0040)(Edit, NativeAccessSpecifierPublic)
-	struct FNiagaraVariableAttributeBinding       RendererVisibilityTagBinding;                      // 0x0260(0x0040)(Edit, NativeAccessSpecifierPublic)
-	int32                                         RendererVisibility;                                // 0x02A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          bAssignComponentsOnParticleID;                     // 0x02A4(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FNiagaraRendererMaterialParameters     MaterialParameters;                                // 0x02A8(0x0050)(Edit, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2F8[0x30];                                     // 0x02F8(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("NiagaraGeometryCacheRendererProperties")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"NiagaraGeometryCacheRendererProperties")
-	}
-	static class UNiagaraGeometryCacheRendererProperties* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNiagaraGeometryCacheRendererProperties>();
-	}
-};
-DUMPER7_ASSERTS_UNiagaraGeometryCacheRendererProperties;
-
 // Class GeometryCache.GeometryCache
 // 0x0070 (0x00A0 - 0x0030)
 class UGeometryCache final : public UObject, public IInterface_AssetUserData
@@ -167,57 +128,6 @@ public:
 };
 DUMPER7_ASSERTS_UGeometryCacheCodecRaw;
 
-// Class GeometryCache.GeometryCacheTrack
-// 0x0030 (0x0060 - 0x0030)
-class UGeometryCacheTrack : public UObject
-{
-public:
-	float                                         Duration;                                          // 0x0030(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_34[0x2C];                                      // 0x0034(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("GeometryCacheTrack")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"GeometryCacheTrack")
-	}
-	static class UGeometryCacheTrack* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGeometryCacheTrack>();
-	}
-};
-DUMPER7_ASSERTS_UGeometryCacheTrack;
-
-// Class GeometryCache.GeometryCacheTrack_FlipbookAnimation
-// 0x0028 (0x0088 - 0x0060)
-class UGeometryCacheTrack_FlipbookAnimation final : public UGeometryCacheTrack
-{
-public:
-	uint32                                        NumMeshSamples;                                    // 0x0060(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_64[0x24];                                      // 0x0064(0x0024)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void AddMeshSample(const struct FGeometryCacheMeshData& MeshData, const float SampleTime);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("GeometryCacheTrack_FlipbookAnimation")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"GeometryCacheTrack_FlipbookAnimation")
-	}
-	static class UGeometryCacheTrack_FlipbookAnimation* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGeometryCacheTrack_FlipbookAnimation>();
-	}
-};
-DUMPER7_ASSERTS_UGeometryCacheTrack_FlipbookAnimation;
-
 // Class GeometryCache.GeometryCacheCodecV1
 // 0x0008 (0x0048 - 0x0040)
 class UGeometryCacheCodecV1 final : public UGeometryCacheCodecBase
@@ -313,6 +223,57 @@ public:
 };
 DUMPER7_ASSERTS_UGeometryCacheComponent;
 
+// Class GeometryCache.GeometryCacheTrack
+// 0x0030 (0x0060 - 0x0030)
+class UGeometryCacheTrack : public UObject
+{
+public:
+	float                                         Duration;                                          // 0x0030(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_34[0x2C];                                      // 0x0034(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GeometryCacheTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GeometryCacheTrack")
+	}
+	static class UGeometryCacheTrack* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGeometryCacheTrack>();
+	}
+};
+DUMPER7_ASSERTS_UGeometryCacheTrack;
+
+// Class GeometryCache.GeometryCacheTrack_FlipbookAnimation
+// 0x0028 (0x0088 - 0x0060)
+class UGeometryCacheTrack_FlipbookAnimation final : public UGeometryCacheTrack
+{
+public:
+	uint32                                        NumMeshSamples;                                    // 0x0060(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_64[0x24];                                      // 0x0064(0x0024)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void AddMeshSample(const struct FGeometryCacheMeshData& MeshData, const float SampleTime);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GeometryCacheTrack_FlipbookAnimation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GeometryCacheTrack_FlipbookAnimation")
+	}
+	static class UGeometryCacheTrack_FlipbookAnimation* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGeometryCacheTrack_FlipbookAnimation>();
+	}
+};
+DUMPER7_ASSERTS_UGeometryCacheTrack_FlipbookAnimation;
+
 // Class GeometryCache.GeometryCacheTrackStreamable
 // 0x0078 (0x00D8 - 0x0060)
 class UGeometryCacheTrackStreamable final : public UGeometryCacheTrack
@@ -390,5 +351,44 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UGeometryCacheTrack_TransformGroupAnimation;
+
+// Class GeometryCache.NiagaraGeometryCacheRendererProperties
+// 0x0260 (0x0328 - 0x00C8)
+class UNiagaraGeometryCacheRendererProperties final : public UNiagaraRendererProperties
+{
+public:
+	TArray<struct FNiagaraGeometryCacheReference> GeometryCaches;                                    // 0x00C8(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	ENiagaraRendererSourceDataMode                SourceMode;                                        // 0x00D8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bIsLooping;                                        // 0x00D9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_DA[0x2];                                       // 0x00DA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        ComponentCountLimit;                               // 0x00DC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       PositionBinding;                                   // 0x00E0(0x0040)(Edit, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       RotationBinding;                                   // 0x0120(0x0040)(Edit, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       ScaleBinding;                                      // 0x0160(0x0040)(Edit, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       ElapsedTimeBinding;                                // 0x01A0(0x0040)(Edit, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       EnabledBinding;                                    // 0x01E0(0x0040)(Edit, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       ArrayIndexBinding;                                 // 0x0220(0x0040)(Edit, NativeAccessSpecifierPublic)
+	struct FNiagaraVariableAttributeBinding       RendererVisibilityTagBinding;                      // 0x0260(0x0040)(Edit, NativeAccessSpecifierPublic)
+	int32                                         RendererVisibility;                                // 0x02A0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          bAssignComponentsOnParticleID;                     // 0x02A4(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2A5[0x3];                                      // 0x02A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FNiagaraRendererMaterialParameters     MaterialParameters;                                // 0x02A8(0x0050)(Edit, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2F8[0x30];                                     // 0x02F8(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NiagaraGeometryCacheRendererProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraGeometryCacheRendererProperties")
+	}
+	static class UNiagaraGeometryCacheRendererProperties* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNiagaraGeometryCacheRendererProperties>();
+	}
+};
+DUMPER7_ASSERTS_UNiagaraGeometryCacheRendererProperties;
 
 SDK_NAMESPACE_END

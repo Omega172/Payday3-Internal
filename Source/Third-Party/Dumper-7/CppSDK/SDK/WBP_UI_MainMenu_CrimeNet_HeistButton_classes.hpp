@@ -34,18 +34,18 @@ public:
 	struct FLinearColor                           NeutralColour;                                     // 0x0440(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void RefreshVisual();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHoverVisuals(bool bIsHovered);
-	void OnFocusedVisuals(bool bIsFocused);
-	void OnDisabledVisuals(bool bIsDisabled);
-	void InitializeLevelData(const struct FSoftObjectPath& InLevelPath);
-	void GetHeistData(class UPD3HeistDataAsset** NewParam);
-	void Get_Level_Name(class FText* OutLevelName);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Get_Level_Name(class FText* OutLevelName);
+	void GetHeistData(class UPD3HeistDataAsset** NewParam);
+	void InitializeLevelData(const struct FSoftObjectPath& InLevelPath);
+	void OnDisabledVisuals(bool bIsDisabled_0);
+	void OnFocusedVisuals(bool bIsFocused);
+	void OnHoverVisuals(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisual();
 
 public:
 	static class UClass* StaticClass()

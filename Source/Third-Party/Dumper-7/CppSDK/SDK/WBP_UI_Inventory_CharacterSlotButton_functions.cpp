@@ -16,123 +16,51 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.SetDefault
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_CharacterSlotButton_C::SetDefault()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDefault", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_CharacterSlotButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_UI_Inventory_CharacterSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_Inventory_CharacterSlotButton_C_PreConstruct Parms{};
+	Params::WBP_UI_Inventory_CharacterSlotButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnPreferredValueIndexChanged
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_CharacterSlotButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+
+	Params::WBP_UI_Inventory_CharacterSlotButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.DisabledButtonSelected
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Inventory_CharacterSlotButton_C::OnPreferredValueIndexChanged()
+void UWBP_UI_Inventory_CharacterSlotButton_C::DisabledButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreferredValueIndexChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisabledButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_CharacterSlotButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_CharacterSlotButton_C::OnFocusChanged(bool bIsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
-
-	Params::WBP_UI_Inventory_CharacterSlotButton_C_OnFocusChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnDisabledChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InDisabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_CharacterSlotButton_C::OnDisabledChanged(bool InDisabled)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDisabledChanged", FnName));
-
-	Params::WBP_UI_Inventory_CharacterSlotButton_C_OnDisabledChanged Parms{};
-
-	Parms.InDisabled = InDisabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnCharacterSlotInitialized
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_CharacterSlotButton_C::OnCharacterSlotInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCharacterSlotInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.InitializeCharacterData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZPlayerCharacterData*          InCharacterData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_CharacterSlotButton_C::InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeCharacterData", FnName));
-
-	Params::WBP_UI_Inventory_CharacterSlotButton_C_InitializeCharacterData Parms{};
-
-	Parms.InCharacterData = InCharacterData;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -154,51 +82,123 @@ void UWBP_UI_Inventory_CharacterSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_
 }
 
 
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.InitializeCharacterData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZPlayerCharacterData*          InCharacterData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_CharacterSlotButton_C::DisabledButtonSelected()
+void UWBP_UI_Inventory_CharacterSlotButton_C::InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisabledButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeCharacterData", FnName));
+
+	Params::WBP_UI_Inventory_CharacterSlotButton_C_InitializeCharacterData Parms{};
+
+	Parms.InCharacterData = InCharacterData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnCharacterSlotInitialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_CharacterSlotButton_C::OnCharacterSlotInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCharacterSlotInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnDisabledChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InDisabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_CharacterSlotButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
+void UWBP_UI_Inventory_CharacterSlotButton_C::OnDisabledChanged(bool InDisabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDisabledChanged", FnName));
 
-	Params::WBP_UI_Inventory_CharacterSlotButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_Inventory_CharacterSlotButton_C_OnDisabledChanged Parms{};
 
-	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+	Parms.InDisabled = InDisabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_CharacterSlotButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_UI_Inventory_CharacterSlotButton_C::OnFocusChanged(bool bIsFocused)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
 
-	Params::WBP_UI_Inventory_CharacterSlotButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_Inventory_CharacterSlotButton_C_OnFocusChanged Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_CharacterSlotButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.OnPreferredValueIndexChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_CharacterSlotButton_C::OnPreferredValueIndexChanged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreferredValueIndexChanged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_CharacterSlotButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Inventory_CharacterSlotButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_CharacterSlotButton.WBP_UI_Inventory_CharacterSlotButton_C.SetDefault
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_CharacterSlotButton_C::SetDefault()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDefault", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

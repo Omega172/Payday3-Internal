@@ -16,6 +16,34 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup;
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_QuestLine_ChapterGroup_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_PreConstruct;
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetChapterText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_QuestLine_ChapterGroup_C_SetChapterText final
+{
+public:
+	class FText                                   InputText;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_SetChapterText;
+
 // Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetTextVisible
 // 0x0005 (0x0005 - 0x0000)
 struct WBP_QuestLine_ChapterGroup_C_SetTextVisible final
@@ -28,34 +56,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_SetTextVisible;
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetChapterText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_SetChapterText final
-{
-public:
-	class FText                                   InputText;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_SetChapterText;
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_PreConstruct;
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

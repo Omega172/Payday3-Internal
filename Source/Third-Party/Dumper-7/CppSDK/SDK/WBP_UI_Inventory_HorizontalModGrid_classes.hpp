@@ -27,10 +27,10 @@ public:
 	int32                                         Index_0;                                           // 0x0328(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid(int32 EntryPoint);
-	void DisplayGrid();
 	void CreateNewMod(class UWBP_UI_Inventory_ModGridIcon_C** OutWidget);
+	void DisplayGrid();
+	void ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

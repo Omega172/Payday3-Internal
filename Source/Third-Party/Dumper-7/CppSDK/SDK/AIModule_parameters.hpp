@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTasks_structs.hpp"
-#include "AIModule_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AIModule_structs.hpp"
+#include "GameplayTasks_structs.hpp"
 #include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -843,118 +843,20 @@ public:
 };
 DUMPER7_ASSERTS_BlackboardComponent_IsVectorValueSet;
 
-// Function AIModule.AISense_Blueprint.K2_OnNewPawn
-// 0x0008 (0x0008 - 0x0000)
-struct AISense_Blueprint_K2_OnNewPawn final
+// Function AIModule.AISense_Hearing.ReportNoiseEvent
+// 0x0040 (0x0040 - 0x0000)
+struct AISense_Hearing_ReportNoiseEvent final
 {
 public:
-	class APawn*                                  NewPawn;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                NoiseLocation;                                     // 0x0008(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         Loudness;                                          // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Instigator;                                        // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         MaxRange;                                          // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Tag;                                               // 0x0034(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_AISense_Blueprint_K2_OnNewPawn;
-
-// Function AIModule.AISense_Blueprint.OnListenerRegistered
-// 0x0010 (0x0010 - 0x0000)
-struct AISense_Blueprint_OnListenerRegistered final
-{
-public:
-	class AActor*                                 ActorListener;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AISense_Blueprint_OnListenerRegistered;
-
-// Function AIModule.AISense_Blueprint.OnListenerUnregistered
-// 0x0010 (0x0010 - 0x0000)
-struct AISense_Blueprint_OnListenerUnregistered final
-{
-public:
-	class AActor*                                 ActorListener;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AISense_Blueprint_OnListenerUnregistered;
-
-// Function AIModule.AISense_Blueprint.OnListenerUpdated
-// 0x0010 (0x0010 - 0x0000)
-struct AISense_Blueprint_OnListenerUpdated final
-{
-public:
-	class AActor*                                 ActorListener;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AISense_Blueprint_OnListenerUpdated;
-
-// Function AIModule.AISense_Blueprint.OnUpdate
-// 0x0018 (0x0018 - 0x0000)
-struct AISense_Blueprint_OnUpdate final
-{
-public:
-	TArray<class UAISenseEvent*>                  EventsToProcess;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_AISense_Blueprint_OnUpdate;
-
-// Function AIModule.AISense_Blueprint.GetAllListenerActors
-// 0x0010 (0x0010 - 0x0000)
-struct AISense_Blueprint_GetAllListenerActors final
-{
-public:
-	TArray<class AActor*>                         ListenerActors;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AISense_Blueprint_GetAllListenerActors;
-
-// Function AIModule.AISense_Blueprint.GetAllListenerComponents
-// 0x0010 (0x0010 - 0x0000)
-struct AISense_Blueprint_GetAllListenerComponents final
-{
-public:
-	TArray<class UAIPerceptionComponent*>         ListenerComponents;                                // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AISense_Blueprint_GetAllListenerComponents;
-
-// Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_SetPeripheralVisionAngle final
-{
-public:
-	float                                         NewPeripheralVisionAngle;                          // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PawnSensingComponent_SetPeripheralVisionAngle;
-
-// Function AIModule.PawnSensingComponent.SetSensingInterval
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_SetSensingInterval final
-{
-public:
-	float                                         NewSensingInterval;                                // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PawnSensingComponent_SetSensingInterval;
-
-// Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct PawnSensingComponent_SetSensingUpdatesEnabled final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PawnSensingComponent_SetSensingUpdatesEnabled;
-
-// Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_GetPeripheralVisionAngle final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PawnSensingComponent_GetPeripheralVisionAngle;
-
-// Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
-// 0x0004 (0x0004 - 0x0000)
-struct PawnSensingComponent_GetPeripheralVisionCosine final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_PawnSensingComponent_GetPeripheralVisionCosine;
+DUMPER7_ASSERTS_AISense_Hearing_ReportNoiseEvent;
 
 // Function AIModule.BTFunctionLibrary.ClearBlackboardValue
 // 0x0038 (0x0038 - 0x0000)
@@ -1400,28 +1302,50 @@ public:
 };
 DUMPER7_ASSERTS_BTDecorator_BlueprintBase_IsDecoratorObserverActive;
 
-// Function AIModule.AISense_Touch.ReportTouchEvent
-// 0x0030 (0x0030 - 0x0000)
-struct AISense_Touch_ReportTouchEvent final
+// Function AIModule.PawnSensingComponent.SetPeripheralVisionAngle
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_SetPeripheralVisionAngle final
 {
 public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 TouchReceiver;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AActor*                                 OtherActor;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                Location;                                          // 0x0018(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewPeripheralVisionAngle;                          // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_AISense_Touch_ReportTouchEvent;
+DUMPER7_ASSERTS_PawnSensingComponent_SetPeripheralVisionAngle;
 
-// Function AIModule.AITask_RunEQS.RunEQS
-// 0x0018 (0x0018 - 0x0000)
-struct AITask_RunEQS_RunEQS final
+// Function AIModule.PawnSensingComponent.SetSensingInterval
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_SetSensingInterval final
 {
 public:
-	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UAITask_RunEQS*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         NewSensingInterval;                                // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_AITask_RunEQS_RunEQS;
+DUMPER7_ASSERTS_PawnSensingComponent_SetSensingInterval;
+
+// Function AIModule.PawnSensingComponent.SetSensingUpdatesEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct PawnSensingComponent_SetSensingUpdatesEnabled final
+{
+public:
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PawnSensingComponent_SetSensingUpdatesEnabled;
+
+// Function AIModule.PawnSensingComponent.GetPeripheralVisionAngle
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_GetPeripheralVisionAngle final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PawnSensingComponent_GetPeripheralVisionAngle;
+
+// Function AIModule.PawnSensingComponent.GetPeripheralVisionCosine
+// 0x0004 (0x0004 - 0x0000)
+struct PawnSensingComponent_GetPeripheralVisionCosine final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_PawnSensingComponent_GetPeripheralVisionCosine;
 
 // Function AIModule.BTService_BlueprintBase.ReceiveActivation
 // 0x0008 (0x0008 - 0x0000)
@@ -1511,21 +1435,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_BTService_BlueprintBase_IsServiceActive;
-
-// Function AIModule.AISense_Hearing.ReportNoiseEvent
-// 0x0040 (0x0040 - 0x0000)
-struct AISense_Hearing_ReportNoiseEvent final
-{
-public:
-	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                NoiseLocation;                                     // 0x0008(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         Loudness;                                          // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Instigator;                                        // 0x0028(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         MaxRange;                                          // 0x0030(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Tag;                                               // 0x0034(0x000C)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_AISense_Hearing_ReportNoiseEvent;
 
 // Function AIModule.BTTask_BlueprintBase.FinishExecute
 // 0x0001 (0x0001 - 0x0000)
@@ -1633,6 +1542,17 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_BTTask_BlueprintBase_IsTaskExecuting;
+
+// Function AIModule.AITask_RunEQS.RunEQS
+// 0x0018 (0x0018 - 0x0000)
+struct AITask_RunEQS_RunEQS final
+{
+public:
+	class AAIController*                          Controller;                                        // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UEnvQuery*                              QueryTemplate;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAITask_RunEQS*                         ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AITask_RunEQS_RunEQS;
 
 // Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
 // 0x0040 (0x0040 - 0x0000)
@@ -2355,6 +2275,74 @@ public:
 };
 DUMPER7_ASSERTS_AIPerceptionSystem_ReportEvent;
 
+// Function AIModule.AISense_Blueprint.K2_OnNewPawn
+// 0x0008 (0x0008 - 0x0000)
+struct AISense_Blueprint_K2_OnNewPawn final
+{
+public:
+	class APawn*                                  NewPawn;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Blueprint_K2_OnNewPawn;
+
+// Function AIModule.AISense_Blueprint.OnListenerRegistered
+// 0x0010 (0x0010 - 0x0000)
+struct AISense_Blueprint_OnListenerRegistered final
+{
+public:
+	class AActor*                                 ActorListener;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Blueprint_OnListenerRegistered;
+
+// Function AIModule.AISense_Blueprint.OnListenerUnregistered
+// 0x0010 (0x0010 - 0x0000)
+struct AISense_Blueprint_OnListenerUnregistered final
+{
+public:
+	class AActor*                                 ActorListener;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Blueprint_OnListenerUnregistered;
+
+// Function AIModule.AISense_Blueprint.OnListenerUpdated
+// 0x0010 (0x0010 - 0x0000)
+struct AISense_Blueprint_OnListenerUpdated final
+{
+public:
+	class AActor*                                 ActorListener;                                     // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UAIPerceptionComponent*                 PerceptionComponent;                               // 0x0008(0x0008)(Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Blueprint_OnListenerUpdated;
+
+// Function AIModule.AISense_Blueprint.OnUpdate
+// 0x0018 (0x0018 - 0x0000)
+struct AISense_Blueprint_OnUpdate final
+{
+public:
+	TArray<class UAISenseEvent*>                  EventsToProcess;                                   // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_AISense_Blueprint_OnUpdate;
+
+// Function AIModule.AISense_Blueprint.GetAllListenerActors
+// 0x0010 (0x0010 - 0x0000)
+struct AISense_Blueprint_GetAllListenerActors final
+{
+public:
+	TArray<class AActor*>                         ListenerActors;                                    // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Blueprint_GetAllListenerActors;
+
+// Function AIModule.AISense_Blueprint.GetAllListenerComponents
+// 0x0010 (0x0010 - 0x0000)
+struct AISense_Blueprint_GetAllListenerComponents final
+{
+public:
+	TArray<class UAIPerceptionComponent*>         ListenerComponents;                                // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Blueprint_GetAllListenerComponents;
+
 // Function AIModule.AISense_Damage.ReportDamageEvent
 // 0x0060 (0x0060 - 0x0000)
 struct AISense_Damage_ReportDamageEvent final
@@ -2395,6 +2383,18 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_AISense_Prediction_RequestPawnPredictionEvent;
+
+// Function AIModule.AISense_Touch.ReportTouchEvent
+// 0x0030 (0x0030 - 0x0000)
+struct AISense_Touch_ReportTouchEvent final
+{
+public:
+	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 TouchReceiver;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AActor*                                 OtherActor;                                        // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                Location;                                          // 0x0018(0x0018)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_AISense_Touch_ReportTouchEvent;
 
 // Function AIModule.AITask_MoveTo.AIMoveTo
 // 0x0040 (0x0040 - 0x0000)

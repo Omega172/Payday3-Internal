@@ -30,14 +30,14 @@ public:
 	int32                                         PlayerIdx;                                         // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter);
-	void OnMMStopped(ESBZOnlineCode ErrorCode);
-	void OnLobbyUpdate(ESBZOnlineCode ErrorCode);
-	void OnLeft();
-	void GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid);
-	void ExecuteUbergraph_WBP_UI_Lobby_Player(int32 EntryPoint);
-	void Construct();
 	void CleanWidget();
+	void Construct();
+	void ExecuteUbergraph_WBP_UI_Lobby_Player(int32 EntryPoint);
+	void GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid);
+	void OnLeft();
+	void OnLobbyUpdate(ESBZOnlineCode ErrorCode);
+	void OnMMStopped(ESBZOnlineCode ErrorCode);
+	void SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter);
 
 public:
 	static class UClass* StaticClass()

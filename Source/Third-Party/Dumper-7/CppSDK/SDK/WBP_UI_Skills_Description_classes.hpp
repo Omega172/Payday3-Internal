@@ -38,15 +38,15 @@ public:
 	double                                        ScrollSpeed;                                       // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetSkillProgress(class UWBP_UI_Skills_Button_C* SkillButton);
-	void SetState(class UWBP_UI_Skills_Button_C* SkillsButton);
-	void SetSkillImage(class UWBP_UI_Skills_Button_C* SkillButton);
+	void ExecuteUbergraph_WBP_UI_Skills_Description(int32 EntryPoint);
+	void SetFocusedButton(class UWBP_UI_Skills_Button_C* Skill);
 	void SetSkillDescription(class UWBP_UI_Skills_Button_C* SkillButton);
+	void SetSkillImage(class UWBP_UI_Skills_Button_C* SkillButton);
 	void SetSkillInfo(class UWBP_UI_Skills_Button_C* SkillButton);
 	void SetSkillInfoOld(class USBZSkillData* Skill_data);
-	void SetFocusedButton(class UWBP_UI_Skills_Button_C* Skill);
+	void SetSkillProgress(class UWBP_UI_Skills_Button_C* SkillButton);
+	void SetState(class UWBP_UI_Skills_Button_C* SkillsButton);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ExecuteUbergraph_WBP_UI_Skills_Description(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

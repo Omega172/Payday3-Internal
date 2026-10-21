@@ -43,15 +43,15 @@ public:
 	double                                        SpinningSpeed;                                     // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpinIcon(bool bEnable, double Speed);
-	void ShowNumber(int32 InNumber);
-	void SetIcon(class UPaperSprite* Icon);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void HideNumber();
-	void ExecuteUbergraph_WBP_ServerBrowser_FilterButton(int32 EntryPoint);
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void ExecuteUbergraph_WBP_ServerBrowser_FilterButton(int32 EntryPoint);
+	void HideNumber();
+	void PreConstruct(bool IsDesignTime);
+	void SetIcon(class UPaperSprite* Icon);
+	void ShowNumber(int32 InNumber);
+	void SpinIcon(bool bEnable, double Speed);
 
 public:
 	static class UClass* StaticClass()

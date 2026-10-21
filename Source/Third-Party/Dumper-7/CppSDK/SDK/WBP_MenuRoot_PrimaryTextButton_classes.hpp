@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Slate_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "Slate_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -33,9 +33,9 @@ public:
 	ETextCasing                                   InTextCasing;                                      // 0x0418(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ButtonFocusChanging(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_MenuRoot_PrimaryTextButton(int32 EntryPoint);
-	void ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

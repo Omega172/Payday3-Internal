@@ -43,18 +43,18 @@ public:
 	double                                        IconDisabledOpacity;                               // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetDefault();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnPreferredValueIndexChanged();
-	void OnInitialized();
-	void OnFocusChanged(bool bIsFocused);
-	void OnDisabledChanged(bool InDisabled);
-	void OnCharacterSlotInitialized();
-	void InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData);
-	void ExecuteUbergraph_WBP_UI_Inventory_CharacterSlotButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void DisabledButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_UI_Inventory_CharacterSlotButton(int32 EntryPoint);
+	void InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData);
+	void OnCharacterSlotInitialized();
+	void OnDisabledChanged(bool InDisabled);
+	void OnFocusChanged(bool bIsFocused);
+	void OnInitialized();
+	void OnPreferredValueIndexChanged();
+	void PreConstruct(bool IsDesignTime);
+	void SetDefault();
 
 public:
 	static class UClass* StaticClass()

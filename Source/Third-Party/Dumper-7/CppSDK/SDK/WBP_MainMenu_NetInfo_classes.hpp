@@ -26,8 +26,8 @@ public:
 	class UTextBlock*                             RegionValue;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_MainMenu_NetInfo(int32 EntryPoint);
 	void BP_OnServerRegionChanged();
+	void ExecuteUbergraph_WBP_MainMenu_NetInfo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

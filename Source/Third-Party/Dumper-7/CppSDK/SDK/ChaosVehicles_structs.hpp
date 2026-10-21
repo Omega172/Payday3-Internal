@@ -131,17 +131,6 @@ public:
 };
 DUMPER7_ASSERTS_FAnimNode_WheelController;
 
-// ScriptStruct ChaosVehicles.BaseSnapshotData
-// 0x0090 (0x0090 - 0x0000)
-struct FBaseSnapshotData
-{
-public:
-	struct FTransform                             Transform;                                         // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                LinearVelocity;                                    // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector                                AngularVelocity;                                   // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FBaseSnapshotData;
-
 // ScriptStruct ChaosVehicles.VehicleInputs
 // 0x001C (0x001C - 0x0000)
 struct FVehicleInputs
@@ -250,19 +239,6 @@ public:
 	uint8                                         Pad_2C[0x2C];                                      // 0x002C(0x002C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FVehicleTargetRotationControlConfig;
-
-// ScriptStruct ChaosVehicles.WheelSnapshot
-// 0x0014 (0x0014 - 0x0000)
-struct FWheelSnapshot final
-{
-public:
-	float                                         SuspensionOffset;                                  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WheelRotationAngle;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         SteeringAngle;                                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WheelRadius;                                       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         WheelAngularVelocity;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FWheelSnapshot;
 
 // ScriptStruct ChaosVehicles.VehicleStabilizeControlConfig
 // 0x0018 (0x0018 - 0x0000)
@@ -425,6 +401,30 @@ public:
 	struct FVector                                AdditionalOffset;                                  // 0x0018(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FChaosWheelSetup;
+
+// ScriptStruct ChaosVehicles.BaseSnapshotData
+// 0x0090 (0x0090 - 0x0000)
+struct FBaseSnapshotData
+{
+public:
+	struct FTransform                             Transform;                                         // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                LinearVelocity;                                    // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                                AngularVelocity;                                   // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FBaseSnapshotData;
+
+// ScriptStruct ChaosVehicles.WheelSnapshot
+// 0x0014 (0x0014 - 0x0000)
+struct FWheelSnapshot final
+{
+public:
+	float                                         SuspensionOffset;                                  // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WheelRotationAngle;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         SteeringAngle;                                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WheelRadius;                                       // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         WheelAngularVelocity;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FWheelSnapshot;
 
 // ScriptStruct ChaosVehicles.WheeledSnaphotData
 // 0x0020 (0x00B0 - 0x0090)

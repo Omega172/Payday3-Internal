@@ -16,56 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function ControlRig.ControlRigShapeLibraryLink.SetShapeLibrary
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// TSoftObjectPtr<class UControlRigShapeLibrary>InShapeLibrary                                         (Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UControlRigShapeLibraryLink::SetShapeLibrary(TSoftObjectPtr<class UControlRigShapeLibrary> InShapeLibrary)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigShapeLibraryLink", "SetShapeLibrary");
-
-	Params::ControlRigShapeLibraryLink_SetShapeLibrary Parms{};
-
-	Parms.InShapeLibrary = InShapeLibrary;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-}
-
-
-// Function ControlRig.ControlRigShapeLibraryLink.GetShapeLibrary
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TSoftObjectPtr<class UControlRigShapeLibrary>ReturnValue                                            (Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-TSoftObjectPtr<class UControlRigShapeLibrary> UControlRigShapeLibraryLink::GetShapeLibrary() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigShapeLibraryLink", "GetShapeLibrary");
-
-	Params::ControlRigShapeLibraryLink_GetShapeLibrary Parms{};
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
 // Function ControlRig.ControlRig.FindControlRigs
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -443,6 +393,56 @@ bool UControlRig::SupportsBackwardsSolve() const
 		Func = Class->GetFunction("ControlRig", "SupportsBackwardsSolve");
 
 	Params::ControlRig_SupportsBackwardsSolve Parms{};
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function ControlRig.ControlRigShapeLibraryLink.SetShapeLibrary
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TSoftObjectPtr<class UControlRigShapeLibrary>InShapeLibrary                                         (Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UControlRigShapeLibraryLink::SetShapeLibrary(TSoftObjectPtr<class UControlRigShapeLibrary> InShapeLibrary)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigShapeLibraryLink", "SetShapeLibrary");
+
+	Params::ControlRigShapeLibraryLink_SetShapeLibrary Parms{};
+
+	Parms.InShapeLibrary = InShapeLibrary;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+}
+
+
+// Function ControlRig.ControlRigShapeLibraryLink.GetShapeLibrary
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TSoftObjectPtr<class UControlRigShapeLibrary>ReturnValue                                            (Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+TSoftObjectPtr<class UControlRigShapeLibrary> UControlRigShapeLibraryLink::GetShapeLibrary() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ControlRigShapeLibraryLink", "GetShapeLibrary");
+
+	Params::ControlRigShapeLibraryLink_GetShapeLibrary Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

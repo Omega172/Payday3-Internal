@@ -29,12 +29,12 @@ public:
 	class UImage*                                 Image_Background;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnRemovedFromStack();
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup(int32 EntryPoint);
-	void BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup(int32 EntryPoint);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnRemovedFromStack();
 
 public:
 	static class UClass* StaticClass()

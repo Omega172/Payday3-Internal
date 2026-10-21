@@ -17,78 +17,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.SetIsActive
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_SetIsActive final
-{
-public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_SetIsActive;
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.PreConstruct
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_PreConstruct final
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonFocusedChanged;
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSelected
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSelected final
-{
-public:
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue_1;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<ESBZSecurityCompany>                   CallFunc_GetMatchMakingSecurityCompanies_ReturnValue; // 0x0010(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSelected;
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSecurityCompaniesChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSecurityCompaniesChanged final
-{
-public:
-	TArray<ESBZSecurityCompany>                   SecurityCompanies;                                 // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSecurityCompaniesChanged;
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnHover
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnHover final
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnHover;
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnFocus final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnFocus;
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.InitSecurityCompany
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_InitSecurityCompany final
-{
-public:
-	ESBZSecurityCompany                           InSecurityCompany;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<ESBZSecurityCompany>                   CallFunc_GetMatchMakingSecurityCompanies_ReturnValue; // 0x0010(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_InitSecurityCompany;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonHoveredChanged;
 
 // Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails
 // 0x0050 (0x0050 - 0x0000)
@@ -108,23 +53,78 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails;
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonHoveredChanged final
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.InitSecurityCompany
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_InitSecurityCompany final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZSecurityCompany                           InSecurityCompany;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<ESBZSecurityCompany>                   CallFunc_GetMatchMakingSecurityCompanies_ReturnValue; // 0x0010(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_InitSecurityCompany;
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonFocusedChanged
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnFocus
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonFocusedChanged final
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnFocus final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnFocus;
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnHover
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnHover final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnHover;
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSecurityCompaniesChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSecurityCompaniesChanged final
+{
+public:
+	TArray<ESBZSecurityCompany>                   SecurityCompanies;                                 // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSecurityCompaniesChanged;
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSelected
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSelected final
+{
+public:
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue_1;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<ESBZSecurityCompany>                   CallFunc_GetMatchMakingSecurityCompanies_ReturnValue; // 0x0010(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSelected;
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_PreConstruct;
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.SetIsActive
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDetails_C_SetIsActive final
+{
+public:
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDetails_C_SetIsActive;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,55 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.SetLockedState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsLocked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_LevelButton_C::SetLockedState(bool IsLocked)
+void UWBP_UI_Overskill_LevelButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLockedState", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_Overskill_LevelButton_C_SetLockedState Parms{};
+	Params::WBP_UI_Overskill_LevelButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.IsLocked = IsLocked;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_LevelButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Overskill_LevelButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_LevelButton_C::OnFocused(bool IsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocused", FnName));
-
-	Params::WBP_UI_Overskill_LevelButton_C_OnFocused Parms{};
-
-	Parms.IsFocused = IsFocused;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -88,19 +52,55 @@ void UWBP_UI_Overskill_LevelButton_C::ExecuteUbergraph_WBP_UI_Overskill_LevelBut
 }
 
 
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_LevelButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_UI_Overskill_LevelButton_C::OnFocused(bool IsFocused)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocused", FnName));
 
-	Params::WBP_UI_Overskill_LevelButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_Overskill_LevelButton_C_OnFocused Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.IsFocused = IsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_LevelButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Overskill_LevelButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.SetLockedState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsLocked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_LevelButton_C::SetLockedState(bool IsLocked)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLockedState", FnName));
+
+	Params::WBP_UI_Overskill_LevelButton_C_SetLockedState Parms{};
+
+	Parms.IsLocked = IsLocked;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,19 +16,97 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetHovered
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_NavBarButton_C::SetHovered(bool InHovered)
+void UWBP_Shop_NavBarButton_C::ButtonHoveredChanged(bool bInIsHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetHovered", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_Shop_NavBarButton_C_SetHovered Parms{};
+	Params::WBP_Shop_NavBarButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.InHovered = InHovered;
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Shop_NavBarButton_C::ButtonSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ExecuteUbergraph_WBP_Shop_NavBarButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_NavBarButton_C::ExecuteUbergraph_WBP_Shop_NavBarButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Shop_NavBarButton_C", "ExecuteUbergraph_WBP_Shop_NavBarButton", FuncInfo);
+
+	Params::WBP_Shop_NavBarButton_C_ExecuteUbergraph_WBP_Shop_NavBarButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.InitializeButton
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      ButtonText                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Shop_NavBarButton_C::InitializeButton(const class FText& ButtonText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeButton", FnName));
+
+	Params::WBP_Shop_NavBarButton_C_InitializeButton Parms{};
+
+	Parms.ButtonText = std::move(ButtonText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Shop_NavBarButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetActive
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_NavBarButton_C::SetActive(bool bIsActive)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActive", FnName));
+
+	Params::WBP_Shop_NavBarButton_C_SetActive Parms{};
+
+	Parms.bIsActive = bIsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,97 +130,19 @@ void UWBP_Shop_NavBarButton_C::SetFocused(bool InFocused)
 }
 
 
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetActive
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.SetHovered
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive_SetActive                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_NavBarButton_C::SetActive(bool bIsActive_SetActive)
+void UWBP_Shop_NavBarButton_C::SetHovered(bool InHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActive", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetHovered", FnName));
 
-	Params::WBP_Shop_NavBarButton_C_SetActive Parms{};
+	Params::WBP_Shop_NavBarButton_C_SetHovered Parms{};
 
-	Parms.bIsActive_SetActive = bIsActive_SetActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Shop_NavBarButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.InitializeButton
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      ButtonText_InitializeButton                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Shop_NavBarButton_C::InitializeButton(const class FText& ButtonText_InitializeButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeButton", FnName));
-
-	Params::WBP_Shop_NavBarButton_C_InitializeButton Parms{};
-
-	Parms.ButtonText_InitializeButton = std::move(ButtonText_InitializeButton);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ExecuteUbergraph_WBP_Shop_NavBarButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_NavBarButton_C::ExecuteUbergraph_WBP_Shop_NavBarButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Shop_NavBarButton_C", "ExecuteUbergraph_WBP_Shop_NavBarButton", FuncInfo);
-
-	Params::WBP_Shop_NavBarButton_C_ExecuteUbergraph_WBP_Shop_NavBarButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Shop_NavBarButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Shop_NavbarButton.WBP_Shop_NavBarButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_NavBarButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
-
-	Params::WBP_Shop_NavBarButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+	Parms.InHovered = InHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,245 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.UpdateWeaponStatVisualsNew
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WeaponStatsNew_C::UpdateWeaponStatVisualsNew()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateWeaponStatVisualsNew", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStatNew_0
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UTextBlock*                       TextBlock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetWeaponStatNew_0(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, double BaseStat, double CompareStat)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponStatNew_0", FnName));
-
-	Params::WBP_WeaponStatsNew_C_SetWeaponStatNew_0 Parms{};
-
-	Parms.ProgressBarA = ProgressBarA;
-	Parms.ProgressBarB = ProgressBarB;
-	Parms.TextBlock = TextBlock;
-	Parms.BaseStat = BaseStat;
-	Parms.CompareStat = CompareStat;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStatNew
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UProgressBar*                     ProgressBarBase                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UProgressBar*                     ProgressBarCompare                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UTextBlock*                       TextBlock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetWeaponStatNew(class UProgressBar* ProgressBarBase, class UProgressBar* ProgressBarCompare, class UTextBlock* TextBlock, double BaseStat, double CompareStat)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponStatNew", FnName));
-
-	Params::WBP_WeaponStatsNew_C_SetWeaponStatNew Parms{};
-
-	Parms.ProgressBarBase = ProgressBarBase;
-	Parms.ProgressBarCompare = ProgressBarCompare;
-	Parms.TextBlock = TextBlock;
-	Parms.BaseStat = BaseStat;
-	Parms.CompareStat = CompareStat;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStat
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponStat", FnName));
-
-	Params::WBP_WeaponStatsNew_C_SetWeaponStat Parms{};
-
-	Parms.ProgressBarA = ProgressBarA;
-	Parms.ProgressBarB = ProgressBarB;
-	Parms.BaseStat = BaseStat;
-	Parms.CompareStat = CompareStat;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetTextStatColorAndNumber (Int)
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UTextBlock*                       TextWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetTextStatColorAndNumber__Int_(class UTextBlock* TextWidget, int32 BaseValue, int32 CompareValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextStatColorAndNumber (Int)", FnName));
-
-	Params::WBP_WeaponStatsNew_C_SetTextStatColorAndNumber__Int_ Parms{};
-
-	Parms.TextWidget = TextWidget;
-	Parms.BaseValue = BaseValue;
-	Parms.CompareValue = CompareValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetTextStatColorAndNumber
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UTextBlock*                       TextWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetTextStatColorAndNumber(class UTextBlock* TextWidget, double BaseValue, double CompareValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextStatColorAndNumber", FnName));
-
-	Params::WBP_WeaponStatsNew_C_SetTextStatColorAndNumber Parms{};
-
-	Parms.TextWidget = TextWidget;
-	Parms.BaseValue = BaseValue;
-	Parms.CompareValue = CompareValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetFlipCompare
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bFlipCompare                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatsNew_C::SetFlipCompare(bool bFlipCompare)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFlipCompare", FnName));
-
-	Params::WBP_WeaponStatsNew_C_SetFlipCompare Parms{};
-
-	Parms.bFlipCompare = bFlipCompare;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetAmmoStatNew
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WeaponStatsNew_C::SetAmmoStatNew()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAmmoStatNew", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.OnUpdateVisuals
-// (Event, Public, BlueprintEvent)
-
-void UWBP_WeaponStatsNew_C::OnUpdateVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetDamageWithFalloff
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.DamageDistToText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZEquippableConfig&      SBZEquippableConfig                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<struct FSBZDamageDistance>*      LocalDamageDistances1                                  (Parm, OutParm)
+// TArray<struct FSBZDamageDistance>&      DamageDists                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   Pellets                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            Text                                                   (Parm, OutParm)
 
-void UWBP_WeaponStatsNew_C::GetDamageWithFalloff(const struct FSBZEquippableConfig& SBZEquippableConfig, TArray<struct FSBZDamageDistance>* LocalDamageDistances1)
+void UWBP_WeaponStatsNew_C::DamageDistToText(TArray<struct FSBZDamageDistance>& DamageDists, int32 Pellets, class FText* Text)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDamageWithFalloff", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DamageDistToText", FnName));
 
-	Params::WBP_WeaponStatsNew_C_GetDamageWithFalloff Parms{};
+	Params::WBP_WeaponStatsNew_C_DamageDistToText Parms{};
 
-	Parms.SBZEquippableConfig = std::move(SBZEquippableConfig);
+	Parms.DamageDists = std::move(DamageDists);
+	Parms.Pellets = Pellets;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (LocalDamageDistances1 != nullptr)
-		*LocalDamageDistances1 = std::move(Parms.LocalDamageDistances1);
+	DamageDists = std::move(Parms.DamageDists);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
 }
 
 
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetCompareColorToUse
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.ExecuteUbergraph_WBP_WeaponStatsNew
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FLinearColor UWBP_WeaponStatsNew_C::GetCompareColorToUse(double BaseValue, double CompareValue)
+void UWBP_WeaponStatsNew_C::ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCompareColorToUse", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_WeaponStatsNew_C", "ExecuteUbergraph_WBP_WeaponStatsNew", FuncInfo);
 
-	Params::WBP_WeaponStatsNew_C_GetCompareColorToUse Parms{};
+	Params::WBP_WeaponStatsNew_C_ExecuteUbergraph_WBP_WeaponStatsNew Parms{};
 
-	Parms.BaseValue = BaseValue;
-	Parms.CompareValue = CompareValue;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetColorToUse (Int)
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-struct FLinearColor UWBP_WeaponStatsNew_C::GetColorToUse__Int_(int32 BaseValue, int32 CompareValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetColorToUse (Int)", FnName));
-
-	Params::WBP_WeaponStatsNew_C_GetColorToUse__Int_ Parms{};
-
-	Parms.BaseValue = BaseValue;
-	Parms.CompareValue = CompareValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -292,47 +94,245 @@ void UWBP_WeaponStatsNew_C::GetAverageDamageAndFireRate(const struct FSBZEquippa
 }
 
 
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.ExecuteUbergraph_WBP_WeaponStatsNew
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetColorToUse (Int)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WeaponStatsNew_C::ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint)
+struct FLinearColor UWBP_WeaponStatsNew_C::GetColorToUse__Int_(int32 BaseValue, int32 CompareValue)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_WeaponStatsNew_C", "ExecuteUbergraph_WBP_WeaponStatsNew", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetColorToUse (Int)", FnName));
 
-	Params::WBP_WeaponStatsNew_C_ExecuteUbergraph_WBP_WeaponStatsNew Parms{};
+	Params::WBP_WeaponStatsNew_C_GetColorToUse__Int_ Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.BaseValue = BaseValue;
+	Parms.CompareValue = CompareValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetCompareColorToUse
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+struct FLinearColor UWBP_WeaponStatsNew_C::GetCompareColorToUse(double BaseValue, double CompareValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCompareColorToUse", FnName));
+
+	Params::WBP_WeaponStatsNew_C_GetCompareColorToUse Parms{};
+
+	Parms.BaseValue = BaseValue;
+	Parms.CompareValue = CompareValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.GetDamageWithFalloff
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZEquippableConfig&      SBZEquippableConfig                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<struct FSBZDamageDistance>*      LocalDamageDistances1                                  (Parm, OutParm)
+
+void UWBP_WeaponStatsNew_C::GetDamageWithFalloff(const struct FSBZEquippableConfig& SBZEquippableConfig, TArray<struct FSBZDamageDistance>* LocalDamageDistances1)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDamageWithFalloff", FnName));
+
+	Params::WBP_WeaponStatsNew_C_GetDamageWithFalloff Parms{};
+
+	Parms.SBZEquippableConfig = std::move(SBZEquippableConfig);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (LocalDamageDistances1 != nullptr)
+		*LocalDamageDistances1 = std::move(Parms.LocalDamageDistances1);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.OnUpdateVisuals
+// (Event, Public, BlueprintEvent)
+
+void UWBP_WeaponStatsNew_C::OnUpdateVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateVisuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetAmmoStatNew
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WeaponStatsNew_C::SetAmmoStatNew()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAmmoStatNew", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetFlipCompare
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bFlipCompare_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetFlipCompare(bool bFlipCompare_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFlipCompare", FnName));
+
+	Params::WBP_WeaponStatsNew_C_SetFlipCompare Parms{};
+
+	Parms.bFlipCompare_0 = bFlipCompare_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.DamageDistToText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetTextStatColorAndNumber
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FSBZDamageDistance>&      DamageDists                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   Pellets                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            Text                                                   (Parm, OutParm)
+// class UTextBlock*                       TextWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WeaponStatsNew_C::DamageDistToText(TArray<struct FSBZDamageDistance>& DamageDists, int32 Pellets, class FText* Text)
+void UWBP_WeaponStatsNew_C::SetTextStatColorAndNumber(class UTextBlock* TextWidget, double BaseValue, double CompareValue)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DamageDistToText", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextStatColorAndNumber", FnName));
 
-	Params::WBP_WeaponStatsNew_C_DamageDistToText Parms{};
+	Params::WBP_WeaponStatsNew_C_SetTextStatColorAndNumber Parms{};
 
-	Parms.DamageDists = std::move(DamageDists);
-	Parms.Pellets = Pellets;
+	Parms.TextWidget = TextWidget;
+	Parms.BaseValue = BaseValue;
+	Parms.CompareValue = CompareValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	DamageDists = std::move(Parms.DamageDists);
 
-	if (Text != nullptr)
-		*Text = std::move(Parms.Text);
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetTextStatColorAndNumber (Int)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTextBlock*                       TextWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CompareValue                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetTextStatColorAndNumber__Int_(class UTextBlock* TextWidget, int32 BaseValue, int32 CompareValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextStatColorAndNumber (Int)", FnName));
+
+	Params::WBP_WeaponStatsNew_C_SetTextStatColorAndNumber__Int_ Parms{};
+
+	Parms.TextWidget = TextWidget;
+	Parms.BaseValue = BaseValue;
+	Parms.CompareValue = CompareValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStat
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponStat", FnName));
+
+	Params::WBP_WeaponStatsNew_C_SetWeaponStat Parms{};
+
+	Parms.ProgressBarA = ProgressBarA;
+	Parms.ProgressBarB = ProgressBarB;
+	Parms.BaseStat = BaseStat;
+	Parms.CompareStat = CompareStat;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStatNew
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UProgressBar*                     ProgressBarBase                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarCompare                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UTextBlock*                       TextBlock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetWeaponStatNew(class UProgressBar* ProgressBarBase, class UProgressBar* ProgressBarCompare, class UTextBlock* TextBlock, double BaseStat, double CompareStat)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponStatNew", FnName));
+
+	Params::WBP_WeaponStatsNew_C_SetWeaponStatNew Parms{};
+
+	Parms.ProgressBarBase = ProgressBarBase;
+	Parms.ProgressBarCompare = ProgressBarCompare;
+	Parms.TextBlock = TextBlock;
+	Parms.BaseStat = BaseStat;
+	Parms.CompareStat = CompareStat;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.SetWeaponStatNew_0
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UProgressBar*                     ProgressBarA                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UProgressBar*                     ProgressBarB                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UTextBlock*                       TextBlock                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  BaseStat                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  CompareStat                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatsNew_C::SetWeaponStatNew_0(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, double BaseStat, double CompareStat)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponStatNew_0", FnName));
+
+	Params::WBP_WeaponStatsNew_C_SetWeaponStatNew_0 Parms{};
+
+	Parms.ProgressBarA = ProgressBarA;
+	Parms.ProgressBarB = ProgressBarB;
+	Parms.TextBlock = TextBlock;
+	Parms.BaseStat = BaseStat;
+	Parms.CompareStat = CompareStat;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponStatsNew.WBP_WeaponStatsNew_C.UpdateWeaponStatVisualsNew
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WeaponStatsNew_C::UpdateWeaponStatVisualsNew()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateWeaponStatVisualsNew", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

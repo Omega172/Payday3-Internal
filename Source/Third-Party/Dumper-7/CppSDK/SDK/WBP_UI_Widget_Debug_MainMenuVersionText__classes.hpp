@@ -26,11 +26,11 @@ public:
 	class FString                                 Text;                                              // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
-	void SetText(const class FString& NewParam);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_(int32 EntryPoint);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetText(const class FString& NewParam);
 
 public:
 	static class UClass* StaticClass()

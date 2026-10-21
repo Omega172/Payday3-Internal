@@ -35,19 +35,19 @@ public:
 	struct FSBZOnlineSearchResult                 SBZSessionSearchResult;                            // 0x0420(0x0210)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SetSessionInfo(const struct FSBZOnlineSearchResult& SBZOnlineSearchResult);
-	void SetIsActive(bool bIsActive);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocus(bool bIsFocused);
-	void IsJoinBlocked(bool* bIsJoinBlocked);
-	void GetSessionInfo(struct FSBZOnlineSearchResult* SessionInfo);
-	class FText GetPartyTypeFromSessionParams(const struct FSBZOnlineSessionParams& SessionParams);
-	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerButton(int32 EntryPoint);
+	class FText GetPartyTypeFromSessionParams(const struct FSBZOnlineSessionParams& SessionParams);
+	void GetSessionInfo(struct FSBZOnlineSearchResult* SessionInfo);
+	void IsJoinBlocked(bool* bIsJoinBlocked);
+	void OnFocus(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetIsActive(bool bIsActive);
+	void SetSessionInfo(const struct FSBZOnlineSearchResult& SBZOnlineSearchResult);
 
 public:
 	static class UClass* StaticClass()

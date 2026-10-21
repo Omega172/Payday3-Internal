@@ -14,15 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_FancyDivider.WBP_FancyDivider_C.SetChapterData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FancyDivider_C_SetChapterData final
-{
-public:
-	class USBZCampaignChapterData*                ChapterData;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_FancyDivider_C_SetChapterData;
-
 // Function WBP_FancyDivider.WBP_FancyDivider_C.ExecuteUbergraph_WBP_FancyDivider
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_FancyDivider_C_ExecuteUbergraph_WBP_FancyDivider final
@@ -33,6 +24,15 @@ public:
 	class USBZCampaignChapterData*                K2Node_CustomEvent_ChapterData;                    // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_FancyDivider_C_ExecuteUbergraph_WBP_FancyDivider;
+
+// Function WBP_FancyDivider.WBP_FancyDivider_C.SetChapterData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FancyDivider_C_SetChapterData final
+{
+public:
+	class USBZCampaignChapterData*                ChapterData;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_FancyDivider_C_SetChapterData;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

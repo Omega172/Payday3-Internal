@@ -16,111 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.UpdateIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewActiveIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_NavBar_C::UpdateIndex(int32 NewActiveIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateIndex", FnName));
-
-	Params::WBP_UI_Overskill_NavBar_C_UpdateIndex Parms{};
-
-	Parms.NewActiveIndex = NewActiveIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.SetCurrentProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   UnlockedLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_NavBar_C::SetCurrentProgress(int32 UnlockedLevel)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCurrentProgress", FnName));
-
-	Params::WBP_UI_Overskill_NavBar_C_SetCurrentProgress Parms{};
-
-	Parms.UnlockedLevel = UnlockedLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_NavBar_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Overskill_NavBar_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabUp
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Overskill_NavBar_C::OnTabUp()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabUp", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SelectedIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_NavBar_C::OnTabSelected(int32 SelectedIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabSelected", FnName));
-
-	Params::WBP_UI_Overskill_NavBar_C_OnTabSelected Parms{};
-
-	Parms.SelectedIndex = SelectedIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabDown
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Overskill_NavBar_C::OnTabDown()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabDown", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnInitialized
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Overskill_NavBar_C::OnInitialized()
+void UWBP_UI_Overskill_NavBar_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Overskill_NavBar_C::Destruct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.ExecuteUbergraph_WBP_UI_Overskill_NavBar
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_NavBar_C::ExecuteUbergraph_WBP_UI_Overskill_NavBar(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Overskill_NavBar_C", "ExecuteUbergraph_WBP_UI_Overskill_NavBar", FuncInfo);
+
+	Params::WBP_UI_Overskill_NavBar_C_ExecuteUbergraph_WBP_UI_Overskill_NavBar Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -146,45 +80,111 @@ void UWBP_UI_Overskill_NavBar_C::GetRomanNumeral(int32 Index_0, class FText* Lev
 }
 
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.ExecuteUbergraph_WBP_UI_Overskill_NavBar
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Overskill_NavBar_C::ExecuteUbergraph_WBP_UI_Overskill_NavBar(int32 EntryPoint)
+void UWBP_UI_Overskill_NavBar_C::OnInitialized()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Overskill_NavBar_C", "ExecuteUbergraph_WBP_UI_Overskill_NavBar", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
-	Params::WBP_UI_Overskill_NavBar_C_ExecuteUbergraph_WBP_UI_Overskill_NavBar Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabDown
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Overskill_NavBar_C::OnTabDown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabDown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   SelectedIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_NavBar_C::OnTabSelected(int32 SelectedIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabSelected", FnName));
+
+	Params::WBP_UI_Overskill_NavBar_C_OnTabSelected Parms{};
+
+	Parms.SelectedIndex = SelectedIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.OnTabUp
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Overskill_NavBar_C::Destruct()
+void UWBP_UI_Overskill_NavBar_C::OnTabUp()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabUp", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.Construct
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_NavBar_C::Construct()
+void UWBP_UI_Overskill_NavBar_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Overskill_NavBar_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.SetCurrentProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   UnlockedLevel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_NavBar_C::SetCurrentProgress(int32 UnlockedLevel)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCurrentProgress", FnName));
+
+	Params::WBP_UI_Overskill_NavBar_C_SetCurrentProgress Parms{};
+
+	Parms.UnlockedLevel = UnlockedLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_NavBar.WBP_UI_Overskill_NavBar_C.UpdateIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewActiveIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_NavBar_C::UpdateIndex(int32 NewActiveIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateIndex", FnName));
+
+	Params::WBP_UI_Overskill_NavBar_C_UpdateIndex Parms{};
+
+	Parms.NewActiveIndex = NewActiveIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

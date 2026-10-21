@@ -272,15 +272,6 @@ enum class EScrollIntoViewAlignment : uint8
 	EScrollIntoViewAlignment_MAX             = 4,
 };
 
-// ScriptStruct Slate.CustomizedToolMenuEntry
-// 0x0004 (0x0004 - 0x0000)
-struct FCustomizedToolMenuEntry final
-{
-public:
-	ECustomizedToolMenuVisibility                 Visibility;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FCustomizedToolMenuEntry;
-
 // ScriptStruct Slate.VirtualKeyboardOptions
 // 0x0001 (0x0001 - 0x0000)
 struct FVirtualKeyboardOptions final
@@ -289,31 +280,6 @@ public:
 	bool                                          bEnableAutocorrect;                                // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FVirtualKeyboardOptions;
-
-// ScriptStruct Slate.InputPreprocessorRegistrationKey
-// 0x0008 (0x0008 - 0x0000)
-struct FInputPreprocessorRegistrationKey final
-{
-public:
-	EInputPreProcessorType                        Type;                                              // 0x0000(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Priority;                                          // 0x0004(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FInputPreprocessorRegistrationKey;
-
-// ScriptStruct Slate.InputChord
-// 0x0028 (0x0028 - 0x0000)
-struct FInputChord final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bShift : 1;                                        // 0x0020(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bCtrl : 1;                                         // 0x0020(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bAlt : 1;                                          // 0x0020(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bCmd : 1;                                          // 0x0020(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FInputChord;
 
 // ScriptStruct Slate.CharRange
 // 0x0004 (0x0004 - 0x0000)
@@ -334,6 +300,31 @@ public:
 };
 DUMPER7_ASSERTS_FCharRangeList;
 
+// ScriptStruct Slate.InputChord
+// 0x0028 (0x0028 - 0x0000)
+struct FInputChord final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0020)(Edit, BlueprintVisible, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         bShift : 1;                                        // 0x0020(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bCtrl : 1;                                         // 0x0020(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bAlt : 1;                                          // 0x0020(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bCmd : 1;                                          // 0x0020(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FInputChord;
+
+// ScriptStruct Slate.InputPreprocessorRegistrationKey
+// 0x0008 (0x0008 - 0x0000)
+struct FInputPreprocessorRegistrationKey final
+{
+public:
+	EInputPreProcessorType                        Type;                                              // 0x0000(0x0001)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Priority;                                          // 0x0004(0x0004)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FInputPreprocessorRegistrationKey;
+
 // ScriptStruct Slate.Anchors
 // 0x0020 (0x0020 - 0x0000)
 struct FAnchors final
@@ -343,6 +334,15 @@ public:
 	struct FVector2D                              Maximum;                                           // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FAnchors;
+
+// ScriptStruct Slate.CustomizedToolMenuEntry
+// 0x0004 (0x0004 - 0x0000)
+struct FCustomizedToolMenuEntry final
+{
+public:
+	ECustomizedToolMenuVisibility                 Visibility;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FCustomizedToolMenuEntry;
 
 // ScriptStruct Slate.CustomizedToolMenuSection
 // 0x0004 (0x0004 - 0x0000)

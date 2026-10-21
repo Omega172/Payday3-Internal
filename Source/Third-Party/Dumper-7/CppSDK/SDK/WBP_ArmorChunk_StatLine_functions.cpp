@@ -16,55 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetValue
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.ExecuteUbergraph_WBP_ArmorChunk_StatLine
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ArmorChunk_StatLine_C::SetValue(int32 Value)
+void UWBP_ArmorChunk_StatLine_C::ExecuteUbergraph_WBP_ArmorChunk_StatLine(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetValue", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ArmorChunk_StatLine_C", "ExecuteUbergraph_WBP_ArmorChunk_StatLine", FuncInfo);
 
-	Params::WBP_ArmorChunk_StatLine_C_SetValue Parms{};
+	Params::WBP_ArmorChunk_StatLine_C_ExecuteUbergraph_WBP_ArmorChunk_StatLine Parms{};
 
-	Parms.Value = Value;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetSpeedPenalty
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// ESBZArmorSpeedPenalty                   SpeedPenalty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ArmorChunk_StatLine_C::SetSpeedPenalty(ESBZArmorSpeedPenalty SpeedPenalty)
+void UWBP_ArmorChunk_StatLine_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSpeedPenalty", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_ArmorChunk_StatLine_C_SetSpeedPenalty Parms{};
+	Params::WBP_ArmorChunk_StatLine_C_PreConstruct Parms{};
 
-	Parms.SpeedPenalty = SpeedPenalty;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetPlateRegen
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  PlateRegen                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ArmorChunk_StatLine_C::SetPlateRegen(double PlateRegen)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPlateRegen", FnName));
-
-	Params::WBP_ArmorChunk_StatLine_C_SetPlateRegen Parms{};
-
-	Parms.PlateRegen = PlateRegen;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -88,37 +70,55 @@ void UWBP_ArmorChunk_StatLine_C::SetAmmoCapacity(double AmmoCap)
 }
 
 
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetPlateRegen
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  PlateRegen                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ArmorChunk_StatLine_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_ArmorChunk_StatLine_C::SetPlateRegen(double PlateRegen)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPlateRegen", FnName));
 
-	Params::WBP_ArmorChunk_StatLine_C_PreConstruct Parms{};
+	Params::WBP_ArmorChunk_StatLine_C_SetPlateRegen Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.PlateRegen = PlateRegen;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.ExecuteUbergraph_WBP_ArmorChunk_StatLine
-// (Final, UbergraphFunction)
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetSpeedPenalty
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZArmorSpeedPenalty                   SpeedPenalty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ArmorChunk_StatLine_C::ExecuteUbergraph_WBP_ArmorChunk_StatLine(int32 EntryPoint)
+void UWBP_ArmorChunk_StatLine_C::SetSpeedPenalty(ESBZArmorSpeedPenalty SpeedPenalty)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ArmorChunk_StatLine_C", "ExecuteUbergraph_WBP_ArmorChunk_StatLine", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSpeedPenalty", FnName));
 
-	Params::WBP_ArmorChunk_StatLine_C_ExecuteUbergraph_WBP_ArmorChunk_StatLine Parms{};
+	Params::WBP_ArmorChunk_StatLine_C_SetSpeedPenalty Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.SpeedPenalty = SpeedPenalty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ArmorChunk_StatLine.WBP_ArmorChunk_StatLine_C.SetValue
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ArmorChunk_StatLine_C::SetValue(int32 Value)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetValue", FnName));
+
+	Params::WBP_ArmorChunk_StatLine_C_SetValue Parms{};
+
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

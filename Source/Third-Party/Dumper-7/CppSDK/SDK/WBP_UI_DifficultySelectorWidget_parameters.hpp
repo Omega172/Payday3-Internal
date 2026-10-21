@@ -19,78 +19,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.UpdateDifficultyVisuals
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_UpdateDifficultyVisuals final
-{
-public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZUIData*                       CallFunc_GetUIData_ReturnValue;                    // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetDifficultyText_OutDifficultyText;      // 0x0028(0x0010)()
-	bool                                          CallFunc_GetDifficultyText_bHasText;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_UpdateDifficultyVisuals;
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.SetHoveredVisuals
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_SetHoveredVisuals final
-{
-public:
-	bool                                          InIsHovered;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_SetHoveredVisuals;
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.SetFocusVisuals
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_SetFocusVisuals final
-{
-public:
-	bool                                          InIsFocused;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_2;                // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_SetFocusVisuals;
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.PreConstruct
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_PreConstruct final
+struct WBP_UI_DifficultySelectorWidget_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_ButtonFocusedChanged;
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectionOptionChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_OnSelectionOptionChanged final
-{
-public:
-	int32                                         InCurrentIndex_OnSelectionOptionChanged;           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bOverrideReadOnly_OnSelectionOptionChanged;        // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_OnSelectionOptionChanged;
-
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.GetDifficulty
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_GetDifficulty final
+struct WBP_UI_DifficultySelectorWidget_C_ButtonHoveredChanged final
 {
 public:
-	ESBZDifficulty                                NewParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_GetDifficulty;
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_ButtonHoveredChanged;
 
 // Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ExecuteUbergraph_WBP_UI_DifficultySelectorWidget
 // 0x0088 (0x0088 - 0x0000)
@@ -129,23 +74,78 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_ExecuteUbergraph_WBP_UI_DifficultySelectorWidget;
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonHoveredChanged
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.GetDifficulty
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_ButtonHoveredChanged final
+struct WBP_UI_DifficultySelectorWidget_C_GetDifficulty final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                NewParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_GetDifficulty;
 
-// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_DifficultySelectorWidget_C_ButtonFocusedChanged final
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.OnSelectionOptionChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_DifficultySelectorWidget_C_OnSelectionOptionChanged final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InCurrentIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bOverrideReadOnly;                                 // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_OnSelectionOptionChanged;
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_DifficultySelectorWidget_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_PreConstruct;
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.SetFocusVisuals
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_UI_DifficultySelectorWidget_C_SetFocusVisuals final
+{
+public:
+	bool                                          InIsFocused;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_2;                // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_SetFocusVisuals;
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.SetHoveredVisuals
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_UI_DifficultySelectorWidget_C_SetHoveredVisuals final
+{
+public:
+	bool                                          InIsHovered;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_SetHoveredVisuals;
+
+// Function WBP_UI_DifficultySelectorWidget.WBP_UI_DifficultySelectorWidget_C.UpdateDifficultyVisuals
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_DifficultySelectorWidget_C_UpdateDifficultyVisuals final
+{
+public:
+	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZUIData*                       CallFunc_GetUIData_ReturnValue;                    // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetDifficultyText_OutDifficultyText;      // 0x0028(0x0010)()
+	bool                                          CallFunc_GetDifficultyText_bHasText;               // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_DifficultySelectorWidget_C_UpdateDifficultyVisuals;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

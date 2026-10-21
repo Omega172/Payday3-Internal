@@ -55,23 +55,23 @@ public:
 	class UWBP_Skills2_SkillLine_C*               SkillLine;                                         // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ButtonAlternativeSelected();
-	void ButtonFocusedChanged(bool bInHasFocus);
-	void ButtonSelected();
-	void Equip();
-	void ExecuteUbergraph_WBP_Skills2_SkillButton(int32 EntryPoint);
 	void GetFocusedColor(struct FSlateColor* FocusedColor);
-	void InitializeSkill(const struct FSBZSkillTreePair& Skill_Tree_Pair_0);
-	void OnBaseSkillEquipChanged(bool bEquipped);
-	void OnInitialized();
+	void SetFocused(bool Focus);
+	void UnequipSkillButton();
+	void Set_State(ESBZSkillState State);
 	void OnLoaded_481F4F31498706A9F416249DED3A1E97(class UObject* Loaded);
 	void OnLoaded_83A83B3B4F2C9BC7598C3E8E6301D8D2(class UObject* Loaded);
 	void PreConstruct(bool IsDesignTime);
+	void OnInitialized();
+	void InitializeSkill(const struct FSBZSkillTreePair& Skill_Tree_Pair_0);
+	void OnBaseSkillEquipChanged(bool bEquipped);
+	void ButtonSelected();
 	void Refresh();
-	void Set_State(ESBZSkillState State);
-	void SetFocused(bool Focus);
+	void ButtonAlternativeSelected();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void Equip();
 	void Unequip();
-	void UnequipSkillButton();
+	void ExecuteUbergraph_WBP_Skills2_SkillButton(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

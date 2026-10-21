@@ -49,13 +49,13 @@ public:
 	class UAkAudioEvent*                          ClickSound;                                        // 0x04B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetActionEnabled(bool bIsEnabled);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnFocusChanged(bool NewFocus);
-	void ExecuteUbergraph_WBP_ServerBrowser_InspectButton(int32 EntryPoint);
-	void ButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
 	void BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonSelected();
+	void ExecuteUbergraph_WBP_ServerBrowser_InspectButton(int32 EntryPoint);
+	void OnFocusChanged(bool NewFocus);
+	void PreConstruct(bool IsDesignTime);
+	void SetActionEnabled(bool bIsEnabled_0);
 
 public:
 	static class UClass* StaticClass()

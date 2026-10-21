@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "UMG_structs.hpp"
 #include "SBZBackend_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -45,15 +45,15 @@ public:
 	class UWBP_MainMenu_NetInfo_C*                WMainMenu_NetInfo;                                 // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateTime();
-	void UpdateGameState();
-	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
-	void OnTick();
-	void OnMatchmakingGroupChange(int32 MMakingGroup_OnMatchmakingGroupChange);
-	void OnInitialized();
-	void InitVersionString();
-	void InitMatchmakingGroup(int32 inMMakingGroup);
 	void ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug(int32 EntryPoint);
+	void InitMatchmakingGroup(int32 inMMakingGroup);
+	void InitVersionString();
+	void OnInitialized();
+	void OnMatchmakingGroupChange(int32 MMakingGroup);
+	void OnTick();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void UpdateGameState();
+	void UpdateTime();
 
 public:
 	static class UClass* StaticClass()

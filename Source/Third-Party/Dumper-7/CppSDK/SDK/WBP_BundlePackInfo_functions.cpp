@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_BundlePackInfo.WBP_BundlePackInfo_C.ExecuteUbergraph_WBP_BundlePackInfo
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BundlePackInfo_C::ExecuteUbergraph_WBP_BundlePackInfo(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_BundlePackInfo_C", "ExecuteUbergraph_WBP_BundlePackInfo", FuncInfo);
+
+	Params::WBP_BundlePackInfo_C_ExecuteUbergraph_WBP_BundlePackInfo Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_BundlePackInfo.WBP_BundlePackInfo_C.SetInfo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -33,24 +51,6 @@ void UWBP_BundlePackInfo_C::SetInfo(const class FText& InName, const class FText
 	Parms.InName = std::move(InName);
 	Parms.InDescription = std::move(InDescription);
 	Parms.InType = std::move(InType);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BundlePackInfo.WBP_BundlePackInfo_C.ExecuteUbergraph_WBP_BundlePackInfo
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BundlePackInfo_C::ExecuteUbergraph_WBP_BundlePackInfo(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_BundlePackInfo_C", "ExecuteUbergraph_WBP_BundlePackInfo", FuncInfo);
-
-	Params::WBP_BundlePackInfo_C_ExecuteUbergraph_WBP_BundlePackInfo Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

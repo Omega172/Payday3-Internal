@@ -16,49 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.SetText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_Debug_MainMenuVersionText__C::SetText(const class FString& NewParam)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText", FnName));
-
-	Params::WBP_UI_Widget_Debug_MainMenuVersionText__C_SetText Parms{};
-
-	Parms.NewParam = std::move(NewParam);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_Debug_MainMenuVersionText__C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Widget_Debug_MainMenuVersionText__C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.OnInitialized
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Widget_Debug_MainMenuVersionText__C::OnInitialized()
+void UWBP_UI_Widget_Debug_MainMenuVersionText__C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -82,15 +46,51 @@ void UWBP_UI_Widget_Debug_MainMenuVersionText__C::ExecuteUbergraph_WBP_UI_Widget
 }
 
 
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.Construct
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Widget_Debug_MainMenuVersionText__C::Construct()
+void UWBP_UI_Widget_Debug_MainMenuVersionText__C::OnInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Debug_MainMenuVersionText__C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Widget_Debug_MainMenuVersionText__C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.SetText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_Debug_MainMenuVersionText__C::SetText(const class FString& NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText", FnName));
+
+	Params::WBP_UI_Widget_Debug_MainMenuVersionText__C_SetText Parms{};
+
+	Parms.NewParam = std::move(NewParam);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

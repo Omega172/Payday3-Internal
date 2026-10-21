@@ -46,18 +46,18 @@ public:
 	TSoftObjectPtr<class UTexture2D>              PreviewTexture;                                    // 0x0760(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateBundleContent();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnPlayerStoreItemDataIntialized();
-	void OnOpenDLCFirstPartyStore();
-	void OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3(class UObject* Loaded);
-	void OnFocused(bool bIsFocused);
-	void ExecuteUbergraph_WBP_Blackmarket_BundleItemButton(int32 EntryPoint);
-	void DisabledButtonSelected();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_Blackmarket_BundleItemButton(int32 EntryPoint);
+	void OnFocused(bool bIsFocused);
+	void OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3(class UObject* Loaded);
+	void OnOpenDLCFirstPartyStore();
+	void OnPlayerStoreItemDataIntialized();
+	void PreConstruct(bool IsDesignTime);
+	void UpdateBundleContent();
 
 public:
 	static class UClass* StaticClass()

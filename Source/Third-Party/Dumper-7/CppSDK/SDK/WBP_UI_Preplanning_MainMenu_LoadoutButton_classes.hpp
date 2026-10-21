@@ -11,11 +11,11 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "SBZBackend_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -66,49 +66,49 @@ public:
 	bool                                          IsInPreplanning;                                   // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnTextCommited(const class FText& Text, ETextCommit CommitMethod);
-	void SetNavKeysPerInput(bool IsKeyboardMouse);
-	void BindKeys(bool IsActive);
-	void OnLoadoutPopupClosed(class FName ClosingActionName);
-	void CreateRenameLoadoutPopup();
-	void SetSelectedVisuals();
-	void SetDefaultVisuals();
-	void SetDisabledFocusedVisuals();
-	void SetDisabledVisuals();
-	void OnDisabledChanged(bool InIsDisabled);
-	void SetWeaponStatusColour();
-	void SetLoadoutName(const class FString& InLoadoutName);
-	void RefreshVisuals();
-	void OnFocusedStateChanged(bool bIsFocused);
-	void OnHoveredStateChanged(bool bIsHovered);
-	void PostPush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget);
-	void FocusedPlayerLoadoutConfigChanged(const struct FSBZPlayerLoadoutConfig& NewPlayerLoadout);
 	void ActiveLoadoutChanged(int32 NewActiveLoadoutIndex);
-	void OnInputTypeChangedToGamepad(bool bIsGamepad);
-	void OnLoadoutIncrement();
-	void OnLoadoutDecrement();
-	void IncrementLoadoutIndex();
-	void DecrementLoadoutIndex();
-	void IncrementLoadout();
-	void DecrementLoadout();
+	void BindKeys(bool IsActive);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature();
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputRight_CR_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnInitialized();
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void PreConstruct(bool IsDesignTime);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature();
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void SetActive();
+	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActiveKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_8_SBZOnActionChanged__DelegateSignature();
+	void CreateRenameLoadoutPopup();
+	void DecrementLoadout();
+	void DecrementLoadoutIndex();
 	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton(int32 EntryPoint);
+	void FocusedPlayerLoadoutConfigChanged(const struct FSBZPlayerLoadoutConfig& NewPlayerLoadout);
+	void IncrementLoadout();
+	void IncrementLoadoutIndex();
+	void OnDisabledChanged(bool InIsDisabled);
+	void OnFocusedStateChanged(bool bIsFocused);
+	void OnHoveredStateChanged(bool bIsHovered);
+	void OnInitialized();
+	void OnInputTypeChangedToGamepad(bool bIsGamepad);
+	void OnLoadoutDecrement();
+	void OnLoadoutIncrement();
+	void OnLoadoutPopupClosed(class FName ClosingActionName);
+	void OnTextCommited(const class FText& Text, ETextCommit CommitMethod);
+	void PostPush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime);
+	void PrePush_57D08016443F7CC905F0FBB992BF540A(class USBZMenuStackScreenWidget* MenuWidget);
+	void RefreshVisuals();
+	void SetActive();
+	void SetDefaultVisuals();
+	void SetDisabledFocusedVisuals();
+	void SetDisabledVisuals();
+	void SetLoadoutName(const class FString& InLoadoutName);
+	void SetNavKeysPerInput(bool IsKeyboardMouse);
+	void SetSelectedVisuals();
+	void SetWeaponStatusColour();
 
 public:
 	static class UClass* StaticClass()

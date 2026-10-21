@@ -36,15 +36,15 @@ public:
 	class UMaterialInstanceDynamic*               DynamicMaterial;                                   // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHoveredVisuals(bool bIsHovered);
-	void OnFocusedVisual(bool bIsFocused);
-	void OnChallengeCategoryDataInititalized(class USBZChallengeCategoryData* InCategoryData_OnChallengeCategoryDataInititalized);
-	void OnChallengeCategoryCountRefreshed(int32 TotalCount_OnChallengeCategoryCountRefreshed, int32 CompletedCount_OnChallengeCategoryCountRefreshed);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_ChallengeCategory_PanelButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void OnChallengeCategoryCountRefreshed(int32 TotalCount, int32 CompletedCount);
+	void OnChallengeCategoryDataInititalized(class USBZChallengeCategoryData* InCategoryData);
+	void OnFocusedVisual(bool bIsFocused);
+	void OnHoveredVisuals(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

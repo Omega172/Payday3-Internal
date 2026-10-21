@@ -16,49 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.ExecuteUbergraph_WBP_UI_CharacterDisplayPanel
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterDisplayPanel_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_UI_CharacterDisplayPanel_C::ExecuteUbergraph_WBP_UI_CharacterDisplayPanel(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CharacterDisplayPanel_C", "ExecuteUbergraph_WBP_UI_CharacterDisplayPanel", FuncInfo);
 
-	Params::WBP_UI_CharacterDisplayPanel_C_PreConstruct Parms{};
+	Params::WBP_UI_CharacterDisplayPanel_C_ExecuteUbergraph_WBP_UI_CharacterDisplayPanel Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnEmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_CharacterDisplayPanel_C::OnEmptySet()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEmptySet", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnCharacterDataChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZPlayerCharacterData*    InCharacterData_OnCharacterDataChanged                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CharacterDisplayPanel_C::OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData_OnCharacterDataChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCharacterDataChanged", FnName));
-
-	Params::WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged Parms{};
-
-	Parms.InCharacterData_OnCharacterDataChanged = InCharacterData_OnCharacterDataChanged;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -82,19 +52,49 @@ void UWBP_UI_CharacterDisplayPanel_C::InitializeCharacterData(class USBZPlayerCh
 }
 
 
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.ExecuteUbergraph_WBP_UI_CharacterDisplayPanel
-// (Final, UbergraphFunction)
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnCharacterDataChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZPlayerCharacterData*    InCharacterData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterDisplayPanel_C::ExecuteUbergraph_WBP_UI_CharacterDisplayPanel(int32 EntryPoint)
+void UWBP_UI_CharacterDisplayPanel_C::OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CharacterDisplayPanel_C", "ExecuteUbergraph_WBP_UI_CharacterDisplayPanel", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCharacterDataChanged", FnName));
 
-	Params::WBP_UI_CharacterDisplayPanel_C_ExecuteUbergraph_WBP_UI_CharacterDisplayPanel Parms{};
+	Params::WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InCharacterData = InCharacterData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnEmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_CharacterDisplayPanel_C::OnEmptySet()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEmptySet", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CharacterDisplayPanel_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_CharacterDisplayPanel_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

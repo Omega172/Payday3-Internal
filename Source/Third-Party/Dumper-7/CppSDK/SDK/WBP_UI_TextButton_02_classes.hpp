@@ -38,22 +38,22 @@ public:
 	class FName                                   Typeface;                                          // 0x0448(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void SetButtonText(const class FText& InButtonText);
-	void ResetToDefaultButtonText();
-	void RefreshVisual();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHoverVisuals(bool bIsHovered);
-	void OnFocusedVisuals(bool bIsFocused);
-	void OnDisabledVisuals(bool bIsDisabled);
-	void OnAnimationFinished(const class UWidgetAnimation* Animation_OnAnimationFinished);
-	void GetText(class FText* OutText);
-	void ExecuteUbergraph_WBP_UI_TextButton_02(int32 EntryPoint);
-	void DisabledButtonSelected();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_UI_TextButton_02(int32 EntryPoint);
+	void GetText(class FText* OutText);
+	void OnAnimationFinished(const class UWidgetAnimation* Animation);
+	void OnDisabledVisuals(bool bIsDisabled_0);
+	void OnFocusedVisuals(bool bIsFocused);
+	void OnHoverVisuals(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisual();
+	void ResetToDefaultButtonText();
+	void SetButtonText(const class FText& InButtonText);
 
 public:
 	static class UClass* StaticClass()

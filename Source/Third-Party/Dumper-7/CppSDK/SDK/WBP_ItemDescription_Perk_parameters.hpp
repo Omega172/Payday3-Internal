@@ -18,52 +18,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Title
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ItemDescription_Perk_C_SetText_Title final
-{
-public:
-	class FText                                   SlotText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   PartText;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetText_Title;
-
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Description
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ItemDescription_Perk_C_SetText_Description final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetText_Description;
-
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetImg_SlotIcon
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemDescription_Perk_C_SetImg_SlotIcon final
-{
-public:
-	class UObject*                                ResourceObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetImg_SlotIcon;
-
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetColor_SlotIcon
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ItemDescription_Perk_C_SetColor_SlotIcon final
-{
-public:
-	struct FLinearColor                           InColorAndOpacity;                                 // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetColor_SlotIcon;
-
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ItemDescription_Perk_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_PreConstruct;
-
 // Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.ExecuteUbergraph_WBP_ItemDescription_Perk
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_ItemDescription_Perk_C_ExecuteUbergraph_WBP_ItemDescription_Perk final
@@ -90,6 +44,52 @@ public:
 	struct FLinearColor                           K2Node_CustomEvent_InColorAndOpacity;              // 0x0100(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_ExecuteUbergraph_WBP_ItemDescription_Perk;
+
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ItemDescription_Perk_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_PreConstruct;
+
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetColor_SlotIcon
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ItemDescription_Perk_C_SetColor_SlotIcon final
+{
+public:
+	struct FLinearColor                           InColorAndOpacity;                                 // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetColor_SlotIcon;
+
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetImg_SlotIcon
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemDescription_Perk_C_SetImg_SlotIcon final
+{
+public:
+	class UObject*                                ResourceObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetImg_SlotIcon;
+
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Description
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ItemDescription_Perk_C_SetText_Description final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetText_Description;
+
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Title
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ItemDescription_Perk_C_SetText_Title final
+{
+public:
+	class FText                                   SlotText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   PartText;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Perk_C_SetText_Title;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

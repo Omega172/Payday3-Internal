@@ -31,11 +31,11 @@ public:
 	TMulticastInlineDelegate<void(int32 NavIndex)> LevelSelected;                                    // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void SetLockedState(bool IsLocked);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnFocused(bool IsFocused);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_UI_Overskill_LevelButton(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void OnFocused(bool IsFocused);
+	void PreConstruct(bool IsDesignTime);
+	void SetLockedState(bool IsLocked);
 
 public:
 	static class UClass* StaticClass()

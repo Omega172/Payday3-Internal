@@ -16,23 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CharacterDisplayPanel_C_PreConstruct final
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.ExecuteUbergraph_WBP_UI_CharacterDisplayPanel
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_CharacterDisplayPanel_C_ExecuteUbergraph_WBP_UI_CharacterDisplayPanel final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZPlayerCharacterData*          K2Node_Event_InCharacterData;                      // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_PreConstruct;
-
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnCharacterDataChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged final
-{
-public:
-	const class USBZPlayerCharacterData*          InCharacterData_OnCharacterDataChanged;            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged;
+DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_ExecuteUbergraph_WBP_UI_CharacterDisplayPanel;
 
 // Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.InitializeCharacterData
 // 0x00F0 (0x00F0 - 0x0000)
@@ -52,17 +46,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_InitializeCharacterData;
 
-// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.ExecuteUbergraph_WBP_UI_CharacterDisplayPanel
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_CharacterDisplayPanel_C_ExecuteUbergraph_WBP_UI_CharacterDisplayPanel final
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.OnCharacterDataChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZPlayerCharacterData*          K2Node_Event_InCharacterData;                      // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZPlayerCharacterData*          InCharacterData;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_ExecuteUbergraph_WBP_UI_CharacterDisplayPanel;
+DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_OnCharacterDataChanged;
+
+// Function WBP_UI_CharacterDisplayPanel.WBP_UI_CharacterDisplayPanel_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CharacterDisplayPanel_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CharacterDisplayPanel_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

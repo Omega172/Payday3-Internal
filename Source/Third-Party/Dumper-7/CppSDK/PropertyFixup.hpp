@@ -18,7 +18,7 @@ class alignas(0x01) FMulticastSparseDelegateProperty_
 
 class alignas(0x01) FOptionalProperty_
 {
-	unsigned __int8 Pad[0x8];
+	unsigned __int8 Pad[0xF0];
 };
 
 SDK_NAMESPACE_END

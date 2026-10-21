@@ -28,9 +28,9 @@ public:
 	struct FVector2D                              FixedSize;                                         // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetInverted(bool bIsInverted);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_CustomSpriteActionInput(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetInverted(bool bIsInverted_0);
 
 public:
 	static class UClass* StaticClass()

@@ -53,15 +53,15 @@ public:
 	bool                                          bSelectOnInputAction;                              // 0x04D4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetActionEnabled(bool bIsEnabled);
-	void Set_Text(const class FText& InText);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_InputActionButton_New(int32 EntryPoint);
-	void Construct();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Construct();
+	void ExecuteUbergraph_WBP_InputActionButton_New(int32 EntryPoint);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void Set_Text(const class FText& InText);
+	void SetActionEnabled(bool bIsEnabled_0);
 
 public:
 	static class UClass* StaticClass()

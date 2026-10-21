@@ -10,55 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "RigVM_structs.hpp"
-#include "RigVM_classes.hpp"
-#include "MovieSceneTracks_structs.hpp"
-#include "MovieSceneTracks_classes.hpp"
-#include "ControlRig_structs.hpp"
-#include "AnimGraphRuntime_classes.hpp"
 #include "Constraints_structs.hpp"
 #include "Constraints_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "RigVM_structs.hpp"
+#include "RigVM_classes.hpp"
+#include "ControlRig_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "AnimationCore_structs.hpp"
+#include "MovieSceneTracks_structs.hpp"
+#include "MovieSceneTracks_classes.hpp"
+#include "AnimGraphRuntime_classes.hpp"
 #include "MovieScene_structs.hpp"
 #include "MovieScene_classes.hpp"
 #include "DeveloperSettings_classes.hpp"
 
 
 SDK_NAMESPACE_START
-
-// Class ControlRig.ControlRigShapeLibraryLink
-// 0x0048 (0x0150 - 0x0108)
-class UControlRigShapeLibraryLink final : public UNameSpacedUserData
-{
-public:
-	TSoftObjectPtr<class UControlRigShapeLibrary> ShapeLibrary;                                      // 0x0108(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class FName>                           ShapeNames;                                        // 0x0138(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	class UControlRigShapeLibrary*                ShapeLibraryCached;                                // 0x0148(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
-
-public:
-	void SetShapeLibrary(TSoftObjectPtr<class UControlRigShapeLibrary> InShapeLibrary);
-
-	TSoftObjectPtr<class UControlRigShapeLibrary> GetShapeLibrary() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ControlRigShapeLibraryLink")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ControlRigShapeLibraryLink")
-	}
-	static class UControlRigShapeLibraryLink* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UControlRigShapeLibraryLink>();
-	}
-};
-DUMPER7_ASSERTS_UControlRigShapeLibraryLink;
 
 // Class ControlRig.RigHierarchyProvider
 // 0x0008 (0x0008 - 0x0000)
@@ -155,6 +125,81 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UControlRig;
+
+// Class ControlRig.FKControlRig
+// 0x0040 (0x0B28 - 0x0AE8)
+class UFKControlRig final : public UControlRig
+{
+public:
+	TArray<bool>                                  IsControlActive;                                   // 0x0AE8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	EControlRigFKRigExecuteMode                   ApplyMode;                                         // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_AF9[0x2F];                                     // 0x0AF9(0x002F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("FKControlRig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FKControlRig")
+	}
+	static class UFKControlRig* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFKControlRig>();
+	}
+};
+DUMPER7_ASSERTS_UFKControlRig;
+
+// Class ControlRig.ControlRigShapeLibraryLink
+// 0x0048 (0x0150 - 0x0108)
+class UControlRigShapeLibraryLink final : public UNameSpacedUserData
+{
+public:
+	TSoftObjectPtr<class UControlRigShapeLibrary> ShapeLibrary;                                      // 0x0108(0x0030)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class FName>                           ShapeNames;                                        // 0x0138(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	class UControlRigShapeLibrary*                ShapeLibraryCached;                                // 0x0148(0x0008)(ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+
+public:
+	void SetShapeLibrary(TSoftObjectPtr<class UControlRigShapeLibrary> InShapeLibrary);
+
+	TSoftObjectPtr<class UControlRigShapeLibrary> GetShapeLibrary() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ControlRigShapeLibraryLink")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlRigShapeLibraryLink")
+	}
+	static class UControlRigShapeLibraryLink* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControlRigShapeLibraryLink>();
+	}
+};
+DUMPER7_ASSERTS_UControlRigShapeLibraryLink;
+
+// Class ControlRig.ControlRigEditorSettings
+// 0x0000 (0x0048 - 0x0048)
+class UControlRigEditorSettings final : public URigVMEditorSettings
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ControlRigEditorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlRigEditorSettings")
+	}
+	static class UControlRigEditorSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControlRigEditorSettings>();
+	}
+};
+DUMPER7_ASSERTS_UControlRigEditorSettings;
 
 // Class ControlRig.ModularRig
 // 0x01A0 (0x0C88 - 0x0AE8)
@@ -403,6 +448,62 @@ public:
 };
 DUMPER7_ASSERTS_URigHierarchy;
 
+// Class ControlRig.ControlRigValidationPass
+// 0x0000 (0x0030 - 0x0030)
+class UControlRigValidationPass : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ControlRigValidationPass")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlRigValidationPass")
+	}
+	static class UControlRigValidationPass* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControlRigValidationPass>();
+	}
+};
+DUMPER7_ASSERTS_UControlRigValidationPass;
+
+// Class ControlRig.MovieSceneControlRigParameterSection
+// 0x02C8 (0x0430 - 0x0168)
+class UMovieSceneControlRigParameterSection final : public UMovieSceneParameterSection, public IMovieSceneConstrainedSection
+{
+public:
+	uint8                                         Pad_170[0x40];                                     // 0x0170(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
+	class UControlRig*                            ControlRig;                                        // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	TSubclassOf<class UControlRig>                ControlRigClass;                                   // 0x01B8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<bool>                                  ControlsMask;                                      // 0x01C0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TSet<class FName>                             ControlNameMask;                                   // 0x01D0(0x0050)(NativeAccessSpecifierPublic)
+	struct FMovieSceneTransformMask               TransformMask;                                     // 0x0220(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMovieSceneFloatChannel                Weight;                                            // 0x0228(0x0110)(NativeAccessSpecifierPublic)
+	TMap<class FName, struct FChannelMapInfo>     ControlChannelMap;                                 // 0x0338(0x0050)(NativeAccessSpecifierPublic)
+	TArray<struct FEnumParameterNameAndCurve>     EnumParameterNamesAndCurves;                       // 0x0388(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FIntegerParameterNameAndCurve>  IntegerParameterNamesAndCurves;                    // 0x0398(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FSpaceControlNameAndChannel>    SpaceChannels;                                     // 0x03A8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FConstraintAndActiveChannel>    ConstraintsChannels;                               // 0x03B8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_3C8[0x68];                                     // 0x03C8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("MovieSceneControlRigParameterSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneControlRigParameterSection")
+	}
+	static class UMovieSceneControlRigParameterSection* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UMovieSceneControlRigParameterSection>();
+	}
+};
+DUMPER7_ASSERTS_UMovieSceneControlRigParameterSection;
+
 // Class ControlRig.AnimNodeControlRigLibrary
 // 0x0000 (0x0030 - 0x0030)
 class UAnimNodeControlRigLibrary final : public UBlueprintFunctionLibrary
@@ -472,6 +573,33 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UControlRigAnimInstance;
+
+// Class ControlRig.ControlRigPoseMirrorSettings
+// 0x0028 (0x0058 - 0x0030)
+class UControlRigPoseMirrorSettings final : public UObject
+{
+public:
+	class FString                                 RightSide;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 LeftSide;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAxis                                         MirrorAxis;                                        // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	EAxis                                         AxisToFlip;                                        // 0x0051(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ControlRigPoseMirrorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControlRigPoseMirrorSettings")
+	}
+	static class UControlRigPoseMirrorSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UControlRigPoseMirrorSettings>();
+	}
+};
+DUMPER7_ASSERTS_UControlRigPoseMirrorSettings;
 
 // Class ControlRig.ControlRigBlueprintGeneratedClass
 // 0x0000 (0x0398 - 0x0398)
@@ -777,26 +905,6 @@ public:
 };
 DUMPER7_ASSERTS_UControlRigValidator;
 
-// Class ControlRig.ControlRigValidationPass
-// 0x0000 (0x0030 - 0x0030)
-class UControlRigValidationPass : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ControlRigValidationPass")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ControlRigValidationPass")
-	}
-	static class UControlRigValidationPass* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UControlRigValidationPass>();
-	}
-};
-DUMPER7_ASSERTS_UControlRigValidationPass;
-
 // Class ControlRig.ModularRigController
 // 0x0028 (0x0058 - 0x0030)
 class UModularRigController final : public UObject
@@ -890,31 +998,6 @@ public:
 };
 DUMPER7_ASSERTS_UAdditiveControlRig;
 
-// Class ControlRig.FKControlRig
-// 0x0040 (0x0B28 - 0x0AE8)
-class UFKControlRig final : public UControlRig
-{
-public:
-	TArray<bool>                                  IsControlActive;                                   // 0x0AE8(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	EControlRigFKRigExecuteMode                   ApplyMode;                                         // 0x0AF8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_AF9[0x2F];                                     // 0x0AF9(0x002F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("FKControlRig")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"FKControlRig")
-	}
-	static class UFKControlRig* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UFKControlRig>();
-	}
-};
-DUMPER7_ASSERTS_UFKControlRig;
-
 // Class ControlRig.RigHierarchyController
 // 0x0070 (0x00A0 - 0x0030)
 class URigHierarchyController final : public UObject
@@ -999,42 +1082,6 @@ public:
 };
 DUMPER7_ASSERTS_UControlRigLayerInstance;
 
-// Class ControlRig.MovieSceneControlRigParameterSection
-// 0x02C8 (0x0430 - 0x0168)
-class UMovieSceneControlRigParameterSection final : public UMovieSceneParameterSection, public IMovieSceneConstrainedSection
-{
-public:
-	uint8                                         Pad_170[0x40];                                     // 0x0170(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
-	class UControlRig*                            ControlRig;                                        // 0x01B0(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
-	TSubclassOf<class UControlRig>                ControlRigClass;                                   // 0x01B8(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<bool>                                  ControlsMask;                                      // 0x01C0(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TSet<class FName>                             ControlNameMask;                                   // 0x01D0(0x0050)(NativeAccessSpecifierPublic)
-	struct FMovieSceneTransformMask               TransformMask;                                     // 0x0220(0x0004)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_224[0x4];                                      // 0x0224(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMovieSceneFloatChannel                Weight;                                            // 0x0228(0x0110)(NativeAccessSpecifierPublic)
-	TMap<class FName, struct FChannelMapInfo>     ControlChannelMap;                                 // 0x0338(0x0050)(NativeAccessSpecifierPublic)
-	TArray<struct FEnumParameterNameAndCurve>     EnumParameterNamesAndCurves;                       // 0x0388(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FIntegerParameterNameAndCurve>  IntegerParameterNamesAndCurves;                    // 0x0398(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FSpaceControlNameAndChannel>    SpaceChannels;                                     // 0x03A8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FConstraintAndActiveChannel>    ConstraintsChannels;                               // 0x03B8(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_3C8[0x68];                                     // 0x03C8(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("MovieSceneControlRigParameterSection")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"MovieSceneControlRigParameterSection")
-	}
-	static class UMovieSceneControlRigParameterSection* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UMovieSceneControlRigParameterSection>();
-	}
-};
-DUMPER7_ASSERTS_UMovieSceneControlRigParameterSection;
-
 // Class ControlRig.MovieSceneControlRigParameterTrack
 // 0x0178 (0x0278 - 0x0100)
 class UMovieSceneControlRigParameterTrack final : public UMovieSceneNameableTrack, public IMovieSceneTrackTemplateProducer, public INodeAndChannelMappings, public IMovieSceneSectionsToKey
@@ -1088,26 +1135,6 @@ public:
 };
 DUMPER7_ASSERTS_UControlRigSettings;
 
-// Class ControlRig.ControlRigEditorSettings
-// 0x0000 (0x0048 - 0x0048)
-class UControlRigEditorSettings final : public URigVMEditorSettings
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ControlRigEditorSettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ControlRigEditorSettings")
-	}
-	static class UControlRigEditorSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UControlRigEditorSettings>();
-	}
-};
-DUMPER7_ASSERTS_UControlRigEditorSettings;
-
 // Class ControlRig.ControlRigPoseAsset
 // 0x0060 (0x0090 - 0x0030)
 class UControlRigPoseAsset final : public UObject
@@ -1140,33 +1167,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UControlRigPoseAsset;
-
-// Class ControlRig.ControlRigPoseMirrorSettings
-// 0x0028 (0x0058 - 0x0030)
-class UControlRigPoseMirrorSettings final : public UObject
-{
-public:
-	class FString                                 RightSide;                                         // 0x0030(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 LeftSide;                                          // 0x0040(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAxis                                         MirrorAxis;                                        // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	EAxis                                         AxisToFlip;                                        // 0x0051(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ControlRigPoseMirrorSettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ControlRigPoseMirrorSettings")
-	}
-	static class UControlRigPoseMirrorSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UControlRigPoseMirrorSettings>();
-	}
-};
-DUMPER7_ASSERTS_UControlRigPoseMirrorSettings;
 
 // Class ControlRig.ControlRigPoseProjectSettings
 // 0x0010 (0x0040 - 0x0030)

@@ -28,7 +28,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZEquippableLoadoutSlot Category, int32 SlotIndex)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZEquippableLoadoutSlot Category, int32 SlotIndex_0)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_Event_PreviousValue;                        // 0x001C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x0028(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

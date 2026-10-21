@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_MainMenu_NetInfo.WBP_MainMenu_NetInfo_C.BP_OnServerRegionChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_NetInfo_C::BP_OnServerRegionChanged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnServerRegionChanged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_NetInfo.WBP_MainMenu_NetInfo_C.ExecuteUbergraph_WBP_MainMenu_NetInfo
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,18 +43,6 @@ void UWBP_MainMenu_NetInfo_C::ExecuteUbergraph_WBP_MainMenu_NetInfo(int32 EntryP
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_NetInfo.WBP_MainMenu_NetInfo_C.BP_OnServerRegionChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_NetInfo_C::BP_OnServerRegionChanged()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnServerRegionChanged", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

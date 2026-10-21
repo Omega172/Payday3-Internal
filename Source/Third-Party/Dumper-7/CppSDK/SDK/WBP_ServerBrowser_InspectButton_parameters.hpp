@@ -18,39 +18,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.SetActionEnabled
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_InspectButton_C_SetActionEnabled final
+struct WBP_ServerBrowser_InspectButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bIsEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_SetActionEnabled;
-
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_InspectButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_PreConstruct;
-
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.OnFocusChanged
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_ServerBrowser_InspectButton_C_OnFocusChanged final
-{
-public:
-	bool                                          NewFocus;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_MakeStruct_LinearColor_1;                   // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0014)()
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x004C(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_OnFocusChanged;
+DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_ButtonFocusedChanged;
 
 // Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ExecuteUbergraph_WBP_ServerBrowser_InspectButton
 // 0x0058 (0x0058 - 0x0000)
@@ -81,14 +56,39 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_ExecuteUbergraph_WBP_ServerBrowser_InspectButton;
 
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_InspectButton_C_ButtonFocusedChanged final
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.OnFocusChanged
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_ServerBrowser_InspectButton_C_OnFocusChanged final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewFocus;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_MakeStruct_LinearColor_1;                   // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0014)()
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x004C(0x0014)()
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_OnFocusChanged;
+
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_InspectButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_PreConstruct;
+
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.SetActionEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_InspectButton_C_SetActionEnabled final
+{
+public:
+	bool                                          bIsEnabled_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_InspectButton_C_SetActionEnabled;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

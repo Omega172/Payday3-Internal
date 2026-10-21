@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
 #include "ModelingComponents_structs.hpp"
+#include "InteractiveToolsFramework_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "InteractiveToolsFramework_classes.hpp"
 #include "GeometryFramework_classes.hpp"
+#include "Engine_classes.hpp"
 #include "DeveloperSettings_classes.hpp"
 #include "PhysicsCore_structs.hpp"
 
@@ -433,35 +433,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UVoxelProperties;
-
-// Class ModelingComponents.ModelingComponentsEditorSettings
-// 0x0018 (0x0060 - 0x0048)
-class UModelingComponentsEditorSettings final : public UDeveloperSettings
-{
-public:
-	EModelingComponentsPlaneVisualizationMode     GridMode;                                          // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NumGridLines;                                      // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GridSpacing;                                       // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GridScale;                                         // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         GridSize;                                          // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("ModelingComponentsEditorSettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"ModelingComponentsEditorSettings")
-	}
-	static class UModelingComponentsEditorSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UModelingComponentsEditorSettings>();
-	}
-};
-DUMPER7_ASSERTS_UModelingComponentsEditorSettings;
 
 // Class ModelingComponents.MultiSelectionMeshEditingToolBuilder
 // 0x0000 (0x0030 - 0x0030)
@@ -1782,6 +1753,35 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UModelingComponentsSettings;
+
+// Class ModelingComponents.ModelingComponentsEditorSettings
+// 0x0018 (0x0060 - 0x0048)
+class UModelingComponentsEditorSettings final : public UDeveloperSettings
+{
+public:
+	EModelingComponentsPlaneVisualizationMode     GridMode;                                          // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NumGridLines;                                      // 0x004C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GridSpacing;                                       // 0x0050(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GridScale;                                         // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         GridSize;                                          // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("ModelingComponentsEditorSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModelingComponentsEditorSettings")
+	}
+	static class UModelingComponentsEditorSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UModelingComponentsEditorSettings>();
+	}
+};
+DUMPER7_ASSERTS_UModelingComponentsEditorSettings;
 
 // Class ModelingComponents.ModelingObjectsCreationAPI
 // 0x0000 (0x0030 - 0x0030)

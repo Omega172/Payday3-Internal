@@ -13,30 +13,12 @@
 #include "ControlRig_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AnimationCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "RigVM_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
-
-// Function ControlRig.ControlRigShapeLibraryLink.SetShapeLibrary
-// 0x0030 (0x0030 - 0x0000)
-struct ControlRigShapeLibraryLink_SetShapeLibrary final
-{
-public:
-	TSoftObjectPtr<class UControlRigShapeLibrary> InShapeLibrary;                                    // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_ControlRigShapeLibraryLink_SetShapeLibrary;
-
-// Function ControlRig.ControlRigShapeLibraryLink.GetShapeLibrary
-// 0x0030 (0x0030 - 0x0000)
-struct ControlRigShapeLibraryLink_GetShapeLibrary final
-{
-public:
-	TSoftObjectPtr<class UControlRigShapeLibrary> ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_ControlRigShapeLibraryLink_GetShapeLibrary;
 
 // Function ControlRig.ControlRig.FindControlRigs
 // 0x0020 (0x0020 - 0x0000)
@@ -175,6 +157,24 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_ControlRig_SupportsBackwardsSolve;
+
+// Function ControlRig.ControlRigShapeLibraryLink.SetShapeLibrary
+// 0x0030 (0x0030 - 0x0000)
+struct ControlRigShapeLibraryLink_SetShapeLibrary final
+{
+public:
+	TSoftObjectPtr<class UControlRigShapeLibrary> InShapeLibrary;                                    // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ControlRigShapeLibraryLink_SetShapeLibrary;
+
+// Function ControlRig.ControlRigShapeLibraryLink.GetShapeLibrary
+// 0x0030 (0x0030 - 0x0000)
+struct ControlRigShapeLibraryLink_GetShapeLibrary final
+{
+public:
+	TSoftObjectPtr<class UControlRigShapeLibrary> ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_ControlRigShapeLibraryLink_GetShapeLibrary;
 
 // Function ControlRig.RigHierarchy.GetEulerTransformFromControlValue
 // 0x00D0 (0x00D0 - 0x0000)

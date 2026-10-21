@@ -16,111 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.UpdateState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// ESBZCampaignEntryState                  State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignButton_Small_C::UpdateState(ESBZCampaignEntryState State)
+void UWBP_CampaignButton_Small_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateState", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_CampaignButton_Small_C_UpdateState Parms{};
+	Params::WBP_CampaignButton_Small_C_ButtonFocusedChanged Parms{};
 
-	Parms.State = State;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.SetSelected
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.ExecuteUbergraph_WBP_CampaignButton_Small
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignButton_Small_C::SetSelected(bool bIsSelected)
+void UWBP_CampaignButton_Small_C::ExecuteUbergraph_WBP_CampaignButton_Small(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSelected", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignButton_Small_C", "ExecuteUbergraph_WBP_CampaignButton_Small", FuncInfo);
 
-	Params::WBP_CampaignButton_Small_C_SetSelected Parms{};
+	Params::WBP_CampaignButton_Small_C_ExecuteUbergraph_WBP_CampaignButton_Small Parms{};
 
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.SetEntryState
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignButton_Small_C::SetEntryState(ESBZCampaignEntryState NewState)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
-
-	Params::WBP_CampaignButton_Small_C_SetEntryState Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.SetCampaignData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZCampaignBaseEntryData*  Entry                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignButton_Small_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
-
-	Params::WBP_CampaignButton_Small_C_SetCampaignData Parms{};
-
-	Parms.Entry = Entry;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignButton_Small_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_CampaignButton_Small_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.OnStateUpdated
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCampaignEntryState                  OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignButton_Small_C::OnStateUpdated(ESBZCampaignEntryState OldState, ESBZCampaignEntryState NewState)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateUpdated", FnName));
-
-	Params::WBP_CampaignButton_Small_C_OnStateUpdated Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,37 +70,111 @@ ESBZCampaignEntryState UWBP_CampaignButton_Small_C::GetEntryState()
 }
 
 
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.ExecuteUbergraph_WBP_CampaignButton_Small
-// (Final, UbergraphFunction)
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.OnStateUpdated
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCampaignEntryState                  OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignButton_Small_C::ExecuteUbergraph_WBP_CampaignButton_Small(int32 EntryPoint)
+void UWBP_CampaignButton_Small_C::OnStateUpdated(ESBZCampaignEntryState OldState, ESBZCampaignEntryState NewState)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignButton_Small_C", "ExecuteUbergraph_WBP_CampaignButton_Small", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateUpdated", FnName));
 
-	Params::WBP_CampaignButton_Small_C_ExecuteUbergraph_WBP_CampaignButton_Small Parms{};
+	Params::WBP_CampaignButton_Small_C_OnStateUpdated Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignButton_Small_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_CampaignButton_Small_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_CampaignButton_Small_C_ButtonFocusedChanged Parms{};
+	Params::WBP_CampaignButton_Small_C_PreConstruct Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.SetCampaignData
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZCampaignBaseEntryData*  Entry                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignButton_Small_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
+
+	Params::WBP_CampaignButton_Small_C_SetCampaignData Parms{};
+
+	Parms.Entry = Entry;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.SetEntryState
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignButton_Small_C::SetEntryState(ESBZCampaignEntryState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
+
+	Params::WBP_CampaignButton_Small_C_SetEntryState Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.SetSelected
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignButton_Small_C::SetSelected(bool bIsSelected)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSelected", FnName));
+
+	Params::WBP_CampaignButton_Small_C_SetSelected Parms{};
+
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignButton_Small.WBP_CampaignButton_Small_C.UpdateState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCampaignEntryState                  State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignButton_Small_C::UpdateState(ESBZCampaignEntryState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateState", FnName));
+
+	Params::WBP_CampaignButton_Small_C_UpdateState Parms{};
+
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

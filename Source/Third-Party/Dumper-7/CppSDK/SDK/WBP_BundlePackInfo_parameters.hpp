@@ -14,17 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_BundlePackInfo.WBP_BundlePackInfo_C.SetInfo
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_BundlePackInfo_C_SetInfo final
-{
-public:
-	class FText                                   InName;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   InDescription;                                     // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   InType;                                            // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_BundlePackInfo_C_SetInfo;
-
 // Function WBP_BundlePackInfo.WBP_BundlePackInfo_C.ExecuteUbergraph_WBP_BundlePackInfo
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_BundlePackInfo_C_ExecuteUbergraph_WBP_BundlePackInfo final
@@ -37,6 +26,17 @@ public:
 	class FText                                   K2Node_CustomEvent_InType;                         // 0x0028(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_BundlePackInfo_C_ExecuteUbergraph_WBP_BundlePackInfo;
+
+// Function WBP_BundlePackInfo.WBP_BundlePackInfo_C.SetInfo
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_BundlePackInfo_C_SetInfo final
+{
+public:
+	class FText                                   InName;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   InDescription;                                     // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   InType;                                            // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_BundlePackInfo_C_SetInfo;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

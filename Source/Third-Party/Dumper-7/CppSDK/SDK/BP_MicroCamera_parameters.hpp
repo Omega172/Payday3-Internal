@@ -25,6 +25,7 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MicroCamera_C_ExecuteUbergraph_BP_MicroCamera;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

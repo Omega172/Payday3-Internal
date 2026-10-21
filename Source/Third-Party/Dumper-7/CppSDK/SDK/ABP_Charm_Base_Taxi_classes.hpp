@@ -30,7 +30,7 @@ public:
 	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0EB0(0x0030)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

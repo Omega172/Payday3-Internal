@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chains_Mask_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chains_Mask_C;
 
 SDK_NAMESPACE_END

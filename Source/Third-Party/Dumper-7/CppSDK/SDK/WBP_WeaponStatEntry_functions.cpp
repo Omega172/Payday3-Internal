@@ -16,24 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_WeaponStatEntry.WBP_WeaponStatEntry_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WeaponStatEntry_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_WeaponStatEntry_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_WeaponStatEntry.WBP_WeaponStatEntry_C.ExecuteUbergraph_WBP_WeaponStatEntry
 // (Final, UbergraphFunction)
 // Parameters:
@@ -47,6 +29,24 @@ void UWBP_WeaponStatEntry_C::ExecuteUbergraph_WBP_WeaponStatEntry(int32 EntryPoi
 	Params::WBP_WeaponStatEntry_C_ExecuteUbergraph_WBP_WeaponStatEntry Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WeaponStatEntry.WBP_WeaponStatEntry_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WeaponStatEntry_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_WeaponStatEntry_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -14,14 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_HorizontalModGrid_C_PreConstruct final
+// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.CreateNewMod
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Inventory_HorizontalModGrid_C_CreateNewMod final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ModGridIcon_C*        OutWidget;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ModGridIcon_C*        CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_HorizontalModGrid_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Inventory_HorizontalModGrid_C_CreateNewMod;
 
 // Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid
 // 0x00F8 (0x00F8 - 0x0000)
@@ -75,16 +77,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_HorizontalModGrid_C_ExecuteUbergraph_WBP_UI_Inventory_HorizontalModGrid;
 
-// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.CreateNewMod
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_Inventory_HorizontalModGrid_C_CreateNewMod final
+// Function WBP_UI_Inventory_HorizontalModGrid.WBP_UI_Inventory_HorizontalModGrid_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_HorizontalModGrid_C_PreConstruct final
 {
 public:
-	class UWBP_UI_Inventory_ModGridIcon_C*        OutWidget;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ModGridIcon_C*        CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_HorizontalModGrid_C_CreateNewMod;
+DUMPER7_ASSERTS_WBP_UI_Inventory_HorizontalModGrid_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

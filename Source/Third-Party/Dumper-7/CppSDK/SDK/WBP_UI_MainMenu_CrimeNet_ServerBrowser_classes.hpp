@@ -34,16 +34,16 @@ public:
 	class UWBP_UI_MainMenu_CrimeNet_ServerButton_C* ActiveButton;                                    // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReloadButtons();
-	void OnLostStackFocused();
-	void OnJoinStarted(const struct FSBZOnlineSearchResult& RemoteSessionInfo);
-	void OnInviteFinished(ESBZOnlineCode ErrorCode);
-	void OnInitialized();
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results);
-	void OnButtonFocusedChanged(class USBZMenuButton* Button, bool bIsEnabled);
 	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser(int32 EntryPoint);
+	void OnButtonFocusedChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A(ESBZOnlineCode ErrorCode, const TArray<struct FSBZOnlineSearchResult>& Results);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInitialized();
+	void OnInviteFinished(ESBZOnlineCode ErrorCode);
+	void OnJoinStarted(const struct FSBZOnlineSearchResult& RemoteSessionInfo);
+	void OnLostStackFocused();
+	void ReloadButtons();
 
 public:
 	static class UClass* StaticClass()

@@ -16,42 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.SetInverted
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsInverted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomSpriteActionInput_C::SetInverted(bool bIsInverted)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInverted", FnName));
-
-	Params::WBP_CustomSpriteActionInput_C_SetInverted Parms{};
-
-	Parms.bIsInverted = bIsInverted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomSpriteActionInput_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_CustomSpriteActionInput_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.ExecuteUbergraph_WBP_CustomSpriteActionInput
 // (Final, UbergraphFunction)
 // Parameters:
@@ -65,6 +29,42 @@ void UWBP_CustomSpriteActionInput_C::ExecuteUbergraph_WBP_CustomSpriteActionInpu
 	Params::WBP_CustomSpriteActionInput_C_ExecuteUbergraph_WBP_CustomSpriteActionInput Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteActionInput_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_CustomSpriteActionInput_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.SetInverted
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsInverted_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteActionInput_C::SetInverted(bool bIsInverted_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInverted", FnName));
+
+	Params::WBP_CustomSpriteActionInput_C_SetInverted Parms{};
+
+	Parms.bIsInverted_0 = bIsInverted_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -29,11 +29,11 @@ public:
 	bool                                          ShowText;                                          // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetTextVisible(bool IsTextVisible);
-	void SetChapterText(const class FText& InputText);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetChapterText(const class FText& InputText);
+	void SetTextVisible(bool IsTextVisible);
 
 public:
 	static class UClass* StaticClass()

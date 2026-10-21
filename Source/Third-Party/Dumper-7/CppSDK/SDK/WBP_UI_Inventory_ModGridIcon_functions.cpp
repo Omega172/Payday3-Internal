@@ -16,19 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.SetAndDisplayText
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_ModGridIcon_C::SetAndDisplayText(const class FText& InText)
+void UWBP_UI_Inventory_ModGridIcon_C::ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAndDisplayText", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_ModGridIcon_C", "ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon", FuncInfo);
 
-	Params::WBP_UI_Inventory_ModGridIcon_C_SetAndDisplayText Parms{};
+	Params::WBP_UI_Inventory_ModGridIcon_C_ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon Parms{};
 
-	Parms.InText = std::move(InText);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,19 +52,19 @@ void UWBP_UI_Inventory_ModGridIcon_C::SetAndDisplayIcon(const class USBZInventor
 }
 
 
-// Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Inventory_ModGridIcon.WBP_UI_Inventory_ModGridIcon_C.SetAndDisplayText
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_Inventory_ModGridIcon_C::ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon(int32 EntryPoint)
+void UWBP_UI_Inventory_ModGridIcon_C::SetAndDisplayText(const class FText& InText)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_ModGridIcon_C", "ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAndDisplayText", FnName));
 
-	Params::WBP_UI_Inventory_ModGridIcon_C_ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon Parms{};
+	Params::WBP_UI_Inventory_ModGridIcon_C_SetAndDisplayText Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

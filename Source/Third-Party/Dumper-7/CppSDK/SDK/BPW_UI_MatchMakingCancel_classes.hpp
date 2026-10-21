@@ -36,10 +36,10 @@ public:
 	bool                                          NewVar_0;                                          // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BPW_UI_MatchMakingCancel(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void BndEvt__BPW_UI_MatchMakingCancel_WBP_UI_Widget_ActionInput_Hold_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature();
 	void BndEvt__BPW_UI_MatchMakingCancel_WBP_UI_Widget_ActionInput_Hold_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__BPW_UI_MatchMakingCancel_WBP_UI_Widget_ActionInput_Hold_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature();
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ExecuteUbergraph_BPW_UI_MatchMakingCancel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

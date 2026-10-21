@@ -31,8 +31,8 @@ public:
 	class USBZBaseWeaponData*                     ParentWeapon_Data;                                 // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetInfo(const class FText& InName, const class FText& InDescription, const class FText& InType);
 	void ExecuteUbergraph_WBP_BundlePackInfo(int32 EntryPoint);
+	void SetInfo(const class FText& InName, const class FText& InDescription, const class FText& InType);
 
 public:
 	static class UClass* StaticClass()

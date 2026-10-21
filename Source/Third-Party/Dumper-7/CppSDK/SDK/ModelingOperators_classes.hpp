@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "ModelingOperators_structs.hpp"
+#include "InteractiveToolsFramework_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "InteractiveToolsFramework_classes.hpp"
 
 
 SDK_NAMESPACE_START

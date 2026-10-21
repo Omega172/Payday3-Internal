@@ -52,16 +52,16 @@ public:
 	class FName                                   QuestsStackName;                                   // 0x0534(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnInitialized();
-	void InitializeQuest(const struct FSBZUIQuestData& InQuest);
-	void InitializeButton();
-	void GetChallengeDescriptionText(const struct FSBZUIQuestChallengeData& InQuestChallenge, class FText* OutText);
-	void ExecuteUbergraph_WBP_Crimenet_QuestButton(int32 EntryPoint);
-	void EnableInput(bool InEnable);
-	void ButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature();
 	void BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonSelected();
+	void EnableInput(bool InEnable);
+	void ExecuteUbergraph_WBP_Crimenet_QuestButton(int32 EntryPoint);
+	void GetChallengeDescriptionText(const struct FSBZUIQuestChallengeData& InQuestChallenge, class FText* OutText);
+	void InitializeButton();
+	void InitializeQuest(const struct FSBZUIQuestData& InQuest);
+	void OnInitialized();
 
 public:
 	static class UClass* StaticClass()

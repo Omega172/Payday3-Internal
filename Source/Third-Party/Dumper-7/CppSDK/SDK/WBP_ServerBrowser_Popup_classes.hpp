@@ -32,10 +32,10 @@ public:
 	bool                                          ShowFailReason;                                    // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup();
-	void RemoveFontMaterial();
-	void ExecuteUbergraph_WBP_ServerBrowser_Popup(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_ServerBrowser_Popup(int32 EntryPoint);
+	void RemoveFontMaterial();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Popup();
 
 public:
 	static class UClass* StaticClass()

@@ -16,52 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.SetPlayerUIInfo
-// 0x04B0 (0x04B0 - 0x0000)
-struct WBP_UI_Lobby_Player_C_SetPlayerUIInfo final
-{
-public:
-	struct FSBZLobbyCharacterInfoUi               InCharacter;                                       // 0x0000(0x0468)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Temp_bool_Variable;                                // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0470(0x0010)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0480(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0490(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x04A0(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_SetPlayerUIInfo;
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Lobby_Player_C_OnMMStopped final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnMMStopped;
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLobbyUpdate
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Lobby_Player_C_OnLobbyUpdate final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnLobbyUpdate;
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.GetLobbyInfo
-// 0x0488 (0x0488 - 0x0000)
-struct WBP_UI_Lobby_Player_C_GetLobbyInfo final
-{
-public:
-	struct FSBZLobbyCharacterInfoUi               CharacterUIInfo;                                   // 0x0000(0x0468)(Parm, OutParm)
-	bool                                          IsValid;                                           // 0x0468(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZLobbyCharacterInfoUi>       CallFunc_GetUiLobbyInfo_OutInfo;                   // 0x0470(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_GetLobbyInfo;
-
 // Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.ExecuteUbergraph_WBP_UI_Lobby_Player
 // 0x0948 (0x0948 - 0x0000)
 struct WBP_UI_Lobby_Player_C_ExecuteUbergraph_WBP_UI_Lobby_Player final
@@ -85,6 +39,52 @@ public:
 	bool                                          CallFunc_GetLobbyInfo_IsValid_1;                   // 0x0940(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_ExecuteUbergraph_WBP_UI_Lobby_Player;
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.GetLobbyInfo
+// 0x0488 (0x0488 - 0x0000)
+struct WBP_UI_Lobby_Player_C_GetLobbyInfo final
+{
+public:
+	struct FSBZLobbyCharacterInfoUi               CharacterUIInfo;                                   // 0x0000(0x0468)(Parm, OutParm)
+	bool                                          IsValid;                                           // 0x0468(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZLobbyCharacterInfoUi>       CallFunc_GetUiLobbyInfo_OutInfo;                   // 0x0470(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0480(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_GetLobbyInfo;
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLobbyUpdate
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Lobby_Player_C_OnLobbyUpdate final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnLobbyUpdate;
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Lobby_Player_C_OnMMStopped final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_OnMMStopped;
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.SetPlayerUIInfo
+// 0x04B0 (0x04B0 - 0x0000)
+struct WBP_UI_Lobby_Player_C_SetPlayerUIInfo final
+{
+public:
+	struct FSBZLobbyCharacterInfoUi               InCharacter;                                       // 0x0000(0x0468)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          Temp_bool_Variable;                                // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_469[0x7];                                      // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0470(0x0010)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0480(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0490(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x04A0(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Lobby_Player_C_SetPlayerUIInfo;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

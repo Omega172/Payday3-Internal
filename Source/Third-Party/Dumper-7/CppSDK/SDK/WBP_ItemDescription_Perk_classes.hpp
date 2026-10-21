@@ -36,12 +36,12 @@ public:
 	class FText                                   PreviewPartText;                                   // 0x0358(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void SetText_Title(const class FText& SlotText, const class FText& PartText);
-	void SetText_Description(const class FText& Text);
-	void SetImg_SlotIcon(class UObject* ResourceObject);
-	void SetColor_SlotIcon(const struct FLinearColor& InColorAndOpacity);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_ItemDescription_Perk(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetColor_SlotIcon(const struct FLinearColor& InColorAndOpacity);
+	void SetImg_SlotIcon(class UObject* ResourceObject);
+	void SetText_Description(const class FText& Text);
+	void SetText_Title(const class FText& SlotText, const class FText& PartText);
 
 public:
 	static class UClass* StaticClass()

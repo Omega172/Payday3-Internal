@@ -14,24 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.SetInverted
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CustomSpriteActionInput_C_SetInverted final
-{
-public:
-	bool                                          bIsInverted;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomSpriteActionInput_C_SetInverted;
-
-// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CustomSpriteActionInput_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomSpriteActionInput_C_PreConstruct;
-
 // Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.ExecuteUbergraph_WBP_CustomSpriteActionInput
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_CustomSpriteActionInput_C_ExecuteUbergraph_WBP_CustomSpriteActionInput final
@@ -45,6 +27,24 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CustomSpriteActionInput_C_ExecuteUbergraph_WBP_CustomSpriteActionInput;
+
+// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CustomSpriteActionInput_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomSpriteActionInput_C_PreConstruct;
+
+// Function WBP_CustomSpriteActionInput.WBP_CustomSpriteActionInput_C.SetInverted
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CustomSpriteActionInput_C_SetInverted final
+{
+public:
+	bool                                          bIsInverted_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomSpriteActionInput_C_SetInverted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

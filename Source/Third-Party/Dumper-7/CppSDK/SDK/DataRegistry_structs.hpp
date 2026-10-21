@@ -63,25 +63,6 @@ enum class EDataRegistryAvailability : uint8
 	EDataRegistryAvailability_MAX            = 6,
 };
 
-// ScriptStruct DataRegistry.DataRegistryType
-// 0x000C (0x000C - 0x0000)
-struct FDataRegistryType final
-{
-public:
-	class FName                                   Name;                                              // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-};
-DUMPER7_ASSERTS_FDataRegistryType;
-
-// ScriptStruct DataRegistry.DataRegistryId
-// 0x0018 (0x0018 - 0x0000)
-struct FDataRegistryId final
-{
-public:
-	struct FDataRegistryType                      RegistryType;                                      // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   ItemName;                                          // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDataRegistryId;
-
 // ScriptStruct DataRegistry.DataRegistryLookup
 // 0x0020 (0x0020 - 0x0000)
 struct alignas(0x08) FDataRegistryLookup final
@@ -101,6 +82,25 @@ public:
 	float                                         CachedTableKeepSeconds;                            // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDataRegistrySource_DataTableRules;
+
+// ScriptStruct DataRegistry.DataRegistryType
+// 0x000C (0x000C - 0x0000)
+struct FDataRegistryType final
+{
+public:
+	class FName                                   Name;                                              // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+};
+DUMPER7_ASSERTS_FDataRegistryType;
+
+// ScriptStruct DataRegistry.DataRegistryId
+// 0x0018 (0x0018 - 0x0000)
+struct FDataRegistryId final
+{
+public:
+	struct FDataRegistryType                      RegistryType;                                      // 0x0000(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   ItemName;                                          // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDataRegistryId;
 
 // ScriptStruct DataRegistry.DataRegistryIdFormat
 // 0x000C (0x000C - 0x0000)

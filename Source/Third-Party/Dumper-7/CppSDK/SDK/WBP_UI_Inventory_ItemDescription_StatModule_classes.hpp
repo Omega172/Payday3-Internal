@@ -29,9 +29,9 @@ public:
 	class UTextBlock*                             Text_Stat_Name;                                    // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetStat(double BaseValue, double Addition, const class FText& StatName);
-	void ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule(int32 EntryPoint);
+	void SetStat(double BaseValue, double Addition, const class FText& StatName);
 
 public:
 	static class UClass* StaticClass()

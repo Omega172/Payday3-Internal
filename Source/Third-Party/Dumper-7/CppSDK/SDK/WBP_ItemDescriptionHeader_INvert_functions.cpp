@@ -16,24 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ItemDescriptionHeader_INvert.WBP_ItemDescriptionHeader_INvert_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemDescriptionHeader_INvert_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ItemDescriptionHeader_INvert_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ItemDescriptionHeader_INvert.WBP_ItemDescriptionHeader_INvert_C.ExecuteUbergraph_WBP_ItemDescriptionHeader_INvert
 // (Final, UbergraphFunction)
 // Parameters:
@@ -47,6 +29,24 @@ void UWBP_ItemDescriptionHeader_INvert_C::ExecuteUbergraph_WBP_ItemDescriptionHe
 	Params::WBP_ItemDescriptionHeader_INvert_C_ExecuteUbergraph_WBP_ItemDescriptionHeader_INvert Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemDescriptionHeader_INvert.WBP_ItemDescriptionHeader_INvert_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemDescriptionHeader_INvert_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ItemDescriptionHeader_INvert_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

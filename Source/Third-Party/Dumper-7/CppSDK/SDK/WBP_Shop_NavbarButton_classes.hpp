@@ -34,14 +34,14 @@ public:
 	bool                                          IsSecondLayer;                                     // 0x0439(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void SetHovered(bool InHovered);
-	void SetFocused(bool InFocused);
-	void SetActive(bool bIsActive_SetActive);
-	void OnInitialized();
-	void InitializeButton(const class FText& ButtonText_InitializeButton);
-	void ExecuteUbergraph_WBP_Shop_NavBarButton(int32 EntryPoint);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
+	void ExecuteUbergraph_WBP_Shop_NavBarButton(int32 EntryPoint);
+	void InitializeButton(const class FText& ButtonText);
+	void OnInitialized();
+	void SetActive(bool bIsActive);
+	void SetFocused(bool InFocused);
+	void SetHovered(bool InHovered);
 
 public:
 	static class UClass* StaticClass()

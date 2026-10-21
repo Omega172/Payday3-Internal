@@ -30,15 +30,14 @@ enum class EClusterConnectionTypeEnum : uint8
 	Chaos_MAX                                = 7,
 };
 
-// ScriptStruct ChaosSolverEngine.ChaosHandlerSet
-// 0x0058 (0x0058 - 0x0000)
-struct FChaosHandlerSet final
+// ScriptStruct ChaosSolverEngine.DataflowRigidSolverProxy
+// 0x0018 (0x0090 - 0x0078)
+struct FDataflowRigidSolverProxy final : public FDataflowPhysicsSolverProxy
 {
 public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<class UObject*>                          ChaosHandlers;                                     // 0x0008(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+	uint8                                         Pad_78[0x18];                                      // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FChaosHandlerSet;
+DUMPER7_ASSERTS_FDataflowRigidSolverProxy;
 
 // ScriptStruct ChaosSolverEngine.ChaosPhysicsCollisionInfo
 // 0x00C0 (0x00C0 - 0x0000)
@@ -86,6 +85,16 @@ public:
 };
 DUMPER7_ASSERTS_FCrumblingEventCallbackWrapper;
 
+// ScriptStruct ChaosSolverEngine.ChaosHandlerSet
+// 0x0058 (0x0058 - 0x0000)
+struct FChaosHandlerSet final
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<class UObject*>                          ChaosHandlers;                                     // 0x0008(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FChaosHandlerSet;
+
 // ScriptStruct ChaosSolverEngine.ChaosDebugSubstepControl
 // 0x0003 (0x0003 - 0x0000)
 struct FChaosDebugSubstepControl final
@@ -96,14 +105,5 @@ public:
 	bool                                          bStep;                                             // 0x0002(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FChaosDebugSubstepControl;
-
-// ScriptStruct ChaosSolverEngine.DataflowRigidSolverProxy
-// 0x0018 (0x0090 - 0x0078)
-struct FDataflowRigidSolverProxy final : public FDataflowPhysicsSolverProxy
-{
-public:
-	uint8                                         Pad_78[0x18];                                      // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FDataflowRigidSolverProxy;
 
 SDK_NAMESPACE_END

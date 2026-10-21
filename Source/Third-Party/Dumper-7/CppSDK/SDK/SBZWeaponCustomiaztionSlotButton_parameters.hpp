@@ -16,15 +16,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.Setup
-// 0x0010 (0x0010 - 0x0000)
-struct SBZWeaponCustomiaztionSlotButton_C_Setup final
+// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct SBZWeaponCustomiaztionSlotButton_C_ButtonFocusedChanged final
 {
 public:
-	const class USBZModularPartSlotBase*          ModularSlot;                                       // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class USBZModularPartDataAsset*         EquippedPart;                                      // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_SBZWeaponCustomiaztionSlotButton_C_Setup;
+DUMPER7_ASSERTS_SBZWeaponCustomiaztionSlotButton_C_ButtonFocusedChanged;
 
 // Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.ExecuteUbergraph_SBZWeaponCustomiaztionSlotButton
 // 0x0070 (0x0070 - 0x0000)
@@ -51,14 +50,15 @@ public:
 };
 DUMPER7_ASSERTS_SBZWeaponCustomiaztionSlotButton_C_ExecuteUbergraph_SBZWeaponCustomiaztionSlotButton;
 
-// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct SBZWeaponCustomiaztionSlotButton_C_ButtonFocusedChanged final
+// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.Setup
+// 0x0010 (0x0010 - 0x0000)
+struct SBZWeaponCustomiaztionSlotButton_C_Setup final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartSlotBase*          ModularSlot;                                       // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartDataAsset*         EquippedPart;                                      // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_SBZWeaponCustomiaztionSlotButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_SBZWeaponCustomiaztionSlotButton_C_Setup;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

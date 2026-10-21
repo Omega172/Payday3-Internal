@@ -15,6 +15,29 @@
 
 SDK_NAMESPACE_START
 
+// Class SocketSubsystemEOS.NetConnectionEOS
+// 0x0008 (0x1EC8 - 0x1EC0)
+class UNetConnectionEOS final : public UIpConnection
+{
+public:
+	uint8                                         Pad_1EC0[0x8];                                     // 0x1EC0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("NetConnectionEOS")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetConnectionEOS")
+	}
+	static class UNetConnectionEOS* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UNetConnectionEOS>();
+	}
+};
+DUMPER7_ASSERTS_UNetConnectionEOS;
+
 // Class SocketSubsystemEOS.NetDriverEOSBase
 // 0x0008 (0x09B0 - 0x09A8)
 class UNetDriverEOSBase : public UIpNetDriver
@@ -39,28 +62,5 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UNetDriverEOSBase;
-
-// Class SocketSubsystemEOS.NetConnectionEOS
-// 0x0008 (0x1EC8 - 0x1EC0)
-class UNetConnectionEOS final : public UIpConnection
-{
-public:
-	uint8                                         Pad_1EC0[0x8];                                     // 0x1EC0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("NetConnectionEOS")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"NetConnectionEOS")
-	}
-	static class UNetConnectionEOS* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UNetConnectionEOS>();
-	}
-};
-DUMPER7_ASSERTS_UNetConnectionEOS;
 
 SDK_NAMESPACE_END

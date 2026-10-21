@@ -16,30 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.UpdateSecurityCompanies
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Crimenet_SecurityCompanyDisplayPanel_C::UpdateSecurityCompanies()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSecurityCompanies", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Crimenet_SecurityCompanyDisplayPanel_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel
 // (Final, UbergraphFunction)
 // Parameters:
@@ -55,6 +31,30 @@ void UWBP_UI_Crimenet_SecurityCompanyDisplayPanel_C::ExecuteUbergraph_WBP_UI_Cri
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Crimenet_SecurityCompanyDisplayPanel_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.UpdateSecurityCompanies
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Crimenet_SecurityCompanyDisplayPanel_C::UpdateSecurityCompanies()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSecurityCompanies", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

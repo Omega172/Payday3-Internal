@@ -41,15 +41,15 @@ public:
 	bool                                          bHasText;                                          // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void ItemInSlotChanged(const class USBZInventoryBaseData* InItemBaseData_ItemInSlotChanged);
-	void HoveredChangedVisuals(bool IsHovered);
-	void FocusChangedVisuals(bool bIsFocused);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void CosmeticPartSlotChanged(const class USBZCosmeticsPartSlot* InCosmeticPartSlot);
 	void ExecuteUbergraph_WBP_Mask_Customization_Slot_Button(int32 EntryPoint);
-	void CosmeticPartSlotChanged(const class USBZCosmeticsPartSlot* InCosmeticPartSlot_CosmeticPartSlotChanged);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void FocusChangedVisuals(bool bIsFocused);
+	void HoveredChangedVisuals(bool IsHovered_0);
+	void ItemInSlotChanged(const class USBZInventoryBaseData* InItemBaseData);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
-#include "SBZBackend_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "SBZBackend_structs.hpp"
 
 
 SDK_NAMESPACE_START

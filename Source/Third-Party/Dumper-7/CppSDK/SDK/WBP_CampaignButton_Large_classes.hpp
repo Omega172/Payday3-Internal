@@ -55,16 +55,16 @@ public:
 	ESBZCampaignEntryState                        PreviewState;                                      // 0x04BA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateState(ESBZCampaignEntryState State);
-	void SetSelected(bool bIsSelected);
-	void SetEntryState(ESBZCampaignEntryState NewState);
-	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnStateUpdated(ESBZCampaignEntryState OldState, ESBZCampaignEntryState NewState);
-	ESBZCampaignEntryState GetEntryState();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_CampaignButton_Large(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	ESBZCampaignEntryState GetEntryState();
+	void OnStateUpdated(ESBZCampaignEntryState OldState, ESBZCampaignEntryState NewState);
+	void PreConstruct(bool IsDesignTime);
+	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
+	void SetEntryState(ESBZCampaignEntryState NewState);
+	void SetSelected(bool bIsSelected);
+	void UpdateState(ESBZCampaignEntryState State);
 
 public:
 	static class UClass* StaticClass()

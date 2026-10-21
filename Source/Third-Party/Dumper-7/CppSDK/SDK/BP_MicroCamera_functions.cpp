@@ -23,10 +23,8 @@ SDK_NAMESPACE_START
 
 void ABP_MicroCamera_C::ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MicroCamera_C", "ExecuteUbergraph_BP_MicroCamera");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MicroCamera_C", "ExecuteUbergraph_BP_MicroCamera", FuncInfo);
 
 	Params::BP_MicroCamera_C_ExecuteUbergraph_BP_MicroCamera Parms{};
 
@@ -41,10 +39,8 @@ void ABP_MicroCamera_C::ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint)
 
 void ABP_MicroCamera_C::OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MicroCamera_C", "OnActivated");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

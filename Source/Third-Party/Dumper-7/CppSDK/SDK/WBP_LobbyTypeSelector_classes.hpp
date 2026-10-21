@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
+#include "SBZBackend_structs.hpp"
 
 
 SDK_NAMESPACE_START

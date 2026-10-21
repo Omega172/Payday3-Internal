@@ -16,78 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ButtonAlternativeSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Skills2_SkillButton_C::ButtonAlternativeSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonAlternativeSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
-
-	Params::WBP_Skills2_SkillButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Skills2_SkillButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.Equip
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_SkillButton_C::Equip()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Equip", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ExecuteUbergraph_WBP_Skills2_SkillButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillButton_C::ExecuteUbergraph_WBP_Skills2_SkillButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_SkillButton_C", "ExecuteUbergraph_WBP_Skills2_SkillButton", FuncInfo);
-
-	Params::WBP_Skills2_SkillButton_C_ExecuteUbergraph_WBP_Skills2_SkillButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.GetFocusedColor
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -107,51 +35,51 @@ void UWBP_Skills2_SkillButton_C::GetFocusedColor(struct FSlateColor* FocusedColo
 }
 
 
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.InitializeSkill
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.SetFocused
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZSkillTreePair&         Skill_Tree_Pair_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// bool                                    Focus                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Skills2_SkillButton_C::InitializeSkill(const struct FSBZSkillTreePair& Skill_Tree_Pair_0)
+void UWBP_Skills2_SkillButton_C::SetFocused(bool Focus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkill", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFocused", FnName));
 
-	Params::WBP_Skills2_SkillButton_C_InitializeSkill Parms{};
+	Params::WBP_Skills2_SkillButton_C_SetFocused Parms{};
 
-	Parms.Skill_Tree_Pair_0 = std::move(Skill_Tree_Pair_0);
+	Parms.Focus = Focus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.OnBaseSkillEquipChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bEquipped                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.UnequipSkillButton
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_SkillButton_C::OnBaseSkillEquipChanged(bool bEquipped)
+void UWBP_Skills2_SkillButton_C::UnequipSkillButton()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBaseSkillEquipChanged", FnName));
-
-	Params::WBP_Skills2_SkillButton_C_OnBaseSkillEquipChanged Parms{};
-
-	Parms.bEquipped = bEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Skills2_SkillButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UnequipSkillButton", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.Set State
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZSkillState                          State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillButton_C::Set_State(ESBZSkillState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set State", FnName));
+
+	Params::WBP_Skills2_SkillButton_C_Set_State Parms{};
+
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -209,6 +137,66 @@ void UWBP_Skills2_SkillButton_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Skills2_SkillButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.InitializeSkill
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZSkillTreePair&         Skill_Tree_Pair_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_Skills2_SkillButton_C::InitializeSkill(const struct FSBZSkillTreePair& Skill_Tree_Pair_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkill", FnName));
+
+	Params::WBP_Skills2_SkillButton_C_InitializeSkill Parms{};
+
+	Parms.Skill_Tree_Pair_0 = std::move(Skill_Tree_Pair_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.OnBaseSkillEquipChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEquipped                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillButton_C::OnBaseSkillEquipChanged(bool bEquipped)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBaseSkillEquipChanged", FnName));
+
+	Params::WBP_Skills2_SkillButton_C_OnBaseSkillEquipChanged Parms{};
+
+	Parms.bEquipped = bEquipped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Skills2_SkillButton_C::ButtonSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.Refresh
 // (BlueprintCallable, BlueprintEvent)
 
@@ -221,39 +209,45 @@ void UWBP_Skills2_SkillButton_C::Refresh()
 }
 
 
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.Set State
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZSkillState                          State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ButtonAlternativeSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Skills2_SkillButton_C::Set_State(ESBZSkillState State)
+void UWBP_Skills2_SkillButton_C::ButtonAlternativeSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set State", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonAlternativeSelected", FnName));
 
-	Params::WBP_Skills2_SkillButton_C_Set_State Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.State = State;
+
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_Skills2_SkillButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.SetFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Focus                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.Equip
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_SkillButton_C::SetFocused(bool Focus)
+void UWBP_Skills2_SkillButton_C::Equip()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Equip", FnName));
 
-	Params::WBP_Skills2_SkillButton_C_SetFocused Parms{};
-
-	Parms.Focus = Focus;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -269,15 +263,21 @@ void UWBP_Skills2_SkillButton_C::Unequip()
 }
 
 
-// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.UnequipSkillButton
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_SkillButton.WBP_Skills2_SkillButton_C.ExecuteUbergraph_WBP_Skills2_SkillButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Skills2_SkillButton_C::UnequipSkillButton()
+void UWBP_Skills2_SkillButton_C::ExecuteUbergraph_WBP_Skills2_SkillButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UnequipSkillButton", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_SkillButton_C", "ExecuteUbergraph_WBP_Skills2_SkillButton", FuncInfo);
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Skills2_SkillButton_C_ExecuteUbergraph_WBP_Skills2_SkillButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

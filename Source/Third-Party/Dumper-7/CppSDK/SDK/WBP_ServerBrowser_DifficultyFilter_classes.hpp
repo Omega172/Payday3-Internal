@@ -11,12 +11,12 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_ServerBrowserFilterSelectorType_structs.hpp"
-#include "SBZBackend_structs.hpp"
-#include "UMG_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "E_ServerBrowserFilterSelectorType_structs.hpp"
+#include "UMG_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "SBZBackend_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -56,21 +56,21 @@ public:
 	bool                                          bIsReadOnly;                                       // 0x04C4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateVisuals();
-	void SetReadOnly(bool IsReadOnly);
-	void Reset();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged);
-	void OnSelectedRight();
-	void OnSelectedLeft();
-	void MakeInLine();
-	void ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter(int32 EntryPoint);
-	void Destruct();
-	void Construct();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void BuildOptionsArray();
-	void BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void BuildOptionsArray();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_ServerBrowser_DifficultyFilter(int32 EntryPoint);
+	void MakeInLine();
+	void OnSelectedLeft();
+	void OnSelectedRight();
+	void OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly);
+	void PreConstruct(bool IsDesignTime);
+	void Reset();
+	void SetReadOnly(bool IsReadOnly);
+	void UpdateVisuals();
 
 public:
 	static class UClass* StaticClass()

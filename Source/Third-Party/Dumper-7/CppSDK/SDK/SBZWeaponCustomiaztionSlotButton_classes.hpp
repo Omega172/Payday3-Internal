@@ -36,9 +36,9 @@ public:
 	class USBZEquippablePartDataAsset*            Weapon_Part;                                       // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Setup(const class USBZModularPartSlotBase* ModularSlot, const class USBZModularPartDataAsset* EquippedPart);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_SBZWeaponCustomiaztionSlotButton(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Setup(const class USBZModularPartSlotBase* ModularSlot, const class USBZModularPartDataAsset* EquippedPart);
 
 public:
 	static class UClass* StaticClass()

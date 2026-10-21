@@ -16,31 +16,63 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.RefreshSkillButtonVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_SkillLine_C::Construct()
+void UWBP_Skills2_SkillLine_C::RefreshSkillButtonVisuals()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSkillButtonVisuals", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.ExecuteUbergraph_WBP_Skills2_SkillLine
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.UpdateSkillLinePointCounter
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_SkillLine_C::ExecuteUbergraph_WBP_Skills2_SkillLine(int32 EntryPoint)
+void UWBP_Skills2_SkillLine_C::UpdateSkillLinePointCounter()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_SkillLine_C", "ExecuteUbergraph_WBP_Skills2_SkillLine", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillLinePointCounter", FnName));
 
-	Params::WBP_Skills2_SkillLine_C_ExecuteUbergraph_WBP_Skills2_SkillLine Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.SetSkillTierLocked
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    LockedStatus                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Tier                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillLine_C::SetSkillTierLocked(bool LockedStatus, int32 Tier)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillTierLocked", FnName));
+
+	Params::WBP_Skills2_SkillLine_C_SetSkillTierLocked Parms{};
+
+	Parms.LockedStatus = LockedStatus;
+	Parms.Tier = Tier;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.SetSkillMenuRef
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Skills2_Menu_C*              SkillMenu                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillLine_C::SetSkillMenuRef(class UWBP_Skills2_Menu_C* SkillMenu)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillMenuRef", FnName));
+
+	Params::WBP_Skills2_SkillLine_C_SetSkillMenuRef Parms{};
+
+	Parms.SkillMenu = SkillMenu;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -82,65 +114,33 @@ void UWBP_Skills2_SkillLine_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.RefreshSkillButtonVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Skills2_SkillLine_C::RefreshSkillButtonVisuals()
+void UWBP_Skills2_SkillLine_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSkillButtonVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.SetSkillMenuRef
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.ExecuteUbergraph_WBP_Skills2_SkillLine
+// (Final, UbergraphFunction)
 // Parameters:
-// class UWBP_Skills2_Menu_C*              SkillMenu                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Skills2_SkillLine_C::SetSkillMenuRef(class UWBP_Skills2_Menu_C* SkillMenu)
+void UWBP_Skills2_SkillLine_C::ExecuteUbergraph_WBP_Skills2_SkillLine(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillMenuRef", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_SkillLine_C", "ExecuteUbergraph_WBP_Skills2_SkillLine", FuncInfo);
 
-	Params::WBP_Skills2_SkillLine_C_SetSkillMenuRef Parms{};
+	Params::WBP_Skills2_SkillLine_C_ExecuteUbergraph_WBP_Skills2_SkillLine Parms{};
 
-	Parms.SkillMenu = SkillMenu;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.SetSkillTierLocked
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    LockedStatus                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Tier                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillLine_C::SetSkillTierLocked(bool LockedStatus, int32 Tier)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillTierLocked", FnName));
-
-	Params::WBP_Skills2_SkillLine_C_SetSkillTierLocked Parms{};
-
-	Parms.LockedStatus = LockedStatus;
-	Parms.Tier = Tier;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.UpdateSkillLinePointCounter
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_SkillLine_C::UpdateSkillLinePointCounter()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillLinePointCounter", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

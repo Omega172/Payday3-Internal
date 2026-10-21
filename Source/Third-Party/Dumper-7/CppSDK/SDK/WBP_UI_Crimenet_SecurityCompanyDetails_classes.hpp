@@ -29,18 +29,18 @@ public:
 	ESBZSecurityCompany                           ESecurityCompany;                                  // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetIsActive(bool bIsActive);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSelected();
-	void OnSecurityCompaniesChanged(const TArray<ESBZSecurityCompany>& SecurityCompanies);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocus(bool bIsFocused);
-	void InitSecurityCompany(ESBZSecurityCompany InSecurityCompany);
-	void ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails(int32 EntryPoint);
+	void InitSecurityCompany(ESBZSecurityCompany InSecurityCompany);
+	void OnFocus(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnSecurityCompaniesChanged(const TArray<ESBZSecurityCompany>& SecurityCompanies);
+	void OnSelected();
+	void PreConstruct(bool IsDesignTime);
+	void SetIsActive(bool bIsActive);
 
 public:
 	static class UClass* StaticClass()

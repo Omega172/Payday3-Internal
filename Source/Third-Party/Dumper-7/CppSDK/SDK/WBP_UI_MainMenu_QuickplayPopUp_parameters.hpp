@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SBZBackend_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "SBZBackend_structs.hpp"
 #include "Starbreeze_structs.hpp"
 
 

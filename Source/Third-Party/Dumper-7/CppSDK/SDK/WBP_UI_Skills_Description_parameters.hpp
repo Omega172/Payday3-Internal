@@ -17,6 +17,97 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.ExecuteUbergraph_WBP_UI_Skills_Description
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_UI_Skills_Description_C_ExecuteUbergraph_WBP_UI_Skills_Description final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0038)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_ExecuteUbergraph_WBP_UI_Skills_Description;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetFocusedButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetFocusedButton final
+{
+public:
+	class UWBP_UI_Skills_Button_C*                Skill;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetFocusedButton;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillDescription
+// 0x0160 (0x0160 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetSkillDescription final
+{
+public:
+	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class USBZInventoryBaseData*>          Temp_object_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0020(0x0010)()
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0030(0x0010)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0040(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_TextToUpper_ReturnValue_1;                // 0x0060(0x0010)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<class USBZInventoryBaseData*>          Temp_object_Variable_1;                            // 0x0090(0x0010)(ConstParm, ReferenceParm)
+	class FText                                   CallFunc_GetFormattedDescriptionText_ReturnValue;  // 0x00A0(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetFormattedDescriptionText_ReturnValue_1; // 0x00C0(0x0010)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	TArray<class USBZInventoryBaseData*>          Temp_object_Variable_2;                            // 0x00E0(0x0010)(ConstParm, ReferenceParm)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetFormattedDescriptionText_ReturnValue_2; // 0x0100(0x0010)()
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0150(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillDescription;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillImage
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetSkillImage final
+{
+public:
+	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillImage;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetSkillInfo final
+{
+public:
+	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfo;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetSkillInfoOld final
+{
+public:
+	class USBZSkillData*                          Skill_data;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfoOld;
+
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillProgress
 // 0x0148 (0x0148 - 0x0000)
 struct WBP_UI_Skills_Description_C_SetSkillProgress final
@@ -78,79 +169,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetState;
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillImage
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetSkillImage final
-{
-public:
-	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillImage;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillDescription
-// 0x0160 (0x0160 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetSkillDescription final
-{
-public:
-	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class USBZInventoryBaseData*>          Temp_object_Variable;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0020(0x0010)()
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0030(0x0010)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0040(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_TextToUpper_ReturnValue_1;                // 0x0060(0x0010)()
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<class USBZInventoryBaseData*>          Temp_object_Variable_1;                            // 0x0090(0x0010)(ConstParm, ReferenceParm)
-	class FText                                   CallFunc_GetFormattedDescriptionText_ReturnValue;  // 0x00A0(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_2;          // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetFormattedDescriptionText_ReturnValue_1; // 0x00C0(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue_3;          // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	TArray<class USBZInventoryBaseData*>          Temp_object_Variable_2;                            // 0x00E0(0x0010)(ConstParm, ReferenceParm)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00F0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetFormattedDescriptionText_ReturnValue_2; // 0x0100(0x0010)()
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0110(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0120(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_4;              // 0x0130(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_5;              // 0x0140(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0150(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillDescription;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetSkillInfo final
-{
-public:
-	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfo;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetSkillInfoOld final
-{
-public:
-	class USBZSkillData*                          Skill_data;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfoOld;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetFocusedButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetFocusedButton final
-{
-public:
-	class UWBP_UI_Skills_Button_C*                Skill;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetFocusedButton;
-
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.Tick
 // 0x003C (0x003C - 0x0000)
 struct WBP_UI_Skills_Description_C_Tick final
@@ -160,24 +178,6 @@ public:
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_Tick;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.ExecuteUbergraph_WBP_UI_Skills_Description
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_UI_Skills_Description_C_ExecuteUbergraph_WBP_UI_Skills_Description final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0004(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_ExecuteUbergraph_WBP_UI_Skills_Description;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

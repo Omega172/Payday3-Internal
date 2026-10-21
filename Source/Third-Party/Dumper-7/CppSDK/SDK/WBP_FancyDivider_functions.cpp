@@ -16,24 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_FancyDivider.WBP_FancyDivider_C.SetChapterData
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZCampaignChapterData*          ChapterData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_FancyDivider_C::SetChapterData(class USBZCampaignChapterData* ChapterData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChapterData", FnName));
-
-	Params::WBP_FancyDivider_C_SetChapterData Parms{};
-
-	Parms.ChapterData = ChapterData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_FancyDivider.WBP_FancyDivider_C.ExecuteUbergraph_WBP_FancyDivider
 // (Final, UbergraphFunction)
 // Parameters:
@@ -47,6 +29,24 @@ void UWBP_FancyDivider_C::ExecuteUbergraph_WBP_FancyDivider(int32 EntryPoint)
 	Params::WBP_FancyDivider_C_ExecuteUbergraph_WBP_FancyDivider Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_FancyDivider.WBP_FancyDivider_C.SetChapterData
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZCampaignChapterData*          ChapterData                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_FancyDivider_C::SetChapterData(class USBZCampaignChapterData* ChapterData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChapterData", FnName));
+
+	Params::WBP_FancyDivider_C_SetChapterData Parms{};
+
+	Parms.ChapterData = ChapterData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

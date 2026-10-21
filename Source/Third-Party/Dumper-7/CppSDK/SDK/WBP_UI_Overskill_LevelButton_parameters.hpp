@@ -14,23 +14,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.SetLockedState
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Overskill_LevelButton_C_SetLockedState final
+struct WBP_UI_Overskill_LevelButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsLocked;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_SetLockedState;
+DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_ButtonFocusedChanged;
 
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Overskill_LevelButton_C_PreConstruct final
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.ExecuteUbergraph_WBP_UI_Overskill_LevelButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Overskill_LevelButton_C_ExecuteUbergraph_WBP_UI_Overskill_LevelButton final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_ExecuteUbergraph_WBP_UI_Overskill_LevelButton;
 
 // Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.OnFocused
 // 0x0018 (0x0018 - 0x0000)
@@ -44,25 +46,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_OnFocused;
 
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.ExecuteUbergraph_WBP_UI_Overskill_LevelButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Overskill_LevelButton_C_ExecuteUbergraph_WBP_UI_Overskill_LevelButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_ExecuteUbergraph_WBP_UI_Overskill_LevelButton;
-
-// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.ButtonFocusedChanged
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Overskill_LevelButton_C_ButtonFocusedChanged final
+struct WBP_UI_Overskill_LevelButton_C_PreConstruct final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_PreConstruct;
+
+// Function WBP_UI_Overskill_LevelButton.WBP_UI_Overskill_LevelButton_C.SetLockedState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Overskill_LevelButton_C_SetLockedState final
+{
+public:
+	bool                                          IsLocked;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Overskill_LevelButton_C_SetLockedState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

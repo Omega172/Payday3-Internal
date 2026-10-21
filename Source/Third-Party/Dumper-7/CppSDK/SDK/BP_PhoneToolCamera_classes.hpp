@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_PhoneToolCamera_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PhoneToolCamera_C;
 
 SDK_NAMESPACE_END

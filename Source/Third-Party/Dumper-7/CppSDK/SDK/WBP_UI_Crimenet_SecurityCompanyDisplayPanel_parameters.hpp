@@ -17,6 +17,20 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsShippingBuild_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel;
+
 // Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.UpdateSecurityCompanies
 // 0x0080 (0x0080 - 0x0000)
 struct WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C_UpdateSecurityCompanies final
@@ -43,20 +57,6 @@ public:
 	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C_UpdateSecurityCompanies;
-
-// Function WBP_UI_Crimenet_SecurityCompanyDisplayPanel.WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C.ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsShippingBuild_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_SecurityCompanyDisplayPanel_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

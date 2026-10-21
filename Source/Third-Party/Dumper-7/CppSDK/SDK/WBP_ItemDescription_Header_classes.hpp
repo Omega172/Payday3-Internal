@@ -28,9 +28,9 @@ public:
 	class FText                                   PreviewText;                                       // 0x0310(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void SetText(const class FText& Text);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_ItemDescription_Header(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetText(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()

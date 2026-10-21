@@ -16,14 +16,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_OnGainedStackFocused final
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature final
 {
 public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_OnGainedStackFocused;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature;
+
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup
 // 0x00A8 (0x00A8 - 0x0000)
@@ -54,33 +73,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup;
 
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_OnGainedStackFocused final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_CleanMMGroup_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_OnGainedStackFocused;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

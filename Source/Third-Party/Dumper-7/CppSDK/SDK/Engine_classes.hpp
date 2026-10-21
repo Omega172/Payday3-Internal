@@ -10,7 +10,6 @@
 
 #include "Basic.hpp"
 
-#include "AudioPlatformConfiguration_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
@@ -20,10 +19,11 @@
 #include "InputCore_structs.hpp"
 #include "DeveloperSettings_structs.hpp"
 #include "DeveloperSettings_classes.hpp"
+#include "Chaos_structs.hpp"
 #include "ClothingSystemRuntimeInterface_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 #include "PhysicsCore_classes.hpp"
-#include "Chaos_structs.hpp"
+#include "AudioPlatformConfiguration_structs.hpp"
 #include "IrisCore_classes.hpp"
 #include "MeshDescription_classes.hpp"
 #include "GameplayTags_structs.hpp"
@@ -12078,7 +12078,7 @@ DUMPER7_ASSERTS_UExponentialHeightFogComponent;
 
 // Class Engine.Exporter
 // 0x0050 (0x0080 - 0x0030)
-class UExporter : public UObject
+class UExporter final : public UObject
 {
 public:
 	TSubclassOf<class UObject>                    SupportedClass;                                    // 0x0030(0x0008)(BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
