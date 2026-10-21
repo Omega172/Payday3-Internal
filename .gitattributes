@@ -5,3 +5,4 @@
 # On merge, keep this branch's SDK instead of taking the other branch's.
 # Needs `git config merge.ours-sdk.driver true` once per clone; git does not store merge drivers here.
 Source/Third-Party/Dumper-7/CppSDK/** merge=ours-sdk
+Source/Third-Party/Dumper-7/*.variant merge=ours-sdk

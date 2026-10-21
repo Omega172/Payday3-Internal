@@ -8,6 +8,16 @@ local stDefaults = {
     aUnrealSdkFiles = { "Basic.cpp", "CoreUObject_functions.cpp", "Engine_functions.cpp", "Starbreeze_functions.cpp" },
 }
 
+local function VariantDefault()
+    local aMarkers = os.files(path.join(os.scriptdir(), "Source", "Third-Party", "Dumper-7", "*.variant"))
+    return #aMarkers > 0 and path.basename(aMarkers[1]) or ""
+end
+
+local function VariantSuffix(strFormat)
+    local strVariant = get_config("variant") or ""
+    return strVariant ~= "" and string.format(strFormat, strVariant) or ""
+end
+
 set_config("builddir", "Build")
 
 set_project("Payday3-Internal")
@@ -63,6 +73,12 @@ option("unreal_sdk")
     set_default(path.join(os.scriptdir(), "Source", "Third-Party", "Dumper-7", "CppSDK"))
     set_showmenu(true)
     set_description("Path to a Dumper-7 CppSDK folder (the one containing SDK.hpp) for engine=unreal")
+option_end()
+
+option("variant")
+    set_default(VariantDefault())
+    set_showmenu(true)
+    set_description("Store build the Dumper-7 SDK was dumped from: empty for Steam, WinGDK for the Microsoft Store (default from the name of the Source/Third-Party/Dumper-7/<Variant>.variant marker file); added to the DLL name and the game name")
 option_end()
 
 option("game_depth")
@@ -144,7 +160,7 @@ else
         local strName = get_config("framework_name") or stDefaults.strName
         set_configvar("OMEGAWARE_NAME", strName)
         set_configvar("OMEGAWARE_TITLE", strName:lower())
-        set_configvar("OMEGAWARE_GAME", get_config("game") or stDefaults.strGame)
+        set_configvar("OMEGAWARE_GAME", (get_config("game") or stDefaults.strGame) .. VariantSuffix(" (%s)"))
         set_configvar("OMEGAWARE_PROCESS", get_config("process") or stDefaults.strProcess)
         add_configfiles("Source/OmegaWare/Core/Version.hpp.in")
         add_includedirs(strConfigDir)
@@ -241,7 +257,7 @@ else
     target("OmegaWare")
         ConfigureOmegaWare()
         set_targetdir(path.join("Build", is_mode("debug") and "Debug" or "Release", "$(arch)", "OmegaWare"))
-        set_filename((get_config("framework_name") or stDefaults.strName) .. ".dll")
+        set_filename((get_config("framework_name") or stDefaults.strName) .. VariantSuffix("-%s") .. ".dll")
     target_end()
 
     local function ConfigureProxy(strProxy, strFolder)
