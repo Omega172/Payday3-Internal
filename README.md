@@ -10,8 +10,10 @@ For injection I recommend downloading Xenos Injector 2.3.2 from [here](https://w
 or from the official Xenos Github [here](https://github.com/DarthTon/Xenos)
 
 # Contributing
-When making any changes they should all happen to the main v2 branch, and then merged into the v2-ms-store branch
-to make sure any SDK changes are not merged into the v2-ms-store branch make sure you run `git config merge.ours-sdk.driver true` after checking out the branch for the first time.
+When making any changes they should all happen to the main v3 branch, and then merged into the v3-ms-store branch.
+The two branches are identical except for the Dumper-7 SDK: v3 carries the Steam dump and v3-ms-store the Microsoft Store (WinGDK) dump.
+To make sure SDK changes are not merged between them, run `git config merge.ours-sdk.driver true` once after cloning; `.gitattributes` marks the SDK folder `merge=ours-sdk`, so a merge keeps the branch's own SDK whenever both sides changed a file.
+After merging, check `git diff HEAD~1 -- Source/Third-Party/Dumper-7` is empty: git only runs the merge driver when both branches changed a file, so a file changed on one side alone (for example a new Steam-only header) is still taken.
 
 ## Want to add a translation?
 Game strings live in [English.hpp](Source/OmegaWare/Locales/English.hpp) next to the framework's own; add a matching `Locales/<Language>.hpp` entry for each key. Missing keys fall back to English.
@@ -36,7 +38,7 @@ In an existing clone run `git submodule update --init --recursive` first. Output
 
 ### Dependencies
 - [OmegaWare-GUI](https://github.com/OmegaWareProjects/OmegaWare-GUI), [OmegaWare-RenderHook](https://github.com/OmegaWareProjects/OmegaWare-RenderHook) and [OmegaWare-Localization](https://github.com/OmegaWareProjects/OmegaWare-Localization) as submodules under `Source/Third-Party/OmegaWareProjects/`
-- The Dumper-7 SDK in `Source/Third-Party/Dumper-7/CppSDK` (dumped from the Steam build). The framework checks the SDK's global offsets at startup and scans for them when they do not match, so the WinGDK build uses the same SDK.
+- The Dumper-7 SDK in `Source/Third-Party/Dumper-7/CppSDK`: the Steam dump on `v3`, the Microsoft Store (WinGDK) dump on `v3-ms-store`. The framework checks the SDK's global offsets at startup and scans for them when they do not match, so a slightly stale dump still finds the engine globals.
 
 After dropping in a new Dumper-7 dump, run `FixSdk.bat`. It gives `FOptionalProperty_` placeholders their real sizes (otherwise Dumper-7's own layout asserts fail) and adds the `_parameters.hpp` includes some `_functions.cpp` files are missing. Running it twice is harmless.
 
@@ -111,7 +113,7 @@ After dropping in a new Dumper-7 dump, run `FixSdk.bat`. It gives `FOptionalProp
 - **In-Game**: Press `INSERT` to open the menu and `END` to unload. Both keys can be changed under settings > keys. Logs, configs and crash dumps go to `Documents\Payday3-Internal\<exe>\`.
 
 ### Proton
-**Note:** v2 hasn't been tested on Proton (but most likely does work).
+**Note:** v3 hasn't been tested on Proton (but most likely does work).
 
 - **Supports Proton:** As of v1.2.13b & [#6](https://github.com/Omega172/Payday3-Internal/pull/6), the cheat should work on both Windows and Linux (proton) versions of the game. Thanks to [alexgot1151](https://github.com/alexgot1151)
 #### Set the stage
