@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_MicroCamera.BP_MicroCamera_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MicroCamera_C::OnActivated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_MicroCamera.BP_MicroCamera_C.ExecuteUbergraph_BP_MicroCamera
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,18 +43,6 @@ void ABP_MicroCamera_C::ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MicroCamera.BP_MicroCamera_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MicroCamera_C::OnActivated()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

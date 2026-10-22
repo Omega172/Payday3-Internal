@@ -12,7 +12,6 @@
 
 #include "HairStrandsCore_classes.hpp"
 #include "HairStrandsCore_parameters.hpp"
-#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

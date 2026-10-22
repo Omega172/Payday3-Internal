@@ -12,7 +12,6 @@
 
 #include "RigVM_classes.hpp"
 #include "RigVM_parameters.hpp"
-#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

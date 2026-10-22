@@ -12,8 +12,6 @@
 
 #include "Starbreeze_classes.hpp"
 #include "Starbreeze_parameters.hpp"
-#include "GameplayAbilities_parameters.hpp"
-#include "UMG_parameters.hpp"
 
 
 SDK_NAMESPACE_START

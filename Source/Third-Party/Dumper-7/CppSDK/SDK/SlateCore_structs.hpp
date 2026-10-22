@@ -876,7 +876,7 @@ public:
 	float                                         ButtonContentFillWidth;                            // 0x3AB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMargin                                IconPaddingWithVisibleLabel;                       // 0x3AB4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FMargin                                IconPaddingWithCollapsedLabel;                     // 0x3AC4(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8 VerticalAlignmentOverride[0x0002];                                                         // 0x3AD4(0x0002)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FOptionalProperty_                            VerticalAlignmentOverride;                         // 0x3AD4(0x0002)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3AD6[0xA];                                     // 0x3AD6(0x000A)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FToolBarStyle;
@@ -1255,7 +1255,7 @@ public:
 	struct FSlateBrush                            GlassImage;                                        // 0x0F70(0x00C0)(Edit, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            ClearImage;                                        // 0x1030(0x00C0)(Edit, NativeAccessSpecifierPublic)
 	struct FMargin                                ImagePadding;                                      // 0x10F0(0x0010)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8 ImageSizeOverride[0x0018];                                                                 // 0x1100(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FOptionalProperty_                            ImageSizeOverride;                                 // 0x1100(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLeftAlignButtons;                                 // 0x1118(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLeftAlignSearchResultButtons;                     // 0x1119(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLeftAlignGlassImageAndClearButton;                // 0x111A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

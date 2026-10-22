@@ -19,7 +19,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_PlayerBase.CH_PlayerBase_C
 // 0x0040 (0x2860 - 0x2820)
-class ACH_PlayerBase_C final : public ASBZPlayerCharacter
+class ACH_PlayerBase_C : public ASBZPlayerCharacter
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2820(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

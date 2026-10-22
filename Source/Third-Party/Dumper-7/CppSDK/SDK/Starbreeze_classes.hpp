@@ -912,7 +912,7 @@ DUMPER7_ASSERTS_ISBZBreakableInterface;
 
 // Class Starbreeze.SBZTimedBagConverter
 // 0x0070 (0x0398 - 0x0328)
-class ASBZTimedBagConverter final : public AActor, public ISBZBreakableInterface
+class ASBZTimedBagConverter : public AActor, public ISBZBreakableInterface
 {
 public:
 	uint8                                         Pad_330[0x18];                                     // 0x0330(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -3018,7 +3018,7 @@ DUMPER7_ASSERTS_ISBZHurtReactionDataInterface;
 
 // Class Starbreeze.SBZAITaserMine
 // 0x00A8 (0x03E0 - 0x0338)
-class ASBZAITaserMine final : public AStaticMeshActor, public ISBZExplosive, public MIPad::Pad<0x20, 0x360>, public ISBZHurtReactionDataInterface
+class ASBZAITaserMine : public AStaticMeshActor, public ISBZExplosive, public MIPad::Pad<0x20, 0x360>, public ISBZHurtReactionDataInterface
 {
 public:
 	float                                         DetectionRange;                                    // 0x0368(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -3343,7 +3343,7 @@ DUMPER7_ASSERTS_ISBZAIVisibilityRelevant;
 
 // Class Starbreeze.SBZCoverPoint
 // 0x01C0 (0x04E8 - 0x0328)
-class ASBZCoverPoint final : public AActor, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface
+class ASBZCoverPoint : public AActor, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface
 {
 public:
 	TArray<TWeakObjectPtr<class ASBZCoverPoint>>  LinkedCoverPoints;                                 // 0x0338(0x0010)(Edit, ZeroConstructor, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
@@ -3573,7 +3573,7 @@ DUMPER7_ASSERTS_UPD3HUDKeyItemWidget;
 
 // Class Starbreeze.SBZMainMenuDamageFalloffWidget
 // 0x0028 (0x0318 - 0x02F0)
-class USBZMainMenuDamageFalloffWidget : public USBZWidgetBase
+class USBZMainMenuDamageFalloffWidget final : public USBZWidgetBase
 {
 public:
 	bool                                          bIncludeCritDamage;                                // 0x02F0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -3882,7 +3882,7 @@ DUMPER7_ASSERTS_ISBZServersListInterpreter;
 
 // Class Starbreeze.SBZServerBrowserScreen
 // 0x03E8 (0x0728 - 0x0340)
-class USBZServerBrowserScreen : public USBZMenuStackScreenWidget, public ISBZServersListInterpreter
+class USBZServerBrowserScreen final : public USBZMenuStackScreenWidget, public ISBZServersListInterpreter
 {
 public:
 	uint8                                         Pad_348[0x2A8];                                    // 0x0348(0x02A8)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4133,7 +4133,7 @@ DUMPER7_ASSERTS_ASBZPlayerEmoteCamera;
 
 // Class Starbreeze.SBZAIAnticipateExplosionAbility
 // 0x0028 (0x04F8 - 0x04D0)
-class USBZAIAnticipateExplosionAbility final : public USBZGameplayAbility
+class USBZAIAnticipateExplosionAbility : public USBZGameplayAbility
 {
 public:
 	float                                         DiveRange;                                         // 0x04D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -4691,7 +4691,7 @@ DUMPER7_ASSERTS_UPD3HUDRoomStatusWidget;
 
 // Class Starbreeze.SBZMainMenuCredits
 // 0x0080 (0x03C0 - 0x0340)
-class USBZMainMenuCredits : public USBZMenuStackScreenWidget
+class USBZMainMenuCredits final : public USBZMenuStackScreenWidget
 {
 public:
 	class UDataTable*                             CreditsDataTable;                                  // 0x0340(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5028,7 +5028,7 @@ DUMPER7_ASSERTS_UPD3OverkillWeaponRequestWidget;
 
 // Class Starbreeze.SBZAIAvoidVehicleAbility
 // 0x0010 (0x04E0 - 0x04D0)
-class USBZAIAvoidVehicleAbility final : public USBZGameplayAbility
+class USBZAIAvoidVehicleAbility : public USBZGameplayAbility
 {
 public:
 	class ASBZAIBaseCharacter*                    AICharacter;                                       // 0x04D0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5300,7 +5300,7 @@ DUMPER7_ASSERTS_USBZAIAction_Order;
 
 // Class Starbreeze.SBZAIAction_TouchReaction
 // 0x0078 (0x0168 - 0x00F0)
-class USBZAIAction_TouchReaction final : public USBZAIAction_Order
+class USBZAIAction_TouchReaction : public USBZAIAction_Order
 {
 public:
 	class USBZVoiceCommentDataAsset*              PrivateVoiceComment;                               // 0x00F0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5477,7 +5477,7 @@ DUMPER7_ASSERTS_USBZMenuMouseButton;
 
 // Class Starbreeze.SBZMenuTutorialMouseButton
 // 0x0008 (0x0318 - 0x0310)
-class USBZMenuTutorialMouseButton : public USBZMenuMouseButton
+class USBZMenuTutorialMouseButton final : public USBZMenuMouseButton
 {
 public:
 	bool                                          bIsShowing;                                        // 0x0310(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -7441,7 +7441,7 @@ DUMPER7_ASSERTS_ASBZDebugActorFlow;
 
 // Class Starbreeze.SBZMainMenuPlayerNameplateWidget
 // 0x0010 (0x0300 - 0x02F0)
-class USBZMainMenuPlayerNameplateWidget : public UUserWidget
+class USBZMainMenuPlayerNameplateWidget final : public UUserWidget
 {
 public:
 	class FString                                 UserId;                                            // 0x02F0(0x0010)(BlueprintVisible, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -7555,7 +7555,7 @@ DUMPER7_ASSERTS_USBZMenuButton;
 
 // Class Starbreeze.SBZMainMenuLoadoutWeaponSlotButton
 // 0x00F8 (0x04D0 - 0x03D8)
-class USBZMainMenuLoadoutWeaponSlotButton : public USBZMenuButton
+class USBZMainMenuLoadoutWeaponSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZWeaponInventorySlot                WeaponSlot;                                        // 0x03D8(0x00F0)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -8366,7 +8366,7 @@ DUMPER7_ASSERTS_ISBZAIVisualDetectionGeneratorInterface;
 
 // Class Starbreeze.SBZAICrewCharacter
 // 0x01B0 (0x1D50 - 0x1BA0)
-class ASBZAICrewCharacter final : public ASBZAIBaseCharacter, public ISBZAIVisualDetectionGeneratorInterface
+class ASBZAICrewCharacter : public ASBZAIBaseCharacter, public ISBZAIVisualDetectionGeneratorInterface
 {
 public:
 	class USBZAICrewEquipmentData*                EquipmentData;                                     // 0x1BA0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8556,7 +8556,7 @@ DUMPER7_ASSERTS_ISBZItemListEntry;
 
 // Class Starbreeze.SBZItemButton
 // 0x0040 (0x0418 - 0x03D8)
-class USBZItemButton : public USBZMenuButton, public ISBZItemListEntry
+class USBZItemButton final : public USBZMenuButton, public ISBZItemListEntry
 {
 public:
 	uint8                                         Pad_3E0[0x10];                                     // 0x03E0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8747,7 +8747,7 @@ DUMPER7_ASSERTS_USBZCharacterLinkedAnimation;
 
 // Class Starbreeze.SBZAICrewCharacterLinkedAnimation
 // 0x0050 (0x04B0 - 0x0460)
-class USBZAICrewCharacterLinkedAnimation final : public USBZCharacterLinkedAnimation
+class USBZAICrewCharacterLinkedAnimation : public USBZCharacterLinkedAnimation
 {
 public:
 	class ASBZAICrewCharacter*                    AICrewCharacter;                                   // 0x0460(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8816,7 +8816,7 @@ DUMPER7_ASSERTS_USBZActionPhaseBaseWidget;
 
 // Class Starbreeze.SBZAIUtilityDecider_Escort
 // 0x00E0 (0x0190 - 0x00B0)
-class USBZAIUtilityDecider_Escort final : public USBZAIUtilityDecider
+class USBZAIUtilityDecider_Escort : public USBZAIUtilityDecider
 {
 public:
 	struct FSBZAIEscortStateData                  EscortStates[0x6];                                 // 0x00B0(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
@@ -8869,7 +8869,7 @@ DUMPER7_ASSERTS_USBZMeleeAbility;
 
 // Class Starbreeze.SBZAICloakerFlailAbility
 // 0x0008 (0x04F8 - 0x04F0)
-class USBZAICloakerFlailAbility final : public USBZMeleeAbility
+class USBZAICloakerFlailAbility : public USBZMeleeAbility
 {
 public:
 	class UAnimMontage*                           AbilityMontage;                                    // 0x04F0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -9311,7 +9311,7 @@ DUMPER7_ASSERTS_USBZDeactivateMeshNotifyState;
 
 // Class Starbreeze.SBZMainMenuMatchmakingStatusWidget
 // 0x0000 (0x02F0 - 0x02F0)
-class USBZMainMenuMatchmakingStatusWidget : public USBZWidgetBase
+class USBZMainMenuMatchmakingStatusWidget final : public USBZWidgetBase
 {
 public:
 	void OnAsyncLoadingCancel();
@@ -9433,7 +9433,7 @@ DUMPER7_ASSERTS_USBZDebugPreviewSettings;
 
 // Class Starbreeze.SBZActorDisposer
 // 0x0030 (0x0358 - 0x0328)
-class ASBZActorDisposer final : public AActor
+class ASBZActorDisposer : public AActor
 {
 public:
 	class USBZInteractableComponent*              InteractableComponent;                             // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -10106,7 +10106,7 @@ DUMPER7_ASSERTS_USBZSkillCQCSpecialistPressurePoints;
 
 // Class Starbreeze.SBZCrimeBondBundlePageWidget
 // 0x0010 (0x0300 - 0x02F0)
-class USBZCrimeBondBundlePageWidget : public UUserWidget
+class USBZCrimeBondBundlePageWidget final : public UUserWidget
 {
 public:
 	class USBZSpanGrid*                           SpanGrid;                                          // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -10806,7 +10806,7 @@ DUMPER7_ASSERTS_USBZMainMenuCrimeNetHeistButton;
 
 // Class Starbreeze.SBZServerBrowserHeistButton
 // 0x00C8 (0x04E8 - 0x0420)
-class USBZServerBrowserHeistButton : public USBZMainMenuCrimeNetHeistButton
+class USBZServerBrowserHeistButton final : public USBZMainMenuCrimeNetHeistButton
 {
 public:
 	class USBZServerBrowserStoryModeButton*       Button_IntroStory;                                 // 0x0420(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -10908,7 +10908,7 @@ DUMPER7_ASSERTS_ISBZVehicleInterface;
 
 // Class Starbreeze.SBZAerialVehicle
 // 0x03C0 (0x0790 - 0x03D0)
-class ASBZAerialVehicle final : public APawn, public ISBZVehicleInterface
+class ASBZAerialVehicle : public APawn, public ISBZVehicleInterface
 {
 public:
 	TMulticastInlineDelegate<void(class ASBZAerialVehicle* Vehicle)> OnBeginStop;                    // 0x03D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -10982,7 +10982,7 @@ DUMPER7_ASSERTS_ASBZAerialVehicle;
 
 // Class Starbreeze.SBZAIDrone_HackSentryAbility
 // 0x0020 (0x04F0 - 0x04D0)
-class USBZAIDrone_HackSentryAbility final : public USBZGameplayAbility
+class USBZAIDrone_HackSentryAbility : public USBZGameplayAbility
 {
 public:
 	TSubclassOf<class UGameplayEffect>            DroneSentryHackEffect;                             // 0x04D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -11220,7 +11220,7 @@ DUMPER7_ASSERTS_ISBZMarkerInfoInterface;
 
 // Class Starbreeze.SBZAIDeliveryDrone
 // 0x0180 (0x0890 - 0x0710)
-class ASBZAIDeliveryDrone final : public ASBZAIDroneBase, public ISBZTypeInterface, public ISBZRoomVolumeInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x740>, public ISBZMarkerInfoInterface
+class ASBZAIDeliveryDrone : public ASBZAIDroneBase, public ISBZTypeInterface, public ISBZRoomVolumeInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x740>, public ISBZMarkerInfoInterface
 {
 public:
 	class USBZBagType*                            OverkillWeaponBagType;                             // 0x0748(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -11272,7 +11272,7 @@ DUMPER7_ASSERTS_ASBZAIDeliveryDrone;
 
 // Class Starbreeze.SBZAerialVehicleAnimation
 // 0x0000 (0x0BB0 - 0x0BB0)
-class USBZAerialVehicleAnimation final : public USBZVehicleAnimation
+class USBZAerialVehicleAnimation : public USBZVehicleAnimation
 {
 public:
 	static class UClass* StaticClass()
@@ -11376,7 +11376,7 @@ DUMPER7_ASSERTS_USBZAmbientSoundComponent;
 
 // Class Starbreeze.SBZMainMenuWeaponStatsWidget
 // 0x0168 (0x0458 - 0x02F0)
-class USBZMainMenuWeaponStatsWidget : public USBZWidgetBase
+class USBZMainMenuWeaponStatsWidget final : public USBZWidgetBase
 {
 public:
 	struct FSBZEquippableConfig                   BaseEquippableConfig;                              // 0x02F0(0x0088)(BlueprintVisible, BlueprintReadOnly, Transient, NativeAccessSpecifierPublic)
@@ -11567,7 +11567,7 @@ DUMPER7_ASSERTS_ASBZWheeledVehicle;
 
 // Class Starbreeze.SBZAIFBIVan
 // 0x00F0 (0x0A10 - 0x0920)
-class ASBZAIFBIVan final : public ASBZWheeledVehicle
+class ASBZAIFBIVan : public ASBZWheeledVehicle
 {
 public:
 	class USBZPropDamageComponent*                PropDamageComponent;                               // 0x0918(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -11771,7 +11771,7 @@ DUMPER7_ASSERTS_USBZMenuStackInventoryBaseScreen;
 
 // Class Starbreeze.SBZMainMenuSuitInventoryScreen
 // 0x0228 (0x0598 - 0x0370)
-class USBZMainMenuSuitInventoryScreen : public USBZMenuStackInventoryBaseScreen
+class USBZMainMenuSuitInventoryScreen final : public USBZMenuStackInventoryBaseScreen
 {
 public:
 	TSubclassOf<class USBZMainMenuInventorySuitSlotButton> SuitSlotButtonClass;                      // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -11963,7 +11963,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateHostMigration;
 
 // Class Starbreeze.SBZMainMenuCrimeNet
 // 0x0098 (0x03D8 - 0x0340)
-class USBZMainMenuCrimeNet : public USBZMenuStackScreenWidget
+class USBZMainMenuCrimeNet final : public USBZMenuStackScreenWidget
 {
 public:
 	TSubclassOf<class USBZMainMenuCrimeNetHeistButton> HeistButtonClass;                             // 0x0340(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -13351,7 +13351,7 @@ DUMPER7_ASSERTS_ISBZRoomConnectorInterface;
 
 // Class Starbreeze.SBZAgilityNavLink
 // 0x0080 (0x04A0 - 0x0420)
-class ASBZAgilityNavLink final : public ASBZSmartNavLink, public ISBZAgilityTrajectoryInterface, public ISBZRoomConnectorInterface
+class ASBZAgilityNavLink : public ASBZSmartNavLink, public ISBZAgilityTrajectoryInterface, public ISBZRoomConnectorInterface
 {
 public:
 	class ASBZRoomVolume*                         LeftRoom;                                          // 0x0430(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -13509,7 +13509,7 @@ DUMPER7_ASSERTS_USBZAIDroneBaseAnimation;
 
 // Class Starbreeze.SBZAIDroneAnimation
 // 0x0080 (0x04B0 - 0x0430)
-class USBZAIDroneAnimation final : public USBZAIDroneBaseAnimation
+class USBZAIDroneAnimation : public USBZAIDroneBaseAnimation
 {
 public:
 	float                                         RotorMaxSpeed;                                     // 0x0430(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -13637,7 +13637,7 @@ DUMPER7_ASSERTS_ASBZCuttingTool;
 
 // Class Starbreeze.SBZMainMenuWeaponPartProgressionButton
 // 0x00A0 (0x0478 - 0x03D8)
-class USBZMainMenuWeaponPartProgressionButton : public USBZMenuButton
+class USBZMainMenuWeaponPartProgressionButton final : public USBZMenuButton
 {
 public:
 	struct FSBZWeaponPartProgressionCurrent       WeaponPartProgression;                             // 0x03D8(0x0098)(Transient, NativeAccessSpecifierPrivate)
@@ -13983,7 +13983,7 @@ DUMPER7_ASSERTS_ISBZTraversalDestructibleInterface;
 
 // Class Starbreeze.SBZInteractableWindow
 // 0x0010 (0x0678 - 0x0668)
-class ASBZInteractableWindow final : public ASBZInteractableGate, public ISBZTraversalDestructibleInterface
+class ASBZInteractableWindow : public ASBZInteractableGate, public ISBZTraversalDestructibleInterface
 {
 public:
 	bool                                          bIsBreakableByPlayerVaulting;                      // 0x0670(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -14163,7 +14163,7 @@ DUMPER7_ASSERTS_ASBZPlaceableArmorCharges;
 
 // Class Starbreeze.SBZAgilityPawnSpawnPredefined
 // 0x0098 (0x0490 - 0x03F8)
-class ASBZAgilityPawnSpawnPredefined final : public ASBZPawnSpawnPredefined, public ISBZAgilityTrajectoryInterface, public INavLinkCustomInterface
+class ASBZAgilityPawnSpawnPredefined : public ASBZPawnSpawnPredefined, public ISBZAgilityTrajectoryInterface, public INavLinkCustomInterface
 {
 public:
 	class UAnimMontage*                           ForcedMontage;                                     // 0x0408(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -14699,7 +14699,7 @@ DUMPER7_ASSERTS_USBZAgilitySlideParams;
 
 // Class Starbreeze.SBZArmorRepairKit
 // 0x0000 (0x06A0 - 0x06A0)
-class ASBZArmorRepairKit final : public ASBZPlaceableArmorCharges
+class ASBZArmorRepairKit : public ASBZPlaceableArmorCharges
 {
 public:
 	static class UClass* StaticClass()
@@ -14739,7 +14739,7 @@ DUMPER7_ASSERTS_USBZMaskCustomizationSlotScreenBase;
 
 // Class Starbreeze.SBZMaskCustomizationPattern
 // 0x0088 (0x03C8 - 0x0340)
-class USBZMaskCustomizationPattern : public USBZMaskCustomizationSlotScreenBase
+class USBZMaskCustomizationPattern final : public USBZMaskCustomizationSlotScreenBase
 {
 public:
 	class USBZCosmeticsPartSlot*                  PatternSlotAsset;                                  // 0x0340(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -14811,7 +14811,7 @@ DUMPER7_ASSERTS_USBZAgilityQueryParams;
 
 // Class Starbreeze.SBZAIShoveAbility
 // 0x0000 (0x04F0 - 0x04F0)
-class USBZAIShoveAbility final : public USBZMeleeAbility
+class USBZAIShoveAbility : public USBZMeleeAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -14854,7 +14854,7 @@ DUMPER7_ASSERTS_USBZAIAbilitySystemComponent;
 
 // Class Starbreeze.SBZBundleItemStrategy
 // 0x03F0 (0x0458 - 0x0068)
-class USBZBundleItemStrategy : public USBZBaseItemStrategy
+class USBZBundleItemStrategy final : public USBZBaseItemStrategy
 {
 public:
 	TMulticastInlineDelegate<void(const class FString& ItemSku, bool bSuccess, const class USBZInventoryBaseData* ItemData)> OnPurchaseResult; // 0x0068(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -15174,7 +15174,7 @@ DUMPER7_ASSERTS_USBZEquipAutoAbility;
 
 // Class Starbreeze.SBZQuestlineMenu
 // 0x0018 (0x0388 - 0x0370)
-class USBZQuestlineMenu : public USBZMenuStackScreenWidgetWithTutorial
+class USBZQuestlineMenu final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	class FName                                   ActiveQuestID;                                     // 0x0370(0x000C)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -15329,7 +15329,7 @@ DUMPER7_ASSERTS_USBZAIAction_DelayedSurrender;
 
 // Class Starbreeze.SBZAIOrder_FollowTarget
 // 0x0008 (0x0138 - 0x0130)
-class USBZAIOrder_FollowTarget final : public USBZAIOrder
+class USBZAIOrder_FollowTarget : public USBZAIOrder
 {
 public:
 	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -15425,7 +15425,7 @@ DUMPER7_ASSERTS_USBZMaskPatternApplier;
 
 // Class Starbreeze.SBZAIAttractorDestruction
 // 0x0058 (0x0380 - 0x0328)
-class ASBZAIAttractorDestruction final : public AActor, public ISBZAIAttractorInterface, public IAISightTargetInterface, public ISBZAgilityObstacleInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZTraversalDestructibleInterface
+class ASBZAIAttractorDestruction : public AActor, public ISBZAIAttractorInterface, public IAISightTargetInterface, public ISBZAgilityObstacleInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZTraversalDestructibleInterface
 {
 public:
 	class USBZPropDamageComponent*                PropDamage;                                        // 0x0368(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -15855,7 +15855,7 @@ DUMPER7_ASSERTS_USBZSkillStealthSpecOnTheRunAced;
 
 // Class Starbreeze.SBZCustomizationManager
 // 0x0330 (0x0658 - 0x0328)
-class ASBZCustomizationManager : public AActor
+class ASBZCustomizationManager final : public AActor
 {
 public:
 	class FName                                   WeaponCustomizationCameraName;                     // 0x0328(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -16220,7 +16220,7 @@ DUMPER7_ASSERTS_USBZAIActionData_LookAndComment;
 
 // Class Starbreeze.SBZAIOrder_GoToDespawn
 // 0x0000 (0x0130 - 0x0130)
-class USBZAIOrder_GoToDespawn final : public USBZAIOrder
+class USBZAIOrder_GoToDespawn : public USBZAIOrder
 {
 public:
 	static class UClass* StaticClass()
@@ -16575,7 +16575,7 @@ DUMPER7_ASSERTS_USBZAIAction_Patrol;
 
 // Class Starbreeze.SBZAIOrder_Agility
 // 0x0020 (0x0150 - 0x0130)
-class USBZAIOrder_Agility final : public USBZAIOrder
+class USBZAIOrder_Agility : public USBZAIOrder
 {
 public:
 	class ASBZAgilityNavLink*                     AgilityNavLink;                                    // 0x0130(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -16932,7 +16932,7 @@ DUMPER7_ASSERTS_ISBZMarkableInterface;
 
 // Class Starbreeze.SBZAIDrone
 // 0x0550 (0x0C60 - 0x0710)
-class ASBZAIDrone final : public ASBZAIDroneBase, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x780>, public IAbilitySystemInterface, public IGenericTeamAgentInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x7B0>, public ISBZProjectileInterface, public MIPad::Pad<0x8, 0x7C0>, public ISBZTypeInterface, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface, public IGameplayTagAssetInterface, public ISBZRuntimeInterface, public MIPad::Pad<0x60, 0x848>, public ISBZExplosive, public MIPad::Pad<0x20, 0x870>, public ISBZHurtReactionDataInterface, public ISBZVoiceComponentInterface, public ISBZAutoAimInterface, public ISBZMarkableInterface
+class ASBZAIDrone : public ASBZAIDroneBase, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x780>, public IAbilitySystemInterface, public IGenericTeamAgentInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x7B0>, public ISBZProjectileInterface, public MIPad::Pad<0x8, 0x7C0>, public ISBZTypeInterface, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface, public IGameplayTagAssetInterface, public ISBZRuntimeInterface, public MIPad::Pad<0x60, 0x848>, public ISBZExplosive, public MIPad::Pad<0x20, 0x870>, public ISBZHurtReactionDataInterface, public ISBZVoiceComponentInterface, public ISBZAutoAimInterface, public ISBZMarkableInterface
 {
 public:
 	uint8                                         Pad_890[0x50];                                     // 0x0890(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
@@ -17090,7 +17090,7 @@ DUMPER7_ASSERTS_USBZDownOnGroundNotifyState;
 
 // Class Starbreeze.SBZDebris
 // 0x0008 (0x0330 - 0x0328)
-class ASBZDebris final : public ASBZBaseDebris
+class ASBZDebris : public ASBZBaseDebris
 {
 public:
 	class UStaticMeshComponent*                   StaticMeshComponent;                               // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -17369,7 +17369,7 @@ DUMPER7_ASSERTS_USBZAIAction_SetEnemy;
 
 // Class Starbreeze.SBZAIDroneController
 // 0x0078 (0x04D8 - 0x0460)
-class ASBZAIDroneController final : public ASBZAIArmedPawnController
+class ASBZAIDroneController : public ASBZAIArmedPawnController
 {
 public:
 	class UBlackboardData*                        BlackboardAsset;                                   // 0x0460(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -18073,7 +18073,7 @@ DUMPER7_ASSERTS_USBZMiniGameData;
 
 // Class Starbreeze.SBZAIAction_ThrowGrenade
 // 0x0008 (0x00F8 - 0x00F0)
-class USBZAIAction_ThrowGrenade final : public USBZAIAction_Order
+class USBZAIAction_ThrowGrenade : public USBZAIAction_Order
 {
 public:
 	uint8                                         Pad_F0[0x8];                                       // 0x00F0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -18207,7 +18207,7 @@ DUMPER7_ASSERTS_USBZEnvQueryContext_SquadCenterPos;
 
 // Class Starbreeze.SBZAIArmedCharacterLinkedAnimation
 // 0x0060 (0x0500 - 0x04A0)
-class USBZAIArmedCharacterLinkedAnimation final : public USBZAICharacterLinkedAnimation
+class USBZAIArmedCharacterLinkedAnimation : public USBZAICharacterLinkedAnimation
 {
 public:
 	uint8                                         bIsInCover : 1;                                    // 0x0498(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
@@ -18783,7 +18783,7 @@ DUMPER7_ASSERTS_USBZCustomizableSuitMeshComponent;
 
 // Class Starbreeze.SBZMainMenuQuestChallengeButton
 // 0x00E0 (0x04B8 - 0x03D8)
-class USBZMainMenuQuestChallengeButton : public USBZMenuButton
+class USBZMainMenuQuestChallengeButton final : public USBZMenuButton
 {
 public:
 	struct FSBZUIQuestChallengeData               QuestChallengeData;                                // 0x03D8(0x0038)(Transient, NativeAccessSpecifierPrivate)
@@ -18847,7 +18847,7 @@ DUMPER7_ASSERTS_ISBZAIVisualDetectorInterface;
 
 // Class Starbreeze.SBZAICharacter
 // 0x0610 (0x21B0 - 0x1BA0)
-class ASBZAICharacter final : public ASBZAIBaseCharacter, public ISBZAIVisualDetectorInterface, public ISBZMarkableInterface, public MIPad::Pad<0x38, 0x1BE0>, public ISBZAutoAimInterface
+class ASBZAICharacter : public ASBZAIBaseCharacter, public ISBZAIVisualDetectorInterface, public ISBZMarkableInterface, public MIPad::Pad<0x38, 0x1BE0>, public ISBZAutoAimInterface
 {
 public:
 	struct FGameplayTagContainer                  BlockGoDownTagContainer;                           // 0x1BE8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
@@ -19143,7 +19143,7 @@ DUMPER7_ASSERTS_ASBZDebugDrawingManager;
 
 // Class Starbreeze.SBZMainMenuPrePlanningItemSelectionWidget
 // 0x0078 (0x0398 - 0x0320)
-class USBZMainMenuPrePlanningItemSelectionWidget : public USBZMenuStackWidget
+class USBZMainMenuPrePlanningItemSelectionWidget final : public USBZMenuStackWidget
 {
 public:
 	class UPanelWidget*                           Panel_ButtonList;                                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -19648,7 +19648,7 @@ DUMPER7_ASSERTS_ASBZBreachingEquipmentBase;
 
 // Class Starbreeze.SBZPocketDrill
 // 0x00F8 (0x0648 - 0x0550)
-class ASBZPocketDrill final : public ASBZBreachingEquipmentBase
+class ASBZPocketDrill : public ASBZBreachingEquipmentBase
 {
 public:
 	struct FSBZComponentSelector                  WidgetComponent;                                   // 0x0550(0x0020)(Edit, DisableEditOnInstance, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
@@ -19771,7 +19771,7 @@ DUMPER7_ASSERTS_ASBZBasePlayerCameraManager;
 
 // Class Starbreeze.SBZPlayerCameraManager
 // 0x0220 (0x2890 - 0x2670)
-class ASBZPlayerCameraManager final : public ASBZBasePlayerCameraManager
+class ASBZPlayerCameraManager : public ASBZBasePlayerCameraManager
 {
 public:
 	class USBZPlayerCameraFeedbackComponent*      PlayerCameraFeedbackComponent;                     // 0x2668(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -20411,7 +20411,7 @@ DUMPER7_ASSERTS_USBZAICrewCharacterInteractableComponent;
 
 // Class Starbreeze.SBZAICrewController
 // 0x0048 (0x07A0 - 0x0758)
-class ASBZAICrewController final : public ASBZAIController
+class ASBZAICrewController : public ASBZAIController
 {
 public:
 	class ASBZAICrewState*                        CrewState;                                         // 0x0758(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -21065,7 +21065,7 @@ DUMPER7_ASSERTS_USBZOnlineSlotsHost;
 
 // Class Starbreeze.SBZAIHitByVehicleAbility
 // 0x0010 (0x04E0 - 0x04D0)
-class USBZAIHitByVehicleAbility final : public USBZGameplayAbility
+class USBZAIHitByVehicleAbility : public USBZGameplayAbility
 {
 public:
 	EPD3HeistState                                MinHeistState;                                     // 0x04D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -21135,7 +21135,7 @@ DUMPER7_ASSERTS_USBZSkillFragGrenadeScroungerBase;
 
 // Class Starbreeze.SBZDecorativeSmokeGrenade
 // 0x0030 (0x0358 - 0x0328)
-class ASBZDecorativeSmokeGrenade final : public AActor
+class ASBZDecorativeSmokeGrenade : public AActor
 {
 public:
 	class UMeshComponent*                         StaticMesh;                                        // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -21215,7 +21215,7 @@ DUMPER7_ASSERTS_USBZAIInteractorComponent;
 
 // Class Starbreeze.SBZAILifeActionAbility
 // 0x0010 (0x04E0 - 0x04D0)
-class USBZAILifeActionAbility final : public USBZGameplayAbility
+class USBZAILifeActionAbility : public USBZGameplayAbility
 {
 public:
 	TArray<struct FSBZTagStanceMapping>           TagsToPropagateOnEndAbility;                       // 0x04D0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -21384,7 +21384,7 @@ DUMPER7_ASSERTS_USBZAIOrderDebugBlueprintLibrary;
 
 // Class Starbreeze.SBZAIOrder_ActionInteract
 // 0x0010 (0x0240 - 0x0230)
-class USBZAIOrder_ActionInteract final : public USBZAIOrder_LifeAction
+class USBZAIOrder_ActionInteract : public USBZAIOrder_LifeAction
 {
 public:
 	class USBZVoiceCommentDataAsset*              OnStartedComment;                                  // 0x0230(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -21411,7 +21411,7 @@ DUMPER7_ASSERTS_USBZAIOrder_ActionInteract;
 
 // Class Starbreeze.SBZAIOrder_Attack
 // 0x0000 (0x0258 - 0x0258)
-class USBZAIOrder_Attack final : public USBZAIOrder_TacticalMoveTo
+class USBZAIOrder_Attack : public USBZAIOrder_TacticalMoveTo
 {
 public:
 	void OnTargetDefeatStateChanged(class ASBZPlayerState* InSBZPlayerState, EPD3DefeatState OldDefeatState, EPD3DefeatState InDefeatState);
@@ -21587,7 +21587,7 @@ DUMPER7_ASSERTS_USBZPlayerTargetAbility;
 
 // Class Starbreeze.SBZAIOrder_FollowShield
 // 0x0018 (0x0148 - 0x0130)
-class USBZAIOrder_FollowShield final : public USBZAIOrder
+class USBZAIOrder_FollowShield : public USBZAIOrder
 {
 public:
 	float                                         AvoidanceOverride;                                 // 0x0130(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -21773,7 +21773,7 @@ DUMPER7_ASSERTS_USBZPlayerTasedUncontrolledAbility;
 
 // Class Starbreeze.SBZAIOrder_GoToLure
 // 0x0000 (0x0230 - 0x0230)
-class USBZAIOrder_GoToLure final : public USBZAIOrder_LifeAction
+class USBZAIOrder_GoToLure : public USBZAIOrder_LifeAction
 {
 public:
 	static class UClass* StaticClass()
@@ -21969,7 +21969,7 @@ DUMPER7_ASSERTS_USBZAIOrder_MoveTo;
 
 // Class Starbreeze.SBZShopCarouselWidget
 // 0x00F8 (0x03E8 - 0x02F0)
-class USBZShopCarouselWidget : public USBZWidgetBase
+class USBZShopCarouselWidget final : public USBZWidgetBase
 {
 public:
 	int32                                         ItemPreviewCount;                                  // 0x02F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -22092,7 +22092,7 @@ DUMPER7_ASSERTS_USBZAsyncAction_PushDynamicScreen;
 
 // Class Starbreeze.SBZLoadoutSkillsButton
 // 0x0000 (0x03D8 - 0x03D8)
-class USBZLoadoutSkillsButton : public USBZMenuButton
+class USBZLoadoutSkillsButton final : public USBZMenuButton
 {
 public:
 	void InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount);
@@ -22164,7 +22164,7 @@ DUMPER7_ASSERTS_USBZOverskillHET5Beige;
 
 // Class Starbreeze.SBZAIOrder_Rescue
 // 0x0010 (0x0268 - 0x0258)
-class USBZAIOrder_Rescue final : public USBZAIOrder_TacticalMoveTo
+class USBZAIOrder_Rescue : public USBZAIOrder_TacticalMoveTo
 {
 public:
 	class USBZVoiceCommentDataAsset*              RescueHostageComment;                              // 0x0258(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -22192,7 +22192,7 @@ DUMPER7_ASSERTS_USBZAIOrder_Rescue;
 
 // Class Starbreeze.SBZAIOrder_Retreat
 // 0x0008 (0x0168 - 0x0160)
-class USBZAIOrder_Retreat final : public USBZAISquadOrder
+class USBZAIOrder_Retreat : public USBZAISquadOrder
 {
 public:
 	class USBZVoiceCommentDataAsset*              RetreatComment;                                    // 0x0160(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -22215,7 +22215,7 @@ DUMPER7_ASSERTS_USBZAIOrder_Retreat;
 
 // Class Starbreeze.SBZMainMenuPreview
 // 0x0178 (0x04A0 - 0x0328)
-class ASBZMainMenuPreview : public AActor
+class ASBZMainMenuPreview final : public AActor
 {
 public:
 	uint8                                         Pad_328[0x30];                                     // 0x0328(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
@@ -22612,7 +22612,7 @@ DUMPER7_ASSERTS_USBZHelmetPopper;
 
 // Class Starbreeze.SBZAIOrder_Search
 // 0x0010 (0x0170 - 0x0160)
-class USBZAIOrder_Search final : public USBZAISquadOrder
+class USBZAIOrder_Search : public USBZAISquadOrder
 {
 public:
 	class ASBZRoomVolume*                         RoomToSearch;                                      // 0x0160(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -22759,7 +22759,7 @@ DUMPER7_ASSERTS_USBZAIVisualDetectionComponent;
 
 // Class Starbreeze.SBZAIOrder_SecurityRoom
 // 0x0030 (0x0160 - 0x0130)
-class USBZAIOrder_SecurityRoom final : public USBZAIOrder
+class USBZAIOrder_SecurityRoom : public USBZAIOrder
 {
 public:
 	class ASBZSecurityRoom*                       SecurityRoom;                                      // 0x0130(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -22896,7 +22896,7 @@ DUMPER7_ASSERTS_USBZAIOrder_SquadProtect;
 
 // Class Starbreeze.SBZAIOrder_SquadSabotage
 // 0x0010 (0x0268 - 0x0258)
-class USBZAIOrder_SquadSabotage final : public USBZAIOrder_TacticalMoveTo
+class USBZAIOrder_SquadSabotage : public USBZAIOrder_TacticalMoveTo
 {
 public:
 	TWeakObjectPtr<class APawn>                   SabotagingMember;                                  // 0x0258(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -23041,7 +23041,7 @@ DUMPER7_ASSERTS_USBZParticleLibrary;
 
 // Class Starbreeze.SBZAIOrder_TowerSpawnOrder
 // 0x0000 (0x0160 - 0x0160)
-class USBZAIOrder_TowerSpawnOrder final : public USBZAISquadOrder
+class USBZAIOrder_TowerSpawnOrder : public USBZAISquadOrder
 {
 public:
 	static class UClass* StaticClass()
@@ -23328,7 +23328,7 @@ DUMPER7_ASSERTS_USBZOverskillSawHardened;
 
 // Class Starbreeze.SBZAIPointOfInterestDeadBody
 // 0x0028 (0x03A0 - 0x0378)
-class ASBZAIPointOfInterestDeadBody final : public ASBZAIPointOfInterest
+class ASBZAIPointOfInterestDeadBody : public ASBZAIPointOfInterest
 {
 public:
 	class USBZLifeActionComponent*                LifeActionComponent;                               // 0x0378(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -23374,7 +23374,7 @@ DUMPER7_ASSERTS_USBZSkillSmokeGrenadeThickSmokeBase;
 
 // Class Starbreeze.SBZEquipmentModdingScreen
 // 0x0000 (0x0340 - 0x0340)
-class USBZEquipmentModdingScreen : public USBZMenuStackScreenWidget
+class USBZEquipmentModdingScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	TArray<class USBZSlotItemDecorator*> CreateModListDecorators(const struct FSBZEquippableConfig& EquippableConfig, const class USBZModularPartSlotBase* ModSlot) const;
@@ -23444,7 +23444,7 @@ DUMPER7_ASSERTS_USBZPlayerCameraModifier;
 
 // Class Starbreeze.SBZAIRefractorShield
 // 0x0048 (0x0370 - 0x0328)
-class ASBZAIRefractorShield final : public AActor
+class ASBZAIRefractorShield : public AActor
 {
 public:
 	uint8                                         Pad_328[0x10];                                     // 0x0328(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -23534,7 +23534,7 @@ DUMPER7_ASSERTS_ASBZAirNavigationBoundsVolume;
 
 // Class Starbreeze.SBZMainMenuWeaponInventoryScreen
 // 0x00E0 (0x0450 - 0x0370)
-class USBZMainMenuWeaponInventoryScreen : public USBZMenuStackInventoryBaseScreen
+class USBZMainMenuWeaponInventoryScreen final : public USBZMenuStackInventoryBaseScreen
 {
 public:
 	TSubclassOf<class USBZMainMenuLoadoutWeaponSlotButton> WeaponSlotButtonClass;                    // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -23742,7 +23742,7 @@ DUMPER7_ASSERTS_USBZVehicleDamageComponent;
 
 // Class Starbreeze.SBZMainMenuCosmetic
 // 0x00C0 (0x0400 - 0x0340)
-class USBZMainMenuCosmetic : public USBZMenuStackScreenWidget
+class USBZMainMenuCosmetic final : public USBZMenuStackScreenWidget
 {
 public:
 	ESBZMainMenuCosmeticType                      Type;                                              // 0x0340(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -23951,7 +23951,7 @@ DUMPER7_ASSERTS_USBZBTTask_UnOccupyVantagePoint;
 
 // Class Starbreeze.SBZNewItemInventoryScreen
 // 0x0080 (0x03C0 - 0x0340)
-class USBZNewItemInventoryScreen : public USBZMenuStackScreenWidget
+class USBZNewItemInventoryScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class USBZTileView*                           ListView;                                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -24188,7 +24188,7 @@ DUMPER7_ASSERTS_USBZCharacterTraverseAbility;
 
 // Class Starbreeze.SBZAICharacterTraverseAbility
 // 0x0000 (0x04E8 - 0x04E8)
-class USBZAICharacterTraverseAbility final : public USBZCharacterTraverseAbility
+class USBZAICharacterTraverseAbility : public USBZCharacterTraverseAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -24373,7 +24373,7 @@ DUMPER7_ASSERTS_USBZAISearchManager;
 
 // Class Starbreeze.SBZArmorBag
 // 0x0000 (0x06A0 - 0x06A0)
-class ASBZArmorBag final : public ASBZPlaceableArmorCharges
+class ASBZArmorBag : public ASBZPlaceableArmorCharges
 {
 public:
 	int32                                         ArmorChunkSizePerCharge;                           // 0x0698(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -24417,7 +24417,7 @@ DUMPER7_ASSERTS_USBZAISenseConfig_Team;
 
 // Class Starbreeze.SBZDamageStatusMarkerWidget
 // 0x0028 (0x0360 - 0x0338)
-class USBZDamageStatusMarkerWidget final : public USBZMarkerWidget
+class USBZDamageStatusMarkerWidget : public USBZMarkerWidget
 {
 public:
 	float                                         Health;                                            // 0x0338(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -25370,7 +25370,7 @@ DUMPER7_ASSERTS_USBZReactionPredicate_RoomSoundDistance;
 
 // Class Starbreeze.SBZMainMenuCrimeNetStackWidget
 // 0x0008 (0x0328 - 0x0320)
-class USBZMainMenuCrimeNetStackWidget : public USBZMenuStackWidget
+class USBZMainMenuCrimeNetStackWidget final : public USBZMenuStackWidget
 {
 public:
 	class USBZMainMenuShopButton*                 ShopButton;                                        // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -25803,7 +25803,7 @@ DUMPER7_ASSERTS_ISBZAssetDatabaseManagerInterface;
 
 // Class Starbreeze.SBZReactionPredicate_GlobalCooldown
 // 0x0010 (0x0048 - 0x0038)
-class USBZReactionPredicate_GlobalCooldown final : public USBZReactionPredicate
+class USBZReactionPredicate_GlobalCooldown : public USBZReactionPredicate
 {
 public:
 	float                                         WaitTime;                                          // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -25827,7 +25827,7 @@ DUMPER7_ASSERTS_USBZReactionPredicate_GlobalCooldown;
 
 // Class Starbreeze.SBZReactionPredicate_CanScream
 // 0x0010 (0x0048 - 0x0038)
-class USBZReactionPredicate_CanScream final : public USBZReactionPredicate
+class USBZReactionPredicate_CanScream : public USBZReactionPredicate
 {
 public:
 	struct FFloatInterval                         ScreamInterval;                                    // 0x0038(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -25873,7 +25873,7 @@ DUMPER7_ASSERTS_USBZSkillCasingStrongArmBase;
 
 // Class Starbreeze.SBZArmorModCategoryButton
 // 0x0020 (0x03F8 - 0x03D8)
-class USBZArmorModCategoryButton : public USBZMenuButton
+class USBZArmorModCategoryButton final : public USBZMenuButton
 {
 public:
 	int32                                         ArmorChunkIndex;                                   // 0x03D8(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -26203,7 +26203,7 @@ DUMPER7_ASSERTS_USBZCapsuleShadowingData;
 
 // Class Starbreeze.SBZAITacticalFlashAbility
 // 0x0000 (0x8CE8 - 0x8CE8)
-class USBZAITacticalFlashAbility final : public USBZAIFireRangedWeaponAbility
+class USBZAITacticalFlashAbility : public USBZAIFireRangedWeaponAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -26272,7 +26272,7 @@ DUMPER7_ASSERTS_USBZAITacticianCrowdControlAbility;
 
 // Class Starbreeze.SBZAITaserBattery
 // 0x0040 (0x0720 - 0x06E0)
-class USBZAITaserBattery final : public USBZAIExplosiveWeakPoint
+class USBZAITaserBattery : public USBZAIExplosiveWeakPoint
 {
 public:
 	float                                         TaseDuration;                                      // 0x06D8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -26735,7 +26735,7 @@ DUMPER7_ASSERTS_ASBZMannequinPlayerCharacter;
 
 // Class Starbreeze.SBZMainMenuPlayerCharacter
 // 0x0000 (0x0860 - 0x0860)
-class ASBZMainMenuPlayerCharacter : public ASBZMannequinPlayerCharacter
+class ASBZMainMenuPlayerCharacter final : public ASBZMannequinPlayerCharacter
 {
 public:
 	static class UClass* StaticClass()
@@ -26962,7 +26962,7 @@ DUMPER7_ASSERTS_USBZTargetFinder_TypeDistSorted;
 
 // Class Starbreeze.SBZAIThrowItemAbility
 // 0x0000 (0x0500 - 0x0500)
-class USBZAIThrowItemAbility final : public USBZThrowItemAbility
+class USBZAIThrowItemAbility : public USBZThrowItemAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -28635,7 +28635,7 @@ DUMPER7_ASSERTS_USBZBaseCharacterMenuAnimationCollection;
 
 // Class Starbreeze.SBZMainMenuQuickMatch
 // 0x0000 (0x0320 - 0x0320)
-class USBZMainMenuQuickMatch : public USBZMenuStackWidget
+class USBZMainMenuQuickMatch final : public USBZMenuStackWidget
 {
 public:
 	static class UClass* StaticClass()
@@ -30111,7 +30111,7 @@ DUMPER7_ASSERTS_USBZAkSoundLibrary;
 
 // Class Starbreeze.SBZShopItemPreviewButton
 // 0x0058 (0x0430 - 0x03D8)
-class USBZShopItemPreviewButton : public USBZMenuButton
+class USBZShopItemPreviewButton final : public USBZMenuButton
 {
 public:
 	struct FVector2D                              DefaultImageBounds;                                // 0x03D8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -32296,7 +32296,7 @@ DUMPER7_ASSERTS_USBZBaseWeaponData;
 
 // Class Starbreeze.SBZMainMenuCameraManager
 // 0x0078 (0x03A0 - 0x0328)
-class ASBZMainMenuCameraManager : public AActor
+class ASBZMainMenuCameraManager final : public AActor
 {
 public:
 	class FName                                   DefaultCamera;                                     // 0x0328(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -32467,7 +32467,7 @@ DUMPER7_ASSERTS_ASBZBinaryStateNode;
 
 // Class Starbreeze.SBZBlackMarketCategoryWidget
 // 0x0008 (0x02F8 - 0x02F0)
-class USBZBlackMarketCategoryWidget : public USBZWidgetBase
+class USBZBlackMarketCategoryWidget final : public USBZWidgetBase
 {
 public:
 	class UWrapBox*                               Panel_ButtonList;                                  // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -32570,7 +32570,7 @@ DUMPER7_ASSERTS_USBZGloveDatabase;
 
 // Class Starbreeze.SBZBlackMarketConfirmationPopupBody
 // 0x0180 (0x0470 - 0x02F0)
-class USBZBlackMarketConfirmationPopupBody : public USBZWidgetBase
+class USBZBlackMarketConfirmationPopupBody final : public USBZWidgetBase
 {
 public:
 	struct FSBZStoreItemUIData                    StoreItemUIData;                                   // 0x02F0(0x0180)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -32669,7 +32669,7 @@ DUMPER7_ASSERTS_USBZEmoteAbility;
 
 // Class Starbreeze.SBZBlackMarketInspectWidget
 // 0x0088 (0x03C8 - 0x0340)
-class USBZBlackMarketInspectWidget : public USBZMenuStackScreenWidget
+class USBZBlackMarketInspectWidget final : public USBZMenuStackScreenWidget
 {
 public:
 	class USBZInventoryBaseData*                  CurrentInspectData;                                // 0x0340(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -33005,7 +33005,7 @@ DUMPER7_ASSERTS_USBZThrowableKnifeExecutionCalculation;
 
 // Class Starbreeze.SBZCoverPointManager
 // 0x00B0 (0x00E0 - 0x0030)
-class USBZCoverPointManager final : public UObject
+class USBZCoverPointManager : public UObject
 {
 public:
 	uint8                                         Pad_30[0xB0];                                      // 0x0030(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -33076,7 +33076,7 @@ DUMPER7_ASSERTS_USBZAgilityBreachDamageType;
 
 // Class Starbreeze.SBZBlackMarketVendorsWidget
 // 0x03A0 (0x0710 - 0x0370)
-class USBZBlackMarketVendorsWidget : public USBZMenuStackScreenWidgetWithTutorial
+class USBZBlackMarketVendorsWidget final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	class UPanelWidget*                           Panel_CategoriesList;                              // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -33246,7 +33246,7 @@ DUMPER7_ASSERTS_USBZWidgetCreditsRowBase;
 
 // Class Starbreeze.SBZWidgetCreditsTextPair
 // 0x0010 (0x0300 - 0x02F0)
-class USBZWidgetCreditsTextPair : public USBZWidgetCreditsRowBase
+class USBZWidgetCreditsTextPair final : public USBZWidgetCreditsRowBase
 {
 public:
 	class UTextBlock*                             TextFirstWidget;                                   // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -33621,7 +33621,7 @@ DUMPER7_ASSERTS_USBZBlockThrowNotify;
 
 // Class Starbreeze.SBZMainMenuInventoryItemSlotButton
 // 0x0020 (0x03F8 - 0x03D8)
-class USBZMainMenuInventoryItemSlotButton : public USBZMenuButton
+class USBZMainMenuInventoryItemSlotButton final : public USBZMenuButton
 {
 public:
 	class USBZInventoryBaseData*                  ItemData;                                          // 0x03D8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -33771,7 +33771,7 @@ DUMPER7_ASSERTS_ASBZECMJammer;
 
 // Class Starbreeze.SBZBreakableMachine
 // 0x0030 (0x0358 - 0x0328)
-class ASBZBreakableMachine final : public AActor
+class ASBZBreakableMachine : public AActor
 {
 public:
 	class USBZBreakableMachineInteractableComponent* InteractableComponent;                          // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -34934,7 +34934,7 @@ DUMPER7_ASSERTS_USBZSkillStrategistMisdirect;
 
 // Class Starbreeze.SBZCuttableWidget
 // 0x0000 (0x02F0 - 0x02F0)
-class USBZCuttableWidget final : public UUserWidget
+class USBZCuttableWidget : public UUserWidget
 {
 public:
 	void OnWidgetCut(float AtSegment);
@@ -36358,7 +36358,7 @@ DUMPER7_ASSERTS_USBZEnvQueryContext_CurrentCover;
 
 // Class Starbreeze.SBZLoadoutModCategoryButton
 // 0x0028 (0x0400 - 0x03D8)
-class USBZLoadoutModCategoryButton : public USBZMenuButton
+class USBZLoadoutModCategoryButton final : public USBZMenuButton
 {
 public:
 	class USBZModularPartSlotBase*                ModSlot;                                           // 0x03D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -37901,7 +37901,7 @@ DUMPER7_ASSERTS_USBZSettingsButtonUpscalerChoice;
 
 // Class Starbreeze.SBZWidgetCreditsText
 // 0x0008 (0x02F8 - 0x02F0)
-class USBZWidgetCreditsText : public USBZWidgetCreditsRowBase
+class USBZWidgetCreditsText final : public USBZWidgetCreditsRowBase
 {
 public:
 	class UTextBlock*                             TextWidget;                                        // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -37956,7 +37956,7 @@ DUMPER7_ASSERTS_USBZBTTask_CoverInFear;
 
 // Class Starbreeze.SBZConnectedCableBox
 // 0x00A0 (0x03C8 - 0x0328)
-class ASBZConnectedCableBox final : public AActor
+class ASBZConnectedCableBox : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(bool bWasSuccess)> OnComplete;                                     // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -38692,7 +38692,7 @@ DUMPER7_ASSERTS_USBZEquipConsumableAbility;
 
 // Class Starbreeze.SBZMainMenuInventorySuitSlotButton
 // 0x0090 (0x0468 - 0x03D8)
-class USBZMainMenuInventorySuitSlotButton : public USBZMenuButton
+class USBZMainMenuInventorySuitSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZSuitInventorySlot                  SuitSlot;                                          // 0x03D8(0x0088)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -39167,7 +39167,7 @@ DUMPER7_ASSERTS_USBZDialogBodyGestureEndNotify;
 
 // Class Starbreeze.SBZThermite
 // 0x01A8 (0x04D0 - 0x0328)
-class ASBZThermite final : public AActor, public ISBZTimedObjectiveInterface, public MIPad::Pad<0x30, 0x360>, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x380>, public ISBZMarkerInfoInterface
+class ASBZThermite : public AActor, public ISBZTimedObjectiveInterface, public MIPad::Pad<0x30, 0x360>, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x380>, public ISBZMarkerInfoInterface
 {
 public:
 	TMulticastInlineDelegate<void()>              OnThermiteComplete;                                // 0x0388(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -39563,7 +39563,7 @@ DUMPER7_ASSERTS_USBZBTTask_Peek;
 
 // Class Starbreeze.SBZCurrencyWidget
 // 0x0018 (0x0308 - 0x02F0)
-class USBZCurrencyWidget : public USBZWidgetBase
+class USBZCurrencyWidget final : public USBZWidgetBase
 {
 public:
 	ESBZCurrencyCode                              CurrencyType;                                      // 0x02F0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -39629,7 +39629,7 @@ DUMPER7_ASSERTS_USBZBTTask_PlayLifeAction;
 
 // Class Starbreeze.SBZMainMenuInventoryGloveSlotButton
 // 0x0058 (0x0430 - 0x03D8)
-class USBZMainMenuInventoryGloveSlotButton : public USBZMenuButton
+class USBZMainMenuInventoryGloveSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZGloveInventorySlot                 GloveSlot;                                         // 0x03D8(0x0050)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -40102,7 +40102,7 @@ DUMPER7_ASSERTS_USBZBTTask_RunMoveToBehavior;
 
 // Class Starbreeze.SBZMainMenuChallengesWidget
 // 0x00B0 (0x03A0 - 0x02F0)
-class USBZMainMenuChallengesWidget : public USBZWidgetBase
+class USBZMainMenuChallengesWidget final : public USBZWidgetBase
 {
 public:
 	class UPanelWidget*                           Panel_ChallengeButtons;                            // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -40199,7 +40199,7 @@ DUMPER7_ASSERTS_USBZAIRepositionPredicate_Cover;
 
 // Class Starbreeze.SBZStaticVehicle
 // 0x00A0 (0x03D8 - 0x0338)
-class ASBZStaticVehicle final : public AStaticMeshActor
+class ASBZStaticVehicle : public AStaticMeshActor
 {
 public:
 	TMap<int32, struct FSBZVehicleLights>         LightsCPDGraph;                                    // 0x0338(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -41005,7 +41005,7 @@ DUMPER7_ASSERTS_USBZCampaignActData;
 
 // Class Starbreeze.SBZShopItemBundleButton
 // 0x0038 (0x0410 - 0x03D8)
-class USBZShopItemBundleButton : public USBZMenuButton
+class USBZShopItemBundleButton final : public USBZMenuButton
 {
 public:
 	class UMaterialInterface*                     DefaultBackground;                                 // 0x03D8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -41542,7 +41542,7 @@ DUMPER7_ASSERTS_USBZSuitPartConfig;
 
 // Class Starbreeze.SBZCharacterPreferenceCharacterSlotButton
 // 0x0020 (0x0310 - 0x02F0)
-class USBZCharacterPreferenceCharacterSlotButton : public USBZWidgetBase
+class USBZCharacterPreferenceCharacterSlotButton final : public USBZWidgetBase
 {
 public:
 	TMulticastInlineDelegate<void(class USBZCharacterPreferenceCharacterSlotButton* Button)> OnCharacterPreferenceSlotButtonSelected; // 0x02F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -41919,7 +41919,7 @@ DUMPER7_ASSERTS_ASBZMakeNoiseActor;
 
 // Class Starbreeze.SBZCodeNote
 // 0x0070 (0x0398 - 0x0328)
-class ASBZCodeNote final : public AActor, public ISBZCodeViewerInterface, public ISBZObjectiveInformationInterface
+class ASBZCodeNote : public AActor, public ISBZCodeViewerInterface, public ISBZObjectiveInformationInterface
 {
 public:
 	uint8                                         Pad_338[0x18];                                     // 0x0338(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -42192,7 +42192,7 @@ DUMPER7_ASSERTS_USBZConnectedMaintenanceBoxInteractRequirement;
 
 // Class Starbreeze.SBZConnectedMaintenanceBox
 // 0x0108 (0x0430 - 0x0328)
-class ASBZConnectedMaintenanceBox final : public AActor
+class ASBZConnectedMaintenanceBox : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(bool bSuccessful)> OnMaintenanceBoxComplete;                       // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -42296,7 +42296,7 @@ DUMPER7_ASSERTS_USBZNavArea_AgilityRappel;
 
 // Class Starbreeze.SBZCrimeBondBundleGridWidget
 // 0x00D0 (0x0410 - 0x0340)
-class USBZCrimeBondBundleGridWidget : public USBZMenuStackScreenWidget
+class USBZCrimeBondBundleGridWidget final : public USBZMenuStackScreenWidget
 {
 public:
 	class UScrollBox*                             PageContainer;                                     // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
@@ -42681,7 +42681,7 @@ DUMPER7_ASSERTS_USBZReplicationGraph;
 
 // Class Starbreeze.SBZCustomizationRotateComponent
 // 0x00C8 (0x0170 - 0x00A8)
-class alignas(0x10) USBZCustomizationRotateComponent : public UActorComponent
+class alignas(0x10) USBZCustomizationRotateComponent final : public UActorComponent
 {
 public:
 	bool                                          bIsCameraRelative;                                 // 0x00A8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -42795,7 +42795,7 @@ DUMPER7_ASSERTS_ASBZCuttableSkylightActor;
 
 // Class Starbreeze.SBZMainMenuWeaponInventoryModGridWidget
 // 0x0018 (0x0308 - 0x02F0)
-class USBZMainMenuWeaponInventoryModGridWidget : public USBZWidgetBase
+class USBZMainMenuWeaponInventoryModGridWidget final : public USBZWidgetBase
 {
 public:
 	int32                                         AmountToShow;                                      // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -43378,7 +43378,7 @@ DUMPER7_ASSERTS_USBZGrenadeDamageType;
 
 // Class Starbreeze.SBZMainMenuLoadoutDisplayWidget
 // 0x0098 (0x0388 - 0x02F0)
-class USBZMainMenuLoadoutDisplayWidget : public USBZWidgetBase
+class USBZMainMenuLoadoutDisplayWidget final : public USBZWidgetBase
 {
 public:
 	class USBZMainMenuLoadoutWeaponSlotButton*    Button_PrimaryWeapon;                              // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -43841,7 +43841,7 @@ DUMPER7_ASSERTS_USBZDisableAgentBrainNotifyState;
 
 // Class Starbreeze.SBZMeleeWeaponEffect
 // 0x0000 (0x0B30 - 0x0B30)
-class USBZMeleeWeaponEffect final : public UGameplayEffect
+class USBZMeleeWeaponEffect : public UGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
@@ -45080,7 +45080,7 @@ DUMPER7_ASSERTS_USBZEnvQueryContext_Ward;
 
 // Class Starbreeze.SBZKeycardReader
 // 0x0050 (0x03D8 - 0x0388)
-class ASBZKeycardReader final : public ASBZModuleActor, public ISBZAutoAimInterface
+class ASBZKeycardReader : public ASBZModuleActor, public ISBZAutoAimInterface
 {
 public:
 	class USBZInteractableComponent*              InteractableComponent;                             // 0x0390(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -45598,7 +45598,7 @@ DUMPER7_ASSERTS_ASBZAmmoBag;
 
 // Class Starbreeze.SBZAmmoPack
 // 0x0000 (0x06B0 - 0x06B0)
-class ASBZAmmoPack final : public ASBZAmmoBag
+class ASBZAmmoPack : public ASBZAmmoBag
 {
 public:
 	static class UClass* StaticClass()
@@ -46212,7 +46212,7 @@ DUMPER7_ASSERTS_USBZEnvQueryTest_TargetPrio;
 
 // Class Starbreeze.SBZMainMenuGloveInventoryScreen
 // 0x0228 (0x0598 - 0x0370)
-class USBZMainMenuGloveInventoryScreen : public USBZMenuStackInventoryBaseScreen
+class USBZMainMenuGloveInventoryScreen final : public USBZMenuStackInventoryBaseScreen
 {
 public:
 	TSubclassOf<class USBZMainMenuInventoryGloveSlotButton> GloveSlotButtonClass;                    // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -47675,7 +47675,7 @@ DUMPER7_ASSERTS_ISBZVolumeDamageInterface;
 
 // Class Starbreeze.SBZExplosiveTrapGas
 // 0x00A8 (0x05D8 - 0x0530)
-class ASBZExplosiveTrapGas final : public ASBZExplosiveTrap, public ISBZVolumeDamageInterface
+class ASBZExplosiveTrapGas : public ASBZExplosiveTrap, public ISBZVolumeDamageInterface
 {
 public:
 	class USphereComponent*                       SphereComponent;                                   // 0x0538(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -47757,7 +47757,7 @@ DUMPER7_ASSERTS_ASBZPlayerMambaGrenadeProjectile;
 
 // Class Starbreeze.SBZPlayerGrenadeProjectileCluster
 // 0x0008 (0x8DE0 - 0x8DD8)
-class ASBZPlayerGrenadeProjectileCluster final : public ASBZPlayerMambaGrenadeProjectile
+class ASBZPlayerGrenadeProjectileCluster : public ASBZPlayerMambaGrenadeProjectile
 {
 public:
 	float                                         AdditionalRandomDelay;                             // 0x8DD8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -47781,7 +47781,7 @@ DUMPER7_ASSERTS_ASBZPlayerGrenadeProjectileCluster;
 
 // Class Starbreeze.SBZEyeScanner
 // 0x0088 (0x03B0 - 0x0328)
-class ASBZEyeScanner final : public AActor
+class ASBZEyeScanner : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState)> OnEyeScannerStateChanged; // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -47987,7 +47987,7 @@ DUMPER7_ASSERTS_USBZFallDamageExecutionCalculation;
 
 // Class Starbreeze.SBZMainMenuCosmeticSlotButton
 // 0x0010 (0x03E8 - 0x03D8)
-class USBZMainMenuCosmeticSlotButton : public USBZMenuButton
+class USBZMainMenuCosmeticSlotButton final : public USBZMenuButton
 {
 public:
 	class USBZCosmeticsPartSlot*                  PartSlot;                                          // 0x03D8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -48223,7 +48223,7 @@ DUMPER7_ASSERTS_ASBZFilteredTriggerVolume;
 
 // Class Starbreeze.SBZWidgetCreditsImage
 // 0x0008 (0x02F8 - 0x02F0)
-class USBZWidgetCreditsImage : public USBZWidgetCreditsRowBase
+class USBZWidgetCreditsImage final : public USBZWidgetCreditsRowBase
 {
 public:
 	class UImage*                                 ImageWidget;                                       // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -48768,7 +48768,7 @@ DUMPER7_ASSERTS_USBZFPSWidget;
 
 // Class Starbreeze.SBZFlashBangCluster
 // 0x0010 (0x8F20 - 0x8F10)
-class ASBZFlashBangCluster final : public ASBZFlashBangGrenade
+class ASBZFlashBangCluster : public ASBZFlashBangGrenade
 {
 public:
 	float                                         AdditionalRandomDelay;                             // 0x8F10(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -48937,7 +48937,7 @@ DUMPER7_ASSERTS_USBZFullScreenNotification;
 
 // Class Starbreeze.SBZFullscreenVideoWidget
 // 0x00A8 (0x03E8 - 0x0340)
-class USBZFullscreenVideoWidget : public USBZMenuStackScreenWidget
+class USBZFullscreenVideoWidget final : public USBZMenuStackScreenWidget
 {
 public:
 	TMulticastInlineDelegate<void(class USBZFullscreenVideoWidget* InWidget, bool bInIsActive)> OnActiveChanged; // 0x0340(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, Protected, NativeAccessSpecifierProtected)
@@ -49456,7 +49456,7 @@ DUMPER7_ASSERTS_ASBZGameMannequinPlayerCharacter;
 
 // Class Starbreeze.SBZGameModeMainMenu
 // 0x0008 (0x03D8 - 0x03D0)
-class ASBZGameModeMainMenu : public ASBZGameModeBase
+class ASBZGameModeMainMenu final : public ASBZGameModeBase
 {
 public:
 	uint8                                         Pad_3D0[0x8];                                      // 0x03D0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -49818,7 +49818,7 @@ DUMPER7_ASSERTS_USBZGameplayAbility_Interact;
 
 // Class Starbreeze.SBZMainMenuArmorInventoryScreen
 // 0x0230 (0x05A0 - 0x0370)
-class USBZMainMenuArmorInventoryScreen : public USBZMenuStackInventoryBaseScreen
+class USBZMainMenuArmorInventoryScreen final : public USBZMenuStackInventoryBaseScreen
 {
 public:
 	TSubclassOf<class USBZMainMenuArmorSlotButton> ArmorSlotButtonClass;                             // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -50168,7 +50168,7 @@ DUMPER7_ASSERTS_USBZInteractSecurityCameraRequirement;
 
 // Class Starbreeze.SBZMainMenuChallengeCategorySelectionScreen
 // 0x0020 (0x0360 - 0x0340)
-class USBZMainMenuChallengeCategorySelectionScreen : public USBZMenuStackScreenWidget
+class USBZMainMenuChallengeCategorySelectionScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class UHorizontalBox*                         HorizontalBox_ChallengeCategorySelection;          // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -50332,7 +50332,7 @@ DUMPER7_ASSERTS_USBZGameStartMainMenuLoadoutWidget;
 
 // Class Starbreeze.SBZGameStartMainMenuSkillsSelection
 // 0x00E8 (0x0458 - 0x0370)
-class USBZGameStartMainMenuSkillsSelection : public USBZMenuStackScreenWidgetWithTutorial
+class USBZGameStartMainMenuSkillsSelection final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	TArray<class USBZSkillData*>                  Skills;                                            // 0x0370(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -50435,7 +50435,7 @@ DUMPER7_ASSERTS_USBZPreplanningAssetManager;
 
 // Class Starbreeze.SBZGameStartMainMenuWeaponCustomizationWidget
 // 0x0090 (0x03D0 - 0x0340)
-class USBZGameStartMainMenuWeaponCustomizationWidget : public USBZMenuStackScreenWidget
+class USBZGameStartMainMenuWeaponCustomizationWidget final : public USBZMenuStackScreenWidget
 {
 public:
 	struct FSBZEquippableConfig                   EquippableConfig;                                  // 0x0340(0x0088)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -50466,7 +50466,7 @@ DUMPER7_ASSERTS_USBZGameStartMainMenuWeaponCustomizationWidget;
 
 // Class Starbreeze.SBZMainMenuCharacterDisplayPanel
 // 0x0008 (0x02F8 - 0x02F0)
-class USBZMainMenuCharacterDisplayPanel : public USBZWidgetBase
+class USBZMainMenuCharacterDisplayPanel final : public USBZWidgetBase
 {
 public:
 	class USBZPlayerCharacterData*                CharacterData;                                     // 0x02F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -51353,7 +51353,7 @@ DUMPER7_ASSERTS_USBZSkillEscapistBatteringRam;
 
 // Class Starbreeze.SBZInteractableDoor
 // 0x0060 (0x06C8 - 0x0668)
-class ASBZInteractableDoor final : public ASBZInteractableGate, public ISBZPropDamageInterface
+class ASBZInteractableDoor : public ASBZInteractableGate, public ISBZPropDamageInterface
 {
 public:
 	class ASBZRoomVolume*                         SelectedRoom;                                      // 0x0670(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -51393,7 +51393,7 @@ DUMPER7_ASSERTS_ASBZInteractableDoor;
 
 // Class Starbreeze.SBZWindow
 // 0x0010 (0x0658 - 0x0648)
-class ASBZWindow final : public ASBZGate, public ISBZTraversalDestructibleInterface
+class ASBZWindow : public ASBZGate, public ISBZTraversalDestructibleInterface
 {
 public:
 	bool                                          bIsBreakableByPlayerVaulting;                      // 0x0650(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -51692,7 +51692,7 @@ DUMPER7_ASSERTS_USBZSkillLineDatabase;
 
 // Class Starbreeze.SBZGlobalLevelStateActor
 // 0x0010 (0x0380 - 0x0370)
-class ASBZGlobalLevelStateActor final : public ASBZReplicatedIntStateActor
+class ASBZGlobalLevelStateActor : public ASBZReplicatedIntStateActor
 {
 public:
 	TMulticastInlineDelegate<void(int32 OldState, int32 NewState, bool bDoCosmetics)> OnLevelStateChanged; // 0x0370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -51898,7 +51898,7 @@ DUMPER7_ASSERTS_ASBZHealthPlaceable;
 
 // Class Starbreeze.SBZFirstAidPack
 // 0x0000 (0x06B0 - 0x06B0)
-class ASBZFirstAidPack final : public ASBZHealthPlaceable
+class ASBZFirstAidPack : public ASBZHealthPlaceable
 {
 public:
 	static class UClass* StaticClass()
@@ -52692,7 +52692,7 @@ DUMPER7_ASSERTS_ISBZToolHackableInterface;
 
 // Class Starbreeze.SBZHackingMinigameActor
 // 0x0028 (0x03B0 - 0x0388)
-class ASBZHackingMinigameActor final : public ASBZMiniGameActor, public ISBZToolHackableInterface
+class ASBZHackingMinigameActor : public ASBZMiniGameActor, public ISBZToolHackableInterface
 {
 public:
 	class USBZHackingComponent*                   HackingComponent;                                  // 0x0390(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -54433,7 +54433,7 @@ DUMPER7_ASSERTS_USBZHoldOutZoneOverlapObjective;
 
 // Class Starbreeze.SBZPerceptionController
 // 0x0008 (0x0460 - 0x0458)
-class ASBZPerceptionController final : public AAIController
+class ASBZPerceptionController : public AAIController
 {
 public:
 	class USBZAIVisualDetectionComponent*         VisualDetectionComponent;                          // 0x0458(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -54563,7 +54563,7 @@ DUMPER7_ASSERTS_USBZSuitPresetData;
 
 // Class Starbreeze.SBZHUDBase
 // 0x0000 (0x0418 - 0x0418)
-class ASBZHUDBase final : public AHUD
+class ASBZHUDBase : public AHUD
 {
 public:
 	void DelayedHudInitizalize();
@@ -55242,7 +55242,7 @@ DUMPER7_ASSERTS_ASBZStandaloneWeaponDisplayDebug;
 
 // Class Starbreeze.SBZInfamyWidget
 // 0x0018 (0x0308 - 0x02F0)
-class USBZInfamyWidget : public USBZWidgetBase
+class USBZInfamyWidget final : public USBZWidgetBase
 {
 public:
 	int32                                         InfamyLevel;                                       // 0x02F0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -55425,7 +55425,7 @@ DUMPER7_ASSERTS_USBZInteractableCarriedBagComponent;
 
 // Class Starbreeze.SBZServerBrowserStoryModeButton
 // 0x0008 (0x0430 - 0x0428)
-class USBZServerBrowserStoryModeButton : public USBZMainMenuCrimeNetStoryModeButton
+class USBZServerBrowserStoryModeButton final : public USBZMainMenuCrimeNetStoryModeButton
 {
 public:
 	bool                                          bIsInputTypeDependent;                             // 0x0428(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -55831,7 +55831,7 @@ DUMPER7_ASSERTS_USBZSuitBaseData;
 
 // Class Starbreeze.SBZInventoryDefaultButton
 // 0x0008 (0x03E0 - 0x03D8)
-class USBZInventoryDefaultButton : public USBZMenuButton
+class USBZInventoryDefaultButton final : public USBZMenuButton
 {
 public:
 	bool                                          bIsEquipped;                                       // 0x03D8(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -55985,7 +55985,7 @@ DUMPER7_ASSERTS_USBZGloveInventorySlotData;
 
 // Class Starbreeze.SBZItemContainer
 // 0x0040 (0x0368 - 0x0328)
-class ASBZItemContainer final : public AActor
+class ASBZItemContainer : public AActor
 {
 public:
 	class USBZInteractableComponent*              InteractableComponent;                             // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -56258,7 +56258,7 @@ DUMPER7_ASSERTS_USBZThrowableDatabase;
 
 // Class Starbreeze.SBZTankAttributeSet
 // 0x0098 (0x0318 - 0x0280)
-class USBZTankAttributeSet final : public USBZAICharacterAttributeSet
+class USBZTankAttributeSet : public USBZAICharacterAttributeSet
 {
 public:
 	struct FGameplayAttributeData                 VisorArmor;                                        // 0x0280(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
@@ -56433,7 +56433,7 @@ DUMPER7_ASSERTS_USBZVendorDatabase;
 
 // Class Starbreeze.SBZShopPriceWidget
 // 0x0020 (0x0310 - 0x02F0)
-class USBZShopPriceWidget : public USBZWidgetBase
+class USBZShopPriceWidget final : public USBZWidgetBase
 {
 public:
 	class UTextBlock*                             InitialPriceTextBlock;                             // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -56535,7 +56535,7 @@ DUMPER7_ASSERTS_USBZWeaponCharmDatabase;
 
 // Class Starbreeze.SBZStaticReplicatedActor
 // 0x0000 (0x0328 - 0x0328)
-class ASBZStaticReplicatedActor final : public AActor
+class ASBZStaticReplicatedActor : public AActor
 {
 public:
 	static class UClass* StaticClass()
@@ -57254,7 +57254,7 @@ DUMPER7_ASSERTS_USBZKeyItemData;
 
 // Class Starbreeze.SBZKeypad
 // 0x0000 (0x04A8 - 0x04A8)
-class ASBZKeypad final : public ASBZKeypadBase
+class ASBZKeypad : public ASBZKeypadBase
 {
 public:
 	static class UClass* StaticClass()
@@ -57685,7 +57685,7 @@ DUMPER7_ASSERTS_ASBZLevelScriptActorBase;
 
 // Class Starbreeze.SBZLevelScriptActor
 // 0x00A0 (0x03D0 - 0x0330)
-class ASBZLevelScriptActor final : public ASBZLevelScriptActorBase
+class ASBZLevelScriptActor : public ASBZLevelScriptActorBase
 {
 public:
 	bool                                          bIsDestroyedAtCleanup;                             // 0x0330(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -57803,7 +57803,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateDsResult;
 
 // Class Starbreeze.SBZLevelScriptMainMenuActor
 // 0x0040 (0x0370 - 0x0330)
-class ASBZLevelScriptMainMenuActor : public ASBZLevelScriptActorBase
+class ASBZLevelScriptMainMenuActor final : public ASBZLevelScriptActorBase
 {
 public:
 	class ASBZMainMenuPlayerCharacter*            MainMenuMannequin;                                 // 0x0330(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -57858,7 +57858,7 @@ DUMPER7_ASSERTS_USBZThermiteInteractRequirement;
 
 // Class Starbreeze.SBZLifeActionTriggerVolume
 // 0x00C8 (0x03F8 - 0x0330)
-class ASBZLifeActionTriggerVolume final : public ATriggerBox
+class ASBZLifeActionTriggerVolume : public ATriggerBox
 {
 public:
 	TMulticastInlineDelegate<void(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)> OnActionPushed; // 0x0330(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -58138,7 +58138,7 @@ DUMPER7_ASSERTS_USBZSkillSniperSpecSniperFunnelBase;
 
 // Class Starbreeze.SBZLoadoutConfirmationPopupBody
 // 0x0098 (0x0388 - 0x02F0)
-class USBZLoadoutConfirmationPopupBody : public USBZWidgetBase
+class USBZLoadoutConfirmationPopupBody final : public USBZWidgetBase
 {
 public:
 	struct FSBZWeaponPartProgressionCurrent       ProgressionItemUIData;                             // 0x02F0(0x0098)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -58307,7 +58307,7 @@ DUMPER7_ASSERTS_USBZSkillSniperSpecPiercingAmmoBase;
 
 // Class Starbreeze.SBZMainMenuLoadoutWeaponModCategoryWidget
 // 0x00A8 (0x0418 - 0x0370)
-class USBZMainMenuLoadoutWeaponModCategoryWidget : public USBZMenuStackScreenWidgetWithTutorial
+class USBZMainMenuLoadoutWeaponModCategoryWidget final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	TSubclassOf<class USBZLoadoutModCategoryButton> ButtonClass;                                     // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -58878,7 +58878,7 @@ DUMPER7_ASSERTS_USBZUnblockRunNotify;
 
 // Class Starbreeze.SBZLure
 // 0x00C8 (0x03F0 - 0x0328)
-class ASBZLure final : public AActor, public ISBZRoomVolumeInterface, public ISBZAIAttractorInterface
+class ASBZLure : public AActor, public ISBZRoomVolumeInterface, public ISBZAIAttractorInterface
 {
 public:
 	float                                         LureRange;                                         // 0x0338(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -58938,7 +58938,7 @@ DUMPER7_ASSERTS_ASBZLure;
 
 // Class Starbreeze.SBZMainMenuArmorChunkButton
 // 0x0078 (0x0450 - 0x03D8)
-class USBZMainMenuArmorChunkButton : public USBZMenuButton
+class USBZMainMenuArmorChunkButton final : public USBZMenuButton
 {
 public:
 	ESBZArmorChunkType                            ArmorChunkType;                                    // 0x03D8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -59108,7 +59108,7 @@ DUMPER7_ASSERTS_USBZStoreSettings;
 
 // Class Starbreeze.SBZMainMenuArmorModifierScreen
 // 0x0070 (0x03B0 - 0x0340)
-class USBZMainMenuArmorModifierScreen : public USBZMenuStackScreenWidget
+class USBZMainMenuArmorModifierScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class UPanelWidget*                           Panel_ArmorChunkSlotButtons;                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -59172,7 +59172,7 @@ DUMPER7_ASSERTS_USBZSkillAmmoSpecAmmoUpIBase;
 
 // Class Starbreeze.SBZMainMenuArmorSlotButton
 // 0x0070 (0x0448 - 0x03D8)
-class USBZMainMenuArmorSlotButton : public USBZMenuButton
+class USBZMainMenuArmorSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZArmorInventorySlot                 ArmorSlot;                                         // 0x03D8(0x0068)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -59207,7 +59207,7 @@ DUMPER7_ASSERTS_USBZMainMenuArmorSlotButton;
 
 // Class Starbreeze.SBZMainMenuBaseChallengeButton
 // 0x00A8 (0x0480 - 0x03D8)
-class USBZMainMenuBaseChallengeButton : public USBZMenuButton
+class USBZMainMenuBaseChallengeButton final : public USBZMenuButton
 {
 public:
 	struct FSBZChallengeData                      ChallengeData;                                     // 0x03D8(0x00A8)(Transient, NativeAccessSpecifierPrivate)
@@ -59288,7 +59288,7 @@ DUMPER7_ASSERTS_USBZStopAndTurnSelectionData;
 
 // Class Starbreeze.SBZMainMenuChallengeCategoryButton
 // 0x0018 (0x03F0 - 0x03D8)
-class USBZMainMenuChallengeCategoryButton : public USBZMenuButton
+class USBZMainMenuChallengeCategoryButton final : public USBZMenuButton
 {
 public:
 	class USBZChallengeCategoryData*              CategoryData;                                      // 0x03D8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -59406,7 +59406,7 @@ DUMPER7_ASSERTS_USBZMainMenuChallengeScreenDescriptionPanel;
 
 // Class Starbreeze.SBZVehicleWheel
 // 0x0008 (0x02F0 - 0x02E8)
-class USBZVehicleWheel final : public UChaosVehicleWheel
+class USBZVehicleWheel : public UChaosVehicleWheel
 {
 public:
 	uint8                                         Pad_2E8[0x8];                                      // 0x02E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -59475,7 +59475,7 @@ DUMPER7_ASSERTS_USBZMainMenuChallengeStatDisplay;
 
 // Class Starbreeze.SBZMainMenuCosmeticItemButton
 // 0x0010 (0x03E8 - 0x03D8)
-class USBZMainMenuCosmeticItemButton : public USBZMenuButton
+class USBZMainMenuCosmeticItemButton final : public USBZMenuButton
 {
 public:
 	bool                                          bIsDefault;                                        // 0x03D8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -59529,7 +59529,7 @@ DUMPER7_ASSERTS_USBZSuitPatternApplier;
 
 // Class Starbreeze.SBZMainMenuCosmeticPanel
 // 0x0098 (0x0388 - 0x02F0)
-class USBZMainMenuCosmeticPanel : public USBZWidgetBase
+class USBZMainMenuCosmeticPanel final : public USBZWidgetBase
 {
 public:
 	class UPanelWidget*                           Panel_ButtonsContainer;                            // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -59626,7 +59626,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateJobOverviewDirectJoin;
 
 // Class Starbreeze.SBZWidgetCreditsLinebreak
 // 0x0000 (0x02F0 - 0x02F0)
-class USBZWidgetCreditsLinebreak : public USBZWidgetCreditsRowBase
+class USBZWidgetCreditsLinebreak final : public USBZWidgetCreditsRowBase
 {
 public:
 	static class UClass* StaticClass()
@@ -59666,7 +59666,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateReplay;
 
 // Class Starbreeze.SBZMainMenuCrimeNetHeistInspectScreen
 // 0x0008 (0x0348 - 0x0340)
-class USBZMainMenuCrimeNetHeistInspectScreen : public USBZMenuStackScreenWidget
+class USBZMainMenuCrimeNetHeistInspectScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class UPD3HeistDataAsset*                     HeistData;                                         // 0x0340(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -59781,7 +59781,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateP2PHost;
 
 // Class Starbreeze.SBZMainMenuDebug
 // 0x0000 (0x02F0 - 0x02F0)
-class USBZMainMenuDebug : public USBZWidgetBase
+class USBZMainMenuDebug final : public USBZWidgetBase
 {
 public:
 	void OnMatchmakingGroupChange(int32 MMakingGroup);
@@ -59838,7 +59838,7 @@ DUMPER7_ASSERTS_USBZSpawnManagerFunctionLibrary;
 
 // Class Starbreeze.SBZMainMenuInventoryCharacterPreferenceDisplay
 // 0x0048 (0x0338 - 0x02F0)
-class USBZMainMenuInventoryCharacterPreferenceDisplay : public USBZWidgetBase
+class USBZMainMenuInventoryCharacterPreferenceDisplay final : public USBZWidgetBase
 {
 public:
 	TMulticastInlineDelegate<void(int32 NewIndex)> OnPreferredCharacterSlotIndexChanged;             // 0x02F0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -59878,7 +59878,7 @@ DUMPER7_ASSERTS_USBZMainMenuInventoryCharacterPreferenceDisplay;
 
 // Class Starbreeze.SBZMainMenuInventoryCharacterPreferenceScreen
 // 0x0058 (0x03C8 - 0x0370)
-class USBZMainMenuInventoryCharacterPreferenceScreen : public USBZMenuStackScreenWidgetWithTutorial
+class USBZMainMenuInventoryCharacterPreferenceScreen final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	class FName                                   ClearCharactersInputActionName;                    // 0x0370(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -59947,7 +59947,7 @@ DUMPER7_ASSERTS_ASBZSeasonalEventItemSpawner;
 
 // Class Starbreeze.SBZMainMenuInventoryCharacterSlotButton
 // 0x0030 (0x0408 - 0x03D8)
-class USBZMainMenuInventoryCharacterSlotButton : public USBZMenuButton
+class USBZMainMenuInventoryCharacterSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZCharacterInventoryData             CharacterSlotData;                                 // 0x03D8(0x0028)(Transient, NativeAccessSpecifierPrivate)
@@ -60009,7 +60009,7 @@ DUMPER7_ASSERTS_USBZMainMenuInventoryItemWidget;
 
 // Class Starbreeze.SBZSpawnLocationHandler
 // 0x0168 (0x0490 - 0x0328)
-class alignas(0x10) ASBZSpawnLocationHandler final : public AActor
+class alignas(0x10) ASBZSpawnLocationHandler : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(int32 LocationIndex)> OnLocationSelected;                          // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -60052,7 +60052,7 @@ DUMPER7_ASSERTS_ASBZSpawnLocationHandler;
 
 // Class Starbreeze.SBZMainMenuInventoryMaskSlotButton
 // 0x00D8 (0x04B0 - 0x03D8)
-class USBZMainMenuInventoryMaskSlotButton : public USBZMenuButton
+class USBZMainMenuInventoryMaskSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZMaskInventorySlot                  MaskSlot;                                          // 0x03D8(0x00D0)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -60116,7 +60116,7 @@ DUMPER7_ASSERTS_USBZMainMenuInventoryWidget;
 
 // Class Starbreeze.SBZMainMenuItemInventoryScreen
 // 0x0188 (0x04F8 - 0x0370)
-class USBZMainMenuItemInventoryScreen : public USBZMenuStackScreenWidgetWithTutorial
+class USBZMainMenuItemInventoryScreen final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	TSubclassOf<class USBZMainMenuInventoryItemSlotButton> ItemSlotButtonClass;                      // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -60195,7 +60195,7 @@ DUMPER7_ASSERTS_ISBZSensorBlockingInterface;
 
 // Class Starbreeze.SBZMainMenuLoadoutArmorModCategoryWidget
 // 0x0040 (0x03B0 - 0x0370)
-class USBZMainMenuLoadoutArmorModCategoryWidget : public USBZMenuStackScreenWidgetWithTutorial
+class USBZMainMenuLoadoutArmorModCategoryWidget final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	TSubclassOf<class USBZArmorModCategoryButton> ButtonClass;                                       // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -60253,7 +60253,7 @@ DUMPER7_ASSERTS_USBZSpawnWaveProgressionComponent;
 
 // Class Starbreeze.SBZMainMenuLoadoutArmorSlotButton
 // 0x0070 (0x0448 - 0x03D8)
-class USBZMainMenuLoadoutArmorSlotButton : public USBZMenuButton
+class USBZMainMenuLoadoutArmorSlotButton final : public USBZMenuButton
 {
 public:
 	struct FSBZArmorInventorySlot                 ArmorSlot;                                         // 0x03D8(0x0068)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -60289,7 +60289,7 @@ DUMPER7_ASSERTS_USBZMainMenuLoadoutArmorSlotButton;
 
 // Class Starbreeze.SBZMainMenuLoadoutCustomization
 // 0x00B0 (0x03F0 - 0x0340)
-class USBZMainMenuLoadoutCustomization : public USBZMenuStackScreenWidget
+class USBZMainMenuLoadoutCustomization final : public USBZMenuStackScreenWidget
 {
 public:
 	struct FSBZPlayerLoadoutConfig                CachedPlayerLoadoutConfig;                         // 0x0340(0x00A8)(BlueprintVisible, Transient, Protected, NativeAccessSpecifierProtected)
@@ -60318,7 +60318,7 @@ DUMPER7_ASSERTS_USBZMainMenuLoadoutCustomization;
 
 // Class Starbreeze.SBZMainMenuMaskCustomization
 // 0x0008 (0x0348 - 0x0340)
-class USBZMainMenuMaskCustomization : public USBZMenuStackScreenWidget
+class USBZMainMenuMaskCustomization final : public USBZMenuStackScreenWidget
 {
 public:
 	int32                                         MaskSlotIndex;                                     // 0x0340(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -60418,7 +60418,7 @@ DUMPER7_ASSERTS_USBZSkillScramblerAced;
 
 // Class Starbreeze.SBZMainMenuMaskInventoryScreen
 // 0x0240 (0x05B0 - 0x0370)
-class USBZMainMenuMaskInventoryScreen : public USBZMenuStackInventoryBaseScreen
+class USBZMainMenuMaskInventoryScreen final : public USBZMenuStackInventoryBaseScreen
 {
 public:
 	TSubclassOf<class USBZMainMenuInventoryMaskSlotButton> MaskSlotButtonClass;                      // 0x0370(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -60533,7 +60533,7 @@ DUMPER7_ASSERTS_USBZMannequinPlayerAnimation;
 
 // Class Starbreeze.SBZMainMenuPlayerAnimation
 // 0x0000 (0x04C0 - 0x04C0)
-class USBZMainMenuPlayerAnimation : public USBZMannequinPlayerAnimation
+class USBZMainMenuPlayerAnimation final : public USBZMannequinPlayerAnimation
 {
 public:
 	static class UClass* StaticClass()
@@ -60553,7 +60553,7 @@ DUMPER7_ASSERTS_USBZMainMenuPlayerAnimation;
 
 // Class Starbreeze.SBZMainMenuPreMatchWidget
 // 0x0000 (0x02F0 - 0x02F0)
-class USBZMainMenuPreMatchWidget : public USBZWidgetBase
+class USBZMainMenuPreMatchWidget final : public USBZWidgetBase
 {
 public:
 	bool IsAsyncLoadingDone();
@@ -60579,7 +60579,7 @@ DUMPER7_ASSERTS_USBZMainMenuPreMatchWidget;
 
 // Class Starbreeze.SBZMainMenuPrePlaningLoadoutSelection
 // 0x0038 (0x0328 - 0x02F0)
-class USBZMainMenuPrePlaningLoadoutSelection : public USBZWidgetBase
+class USBZMainMenuPrePlaningLoadoutSelection final : public USBZWidgetBase
 {
 public:
 	bool                                          bShouldUseActionBindings;                          // 0x02F0(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -60676,7 +60676,7 @@ DUMPER7_ASSERTS_USBZSkillSharpshooterSharpshooter;
 
 // Class Starbreeze.SBZMainMenuPrePlanningItemSelectionButton
 // 0x0010 (0x03E8 - 0x03D8)
-class USBZMainMenuPrePlanningItemSelectionButton : public USBZMenuButton
+class USBZMainMenuPrePlanningItemSelectionButton final : public USBZMenuButton
 {
 public:
 	class USBZPreplanningAssetData*               PreplanningItem;                                   // 0x03D8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -60728,7 +60728,7 @@ DUMPER7_ASSERTS_USBZSkillScramblerSpeedHack;
 
 // Class Starbreeze.SBZMainMenuPreplanningPlayerStatusWidget
 // 0x0058 (0x0430 - 0x03D8)
-class USBZMainMenuPreplanningPlayerStatusWidget : public USBZMenuButton
+class USBZMainMenuPreplanningPlayerStatusWidget final : public USBZMenuButton
 {
 public:
 	int32                                         PlayerIndex;                                       // 0x03D8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -60769,7 +60769,7 @@ DUMPER7_ASSERTS_USBZMainMenuPreplanningPlayerStatusWidget;
 
 // Class Starbreeze.SBZMainMenuPrePlanningWidget
 // 0x0000 (0x0320 - 0x0320)
-class USBZMainMenuPrePlanningWidget : public USBZMenuStackWidget
+class USBZMainMenuPrePlanningWidget final : public USBZMenuStackWidget
 {
 public:
 	bool IsAsyncLoadingDone();
@@ -60798,7 +60798,7 @@ DUMPER7_ASSERTS_USBZMainMenuPrePlanningWidget;
 
 // Class Starbreeze.SBZMainMenuShopButton
 // 0x0010 (0x03E8 - 0x03D8)
-class USBZMainMenuShopButton : public USBZMenuButton
+class USBZMainMenuShopButton final : public USBZMenuButton
 {
 public:
 	TSubclassOf<class USBZShopPurchaseCompletePopupBody> ItemsReceivedPopupBodyClass;                // 0x03D8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61043,7 +61043,7 @@ DUMPER7_ASSERTS_USBZSkillManipulatorStockholmSyndrome;
 
 // Class Starbreeze.SBZMainMenuSkillsMenu
 // 0x0410 (0x0780 - 0x0370)
-class USBZMainMenuSkillsMenu : public USBZMenuStackScreenWidgetWithTutorial
+class USBZMainMenuSkillsMenu final : public USBZMenuStackScreenWidgetWithTutorial
 {
 public:
 	TArray<class USBZSkillData*>                  Skills;                                            // 0x0370(0x0010)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
@@ -61120,7 +61120,7 @@ DUMPER7_ASSERTS_USBZSkillManipulatorManipulatorAced;
 
 // Class Starbreeze.SBZMainMenuSuitCosmeticCustomizationScreen
 // 0x00D0 (0x0410 - 0x0340)
-class USBZMainMenuSuitCosmeticCustomizationScreen : public USBZMenuStackScreenWidget
+class USBZMainMenuSuitCosmeticCustomizationScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class USBZMainMenuCosmeticPanel*              Widget_CosmeticPanel;                              // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61160,7 +61160,7 @@ DUMPER7_ASSERTS_USBZMainMenuSuitCosmeticCustomizationScreen;
 
 // Class Starbreeze.SBZMainMenuSuitCustomization
 // 0x0090 (0x03D0 - 0x0340)
-class USBZMainMenuSuitCustomization : public USBZMenuStackScreenWidget
+class USBZMainMenuSuitCustomization final : public USBZMenuStackScreenWidget
 {
 public:
 	int32                                         SuitSlotIndex;                                     // 0x0340(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61208,7 +61208,7 @@ DUMPER7_ASSERTS_USBZSkillMedicTriage;
 
 // Class Starbreeze.SBZMainMenuWeaponModifierScreen
 // 0x0110 (0x0450 - 0x0340)
-class USBZMainMenuWeaponModifierScreen : public USBZMenuStackScreenWidget
+class USBZMainMenuWeaponModifierScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class UPanelWidget*                           Panel_WeaponProgressionPartButtons;                // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61284,7 +61284,7 @@ DUMPER7_ASSERTS_USBZSkillMedicMedicAced;
 
 // Class Starbreeze.SBZMainMenuWeaponProgressionDisplayWidget
 // 0x00E8 (0x03D8 - 0x02F0)
-class USBZMainMenuWeaponProgressionDisplayWidget : public USBZWidgetBase
+class USBZMainMenuWeaponProgressionDisplayWidget final : public USBZWidgetBase
 {
 public:
 	int32                                         WeaponLevel;                                       // 0x02F0(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61331,7 +61331,7 @@ DUMPER7_ASSERTS_USBZMainMenuWeaponProgressionDisplayWidget;
 
 // Class Starbreeze.SBZMainMenuWeaponProgressionScreen
 // 0x0038 (0x0378 - 0x0340)
-class USBZMainMenuWeaponProgressionScreen : public USBZMenuStackScreenWidget
+class USBZMainMenuWeaponProgressionScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class UHorizontalBox*                         Panel_WeaponProgressionPartButtons;                // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61411,7 +61411,7 @@ DUMPER7_ASSERTS_USBZMainMenuWeaponSlotInventoryWidget;
 
 // Class Starbreeze.SBZMainMenuWidget
 // 0x0308 (0x0608 - 0x0300)
-class USBZMainMenuWidget : public USBZBaseMenuWidget
+class USBZMainMenuWidget final : public USBZBaseMenuWidget
 {
 public:
 	class USBZMainMenuLoadoutCustomization*       Widget_LoadoutCustomization;                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -62861,7 +62861,7 @@ DUMPER7_ASSERTS_USBZSkillGrazeAOEDamageAbility;
 
 // Class Starbreeze.SBZMenuArmor
 // 0x0018 (0x0340 - 0x0328)
-class ASBZMenuArmor : public AActor
+class ASBZMenuArmor final : public AActor
 {
 public:
 	class USkeletalMeshComponent*                 SkeletalMeshComponent;                             // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -63738,7 +63738,7 @@ DUMPER7_ASSERTS_USBZSkillFlashbangEMPFlashbangBase;
 
 // Class Starbreeze.SBZModularWeaponDisplay
 // 0x0078 (0x03A0 - 0x0328)
-class ASBZModularWeaponDisplay : public AActor
+class ASBZModularWeaponDisplay final : public AActor
 {
 public:
 	class USBZModularMeshComponent*               ModularMeshComponent;                              // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -63797,7 +63797,7 @@ DUMPER7_ASSERTS_USBZFortitudeWalkingTall;
 
 // Class Starbreeze.SBZMoonTacticalFlashbangEffect
 // 0x0000 (0x0B38 - 0x0B38)
-class USBZMoonTacticalFlashbangEffect final : public USBZFlashbangEffect
+class USBZMoonTacticalFlashbangEffect : public USBZFlashbangEffect
 {
 public:
 	static class UClass* StaticClass()
@@ -64889,7 +64889,7 @@ DUMPER7_ASSERTS_USBZNewsData;
 
 // Class Starbreeze.SBZNiagaraWwiseActor
 // 0x0050 (0x0378 - 0x0328)
-class ASBZNiagaraWwiseActor final : public AActor
+class ASBZNiagaraWwiseActor : public AActor
 {
 public:
 	class UAkAudioEvent*                          EventToPlayOneShot;                                // 0x0328(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -65966,7 +65966,7 @@ DUMPER7_ASSERTS_USBZOnlineVoip;
 
 // Class Starbreeze.SBZSabotagePoint
 // 0x00C8 (0x03F0 - 0x0328)
-class ASBZSabotagePoint final : public AActor, public ISBZRoomVolumeInterface, public ISBZAIActionInteractableInterface, public ISBZAIAttractorInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZMarkerInfoInterface
+class ASBZSabotagePoint : public AActor, public ISBZRoomVolumeInterface, public ISBZAIActionInteractableInterface, public ISBZAIAttractorInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZMarkerInfoInterface
 {
 public:
 	TMulticastInlineDelegate<void(bool bSabotaged)> OnSabotaged;                                     // 0x0368(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -66734,7 +66734,7 @@ DUMPER7_ASSERTS_USBZOverskillMambaMagenta;
 
 // Class Starbreeze.SBZPedestrianTrafficNavLink
 // 0x0058 (0x0478 - 0x0420)
-class ASBZPedestrianTrafficNavLink final : public ASBZSmartNavLink
+class ASBZPedestrianTrafficNavLink : public ASBZSmartNavLink
 {
 public:
 	class USBZNavLinkWaitSlotRoot*                WaitSlots;                                         // 0x0420(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -68435,7 +68435,7 @@ DUMPER7_ASSERTS_USBZInteractDroppedWeaponRequirement;
 
 // Class Starbreeze.SBZPlaceableWeaponBagItem
 // 0x00C0 (0x0498 - 0x03D8)
-class ASBZPlaceableWeaponBagItem final : public ASBZBagItem
+class ASBZPlaceableWeaponBagItem : public ASBZBagItem
 {
 public:
 	struct FSBZEquippableConfig                   StoredWeaponConfig;                                // 0x03D8(0x0088)(Transient, Protected, NativeAccessSpecifierProtected)
@@ -70936,7 +70936,7 @@ DUMPER7_ASSERTS_USBZSpawnWaveSettingsProxyComponent;
 
 // Class Starbreeze.SBZRappellingRope
 // 0x0010 (0x0358 - 0x0348)
-class ASBZRappellingRope final : public ASBZCosmeticProp
+class ASBZRappellingRope : public ASBZCosmeticProp
 {
 public:
 	class USBZRappellingRopeComponent*            RappellingRopeComponent;                           // 0x0348(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -71663,7 +71663,7 @@ DUMPER7_ASSERTS_USBZRequestFeedbackManager;
 
 // Class Starbreeze.SBZRequestOverkillWeaponAbility
 // 0x0000 (0x0510 - 0x0510)
-class USBZRequestOverkillWeaponAbility final : public USBZRequestOverkillWithPhoneAbility
+class USBZRequestOverkillWeaponAbility : public USBZRequestOverkillWithPhoneAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -72264,7 +72264,7 @@ DUMPER7_ASSERTS_USBZSecuredBagVisualizeComponent;
 
 // Class Starbreeze.SBZSecurityRoom
 // 0x00C0 (0x04B8 - 0x03F8)
-class ASBZSecurityRoom final : public ASBZPawnSpawnPredefined, public ISBZViewTargetCollectionInterface
+class ASBZSecurityRoom : public ASBZPawnSpawnPredefined, public ISBZViewTargetCollectionInterface
 {
 public:
 	uint8                                         Pad_400[0x8];                                      // 0x0400(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -72342,7 +72342,7 @@ DUMPER7_ASSERTS_USBZSkillSmokeGrenadePoisonCloudBase;
 
 // Class Starbreeze.SBZSelectorWidget
 // 0x0018 (0x03F0 - 0x03D8)
-class USBZSelectorWidget : public USBZMenuButton
+class USBZSelectorWidget final : public USBZMenuButton
 {
 public:
 	TMulticastInlineDelegate<void(int32 NewIndex)> SelectionOptionChanged;                           // 0x03D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -72626,7 +72626,7 @@ DUMPER7_ASSERTS_USBZSkillFragGrenadeImpactGrenadesAced;
 
 // Class Starbreeze.SBZServerBrowserHeistMapWidget
 // 0x0080 (0x03C0 - 0x0340)
-class USBZServerBrowserHeistMapWidget : public USBZMainMenuCrimeNetHeistMapIcon
+class USBZServerBrowserHeistMapWidget final : public USBZMainMenuCrimeNetHeistMapIcon
 {
 public:
 	ESBZHeistType                                 HeistType;                                         // 0x0340(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -72798,7 +72798,7 @@ DUMPER7_ASSERTS_USBZSessionJoinCallbackProxy;
 
 // Class Starbreeze.SBZZipline
 // 0x00B8 (0x03E0 - 0x0328)
-class ASBZZipline final : public AActor
+class ASBZZipline : public AActor
 {
 public:
 	struct FVector                                NavLinkStart;                                      // 0x0328(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -73290,7 +73290,7 @@ DUMPER7_ASSERTS_USBZSettingsButtonTwoChoice;
 
 // Class Starbreeze.SBZSkillsMenuButton
 // 0x0008 (0x03E0 - 0x03D8)
-class USBZSkillsMenuButton : public USBZMenuButton
+class USBZSkillsMenuButton final : public USBZMenuButton
 {
 public:
 	ESBZSkillState                                SkillState;                                        // 0x03D8(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -73926,7 +73926,7 @@ DUMPER7_ASSERTS_USBZShockGrenadeExecutionCalculation;
 
 // Class Starbreeze.SBZShopContentListItemWidget
 // 0x0018 (0x0308 - 0x02F0)
-class USBZShopContentListItemWidget : public USBZWidgetBase
+class USBZShopContentListItemWidget final : public USBZWidgetBase
 {
 public:
 	class FText                                   ItemTextFormat;                                    // 0x02F0(0x0010)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -73974,7 +73974,7 @@ DUMPER7_ASSERTS_USBZFortitudePeakPerformance;
 
 // Class Starbreeze.SBZShopContentListWidget
 // 0x0040 (0x0330 - 0x02F0)
-class USBZShopContentListWidget : public USBZWidgetBase
+class USBZShopContentListWidget final : public USBZWidgetBase
 {
 public:
 	TSubclassOf<class USBZShopContentListItemWidget> ItemClass;                                      // 0x02F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -74034,7 +74034,7 @@ DUMPER7_ASSERTS_ISBZTraversalTrajectoryInterface;
 
 // Class Starbreeze.SBZShopCyclerWidget
 // 0x0088 (0x0378 - 0x02F0)
-class USBZShopCyclerWidget : public UUserWidget
+class USBZShopCyclerWidget final : public UUserWidget
 {
 public:
 	int32                                         MaxVisibleCellCount;                               // 0x02F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -74111,7 +74111,7 @@ DUMPER7_ASSERTS_USBZSkillJuggernautLockedInAced;
 
 // Class Starbreeze.SBZShopItemBundleDetailsWidget
 // 0x0048 (0x0338 - 0x02F0)
-class USBZShopItemBundleDetailsWidget : public USBZWidgetBase
+class USBZShopItemBundleDetailsWidget final : public USBZWidgetBase
 {
 public:
 	TSubclassOf<class USBZShopItemPreviewButton>  ItemPreviewClass;                                  // 0x02F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -74144,7 +74144,7 @@ DUMPER7_ASSERTS_USBZShopItemBundleDetailsWidget;
 
 // Class Starbreeze.SBZShopPurchaseCompletePopupBody
 // 0x0050 (0x0340 - 0x02F0)
-class USBZShopPurchaseCompletePopupBody : public USBZWidgetBase
+class USBZShopPurchaseCompletePopupBody final : public USBZWidgetBase
 {
 public:
 	class FText                                   ContinueActionText;                                // 0x02F0(0x0010)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -74192,7 +74192,7 @@ DUMPER7_ASSERTS_USBZSkillKnifeSpecKnifeExpertAced;
 
 // Class Starbreeze.SBZShopPurchasePopupWidget
 // 0x0220 (0x0510 - 0x02F0)
-class USBZShopPurchasePopupWidget : public USBZWidgetBase, public ISBZPopupWidgetInterface
+class USBZShopPurchasePopupWidget final : public USBZWidgetBase, public ISBZPopupWidgetInterface
 {
 public:
 	TSubclassOf<class USBZShopItemPreviewButton>  ItemButtonClass;                                   // 0x02F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -74240,7 +74240,7 @@ DUMPER7_ASSERTS_USBZShopPurchasePopupWidget;
 
 // Class Starbreeze.SBZShopScreenWidget
 // 0x01F8 (0x0538 - 0x0340)
-class USBZShopScreenWidget : public USBZMenuStackScreenWidget
+class USBZShopScreenWidget final : public USBZMenuStackScreenWidget
 {
 public:
 	class USBZLocalNavBar*                        CategoriesNavBar;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -79581,7 +79581,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateWaitSoloGame;
 
 // Class Starbreeze.SBZStaticInteractionActor
 // 0x0000 (0x0350 - 0x0350)
-class ASBZStaticInteractionActor final : public ASBZInteractionActor
+class ASBZStaticInteractionActor : public ASBZInteractionActor
 {
 public:
 	static class UClass* StaticClass()
@@ -80037,7 +80037,7 @@ DUMPER7_ASSERTS_USBZUITextBlock;
 
 // Class Starbreeze.SBZThermalLance
 // 0x0100 (0x06C0 - 0x05C0)
-class ASBZThermalLance final : public ASBZHeavyBreachingEquipmentBase
+class ASBZThermalLance : public ASBZHeavyBreachingEquipmentBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnBolted;                                          // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -80096,7 +80096,7 @@ DUMPER7_ASSERTS_ASBZThermalLance;
 
 // Class Starbreeze.SBZThermalLanceWidget
 // 0x0030 (0x0320 - 0x02F0)
-class USBZThermalLanceWidget final : public UUserWidget
+class USBZThermalLanceWidget : public UUserWidget
 {
 public:
 	class UProgressBar*                           FuelBar;                                           // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -80645,7 +80645,7 @@ DUMPER7_ASSERTS_USBZToolVisibleNotify;
 
 // Class Starbreeze.SBZTrafficLights
 // 0x0038 (0x0360 - 0x0328)
-class ASBZTrafficLights final : public AActor
+class ASBZTrafficLights : public AActor
 {
 public:
 	TArray<struct FSBZTrafficLightPool>           PoolArray;                                         // 0x0328(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -81318,7 +81318,7 @@ DUMPER7_ASSERTS_USBZUIPurchaseFlow;
 
 // Class Starbreeze.SBZUIPurchaseFlowPopupBody
 // 0x0020 (0x0310 - 0x02F0)
-class USBZUIPurchaseFlowPopupBody : public USBZWidgetBase, public ISBZPopupContentInterface
+class USBZUIPurchaseFlowPopupBody final : public USBZWidgetBase, public ISBZPopupContentInterface
 {
 public:
 	class USBZUIPurchaseFlow*                     Flow;                                              // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -81432,7 +81432,7 @@ DUMPER7_ASSERTS_USBZUIStatics;
 
 // Class Starbreeze.SBZUIWeaponStatsBlueprint
 // 0x0000 (0x0030 - 0x0030)
-class USBZUIWeaponStatsBlueprint : public UObject
+class USBZUIWeaponStatsBlueprint final : public UObject
 {
 public:
 	void GetAccuracyValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
@@ -81549,7 +81549,7 @@ DUMPER7_ASSERTS_USBZUserManager;
 
 // Class Starbreeze.SBZVantagePoint
 // 0x0008 (0x0330 - 0x0328)
-class ASBZVantagePoint final : public AActor
+class ASBZVantagePoint : public AActor
 {
 public:
 	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -81575,7 +81575,7 @@ DUMPER7_ASSERTS_ASBZVantagePoint;
 
 // Class Starbreeze.SBZVariantScreen
 // 0x0008 (0x0348 - 0x0340)
-class USBZVariantScreen : public USBZMenuStackScreenWidget
+class USBZVariantScreen final : public USBZMenuStackScreenWidget
 {
 public:
 	class USBZTileView*                           ListView;                                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -81851,7 +81851,7 @@ DUMPER7_ASSERTS_USBZVendorPermissionData;
 
 // Class Starbreeze.SBZViewTargetCollectionInteraction
 // 0x0010 (0x0338 - 0x0328)
-class ASBZViewTargetCollectionInteraction final : public AActor
+class ASBZViewTargetCollectionInteraction : public AActor
 {
 public:
 	class AActor*                                 ViewTargetCollection;                              // 0x0328(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -82474,7 +82474,7 @@ DUMPER7_ASSERTS_USBZWeaponConfigManager;
 
 // Class Starbreeze.SBZWeaponCustomizationSubscreen
 // 0x00A8 (0x0398 - 0x02F0)
-class USBZWeaponCustomizationSubscreen : public USBZWidgetBase
+class USBZWeaponCustomizationSubscreen final : public USBZWidgetBase
 {
 public:
 	struct FSBZEquippableConfig                   EquippableConfig;                                  // 0x02F0(0x0088)(BlueprintVisible, BlueprintReadOnly, Transient, Protected, NativeAccessSpecifierProtected)
@@ -83317,7 +83317,7 @@ DUMPER7_ASSERTS_ASBZWeightTriggerVolume;
 
 // Class Starbreeze.SBZWheeledVehicleAnimation
 // 0x0000 (0x0BB0 - 0x0BB0)
-class USBZWheeledVehicleAnimation final : public USBZVehicleAnimation
+class USBZWheeledVehicleAnimation : public USBZVehicleAnimation
 {
 public:
 	static class UClass* StaticClass()
@@ -83939,7 +83939,7 @@ DUMPER7_ASSERTS_USBZZiplineSettings;
 
 // Class Starbreeze.SBZZipTieEquippable
 // 0x0010 (0x0580 - 0x0570)
-class ASBZZipTieEquippable final : public ASBZEquippable
+class ASBZZipTieEquippable : public ASBZEquippable
 {
 public:
 	class UStaticMesh*                            BrokenMesh;                                        // 0x0570(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)

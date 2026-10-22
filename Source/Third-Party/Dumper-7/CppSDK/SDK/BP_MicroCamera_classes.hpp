@@ -26,8 +26,8 @@ public:
 	class UBoxComponent*                          Interactable_Collision;                            // 0x0878(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint);
 	void OnActivated();
+	void ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

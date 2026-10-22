@@ -12,7 +12,6 @@
 
 #include "GeometryCache_classes.hpp"
 #include "GeometryCache_parameters.hpp"
-#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

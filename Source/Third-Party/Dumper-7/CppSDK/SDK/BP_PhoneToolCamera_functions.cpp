@@ -16,43 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.ExecuteUbergraph_BP_PhoneToolCamera
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_PhoneToolCamera_C::ExecuteUbergraph_BP_PhoneToolCamera(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "BP_PhoneToolCamera_C", "ExecuteUbergraph_BP_PhoneToolCamera", FuncInfo);
-
-	Params::BP_PhoneToolCamera_C_ExecuteUbergraph_BP_PhoneToolCamera Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PhoneToolCamera_C::OnActivated()
+void ABP_PhoneToolCamera_C::UserConstructionScript()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.OnCanceled
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PhoneToolCamera_C::OnCanceled()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCanceled", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -70,15 +40,45 @@ void ABP_PhoneToolCamera_C::OnReady()
 }
 
 
-// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.OnCanceled
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PhoneToolCamera_C::UserConstructionScript()
+void ABP_PhoneToolCamera_C::OnCanceled()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCanceled", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PhoneToolCamera_C::OnActivated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PhoneToolCamera.BP_PhoneToolCamera_C.ExecuteUbergraph_BP_PhoneToolCamera
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PhoneToolCamera_C::ExecuteUbergraph_BP_PhoneToolCamera(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PhoneToolCamera_C", "ExecuteUbergraph_BP_PhoneToolCamera", FuncInfo);
+
+	Params::BP_PhoneToolCamera_C_ExecuteUbergraph_BP_PhoneToolCamera Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

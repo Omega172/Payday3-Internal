@@ -46,9 +46,9 @@ public:
 	struct FSBZAnimNode_CopyBoneDeltaMultiTargets SBZAnimGraphNode_CopyBoneDeltaMultiTargets;        // 0x1B70(0x0120)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
 	void ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()

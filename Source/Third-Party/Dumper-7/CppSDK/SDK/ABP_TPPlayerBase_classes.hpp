@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "ABP_TPPlayerBase_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "ABP_TPPlayerBase_structs.hpp"
 #include "Engine_structs.hpp"
 
 

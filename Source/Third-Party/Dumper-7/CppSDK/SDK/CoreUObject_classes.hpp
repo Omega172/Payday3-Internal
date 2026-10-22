@@ -184,10 +184,10 @@ DUMPER7_ASSERTS_UTestInstanceDataObjectClass;
 class UOptionalPropertyTestObject final : public UObject
 {
 public:
-	uint8 OptionalString[0x0010];                                                                    // 0x0030(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8 OptionalText[0x0010];                                                                      // 0x0040(0x0010)(NativeAccessSpecifierPublic)
-	uint8 OptionalName[0x000C];                                                                      // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8 OptionalInt[0x0008];                                                                       // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FOptionalProperty_                            OptionalString;                                    // 0x0030(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FOptionalProperty_                            OptionalText;                                      // 0x0040(0x0010)(NativeAccessSpecifierPublic)
+	FOptionalProperty_                            OptionalName;                                      // 0x0050(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	FOptionalProperty_                            OptionalInt;                                       // 0x005C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:

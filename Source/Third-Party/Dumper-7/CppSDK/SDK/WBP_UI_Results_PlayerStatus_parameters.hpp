@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "struct_PlayerStatsToCompare_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Engine_structs.hpp"
+#include "struct_PlayerStatsToCompare_structs.hpp"
 #include "SBZBackend_structs.hpp"
 #include "CoreUObject_structs.hpp"
 

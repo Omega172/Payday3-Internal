@@ -9,44 +9,66 @@
 // FORWARD DECLARATIONS
 
 
-namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
-
-namespace ABP_Mask_Base { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace ABP_DoctorBag_EQP { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace ABP_Charm_Base_Taxi { struct FAnimBlueprintGeneratedConstantData; }
+namespace ABP_Delivery_Drone { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace ABP_TPPlayerBase_Moneybag { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ABP_Charm_Base { struct FAnimBlueprintGeneratedConstantData; }
+namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
 
-namespace ABP_WorldBag_01 { struct FAnimBlueprintGeneratedConstantData; }
+namespace ABP_HandCuffsAnimation { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_Helicopter { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_DoctorBag_EQP { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_DeadBody { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace ABP_WP_Master { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ABP_HandCuffsAnimation { struct FAnimBlueprintGeneratedConstantData; }
+namespace ABP_WorldBag_01 { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_Charm_Base { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_Charm_Base_Taxi { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_AICivilianLinkedAnimation { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_Car_Base { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_GarbageTruck { struct FAnimBlueprintGeneratedConstantData; }
 
 
 namespace ABP_FPPlayerBase
 {
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_Moon_Assault
+{
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
-namespace ABP_PlayerMenu
+namespace ABP_AICrewLinkedAnimation
 {
 	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
 }
 
-namespace ABP_TPPlayerLinkedBase
+namespace ABP_AIArmedLinkedAnimation
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
 }
 
 namespace ABP_TPPlayerBase
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_TPPlayerLinkedBase
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;

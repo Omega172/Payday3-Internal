@@ -12,7 +12,6 @@
 
 #include "FacialAnimation_classes.hpp"
 #include "FacialAnimation_parameters.hpp"
-#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START
