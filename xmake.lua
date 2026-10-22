@@ -1,6 +1,6 @@
 local stDefaults = {
     strName = "Payday3-Internal",
-    strVersion = "4.0.0",
+    strVersion = "3.0.0",
     strGame = "PAYDAY 3",
     strProcess = "",
     strEngine = "unreal",

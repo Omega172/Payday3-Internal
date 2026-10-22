@@ -21,6 +21,7 @@
 #include <mutex>
 #include <string>
 #include <unordered_set>
+#include <utility>
 #include <cmath>
 #include <unordered_map>
 #include <vector>
@@ -45,6 +46,7 @@ namespace OmegaWare
 
 			float flRoundsPerMinute = 0.f;
 			SDK::ESBZFireMode eFireMode{};
+			std::uint32_t uProjectilesPerFiredRound = 1;
 		};
 
 		struct stAttributeBackup
@@ -103,6 +105,7 @@ namespace OmegaWare
 				m_pCustomName = &Config::Add("player.custom_name", std::string());
 				m_pAutoSecure = &Config::Add("player.auto_secure_bags", false);
 				m_pReach = &Config::Add("player.reach", false);
+				m_pReachOpen = &Config::Add("player.reach_open", false);
 				m_pReachKey = &Config::Add("player.reach_key", Config::stKeybind{ .eMode = Config::EKeybindMode::Hold });
 				m_pSpeedHack = &Config::Add("player.speedhack", false);
 				m_pSpeedMultiplier = &Config::Add("player.speedhack_multiplier", 2.f);
@@ -116,6 +119,9 @@ namespace OmegaWare
 				m_pNoSpread = &Config::Add("player.no_spread", false);
 				m_pFireRate = &Config::Add("player.fire_rate", false);
 				m_pFireRateMultiplier = &Config::Add("player.fire_rate_multiplier", 100);
+				m_pHoldToShoot = &Config::Add("player.hold_to_shoot", false);
+				m_pMoreBullets = &Config::Add("player.more_bullets", false);
+				m_pMoreBulletsCount = &Config::Add("player.more_bullets_count", 20);
 				return true;
 			}
 
@@ -207,7 +213,9 @@ namespace OmegaWare
 
 				ApplySpeedHack(pCharacter);
 
-				if (pCharacter && *m_pReach && m_pReachKey->uKey != 0 && m_pReachKey->bActive)
+				if (pCharacter && m_pReachPending)
+					ResolveReachPending(pCharacter);
+				else if (pCharacter && *m_pReach && m_pReachKey->uKey != 0 && m_pReachKey->bActive)
 					GrabThroughWalls(pCharacter);
 
 				ApplyMontageRate(m_stReload, pCharacter ? pCharacter->LastLocalReloadMontage : nullptr, *m_pInstantReload);
@@ -221,7 +229,7 @@ namespace OmegaWare
 					const std::vector<SDK::USBZRangedWeaponData*> aWeapons = CurrentWeapons(pCharacter);
 					ApplyRecoil(aWeapons, *m_pNoRecoil);
 					ApplySpread(aWeapons, *m_pNoSpread);
-					ApplyFireRate(aWeapons, *m_pFireRate);
+					ApplyFireData(aWeapons, true);
 				}
 			}
 
@@ -254,7 +262,7 @@ namespace OmegaWare
 					const std::vector<SDK::USBZRangedWeaponData*> aWeapons = CurrentWeapons(pCharacter);
 					ApplyRecoil(aWeapons, false);
 					ApplySpread(aWeapons, false);
-					ApplyFireRate(aWeapons, false);
+					ApplyFireData(aWeapons, false);
 				}
 			}
 
@@ -301,6 +309,8 @@ namespace OmegaWare
 					OmegaGUI::ItemTooltip("player.auto_secure_bags_hint"_t);
 					OmegaGUI::Checkbox("player.reach"_l, m_pReach);
 					OmegaGUI::ItemTooltip("player.reach_hint"_t);
+					OmegaGUI::Checkbox("player.reach_open"_l, m_pReachOpen);
+					OmegaGUI::ItemTooltip("player.reach_open_hint"_t);
 					OmegaGUI::Checkbox("player.speedhack"_l, m_pSpeedHack);
 					OmegaGUI::ItemTooltip("player.speedhack_hint"_t);
 					OmegaGUI::EndSection();
@@ -423,12 +433,19 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("player.no_recoil"_l, m_pNoRecoil);
 					OmegaGUI::Checkbox("player.no_spread"_l, m_pNoSpread);
 					OmegaGUI::Checkbox("player.fire_rate"_l, m_pFireRate);
+					OmegaGUI::Checkbox("player.hold_to_shoot"_l, m_pHoldToShoot);
+					OmegaGUI::ItemTooltip("player.hold_to_shoot_hint"_t);
+					OmegaGUI::Checkbox("player.more_bullets"_l, m_pMoreBullets);
+					OmegaGUI::ItemTooltip("player.more_bullets_hint"_t);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("player.section_settings"_l))
 				{
-					OmegaGUI::SliderInt("player.fire_rate_multiplier"_l, m_pFireRateMultiplier, 0, 1000);
+					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_fire_rate", "player.fire_rate"_t), true))
+						OmegaGUI::SliderInt("player.fire_rate_multiplier"_l, m_pFireRateMultiplier, 0, 1000);
+					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_more_bullets", "player.more_bullets"_t), true))
+						OmegaGUI::SliderInt("player.more_bullets_count"_l, m_pMoreBulletsCount, 1, 100);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::EndColumns();
@@ -671,13 +688,19 @@ namespace OmegaWare
 				const SDK::FVector vecOrigin = pCharacter->K2_GetActorLocation();
 				SDK::USBZBaseInteractableComponent* pBest = nullptr;
 				double dBest = 0.0;
+				bool bBestOpens = false;
 				Payday3::ForEachLevelActor(pWorld, [&](SDK::AActor* pActor) {
+					if (!Payday3::IsAliveActor(pActor))
+						return;
 					const Payday3::stItemInfo& rItem = Payday3::ResolveItem(pActor);
-					if (rItem.eCategory != Payday3::EItemCategory::Loot && rItem.eCategory != Payday3::EItemCategory::KeyItem)
+					const bool bMiniGame = pActor->IsA(SDK::ASBZMiniGameActor::StaticClass());
+					const bool bOpens = bMiniGame || rItem.eType == Payday3::EItemType::DepositBox || pActor->IsA(SDK::ASBZInteractableGate::StaticClass());
+					const bool bPickup = (rItem.eCategory == Payday3::EItemCategory::Loot || rItem.eCategory == Payday3::EItemCategory::KeyItem) && !bOpens;
+					if (!bPickup && !(bOpens && *m_pReachOpen))
 						return;
-					if (rItem.eType == Payday3::EItemType::DepositBox || !Payday3::IsAliveActor(pActor) || pActor->IsA(SDK::ASBZMiniGameActor::StaticClass()))
+					if (bMiniGame && static_cast<SDK::ASBZMiniGameActor*>(pActor)->bIsUnlocked)
 						return;
-					auto* pInteractable = static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass()));
+					auto* pInteractable = bMiniGame ? static_cast<SDK::USBZBaseInteractableComponent*>(static_cast<SDK::ASBZMiniGameActor*>(pActor)->Interactable) : static_cast<SDK::USBZBaseInteractableComponent*>(pActor->GetComponentByClass(SDK::USBZBaseInteractableComponent::StaticClass()));
 					if (!Payday3::IsAlive(pInteractable) || pInteractable->bIsHidden || m_setGrabbed.contains(pInteractable) || pInteractable->GetOwner() != pActor)
 						return;
 					if (pInteractable->IsA(SDK::USBZInteractableComponent::StaticClass()) && !static_cast<SDK::USBZInteractableComponent*>(pInteractable)->bInteractionEnabled)
@@ -688,6 +711,7 @@ namespace OmegaWare
 						return;
 					pBest = pInteractable;
 					dBest = dDistance;
+					bBestOpens = bOpens;
 				});
 				if (!pBest)
 					return;
@@ -697,8 +721,45 @@ namespace OmegaWare
 				m_setGrabbed.insert(pBest);
 				const std::string strName = pBest->GetOwner()->GetName();
 				pInteractor->Server_StartInteraction(pBest, iId, 0);
+				if (bBestOpens)
+				{
+					m_pReachPending = pBest;
+					m_iReachPendingId = iId;
+					m_tpReachPending = std::chrono::steady_clock::now();
+					LogInfo("reach: started on {} at {:.0f} cm", strName, dBest);
+					return;
+				}
 				pInteractor->Server_CompleteInteraction(pBest, iId);
 				LogInfo("reach: picked up {} at {:.0f} cm", strName, dBest);
+			}
+
+			void ResolveReachPending(SDK::ASBZPlayerCharacter* pCharacter)
+			{
+				using Clock_t = std::chrono::steady_clock;
+				SDK::USBZBaseInteractableComponent* pPending = std::exchange(m_pReachPending, nullptr);
+				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter->Interactor;
+				SDK::ASBZPlayerState* pState = pCharacter->SBZPlayerState;
+				if (!Payday3::IsAlive(pPending) || !Payday3::IsAlive(pInteractor) || !Payday3::IsAlive(pState))
+					return;
+				const SDK::EPD3MiniGameState eState = pState->MiniGameState;
+				if (eState == SDK::EPD3MiniGameState::Initiated || eState == SDK::EPD3MiniGameState::InProgress)
+				{
+					pState->Server_SetMiniGameState(SDK::EPD3MiniGameState::Success);
+					LogInfo("reach: finished the minigame on {}", pPending->GetOwner()->GetName());
+					return;
+				}
+				const auto msElapsed = std::chrono::duration_cast<std::chrono::milliseconds>(Clock_t::now() - m_tpReachPending);
+				if (msElapsed < std::chrono::milliseconds(250))
+				{
+					m_pReachPending = pPending;
+					return;
+				}
+				SDK::AActor* pOwner = pPending->GetOwner();
+				if (Payday3::IsAliveActor(pOwner) && !pOwner->IsA(SDK::ASBZMiniGameActor::StaticClass()) && Payday3::ResolveItem(pOwner).eType != Payday3::EItemType::DepositBox)
+				{
+					pInteractor->Server_CompleteInteraction(pPending, m_iReachPendingId);
+					LogInfo("reach: opened {}", pOwner->GetName());
+				}
 			}
 
 			void SecureThrownBags()
@@ -855,6 +916,7 @@ namespace OmegaWare
 							.flFireSpreadIncrease = pWeaponData->SpreadData->FireSpreadIncrease,
 							.flRoundsPerMinute = pWeaponData->FireData->RoundsPerMinute,
 							.eFireMode = pWeaponData->FireData->FireMode,
+							.uProjectilesPerFiredRound = pWeaponData->FireData->ProjectilesPerFiredRound,
 						});
 					}
 				}
@@ -944,7 +1006,7 @@ namespace OmegaWare
 				}
 			}
 
-			void ApplyFireRate(const std::vector<SDK::USBZRangedWeaponData*>& aWeapons, bool bEnabled)
+			void ApplyFireData(const std::vector<SDK::USBZRangedWeaponData*>& aWeapons, bool bEnabled)
 			{
 				for (SDK::USBZRangedWeaponData* pWeaponData : aWeapons)
 				{
@@ -952,16 +1014,9 @@ namespace OmegaWare
 					const stWeaponBackup* pBackup = FindWeapon(pWeaponData);
 					if (!Memory::IsValidObjectPtr(pFire) || !pBackup)
 						continue;
-					if (bEnabled)
-					{
-						pFire->RoundsPerMinute = pBackup->flRoundsPerMinute * static_cast<float>(*m_pFireRateMultiplier);
-						pFire->FireMode = SDK::ESBZFireMode::Auto;
-					}
-					else
-					{
-						pFire->RoundsPerMinute = pBackup->flRoundsPerMinute;
-						pFire->FireMode = pBackup->eFireMode;
-					}
+					pFire->RoundsPerMinute = bEnabled && *m_pFireRate ? pBackup->flRoundsPerMinute * static_cast<float>(*m_pFireRateMultiplier) : pBackup->flRoundsPerMinute;
+					pFire->FireMode = bEnabled && *m_pHoldToShoot ? SDK::ESBZFireMode::Auto : pBackup->eFireMode;
+					pFire->ProjectilesPerFiredRound = bEnabled && *m_pMoreBullets ? static_cast<std::uint32_t>(std::clamp(*m_pMoreBulletsCount, 1, 100)) : pBackup->uProjectilesPerFiredRound;
 				}
 			}
 
@@ -978,6 +1033,9 @@ namespace OmegaWare
 			bool* m_pNoSpread = nullptr;
 			bool* m_pFireRate = nullptr;
 			int* m_pFireRateMultiplier = nullptr;
+			bool* m_pHoldToShoot = nullptr;
+			bool* m_pMoreBullets = nullptr;
+			int* m_pMoreBulletsCount = nullptr;
 			std::atomic<bool> m_bQueued = false;
 			bool* m_pInstantInteraction = nullptr;
 			bool* m_pInstantBagGrab = nullptr;
@@ -985,6 +1043,10 @@ namespace OmegaWare
 			std::string* m_pCustomName = nullptr;
 			bool* m_pAutoSecure = nullptr;
 			bool* m_pReach = nullptr;
+			bool* m_pReachOpen = nullptr;
+			SDK::USBZBaseInteractableComponent* m_pReachPending = nullptr;
+			std::int32_t m_iReachPendingId = 0;
+			std::chrono::steady_clock::time_point m_tpReachPending;
 			Config::stKeybind* m_pReachKey = nullptr;
 			bool* m_pSpeedHack = nullptr;
 			float* m_pSpeedMultiplier = nullptr;

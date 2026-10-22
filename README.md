@@ -70,21 +70,22 @@ After dropping in a new Dumper-7 dump, run `FixSdk.bat`. It gives `FOptionalProp
 - [x] Custom fire rate
 
 ### Visuals
-- (Cops / Civilians)
+Every option is set separately for each category.
+- Enemies (cops, plus security cameras as an option) / Civilians
     - [x] Bounding Boxes
     - [x] Names
     - [x] Distance
     - [x] Health Bar
-    - [x] Armor Bar
+    - [x] Armor Bar (enemies)
     - [x] Skeleton
-    - [x] Highlighting
+    - [x] Outline through walls
 - Loot (Cash / Medium Money / Large Money / Jewelry)
-    - [x] Short names, per-type filters and colors
+    - [x] Short names, distance, outline, per-type filters and colors
 - Key items (Deposit Boxes / Keycards / QR Phone / USB)
-    - [x] Short names, per-type filters and colors
-- Keycard readers
-    - [x] Short names
-- [x] Drop-off zones
+    - [x] Short names, distance, outline, per-type filters and colors
+- Objectives (Keycard readers / Drop-off zones)
+    - [x] Short names, distance, outline (readers), filters and colors
+- [x] Recolor the game's own outlines
 - [ ] Bounding boxes for items
 
 ### Aimbot
