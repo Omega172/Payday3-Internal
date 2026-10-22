@@ -12,6 +12,7 @@
 
 #include "AudioExtensions_classes.hpp"
 #include "AudioExtensions_parameters.hpp"
+#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

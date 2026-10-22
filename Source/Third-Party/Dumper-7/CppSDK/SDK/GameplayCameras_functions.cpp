@@ -12,6 +12,7 @@
 
 #include "GameplayCameras_classes.hpp"
 #include "GameplayCameras_parameters.hpp"
+#include "GameplayAbilities_parameters.hpp"
 
 
 SDK_NAMESPACE_START
