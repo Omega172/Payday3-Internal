@@ -1,5 +1,5 @@
 param(
-    [string]$Modes = "release",
+    [string[]]$Modes = @("release"),
     [Parameter(Mandatory)][string]$SteamSdk,
     [Parameter(Mandatory)][string]$WinGdkSdk,
     [string]$Out = "Packages"
@@ -14,7 +14,7 @@ $Stores = @(
 
 Push-Location $Repo
 try {
-    foreach ($Mode in ($Modes -split ",")) {
+    foreach ($Mode in $Modes) {
         $Folder = if ($Mode -eq "debug") { "Debug" } else { "Release" }
         $Build = Join-Path $Repo "Build\$Folder\x64"
         $Tested = $false
