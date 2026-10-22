@@ -9,6 +9,8 @@
 #include "Engines/Unreal/ProcessEvent.hpp"
 #include "Features/Feature.hpp"
 #include "Hooks/Hook.hpp"
+#include "Memory/Memory.hpp"
+#include "Memory/Pattern.hpp"
 #include "Memory/Safety.hpp"
 #include "Menu/Widgets.hpp"
 
@@ -24,6 +26,7 @@
 #include <limits>
 #include <mutex>
 #include <optional>
+#include <unordered_map>
 #include <utility>
 #include <vector>
 
@@ -35,6 +38,7 @@ namespace OmegaWare
 	{
 		constexpr std::size_t kGetPlayerViewPointIndex = 0x106;
 		constexpr std::uint64_t kSilentLockCalls = 2000;
+		constexpr std::uint64_t kAutoFireIdleLimit = 300;
 
 		using FnGetPlayerViewPoint = void (*)(SDK::APlayerController*, SDK::FVector*, SDK::FRotator*);
 
@@ -51,6 +55,7 @@ namespace OmegaWare
 		{
 			std::mutex mtxState;
 			bool bOverride = false;
+			bool bManualFire = false;
 			SDK::FVector vecLocation;
 			SDK::FRotator rotRotation;
 
@@ -58,7 +63,11 @@ namespace OmegaWare
 			std::uintptr_t uFireReturn1 = 0;
 			std::uintptr_t uFireReturn2 = 0;
 			bool bReady = false;
+			std::vector<std::uintptr_t> aAutoFireReturns;
+			std::unordered_map<std::uintptr_t, std::uint64_t> mapIdleCounts;
 		};
+
+		thread_local bool t_bInAutoFire = false;
 
 		stSilentState g_stSilent;
 		Hooks::clHook<FnGetPlayerViewPoint> g_clGetPlayerViewPoint("APlayerController::GetPlayerViewPoint");
@@ -78,6 +87,8 @@ namespace OmegaWare
 			g_stSilent.uFireReturn1 = 0;
 			g_stSilent.uFireReturn2 = 0;
 			g_stSilent.bReady = false;
+			g_stSilent.aAutoFireReturns.clear();
+			g_stSilent.mapIdleCounts.clear();
 		}
 
 		void LearnFirePath(std::uintptr_t uReturnAddress)
@@ -131,19 +142,84 @@ namespace OmegaWare
 
 			const auto uReturnAddress = reinterpret_cast<std::uintptr_t>(_ReturnAddress());
 			std::scoped_lock lckState(g_stSilent.mtxState);
-			LearnFirePath(uReturnAddress);
+			std::vector<std::uintptr_t>& aAutoFire = g_stSilent.aAutoFireReturns;
+			if (!g_stSilent.bOverride)
+				++g_stSilent.mapIdleCounts[uReturnAddress];
+			auto fnIdleCount = [](std::uintptr_t uAddress) {
+				const auto itCount = g_stSilent.mapIdleCounts.find(uAddress);
+				return itCount != g_stSilent.mapIdleCounts.end() ? itCount->second : 0ull;
+			};
+			if (t_bInAutoFire && aAutoFire.size() < 8 && std::ranges::find(aAutoFire, uReturnAddress) == aAutoFire.end() && fnIdleCount(uReturnAddress) < kAutoFireIdleLimit)
+			{
+				aAutoFire.push_back(uReturnAddress);
+				LogInfo("silent aim learned auto fire path {:#x}", uReturnAddress);
+			}
+			if (std::erase_if(aAutoFire, [&](std::uintptr_t uAddress) { return fnIdleCount(uAddress) >= kAutoFireIdleLimit; }) > 0)
+				LogInfo("silent aim dropped an auto fire path that is also used outside firing");
+			const bool bAutoFirePath = std::ranges::find(aAutoFire, uReturnAddress) != aAutoFire.end();
+			if (!bAutoFirePath)
+				LearnFirePath(uReturnAddress);
 			if (!g_stSilent.bOverride)
 				return;
-			if (g_stSilent.bReady && uReturnAddress != g_stSilent.uFireReturn1 && uReturnAddress != g_stSilent.uFireReturn2)
+			const bool bLearnedFirePath = g_stSilent.bReady && (uReturnAddress == g_stSilent.uFireReturn1 || uReturnAddress == g_stSilent.uFireReturn2);
+			const bool bManualWhileLearning = g_stSilent.bManualFire && !g_stSilent.bReady;
+			if (!bAutoFirePath && !bLearnedFirePath && !bManualWhileLearning)
 				return;
 			*pLocation = g_stSilent.vecLocation;
 			*pRotation = g_stSilent.rotRotation;
 		}
 
-		void SetOverride(bool bOverride, const SDK::FVector& vecLocation = {}, const SDK::FRotator& rotRotation = {})
+		using TryActivateAbility_t = bool (*)(SDK::USBZPlayerAbilitySystemComponent*, std::uint32_t, bool);
+
+		[[nodiscard]] TryActivateAbility_t ResolveTryActivateAbility()
+		{
+			static const TryActivateAbility_t s_fnTryActivate = [] {
+				constexpr auto aPattern = Memory::Pattern<"48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 55 41 54 41 55 41 56 41 57 48 8B EC 48 83 EC ? 48 83 65 ? 00 45 8A E0 83 65 ? 00 41 B0">;
+				const std::optional<Memory::stModule> optModule = Memory::GetModule();
+				const std::uintptr_t uAddress = optModule ? Memory::FindPattern(*optModule, aPattern) : 0;
+				if (uAddress)
+					LogInfo("USBZPlayerAbilitySystemComponent::TryActivateAbility found at {:#x}", uAddress - optModule->uBase);
+				else
+					LogError("USBZPlayerAbilitySystemComponent::TryActivateAbility pattern not found, auto fire is disabled");
+				return reinterpret_cast<TryActivateAbility_t>(uAddress);
+			}();
+			return s_fnTryActivate;
+		}
+
+		[[nodiscard]] bool IsLoud()
+		{
+			SDK::UWorld* pWorld = Unreal::GetWorld();
+			if (!pWorld || !Payday3::IsAlive(pWorld->GameState) || !pWorld->GameState->IsA(SDK::APD3HeistGameState::StaticClass()))
+				return true;
+			return static_cast<SDK::APD3HeistGameState*>(pWorld->GameState)->CurrentHeistState >= SDK::EPD3HeistState::Alarm;
+		}
+
+		void ActivateFireAbility()
+		{
+			const TryActivateAbility_t fnTryActivate = ResolveTryActivateAbility();
+			SDK::APlayerController* pController = Unreal::GetPlayerController();
+			if (!fnTryActivate || !pController || !Payday3::IsAlive(pController->PlayerState) || !pController->PlayerState->IsA(SDK::ASBZPlayerState::StaticClass()))
+				return;
+			SDK::USBZPlayerAbilitySystemComponent* pAbilities = static_cast<SDK::ASBZPlayerState*>(pController->PlayerState)->AbilitySystem;
+			if (!Payday3::IsAlive(pAbilities))
+				return;
+			for (SDK::FGameplayAbilitySpec& rSpec : pAbilities->ActivatableAbilities.Items)
+			{
+				if (!Payday3::IsAlive(rSpec.Ability))
+					continue;
+				if (!rSpec.Ability->IsA(SDK::USBZPlayerFireRangedWeaponAbility::StaticClass()))
+					continue;
+				t_bInAutoFire = true;
+				fnTryActivate(pAbilities, static_cast<std::uint32_t>(rSpec.Handle.Handle), true);
+				t_bInAutoFire = false;
+			}
+		}
+
+		void SetOverride(bool bOverride, bool bManualFire = false, const SDK::FVector& vecLocation = {}, const SDK::FRotator& rotRotation = {})
 		{
 			std::scoped_lock lckState(g_stSilent.mtxState);
 			g_stSilent.bOverride = bOverride;
+			g_stSilent.bManualFire = bOverride && bManualFire;
 			if (bOverride)
 			{
 				g_stSilent.vecLocation = vecLocation;
@@ -167,6 +243,8 @@ namespace OmegaWare
 				m_pFovColor = &Config::Add("aimbot.fov_color", OmegaGUI::color(255, 0, 0));
 				m_pFov = &Config::Add("aimbot.fov", 60);
 				m_pSmoothing = &Config::Add("aimbot.smoothing", 10);
+				m_pAutoFire = &Config::Add("aimbot.auto_fire", false);
+				m_pAutoFireLoudOnly = &Config::Add("aimbot.auto_fire_loud_only", true);
 				return true;
 			}
 
@@ -212,6 +290,15 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("aimbot.enabled"_l, m_pEnabled);
 					OmegaGUI::Checkbox("aimbot.visible_check"_l, m_pVisibleCheck);
 					OmegaGUI::Checkbox("aimbot.draw_fov"_l, m_pDrawFov);
+					OmegaGUI::Checkbox("aimbot.auto_fire"_l, m_pAutoFire);
+					OmegaGUI::ItemTooltip("aimbot.auto_fire_hint"_t);
+					if (*m_pAutoFire)
+					{
+						OmegaGUI::Indent();
+						OmegaGUI::Checkbox("aimbot.auto_fire_loud_only"_l, m_pAutoFireLoudOnly);
+						OmegaGUI::ItemTooltip("aimbot.auto_fire_loud_only_hint"_t);
+						OmegaGUI::Unindent();
+					}
 					OmegaGUI::Spacing();
 					OmegaGUI::TextWrapped(OmegaLocalization::Format("aimbot.silent_status", SilentStatus()));
 					OmegaGUI::EndSection();
@@ -273,10 +360,13 @@ namespace OmegaWare
 				}
 
 				const SDK::FRotator rotDesired = SDK::UKismetMathLibrary::FindLookAtRotation(vecCamera, optTarget->vecAimWorld);
+				const bool bAutoFire = *m_pAutoFire && (!*m_pAutoFireLoudOnly || IsLoud());
+				if (bAutoFire)
+					QueueAutoFire();
 				if (*m_pType == 0)
 				{
-					const bool bFiring = !OmegaGUI::WantsMouse() && (GetAsyncKeyState(VK_LBUTTON) & 0x8000);
-					SetOverride(bFiring, optTarget->vecAimWorld, rotDesired);
+					const bool bManualFire = !OmegaGUI::WantsMouse() && (GetAsyncKeyState(VK_LBUTTON) & 0x8000);
+					SetOverride(bAutoFire || bManualFire, bManualFire, optTarget->vecAimWorld, rotDesired);
 					return;
 				}
 
@@ -295,6 +385,18 @@ namespace OmegaWare
 						}
 					}))
 					m_bInputQueued = false;
+			}
+
+			void QueueAutoFire()
+			{
+				if (m_bFireQueued.exchange(true))
+					return;
+				if (!Unreal::RunOnGameThread([this] {
+						m_bFireQueued = false;
+						if (IsActive() && *m_pAutoFire)
+							ActivateFireAbility();
+					}))
+					m_bFireQueued = false;
 			}
 
 			std::optional<stTarget> SelectTarget(SDK::APlayerController* pController, const SDK::FVector& vecCamera, float flMaxDistance, const wchar_t* wszBone) const
@@ -354,6 +456,9 @@ namespace OmegaWare
 			OmegaGUI::color* m_pFovColor = nullptr;
 			int* m_pFov = nullptr;
 			int* m_pSmoothing = nullptr;
+			bool* m_pAutoFire = nullptr;
+			bool* m_pAutoFireLoudOnly = nullptr;
+			std::atomic<bool> m_bFireQueued = false;
 			SDK::APlayerController* m_pHookAttempt = nullptr;
 			std::atomic<bool> m_bInputQueued = false;
 		};
