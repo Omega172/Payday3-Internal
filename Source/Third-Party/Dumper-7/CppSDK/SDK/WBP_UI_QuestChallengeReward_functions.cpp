@@ -16,135 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.EmptySet
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SpriteLoaded
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     OutLoadedSprite_SpriteLoaded                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeReward_C::EmptySet()
+void UWBP_UI_QuestChallengeReward_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite_SpriteLoaded)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmptySet", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpriteLoaded", FnName));
+
+	Params::WBP_UI_QuestChallengeReward_C_SpriteLoaded Parms{};
+
+	Parms.OutLoadedSprite_SpriteLoaded = OutLoadedSprite_SpriteLoaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetType
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_QuestChallengeReward_C::SetType()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetType", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ExecuteUbergraph_WBP_UI_QuestChallengeReward
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeReward_C::ExecuteUbergraph_WBP_UI_QuestChallengeReward(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_QuestChallengeReward_C", "ExecuteUbergraph_WBP_UI_QuestChallengeReward", FuncInfo);
-
-	Params::WBP_UI_QuestChallengeReward_C_ExecuteUbergraph_WBP_UI_QuestChallengeReward Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ItemInitialized
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      NewItem                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeReward_C::ItemInitialized(const class USBZInventoryBaseData* NewItem)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ItemInitialized", FnName));
-
-	Params::WBP_UI_QuestChallengeReward_C_ItemInitialized Parms{};
-
-	Parms.NewItem = NewItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnImageLoaded
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UObject*                          LoadedObject                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeReward_C::OnImageLoaded(class UObject* LoadedObject)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnImageLoaded", FnName));
-
-	Params::WBP_UI_QuestChallengeReward_C_OnImageLoaded Parms{};
-
-	Parms.LoadedObject = LoadedObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnLoadingChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsLoading                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeReward_C::OnLoadingChanged(bool bIsLoading)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoadingChanged", FnName));
-
-	Params::WBP_UI_QuestChallengeReward_C_OnLoadingChanged Parms{};
-
-	Parms.bIsLoading = bIsLoading;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetClaimed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsClaimed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_QuestChallengeReward_C::SetClaimed(bool IsClaimed)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetClaimed", FnName));
-
-	Params::WBP_UI_QuestChallengeReward_C_SetClaimed Parms{};
-
-	Parms.IsClaimed = IsClaimed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetEmptyIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_QuestChallengeReward_C::SetEmptyIcon()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEmptyIcon", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIcon
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetName
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     InSprite                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeReward_C::SetIcon(class UPaperSprite* InSprite)
+void UWBP_UI_QuestChallengeReward_C::SetName()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIcon", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetName", FnName));
 
-	Params::WBP_UI_QuestChallengeReward_C_SetIcon Parms{};
-
-	Parms.InSprite = InSprite;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -166,45 +76,135 @@ void UWBP_UI_QuestChallengeReward_C::SetIconTexture(class UTexture2D* InTexture)
 }
 
 
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetName
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetIcon
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_QuestChallengeReward_C::SetName()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetName", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetType
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_QuestChallengeReward_C::SetType()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetType", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SpriteLoaded
-// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPaperSprite*                     InSprite                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_QuestChallengeReward_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
+void UWBP_UI_QuestChallengeReward_C::SetIcon(class UPaperSprite* InSprite)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpriteLoaded", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIcon", FnName));
 
-	Params::WBP_UI_QuestChallengeReward_C_SpriteLoaded Parms{};
+	Params::WBP_UI_QuestChallengeReward_C_SetIcon Parms{};
 
-	Parms.OutLoadedSprite = OutLoadedSprite;
+	Parms.InSprite = InSprite;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetEmptyIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_QuestChallengeReward_C::SetEmptyIcon()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEmptyIcon", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.SetClaimed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsClaimed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::SetClaimed(bool IsClaimed)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetClaimed", FnName));
+
+	Params::WBP_UI_QuestChallengeReward_C_SetClaimed Parms{};
+
+	Parms.IsClaimed = IsClaimed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnLoadingChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsLoading_OnLoadingChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::OnLoadingChanged(bool bIsLoading_OnLoadingChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoadingChanged", FnName));
+
+	Params::WBP_UI_QuestChallengeReward_C_OnLoadingChanged Parms{};
+
+	Parms.bIsLoading_OnLoadingChanged = bIsLoading_OnLoadingChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.OnImageLoaded
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          LoadedObject_OnImageLoaded                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::OnImageLoaded(class UObject* LoadedObject_OnImageLoaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnImageLoaded", FnName));
+
+	Params::WBP_UI_QuestChallengeReward_C_OnImageLoaded Parms{};
+
+	Parms.LoadedObject_OnImageLoaded = LoadedObject_OnImageLoaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ItemInitialized
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      NewItem_ItemInitialized                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::ItemInitialized(const class USBZInventoryBaseData* NewItem_ItemInitialized)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ItemInitialized", FnName));
+
+	Params::WBP_UI_QuestChallengeReward_C_ItemInitialized Parms{};
+
+	Parms.NewItem_ItemInitialized = NewItem_ItemInitialized;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.ExecuteUbergraph_WBP_UI_QuestChallengeReward
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_QuestChallengeReward_C::ExecuteUbergraph_WBP_UI_QuestChallengeReward(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_QuestChallengeReward_C", "ExecuteUbergraph_WBP_UI_QuestChallengeReward", FuncInfo);
+
+	Params::WBP_UI_QuestChallengeReward_C_ExecuteUbergraph_WBP_UI_QuestChallengeReward Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_QuestChallengeReward.WBP_UI_QuestChallengeReward_C.EmptySet
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_QuestChallengeReward_C::EmptySet()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmptySet", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -18,20 +18,20 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C
-// 0x0020 (0x0408 - 0x03E8)
+// 0x0020 (0x03C8 - 0x03A8)
 class UWBP_Shop_MainMenuButton_C final : public USBZMainMenuShopButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03E8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Focus;                                             // 0x03F0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ShowNotification;                                  // 0x03F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Shop_Notification_C*               ShopNotification;                                  // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Focus;                                             // 0x03B0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ShowNotification;                                  // 0x03B8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Shop_Notification_C*               ShopNotification;                                  // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ButtonFocusChanging(bool bInHasFocus);
-	void ExecuteUbergraph_WBP_Shop_MainMenuButton(int32 EntryPoint);
-	void HideNotification();
 	void ShowNewDLCNotification();
+	void HideNotification();
+	void ExecuteUbergraph_WBP_Shop_MainMenuButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
 
 public:
 	static class UClass* StaticClass()

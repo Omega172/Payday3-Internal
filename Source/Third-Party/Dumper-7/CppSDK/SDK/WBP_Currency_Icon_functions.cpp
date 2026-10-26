@@ -16,19 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Currency_Icon.WBP_Currency_Icon_C.ExecuteUbergraph_WBP_Currency_Icon
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Currency_Icon.WBP_Currency_Icon_C.SetCurrency
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCurrencyCode                        Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Currency_Icon_C::ExecuteUbergraph_WBP_Currency_Icon(int32 EntryPoint)
+void UWBP_Currency_Icon_C::SetCurrency(ESBZCurrencyCode Index_0)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Currency_Icon_C", "ExecuteUbergraph_WBP_Currency_Icon", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCurrency", FnName));
 
-	Params::WBP_Currency_Icon_C_ExecuteUbergraph_WBP_Currency_Icon Parms{};
+	Params::WBP_Currency_Icon_C_SetCurrency Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,19 +56,19 @@ void UWBP_Currency_Icon_C::GetColorByCurrency(ESBZCurrencyCode Currency, struct 
 }
 
 
-// Function WBP_Currency_Icon.WBP_Currency_Icon_C.SetCurrency
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Currency_Icon.WBP_Currency_Icon_C.ExecuteUbergraph_WBP_Currency_Icon
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESBZCurrencyCode                        Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Currency_Icon_C::SetCurrency(ESBZCurrencyCode Index_0)
+void UWBP_Currency_Icon_C::ExecuteUbergraph_WBP_Currency_Icon(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCurrency", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Currency_Icon_C", "ExecuteUbergraph_WBP_Currency_Icon", FuncInfo);
 
-	Params::WBP_Currency_Icon_C_SetCurrency Parms{};
+	Params::WBP_Currency_Icon_C_ExecuteUbergraph_WBP_Currency_Icon Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

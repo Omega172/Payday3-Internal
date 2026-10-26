@@ -12,77 +12,93 @@
 
 #include "SlateCore_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature final
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.UpdatePageCycler
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_UpdatePageCycler final
 {
 public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_UpdatePageCycler;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.SetCategories
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_SetCategories final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USBZChallengeCategoryData*>      CallFunc_GetChallengeCategoryData_OutCategoryList; // 0x0010(0x0010)(ReferenceParm)
+	class USBZChallengeCategoryData*              CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CategoryHasChallenges_ReturnValue;        // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_SetCategories;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavRight
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature final
+struct WBP_UI_Challenges_Screen_C_NavRight final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_NavRight;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavLeft
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature final
+struct WBP_UI_Challenges_Screen_C_NavLeft final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_NavLeft;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature final
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.GetCurrentStatusFilter
+// 0x002C (0x002C - 0x0000)
+struct WBP_UI_Challenges_Screen_C_GetCurrentStatusFilter final
 {
 public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EChallengeStatusEnum                          NewParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue;  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Set_Length_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature;
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature final
-{
-public:
-	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_GetCurrentStatusFilter;
 
 // Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ExecuteUbergraph_WBP_UI_Challenges_Screen
 // 0x0118 (0x0118 - 0x0000)
@@ -135,86 +151,70 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_ExecuteUbergraph_WBP_UI_Challenges_Screen;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.GetCurrentStatusFilter
-// 0x002C (0x002C - 0x0000)
-struct WBP_UI_Challenges_Screen_C_GetCurrentStatusFilter final
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature final
 {
 public:
-	EChallengeStatusEnum                          NewParam;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_Conv_IntToByte_ReturnValue_1;             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetEnumeratorValueFromIndex_ReturnValue;  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_ByteToInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_MakeLiteralInt_ReturnValue;               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Set_Length_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_GetCurrentStatusFilter;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_8_NavigateToIndex__DelegateSignature;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavLeft
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature;
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_NavLeft final
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_NavLeft;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavRight
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_NavRight final
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_NavRight;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.SetCategories
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_SetCategories final
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USBZChallengeCategoryData*>      CallFunc_GetChallengeCategoryData_OutCategoryList; // 0x0010(0x0010)(ReferenceParm)
-	class USBZChallengeCategoryData*              CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CategoryHasChallenges_ReturnValue;        // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_SetCategories;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.UpdatePageCycler
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_UI_Challenges_Screen_C_UpdatePageCycler final
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature final
 {
 public:
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_UpdatePageCycler;
+DUMPER7_ASSERTS_WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

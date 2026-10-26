@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -43,31 +43,31 @@ public:
 	int32                                         StickerStartingIndex;                              // 0x0460(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_UI_ActionButton_K2Node_ComponentBoundEvent_4_ButtonSelected__DelegateSignature();
-	void Construct();
-	void CreatePartButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlot* WeaponSlot, const class USBZModularPartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionPartButton_C** Button);
-	void CreateSlotButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlotBase* WeaponSlot, const class USBZEquippablePartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionSlotButton_C** Button);
-	void ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization(int32 EntryPoint);
-	void GetEquippedPartInSlot(const class USBZModularPartSlotBase*& Key, class USBZModularPartDataAsset** Part);
-	void GetModularConfiguration(TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration>* Modular_Configuration);
-	void InitializeData();
-	void InitializeWeaponPartItems(class USBZWeaponCustomiaztionSlotButton_C* BoxReference, const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent);
-	void InitializeWeaponSlotItems(const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent);
-	void OnBackPressed();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInspectPressed();
-	void OnLostStackFocused();
-	void OnPressedWeaponSlotButton(class USBZMenuButton* Button);
-	void OnPressetCosmeticSlotButton(class USBZMenuButton* Button);
-	void OpenNewModMenu();
-	void PreConstruct(bool IsDesignTime);
-	void RefreshEquippedStatus(const class USBZWeaponPartDataAsset* NewlyEquippedPart);
-	void SetBoxVisible(ESBZWeaponCustomizationSubScreen Screen);
-	void SetupWeaponMods();
 	void SetWeaponPart(class USBZMenuButton* Button);
+	void SetupWeaponMods();
+	void SetBoxVisible(ESBZWeaponCustomizationSubScreen Screen);
+	void RefreshEquippedStatus(const class USBZWeaponPartDataAsset* NewlyEquippedPart);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OpenNewModMenu();
+	void OnPressetCosmeticSlotButton(class USBZMenuButton* Button);
+	void OnPressedWeaponSlotButton(class USBZMenuButton* Button);
+	void OnLostStackFocused();
+	void OnInspectPressed();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnBackPressed();
+	void InitializeWeaponSlotItems(const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent);
+	void InitializeWeaponPartItems(class USBZWeaponCustomiaztionSlotButton_C* BoxReference, const TDelegate<void(class USBZMenuButton* Button)>& OnSelectedEvent);
+	void InitializeData();
+	void GetModularConfiguration(TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration>* Modular_Configuration);
+	void GetEquippedPartInSlot(const class USBZModularPartSlotBase*& Key, class USBZModularPartDataAsset** Part);
+	void ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization(int32 EntryPoint);
+	void CreateSlotButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlotBase* WeaponSlot, const class USBZEquippablePartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionSlotButton_C** Button);
+	void CreatePartButton(class UPanelWidget* ParentWidget, const class USBZModularPartSlot* WeaponSlot, const class USBZModularPartDataAsset* Equippable_Part, const TDelegate<void(class USBZMenuButton* Button)>& OnClick, class USBZWeaponCustomiaztionPartButton_C** Button);
+	void Construct();
+	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_UI_ActionButton_K2Node_ComponentBoundEvent_4_ButtonSelected__DelegateSignature();
+	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_Button_Back_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

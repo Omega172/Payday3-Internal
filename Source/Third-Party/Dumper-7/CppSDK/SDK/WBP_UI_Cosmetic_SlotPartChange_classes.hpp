@@ -32,8 +32,8 @@ public:
 	struct FSBZStoreBaseItem                      StoreData;                                         // 0x0328(0x0150)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_UI_Cosmetic_SlotPartChange(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

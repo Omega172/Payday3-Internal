@@ -16,6 +16,37 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BFL_GotoFunctionLibrary.BFL_GotoFunctionLibrary_C.GetItemSourceText
+// 0x0138 (0x0138 - 0x0000)
+struct BFL_GotoFunctionLibrary_C_GetItemSourceText final
+{
+public:
+	ESBZPlayerItemSource                          InputPin;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   OutputPin;                                         // 0x0010(0x0010)(Parm, OutParm)
+	ESBZPlayerItemSource                          Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0038(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0048(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0058(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0068(0x0010)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0078(0x0010)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0088(0x0010)()
+	class FText                                   Temp_text_Variable_7;                              // 0x0098(0x0010)()
+	class FText                                   Temp_text_Variable_8;                              // 0x00A8(0x0010)()
+	class FText                                   Temp_text_Variable_9;                              // 0x00B8(0x0010)()
+	class FText                                   Temp_text_Variable_10;                             // 0x00C8(0x0010)()
+	class FText                                   Temp_text_Variable_11;                             // 0x00D8(0x0010)()
+	class FText                                   Temp_text_Variable_12;                             // 0x00E8(0x0010)()
+	class FText                                   Temp_text_Variable_13;                             // 0x00F8(0x0010)()
+	class FText                                   Temp_text_Variable_14;                             // 0x0108(0x0010)()
+	class FText                                   Temp_text_Variable_15;                             // 0x0118(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0128(0x0010)()
+};
+DUMPER7_ASSERTS_BFL_GotoFunctionLibrary_C_GetItemSourceText;
+
 // Function BFL_GotoFunctionLibrary.BFL_GotoFunctionLibrary_C.GetHighestPrioPlayerItemSource
 // 0x0230 (0x0230 - 0x0000)
 struct BFL_GotoFunctionLibrary_C_GetHighestPrioPlayerItemSource final
@@ -49,37 +80,6 @@ public:
 	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BFL_GotoFunctionLibrary_C_GetHighestPrioPlayerItemSource;
-
-// Function BFL_GotoFunctionLibrary.BFL_GotoFunctionLibrary_C.GetItemSourceText
-// 0x0138 (0x0138 - 0x0000)
-struct BFL_GotoFunctionLibrary_C_GetItemSourceText final
-{
-public:
-	ESBZPlayerItemSource                          InputPin;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                __WorldContext;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   OutputPin;                                         // 0x0010(0x0010)(Parm, OutParm)
-	ESBZPlayerItemSource                          Temp_byte_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0038(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0048(0x0010)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0058(0x0010)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0068(0x0010)()
-	class FText                                   Temp_text_Variable_5;                              // 0x0078(0x0010)()
-	class FText                                   Temp_text_Variable_6;                              // 0x0088(0x0010)()
-	class FText                                   Temp_text_Variable_7;                              // 0x0098(0x0010)()
-	class FText                                   Temp_text_Variable_8;                              // 0x00A8(0x0010)()
-	class FText                                   Temp_text_Variable_9;                              // 0x00B8(0x0010)()
-	class FText                                   Temp_text_Variable_10;                             // 0x00C8(0x0010)()
-	class FText                                   Temp_text_Variable_11;                             // 0x00D8(0x0010)()
-	class FText                                   Temp_text_Variable_12;                             // 0x00E8(0x0010)()
-	class FText                                   Temp_text_Variable_13;                             // 0x00F8(0x0010)()
-	class FText                                   Temp_text_Variable_14;                             // 0x0108(0x0010)()
-	class FText                                   Temp_text_Variable_15;                             // 0x0118(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0128(0x0010)()
-};
-DUMPER7_ASSERTS_BFL_GotoFunctionLibrary_C_GetItemSourceText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

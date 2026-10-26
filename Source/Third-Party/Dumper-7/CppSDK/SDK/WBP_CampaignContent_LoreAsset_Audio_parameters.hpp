@@ -17,6 +17,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.SetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_Audio_C_SetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_SetEntryState;
+
+// Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.SetCampaignData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_Audio_C_SetCampaignData final
+{
+public:
+	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_SetCampaignData;
+
+// Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.GetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_Audio_C_GetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_GetEntryState;
+
 // Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_Audio
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_CampaignContent_LoreAsset_Audio_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_Audio final
@@ -32,33 +59,6 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_Audio;
-
-// Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.GetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_Audio_C_GetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_GetEntryState;
-
-// Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.SetCampaignData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_Audio_C_SetCampaignData final
-{
-public:
-	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_SetCampaignData;
-
-// Function WBP_CampaignContent_LoreAsset_Audio.WBP_CampaignContent_LoreAsset_Audio_C.SetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_Audio_C_SetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_Audio_C_SetEntryState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

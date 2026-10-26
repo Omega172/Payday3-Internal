@@ -17,45 +17,86 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonDisabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_ButtonDisabledChanged final
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.SetButtonText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_SetButtonText final
 {
 public:
-	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   InButtonText;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ButtonDisabledChanged;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_SetButtonText;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_ButtonFocusedChanged final
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.RefreshVisual
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_RefreshVisual final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_RefreshVisual;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonHoveredChanged
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged final
+struct WBP_UI_AppearanceTextButton_C_PreConstruct final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_PreConstruct;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DefaultEquipped
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_DefaultEquipped final
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnHoverVisuals
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_OnHoverVisuals final
 {
 public:
-	bool                                          bEquipped;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_DefaultEquipped;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnHoverVisuals;
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnFocusedVisuals
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_OnFocusedVisuals final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnFocusedVisuals;
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnDisabledVisuals
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_OnDisabledVisuals final
+{
+public:
+	bool                                          bIsDisabled;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnDisabledVisuals;
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnAnimationFinished
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_OnAnimationFinished final
+{
+public:
+	const class UWidgetAnimation*                 Animation_OnAnimationFinished;                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnAnimationFinished;
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.GetText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_GetText final
+{
+public:
+	class FText                                   OutText;                                           // 0x0000(0x0010)(Parm, OutParm)
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0010(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_GetText;
 
 // Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ExecuteUbergraph_WBP_UI_AppearanceTextButton
 // 0x0020 (0x0020 - 0x0000)
@@ -77,86 +118,45 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ExecuteUbergraph_WBP_UI_AppearanceTextButton;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.GetText
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_GetText final
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DefaultEquipped
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_DefaultEquipped final
 {
 public:
-	class FText                                   OutText;                                           // 0x0000(0x0010)(Parm, OutParm)
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0010(0x0010)()
+	bool                                          bEquipped_DefaultEquipped;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_GetText;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_DefaultEquipped;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnAnimationFinished
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_OnAnimationFinished final
-{
-public:
-	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnAnimationFinished;
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnDisabledVisuals
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_OnDisabledVisuals final
-{
-public:
-	bool                                          bIsDisabled_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnDisabledVisuals;
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnFocusedVisuals
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_OnFocusedVisuals final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnFocusedVisuals;
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnHoverVisuals
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_OnHoverVisuals final
+struct WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_OnHoverVisuals;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.PreConstruct
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_PreConstruct final
+struct WBP_UI_AppearanceTextButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ButtonFocusedChanged;
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.RefreshVisual
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_RefreshVisual final
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonDisabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_AppearanceTextButton_C_ButtonDisabledChanged final
 {
 public:
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsDisabled_ButtonDisabledChanged;               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_RefreshVisual;
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.SetButtonText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_AppearanceTextButton_C_SetButtonText final
-{
-public:
-	class FText                                   InButtonText;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_SetButtonText;
+DUMPER7_ASSERTS_WBP_UI_AppearanceTextButton_C_ButtonDisabledChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

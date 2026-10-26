@@ -103,7 +103,7 @@ public:
 DUMPER7_ASSERTS_WBP_UI_Results_StayAsParty_C_PartyPlayerLeavedEvent;
 
 // Function WBP_UI_Results_StayAsParty.WBP_UI_Results_StayAsParty_C.ShouldShowStayAsParty
-// 0x02F0 (0x02F0 - 0x0000)
+// 0x0300 (0x0300 - 0x0000)
 struct WBP_UI_Results_StayAsParty_C_ShouldShowStayAsParty final
 {
 public:
@@ -120,9 +120,9 @@ public:
 	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_2;         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZEndMissionResultData               CallFunc_GetMissionResultData_ReturnValue;         // 0x0038(0x02B0)(ConstParm)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x02E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZEndMissionResultData               CallFunc_GetMissionResultData_ReturnValue;         // 0x0038(0x02C0)(ConstParm)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x02F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Results_StayAsParty_C_ShouldShowStayAsParty;
 

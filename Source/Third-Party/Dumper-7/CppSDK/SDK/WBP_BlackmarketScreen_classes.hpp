@@ -35,28 +35,29 @@ public:
 	TArray<class USBZBundlePackData*>             ListItems;                                         // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
-	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
-	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature(class UObject* Item, bool bIsHovered);
-	void BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void ExecuteUbergraph_WBP_BlackmarketScreen(int32 EntryPoint);
-	void OnBackPressed();
-	void OnControlReferenceClicked(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void PostPush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_8B21FF524A80C9672955E88E6B182AA9(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_8B21FF524A80C9672955E88E6B182AA9(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget);
 	void UpdateBackground(class USBZBundlePackData* InBundlePackData);
+	void RefreshNavigation(int32 InputPin);
+	void PrePush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_8B21FF524A80C9672955E88E6B182AA9(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_8B21FF524A80C9672955E88E6B182AA9(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlReferenceClicked(class FName ActionName);
+	void OnBackPressed();
+	void ExecuteUbergraph_WBP_BlackmarketScreen(int32 EntryPoint);
+	void BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature(class UObject* Item, bool bIsHovered);
+	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
+	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
+	void BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
 
 public:
 	static class UClass* StaticClass()

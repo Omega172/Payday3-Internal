@@ -18,23 +18,27 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonFocusedChanged
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonFocusedChanged final
+struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_PreConstruct final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_PreConstruct;
 
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonHoveredChanged final
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.OnFocusChanged
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_OnFocusChanged final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InIsFocused;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_OnFocusChanged;
 
 // Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorModCategoryButton
 // 0x0118 (0x0118 - 0x0000)
@@ -64,27 +68,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorModCategoryButton;
 
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.OnFocusChanged
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_OnFocusChanged final
-{
-public:
-	bool                                          InIsFocused;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_OnFocusChanged;
-
-// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.PreConstruct
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_PreConstruct final
+struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonHoveredChanged;
+
+// Function WBP_MainMenu_Loadout_ArmorModCategoryButton.WBP_MainMenu_Loadout_ArmorModCategoryButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorModCategoryButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

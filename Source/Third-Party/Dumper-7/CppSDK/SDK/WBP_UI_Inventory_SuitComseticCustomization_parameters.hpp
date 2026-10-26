@@ -19,24 +19,44 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature final
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused final
 {
 public:
-	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused;
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged final
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked final
 {
 public:
-	const class USBZCosmeticsDataAsset*           InEquippedItem;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
+// 0x0110 (0x0110 - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals final
+{
+public:
+	uint8                                         Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0038(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0048)(HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default;                             // 0x0098(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals;
 
 // Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization
 // 0x0178 (0x0178 - 0x0000)
@@ -79,44 +99,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization;
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
-// 0x0110 (0x0110 - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals final
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged final
 {
 public:
-	uint8                                         Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0038(0x0010)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0048)(HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x0098(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0100(0x0010)()
+	const class USBZCosmeticsDataAsset*           InEquippedItem_EquippedItemChanged;                // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_InitializeVisuals;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged;
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked final
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

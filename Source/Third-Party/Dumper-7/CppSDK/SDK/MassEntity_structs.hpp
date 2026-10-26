@@ -88,6 +88,18 @@ enum class EMassFragmentPresence : uint8
 	MAX                                      = 4,
 };
 
+// ScriptStruct MassEntity.MassProcessingPhaseConfig
+// 0x0028 (0x0028 - 0x0000)
+struct FMassProcessingPhaseConfig final
+{
+public:
+	class FName                                   PhaseName;                                         // 0x0000(0x000C)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UMassCompositeProcessor>    PhaseGroupClass;                                   // 0x0010(0x0008)(Edit, ZeroConstructor, Config, NoClear, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UMassProcessor*>                 ProcessorCDOs;                                     // 0x0018(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
+};
+DUMPER7_ASSERTS_FMassProcessingPhaseConfig;
+
 // ScriptStruct MassEntity.MassGenericDebugEvent
 // 0x0001 (0x0001 - 0x0000)
 struct FMassGenericDebugEvent final
@@ -105,6 +117,15 @@ public:
 	uint8                                         Pad_0[0x268];                                      // 0x0000(0x0268)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FMassFragmentRequirements;
+
+// ScriptStruct MassEntity.MassEntityView
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) FMassEntityView final
+{
+public:
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FMassEntityView;
 
 // ScriptStruct MassEntity.MassEntityQuery
 // 0x00B8 (0x0320 - 0x0268)
@@ -142,6 +163,15 @@ public:
 };
 DUMPER7_ASSERTS_FMassChunkFragment;
 
+// ScriptStruct MassEntity.MassProcessorClassCollection
+// 0x0010 (0x0010 - 0x0000)
+struct FMassProcessorClassCollection final
+{
+public:
+	TArray<TSubclassOf<class UMassProcessor>>     ClassCollection;                                   // 0x0000(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FMassProcessorClassCollection;
+
 // ScriptStruct MassEntity.MassSharedFragment
 // 0x0001 (0x0001 - 0x0000)
 struct FMassSharedFragment final
@@ -169,15 +199,6 @@ public:
 	int32                                         SerialNumber;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FMassEntityHandle;
-
-// ScriptStruct MassEntity.MassEntityView
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x08) FMassEntityView final
-{
-public:
-	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FMassEntityView;
 
 // ScriptStruct MassEntity.MassRuntimePipeline
 // 0x0018 (0x0018 - 0x0000)
@@ -210,15 +231,6 @@ public:
 };
 DUMPER7_ASSERTS_FMassObserverManager;
 
-// ScriptStruct MassEntity.MassProcessorClassCollection
-// 0x0010 (0x0010 - 0x0000)
-struct FMassProcessorClassCollection final
-{
-public:
-	TArray<TSubclassOf<class UMassProcessor>>     ClassCollection;                                   // 0x0000(0x0010)(ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FMassProcessorClassCollection;
-
 // ScriptStruct MassEntity.MassEntityObserverClassesMap
 // 0x0050 (0x0050 - 0x0000)
 struct FMassEntityObserverClassesMap final
@@ -227,18 +239,6 @@ public:
 	TMap<class UScriptStruct*, struct FMassProcessorClassCollection> Container;                      // 0x0000(0x0050)(NativeAccessSpecifierPrivate)
 };
 DUMPER7_ASSERTS_FMassEntityObserverClassesMap;
-
-// ScriptStruct MassEntity.MassProcessingPhaseConfig
-// 0x0028 (0x0028 - 0x0000)
-struct FMassProcessingPhaseConfig final
-{
-public:
-	class FName                                   PhaseName;                                         // 0x0000(0x000C)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UMassCompositeProcessor>    PhaseGroupClass;                                   // 0x0010(0x0008)(Edit, ZeroConstructor, Config, NoClear, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMassProcessor*>                 ProcessorCDOs;                                     // 0x0018(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPublic, TObjectPtr)
-};
-DUMPER7_ASSERTS_FMassProcessingPhaseConfig;
 
 // ScriptStruct MassEntity.ProcessorAuxDataBase
 // 0x0001 (0x0001 - 0x0000)

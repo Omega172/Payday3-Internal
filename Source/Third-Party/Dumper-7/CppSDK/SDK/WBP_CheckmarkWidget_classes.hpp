@@ -30,9 +30,9 @@ public:
 	TMulticastInlineDelegate<void(bool NewState)> OnCheckChanged;                                    // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_CheckmarkWidget(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 	void SetChecked(bool InIsChecked);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_CheckmarkWidget(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

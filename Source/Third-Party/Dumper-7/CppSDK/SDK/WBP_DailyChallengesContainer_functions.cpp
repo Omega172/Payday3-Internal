@@ -16,15 +16,111 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.UpdateTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DailyChallengesContainer_C::Construct()
+void UWBP_DailyChallengesContainer_C::UpdateTimer()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTimer", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesContainer_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_DailyChallengesContainer_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnDailyChallengesUpdated
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengesContainer_C::OnDailyChallengesUpdated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDailyChallengesUpdated", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnChallengeRerollPressed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_DailyChallengeItem_C*        ChallengeButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesContainer_C::OnChallengeRerollPressed(class UWBP_DailyChallengeItem_C* ChallengeButton)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChallengeRerollPressed", FnName));
+
+	Params::WBP_DailyChallengesContainer_C_OnChallengeRerollPressed Parms{};
+
+	Parms.ChallengeButton = ChallengeButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnChallengeRerollPopupClosed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesContainer_C::OnChallengeRerollPopupClosed(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChallengeRerollPopupClosed", FnName));
+
+	Params::WBP_DailyChallengesContainer_C_OnChallengeRerollPopupClosed Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.InitializeDailyChallenges
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DailyChallengesContainer_C::InitializeDailyChallenges()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeDailyChallenges", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.ExecuteUbergraph_WBP_DailyChallengesContainer
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengesContainer_C::ExecuteUbergraph_WBP_DailyChallengesContainer(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DailyChallengesContainer_C", "ExecuteUbergraph_WBP_DailyChallengesContainer", FuncInfo);
+
+	Params::WBP_DailyChallengesContainer_C_ExecuteUbergraph_WBP_DailyChallengesContainer Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -47,109 +143,13 @@ void UWBP_DailyChallengesContainer_C::CreateChallengeButton(class UWBP_DailyChal
 }
 
 
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.ExecuteUbergraph_WBP_DailyChallengesContainer
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengesContainer_C::ExecuteUbergraph_WBP_DailyChallengesContainer(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_DailyChallengesContainer_C", "ExecuteUbergraph_WBP_DailyChallengesContainer", FuncInfo);
-
-	Params::WBP_DailyChallengesContainer_C_ExecuteUbergraph_WBP_DailyChallengesContainer Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.InitializeDailyChallenges
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengesContainer_C::InitializeDailyChallenges()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeDailyChallenges", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnChallengeRerollPopupClosed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengesContainer_C::OnChallengeRerollPopupClosed(class FName ClosingActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChallengeRerollPopupClosed", FnName));
-
-	Params::WBP_DailyChallengesContainer_C_OnChallengeRerollPopupClosed Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnChallengeRerollPressed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_DailyChallengeItem_C*        ChallengeButton                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengesContainer_C::OnChallengeRerollPressed(class UWBP_DailyChallengeItem_C* ChallengeButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChallengeRerollPressed", FnName));
-
-	Params::WBP_DailyChallengesContainer_C_OnChallengeRerollPressed Parms{};
-
-	Parms.ChallengeButton = ChallengeButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.OnDailyChallengesUpdated
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengesContainer_C::OnDailyChallengesUpdated()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDailyChallengesUpdated", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.PreConstruct
+// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengesContainer_C::PreConstruct(bool IsDesignTime)
+void UWBP_DailyChallengesContainer_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_DailyChallengesContainer_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengesContainer.WBP_DailyChallengesContainer_C.UpdateTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DailyChallengesContainer_C::UpdateTimer()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTimer", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -57,20 +57,20 @@ public:
 	class UWBP_ScreenTitle_C*                     WBP_ScreenTitle;                                   // 0x0440(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_CampaignActSelect(int32 EntryPoint);
-	void OnBackPressed();
-	void OnButtonFocusedChanged_Event(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void PostPush_0FB414534A1D2B161BCDA389BEA3D17F(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_11968E474C5875ECAC460A911469C1F8(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_ACC53719475B1F16E5A1A488D1F8C3A2(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_0FB414534A1D2B161BCDA389BEA3D17F(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_11968E474C5875ECAC460A911469C1F8(class USBZMenuStackScreenWidget* MenuWidget);
 	void PrePush_ACC53719475B1F16E5A1A488D1F8C3A2(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_11968E474C5875ECAC460A911469C1F8(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_0FB414534A1D2B161BCDA389BEA3D17F(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_ACC53719475B1F16E5A1A488D1F8C3A2(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_11968E474C5875ECAC460A911469C1F8(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_0FB414534A1D2B161BCDA389BEA3D17F(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnButtonFocusedChanged_Event(class USBZMenuButton* Button, bool bIsEnabled);
+	void OnBackPressed();
+	void ExecuteUbergraph_WBP_CampaignActSelect(int32 EntryPoint);
+	void BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

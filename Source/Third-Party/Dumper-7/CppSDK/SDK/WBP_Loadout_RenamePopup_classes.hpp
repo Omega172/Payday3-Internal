@@ -27,11 +27,11 @@ public:
 	int32                                         MaxStrLen;                                         // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_Loadout_RenamePopup(int32 EntryPoint);
-	void OnInitialized();
-	void ShowCurrentName(const class FText& InText);
 	void UpdateName(const class FText& Text);
+	void ShowCurrentName(const class FText& InText);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Loadout_RenamePopup(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

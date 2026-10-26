@@ -24,11 +24,11 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_UI_MainMenu_Credits(int32 EntryPoint);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
 	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void ExecuteUbergraph_WBP_UI_MainMenu_Credits(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

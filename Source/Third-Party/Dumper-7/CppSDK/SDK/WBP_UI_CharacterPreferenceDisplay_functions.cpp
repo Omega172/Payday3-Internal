@@ -16,19 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterPreferenceDisplay_C::ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay(int32 EntryPoint)
+void UWBP_UI_CharacterPreferenceDisplay_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CharacterPreferenceDisplay_C", "ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_CharacterPreferenceDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay Parms{};
+	Params::WBP_UI_CharacterPreferenceDisplay_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -46,19 +46,19 @@ void UWBP_UI_CharacterPreferenceDisplay_C::OnInitialized()
 }
 
 
-// Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterPreferenceDisplay_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_CharacterPreferenceDisplay_C::ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CharacterPreferenceDisplay_C", "ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay", FuncInfo);
 
-	Params::WBP_UI_CharacterPreferenceDisplay_C_PreConstruct Parms{};
+	Params::WBP_UI_CharacterPreferenceDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

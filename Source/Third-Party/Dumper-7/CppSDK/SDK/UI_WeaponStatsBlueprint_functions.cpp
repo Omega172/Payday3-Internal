@@ -16,135 +16,135 @@
 
 SDK_NAMESPACE_START
 
-// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetAccuracyValueArray
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<float>*                          OutValueArray                                          (Parm, OutParm)
-
-void UUI_WeaponStatsBlueprint_C::GetAccuracyValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetAccuracyValueArray", FnName));
-
-	Params::UI_WeaponStatsBlueprint_C_GetAccuracyValueArray Parms{};
-
-	Parms.RangedWeaponData = RangedWeaponData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutValueArray != nullptr)
-		*OutValueArray = std::move(Parms.OutValueArray);
-}
-
-
-// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetDamageValueArray
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<float>*                          OutValueArray                                          (Parm, OutParm)
-
-void UUI_WeaponStatsBlueprint_C::GetDamageValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDamageValueArray", FnName));
-
-	Params::UI_WeaponStatsBlueprint_C_GetDamageValueArray Parms{};
-
-	Parms.RangedWeaponData = RangedWeaponData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutValueArray != nullptr)
-		*OutValueArray = std::move(Parms.OutValueArray);
-}
-
-
-// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetFireRateValueArray
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<float>*                          OutValueArray                                          (Parm, OutParm)
-
-void UUI_WeaponStatsBlueprint_C::GetFireRateValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetFireRateValueArray", FnName));
-
-	Params::UI_WeaponStatsBlueprint_C_GetFireRateValueArray Parms{};
-
-	Parms.RangedWeaponData = RangedWeaponData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutValueArray != nullptr)
-		*OutValueArray = std::move(Parms.OutValueArray);
-}
-
-
-// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetHandlingValueArray
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<float>*                          OutValueArray                                          (Parm, OutParm)
-
-void UUI_WeaponStatsBlueprint_C::GetHandlingValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetHandlingValueArray", FnName));
-
-	Params::UI_WeaponStatsBlueprint_C_GetHandlingValueArray Parms{};
-
-	Parms.RangedWeaponData = RangedWeaponData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutValueArray != nullptr)
-		*OutValueArray = std::move(Parms.OutValueArray);
-}
-
-
-// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetRecoilValueArray
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<float>*                          OutValueArray                                          (Parm, OutParm)
-
-void UUI_WeaponStatsBlueprint_C::GetRecoilValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetRecoilValueArray", FnName));
-
-	Params::UI_WeaponStatsBlueprint_C_GetRecoilValueArray Parms{};
-
-	Parms.RangedWeaponData = RangedWeaponData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutValueArray != nullptr)
-		*OutValueArray = std::move(Parms.OutValueArray);
-}
-
-
 // Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetStabilityValueArray
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZRangedWeaponData*       RangedWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<float>*                          OutValueArray                                          (Parm, OutParm)
+// const class USBZRangedWeaponData*       RangedWeaponData_GetStabilityValueArray                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutValueArray_GetStabilityValueArray                   (Parm, OutParm)
 
-void UUI_WeaponStatsBlueprint_C::GetStabilityValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const
+void UUI_WeaponStatsBlueprint_C::GetStabilityValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetStabilityValueArray, TArray<float>* OutValueArray_GetStabilityValueArray) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetStabilityValueArray", FnName));
 
 	Params::UI_WeaponStatsBlueprint_C_GetStabilityValueArray Parms{};
 
-	Parms.RangedWeaponData = RangedWeaponData;
+	Parms.RangedWeaponData_GetStabilityValueArray = RangedWeaponData_GetStabilityValueArray;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (OutValueArray != nullptr)
-		*OutValueArray = std::move(Parms.OutValueArray);
+	if (OutValueArray_GetStabilityValueArray != nullptr)
+		*OutValueArray_GetStabilityValueArray = std::move(Parms.OutValueArray_GetStabilityValueArray);
+}
+
+
+// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetRecoilValueArray
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const class USBZRangedWeaponData*       RangedWeaponData_GetRecoilValueArray                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutValueArray_GetRecoilValueArray                      (Parm, OutParm)
+
+void UUI_WeaponStatsBlueprint_C::GetRecoilValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetRecoilValueArray, TArray<float>* OutValueArray_GetRecoilValueArray) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetRecoilValueArray", FnName));
+
+	Params::UI_WeaponStatsBlueprint_C_GetRecoilValueArray Parms{};
+
+	Parms.RangedWeaponData_GetRecoilValueArray = RangedWeaponData_GetRecoilValueArray;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutValueArray_GetRecoilValueArray != nullptr)
+		*OutValueArray_GetRecoilValueArray = std::move(Parms.OutValueArray_GetRecoilValueArray);
+}
+
+
+// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetHandlingValueArray
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const class USBZRangedWeaponData*       RangedWeaponData_GetHandlingValueArray                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutValueArray_GetHandlingValueArray                    (Parm, OutParm)
+
+void UUI_WeaponStatsBlueprint_C::GetHandlingValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetHandlingValueArray, TArray<float>* OutValueArray_GetHandlingValueArray) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetHandlingValueArray", FnName));
+
+	Params::UI_WeaponStatsBlueprint_C_GetHandlingValueArray Parms{};
+
+	Parms.RangedWeaponData_GetHandlingValueArray = RangedWeaponData_GetHandlingValueArray;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutValueArray_GetHandlingValueArray != nullptr)
+		*OutValueArray_GetHandlingValueArray = std::move(Parms.OutValueArray_GetHandlingValueArray);
+}
+
+
+// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetFireRateValueArray
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const class USBZRangedWeaponData*       RangedWeaponData_GetFireRateValueArray                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutValueArray_GetFireRateValueArray                    (Parm, OutParm)
+
+void UUI_WeaponStatsBlueprint_C::GetFireRateValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetFireRateValueArray, TArray<float>* OutValueArray_GetFireRateValueArray) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetFireRateValueArray", FnName));
+
+	Params::UI_WeaponStatsBlueprint_C_GetFireRateValueArray Parms{};
+
+	Parms.RangedWeaponData_GetFireRateValueArray = RangedWeaponData_GetFireRateValueArray;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutValueArray_GetFireRateValueArray != nullptr)
+		*OutValueArray_GetFireRateValueArray = std::move(Parms.OutValueArray_GetFireRateValueArray);
+}
+
+
+// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetDamageValueArray
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const class USBZRangedWeaponData*       RangedWeaponData_GetDamageValueArray                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutValueArray_GetDamageValueArray                      (Parm, OutParm)
+
+void UUI_WeaponStatsBlueprint_C::GetDamageValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetDamageValueArray, TArray<float>* OutValueArray_GetDamageValueArray) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDamageValueArray", FnName));
+
+	Params::UI_WeaponStatsBlueprint_C_GetDamageValueArray Parms{};
+
+	Parms.RangedWeaponData_GetDamageValueArray = RangedWeaponData_GetDamageValueArray;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutValueArray_GetDamageValueArray != nullptr)
+		*OutValueArray_GetDamageValueArray = std::move(Parms.OutValueArray_GetDamageValueArray);
+}
+
+
+// Function UI_WeaponStatsBlueprint.UI_WeaponStatsBlueprint_C.GetAccuracyValueArray
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// const class USBZRangedWeaponData*       RangedWeaponData_GetAccuracyValueArray                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<float>*                          OutValueArray_GetAccuracyValueArray                    (Parm, OutParm)
+
+void UUI_WeaponStatsBlueprint_C::GetAccuracyValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetAccuracyValueArray, TArray<float>* OutValueArray_GetAccuracyValueArray) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetAccuracyValueArray", FnName));
+
+	Params::UI_WeaponStatsBlueprint_C_GetAccuracyValueArray Parms{};
+
+	Parms.RangedWeaponData_GetAccuracyValueArray = RangedWeaponData_GetAccuracyValueArray;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutValueArray_GetAccuracyValueArray != nullptr)
+		*OutValueArray_GetAccuracyValueArray = std::move(Parms.OutValueArray_GetAccuracyValueArray);
 }
 
 

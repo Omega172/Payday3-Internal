@@ -1576,7 +1576,7 @@ public:
 DUMPER7_ASSERTS_FSimSpaceSettings;
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RigidBody
-// 0x09B8 (0x0AA0 - 0x00E8)
+// 0x0AB8 (0x0BA0 - 0x00E8)
 struct alignas(0x10) FAnimNode_RigidBody final : public FAnimNode_SkeletalControlBase
 {
 public:
@@ -1608,7 +1608,7 @@ public:
 	float                                         EvaluationResetTime;                               // 0x032C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_330[0x1];                                      // 0x0330(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	ESimulationTiming                             SimulationTiming;                                  // 0x0331(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_332[0x76E];                                    // 0x0332(0x076E)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_332[0x86E];                                    // 0x0332(0x086E)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FAnimNode_RigidBody;
 

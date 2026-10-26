@@ -16,18 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_HUDOverlay_QuestWidget_C::Destruct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_HUDOverlay_QuestWidget.WBP_HUDOverlay_QuestWidget_C.ExecuteUbergraph_WBP_HUDOverlay_QuestWidget
 // (Final, UbergraphFunction)
 // Parameters:

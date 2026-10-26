@@ -18,23 +18,36 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ArmorChunkInitialized
-// 0x0054 (0x0054 - 0x0000)
-struct WBP_UI_ArmorChunkButton_C_ArmorChunkInitialized final
-{
-public:
-	struct FSBZArmorChunkTypeData                 InArmorChunkData;                                  // 0x0000(0x0054)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_ArmorChunkInitialized;
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ButtonFocusedChanged
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged final
+struct WBP_UI_ArmorChunkButton_C_PreConstruct final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_PreConstruct;
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnFocusChanged
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_ArmorChunkButton_C_OnFocusChanged final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_OnFocusChanged;
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnEquippedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ArmorChunkButton_C_OnEquippedChanged final
+{
+public:
+	bool                                          bInIsEquipped_OnEquippedChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_OnEquippedChanged;
 
 // Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ExecuteUbergraph_WBP_UI_ArmorChunkButton
 // 0x00E8 (0x00E8 - 0x0000)
@@ -70,36 +83,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_ExecuteUbergraph_WBP_UI_ArmorChunkButton;
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnEquippedChanged
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ArmorChunkButton_C_OnEquippedChanged final
+struct WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bInIsEquipped;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_OnEquippedChanged;
+DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged;
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnFocusChanged
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_ArmorChunkButton_C_OnFocusChanged final
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ArmorChunkInitialized
+// 0x0054 (0x0054 - 0x0000)
+struct WBP_UI_ArmorChunkButton_C_ArmorChunkInitialized final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZArmorChunkTypeData                 InArmorChunkData_ArmorChunkInitialized;            // 0x0000(0x0054)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_OnFocusChanged;
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ArmorChunkButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_ArmorChunkButton_C_ArmorChunkInitialized;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -30,10 +30,10 @@ public:
 	class FText                                   PreviewText_Source;                                // 0x0328(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_WBP_ItemDescription_Description(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SetText_Description(const class FText& Text);
 	void SetText_Source(const class FText& Text);
+	void SetText_Description(const class FText& Text);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_ItemDescription_Description(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

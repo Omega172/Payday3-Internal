@@ -16,40 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_ConfirmationPopup_InventoryItemDisplay_C_ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            K2Node_CustomEvent_InventoryItem;                  // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         K2Node_CustomEvent_Cost;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCurrencyCode                              K2Node_CustomEvent_Currency;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         K2Node_CustomEvent_DiscountedPrice;                // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_DiscountedAmount;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_DiscountedPercentage;           // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0030(0x0010)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ConfirmationPopup_InventoryItemDisplay_C_ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay;
-
-// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.InitializeItem
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_ConfirmationPopup_InventoryItemDisplay_C_InitializeItem final
-{
-public:
-	const class USBZInventoryBaseData*            InventoryItem;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int64                                         Cost;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCurrencyCode                              Currency;                                          // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         DiscountedPrice;                                   // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DiscountedAmount;                                  // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DiscountedPercentage;                              // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ConfirmationPopup_InventoryItemDisplay_C_InitializeItem;
-
 // Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.SetPrice
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_ConfirmationPopup_InventoryItemDisplay_C_SetPrice final
@@ -69,6 +35,40 @@ public:
 	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0028(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_ConfirmationPopup_InventoryItemDisplay_C_SetPrice;
+
+// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.InitializeItem
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_ConfirmationPopup_InventoryItemDisplay_C_InitializeItem final
+{
+public:
+	const class USBZInventoryBaseData*            InventoryItem;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int64                                         Cost;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCurrencyCode                              Currency;                                          // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         DiscountedPrice;                                   // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DiscountedAmount;                                  // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DiscountedPercentage;                              // 0x0024(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ConfirmationPopup_InventoryItemDisplay_C_InitializeItem;
+
+// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_ConfirmationPopup_InventoryItemDisplay_C_ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            K2Node_CustomEvent_InventoryItem;                  // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int64                                         K2Node_CustomEvent_Cost;                           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCurrencyCode                              K2Node_CustomEvent_Currency;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         K2Node_CustomEvent_DiscountedPrice;                // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_DiscountedAmount;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_DiscountedPercentage;           // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0030(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ConfirmationPopup_InventoryItemDisplay_C_ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

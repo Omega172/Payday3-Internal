@@ -16,78 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetSprite
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UPaperSprite*               Sprite                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomSpriteInputKey_C::SetSprite(const class UPaperSprite* Sprite)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSprite", FnName));
-
-	Params::WBP_CustomSpriteInputKey_C_SetSprite Parms{};
-
-	Parms.Sprite = Sprite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetInverted
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInInverted_SetInverted                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomSpriteInputKey_C::SetInverted(bool bInInverted_SetInverted)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInverted", FnName));
-
-	Params::WBP_CustomSpriteInputKey_C_SetInverted Parms{};
-
-	Parms.bInInverted_SetInverted = bInInverted_SetInverted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomSpriteInputKey_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_CustomSpriteInputKey_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.OnKeyIconChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     NewActionKeyIcon_OnKeyIconChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomSpriteInputKey_C::OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon_OnKeyIconChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnKeyIconChanged", FnName));
-
-	Params::WBP_CustomSpriteInputKey_C_OnKeyIconChanged Parms{};
-
-	Parms.NewActionKeyIcon_OnKeyIconChanged = NewActionKeyIcon_OnKeyIconChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.ExecuteUbergraph_WBP_CustomSpriteInputKey
 // (Final, UbergraphFunction)
 // Parameters:
@@ -101,6 +29,78 @@ void UWBP_CustomSpriteInputKey_C::ExecuteUbergraph_WBP_CustomSpriteInputKey(int3
 	Params::WBP_CustomSpriteInputKey_C_ExecuteUbergraph_WBP_CustomSpriteInputKey Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.OnKeyIconChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     NewActionKeyIcon                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteInputKey_C::OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnKeyIconChanged", FnName));
+
+	Params::WBP_CustomSpriteInputKey_C_OnKeyIconChanged Parms{};
+
+	Parms.NewActionKeyIcon = NewActionKeyIcon;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteInputKey_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_CustomSpriteInputKey_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetInverted
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInInverted                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteInputKey_C::SetInverted(bool bInInverted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInverted", FnName));
+
+	Params::WBP_CustomSpriteInputKey_C_SetInverted Parms{};
+
+	Parms.bInInverted = bInInverted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomSpriteInputKey.WBP_CustomSpriteInputKey_C.SetSprite
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UPaperSprite*               Sprite                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomSpriteInputKey_C::SetSprite(const class UPaperSprite* Sprite)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSprite", FnName));
+
+	Params::WBP_CustomSpriteInputKey_C_SetSprite Parms{};
+
+	Parms.Sprite = Sprite;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

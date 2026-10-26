@@ -16,40 +16,193 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.AddButtonFromDeco
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSlotItemDecorator*            SlotDecorator                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bAddSlotText                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWBP_ItemButton_C*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.UpdateWeaponDisplay
+// (BlueprintCallable, BlueprintEvent)
 
-class UWBP_ItemButton_C* UWBP_ModSlotScreen_C::AddButtonFromDeco(class USBZSlotItemDecorator* SlotDecorator, bool bAddSlotText)
+void UWBP_ModSlotScreen_C::UpdateWeaponDisplay()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddButtonFromDeco", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateWeaponDisplay", FnName));
 
-	Params::WBP_ModSlotScreen_C_AddButtonFromDeco Parms{};
-
-	Parms.SlotDecorator = SlotDecorator;
-	Parms.bAddSlotText = bAddSlotText;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.UpdateModInfo
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            ItemData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::UpdateModInfo(class USBZInventoryBaseData* ItemData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateModInfo", FnName));
+
+	Params::WBP_ModSlotScreen_C_UpdateModInfo Parms{};
+
+	Parms.ItemData = ItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ShowSlots
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModSlotScreen_C::ShowSlots()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowSlots", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ShowMods
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModSlotScreen_C::ShowMods()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowMods", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.SetupWeaponSlot
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   SlotIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEquippableLoadoutSlot               ItemCategory                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::SetupWeaponSlot(int32 SlotIndex, ESBZEquippableLoadoutSlot ItemCategory)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupWeaponSlot", FnName));
+
+	Params::WBP_ModSlotScreen_C_SetupWeaponSlot Parms{};
+
+	Parms.SlotIndex = SlotIndex;
+	Parms.ItemCategory = ItemCategory;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.RefreshSlotButtons
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModSlotScreen_C::RefreshSlotButtons()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSlotButtons", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_EB4572904A1FF447AB18B0B9377C564C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::PrePush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_EB4572904A1FF447AB18B0B9377C564C", FnName));
+
+	Params::WBP_ModSlotScreen_C_PrePush_EB4572904A1FF447AB18B0B9377C564C Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_B78C6D19499C91674E07B0AD948FE8F2
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::PrePush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_B78C6D19499C91674E07B0AD948FE8F2", FnName));
+
+	Params::WBP_ModSlotScreen_C_PrePush_B78C6D19499C91674E07B0AD948FE8F2 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ModSlotScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_EB4572904A1FF447AB18B0B9377C564C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::PostPush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_EB4572904A1FF447AB18B0B9377C564C", FnName));
+
+	Params::WBP_ModSlotScreen_C_PostPush_EB4572904A1FF447AB18B0B9377C564C Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_B78C6D19499C91674E07B0AD948FE8F2
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::PostPush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_B78C6D19499C91674E07B0AD948FE8F2", FnName));
+
+	Params::WBP_ModSlotScreen_C_PostPush_B78C6D19499C91674E07B0AD948FE8F2 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnSlotButtonSelected_Event
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_ModSlotScreen_C::OnSlotButtonSelected_Event(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSlotButtonSelected_Event", FnName));
 
-	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_ModSlotScreen_C_OnSlotButtonSelected_Event Parms{};
 
 	Parms.Button = Button;
 
@@ -57,115 +210,126 @@ void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_Componen
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ModSlotScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_ModSlotScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnEquippedPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ModSlotScreen_C::OnEquippedPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEquippedPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnControlsReferencePressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::OnControlsReferencePressed(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferencePressed", FnName));
+
+	Params::WBP_ModSlotScreen_C_OnControlsReferencePressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnButtonFocusedChanged_Event
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_ModSlotScreen_C::OnButtonFocusedChanged_Event(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonFocusedChanged_Event", FnName));
 
-	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_ModSlotScreen_C_OnButtonFocusedChanged_Event Parms{};
 
 	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.MakeControlsReference
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FSBZButtonControlsReference*     ControlsReference                                      (Parm, OutParm)
 
-void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
+void UWBP_ModSlotScreen_C::MakeControlsReference(struct FSBZButtonControlsReference* ControlsReference)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MakeControlsReference", FnName));
 
-	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
+	Params::WBP_ModSlotScreen_C_MakeControlsReference Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (ControlsReference != nullptr)
+		*ControlsReference = std::move(Parms.ControlsReference);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.InitSlots
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
+void UWBP_ModSlotScreen_C::InitSlots()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitSlots", FnName));
 
-	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllMods
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZEquippableConfig&      EquippableConfig                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const class USBZModularPartSlotBase*    ModSlot                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.InitReturnFromGoto
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModSlotScreen_C::CreateAllMods(const struct FSBZEquippableConfig& EquippableConfig, const class USBZModularPartSlotBase* ModSlot)
+void UWBP_ModSlotScreen_C::InitReturnFromGoto()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateAllMods", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitReturnFromGoto", FnName));
 
-	Params::WBP_ModSlotScreen_C_CreateAllMods Parms{};
-
-	Parms.EquippableConfig = std::move(EquippableConfig);
-	Parms.ModSlot = ModSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllSlots
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZEquippableConfig&      EquippableConfig                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_ModSlotScreen_C::CreateAllSlots(const struct FSBZEquippableConfig& EquippableConfig)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateAllSlots", FnName));
-
-	Params::WBP_ModSlotScreen_C_CreateAllSlots Parms{};
-
-	Parms.EquippableConfig = std::move(EquippableConfig);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ExecuteUbergraph_WBP_ModSlotScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::ExecuteUbergraph_WBP_ModSlotScreen(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ModSlotScreen_C", "ExecuteUbergraph_WBP_ModSlotScreen", FuncInfo);
-
-	Params::WBP_ModSlotScreen_C_ExecuteUbergraph_WBP_ModSlotScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -191,140 +355,111 @@ void UWBP_ModSlotScreen_C::FindButtonChild(class UPanelWidget* Widget, class USB
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.InitReturnFromGoto
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::InitReturnFromGoto()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitReturnFromGoto", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.InitSlots
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::InitSlots()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitSlots", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.MakeControlsReference
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ExecuteUbergraph_WBP_ModSlotScreen
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// struct FSBZButtonControlsReference*     ControlsReference                                      (Parm, OutParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::MakeControlsReference(struct FSBZButtonControlsReference* ControlsReference)
+void UWBP_ModSlotScreen_C::ExecuteUbergraph_WBP_ModSlotScreen(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MakeControlsReference", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ModSlotScreen_C", "ExecuteUbergraph_WBP_ModSlotScreen", FuncInfo);
 
-	Params::WBP_ModSlotScreen_C_MakeControlsReference Parms{};
+	Params::WBP_ModSlotScreen_C_ExecuteUbergraph_WBP_ModSlotScreen Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ControlsReference != nullptr)
-		*ControlsReference = std::move(Parms.ControlsReference);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnButtonFocusedChanged_Event
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::OnButtonFocusedChanged_Event(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonFocusedChanged_Event", FnName));
-
-	Params::WBP_ModSlotScreen_C_OnButtonFocusedChanged_Event Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnControlsReferencePressed
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllSlots
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZEquippableConfig&      EquippableConfig                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_ModSlotScreen_C::OnControlsReferencePressed(class FName ActionName)
+void UWBP_ModSlotScreen_C::CreateAllSlots(const struct FSBZEquippableConfig& EquippableConfig)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferencePressed", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateAllSlots", FnName));
 
-	Params::WBP_ModSlotScreen_C_OnControlsReferencePressed Parms{};
+	Params::WBP_ModSlotScreen_C_CreateAllSlots Parms{};
 
-	Parms.ActionName = ActionName;
+	Parms.EquippableConfig = std::move(EquippableConfig);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnEquippedPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::OnEquippedPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEquippedPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllMods
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZEquippableConfig&      EquippableConfig                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZModularPartSlotBase*    ModSlot                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_ModSlotScreen_C::CreateAllMods(const struct FSBZEquippableConfig& EquippableConfig, const class USBZModularPartSlotBase* ModSlot)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateAllMods", FnName));
 
-	Params::WBP_ModSlotScreen_C_OnGainedStackFocused Parms{};
+	Params::WBP_ModSlotScreen_C_CreateAllMods Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.EquippableConfig = std::move(EquippableConfig);
+	Parms.ModSlot = ModSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::OnLostStackFocused()
+void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnSlotButtonSelected_Event
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature", FnName));
+
+	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::OnSlotButtonSelected_Event(class USBZMenuButton* Button)
+void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSlotButtonSelected_Event", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_ModSlotScreen_C_OnSlotButtonSelected_Event Parms{};
+	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -332,179 +467,44 @@ void UWBP_ModSlotScreen_C::OnSlotButtonSelected_Event(class USBZMenuButton* Butt
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_B78C6D19499C91674E07B0AD948FE8F2
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::PostPush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_ModSlotScreen_C::BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_B78C6D19499C91674E07B0AD948FE8F2", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_ModSlotScreen_C_PostPush_B78C6D19499C91674E07B0AD948FE8F2 Parms{};
+	Params::WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.MenuWidget = MenuWidget;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_EB4572904A1FF447AB18B0B9377C564C
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.AddButtonFromDeco
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZSlotItemDecorator*            SlotDecorator                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bAddSlotText                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_ItemButton_C*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModSlotScreen_C::PostPush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget)
+class UWBP_ItemButton_C* UWBP_ModSlotScreen_C::AddButtonFromDeco(class USBZSlotItemDecorator* SlotDecorator, bool bAddSlotText)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_EB4572904A1FF447AB18B0B9377C564C", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddButtonFromDeco", FnName));
 
-	Params::WBP_ModSlotScreen_C_PostPush_EB4572904A1FF447AB18B0B9377C564C Parms{};
+	Params::WBP_ModSlotScreen_C_AddButtonFromDeco Parms{};
 
-	Parms.MenuWidget = MenuWidget;
+	Parms.SlotDecorator = SlotDecorator;
+	Parms.bAddSlotText = bAddSlotText;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ModSlotScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_B78C6D19499C91674E07B0AD948FE8F2
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::PrePush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_B78C6D19499C91674E07B0AD948FE8F2", FnName));
-
-	Params::WBP_ModSlotScreen_C_PrePush_B78C6D19499C91674E07B0AD948FE8F2 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_EB4572904A1FF447AB18B0B9377C564C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::PrePush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_EB4572904A1FF447AB18B0B9377C564C", FnName));
-
-	Params::WBP_ModSlotScreen_C_PrePush_EB4572904A1FF447AB18B0B9377C564C Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.RefreshSlotButtons
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::RefreshSlotButtons()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSlotButtons", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.SetupWeaponSlot
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SlotIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZEquippableLoadoutSlot               ItemCategory_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::SetupWeaponSlot(int32 SlotIndex, ESBZEquippableLoadoutSlot ItemCategory_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupWeaponSlot", FnName));
-
-	Params::WBP_ModSlotScreen_C_SetupWeaponSlot Parms{};
-
-	Parms.SlotIndex = SlotIndex;
-	Parms.ItemCategory_0 = ItemCategory_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ShowMods
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::ShowMods()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowMods", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ShowSlots
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::ShowSlots()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowSlots", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.UpdateModInfo
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            ItemData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModSlotScreen_C::UpdateModInfo(class USBZInventoryBaseData* ItemData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateModInfo", FnName));
-
-	Params::WBP_ModSlotScreen_C_UpdateModInfo Parms{};
-
-	Parms.ItemData = ItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.UpdateWeaponDisplay
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ModSlotScreen_C::UpdateWeaponDisplay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateWeaponDisplay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
+	return Parms.ReturnValue;
 }
 
 

@@ -17,27 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageInitialized
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CrimebondGridPage_C_BP_OnPageInitialized final
-{
-public:
-	int32                                         InPageIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   InPageTitle;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FSBZCrimeBondProgression               Progression;                                       // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CrimebondGridPage_C_BP_OnPageInitialized;
-
-// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageProgressChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondGridPage_C_BP_OnPageProgressChanged final
-{
-public:
-	struct FSBZCrimeBondProgression               Progression;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_CrimebondGridPage_C_BP_OnPageProgressChanged;
-
 // Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.ExecuteUbergraph_WBP_CrimebondGridPage
 // 0x0278 (0x0278 - 0x0000)
 struct WBP_CrimebondGridPage_C_ExecuteUbergraph_WBP_CrimebondGridPage final
@@ -72,6 +51,27 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0268(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_CrimebondGridPage_C_ExecuteUbergraph_WBP_CrimebondGridPage;
+
+// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageProgressChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondGridPage_C_BP_OnPageProgressChanged final
+{
+public:
+	struct FSBZCrimeBondProgression               Progression_BP_OnPageProgressChanged;              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CrimebondGridPage_C_BP_OnPageProgressChanged;
+
+// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageInitialized
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CrimebondGridPage_C_BP_OnPageInitialized final
+{
+public:
+	int32                                         InPageIndex_BP_OnPageInitialized;                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   InPageTitle_BP_OnPageInitialized;                  // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FSBZCrimeBondProgression               Progression_BP_OnPageInitialized;                  // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_CrimebondGridPage_C_BP_OnPageInitialized;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

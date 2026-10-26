@@ -38,20 +38,20 @@ public:
 	class UWBP_UI_Preplanning_MainMenu_C*         PreplanningMenuParent;                             // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdatePreplanningDescription(class USBZPreplanningAssetData* InPreplanning);
 	void SetSoloModeVisuals();
 	void ResetPreplanningSelection();
-	void UpdatePreplanningDescription(class USBZPreplanningAssetData* InPreplanning);
-	void GetPlayerIndex(const struct FUniqueNetIdRepl& InPlayerID, int32* Index_0);
-	void OnPreplanningAssetAddedByPlayer(const struct FUniqueNetIdRepl& PlayerID, const class USBZPreplanningAssetData* PreplanningAsset);
-	void OnPreplanningAssetRemovedByPlayer(const struct FUniqueNetIdRepl& PlayerID);
-	void OnInitialized();
-	void OnPrePlanningItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
-	void OnControlsReferenceClicked(class FName InActionInput);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnPreplanningSelectionEnabledChanged(bool bEnabled_OnPreplanningSelectionEnabledChanged);
+	void OnPrePlanningItemButtonFocused(class USBZMenuButton* InButton_OnPrePlanningItemButtonFocused, bool bIsFocused_OnPrePlanningItemButtonFocused);
+	void OnPreplanningAssetRemovedByPlayer(const struct FUniqueNetIdRepl& PlayerID_OnPreplanningAssetRemovedByPlayer);
 	void OnPreplanningAssetDeclinedByServer();
-	void PreConstruct(bool IsDesignTime);
-	void OnPreplanningSelectionEnabledChanged(bool bEnabled);
-	void Destruct();
+	void OnPreplanningAssetAddedByPlayer(const struct FUniqueNetIdRepl& PlayerID_OnPreplanningAssetAddedByPlayer, const class USBZPreplanningAssetData* PreplanningAsset_OnPreplanningAssetAddedByPlayer);
+	void OnInitialized();
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void GetPlayerIndex(const struct FUniqueNetIdRepl& InPlayerID, int32* Index_0);
 	void ExecuteUbergraph_WBP_UI_PreplanningItemSelection(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

@@ -16,21 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots
-// (Final, UbergraphFunction)
+// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CosmeticButtonSprayCanSlots_C::ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots(int32 EntryPoint)
+void UWBP_UI_CosmeticButtonSprayCanSlots_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CosmeticButtonSprayCanSlots_C", "ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots Parms{};
+	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.OnCosmeticItemDataInitialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_CosmeticButtonSprayCanSlots_C::OnCosmeticItemDataInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCosmeticItemDataInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -52,31 +64,19 @@ void UWBP_UI_CosmeticButtonSprayCanSlots_C::HoverChangedVisuals(bool bIsHovered)
 }
 
 
-// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.OnCosmeticItemDataInitialized
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_CosmeticButtonSprayCanSlots_C::OnCosmeticItemDataInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCosmeticItemDataInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CosmeticButtonSprayCanSlots_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_CosmeticButtonSprayCanSlots_C::ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CosmeticButtonSprayCanSlots_C", "ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots", FuncInfo);
 
-	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct Parms{};
+	Params::WBP_UI_CosmeticButtonSprayCanSlots_C_ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

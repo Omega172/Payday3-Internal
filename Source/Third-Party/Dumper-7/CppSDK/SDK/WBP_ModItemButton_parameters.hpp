@@ -14,6 +14,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_ModItemButton.WBP_ModItemButton_C.SetSlot
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModItemButton_C_SetSlot final
+{
+public:
+	const class USBZModularPartSlotBase*          SlotData;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModItemButton_C_SetSlot;
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.SetItemData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModItemButton_C_SetItemData final
+{
+public:
+	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModItemButton_C_SetItemData;
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ModItemButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModItemButton_C_PreConstruct;
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModItemButton_C_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject_OnListItemObjectSet;                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModItemButton_C_OnListItemObjectSet;
+
 // Function WBP_ModItemButton.WBP_ModItemButton_C.ExecuteUbergraph_WBP_ModItemButton
 // 0x0078 (0x0078 - 0x0000)
 struct WBP_ModItemButton_C_ExecuteUbergraph_WBP_ModItemButton final
@@ -40,42 +76,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ModItemButton_C_ExecuteUbergraph_WBP_ModItemButton;
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.OnListItemObjectSet
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModItemButton_C_OnListItemObjectSet final
-{
-public:
-	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModItemButton_C_OnListItemObjectSet;
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ModItemButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModItemButton_C_PreConstruct;
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.SetItemData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModItemButton_C_SetItemData final
-{
-public:
-	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModItemButton_C_SetItemData;
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.SetSlot
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModItemButton_C_SetSlot final
-{
-public:
-	const class USBZModularPartSlotBase*          SlotData;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModItemButton_C_SetSlot;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

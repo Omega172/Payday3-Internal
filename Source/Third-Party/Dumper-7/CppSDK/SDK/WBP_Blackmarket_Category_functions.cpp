@@ -16,55 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.ExecuteUbergraph_WBP_Blackmarket_Category
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisualsForDLCBundle
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Blackmarket_Category_C::ExecuteUbergraph_WBP_Blackmarket_Category(int32 EntryPoint)
+void UWBP_Blackmarket_Category_C::UpdateCategoryVisualsForDLCBundle()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Blackmarket_Category_C", "ExecuteUbergraph_WBP_Blackmarket_Category", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCategoryVisualsForDLCBundle", FnName));
 
-	Params::WBP_Blackmarket_Category_C_ExecuteUbergraph_WBP_Blackmarket_Category Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisuals
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZStoreItemDefaultUICategory          CategoryType_UpdateCategoryVisuals                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_Category_C::PreConstruct(bool IsDesignTime)
+void UWBP_Blackmarket_Category_C::UpdateCategoryVisuals(ESBZStoreItemDefaultUICategory CategoryType_UpdateCategoryVisuals)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCategoryVisuals", FnName));
 
-	Params::WBP_Blackmarket_Category_C_PreConstruct Parms{};
+	Params::WBP_Blackmarket_Category_C_UpdateCategoryVisuals Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.SetStoreCategoryName
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      InCategoryName                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Blackmarket_Category_C::SetStoreCategoryName(const class FText& InCategoryName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStoreCategoryName", FnName));
-
-	Params::WBP_Blackmarket_Category_C_SetStoreCategoryName Parms{};
-
-	Parms.InCategoryName = std::move(InCategoryName);
+	Parms.CategoryType_UpdateCategoryVisuals = CategoryType_UpdateCategoryVisuals;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -82,33 +58,57 @@ void UWBP_Blackmarket_Category_C::UpdateCategoryDefaultVisuals()
 }
 
 
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisuals
-// (Event, Public, BlueprintEvent)
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.SetStoreCategoryName
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// ESBZStoreItemDefaultUICategory          CategoryType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InCategoryName_SetStoreCategoryName                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Blackmarket_Category_C::UpdateCategoryVisuals(ESBZStoreItemDefaultUICategory CategoryType)
+void UWBP_Blackmarket_Category_C::SetStoreCategoryName(const class FText& InCategoryName_SetStoreCategoryName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCategoryVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStoreCategoryName", FnName));
 
-	Params::WBP_Blackmarket_Category_C_UpdateCategoryVisuals Parms{};
+	Params::WBP_Blackmarket_Category_C_SetStoreCategoryName Parms{};
 
-	Parms.CategoryType = CategoryType;
+	Parms.InCategoryName_SetStoreCategoryName = std::move(InCategoryName_SetStoreCategoryName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisualsForDLCBundle
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_Category_C::UpdateCategoryVisualsForDLCBundle()
+void UWBP_Blackmarket_Category_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCategoryVisualsForDLCBundle", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Blackmarket_Category_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.ExecuteUbergraph_WBP_Blackmarket_Category
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Blackmarket_Category_C::ExecuteUbergraph_WBP_Blackmarket_Category(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Blackmarket_Category_C", "ExecuteUbergraph_WBP_Blackmarket_Category", FuncInfo);
+
+	Params::WBP_Blackmarket_Category_C_ExecuteUbergraph_WBP_Blackmarket_Category Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

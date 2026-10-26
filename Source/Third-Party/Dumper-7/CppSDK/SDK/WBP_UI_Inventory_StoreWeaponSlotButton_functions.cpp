@@ -16,37 +16,153 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.UpdateHighlights
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::UpdateHighlights(bool IsFocused)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHighlights", FnName));
 
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_UpdateHighlights Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.IsFocused = IsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton
-// (Final, UbergraphFunction)
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.SetPrice
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   Price                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton(int32 EntryPoint)
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::SetPrice(int64 Price, ESBZCurrencyCode Currency)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_StoreWeaponSlotButton_C", "ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPrice", FnName));
 
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton Parms{};
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_SetPrice Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Price = Price;
+	Parms.Currency = Currency;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionProgressChanged
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTransactionProgressChanged", FnName));
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnTransactionProgressChanged Parms{};
+
+	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionInProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsTransactionInProgress                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionInProgress(bool bIsTransactionInProgress)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTransactionInProgress", FnName));
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnTransactionInProgress Parms{};
+
+	Parms.bIsTransactionInProgress = bIsTransactionInProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnPlayerStoreItemDataIntialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnPlayerStoreItemDataIntialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerStoreItemDataIntialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnHover(bool bIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.InitializeItemData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::InitializeItemData(class USBZInventoryBaseData* InItemData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeItemData", FnName));
+
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_InitializeItemData Parms{};
+
+	Parms.InItemData = InItemData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -74,153 +190,37 @@ void UWBP_UI_Inventory_StoreWeaponSlotButton_C::GetColorByCurrency(ESBZCurrencyC
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.InitializeItemData
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZInventoryBaseData*            InItemData                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::InitializeItemData(class USBZInventoryBaseData* InItemData)
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeItemData", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_StoreWeaponSlotButton_C", "ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton", FuncInfo);
 
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_InitializeItemData Parms{};
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton Parms{};
 
-	Parms.InItemData = InItemData;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnHover(bool bIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnHover Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnPlayerStoreItemDataIntialized
+// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnPlayerStoreItemDataIntialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerStoreItemDataIntialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionInProgress
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsTransactionInProgress                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionInProgress(bool bIsTransactionInProgress)
+void UWBP_UI_Inventory_StoreWeaponSlotButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTransactionInProgress", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnTransactionInProgress Parms{};
+	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.bIsTransactionInProgress = bIsTransactionInProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.OnTransactionProgressChanged
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bInIsTransactionInProgress                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::OnTransactionProgressChanged(bool bInIsTransactionInProgress)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTransactionProgressChanged", FnName));
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_OnTransactionProgressChanged Parms{};
-
-	Parms.bInIsTransactionInProgress = bInIsTransactionInProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.SetPrice
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int64                                   Price                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::SetPrice(int64 Price, ESBZCurrencyCode Currency)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPrice", FnName));
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_SetPrice Parms{};
-
-	Parms.Price = Price;
-	Parms.Currency = Currency;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_StoreWeaponSlotButton.WBP_UI_Inventory_StoreWeaponSlotButton_C.UpdateHighlights
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_StoreWeaponSlotButton_C::UpdateHighlights(bool IsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHighlights", FnName));
-
-	Params::WBP_UI_Inventory_StoreWeaponSlotButton_C_UpdateHighlights Parms{};
-
-	Parms.IsFocused = IsFocused;
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

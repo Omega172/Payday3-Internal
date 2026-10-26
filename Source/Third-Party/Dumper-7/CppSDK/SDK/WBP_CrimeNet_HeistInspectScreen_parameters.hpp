@@ -17,90 +17,107 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.Update Level Data
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_Update_Level_Data final
+{
+public:
+	ESBZDifficulty                                Difficulty;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
+	int32                                         CallFunc_GetEstimatedPayout_OutMin;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetEstimatedPayout_OutMax;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0010)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0030(0x0010)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_Update_Level_Data;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetSpeak
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_SetSpeak final
+{
+public:
+	bool                                          ContractorSpeak;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_SetSpeak;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetMatchmakingState
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_SetMatchmakingState final
+{
+public:
+	bool                                          Force_Disable_Matchmaking;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMatchmakingInProgress_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_SetMatchmakingState;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.RefreshVisuals
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_RefreshVisuals final
+{
+public:
+	class USBZGameUserSettings*                   CallFunc_GetSBZGameUserSettings_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_GetMatchmakingDifficulty_ReturnValue;     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSoloGameEnabled_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMatchmakingInProgress_ReturnValue;      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_RefreshVisuals;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_PreConstruct;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_OnGainedStackFocused final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnGainedStackFocused;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnControlsReferenceClicked
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_OnControlsReferenceClicked final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x001C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnControlsReferenceClicked;
 
 // Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen
 // 0x0798 (0x0798 - 0x0000)
@@ -257,107 +274,90 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_ExecuteUbergraph_WBP_CrimeNet_HeistInspectScreen;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnControlsReferenceClicked
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x001C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnControlsReferenceClicked;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnGainedStackFocused;
-
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE final
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_4D2A4C6A460D9ECC6C9D1F94C7CF8CEE;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_ProceedSoloButton_InspectScreen_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA final
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_OnLoaded_9A4672FA4EFD9FA6EFBA1DAC3B9AF7BA;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_PreConstruct final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.RefreshVisuals
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_RefreshVisuals final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZGameUserSettings*                   CallFunc_GetSBZGameUserSettings_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_GetMatchmakingDifficulty_ReturnValue;     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSoloGameEnabled_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMatchmakingInProgress_ReturnValue;      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_RefreshVisuals;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_GenericContainerButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetMatchmakingState
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_SetMatchmakingState final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature final
 {
 public:
-	bool                                          Force_Disable_Matchmaking;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMatchmakingInProgress_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_SetMatchmakingState;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.SetSpeak
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_SetSpeak final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	bool                                          ContractorSpeak;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_SetSpeak;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_DifficultySelectorWidget_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.Update Level Data
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_CrimeNet_HeistInspectScreen_C_Update_Level_Data final
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	ESBZDifficulty                                Difficulty;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
-	int32                                         CallFunc_GetEstimatedPayout_OutMin;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetEstimatedPayout_OutMax;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0010)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0030(0x0010)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_Update_Level_Data;
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_CrimeNet_HeistInspectScreen.WBP_CrimeNet_HeistInspectScreen_C.BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimeNet_HeistInspectScreen_C_BndEvt__WBP_CrimeNet_HeistInspectScreen_WBP_UI_CancelMatchmakeButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

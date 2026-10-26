@@ -16,24 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InstantLoot_Base.BP_InstantLoot_Base_C.ExecuteUbergraph_BP_InstantLoot_Base
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_InstantLoot_Base_C::ExecuteUbergraph_BP_InstantLoot_Base(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "BP_InstantLoot_Base_C", "ExecuteUbergraph_BP_InstantLoot_Base", FuncInfo);
-
-	Params::BP_InstantLoot_Base_C_ExecuteUbergraph_BP_InstantLoot_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_InstantLoot_Base.BP_InstantLoot_Base_C.setBinaryState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -49,6 +31,24 @@ void ABP_InstantLoot_Base_C::setBinaryState(bool state, bool doCosmetics)
 
 	Parms.state = state;
 	Parms.doCosmetics = doCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InstantLoot_Base.BP_InstantLoot_Base_C.ExecuteUbergraph_BP_InstantLoot_Base
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InstantLoot_Base_C::ExecuteUbergraph_BP_InstantLoot_Base(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InstantLoot_Base_C", "ExecuteUbergraph_BP_InstantLoot_Base", FuncInfo);
+
+	Params::BP_InstantLoot_Base_C_ExecuteUbergraph_BP_InstantLoot_Base Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

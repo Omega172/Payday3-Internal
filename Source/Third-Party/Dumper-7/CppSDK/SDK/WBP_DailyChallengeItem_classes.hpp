@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -71,26 +71,26 @@ public:
 	double                                        In_Time;                                           // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_DailyChallengeItem_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button_0);
-	void BndEvt__WBP_DailyChallenges_ChallengeButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button_0, bool bIsEnabled_0);
-	void Construct();
-	void ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse);
-	void ExecuteUbergraph_WBP_DailyChallengeItem(int32 EntryPoint);
-	void InitializeChallenge(const struct FSBZChallengeData& InChallengeData);
-	void OnChallengeItemReset();
-	void OnChallengeRerollPressed();
-	void OnInstallGame(bool bIsGameInstallPending);
-	void PreConstruct(bool IsDesignTime);
-	void SetChallengeText(const struct FSBZChallengeData& ChallengeData);
-	void SetFocused(bool IsFocused);
-	void SetIsCompleted(bool InCompleted);
-	void SetProgressBarPercentage(int32 Progress, int32 TotalProgress);
-	void SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse);
-	void SetProgressText();
-	void SetResetAvailable(bool InResetAvailable);
-	void SetupCurrencyReward();
-	void SetupInfamyReward();
 	void SetupProgress();
+	void SetupInfamyReward();
+	void SetupCurrencyReward();
+	void SetResetAvailable(bool InResetAvailable);
+	void SetProgressText();
+	void SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse);
+	void SetProgressBarPercentage(int32 Progress, int32 TotalProgress);
+	void SetIsCompleted(bool InCompleted);
+	void SetFocused(bool IsFocused);
+	void SetChallengeText(const struct FSBZChallengeData& ChallengeData);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnInstallGame(bool bIsGameInstallPending);
+	void OnChallengeRerollPressed();
+	void OnChallengeItemReset();
+	void InitializeChallenge(const struct FSBZChallengeData& InChallengeData);
+	void ExecuteUbergraph_WBP_DailyChallengeItem(int32 EntryPoint);
+	void ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse);
+	void Construct();
+	void BndEvt__WBP_DailyChallenges_ChallengeButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_DailyChallengeItem_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

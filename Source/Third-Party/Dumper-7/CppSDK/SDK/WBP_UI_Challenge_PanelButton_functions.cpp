@@ -16,30 +16,114 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.UpdateVisualsBasedOnChallengeStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EChallengeStatusEnum                    InChallengeStatus                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenge_PanelButton_C::Construct()
+void UWBP_UI_Challenge_PanelButton_C::UpdateVisualsBasedOnChallengeStatus(EChallengeStatusEnum InChallengeStatus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisualsBasedOnChallengeStatus", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_UpdateVisualsBasedOnChallengeStatus Parms{};
+
+	Parms.InChallengeStatus = InChallengeStatus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.UpdateRewardIconDimensions
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     Sprite                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::UpdateRewardIconDimensions(class UPaperSprite* Sprite)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateRewardIconDimensions", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_UpdateRewardIconDimensions Parms{};
+
+	Parms.Sprite = Sprite;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetWidgetSize
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenge_PanelButton_C::SetWidgetSize()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWidgetSize", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.ConvertProgressMinMaxToMeters
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetRewardValueVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InItemQuantity                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::SetRewardValueVisibility(int32 InItemQuantity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRewardValueVisibility", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetRewardValueVisibility Parms{};
+
+	Parms.InItemQuantity = InItemQuantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetRewardIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::SetRewardIcon(class UPaperSprite* InIconSprite)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRewardIcon", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetRewardIcon Parms{};
+
+	Parms.InIconSprite = InIconSprite;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetProgressText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenge_PanelButton_C::SetProgressText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgressText", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetProgressMinMax
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenge_PanelButton_C::ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse)
+void UWBP_UI_Challenge_PanelButton_C::SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ConvertProgressMinMaxToMeters", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgressMinMax", FnName));
 
-	Params::WBP_UI_Challenge_PanelButton_C_ConvertProgressMinMaxToMeters Parms{};
+	Params::WBP_UI_Challenge_PanelButton_C_SetProgressMinMax Parms{};
 
 	Parms.InMaxValueToUse = InMaxValueToUse;
 	Parms.InMinValueToUse = InMinValueToUse;
@@ -48,19 +132,185 @@ void UWBP_UI_Challenge_PanelButton_C::ConvertProgressMinMaxToMeters(int32 InMaxV
 }
 
 
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.ExecuteUbergraph_WBP_UI_Challenge_PanelButton
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetProgressBarPercentage
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TotalProgress                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenge_PanelButton_C::ExecuteUbergraph_WBP_UI_Challenge_PanelButton(int32 EntryPoint)
+void UWBP_UI_Challenge_PanelButton_C::SetProgressBarPercentage(int32 Progress, int32 TotalProgress)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Challenge_PanelButton_C", "ExecuteUbergraph_WBP_UI_Challenge_PanelButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgressBarPercentage", FnName));
 
-	Params::WBP_UI_Challenge_PanelButton_C_ExecuteUbergraph_WBP_UI_Challenge_PanelButton Parms{};
+	Params::WBP_UI_Challenge_PanelButton_C_SetProgressBarPercentage Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Progress = Progress;
+	Parms.TotalProgress = TotalProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetItemRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   InItemQuantity                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemRewardInfo", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetItemRewardInfo Parms{};
+
+	Parms.InIconSprite = InIconSprite;
+	Parms.InItemQuantity = InItemQuantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetInfamyRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InInfamyRewardPoints                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::SetInfamyRewardInfo(int32 InInfamyRewardPoints)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfamyRewardInfo", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetInfamyRewardInfo Parms{};
+
+	Parms.InInfamyRewardPoints = InInfamyRewardPoints;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetGoldRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::SetGoldRewardInfo(int32 InQuantity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetGoldRewardInfo", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetGoldRewardInfo Parms{};
+
+	Parms.InQuantity = InQuantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetCreditsRewardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::SetCreditsRewardInfo(int32 InQuantity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCreditsRewardInfo", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetCreditsRewardInfo Parms{};
+
+	Parms.InQuantity = InQuantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetChallengeName
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZChallengeData&         Challenge                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Challenge_PanelButton_C::SetChallengeName(const struct FSBZChallengeData& Challenge)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChallengeName", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetChallengeName Parms{};
+
+	Parms.Challenge = std::move(Challenge);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetChallengeDescription
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZChallengeData&         Challenge                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Challenge_PanelButton_C::SetChallengeDescription(const struct FSBZChallengeData& Challenge)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChallengeDescription", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_SetChallengeDescription Parms{};
+
+	Parms.Challenge = std::move(Challenge);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.OnLoaded_575B882949292613E393E8B9DEA74294
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_PanelButton_C::OnLoaded_575B882949292613E393E8B9DEA74294(class UObject* Loaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_575B882949292613E393E8B9DEA74294", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_OnLoaded_575B882949292613E393E8B9DEA74294 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.OnChallengeDataInititalized
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZChallengeData&         InChallengeData_OnChallengeDataInititalized            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_Challenge_PanelButton_C::OnChallengeDataInititalized(const struct FSBZChallengeData& InChallengeData_OnChallengeDataInititalized)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChallengeDataInititalized", FnName));
+
+	Params::WBP_UI_Challenge_PanelButton_C_OnChallengeDataInititalized Parms{};
+
+	Parms.InChallengeData_OnChallengeDataInititalized = std::move(InChallengeData_OnChallengeDataInititalized);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -88,202 +338,36 @@ void UWBP_UI_Challenge_PanelButton_C::IsInfamyReward(int32 InInfamyRewardPoints,
 }
 
 
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.OnChallengeDataInititalized
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.ExecuteUbergraph_WBP_UI_Challenge_PanelButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FSBZChallengeData&         InChallengeData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenge_PanelButton_C::OnChallengeDataInititalized(const struct FSBZChallengeData& InChallengeData)
+void UWBP_UI_Challenge_PanelButton_C::ExecuteUbergraph_WBP_UI_Challenge_PanelButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChallengeDataInititalized", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Challenge_PanelButton_C", "ExecuteUbergraph_WBP_UI_Challenge_PanelButton", FuncInfo);
 
-	Params::WBP_UI_Challenge_PanelButton_C_OnChallengeDataInititalized Parms{};
+	Params::WBP_UI_Challenge_PanelButton_C_ExecuteUbergraph_WBP_UI_Challenge_PanelButton Parms{};
 
-	Parms.InChallengeData = std::move(InChallengeData);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.OnLoaded_575B882949292613E393E8B9DEA74294
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::OnLoaded_575B882949292613E393E8B9DEA74294(class UObject* Loaded)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_575B882949292613E393E8B9DEA74294", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_OnLoaded_575B882949292613E393E8B9DEA74294 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetChallengeDescription
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZChallengeData&         Challenge                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_Challenge_PanelButton_C::SetChallengeDescription(const struct FSBZChallengeData& Challenge)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChallengeDescription", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetChallengeDescription Parms{};
-
-	Parms.Challenge = std::move(Challenge);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetChallengeName
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZChallengeData&         Challenge                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_Challenge_PanelButton_C::SetChallengeName(const struct FSBZChallengeData& Challenge)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChallengeName", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetChallengeName Parms{};
-
-	Parms.Challenge = std::move(Challenge);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetCreditsRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetCreditsRewardInfo(int32 InQuantity)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCreditsRewardInfo", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetCreditsRewardInfo Parms{};
-
-	Parms.InQuantity = InQuantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetGoldRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InQuantity                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetGoldRewardInfo(int32 InQuantity)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetGoldRewardInfo", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetGoldRewardInfo Parms{};
-
-	Parms.InQuantity = InQuantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetInfamyRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InInfamyRewardPoints                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetInfamyRewardInfo(int32 InInfamyRewardPoints)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfamyRewardInfo", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetInfamyRewardInfo Parms{};
-
-	Parms.InInfamyRewardPoints = InInfamyRewardPoints;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetItemRewardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   InItemQuantity                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemRewardInfo", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetItemRewardInfo Parms{};
-
-	Parms.InIconSprite = InIconSprite;
-	Parms.InItemQuantity = InItemQuantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetProgressBarPercentage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TotalProgress                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetProgressBarPercentage(int32 Progress, int32 TotalProgress)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgressBarPercentage", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetProgressBarPercentage Parms{};
-
-	Parms.Progress = Progress;
-	Parms.TotalProgress = TotalProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetProgressMinMax
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.ConvertProgressMinMaxToMeters
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   InMaxValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                                   InMinValueToUse                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenge_PanelButton_C::SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse)
+void UWBP_UI_Challenge_PanelButton_C::ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgressMinMax", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ConvertProgressMinMaxToMeters", FnName));
 
-	Params::WBP_UI_Challenge_PanelButton_C_SetProgressMinMax Parms{};
+	Params::WBP_UI_Challenge_PanelButton_C_ConvertProgressMinMaxToMeters Parms{};
 
 	Parms.InMaxValueToUse = InMaxValueToUse;
 	Parms.InMinValueToUse = InMinValueToUse;
@@ -292,99 +376,15 @@ void UWBP_UI_Challenge_PanelButton_C::SetProgressMinMax(int32 InMaxValueToUse, i
 }
 
 
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetProgressText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Challenge_PanelButton_C::SetProgressText()
+void UWBP_UI_Challenge_PanelButton_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgressText", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetRewardIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     InIconSprite                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetRewardIcon(class UPaperSprite* InIconSprite)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRewardIcon", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetRewardIcon Parms{};
-
-	Parms.InIconSprite = InIconSprite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetRewardValueVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InItemQuantity                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::SetRewardValueVisibility(int32 InItemQuantity)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRewardValueVisibility", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_SetRewardValueVisibility Parms{};
-
-	Parms.InItemQuantity = InItemQuantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.SetWidgetSize
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenge_PanelButton_C::SetWidgetSize()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWidgetSize", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.UpdateRewardIconDimensions
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     Sprite                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::UpdateRewardIconDimensions(class UPaperSprite* Sprite)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateRewardIconDimensions", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_UpdateRewardIconDimensions Parms{};
-
-	Parms.Sprite = Sprite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_PanelButton.WBP_UI_Challenge_PanelButton_C.UpdateVisualsBasedOnChallengeStatus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EChallengeStatusEnum                    InChallengeStatus                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenge_PanelButton_C::UpdateVisualsBasedOnChallengeStatus(EChallengeStatusEnum InChallengeStatus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisualsBasedOnChallengeStatus", FnName));
-
-	Params::WBP_UI_Challenge_PanelButton_C_UpdateVisualsBasedOnChallengeStatus Parms{};
-
-	Parms.InChallengeStatus = InChallengeStatus;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

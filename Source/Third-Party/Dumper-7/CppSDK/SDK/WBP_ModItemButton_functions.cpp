@@ -16,69 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ModItemButton.WBP_ModItemButton_C.ExecuteUbergraph_WBP_ModItemButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModItemButton_C::ExecuteUbergraph_WBP_ModItemButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ModItemButton_C", "ExecuteUbergraph_WBP_ModItemButton", FuncInfo);
-
-	Params::WBP_ModItemButton_C_ExecuteUbergraph_WBP_ModItemButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.OnListItemObjectSet
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModItemButton_C::OnListItemObjectSet(class UObject* ListItemObject)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemObjectSet", FnName));
-
-	Params::WBP_ModItemButton_C_OnListItemObjectSet Parms{};
-
-	Parms.ListItemObject = ListItemObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ModItemButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ModItemButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ModItemButton.WBP_ModItemButton_C.SetEmpty
+// Function WBP_ModItemButton.WBP_ModItemButton_C.SetSlot
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZModularPartSlotBase*    SlotData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModItemButton_C::SetEmpty()
+void UWBP_ModItemButton_C::SetSlot(const class USBZModularPartSlotBase* SlotData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEmpty", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSlot", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ModItemButton_C_SetSlot Parms{};
+
+	Parms.SlotData = SlotData;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -100,19 +52,67 @@ void UWBP_ModItemButton_C::SetItemData(class USBZInventoryBaseData* ItemData)
 }
 
 
-// Function WBP_ModItemButton.WBP_ModItemButton_C.SetSlot
+// Function WBP_ModItemButton.WBP_ModItemButton_C.SetEmpty
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZModularPartSlotBase*    SlotData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ModItemButton_C::SetSlot(const class USBZModularPartSlotBase* SlotData)
+void UWBP_ModItemButton_C::SetEmpty()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSlot", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEmpty", FnName));
 
-	Params::WBP_ModItemButton_C_SetSlot Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.SlotData = SlotData;
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModItemButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ModItemButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject_OnListItemObjectSet                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModItemButton_C::OnListItemObjectSet(class UObject* ListItemObject_OnListItemObjectSet)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemObjectSet", FnName));
+
+	Params::WBP_ModItemButton_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject_OnListItemObjectSet = ListItemObject_OnListItemObjectSet;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ModItemButton.WBP_ModItemButton_C.ExecuteUbergraph_WBP_ModItemButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ModItemButton_C::ExecuteUbergraph_WBP_ModItemButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ModItemButton_C", "ExecuteUbergraph_WBP_ModItemButton", FuncInfo);
+
+	Params::WBP_ModItemButton_C_ExecuteUbergraph_WBP_ModItemButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

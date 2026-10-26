@@ -30,20 +30,20 @@ public:
 	class UWBP_Mask_Customization_Slot_Button_C*  VFXButton;                                         // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_UI_Player_Customization_Mask(int32 EntryPoint);
-	class UWidget* ExitApplyButtonNavigation(EUINavigation Navigation_0);
-	class UWidget* ExitVerticalListNavigation(EUINavigation Navigation_0);
-	void NonPatternButtonPressed(class USBZMenuButton* Button);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnRemovedFromStack();
-	void RevertBodyAndEquipped();
 	void ShowMaskOnly();
+	void RevertBodyAndEquipped();
+	void OnRemovedFromStack();
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void NonPatternButtonPressed(class USBZMenuButton* Button);
+	class UWidget* ExitVerticalListNavigation(EUINavigation Navigation);
+	class UWidget* ExitApplyButtonNavigation(EUINavigation Navigation);
+	void ExecuteUbergraph_WBP_UI_Player_Customization_Mask(int32 EntryPoint);
+	void BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

@@ -20,77 +20,79 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_MenuRoot.WBP_MenuRoot_C
-// 0x0140 (0x0468 - 0x0328)
+// 0x0148 (0x0478 - 0x0330)
 class UWBP_MenuRoot_C final : public USBZMainMenuCrimeNetStackWidget
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Intro;                                             // 0x0330(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MenuRoot_SecondaryTextButton_C*    ChallengesButton;                                  // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ContentPanel_C*                    ContentPanel;                                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_PrimaryTextButton_C*      Contracts_LargetTextButton;                        // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_DailyChallengesPreview_C*          DailyChallengesPreview;                            // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_PrimaryTextButton_C*      HeisterKits_LargeTextButton;                       // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Logo_I;                                            // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_PrimaryTextButton_C*      NewLoadout_LargetTextButton;                       // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_NewsBanner_C*                      NewsBanner;                                        // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_PartyInviteInfo_C*                 PartyInviteInfo;                                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_PrimaryTextButton_C*      Play_LargeTextButton;                              // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_Crimenet_QuestButton_C*            QuestButton;                                       // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_SecondaryTextButton_C*    QuitButton;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_SecondaryTextButton_C*    SettingsButton;                                    // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_MenuRoot_SecondaryTextButton_C*    SocialsButton;                                     // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FName                                   BlackMarketStackName;                              // 0x03A8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   LoadoutStackName;                                  // 0x03B4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SocialsStackName;                                  // 0x03C0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   MoreMenuStackValue;                                // 0x03CC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   ChallengeStackName;                                // 0x03D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03E8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FName                                   SettingsStackName;                                 // 0x0410(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         FocusedButton;                                     // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            MenuControlReference;                              // 0x0428(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FName                                   QuestsStackName;                                   // 0x0450(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   BlackMarketScreen;                                 // 0x045C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0330(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       Intro;                                             // 0x0338(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MenuRoot_SecondaryTextButton_C*    ChallengesButton;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ContentPanel_C*                    ContentPanel;                                      // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_PrimaryTextButton_C*      Contracts_LargetTextButton;                        // 0x0350(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_DailyChallengesPreview_C*          DailyChallengesPreview;                            // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_PrimaryTextButton_C*      HeisterKits_LargeTextButton;                       // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Logo_I;                                            // 0x0368(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_PrimaryTextButton_C*      NewLoadout_LargetTextButton;                       // 0x0370(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_NewsBanner_C*                      NewsBanner;                                        // 0x0378(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_PartyInviteInfo_C*                 PartyInviteInfo;                                   // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_PrimaryTextButton_C*      Play_LargeTextButton;                              // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_Crimenet_QuestButton_C*            QuestButton;                                       // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_SecondaryTextButton_C*    QuitButton;                                        // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_SecondaryTextButton_C*    SettingsButton;                                    // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_MenuRoot_SecondaryTextButton_C*    SocialsButton;                                     // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_TrialShop_MainMenuButton_C*        TrialShop;                                         // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FName                                   BlackMarketStackName;                              // 0x03B8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   LoadoutStackName;                                  // 0x03C4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SocialsStackName;                                  // 0x03D0(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   MoreMenuStackValue;                                // 0x03DC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ChallengeStackName;                                // 0x03E8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3F4[0x4];                                      // 0x03F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03F8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FName                                   SettingsStackName;                                 // 0x0420(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42C[0x4];                                      // 0x042C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         FocusedButton;                                     // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            MenuControlReference;                              // 0x0438(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FName                                   QuestsStackName;                                   // 0x0460(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   BlackMarketScreen;                                 // 0x046C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_MenuRoot_ChallengesButton_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_MenuRoot_Contracts_LargetTextButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_MenuRoot_Contracts_LargetTextButton_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_MenuRoot_HeisterKits_LargeTextButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_MenuRoot_HeistOnline_LargetTextButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_MenuRoot_NewLoadout_LargetTextButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_MenuRoot_QuitButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_MenuRoot_SettingsButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_MenuRoot_SocialsButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_ChallengesButton_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistOnline_LargetTextButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_SettingsButton_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_SocialsButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_MenuRoot(int32 EntryPoint);
-	class UWidget* NavigateToMaskOfTheWeek(EUINavigation Navigation_0);
-	class UWidget* NavigateToNews(EUINavigation Navigation_0);
-	class UWidget* NavigateToPlay(EUINavigation Navigation_0);
-	void OnControlReferencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
-	void OnInstallStateChanged(bool bIsGameInstallPending);
-	void OnLostStackFocused();
-	void OnMatchmakingStarted();
-	void OnPlayerJoinedParty(const class FString& PlayerId);
-	void OnPlayerKickedFromParty(const class FString& PlayerId);
-	void OnPlayerLeftParty(const class FString& PlayerId);
-	void OnPrivilegeQueried(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
-	void OnQuitConfirmed(class FName ClosingActionName);
-	void PostPush_176806DB4A1F3B43484A0F8F83ED1436(class USBZMenuStackScreenWidget* MenuWidget);
-	void PreConstruct(bool IsDesignTime);
-	void PrePush_176806DB4A1F3B43484A0F8F83ED1436(class USBZMenuStackScreenWidget* MenuWidget);
-	void SetInputEnabled(bool bIsEnabled_0);
-	void SetMatchMakingState();
-	void SetNoneState();
-	void UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion);
 	void UpdateFocusedButton(class USBZMenuButton* InButton, bool Enabled);
+	void UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion);
+	void SetNoneState();
+	void SetMatchMakingState();
+	void SetInputEnabled(bool bIsEnabled);
+	void PrePush_176806DB4A1F3B43484A0F8F83ED1436(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PostPush_176806DB4A1F3B43484A0F8F83ED1436(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnQuitConfirmed(class FName ClosingActionName);
+	void OnPrivilegeQueried(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
+	void OnPlayerLeftParty(const class FString& PlayerId);
+	void OnPlayerKickedFromParty(const class FString& PlayerId);
+	void OnPlayerJoinedParty(const class FString& PlayerId);
+	void OnMatchmakingStarted();
+	void OnLostStackFocused();
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void OnInitialized();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlReferencePressed(class FName ActionName);
+	class UWidget* NavigateToPlay(EUINavigation Navigation);
+	class UWidget* NavigateToNews(EUINavigation Navigation);
+	class UWidget* NavigateToMaskOfTheWeek(EUINavigation Navigation);
+	void ExecuteUbergraph_WBP_MenuRoot(int32 EntryPoint);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_SocialsButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_SettingsButton_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistOnline_LargetTextButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_ChallengesButton_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MenuRoot_TrialShop_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MenuRoot_SocialsButton_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_MenuRoot_SettingsButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_MenuRoot_QuitButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MenuRoot_NewLoadout_LargetTextButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MenuRoot_HeistOnline_LargetTextButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_MenuRoot_HeisterKits_LargeTextButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MenuRoot_Contracts_LargetTextButton_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_MenuRoot_Contracts_LargetTextButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_MenuRoot_ChallengesButton_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

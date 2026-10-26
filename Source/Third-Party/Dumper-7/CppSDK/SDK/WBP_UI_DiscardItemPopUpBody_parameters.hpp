@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.SpriteLoaded
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_DiscardItemPopUpBody_C_SpriteLoaded final
+{
+public:
+	class UPaperSprite*                           OutLoadedSprite_SpriteLoaded;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_DiscardItemPopUpBody_C_SpriteLoaded;
+
 // Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.ExecuteUbergraph_WBP_UI_DiscardItemPopUpBody
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_UI_DiscardItemPopUpBody_C_ExecuteUbergraph_WBP_UI_DiscardItemPopUpBody final
@@ -24,15 +33,6 @@ public:
 	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_DiscardItemPopUpBody_C_ExecuteUbergraph_WBP_UI_DiscardItemPopUpBody;
-
-// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.SpriteLoaded
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_DiscardItemPopUpBody_C_SpriteLoaded final
-{
-public:
-	class UPaperSprite*                           OutLoadedSprite;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_DiscardItemPopUpBody_C_SpriteLoaded;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

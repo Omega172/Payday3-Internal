@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "RigVM_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "AnimationCore_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "Engine_structs.hpp"
-#include "AnimationCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -36,9 +36,9 @@ public:
 };
 DUMPER7_ASSERTS_FChaosDestructionEvent_SWC;
 
-// PropertyBag Transient.PropertyBag_907a8925b3b056cb
+// PropertyBag Transient.PropertyBag_4d92aaba3dd9bcb7
 // 0x00C8 (0x00C8 - 0x0000)
-struct FPropertyBag_907a8925b3b056cb final
+struct FPropertyBag_4d92aaba3dd9bcb7 final
 {
 public:
 	struct FRigElementKey                         RigVMModel___SetRotation_Item__Const;              // 0x0000(0x0010)(Edit, NoDestructor, HasGetValueTypeHash)
@@ -74,11 +74,11 @@ public:
 	float                                         RigVMModel___AlphaInterp_2_InterpSpeedIncreasing__Const; // 0x00B0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRigElementKey                         RigVMModel___SetTranslation_1_Item__Const;         // 0x00B4(0x0010)(Edit, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_FPropertyBag_907a8925b3b056cb;
+DUMPER7_ASSERTS_FPropertyBag_4d92aaba3dd9bcb7;
 
-// PropertyBag Transient.PropertyBag_3086e1ebd0146bb4
+// PropertyBag Transient.PropertyBag_e3aaad7b2d55c701
 // 0x06E0 (0x06E0 - 0x0000)
-struct FPropertyBag_3086e1ebd0146bb4 final
+struct FPropertyBag_e3aaad7b2d55c701 final
 {
 public:
 	struct FQuat                                  RigVMModel___MathQuaternionMul_Result;             // 0x0000(0x0020)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -193,6 +193,6 @@ public:
 	struct FVector                                RigVMModel___MathVectorAdd_1_A;                    // 0x06B0(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FCachedRigElement>              RigVMModel___SetTranslation_1_CachedIndex;         // 0x06C8(0x0010)(Edit)
 };
-DUMPER7_ASSERTS_FPropertyBag_3086e1ebd0146bb4;
+DUMPER7_ASSERTS_FPropertyBag_e3aaad7b2d55c701;
 
 SDK_NAMESPACE_END

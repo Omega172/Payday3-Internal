@@ -16,19 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.SetPrice
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   Price                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   DiscountedPrice                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DiscountedAmount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   DiscountedPercentage                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ConfirmationPopup_InventoryItemDisplay_C::ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay(int32 EntryPoint)
+void UWBP_ConfirmationPopup_InventoryItemDisplay_C::SetPrice(int64 Price, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ConfirmationPopup_InventoryItemDisplay_C", "ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPrice", FnName));
 
-	Params::WBP_ConfirmationPopup_InventoryItemDisplay_C_ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay Parms{};
+	Params::WBP_ConfirmationPopup_InventoryItemDisplay_C_SetPrice Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Price = Price;
+	Parms.Currency = Currency;
+	Parms.DiscountedPrice = DiscountedPrice;
+	Parms.DiscountedAmount = DiscountedAmount;
+	Parms.DiscountedPercentage = DiscountedPercentage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -62,27 +70,19 @@ void UWBP_ConfirmationPopup_InventoryItemDisplay_C::InitializeItem(const class U
 }
 
 
-// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.SetPrice
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ConfirmationPopup_InventoryItemDisplay.WBP_ConfirmationPopup_InventoryItemDisplay_C.ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int64                                   Price                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                                   DiscountedPrice                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   DiscountedAmount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   DiscountedPercentage                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ConfirmationPopup_InventoryItemDisplay_C::SetPrice(int64 Price, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage)
+void UWBP_ConfirmationPopup_InventoryItemDisplay_C::ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPrice", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ConfirmationPopup_InventoryItemDisplay_C", "ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay", FuncInfo);
 
-	Params::WBP_ConfirmationPopup_InventoryItemDisplay_C_SetPrice Parms{};
+	Params::WBP_ConfirmationPopup_InventoryItemDisplay_C_ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay Parms{};
 
-	Parms.Price = Price;
-	Parms.Currency = Currency;
-	Parms.DiscountedPrice = DiscountedPrice;
-	Parms.DiscountedAmount = DiscountedAmount;
-	Parms.DiscountedPercentage = DiscountedPercentage;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

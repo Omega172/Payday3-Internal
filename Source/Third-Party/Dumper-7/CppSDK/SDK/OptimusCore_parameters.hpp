@@ -17,401 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function OptimusCore.OptimusNodeGraph.AddComponentBindingGetNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddComponentBindingGetNode final
-{
-public:
-	class UOptimusComponentSourceBinding*         InComponentBinding;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddComponentBindingGetNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddDataInterfaceNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddDataInterfaceNode final
-{
-public:
-	TSubclassOf<class UOptimusComputeDataInterface> InDataInterfaceClass;                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddDataInterfaceNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddFunctionReferenceNode
-// 0x0048 (0x0048 - 0x0000)
-struct OptimusNodeGraph_AddFunctionReferenceNode final
-{
-public:
-	TSoftObjectPtr<class UOptimusFunctionNodeGraph> InFunctionGraph;                                 // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddFunctionReferenceNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddLink
-// 0x0018 (0x0018 - 0x0000)
-struct OptimusNodeGraph_AddLink final
-{
-public:
-	class UOptimusNodePin*                        InNodeOutputPin;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNodePin*                        InNodeInputPin;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddLink;
-
-// Function OptimusCore.OptimusNodeGraph.AddLoopTerminalNodes
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddLoopTerminalNodes final
-{
-public:
-	struct FVector2D                              InPosition;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UOptimusNode*>                   ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddLoopTerminalNodes;
-
-// Function OptimusCore.OptimusNodeGraph.AddNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddNode final
-{
-public:
-	TSubclassOf<class UOptimusNode>               InNodeClass;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddResourceGetNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddResourceGetNode final
-{
-public:
-	class UOptimusResourceDescription*            InResourceDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddResourceGetNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddResourceNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddResourceNode final
-{
-public:
-	class UOptimusResourceDescription*            InResourceDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddResourceNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddResourceSetNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddResourceSetNode final
-{
-public:
-	class UOptimusResourceDescription*            InResourceDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddResourceSetNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddValueNode
-// 0x0058 (0x0058 - 0x0000)
-struct OptimusNodeGraph_AddValueNode final
-{
-public:
-	struct FOptimusDataTypeRef                    InDataTypeRef;                                     // 0x0000(0x0040)(Parm, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddValueNode;
-
-// Function OptimusCore.OptimusNodeGraph.AddVariableGetNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_AddVariableGetNode final
-{
-public:
-	class UOptimusVariableDescription*            InVariableDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_AddVariableGetNode;
-
-// Function OptimusCore.OptimusNodeGraph.CollapseNodesToFunction
-// 0x0018 (0x0018 - 0x0000)
-struct OptimusNodeGraph_CollapseNodesToFunction final
-{
-public:
-	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_CollapseNodesToFunction;
-
-// Function OptimusCore.OptimusNodeGraph.CollapseNodesToSubGraph
-// 0x0018 (0x0018 - 0x0000)
-struct OptimusNodeGraph_CollapseNodesToSubGraph final
-{
-public:
-	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_CollapseNodesToSubGraph;
-
-// Function OptimusCore.OptimusNodeGraph.ConvertCustomKernelToFunction
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_ConvertCustomKernelToFunction final
-{
-public:
-	class UOptimusNode*                           InCustomKernel;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_ConvertCustomKernelToFunction;
-
-// Function OptimusCore.OptimusNodeGraph.ConvertFunctionToCustomKernel
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_ConvertFunctionToCustomKernel final
-{
-public:
-	class UOptimusNode*                           InKernelFunction;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_ConvertFunctionToCustomKernel;
-
-// Function OptimusCore.OptimusNodeGraph.ConvertToFunction
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_ConvertToFunction final
-{
-public:
-	class UOptimusNode*                           InSubGraphNode;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_ConvertToFunction;
-
-// Function OptimusCore.OptimusNodeGraph.ConvertToSubGraph
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_ConvertToSubGraph final
-{
-public:
-	class UOptimusNode*                           InFunctionNode;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_ConvertToSubGraph;
-
-// Function OptimusCore.OptimusNodeGraph.DuplicateNode
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_DuplicateNode final
-{
-public:
-	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_DuplicateNode;
-
-// Function OptimusCore.OptimusNodeGraph.DuplicateNodes
-// 0x0028 (0x0028 - 0x0000)
-struct OptimusNodeGraph_DuplicateNodes final
-{
-public:
-	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FVector2D                              InPosition;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_DuplicateNodes;
-
-// Function OptimusCore.OptimusNodeGraph.ExpandCollapsedNodes
-// 0x0018 (0x0018 - 0x0000)
-struct OptimusNodeGraph_ExpandCollapsedNodes final
-{
-public:
-	class UOptimusNode*                           InGraphReferenceNode;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UOptimusNode*>                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_ExpandCollapsedNodes;
-
-// Function OptimusCore.OptimusNodeGraph.MoveGraphDirect
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_MoveGraphDirect final
-{
-public:
-	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         InInsertBefore;                                    // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_MoveGraphDirect;
-
-// Function OptimusCore.OptimusNodeGraph.RemoveAllLinks
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_RemoveAllLinks final
-{
-public:
-	class UOptimusNodePin*                        InNodePin;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_RemoveAllLinks;
-
-// Function OptimusCore.OptimusNodeGraph.RemoveLink
-// 0x0018 (0x0018 - 0x0000)
-struct OptimusNodeGraph_RemoveLink final
-{
-public:
-	class UOptimusNodePin*                        InNodeOutputPin;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UOptimusNodePin*                        InNodeInputPin;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_RemoveLink;
-
-// Function OptimusCore.OptimusNodeGraph.RemoveNode
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_RemoveNode final
-{
-public:
-	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_RemoveNode;
-
-// Function OptimusCore.OptimusNodeGraph.RemoveNodes
-// 0x0018 (0x0018 - 0x0000)
-struct OptimusNodeGraph_RemoveNodes final
-{
-public:
-	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_RemoveNodes;
-
-// Function OptimusCore.OptimusNodeGraph.RenameGraph
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_RenameGraph final
-{
-public:
-	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InNewName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_RenameGraph;
-
-// Function OptimusCore.OptimusNodeGraph.RenameGraphDirect
-// 0x0020 (0x0020 - 0x0000)
-struct OptimusNodeGraph_RenameGraphDirect final
-{
-public:
-	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FString                                 InNewName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_RenameGraphDirect;
-
-// Function OptimusCore.OptimusNodeGraph.GetGraphIndex
-// 0x0004 (0x0004 - 0x0000)
-struct OptimusNodeGraph_GetGraphIndex final
-{
-public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_GetGraphIndex;
-
-// Function OptimusCore.OptimusNodeGraph.GetGraphs
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_GetGraphs final
-{
-public:
-	TArray<class UOptimusNodeGraph*>              ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_GetGraphs;
-
-// Function OptimusCore.OptimusNodeGraph.GetGraphType
-// 0x0004 (0x0004 - 0x0000)
-struct OptimusNodeGraph_GetGraphType final
-{
-public:
-	EOptimusNodeGraphType                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_GetGraphType;
-
-// Function OptimusCore.OptimusNodeGraph.IsCustomKernel
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_IsCustomKernel final
-{
-public:
-	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_IsCustomKernel;
-
-// Function OptimusCore.OptimusNodeGraph.IsExecutionGraph
-// 0x0001 (0x0001 - 0x0000)
-struct OptimusNodeGraph_IsExecutionGraph final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_IsExecutionGraph;
-
-// Function OptimusCore.OptimusNodeGraph.IsFunctionGraph
-// 0x0001 (0x0001 - 0x0000)
-struct OptimusNodeGraph_IsFunctionGraph final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_IsFunctionGraph;
-
-// Function OptimusCore.OptimusNodeGraph.IsFunctionReference
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_IsFunctionReference final
-{
-public:
-	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_IsFunctionReference;
-
-// Function OptimusCore.OptimusNodeGraph.IsKernelFunction
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_IsKernelFunction final
-{
-public:
-	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_IsKernelFunction;
-
-// Function OptimusCore.OptimusNodeGraph.IsSubGraphReference
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusNodeGraph_IsSubGraphReference final
-{
-public:
-	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_OptimusNodeGraph_IsSubGraphReference;
-
-// Function OptimusCore.OptimusFunctionNodeGraph.GetAccessSpecifierOptions
-// 0x0010 (0x0010 - 0x0000)
-struct OptimusFunctionNodeGraph_GetAccessSpecifierOptions final
-{
-public:
-	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OptimusFunctionNodeGraph_GetAccessSpecifierOptions;
-
 // Function OptimusCore.OptimusNode.SetGraphPosition
 // 0x0018 (0x0018 - 0x0000)
 struct OptimusNode_SetGraphPosition final
@@ -862,6 +467,401 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_OptimusDeformerInstance_SetVectorVariable;
+
+// Function OptimusCore.OptimusNodeGraph.AddComponentBindingGetNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddComponentBindingGetNode final
+{
+public:
+	class UOptimusComponentSourceBinding*         InComponentBinding;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddComponentBindingGetNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddDataInterfaceNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddDataInterfaceNode final
+{
+public:
+	TSubclassOf<class UOptimusComputeDataInterface> InDataInterfaceClass;                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddDataInterfaceNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddFunctionReferenceNode
+// 0x0048 (0x0048 - 0x0000)
+struct OptimusNodeGraph_AddFunctionReferenceNode final
+{
+public:
+	TSoftObjectPtr<class UOptimusFunctionNodeGraph> InFunctionGraph;                                 // 0x0000(0x0030)(Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0030(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0040(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddFunctionReferenceNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddLink
+// 0x0018 (0x0018 - 0x0000)
+struct OptimusNodeGraph_AddLink final
+{
+public:
+	class UOptimusNodePin*                        InNodeOutputPin;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNodePin*                        InNodeInputPin;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddLink;
+
+// Function OptimusCore.OptimusNodeGraph.AddLoopTerminalNodes
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddLoopTerminalNodes final
+{
+public:
+	struct FVector2D                              InPosition;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UOptimusNode*>                   ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddLoopTerminalNodes;
+
+// Function OptimusCore.OptimusNodeGraph.AddNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddNode final
+{
+public:
+	TSubclassOf<class UOptimusNode>               InNodeClass;                                       // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddResourceGetNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddResourceGetNode final
+{
+public:
+	class UOptimusResourceDescription*            InResourceDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddResourceGetNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddResourceNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddResourceNode final
+{
+public:
+	class UOptimusResourceDescription*            InResourceDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddResourceNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddResourceSetNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddResourceSetNode final
+{
+public:
+	class UOptimusResourceDescription*            InResourceDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddResourceSetNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddValueNode
+// 0x0058 (0x0058 - 0x0000)
+struct OptimusNodeGraph_AddValueNode final
+{
+public:
+	struct FOptimusDataTypeRef                    InDataTypeRef;                                     // 0x0000(0x0040)(Parm, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0040(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddValueNode;
+
+// Function OptimusCore.OptimusNodeGraph.AddVariableGetNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_AddVariableGetNode final
+{
+public:
+	class UOptimusVariableDescription*            InVariableDesc;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_AddVariableGetNode;
+
+// Function OptimusCore.OptimusNodeGraph.CollapseNodesToFunction
+// 0x0018 (0x0018 - 0x0000)
+struct OptimusNodeGraph_CollapseNodesToFunction final
+{
+public:
+	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_CollapseNodesToFunction;
+
+// Function OptimusCore.OptimusNodeGraph.CollapseNodesToSubGraph
+// 0x0018 (0x0018 - 0x0000)
+struct OptimusNodeGraph_CollapseNodesToSubGraph final
+{
+public:
+	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_CollapseNodesToSubGraph;
+
+// Function OptimusCore.OptimusNodeGraph.ConvertCustomKernelToFunction
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_ConvertCustomKernelToFunction final
+{
+public:
+	class UOptimusNode*                           InCustomKernel;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_ConvertCustomKernelToFunction;
+
+// Function OptimusCore.OptimusNodeGraph.ConvertFunctionToCustomKernel
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_ConvertFunctionToCustomKernel final
+{
+public:
+	class UOptimusNode*                           InKernelFunction;                                  // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_ConvertFunctionToCustomKernel;
+
+// Function OptimusCore.OptimusNodeGraph.ConvertToFunction
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_ConvertToFunction final
+{
+public:
+	class UOptimusNode*                           InSubGraphNode;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_ConvertToFunction;
+
+// Function OptimusCore.OptimusNodeGraph.ConvertToSubGraph
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_ConvertToSubGraph final
+{
+public:
+	class UOptimusNode*                           InFunctionNode;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_ConvertToSubGraph;
+
+// Function OptimusCore.OptimusNodeGraph.DuplicateNode
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_DuplicateNode final
+{
+public:
+	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNode*                           ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_DuplicateNode;
+
+// Function OptimusCore.OptimusNodeGraph.DuplicateNodes
+// 0x0028 (0x0028 - 0x0000)
+struct OptimusNodeGraph_DuplicateNodes final
+{
+public:
+	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FVector2D                              InPosition;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_DuplicateNodes;
+
+// Function OptimusCore.OptimusNodeGraph.ExpandCollapsedNodes
+// 0x0018 (0x0018 - 0x0000)
+struct OptimusNodeGraph_ExpandCollapsedNodes final
+{
+public:
+	class UOptimusNode*                           InGraphReferenceNode;                              // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UOptimusNode*>                   ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_ExpandCollapsedNodes;
+
+// Function OptimusCore.OptimusNodeGraph.MoveGraphDirect
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_MoveGraphDirect final
+{
+public:
+	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         InInsertBefore;                                    // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_MoveGraphDirect;
+
+// Function OptimusCore.OptimusNodeGraph.RemoveAllLinks
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_RemoveAllLinks final
+{
+public:
+	class UOptimusNodePin*                        InNodePin;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_RemoveAllLinks;
+
+// Function OptimusCore.OptimusNodeGraph.RemoveLink
+// 0x0018 (0x0018 - 0x0000)
+struct OptimusNodeGraph_RemoveLink final
+{
+public:
+	class UOptimusNodePin*                        InNodeOutputPin;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UOptimusNodePin*                        InNodeInputPin;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_RemoveLink;
+
+// Function OptimusCore.OptimusNodeGraph.RemoveNode
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_RemoveNode final
+{
+public:
+	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_RemoveNode;
+
+// Function OptimusCore.OptimusNodeGraph.RemoveNodes
+// 0x0018 (0x0018 - 0x0000)
+struct OptimusNodeGraph_RemoveNodes final
+{
+public:
+	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_RemoveNodes;
+
+// Function OptimusCore.OptimusNodeGraph.RenameGraph
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_RenameGraph final
+{
+public:
+	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InNewName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_RenameGraph;
+
+// Function OptimusCore.OptimusNodeGraph.RenameGraphDirect
+// 0x0020 (0x0020 - 0x0000)
+struct OptimusNodeGraph_RenameGraphDirect final
+{
+public:
+	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                 InNewName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_RenameGraphDirect;
+
+// Function OptimusCore.OptimusNodeGraph.GetGraphIndex
+// 0x0004 (0x0004 - 0x0000)
+struct OptimusNodeGraph_GetGraphIndex final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_GetGraphIndex;
+
+// Function OptimusCore.OptimusNodeGraph.GetGraphs
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_GetGraphs final
+{
+public:
+	TArray<class UOptimusNodeGraph*>              ReturnValue;                                       // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_GetGraphs;
+
+// Function OptimusCore.OptimusNodeGraph.GetGraphType
+// 0x0004 (0x0004 - 0x0000)
+struct OptimusNodeGraph_GetGraphType final
+{
+public:
+	EOptimusNodeGraphType                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_GetGraphType;
+
+// Function OptimusCore.OptimusNodeGraph.IsCustomKernel
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_IsCustomKernel final
+{
+public:
+	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_IsCustomKernel;
+
+// Function OptimusCore.OptimusNodeGraph.IsExecutionGraph
+// 0x0001 (0x0001 - 0x0000)
+struct OptimusNodeGraph_IsExecutionGraph final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_IsExecutionGraph;
+
+// Function OptimusCore.OptimusNodeGraph.IsFunctionGraph
+// 0x0001 (0x0001 - 0x0000)
+struct OptimusNodeGraph_IsFunctionGraph final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_IsFunctionGraph;
+
+// Function OptimusCore.OptimusNodeGraph.IsFunctionReference
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_IsFunctionReference final
+{
+public:
+	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_IsFunctionReference;
+
+// Function OptimusCore.OptimusNodeGraph.IsKernelFunction
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_IsKernelFunction final
+{
+public:
+	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_IsKernelFunction;
+
+// Function OptimusCore.OptimusNodeGraph.IsSubGraphReference
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusNodeGraph_IsSubGraphReference final
+{
+public:
+	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_OptimusNodeGraph_IsSubGraphReference;
+
+// Function OptimusCore.OptimusFunctionNodeGraph.GetAccessSpecifierOptions
+// 0x0010 (0x0010 - 0x0000)
+struct OptimusFunctionNodeGraph_GetAccessSpecifierOptions final
+{
+public:
+	TArray<class FName>                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OptimusFunctionNodeGraph_GetAccessSpecifierOptions;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

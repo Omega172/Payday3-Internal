@@ -17,38 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function ModelingComponents.OctreeDynamicMeshComponent.SetDynamicMesh
-// 0x0008 (0x0008 - 0x0000)
-struct OctreeDynamicMeshComponent_SetDynamicMesh final
-{
-public:
-	class UDynamicMesh*                           NewMesh;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_OctreeDynamicMeshComponent_SetDynamicMesh;
-
-// Function ModelingComponents.LineSetComponent.AddLines
-// 0x0030 (0x0030 - 0x0000)
-struct LineSetComponent_AddLines final
-{
-public:
-	TArray<struct FVector>                        InStart;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	TArray<struct FVector>                        InEnd;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-	struct FColor                                 InColor;                                           // 0x0020(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InThickness;                                       // 0x0024(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         InDepthBias;                                       // 0x0028(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         ReturnValue;                                       // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LineSetComponent_AddLines;
-
-// Function ModelingComponents.LineSetComponent.SetLineMaterial
-// 0x0008 (0x0008 - 0x0000)
-struct LineSetComponent_SetLineMaterial final
-{
-public:
-	class UMaterialInterface*                     InLineMaterial;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_LineSetComponent_SetLineMaterial;
-
 // Function ModelingComponents.PreviewGeometry.AddLineSet
 // 0x0018 (0x0018 - 0x0000)
 struct PreviewGeometry_AddLineSet final
@@ -257,6 +225,38 @@ public:
 	class APreviewGeometryActor*                  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_PreviewGeometry_GetActor;
+
+// Function ModelingComponents.LineSetComponent.AddLines
+// 0x0030 (0x0030 - 0x0000)
+struct LineSetComponent_AddLines final
+{
+public:
+	TArray<struct FVector>                        InStart;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	TArray<struct FVector>                        InEnd;                                             // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
+	struct FColor                                 InColor;                                           // 0x0020(0x0004)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InThickness;                                       // 0x0024(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         InDepthBias;                                       // 0x0028(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         ReturnValue;                                       // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LineSetComponent_AddLines;
+
+// Function ModelingComponents.LineSetComponent.SetLineMaterial
+// 0x0008 (0x0008 - 0x0000)
+struct LineSetComponent_SetLineMaterial final
+{
+public:
+	class UMaterialInterface*                     InLineMaterial;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_LineSetComponent_SetLineMaterial;
+
+// Function ModelingComponents.OctreeDynamicMeshComponent.SetDynamicMesh
+// 0x0008 (0x0008 - 0x0000)
+struct OctreeDynamicMeshComponent_SetDynamicMesh final
+{
+public:
+	class UDynamicMesh*                           NewMesh;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_OctreeDynamicMeshComponent_SetDynamicMesh;
 
 // Function ModelingComponents.ModelingObjectsCreationAPI.CreateMaterialObject
 // 0x0038 (0x0038 - 0x0000)

@@ -16,21 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ButtonFocusChanging
+// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ShowNewDLCNotification
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_MainMenuButton_C::ButtonFocusChanging(bool bInHasFocus)
+void UWBP_Shop_MainMenuButton_C::ShowNewDLCNotification()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowNewDLCNotification", FnName));
 
-	Params::WBP_Shop_MainMenuButton_C_ButtonFocusChanging Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bInHasFocus = bInHasFocus;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.HideNotification
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Shop_MainMenuButton_C::HideNotification()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideNotification", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -52,27 +58,21 @@ void UWBP_Shop_MainMenuButton_C::ExecuteUbergraph_WBP_Shop_MainMenuButton(int32 
 }
 
 
-// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.HideNotification
+// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_MainMenuButton_C::HideNotification()
+void UWBP_Shop_MainMenuButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideNotification", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_Shop_MainMenuButton_C_ButtonFocusedChanged Parms{};
 
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
-// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ShowNewDLCNotification
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Shop_MainMenuButton_C::ShowNewDLCNotification()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowNewDLCNotification", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

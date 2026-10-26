@@ -44,10 +44,10 @@ public:
 	class UAkAudioEvent*                          PurchaseCompleteSound;                             // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup(int32 EntryPoint);
-	void OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData);
-	void OnFlowStateChanged(ESBZUIPurchaseFlowState NewState);
 	void SetPrice(int64 Price, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage);
+	void OnFlowStateChanged(ESBZUIPurchaseFlowState NewState_OnFlowStateChanged);
+	void OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData_OnFlowConfigured);
+	void ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

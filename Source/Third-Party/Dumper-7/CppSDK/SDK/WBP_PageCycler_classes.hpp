@@ -37,17 +37,17 @@ public:
 	bool                                          MKBNavigationEnabled;                              // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CreateAndAddPageCount(int32 Index_0);
-	void DisableActionNavigation();
-	void EnableActionNavigation();
-	void ExecuteUbergraph_WBP_PageCycler(int32 EntryPoint);
-	void OnAddedPage(int32 InIndex);
-	void OnInputTypeChanged(bool bKeyboardMouseInput);
-	void OnLeftNavigationPressed();
-	void OnNavItemClicked(int32 InIndex);
-	void OnRightNavigationPressed();
-	void PreConstruct(bool IsDesignTime);
 	void UpdateActiveIndex(int32 InNewIndex);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnRightNavigationPressed();
+	void OnNavItemClicked(int32 InIndex);
+	void OnLeftNavigationPressed();
+	void OnInputTypeChanged(bool bKeyboardMouseInput);
+	void OnAddedPage(int32 InIndex);
+	void ExecuteUbergraph_WBP_PageCycler(int32 EntryPoint);
+	void EnableActionNavigation();
+	void DisableActionNavigation();
+	void CreateAndAddPageCount(int32 Index_0);
 
 public:
 	static class UClass* StaticClass()

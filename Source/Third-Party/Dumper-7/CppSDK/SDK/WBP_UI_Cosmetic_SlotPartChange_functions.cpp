@@ -16,18 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Cosmetic_SlotPartChange.WBP_UI_Cosmetic_SlotPartChange_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_SlotPartChange_C::Construct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_Cosmetic_SlotPartChange.WBP_UI_Cosmetic_SlotPartChange_C.ExecuteUbergraph_WBP_UI_Cosmetic_SlotPartChange
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -43,6 +31,18 @@ void UWBP_UI_Cosmetic_SlotPartChange_C::ExecuteUbergraph_WBP_UI_Cosmetic_SlotPar
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_SlotPartChange.WBP_UI_Cosmetic_SlotPartChange_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_SlotPartChange_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

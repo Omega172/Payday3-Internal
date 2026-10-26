@@ -12,7 +12,6 @@
 
 #include "Wwise_classes.hpp"
 #include "Wwise_parameters.hpp"
-#include "AudioLinkEngine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

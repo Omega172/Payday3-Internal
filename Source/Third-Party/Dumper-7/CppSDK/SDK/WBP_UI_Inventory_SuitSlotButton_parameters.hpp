@@ -19,56 +19,73 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.ButtonFocusedChanged
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.SetVisibleOverlays
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotButton_C_SetVisibleOverlays final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZSuitConfig                         CallFunc_GetSuitInSlotConfig_ReturnValue;          // 0x0008(0x0028)(ConstParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            K2Node_Select_Default;                             // 0x0038(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_SetVisibleOverlays;
+
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.SetActiveSuitSlot
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_ButtonFocusedChanged final
+struct WBP_UI_Inventory_SuitSlotButton_C_SetActiveSuitSlot final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsActiveSuitSlot_SetActiveSuitSlot;               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_SetActiveSuitSlot;
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.ButtonHoveredChanged
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.Set Suit Name Colour
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotButton_C_Set_Suit_Name_Colour final
+{
+public:
+	struct FLinearColor                           DesiredColour;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_Set_Suit_Name_Colour;
+
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_ButtonHoveredChanged final
+struct WBP_UI_Inventory_SuitSlotButton_C_PreConstruct final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_PreConstruct;
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.CanCustomize
-// 0x0006 (0x0006 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_CanCustomize final
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.OnHover
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotButton_C_OnHover final
 {
 public:
-	bool                                          bCanCustomize;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPresetSuitSlot_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_CanCustomize;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_OnHover;
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton final
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.OnFocused
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotButton_C_OnFocused final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsActiveSuitSlot;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_OnFocused;
 
 // Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.InitializeSuitVisuals
 // 0x0060 (0x0060 - 0x0000)
@@ -93,73 +110,56 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_InitializeSuitVisuals;
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.OnFocused
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_OnFocused final
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsActiveSuitSlot;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_OnFocused;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton;
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.OnHover
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.CanCustomize
+// 0x0006 (0x0006 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotButton_C_CanCustomize final
+{
+public:
+	bool                                          bCanCustomize;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPresetSuitSlot_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_CanCustomize;
+
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_OnHover final
+struct WBP_UI_Inventory_SuitSlotButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_OnHover;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.PreConstruct
+// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_PreConstruct final
+struct WBP_UI_Inventory_SuitSlotButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_PreConstruct;
-
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.Set Suit Name Colour
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_Set_Suit_Name_Colour final
-{
-public:
-	struct FLinearColor                           DesiredColour;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_Set_Suit_Name_Colour;
-
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.SetActiveSuitSlot
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_SetActiveSuitSlot final
-{
-public:
-	bool                                          bIsActiveSuitSlot;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_SetActiveSuitSlot;
-
-// Function WBP_UI_Inventory_SuitSlotButton.WBP_UI_Inventory_SuitSlotButton_C.SetVisibleOverlays
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotButton_C_SetVisibleOverlays final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZSuitConfig                         CallFunc_GetSuitInSlotConfig_ReturnValue;          // 0x0008(0x0028)(ConstParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            K2Node_Select_Default;                             // 0x0038(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_SetVisibleOverlays;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

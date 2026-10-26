@@ -16,91 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::RefreshVisuals()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
 
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonFocusedChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bInHasFocus = bInHasFocus;
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::OnInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton
-// (Final, UbergraphFunction)
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_LoadoutSkillsButton_C", "ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton", FuncInfo);
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.InitializeSkillPointsVisual
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   SkillPointsRemaining                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::InitializeSkillPointsVisual(int32 SkillPointsRemaining)
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::OnHover(bool bIsHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkillPointsVisual", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
 
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkillPointsVisual Parms{};
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_OnHover Parms{};
 
-	Parms.SkillPointsRemaining = SkillPointsRemaining;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.InitializeSkills
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<int32>&                    EquippedSkillCategoriesCount                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkills", FnName));
-
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkills Parms{};
-
-	Parms.EquippedSkillCategoriesCount = std::move(EquippedSkillCategoriesCount);
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -124,63 +94,93 @@ void UWBP_UI_Inventory_LoadoutSkillsButton_C::OnFocused(bool bIsFocused)
 }
 
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.InitializeSkills
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<int32>&                    EquippedSkillCategoriesCount_InitializeSkills          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::OnHover(bool bIsHovered)
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount_InitializeSkills)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkills", FnName));
 
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_OnHover Parms{};
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkills Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.EquippedSkillCategoriesCount_InitializeSkills = std::move(EquippedSkillCategoriesCount_InitializeSkills);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.InitializeSkillPointsVisual
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SkillPointsRemaining                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::InitializeSkillPointsVisual(int32 SkillPointsRemaining)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkillPointsVisual", FnName));
 
-	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_PreConstruct Parms{};
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_InitializeSkillPointsVisual Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.SkillPointsRemaining = SkillPointsRemaining;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_LoadoutSkillsButton_C::RefreshVisuals()
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_LoadoutSkillsButton_C", "ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton", FuncInfo);
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_LoadoutSkillsButton.WBP_UI_Inventory_LoadoutSkillsButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_LoadoutSkillsButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_UI_Inventory_LoadoutSkillsButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

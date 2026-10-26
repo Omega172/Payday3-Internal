@@ -174,6 +174,41 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeTransformAnimationTrackNode;
 
+// Class InterchangeNodes.InterchangeVariantSetNode
+// 0x0040 (0x00A8 - 0x0068)
+class UInterchangeVariantSetNode final : public UInterchangeBaseNode
+{
+public:
+	uint8                                         Pad_68[0x40];                                      // 0x0068(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool AddCustomDependencyUid(const class FString& DependencyUid);
+	bool RemoveCustomDependencyUid(const class FString& DependencyUid);
+	bool SetCustomDisplayText(const class FString& AttributeValue);
+	bool SetCustomVariantsPayloadKey(const class FString& PayloadKey);
+
+	void GetCustomDependencyUid(const int32 Index_0, class FString* OutDependencyUid) const;
+	int32 GetCustomDependencyUidCount() const;
+	void GetCustomDependencyUids(TArray<class FString>* OutDependencyUids) const;
+	bool GetCustomDisplayText(class FString* AttributeValue) const;
+	bool GetCustomVariantsPayloadKey(class FString* PayloadKey) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeVariantSetNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeVariantSetNode")
+	}
+	static class UInterchangeVariantSetNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeVariantSetNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeVariantSetNode;
+
 // Class InterchangeNodes.InterchangeSkeletalAnimationTrackNode
 // 0x0220 (0x0298 - 0x0078)
 class UInterchangeSkeletalAnimationTrackNode final : public UInterchangeAnimationTrackBaseNode
@@ -316,6 +351,76 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeShaderNode;
 
+// Class InterchangeNodes.InterchangeMeshNode
+// 0x0188 (0x01F0 - 0x0068)
+class UInterchangeMeshNode final : public UInterchangeBaseNode
+{
+public:
+	uint8                                         Pad_68[0x188];                                     // 0x0068(0x0188)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool RemoveMorphTargetDependencyUid(const class FString& DependencyUid);
+	bool RemoveSceneInstanceUid(const class FString& DependencyUid);
+	bool RemoveSkeletonDependencyUid(const class FString& DependencyUid);
+	bool RemoveSlotMaterialDependencyUid(const class FString& SlotName);
+	bool SetCustomBoundingBox(const struct FBox& AttributeValue);
+	bool SetCustomHasSmoothGroup(const bool& AttributeValue);
+	bool SetCustomHasVertexBinormal(const bool& AttributeValue);
+	bool SetCustomHasVertexColor(const bool& AttributeValue);
+	bool SetCustomHasVertexNormal(const bool& AttributeValue);
+	bool SetCustomHasVertexTangent(const bool& AttributeValue);
+	bool SetCustomPolygonCount(const int32& AttributeValue);
+	bool SetCustomUVCount(const int32& AttributeValue);
+	bool SetCustomVertexCount(const int32& AttributeValue);
+	bool SetMorphTarget(const bool bIsMorphTarget);
+	bool SetMorphTargetDependencyUid(const class FString& DependencyUid);
+	bool SetMorphTargetName(const class FString& MorphTargetName);
+	void SetPayLoadKey(const class FString& PayLoadKey, const EInterchangeMeshPayLoadType& PayLoadType);
+	bool SetSceneInstanceUid(const class FString& DependencyUid);
+	bool SetSkeletonDependencyUid(const class FString& DependencyUid);
+	bool SetSkinnedMesh(const bool bIsSkinnedMesh);
+	bool SetSlotMaterialDependencyUid(const class FString& SlotName, const class FString& MaterialDependencyUid);
+
+	bool GetCustomBoundingBox(struct FBox* AttributeValue) const;
+	bool GetCustomHasSmoothGroup(bool* AttributeValue) const;
+	bool GetCustomHasVertexBinormal(bool* AttributeValue) const;
+	bool GetCustomHasVertexColor(bool* AttributeValue) const;
+	bool GetCustomHasVertexNormal(bool* AttributeValue) const;
+	bool GetCustomHasVertexTangent(bool* AttributeValue) const;
+	bool GetCustomPolygonCount(int32* AttributeValue) const;
+	bool GetCustomUVCount(int32* AttributeValue) const;
+	bool GetCustomVertexCount(int32* AttributeValue) const;
+	int32 GetMorphTargetDependeciesCount() const;
+	void GetMorphTargetDependencies(TArray<class FString>* OutDependencies) const;
+	void GetMorphTargetDependency(const int32 Index_0, class FString* OutDependency) const;
+	bool GetMorphTargetName(class FString* OutMorphTargetName) const;
+	void GetSceneInstanceUid(const int32 Index_0, class FString* OutDependency) const;
+	void GetSceneInstanceUids(TArray<class FString>* OutDependencies) const;
+	int32 GetSceneInstanceUidsCount() const;
+	int32 GetSkeletonDependeciesCount() const;
+	void GetSkeletonDependencies(TArray<class FString>* OutDependencies) const;
+	void GetSkeletonDependency(const int32 Index_0, class FString* OutDependency) const;
+	void GetSlotMaterialDependencies(TMap<class FString, class FString>* OutMaterialDependencies) const;
+	bool GetSlotMaterialDependencyUid(const class FString& SlotName, class FString* OutMaterialDependency) const;
+	bool IsMorphTarget() const;
+	bool IsSkinnedMesh() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeMeshNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeMeshNode")
+	}
+	static class UInterchangeMeshNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeMeshNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeMeshNode;
+
 // Class InterchangeNodes.InterchangeDecalMaterialNode
 // 0x0020 (0x0098 - 0x0078)
 class UInterchangeDecalMaterialNode final : public UInterchangeShaderNode
@@ -443,6 +548,44 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeLightNode;
 
+// Class InterchangeNodes.InterchangeShaderGraphNode
+// 0x0060 (0x00D8 - 0x0078)
+class UInterchangeShaderGraphNode final : public UInterchangeShaderNode
+{
+public:
+	uint8                                         Pad_78[0x60];                                      // 0x0078(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool SetCustomBlendMode(int32 AttributeValue);
+	bool SetCustomIsAShaderFunction(const bool& AttributeValue);
+	bool SetCustomOpacityMaskClipValue(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomScreenSpaceReflections(const bool& AttributeValue);
+	bool SetCustomTwoSided(const bool& AttributeValue);
+	bool SetCustomTwoSidedTransmission(const bool& AttributeValue);
+
+	bool GetCustomBlendMode(int32* AttributeValue) const;
+	bool GetCustomIsAShaderFunction(bool* AttributeValue) const;
+	bool GetCustomOpacityMaskClipValue(float* AttributeValue) const;
+	bool GetCustomScreenSpaceReflections(bool* AttributeValue) const;
+	bool GetCustomTwoSided(bool* AttributeValue) const;
+	bool GetCustomTwoSidedTransmission(bool* AttributeValue) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeShaderGraphNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeShaderGraphNode")
+	}
+	static class UInterchangeShaderGraphNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeShaderGraphNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeShaderGraphNode;
+
 // Class InterchangeNodes.InterchangePointLightNode
 // 0x0020 (0x0128 - 0x0108)
 class UInterchangePointLightNode : public UInterchangeLightNode
@@ -532,6 +675,65 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UInterchangeRectLightNode;
+
+// Class InterchangeNodes.InterchangeSceneNode
+// 0x0398 (0x0400 - 0x0068)
+class UInterchangeSceneNode final : public UInterchangeBaseNode
+{
+public:
+	uint8                                         Pad_68[0x398];                                     // 0x0068(0x0398)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool AddSpecializedType(const class FString& SpecializedType);
+	bool RemoveSlotMaterialDependencyUid(const class FString& SlotName);
+	bool RemoveSpecializedType(const class FString& SpecializedType);
+	bool SetCustomAnimationAssetUidToPlay(const class FString& AttributeValue);
+	bool SetCustomAssetInstanceUid(const class FString& AttributeValue);
+	bool SetCustomBindPoseLocalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& AttributeValue, bool bResetCache);
+	bool SetCustomGeometricTransform(const struct FTransform& AttributeValue);
+	bool SetCustomHasBindPose(const bool& bHasBindPose);
+	bool SetCustomLocalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& AttributeValue, bool bResetCache);
+	bool SetCustomPivotNodeTransform(const struct FTransform& AttributeValue);
+	bool SetCustomTimeZeroLocalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& AttributeValue, bool bResetCache);
+	void SetGlobalBindPoseReferenceForMeshUIDs(const TMap<class FString, struct FMatrix>& GlobalBindPoseReferenceForMeshUIDs);
+	bool SetMorphTargetCurveWeight(const class FString& MorphTargetName, const float& Weight);
+	bool SetSlotMaterialDependencyUid(const class FString& SlotName, const class FString& MaterialDependencyUid);
+
+	bool GetCustomAnimationAssetUidToPlay(class FString* AttributeValue) const;
+	bool GetCustomAssetInstanceUid(class FString* AttributeValue) const;
+	bool GetCustomBindPoseGlobalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& GlobalOffsetTransform, struct FTransform* AttributeValue, bool bForceRecache) const;
+	bool GetCustomBindPoseLocalTransform(struct FTransform* AttributeValue) const;
+	bool GetCustomGeometricTransform(struct FTransform* AttributeValue) const;
+	bool GetCustomGlobalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& GlobalOffsetTransform, struct FTransform* AttributeValue, bool bForceRecache) const;
+	bool GetCustomHasBindPose(bool* bHasBindPose) const;
+	bool GetCustomLocalTransform(struct FTransform* AttributeValue) const;
+	bool GetCustomPivotNodeTransform(struct FTransform* AttributeValue) const;
+	bool GetCustomTimeZeroGlobalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& GlobalOffsetTransform, struct FTransform* AttributeValue, bool bForceRecache) const;
+	bool GetCustomTimeZeroLocalTransform(struct FTransform* AttributeValue) const;
+	bool GetGlobalBindPoseReferenceForMeshUID(const class FString& MeshUID, struct FMatrix* GlobalBindPoseReference) const;
+	void GetMorphTargetCurveWeights(TMap<class FString, float>* OutMorphTargetCurveWeights) const;
+	void GetSlotMaterialDependencies(TMap<class FString, class FString>* OutMaterialDependencies) const;
+	bool GetSlotMaterialDependencyUid(const class FString& SlotName, class FString* OutMaterialDependency) const;
+	void GetSpecializedType(const int32 Index_0, class FString* OutSpecializedType) const;
+	int32 GetSpecializedTypeCount() const;
+	void GetSpecializedTypes(TArray<class FString>* OutSpecializedTypes) const;
+	bool IsSpecializedTypeContains(const class FString& SpecializedType) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeSceneNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeSceneNode")
+	}
+	static class UInterchangeSceneNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeSceneNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeSceneNode;
 
 // Class InterchangeNodes.InterchangeDirectionalLightNode
 // 0x0000 (0x00A8 - 0x00A8)
@@ -668,41 +870,6 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeTextureLightProfileNode;
 
-// Class InterchangeNodes.InterchangeVariantSetNode
-// 0x0040 (0x00A8 - 0x0068)
-class UInterchangeVariantSetNode final : public UInterchangeBaseNode
-{
-public:
-	uint8                                         Pad_68[0x40];                                      // 0x0068(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool AddCustomDependencyUid(const class FString& DependencyUid);
-	bool RemoveCustomDependencyUid(const class FString& DependencyUid);
-	bool SetCustomDisplayText(const class FString& AttributeValue);
-	bool SetCustomVariantsPayloadKey(const class FString& PayloadKey);
-
-	void GetCustomDependencyUid(const int32 Index_0, class FString* OutDependencyUid) const;
-	int32 GetCustomDependencyUidCount() const;
-	void GetCustomDependencyUids(TArray<class FString>* OutDependencyUids) const;
-	bool GetCustomDisplayText(class FString* AttributeValue) const;
-	bool GetCustomVariantsPayloadKey(class FString* PayloadKey) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeVariantSetNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeVariantSetNode")
-	}
-	static class UInterchangeVariantSetNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeVariantSetNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeVariantSetNode;
-
 // Class InterchangeNodes.InterchangeSceneVariantSetsNode
 // 0x0020 (0x0088 - 0x0068)
 class UInterchangeSceneVariantSetsNode final : public UInterchangeBaseNode
@@ -790,135 +957,6 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeMaterialInstanceNode;
 
-// Class InterchangeNodes.InterchangeMeshNode
-// 0x0188 (0x01F0 - 0x0068)
-class UInterchangeMeshNode final : public UInterchangeBaseNode
-{
-public:
-	uint8                                         Pad_68[0x188];                                     // 0x0068(0x0188)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool RemoveMorphTargetDependencyUid(const class FString& DependencyUid);
-	bool RemoveSceneInstanceUid(const class FString& DependencyUid);
-	bool RemoveSkeletonDependencyUid(const class FString& DependencyUid);
-	bool RemoveSlotMaterialDependencyUid(const class FString& SlotName);
-	bool SetCustomBoundingBox(const struct FBox& AttributeValue);
-	bool SetCustomHasSmoothGroup(const bool& AttributeValue);
-	bool SetCustomHasVertexBinormal(const bool& AttributeValue);
-	bool SetCustomHasVertexColor(const bool& AttributeValue);
-	bool SetCustomHasVertexNormal(const bool& AttributeValue);
-	bool SetCustomHasVertexTangent(const bool& AttributeValue);
-	bool SetCustomPolygonCount(const int32& AttributeValue);
-	bool SetCustomUVCount(const int32& AttributeValue);
-	bool SetCustomVertexCount(const int32& AttributeValue);
-	bool SetMorphTarget(const bool bIsMorphTarget);
-	bool SetMorphTargetDependencyUid(const class FString& DependencyUid);
-	bool SetMorphTargetName(const class FString& MorphTargetName);
-	void SetPayLoadKey(const class FString& PayLoadKey, const EInterchangeMeshPayLoadType& PayLoadType);
-	bool SetSceneInstanceUid(const class FString& DependencyUid);
-	bool SetSkeletonDependencyUid(const class FString& DependencyUid);
-	bool SetSkinnedMesh(const bool bIsSkinnedMesh);
-	bool SetSlotMaterialDependencyUid(const class FString& SlotName, const class FString& MaterialDependencyUid);
-
-	bool GetCustomBoundingBox(struct FBox* AttributeValue) const;
-	bool GetCustomHasSmoothGroup(bool* AttributeValue) const;
-	bool GetCustomHasVertexBinormal(bool* AttributeValue) const;
-	bool GetCustomHasVertexColor(bool* AttributeValue) const;
-	bool GetCustomHasVertexNormal(bool* AttributeValue) const;
-	bool GetCustomHasVertexTangent(bool* AttributeValue) const;
-	bool GetCustomPolygonCount(int32* AttributeValue) const;
-	bool GetCustomUVCount(int32* AttributeValue) const;
-	bool GetCustomVertexCount(int32* AttributeValue) const;
-	int32 GetMorphTargetDependeciesCount() const;
-	void GetMorphTargetDependencies(TArray<class FString>* OutDependencies) const;
-	void GetMorphTargetDependency(const int32 Index_0, class FString* OutDependency) const;
-	bool GetMorphTargetName(class FString* OutMorphTargetName) const;
-	void GetSceneInstanceUid(const int32 Index_0, class FString* OutDependency) const;
-	void GetSceneInstanceUids(TArray<class FString>* OutDependencies) const;
-	int32 GetSceneInstanceUidsCount() const;
-	int32 GetSkeletonDependeciesCount() const;
-	void GetSkeletonDependencies(TArray<class FString>* OutDependencies) const;
-	void GetSkeletonDependency(const int32 Index_0, class FString* OutDependency) const;
-	void GetSlotMaterialDependencies(TMap<class FString, class FString>* OutMaterialDependencies) const;
-	bool GetSlotMaterialDependencyUid(const class FString& SlotName, class FString* OutMaterialDependency) const;
-	bool IsMorphTarget() const;
-	bool IsSkinnedMesh() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeMeshNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeMeshNode")
-	}
-	static class UInterchangeMeshNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeMeshNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeMeshNode;
-
-// Class InterchangeNodes.InterchangeSceneNode
-// 0x0398 (0x0400 - 0x0068)
-class UInterchangeSceneNode final : public UInterchangeBaseNode
-{
-public:
-	uint8                                         Pad_68[0x398];                                     // 0x0068(0x0398)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool AddSpecializedType(const class FString& SpecializedType);
-	bool RemoveSlotMaterialDependencyUid(const class FString& SlotName);
-	bool RemoveSpecializedType(const class FString& SpecializedType);
-	bool SetCustomAnimationAssetUidToPlay(const class FString& AttributeValue);
-	bool SetCustomAssetInstanceUid(const class FString& AttributeValue);
-	bool SetCustomBindPoseLocalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& AttributeValue, bool bResetCache);
-	bool SetCustomGeometricTransform(const struct FTransform& AttributeValue);
-	bool SetCustomHasBindPose(const bool& bHasBindPose);
-	bool SetCustomLocalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& AttributeValue, bool bResetCache);
-	bool SetCustomPivotNodeTransform(const struct FTransform& AttributeValue);
-	bool SetCustomTimeZeroLocalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& AttributeValue, bool bResetCache);
-	void SetGlobalBindPoseReferenceForMeshUIDs(const TMap<class FString, struct FMatrix>& GlobalBindPoseReferenceForMeshUIDs);
-	bool SetMorphTargetCurveWeight(const class FString& MorphTargetName, const float& Weight);
-	bool SetSlotMaterialDependencyUid(const class FString& SlotName, const class FString& MaterialDependencyUid);
-
-	bool GetCustomAnimationAssetUidToPlay(class FString* AttributeValue) const;
-	bool GetCustomAssetInstanceUid(class FString* AttributeValue) const;
-	bool GetCustomBindPoseGlobalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& GlobalOffsetTransform, struct FTransform* AttributeValue, bool bForceRecache) const;
-	bool GetCustomBindPoseLocalTransform(struct FTransform* AttributeValue) const;
-	bool GetCustomGeometricTransform(struct FTransform* AttributeValue) const;
-	bool GetCustomGlobalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& GlobalOffsetTransform, struct FTransform* AttributeValue, bool bForceRecache) const;
-	bool GetCustomHasBindPose(bool* bHasBindPose) const;
-	bool GetCustomLocalTransform(struct FTransform* AttributeValue) const;
-	bool GetCustomPivotNodeTransform(struct FTransform* AttributeValue) const;
-	bool GetCustomTimeZeroGlobalTransform(const class UInterchangeBaseNodeContainer* BaseNodeContainer, const struct FTransform& GlobalOffsetTransform, struct FTransform* AttributeValue, bool bForceRecache) const;
-	bool GetCustomTimeZeroLocalTransform(struct FTransform* AttributeValue) const;
-	bool GetGlobalBindPoseReferenceForMeshUID(const class FString& MeshUID, struct FMatrix* GlobalBindPoseReference) const;
-	void GetMorphTargetCurveWeights(TMap<class FString, float>* OutMorphTargetCurveWeights) const;
-	void GetSlotMaterialDependencies(TMap<class FString, class FString>* OutMaterialDependencies) const;
-	bool GetSlotMaterialDependencyUid(const class FString& SlotName, class FString* OutMaterialDependency) const;
-	void GetSpecializedType(const int32 Index_0, class FString* OutSpecializedType) const;
-	int32 GetSpecializedTypeCount() const;
-	void GetSpecializedTypes(TArray<class FString>* OutSpecializedTypes) const;
-	bool IsSpecializedTypeContains(const class FString& SpecializedType) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeSceneNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeSceneNode")
-	}
-	static class UInterchangeSceneNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeSceneNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeSceneNode;
-
 // Class InterchangeNodes.InterchangeShaderPortsAPI
 // 0x0000 (0x0030 - 0x0030)
 class UInterchangeShaderPortsAPI final : public UObject
@@ -981,44 +1019,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UInterchangeFunctionCallShaderNode;
-
-// Class InterchangeNodes.InterchangeShaderGraphNode
-// 0x0060 (0x00D8 - 0x0078)
-class UInterchangeShaderGraphNode final : public UInterchangeShaderNode
-{
-public:
-	uint8                                         Pad_78[0x60];                                      // 0x0078(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool SetCustomBlendMode(int32 AttributeValue);
-	bool SetCustomIsAShaderFunction(const bool& AttributeValue);
-	bool SetCustomOpacityMaskClipValue(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomScreenSpaceReflections(const bool& AttributeValue);
-	bool SetCustomTwoSided(const bool& AttributeValue);
-	bool SetCustomTwoSidedTransmission(const bool& AttributeValue);
-
-	bool GetCustomBlendMode(int32* AttributeValue) const;
-	bool GetCustomIsAShaderFunction(bool* AttributeValue) const;
-	bool GetCustomOpacityMaskClipValue(float* AttributeValue) const;
-	bool GetCustomScreenSpaceReflections(bool* AttributeValue) const;
-	bool GetCustomTwoSided(bool* AttributeValue) const;
-	bool GetCustomTwoSidedTransmission(bool* AttributeValue) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeShaderGraphNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeShaderGraphNode")
-	}
-	static class UInterchangeShaderGraphNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeShaderGraphNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeShaderGraphNode;
 
 // Class InterchangeNodes.InterchangeTexture2DNode
 // 0x0098 (0x0140 - 0x00A8)

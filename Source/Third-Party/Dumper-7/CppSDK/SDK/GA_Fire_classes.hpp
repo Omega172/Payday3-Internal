@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Fire.GA_Fire_C
-// 0x0000 (0x8CD8 - 0x8CD8)
+// 0x0000 (0x0538 - 0x0538)
 class UGA_Fire_C final : public USBZPlayerFireRangedWeaponAbility
 {
 public:

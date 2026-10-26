@@ -11,297 +11,15 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "Starbreeze_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
+#include "Starbreeze_structs.hpp"
 #include "SBZBackend_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnTextCommited
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnTextCommited final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZPopupWidget*                        CallFunc_GetPopUpWidget_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetFocusedPlayerLoadoutIndex_ReturnValue; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class USBZLoadoutManager*                     CallFunc_GetLoadoutManager_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnTextCommited;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetNavKeysPerInput
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetNavKeysPerInput final
-{
-public:
-	bool                                          IsKeyboardMouse;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetNavKeysPerInput;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BindKeys
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BindKeys final
-{
-public:
-	bool                                          IsActive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BindKeys;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutPopupClosed
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnLoadoutPopupClosed final
-{
-public:
-	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnLoadoutPopupClosed;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.CreateRenameLoadoutPopup
-// 0x01B8 (0x01B8 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_CreateRenameLoadoutPopup final
-{
-public:
-	class UWBP_Loadout_RenamePopup_C*             CallFunc_Create_ReturnValue;                       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName ClosingActionName)> K2Node_CreateDelegate_OutputDelegate;             // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FText& Text_0, ETextCommit CommitMethod)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLoadoutManager*                     CallFunc_GetLoadoutManager_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetFocusedPlayerLoadoutIndex_ReturnValue; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A0(0x0010)()
-	class FString                                 CallFunc_GetLoadoutName_ReturnValue;               // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00C8(0x0010)()
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x00E0(0x0010)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00F0(0x0038)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0130(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0140(0x0028)()
-	struct FSBZUIPopupData                        K2Node_MakeStruct_SBZUIPopupData;                  // 0x0168(0x0050)(ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_CreateRenameLoadoutPopup;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnDisabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnDisabledChanged final
-{
-public:
-	bool                                          InIsDisabled;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnDisabledChanged;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetLoadoutName
-// 0x00F0 (0x00F0 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetLoadoutName final
-{
-public:
-	class FString                                 InLoadoutName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Len_ReturnValue;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetFocusedPlayerLoadoutIndex_ReturnValue; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x0048)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B0(0x0010)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D0(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x00E0(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetLoadoutName;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.RefreshVisuals
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_RefreshVisuals final
-{
-public:
-	ESBZPlatform                                  CallFunc_GetPlatform_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_RefreshVisuals;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnFocusedStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnFocusedStateChanged final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnFocusedStateChanged;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnHoveredStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnHoveredStateChanged final
-{
-public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnHoveredStateChanged;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PostPush_57D08016443F7CC905F0FBB992BF540A
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PostPush_57D08016443F7CC905F0FBB992BF540A final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PostPush_57D08016443F7CC905F0FBB992BF540A;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PrePush_57D08016443F7CC905F0FBB992BF540A
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PrePush_57D08016443F7CC905F0FBB992BF540A final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PrePush_57D08016443F7CC905F0FBB992BF540A;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.FocusedPlayerLoadoutConfigChanged
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_FocusedPlayerLoadoutConfigChanged final
-{
-public:
-	struct FSBZPlayerLoadoutConfig                NewPlayerLoadout;                                  // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_FocusedPlayerLoadoutConfigChanged;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ActiveLoadoutChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ActiveLoadoutChanged final
-{
-public:
-	int32                                         NewActiveLoadoutIndex;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ActiveLoadoutChanged;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnInputTypeChangedToGamepad
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnInputTypeChangedToGamepad final
-{
-public:
-	bool                                          bIsGamepad;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnInputTypeChangedToGamepad;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature final
-{
-public:
-	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PreConstruct;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton
 // 0x0340 (0x0340 - 0x0000)
@@ -421,6 +139,288 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x033F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_LoadoutButton;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_SetActive_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PreConstruct;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavRight_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_NavLeft_B_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_Rename_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_WBP_MenuButton_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature final
+{
+public:
+	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutButton_InputLeft_CR_K2Node_ComponentBoundEvent_1_OnVisibilityChangedEvent__DelegateSignature;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnInputTypeChangedToGamepad
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnInputTypeChangedToGamepad final
+{
+public:
+	bool                                          bIsGamepad_OnInputTypeChangedToGamepad;            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnInputTypeChangedToGamepad;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.ActiveLoadoutChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ActiveLoadoutChanged final
+{
+public:
+	int32                                         NewActiveLoadoutIndex_ActiveLoadoutChanged;        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_ActiveLoadoutChanged;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.FocusedPlayerLoadoutConfigChanged
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_FocusedPlayerLoadoutConfigChanged final
+{
+public:
+	struct FSBZPlayerLoadoutConfig                NewPlayerLoadout_FocusedPlayerLoadoutConfigChanged; // 0x0000(0x00A8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_FocusedPlayerLoadoutConfigChanged;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PrePush_57D08016443F7CC905F0FBB992BF540A
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PrePush_57D08016443F7CC905F0FBB992BF540A final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PrePush_57D08016443F7CC905F0FBB992BF540A;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.PostPush_57D08016443F7CC905F0FBB992BF540A
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PostPush_57D08016443F7CC905F0FBB992BF540A final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_PostPush_57D08016443F7CC905F0FBB992BF540A;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnHoveredStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnHoveredStateChanged final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnHoveredStateChanged;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnFocusedStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnFocusedStateChanged final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnFocusedStateChanged;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.RefreshVisuals
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_RefreshVisuals final
+{
+public:
+	ESBZPlatform                                  CallFunc_GetPlatform_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_RefreshVisuals;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetLoadoutName
+// 0x00F0 (0x00F0 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetLoadoutName final
+{
+public:
+	class FString                                 InLoadoutName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetSubstring_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Len_ReturnValue;                          // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetFocusedPlayerLoadoutIndex_ReturnValue; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_SelectString_ReturnValue;                 // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0068(0x0048)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B0(0x0010)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D0(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x00E0(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetLoadoutName;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnDisabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnDisabledChanged final
+{
+public:
+	bool                                          InIsDisabled;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnDisabledChanged;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.CreateRenameLoadoutPopup
+// 0x01B8 (0x01B8 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_CreateRenameLoadoutPopup final
+{
+public:
+	class UWBP_Loadout_RenamePopup_C*             CallFunc_Create_ReturnValue;                       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName ClosingActionName)> K2Node_CreateDelegate_OutputDelegate;             // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FText& Text_0, ETextCommit CommitMethod)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLoadoutManager*                     CallFunc_GetLoadoutManager_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetFocusedPlayerLoadoutIndex_ReturnValue; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A0(0x0010)()
+	class FString                                 CallFunc_GetLoadoutName_ReturnValue;               // 0x00B0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C1[0x7];                                       // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00C8(0x0010)()
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DA[0x6];                                       // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x00E0(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00F0(0x0038)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0130(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0140(0x0028)()
+	struct FSBZUIPopupData                        K2Node_MakeStruct_SBZUIPopupData;                  // 0x0168(0x0050)(ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_CreateRenameLoadoutPopup;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnLoadoutPopupClosed
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnLoadoutPopupClosed final
+{
+public:
+	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnLoadoutPopupClosed;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.BindKeys
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BindKeys final
+{
+public:
+	bool                                          IsActive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_BindKeys;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.SetNavKeysPerInput
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetNavKeysPerInput final
+{
+public:
+	bool                                          IsKeyboardMouse;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_SetNavKeysPerInput;
+
+// Function WBP_UI_Preplanning_MainMenu_LoadoutButton.WBP_UI_Preplanning_MainMenu_LoadoutButton_C.OnTextCommited
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnTextCommited final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPopupWidget*                        CallFunc_GetPopUpWidget_ReturnValue;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetFocusedPlayerLoadoutIndex_ReturnValue; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class USBZLoadoutManager*                     CallFunc_GetLoadoutManager_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_LoadoutButton_C_OnTextCommited;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

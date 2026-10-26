@@ -30,16 +30,16 @@ public:
 	class USBZMenuButton*                         FocusedButton;                                     // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorCustomization(int32 EntryPoint);
-	void OnBackPressed();
-	void OnCategoryButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnRemovedFromStack();
-	void OnTutorialHidden();
 	void UpdateControlsReference();
+	void OnTutorialHidden();
+	void OnRemovedFromStack();
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnCategoryButtonFocused(class USBZMenuButton* InButton_OnCategoryButtonFocused, bool bIsFocused_OnCategoryButtonFocused);
+	void OnBackPressed();
+	void ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorCustomization(int32 EntryPoint);
+	void BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

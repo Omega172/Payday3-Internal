@@ -16,6 +16,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_Credits_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_Credits_C_OnGainedStackFocused;
+
+// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_Credits_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_Credits_C_OnControlsReferenceClicked;
+
 // Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.ExecuteUbergraph_WBP_UI_MainMenu_Credits
 // 0x0118 (0x0118 - 0x0000)
 struct WBP_UI_MainMenu_Credits_C_ExecuteUbergraph_WBP_UI_MainMenu_Credits final
@@ -25,7 +43,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ASBZMainMenuCameraManager*              CallFunc_GetMainMenuCameraManager_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0018(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -41,24 +59,6 @@ public:
 	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00F0(0x0028)()
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_Credits_C_ExecuteUbergraph_WBP_UI_MainMenu_Credits;
-
-// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_Credits_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_Credits_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_MainMenu_Credits.WBP_UI_MainMenu_Credits_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_Credits_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_Credits_C_OnGainedStackFocused;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

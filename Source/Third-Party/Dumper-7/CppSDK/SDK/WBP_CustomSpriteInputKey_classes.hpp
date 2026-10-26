@@ -26,11 +26,11 @@ public:
 	class UPaperSprite*                           SpritePreview;                                     // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetSprite(const class UPaperSprite* Sprite);
-	void SetInverted(bool bInInverted_SetInverted);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon_OnKeyIconChanged);
 	void ExecuteUbergraph_WBP_CustomSpriteInputKey(int32 EntryPoint);
+	void OnKeyIconChanged(class UPaperSprite* NewActionKeyIcon);
+	void PreConstruct(bool IsDesignTime);
+	void SetInverted(bool bInInverted);
+	void SetSprite(const class UPaperSprite* Sprite);
 
 public:
 	static class UClass* StaticClass()

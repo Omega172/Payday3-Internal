@@ -26,9 +26,9 @@ public:
 	TSoftObjectPtr<class UPaperSprite>            BannerSprite;                                      // 0x0300(0x0030)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_NewsItem(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED(class UObject* Loaded);
-	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_NewsItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

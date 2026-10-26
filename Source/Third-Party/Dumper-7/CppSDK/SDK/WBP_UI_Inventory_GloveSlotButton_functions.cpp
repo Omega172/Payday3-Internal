@@ -16,19 +16,145 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetGloveNameColor
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              DesiredColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_GloveSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_Inventory_GloveSlotButton_C::SetGloveNameColor(const struct FLinearColor& DesiredColor)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetGloveNameColor", FnName));
 
-	Params::WBP_UI_Inventory_GloveSlotButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_Inventory_GloveSlotButton_C_SetGloveNameColor Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.DesiredColor = std::move(DesiredColor);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetActiveGloveSlot
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActiveGloveSlot_SetActiveGloveSlot                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::SetActiveGloveSlot(bool bIsActiveGloveSlot_SetActiveGloveSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActiveGloveSlot", FnName));
+
+	Params::WBP_UI_Inventory_GloveSlotButton_C_SetActiveGloveSlot Parms{};
+
+	Parms.bIsActiveGloveSlot_SetActiveGloveSlot = bIsActiveGloveSlot_SetActiveGloveSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Inventory_GloveSlotButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::OnHover(bool bIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+
+	Params::WBP_UI_Inventory_GloveSlotButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnGloveSlotInitialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::OnGloveSlotInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGloveSlotInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::OnFocused(bool bIsFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocused", FnName));
+
+	Params::WBP_UI_Inventory_GloveSlotButton_C_OnFocused Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.InitializeGloveVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::InitializeGloveVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeGloveVisuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_GloveSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_GloveSlotButton_C", "ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton", FuncInfo);
+
+	Params::WBP_UI_Inventory_GloveSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -53,145 +179,19 @@ void UWBP_UI_Inventory_GloveSlotButton_C::CanCustomize(bool* bCanCustomize)
 }
 
 
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_GloveSlotButton_C", "ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton", FuncInfo);
-
-	Params::WBP_UI_Inventory_GloveSlotButton_C_ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.InitializeGloveVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::InitializeGloveVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeGloveVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::OnFocused(bool bIsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocused", FnName));
-
-	Params::WBP_UI_Inventory_GloveSlotButton_C_OnFocused Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnGloveSlotInitialized
+// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::OnGloveSlotInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGloveSlotInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_GloveSlotButton_C::OnHover(bool bIsHovered)
+void UWBP_UI_Inventory_GloveSlotButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_Inventory_GloveSlotButton_C_OnHover Parms{};
+	Params::WBP_UI_Inventory_GloveSlotButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Inventory_GloveSlotButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetActiveGloveSlot
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsActiveGloveSlot                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::SetActiveGloveSlot(bool bIsActiveGloveSlot)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActiveGloveSlot", FnName));
-
-	Params::WBP_UI_Inventory_GloveSlotButton_C_SetActiveGloveSlot Parms{};
-
-	Parms.bIsActiveGloveSlot = bIsActiveGloveSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_GloveSlotButton.WBP_UI_Inventory_GloveSlotButton_C.SetGloveNameColor
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              DesiredColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_GloveSlotButton_C::SetGloveNameColor(const struct FLinearColor& DesiredColor)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetGloveNameColor", FnName));
-
-	Params::WBP_UI_Inventory_GloveSlotButton_C_SetGloveNameColor Parms{};
-
-	Parms.DesiredColor = std::move(DesiredColor);
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

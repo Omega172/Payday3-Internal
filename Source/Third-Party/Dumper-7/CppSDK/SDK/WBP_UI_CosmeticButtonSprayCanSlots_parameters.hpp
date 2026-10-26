@@ -14,15 +14,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_CosmeticButtonSprayCanSlots_C_ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots final
+// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CosmeticButtonSprayCanSlots_C_ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots;
+DUMPER7_ASSERTS_WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct;
 
 // Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.HoverChangedVisuals
 // 0x0001 (0x0001 - 0x0000)
@@ -33,14 +32,15 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_CosmeticButtonSprayCanSlots_C_HoverChangedVisuals;
 
-// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct final
+// Function WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C.ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_CosmeticButtonSprayCanSlots_C_ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CosmeticButtonSprayCanSlots_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_CosmeticButtonSprayCanSlots_C_ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

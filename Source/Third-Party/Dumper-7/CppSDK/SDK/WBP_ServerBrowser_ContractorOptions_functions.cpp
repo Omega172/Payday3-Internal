@@ -16,42 +16,165 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.AddDataToSelector
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.UpdateOwnedHeistMap
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_ContractorOptions_C::AddDataToSelector()
+void UWBP_ServerBrowser_ContractorOptions_C::UpdateOwnedHeistMap()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddDataToSelector", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateOwnedHeistMap", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.AddOwnedHeistsToScrollBox
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.UpdateAllDefaultState
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_ContractorOptions_C::AddOwnedHeistsToScrollBox()
+void UWBP_ServerBrowser_ContractorOptions_C::UpdateAllDefaultState()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddOwnedHeistsToScrollBox", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateAllDefaultState", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.AllHeistsUpdated
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.SetOwnedHeists
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<struct FSBZServerBrowserHeistCollection>&InOwnedHeists                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_ServerBrowser_ContractorOptions_C::SetOwnedHeists(TArray<struct FSBZServerBrowserHeistCollection>& InOwnedHeists)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetOwnedHeists", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_SetOwnedHeists Parms{};
+
+	Parms.InOwnedHeists = std::move(InOwnedHeists);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	InOwnedHeists = std::move(Parms.InOwnedHeists);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.SetFiltersFromGameUserSettings
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_ContractorOptions_C::SetFiltersFromGameUserSettings()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFiltersFromGameUserSettings", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.SaveCurrentValuesToGameUserSettings
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_ContractorOptions_C::SaveCurrentValuesToGameUserSettings()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SaveCurrentValuesToGameUserSettings", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.RevealHeistsForContractor
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::RevealHeistsForContractor(const class FString& Key)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RevealHeistsForContractor", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_RevealHeistsForContractor Parms{};
+
+	Parms.Key = std::move(Key);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.ResetAllHeistsInScrollBox
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_ContractorOptions_C::ResetAllHeistsInScrollBox()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetAllHeistsInScrollBox", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.ResetAllFilters
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_ContractorOptions_C::ResetAllFilters()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetAllFilters", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.PopulateOwnedHeistMap
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   FoundHeists                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::PopulateOwnedHeistMap(bool* FoundHeists)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateOwnedHeistMap", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_PopulateOwnedHeistMap Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (FoundHeists != nullptr)
+		*FoundHeists = Parms.FoundHeists;
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.HeistLineItemUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      HeistTitle                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                                    IsHeistActive                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_ContractorOptions_C::AllHeistsUpdated(const class FText& HeistTitle, bool IsHeistActive)
+void UWBP_ServerBrowser_ContractorOptions_C::HeistLineItemUpdated(const class FText& HeistTitle, bool IsHeistActive)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AllHeistsUpdated", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistLineItemUpdated", FnName));
 
-	Params::WBP_ServerBrowser_ContractorOptions_C_AllHeistsUpdated Parms{};
+	Params::WBP_ServerBrowser_ContractorOptions_C_HeistLineItemUpdated Parms{};
 
 	Parms.HeistTitle = std::move(HeistTitle);
 	Parms.IsHeistActive = IsHeistActive;
@@ -60,140 +183,22 @@ void UWBP_ServerBrowser_ContractorOptions_C::AllHeistsUpdated(const class FText&
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.CheckOwnedHeists
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.GetHeistDataForActiveHeists
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    InHeistToFind                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSBZServerBrowserHeistLevel*     HeistData                                              (Parm, OutParm)
+// TArray<struct FSBZServerBrowserHeistLevel>*ActiveHeistData                                        (Parm, OutParm)
 
-void UWBP_ServerBrowser_ContractorOptions_C::CheckOwnedHeists(const class FString& InHeistToFind, bool* Found, struct FSBZServerBrowserHeistLevel* HeistData)
+void UWBP_ServerBrowser_ContractorOptions_C::GetHeistDataForActiveHeists(TArray<struct FSBZServerBrowserHeistLevel>* ActiveHeistData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckOwnedHeists", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetHeistDataForActiveHeists", FnName));
 
-	Params::WBP_ServerBrowser_ContractorOptions_C_CheckOwnedHeists Parms{};
-
-	Parms.InHeistToFind = std::move(InHeistToFind);
+	Params::WBP_ServerBrowser_ContractorOptions_C_GetHeistDataForActiveHeists Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Found != nullptr)
-		*Found = Parms.Found;
-
-	if (HeistData != nullptr)
-		*HeistData = std::move(Parms.HeistData);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.CustomUpNav_ForItemsBelowScrollbox
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_ServerBrowser_ContractorOptions_C::CustomUpNav_ForItemsBelowScrollbox(EUINavigation Navigation_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomUpNav_ForItemsBelowScrollbox", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_CustomUpNav_ForItemsBelowScrollbox Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_ContractorOptions_C", "ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions", FuncInfo);
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (ActiveHeistData != nullptr)
+		*ActiveHeistData = std::move(Parms.ActiveHeistData);
 }
 
 
@@ -223,37 +228,155 @@ void UWBP_ServerBrowser_ContractorOptions_C::FindHeistInScrollBox(const class FT
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.GetHeistDataForActiveHeists
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// TArray<struct FSBZServerBrowserHeistLevel>*ActiveHeistData                                        (Parm, OutParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_ContractorOptions_C::GetHeistDataForActiveHeists(TArray<struct FSBZServerBrowserHeistLevel>* ActiveHeistData)
+void UWBP_ServerBrowser_ContractorOptions_C::ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetHeistDataForActiveHeists", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_ContractorOptions_C", "ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions", FuncInfo);
 
-	Params::WBP_ServerBrowser_ContractorOptions_C_GetHeistDataForActiveHeists Parms{};
+	Params::WBP_ServerBrowser_ContractorOptions_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (ActiveHeistData != nullptr)
-		*ActiveHeistData = std::move(Parms.ActiveHeistData);
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.HeistLineItemUpdated
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.CustomUpNav_ForItemsBelowScrollbox
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_ServerBrowser_ContractorOptions_C::CustomUpNav_ForItemsBelowScrollbox(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomUpNav_ForItemsBelowScrollbox", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_CustomUpNav_ForItemsBelowScrollbox Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.CheckOwnedHeists
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    InHeistToFind                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool*                                   Found                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZServerBrowserHeistLevel*     HeistData                                              (Parm, OutParm)
+
+void UWBP_ServerBrowser_ContractorOptions_C::CheckOwnedHeists(const class FString& InHeistToFind, bool* Found, struct FSBZServerBrowserHeistLevel* HeistData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckOwnedHeists", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_CheckOwnedHeists Parms{};
+
+	Parms.InHeistToFind = std::move(InHeistToFind);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Found != nullptr)
+		*Found = Parms.Found;
+
+	if (HeistData != nullptr)
+		*HeistData = std::move(Parms.HeistData);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorOptions_C::BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature", FnName));
+
+	Params::WBP_ServerBrowser_ContractorOptions_C_BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.AllHeistsUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      HeistTitle                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                                    IsHeistActive                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_ContractorOptions_C::HeistLineItemUpdated(const class FText& HeistTitle, bool IsHeistActive)
+void UWBP_ServerBrowser_ContractorOptions_C::AllHeistsUpdated(const class FText& HeistTitle, bool IsHeistActive)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistLineItemUpdated", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AllHeistsUpdated", FnName));
 
-	Params::WBP_ServerBrowser_ContractorOptions_C_HeistLineItemUpdated Parms{};
+	Params::WBP_ServerBrowser_ContractorOptions_C_AllHeistsUpdated Parms{};
 
 	Parms.HeistTitle = std::move(HeistTitle);
 	Parms.IsHeistActive = IsHeistActive;
@@ -262,148 +385,25 @@ void UWBP_ServerBrowser_ContractorOptions_C::HeistLineItemUpdated(const class FT
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.PopulateOwnedHeistMap
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   FoundHeists                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::PopulateOwnedHeistMap(bool* FoundHeists)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateOwnedHeistMap", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_PopulateOwnedHeistMap Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (FoundHeists != nullptr)
-		*FoundHeists = Parms.FoundHeists;
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.ResetAllFilters
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_ContractorOptions_C::ResetAllFilters()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetAllFilters", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.ResetAllHeistsInScrollBox
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.AddOwnedHeistsToScrollBox
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_ContractorOptions_C::ResetAllHeistsInScrollBox()
+void UWBP_ServerBrowser_ContractorOptions_C::AddOwnedHeistsToScrollBox()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetAllHeistsInScrollBox", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddOwnedHeistsToScrollBox", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.RevealHeistsForContractor
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    Key                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorOptions_C::RevealHeistsForContractor(const class FString& Key)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RevealHeistsForContractor", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_RevealHeistsForContractor Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.SaveCurrentValuesToGameUserSettings
+// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.AddDataToSelector
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_ContractorOptions_C::SaveCurrentValuesToGameUserSettings()
+void UWBP_ServerBrowser_ContractorOptions_C::AddDataToSelector()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SaveCurrentValuesToGameUserSettings", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.SetFiltersFromGameUserSettings
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_ContractorOptions_C::SetFiltersFromGameUserSettings()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFiltersFromGameUserSettings", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.SetOwnedHeists
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<struct FSBZServerBrowserHeistCollection>&InOwnedHeists                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_ServerBrowser_ContractorOptions_C::SetOwnedHeists(TArray<struct FSBZServerBrowserHeistCollection>& InOwnedHeists)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetOwnedHeists", FnName));
-
-	Params::WBP_ServerBrowser_ContractorOptions_C_SetOwnedHeists Parms{};
-
-	Parms.InOwnedHeists = std::move(InOwnedHeists);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	InOwnedHeists = std::move(Parms.InOwnedHeists);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.UpdateAllDefaultState
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_ContractorOptions_C::UpdateAllDefaultState()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateAllDefaultState", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_ContractorOptions.WBP_ServerBrowser_ContractorOptions_C.UpdateOwnedHeistMap
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_ContractorOptions_C::UpdateOwnedHeistMap()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateOwnedHeistMap", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddDataToSelector", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "HairStrandsCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
+#include "HairStrandsCore_structs.hpp"
 #include "Niagara_classes.hpp"
 #include "Engine_classes.hpp"
 #include "MovieScene_classes.hpp"
@@ -43,6 +43,33 @@ public:
 };
 DUMPER7_ASSERTS_UGroomCacheImportOptions;
 
+// Class HairStrandsCore.GroomBlueprintLibrary
+// 0x0000 (0x0030 - 0x0030)
+class UGroomBlueprintLibrary final : public UBlueprintFunctionLibrary
+{
+public:
+	static class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAsset(class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32 NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32 MatchingSection);
+	static class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAssetWithPath(const class FString& DesiredPackagePath, class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32 NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32 MatchingSection);
+	static class UGroomBindingAsset* CreateNewGroomBindingAsset(class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32 InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32 InMatchingSection);
+	static class UGroomBindingAsset* CreateNewGroomBindingAssetWithPath(const class FString& InDesiredPackagePath, class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32 InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32 InMatchingSection);
+	static bool IsHairStrandsSupportedInWorld(const class UObject* WorldContextObject);
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GroomBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomBlueprintLibrary")
+	}
+	static class UGroomBlueprintLibrary* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UGroomBlueprintLibrary>();
+	}
+};
+DUMPER7_ASSERTS_UGroomBlueprintLibrary;
+
 // Class HairStrandsCore.GroomCacheImportData
 // 0x0070 (0x00A0 - 0x0030)
 class UGroomCacheImportData final : public UAssetImportData
@@ -65,29 +92,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UGroomCacheImportData;
-
-// Class HairStrandsCore.GroomActor
-// 0x0008 (0x0330 - 0x0328)
-class AGroomActor final : public AActor
-{
-public:
-	class UGroomComponent*                        GroomComponent;                                    // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("GroomActor")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"GroomActor")
-	}
-	static class AGroomActor* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<AGroomActor>();
-	}
-};
-DUMPER7_ASSERTS_AGroomActor;
 
 // Class HairStrandsCore.GroomAsset
 // 0x0100 (0x0130 - 0x0030)
@@ -166,6 +170,29 @@ public:
 	bool HasAssetUserDataOfClass(TSubclassOf<class UAssetUserData> InUserDataClass);
 };
 DUMPER7_ASSERTS_UGroomAsset;
+
+// Class HairStrandsCore.GroomActor
+// 0x0008 (0x0330 - 0x0328)
+class AGroomActor final : public AActor
+{
+public:
+	class UGroomComponent*                        GroomComponent;                                    // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, TObjectPtr)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("GroomActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GroomActor")
+	}
+	static class AGroomActor* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<AGroomActor>();
+	}
+};
+DUMPER7_ASSERTS_AGroomActor;
 
 // Class HairStrandsCore.HairCardGenerationSettings
 // 0x0000 (0x0030 - 0x0030)
@@ -287,33 +314,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UGroomBindingAssetList;
-
-// Class HairStrandsCore.GroomBlueprintLibrary
-// 0x0000 (0x0030 - 0x0030)
-class UGroomBlueprintLibrary final : public UBlueprintFunctionLibrary
-{
-public:
-	static class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAsset(class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32 NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32 MatchingSection);
-	static class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAssetWithPath(const class FString& DesiredPackagePath, class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32 NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32 MatchingSection);
-	static class UGroomBindingAsset* CreateNewGroomBindingAsset(class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32 InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32 InMatchingSection);
-	static class UGroomBindingAsset* CreateNewGroomBindingAssetWithPath(const class FString& InDesiredPackagePath, class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32 InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32 InMatchingSection);
-	static bool IsHairStrandsSupportedInWorld(const class UObject* WorldContextObject);
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("GroomBlueprintLibrary")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"GroomBlueprintLibrary")
-	}
-	static class UGroomBlueprintLibrary* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UGroomBlueprintLibrary>();
-	}
-};
-DUMPER7_ASSERTS_UGroomBlueprintLibrary;
 
 // Class HairStrandsCore.GroomCache
 // 0x0060 (0x0090 - 0x0030)

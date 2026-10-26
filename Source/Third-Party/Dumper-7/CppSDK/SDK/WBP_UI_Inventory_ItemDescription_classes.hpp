@@ -38,8 +38,8 @@ public:
 	class USBZBaseWeaponData*                     ParentWeapon_Data;                                 // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetInventoryItem(class USBZInventoryBaseData* InInventoryItem);
 	void SetIsOwned(bool bIsOwned);
+	void SetInventoryItem(class USBZInventoryBaseData* InInventoryItem);
 
 public:
 	static class UClass* StaticClass()

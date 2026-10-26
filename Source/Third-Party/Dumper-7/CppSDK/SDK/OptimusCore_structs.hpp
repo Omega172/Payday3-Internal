@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ComputeFramework_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "RigVM_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ComputeFramework_structs.hpp"
 #include "ControlRig_structs.hpp"
 
 
@@ -218,6 +218,15 @@ public:
 };
 DUMPER7_ASSERTS_FOptimus_ShaderBinding;
 
+// ScriptStruct OptimusCore.OptimusAction
+// 0x0018 (0x0018 - 0x0000)
+struct alignas(0x08) FOptimusAction
+{
+public:
+	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusAction;
+
 // ScriptStruct OptimusCore.OptimusValidatedName
 // 0x000C (0x000C - 0x0000)
 struct FOptimusValidatedName final
@@ -257,6 +266,49 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusParameterBinding;
 
+// ScriptStruct OptimusCore.OptimusNodeAction_MoveNode
+// 0x0030 (0x0048 - 0x0018)
+struct FOptimusNodeAction_MoveNode final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusNodeAction_MoveNode;
+
+// ScriptStruct OptimusCore.RigVMTrait_OptimusVariableBase
+// 0x0000 (0x0018 - 0x0018)
+struct FRigVMTrait_OptimusVariableBase : public FRigVMTrait
+{
+};
+DUMPER7_ASSERTS_FRigVMTrait_OptimusVariableBase;
+
+// ScriptStruct OptimusCore.RigVMTrait_SetDeformerNameArrayVariable
+// 0x0010 (0x0028 - 0x0018)
+struct FRigVMTrait_SetDeformerNameArrayVariable final : public FRigVMTrait_OptimusVariableBase
+{
+public:
+	TArray<class FName>                           Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRigVMTrait_SetDeformerNameArrayVariable;
+
+// ScriptStruct OptimusCore.OptimusFunctionReferenceNodeSet
+// 0x0050 (0x0050 - 0x0000)
+struct FOptimusFunctionReferenceNodeSet final
+{
+public:
+	TSet<TSoftObjectPtr<class UOptimusNode_FunctionReference>> Nodes;                                // 0x0000(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FOptimusFunctionReferenceNodeSet;
+
+// ScriptStruct OptimusCore.OptimusFunctionReferenceData
+// 0x0050 (0x0050 - 0x0000)
+struct FOptimusFunctionReferenceData final
+{
+public:
+	TMap<struct FSoftObjectPath, struct FOptimusFunctionReferenceNodeSet> FunctionReferences;        // 0x0000(0x0050)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FOptimusFunctionReferenceData;
+
 // ScriptStruct OptimusCore.OptimusParameterBindingArray
 // 0x0010 (0x0010 - 0x0000)
 struct FOptimusParameterBindingArray final
@@ -277,23 +329,14 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusConstantIdentifier;
 
-// ScriptStruct OptimusCore.OptimusAction
-// 0x0018 (0x0018 - 0x0000)
-struct alignas(0x08) FOptimusAction
+// ScriptStruct OptimusCore.OptimusComponentBindingAction_RemoveBinding
+// 0x0040 (0x0058 - 0x0018)
+struct FOptimusComponentBindingAction_RemoveBinding final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_0[0x18];                                       // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_18[0x40];                                      // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FOptimusAction;
-
-// ScriptStruct OptimusCore.OptimusVariableAction_RenameVariable
-// 0x0018 (0x0030 - 0x0018)
-struct FOptimusVariableAction_RenameVariable final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusVariableAction_RenameVariable;
+DUMPER7_ASSERTS_FOptimusComponentBindingAction_RemoveBinding;
 
 // ScriptStruct OptimusCore.OptimusConstantDefinition
 // 0x0038 (0x0038 - 0x0000)
@@ -330,6 +373,15 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusConstantIndex;
 
+// ScriptStruct OptimusCore.OptimusNodeAction_SetPinValue
+// 0x0030 (0x0048 - 0x0018)
+struct FOptimusNodeAction_SetPinValue final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusNodeAction_SetPinValue;
+
 // ScriptStruct OptimusCore.OptimusKernelConstantContainer
 // 0x0070 (0x0070 - 0x0000)
 struct FOptimusKernelConstantContainer final
@@ -340,6 +392,22 @@ public:
 	TMap<class FName, int32>                      GroupNameToBindingIndex;                           // 0x0020(0x0050)(NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FOptimusKernelConstantContainer;
+
+// ScriptStruct OptimusCore.OptimusNodeAction_AddRemovePin
+// 0x00A8 (0x00C0 - 0x0018)
+struct FOptimusNodeAction_AddRemovePin : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0xA8];                                      // 0x0018(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusNodeAction_AddRemovePin;
+
+// ScriptStruct OptimusCore.OptimusNodeAction_RemovePin
+// 0x0000 (0x00C0 - 0x00C0)
+struct FOptimusNodeAction_RemovePin final : public FOptimusNodeAction_AddRemovePin
+{
+};
+DUMPER7_ASSERTS_FOptimusNodeAction_RemovePin;
 
 // ScriptStruct OptimusCore.OptimusConstantContainer
 // 0x0010 (0x0010 - 0x0000)
@@ -371,6 +439,15 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusValueIdentifier;
 
+// ScriptStruct OptimusCore.OptimusComponentBindingAction_SetComponentSource
+// 0x0040 (0x0058 - 0x0018)
+struct FOptimusComponentBindingAction_SetComponentSource final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x40];                                      // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusComponentBindingAction_SetComponentSource;
+
 // ScriptStruct OptimusCore.OptimusValueContainerStruct
 // 0x0010 (0x0010 - 0x0000)
 struct FOptimusValueContainerStruct final
@@ -393,16 +470,14 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusValueDescription;
 
-// ScriptStruct OptimusCore.OptimusNode_ComponentSource_DuplicationInfo
-// 0x0018 (0x0018 - 0x0000)
-struct FOptimusNode_ComponentSource_DuplicationInfo final
+// ScriptStruct OptimusCore.OptimusNodeAction_SetPinDataDomain
+// 0x0090 (0x00A8 - 0x0018)
+struct FOptimusNodeAction_SetPinDataDomain final : public FOptimusAction
 {
 public:
-	class FName                                   BindingName;                                       // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UOptimusComponentSource>    ComponentType;                                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_18[0x90];                                      // 0x0018(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FOptimusNode_ComponentSource_DuplicationInfo;
+DUMPER7_ASSERTS_FOptimusNodeAction_SetPinDataDomain;
 
 // ScriptStruct OptimusCore.OptimusDataInterfacePropertyOverrideInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -445,12 +520,15 @@ public:
 };
 DUMPER7_ASSERTS_FRigUnit_AddOptimusDeformer;
 
-// ScriptStruct OptimusCore.RigVMTrait_OptimusVariableBase
-// 0x0000 (0x0018 - 0x0018)
-struct FRigVMTrait_OptimusVariableBase : public FRigVMTrait
+// ScriptStruct OptimusCore.RigVMTrait_SetDeformerQuatVariable
+// 0x0028 (0x0040 - 0x0018)
+struct FRigVMTrait_SetDeformerQuatVariable final : public FRigVMTrait_OptimusVariableBase
 {
+public:
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FQuat                                  Value;                                             // 0x0020(0x0020)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FRigVMTrait_OptimusVariableBase;
+DUMPER7_ASSERTS_FRigVMTrait_SetDeformerQuatVariable;
 
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerIntVariable
 // 0x0008 (0x0020 - 0x0018)
@@ -461,6 +539,23 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerIntVariable;
+
+// ScriptStruct OptimusCore.OptimusNodeAction_AddPin
+// 0x0000 (0x00C0 - 0x00C0)
+struct FOptimusNodeAction_AddPin final : public FOptimusNodeAction_AddRemovePin
+{
+};
+DUMPER7_ASSERTS_FOptimusNodeAction_AddPin;
+
+// ScriptStruct OptimusCore.RigVMTrait_SetDeformerNameVariable
+// 0x0010 (0x0028 - 0x0018)
+struct FRigVMTrait_SetDeformerNameVariable final : public FRigVMTrait_OptimusVariableBase
+{
+public:
+	class FName                                   Value;                                             // 0x0018(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMTrait_SetDeformerNameVariable;
 
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerIntArrayVariable
 // 0x0010 (0x0028 - 0x0018)
@@ -488,6 +583,26 @@ public:
 	TArray<struct FIntPoint>                      Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerInt2ArrayVariable;
+
+// ScriptStruct OptimusCore.RigVMTrait_SetDeformerRotatorArrayVariable
+// 0x0010 (0x0028 - 0x0018)
+struct FRigVMTrait_SetDeformerRotatorArrayVariable final : public FRigVMTrait_OptimusVariableBase
+{
+public:
+	TArray<struct FRotator>                       Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRigVMTrait_SetDeformerRotatorArrayVariable;
+
+// ScriptStruct OptimusCore.OptimusExecutionDomain
+// 0x0020 (0x0020 - 0x0000)
+struct FOptimusExecutionDomain final
+{
+public:
+	EOptimusExecutionDomainType                   Type;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   Name;                                              // 0x0004(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 Expression;                                        // 0x0010(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+};
+DUMPER7_ASSERTS_FOptimusExecutionDomain;
 
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerInt3Variable
 // 0x0010 (0x0028 - 0x0018)
@@ -517,6 +632,16 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerInt4Variable;
 
+// ScriptStruct OptimusCore.RigVMTrait_SetDeformerBoolVariable
+// 0x0008 (0x0020 - 0x0018)
+struct FRigVMTrait_SetDeformerBoolVariable final : public FRigVMTrait_OptimusVariableBase
+{
+public:
+	bool                                          Value;                                             // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FRigVMTrait_SetDeformerBoolVariable;
+
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerInt4ArrayVariable
 // 0x0010 (0x0028 - 0x0018)
 struct FRigVMTrait_SetDeformerInt4ArrayVariable final : public FRigVMTrait_OptimusVariableBase
@@ -526,6 +651,15 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerInt4ArrayVariable;
 
+// ScriptStruct OptimusCore.OptimusNodeGraphAction_DuplicateNode
+// 0x00A8 (0x00C0 - 0x0018)
+struct alignas(0x10) FOptimusNodeGraphAction_DuplicateNode final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0xA8];                                      // 0x0018(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusNodeGraphAction_DuplicateNode;
+
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerFloatVariable
 // 0x0008 (0x0020 - 0x0018)
 struct FRigVMTrait_SetDeformerFloatVariable final : public FRigVMTrait_OptimusVariableBase
@@ -534,6 +668,15 @@ public:
 	double                                        Value;                                             // 0x0018(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerFloatVariable;
+
+// ScriptStruct OptimusCore.OptimusComponentBindingAction_RenameBinding
+// 0x0018 (0x0030 - 0x0018)
+struct FOptimusComponentBindingAction_RenameBinding final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusComponentBindingAction_RenameBinding;
 
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerFloatArrayVariable
 // 0x0010 (0x0028 - 0x0018)
@@ -553,6 +696,16 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerVector2Variable;
 
+// ScriptStruct OptimusCore.RigVMTrait_SetDeformerTransformVariable
+// 0x0068 (0x0080 - 0x0018)
+struct FRigVMTrait_SetDeformerTransformVariable final : public FRigVMTrait_OptimusVariableBase
+{
+public:
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             Value;                                             // 0x0020(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FRigVMTrait_SetDeformerTransformVariable;
+
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerVector2ArrayVariable
 // 0x0010 (0x0028 - 0x0018)
 struct FRigVMTrait_SetDeformerVector2ArrayVariable final : public FRigVMTrait_OptimusVariableBase
@@ -561,6 +714,15 @@ public:
 	TArray<struct FVector2D>                      Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerVector2ArrayVariable;
+
+// ScriptStruct OptimusCore.OptimusCompoundAction
+// 0x0010 (0x0028 - 0x0018)
+struct FOptimusCompoundAction final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x10];                                      // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusCompoundAction;
 
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerVectorVariable
 // 0x0018 (0x0030 - 0x0018)
@@ -590,6 +752,15 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerVector4Variable;
 
+// ScriptStruct OptimusCore.OptimusNodeAction_RenameNode
+// 0x0030 (0x0048 - 0x0018)
+struct FOptimusNodeAction_RenameNode final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusNodeAction_RenameNode;
+
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerVector4ArrayVariable
 // 0x0010 (0x0028 - 0x0018)
 struct FRigVMTrait_SetDeformerVector4ArrayVariable final : public FRigVMTrait_OptimusVariableBase
@@ -617,16 +788,6 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerLinearColorArrayVariable;
 
-// ScriptStruct OptimusCore.RigVMTrait_SetDeformerQuatVariable
-// 0x0028 (0x0040 - 0x0018)
-struct FRigVMTrait_SetDeformerQuatVariable final : public FRigVMTrait_OptimusVariableBase
-{
-public:
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FQuat                                  Value;                                             // 0x0020(0x0020)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRigVMTrait_SetDeformerQuatVariable;
-
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerQuatArrayVariable
 // 0x0010 (0x0028 - 0x0018)
 struct FRigVMTrait_SetDeformerQuatArrayVariable final : public FRigVMTrait_OptimusVariableBase
@@ -645,25 +806,6 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerRotatorVariable;
 
-// ScriptStruct OptimusCore.RigVMTrait_SetDeformerRotatorArrayVariable
-// 0x0010 (0x0028 - 0x0018)
-struct FRigVMTrait_SetDeformerRotatorArrayVariable final : public FRigVMTrait_OptimusVariableBase
-{
-public:
-	TArray<struct FRotator>                       Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRigVMTrait_SetDeformerRotatorArrayVariable;
-
-// ScriptStruct OptimusCore.RigVMTrait_SetDeformerTransformVariable
-// 0x0068 (0x0080 - 0x0018)
-struct FRigVMTrait_SetDeformerTransformVariable final : public FRigVMTrait_OptimusVariableBase
-{
-public:
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             Value;                                             // 0x0020(0x0060)(Edit, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRigVMTrait_SetDeformerTransformVariable;
-
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerTransformArrayVariable
 // 0x0010 (0x0028 - 0x0018)
 struct FRigVMTrait_SetDeformerTransformArrayVariable final : public FRigVMTrait_OptimusVariableBase
@@ -672,35 +814,6 @@ public:
 	TArray<struct FTransform>                     Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerTransformArrayVariable;
-
-// ScriptStruct OptimusCore.RigVMTrait_SetDeformerNameVariable
-// 0x0010 (0x0028 - 0x0018)
-struct FRigVMTrait_SetDeformerNameVariable final : public FRigVMTrait_OptimusVariableBase
-{
-public:
-	class FName                                   Value;                                             // 0x0018(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMTrait_SetDeformerNameVariable;
-
-// ScriptStruct OptimusCore.RigVMTrait_SetDeformerNameArrayVariable
-// 0x0010 (0x0028 - 0x0018)
-struct FRigVMTrait_SetDeformerNameArrayVariable final : public FRigVMTrait_OptimusVariableBase
-{
-public:
-	TArray<class FName>                           Value;                                             // 0x0018(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FRigVMTrait_SetDeformerNameArrayVariable;
-
-// ScriptStruct OptimusCore.RigVMTrait_SetDeformerBoolVariable
-// 0x0008 (0x0020 - 0x0018)
-struct FRigVMTrait_SetDeformerBoolVariable final : public FRigVMTrait_OptimusVariableBase
-{
-public:
-	bool                                          Value;                                             // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FRigVMTrait_SetDeformerBoolVariable;
 
 // ScriptStruct OptimusCore.RigVMTrait_SetDeformerBoolArrayVariable
 // 0x0010 (0x0028 - 0x0018)
@@ -711,15 +824,6 @@ public:
 };
 DUMPER7_ASSERTS_FRigVMTrait_SetDeformerBoolArrayVariable;
 
-// ScriptStruct OptimusCore.OptimusCompoundAction
-// 0x0010 (0x0028 - 0x0018)
-struct FOptimusCompoundAction final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x10];                                      // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusCompoundAction;
-
 // ScriptStruct OptimusCore.OptimusComponentBindingAction_AddBinding
 // 0x0028 (0x0040 - 0x0018)
 struct FOptimusComponentBindingAction_AddBinding final : public FOptimusAction
@@ -728,78 +832,6 @@ public:
 	uint8                                         Pad_18[0x28];                                      // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FOptimusComponentBindingAction_AddBinding;
-
-// ScriptStruct OptimusCore.OptimusComponentBindingAction_RemoveBinding
-// 0x0040 (0x0058 - 0x0018)
-struct FOptimusComponentBindingAction_RemoveBinding final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x40];                                      // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusComponentBindingAction_RemoveBinding;
-
-// ScriptStruct OptimusCore.OptimusComponentBindingAction_RenameBinding
-// 0x0018 (0x0030 - 0x0018)
-struct FOptimusComponentBindingAction_RenameBinding final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusComponentBindingAction_RenameBinding;
-
-// ScriptStruct OptimusCore.OptimusComponentBindingAction_SetComponentSource
-// 0x0040 (0x0058 - 0x0018)
-struct FOptimusComponentBindingAction_SetComponentSource final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x40];                                      // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusComponentBindingAction_SetComponentSource;
-
-// ScriptStruct OptimusCore.OptimusNodeAction_RenameNode
-// 0x0030 (0x0048 - 0x0018)
-struct FOptimusNodeAction_RenameNode final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_RenameNode;
-
-// ScriptStruct OptimusCore.OptimusNodeAction_MoveNode
-// 0x0030 (0x0048 - 0x0018)
-struct FOptimusNodeAction_MoveNode final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_MoveNode;
-
-// ScriptStruct OptimusCore.OptimusFunctionReferenceNodeSet
-// 0x0050 (0x0050 - 0x0000)
-struct FOptimusFunctionReferenceNodeSet final
-{
-public:
-	TSet<TSoftObjectPtr<class UOptimusNode_FunctionReference>> Nodes;                                // 0x0000(0x0050)(UObjectWrapper, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FOptimusFunctionReferenceNodeSet;
-
-// ScriptStruct OptimusCore.OptimusFunctionReferenceData
-// 0x0050 (0x0050 - 0x0000)
-struct FOptimusFunctionReferenceData final
-{
-public:
-	TMap<struct FSoftObjectPath, struct FOptimusFunctionReferenceNodeSet> FunctionReferences;        // 0x0000(0x0050)(NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FOptimusFunctionReferenceData;
-
-// ScriptStruct OptimusCore.OptimusNodeAction_SetPinValue
-// 0x0030 (0x0048 - 0x0018)
-struct FOptimusNodeAction_SetPinValue final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x30];                                      // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_SetPinValue;
 
 // ScriptStruct OptimusCore.OptimusNodeAction_SetPinName
 // 0x0028 (0x0040 - 0x0018)
@@ -810,17 +842,6 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusNodeAction_SetPinName;
 
-// ScriptStruct OptimusCore.OptimusLoopTerminalInfo
-// 0x0018 (0x0018 - 0x0000)
-struct FOptimusLoopTerminalInfo final
-{
-public:
-	int32                                         Count;                                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FOptimusParameterBindingArray          Bindings;                                          // 0x0008(0x0010)(Edit, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FOptimusLoopTerminalInfo;
-
 // ScriptStruct OptimusCore.OptimusNodeAction_SetPinType
 // 0x0028 (0x0040 - 0x0018)
 struct FOptimusNodeAction_SetPinType final : public FOptimusAction
@@ -830,44 +851,12 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusNodeAction_SetPinType;
 
-// ScriptStruct OptimusCore.OptimusNodeAction_SetPinDataDomain
-// 0x0090 (0x00A8 - 0x0018)
-struct FOptimusNodeAction_SetPinDataDomain final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0x90];                                      // 0x0018(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_SetPinDataDomain;
-
-// ScriptStruct OptimusCore.OptimusNodeAction_AddRemovePin
-// 0x00A8 (0x00C0 - 0x0018)
-struct FOptimusNodeAction_AddRemovePin : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0xA8];                                      // 0x0018(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_AddRemovePin;
-
-// ScriptStruct OptimusCore.OptimusNodeAction_AddPin
-// 0x0000 (0x00C0 - 0x00C0)
-struct FOptimusNodeAction_AddPin final : public FOptimusNodeAction_AddRemovePin
-{
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_AddPin;
-
 // ScriptStruct OptimusCore.OptimusNodeAction_AddGroupingPin
 // 0x0000 (0x00C0 - 0x00C0)
 struct FOptimusNodeAction_AddGroupingPin final : public FOptimusNodeAction_AddRemovePin
 {
 };
 DUMPER7_ASSERTS_FOptimusNodeAction_AddGroupingPin;
-
-// ScriptStruct OptimusCore.OptimusNodeAction_RemovePin
-// 0x0000 (0x00C0 - 0x00C0)
-struct FOptimusNodeAction_RemovePin final : public FOptimusNodeAction_AddRemovePin
-{
-};
-DUMPER7_ASSERTS_FOptimusNodeAction_RemovePin;
 
 // ScriptStruct OptimusCore.OptimusNodeAction_MovePin
 // 0x0030 (0x0048 - 0x0018)
@@ -886,26 +875,6 @@ public:
 	uint8                                         Pad_18[0x78];                                      // 0x0018(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FOptimusNodeGraphAction_AddGraph;
-
-// ScriptStruct OptimusCore.OptimusFunctionNodeGraphHeader
-// 0x0048 (0x0048 - 0x0000)
-struct FOptimusFunctionNodeGraphHeader final
-{
-public:
-	TSoftObjectPtr<class UOptimusFunctionNodeGraph> GraphPath;                                       // 0x0000(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   FunctionName;                                      // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class FName                                   Category;                                          // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FOptimusFunctionNodeGraphHeader;
-
-// ScriptStruct OptimusCore.OptimusFunctionNodeGraphHeaderArray
-// 0x0010 (0x0010 - 0x0000)
-struct FOptimusFunctionNodeGraphHeaderArray final
-{
-public:
-	TArray<struct FOptimusFunctionNodeGraphHeader> Headers;                                          // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FOptimusFunctionNodeGraphHeaderArray;
 
 // ScriptStruct OptimusCore.OptimusNodeGraphAction_RemoveGraph
 // 0x0048 (0x0060 - 0x0018)
@@ -933,15 +902,6 @@ public:
 	uint8                                         Pad_18[0x88];                                      // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FOptimusNodeGraphAction_AddNode;
-
-// ScriptStruct OptimusCore.OptimusNodeGraphAction_DuplicateNode
-// 0x00A8 (0x00C0 - 0x0018)
-struct alignas(0x10) FOptimusNodeGraphAction_DuplicateNode final : public FOptimusAction
-{
-public:
-	uint8                                         Pad_18[0xA8];                                      // 0x0018(0x00A8)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FOptimusNodeGraphAction_DuplicateNode;
 
 // ScriptStruct OptimusCore.OptimusNodeGraphAction_RemoveNode
 // 0x0050 (0x0068 - 0x0018)
@@ -1090,6 +1050,15 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusVariableAction_RemoveVariable;
 
+// ScriptStruct OptimusCore.OptimusVariableAction_RenameVariable
+// 0x0018 (0x0030 - 0x0018)
+struct FOptimusVariableAction_RenameVariable final : public FOptimusAction
+{
+public:
+	uint8                                         Pad_18[0x18];                                      // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FOptimusVariableAction_RenameVariable;
+
 // ScriptStruct OptimusCore.OptimusVariableAction_SetDataType
 // 0x0090 (0x00A8 - 0x0018)
 struct FOptimusVariableAction_SetDataType final : public FOptimusAction
@@ -1178,6 +1147,17 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusGraphVariableDescription;
 
+// ScriptStruct OptimusCore.OptimusNode_ComponentSource_DuplicationInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FOptimusNode_ComponentSource_DuplicationInfo final
+{
+public:
+	class FName                                   BindingName;                                       // 0x0000(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UOptimusComponentSource>    ComponentType;                                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FOptimusNode_ComponentSource_DuplicationInfo;
+
 // ScriptStruct OptimusCore.OptimusSecondaryInputBindingsGroup
 // 0x0020 (0x0020 - 0x0000)
 struct FOptimusSecondaryInputBindingsGroup final
@@ -1210,6 +1190,17 @@ public:
 	TArray<class FName>                           OutputPinPath;                                     // 0x0010(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FOptimusPinPairInfo;
+
+// ScriptStruct OptimusCore.OptimusLoopTerminalInfo
+// 0x0018 (0x0018 - 0x0000)
+struct FOptimusLoopTerminalInfo final
+{
+public:
+	int32                                         Count;                                             // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FOptimusParameterBindingArray          Bindings;                                          // 0x0008(0x0010)(Edit, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FOptimusLoopTerminalInfo;
 
 // ScriptStruct OptimusCore.OptimusNode_ResourceAccessorBase_DuplicationInfo
 // 0x0090 (0x0090 - 0x0000)
@@ -1277,16 +1268,25 @@ public:
 };
 DUMPER7_ASSERTS_FOptimusDeformerInstanceComponentBinding;
 
-// ScriptStruct OptimusCore.OptimusExecutionDomain
-// 0x0020 (0x0020 - 0x0000)
-struct FOptimusExecutionDomain final
+// ScriptStruct OptimusCore.OptimusFunctionNodeGraphHeader
+// 0x0048 (0x0048 - 0x0000)
+struct FOptimusFunctionNodeGraphHeader final
 {
 public:
-	EOptimusExecutionDomainType                   Type;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   Name;                                              // 0x0004(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 Expression;                                        // 0x0010(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSoftObjectPtr<class UOptimusFunctionNodeGraph> GraphPath;                                       // 0x0000(0x0030)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   FunctionName;                                      // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                   Category;                                          // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-DUMPER7_ASSERTS_FOptimusExecutionDomain;
+DUMPER7_ASSERTS_FOptimusFunctionNodeGraphHeader;
+
+// ScriptStruct OptimusCore.OptimusFunctionNodeGraphHeaderArray
+// 0x0010 (0x0010 - 0x0000)
+struct FOptimusFunctionNodeGraphHeaderArray final
+{
+public:
+	TArray<struct FOptimusFunctionNodeGraphHeader> Headers;                                          // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FOptimusFunctionNodeGraphHeaderArray;
 
 // ScriptStruct OptimusCore.OptimusVariableMetaDataEntry
 // 0x0020 (0x0020 - 0x0000)

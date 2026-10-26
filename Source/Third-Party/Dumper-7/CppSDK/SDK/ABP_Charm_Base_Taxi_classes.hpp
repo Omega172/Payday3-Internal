@@ -18,7 +18,7 @@
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_Charm_Base_Taxi.ABP_Charm_Base_Taxi_C
-// 0x0B10 (0x0EE0 - 0x03D0)
+// 0x0C10 (0x0FE0 - 0x03D0)
 class UABP_Charm_Base_Taxi_C final : public UAnimInstance
 {
 public:
@@ -26,8 +26,8 @@ public:
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x03D0(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x03D8(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x03E0(0x0030)()
-	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0410(0x0AA0)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0EB0(0x0030)()
+	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0410(0x0BA0)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0FB0(0x0030)()
 
 public:
 	void AnimGraph(struct FPoseLink* AnimGraph);

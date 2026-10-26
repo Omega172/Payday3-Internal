@@ -16,21 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MapPinManager.BP_MapPinManager_C.ExecuteUbergraph_BP_MapPinManager
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MapPinManager.BP_MapPinManager_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_MapPinManager_C::ExecuteUbergraph_BP_MapPinManager(int32 EntryPoint)
+void ABP_MapPinManager_C::ReceiveBeginPlay()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "BP_MapPinManager_C", "ExecuteUbergraph_BP_MapPinManager", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	Params::BP_MapPinManager_C_ExecuteUbergraph_BP_MapPinManager Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -46,15 +40,21 @@ void ABP_MapPinManager_C::Populate_Data()
 }
 
 
-// Function BP_MapPinManager.BP_MapPinManager_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_MapPinManager.BP_MapPinManager_C.ExecuteUbergraph_BP_MapPinManager
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MapPinManager_C::ReceiveBeginPlay()
+void ABP_MapPinManager_C::ExecuteUbergraph_BP_MapPinManager(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MapPinManager_C", "ExecuteUbergraph_BP_MapPinManager", FuncInfo);
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_MapPinManager_C_ExecuteUbergraph_BP_MapPinManager Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

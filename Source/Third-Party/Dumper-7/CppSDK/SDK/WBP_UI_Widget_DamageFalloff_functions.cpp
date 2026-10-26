@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_DamageFalloff_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Widget_DamageFalloff_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.ExecuteUbergraph_WBP_UI_Widget_DamageFalloff
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,41 +52,23 @@ void UWBP_UI_Widget_DamageFalloff_C::ExecuteUbergraph_WBP_UI_Widget_DamageFallof
 }
 
 
-// Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_DamageFalloff_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Widget_DamageFalloff_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.OnPaint
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FPaintContext&                   Context                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// struct FPaintContext&                   Context_OnPaint                                        (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void UWBP_UI_Widget_DamageFalloff_C::OnPaint(struct FPaintContext& Context) const
+void UWBP_UI_Widget_DamageFalloff_C::OnPaint(struct FPaintContext& Context_OnPaint) const
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPaint", FnName));
 
 	Params::WBP_UI_Widget_DamageFalloff_C_OnPaint Parms{};
 
-	Parms.Context = std::move(Context);
+	Parms.Context_OnPaint = std::move(Context_OnPaint);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Context = std::move(Parms.Context);
+	Context_OnPaint = std::move(Parms.Context_OnPaint);
 }
 
 

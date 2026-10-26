@@ -78,28 +78,19 @@ struct FDataflowSimulationNode : public FDataflowNode
 };
 DUMPER7_ASSERTS_FDataflowSimulationNode;
 
-// ScriptStruct DataflowSimulation.DataflowExecutionNode
-// 0x0000 (0x01A0 - 0x01A0)
-struct FDataflowExecutionNode : public FDataflowSimulationNode
-{
-};
-DUMPER7_ASSERTS_FDataflowExecutionNode;
-
-// ScriptStruct DataflowSimulation.SimulationProxiesTerminalDataflowNode
-// 0x0010 (0x01B0 - 0x01A0)
-struct FSimulationProxiesTerminalDataflowNode final : public FDataflowExecutionNode
-{
-public:
-	TArray<struct FDataflowSimulationProperty>    SimulationProxies;                                 // 0x01A0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSimulationProxiesTerminalDataflowNode;
-
 // ScriptStruct DataflowSimulation.DataflowInvalidNode
 // 0x0000 (0x01A0 - 0x01A0)
 struct FDataflowInvalidNode : public FDataflowSimulationNode
 {
 };
 DUMPER7_ASSERTS_FDataflowInvalidNode;
+
+// ScriptStruct DataflowSimulation.DataflowExecutionNode
+// 0x0000 (0x01A0 - 0x01A0)
+struct FDataflowExecutionNode : public FDataflowSimulationNode
+{
+};
+DUMPER7_ASSERTS_FDataflowExecutionNode;
 
 // ScriptStruct DataflowSimulation.DataflowSimulationTime
 // 0x000C (0x000C - 0x0000)
@@ -153,5 +144,14 @@ public:
 	TArray<class FString>                         SimulationGroups;                                  // 0x01C0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FFilterSimulationProxiesDataflowNode;
+
+// ScriptStruct DataflowSimulation.SimulationProxiesTerminalDataflowNode
+// 0x0010 (0x01B0 - 0x01A0)
+struct FSimulationProxiesTerminalDataflowNode final : public FDataflowExecutionNode
+{
+public:
+	TArray<struct FDataflowSimulationProperty>    SimulationProxies;                                 // 0x01A0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSimulationProxiesTerminalDataflowNode;
 
 SDK_NAMESPACE_END

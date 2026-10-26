@@ -16,103 +16,145 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.SetButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InButtonText                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_AppearanceTextButton_C::ButtonDisabledChanged(bool bInIsDisabled)
+void UWBP_UI_AppearanceTextButton_C::SetButtonText(const class FText& InButtonText)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonDisabledChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetButtonText", FnName));
 
-	Params::WBP_UI_AppearanceTextButton_C_ButtonDisabledChanged Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_SetButtonText Parms{};
 
-	Parms.bInIsDisabled = bInIsDisabled;
+	Parms.InButtonText = std::move(InButtonText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ResetToDefaultButtonText
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_AppearanceTextButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_AppearanceTextButton_C::ResetToDefaultButtonText()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
-
-	Params::WBP_UI_AppearanceTextButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_AppearanceTextButton_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
-
-	Params::WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DefaultEquipped
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bEquipped                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_AppearanceTextButton_C::DefaultEquipped(bool bEquipped)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DefaultEquipped", FnName));
-
-	Params::WBP_UI_AppearanceTextButton_C_DefaultEquipped Parms{};
-
-	Parms.bEquipped = bEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::DisabledButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisabledButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetToDefaultButtonText", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ExecuteUbergraph_WBP_UI_AppearanceTextButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.RefreshVisual
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_AppearanceTextButton_C::ExecuteUbergraph_WBP_UI_AppearanceTextButton(int32 EntryPoint)
+void UWBP_UI_AppearanceTextButton_C::RefreshVisual()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_AppearanceTextButton_C", "ExecuteUbergraph_WBP_UI_AppearanceTextButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisual", FnName));
 
-	Params::WBP_UI_AppearanceTextButton_C_ExecuteUbergraph_WBP_UI_AppearanceTextButton Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_AppearanceTextButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnHoverVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnHoverVisuals(bool bIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHoverVisuals", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_OnHoverVisuals Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnFocusedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnFocusedVisuals(bool bIsFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusedVisuals", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_OnFocusedVisuals Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnDisabledVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsDisabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnDisabledVisuals(bool bIsDisabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDisabledVisuals", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_OnDisabledVisuals Parms{};
+
+	Parms.bIsDisabled = bIsDisabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnAnimationFinished
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const class UWidgetAnimation*           Animation_OnAnimationFinished                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::OnAnimationFinished(const class UWidgetAnimation* Animation_OnAnimationFinished)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAnimationFinished", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_OnAnimationFinished Parms{};
+
+	Parms.Animation_OnAnimationFinished = Animation_OnAnimationFinished;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -137,145 +179,103 @@ void UWBP_UI_AppearanceTextButton_C::GetText(class FText* OutText)
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnAnimationFinished
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ExecuteUbergraph_WBP_UI_AppearanceTextButton
+// (Final, UbergraphFunction)
 // Parameters:
-// const class UWidgetAnimation*           Animation                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
+void UWBP_UI_AppearanceTextButton_C::ExecuteUbergraph_WBP_UI_AppearanceTextButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAnimationFinished", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_AppearanceTextButton_C", "ExecuteUbergraph_WBP_UI_AppearanceTextButton", FuncInfo);
 
-	Params::WBP_UI_AppearanceTextButton_C_OnAnimationFinished Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_ExecuteUbergraph_WBP_UI_AppearanceTextButton Parms{};
 
-	Parms.Animation = Animation;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnDisabledVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDisabled_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_AppearanceTextButton_C::OnDisabledVisuals(bool bIsDisabled_0)
+void UWBP_UI_AppearanceTextButton_C::DisabledButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDisabledVisuals", FnName));
-
-	Params::WBP_UI_AppearanceTextButton_C_OnDisabledVisuals Parms{};
-
-	Parms.bIsDisabled_0 = bIsDisabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnFocusedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_AppearanceTextButton_C::OnFocusedVisuals(bool bIsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusedVisuals", FnName));
-
-	Params::WBP_UI_AppearanceTextButton_C_OnFocusedVisuals Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnHoverVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_AppearanceTextButton_C::OnHoverVisuals(bool bIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHoverVisuals", FnName));
-
-	Params::WBP_UI_AppearanceTextButton_C_OnHoverVisuals Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisabledButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.DefaultEquipped
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEquipped_DefaultEquipped                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_AppearanceTextButton_C::DefaultEquipped(bool bEquipped_DefaultEquipped)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DefaultEquipped", FnName));
 
-	Params::WBP_UI_AppearanceTextButton_C_PreConstruct Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_DefaultEquipped Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bEquipped_DefaultEquipped = bEquipped_DefaultEquipped;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.RefreshVisual
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::RefreshVisual()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisual", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ResetToDefaultButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_AppearanceTextButton_C::ResetToDefaultButtonText()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetToDefaultButtonText", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.SetButtonText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class FText&                      InButtonText                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_AppearanceTextButton_C::SetButtonText(const class FText& InButtonText)
+void UWBP_UI_AppearanceTextButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetButtonText", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_UI_AppearanceTextButton_C_SetButtonText Parms{};
+	Params::WBP_UI_AppearanceTextButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.InButtonText = std::move(InButtonText);
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_AppearanceTextButton.WBP_UI_AppearanceTextButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsDisabled_ButtonDisabledChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_AppearanceTextButton_C::ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonDisabledChanged", FnName));
+
+	Params::WBP_UI_AppearanceTextButton_C_ButtonDisabledChanged Parms{};
+
+	Parms.bInIsDisabled_ButtonDisabledChanged = bInIsDisabled_ButtonDisabledChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

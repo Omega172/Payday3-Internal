@@ -25,8 +25,8 @@ public:
 	class UWidgetAnimation*                       Highlight;                                         // 0x02F8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_Shop_Notification(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

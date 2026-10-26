@@ -17,32 +17,87 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PrePush_ACC53719475B1F16E5A1A488D1F8C3A2
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CampaignActSelect_C_PrePush_ACC53719475B1F16E5A1A488D1F8C3A2 final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PrePush_ACC53719475B1F16E5A1A488D1F8C3A2;
 
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PrePush_11968E474C5875ECAC460A911469C1F8
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CampaignActSelect_C_PrePush_11968E474C5875ECAC460A911469C1F8 final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PrePush_11968E474C5875ECAC460A911469C1F8;
 
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PrePush_0FB414534A1D2B161BCDA389BEA3D17F
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CampaignActSelect_C_PrePush_0FB414534A1D2B161BCDA389BEA3D17F final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PrePush_0FB414534A1D2B161BCDA389BEA3D17F;
+
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PostPush_ACC53719475B1F16E5A1A488D1F8C3A2
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignActSelect_C_PostPush_ACC53719475B1F16E5A1A488D1F8C3A2 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PostPush_ACC53719475B1F16E5A1A488D1F8C3A2;
+
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PostPush_11968E474C5875ECAC460A911469C1F8
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignActSelect_C_PostPush_11968E474C5875ECAC460A911469C1F8 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PostPush_11968E474C5875ECAC460A911469C1F8;
+
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PostPush_0FB414534A1D2B161BCDA389BEA3D17F
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignActSelect_C_PostPush_0FB414534A1D2B161BCDA389BEA3D17F final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PostPush_0FB414534A1D2B161BCDA389BEA3D17F;
+
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_CampaignActSelect_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_OnGainedStackFocused;
+
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.OnControlsReferencePressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_CampaignActSelect_C_OnControlsReferencePressed final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_OnControlsReferencePressed;
+
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.OnButtonFocusedChanged_Event
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CampaignActSelect_C_OnButtonFocusedChanged_Event final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_OnButtonFocusedChanged_Event;
 
 // Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.ExecuteUbergraph_WBP_CampaignActSelect
 // 0x02A8 (0x02A8 - 0x0000)
@@ -97,7 +152,7 @@ public:
 	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_6;            // 0x0180(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0194(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x01A0(0x0038)()
 	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x01E0(0x0010)(ReferenceParm)
@@ -127,87 +182,32 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CampaignActSelect_C_ExecuteUbergraph_WBP_CampaignActSelect;
 
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.OnButtonFocusedChanged_Event
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CampaignActSelect_C_OnButtonFocusedChanged_Event final
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_OnButtonFocusedChanged_Event;
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_03_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.OnControlsReferencePressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_CampaignActSelect_C_OnControlsReferencePressed final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_OnControlsReferencePressed;
-
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_CampaignActSelect_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_OnGainedStackFocused;
-
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PostPush_0FB414534A1D2B161BCDA389BEA3D17F
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_PostPush_0FB414534A1D2B161BCDA389BEA3D17F final
+struct WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PostPush_0FB414534A1D2B161BCDA389BEA3D17F;
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_02_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PostPush_11968E474C5875ECAC460A911469C1F8
+// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_PostPush_11968E474C5875ECAC460A911469C1F8 final
+struct WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PostPush_11968E474C5875ECAC460A911469C1F8;
-
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PostPush_ACC53719475B1F16E5A1A488D1F8C3A2
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_PostPush_ACC53719475B1F16E5A1A488D1F8C3A2 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PostPush_ACC53719475B1F16E5A1A488D1F8C3A2;
-
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PrePush_0FB414534A1D2B161BCDA389BEA3D17F
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_PrePush_0FB414534A1D2B161BCDA389BEA3D17F final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PrePush_0FB414534A1D2B161BCDA389BEA3D17F;
-
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PrePush_11968E474C5875ECAC460A911469C1F8
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_PrePush_11968E474C5875ECAC460A911469C1F8 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PrePush_11968E474C5875ECAC460A911469C1F8;
-
-// Function WBP_CampaignActSelect.WBP_CampaignActSelect_C.PrePush_ACC53719475B1F16E5A1A488D1F8C3A2
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignActSelect_C_PrePush_ACC53719475B1F16E5A1A488D1F8C3A2 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignActSelect_C_PrePush_ACC53719475B1F16E5A1A488D1F8C3A2;
+DUMPER7_ASSERTS_WBP_CampaignActSelect_C_BndEvt__WBP_CampaignActSelect_WBP_Act_01_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -28,10 +28,10 @@ public:
 	int32                                         Index_0;                                           // 0x0318(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button);
-	void ExecuteUbergraph_WBP_PageCycleCounter(int32 EntryPoint);
-	void SetActive();
 	void SetInactive();
+	void SetActive();
+	void ExecuteUbergraph_WBP_PageCycleCounter(int32 EntryPoint);
+	void BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button);
 
 public:
 	static class UClass* StaticClass()

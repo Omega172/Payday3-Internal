@@ -45,15 +45,15 @@ public:
 	bool                                          bShouldHideTypeclass;                              // 0x0389(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ItemInventoryDescription(int32 EntryPoint);
-	void GetEquippableConfig(class USBZInventoryItemDecorator* ItemDeco, class USBZBaseWeaponData** BaseWeaponData, struct FSBZEquippableConfig* EquippableConfig, bool* bIsPreset);
-	void InitGenericData(class USBZInventoryItemDecorator* ItemDeco);
-	void PreConstruct(bool IsDesignTime);
-	void RefreshNamedSlotVisibility();
-	void SetItemDecorator(class USBZInventoryItemDecorator* ItemDeco);
-	void TryInitArmorData(class USBZInventoryItemDecorator* ItemDeco);
-	void TryInitWeaponData(class USBZInventoryItemDecorator* ItemDeco);
 	void TryInitWeaponSlots(class USBZInventoryItemDecorator* ItemDeco);
+	void TryInitWeaponData(class USBZInventoryItemDecorator* ItemDeco);
+	void TryInitArmorData(class USBZInventoryItemDecorator* ItemDeco);
+	void SetItemDecorator(class USBZInventoryItemDecorator* ItemDeco);
+	void RefreshNamedSlotVisibility();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void InitGenericData(class USBZInventoryItemDecorator* ItemDeco);
+	void GetEquippableConfig(class USBZInventoryItemDecorator* ItemDeco, class USBZBaseWeaponData** BaseWeaponData, struct FSBZEquippableConfig* EquippableConfig, bool* bIsPreset);
+	void ExecuteUbergraph_WBP_ItemInventoryDescription(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

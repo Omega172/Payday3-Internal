@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Blackmarket_ConfirmationPopupBody_C_ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Blackmarket_ConfirmationPopupBody_C_ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody;
-
 // Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.SetCurrencyType
 // 0x00F0 (0x00F0 - 0x0000)
 struct WBP_Blackmarket_ConfirmationPopupBody_C_SetCurrencyType final
@@ -44,6 +35,15 @@ public:
 	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x00E0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Blackmarket_ConfirmationPopupBody_C_SetCurrencyType;
+
+// Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Blackmarket_ConfirmationPopupBody_C_ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Blackmarket_ConfirmationPopupBody_C_ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

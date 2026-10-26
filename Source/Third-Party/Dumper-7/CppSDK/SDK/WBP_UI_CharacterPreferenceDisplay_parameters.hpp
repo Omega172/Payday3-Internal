@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CharacterPreferenceDisplay_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceDisplay_C_PreConstruct;
+
 // Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_UI_CharacterPreferenceDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay final
@@ -35,15 +44,6 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay;
-
-// Function WBP_UI_CharacterPreferenceDisplay.WBP_UI_CharacterPreferenceDisplay_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CharacterPreferenceDisplay_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceDisplay_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

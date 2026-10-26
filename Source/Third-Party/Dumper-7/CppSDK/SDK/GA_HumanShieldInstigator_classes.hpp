@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_HumanShieldInstigator.GA_HumanShieldInstigator_C
-// 0x0000 (0x04D8 - 0x04D8)
+// 0x0000 (0x04E0 - 0x04E0)
 class UGA_HumanShieldInstigator_C final : public USBZPlayerHumanShieldInstigatorAbility
 {
 public:

@@ -44,20 +44,20 @@ public:
 	class USBZBaseWeaponData*                     ParentWeaponData;                                  // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature();
-	void ConstructBlotSlotTexts(const class USBZWeaponPartDataAsset* InWeaponPart, class FText* OutSlotNames, bool* bHasValues);
-	void ExecuteUbergraph_WBP_UI_WeaponModiferScreen(int32 EntryPoint);
-	void NewWeaponPartFocused(const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton);
-	void OnBackPressed();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnWeaponPartButtonEquipped(const class USBZMainMenuWeaponPartProgressionButton* EquippedButton);
-	void OnWeaponPartButtonSelected(const class USBZMainMenuWeaponPartProgressionButton* SelectedButton);
-	void PreConstruct(bool IsDesignTime);
-	void SetDefaultFocus();
-	void SetPartPadding();
 	void UpdateActiveButtonControlsReference();
+	void SetPartPadding();
+	void SetDefaultFocus();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnWeaponPartButtonSelected(const class USBZMainMenuWeaponPartProgressionButton* SelectedButton_OnWeaponPartButtonSelected);
+	void OnWeaponPartButtonEquipped(const class USBZMainMenuWeaponPartProgressionButton* EquippedButton_OnWeaponPartButtonEquipped);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnBackPressed();
+	void NewWeaponPartFocused(const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton_NewWeaponPartFocused);
+	void ExecuteUbergraph_WBP_UI_WeaponModiferScreen(int32 EntryPoint);
+	void ConstructBlotSlotTexts(const class USBZWeaponPartDataAsset* InWeaponPart, class FText* OutSlotNames, bool* bHasValues);
+	void BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

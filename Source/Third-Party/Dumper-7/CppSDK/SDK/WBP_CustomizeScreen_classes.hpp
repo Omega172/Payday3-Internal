@@ -53,33 +53,33 @@ public:
 	int32                                         InitialIndex;                                      // 0x0464(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
-	void CreateSlotDecos();
-	void CustomEvent_0(class FName ActionName);
-	void ExecuteUbergraph_WBP_CustomizeScreen(int32 EntryPoint);
-	void GetWeaponConfig(ESBZEquippableLoadoutSlot ItemSlot, int32 Index_0, struct FSBZWeaponInventorySlot* Output, bool* bFound);
-	void ItemStrategy_OnActionExecuted(ESBZItemAction Action);
-	void OnBackPressed();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnPurchaseDone(class FName ClosingActionName);
-	void OnRefreshRequest_Event_0();
-	void OnRemovedFromStack();
-	void PostPush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget);
+	void SetStrategy(class USBZBaseItemStrategy* Strategy);
 	void SetItemDecoration(class USBZInventoryItemDecorator* ItemDeco);
-	void SetStrategy(class USBZBaseItemStrategy* Strategy_0);
+	void PrePush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnRemovedFromStack();
+	void OnRefreshRequest_Event_0();
+	void OnPurchaseDone(class FName ClosingActionName);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnBackPressed();
+	void ItemStrategy_OnActionExecuted(ESBZItemAction Action);
+	void GetWeaponConfig(ESBZEquippableLoadoutSlot ItemSlot, int32 Index_0, struct FSBZWeaponInventorySlot* Output, bool* bFound);
+	void ExecuteUbergraph_WBP_CustomizeScreen(int32 EntryPoint);
+	void CustomEvent_0(class FName ActionName);
+	void CreateSlotDecos();
+	void BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
+	void BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
+	void BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

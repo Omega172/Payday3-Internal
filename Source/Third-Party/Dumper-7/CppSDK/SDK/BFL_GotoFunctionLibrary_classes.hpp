@@ -21,8 +21,8 @@ SDK_NAMESPACE_START
 class UBFL_GotoFunctionLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void GetHighestPrioPlayerItemSource(const struct FSBZStoreBaseItem& SBZStoreBaseItem, class UObject* __WorldContext, ESBZPlayerItemSource* HighestPrioSource, bool* bFoundSource);
 	static void GetItemSourceText(ESBZPlayerItemSource InputPin, class UObject* __WorldContext, class FText* OutputPin);
+	static void GetHighestPrioPlayerItemSource(const struct FSBZStoreBaseItem& SBZStoreBaseItem, class UObject* __WorldContext, ESBZPlayerItemSource* HighestPrioSource, bool* bFoundSource);
 
 public:
 	static class UClass* StaticClass()

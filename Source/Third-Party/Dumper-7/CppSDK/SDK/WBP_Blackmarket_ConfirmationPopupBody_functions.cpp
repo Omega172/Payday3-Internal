@@ -16,19 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody
-// (Final, UbergraphFunction)
+// Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.SetCurrencyType
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_ConfirmationPopupBody_C::ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody(int32 EntryPoint)
+void UWBP_Blackmarket_ConfirmationPopupBody_C::SetCurrencyType(ESBZCurrencyCode Currency)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Blackmarket_ConfirmationPopupBody_C", "ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCurrencyType", FnName));
 
-	Params::WBP_Blackmarket_ConfirmationPopupBody_C_ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody Parms{};
+	Params::WBP_Blackmarket_ConfirmationPopupBody_C_SetCurrencyType Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Currency = Currency;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -46,19 +46,19 @@ void UWBP_Blackmarket_ConfirmationPopupBody_C::OnItemDataInitialized()
 }
 
 
-// Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.SetCurrencyType
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Blackmarket_ConfirmationPopupBody.WBP_Blackmarket_ConfirmationPopupBody_C.ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody
+// (Final, UbergraphFunction)
 // Parameters:
-// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_ConfirmationPopupBody_C::SetCurrencyType(ESBZCurrencyCode Currency)
+void UWBP_Blackmarket_ConfirmationPopupBody_C::ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCurrencyType", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Blackmarket_ConfirmationPopupBody_C", "ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody", FuncInfo);
 
-	Params::WBP_Blackmarket_ConfirmationPopupBody_C_SetCurrencyType Parms{};
+	Params::WBP_Blackmarket_ConfirmationPopupBody_C_ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody Parms{};
 
-	Parms.Currency = Currency;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

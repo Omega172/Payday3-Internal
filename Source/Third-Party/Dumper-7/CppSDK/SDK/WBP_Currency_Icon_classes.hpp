@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_Currency_Icon(int32 EntryPoint);
-	void GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor);
 	void SetCurrency(ESBZCurrencyCode Index_0);
+	void GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor);
+	void ExecuteUbergraph_WBP_Currency_Icon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

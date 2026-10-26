@@ -16,99 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.UpdateSkillLinePointCounter
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_SkillLine_C::Construct()
+void UWBP_Skills2_SkillLine_C::UpdateSkillLinePointCounter()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillLinePointCounter", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.ExecuteUbergraph_WBP_Skills2_SkillLine
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillLine_C::ExecuteUbergraph_WBP_Skills2_SkillLine(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_SkillLine_C", "ExecuteUbergraph_WBP_Skills2_SkillLine", FuncInfo);
-
-	Params::WBP_Skills2_SkillLine_C_ExecuteUbergraph_WBP_Skills2_SkillLine Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.InitializeSkillTree
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSkillTreeData*                Skill_Tree_Data                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillLine_C::InitializeSkillTree(class USBZSkillTreeData* Skill_Tree_Data)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkillTree", FnName));
-
-	Params::WBP_Skills2_SkillLine_C_InitializeSkillTree Parms{};
-
-	Parms.Skill_Tree_Data = Skill_Tree_Data;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillLine_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_Skills2_SkillLine_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.RefreshSkillButtonVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_SkillLine_C::RefreshSkillButtonVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSkillButtonVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.SetSkillMenuRef
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Skills2_Menu_C*              SkillMenu                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_SkillLine_C::SetSkillMenuRef(class UWBP_Skills2_Menu_C* SkillMenu)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillMenuRef", FnName));
-
-	Params::WBP_Skills2_SkillLine_C_SetSkillMenuRef Parms{};
-
-	Parms.SkillMenu = SkillMenu;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -132,13 +48,97 @@ void UWBP_Skills2_SkillLine_C::SetSkillTierLocked(bool LockedStatus, int32 Tier)
 }
 
 
-// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.UpdateSkillLinePointCounter
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.SetSkillMenuRef
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Skills2_Menu_C*              SkillMenu                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Skills2_SkillLine_C::UpdateSkillLinePointCounter()
+void UWBP_Skills2_SkillLine_C::SetSkillMenuRef(class UWBP_Skills2_Menu_C* SkillMenu)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillLinePointCounter", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillMenuRef", FnName));
+
+	Params::WBP_Skills2_SkillLine_C_SetSkillMenuRef Parms{};
+
+	Parms.SkillMenu = SkillMenu;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.RefreshSkillButtonVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Skills2_SkillLine_C::RefreshSkillButtonVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSkillButtonVisuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillLine_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_Skills2_SkillLine_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.InitializeSkillTree
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSkillTreeData*                Skill_Tree_Data                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillLine_C::InitializeSkillTree(class USBZSkillTreeData* Skill_Tree_Data)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkillTree", FnName));
+
+	Params::WBP_Skills2_SkillLine_C_InitializeSkillTree Parms{};
+
+	Parms.Skill_Tree_Data = Skill_Tree_Data;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.ExecuteUbergraph_WBP_Skills2_SkillLine
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_SkillLine_C::ExecuteUbergraph_WBP_Skills2_SkillLine(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_SkillLine_C", "ExecuteUbergraph_WBP_Skills2_SkillLine", FuncInfo);
+
+	Params::WBP_Skills2_SkillLine_C_ExecuteUbergraph_WBP_Skills2_SkillLine Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_SkillLine.WBP_Skills2_SkillLine_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Skills2_SkillLine_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

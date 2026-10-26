@@ -17,6 +17,37 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnUpdateOwnershipStatus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_PurchasePopup_C_OnUpdateOwnershipStatus final
+{
+public:
+	bool                                          bIsOwned_OnUpdateOwnershipStatus;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_OnUpdateOwnershipStatus;
+
+// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnSelectedItemChanged
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Shop_PurchasePopup_C_OnSelectedItemChanged final
+{
+public:
+	bool                                          bIsOwned_OnSelectedItemChanged;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsVendorPermission_OnSelectedItemChanged;         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_OnSelectedItemChanged;
+
+// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnOpen
+// 0x0170 (0x0170 - 0x0000)
+struct WBP_Shop_PurchasePopup_C_OnOpen final
+{
+public:
+	bool                                          bShouldPlayAnimation_OnOpen;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHeistDLC_OnOpen;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZItemBundleStoreItem                InItemBundle_OnOpen;                               // 0x0008(0x0168)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_OnOpen;
+
 // Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.ExecuteUbergraph_WBP_Shop_PurchasePopup
 // 0x01D8 (0x01D8 - 0x0000)
 struct WBP_Shop_PurchasePopup_C_ExecuteUbergraph_WBP_Shop_PurchasePopup final
@@ -61,37 +92,6 @@ public:
 	class FText                                   K2Node_Select_Default_5;                           // 0x01C8(0x0010)(ConstParm)
 };
 DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_ExecuteUbergraph_WBP_Shop_PurchasePopup;
-
-// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnOpen
-// 0x0170 (0x0170 - 0x0000)
-struct WBP_Shop_PurchasePopup_C_OnOpen final
-{
-public:
-	bool                                          bShouldPlayAnimation;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsHeistDLC;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZItemBundleStoreItem                InItemBundle;                                      // 0x0008(0x0168)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_OnOpen;
-
-// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnSelectedItemChanged
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Shop_PurchasePopup_C_OnSelectedItemChanged final
-{
-public:
-	bool                                          bIsOwned;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsVendorPermission;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_OnSelectedItemChanged;
-
-// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnUpdateOwnershipStatus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_PurchasePopup_C_OnUpdateOwnershipStatus final
-{
-public:
-	bool                                          bIsOwned;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_PurchasePopup_C_OnUpdateOwnershipStatus;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

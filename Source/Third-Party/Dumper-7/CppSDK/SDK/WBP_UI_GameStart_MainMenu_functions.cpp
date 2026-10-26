@@ -34,36 +34,6 @@ void UWBP_UI_GameStart_MainMenu_C::ExecuteUbergraph_WBP_UI_GameStart_MainMenu(in
 }
 
 
-// Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_GameStart_MainMenu_C::OnAddedToStack()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAddedToStack", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_GameStart_MainMenu_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
@@ -76,6 +46,24 @@ void UWBP_UI_GameStart_MainMenu_C::OnLostStackFocused()
 }
 
 
+// Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_GameStart_MainMenu_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnRemovedFromStack
 // (Event, Protected, BlueprintEvent)
 
@@ -83,6 +71,18 @@ void UWBP_UI_GameStart_MainMenu_C::OnRemovedFromStack()
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_GameStart_MainMenu.WBP_UI_GameStart_MainMenu_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_GameStart_MainMenu_C::OnAddedToStack()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAddedToStack", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

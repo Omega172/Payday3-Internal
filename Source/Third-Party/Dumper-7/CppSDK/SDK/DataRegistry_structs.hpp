@@ -63,6 +63,35 @@ enum class EDataRegistryAvailability : uint8
 	EDataRegistryAvailability_MAX            = 6,
 };
 
+// ScriptStruct DataRegistry.DataRegistrySource_DataTableRules
+// 0x0008 (0x0008 - 0x0000)
+struct FDataRegistrySource_DataTableRules final
+{
+public:
+	bool                                          bPrecacheTable;                                    // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CachedTableKeepSeconds;                            // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDataRegistrySource_DataTableRules;
+
+// ScriptStruct DataRegistry.DataRegistryLookup
+// 0x0020 (0x0020 - 0x0000)
+struct alignas(0x08) FDataRegistryLookup final
+{
+public:
+	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FDataRegistryLookup;
+
+// ScriptStruct DataRegistry.DataRegistryIdFormat
+// 0x000C (0x000C - 0x0000)
+struct FDataRegistryIdFormat final
+{
+public:
+	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FDataRegistryIdFormat;
+
 // ScriptStruct DataRegistry.DataRegistryType
 // 0x000C (0x000C - 0x0000)
 struct FDataRegistryType final
@@ -81,35 +110,6 @@ public:
 	class FName                                   ItemName;                                          // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FDataRegistryId;
-
-// ScriptStruct DataRegistry.DataRegistryLookup
-// 0x0020 (0x0020 - 0x0000)
-struct alignas(0x08) FDataRegistryLookup final
-{
-public:
-	uint8                                         Pad_0[0x20];                                       // 0x0000(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FDataRegistryLookup;
-
-// ScriptStruct DataRegistry.DataRegistrySource_DataTableRules
-// 0x0008 (0x0008 - 0x0000)
-struct FDataRegistrySource_DataTableRules final
-{
-public:
-	bool                                          bPrecacheTable;                                    // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CachedTableKeepSeconds;                            // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDataRegistrySource_DataTableRules;
-
-// ScriptStruct DataRegistry.DataRegistryIdFormat
-// 0x000C (0x000C - 0x0000)
-struct FDataRegistryIdFormat final
-{
-public:
-	struct FGameplayTag                           BaseGameplayTag;                                   // 0x0000(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FDataRegistryIdFormat;
 
 // ScriptStruct DataRegistry.DataRegistryCachePolicy
 // 0x0014 (0x0014 - 0x0000)

@@ -40,14 +40,14 @@ public:
 	bool                                          IsActiveSlot;                                      // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay(int32 EntryPoint);
-	void OnActiveChanged(bool bInIsActive);
-	void OnCharacterInSlotChanged();
-	void OnEmptySet();
-	void OnHovered(bool bIsHovered);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnLockedChanged(bool bInIsLocked_OnLockedChanged);
 	void OnIndexChanged();
-	void OnLockedChanged(bool bInIsLocked);
-	void PreConstruct(bool IsDesignTime);
+	void OnHovered(bool bIsHovered_OnHovered);
+	void OnEmptySet();
+	void OnCharacterInSlotChanged();
+	void OnActiveChanged(bool bInIsActive_OnActiveChanged);
+	void ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

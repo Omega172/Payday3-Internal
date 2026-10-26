@@ -35,15 +35,15 @@ public:
 	double                                        MaxDesiredWidth;                                   // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_SideModInfoPanel(int32 EntryPoint);
-	void GetFirstSkillData(const class USBZWeaponPartDataAsset* WeaponPartData, class USBZSkillData** SkillData);
-	void PreConstruct(bool IsDesignTime);
-	void SetBody(const class FText& InText);
-	void SetHeader(const class FText& InText);
-	void SetInfoToEmpty();
-	void SetInfoToUnequipMod();
-	void SetWeaponPartDescription(const class FText& InText);
 	void UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData);
+	void SetWeaponPartDescription(const class FText& InText);
+	void SetInfoToUnequipMod();
+	void SetInfoToEmpty();
+	void SetHeader(const class FText& InText);
+	void SetBody(const class FText& InText);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void GetFirstSkillData(const class USBZWeaponPartDataAsset* WeaponPartData, class USBZSkillData** SkillData);
+	void ExecuteUbergraph_WBP_SideModInfoPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

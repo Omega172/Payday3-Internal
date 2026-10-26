@@ -25,13 +25,13 @@ public:
 	class UWBP_UI_Inventory_ItemDescription_C*    Widget_ItemDescription;                            // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_WeaponProgressionScreen(int32 EntryPoint);
-	void FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart);
-	void OnAddedToStack();
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void OnLostStackFocused();
-	void PreConstruct(bool IsDesignTime);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnAddedToStack();
+	void FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart_FocusedWeaponPartChanged);
+	void ExecuteUbergraph_WBP_UI_WeaponProgressionScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

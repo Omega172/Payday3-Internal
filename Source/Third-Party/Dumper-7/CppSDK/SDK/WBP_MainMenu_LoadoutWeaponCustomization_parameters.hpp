@@ -17,56 +17,195 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.SetWeaponPart
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_SetWeaponPart final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_SetWeaponPart;
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature final
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.SetBoxVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_SetBoxVisible final
 {
 public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZWeaponCustomizationSubScreen              Screen;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_SetBoxVisible;
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreatePartButton
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_CreatePartButton final
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.RefreshEquippedStatus
+// 0x0098 (0x0098 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_RefreshEquippedStatus final
 {
 public:
-	class UPanelWidget*                           ParentWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZModularPartSlot*              WeaponSlot;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class USBZModularPartDataAsset*         Equippable_Part;                                   // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class USBZMenuButton* Button)> OnClick;                                           // 0x0018(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	const class USBZWeaponPartDataAsset*          NewlyEquippedPart;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsModEquipped;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponCustomiaztionPartButton_C*    Button;                                            // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponCustomiaztionSlotButton_C*    K2Node_DynamicCast_AsSBZWeapon_Customiaztion_Slot_Button; // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZWeaponCustomiaztionSlotButton_C*    K2Node_DynamicCast_AsSBZWeapon_Customiaztion_Slot_Button_1; // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_CreatePartButton;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_RefreshEquippedStatus;
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreateSlotButton
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_CreateSlotButton final
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_PreConstruct final
 {
 public:
-	class UPanelWidget*                           ParentWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZModularPartSlotBase*          WeaponSlot;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class USBZEquippablePartDataAsset*      Equippable_Part;                                   // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class USBZMenuButton* Button)> OnClick;                                           // 0x0018(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponCustomiaztionSlotButton_C*    Button;                                            // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZWeaponCustomiaztionSlotButton_C*    CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZModularPartDataAsset*         CallFunc_GetEquippedPartInSlot_Part;               // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_CreateSlotButton;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_PreConstruct;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressetCosmeticSlotButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressetCosmeticSlotButton final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressetCosmeticSlotButton;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressedWeaponSlotButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressedWeaponSlotButton final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressedWeaponSlotButton;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_OnGainedStackFocused;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponSlotItems
+// 0x00D0 (0x00D0 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponSlotItems final
+{
+public:
+	TDelegate<void(class USBZMenuButton* Button)> OnSelectedEvent;                                   // 0x0000(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> CallFunc_GetModularConfiguration_Modular_Configuration; // 0x0020(0x0050)()
+	TArray<class USBZWeaponPartSlot*>             CallFunc_Map_Keys_Keys;                            // 0x0070(0x0010)(ReferenceParm)
+	const class USBZWeaponPartSlot*               CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponCustomiaztionSlotButton_C*    CallFunc_CreateSlotButton_Button;                  // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZModularPartSlotConfiguration       CallFunc_Map_Find_Value;                           // 0x0090(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponSlotItems;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponPartItems
+// 0x0130 (0x0130 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponPartItems final
+{
+public:
+	class USBZWeaponCustomiaztionSlotButton_C*    BoxReference;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZMenuButton* Button)> OnSelectedEvent;                                   // 0x0008(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsModEquipped;                                     // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZModularPartSlot*              K2Node_DynamicCast_AsSBZModular_Part_Slot;         // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USBZWeaponPartDataAsset*>        K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
+	const class USBZWeaponPartDataAsset*          CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_CreatePartButton_Button;                  // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> CallFunc_GetModularConfiguration_Modular_Configuration; // 0x0080(0x0050)()
+	struct FSBZModularPartSlotConfiguration       CallFunc_Map_Find_Value;                           // 0x00D0(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartDataAsset*         CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_CreatePartButton_Button_1;                // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_CreatePartButton_Button_2;                // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponPartItems;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetModularConfiguration
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_GetModularConfiguration final
+{
+public:
+	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> Modular_Configuration;  // 0x0000(0x0050)(Parm, OutParm)
+	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data;          // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_GetModularConfiguration;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetEquippedPartInSlot
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_GetEquippedPartInSlot final
+{
+public:
+	const class USBZModularPartSlotBase*          Key;                                               // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	class USBZModularPartDataAsset*               Part;                                              // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> CallFunc_GetModularConfiguration_Modular_Configuration; // 0x0010(0x0050)()
+	const class USBZWeaponPartSlot*               K2Node_DynamicCast_AsSBZWeapon_Part_Slot;          // 0x0060(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZModularPartSlotConfiguration       CallFunc_Map_Find_Value;                           // 0x0070(0x0028)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZEquippablePartConfigGroup          CallFunc_Map_Find_Value_1;                         // 0x00A0(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_GetEquippedPartInSlot;
 
 // Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization
 // 0x0390 (0x0390 - 0x0000)
@@ -203,7 +342,7 @@ public:
 	uint8                                         Pad_314[0x4];                                      // 0x0314(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_2;               // 0x0318(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0320(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0324(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0324(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_331[0x3];                                      // 0x0331(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -225,195 +364,56 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_ExecuteUbergraph_WBP_MainMenu_LoadoutWeaponCustomization;
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetEquippedPartInSlot
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_GetEquippedPartInSlot final
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreateSlotButton
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_CreateSlotButton final
 {
 public:
-	const class USBZModularPartSlotBase*          Key;                                               // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	class USBZModularPartDataAsset*               Part;                                              // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> CallFunc_GetModularConfiguration_Modular_Configuration; // 0x0010(0x0050)()
-	const class USBZWeaponPartSlot*               K2Node_DynamicCast_AsSBZWeapon_Part_Slot;          // 0x0060(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZModularPartSlotConfiguration       CallFunc_Map_Find_Value;                           // 0x0070(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZEquippablePartConfigGroup          CallFunc_Map_Find_Value_1;                         // 0x00A0(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_GetEquippedPartInSlot;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.GetModularConfiguration
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_GetModularConfiguration final
-{
-public:
-	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> Modular_Configuration;  // 0x0000(0x0050)(Parm, OutParm)
-	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data;          // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_GetModularConfiguration;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponPartItems
-// 0x0130 (0x0130 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponPartItems final
-{
-public:
-	class USBZWeaponCustomiaztionSlotButton_C*    BoxReference;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class USBZMenuButton* Button)> OnSelectedEvent;                                   // 0x0008(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsModEquipped;                                     // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZModularPartSlot*              K2Node_DynamicCast_AsSBZModular_Part_Slot;         // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USBZWeaponPartDataAsset*>        K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm)
-	const class USBZWeaponPartDataAsset*          CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_CreatePartButton_Button;                  // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> CallFunc_GetModularConfiguration_Modular_Configuration; // 0x0080(0x0050)()
-	struct FSBZModularPartSlotConfiguration       CallFunc_Map_Find_Value;                           // 0x00D0(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	const class USBZModularPartDataAsset*         CallFunc_Array_Get_Item_1;                         // 0x0100(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_CreatePartButton_Button_1;                // 0x0110(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_121[0x3];                                      // 0x0121(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_CreatePartButton_Button_2;                // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponPartItems;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.InitializeWeaponSlotItems
-// 0x00D0 (0x00D0 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponSlotItems final
-{
-public:
-	TDelegate<void(class USBZMenuButton* Button)> OnSelectedEvent;                                   // 0x0000(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class USBZWeaponPartSlot*, struct FSBZModularPartSlotConfiguration> CallFunc_GetModularConfiguration_Modular_Configuration; // 0x0020(0x0050)()
-	TArray<class USBZWeaponPartSlot*>             CallFunc_Map_Keys_Keys;                            // 0x0070(0x0010)(ReferenceParm)
-	const class USBZWeaponPartSlot*               CallFunc_Array_Get_Item;                           // 0x0080(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZWeaponCustomiaztionSlotButton_C*    CallFunc_CreateSlotButton_Button;                  // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZModularPartSlotConfiguration       CallFunc_Map_Find_Value;                           // 0x0090(0x0028)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_InitializeWeaponSlotItems;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_OnGainedStackFocused;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressedWeaponSlotButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressedWeaponSlotButton final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressedWeaponSlotButton;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.OnPressetCosmeticSlotButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressetCosmeticSlotButton final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_OnPressetCosmeticSlotButton;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_PreConstruct;
-
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.RefreshEquippedStatus
-// 0x0098 (0x0098 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_RefreshEquippedStatus final
-{
-public:
-	const class USBZWeaponPartDataAsset*          NewlyEquippedPart;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsModEquipped;                                     // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                Temp_object_Variable;                              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           ParentWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartSlotBase*          WeaponSlot;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZEquippablePartDataAsset*      Equippable_Part;                                   // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZMenuButton* Button)> OnClick;                                           // 0x0018(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZWeaponCustomiaztionSlotButton_C*    K2Node_DynamicCast_AsSBZWeapon_Customiaztion_Slot_Button; // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponCustomiaztionSlotButton_C*    K2Node_DynamicCast_AsSBZWeapon_Customiaztion_Slot_Button_1; // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponCustomiaztionSlotButton_C*    Button;                                            // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponCustomiaztionSlotButton_C*    CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartDataAsset*         CallFunc_GetEquippedPartInSlot_Part;               // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_RefreshEquippedStatus;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_CreateSlotButton;
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.SetBoxVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_SetBoxVisible final
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.CreatePartButton
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_CreatePartButton final
 {
 public:
-	ESBZWeaponCustomizationSubScreen              Screen;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           ParentWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartSlot*              WeaponSlot;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZModularPartDataAsset*         Equippable_Part;                                   // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZMenuButton* Button)> OnClick;                                           // 0x0018(0x0014)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZWeaponCustomiaztionPartButton_C*    Button;                                            // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZWeaponCustomiaztionPartButton_C*    CallFunc_SpawnObject_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_SetBoxVisible;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_CreatePartButton;
 
-// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.SetWeaponPart
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_WBP_Local_Navbar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature;
+
+// Function WBP_MainMenu_LoadoutWeaponCustomization.WBP_MainMenu_LoadoutWeaponCustomization_C.BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_LoadoutWeaponCustomization_C_SetWeaponPart final
+struct WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_SetWeaponPart;
+DUMPER7_ASSERTS_WBP_MainMenu_LoadoutWeaponCustomization_C_BndEvt__WBP_MainMenu_LoadoutWeaponCustomization_DebugConfigButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

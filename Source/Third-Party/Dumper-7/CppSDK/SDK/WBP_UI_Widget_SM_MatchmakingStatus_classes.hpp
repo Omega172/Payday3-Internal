@@ -42,40 +42,40 @@ public:
 	double                                        HoldIncrement;                                     // 0x0370(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_3_OnHold__DelegateSignature();
-	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_4_OnRelease__DelegateSignature();
-	void ClearUpdatingProgress();
-	void Destruct();
-	void DisplayNotifications(bool bShowNotification);
-	void ExecuteUbergraph_WBP_UI_Widget_SM_MatchmakingStatus(int32 EntryPoint);
-	void GetMatchJoiningText(class FText* Output_Text, class FText* OutDifficultyText);
-	void InitalizeLookingForMatch();
-	void InitalizeMatch_found();
-	void InitalizeNoneState();
-	void InitializeLobbyLoadingState();
-	void InitializeLobbyOnGoingIntoGame();
-	void InitializeLobbyOnLoaded();
-	void InitializeLobbyOnPlayerReadiedUp();
-	void OnAsyncLoadingCancel();
-	void OnAsyncLoadingDone();
-	void OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress);
-	void OnEnteredMatchmaking();
-	void OnExitedMatchmaking();
-	void OnInitialized();
-	void OnLobbyEntered();
-	void OnLobbyEvent(ESBZOnlineCode ErrorCode);
-	void OnLobbyExited();
-	void OnLocalClientReady_Event_0(ESBZOnlineCode ErrorCode);
-	void OnMatchFound();
-	void OnPlayerReady();
-	void OnTravelToGameStarted();
-	void OnUIStackChanged(const struct FSBZUIStackChangedEvent& StackEvent);
-	void PreConstruct(bool IsDesignTime);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UpdateHoldValue();
-	void UpdateLobbyHeader();
 	void UpdateTimer();
+	void UpdateLobbyHeader();
+	void UpdateHoldValue();
+	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnUIStackChanged(const struct FSBZUIStackChangedEvent& StackEvent);
+	void OnTravelToGameStarted();
+	void OnPlayerReady();
+	void OnMatchFound();
+	void OnLocalClientReady_Event_0(ESBZOnlineCode ErrorCode);
+	void OnLobbyExited();
+	void OnLobbyEvent(ESBZOnlineCode ErrorCode);
+	void OnLobbyEntered();
+	void OnInitialized();
+	void OnExitedMatchmaking();
+	void OnEnteredMatchmaking();
+	void OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress_OnAsyncLoadingProgress);
+	void OnAsyncLoadingDone();
+	void OnAsyncLoadingCancel();
+	void InitializeLobbyOnPlayerReadiedUp();
+	void InitializeLobbyOnLoaded();
+	void InitializeLobbyOnGoingIntoGame();
+	void InitializeLobbyLoadingState();
+	void InitalizeNoneState();
+	void InitalizeMatch_found();
+	void InitalizeLookingForMatch();
+	void GetMatchJoiningText(class FText* Output_Text, class FText* OutDifficultyText);
+	void ExecuteUbergraph_WBP_UI_Widget_SM_MatchmakingStatus(int32 EntryPoint);
+	void DisplayNotifications(bool bShowNotification);
+	void Destruct();
+	void ClearUpdatingProgress();
+	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_4_OnRelease__DelegateSignature();
+	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_3_OnHold__DelegateSignature();
+	void BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

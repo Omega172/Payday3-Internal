@@ -18,6 +18,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.UpdatePreplanningDescription
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription final
+{
+public:
+	class USBZPreplanningAssetData*               InPreplanning;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription;
+
 // Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.SetSoloModeVisuals
 // 0x0005 (0x0005 - 0x0000)
 struct WBP_UI_PreplanningItemSelection_C_SetSoloModeVisuals final
@@ -31,15 +41,61 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_SetSoloModeVisuals;
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.UpdatePreplanningDescription
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription final
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_PreConstruct final
 {
 public:
-	class USBZPreplanningAssetData*               InPreplanning;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_PreConstruct;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningSelectionEnabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged final
+{
+public:
+	bool                                          bEnabled_OnPreplanningSelectionEnabledChanged;     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPrePlanningItemButtonFocused
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused final
+{
+public:
+	class USBZMenuButton*                         InButton_OnPrePlanningItemButtonFocused;           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused_OnPrePlanningItemButtonFocused;         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetRemovedByPlayer
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer final
+{
+public:
+	struct FUniqueNetIdRepl                       PlayerID_OnPreplanningAssetRemovedByPlayer;        // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetAddedByPlayer
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer final
+{
+public:
+	struct FUniqueNetIdRepl                       PlayerID_OnPreplanningAssetAddedByPlayer;          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+	const class USBZPreplanningAssetData*         PreplanningAsset_OnPreplanningAssetAddedByPlayer;  // 0x0030(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer;
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked;
 
 // Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.GetPlayerIndex
 // 0x0050 (0x0050 - 0x0000)
@@ -53,62 +109,6 @@ public:
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_GetPlayerIndex;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetAddedByPlayer
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer final
-{
-public:
-	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-	const class USBZPreplanningAssetData*         PreplanningAsset;                                  // 0x0030(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetRemovedByPlayer
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer final
-{
-public:
-	struct FUniqueNetIdRepl                       PlayerID;                                          // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPrePlanningItemButtonFocused
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused final
-{
-public:
-	class USBZMenuButton*                         InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_PreConstruct;
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningSelectionEnabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged;
 
 // Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.ExecuteUbergraph_WBP_UI_PreplanningItemSelection
 // 0x0198 (0x0198 - 0x0000)

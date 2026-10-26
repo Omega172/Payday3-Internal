@@ -16,15 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.EmptySet
+// Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.SpriteLoaded
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     OutLoadedSprite_SpriteLoaded                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SuitCosmeticPurchasePopUp_C::EmptySet()
+void UWBP_UI_SuitCosmeticPurchasePopUp_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite_SpriteLoaded)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmptySet", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpriteLoaded", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_SuitCosmeticPurchasePopUp_C_SpriteLoaded Parms{};
+
+	Parms.OutLoadedSprite_SpriteLoaded = OutLoadedSprite_SpriteLoaded;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -46,21 +52,15 @@ void UWBP_UI_SuitCosmeticPurchasePopUp_C::ExecuteUbergraph_WBP_UI_SuitCosmeticPu
 }
 
 
-// Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.SpriteLoaded
+// Function WBP_UI_SuitCosmeticPurchasePopUp.WBP_UI_SuitCosmeticPurchasePopUp_C.EmptySet
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SuitCosmeticPurchasePopUp_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
+void UWBP_UI_SuitCosmeticPurchasePopUp_C::EmptySet()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpriteLoaded", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmptySet", FnName));
 
-	Params::WBP_UI_SuitCosmeticPurchasePopUp_C_SpriteLoaded Parms{};
-
-	Parms.OutLoadedSprite = OutLoadedSprite;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

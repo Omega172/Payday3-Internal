@@ -9,24 +9,36 @@
 // FORWARD DECLARATIONS
 
 
-namespace ABP_TPPlayerBase_Moneybag { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
+namespace ABP_HandCuffsAnimation { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace ABP_Charm_Base { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ABP_Mask_Base { struct FAnimBlueprintGeneratedConstantData; }
-
-namespace ABP_WorldBag_01 { struct FAnimBlueprintGeneratedConstantData; }
-
 namespace ABP_WP_Master { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ABP_HandCuffsAnimation { struct FAnimBlueprintGeneratedConstantData; }
+namespace GameplayAbilities { struct FServerAbilityRPCBatch; }
 
 namespace ABP_DoctorBag_EQP { struct FAnimBlueprintGeneratedConstantData; }
 
+namespace ABP_TPPlayerBase_Moneybag { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_WorldBag_01 { struct FAnimBlueprintGeneratedConstantData; }
+
 namespace ABP_Charm_Base_Taxi { struct FAnimBlueprintGeneratedConstantData; }
 
+namespace ABP_Mask_Base { struct FAnimBlueprintGeneratedConstantData; }
+
+
+namespace ABP_TPPlayerBase
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
+
+namespace ABP_FPPlayerBase
+{
+	struct FAnimBlueprintGeneratedMutableData;
+	struct FAnimBlueprintGeneratedConstantData;
+}
 
 namespace ABP_PlayerMenu
 {
@@ -35,18 +47,6 @@ namespace ABP_PlayerMenu
 }
 
 namespace ABP_TPPlayerLinkedBase
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ABP_FPPlayerBase
-{
-	struct FAnimBlueprintGeneratedConstantData;
-	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ABP_TPPlayerBase
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;

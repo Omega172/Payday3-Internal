@@ -17,15 +17,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature final
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnStackChanged
+// 0x001C (0x001C - 0x0000)
+struct WBP_UI_SM_GameStart_C_OnStackChanged final
 {
 public:
-	class USBZFullscreenVideoWidget*              InWidget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsActive;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZUIStackChangedEvent                StackEvent;                                        // 0x0000(0x001C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnStackChanged;
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnControlReferencesVisibilityChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged final
+{
+public:
+	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged;
 
 // Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.ExecuteUbergraph_WBP_UI_SM_GameStart
 // 0x0180 (0x0180 - 0x0000)
@@ -39,12 +47,12 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x003C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                           CallFunc_GetUIStack_ReturnValue;                   // 0x0048(0x0010)(ConstParm, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x005C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue_1;                   // 0x0078(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue_1;                   // 0x0078(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           CallFunc_GetUIStack_ReturnValue_1;                 // 0x0088(0x0010)(ConstParm, ReferenceParm)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,23 +97,15 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_ExecuteUbergraph_WBP_UI_SM_GameStart;
 
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnControlReferencesVisibilityChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged final
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature final
 {
 public:
-	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZFullscreenVideoWidget*              InWidget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsActive;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged;
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnStackChanged
-// 0x001C (0x001C - 0x0000)
-struct WBP_UI_SM_GameStart_C_OnStackChanged final
-{
-public:
-	struct FSBZUIStackChangedEvent                StackEvent;                                        // 0x0000(0x001C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnStackChanged;
+DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -17,6 +17,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct WBP_UI_Skills_Description_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry_Tick;                                   // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime_Tick;                                  // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_Tick;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetState
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetState final
+{
+public:
+	class UWBP_UI_Skills_Button_C*                SkillsButton;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZSkillState                                Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0010(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0030(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0040(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0050(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetState;
+
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillProgress
 // 0x0148 (0x0148 - 0x0000)
 struct WBP_UI_Skills_Description_C_SetSkillProgress final
@@ -61,22 +88,25 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillProgress;
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetState
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetState final
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetSkillInfoOld final
 {
 public:
-	class UWBP_UI_Skills_Button_C*                SkillsButton;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZSkillState                                Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0010(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0030(0x0010)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0040(0x0010)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0050(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0010)()
+	class USBZSkillData*                          Skill_data;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetState;
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfoOld;
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Description_C_SetSkillInfo final
+{
+public:
+	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfo;
 
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillImage
 // 0x0008 (0x0008 - 0x0000)
@@ -119,26 +149,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillDescription;
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetSkillInfo final
-{
-public:
-	class UWBP_UI_Skills_Button_C*                SkillButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfo;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Description_C_SetSkillInfoOld final
-{
-public:
-	class USBZSkillData*                          Skill_data;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetSkillInfoOld;
-
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetFocusedButton
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_UI_Skills_Description_C_SetFocusedButton final
@@ -150,16 +160,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_SetFocusedButton;
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_UI_Skills_Description_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Description_C_Tick;
 
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.ExecuteUbergraph_WBP_UI_Skills_Description
 // 0x0070 (0x0070 - 0x0000)

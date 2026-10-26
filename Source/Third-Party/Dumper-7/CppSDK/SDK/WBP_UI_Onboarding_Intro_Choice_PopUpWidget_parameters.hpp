@@ -18,86 +18,49 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ActionInput
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ActionInput final
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.SetRootControlReferences
+// 0x00F0 (0x00F0 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetRootControlReferences final
 {
 public:
-	class FName                                   InputName;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0000(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0038(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0070(0x0038)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
+	class USBZPopupWidget*                        CallFunc_GetPopUpWidget_ReturnValue;               // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00C8(0x0028)()
 };
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ActionInput;
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetRootControlReferences;
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.SetCheckboxFocusChanged
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetCheckboxFocusChanged final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         CheckboxButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Focused;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_ButtonCheckBox_C*               K2Node_DynamicCast_AsWBP_UI_Button_Check_Box;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetCheckboxFocusChanged;
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature final
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnCustomizePressed
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_OnCustomizePressed final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.DoCustomNavigation_0
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_DoCustomNavigation_0 final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          SetFocus;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EUINavigation                                 Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0008(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0040(0x0038)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
+	class USBZPopupWidget*                        CallFunc_GetPopUpWidget_ReturnValue;               // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0098(0x0028)()
 };
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_DoCustomNavigation_0;
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_OnCustomizePressed;
 
 // Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget
 // 0x0148 (0x0148 - 0x0000)
@@ -171,49 +134,86 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget;
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnCustomizePressed
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_OnCustomizePressed final
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.DoCustomNavigation_0
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_DoCustomNavigation_0 final
 {
 public:
-	bool                                          SetFocus_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0008(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0040(0x0038)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ReferenceParm)
-	class USBZPopupWidget*                        CallFunc_GetPopUpWidget_ReturnValue;               // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0098(0x0028)()
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_OnCustomizePressed;
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_DoCustomNavigation_0;
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.SetCheckboxFocusChanged
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetCheckboxFocusChanged final
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class USBZMenuButton*                         CheckboxButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Focused;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_ButtonCheckBox_C*               K2Node_DynamicCast_AsWBP_UI_Button_Check_Box;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetCheckboxFocusChanged;
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.SetRootControlReferences
-// 0x00F0 (0x00F0 - 0x0000)
-struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetRootControlReferences final
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0000(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0038(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0070(0x0038)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00B0(0x0010)(ReferenceParm)
-	class USBZPopupWidget*                        CallFunc_GetPopUpWidget_ReturnValue;               // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00C8(0x0028)()
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_SetRootControlReferences;
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ActionInput
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ActionInput final
+{
+public:
+	class FName                                   InputName;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ActionInput;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

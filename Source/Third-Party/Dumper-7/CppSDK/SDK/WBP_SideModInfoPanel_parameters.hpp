@@ -16,6 +16,69 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.UpdateModInfoWithEquippablePart
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart final
+{
+public:
+	const class USBZEquippablePartDataAsset*      EquippablePart;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseWeaponData*               ParentWeaponData;                                  // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart;
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetWeaponPartDescription
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_SideModInfoPanel_C_SetWeaponPartDescription final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_SetWeaponPartDescription;
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetHeader
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_SideModInfoPanel_C_SetHeader final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_SetHeader;
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetBody
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_SideModInfoPanel_C_SetBody final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_SetBody;
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_SideModInfoPanel_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_PreConstruct;
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.GetFirstSkillData
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_SideModInfoPanel_C_GetFirstSkillData final
+{
+public:
+	const class USBZWeaponPartDataAsset*          WeaponPartData;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZSkillData*                          SkillData;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZSkillData*                          CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_GetFirstSkillData;
+
 // Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.ExecuteUbergraph_WBP_SideModInfoPanel
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_SideModInfoPanel_C_ExecuteUbergraph_WBP_SideModInfoPanel final
@@ -61,69 +124,6 @@ public:
 	float                                         CallFunc_SetMinDesiredWidth_InMinDesiredWidth_ImplicitCast; // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_ExecuteUbergraph_WBP_SideModInfoPanel;
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.GetFirstSkillData
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_SideModInfoPanel_C_GetFirstSkillData final
-{
-public:
-	const class USBZWeaponPartDataAsset*          WeaponPartData;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZSkillData*                          SkillData;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZSkillData*                          CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_GetFirstSkillData;
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_SideModInfoPanel_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_PreConstruct;
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetBody
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_SideModInfoPanel_C_SetBody final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_SetBody;
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetHeader
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_SideModInfoPanel_C_SetHeader final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_SetHeader;
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetWeaponPartDescription
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_SideModInfoPanel_C_SetWeaponPartDescription final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_SetWeaponPartDescription;
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.UpdateModInfoWithEquippablePart
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart final
-{
-public:
-	const class USBZEquippablePartDataAsset*      EquippablePart;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class USBZBaseWeaponData*               ParentWeaponData;                                  // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

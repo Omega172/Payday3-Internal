@@ -16,6 +16,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_WeaponProgressionScreen_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_PreConstruct;
+
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnControlsReferencePressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_WeaponProgressionScreen_C_OnControlsReferencePressed final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_OnControlsReferencePressed;
+
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.FocusedWeaponPartChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged final
+{
+public:
+	const class USBZWeaponPartDataAsset*          FocusedWeaponPart_FocusedWeaponPartChanged;        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged;
+
 // Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.ExecuteUbergraph_WBP_UI_WeaponProgressionScreen
 // 0x0118 (0x0118 - 0x0000)
 struct WBP_UI_WeaponProgressionScreen_C_ExecuteUbergraph_WBP_UI_WeaponProgressionScreen final
@@ -54,45 +90,9 @@ public:
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0108(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0108(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_ExecuteUbergraph_WBP_UI_WeaponProgressionScreen;
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.FocusedWeaponPartChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged final
-{
-public:
-	const class USBZWeaponPartDataAsset*          FocusedWeaponPart;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged;
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnControlsReferencePressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_WeaponProgressionScreen_C_OnControlsReferencePressed final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_OnControlsReferencePressed;
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_WeaponProgressionScreen_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponProgressionScreen_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

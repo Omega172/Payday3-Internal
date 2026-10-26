@@ -41,22 +41,22 @@ public:
 	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x0368(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_UI_SM_Lobby(int32 EntryPoint);
-	void InitializeLevelDetails();
-	void OnAsyncLoadingCancel();
-	void OnAsyncLoadingDone();
-	void OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress);
-	void OnGainedStackFocused_1(const class FName& PreviousValue);
-	void OnInitialized();
-	void OnLostStackFocused_1();
-	void OnRemovedFromStack_1();
+	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
 	void SetFunctionReady(bool bIsAsyncLoadingDone);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnRemovedFromStack_1();
+	void OnLostStackFocused_1();
+	void OnInitialized();
+	void OnGainedStackFocused_1(const class FName& PreviousValue);
+	void OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress_OnAsyncLoadingProgress);
+	void OnAsyncLoadingDone();
+	void OnAsyncLoadingCancel();
+	void InitializeLevelDetails();
+	void ExecuteUbergraph_WBP_UI_SM_Lobby(int32 EntryPoint);
+	void BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

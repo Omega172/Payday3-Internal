@@ -16,73 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_PreConstruct Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonHoveredChanged
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnWeaponModCategoryDataIntialized
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnWeaponModCategoryDataIntialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponModCategoryDataIntialized", FnName));
 
-	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton(int32 EntryPoint)
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnInitialized()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_MainMenu_Loadout_ModCategoryButton_C", "ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
-	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.On Focus
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnHover
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::On_Focus(bool IsFocused)
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnHover(bool bIsHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On Focus", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
 
-	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_On_Focus Parms{};
+	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_OnHover Parms{};
 
-	Parms.IsFocused = IsFocused;
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -106,61 +94,73 @@ void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnFocusChanged(bool InIsFocused)
 }
 
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnHover
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.On Focus
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnHover(bool bIsHovered)
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::On_Focus(bool IsFocused)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On Focus", FnName));
 
-	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_OnHover Parms{};
+	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_On_Focus Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.IsFocused = IsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnWeaponModCategoryDataIntialized
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::OnWeaponModCategoryDataIntialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponModCategoryDataIntialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Loadout_ModCategoryButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_MainMenu_Loadout_ModCategoryButton_C", "ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton", FuncInfo);
+
+	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_PreConstruct Parms{};
+	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Loadout_ModCategoryButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

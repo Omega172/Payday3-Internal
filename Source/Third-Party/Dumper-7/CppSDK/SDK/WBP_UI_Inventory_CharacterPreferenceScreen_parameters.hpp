@@ -16,6 +16,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.UpdateCharacterSlotButtonControlsReference
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference final
+{
+public:
+	ESBZCharacterPreferenceButtonSelectionAction  SelectionAction_UpdateCharacterSlotButtonControlsReference; // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference;
+
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked;
+
 // Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen
 // 0x0348 (0x0348 - 0x0000)
 struct WBP_UI_Inventory_CharacterPreferenceScreen_C_ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen final
@@ -49,7 +76,7 @@ public:
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x02F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	ESBZCharacterPreferenceButtonSelectionAction  K2Node_Event_SelectionAction;                      // 0x02F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2F9[0x3];                                      // 0x02F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x02FC(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x02FC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_Event_PreviousValue;                        // 0x030C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,33 +89,6 @@ public:
 	bool                                          CallFunc_IsWidgetActuallyVisible_ReturnValue;      // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen;
-
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.UpdateCharacterSlotButtonControlsReference
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference final
-{
-public:
-	ESBZCharacterPreferenceButtonSelectionAction  SelectionAction;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

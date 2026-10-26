@@ -17,45 +17,133 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ArmorSlotButtonFocusedChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_ArmorSlotButtonFocusedChanged final
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ShowArmorOnly
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_ShowArmorOnly final
 {
 public:
-	class USBZMenuButton*                         InFocusedButton;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ArmorSlotButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ShowArmorOnly;
 
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.SetActiveButton
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
+struct WBP_UI_ArmorInventoryScreen_C_SetActiveButton final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         ArmorButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_SetActiveButton;
 
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ControlsReferenceActionPressed
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_ControlsReferenceActionPressed final
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.RevertBodyAndEquipped
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_RevertBodyAndEquipped final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_Inventory_ArmorSlotButton_C*    K2Node_DynamicCast_AsWBP_UI_Inventory_Armor_Slot_Button; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_RevertBodyAndEquipped;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnSlotPurchaseComplete
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_OnSlotPurchaseComplete final
+{
+public:
+	bool                                          bWasSuccessful_OnSlotPurchaseComplete;             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnSlotPurchaseComplete;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnSlotPriceChanged
+// 0x0158 (0x0158 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_OnSlotPriceChanged final
+{
+public:
+	struct FSBZInventorySlotStoreItem             Item_OnSlotPriceChanged;                           // 0x0000(0x0158)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnSlotPriceChanged;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnItemDiscarded
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_OnItemDiscarded final
+{
+public:
+	bool                                          bWasSuccessful_OnItemDiscarded;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnItemDiscarded;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnEditButtonPressed
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_OnEditButtonPressed final
+{
+public:
+	int32                                         ArmorSlotIndex_OnEditButtonPressed;                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnEditButtonPressed;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnDiscardPressed
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_OnDiscardPressed final
+{
+public:
+	class UWBP_UI_Inventory_ArmorSlotButton_C*    K2Node_DynamicCast_AsWBP_UI_Inventory_Armor_Slot_Button; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetArmorSlotIndex_ReturnValue;            // 0x000C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnDiscardPressed;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.IsMenuStatePrePlanning
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_IsMenuStatePrePlanning final
+{
+public:
+	bool                                          IsPreplanning;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AGameModeBase*                          CallFunc_GetGameMode_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZGameModeMainMenu*                   K2Node_DynamicCast_AsSBZGame_Mode_Main_Menu;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetArmorSlotIndex_ReturnValue;            // 0x001C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0030(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZMainMenuState                             CallFunc_GetMainMenuState_ReturnValue;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ControlsReferenceActionPressed;
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_IsMenuStatePrePlanning;
+
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.GetContextAwareControlReference
+// 0x00E0 (0x00E0 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_GetContextAwareControlReference final
+{
+public:
+	class UWBP_UI_Inventory_ArmorSlotButton_C*    ArmorButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZButtonControlReference>     ControlsReference;                                 // 0x0008(0x0010)(Parm, OutParm)
+	TArray<struct FSBZButtonControlReference>     ControlRefArray;                                   // 0x0018(0x0010)(Edit, BlueprintVisible)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0028(0x0038)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsMenuStatePrePlanning_IsPreplanning;     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanDiscardArmorInSlot_ReturnValue;        // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanCustomize_CanCustomize;                // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0080(0x0010)()
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0090(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x00A0(0x0038)()
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_GetContextAwareControlReference;
 
 // Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ExecuteUbergraph_WBP_UI_ArmorInventoryScreen
 // 0x0418 (0x0418 - 0x0000)
@@ -148,133 +236,45 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ExecuteUbergraph_WBP_UI_ArmorInventoryScreen;
 
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.GetContextAwareControlReference
-// 0x00E0 (0x00E0 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_GetContextAwareControlReference final
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ControlsReferenceActionPressed
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_ArmorInventoryScreen_C_ControlsReferenceActionPressed final
 {
 public:
-	class UWBP_UI_Inventory_ArmorSlotButton_C*    ArmorButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZButtonControlReference>     ControlsReference;                                 // 0x0008(0x0010)(Parm, OutParm)
-	TArray<struct FSBZButtonControlReference>     ControlRefArray;                                   // 0x0018(0x0010)(Edit, BlueprintVisible)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0028(0x0038)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0068(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsMenuStatePrePlanning_IsPreplanning;     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanDiscardArmorInSlot_ReturnValue;        // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanCustomize_CanCustomize;                // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7D[0x3];                                       // 0x007D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0080(0x0010)()
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0090(0x0010)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x00A0(0x0038)()
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_GetContextAwareControlReference;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.IsMenuStatePrePlanning
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_IsMenuStatePrePlanning final
-{
-public:
-	bool                                          IsPreplanning;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AGameModeBase*                          CallFunc_GetGameMode_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZGameModeMainMenu*                   K2Node_DynamicCast_AsSBZGame_Mode_Main_Menu;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_Inventory_ArmorSlotButton_C*    K2Node_DynamicCast_AsWBP_UI_Inventory_Armor_Slot_Button; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZMainMenuState                             CallFunc_GetMainMenuState_ReturnValue;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetArmorSlotIndex_ReturnValue;            // 0x001C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_IsMenuStatePrePlanning;
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ControlsReferenceActionPressed;
 
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnDiscardPressed
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_OnDiscardPressed final
+struct WBP_UI_ArmorInventoryScreen_C_BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class UWBP_UI_Inventory_ArmorSlotButton_C*    K2Node_DynamicCast_AsWBP_UI_Inventory_Armor_Slot_Button; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetArmorSlotIndex_ReturnValue;            // 0x000C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnDiscardPressed;
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnEditButtonPressed
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_OnEditButtonPressed final
-{
-public:
-	int32                                         ArmorSlotIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnEditButtonPressed;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnItemDiscarded
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_OnItemDiscarded final
-{
-public:
-	bool                                          bWasSuccessful;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnItemDiscarded;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnSlotPriceChanged
-// 0x0158 (0x0158 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_OnSlotPriceChanged final
-{
-public:
-	struct FSBZInventorySlotStoreItem             Item;                                              // 0x0000(0x0158)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnSlotPriceChanged;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.OnSlotPurchaseComplete
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_OnSlotPurchaseComplete final
-{
-public:
-	bool                                          bWasSuccessful;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_OnSlotPurchaseComplete;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.RevertBodyAndEquipped
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_RevertBodyAndEquipped final
-{
-public:
-	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_RevertBodyAndEquipped;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.SetActiveButton
+// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ArmorSlotButtonFocusedChanged
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_SetActiveButton final
+struct WBP_UI_ArmorInventoryScreen_C_ArmorSlotButtonFocusedChanged final
 {
 public:
-	class USBZMenuButton*                         ArmorButton;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         InFocusedButton_ArmorSlotButtonFocusedChanged;     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused_ArmorSlotButtonFocusedChanged;          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_SetActiveButton;
-
-// Function WBP_UI_ArmorInventoryScreen.WBP_UI_ArmorInventoryScreen_C.ShowArmorOnly
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ArmorInventoryScreen_C_ShowArmorOnly final
-{
-public:
-	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ShowArmorOnly;
+DUMPER7_ASSERTS_WBP_UI_ArmorInventoryScreen_C_ArmorSlotButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

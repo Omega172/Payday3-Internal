@@ -17,14 +17,94 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.CarouselIndexChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_NewsBanner_C_CarouselIndexChanged final
+// Function WBP_NewsBanner.WBP_NewsBanner_C.UpdateAccessBasedOnPrivilege
+// 0x0007 (0x0007 - 0x0000)
+struct WBP_NewsBanner_C_UpdateAccessBasedOnPrivilege final
 {
 public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InstallPending;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TrialVersion;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_NewsBanner_C_CarouselIndexChanged;
+DUMPER7_ASSERTS_WBP_NewsBanner_C_UpdateAccessBasedOnPrivilege;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.SetNewsBannerEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_SetNewsBannerEnabled final
+{
+public:
+	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_SetNewsBannerEnabled;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.RemoveItem
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_NewsBanner_C_RemoveItem final
+{
+public:
+	int32                                         InItemIndexToRemove;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_RemoveItem;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_PreConstruct;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_OnHoveredChanged final
+{
+public:
+	bool                                          InHovered;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnHoveredChanged;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnGameInstalled
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_OnGameInstalled final
+{
+public:
+	bool                                          bIsGameInstallPending;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnGameInstalled;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBanner_C_OnFocusedChanged final
+{
+public:
+	bool                                          InFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnFocusedChanged;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.OnComplete_20FB66EC40031DB9F52C91B5F92076D7
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_NewsBanner_C_OnComplete_20FB66EC40031DB9F52C91B5F92076D7 final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZNewsDataUIEntry>            NewsFeedList;                                      // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_OnComplete_20FB66EC40031DB9F52C91B5F92076D7;
+
+// Function WBP_NewsBanner.WBP_NewsBanner_C.NavigateToPage
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_NewsBanner_C_NavigateToPage final
+{
+public:
+	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBanner_C_NavigateToPage;
 
 // Function WBP_NewsBanner.WBP_NewsBanner_C.ExecuteUbergraph_WBP_NewsBanner
 // 0x00F8 (0x00F8 - 0x0000)
@@ -73,94 +153,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_NewsBanner_C_ExecuteUbergraph_WBP_NewsBanner;
 
-// Function WBP_NewsBanner.WBP_NewsBanner_C.NavigateToPage
+// Function WBP_NewsBanner.WBP_NewsBanner_C.CarouselIndexChanged
 // 0x0004 (0x0004 - 0x0000)
-struct WBP_NewsBanner_C_NavigateToPage final
+struct WBP_NewsBanner_C_CarouselIndexChanged final
 {
 public:
-	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_NewsBanner_C_NavigateToPage;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnComplete_20FB66EC40031DB9F52C91B5F92076D7
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_NewsBanner_C_OnComplete_20FB66EC40031DB9F52C91B5F92076D7 final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZNewsDataUIEntry>            NewsFeedList;                                      // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnComplete_20FB66EC40031DB9F52C91B5F92076D7;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_OnFocusedChanged final
-{
-public:
-	bool                                          InFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnFocusedChanged;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnGameInstalled
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_OnGameInstalled final
-{
-public:
-	bool                                          bIsGameInstallPending;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnGameInstalled;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.OnHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_OnHoveredChanged final
-{
-public:
-	bool                                          InHovered;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_OnHoveredChanged;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_PreConstruct;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.RemoveItem
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_NewsBanner_C_RemoveItem final
-{
-public:
-	int32                                         InItemIndexToRemove;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_RemoveItem;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.SetNewsBannerEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBanner_C_SetNewsBannerEnabled final
-{
-public:
-	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_SetNewsBannerEnabled;
-
-// Function WBP_NewsBanner.WBP_NewsBanner_C.UpdateAccessBasedOnPrivilege
-// 0x0007 (0x0007 - 0x0000)
-struct WBP_NewsBanner_C_UpdateAccessBasedOnPrivilege final
-{
-public:
-	bool                                          InstallPending;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          TrialVersion;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBanner_C_UpdateAccessBasedOnPrivilege;
+DUMPER7_ASSERTS_WBP_NewsBanner_C_CarouselIndexChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

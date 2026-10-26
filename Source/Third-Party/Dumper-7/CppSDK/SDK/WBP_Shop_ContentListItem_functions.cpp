@@ -16,6 +16,44 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnUpdateOwnershipStatus
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOwned_OnUpdateOwnershipStatus                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_ContentListItem_C::OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+
+	Params::WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus Parms{};
+
+	Parms.bIsOwned_OnUpdateOwnershipStatus = bIsOwned_OnUpdateOwnershipStatus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnSetHighlighted
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bHighlight_OnSetHighlighted                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInstant_OnSetHighlighted                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_ContentListItem_C::OnSetHighlighted(bool bHighlight_OnSetHighlighted, bool bIsInstant_OnSetHighlighted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSetHighlighted", FnName));
+
+	Params::WBP_Shop_ContentListItem_C_OnSetHighlighted Parms{};
+
+	Parms.bHighlight_OnSetHighlighted = bHighlight_OnSetHighlighted;
+	Parms.bIsInstant_OnSetHighlighted = bIsInstant_OnSetHighlighted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.ExecuteUbergraph_WBP_Shop_ContentListItem
 // (Final, UbergraphFunction)
 // Parameters:
@@ -29,44 +67,6 @@ void UWBP_Shop_ContentListItem_C::ExecuteUbergraph_WBP_Shop_ContentListItem(int3
 	Params::WBP_Shop_ContentListItem_C_ExecuteUbergraph_WBP_Shop_ContentListItem Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnSetHighlighted
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bHighlight                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInstant                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_ContentListItem_C::OnSetHighlighted(bool bHighlight, bool bIsInstant)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSetHighlighted", FnName));
-
-	Params::WBP_Shop_ContentListItem_C_OnSetHighlighted Parms{};
-
-	Parms.bHighlight = bHighlight;
-	Parms.bIsInstant = bIsInstant;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnUpdateOwnershipStatus
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_ContentListItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
-
-	Params::WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus Parms{};
-
-	Parms.bIsOwned = bIsOwned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

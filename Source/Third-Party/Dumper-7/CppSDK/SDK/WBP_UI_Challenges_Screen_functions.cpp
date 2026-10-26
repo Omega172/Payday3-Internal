@@ -16,137 +16,224 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.UpdatePageCycler
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature(int32 NewIndex)
+void UWBP_UI_Challenges_Screen_C::UpdatePageCycler()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePageCycler", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.SetCategories
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature()
+void UWBP_UI_Challenges_Screen_C::SetCategories()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCategories", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ParentStackLostFocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::ParentStackLostFocus()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ParentStackLostFocus", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ParentStackGainFocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::ParentStackGainFocus()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ParentStackGainFocus", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabForwardReleased
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::OnTabForwardReleased()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabForwardReleased", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabForwardPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::OnTabForwardPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabForwardPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabBackwardReleased
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::OnTabBackwardReleased()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabBackwardReleased", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabBackwardPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::OnTabBackwardPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabBackwardPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnPagesChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::OnPagesChanged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPagesChanged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavRight
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_Challenges_Screen_C::NavRight(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavRight", FnName));
+
+	Params::WBP_UI_Challenges_Screen_C_NavRight Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavLeft
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_Challenges_Screen_C::NavLeft(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavLeft", FnName));
+
+	Params::WBP_UI_Challenges_Screen_C_NavLeft Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.GetCurrentStatusFilter
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EChallengeStatusEnum*                   NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenges_Screen_C::GetCurrentStatusFilter(EChallengeStatusEnum* NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCurrentStatusFilter", FnName));
+
+	Params::WBP_UI_Challenges_Screen_C_GetCurrentStatusFilter Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ExecuteUbergraph_WBP_UI_Challenges_Screen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenges_Screen_C::ExecuteUbergraph_WBP_UI_Challenges_Screen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Challenges_Screen_C", "ExecuteUbergraph_WBP_UI_Challenges_Screen", FuncInfo);
+
+	Params::WBP_UI_Challenges_Screen_C_ExecuteUbergraph_WBP_UI_Challenges_Screen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.Delegate_PreviousPage
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::Delegate_PreviousPage()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Delegate_PreviousPage", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.Delegate_NextPage
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenges_Screen_C::Delegate_NextPage()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Delegate_NextPage", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -170,226 +257,139 @@ void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycle
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.Delegate_NextPage
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_UI_Challenges_Screen_C::Delegate_NextPage()
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Delegate_NextPage", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_7_IncrementPageIndex__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.Delegate_PreviousPage
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_UI_Challenges_Screen_C::Delegate_PreviousPage()
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Delegate_PreviousPage", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_WBP_PageCycler_K2Node_ComponentBoundEvent_6_DecrementPageIndex__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ExecuteUbergraph_WBP_UI_Challenges_Screen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenges_Screen_C::ExecuteUbergraph_WBP_UI_Challenges_Screen(int32 EntryPoint)
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature(int32 NewIndex)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Challenges_Screen_C", "ExecuteUbergraph_WBP_UI_Challenges_Screen", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_Challenges_Screen_C_ExecuteUbergraph_WBP_UI_Challenges_Screen Parms{};
+	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_TypeNavBar_K2Node_ComponentBoundEvent_2_OnIndexChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.GetCurrentStatusFilter
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EChallengeStatusEnum*                   NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenges_Screen_C::GetCurrentStatusFilter(EChallengeStatusEnum* NewParam)
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCurrentStatusFilter", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_Challenges_Screen_C_GetCurrentStatusFilter Parms{};
+	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_16_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavLeft
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_Challenges_Screen_C::NavLeft(EUINavigation Navigation_0)
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavLeft", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_Challenges_Screen_C_NavLeft Parms{};
+	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavRight_B_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.NavRight
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_Challenges_Screen_C::NavRight(EUINavigation Navigation_0)
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavRight", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_Challenges_Screen_C_NavRight Parms{};
+	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenges_Screen_C::OnInitialized()
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_NavLeft_B_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnPagesChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenges_Screen_C::OnPagesChanged()
+void UWBP_UI_Challenges_Screen_C::BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature(int32 NewIndex)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPagesChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_UI_Challenges_Screen_C_BndEvt__WBP_UI_Challenges_Screen_FilterNavBar_K2Node_ComponentBoundEvent_5_OnIndexChanged__DelegateSignature Parms{};
 
+	Parms.NewIndex = NewIndex;
 
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabBackwardPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::OnTabBackwardPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabBackwardPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabBackwardReleased
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::OnTabBackwardReleased()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabBackwardReleased", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabForwardPressed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::OnTabForwardPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabForwardPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.OnTabForwardReleased
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::OnTabForwardReleased()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTabForwardReleased", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ParentStackGainFocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::ParentStackGainFocus()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ParentStackGainFocus", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.ParentStackLostFocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::ParentStackLostFocus()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ParentStackLostFocus", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.SetCategories
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::SetCategories()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCategories", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenges_Screen.WBP_UI_Challenges_Screen_C.UpdatePageCycler
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenges_Screen_C::UpdatePageCycler()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePageCycler", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

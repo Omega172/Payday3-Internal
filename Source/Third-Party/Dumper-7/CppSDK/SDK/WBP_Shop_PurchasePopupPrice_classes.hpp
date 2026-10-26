@@ -30,8 +30,8 @@ public:
 	class UWidgetSwitcher*                        State_WS;                                          // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void OnShowPriceForItem(ESBZShopPriceWidgetState State_OnShowPriceForItem);
 	void ExecuteUbergraph_WBP_Shop_PurchasePopupPrice(int32 EntryPoint);
-	void OnShowPriceForItem(ESBZShopPriceWidgetState State);
 
 public:
 	static class UClass* StaticClass()

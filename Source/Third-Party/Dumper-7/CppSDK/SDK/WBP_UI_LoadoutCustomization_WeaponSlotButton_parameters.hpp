@@ -19,44 +19,64 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonFocusedChanged final
-{
-public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonFocusedChanged;
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonHoveredChanged final
-{
-public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonHoveredChanged;
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.Set Weapon Name Colour
 // 0x0060 (0x0060 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton final
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_Set_Weapon_Name_Colour final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZEquippableLoadoutSlot                     Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            CallFunc_GetWeaponInventoryData_ReturnValue;       // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0010)()
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DesiredColour;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0014)()
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZEquippableData*               CallFunc_GetWeaponInSlot_ReturnValue;              // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x004C(0x0014)()
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_Set_Weapon_Name_Colour;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.RefreshVisuals
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_RefreshVisuals final
+{
+public:
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_RefreshVisuals;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_PreConstruct;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnHover
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnHover final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnHover;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnFocused
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnFocused final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnFocused;
 
 // Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.InitializeWeaponVisuals
 // 0x0090 (0x0090 - 0x0000)
@@ -97,64 +117,44 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_InitializeWeaponVisuals;
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnFocused
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnFocused final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnFocused;
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnHover
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnHover final
-{
-public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnHover;
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_PreConstruct;
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.RefreshVisuals
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_RefreshVisuals final
-{
-public:
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_RefreshVisuals;
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.Set Weapon Name Colour
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton
 // 0x0060 (0x0060 - 0x0000)
-struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_Set_Weapon_Name_Colour final
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton final
 {
 public:
-	struct FLinearColor                           DesiredColour;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0014)()
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZEquippableData*               CallFunc_GetWeaponInSlot_ReturnValue;              // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x004C(0x0014)()
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEquippableLoadoutSlot                     Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B[0x5];                                       // 0x003B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            CallFunc_GetWeaponInventoryData_ReturnValue;       // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   K2Node_Select_Default;                             // 0x0048(0x0010)()
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_Set_Weapon_Name_Colour;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonHoveredChanged final
+{
+public:
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonHoveredChanged;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

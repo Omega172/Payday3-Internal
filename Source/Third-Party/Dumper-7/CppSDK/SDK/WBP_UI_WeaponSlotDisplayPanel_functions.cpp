@@ -16,31 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.TrySetOverskillDescription
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            ItemData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponSlotDisplayPanel_C::ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel(int32 EntryPoint)
+void UWBP_UI_WeaponSlotDisplayPanel_C::TrySetOverskillDescription(class USBZInventoryBaseData* ItemData)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_WeaponSlotDisplayPanel_C", "ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TrySetOverskillDescription", FnName));
 
-	Params::WBP_UI_WeaponSlotDisplayPanel_C_ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel Parms{};
+	Params::WBP_UI_WeaponSlotDisplayPanel_C_TrySetOverskillDescription Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ItemData = ItemData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.OnBaseData
+// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.OnNewWeaponData
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_WeaponSlotDisplayPanel_C::OnBaseData()
+void UWBP_UI_WeaponSlotDisplayPanel_C::OnNewWeaponData()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBaseData", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNewWeaponData", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,31 +58,31 @@ void UWBP_UI_WeaponSlotDisplayPanel_C::OnDataEmpty()
 }
 
 
-// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.OnNewWeaponData
+// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.OnBaseData
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_WeaponSlotDisplayPanel_C::OnNewWeaponData()
+void UWBP_UI_WeaponSlotDisplayPanel_C::OnBaseData()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNewWeaponData", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBaseData", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.TrySetOverskillDescription
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_WeaponSlotDisplayPanel.WBP_UI_WeaponSlotDisplayPanel_C.ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZInventoryBaseData*            ItemData                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponSlotDisplayPanel_C::TrySetOverskillDescription(class USBZInventoryBaseData* ItemData)
+void UWBP_UI_WeaponSlotDisplayPanel_C::ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TrySetOverskillDescription", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_WeaponSlotDisplayPanel_C", "ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel", FuncInfo);
 
-	Params::WBP_UI_WeaponSlotDisplayPanel_C_TrySetOverskillDescription Parms{};
+	Params::WBP_UI_WeaponSlotDisplayPanel_C_ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel Parms{};
 
-	Parms.ItemData = ItemData;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

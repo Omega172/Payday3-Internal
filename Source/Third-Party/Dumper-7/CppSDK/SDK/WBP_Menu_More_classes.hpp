@@ -19,7 +19,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Menu_More.WBP_Menu_More_C
-// 0x00E8 (0x0408 - 0x0320)
+// 0x00F0 (0x0410 - 0x0320)
 class UWBP_Menu_More_C final : public USBZMenuStackWidget
 {
 public:
@@ -38,53 +38,58 @@ public:
 	class UVerticalBox*                           DebugsButtons_VB;                                  // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Divider_I;                                         // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_UI_TextButton_C*                   EULAButton;                                        // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   LinkedNebulaButton;                                // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   LinkNebulaButton;                                  // 0x0398(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 Logo_I;                                            // 0x03A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   OldHeistSelectButton;                              // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   QuitGameButton;                                    // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   SettingsButton;                                    // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_TextButton_C*                   SwitchUserButton;                                  // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           TopButtons_VB;                                     // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         ActiveButton;                                      // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03E0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_UI_TextButton_C*                   ManageLinkedNebulaButton;                          // 0x03A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   OldHeistSelectButton;                              // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   QuitGameButton;                                    // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   SettingsButton;                                    // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_TextButton_C*                   SwitchUserButton;                                  // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           TopButtons_VB;                                     // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         ActiveButton;                                      // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03E8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_Menu_More(int32 EntryPoint);
-	void OnControlReferencePressed(class FName ActionName);
-	void OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8(class APlayerController* PlayerController);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
-	void OnLostStackFocused();
-	void OnQuitConfirmed(class FName ClosingActionName);
-	void OnRemovedFromStack();
-	void OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8(class APlayerController* PlayerController);
-	void PostPush_982A004F4BB192F51C3480A6CD7EC4B9(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_982A004F4BB192F51C3480A6CD7EC4B9(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C(class USBZMenuStackScreenWidget* MenuWidget);
 	void UpdateFocusedButton(class USBZMenuButton* InButton, bool Enabled);
+	void PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_982A004F4BB192F51C3480A6CD7EC4B9(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_982A004F4BB192F51C3480A6CD7EC4B9(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8(class APlayerController* PlayerController);
+	void OnRemovedFromStack();
+	void OnQuitConfirmed(class FName ClosingActionName);
+	void OnLostStackFocused();
+	void OnInitialized();
+	void OnHeadlessLinkPopupInput(class FName ClosingActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8(class APlayerController* PlayerController);
+	void OnControlReferencePressed(class FName ActionName);
+	void ExecuteUbergraph_WBP_Menu_More(int32 EntryPoint);
+	void CreateHeadlessLinkPopup();
+	void BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

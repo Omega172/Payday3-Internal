@@ -70,32 +70,32 @@ public:
 	struct FSBZSkillTreePair                      CurrentSkillPair;                                  // 0x08F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void CheckSkillTreeLockedArrayChanged();
-	void ExecuteUbergraph_WBP_Skills2_Menu(int32 EntryPoint);
-	void ForceUnequipSkillButton(class UWBP_Skills2_SkillButton_C* SkillButton, bool* RemovedAnySkill);
-	void GetCategorySkillCount(class USBZSkillCategoryData* Category, int32* SkillCount);
-	void GetCurrentCategorySkillCount(int32* CurrentCategorySkillCount);
-	void GetSkillButtonState(class UWBP_Skills2_SkillButton_C* SkillButton, ESBZSkillState* SkillState);
-	void InitializeSkillCategory(class USBZSkillCategoryData* SkillCategory);
-	void OnAddedToStack();
-	void OnCantEquipSkill(const class FText& NotifHeaderText, const class FText& NotifDescText);
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnSkillEquipped(class UWBP_Skills2_SkillButton_C* SkillButton);
-	void PopulateNavbar();
-	void PopulateSkillLines(class USBZSkillCategoryData* SkillCategory);
-	void PreConstruct(bool IsDesignTime);
-	void PrintCategoryData(class USBZSkillCategoryData* Skill_Category);
-	void PrintData();
-	void RefreshSkillButtonVisuals();
-	void SetSkillDescription(const struct FSBZSkillTreePair& Skill_Pair);
-	void SkillButtonEquip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success);
-	void SkillButtonFocused(class UWBP_Skills2_SkillButton_C* SkillButton, bool IsFocused);
-	void SkillButtonUnequip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success);
-	void UpdateSkillDescription();
 	void UpdateSkillPointCounters();
+	void UpdateSkillDescription();
+	void SkillButtonUnequip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success);
+	void SkillButtonFocused(class UWBP_Skills2_SkillButton_C* SkillButton, bool IsFocused);
+	void SkillButtonEquip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success);
+	void SetSkillDescription(const struct FSBZSkillTreePair& Skill_Pair);
+	void RefreshSkillButtonVisuals();
+	void PrintData();
+	void PrintCategoryData(class USBZSkillCategoryData* Skill_Category);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PopulateSkillLines(class USBZSkillCategoryData* SkillCategory);
+	void PopulateNavbar();
+	void OnSkillEquipped(class UWBP_Skills2_SkillButton_C* SkillButton);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnCantEquipSkill(const class FText& NotifHeaderText, const class FText& NotifDescText);
+	void OnAddedToStack();
+	void InitializeSkillCategory(class USBZSkillCategoryData* SkillCategory);
+	void GetSkillButtonState(class UWBP_Skills2_SkillButton_C* SkillButton, ESBZSkillState* SkillState);
+	void GetCurrentCategorySkillCount(int32* CurrentCategorySkillCount);
+	void GetCategorySkillCount(class USBZSkillCategoryData* Category, int32* SkillCount);
+	void ForceUnequipSkillButton(class UWBP_Skills2_SkillButton_C* SkillButton, bool* RemovedAnySkill);
+	void ExecuteUbergraph_WBP_Skills2_Menu(int32 EntryPoint);
+	void CheckSkillTreeLockedArrayChanged();
+	void BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
 
 public:
 	static class UClass* StaticClass()

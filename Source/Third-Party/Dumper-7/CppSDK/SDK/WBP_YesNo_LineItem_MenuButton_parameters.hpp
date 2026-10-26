@@ -18,50 +18,29 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_YesNo_LineItem_MenuButton_C_ButtonFocusedChanged final
+// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateFocusVisual
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_YesNo_LineItem_MenuButton_C_UpdateFocusVisual final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FMargin                                K2Node_MakeStruct_Margin_1;                        // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot_1;        // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateFocusVisual;
 
-// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_YesNo_LineItem_MenuButton_C_ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsHeistActive_1;                // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Play2DSound_ReturnValue;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_IsHeistActive;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Play2DSound_ReturnValue_1;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton;
-
-// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.PreConstruct
+// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateButtonWithoutCallback
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_YesNo_LineItem_MenuButton_C_PreConstruct final
+struct WBP_YesNo_LineItem_MenuButton_C_UpdateButtonWithoutCallback final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHeistActive;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_PreConstruct;
-
-// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateButtonExternal
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_YesNo_LineItem_MenuButton_C_UpdateButtonExternal final
-{
-public:
-	bool                                          IsHeistActive_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateButtonExternal;
+DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateButtonWithoutCallback;
 
 // Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateButtonVisual
 // 0x00F0 (0x00F0 - 0x0000)
@@ -110,29 +89,50 @@ public:
 };
 DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateButtonVisual;
 
-// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateButtonWithoutCallback
+// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateButtonExternal
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_YesNo_LineItem_MenuButton_C_UpdateButtonWithoutCallback final
+struct WBP_YesNo_LineItem_MenuButton_C_UpdateButtonExternal final
 {
 public:
-	bool                                          IsHeistActive_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHeistActive;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateButtonWithoutCallback;
+DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateButtonExternal;
 
-// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.UpdateFocusVisual
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_YesNo_LineItem_MenuButton_C_UpdateFocusVisual final
+// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_YesNo_LineItem_MenuButton_C_PreConstruct final
 {
 public:
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FMargin                                K2Node_MakeStruct_Margin_1;                        // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     K2Node_DynamicCast_AsHorizontal_Box_Slot_1;        // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_UpdateFocusVisual;
+DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_PreConstruct;
+
+// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_YesNo_LineItem_MenuButton_C_ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsHeistActive_1;                // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Play2DSound_ReturnValue;                  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_IsHeistActive;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Play2DSound_ReturnValue_1;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton;
+
+// Function WBP_YesNo_LineItem_MenuButton.WBP_YesNo_LineItem_MenuButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_YesNo_LineItem_MenuButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_YesNo_LineItem_MenuButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

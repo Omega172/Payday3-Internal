@@ -36,8 +36,8 @@ public:
 	class UHorizontalBox*                         RenownLevel_HB;                                    // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_LocalPlayerInfo(int32 EntryPoint);
 	void OnInitialized();
+	void ExecuteUbergraph_WBP_LocalPlayerInfo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

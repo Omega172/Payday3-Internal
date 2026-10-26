@@ -19,9 +19,9 @@ SDK_NAMESPACE_START
 // Function ABP_DoctorBag_EQP.ABP_DoctorBag_EQP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
 
-void UABP_DoctorBag_EQP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UABP_DoctorBag_EQP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
@@ -30,8 +30,8 @@ void UABP_DoctorBag_EQP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+	if (AnimGraph != nullptr)
+		*AnimGraph = std::move(Parms.AnimGraph);
 }
 
 

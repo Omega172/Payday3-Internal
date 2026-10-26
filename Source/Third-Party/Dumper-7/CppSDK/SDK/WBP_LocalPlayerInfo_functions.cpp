@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_LocalPlayerInfo.WBP_LocalPlayerInfo_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_LocalPlayerInfo_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_LocalPlayerInfo.WBP_LocalPlayerInfo_C.ExecuteUbergraph_WBP_LocalPlayerInfo
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -31,18 +43,6 @@ void UWBP_LocalPlayerInfo_C::ExecuteUbergraph_WBP_LocalPlayerInfo(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LocalPlayerInfo.WBP_LocalPlayerInfo_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_LocalPlayerInfo_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

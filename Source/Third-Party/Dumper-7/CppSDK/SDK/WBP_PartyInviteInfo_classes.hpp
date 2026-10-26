@@ -32,18 +32,18 @@ public:
 	class USBZUITextBlock*                        PartyAmountCount_T;                                // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
-	void ButtonHoveredChanged(bool bInIsHovered);
-	void ButtonSelected();
-	void EnableInput(bool InEnable);
-	void ExecuteUbergraph_WBP_PartyInviteInfo(int32 EntryPoint);
-	void OnInitialized();
-	void OnInstallStateChanged(bool bIsGameInstallPending);
-	void OnPartyInfoUpdated();
-	void OnPlayerPartyChanged(const class FString& PlayerId);
-	void OnPrivilegeChanged(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
-	void PreConstruct(bool IsDesignTime);
 	void UpdateAccessBasedOnPrivilege(bool CanPlayOnline, bool InstallPending, bool TrialVersion);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnPrivilegeChanged(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
+	void OnPlayerPartyChanged(const class FString& PlayerId);
+	void OnPartyInfoUpdated();
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PartyInviteInfo(int32 EntryPoint);
+	void EnableInput(bool InEnable);
+	void ButtonSelected();
+	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
+	void BndEvt__WBP_PartyInviteInfo_ActionKey_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

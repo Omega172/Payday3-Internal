@@ -16,42 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.ExecuteUbergraph_WBP_UI_Overskill_ProgressBar
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_ProgressBar_C::ExecuteUbergraph_WBP_UI_Overskill_ProgressBar(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Overskill_ProgressBar_C", "ExecuteUbergraph_WBP_UI_Overskill_ProgressBar", FuncInfo);
-
-	Params::WBP_UI_Overskill_ProgressBar_C_ExecuteUbergraph_WBP_UI_Overskill_ProgressBar Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_ProgressBar_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Overskill_ProgressBar_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.Set Progress
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -67,6 +31,42 @@ void UWBP_UI_Overskill_ProgressBar_C::Set_Progress(double InXp, double InProgres
 
 	Parms.InXp = InXp;
 	Parms.InProgressPercent = InProgressPercent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_ProgressBar_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Overskill_ProgressBar_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.ExecuteUbergraph_WBP_UI_Overskill_ProgressBar
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Overskill_ProgressBar_C::ExecuteUbergraph_WBP_UI_Overskill_ProgressBar(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Overskill_ProgressBar_C", "ExecuteUbergraph_WBP_UI_Overskill_ProgressBar", FuncInfo);
+
+	Params::WBP_UI_Overskill_ProgressBar_C_ExecuteUbergraph_WBP_UI_Overskill_ProgressBar Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

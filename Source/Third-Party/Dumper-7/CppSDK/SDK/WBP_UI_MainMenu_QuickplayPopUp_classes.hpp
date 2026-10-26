@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SBZBackend_structs.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -44,21 +44,21 @@ public:
 	class USBZMenuButton*                         LastFocusedButton;                                 // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp(int32 EntryPoint);
-	class UWidget* LobbyTypeSelectorNavigateDown(EUINavigation Navigation_0);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
-	void OnLostStackFocused();
-	void Set_Difficulty(ESBZDifficulty InDifficulty);
-	void Update_Difficulty_Visuals(ESBZDifficulty NewParam);
 	void UpdateType(ESBZOnlineJoinType InLobbyType);
+	void Update_Difficulty_Visuals(ESBZDifficulty NewParam);
+	void Set_Difficulty(ESBZDifficulty InDifficulty);
+	void OnLostStackFocused();
+	void OnInitialized();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName ActionName);
+	class UWidget* LobbyTypeSelectorNavigateDown(EUINavigation Navigation);
+	void ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp(int32 EntryPoint);
+	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

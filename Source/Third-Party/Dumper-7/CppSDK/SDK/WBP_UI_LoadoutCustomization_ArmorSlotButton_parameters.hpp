@@ -19,39 +19,64 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonFocusedChanged final
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.Set Armor Name Colour
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_Set_Armor_Name_Colour final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           DesiredColour;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0014)()
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            CallFunc_GetArmorInventoryData_ReturnValue;        // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x004C(0x0014)()
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_Set_Armor_Name_Colour;
 
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonHoveredChanged final
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.RefreshVisuals
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_RefreshVisuals final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_RefreshVisuals;
 
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton final
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_PreConstruct final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            CallFunc_GetArmorInventoryData_ReturnValue;        // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_PreConstruct;
+
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.OnHover
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnHover final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnHover;
+
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.OnFocused
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnFocused final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnFocused;
 
 // Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.Initialize Armor Visuals
 // 0x0098 (0x0098 - 0x0000)
@@ -74,64 +99,39 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_Initialize_Armor_Visuals;
 
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.OnFocused
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnFocused final
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            CallFunc_GetArmorInventoryData_ReturnValue;        // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnFocused;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton;
 
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.OnHover
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnHover final
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_OnHover;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.PreConstruct
+// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_PreConstruct final
+struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_PreConstruct;
-
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.RefreshVisuals
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_RefreshVisuals final
-{
-public:
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_RefreshVisuals;
-
-// Function WBP_UI_LoadoutCustomization_ArmorSlotButton.WBP_UI_LoadoutCustomization_ArmorSlotButton_C.Set Armor Name Colour
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_UI_LoadoutCustomization_ArmorSlotButton_C_Set_Armor_Name_Colour final
-{
-public:
-	struct FLinearColor                           DesiredColour;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0010(0x0014)()
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            CallFunc_GetArmorInventoryData_ReturnValue;        // 0x0028(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x004C(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_Set_Armor_Name_Colour;
+DUMPER7_ASSERTS_WBP_UI_LoadoutCustomization_ArmorSlotButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

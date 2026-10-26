@@ -14,6 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_InstantLoot_Base.BP_InstantLoot_Base_C.setBinaryState
+// 0x0002 (0x0002 - 0x0000)
+struct BP_InstantLoot_Base_C_setBinaryState final
+{
+public:
+	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InstantLoot_Base_C_setBinaryState;
+
 // Function BP_InstantLoot_Base.BP_InstantLoot_Base_C.ExecuteUbergraph_BP_InstantLoot_Base
 // 0x0008 (0x0008 - 0x0000)
 struct BP_InstantLoot_Base_C_ExecuteUbergraph_BP_InstantLoot_Base final
@@ -24,16 +34,6 @@ public:
 	bool                                          K2Node_Event_doCosmetics;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_InstantLoot_Base_C_ExecuteUbergraph_BP_InstantLoot_Base;
-
-// Function BP_InstantLoot_Base.BP_InstantLoot_Base_C.setBinaryState
-// 0x0002 (0x0002 - 0x0000)
-struct BP_InstantLoot_Base_C_setBinaryState final
-{
-public:
-	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_InstantLoot_Base_C_setBinaryState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

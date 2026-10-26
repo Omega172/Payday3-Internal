@@ -16,24 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_ItemDescription.WBP_UI_Inventory_ItemDescription_C.SetInventoryItem
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            InInventoryItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_ItemDescription_C::SetInventoryItem(class USBZInventoryBaseData* InInventoryItem)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInventoryItem", FnName));
-
-	Params::WBP_UI_Inventory_ItemDescription_C_SetInventoryItem Parms{};
-
-	Parms.InInventoryItem = InInventoryItem;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Inventory_ItemDescription.WBP_UI_Inventory_ItemDescription_C.SetIsOwned
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -47,6 +29,24 @@ void UWBP_UI_Inventory_ItemDescription_C::SetIsOwned(bool bIsOwned)
 	Params::WBP_UI_Inventory_ItemDescription_C_SetIsOwned Parms{};
 
 	Parms.bIsOwned = bIsOwned;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_ItemDescription.WBP_UI_Inventory_ItemDescription_C.SetInventoryItem
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            InInventoryItem                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_ItemDescription_C::SetInventoryItem(class USBZInventoryBaseData* InInventoryItem)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInventoryItem", FnName));
+
+	Params::WBP_UI_Inventory_ItemDescription_C_SetInventoryItem Parms{};
+
+	Parms.InInventoryItem = InInventoryItem;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_MaskOnCameraFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_MaskOnCameraFeedback_C;
 
 SDK_NAMESPACE_END

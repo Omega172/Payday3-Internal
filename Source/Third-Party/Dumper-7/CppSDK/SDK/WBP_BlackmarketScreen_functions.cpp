@@ -16,339 +16,53 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.UpdateBackground
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundlePackData*               InBundlePackData                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
+void UWBP_BlackmarketScreen_C::UpdateBackground(class USBZBundlePackData* InBundlePackData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateBackground", FnName));
 
-	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
+	Params::WBP_BlackmarketScreen_C_UpdateBackground Parms{};
 
-	Parms.Item = Item;
-	Parms.bIsSelected = bIsSelected;
+	Parms.InBundlePackData = InBundlePackData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.RefreshNavigation
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
+void UWBP_BlackmarketScreen_C::RefreshNavigation(int32 InputPin)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshNavigation", FnName));
 
-	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature Parms{};
+	Params::WBP_BlackmarketScreen_C_RefreshNavigation Parms{};
 
-	Parms.Item = Item;
+	Parms.InputPin = InputPin;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature", FnName));
-
-	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature(class UObject* Item, bool bIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature", FnName));
-
-	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.ExecuteUbergraph_WBP_BlackmarketScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::ExecuteUbergraph_WBP_BlackmarketScreen(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_BlackmarketScreen_C", "ExecuteUbergraph_WBP_BlackmarketScreen", FuncInfo);
-
-	Params::WBP_BlackmarketScreen_C_ExecuteUbergraph_WBP_BlackmarketScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_BlackmarketScreen_C::OnBackPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnControlReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::OnControlReferenceClicked(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferenceClicked", FnName));
-
-	Params::WBP_BlackmarketScreen_C_OnControlReferenceClicked Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_BlackmarketScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B0B8C9770
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E86F09C9D
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BlackmarketScreen_C::PostPush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_BlackmarketScreen_C::PrePush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_81AD0A2146BDF652D694E69B0B8C9770", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_8B21FF524A80C9672955E88E86F09C9D", FnName));
 
-	Params::WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B0B8C9770 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B77BB3528
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PostPush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_81AD0A2146BDF652D694E69B77BB3528", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B77BB3528 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69BE6642144
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PostPush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_81AD0A2146BDF652D694E69BE6642144", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69BE6642144 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E172F88F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PostPush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8B21FF524A80C9672955E88E172F88F1", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E172F88F1 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E6B182AA9
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PostPush_8B21FF524A80C9672955E88E6B182AA9(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8B21FF524A80C9672955E88E6B182AA9", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E6B182AA9 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E86F09C9D
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PostPush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8B21FF524A80C9672955E88E86F09C9D", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E86F09C9D Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B0B8C9770
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PrePush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_81AD0A2146BDF652D694E69B0B8C9770", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B0B8C9770 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B77BB3528
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PrePush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_81AD0A2146BDF652D694E69B77BB3528", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B77BB3528 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69BE6642144
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PrePush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_81AD0A2146BDF652D694E69BE6642144", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69BE6642144 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E172F88F1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BlackmarketScreen_C::PrePush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_8B21FF524A80C9672955E88E172F88F1", FnName));
-
-	Params::WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E172F88F1 Parms{};
+	Params::WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E86F09C9D Parms{};
 
 	Parms.MenuWidget = MenuWidget;
 
@@ -374,17 +88,17 @@ void UWBP_BlackmarketScreen_C::PrePush_8B21FF524A80C9672955E88E6B182AA9(class US
 }
 
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E86F09C9D
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E172F88F1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BlackmarketScreen_C::PrePush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_BlackmarketScreen_C::PrePush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_8B21FF524A80C9672955E88E86F09C9D", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_8B21FF524A80C9672955E88E172F88F1", FnName));
 
-	Params::WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E86F09C9D Parms{};
+	Params::WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E172F88F1 Parms{};
 
 	Parms.MenuWidget = MenuWidget;
 
@@ -392,19 +106,323 @@ void UWBP_BlackmarketScreen_C::PrePush_8B21FF524A80C9672955E88E86F09C9D(class US
 }
 
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.UpdateBackground
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69BE6642144
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBundlePackData*               InBundlePackData                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BlackmarketScreen_C::UpdateBackground(class USBZBundlePackData* InBundlePackData)
+void UWBP_BlackmarketScreen_C::PrePush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateBackground", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_81AD0A2146BDF652D694E69BE6642144", FnName));
 
-	Params::WBP_BlackmarketScreen_C_UpdateBackground Parms{};
+	Params::WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69BE6642144 Parms{};
 
-	Parms.InBundlePackData = InBundlePackData;
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B77BB3528
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PrePush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_81AD0A2146BDF652D694E69B77BB3528", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B77BB3528 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B0B8C9770
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PrePush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_81AD0A2146BDF652D694E69B0B8C9770", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B0B8C9770 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E86F09C9D
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PostPush_8B21FF524A80C9672955E88E86F09C9D(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8B21FF524A80C9672955E88E86F09C9D", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E86F09C9D Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E6B182AA9
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PostPush_8B21FF524A80C9672955E88E6B182AA9(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8B21FF524A80C9672955E88E6B182AA9", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E6B182AA9 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E172F88F1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PostPush_8B21FF524A80C9672955E88E172F88F1(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8B21FF524A80C9672955E88E172F88F1", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E172F88F1 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69BE6642144
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PostPush_81AD0A2146BDF652D694E69BE6642144(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_81AD0A2146BDF652D694E69BE6642144", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69BE6642144 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B77BB3528
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PostPush_81AD0A2146BDF652D694E69B77BB3528(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_81AD0A2146BDF652D694E69B77BB3528", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B77BB3528 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B0B8C9770
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::PostPush_81AD0A2146BDF652D694E69B0B8C9770(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_81AD0A2146BDF652D694E69B0B8C9770", FnName));
+
+	Params::WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B0B8C9770 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_BlackmarketScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnControlReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::OnControlReferenceClicked(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferenceClicked", FnName));
+
+	Params::WBP_BlackmarketScreen_C_OnControlReferenceClicked Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_BlackmarketScreen_C::OnBackPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.ExecuteUbergraph_WBP_BlackmarketScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::ExecuteUbergraph_WBP_BlackmarketScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_BlackmarketScreen_C", "ExecuteUbergraph_WBP_BlackmarketScreen", FuncInfo);
+
+	Params::WBP_BlackmarketScreen_C_ExecuteUbergraph_WBP_BlackmarketScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature", FnName));
+
+	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature(class UObject* Item, bool bIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature", FnName));
+
+	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature", FnName));
+
+	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature", FnName));
+
+	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BlackmarketScreen_C::BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
+
+	Params::WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

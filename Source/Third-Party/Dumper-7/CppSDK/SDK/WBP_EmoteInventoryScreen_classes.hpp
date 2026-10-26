@@ -44,36 +44,36 @@ public:
 	class UAnimMontage*                           ActiveMontage;                                     // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
-	void BP_OnItemDoubleClicked(class UObject* Item);
-	void Create_Emote_Icons();
-	void Event_On_Equipped();
-	void ExecuteUbergraph_WBP_EmoteInventoryScreen(int32 EntryPoint);
-	void FetchCategoryTexts(class USBZInventoryCategoryData* CategoryData, TArray<class FText>* CategoryTexts);
-	void OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
-	void OnCancelPressed(class FName ActionName);
-	void OnCompleted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
-	void OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
-	void OnItemsGenerated(ESBZItemCategory ItemCategory, const struct FGameplayTag& SubCategory);
-	void OnLoaded_B3D608934B60C556A88E078F272102DC(class UObject* Loaded);
-	void OnLostStackFocused();
-	void OnMontageBlendingOut_Event(class UAnimMontage* Montage, bool bInterrupted);
-	void OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
-	void OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
-	void PlayPreviewAnimation(class USBZInventoryItemDecorator* ItemDecorator);
-	void PostPush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget);
-	void PreConstruct(bool IsDesignTime);
-	void PrePush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget);
-	void StopPlayingMontage();
 	void UpdateTileList();
+	void StopPlayingMontage();
+	void PrePush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PostPush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget);
+	void PlayPreviewAnimation(class USBZInventoryItemDecorator* ItemDecorator);
+	void OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
+	void OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
+	void OnMontageBlendingOut_Event(class UAnimMontage* Montage, bool bInterrupted);
+	void OnLostStackFocused();
+	void OnLoaded_B3D608934B60C556A88E078F272102DC(class UObject* Loaded);
+	void OnItemsGenerated(ESBZItemCategory ItemCategory_OnItemsGenerated, const struct FGameplayTag& SubCategory_OnItemsGenerated);
+	void OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
+	void OnInitialized();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnCompleted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
+	void OnCancelPressed(class FName ActionName);
+	void OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName);
+	void FetchCategoryTexts(class USBZInventoryCategoryData* CategoryData, TArray<class FText>* CategoryTexts);
+	void ExecuteUbergraph_WBP_EmoteInventoryScreen(int32 EntryPoint);
+	void Event_On_Equipped();
+	void Create_Emote_Icons();
+	void BP_OnItemDoubleClicked(class UObject* Item);
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
+	void BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
 
 public:
 	static class UClass* StaticClass()

@@ -16,46 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageInitialized
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// int32                                   InPageIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FText&                      InPageTitle                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const struct FSBZCrimeBondProgression&  Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_CrimebondGridPage_C::BP_OnPageInitialized(int32 InPageIndex, const class FText& InPageTitle, const struct FSBZCrimeBondProgression& Progression)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnPageInitialized", FnName));
-
-	Params::WBP_CrimebondGridPage_C_BP_OnPageInitialized Parms{};
-
-	Parms.InPageIndex = InPageIndex;
-	Parms.InPageTitle = std::move(InPageTitle);
-	Parms.Progression = std::move(Progression);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageProgressChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const struct FSBZCrimeBondProgression&  Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_CrimebondGridPage_C::BP_OnPageProgressChanged(const struct FSBZCrimeBondProgression& Progression)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnPageProgressChanged", FnName));
-
-	Params::WBP_CrimebondGridPage_C_BP_OnPageProgressChanged Parms{};
-
-	Parms.Progression = std::move(Progression);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.ExecuteUbergraph_WBP_CrimebondGridPage
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -69,6 +29,46 @@ void UWBP_CrimebondGridPage_C::ExecuteUbergraph_WBP_CrimebondGridPage(int32 Entr
 	Params::WBP_CrimebondGridPage_C_ExecuteUbergraph_WBP_CrimebondGridPage Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageProgressChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const struct FSBZCrimeBondProgression&  Progression_BP_OnPageProgressChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_CrimebondGridPage_C::BP_OnPageProgressChanged(const struct FSBZCrimeBondProgression& Progression_BP_OnPageProgressChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnPageProgressChanged", FnName));
+
+	Params::WBP_CrimebondGridPage_C_BP_OnPageProgressChanged Parms{};
+
+	Parms.Progression_BP_OnPageProgressChanged = std::move(Progression_BP_OnPageProgressChanged);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondGridPage.WBP_CrimebondGridPage_C.BP_OnPageInitialized
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// int32                                   InPageIndex_BP_OnPageInitialized                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InPageTitle_BP_OnPageInitialized                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FSBZCrimeBondProgression&  Progression_BP_OnPageInitialized                       (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_CrimebondGridPage_C::BP_OnPageInitialized(int32 InPageIndex_BP_OnPageInitialized, const class FText& InPageTitle_BP_OnPageInitialized, const struct FSBZCrimeBondProgression& Progression_BP_OnPageInitialized)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnPageInitialized", FnName));
+
+	Params::WBP_CrimebondGridPage_C_BP_OnPageInitialized Parms{};
+
+	Parms.InPageIndex_BP_OnPageInitialized = InPageIndex_BP_OnPageInitialized;
+	Parms.InPageTitle_BP_OnPageInitialized = std::move(InPageTitle_BP_OnPageInitialized);
+	Parms.Progression_BP_OnPageInitialized = std::move(Progression_BP_OnPageInitialized);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

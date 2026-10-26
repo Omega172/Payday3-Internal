@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -47,28 +47,28 @@ public:
 	class USBZMenuButton*                         LastActiveButton;                                  // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_WeaponInventoryScreen_CosmeticButtonKey_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_UI_WeaponInventoryScreen_CustomizeButtonKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature();
-	void BuildControlReference(int32 WeaponIndex, TArray<struct FSBZButtonControlReference>* ActionList_0);
-	class UWidget* Do_Custom_Navigation(EUINavigation Navigation_0);
-	void EnableCustomOptions(bool IsEnabled);
-	void ExecuteUbergraph_WBP_UI_WeaponInventoryScreen(int32 EntryPoint);
-	void OnActiveWeaponChanged();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnDestroyPressed();
-	void OnEmptySlotSelected();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnNewSlotPurchased();
-	void OnPressCosmetic();
-	void OnPressCustomize();
-	void OnWeaponInSlotDiscarded(bool bIsWeaponDiscarded);
-	void OnWeaponSlotScreenDisplayed();
-	void PreConstruct(bool IsDesignTime);
-	void RegisterButtons(TArray<struct FSBZButtonControlReference>& ActionList_0);
+	void WeaponSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton_WeaponSlotButtonFocusedChanged, bool bIsFocused_WeaponSlotButtonFocusedChanged);
 	void SetActiveButton(class USBZMenuButton* NewButton);
-	void WeaponSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused);
+	void RegisterButtons(TArray<struct FSBZButtonControlReference>& ActionList);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnWeaponSlotScreenDisplayed();
+	void OnWeaponInSlotDiscarded(bool bIsWeaponDiscarded_OnWeaponInSlotDiscarded);
+	void OnPressCustomize();
+	void OnPressCosmetic();
+	void OnNewSlotPurchased();
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnEmptySlotSelected();
+	void OnDestroyPressed();
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnActiveWeaponChanged();
+	void ExecuteUbergraph_WBP_UI_WeaponInventoryScreen(int32 EntryPoint);
+	void EnableCustomOptions(bool IsEnabled);
+	class UWidget* Do_Custom_Navigation(EUINavigation Navigation);
+	void BuildControlReference(int32 WeaponIndex, TArray<struct FSBZButtonControlReference>* ActionList);
+	void BndEvt__WBP_UI_WeaponInventoryScreen_CustomizeButtonKey_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_WeaponInventoryScreen_CosmeticButtonKey_K2Node_ComponentBoundEvent_6_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_WeaponInventoryScreen_Button_WeaponSlotStoreItem_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

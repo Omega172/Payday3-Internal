@@ -16,55 +16,115 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.SetItemVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_ItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_LoadoutCustomization_ItemButton_C::SetItemVisuals(class USBZInventoryBaseData* InInventoryData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemVisuals", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_ItemButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_LoadoutCustomization_ItemButton_C_SetItemVisuals Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.InInventoryData = InInventoryData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_LoadoutCustomization_ItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_LoadoutCustomization_ItemButton_C::RefreshVisuals()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_ItemButton_C_ButtonHoveredChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bInIsHovered = bInIsHovered;
+
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoadoutCustomization_ItemButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_LoadoutCustomization_ItemButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnSelection
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_LoadoutCustomization_ItemButton_C::ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton(int32 EntryPoint)
+void UWBP_UI_LoadoutCustomization_ItemButton_C::OnSelection()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_LoadoutCustomization_ItemButton_C", "ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelection", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_ItemButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnNone
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_LoadoutCustomization_ItemButton_C::OnNone()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNone", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnItemDataInitialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_LoadoutCustomization_ItemButton_C::OnItemDataInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemDataInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoadoutCustomization_ItemButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoadoutCustomization_ItemButton_C::OnHover(bool bIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+
+	Params::WBP_UI_LoadoutCustomization_ItemButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -88,115 +148,55 @@ void UWBP_UI_LoadoutCustomization_ItemButton_C::OnFocused(bool bIsFocused)
 }
 
 
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_ItemButton_C::OnHover(bool bIsHovered)
+void UWBP_UI_LoadoutCustomization_ItemButton_C::ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_LoadoutCustomization_ItemButton_C", "ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton", FuncInfo);
 
-	Params::WBP_UI_LoadoutCustomization_ItemButton_C_OnHover Parms{};
+	Params::WBP_UI_LoadoutCustomization_ItemButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_ItemButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnItemDataInitialized
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.ButtonHoveredChanged
 // (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_ItemButton_C::OnItemDataInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemDataInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnNone
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_ItemButton_C::OnNone()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNone", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.OnSelection
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_ItemButton_C::OnSelection()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelection", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_ItemButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_LoadoutCustomization_ItemButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_ItemButton_C_PreConstruct Parms{};
+	Params::WBP_UI_LoadoutCustomization_ItemButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_ItemButton_C::RefreshVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.SetItemVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_ItemButton.WBP_UI_LoadoutCustomization_ItemButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_ItemButton_C::SetItemVisuals(class USBZInventoryBaseData* InInventoryData)
+void UWBP_UI_LoadoutCustomization_ItemButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_ItemButton_C_SetItemVisuals Parms{};
+	Params::WBP_UI_LoadoutCustomization_ItemButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.InInventoryData = InInventoryData;
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

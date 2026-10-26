@@ -16,42 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ArmorChunk_EquippedDisplay_Slot.WBP_ArmorChunk_EquippedDisplay_Slot_C.ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ArmorChunk_EquippedDisplay_Slot_C::ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ArmorChunk_EquippedDisplay_Slot_C", "ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot", FuncInfo);
-
-	Params::WBP_ArmorChunk_EquippedDisplay_Slot_C_ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ArmorChunk_EquippedDisplay_Slot.WBP_ArmorChunk_EquippedDisplay_Slot_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ArmorChunk_EquippedDisplay_Slot_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ArmorChunk_EquippedDisplay_Slot_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ArmorChunk_EquippedDisplay_Slot.WBP_ArmorChunk_EquippedDisplay_Slot_C.SetSlotType
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -65,6 +29,42 @@ void UWBP_ArmorChunk_EquippedDisplay_Slot_C::SetSlotType(ESBZArmorChunkType Type
 	Params::WBP_ArmorChunk_EquippedDisplay_Slot_C_SetSlotType Parms{};
 
 	Parms.Type = Type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ArmorChunk_EquippedDisplay_Slot.WBP_ArmorChunk_EquippedDisplay_Slot_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ArmorChunk_EquippedDisplay_Slot_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ArmorChunk_EquippedDisplay_Slot_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ArmorChunk_EquippedDisplay_Slot.WBP_ArmorChunk_EquippedDisplay_Slot_C.ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ArmorChunk_EquippedDisplay_Slot_C::ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ArmorChunk_EquippedDisplay_Slot_C", "ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot", FuncInfo);
+
+	Params::WBP_ArmorChunk_EquippedDisplay_Slot_C_ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

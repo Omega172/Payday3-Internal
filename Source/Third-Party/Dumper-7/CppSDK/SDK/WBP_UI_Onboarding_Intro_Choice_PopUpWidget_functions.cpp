@@ -16,250 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ActionInput
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InputName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::ActionInput(class FName InputName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionInput", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ActionInput Parms{};
-
-	Parms.InputName = InputName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.DoCustomNavigation_0
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::DoCustomNavigation_0(EUINavigation Navigation_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoCustomNavigation_0", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_DoCustomNavigation_0 Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C", "ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget", FuncInfo);
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.Finished_5728DCA04E50DA12D1F368AA7CB416C0
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::Finished_5728DCA04E50DA12D1F368AA7CB416C0()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_5728DCA04E50DA12D1F368AA7CB416C0", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnCancelCustomizationPressed
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnCancelCustomizationPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCancelCustomizationPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnCustomizePressed
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.SetRootControlReferences
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    SetFocus_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnCustomizePressed(bool SetFocus_0)
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::SetRootControlReferences()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCustomizePressed", FnName));
-
-	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_OnCustomizePressed Parms{};
-
-	Parms.SetFocus_0 = SetFocus_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnDisplayPopUp_1
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnDisplayPopUp_1()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDisplayPopUp_1", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnPopupHidden
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnPopupHidden()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPopupHidden", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnPopupShown
-// (Event, Public, BlueprintEvent)
-
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnPopupShown()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPopupShown", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRootControlReferences", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,15 +48,252 @@ void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::SetCheckboxFocusChanged(clas
 }
 
 
-// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.SetRootControlReferences
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnPopupShown
+// (Event, Public, BlueprintEvent)
 
-void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::SetRootControlReferences()
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnPopupShown()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRootControlReferences", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPopupShown", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnPopupHidden
+// (Event, Public, BlueprintEvent)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnPopupHidden()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPopupHidden", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnDisplayPopUp_1
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnDisplayPopUp_1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDisplayPopUp_1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnCustomizePressed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    SetFocus                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnCustomizePressed(bool SetFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCustomizePressed", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_OnCustomizePressed Parms{};
+
+	Parms.SetFocus = SetFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.OnCancelCustomizationPressed
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::OnCancelCustomizationPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCancelCustomizationPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.Finished_5728DCA04E50DA12D1F368AA7CB416C0
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::Finished_5728DCA04E50DA12D1F368AA7CB416C0()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_5728DCA04E50DA12D1F368AA7CB416C0", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C", "ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget", FuncInfo);
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.DoCustomNavigation_0
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::DoCustomNavigation_0(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoCustomNavigation_0", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_DoCustomNavigation_0 Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Onboarding_Intro_Choice_PopUpWidget.WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C.ActionInput
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InputName                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Onboarding_Intro_Choice_PopUpWidget_C::ActionInput(class FName InputName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionInput", FnName));
+
+	Params::WBP_UI_Onboarding_Intro_Choice_PopUpWidget_C_ActionInput Parms{};
+
+	Parms.InputName = InputName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

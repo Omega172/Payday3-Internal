@@ -14,6 +14,27 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_ShopScreen.WBP_ShopScreen_C.OnShopScreenOpened
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ShopScreen_C_OnShopScreenOpened final
+{
+public:
+	int32                                         CategoryIndex_OnShopScreenOpened;                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlayAnimation_OnShopScreenOpened;                 // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ShopScreen_C_OnShopScreenOpened;
+
+// Function WBP_ShopScreen.WBP_ShopScreen_C.OnActiveCategoryUpdated
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ShopScreen_C_OnActiveCategoryUpdated final
+{
+public:
+	const class USBZShopCategoryData*             NewCategory_OnActiveCategoryUpdated;               // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewCategoryIndex_OnActiveCategoryUpdated;          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bWasChanged_OnActiveCategoryUpdated;               // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ShopScreen_C_OnActiveCategoryUpdated;
+
 // Function WBP_ShopScreen.WBP_ShopScreen_C.ExecuteUbergraph_WBP_ShopScreen
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_ShopScreen_C_ExecuteUbergraph_WBP_ShopScreen final
@@ -34,27 +55,6 @@ public:
 	bool                                          K2Node_Event_bPlayAnimation;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ShopScreen_C_ExecuteUbergraph_WBP_ShopScreen;
-
-// Function WBP_ShopScreen.WBP_ShopScreen_C.OnActiveCategoryUpdated
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ShopScreen_C_OnActiveCategoryUpdated final
-{
-public:
-	const class USBZShopCategoryData*             NewCategory;                                       // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewCategoryIndex;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bWasChanged;                                       // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ShopScreen_C_OnActiveCategoryUpdated;
-
-// Function WBP_ShopScreen.WBP_ShopScreen_C.OnShopScreenOpened
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ShopScreen_C_OnShopScreenOpened final
-{
-public:
-	int32                                         CategoryIndex;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlayAnimation;                                    // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ShopScreen_C_OnShopScreenOpened;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

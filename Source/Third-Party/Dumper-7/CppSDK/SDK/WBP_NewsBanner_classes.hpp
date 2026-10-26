@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -34,21 +34,21 @@ public:
 	TArray<struct FSBZNewsDataUIEntry>            NewsEntries;                                       // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void CarouselIndexChanged(int32 NewIndex);
-	void Destruct();
-	void ExecuteUbergraph_WBP_NewsBanner(int32 EntryPoint);
-	void IncrementPage();
-	void NavigateToPage(int32 InNavigateIndex);
-	void OnComplete_20FB66EC40031DB9F52C91B5F92076D7(ESBZOnlineCode ErrorCode, const TArray<struct FSBZNewsDataUIEntry>& NewsFeedList);
-	void OnDecrementPage();
-	void OnFocusedChanged(bool InFocused);
-	void OnGameInstalled(bool bIsGameInstallPending);
-	void OnHoveredChanged(bool InHovered);
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-	void RemoveItem(int32 InItemIndexToRemove);
-	void SetNewsBannerEnabled(bool bInEnabled);
 	void UpdateAccessBasedOnPrivilege(bool InstallPending, bool TrialVersion);
+	void SetNewsBannerEnabled(bool bInEnabled);
+	void RemoveItem(int32 InItemIndexToRemove);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnInitialized();
+	void OnHoveredChanged(bool InHovered);
+	void OnGameInstalled(bool bIsGameInstallPending);
+	void OnFocusedChanged(bool InFocused);
+	void OnDecrementPage();
+	void OnComplete_20FB66EC40031DB9F52C91B5F92076D7(ESBZOnlineCode ErrorCode, const TArray<struct FSBZNewsDataUIEntry>& NewsFeedList);
+	void NavigateToPage(int32 InNavigateIndex);
+	void IncrementPage();
+	void ExecuteUbergraph_WBP_NewsBanner(int32 EntryPoint);
+	void Destruct();
+	void CarouselIndexChanged(int32 NewIndex);
 
 public:
 	static class UClass* StaticClass()

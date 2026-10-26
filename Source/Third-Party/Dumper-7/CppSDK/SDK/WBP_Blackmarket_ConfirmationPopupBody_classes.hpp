@@ -31,9 +31,9 @@ public:
 	uint8                                         Currency_Type;                                     // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody(int32 EntryPoint);
-	void OnItemDataInitialized();
 	void SetCurrencyType(ESBZCurrencyCode Currency);
+	void OnItemDataInitialized();
+	void ExecuteUbergraph_WBP_Blackmarket_ConfirmationPopupBody(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

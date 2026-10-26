@@ -17,6 +17,39 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_DailyChallengeReward_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_PreConstruct;
+
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeReward
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_DailyChallengeReward_C_InitializeReward final
+{
+public:
+	struct FSBZChallengeRewardItem                InRewardItem;                                      // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_InitializeReward;
+
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeInfamyReward
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_DailyChallengeReward_C_InitializeInfamyReward final
+{
+public:
+	int32                                         InInfamy;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_InitializeInfamyReward;
+
 // Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.ExecuteUbergraph_WBP_DailyChallengeReward
 // 0x0148 (0x0148 - 0x0000)
 struct WBP_DailyChallengeReward_C_ExecuteUbergraph_WBP_DailyChallengeReward final
@@ -45,39 +78,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_ExecuteUbergraph_WBP_DailyChallengeReward;
-
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeInfamyReward
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_DailyChallengeReward_C_InitializeInfamyReward final
-{
-public:
-	int32                                         InInfamy;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_InitializeInfamyReward;
-
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeReward
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_DailyChallengeReward_C_InitializeReward final
-{
-public:
-	struct FSBZChallengeRewardItem                InRewardItem;                                      // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_InitializeReward;
-
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_DailyChallengeReward_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_DailyChallengeReward_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

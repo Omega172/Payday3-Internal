@@ -33,25 +33,24 @@ public:
 	class UWBP_InputActionButton_New_C*           PurchaseCrimebond_Button;                          // 0x0448(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemDescription_C*    WBP_UI_Inventory_ItemDescription;                  // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_WeaponSlotDisplayPanel_C*       Widget_ItemDescription;                            // 0x0460(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class FText>                           Tabs;                                              // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class ASBZMainMenuPlayerCharacter*            CachedMainMenuMannequin;                           // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          InfoVisible;                                       // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShouldShowInfo;                                    // 0x0481(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BP_OnBuildTabs(const TArray<class FName>& BundleNames, class FName FocusedBundle);
-	void BP_OnBundleApplied(const class USBZItemBundleData* InBundleData);
-	void BP_OnDecoHovered(class USBZBundleItemDecorator* Deco, bool bIsHovered);
-	void BP_OnDecoSelected(class USBZBundleItemDecorator* Deco);
-	void ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen(int32 EntryPoint);
-	void OnControlReferencedPressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void UpdateAction(class USBZBundleItemDecorator* InDecorator);
 	void UpdateControlReferences();
+	void UpdateAction(class USBZBundleItemDecorator* InDecorator);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlReferencedPressed(class FName ActionName);
+	void ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen(int32 EntryPoint);
+	void BP_OnDecoSelected(class USBZBundleItemDecorator* Deco_BP_OnDecoSelected);
+	void BP_OnBundleApplied(const class USBZItemBundleData* InBundleData_BP_OnBundleApplied);
+	void BP_OnBuildTabs(const TArray<class FName>& BundleNames_BP_OnBuildTabs, class FName FocusedBundle_BP_OnBuildTabs);
+	void BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
 
 public:
 	static class UClass* StaticClass()

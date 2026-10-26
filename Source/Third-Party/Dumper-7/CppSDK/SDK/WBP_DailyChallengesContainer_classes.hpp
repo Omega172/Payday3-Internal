@@ -34,15 +34,15 @@ public:
 	TMulticastInlineDelegate<void()>              RerollUsed;                                        // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Construct();
-	void CreateChallengeButton(class UWBP_DailyChallengeItem_C** OutChallengeButtonWidget);
-	void ExecuteUbergraph_WBP_DailyChallengesContainer(int32 EntryPoint);
-	void InitializeDailyChallenges();
-	void OnChallengeRerollPopupClosed(class FName ClosingActionName);
-	void OnChallengeRerollPressed(class UWBP_DailyChallengeItem_C* ChallengeButton);
-	void OnDailyChallengesUpdated();
-	void PreConstruct(bool IsDesignTime);
 	void UpdateTimer();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnDailyChallengesUpdated();
+	void OnChallengeRerollPressed(class UWBP_DailyChallengeItem_C* ChallengeButton);
+	void OnChallengeRerollPopupClosed(class FName ClosingActionName);
+	void InitializeDailyChallenges();
+	void ExecuteUbergraph_WBP_DailyChallengesContainer(int32 EntryPoint);
+	void CreateChallengeButton(class UWBP_DailyChallengeItem_C** OutChallengeButtonWidget);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

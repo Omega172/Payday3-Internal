@@ -27,9 +27,9 @@ public:
 	class USBZUITextBlock*                        Progress_T;                                        // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BP_OnPageInitialized(int32 InPageIndex, const class FText& InPageTitle, const struct FSBZCrimeBondProgression& Progression);
-	void BP_OnPageProgressChanged(const struct FSBZCrimeBondProgression& Progression);
 	void ExecuteUbergraph_WBP_CrimebondGridPage(int32 EntryPoint);
+	void BP_OnPageProgressChanged(const struct FSBZCrimeBondProgression& Progression_BP_OnPageProgressChanged);
+	void BP_OnPageInitialized(int32 InPageIndex_BP_OnPageInitialized, const class FText& InPageTitle_BP_OnPageInitialized, const struct FSBZCrimeBondProgression& Progression_BP_OnPageInitialized);
 
 public:
 	static class UClass* StaticClass()

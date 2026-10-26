@@ -11,16 +11,14 @@
 #include "Basic.hpp"
 
 #include "SBZBackend_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
 // Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.ExecuteUbergraph_WBP_UI_Widget_DebugWidgetScreen
-// 0x00A8 (0x00A8 - 0x0000)
+// 0x0068 (0x0068 - 0x0000)
 struct WBP_UI_Widget_DebugWidgetScreen_C_ExecuteUbergraph_WBP_UI_Widget_DebugWidgetScreen final
 {
 public:
@@ -41,8 +39,6 @@ public:
 	int32                                         K2Node_Event_MissionSeed;                          // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5C[0x4];                                       // 0x005C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_3; // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0068(0x0038)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_DebugWidgetScreen_C_ExecuteUbergraph_WBP_UI_Widget_DebugWidgetScreen;
 
@@ -263,36 +259,6 @@ public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_DebugWidgetScreen_C_PreConstruct;
-
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_UI_Widget_DebugWidgetScreen_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_DebugWidgetScreen_C_Tick;
-
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.UpdateTime
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_UI_Widget_DebugWidgetScreen_C_UpdateTime final
-{
-public:
-	int64                                         CallFunc_GetFrameCount_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDateTime                              CallFunc_Now_ReturnValue;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Conv_Int64ToInt_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_DateTime_ToString_String;                 // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0030(0x0010)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0060(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0070(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_DebugWidgetScreen_C_UpdateTime;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

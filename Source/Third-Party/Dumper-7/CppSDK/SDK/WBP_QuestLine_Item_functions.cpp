@@ -16,76 +16,149 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetParentMenu
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_QuestlineMenu_C*             QuestLineMenu                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_QuestLine_Item_C::SetParentMenu(class UWBP_QuestlineMenu_C* QuestLineMenu)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetParentMenu", FnName));
 
-	Params::WBP_QuestLine_Item_C_ButtonFocusedChanged Parms{};
+	Params::WBP_QuestLine_Item_C_SetParentMenu Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ExecuteUbergraph_WBP_QuestLine_Item
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_Item_C::ExecuteUbergraph_WBP_QuestLine_Item(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_QuestLine_Item_C", "ExecuteUbergraph_WBP_QuestLine_Item", FuncInfo);
-
-	Params::WBP_QuestLine_Item_C_ExecuteUbergraph_WBP_QuestLine_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.QuestLineMenu = QuestLineMenu;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.GetCompletedChallengeArray
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetCompletedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FSBZUIQuestChallengeData>*CompletedChallenges                                    (Parm, OutParm)
+// bool                                    Completed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::GetCompletedChallengeArray(TArray<struct FSBZUIQuestChallengeData>* CompletedChallenges)
+void UWBP_QuestLine_Item_C::SetCompletedVisuals(bool Completed)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCompletedChallengeArray", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCompletedVisuals", FnName));
 
-	Params::WBP_QuestLine_Item_C_GetCompletedChallengeArray Parms{};
+	Params::WBP_QuestLine_Item_C_SetCompletedVisuals Parms{};
+
+	Parms.Completed = Completed;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (CompletedChallenges != nullptr)
-		*CompletedChallenges = std::move(Parms.CompletedChallenges);
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Initialize
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetClaimedVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QuestLine_Item_C::SetClaimedVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetClaimedVisuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetChallengeStatus
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZUIQuestData&           UIQuestData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::Initialize(const struct FSBZUIQuestData& UIQuestData, int32 Index_0)
+void UWBP_QuestLine_Item_C::SetChallengeStatus()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initialize", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetChallengeStatus", FnName));
 
-	Params::WBP_QuestLine_Item_C_Initialize Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.UIQuestData = std::move(UIQuestData);
-	Parms.Index_0 = Index_0;
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetBorderMode
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZQuestState                          QuestState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsHighlighted                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::SetBorderMode(bool IsFocused, ESBZQuestState QuestState, bool IsHighlighted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBorderMode", FnName));
+
+	Params::WBP_QuestLine_Item_C_SetBorderMode Parms{};
+
+	Parms.IsFocused = IsFocused;
+	Parms.QuestState = QuestState;
+	Parms.IsHighlighted = IsHighlighted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetBorderFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::SetBorderFocused(bool IsFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBorderFocused", FnName));
+
+	Params::WBP_QuestLine_Item_C_SetBorderFocused Parms{};
+
+	Parms.IsFocused = IsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetActiveVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::SetActiveVisuals(bool IsActive)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActiveVisuals", FnName));
+
+	Params::WBP_QuestLine_Item_C_SetActiveVisuals Parms{};
+
+	Parms.IsActive = IsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Reinitialize
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QuestLine_Item_C::Reinitialize()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Reinitialize", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_QuestLine_Item_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -109,97 +182,127 @@ void UWBP_QuestLine_Item_C::OnFocused(bool IsFocused)
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Initialize
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZUIQuestData&           UIQuestData                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_QuestLine_Item_C::PreConstruct(bool IsDesignTime)
+void UWBP_QuestLine_Item_C::Initialize(const struct FSBZUIQuestData& UIQuestData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initialize", FnName));
 
-	Params::WBP_QuestLine_Item_C_PreConstruct Parms{};
+	Params::WBP_QuestLine_Item_C_Initialize Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.UIQuestData = std::move(UIQuestData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.Reinitialize
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.HasRewardItem
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USBZInventoryBaseData*            Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   HasReward                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::Reinitialize()
+void UWBP_QuestLine_Item_C::HasRewardItem(class USBZInventoryBaseData* Item, bool* HasReward)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Reinitialize", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HasRewardItem", FnName));
+
+	Params::WBP_QuestLine_Item_C_HasRewardItem Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (HasReward != nullptr)
+		*HasReward = Parms.HasReward;
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.GetCompletedChallengeArray
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<struct FSBZUIQuestChallengeData>*CompletedChallenges                                    (Parm, OutParm)
+
+void UWBP_QuestLine_Item_C::GetCompletedChallengeArray(TArray<struct FSBZUIQuestChallengeData>* CompletedChallenges)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCompletedChallengeArray", FnName));
+
+	Params::WBP_QuestLine_Item_C_GetCompletedChallengeArray Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CompletedChallenges != nullptr)
+		*CompletedChallenges = std::move(Parms.CompletedChallenges);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.GetActiveChallengeIndex
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  ActiveChallengeIndex                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::GetActiveChallengeIndex(int32* ActiveChallengeIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetActiveChallengeIndex", FnName));
+
+	Params::WBP_QuestLine_Item_C_GetActiveChallengeIndex Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ActiveChallengeIndex != nullptr)
+		*ActiveChallengeIndex = Parms.ActiveChallengeIndex;
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ExecuteUbergraph_WBP_QuestLine_Item
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_Item_C::ExecuteUbergraph_WBP_QuestLine_Item(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_QuestLine_Item_C", "ExecuteUbergraph_WBP_QuestLine_Item", FuncInfo);
+
+	Params::WBP_QuestLine_Item_C_ExecuteUbergraph_WBP_QuestLine_Item Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ButtonStates
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QuestLine_Item_C::ButtonStates()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonStates", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetActiveVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_Item_C::SetActiveVisuals(bool IsActive)
+void UWBP_QuestLine_Item_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActiveVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_QuestLine_Item_C_SetActiveVisuals Parms{};
+	Params::WBP_QuestLine_Item_C_ButtonFocusedChanged Parms{};
 
-	Parms.IsActive = IsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetClaimedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_QuestLine_Item_C::SetClaimedVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetClaimedVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetCompletedVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Completed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_Item_C::SetCompletedVisuals(bool Completed)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCompletedVisuals", FnName));
-
-	Params::WBP_QuestLine_Item_C_SetCompletedVisuals Parms{};
-
-	Parms.Completed = Completed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_Item.WBP_QuestLine_Item_C.SetParentMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_QuestlineMenu_C*             QuestLineMenu_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_Item_C::SetParentMenu(class UWBP_QuestlineMenu_C* QuestLineMenu_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetParentMenu", FnName));
-
-	Params::WBP_QuestLine_Item_C_SetParentMenu Parms{};
-
-	Parms.QuestLineMenu_0 = QuestLineMenu_0;
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

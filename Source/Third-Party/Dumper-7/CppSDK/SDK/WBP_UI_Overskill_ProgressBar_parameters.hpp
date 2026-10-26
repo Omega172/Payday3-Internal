@@ -16,27 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.ExecuteUbergraph_WBP_UI_Overskill_ProgressBar
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_Overskill_ProgressBar_C_ExecuteUbergraph_WBP_UI_Overskill_ProgressBar final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Overskill_ProgressBar_C_ExecuteUbergraph_WBP_UI_Overskill_ProgressBar;
-
-// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Overskill_ProgressBar_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Overskill_ProgressBar_C_PreConstruct;
-
 // Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.Set Progress
 // 0x0090 (0x0090 - 0x0000)
 struct WBP_UI_Overskill_ProgressBar_C_Set_Progress final
@@ -66,6 +45,27 @@ public:
 	float                                         K2Node_MakeStruct_Value_ImplicitCast_3;            // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Overskill_ProgressBar_C_Set_Progress;
+
+// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Overskill_ProgressBar_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Overskill_ProgressBar_C_PreConstruct;
+
+// Function WBP_UI_Overskill_ProgressBar.WBP_UI_Overskill_ProgressBar_C.ExecuteUbergraph_WBP_UI_Overskill_ProgressBar
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Overskill_ProgressBar_C_ExecuteUbergraph_WBP_UI_Overskill_ProgressBar final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Overskill_ProgressBar_C_ExecuteUbergraph_WBP_UI_Overskill_ProgressBar;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

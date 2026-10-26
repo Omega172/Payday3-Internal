@@ -52,6 +52,18 @@ void UABP_PlayerMenu_C::ExecuteUbergraph_ABP_PlayerMenu(int32 EntryPoint)
 }
 
 
+// Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_B7DF47344708C3FBCCBBFDA46D399111
+// (BlueprintEvent)
+
+void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_B7DF47344708C3FBCCBBFDA46D399111()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_B7DF47344708C3FBCCBBFDA46D399111", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_A8FE88E84CB3CF3C381924947064EBB1
 // (BlueprintEvent)
 
@@ -95,6 +107,18 @@ void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMe
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_PlayerMenu.ABP_PlayerMenu_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_CopyBone_56FCABE149E3F7931D38E8854229685A
+// (BlueprintEvent)
+
+void UABP_PlayerMenu_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_CopyBone_56FCABE149E3F7931D38E8854229685A()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_CopyBone_56FCABE149E3F7931D38E8854229685A", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

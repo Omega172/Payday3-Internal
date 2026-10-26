@@ -17,34 +17,109 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.AddItem
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_NewsBannerButton_C_AddItem final
-{
-public:
-	TSoftObjectPtr<class UPaperSprite>            InNewsBannerSprite;                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_NewsItem_C*                        CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_StartScrolling_InScrollInterval_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_AddItem;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ButtonFocusChanging
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.SetCarouselScrollingEnabled
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBannerButton_C_ButtonFocusChanging final
+struct WBP_NewsBannerButton_C_SetCarouselScrollingEnabled final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_ButtonFocusChanging;
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_SetCarouselScrollingEnabled;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PrePush_8EB9615743E868CC16B8B98168973148
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NewsBannerButton_C_PrePush_8EB9615743E868CC16B8B98168973148 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_PrePush_8EB9615743E868CC16B8B98168973148;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBannerButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_PreConstruct;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PostPush_8EB9615743E868CC16B8B98168973148
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NewsBannerButton_C_PostPush_8EB9615743E868CC16B8B98168973148 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_PostPush_8EB9615743E868CC16B8B98168973148;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnPageChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_NewsBannerButton_C_OnPageChanged final
+{
+public:
+	class USBZCarouselWidget*                     CarouselWidget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentPageIndex;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnPageChanged;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnLoaded_813F0F464F27D3064999EA93F00DB390
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NewsBannerButton_C_OnLoaded_813F0F464F27D3064999EA93F00DB390 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnLoaded_813F0F464F27D3064999EA93F00DB390;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBannerButton_C_OnHoveredChanged final
+{
+public:
+	bool                                          InHovered;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnHoveredChanged;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsBannerButton_C_OnFocusedChanged final
+{
+public:
+	bool                                          InFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnFocusedChanged;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.NavigateToPage
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_NewsBannerButton_C_NavigateToPage final
+{
+public:
+	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_NavigateToPage;
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.InitializeNewsEntries
+// 0x0190 (0x0190 - 0x0000)
+struct WBP_NewsBannerButton_C_InitializeNewsEntries final
+{
+public:
+	TArray<struct FSBZNewsDataUIEntry>            InNewsEntries;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UWBP_PageCycler_C*                      PageCycler;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZNewsDataUIEntry                    CallFunc_Array_Get_Item;                           // 0x0028(0x0090)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UPaperSprite>            CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x00C0(0x0030)(UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZNewsDataUIEntry                    CallFunc_Array_Get_Item_1;                         // 0x00F8(0x0090)()
+	float                                         CallFunc_StartScrolling_InScrollInterval_ImplicitCast; // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_InitializeNewsEntries;
 
 // Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ExecuteUbergraph_WBP_NewsBannerButton
 // 0x0190 (0x0190 - 0x0000)
@@ -95,109 +170,34 @@ public:
 };
 DUMPER7_ASSERTS_WBP_NewsBannerButton_C_ExecuteUbergraph_WBP_NewsBannerButton;
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.InitializeNewsEntries
-// 0x0190 (0x0190 - 0x0000)
-struct WBP_NewsBannerButton_C_InitializeNewsEntries final
-{
-public:
-	TArray<struct FSBZNewsDataUIEntry>            InNewsEntries;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class UWBP_PageCycler_C*                      PageCycler;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZNewsDataUIEntry                    CallFunc_Array_Get_Item;                           // 0x0028(0x0090)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UPaperSprite>            CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x00C0(0x0030)(UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZNewsDataUIEntry                    CallFunc_Array_Get_Item_1;                         // 0x00F8(0x0090)()
-	float                                         CallFunc_StartScrolling_InScrollInterval_ImplicitCast; // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_InitializeNewsEntries;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.NavigateToPage
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_NewsBannerButton_C_NavigateToPage final
-{
-public:
-	int32                                         InNavigateIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_NavigateToPage;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnFocusedChanged
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ButtonFocusChanging
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBannerButton_C_OnFocusedChanged final
+struct WBP_NewsBannerButton_C_ButtonFocusChanging final
 {
 public:
-	bool                                          InFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusChanging;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnFocusedChanged;
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_ButtonFocusChanging;
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBannerButton_C_OnHoveredChanged final
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.AddItem
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_NewsBannerButton_C_AddItem final
 {
 public:
-	bool                                          InHovered;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UPaperSprite>            InNewsBannerSprite;                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_NewsItem_C*                        CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x004E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F[0x1];                                       // 0x004F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_StartScrolling_InScrollInterval_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnHoveredChanged;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnLoaded_813F0F464F27D3064999EA93F00DB390
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NewsBannerButton_C_OnLoaded_813F0F464F27D3064999EA93F00DB390 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnLoaded_813F0F464F27D3064999EA93F00DB390;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnPageChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_NewsBannerButton_C_OnPageChanged final
-{
-public:
-	class USBZCarouselWidget*                     CarouselWidget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentPageIndex;                                  // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_OnPageChanged;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PostPush_8EB9615743E868CC16B8B98168973148
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NewsBannerButton_C_PostPush_8EB9615743E868CC16B8B98168973148 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_PostPush_8EB9615743E868CC16B8B98168973148;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBannerButton_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_PreConstruct;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PrePush_8EB9615743E868CC16B8B98168973148
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NewsBannerButton_C_PrePush_8EB9615743E868CC16B8B98168973148 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_PrePush_8EB9615743E868CC16B8B98168973148;
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.SetCarouselScrollingEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsBannerButton_C_SetCarouselScrollingEnabled final
-{
-public:
-	bool                                          InEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsBannerButton_C_SetCarouselScrollingEnabled;
+DUMPER7_ASSERTS_WBP_NewsBannerButton_C_AddItem;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,163 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.AddAssetCount
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.UpdateAssetCount
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDesignTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Cosmetic_Item_C::AddAssetCount(int32 Count)
+void UWBP_UI_Cosmetic_Item_C::UpdateAssetCount(bool bIsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddAssetCount", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateAssetCount", FnName));
 
-	Params::WBP_UI_Cosmetic_Item_C_AddAssetCount Parms{};
+	Params::WBP_UI_Cosmetic_Item_C_UpdateAssetCount Parms{};
 
-	Parms.Count = Count;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonAlternativeSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonAlternativeSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonAlternativeSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
-
-	Params::WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonHoveredChanged(bool bInIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
-
-	Params::WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_Item_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ExecuteUbergraph_WBP_UI_Cosmetic_Item
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::ExecuteUbergraph_WBP_UI_Cosmetic_Item(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Cosmetic_Item_C", "ExecuteUbergraph_WBP_UI_Cosmetic_Item", FuncInfo);
-
-	Params::WBP_UI_Cosmetic_Item_C_ExecuteUbergraph_WBP_UI_Cosmetic_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InFocus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::OnFocusChanged(bool InFocus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
-
-	Params::WBP_UI_Cosmetic_Item_C_OnFocusChanged Parms{};
-
-	Parms.InFocus = InFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Cosmetic_Item_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnLoaded_DF5A03CE4F55139645004384AEF3E7B8
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::OnLoaded_DF5A03CE4F55139645004384AEF3E7B8(class UObject* Loaded)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_DF5A03CE4F55139645004384AEF3E7B8", FnName));
-
-	Params::WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Cosmetic_Item_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Cosmetic_Item_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bIsDesignTime = bIsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -196,19 +52,163 @@ void UWBP_UI_Cosmetic_Item_C::SetCurrent(bool IsCurrent)
 }
 
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.UpdateAssetCount
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDesignTime                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.SetAsCurrent
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Cosmetic_Item_C::UpdateAssetCount(bool bIsDesignTime)
+void UWBP_UI_Cosmetic_Item_C::SetAsCurrent()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateAssetCount", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAsCurrent", FnName));
 
-	Params::WBP_UI_Cosmetic_Item_C_UpdateAssetCount Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsDesignTime = bIsDesignTime;
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Cosmetic_Item_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnLoaded_DF5A03CE4F55139645004384AEF3E7B8
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::OnLoaded_DF5A03CE4F55139645004384AEF3E7B8(class UObject* Loaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_DF5A03CE4F55139645004384AEF3E7B8", FnName));
+
+	Params::WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_Item_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InFocus                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::OnFocusChanged(bool InFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
+
+	Params::WBP_UI_Cosmetic_Item_C_OnFocusChanged Parms{};
+
+	Parms.InFocus = InFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ExecuteUbergraph_WBP_UI_Cosmetic_Item
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::ExecuteUbergraph_WBP_UI_Cosmetic_Item(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Cosmetic_Item_C", "ExecuteUbergraph_WBP_UI_Cosmetic_Item", FuncInfo);
+
+	Params::WBP_UI_Cosmetic_Item_C_ExecuteUbergraph_WBP_UI_Cosmetic_Item Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Cosmetic_Item_C::ButtonSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+
+	Params::WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.AddAssetCount
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Cosmetic_Item_C::AddAssetCount(int32 Count)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddAssetCount", FnName));
+
+	Params::WBP_UI_Cosmetic_Item_C_AddAssetCount Parms{};
+
+	Parms.Count = Count;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -51,38 +51,38 @@ public:
 	bool                                          IsShortSequence;                                   // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AccesGrantedStart();
-	void AnimationEnd();
-	void BottomCenterFirstTextStartPrint();
-	void BottomCenterFirstTextStopPrint();
-	void BottomCenterSecondTextStartPrint();
-	void BottomCenterSecondTextStopPrint();
-	void ExecuteUbergraph_WBP_ServerBrowser_IntroMotion(int32 EntryPoint);
-	void InputCodeDigit();
-	void IntroStarted();
-	void OnIntroFinished();
-	void OnShortSequenceStarted();
-	void Play_Animation();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8();
-	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9();
-	void TopRightTextStartPrint();
-	void TopRightTextStopPrint();
 	void WindowScaleUp();
+	void TopRightTextStopPrint();
+	void TopRightTextStartPrint();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0();
+	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion();
+	void Play_Animation();
+	void OnShortSequenceStarted();
+	void OnIntroFinished();
+	void IntroStarted();
+	void InputCodeDigit();
+	void ExecuteUbergraph_WBP_ServerBrowser_IntroMotion(int32 EntryPoint);
+	void BottomCenterSecondTextStopPrint();
+	void BottomCenterSecondTextStartPrint();
+	void BottomCenterFirstTextStopPrint();
+	void BottomCenterFirstTextStartPrint();
+	void AnimationEnd();
+	void AccesGrantedStart();
 
 public:
 	static class UClass* StaticClass()

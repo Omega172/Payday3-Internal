@@ -18,23 +18,67 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CosmeticButton_C_ButtonFocusedChanged final
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.SetRarityColour
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_CosmeticButton_C_SetRarityColour final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable_2;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable_3;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable_4;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable_5;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_GetColourForRarity_Colour;                // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    Temp_byte_Variable_6;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZItemRarity                                Temp_byte_Variable_7;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticItemData_ReturnValue;          // 0x0020(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZRarity                                    K2Node_Select_Default;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_GetColourForRarity_Colour_1;              // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_SetRarityColour;
 
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonHoveredChanged
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CosmeticButton_C_ButtonHoveredChanged final
+struct WBP_UI_CosmeticButton_C_PreConstruct final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_PreConstruct;
+
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.OnItemCountChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_CosmeticButton_C_OnItemCountChanged final
+{
+public:
+	int32                                         InItemCount;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_OnItemCountChanged;
+
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.HoverChangedVisuals
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CosmeticButton_C_HoverChangedVisuals final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_HoverChangedVisuals;
+
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.FocusedChangedVisuals
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_UI_CosmeticButton_C_FocusedChangedVisuals final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_FocusedChangedVisuals;
 
 // Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ExecuteUbergraph_WBP_UI_CosmeticButton
 // 0x0040 (0x0040 - 0x0000)
@@ -62,67 +106,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_ExecuteUbergraph_WBP_UI_CosmeticButton;
 
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.FocusedChangedVisuals
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_UI_CosmeticButton_C_FocusedChangedVisuals final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_FocusedChangedVisuals;
-
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.HoverChangedVisuals
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CosmeticButton_C_HoverChangedVisuals final
+struct WBP_UI_CosmeticButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_HoverChangedVisuals;
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.OnItemCountChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_CosmeticButton_C_OnItemCountChanged final
-{
-public:
-	int32                                         InItemCount;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_OnItemCountChanged;
-
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.PreConstruct
+// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CosmeticButton_C_PreConstruct final
+struct WBP_UI_CosmeticButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_PreConstruct;
-
-// Function WBP_UI_CosmeticButton.WBP_UI_CosmeticButton_C.SetRarityColour
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_CosmeticButton_C_SetRarityColour final
-{
-public:
-	ESBZRarity                                    Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    Temp_byte_Variable_2;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    Temp_byte_Variable_3;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    Temp_byte_Variable_4;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    Temp_byte_Variable_5;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetColourForRarity_Colour;                // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    Temp_byte_Variable_6;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZItemRarity                                Temp_byte_Variable_7;                              // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsDataAsset*           CallFunc_GetCosmeticItemData_ReturnValue;          // 0x0020(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZRarity                                    K2Node_Select_Default;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetColourForRarity_Colour_1;              // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_SetRarityColour;
+DUMPER7_ASSERTS_WBP_UI_CosmeticButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

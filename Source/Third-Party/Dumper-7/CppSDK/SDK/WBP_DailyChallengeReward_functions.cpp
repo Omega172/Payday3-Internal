@@ -16,37 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.ExecuteUbergraph_WBP_DailyChallengeReward
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengeReward_C::ExecuteUbergraph_WBP_DailyChallengeReward(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_DailyChallengeReward_C", "ExecuteUbergraph_WBP_DailyChallengeReward", FuncInfo);
-
-	Params::WBP_DailyChallengeReward_C_ExecuteUbergraph_WBP_DailyChallengeReward Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeInfamyReward
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InInfamy                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DailyChallengeReward_C::InitializeInfamyReward(int32 InInfamy)
+void UWBP_DailyChallengeReward_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeInfamyReward", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_DailyChallengeReward_C_InitializeInfamyReward Parms{};
+	Params::WBP_DailyChallengeReward_C_PreConstruct Parms{};
 
-	Parms.InInfamy = InInfamy;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,19 +52,37 @@ void UWBP_DailyChallengeReward_C::InitializeReward(const struct FSBZChallengeRew
 }
 
 
-// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.InitializeInfamyReward
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InInfamy                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengeReward_C::PreConstruct(bool IsDesignTime)
+void UWBP_DailyChallengeReward_C::InitializeInfamyReward(int32 InInfamy)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeInfamyReward", FnName));
 
-	Params::WBP_DailyChallengeReward_C_PreConstruct Parms{};
+	Params::WBP_DailyChallengeReward_C_InitializeInfamyReward Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InInfamy = InInfamy;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DailyChallengeReward.WBP_DailyChallengeReward_C.ExecuteUbergraph_WBP_DailyChallengeReward
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DailyChallengeReward_C::ExecuteUbergraph_WBP_DailyChallengeReward(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DailyChallengeReward_C", "ExecuteUbergraph_WBP_DailyChallengeReward", FuncInfo);
+
+	Params::WBP_DailyChallengeReward_C_ExecuteUbergraph_WBP_DailyChallengeReward Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,66 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnUpdateOwnershipStatus
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOwned_OnUpdateOwnershipStatus                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_PurchasePopup_C::OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+
+	Params::WBP_Shop_PurchasePopup_C_OnUpdateOwnershipStatus Parms{};
+
+	Parms.bIsOwned_OnUpdateOwnershipStatus = bIsOwned_OnUpdateOwnershipStatus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnSelectedItemChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOwned_OnSelectedItemChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsVendorPermission_OnSelectedItemChanged              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_PurchasePopup_C::OnSelectedItemChanged(bool bIsOwned_OnSelectedItemChanged, bool bIsVendorPermission_OnSelectedItemChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedItemChanged", FnName));
+
+	Params::WBP_Shop_PurchasePopup_C_OnSelectedItemChanged Parms{};
+
+	Parms.bIsOwned_OnSelectedItemChanged = bIsOwned_OnSelectedItemChanged;
+	Parms.bIsVendorPermission_OnSelectedItemChanged = bIsVendorPermission_OnSelectedItemChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnOpen
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// bool                                    bShouldPlayAnimation_OnOpen                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHeistDLC_OnOpen                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZItemBundleStoreItem&   InItemBundle_OnOpen                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Shop_PurchasePopup_C::OnOpen(bool bShouldPlayAnimation_OnOpen, bool bIsHeistDLC_OnOpen, const struct FSBZItemBundleStoreItem& InItemBundle_OnOpen)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOpen", FnName));
+
+	Params::WBP_Shop_PurchasePopup_C_OnOpen Parms{};
+
+	Parms.bShouldPlayAnimation_OnOpen = bShouldPlayAnimation_OnOpen;
+	Parms.bIsHeistDLC_OnOpen = bIsHeistDLC_OnOpen;
+	Parms.InItemBundle_OnOpen = std::move(InItemBundle_OnOpen);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.ExecuteUbergraph_WBP_Shop_PurchasePopup
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -29,66 +89,6 @@ void UWBP_Shop_PurchasePopup_C::ExecuteUbergraph_WBP_Shop_PurchasePopup(int32 En
 	Params::WBP_Shop_PurchasePopup_C_ExecuteUbergraph_WBP_Shop_PurchasePopup Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnOpen
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// bool                                    bShouldPlayAnimation                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsHeistDLC                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZItemBundleStoreItem&   InItemBundle                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Shop_PurchasePopup_C::OnOpen(bool bShouldPlayAnimation, bool bIsHeistDLC, const struct FSBZItemBundleStoreItem& InItemBundle)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOpen", FnName));
-
-	Params::WBP_Shop_PurchasePopup_C_OnOpen Parms{};
-
-	Parms.bShouldPlayAnimation = bShouldPlayAnimation;
-	Parms.bIsHeistDLC = bIsHeistDLC;
-	Parms.InItemBundle = std::move(InItemBundle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnSelectedItemChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_PurchasePopup_C::OnSelectedItemChanged(bool bIsOwned, bool bIsVendorPermission)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedItemChanged", FnName));
-
-	Params::WBP_Shop_PurchasePopup_C_OnSelectedItemChanged Parms{};
-
-	Parms.bIsOwned = bIsOwned;
-	Parms.bIsVendorPermission = bIsVendorPermission;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_PurchasePopup.WBP_Shop_PurchasePopup_C.OnUpdateOwnershipStatus
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_PurchasePopup_C::OnUpdateOwnershipStatus(bool bIsOwned)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
-
-	Params::WBP_Shop_PurchasePopup_C_OnUpdateOwnershipStatus Parms{};
-
-	Parms.bIsOwned = bIsOwned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_BlackMarket_InsufficientFundsPopupBody.WBP_BlackMarket_InsufficientFundsPopupBody_C.OnItemDataInitialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_BlackMarket_InsufficientFundsPopupBody_C::OnItemDataInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemDataInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_BlackMarket_InsufficientFundsPopupBody.WBP_BlackMarket_InsufficientFundsPopupBody_C.ExecuteUbergraph_WBP_BlackMarket_InsufficientFundsPopupBody
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,18 +43,6 @@ void UWBP_BlackMarket_InsufficientFundsPopupBody_C::ExecuteUbergraph_WBP_BlackMa
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BlackMarket_InsufficientFundsPopupBody.WBP_BlackMarket_InsufficientFundsPopupBody_C.OnItemDataInitialized
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_BlackMarket_InsufficientFundsPopupBody_C::OnItemDataInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemDataInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

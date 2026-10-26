@@ -16,21 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ExecuteUbergraph_SBZSmallCosmeticDestruction_fading
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ASBZSmallCosmeticDestruction_fading_C::ExecuteUbergraph_SBZSmallCosmeticDestruction_fading(int32 EntryPoint)
+void ASBZSmallCosmeticDestruction_fading_C::UserConstructionScript()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "SBZSmallCosmeticDestruction_fading_C", "ExecuteUbergraph_SBZSmallCosmeticDestruction_fading", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	Params::SBZSmallCosmeticDestruction_fading_C_ExecuteUbergraph_SBZSmallCosmeticDestruction_fading Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -46,15 +40,21 @@ void ASBZSmallCosmeticDestruction_fading_C::ReceiveBeginPlay()
 }
 
 
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ExecuteUbergraph_SBZSmallCosmeticDestruction_fading
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASBZSmallCosmeticDestruction_fading_C::UserConstructionScript()
+void ASBZSmallCosmeticDestruction_fading_C::ExecuteUbergraph_SBZSmallCosmeticDestruction_fading(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "SBZSmallCosmeticDestruction_fading_C", "ExecuteUbergraph_SBZSmallCosmeticDestruction_fading", FuncInfo);
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::SBZSmallCosmeticDestruction_fading_C_ExecuteUbergraph_SBZSmallCosmeticDestruction_fading Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

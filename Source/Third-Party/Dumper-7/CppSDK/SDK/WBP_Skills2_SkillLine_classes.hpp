@@ -64,14 +64,14 @@ public:
 	struct FSlateColor                            ActiveColor;                                       // 0x0434(0x0014)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_Skills2_SkillLine(int32 EntryPoint);
-	void InitializeSkillTree(class USBZSkillTreeData* Skill_Tree_Data);
-	void PreConstruct(bool IsDesignTime);
-	void RefreshSkillButtonVisuals();
-	void SetSkillMenuRef(class UWBP_Skills2_Menu_C* SkillMenu);
-	void SetSkillTierLocked(bool LockedStatus, int32 Tier);
 	void UpdateSkillLinePointCounter();
+	void SetSkillTierLocked(bool LockedStatus, int32 Tier);
+	void SetSkillMenuRef(class UWBP_Skills2_Menu_C* SkillMenu);
+	void RefreshSkillButtonVisuals();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void InitializeSkillTree(class USBZSkillTreeData* Skill_Tree_Data);
+	void ExecuteUbergraph_WBP_Skills2_SkillLine(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

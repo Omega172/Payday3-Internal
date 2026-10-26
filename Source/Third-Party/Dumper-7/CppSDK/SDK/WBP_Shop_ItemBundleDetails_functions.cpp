@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.OnUpdateOwnershipStatus
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bOwned_OnUpdateOwnershipStatus                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_ItemBundleDetails_C::OnUpdateOwnershipStatus(bool bOwned_OnUpdateOwnershipStatus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+
+	Params::WBP_Shop_ItemBundleDetails_C_OnUpdateOwnershipStatus Parms{};
+
+	Parms.bOwned_OnUpdateOwnershipStatus = bOwned_OnUpdateOwnershipStatus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.ExecuteUbergraph_WBP_Shop_ItemBundleDetails
 // (Final, UbergraphFunction)
 // Parameters:
@@ -29,24 +47,6 @@ void UWBP_Shop_ItemBundleDetails_C::ExecuteUbergraph_WBP_Shop_ItemBundleDetails(
 	Params::WBP_Shop_ItemBundleDetails_C_ExecuteUbergraph_WBP_Shop_ItemBundleDetails Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.OnUpdateOwnershipStatus
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bOwned                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_ItemBundleDetails_C::OnUpdateOwnershipStatus(bool bOwned)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
-
-	Params::WBP_Shop_ItemBundleDetails_C_OnUpdateOwnershipStatus Parms{};
-
-	Parms.bOwned = bOwned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

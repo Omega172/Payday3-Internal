@@ -16,15 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.EmptySet
+// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.SpriteLoaded
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UPaperSprite*                     OutLoadedSprite_SpriteLoaded                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DiscardItemPopUpBody_C::EmptySet()
+void UWBP_UI_DiscardItemPopUpBody_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite_SpriteLoaded)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmptySet", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpriteLoaded", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_DiscardItemPopUpBody_C_SpriteLoaded Parms{};
+
+	Parms.OutLoadedSprite_SpriteLoaded = OutLoadedSprite_SpriteLoaded;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -46,21 +52,15 @@ void UWBP_UI_DiscardItemPopUpBody_C::ExecuteUbergraph_WBP_UI_DiscardItemPopUpBod
 }
 
 
-// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.SpriteLoaded
+// Function WBP_UI_DiscardItemPopUpBody.WBP_UI_DiscardItemPopUpBody_C.EmptySet
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UPaperSprite*                     OutLoadedSprite                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DiscardItemPopUpBody_C::SpriteLoaded(class UPaperSprite* OutLoadedSprite)
+void UWBP_UI_DiscardItemPopUpBody_C::EmptySet()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpriteLoaded", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmptySet", FnName));
 
-	Params::WBP_UI_DiscardItemPopUpBody_C_SpriteLoaded Parms{};
-
-	Parms.OutLoadedSprite = OutLoadedSprite;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

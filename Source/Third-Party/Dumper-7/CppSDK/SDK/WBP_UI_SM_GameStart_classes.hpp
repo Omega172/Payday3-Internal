@@ -48,15 +48,15 @@ public:
 	bool                                          EnteredSoloModeBrowser;                            // 0x06B6(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature(class USBZFullscreenVideoWidget* InWidget, bool bInIsActive);
-	void ExecuteUbergraph_WBP_UI_SM_GameStart(int32 EntryPoint);
-	void OnControlReferencesVisibilityChanged(ESlateVisibility InVisibility);
-	void OnInitialized();
-	void OnLeftLobby();
-	void OnLobbyEntered();
-	void OnStackChanged(const struct FSBZUIStackChangedEvent& StackEvent);
-	void RemoveBackgroundBlur();
 	void ShowMainMenuFunction();
+	void RemoveBackgroundBlur();
+	void OnStackChanged(const struct FSBZUIStackChangedEvent& StackEvent);
+	void OnLobbyEntered();
+	void OnLeftLobby();
+	void OnInitialized();
+	void OnControlReferencesVisibilityChanged(ESlateVisibility InVisibility);
+	void ExecuteUbergraph_WBP_UI_SM_GameStart(int32 EntryPoint);
+	void BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature(class USBZFullscreenVideoWidget* InWidget, bool bInIsActive);
 
 public:
 	static class UClass* StaticClass()

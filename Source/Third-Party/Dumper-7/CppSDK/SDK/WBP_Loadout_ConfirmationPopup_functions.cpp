@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Loadout_ConfirmationPopup.WBP_Loadout_ConfirmationPopup_C.OnItemDataInitialized
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Loadout_ConfirmationPopup_C::OnItemDataInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemDataInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Loadout_ConfirmationPopup.WBP_Loadout_ConfirmationPopup_C.ExecuteUbergraph_WBP_Loadout_ConfirmationPopup
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,18 +43,6 @@ void UWBP_Loadout_ConfirmationPopup_C::ExecuteUbergraph_WBP_Loadout_Confirmation
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Loadout_ConfirmationPopup.WBP_Loadout_ConfirmationPopup_C.OnItemDataInitialized
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Loadout_ConfirmationPopup_C::OnItemDataInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemDataInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

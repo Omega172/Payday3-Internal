@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
 
 
@@ -48,35 +48,35 @@ public:
 	class USBZInventoryBaseData*                  GotoData;                                          // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	class UWBP_ItemButton_C* AddButtonFromDeco(class USBZSlotItemDecorator* SlotDecorator, bool bAddSlotText);
-	void BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
-	void BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void CreateAllMods(const struct FSBZEquippableConfig& EquippableConfig, const class USBZModularPartSlotBase* ModSlot);
-	void CreateAllSlots(const struct FSBZEquippableConfig& EquippableConfig);
-	void ExecuteUbergraph_WBP_ModSlotScreen(int32 EntryPoint);
-	void FindButtonChild(class UPanelWidget* Widget, class USBZMenuButton** AsSBZMenu_Button);
-	void InitReturnFromGoto();
-	void InitSlots();
-	void MakeControlsReference(struct FSBZButtonControlsReference* ControlsReference);
-	void OnButtonFocusedChanged_Event(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnEquippedPressed();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnSlotButtonSelected_Event(class USBZMenuButton* Button);
-	void PostPush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget);
-	void PreConstruct(bool IsDesignTime);
-	void PrePush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget);
-	void RefreshSlotButtons();
-	void SetupWeaponSlot(int32 SlotIndex, ESBZEquippableLoadoutSlot ItemCategory_0);
-	void ShowMods();
-	void ShowSlots();
-	void UpdateModInfo(class USBZInventoryBaseData* ItemData);
 	void UpdateWeaponDisplay();
+	void UpdateModInfo(class USBZInventoryBaseData* ItemData);
+	void ShowSlots();
+	void ShowMods();
+	void SetupWeaponSlot(int32 SlotIndex, ESBZEquippableLoadoutSlot ItemCategory);
+	void RefreshSlotButtons();
+	void PrePush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PostPush_EB4572904A1FF447AB18B0B9377C564C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_B78C6D19499C91674E07B0AD948FE8F2(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnSlotButtonSelected_Event(class USBZMenuButton* Button);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnEquippedPressed();
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnButtonFocusedChanged_Event(class USBZMenuButton* Button, bool bIsEnabled);
+	void MakeControlsReference(struct FSBZButtonControlsReference* ControlsReference);
+	void InitSlots();
+	void InitReturnFromGoto();
+	void FindButtonChild(class UPanelWidget* Widget, class USBZMenuButton** AsSBZMenu_Button);
+	void ExecuteUbergraph_WBP_ModSlotScreen(int32 EntryPoint);
+	void CreateAllSlots(const struct FSBZEquippableConfig& EquippableConfig);
+	void CreateAllMods(const struct FSBZEquippableConfig& EquippableConfig, const class USBZModularPartSlotBase* ModSlot);
+	void BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
+	void BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item);
+	void BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	class UWBP_ItemButton_C* AddButtonFromDeco(class USBZSlotItemDecorator* SlotDecorator, bool bAddSlotText);
 
 public:
 	static class UClass* StaticClass()

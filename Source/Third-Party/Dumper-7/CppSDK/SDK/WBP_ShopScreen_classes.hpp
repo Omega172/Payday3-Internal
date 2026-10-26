@@ -27,9 +27,9 @@ public:
 	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x0550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void OnShopScreenOpened(int32 CategoryIndex_OnShopScreenOpened, bool bPlayAnimation_OnShopScreenOpened);
+	void OnActiveCategoryUpdated(const class USBZShopCategoryData* NewCategory_OnActiveCategoryUpdated, int32 NewCategoryIndex_OnActiveCategoryUpdated, bool bWasChanged_OnActiveCategoryUpdated);
 	void ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint);
-	void OnActiveCategoryUpdated(const class USBZShopCategoryData* NewCategory, int32 NewCategoryIndex, bool bWasChanged);
-	void OnShopScreenOpened(int32 CategoryIndex, bool bPlayAnimation);
 
 public:
 	static class UClass* StaticClass()

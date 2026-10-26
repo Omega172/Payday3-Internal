@@ -25,10 +25,10 @@ public:
 	class UOverlay*                               OverlayFalloffDisplay;                             // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_UI_Widget_DamageFalloff(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 
-	void OnPaint(struct FPaintContext& Context) const;
+	void OnPaint(struct FPaintContext& Context_OnPaint) const;
 
 public:
 	static class UClass* StaticClass()

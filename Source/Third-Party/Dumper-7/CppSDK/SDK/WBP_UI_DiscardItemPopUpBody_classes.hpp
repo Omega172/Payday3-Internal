@@ -25,9 +25,9 @@ public:
 	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void EmptySet();
+	void SpriteLoaded(class UPaperSprite* OutLoadedSprite_SpriteLoaded);
 	void ExecuteUbergraph_WBP_UI_DiscardItemPopUpBody(int32 EntryPoint);
-	void SpriteLoaded(class UPaperSprite* OutLoadedSprite);
+	void EmptySet();
 
 public:
 	static class UClass* StaticClass()

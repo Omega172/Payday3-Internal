@@ -50,7 +50,6 @@ public:
 	class FName                                   QuestsStackName;                                   // 0x043C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
 	void ExecuteUbergraph_WBP_HUDOverlay_QuestWidget(int32 EntryPoint);
 	void GetChallengeDescriptionTextFromQuestChallengeData(const struct FSBZUIQuestChallengeData& InQuestChallenge, class FText* OutText);
 	void GetChallengeDescriptionTextFromQuestChallengeNotificationData(const struct FSBZQuestChallengeNotificationData& InQuestNotifChallenge, class FText* OutText);

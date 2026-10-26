@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "Engine_structs.hpp"
 #include "SBZBackend_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -68,46 +68,46 @@ public:
 	bool                                          bHasReachedLockedReadyTimeState;                   // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddXboxFriendsControlRefToArray(TArray<struct FSBZButtonControlReference>& InControlsRefArray);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadingButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_NewUnready_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_NewUnready_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_LoadoutButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player1ReadyStatus_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player2ReadyStatus_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player3ReadyStatus_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player4ReadyStatus_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void CancelAction();
-	void CustomizeLoadout();
-	void DecreaseLoadoutIndex();
-	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu(int32 EntryPoint);
-	void IncreaseLoadoutIndex();
-	void InitializeLobbyDetails();
-	void IsLobbyInGame(bool* bInGame);
-	void NewLoadout();
-	void OnAddedToStack();
-	void OnAsyncLoadingDone();
-	void OnBackConfirmed(class FName ClosingActionName);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLobbyPlayerReadyStatusUpdatedEvent(bool bInReadyStatus);
-	void OnLostStackFocused();
-	void OnPlayerStatusWidgetFocusChanged(class USBZMenuButton* Widget, bool IsFocused);
-	void OnRemovedFromStack();
-	void PostPush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
-	void PreConstruct(bool IsDesignTime);
-	void PrePush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
-	void ReachedLockedReadyTimeState();
-	void RebindActions();
-	void SetActiveLoadout();
-	void SetActiveLoadoutIndex();
-	void SetButtonFocus(class USBZMenuButton* ActiveButton_0, bool Condition);
-	void Setup_Solo_Mode_Visuals();
-	void ShowLoadProgress(const struct FSBZAsyncLoadingProgress& AsyncLoadingProgressData);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void UpdatePreMatchTimer(double InPreMatchTimer);
+	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
+	void ShowLoadProgress(const struct FSBZAsyncLoadingProgress& AsyncLoadingProgressData);
+	void Setup_Solo_Mode_Visuals();
+	void SetButtonFocus(class USBZMenuButton* ActiveButton, bool Condition);
+	void SetActiveLoadoutIndex();
+	void SetActiveLoadout();
+	void RebindActions();
+	void ReachedLockedReadyTimeState();
+	void PrePush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PostPush_93D81847476BF4E074C1628189487515(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnRemovedFromStack();
+	void OnPlayerStatusWidgetFocusChanged(class USBZMenuButton* Widget, bool IsFocused);
+	void OnLostStackFocused();
+	void OnLobbyPlayerReadyStatusUpdatedEvent(bool bInReadyStatus_OnLobbyPlayerReadyStatusUpdatedEvent);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnBackConfirmed(class FName ClosingActionName);
+	void OnAsyncLoadingDone();
+	void OnAddedToStack();
+	void NewLoadout();
+	void IsLobbyInGame(bool* bInGame);
+	void InitializeLobbyDetails();
+	void IncreaseLoadoutIndex();
+	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu(int32 EntryPoint);
+	void DecreaseLoadoutIndex();
+	void CustomizeLoadout();
+	void CancelAction();
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player4ReadyStatus_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player3ReadyStatus_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player2ReadyStatus_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_Player1ReadyStatus_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_Widget_LoadoutButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_NewUnready_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_NewUnready_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_NewReady_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadingButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void AddXboxFriendsControlRefToArray(TArray<struct FSBZButtonControlReference>& InControlsRefArray);
 
 public:
 	static class UClass* StaticClass()

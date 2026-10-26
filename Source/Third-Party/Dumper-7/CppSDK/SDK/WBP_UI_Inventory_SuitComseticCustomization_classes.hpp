@@ -31,14 +31,14 @@ public:
 	class UObject*                                RT_WidgetPopUp;                                    // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0);
-	void EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem);
-	void ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization(int32 EntryPoint);
-	void InitializeVisuals();
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
 	void OnLostStackFocused();
+	void OnInitialized();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void InitializeVisuals();
+	void ExecuteUbergraph_WBP_UI_Inventory_SuitComseticCustomization(int32 EntryPoint);
+	void EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem_EquippedItemChanged);
+	void BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

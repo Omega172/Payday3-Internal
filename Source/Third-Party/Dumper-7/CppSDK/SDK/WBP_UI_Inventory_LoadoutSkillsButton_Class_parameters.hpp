@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Inventory_LoadoutSkillsButton_Class.WBP_UI_Inventory_LoadoutSkillsButton_Class_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_LoadoutSkillsButton_Class_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_Class_C_PreConstruct;
+
 // Function WBP_UI_Inventory_LoadoutSkillsButton_Class.WBP_UI_Inventory_LoadoutSkillsButton_Class_C.ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton_Class
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_UI_Inventory_LoadoutSkillsButton_Class_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton_Class final
@@ -25,15 +34,6 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_Class_C_ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton_Class;
-
-// Function WBP_UI_Inventory_LoadoutSkillsButton_Class.WBP_UI_Inventory_LoadoutSkillsButton_Class_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_LoadoutSkillsButton_Class_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_LoadoutSkillsButton_Class_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

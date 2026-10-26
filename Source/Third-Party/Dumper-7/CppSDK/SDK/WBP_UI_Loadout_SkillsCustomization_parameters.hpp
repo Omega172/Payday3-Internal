@@ -16,14 +16,37 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.DisplaySkillsScreen
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen final
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.Set Equip Skills
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Loadout_SkillsCustomization_C_Set_Equip_Skills final
 {
 public:
-	struct FSBZPlayerLoadoutConfig                NewParam;                                          // 0x0000(0x00A8)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	const class USBZSkill*                        Skill;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         SkillState;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_ByteByte_ReturnValue;        // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen;
+DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_Set_Equip_Skills;
+
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Loadout_SkillsCustomization_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_OnGainedStackFocused;
+
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnDescriptionScrollAxisChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Loadout_SkillsCustomization_C_OnDescriptionScrollAxisChanged final
+{
+public:
+	float                                         Value_OnDescriptionScrollAxisChanged;              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_OnDescriptionScrollAxisChanged;
 
 // Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.ExecuteUbergraph_WBP_UI_Loadout_SkillsCustomization
 // 0x0050 (0x0050 - 0x0000)
@@ -46,37 +69,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_ExecuteUbergraph_WBP_UI_Loadout_SkillsCustomization;
 
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnDescriptionScrollAxisChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Loadout_SkillsCustomization_C_OnDescriptionScrollAxisChanged final
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.DisplaySkillsScreen
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen final
 {
 public:
-	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZPlayerLoadoutConfig                NewParam;                                          // 0x0000(0x00A8)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_OnDescriptionScrollAxisChanged;
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Loadout_SkillsCustomization_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_OnGainedStackFocused;
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.Set Equip Skills
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Loadout_SkillsCustomization_C_Set_Equip_Skills final
-{
-public:
-	const class USBZSkill*                        Skill;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         SkillState;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_ByteByte_ReturnValue;        // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_Set_Equip_Skills;
+DUMPER7_ASSERTS_WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

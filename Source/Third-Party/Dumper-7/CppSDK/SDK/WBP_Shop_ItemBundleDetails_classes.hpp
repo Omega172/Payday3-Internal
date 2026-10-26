@@ -25,8 +25,8 @@ public:
 	class UWidgetSwitcher*                        Ownership_WS;                                      // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void OnUpdateOwnershipStatus(bool bOwned_OnUpdateOwnershipStatus);
 	void ExecuteUbergraph_WBP_Shop_ItemBundleDetails(int32 EntryPoint);
-	void OnUpdateOwnershipStatus(bool bOwned);
 
 public:
 	static class UClass* StaticClass()

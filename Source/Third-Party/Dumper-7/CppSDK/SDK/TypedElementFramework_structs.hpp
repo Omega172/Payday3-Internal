@@ -54,14 +54,14 @@ public:
 };
 DUMPER7_ASSERTS_FTypedElementAlertActionColumn;
 
-// ScriptStruct TypedElementFramework.TypedElementSlateWidgetReferenceColumn
-// 0x0030 (0x0030 - 0x0000)
-struct alignas(0x08) FTypedElementSlateWidgetReferenceColumn final : public FEditorDataStorageColumn
+// ScriptStruct TypedElementFramework.TestColumnE
+// 0x0001 (0x0001 - 0x0000)
+struct FTestColumnE final : public FEditorDataStorageColumn
 {
 public:
-	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-DUMPER7_ASSERTS_FTypedElementSlateWidgetReferenceColumn;
+DUMPER7_ASSERTS_FTestColumnE;
 
 // ScriptStruct TypedElementFramework.ScriptTypedElementHandle
 // 0x0008 (0x0008 - 0x0000)
@@ -71,6 +71,24 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FScriptTypedElementHandle;
+
+// ScriptStruct TypedElementFramework.SCCRevisionId
+// 0x0014 (0x0014 - 0x0000)
+struct FSCCRevisionId final
+{
+public:
+	uint32                                        Id[0x5];                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSCCRevisionId;
+
+// ScriptStruct TypedElementFramework.SCCExternalRevisionIdColumn
+// 0x0014 (0x0014 - 0x0000)
+struct FSCCExternalRevisionIdColumn final : public FEditorDataStorageColumn
+{
+public:
+	struct FSCCRevisionId                         RevisionId;                                        // 0x0000(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSCCExternalRevisionIdColumn;
 
 // ScriptStruct TypedElementFramework.TypedElementAlertColumn
 // 0x0020 (0x0020 - 0x0000)
@@ -84,15 +102,6 @@ public:
 };
 DUMPER7_ASSERTS_FTypedElementAlertColumn;
 
-// ScriptStruct TypedElementFramework.TypedElementViewportOverlayColorColumn
-// 0x0004 (0x0004 - 0x0000)
-struct FTypedElementViewportOverlayColorColumn final : public FEditorDataStorageColumn
-{
-public:
-	struct FColor                                 OverlayColor;                                      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FTypedElementViewportOverlayColorColumn;
-
 // ScriptStruct TypedElementFramework.TypedElementChildAlertColumn
 // 0x0010 (0x0010 - 0x0000)
 struct alignas(0x08) FTypedElementChildAlertColumn final : public FEditorDataStorageColumn
@@ -102,6 +111,15 @@ public:
 };
 DUMPER7_ASSERTS_FTypedElementChildAlertColumn;
 
+// ScriptStruct TypedElementFramework.TypedElementSlateWidgetReferenceColumn
+// 0x0030 (0x0030 - 0x0000)
+struct alignas(0x08) FTypedElementSlateWidgetReferenceColumn final : public FEditorDataStorageColumn
+{
+public:
+	uint8                                         Pad_0[0x30];                                       // 0x0000(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FTypedElementSlateWidgetReferenceColumn;
+
 // ScriptStruct TypedElementFramework.EditorDataStorageTag
 // 0x0001 (0x0001 - 0x0000)
 struct FEditorDataStorageTag
@@ -110,6 +128,15 @@ public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FEditorDataStorageTag;
+
+// ScriptStruct TypedElementFramework.TestColumnC
+// 0x0001 (0x0001 - 0x0000)
+struct FTestColumnC final : public FEditorDataStorageColumn
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FTestColumnC;
 
 // ScriptStruct TypedElementFramework.TypedElementUObjectColumn
 // 0x0008 (0x0008 - 0x0000)
@@ -138,6 +165,15 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTypedElementExternalObjectColumn;
+
+// ScriptStruct TypedElementFramework.SlateColorColumn
+// 0x0014 (0x0014 - 0x0000)
+struct FSlateColorColumn final : public FEditorDataStorageColumn
+{
+public:
+	struct FSlateColor                            Color;                                             // 0x0000(0x0014)(NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSlateColorColumn;
 
 // ScriptStruct TypedElementFramework.TypedElementClassDefaultObjectTag
 // 0x0000 (0x0001 - 0x0001)
@@ -169,12 +205,28 @@ struct FTypedElementPropertyBagPlaceholderTag final : public FEditorDataStorageT
 };
 DUMPER7_ASSERTS_FTypedElementPropertyBagPlaceholderTag;
 
+// ScriptStruct TypedElementFramework.TestColumnD
+// 0x0001 (0x0001 - 0x0000)
+struct FTestColumnD final : public FEditorDataStorageColumn
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_FTestColumnD;
+
 // ScriptStruct TypedElementFramework.TypedElementLoosePropertyTag
 // 0x0000 (0x0001 - 0x0001)
 struct FTypedElementLoosePropertyTag final : public FEditorDataStorageTag
 {
 };
 DUMPER7_ASSERTS_FTypedElementLoosePropertyTag;
+
+// ScriptStruct TypedElementFramework.TestTagColumnB
+// 0x0000 (0x0001 - 0x0001)
+struct FTestTagColumnB final : public FEditorDataStorageTag
+{
+};
+DUMPER7_ASSERTS_FTestTagColumnB;
 
 // ScriptStruct TypedElementFramework.TypedElementPropertyBagPlaceholderTypeInfoColumn
 // 0x0008 (0x0008 - 0x0000)
@@ -262,6 +314,13 @@ public:
 };
 DUMPER7_ASSERTS_FUnresolvedTableRowParentColumn;
 
+// ScriptStruct TypedElementFramework.SCCStagedTag
+// 0x0000 (0x0001 - 0x0001)
+struct FSCCStagedTag final : public FEditorDataStorageTag
+{
+};
+DUMPER7_ASSERTS_FSCCStagedTag;
+
 // ScriptStruct TypedElementFramework.TypedElementIconOverrideColumn
 // 0x000C (0x000C - 0x0000)
 struct FTypedElementIconOverrideColumn final : public FEditorDataStorageColumn
@@ -298,6 +357,15 @@ public:
 };
 DUMPER7_ASSERTS_FScriptTypedElementListProxy;
 
+// ScriptStruct TypedElementFramework.SCCStatusColumn
+// 0x0004 (0x0004 - 0x0000)
+struct FSCCStatusColumn final : public FEditorDataStorageColumn
+{
+public:
+	ESCCModification                              Modification;                                      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSCCStatusColumn;
+
 // ScriptStruct TypedElementFramework.TypedElementSyncBackToWorldTag
 // 0x0000 (0x0001 - 0x0001)
 struct FTypedElementSyncBackToWorldTag final : public FEditorDataStorageTag
@@ -327,6 +395,15 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTypedElementRowReferenceColumn;
+
+// ScriptStruct TypedElementFramework.SCCUserInfo
+// 0x0010 (0x0010 - 0x0000)
+struct FSCCUserInfo final
+{
+public:
+	class FString                                 Name;                                              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FSCCUserInfo;
 
 // ScriptStruct TypedElementFramework.NameColumn
 // 0x000C (0x000C - 0x0000)
@@ -363,6 +440,13 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTypedElementPackageReference;
+
+// ScriptStruct TypedElementFramework.TypedElementSlateWidgetReferenceDeletesRowTag
+// 0x0000 (0x0001 - 0x0001)
+struct FTypedElementSlateWidgetReferenceDeletesRowTag final : public FEditorDataStorageTag
+{
+};
+DUMPER7_ASSERTS_FTypedElementSlateWidgetReferenceDeletesRowTag;
 
 // ScriptStruct TypedElementFramework.TypedElementPackageUpdatedTag
 // 0x0000 (0x0001 - 0x0001)
@@ -405,13 +489,6 @@ struct FSCCInChangelistTag final : public FEditorDataStorageTag
 };
 DUMPER7_ASSERTS_FSCCInChangelistTag;
 
-// ScriptStruct TypedElementFramework.SCCStagedTag
-// 0x0000 (0x0001 - 0x0001)
-struct FSCCStagedTag final : public FEditorDataStorageTag
-{
-};
-DUMPER7_ASSERTS_FSCCStagedTag;
-
 // ScriptStruct TypedElementFramework.SCCLockedTag
 // 0x0000 (0x0001 - 0x0001)
 struct FSCCLockedTag final : public FEditorDataStorageTag
@@ -433,24 +510,6 @@ struct FSCCNotCurrentTag final : public FEditorDataStorageTag
 };
 DUMPER7_ASSERTS_FSCCNotCurrentTag;
 
-// ScriptStruct TypedElementFramework.SCCStatusColumn
-// 0x0004 (0x0004 - 0x0000)
-struct FSCCStatusColumn final : public FEditorDataStorageColumn
-{
-public:
-	ESCCModification                              Modification;                                      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSCCStatusColumn;
-
-// ScriptStruct TypedElementFramework.SCCRevisionId
-// 0x0014 (0x0014 - 0x0000)
-struct FSCCRevisionId final
-{
-public:
-	uint32                                        Id[0x5];                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSCCRevisionId;
-
 // ScriptStruct TypedElementFramework.SCCRevisionIdColumn
 // 0x0014 (0x0014 - 0x0000)
 struct FSCCRevisionIdColumn final : public FEditorDataStorageColumn
@@ -459,24 +518,6 @@ public:
 	struct FSCCRevisionId                         RevisionId;                                        // 0x0000(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FSCCRevisionIdColumn;
-
-// ScriptStruct TypedElementFramework.SCCExternalRevisionIdColumn
-// 0x0014 (0x0014 - 0x0000)
-struct FSCCExternalRevisionIdColumn final : public FEditorDataStorageColumn
-{
-public:
-	struct FSCCRevisionId                         RevisionId;                                        // 0x0000(0x0014)(NoDestructor, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSCCExternalRevisionIdColumn;
-
-// ScriptStruct TypedElementFramework.SCCUserInfo
-// 0x0010 (0x0010 - 0x0000)
-struct FSCCUserInfo final
-{
-public:
-	class FString                                 Name;                                              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSCCUserInfo;
 
 // ScriptStruct TypedElementFramework.SCCExternallyLockedColumn
 // 0x0010 (0x0010 - 0x0000)
@@ -496,13 +537,6 @@ public:
 };
 DUMPER7_ASSERTS_FTypedElementSelectionColumn;
 
-// ScriptStruct TypedElementFramework.TypedElementSlateWidgetReferenceDeletesRowTag
-// 0x0000 (0x0001 - 0x0001)
-struct FTypedElementSlateWidgetReferenceDeletesRowTag final : public FEditorDataStorageTag
-{
-};
-DUMPER7_ASSERTS_FTypedElementSlateWidgetReferenceDeletesRowTag;
-
 // ScriptStruct TypedElementFramework.DisplayNameColumn
 // 0x0010 (0x0010 - 0x0000)
 struct FDisplayNameColumn final : public FEditorDataStorageColumn
@@ -521,15 +555,6 @@ public:
 };
 DUMPER7_ASSERTS_FDescriptionColumn;
 
-// ScriptStruct TypedElementFramework.SlateColorColumn
-// 0x0014 (0x0014 - 0x0000)
-struct FSlateColorColumn final : public FEditorDataStorageColumn
-{
-public:
-	struct FSlateColor                            Color;                                             // 0x0000(0x0014)(NativeAccessSpecifierPublic)
-};
-DUMPER7_ASSERTS_FSlateColorColumn;
-
 // ScriptStruct TypedElementFramework.TestColumnA
 // 0x0001 (0x0001 - 0x0000)
 struct FTestColumnA final : public FEditorDataStorageColumn
@@ -547,33 +572,6 @@ public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FTestColumnB;
-
-// ScriptStruct TypedElementFramework.TestColumnC
-// 0x0001 (0x0001 - 0x0000)
-struct FTestColumnC final : public FEditorDataStorageColumn
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FTestColumnC;
-
-// ScriptStruct TypedElementFramework.TestColumnD
-// 0x0001 (0x0001 - 0x0000)
-struct FTestColumnD final : public FEditorDataStorageColumn
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FTestColumnD;
-
-// ScriptStruct TypedElementFramework.TestColumnE
-// 0x0001 (0x0001 - 0x0000)
-struct FTestColumnE final : public FEditorDataStorageColumn
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_FTestColumnE;
 
 // ScriptStruct TypedElementFramework.TestColumnF
 // 0x0001 (0x0001 - 0x0000)
@@ -617,13 +615,6 @@ struct FTestTagColumnA final : public FEditorDataStorageTag
 {
 };
 DUMPER7_ASSERTS_FTestTagColumnA;
-
-// ScriptStruct TypedElementFramework.TestTagColumnB
-// 0x0000 (0x0001 - 0x0001)
-struct FTestTagColumnB final : public FEditorDataStorageTag
-{
-};
-DUMPER7_ASSERTS_FTestTagColumnB;
 
 // ScriptStruct TypedElementFramework.TestTagColumnC
 // 0x0000 (0x0001 - 0x0001)
@@ -756,5 +747,14 @@ public:
 	uint8                                         SelectionOutlineColorIndex;                        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FTypedElementViewportOutlineColorColumn;
+
+// ScriptStruct TypedElementFramework.TypedElementViewportOverlayColorColumn
+// 0x0004 (0x0004 - 0x0000)
+struct FTypedElementViewportOverlayColorColumn final : public FEditorDataStorageColumn
+{
+public:
+	struct FColor                                 OverlayColor;                                      // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+DUMPER7_ASSERTS_FTypedElementViewportOverlayColorColumn;
 
 SDK_NAMESPACE_END

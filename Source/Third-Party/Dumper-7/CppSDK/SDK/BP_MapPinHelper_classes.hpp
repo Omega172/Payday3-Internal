@@ -31,9 +31,9 @@ public:
 	bool                                          ShowDebugArrow;                                    // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapPinHelper(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 	void UserConstructionScript();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ExecuteUbergraph_BP_MapPinHelper(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

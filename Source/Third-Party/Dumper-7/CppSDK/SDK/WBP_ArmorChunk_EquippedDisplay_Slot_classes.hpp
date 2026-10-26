@@ -36,9 +36,9 @@ public:
 	int32                                         SlotNum;                                           // 0x0334(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 	void SetSlotType(ESBZArmorChunkType Type);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_ArmorChunk_EquippedDisplay_Slot(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

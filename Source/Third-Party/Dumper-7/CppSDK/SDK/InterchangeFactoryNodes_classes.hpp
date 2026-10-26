@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "InterchangeCore_classes.hpp"
 #include "CinematicCamera_structs.hpp"
-#include "Engine_structs.hpp"
 #include "InterchangeFactoryNodes_structs.hpp"
 #include "InterchangeNodes_structs.hpp"
 
@@ -52,184 +52,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UInterchangeActorFactoryNode;
-
-// Class InterchangeFactoryNodes.InterchangeBaseLightFactoryNode
-// 0x0040 (0x0218 - 0x01D8)
-class UInterchangeBaseLightFactoryNode : public UInterchangeActorFactoryNode
-{
-public:
-	uint8                                         Pad_1D8[0x40];                                     // 0x01D8(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool SetCustomIntensity(float AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomLightColor(const struct FColor& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomTemperature(float AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomUseTemperature(bool AttributeValue, bool bAddApplyDelegate);
-
-	bool GetCustomIntensity(float* AttributeValue) const;
-	bool GetCustomLightColor(struct FColor* AttributeValue) const;
-	bool GetCustomTemperature(float* AttributeValue) const;
-	bool GetCustomUseTemperature(bool* AttributeValue) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeBaseLightFactoryNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeBaseLightFactoryNode")
-	}
-	static class UInterchangeBaseLightFactoryNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeBaseLightFactoryNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeBaseLightFactoryNode;
-
-// Class InterchangeFactoryNodes.InterchangeLightFactoryNode
-// 0x0060 (0x0278 - 0x0218)
-class UInterchangeLightFactoryNode : public UInterchangeBaseLightFactoryNode
-{
-public:
-	uint8                                         Pad_218[0x60];                                     // 0x0218(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool SetCustomAttenuationRadius(float AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomIESBrightnessScale(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomIESTexture(const class FString& AttributeValue);
-	bool SetCustomIntensityUnits(ELightUnits AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomRotation(const struct FRotator& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomUseIESBrightness(const bool& AttributeValue, bool bAddApplyDelegate);
-
-	bool GetCustomAttenuationRadius(float* AttributeValue) const;
-	bool GetCustomIESBrightnessScale(float* AttributeValue) const;
-	bool GetCustomIESTexture(class FString* AttributeValue) const;
-	bool GetCustomIntensityUnits(ELightUnits* AttributeValue) const;
-	bool GetCustomRotation(struct FRotator* AttributeValue) const;
-	bool GetCustomUseIESBrightness(bool* AttributeValue) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeLightFactoryNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeLightFactoryNode")
-	}
-	static class UInterchangeLightFactoryNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeLightFactoryNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeLightFactoryNode;
-
-// Class InterchangeFactoryNodes.InterchangeTextureFactoryNode
-// 0x02A0 (0x03F8 - 0x0158)
-class UInterchangeTextureFactoryNode : public UInterchangeFactoryBaseNode
-{
-public:
-	uint8                                         Pad_158[0x2A0];                                    // 0x0158(0x02A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	void InitializeTextureNode(const class FString& UniqueID, const class FString& DisplayLabel, const class FString& InAssetName);
-	bool SetCustomAdjustBrightness(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustBrightnessCurve(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustHue(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustMaxAlpha(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustMinAlpha(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustRGBCurve(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustSaturation(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAdjustVibrance(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomAllowNonPowerOfTwo(const bool& AttributeValue);
-	bool SetCustomAlphaCoverageThresholds(const struct FVector4& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustombChromaKeyTexture(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustombDoScaleMipsForAlphaCoverage(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustombFlipGreenChannel(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustombPreserveBorder(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustombUseLegacyGamma(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomChromaKeyColor(const struct FColor& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomChromaKeyThreshold(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomColorSpace(ETextureColorSpace AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomCompositePower(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomCompositeTextureMode(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomCompressionNoAlpha(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomCompressionQuality(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomCompressionSettings(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomDeferCompression(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomDownscale(const float& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomDownscaleOptions(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomFilter(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomLODBias(const int32& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomLODGroup(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomLossyCompressionAmount(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomMaxTextureSize(const int32& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomMipGenSettings(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomMipLoadOptions(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomPaddingColor(const struct FColor& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomPowerOfTwoMode(const uint8& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomPreferCompressedSourceData(const bool& AttributeValue);
-	bool SetCustomSRGB(const bool& AttributeValue, bool bAddApplyDelegate);
-	bool SetCustomTranslatedTextureNodeUid(const class FString& AttributeValue);
-	bool SetCustomVirtualTextureStreaming(const bool& AttributeValue, bool bAddApplyDelegate);
-
-	bool GetCustomAdjustBrightness(float* AttributeValue) const;
-	bool GetCustomAdjustBrightnessCurve(float* AttributeValue) const;
-	bool GetCustomAdjustHue(float* AttributeValue) const;
-	bool GetCustomAdjustMaxAlpha(float* AttributeValue) const;
-	bool GetCustomAdjustMinAlpha(float* AttributeValue) const;
-	bool GetCustomAdjustRGBCurve(float* AttributeValue) const;
-	bool GetCustomAdjustSaturation(float* AttributeValue) const;
-	bool GetCustomAdjustVibrance(float* AttributeValue) const;
-	bool GetCustomAllowNonPowerOfTwo(bool* AttributeValue) const;
-	bool GetCustomAlphaCoverageThresholds(struct FVector4* AttributeValue) const;
-	bool GetCustombChromaKeyTexture(bool* AttributeValue) const;
-	bool GetCustombDoScaleMipsForAlphaCoverage(bool* AttributeValue) const;
-	bool GetCustombFlipGreenChannel(bool* AttributeValue) const;
-	bool GetCustombPreserveBorder(bool* AttributeValue) const;
-	bool GetCustombUseLegacyGamma(bool* AttributeValue) const;
-	bool GetCustomChromaKeyColor(struct FColor* AttributeValue) const;
-	bool GetCustomChromaKeyThreshold(float* AttributeValue) const;
-	bool GetCustomColorSpace(ETextureColorSpace* AttributeValue) const;
-	bool GetCustomCompositePower(float* AttributeValue) const;
-	bool GetCustomCompositeTextureMode(uint8* AttributeValue) const;
-	bool GetCustomCompressionNoAlpha(bool* AttributeValue) const;
-	bool GetCustomCompressionQuality(uint8* AttributeValue) const;
-	bool GetCustomCompressionSettings(uint8* AttributeValue) const;
-	bool GetCustomDeferCompression(bool* AttributeValue) const;
-	bool GetCustomDownscale(float* AttributeValue) const;
-	bool GetCustomDownscaleOptions(uint8* AttributeValue) const;
-	bool GetCustomFilter(uint8* AttributeValue) const;
-	bool GetCustomLODBias(int32* AttributeValue) const;
-	bool GetCustomLODGroup(uint8* AttributeValue) const;
-	bool GetCustomLossyCompressionAmount(uint8* AttributeValue) const;
-	bool GetCustomMaxTextureSize(int32* AttributeValue) const;
-	bool GetCustomMipGenSettings(uint8* AttributeValue) const;
-	bool GetCustomMipLoadOptions(uint8* AttributeValue) const;
-	bool GetCustomPaddingColor(struct FColor* AttributeValue) const;
-	bool GetCustomPowerOfTwoMode(uint8* AttributeValue) const;
-	bool GetCustomPreferCompressedSourceData(bool* AttributeValue) const;
-	bool GetCustomSRGB(bool* AttributeValue) const;
-	bool GetCustomTranslatedTextureNodeUid(class FString* AttributeValue) const;
-	bool GetCustomVirtualTextureStreaming(bool* AttributeValue) const;
-	class UClass* GetObjectClass() const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeTextureFactoryNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeTextureFactoryNode")
-	}
-	static class UInterchangeTextureFactoryNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeTextureFactoryNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeTextureFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangePhysicalCameraFactoryNode
 // 0x0040 (0x0218 - 0x01D8)
@@ -336,34 +158,6 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeDecalActorFactoryNode;
 
-// Class InterchangeFactoryNodes.InterchangeLevelInstanceActorFactoryNode
-// 0x0020 (0x01F8 - 0x01D8)
-class UInterchangeLevelInstanceActorFactoryNode final : public UInterchangeActorFactoryNode
-{
-public:
-	uint8                                         Pad_1D8[0x20];                                     // 0x01D8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	bool SetCustomLevelReference(const class FString& AttributeValue);
-
-	bool GetCustomLevelReference(class FString* AttributeValue) const;
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("InterchangeLevelInstanceActorFactoryNode")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"InterchangeLevelInstanceActorFactoryNode")
-	}
-	static class UInterchangeLevelInstanceActorFactoryNode* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UInterchangeLevelInstanceActorFactoryNode>();
-	}
-};
-DUMPER7_ASSERTS_UInterchangeLevelInstanceActorFactoryNode;
-
 // Class InterchangeFactoryNodes.InterchangeBaseMaterialFactoryNode
 // 0x0010 (0x0168 - 0x0158)
 class UInterchangeBaseMaterialFactoryNode : public UInterchangeFactoryBaseNode
@@ -461,6 +255,34 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeLevelFactoryNode;
 
+// Class InterchangeFactoryNodes.InterchangeLevelInstanceActorFactoryNode
+// 0x0020 (0x01F8 - 0x01D8)
+class UInterchangeLevelInstanceActorFactoryNode final : public UInterchangeActorFactoryNode
+{
+public:
+	uint8                                         Pad_1D8[0x20];                                     // 0x01D8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool SetCustomLevelReference(const class FString& AttributeValue);
+
+	bool GetCustomLevelReference(class FString* AttributeValue) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeLevelInstanceActorFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeLevelInstanceActorFactoryNode")
+	}
+	static class UInterchangeLevelInstanceActorFactoryNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeLevelInstanceActorFactoryNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeLevelInstanceActorFactoryNode;
+
 // Class InterchangeFactoryNodes.InterchangeLevelSequenceFactoryNode
 // 0x0030 (0x0188 - 0x0158)
 class UInterchangeLevelSequenceFactoryNode final : public UInterchangeFactoryBaseNode
@@ -495,6 +317,40 @@ public:
 };
 DUMPER7_ASSERTS_UInterchangeLevelSequenceFactoryNode;
 
+// Class InterchangeFactoryNodes.InterchangeBaseLightFactoryNode
+// 0x0040 (0x0218 - 0x01D8)
+class UInterchangeBaseLightFactoryNode : public UInterchangeActorFactoryNode
+{
+public:
+	uint8                                         Pad_1D8[0x40];                                     // 0x01D8(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool SetCustomIntensity(float AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomLightColor(const struct FColor& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomTemperature(float AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomUseTemperature(bool AttributeValue, bool bAddApplyDelegate);
+
+	bool GetCustomIntensity(float* AttributeValue) const;
+	bool GetCustomLightColor(struct FColor* AttributeValue) const;
+	bool GetCustomTemperature(float* AttributeValue) const;
+	bool GetCustomUseTemperature(bool* AttributeValue) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeBaseLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeBaseLightFactoryNode")
+	}
+	static class UInterchangeBaseLightFactoryNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeBaseLightFactoryNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeBaseLightFactoryNode;
+
 // Class InterchangeFactoryNodes.InterchangeDirectionalLightFactoryNode
 // 0x0000 (0x0218 - 0x0218)
 class UInterchangeDirectionalLightFactoryNode final : public UInterchangeBaseLightFactoryNode
@@ -514,6 +370,44 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UInterchangeDirectionalLightFactoryNode;
+
+// Class InterchangeFactoryNodes.InterchangeLightFactoryNode
+// 0x0060 (0x0278 - 0x0218)
+class UInterchangeLightFactoryNode : public UInterchangeBaseLightFactoryNode
+{
+public:
+	uint8                                         Pad_218[0x60];                                     // 0x0218(0x0060)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool SetCustomAttenuationRadius(float AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomIESBrightnessScale(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomIESTexture(const class FString& AttributeValue);
+	bool SetCustomIntensityUnits(ELightUnits AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomRotation(const struct FRotator& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomUseIESBrightness(const bool& AttributeValue, bool bAddApplyDelegate);
+
+	bool GetCustomAttenuationRadius(float* AttributeValue) const;
+	bool GetCustomIESBrightnessScale(float* AttributeValue) const;
+	bool GetCustomIESTexture(class FString* AttributeValue) const;
+	bool GetCustomIntensityUnits(ELightUnits* AttributeValue) const;
+	bool GetCustomRotation(struct FRotator* AttributeValue) const;
+	bool GetCustomUseIESBrightness(bool* AttributeValue) const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeLightFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeLightFactoryNode")
+	}
+	static class UInterchangeLightFactoryNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeLightFactoryNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeLightFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeRectLightFactoryNode
 // 0x0020 (0x0298 - 0x0278)
@@ -700,6 +594,112 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UInterchangeSkeletonFactoryNode;
+
+// Class InterchangeFactoryNodes.InterchangeTextureFactoryNode
+// 0x02A0 (0x03F8 - 0x0158)
+class UInterchangeTextureFactoryNode : public UInterchangeFactoryBaseNode
+{
+public:
+	uint8                                         Pad_158[0x2A0];                                    // 0x0158(0x02A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void InitializeTextureNode(const class FString& UniqueID, const class FString& DisplayLabel, const class FString& InAssetName);
+	bool SetCustomAdjustBrightness(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustBrightnessCurve(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustHue(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustMaxAlpha(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustMinAlpha(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustRGBCurve(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustSaturation(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAdjustVibrance(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomAllowNonPowerOfTwo(const bool& AttributeValue);
+	bool SetCustomAlphaCoverageThresholds(const struct FVector4& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustombChromaKeyTexture(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustombDoScaleMipsForAlphaCoverage(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustombFlipGreenChannel(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustombPreserveBorder(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustombUseLegacyGamma(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomChromaKeyColor(const struct FColor& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomChromaKeyThreshold(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomColorSpace(ETextureColorSpace AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomCompositePower(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomCompositeTextureMode(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomCompressionNoAlpha(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomCompressionQuality(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomCompressionSettings(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomDeferCompression(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomDownscale(const float& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomDownscaleOptions(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomFilter(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomLODBias(const int32& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomLODGroup(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomLossyCompressionAmount(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomMaxTextureSize(const int32& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomMipGenSettings(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomMipLoadOptions(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomPaddingColor(const struct FColor& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomPowerOfTwoMode(const uint8& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomPreferCompressedSourceData(const bool& AttributeValue);
+	bool SetCustomSRGB(const bool& AttributeValue, bool bAddApplyDelegate);
+	bool SetCustomTranslatedTextureNodeUid(const class FString& AttributeValue);
+	bool SetCustomVirtualTextureStreaming(const bool& AttributeValue, bool bAddApplyDelegate);
+
+	bool GetCustomAdjustBrightness(float* AttributeValue) const;
+	bool GetCustomAdjustBrightnessCurve(float* AttributeValue) const;
+	bool GetCustomAdjustHue(float* AttributeValue) const;
+	bool GetCustomAdjustMaxAlpha(float* AttributeValue) const;
+	bool GetCustomAdjustMinAlpha(float* AttributeValue) const;
+	bool GetCustomAdjustRGBCurve(float* AttributeValue) const;
+	bool GetCustomAdjustSaturation(float* AttributeValue) const;
+	bool GetCustomAdjustVibrance(float* AttributeValue) const;
+	bool GetCustomAllowNonPowerOfTwo(bool* AttributeValue) const;
+	bool GetCustomAlphaCoverageThresholds(struct FVector4* AttributeValue) const;
+	bool GetCustombChromaKeyTexture(bool* AttributeValue) const;
+	bool GetCustombDoScaleMipsForAlphaCoverage(bool* AttributeValue) const;
+	bool GetCustombFlipGreenChannel(bool* AttributeValue) const;
+	bool GetCustombPreserveBorder(bool* AttributeValue) const;
+	bool GetCustombUseLegacyGamma(bool* AttributeValue) const;
+	bool GetCustomChromaKeyColor(struct FColor* AttributeValue) const;
+	bool GetCustomChromaKeyThreshold(float* AttributeValue) const;
+	bool GetCustomColorSpace(ETextureColorSpace* AttributeValue) const;
+	bool GetCustomCompositePower(float* AttributeValue) const;
+	bool GetCustomCompositeTextureMode(uint8* AttributeValue) const;
+	bool GetCustomCompressionNoAlpha(bool* AttributeValue) const;
+	bool GetCustomCompressionQuality(uint8* AttributeValue) const;
+	bool GetCustomCompressionSettings(uint8* AttributeValue) const;
+	bool GetCustomDeferCompression(bool* AttributeValue) const;
+	bool GetCustomDownscale(float* AttributeValue) const;
+	bool GetCustomDownscaleOptions(uint8* AttributeValue) const;
+	bool GetCustomFilter(uint8* AttributeValue) const;
+	bool GetCustomLODBias(int32* AttributeValue) const;
+	bool GetCustomLODGroup(uint8* AttributeValue) const;
+	bool GetCustomLossyCompressionAmount(uint8* AttributeValue) const;
+	bool GetCustomMaxTextureSize(int32* AttributeValue) const;
+	bool GetCustomMipGenSettings(uint8* AttributeValue) const;
+	bool GetCustomMipLoadOptions(uint8* AttributeValue) const;
+	bool GetCustomPaddingColor(struct FColor* AttributeValue) const;
+	bool GetCustomPowerOfTwoMode(uint8* AttributeValue) const;
+	bool GetCustomPreferCompressedSourceData(bool* AttributeValue) const;
+	bool GetCustomSRGB(bool* AttributeValue) const;
+	bool GetCustomTranslatedTextureNodeUid(class FString* AttributeValue) const;
+	bool GetCustomVirtualTextureStreaming(bool* AttributeValue) const;
+	class UClass* GetObjectClass() const;
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("InterchangeTextureFactoryNode")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InterchangeTextureFactoryNode")
+	}
+	static class UInterchangeTextureFactoryNode* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UInterchangeTextureFactoryNode>();
+	}
+};
+DUMPER7_ASSERTS_UInterchangeTextureFactoryNode;
 
 // Class InterchangeFactoryNodes.InterchangeTexture2DArrayFactoryNode
 // 0x0030 (0x0428 - 0x03F8)

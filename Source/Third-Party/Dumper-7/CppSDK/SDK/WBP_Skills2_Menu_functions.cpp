@@ -16,375 +16,42 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_Skills2_Menu_C_BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.CheckSkillTreeLockedArrayChanged
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.UpdateSkillPointCounters
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_Menu_C::CheckSkillTreeLockedArrayChanged()
+void UWBP_Skills2_Menu_C::UpdateSkillPointCounters()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckSkillTreeLockedArrayChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillPointCounters", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.ExecuteUbergraph_WBP_Skills2_Menu
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.UpdateSkillDescription
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_Menu_C::ExecuteUbergraph_WBP_Skills2_Menu(int32 EntryPoint)
+void UWBP_Skills2_Menu_C::UpdateSkillDescription()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_Menu_C", "ExecuteUbergraph_WBP_Skills2_Menu", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillDescription", FnName));
 
-	Params::WBP_Skills2_Menu_C_ExecuteUbergraph_WBP_Skills2_Menu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.ForceUnequipSkillButton
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.SkillButtonUnequip
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   RemovedAnySkill                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::ForceUnequipSkillButton(class UWBP_Skills2_SkillButton_C* SkillButton, bool* RemovedAnySkill)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ForceUnequipSkillButton", FnName));
-
-	Params::WBP_Skills2_Menu_C_ForceUnequipSkillButton Parms{};
-
-	Parms.SkillButton = SkillButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (RemovedAnySkill != nullptr)
-		*RemovedAnySkill = Parms.RemovedAnySkill;
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.GetCategorySkillCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class USBZSkillCategoryData*            Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32*                                  SkillCount                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::GetCategorySkillCount(class USBZSkillCategoryData* Category, int32* SkillCount)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCategorySkillCount", FnName));
-
-	Params::WBP_Skills2_Menu_C_GetCategorySkillCount Parms{};
-
-	Parms.Category = Category;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SkillCount != nullptr)
-		*SkillCount = Parms.SkillCount;
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.GetCurrentCategorySkillCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  CurrentCategorySkillCount                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::GetCurrentCategorySkillCount(int32* CurrentCategorySkillCount)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCurrentCategorySkillCount", FnName));
-
-	Params::WBP_Skills2_Menu_C_GetCurrentCategorySkillCount Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CurrentCategorySkillCount != nullptr)
-		*CurrentCategorySkillCount = Parms.CurrentCategorySkillCount;
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.GetSkillButtonState
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// ESBZSkillState*                         SkillState                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::GetSkillButtonState(class UWBP_Skills2_SkillButton_C* SkillButton, ESBZSkillState* SkillState)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSkillButtonState", FnName));
-
-	Params::WBP_Skills2_Menu_C_GetSkillButtonState Parms{};
-
-	Parms.SkillButton = SkillButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SkillState != nullptr)
-		*SkillState = Parms.SkillState;
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.InitializeSkillCategory
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSkillCategoryData*            SkillCategory                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::InitializeSkillCategory(class USBZSkillCategoryData* SkillCategory)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkillCategory", FnName));
-
-	Params::WBP_Skills2_Menu_C_InitializeSkillCategory Parms{};
-
-	Parms.SkillCategory = SkillCategory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnAddedToStack
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Skills2_Menu_C::OnAddedToStack()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAddedToStack", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnCantEquipSkill
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      NotifHeaderText                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      NotifDescText                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Skills2_Menu_C::OnCantEquipSkill(const class FText& NotifHeaderText, const class FText& NotifDescText)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCantEquipSkill", FnName));
-
-	Params::WBP_Skills2_Menu_C_OnCantEquipSkill Parms{};
-
-	Parms.NotifHeaderText = std::move(NotifHeaderText);
-	Parms.NotifDescText = std::move(NotifDescText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnControlsReferencePressed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::OnControlsReferencePressed(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferencePressed", FnName));
-
-	Params::WBP_Skills2_Menu_C_OnControlsReferencePressed Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_Skills2_Menu_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Skills2_Menu_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnSkillEquipped
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::OnSkillEquipped(class UWBP_Skills2_SkillButton_C* SkillButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSkillEquipped", FnName));
-
-	Params::WBP_Skills2_Menu_C_OnSkillEquipped Parms{};
-
-	Parms.SkillButton = SkillButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PopulateNavbar
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_Menu_C::PopulateNavbar()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateNavbar", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PopulateSkillLines
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSkillCategoryData*            SkillCategory                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::PopulateSkillLines(class USBZSkillCategoryData* SkillCategory)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateSkillLines", FnName));
-
-	Params::WBP_Skills2_Menu_C_PopulateSkillLines Parms{};
-
-	Parms.SkillCategory = SkillCategory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_Skills2_Menu_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PrintCategoryData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSkillCategoryData*            Skill_Category                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Skills2_Menu_C::PrintCategoryData(class USBZSkillCategoryData* Skill_Category)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrintCategoryData", FnName));
-
-	Params::WBP_Skills2_Menu_C_PrintCategoryData Parms{};
-
-	Parms.Skill_Category = Skill_Category;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PrintData
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_Menu_C::PrintData()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrintData", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.RefreshSkillButtonVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Skills2_Menu_C::RefreshSkillButtonVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSkillButtonVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.SetSkillDescription
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZSkillTreePair&         Skill_Pair                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_Skills2_Menu_C::SetSkillDescription(const struct FSBZSkillTreePair& Skill_Pair)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillDescription", FnName));
-
-	Params::WBP_Skills2_Menu_C_SetSkillDescription Parms{};
-
-	Parms.Skill_Pair = std::move(Skill_Pair);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.SkillButtonEquip
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Skills2_Menu_C::SkillButtonEquip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success)
+void UWBP_Skills2_Menu_C::SkillButtonUnequip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SkillButtonEquip", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SkillButtonUnequip", FnName));
 
-	Params::WBP_Skills2_Menu_C_SkillButtonEquip Parms{};
+	Params::WBP_Skills2_Menu_C_SkillButtonUnequip Parms{};
 
 	Parms.SkillButton = SkillButton;
 
@@ -415,18 +82,18 @@ void UWBP_Skills2_Menu_C::SkillButtonFocused(class UWBP_Skills2_SkillButton_C* S
 }
 
 
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.SkillButtonUnequip
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.SkillButtonEquip
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool*                                   Success                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Skills2_Menu_C::SkillButtonUnequip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success)
+void UWBP_Skills2_Menu_C::SkillButtonEquip(class UWBP_Skills2_SkillButton_C* SkillButton, bool* Success)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SkillButtonUnequip", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SkillButtonEquip", FnName));
 
-	Params::WBP_Skills2_Menu_C_SkillButtonUnequip Parms{};
+	Params::WBP_Skills2_Menu_C_SkillButtonEquip Parms{};
 
 	Parms.SkillButton = SkillButton;
 
@@ -437,27 +104,360 @@ void UWBP_Skills2_Menu_C::SkillButtonUnequip(class UWBP_Skills2_SkillButton_C* S
 }
 
 
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.UpdateSkillDescription
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.SetSkillDescription
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZSkillTreePair&         Skill_Pair                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_Skills2_Menu_C::UpdateSkillDescription()
+void UWBP_Skills2_Menu_C::SetSkillDescription(const struct FSBZSkillTreePair& Skill_Pair)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillDescription", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillDescription", FnName));
+
+	Params::WBP_Skills2_Menu_C_SetSkillDescription Parms{};
+
+	Parms.Skill_Pair = std::move(Skill_Pair);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.RefreshSkillButtonVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Skills2_Menu_C::RefreshSkillButtonVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshSkillButtonVisuals", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.UpdateSkillPointCounters
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PrintData
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Skills2_Menu_C::UpdateSkillPointCounters()
+void UWBP_Skills2_Menu_C::PrintData()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillPointCounters", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrintData", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PrintCategoryData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSkillCategoryData*            Skill_Category                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::PrintCategoryData(class USBZSkillCategoryData* Skill_Category)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrintCategoryData", FnName));
+
+	Params::WBP_Skills2_Menu_C_PrintCategoryData Parms{};
+
+	Parms.Skill_Category = Skill_Category;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_Skills2_Menu_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PopulateSkillLines
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSkillCategoryData*            SkillCategory                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::PopulateSkillLines(class USBZSkillCategoryData* SkillCategory)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateSkillLines", FnName));
+
+	Params::WBP_Skills2_Menu_C_PopulateSkillLines Parms{};
+
+	Parms.SkillCategory = SkillCategory;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.PopulateNavbar
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Skills2_Menu_C::PopulateNavbar()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateNavbar", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnSkillEquipped
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::OnSkillEquipped(class UWBP_Skills2_SkillButton_C* SkillButton)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSkillEquipped", FnName));
+
+	Params::WBP_Skills2_Menu_C_OnSkillEquipped Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Skills2_Menu_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_Skills2_Menu_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnControlsReferencePressed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::OnControlsReferencePressed(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferencePressed", FnName));
+
+	Params::WBP_Skills2_Menu_C_OnControlsReferencePressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnCantEquipSkill
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      NotifHeaderText                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      NotifDescText                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Skills2_Menu_C::OnCantEquipSkill(const class FText& NotifHeaderText, const class FText& NotifDescText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCantEquipSkill", FnName));
+
+	Params::WBP_Skills2_Menu_C_OnCantEquipSkill Parms{};
+
+	Parms.NotifHeaderText = std::move(NotifHeaderText);
+	Parms.NotifDescText = std::move(NotifDescText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Skills2_Menu_C::OnAddedToStack()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAddedToStack", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.InitializeSkillCategory
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSkillCategoryData*            SkillCategory                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::InitializeSkillCategory(class USBZSkillCategoryData* SkillCategory)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeSkillCategory", FnName));
+
+	Params::WBP_Skills2_Menu_C_InitializeSkillCategory Parms{};
+
+	Parms.SkillCategory = SkillCategory;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.GetSkillButtonState
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// ESBZSkillState*                         SkillState                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::GetSkillButtonState(class UWBP_Skills2_SkillButton_C* SkillButton, ESBZSkillState* SkillState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSkillButtonState", FnName));
+
+	Params::WBP_Skills2_Menu_C_GetSkillButtonState Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SkillState != nullptr)
+		*SkillState = Parms.SkillState;
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.GetCurrentCategorySkillCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  CurrentCategorySkillCount                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::GetCurrentCategorySkillCount(int32* CurrentCategorySkillCount)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCurrentCategorySkillCount", FnName));
+
+	Params::WBP_Skills2_Menu_C_GetCurrentCategorySkillCount Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CurrentCategorySkillCount != nullptr)
+		*CurrentCategorySkillCount = Parms.CurrentCategorySkillCount;
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.GetCategorySkillCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class USBZSkillCategoryData*            Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32*                                  SkillCount                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::GetCategorySkillCount(class USBZSkillCategoryData* Category, int32* SkillCount)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCategorySkillCount", FnName));
+
+	Params::WBP_Skills2_Menu_C_GetCategorySkillCount Parms{};
+
+	Parms.Category = Category;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SkillCount != nullptr)
+		*SkillCount = Parms.SkillCount;
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.ForceUnequipSkillButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Skills2_SkillButton_C*       SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   RemovedAnySkill                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::ForceUnequipSkillButton(class UWBP_Skills2_SkillButton_C* SkillButton, bool* RemovedAnySkill)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ForceUnequipSkillButton", FnName));
+
+	Params::WBP_Skills2_Menu_C_ForceUnequipSkillButton Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (RemovedAnySkill != nullptr)
+		*RemovedAnySkill = Parms.RemovedAnySkill;
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.ExecuteUbergraph_WBP_Skills2_Menu
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::ExecuteUbergraph_WBP_Skills2_Menu(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Skills2_Menu_C", "ExecuteUbergraph_WBP_Skills2_Menu", FuncInfo);
+
+	Params::WBP_Skills2_Menu_C_ExecuteUbergraph_WBP_Skills2_Menu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.CheckSkillTreeLockedArrayChanged
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Skills2_Menu_C::CheckSkillTreeLockedArrayChanged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckSkillTreeLockedArrayChanged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Skills2_Menu.WBP_Skills2_Menu_C.BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Skills2_Menu_C::BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature", FnName));
+
+	Params::WBP_Skills2_Menu_C_BndEvt__WBP_Skills2_Menu_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

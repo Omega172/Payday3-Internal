@@ -16,79 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay(int32 EntryPoint)
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CharacterPreferenceCharacterDisplay_C", "ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay Parms{};
+	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnActiveChanged
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnLockedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsActive                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsLocked_OnLockedChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnActiveChanged(bool bInIsActive)
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnLockedChanged(bool bInIsLocked_OnLockedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLockedChanged", FnName));
 
-	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_OnActiveChanged Parms{};
+	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_OnLockedChanged Parms{};
 
-	Parms.bInIsActive = bInIsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnCharacterInSlotChanged
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnCharacterInSlotChanged()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCharacterInSlotChanged", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnEmptySet
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnEmptySet()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEmptySet", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnHovered
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnHovered(bool bIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHovered", FnName));
-
-	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_OnHovered Parms{};
-
-	Parms.bIsHovered = bIsHovered;
+	Parms.bInIsLocked_OnLockedChanged = bInIsLocked_OnLockedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -106,37 +64,79 @@ void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnIndexChanged()
 }
 
 
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnLockedChanged
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsLocked                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHovered_OnHovered                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnLockedChanged(bool bInIsLocked)
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnHovered(bool bIsHovered_OnHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLockedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHovered", FnName));
 
-	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_OnLockedChanged Parms{};
+	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_OnHovered Parms{};
 
-	Parms.bInIsLocked = bInIsLocked;
+	Parms.bIsHovered_OnHovered = bIsHovered_OnHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnEmptySet
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_CharacterPreferenceCharacterDisplay_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnEmptySet()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEmptySet", FnName));
 
-	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnCharacterInSlotChanged
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnCharacterInSlotChanged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCharacterInSlotChanged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnActiveChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsActive_OnActiveChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::OnActiveChanged(bool bInIsActive_OnActiveChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveChanged", FnName));
+
+	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_OnActiveChanged Parms{};
+
+	Parms.bInIsActive_OnActiveChanged = bInIsActive_OnActiveChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_CharacterPreferenceCharacterDisplay_C::ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_CharacterPreferenceCharacterDisplay_C", "ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay", FuncInfo);
+
+	Params::WBP_UI_CharacterPreferenceCharacterDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

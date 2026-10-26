@@ -42,12 +42,12 @@ public:
 	class FText                                   ItemName;                                          // 0x0390(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_StealConfirmation(int32 EntryPoint);
-	void OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData);
-	void OnFlowStateChanged(ESBZUIPurchaseFlowState NewState);
-	void PreConstruct(bool IsDesignTime);
-	void SetItem(const class USBZInventoryBaseData* ItemData);
 	void SetStoreItem(const struct FSBZStoreBaseItem& SBZStoreBaseItem);
+	void SetItem(const class USBZInventoryBaseData* ItemData);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnFlowStateChanged(ESBZUIPurchaseFlowState NewState_OnFlowStateChanged);
+	void OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData_OnFlowConfigured);
+	void ExecuteUbergraph_WBP_StealConfirmation(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

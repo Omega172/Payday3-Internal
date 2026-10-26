@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
-#include "LiveLink_structs.hpp"
+#include "TimeManagement_classes.hpp"
 #include "LiveLinkInterface_structs.hpp"
 #include "LiveLinkInterface_classes.hpp"
-#include "TimeManagement_classes.hpp"
+#include "LiveLink_structs.hpp"
 #include "Engine_classes.hpp"
 
 
@@ -78,30 +78,6 @@ public:
 };
 DUMPER7_ASSERTS_ULiveLinkTransformDeadbandPreProcessor;
 
-// Class LiveLink.LiveLinkVirtualSubjectSourceSettings
-// 0x0010 (0x00D0 - 0x00C0)
-class ULiveLinkVirtualSubjectSourceSettings final : public ULiveLinkSourceSettings
-{
-public:
-	class FName                                   SourceName;                                        // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkVirtualSubjectSourceSettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkVirtualSubjectSourceSettings")
-	}
-	static class ULiveLinkVirtualSubjectSourceSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkVirtualSubjectSourceSettings>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkVirtualSubjectSourceSettings;
-
 // Class LiveLink.LiveLinkSkeletonRemapper
 // 0x0030 (0x00B8 - 0x0088)
 class ULiveLinkSkeletonRemapper final : public ULiveLinkSubjectRemapper
@@ -148,26 +124,6 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkBasicFrameInterpolationProcessor;
-
-// Class LiveLink.LiveLinkMessageBusSourceSettings
-// 0x0000 (0x00C0 - 0x00C0)
-class ULiveLinkMessageBusSourceSettings final : public ULiveLinkSourceSettings
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkMessageBusSourceSettings")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkMessageBusSourceSettings")
-	}
-	static class ULiveLinkMessageBusSourceSettings* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkMessageBusSourceSettings>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkMessageBusSourceSettings;
 
 // Class LiveLink.LiveLinkAnimationFrameInterpolationProcessor
 // 0x0010 (0x0058 - 0x0048)
@@ -308,35 +264,6 @@ public:
 };
 DUMPER7_ASSERTS_ULiveLinkComponent;
 
-// Class LiveLink.LiveLinkTimecodeProvider
-// 0x00A0 (0x00D8 - 0x0038)
-class ULiveLinkTimecodeProvider final : public UTimecodeProvider
-{
-public:
-	struct FLiveLinkSubjectKey                    SubjectKey;                                        // 0x0038(0x001C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	ELiveLinkTimecodeProviderEvaluationType       Evaluation;                                        // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bOverrideFrameRate;                                // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFrameRate                             OverrideFrameRate;                                 // 0x005C(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         BufferSize;                                        // 0x0064(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_68[0x70];                                      // 0x0068(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkTimecodeProvider")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkTimecodeProvider")
-	}
-	static class ULiveLinkTimecodeProvider* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkTimecodeProvider>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkTimecodeProvider;
-
 // Class LiveLink.LiveLinkDrivenComponent
 // 0x0020 (0x00C8 - 0x00A8)
 class ULiveLinkDrivenComponent final : public UActorComponent
@@ -412,6 +339,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkMessageBusSourceFactory;
+
+// Class LiveLink.LiveLinkMessageBusSourceSettings
+// 0x0000 (0x00C0 - 0x00C0)
+class ULiveLinkMessageBusSourceSettings final : public ULiveLinkSourceSettings
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkMessageBusSourceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkMessageBusSourceSettings")
+	}
+	static class ULiveLinkMessageBusSourceSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkMessageBusSourceSettings>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkMessageBusSourceSettings;
 
 // Class LiveLink.LiveLinkPreset
 // 0x0030 (0x0060 - 0x0030)
@@ -510,6 +457,35 @@ public:
 };
 DUMPER7_ASSERTS_ULiveLinkSettings;
 
+// Class LiveLink.LiveLinkTimecodeProvider
+// 0x00A0 (0x00D8 - 0x0038)
+class ULiveLinkTimecodeProvider final : public UTimecodeProvider
+{
+public:
+	struct FLiveLinkSubjectKey                    SubjectKey;                                        // 0x0038(0x001C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ELiveLinkTimecodeProviderEvaluationType       Evaluation;                                        // 0x0054(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bOverrideFrameRate;                                // 0x0058(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFrameRate                             OverrideFrameRate;                                 // 0x005C(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         BufferSize;                                        // 0x0064(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_68[0x70];                                      // 0x0068(0x0070)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkTimecodeProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkTimecodeProvider")
+	}
+	static class ULiveLinkTimecodeProvider* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkTimecodeProvider>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkTimecodeProvider;
+
 // Class LiveLink.LiveLinkTimeSynchronizationSource
 // 0x0060 (0x0098 - 0x0038)
 class ULiveLinkTimeSynchronizationSource final : public UTimeSynchronizationSource
@@ -533,6 +509,30 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkTimeSynchronizationSource;
+
+// Class LiveLink.LiveLinkVirtualSubjectSourceSettings
+// 0x0010 (0x00D0 - 0x00C0)
+class ULiveLinkVirtualSubjectSourceSettings final : public ULiveLinkSourceSettings
+{
+public:
+	class FName                                   SourceName;                                        // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkVirtualSubjectSourceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkVirtualSubjectSourceSettings")
+	}
+	static class ULiveLinkVirtualSubjectSourceSettings* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkVirtualSubjectSourceSettings>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkVirtualSubjectSourceSettings;
 
 // Class LiveLink.LiveLinkTransformAxisSwitchPreProcessor
 // 0x0048 (0x0078 - 0x0030)

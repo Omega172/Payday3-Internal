@@ -16,6 +16,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnUpdateOwnershipStatus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus final
+{
+public:
+	bool                                          bIsOwned_OnUpdateOwnershipStatus;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus;
+
+// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnSetHighlighted
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Shop_ContentListItem_C_OnSetHighlighted final
+{
+public:
+	bool                                          bHighlight_OnSetHighlighted;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInstant_OnSetHighlighted;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_ContentListItem_C_OnSetHighlighted;
+
 // Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.ExecuteUbergraph_WBP_Shop_ContentListItem
 // 0x0058 (0x0058 - 0x0000)
 struct WBP_Shop_ContentListItem_C_ExecuteUbergraph_WBP_Shop_ContentListItem final
@@ -47,25 +66,6 @@ public:
 	float                                         CallFunc_SetAnimationCurrentTime_InTime_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_ContentListItem_C_ExecuteUbergraph_WBP_Shop_ContentListItem;
-
-// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnSetHighlighted
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Shop_ContentListItem_C_OnSetHighlighted final
-{
-public:
-	bool                                          bHighlight;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInstant;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_ContentListItem_C_OnSetHighlighted;
-
-// Function WBP_Shop_ContentListItem.WBP_Shop_ContentListItem_C.OnUpdateOwnershipStatus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus final
-{
-public:
-	bool                                          bIsOwned;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_ContentListItem_C_OnUpdateOwnershipStatus;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

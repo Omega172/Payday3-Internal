@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SBZBackend_structs.hpp"
@@ -49,33 +49,33 @@ public:
 	class UWBP_UI_MainMenu_StoreItemButton_C*     GotoButton;                                        // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	class UWidget* CustomBoundryNavigation(EUINavigation Navigation_0);
-	void DisplayVendorMessage(const class FText& TextToDisplay);
-	void DisplayVendorWelcomeMessage();
-	void ExecuteUbergraph_WBP_UI_MainMenu_BlackMarketVendors(int32 EntryPoint);
-	void InitializeIsFetchingData(bool bIsFetchingData);
-	void InitializeVendorData(class USBZVendorData* InVendorData);
-	void MakeControlReferencesBasedOnButtomType(TArray<struct FSBZButtonControlReference>* ControlsReference);
-	void NavToPreviousScreen();
-	void OnActiveTabIndexChanged(int32 Index_0);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInspectPressed();
-	void OnLostStackFocused();
-	void OnPaydayStoreReferencePressed(class FName ActionName);
-	void OnSearchItemFound(const class USBZMenuButton* MenuButton);
-	void OnTransactionProgressChanged(bool bInIsTransactionInProgress, bool bIsTransactionSuccessful);
-	void OnVendorButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
-	void OnVendorChanged(const struct FSBZBlackMarketUIVendorData& NewVendor, bool bIsRefresh);
-	void OnVendorItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
-	void OnVendorItemTransactionComplete(ESBZMetaRequestResult MetaResult, const class USBZInventoryBaseData* InventoryItemData);
-	void OpenInventoryScreen();
-	void OpenPaydayStore();
-	void SetActiveButton(class USBZMenuButton* NewButton);
 	void SetButtonFocus();
+	void SetActiveButton(class USBZMenuButton* NewButton);
+	void OpenPaydayStore();
+	void OpenInventoryScreen();
+	void OnVendorItemTransactionComplete(ESBZMetaRequestResult MetaResult_OnVendorItemTransactionComplete, const class USBZInventoryBaseData* InventoryItemData_OnVendorItemTransactionComplete);
+	void OnVendorItemButtonFocused(class USBZMenuButton* InButton_OnVendorItemButtonFocused, bool bIsFocused_OnVendorItemButtonFocused);
+	void OnVendorChanged(const struct FSBZBlackMarketUIVendorData& NewVendor_OnVendorChanged, bool bIsRefresh_OnVendorChanged);
+	void OnVendorButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
+	void OnTransactionProgressChanged(bool bInIsTransactionInProgress_OnTransactionProgressChanged, bool bIsTransactionSuccessful_OnTransactionProgressChanged);
+	void OnSearchItemFound(const class USBZMenuButton* MenuButton_OnSearchItemFound);
+	void OnPaydayStoreReferencePressed(class FName ActionName);
+	void OnLostStackFocused();
+	void OnInspectPressed();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnActiveTabIndexChanged(int32 Index_OnActiveTabIndexChanged);
+	void NavToPreviousScreen();
+	void MakeControlReferencesBasedOnButtomType(TArray<struct FSBZButtonControlReference>* ControlsReference);
+	void InitializeVendorData(class USBZVendorData* InVendorData);
+	void InitializeIsFetchingData(bool bIsFetchingData);
+	void ExecuteUbergraph_WBP_UI_MainMenu_BlackMarketVendors(int32 EntryPoint);
+	void DisplayVendorWelcomeMessage();
+	void DisplayVendorMessage(const class FText& TextToDisplay);
+	class UWidget* CustomBoundryNavigation(EUINavigation Navigation);
 
-	void IsActiveButtonOfBundleType(bool* bIsBundleButton) const;
 	void IsActiveButtonOfFeaturedBundleType(bool* bIsFeaturedButton) const;
+	void IsActiveButtonOfBundleType(bool* bIsBundleButton) const;
 
 public:
 	static class UClass* StaticClass()

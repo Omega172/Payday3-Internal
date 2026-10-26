@@ -17,6 +17,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisuals
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Blackmarket_Category_C_UpdateCategoryVisuals final
+{
+public:
+	ESBZStoreItemDefaultUICategory                CategoryType_UpdateCategoryVisuals;                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_UpdateCategoryVisuals;
+
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.SetStoreCategoryName
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Blackmarket_Category_C_SetStoreCategoryName final
+{
+public:
+	class FText                                   InCategoryName_SetStoreCategoryName;               // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_SetStoreCategoryName;
+
+// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Blackmarket_Category_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_PreConstruct;
+
 // Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.ExecuteUbergraph_WBP_Blackmarket_Category
 // 0x0060 (0x0060 - 0x0000)
 struct WBP_Blackmarket_Category_C_ExecuteUbergraph_WBP_Blackmarket_Category final
@@ -41,33 +68,6 @@ public:
 	struct FMargin                                K2Node_MakeStruct_Margin_1;                        // 0x004C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_ExecuteUbergraph_WBP_Blackmarket_Category;
-
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Blackmarket_Category_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_PreConstruct;
-
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.SetStoreCategoryName
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Blackmarket_Category_C_SetStoreCategoryName final
-{
-public:
-	class FText                                   InCategoryName;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_SetStoreCategoryName;
-
-// Function WBP_Blackmarket_Category.WBP_Blackmarket_Category_C.UpdateCategoryVisuals
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Blackmarket_Category_C_UpdateCategoryVisuals final
-{
-public:
-	ESBZStoreItemDefaultUICategory                CategoryType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Blackmarket_Category_C_UpdateCategoryVisuals;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

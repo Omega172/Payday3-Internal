@@ -16,40 +16,196 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.ExecuteUbergraph_WBP_CampaignScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.UpdateButtonSelected
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZWidgetBase*                   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignScreen_C::ExecuteUbergraph_WBP_CampaignScreen(int32 EntryPoint)
+void UWBP_CampaignScreen_C::UpdateButtonSelected(class USBZWidgetBase* Widget, bool bIsSelected)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignScreen_C", "ExecuteUbergraph_WBP_CampaignScreen", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateButtonSelected", FnName));
 
-	Params::WBP_CampaignScreen_C_ExecuteUbergraph_WBP_CampaignScreen Parms{};
+	Params::WBP_CampaignScreen_C_UpdateButtonSelected Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Widget = Widget;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.FindBestFocusButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.TryPlay2DSound
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZWidgetBase**                  Return                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZCampaignBaseEntryData*        EntryData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignScreen_C::FindBestFocusButton(class USBZWidgetBase** Return)
+void UWBP_CampaignScreen_C::TryPlay2DSound(class USBZCampaignBaseEntryData* EntryData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FindBestFocusButton", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryPlay2DSound", FnName));
 
-	Params::WBP_CampaignScreen_C_FindBestFocusButton Parms{};
+	Params::WBP_CampaignScreen_C_TryPlay2DSound Parms{};
+
+	Parms.EntryData = EntryData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_Tick                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime_Tick                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignScreen_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+
+	Params::WBP_CampaignScreen_C_Tick Parms{};
+
+	Parms.MyGeometry_Tick = std::move(MyGeometry_Tick);
+	Parms.InDeltaTime_Tick = InDeltaTime_Tick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignScreen_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_CampaignScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CampaignScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_CampaignScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnControlsReferencePressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignScreen_C::OnControlsReferencePressed(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferencePressed", FnName));
+
+	Params::WBP_CampaignScreen_C_OnControlsReferencePressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnButtonSelected_Event
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignScreen_C::OnButtonSelected_Event(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonSelected_Event", FnName));
+
+	Params::WBP_CampaignScreen_C_OnButtonSelected_Event Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CampaignScreen_C::OnBackPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.NavigateToSelectedIndex
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_CampaignScreen_C::NavigateToSelectedIndex(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavigateToSelectedIndex", FnName));
+
+	Params::WBP_CampaignScreen_C_NavigateToSelectedIndex Parms{};
+
+	Parms.Navigation = Navigation;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Return != nullptr)
-		*Return = Parms.Return;
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.InitializeCampaignAct
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZCampaignActData*              ActData                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignScreen_C::InitializeCampaignAct(class USBZCampaignActData* ActData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeCampaignAct", FnName));
+
+	Params::WBP_CampaignScreen_C_InitializeCampaignAct Parms{};
+
+	Parms.ActData = ActData;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -76,194 +232,38 @@ void UWBP_CampaignScreen_C::GetChapterDataFunc(class USBZCampaignBaseEntryData**
 }
 
 
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.InitializeCampaignAct
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZCampaignActData*              ActData_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::InitializeCampaignAct(class USBZCampaignActData* ActData_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeCampaignAct", FnName));
-
-	Params::WBP_CampaignScreen_C_InitializeCampaignAct Parms{};
-
-	Parms.ActData_0 = ActData_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.NavigateToSelectedIndex
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.FindBestFocusButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZWidgetBase**                  Return                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_CampaignScreen_C::NavigateToSelectedIndex(EUINavigation Navigation_0)
+void UWBP_CampaignScreen_C::FindBestFocusButton(class USBZWidgetBase** Return)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavigateToSelectedIndex", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FindBestFocusButton", FnName));
 
-	Params::WBP_CampaignScreen_C_NavigateToSelectedIndex Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
+	Params::WBP_CampaignScreen_C_FindBestFocusButton Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CampaignScreen_C::OnBackPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnButtonSelected_Event
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignScreen.WBP_CampaignScreen_C.ExecuteUbergraph_WBP_CampaignScreen
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignScreen_C::OnButtonSelected_Event(class USBZMenuButton* Button)
+void UWBP_CampaignScreen_C::ExecuteUbergraph_WBP_CampaignScreen(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonSelected_Event", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignScreen_C", "ExecuteUbergraph_WBP_CampaignScreen", FuncInfo);
 
-	Params::WBP_CampaignScreen_C_OnButtonSelected_Event Parms{};
+	Params::WBP_CampaignScreen_C_ExecuteUbergraph_WBP_CampaignScreen Parms{};
 
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnControlsReferencePressed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::OnControlsReferencePressed(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferencePressed", FnName));
-
-	Params::WBP_CampaignScreen_C_OnControlsReferencePressed Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_CampaignScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CampaignScreen_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_CampaignScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
-
-	Params::WBP_CampaignScreen_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.TryPlay2DSound
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZCampaignBaseEntryData*        EntryData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::TryPlay2DSound(class USBZCampaignBaseEntryData* EntryData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryPlay2DSound", FnName));
-
-	Params::WBP_CampaignScreen_C_TryPlay2DSound Parms{};
-
-	Parms.EntryData = EntryData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignScreen.WBP_CampaignScreen_C.UpdateButtonSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZWidgetBase*                   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignScreen_C::UpdateButtonSelected(class USBZWidgetBase* Widget, bool bIsSelected)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateButtonSelected", FnName));
-
-	Params::WBP_CampaignScreen_C_UpdateButtonSelected Parms{};
-
-	Parms.Widget = Widget;
-	Parms.bIsSelected = bIsSelected;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

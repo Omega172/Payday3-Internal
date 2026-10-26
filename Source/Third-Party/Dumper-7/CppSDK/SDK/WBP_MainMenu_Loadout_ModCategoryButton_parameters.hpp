@@ -17,23 +17,49 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonFocusedChanged
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonFocusedChanged final
+struct WBP_MainMenu_Loadout_ModCategoryButton_C_PreConstruct final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_PreConstruct;
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonHoveredChanged
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnHover
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonHoveredChanged final
+struct WBP_MainMenu_Loadout_ModCategoryButton_C_OnHover final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_OnHover;
+
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnFocusChanged
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_MainMenu_Loadout_ModCategoryButton_C_OnFocusChanged final
+{
+public:
+	bool                                          InIsFocused;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_OnFocusChanged;
+
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.On Focus
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_MainMenu_Loadout_ModCategoryButton_C_On_Focus final
+{
+public:
+	bool                                          IsFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_On_Focus;
 
 // Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton
 // 0x0048 (0x0048 - 0x0000)
@@ -56,49 +82,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton;
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.On Focus
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_MainMenu_Loadout_ModCategoryButton_C_On_Focus final
-{
-public:
-	bool                                          IsFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_On_Focus;
-
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnFocusChanged
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_MainMenu_Loadout_ModCategoryButton_C_OnFocusChanged final
-{
-public:
-	bool                                          InIsFocused;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_OnFocusChanged;
-
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.OnHover
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ModCategoryButton_C_OnHover final
+struct WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_OnHover;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonHoveredChanged;
 
-// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.PreConstruct
+// Function WBP_MainMenu_Loadout_ModCategoryButton.WBP_MainMenu_Loadout_ModCategoryButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Loadout_ModCategoryButton_C_PreConstruct final
+struct WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ModCategoryButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

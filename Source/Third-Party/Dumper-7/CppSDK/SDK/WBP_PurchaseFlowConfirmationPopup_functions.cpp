@@ -16,60 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PurchaseFlowConfirmationPopup_C::ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_PurchaseFlowConfirmationPopup_C", "ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup", FuncInfo);
-
-	Params::WBP_PurchaseFlowConfirmationPopup_C_ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowConfigured
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZStoreItemUIData&       StoreItemUIData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_PurchaseFlowConfirmationPopup_C::OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowConfigured", FnName));
-
-	Params::WBP_PurchaseFlowConfirmationPopup_C_OnFlowConfigured Parms{};
-
-	Parms.StoreItemUIData = std::move(StoreItemUIData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZUIPurchaseFlowState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PurchaseFlowConfirmationPopup_C::OnFlowStateChanged(ESBZUIPurchaseFlowState NewState)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowStateChanged", FnName));
-
-	Params::WBP_PurchaseFlowConfirmationPopup_C_OnFlowStateChanged Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.SetPrice
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -91,6 +37,60 @@ void UWBP_PurchaseFlowConfirmationPopup_C::SetPrice(int64 Price, ESBZCurrencyCod
 	Parms.DiscountedPrice = DiscountedPrice;
 	Parms.DiscountedAmount = DiscountedAmount;
 	Parms.DiscountedPercentage = DiscountedPercentage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZUIPurchaseFlowState                 NewState_OnFlowStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PurchaseFlowConfirmationPopup_C::OnFlowStateChanged(ESBZUIPurchaseFlowState NewState_OnFlowStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowStateChanged", FnName));
+
+	Params::WBP_PurchaseFlowConfirmationPopup_C_OnFlowStateChanged Parms{};
+
+	Parms.NewState_OnFlowStateChanged = NewState_OnFlowStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowConfigured
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZStoreItemUIData&       StoreItemUIData_OnFlowConfigured                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_PurchaseFlowConfirmationPopup_C::OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData_OnFlowConfigured)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowConfigured", FnName));
+
+	Params::WBP_PurchaseFlowConfirmationPopup_C_OnFlowConfigured Parms{};
+
+	Parms.StoreItemUIData_OnFlowConfigured = std::move(StoreItemUIData_OnFlowConfigured);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PurchaseFlowConfirmationPopup_C::ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_PurchaseFlowConfirmationPopup_C", "ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup", FuncInfo);
+
+	Params::WBP_PurchaseFlowConfirmationPopup_C_ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

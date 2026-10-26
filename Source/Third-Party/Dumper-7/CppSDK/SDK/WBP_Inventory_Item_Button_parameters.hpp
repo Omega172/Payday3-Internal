@@ -16,14 +16,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Inventory_Item_Button_C_ButtonFocusedChanged final
+// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.SetupData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Inventory_Item_Button_C_SetupData final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZEquippablePartDataAsset*      NewParam;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Inventory_Item_Button_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_Inventory_Item_Button_C_SetupData;
 
 // Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.ExecuteUbergraph_WBP_Inventory_Item_Button
 // 0x0058 (0x0058 - 0x0000)
@@ -52,14 +52,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Inventory_Item_Button_C_ExecuteUbergraph_WBP_Inventory_Item_Button;
 
-// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.SetupData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Inventory_Item_Button_C_SetupData final
+// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Inventory_Item_Button_C_ButtonFocusedChanged final
 {
 public:
-	const class USBZEquippablePartDataAsset*      NewParam;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Inventory_Item_Button_C_SetupData;
+DUMPER7_ASSERTS_WBP_Inventory_Item_Button_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,89 +16,141 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ShowDescriptionForButton
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMainMenuCosmeticItemButton*   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0)
+void UWBP_MaskCustomization_Pattern_C::ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowDescriptionForButton", FnName));
 
-	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_MaskCustomization_Pattern_C_ShowDescriptionForButton Parms{};
 
-	Parms.CosmeticButton = CosmeticButton;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.InputPin = InputPin;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.SetPreviewMaskParts
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_MaskCustomization_Pattern_C::SetPreviewMaskParts()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::Construct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPreviewMaskParts", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ExecuteUbergraph_WBP_MaskCustomization_Pattern
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MaskCustomization_Pattern_C::ExecuteUbergraph_WBP_MaskCustomization_Pattern(int32 EntryPoint)
+void UWBP_MaskCustomization_Pattern_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_MaskCustomization_Pattern_C", "ExecuteUbergraph_WBP_MaskCustomization_Pattern", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_MaskCustomization_Pattern_C_ExecuteUbergraph_WBP_MaskCustomization_Pattern Parms{};
+	Params::WBP_MaskCustomization_Pattern_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanSelectorFocusChanged", FnName));
+
+	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorFocusChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorButtonSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanSelectorButtonSelected", FnName));
+
+	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorButtonSelected Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanIndexForwards
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MaskCustomization_Pattern_C::OnSprayCanIndexForwards()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanIndexForwards", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanIndexBackwards
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MaskCustomization_Pattern_C::OnSprayCanIndexBackwards()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanIndexBackwards", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MaskCustomization_Pattern_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_MaskCustomization_Pattern_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -122,141 +174,89 @@ void UWBP_MaskCustomization_Pattern_C::OnControlsReferenceClicked(class FName Ac
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ExecuteUbergraph_WBP_MaskCustomization_Pattern
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MaskCustomization_Pattern_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_MaskCustomization_Pattern_C::ExecuteUbergraph_WBP_MaskCustomization_Pattern(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_MaskCustomization_Pattern_C", "ExecuteUbergraph_WBP_MaskCustomization_Pattern", FuncInfo);
 
-	Params::WBP_MaskCustomization_Pattern_C_OnGainedStackFocused Parms{};
+	Params::WBP_MaskCustomization_Pattern_C_ExecuteUbergraph_WBP_MaskCustomization_Pattern Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanIndexBackwards
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::OnSprayCanIndexBackwards()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanIndexBackwards", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanIndexForwards
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::OnSprayCanIndexForwards()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanIndexForwards", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorButtonSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanSelectorButtonSelected", FnName));
-
-	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorButtonSelected Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.OnSprayCanSelectorFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MaskCustomization_Pattern_C::OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSprayCanSelectorFocusChanged", FnName));
-
-	Params::WBP_MaskCustomization_Pattern_C_OnSprayCanSelectorFocusChanged Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.PreConstruct
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MaskCustomization_Pattern_C::PreConstruct(bool IsDesignTime)
+void UWBP_MaskCustomization_Pattern_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_MaskCustomization_Pattern_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.SetPreviewMaskParts
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MaskCustomization_Pattern_C::SetPreviewMaskParts()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPreviewMaskParts", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.ShowDescriptionForButton
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class USBZMainMenuCosmeticItemButton*   InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MaskCustomization_Pattern_C::ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin)
+void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowDescriptionForButton", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature", FnName));
 
-	Params::WBP_MaskCustomization_Pattern_C_ShowDescriptionForButton Parms{};
+	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
 
-	Parms.InputPin = InputPin;
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MaskCustomization_Pattern.WBP_MaskCustomization_Pattern_C.BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MaskCustomization_Pattern_C::BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_MaskCustomization_Pattern_C_BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.CosmeticButton = CosmeticButton;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

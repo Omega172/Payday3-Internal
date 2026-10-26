@@ -16,6 +16,30 @@
 
 SDK_NAMESPACE_START
 
+// Function BFL_GotoFunctionLibrary.BFL_GotoFunctionLibrary_C.GetItemSourceText
+// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// ESBZPlayerItemSource                    InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText*                            OutputPin                                              (Parm, OutParm)
+
+void UBFL_GotoFunctionLibrary_C::GetItemSourceText(ESBZPlayerItemSource InputPin, class UObject* __WorldContext, class FText* OutputPin)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(StaticClass(), "BFL_GotoFunctionLibrary_C", "GetItemSourceText", FuncInfo);
+
+	Params::BFL_GotoFunctionLibrary_C_GetItemSourceText Parms{};
+
+	Parms.InputPin = InputPin;
+	Parms.__WorldContext = __WorldContext;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	if (OutputPin != nullptr)
+		*OutputPin = std::move(Parms.OutputPin);
+}
+
+
 // Function BFL_GotoFunctionLibrary.BFL_GotoFunctionLibrary_C.GetHighestPrioPlayerItemSource
 // (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -41,30 +65,6 @@ void UBFL_GotoFunctionLibrary_C::GetHighestPrioPlayerItemSource(const struct FSB
 
 	if (bFoundSource != nullptr)
 		*bFoundSource = Parms.bFoundSource;
-}
-
-
-// Function BFL_GotoFunctionLibrary.BFL_GotoFunctionLibrary_C.GetItemSourceText
-// (Static, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESBZPlayerItemSource                    InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText*                            OutputPin                                              (Parm, OutParm)
-
-void UBFL_GotoFunctionLibrary_C::GetItemSourceText(ESBZPlayerItemSource InputPin, class UObject* __WorldContext, class FText* OutputPin)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(StaticClass(), "BFL_GotoFunctionLibrary_C", "GetItemSourceText", FuncInfo);
-
-	Params::BFL_GotoFunctionLibrary_C_GetItemSourceText Parms{};
-
-	Parms.InputPin = InputPin;
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	if (OutputPin != nullptr)
-		*OutputPin = std::move(Parms.OutputPin);
 }
 
 

@@ -16,19 +16,117 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.ExecuteUbergraph_WBP_SideModInfoPanel
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.UpdateModInfoWithEquippablePart
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZEquippablePartDataAsset*EquippablePart                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseWeaponData*         ParentWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SideModInfoPanel_C::ExecuteUbergraph_WBP_SideModInfoPanel(int32 EntryPoint)
+void UWBP_SideModInfoPanel_C::UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_SideModInfoPanel_C", "ExecuteUbergraph_WBP_SideModInfoPanel", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateModInfoWithEquippablePart", FnName));
 
-	Params::WBP_SideModInfoPanel_C_ExecuteUbergraph_WBP_SideModInfoPanel Parms{};
+	Params::WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.EquippablePart = EquippablePart;
+	Parms.ParentWeaponData = ParentWeaponData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetWeaponPartDescription
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_SideModInfoPanel_C::SetWeaponPartDescription(const class FText& InText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponPartDescription", FnName));
+
+	Params::WBP_SideModInfoPanel_C_SetWeaponPartDescription Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToUnequipMod
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_SideModInfoPanel_C::SetInfoToUnequipMod()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfoToUnequipMod", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToEmpty
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_SideModInfoPanel_C::SetInfoToEmpty()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfoToEmpty", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetHeader
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_SideModInfoPanel_C::SetHeader(const class FText& InText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetHeader", FnName));
+
+	Params::WBP_SideModInfoPanel_C_SetHeader Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetBody
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_SideModInfoPanel_C::SetBody(const class FText& InText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBody", FnName));
+
+	Params::WBP_SideModInfoPanel_C_SetBody Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SideModInfoPanel_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_SideModInfoPanel_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,117 +154,19 @@ void UWBP_SideModInfoPanel_C::GetFirstSkillData(const class USBZWeaponPartDataAs
 }
 
 
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.ExecuteUbergraph_WBP_SideModInfoPanel
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SideModInfoPanel_C::PreConstruct(bool IsDesignTime)
+void UWBP_SideModInfoPanel_C::ExecuteUbergraph_WBP_SideModInfoPanel(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_SideModInfoPanel_C", "ExecuteUbergraph_WBP_SideModInfoPanel", FuncInfo);
 
-	Params::WBP_SideModInfoPanel_C_PreConstruct Parms{};
+	Params::WBP_SideModInfoPanel_C_ExecuteUbergraph_WBP_SideModInfoPanel Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetBody
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_SideModInfoPanel_C::SetBody(const class FText& InText)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBody", FnName));
-
-	Params::WBP_SideModInfoPanel_C_SetBody Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetHeader
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_SideModInfoPanel_C::SetHeader(const class FText& InText)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetHeader", FnName));
-
-	Params::WBP_SideModInfoPanel_C_SetHeader Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToEmpty
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_SideModInfoPanel_C::SetInfoToEmpty()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfoToEmpty", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetInfoToUnequipMod
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_SideModInfoPanel_C::SetInfoToUnequipMod()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfoToUnequipMod", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.SetWeaponPartDescription
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_SideModInfoPanel_C::SetWeaponPartDescription(const class FText& InText)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWeaponPartDescription", FnName));
-
-	Params::WBP_SideModInfoPanel_C_SetWeaponPartDescription Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SideModInfoPanel.WBP_SideModInfoPanel_C.UpdateModInfoWithEquippablePart
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZEquippablePartDataAsset*EquippablePart                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class USBZBaseWeaponData*         ParentWeaponData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SideModInfoPanel_C::UpdateModInfoWithEquippablePart(const class USBZEquippablePartDataAsset* EquippablePart, const class USBZBaseWeaponData* ParentWeaponData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateModInfoWithEquippablePart", FnName));
-
-	Params::WBP_SideModInfoPanel_C_UpdateModInfoWithEquippablePart Parms{};
-
-	Parms.EquippablePart = EquippablePart;
-	Parms.ParentWeaponData = ParentWeaponData;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -34,6 +34,7 @@ public:
 	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint);
 	void Construct();
+	void CheckShouldStillBeVisible();
 
 public:
 	static class UClass* StaticClass()

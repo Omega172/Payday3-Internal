@@ -18,32 +18,142 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_VendorButton.WBP_VendorButton_C.BP_OnItemSelectionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_VendorButton_C_BP_OnItemSelectionChanged final
+// Function WBP_VendorButton.WBP_VendorButton_C.UpdateVisuals
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_VendorButton_C_UpdateVisuals final
 {
 public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBundleItemDecorator*                InBundleDecorator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_VendorButton_C_BP_OnItemSelectionChanged;
+DUMPER7_ASSERTS_WBP_VendorButton_C_UpdateVisuals;
 
-// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusChanging
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_VendorButton_C_ButtonFocusChanging final
+// Function WBP_VendorButton.WBP_VendorButton_C.UpdateDisplayState
+// 0x02D0 (0x02D0 - 0x0000)
+struct WBP_VendorButton_C_UpdateDisplayState final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBundleItemDecorator*                InItemDecorator;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZBundleItemDisplayState                    DisplayState;                                      // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBundleItemDisplayState                    Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBundleItemDisplayState                    CallFunc_GetDisplayState_ReturnValue;              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBundleItemDisplayState                    Temp_byte_Variable_5;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStealable_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanAffordSteal_ReturnValue;               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZStoreBaseItem                      CallFunc_GetStoreItem_ReturnValue;                 // 0x0018(0x0150)(ConstParm)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZStoreBaseItem                      CallFunc_GetStoreItem_ReturnValue_1;               // 0x0170(0x0150)(ConstParm)
+	bool                                          Temp_bool_Variable;                                // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C2[0x6];                                      // 0x02C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                K2Node_Select_Default_2;                           // 0x02C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_VendorButton_C_ButtonFocusChanging;
+DUMPER7_ASSERTS_WBP_VendorButton_C_UpdateDisplayState;
 
-// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_VendorButton_C_ButtonFocusedChanged final
+// Function WBP_VendorButton.WBP_VendorButton_C.UpdateActions
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_VendorButton_C_UpdateActions final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBundleItemDecorator*                InBundleDecorator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZBundlePrimaryAction                       Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBundlePrimaryAction                       CallFunc_GetPrimaryAction_ReturnValue;             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_VendorButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_VendorButton_C_UpdateActions;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.TryPlayActionAnimation
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_VendorButton_C_TryPlayActionAnimation final
+{
+public:
+	bool                                          Selected;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBundleItemDecorator*                InBundleDecorator;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBundlePrimaryAction                       CallFunc_GetPrimaryAction_ReturnValue;             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          Temp_byte_Variable;                                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          Temp_byte_Variable_1;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_TryPlayActionAnimation;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.SetItemVisuals
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_VendorButton_C_SetItemVisuals final
+{
+public:
+	class USBZInventoryBaseData*                  InInventoryData;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_SetItemVisuals;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.SelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_VendorButton_C_SelectionChanged final
+{
+public:
+	bool                                          IsSelected;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_SelectionChanged;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_VendorButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_PreConstruct;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.OnMouseEnter
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_VendorButton_C_OnMouseEnter final
+{
+public:
+	struct FGeometry                              MyGeometry_OnMouseEnter;                           // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent_OnMouseEnter;                           // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_OnMouseEnter;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemObjectSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_VendorButton_C_OnListItemObjectSet final
+{
+public:
+	class UObject*                                ListItemObject_OnListItemObjectSet;                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_OnListItemObjectSet;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemEquippedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_VendorButton_C_OnListItemEquippedChanged final
+{
+public:
+	bool                                          bIsEquipped_OnListItemEquippedChanged;             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_OnListItemEquippedChanged;
+
+// Function WBP_VendorButton.WBP_VendorButton_C.Initialize Item
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_VendorButton_C_Initialize_Item final
+{
+public:
+	class USBZInventoryBaseData*                  Inventory_Data;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_VendorButton_C_Initialize_Item;
 
 // Function WBP_VendorButton.WBP_VendorButton_C.ExecuteUbergraph_WBP_VendorButton
 // 0x0180 (0x0180 - 0x0000)
@@ -104,142 +214,32 @@ public:
 };
 DUMPER7_ASSERTS_WBP_VendorButton_C_ExecuteUbergraph_WBP_VendorButton;
 
-// Function WBP_VendorButton.WBP_VendorButton_C.Initialize Item
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_VendorButton_C_Initialize_Item final
-{
-public:
-	class USBZInventoryBaseData*                  Inventory_Data;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_Initialize_Item;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemEquippedChanged
+// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_VendorButton_C_OnListItemEquippedChanged final
+struct WBP_VendorButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bIsEquipped;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_VendorButton_C_OnListItemEquippedChanged;
+DUMPER7_ASSERTS_WBP_VendorButton_C_ButtonFocusedChanged;
 
-// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemObjectSet
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_VendorButton_C_OnListItemObjectSet final
-{
-public:
-	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_OnListItemObjectSet;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.OnMouseEnter
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_VendorButton_C_OnMouseEnter final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0080)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_OnMouseEnter;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.PreConstruct
+// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusChanging
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_VendorButton_C_PreConstruct final
+struct WBP_VendorButton_C_ButtonFocusChanging final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusChanging;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_VendorButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_VendorButton_C_ButtonFocusChanging;
 
-// Function WBP_VendorButton.WBP_VendorButton_C.SelectionChanged
+// Function WBP_VendorButton.WBP_VendorButton_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_VendorButton_C_SelectionChanged final
+struct WBP_VendorButton_C_BP_OnItemSelectionChanged final
 {
 public:
-	bool                                          IsSelected;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSelected_BP_OnItemSelectionChanged;             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_VendorButton_C_SelectionChanged;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.SetItemVisuals
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_VendorButton_C_SetItemVisuals final
-{
-public:
-	class USBZInventoryBaseData*                  InInventoryData;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_SetItemVisuals;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.TryPlayActionAnimation
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_VendorButton_C_TryPlayActionAnimation final
-{
-public:
-	bool                                          Selected;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBundleItemDecorator*                InBundleDecorator;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBundlePrimaryAction                       CallFunc_GetPrimaryAction_ReturnValue;             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          Temp_byte_Variable;                                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          Temp_byte_Variable_1;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_TryPlayActionAnimation;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.UpdateActions
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_VendorButton_C_UpdateActions final
-{
-public:
-	class USBZBundleItemDecorator*                InBundleDecorator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZBundlePrimaryAction                       Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBundlePrimaryAction                       CallFunc_GetPrimaryAction_ReturnValue;             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_UpdateActions;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.UpdateDisplayState
-// 0x02D0 (0x02D0 - 0x0000)
-struct WBP_VendorButton_C_UpdateDisplayState final
-{
-public:
-	class USBZBundleItemDecorator*                InItemDecorator;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZBundleItemDisplayState                    DisplayState;                                      // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBundleItemDisplayState                    Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBundleItemDisplayState                    CallFunc_GetDisplayState_ReturnValue;              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x000F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBundleItemDisplayState                    Temp_byte_Variable_5;                              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_6;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStealable_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_7;                              // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanAffordSteal_ReturnValue;               // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZStoreBaseItem                      CallFunc_GetStoreItem_ReturnValue;                 // 0x0018(0x0150)(ConstParm)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZStoreBaseItem                      CallFunc_GetStoreItem_ReturnValue_1;               // 0x0170(0x0150)(ConstParm)
-	bool                                          Temp_bool_Variable;                                // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C2[0x6];                                      // 0x02C2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_Select_Default_2;                           // 0x02C8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_UpdateDisplayState;
-
-// Function WBP_VendorButton.WBP_VendorButton_C.UpdateVisuals
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_VendorButton_C_UpdateVisuals final
-{
-public:
-	class USBZBundleItemDecorator*                InBundleDecorator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_VendorButton_C_UpdateVisuals;
+DUMPER7_ASSERTS_WBP_VendorButton_C_BP_OnItemSelectionChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

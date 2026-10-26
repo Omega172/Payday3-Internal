@@ -46,41 +46,41 @@ public:
 	class UAkAudioEvent*                          ButtonShownAudioEvent;                             // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdateButtonsBasedOnAccess();
+	void ShowHideAdditionalInfo(bool ForceHide);
 	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_2();
 	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_1();
 	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_0();
 	void SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options();
-	void OnShootingRangeSelected();
-	void OnTutorialButtonSelected();
-	void CheckIfNewPlayer();
-	void UpdateButtonsBasedOnAccess();
 	void ResetButtonsVisuals();
-	void ShowHideAdditionalInfo(bool ForceHide);
-	void OnControlRefPressed(class FName ActionName);
-	void PostPush_1DD92D19442464893EA74FBDE171C37F(class USBZMenuStackScreenWidget* MenuWidget);
 	void PrePush_1DD92D19442464893EA74FBDE171C37F(class USBZMenuStackScreenWidget* MenuWidget);
-	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnButtonFullyShown();
-	void ClearFocusedButton();
-	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature();
-	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void Construct();
-	void OnInitialized();
-	void OnPartyCreated();
+	void PostPush_1DD92D19442464893EA74FBDE171C37F(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnTutorialButtonSelected();
+	void OnShootingRangeSelected();
 	void OnPrivilegeChanged(ESBZUserPrivilegesProxy Privilege, bool bPrivilegeAllowed);
-	void OnInstallStateChanged(bool bIsGameInstallPending);
 	void OnPlayerPartyChanged(const class FString& PlayerId);
+	void OnPartyCreated();
+	void OnLostStackFocused();
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void OnInitialized();
 	void OnGameStartEntered();
-	void BndEvt__WBP_UI_ModeSelect_Options_ShootingRange_Button_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlRefPressed(class FName ActionName);
+	void OnButtonFullyShown();
 	void ExecuteUbergraph_WBP_UI_ModeSelect_Options(int32 EntryPoint);
+	void Construct();
+	void ClearFocusedButton();
+	void CheckIfNewPlayer();
+	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature();
+	void BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_ModeSelect_Options_ShootingRange_Button_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

@@ -16,79 +16,71 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.UpdatePinVisual
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InPlayerCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZHeistPlaystyle                      InHeistPlaystyle                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_ServerBrowser_HeistMapWidget_C::UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePinVisual", FnName));
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_ButtonHoveredChanged Parms{};
+	Params::WBP_ServerBrowser_HeistMapWidget_C_UpdatePinVisual Parms{};
 
-	Parms.bInIsHovered = bInIsHovered;
+	Parms.InPlayerCount = InPlayerCount;
+	Parms.InHovered = InHovered;
+	Parms.InHeistPlaystyle = InHeistPlaystyle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ShowDifficultyVisual
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget(int32 EntryPoint)
+void UWBP_ServerBrowser_HeistMapWidget_C::ShowDifficultyVisual(ESBZDifficulty InDifficulty)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_HeistMapWidget_C", "ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowDifficultyVisual", FnName));
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget Parms{};
+	Params::WBP_ServerBrowser_HeistMapWidget_C_ShowDifficultyVisual Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InDifficulty = InDifficulty;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.OnHeistDataInitialized
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetupPinMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_HeistMapWidget_C::SetupPinMaterial()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupPinMaterial", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetSelected
 // (Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_HeistMapWidget_C::OnHeistDataInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHeistDataInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ServerBrowser_HeistMapWidget_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsSelected_SetSelected                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::PreConstruct(bool IsDesignTime)
+void UWBP_ServerBrowser_HeistMapWidget_C::SetSelected(bool bInIsSelected_SetSelected)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSelected", FnName));
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_PreConstruct Parms{};
+	Params::WBP_ServerBrowser_HeistMapWidget_C_SetSelected Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bInIsSelected_SetSelected = bInIsSelected_SetSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -112,71 +104,79 @@ void UWBP_ServerBrowser_HeistMapWidget_C::SetActive(bool bIsActive)
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetSelected
-// (Event, Public, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsSelected                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::SetSelected(bool bInIsSelected)
+void UWBP_ServerBrowser_HeistMapWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_SetSelected Parms{};
+	Params::WBP_ServerBrowser_HeistMapWidget_C_PreConstruct Parms{};
 
-	Parms.bInIsSelected = bInIsSelected;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.SetupPinMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::SetupPinMaterial()
+void UWBP_ServerBrowser_HeistMapWidget_C::OnInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupPinMaterial", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ShowDifficultyVisual
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.OnHeistDataInitialized
+// (Event, Public, BlueprintEvent)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::ShowDifficultyVisual(ESBZDifficulty InDifficulty)
+void UWBP_ServerBrowser_HeistMapWidget_C::OnHeistDataInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowDifficultyVisual", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHeistDataInitialized", FnName));
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_ShowDifficultyVisual Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InDifficulty = InDifficulty;
+
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_HeistMapWidget_C::ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_HeistMapWidget_C", "ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget", FuncInfo);
+
+	Params::WBP_ServerBrowser_HeistMapWidget_C_ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.UpdatePinVisual
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_HeistMapWidget.WBP_ServerBrowser_HeistMapWidget_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   InPlayerCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZHeistPlaystyle                      InHeistPlaystyle                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_HeistMapWidget_C::UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle)
+void UWBP_ServerBrowser_HeistMapWidget_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePinVisual", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_ServerBrowser_HeistMapWidget_C_UpdatePinVisual Parms{};
+	Params::WBP_ServerBrowser_HeistMapWidget_C_ButtonHoveredChanged Parms{};
 
-	Parms.InPlayerCount = InPlayerCount;
-	Parms.InHovered = InHovered;
-	Parms.InHeistPlaystyle = InHeistPlaystyle;
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

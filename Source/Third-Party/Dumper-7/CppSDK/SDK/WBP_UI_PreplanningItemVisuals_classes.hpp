@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -38,16 +38,16 @@ public:
 	bool                                          IsSelectedOptions;                                 // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EmptySet();
-	void ExecuteUbergraph_WBP_UI_PreplanningItemVisuals(int32 EntryPoint);
-	void InitializeEmptyVisuals();
-	void InitializeItemVisuals(class USBZPreplanningAssetData* InPreplanningItem);
-	void ItemInitialized(const class USBZInventoryBaseData* NewItem);
-	void OnFocus(bool IsFocused);
-	void PreConstruct(bool IsDesignTime);
-	void SetDisplayName(class USBZPreplanningAssetData* InPrePlanningAsset);
+	void SpriteLoaded(class UPaperSprite* OutLoadedSprite_SpriteLoaded);
 	void SetIcon(class UPaperSprite* InDisplayIcon);
-	void SpriteLoaded(class UPaperSprite* OutLoadedSprite);
+	void SetDisplayName(class USBZPreplanningAssetData* InPrePlanningAsset);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnFocus(bool IsFocused);
+	void ItemInitialized(const class USBZInventoryBaseData* NewItem_ItemInitialized);
+	void InitializeItemVisuals(class USBZPreplanningAssetData* InPreplanningItem);
+	void InitializeEmptyVisuals();
+	void ExecuteUbergraph_WBP_UI_PreplanningItemVisuals(int32 EntryPoint);
+	void EmptySet();
 
 public:
 	static class UClass* StaticClass()

@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Starbreeze_structs.hpp"
-#include "Starbreeze_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "Starbreeze_structs.hpp"
+#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_WP_Master.ABP_WP_Master_C
-// 0x17F0 (0x1C90 - 0x04A0)
+// 0x18F0 (0x1D90 - 0x04A0)
 class UABP_WP_Master_C final : public USBZWeaponAnimation
 {
 public:
@@ -36,19 +36,19 @@ public:
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x07D8(0x0098)()
 	struct FAnimNode_ApplyAdditive                AnimGraphNode_ApplyAdditive;                       // 0x0870(0x00E8)()
 	uint8                                         Pad_958[0x8];                                      // 0x0958(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0960(0x0AA0)()
-	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x1400(0x00D8)()
-	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x14D8(0x0090)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x1568(0x0040)()
-	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x15A8(0x0040)()
-	uint8                                         Pad_15E8[0x8];                                     // 0x15E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_Inertialization              AnimGraphNode_Inertialization;                     // 0x15F0(0x0580)()
-	struct FSBZAnimNode_CopyBoneDeltaMultiTargets SBZAnimGraphNode_CopyBoneDeltaMultiTargets;        // 0x1B70(0x0120)()
+	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0960(0x0BA0)()
+	struct FAnimNode_TwoWayBlend                  AnimGraphNode_TwoWayBlend;                         // 0x1500(0x00D8)()
+	struct FAnimNode_SaveCachedPose               AnimGraphNode_SaveCachedPose;                      // 0x15D8(0x0090)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose_1;                     // 0x1668(0x0040)()
+	struct FAnimNode_UseCachedPose                AnimGraphNode_UseCachedPose;                       // 0x16A8(0x0040)()
+	uint8                                         Pad_16E8[0x8];                                     // 0x16E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FAnimNode_Inertialization              AnimGraphNode_Inertialization;                     // 0x16F0(0x0580)()
+	struct FSBZAnimNode_CopyBoneDeltaMultiTargets SBZAnimGraphNode_CopyBoneDeltaMultiTargets;        // 0x1C70(0x0120)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
 	void ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint);
+	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F();
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()

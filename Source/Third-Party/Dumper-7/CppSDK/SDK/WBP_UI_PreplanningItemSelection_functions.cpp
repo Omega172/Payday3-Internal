@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.UpdatePreplanningDescription
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZPreplanningAssetData*         InPreplanning                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemSelection_C::UpdatePreplanningDescription(class USBZPreplanningAssetData* InPreplanning)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePreplanningDescription", FnName));
+
+	Params::WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription Parms{};
+
+	Parms.InPreplanning = InPreplanning;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.SetSoloModeVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -40,19 +58,137 @@ void UWBP_UI_PreplanningItemSelection_C::ResetPreplanningSelection()
 }
 
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.UpdatePreplanningDescription
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class USBZPreplanningAssetData*         InPreplanning                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_PreplanningItemSelection_C::UpdatePreplanningDescription(class USBZPreplanningAssetData* InPreplanning)
+void UWBP_UI_PreplanningItemSelection_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePreplanningDescription", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_PreplanningItemSelection_C_UpdatePreplanningDescription Parms{};
+	Params::WBP_UI_PreplanningItemSelection_C_PreConstruct Parms{};
 
-	Parms.InPreplanning = InPreplanning;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningSelectionEnabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled_OnPreplanningSelectionEnabledChanged          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemSelection_C::OnPreplanningSelectionEnabledChanged(bool bEnabled_OnPreplanningSelectionEnabledChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningSelectionEnabledChanged", FnName));
+
+	Params::WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged Parms{};
+
+	Parms.bEnabled_OnPreplanningSelectionEnabledChanged = bEnabled_OnPreplanningSelectionEnabledChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPrePlanningItemButtonFocused
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   InButton_OnPrePlanningItemButtonFocused                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused_OnPrePlanningItemButtonFocused              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemSelection_C::OnPrePlanningItemButtonFocused(class USBZMenuButton* InButton_OnPrePlanningItemButtonFocused, bool bIsFocused_OnPrePlanningItemButtonFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPrePlanningItemButtonFocused", FnName));
+
+	Params::WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused Parms{};
+
+	Parms.InButton_OnPrePlanningItemButtonFocused = InButton_OnPrePlanningItemButtonFocused;
+	Parms.bIsFocused_OnPrePlanningItemButtonFocused = bIsFocused_OnPrePlanningItemButtonFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetRemovedByPlayer
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FUniqueNetIdRepl&          PlayerID_OnPreplanningAssetRemovedByPlayer             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemSelection_C::OnPreplanningAssetRemovedByPlayer(const struct FUniqueNetIdRepl& PlayerID_OnPreplanningAssetRemovedByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetRemovedByPlayer", FnName));
+
+	Params::WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer Parms{};
+
+	Parms.PlayerID_OnPreplanningAssetRemovedByPlayer = std::move(PlayerID_OnPreplanningAssetRemovedByPlayer);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetDeclinedByServer
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_PreplanningItemSelection_C::OnPreplanningAssetDeclinedByServer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetDeclinedByServer", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetAddedByPlayer
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FUniqueNetIdRepl&          PlayerID_OnPreplanningAssetAddedByPlayer               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
+// const class USBZPreplanningAssetData*   PreplanningAsset_OnPreplanningAssetAddedByPlayer       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemSelection_C::OnPreplanningAssetAddedByPlayer(const struct FUniqueNetIdRepl& PlayerID_OnPreplanningAssetAddedByPlayer, const class USBZPreplanningAssetData* PreplanningAsset_OnPreplanningAssetAddedByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetAddedByPlayer", FnName));
+
+	Params::WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer Parms{};
+
+	Parms.PlayerID_OnPreplanningAssetAddedByPlayer = std::move(PlayerID_OnPreplanningAssetAddedByPlayer);
+	Parms.PreplanningAsset_OnPreplanningAssetAddedByPlayer = PreplanningAsset_OnPreplanningAssetAddedByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_PreplanningItemSelection_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_PreplanningItemSelection_C::OnControlsReferenceClicked(class FName InActionInput)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+
+	Params::WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked Parms{};
+
+	Parms.InActionInput = InActionInput;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -80,154 +216,6 @@ void UWBP_UI_PreplanningItemSelection_C::GetPlayerIndex(const struct FUniqueNetI
 }
 
 
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetAddedByPlayer
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FUniqueNetIdRepl&          PlayerID                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-// const class USBZPreplanningAssetData*   PreplanningAsset                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemSelection_C::OnPreplanningAssetAddedByPlayer(const struct FUniqueNetIdRepl& PlayerID, const class USBZPreplanningAssetData* PreplanningAsset)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetAddedByPlayer", FnName));
-
-	Params::WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetAddedByPlayer Parms{};
-
-	Parms.PlayerID = std::move(PlayerID);
-	Parms.PreplanningAsset = PreplanningAsset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetRemovedByPlayer
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FUniqueNetIdRepl&          PlayerID                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemSelection_C::OnPreplanningAssetRemovedByPlayer(const struct FUniqueNetIdRepl& PlayerID)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetRemovedByPlayer", FnName));
-
-	Params::WBP_UI_PreplanningItemSelection_C_OnPreplanningAssetRemovedByPlayer Parms{};
-
-	Parms.PlayerID = std::move(PlayerID);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_PreplanningItemSelection_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPrePlanningItemButtonFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemSelection_C::OnPrePlanningItemButtonFocused(class USBZMenuButton* InButton, bool bIsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPrePlanningItemButtonFocused", FnName));
-
-	Params::WBP_UI_PreplanningItemSelection_C_OnPrePlanningItemButtonFocused Parms{};
-
-	Parms.InButton = InButton;
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemSelection_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
-
-	Params::WBP_UI_PreplanningItemSelection_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningAssetDeclinedByServer
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_PreplanningItemSelection_C::OnPreplanningAssetDeclinedByServer()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetDeclinedByServer", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemSelection_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_PreplanningItemSelection_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.OnPreplanningSelectionEnabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_PreplanningItemSelection_C::OnPreplanningSelectionEnabledChanged(bool bEnabled)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningSelectionEnabledChanged", FnName));
-
-	Params::WBP_UI_PreplanningItemSelection_C_OnPreplanningSelectionEnabledChanged Parms{};
-
-	Parms.bEnabled = bEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_PreplanningItemSelection_C::Destruct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.ExecuteUbergraph_WBP_UI_PreplanningItemSelection
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -243,6 +231,18 @@ void UWBP_UI_PreplanningItemSelection_C::ExecuteUbergraph_WBP_UI_PreplanningItem
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_PreplanningItemSelection.WBP_UI_PreplanningItemSelection_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_PreplanningItemSelection_C::Destruct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

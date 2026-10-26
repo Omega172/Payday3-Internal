@@ -16,73 +16,301 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.AccesGrantedStart
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.WindowScaleUp
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::AccesGrantedStart()
+void UWBP_ServerBrowser_IntroMotion_C::WindowScaleUp()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AccesGrantedStart", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowScaleUp", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.AnimationEnd
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.TopRightTextStopPrint
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::AnimationEnd()
+void UWBP_ServerBrowser_IntroMotion_C::TopRightTextStopPrint()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimationEnd", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TopRightTextStopPrint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterFirstTextStartPrint
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.TopRightTextStartPrint
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::BottomCenterFirstTextStartPrint()
+void UWBP_ServerBrowser_IntroMotion_C::TopRightTextStartPrint()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterFirstTextStartPrint", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TopRightTextStartPrint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterFirstTextStopPrint
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::BottomCenterFirstTextStopPrint()
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterFirstTextStopPrint", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterSecondTextStartPrint
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::BottomCenterSecondTextStartPrint()
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterSecondTextStartPrint", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterSecondTextStopPrint
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::BottomCenterSecondTextStopPrint()
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterSecondTextStopPrint", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.Play Animation
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::Play_Animation()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Play Animation", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.OnShortSequenceStarted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::OnShortSequenceStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShortSequenceStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.IntroStarted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::IntroStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.InputCodeDigit
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_IntroMotion_C::InputCodeDigit()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InputCodeDigit", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -106,301 +334,73 @@ void UWBP_ServerBrowser_IntroMotion_C::ExecuteUbergraph_WBP_ServerBrowser_IntroM
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.InputCodeDigit
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterSecondTextStopPrint
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::InputCodeDigit()
+void UWBP_ServerBrowser_IntroMotion_C::BottomCenterSecondTextStopPrint()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InputCodeDigit", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterSecondTextStopPrint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.IntroStarted
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterSecondTextStartPrint
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::IntroStarted()
+void UWBP_ServerBrowser_IntroMotion_C::BottomCenterSecondTextStartPrint()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroStarted", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterSecondTextStartPrint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.OnIntroFinished
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterFirstTextStopPrint
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::OnIntroFinished()
+void UWBP_ServerBrowser_IntroMotion_C::BottomCenterFirstTextStopPrint()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterFirstTextStopPrint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.OnShortSequenceStarted
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.BottomCenterFirstTextStartPrint
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::OnShortSequenceStarted()
+void UWBP_ServerBrowser_IntroMotion_C::BottomCenterFirstTextStartPrint()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShortSequenceStarted", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomCenterFirstTextStartPrint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.Play Animation
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.AnimationEnd
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::Play_Animation()
+void UWBP_ServerBrowser_IntroMotion_C::AnimationEnd()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Play Animation", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimationEnd", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_0", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_1", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_10", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_11", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_12", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_13", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_14", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_15", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_2", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_3", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_4", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_5", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_6", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_7", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_8", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_ServerBrowser_IntroMotion_9", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.TopRightTextStartPrint
+// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.AccesGrantedStart
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_IntroMotion_C::TopRightTextStartPrint()
+void UWBP_ServerBrowser_IntroMotion_C::AccesGrantedStart()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TopRightTextStartPrint", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.TopRightTextStopPrint
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::TopRightTextStopPrint()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TopRightTextStopPrint", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_IntroMotion.WBP_ServerBrowser_IntroMotion_C.WindowScaleUp
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_IntroMotion_C::WindowScaleUp()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowScaleUp", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AccesGrantedStart", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

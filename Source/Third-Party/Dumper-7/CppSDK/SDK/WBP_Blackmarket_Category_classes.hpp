@@ -29,12 +29,12 @@ public:
 	class UOverlay*                               Title;                                             // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Blackmarket_Category(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void SetStoreCategoryName(const class FText& InCategoryName);
-	void UpdateCategoryDefaultVisuals();
-	void UpdateCategoryVisuals(ESBZStoreItemDefaultUICategory CategoryType);
 	void UpdateCategoryVisualsForDLCBundle();
+	void UpdateCategoryVisuals(ESBZStoreItemDefaultUICategory CategoryType_UpdateCategoryVisuals);
+	void UpdateCategoryDefaultVisuals();
+	void SetStoreCategoryName(const class FText& InCategoryName_SetStoreCategoryName);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_Blackmarket_Category(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

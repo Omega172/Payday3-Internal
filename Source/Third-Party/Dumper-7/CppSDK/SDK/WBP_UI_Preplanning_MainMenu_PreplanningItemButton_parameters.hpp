@@ -17,32 +17,82 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonDisabledChanged
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.SetRemoveAssetButton
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonDisabledChanged final
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_SetRemoveAssetButton final
 {
 public:
-	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsRemoveAssetButton_SetRemoveAssetButton;         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonDisabledChanged;
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_SetRemoveAssetButton;
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonFocusedChanged final
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.RefreshVisuals
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_RefreshVisuals final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_RefreshVisuals;
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonHoveredChanged
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonHoveredChanged final
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_PreConstruct final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_PreConstruct;
+
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnPrePlanningItemInitialized
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnPrePlanningItemInitialized final
+{
+public:
+	const class USBZPreplanningAssetData*         InPreplanningData_OnPrePlanningItemInitialized;    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnPrePlanningItemInitialized;
+
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnHovered
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnHovered final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnHovered;
+
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnFocused
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnFocused final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_3;                              // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZColorStyle*                         Temp_object_Variable;                              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZColorStyle*                         Temp_object_Variable_1;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZColorStyle*                         K2Node_Select_Default;                             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZColorStyle*                         Temp_object_Variable_2;                            // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default_2;                           // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZColorStyle*                         Temp_object_Variable_3;                            // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default_3;                           // 0x0098(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_4;                              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZColorStyle*                         K2Node_Select_Default_4;                           // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnFocused;
 
 // Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PreplanningItemButton
 // 0x0070 (0x0070 - 0x0000)
@@ -85,82 +135,32 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PreplanningItemButton;
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnFocused
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnFocused final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_3;                            // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_3;                              // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZColorStyle*                         Temp_object_Variable;                              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZColorStyle*                         Temp_object_Variable_1;                            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZColorStyle*                         K2Node_Select_Default;                             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZColorStyle*                         Temp_object_Variable_2;                            // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x0070(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default_2;                           // 0x0080(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZColorStyle*                         Temp_object_Variable_3;                            // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default_3;                           // 0x0098(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_4;                              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZColorStyle*                         K2Node_Select_Default_4;                           // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnFocused;
-
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnHovered
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnHovered final
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnHovered;
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.OnPrePlanningItemInitialized
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnPrePlanningItemInitialized final
-{
-public:
-	const class USBZPreplanningAssetData*         InPreplanningData;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_OnPrePlanningItemInitialized;
-
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.PreConstruct
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_PreConstruct final
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonFocusedChanged;
 
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.RefreshVisuals
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_RefreshVisuals final
-{
-public:
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_RefreshVisuals;
-
-// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.SetRemoveAssetButton
+// Function WBP_UI_Preplanning_MainMenu_PreplanningItemButton.WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C.ButtonDisabledChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_SetRemoveAssetButton final
+struct WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonDisabledChanged final
 {
 public:
-	bool                                          bIsRemoveAssetButton;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsDisabled_ButtonDisabledChanged;               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_SetRemoveAssetButton;
+DUMPER7_ASSERTS_WBP_UI_Preplanning_MainMenu_PreplanningItemButton_C_ButtonDisabledChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

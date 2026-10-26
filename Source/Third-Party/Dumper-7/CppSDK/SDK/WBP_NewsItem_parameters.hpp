@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_NewsItem.WBP_NewsItem_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NewsItem_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsItem_C_PreConstruct;
+
+// Function WBP_NewsItem.WBP_NewsItem_C.OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NewsItem_C_OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NewsItem_C_OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED;
+
 // Function WBP_NewsItem.WBP_NewsItem_C.ExecuteUbergraph_WBP_NewsItem
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_NewsItem_C_ExecuteUbergraph_WBP_NewsItem final
@@ -29,24 +47,6 @@ public:
 	class UObject*                                K2Node_CustomEvent_Loaded;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_NewsItem_C_ExecuteUbergraph_WBP_NewsItem;
-
-// Function WBP_NewsItem.WBP_NewsItem_C.OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NewsItem_C_OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsItem_C_OnLoaded_8987B2184F552E80FB20EF8DDB9EA1ED;
-
-// Function WBP_NewsItem.WBP_NewsItem_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NewsItem_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NewsItem_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

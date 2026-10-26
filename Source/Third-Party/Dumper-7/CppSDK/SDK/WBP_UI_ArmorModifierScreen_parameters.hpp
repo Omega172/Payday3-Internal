@@ -17,6 +17,82 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.UpdateActiveButtonControlsReference
+// 0x0160 (0x0160 - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_UpdateActiveButtonControlsReference final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0008(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0040(0x0038)()
+	bool                                          CallFunc_IsInputTypeController_ReturnValue;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0080(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x00B8(0x0038)()
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x00F0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0118(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x0128(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0138(0x0028)()
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_UpdateActiveButtonControlsReference;
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_PreConstruct;
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonSelected
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonSelected final
+{
+public:
+	const class USBZMainMenuArmorChunkButton*     SelectedButton_OnArmorChunkSlotButtonSelected;     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonSelected;
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonEquipped
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonEquipped final
+{
+public:
+	const class USBZMainMenuArmorChunkButton*     EquippedButton_OnArmorChunkSlotButtonEquipped;     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonEquipped;
+
+// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.NewArmorChunkSlotFocused
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ArmorModifierScreen_C_NewArmorChunkSlotFocused final
+{
+public:
+	const class USBZMainMenuArmorChunkButton*     NewFocusedButton_NewArmorChunkSlotFocused;         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_NewArmorChunkSlotFocused;
+
 // Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.ExecuteUbergraph_WBP_UI_ArmorModifierScreen
 // 0x01E0 (0x01E0 - 0x0000)
 struct WBP_UI_ArmorModifierScreen_C_ExecuteUbergraph_WBP_UI_ArmorModifierScreen final
@@ -46,7 +122,7 @@ public:
 	const class USBZMainMenuArmorChunkButton*     K2Node_Event_NewFocusedButton;                     // 0x0058(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	const class USBZMainMenuArmorChunkButton*     K2Node_Event_SelectedButton;                       // 0x0060(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0070(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0070(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -82,82 +158,6 @@ public:
 	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue_1;    // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_ExecuteUbergraph_WBP_UI_ArmorModifierScreen;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.NewArmorChunkSlotFocused
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_NewArmorChunkSlotFocused final
-{
-public:
-	const class USBZMainMenuArmorChunkButton*     NewFocusedButton;                                  // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_NewArmorChunkSlotFocused;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonEquipped
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonEquipped final
-{
-public:
-	const class USBZMainMenuArmorChunkButton*     EquippedButton;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonEquipped;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnArmorChunkSlotButtonSelected
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonSelected final
-{
-public:
-	const class USBZMainMenuArmorChunkButton*     SelectedButton;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnArmorChunkSlotButtonSelected;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_PreConstruct;
-
-// Function WBP_UI_ArmorModifierScreen.WBP_UI_ArmorModifierScreen_C.UpdateActiveButtonControlsReference
-// 0x0160 (0x0160 - 0x0000)
-struct WBP_UI_ArmorModifierScreen_C_UpdateActiveButtonControlsReference final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0008(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0040(0x0038)()
-	bool                                          CallFunc_IsInputTypeController_ReturnValue;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0080(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x00B8(0x0038)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x00F0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_104[0x4];                                      // 0x0104(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0108(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0118(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x0128(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0138(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_UI_ArmorModifierScreen_C_UpdateActiveButtonControlsReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

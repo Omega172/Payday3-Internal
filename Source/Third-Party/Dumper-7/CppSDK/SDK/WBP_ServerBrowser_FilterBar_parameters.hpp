@@ -17,52 +17,106 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.UpdateFilterNumber
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_UpdateFilterNumber final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         FiltersChanges;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyDisabledLevels_HasDisabledLevel;    // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameUserSettings*                   CallFunc_GetSBZGameUserSettings_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_GetMatchmakingFilterDifficulty_ReturnValue; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZModdedLobbyFilterOptions                  CallFunc_GetMatchmakingFilterModded_ReturnValue;   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZOnlineTacticType                          CallFunc_GetMatchmakingFilterTactic_ReturnValue;   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_2;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue_3;                  // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_UpdateFilterNumber;
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ToggleRefreshButton
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature final
+struct WBP_ServerBrowser_FilterBar_C_ToggleRefreshButton final
 {
 public:
-	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsEnabled;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_ToggleRefreshButton;
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.SwitchToOptions
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_SwitchToOptions final
+{
+public:
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_SwitchToOptions;
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_PreConstruct;
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HideTitleBar
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_HideTitleBar final
+{
+public:
+	bool                                          ShouldHideTitle;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_HideTitleBar;
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HasAnyDisabledLevels
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_HasAnyDisabledLevels final
+{
+public:
+	bool                                          HasDisabledLevel;                                  // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZGameUserSettings*                   CallFunc_GetSBZGameUserSettings_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<class FString, bool>                     CallFunc_GetMatchmakingFilterLevelMap_ReturnValue; // 0x0018(0x0050)(ConstParm)
+	TArray<bool>                                  CallFunc_Map_Values_Values;                        // 0x0068(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Get_Item;                           // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_HasAnyDisabledLevels;
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HandleButtonFocusChanged
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_HandleButtonFocusChanged final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsButtonEnabled;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, class FText>                EmptyButtonActionDisplayText;                      // 0x0010(0x0050)(Edit, BlueprintVisible)
+	class UWBP_ServerBrowser_Screen_C*            K2Node_DynamicCast_AsWBP_Server_Browser_Screen;    // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_HandleButtonFocusChanged;
 
 // Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ExecuteUbergraph_WBP_ServerBrowser_FilterBar
 // 0x0040 (0x0040 - 0x0000)
@@ -93,83 +147,52 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_ExecuteUbergraph_WBP_ServerBrowser_FilterBar;
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HandleButtonFocusChanged
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_HandleButtonFocusChanged final
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature final
+{
+public:
+	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature;
+
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsButtonEnabled;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, class FText>                EmptyButtonActionDisplayText;                      // 0x0010(0x0050)(Edit, BlueprintVisible)
-	class UWBP_ServerBrowser_Screen_C*            K2Node_DynamicCast_AsWBP_Server_Browser_Screen;    // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_HandleButtonFocusChanged;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.HideTitleBar
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_HideTitleBar final
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	bool                                          ShouldHideTitle_0;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_HideTitleBar;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_PreConstruct final
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.SwitchToOptions
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_SwitchToOptions final
+// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              CallFunc_GetVisibility_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_SwitchToOptions;
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.ToggleRefreshButton
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_ToggleRefreshButton final
-{
-public:
-	bool                                          bInIsEnabled;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_ToggleRefreshButton;
-
-// Function WBP_ServerBrowser_FilterBar.WBP_ServerBrowser_FilterBar_C.UpdateFilterNumber
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_ServerBrowser_FilterBar_C_UpdateFilterNumber final
-{
-public:
-	int32                                         FiltersChanges;                                    // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameUserSettings*                   CallFunc_GetSBZGameUserSettings_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_GetMatchmakingFilterDifficulty_ReturnValue; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZModdedLobbyFilterOptions                  CallFunc_GetMatchmakingFilterModded_ReturnValue;   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_SelectInt_ReturnValue_1;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZOnlineTacticType                          CallFunc_GetMatchmakingFilterTactic_ReturnValue;   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_2;          // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue_2;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_UpdateFilterNumber;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterBar_C_BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

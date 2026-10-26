@@ -43,28 +43,28 @@ public:
 	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_2_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
-	void ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection(int32 EntryPoint);
-	void OnAddedToStack();
-	void OnBackPressed();
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnHeistButtonFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
-	void OnHeistButtonSelected(class USBZMainMenuCrimeNetHeistButton* SelectedButton);
-	void OnHeistCollectionChanged(const struct FSBZHeistCollectionWithOwnership& ActiveHeistCollection);
-	void OnLostStackFocused();
-	void OnRemovedFromStack();
-	void OnSoloModePopupClosed(class FName ClosingActionName);
-	void RefreshVisuals();
-	void SetButtonFocus();
-	void SetButtonFocusAfterStorymodeToggle();
-	void SetHeistButtonControlsReference();
-	void SetMatchmakingState(bool Force_Disable_Matchmaking);
 	void TryDisplayPopUp(bool bInPopUp);
+	void SetMatchmakingState(bool Force_Disable_Matchmaking);
+	void SetHeistButtonControlsReference();
+	void SetButtonFocusAfterStorymodeToggle();
+	void SetButtonFocus();
+	void RefreshVisuals();
+	void OnSoloModePopupClosed(class FName ClosingActionName);
+	void OnRemovedFromStack();
+	void OnLostStackFocused();
+	void OnHeistCollectionChanged(const struct FSBZHeistCollectionWithOwnership& ActiveHeistCollection_OnHeistCollectionChanged);
+	void OnHeistButtonSelected(class USBZMainMenuCrimeNetHeistButton* SelectedButton_OnHeistButtonSelected);
+	void OnHeistButtonFocused(class USBZMenuButton* MenuButton_OnHeistButtonFocused, bool bIsFocused_OnHeistButtonFocused);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void OnBackPressed();
+	void OnAddedToStack();
+	void ExecuteUbergraph_WBP_SM_CrimeNetHeistSelection(int32 EntryPoint);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_2_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_SM_CrimeNetHeistSelection_Button_CancelMatchmaking_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

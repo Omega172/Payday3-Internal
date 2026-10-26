@@ -38,24 +38,24 @@ public:
 	class USBZMenuButton*                         Last_RT_Focusedbutton;                             // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ArmorSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton, bool bIsFocused);
-	void BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void ControlsReferenceActionPressed(class FName ActionName);
-	void ExecuteUbergraph_WBP_UI_ArmorInventoryScreen(int32 EntryPoint);
-	void GetContextAwareControlReference(class UWBP_UI_Inventory_ArmorSlotButton_C* ArmorButton, TArray<struct FSBZButtonControlReference>* ControlsReference);
-	void IsMenuStatePrePlanning(bool* IsPreplanning);
-	void OnDiscardPressed();
-	void OnEditButtonPressed(int32 ArmorSlotIndex);
-	void OnEmptySlotSelected();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnItemDiscarded(bool bWasSuccessful);
-	void OnLostStackFocused();
-	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item);
-	void OnSlotPurchaseComplete(bool bWasSuccessful);
-	void OnTryBuyArmorSlot();
-	void RevertBodyAndEquipped();
-	void SetActiveButton(class USBZMenuButton* ArmorButton);
 	void ShowArmorOnly();
+	void SetActiveButton(class USBZMenuButton* ArmorButton);
+	void RevertBodyAndEquipped();
+	void OnTryBuyArmorSlot();
+	void OnSlotPurchaseComplete(bool bWasSuccessful_OnSlotPurchaseComplete);
+	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item_OnSlotPriceChanged);
+	void OnLostStackFocused();
+	void OnItemDiscarded(bool bWasSuccessful_OnItemDiscarded);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnEmptySlotSelected();
+	void OnEditButtonPressed(int32 ArmorSlotIndex_OnEditButtonPressed);
+	void OnDiscardPressed();
+	void IsMenuStatePrePlanning(bool* IsPreplanning);
+	void GetContextAwareControlReference(class UWBP_UI_Inventory_ArmorSlotButton_C* ArmorButton, TArray<struct FSBZButtonControlReference>* ControlsReference);
+	void ExecuteUbergraph_WBP_UI_ArmorInventoryScreen(int32 EntryPoint);
+	void ControlsReferenceActionPressed(class FName ActionName);
+	void BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void ArmorSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton_ArmorSlotButtonFocusedChanged, bool bIsFocused_ArmorSlotButtonFocusedChanged);
 
 public:
 	static class UClass* StaticClass()

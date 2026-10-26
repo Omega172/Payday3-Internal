@@ -31,21 +31,21 @@ public:
 	class UWBP_UI_CosmeticButtonSprayCanSlots_C*  FocusedSprayCanButton;                             // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0);
-	void BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void Construct();
-	void ExecuteUbergraph_WBP_MaskCustomization_Pattern(int32 EntryPoint);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnSprayCanIndexBackwards();
-	void OnSprayCanIndexForwards();
-	void OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button);
-	void OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void PreConstruct(bool IsDesignTime);
-	void SetPreviewMaskParts();
 	void ShowDescriptionForButton(class USBZMainMenuCosmeticItemButton* InputPin);
+	void SetPreviewMaskParts();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnSprayCanSelectorFocusChanged(class USBZMenuButton* Button, bool bIsEnabled);
+	void OnSprayCanSelectorButtonSelected(class USBZMenuButton* Button);
+	void OnSprayCanIndexForwards();
+	void OnSprayCanIndexBackwards();
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void ExecuteUbergraph_WBP_MaskCustomization_Pattern(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_MaskCustomization_Pattern_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_MaskCustomization_Pattern_CurrentPatternSelectedItemButton_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_Mask_Customization_Generic_Slot_Screen_Cosmetic_Panel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

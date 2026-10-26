@@ -17,14 +17,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ButtonHoveredChanged
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetSelected
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged final
+struct WBP_UI_Crimenet_HeistMapWidget_C_SetSelected final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsSelected_SetSelected;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetSelected;
+
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetActive
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Crimenet_HeistMapWidget_C_SetActive final
+{
+public:
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetActive;
 
 // Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget
 // 0x0058 (0x0058 - 0x0000)
@@ -47,25 +58,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget;
 
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetActive
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Crimenet_HeistMapWidget_C_SetActive final
-{
-public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetActive;
-
-// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.SetSelected
+// Function WBP_UI_Crimenet_HeistMapWidget.WBP_UI_Crimenet_HeistMapWidget_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Crimenet_HeistMapWidget_C_SetSelected final
+struct WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bInIsSelected;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_SetSelected;
+DUMPER7_ASSERTS_WBP_UI_Crimenet_HeistMapWidget_C_ButtonHoveredChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

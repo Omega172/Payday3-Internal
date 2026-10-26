@@ -28,10 +28,10 @@ public:
 	struct FSBZControlsReference                  In_Controls_Reference_Idle;                        // 0x06D0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_BP_PhoneToolClickable(int32 EntryPoint);
-	void OnActivated();
-	void OnCanceled();
 	void OnReady();
+	void OnCanceled();
+	void OnActivated();
+	void ExecuteUbergraph_BP_PhoneToolClickable(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

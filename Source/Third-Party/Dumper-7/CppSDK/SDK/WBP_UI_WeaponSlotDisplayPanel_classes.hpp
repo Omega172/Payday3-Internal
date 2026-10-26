@@ -49,11 +49,11 @@ public:
 	bool                                          bOvkChooseNameLater;                               // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel(int32 EntryPoint);
-	void OnBaseData();
-	void OnDataEmpty();
-	void OnNewWeaponData();
 	void TrySetOverskillDescription(class USBZInventoryBaseData* ItemData);
+	void OnNewWeaponData();
+	void OnDataEmpty();
+	void OnBaseData();
+	void ExecuteUbergraph_WBP_UI_WeaponSlotDisplayPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

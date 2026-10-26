@@ -12,7 +12,6 @@
 
 #include "GeometryCache_classes.hpp"
 #include "GeometryCache_parameters.hpp"
-#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START
@@ -117,33 +116,6 @@ class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent() 
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
-}
-
-
-// Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
-// (Final, Native, Public, HasOutParams)
-// Parameters:
-// const struct FGeometryCacheMeshData&    MeshData                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-// const float                             SampleTime                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(const struct FGeometryCacheMeshData& MeshData, const float SampleTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCacheTrack_FlipbookAnimation", "AddMeshSample");
-
-	Params::GeometryCacheTrack_FlipbookAnimation_AddMeshSample Parms{};
-
-	Parms.MeshData = std::move(MeshData);
-	Parms.SampleTime = SampleTime;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
 }
 
 
@@ -867,6 +839,33 @@ bool UGeometryCacheComponent::IsPlayingReversed() const
 	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
+}
+
+
+// Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
+// (Final, Native, Public, HasOutParams)
+// Parameters:
+// const struct FGeometryCacheMeshData&    MeshData                                               (ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+// const float                             SampleTime                                             (ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(const struct FGeometryCacheMeshData& MeshData, const float SampleTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GeometryCacheTrack_FlipbookAnimation", "AddMeshSample");
+
+	Params::GeometryCacheTrack_FlipbookAnimation_AddMeshSample Parms{};
+
+	Parms.MeshData = std::move(MeshData);
+	Parms.SampleTime = SampleTime;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
 }
 
 

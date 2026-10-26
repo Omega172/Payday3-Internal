@@ -57,19 +57,19 @@ public:
 	TMap<class UBorder*, class UImage*>           LevelAndBar;                                       // 0x0400(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Overskill_Container_OverskillSwitch_ControllerPrompt_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void ExecuteUbergraph_WBP_UI_Overskill_Container(int32 EntryPoint);
-	void GetCurrentLevel(double Progress_0, int32* CurrentLevel);
-	void GetProgressBarValue(double InProgress, double* OutProgress);
-	void GetSkillDataByIndex(int32 Index_0, class USBZSkillData** SkillData);
-	void OnInitialized();
-	void OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress);
-	void SetBaseInfo(double Progress_0);
-	void SetProgressBarDetails();
 	void UpdateLevelDetails(int32 NewIndex);
+	void SetProgressBarDetails();
+	void SetBaseInfo(double Progress);
+	void OnOverskillChanged(const class USBZOverskillData* InOverskillData_OnOverskillChanged, float InProgress_OnOverskillChanged);
+	void OnInitialized();
+	void GetSkillDataByIndex(int32 Index_0, class USBZSkillData** SkillData);
+	void GetProgressBarValue(double InProgress, double* OutProgress);
+	void GetCurrentLevel(double Progress, int32* CurrentLevel);
+	void ExecuteUbergraph_WBP_UI_Overskill_Container(int32 EntryPoint);
+	void BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Overskill_Container_OverskillSwitch_ControllerPrompt_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

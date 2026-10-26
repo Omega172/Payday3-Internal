@@ -12,7 +12,6 @@
 
 #include "Niagara_classes.hpp"
 #include "Niagara_parameters.hpp"
-#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

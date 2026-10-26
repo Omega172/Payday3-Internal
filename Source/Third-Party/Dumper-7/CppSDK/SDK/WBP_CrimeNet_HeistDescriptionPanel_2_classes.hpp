@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -42,16 +42,16 @@ public:
 	ESBZDifficulty                                RT_Difficulty;                                     // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CrimeNet_HeistDescriptionPanel_2(int32 EntryPoint);
-	void InitializeHeistData(class UPD3HeistDataAsset* InHeistData);
-	void OnInitialized();
-	void OnLoaded_60A324174F38BA985051939D434488B5(class UObject* Loaded);
-	void SetDifficulty(ESBZDifficulty InDifficulty);
-	void SetNoHeistData();
-	void UpdateDifficultyVisuals(ESBZDifficulty InDifficulty);
-	void UpdatePanelTimer(double Timer, bool bIsStealth);
-	void UpdateSecuirtyCompanies();
 	void UpdateTimers();
+	void UpdateSecuirtyCompanies();
+	void UpdatePanelTimer(double Timer, bool bIsStealth);
+	void UpdateDifficultyVisuals(ESBZDifficulty InDifficulty);
+	void SetNoHeistData();
+	void SetDifficulty(ESBZDifficulty InDifficulty);
+	void OnLoaded_60A324174F38BA985051939D434488B5(class UObject* Loaded);
+	void OnInitialized();
+	void InitializeHeistData(class UPD3HeistDataAsset* InHeistData);
+	void ExecuteUbergraph_WBP_CrimeNet_HeistDescriptionPanel_2(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

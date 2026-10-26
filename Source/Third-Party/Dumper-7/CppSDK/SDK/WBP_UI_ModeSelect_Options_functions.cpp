@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.UpdateButtonsBasedOnAccess
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::UpdateButtonsBasedOnAccess()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateButtonsBasedOnAccess", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ShowHideAdditionalInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ForceHide                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::ShowHideAdditionalInfo(bool ForceHide)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowHideAdditionalInfo", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_ShowHideAdditionalInfo Parms{};
+
+	Parms.ForceHide = ForceHide;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Options_2
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -64,54 +94,6 @@ void UWBP_UI_ModeSelect_Options_C::SequenceEvent__ENTRYPOINTWBP_UI_ModeSelect_Op
 }
 
 
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnShootingRangeSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::OnShootingRangeSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShootingRangeSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnTutorialButtonSelected
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::OnTutorialButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTutorialButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.CheckIfNewPlayer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::CheckIfNewPlayer()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckIfNewPlayer", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.UpdateButtonsBasedOnAccess
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::UpdateButtonsBasedOnAccess()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateButtonsBasedOnAccess", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ResetButtonsVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -124,37 +106,19 @@ void UWBP_UI_ModeSelect_Options_C::ResetButtonsVisuals()
 }
 
 
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ShowHideAdditionalInfo
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.PrePush_1DD92D19442464893EA74FBDE171C37F
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ForceHide                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ModeSelect_Options_C::ShowHideAdditionalInfo(bool ForceHide)
+void UWBP_UI_ModeSelect_Options_C::PrePush_1DD92D19442464893EA74FBDE171C37F(class USBZMenuStackScreenWidget* MenuWidget)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowHideAdditionalInfo", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_1DD92D19442464893EA74FBDE171C37F", FnName));
 
-	Params::WBP_UI_ModeSelect_Options_C_ShowHideAdditionalInfo Parms{};
+	Params::WBP_UI_ModeSelect_Options_C_PrePush_1DD92D19442464893EA74FBDE171C37F Parms{};
 
-	Parms.ForceHide = ForceHide;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnControlRefPressed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::OnControlRefPressed(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlRefPressed", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_OnControlRefPressed Parms{};
-
-	Parms.ActionName = ActionName;
+	Parms.MenuWidget = MenuWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -178,273 +142,25 @@ void UWBP_UI_ModeSelect_Options_C::PostPush_1DD92D19442464893EA74FBDE171C37F(cla
 }
 
 
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.PrePush_1DD92D19442464893EA74FBDE171C37F
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnTutorialButtonSelected
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_ModeSelect_Options_C::PrePush_1DD92D19442464893EA74FBDE171C37F(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_UI_ModeSelect_Options_C::OnTutorialButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_1DD92D19442464893EA74FBDE171C37F", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_PrePush_1DD92D19442464893EA74FBDE171C37F Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTutorialButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnShootingRangeSelected
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_ModeSelect_Options_C::OnShootingRangeSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnButtonFullyShown
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::OnButtonFullyShown()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonFullyShown", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ClearFocusedButton
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::ClearFocusedButton()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClearFocusedButton", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::Construct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnPartyCreated
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ModeSelect_Options_C::OnPartyCreated()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPartyCreated", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShootingRangeSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -470,24 +186,6 @@ void UWBP_UI_ModeSelect_Options_C::OnPrivilegeChanged(ESBZUserPrivilegesProxy Pr
 }
 
 
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnInstallStateChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ModeSelect_Options_C::OnInstallStateChanged(bool bIsGameInstallPending)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInstallStateChanged", FnName));
-
-	Params::WBP_UI_ModeSelect_Options_C_OnInstallStateChanged Parms{};
-
-	Parms.bIsGameInstallPending = bIsGameInstallPending;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnPlayerPartyChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -506,6 +204,60 @@ void UWBP_UI_ModeSelect_Options_C::OnPlayerPartyChanged(const class FString& Pla
 }
 
 
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnPartyCreated
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::OnPartyCreated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPartyCreated", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnInstallStateChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsGameInstallPending                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::OnInstallStateChanged(bool bIsGameInstallPending)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInstallStateChanged", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_OnInstallStateChanged Parms{};
+
+	Parms.bIsGameInstallPending = bIsGameInstallPending;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnGameStartEntered
 // (BlueprintCallable, BlueprintEvent)
 
@@ -515,6 +267,214 @@ void UWBP_UI_ModeSelect_Options_C::OnGameStartEntered()
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGameStartEntered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnControlRefPressed
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::OnControlRefPressed(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlRefPressed", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_OnControlRefPressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.OnButtonFullyShown
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::OnButtonFullyShown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonFullyShown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ExecuteUbergraph_WBP_UI_ModeSelect_Options
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::ExecuteUbergraph_WBP_UI_ModeSelect_Options(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_ModeSelect_Options_C", "ExecuteUbergraph_WBP_UI_ModeSelect_Options", FuncInfo);
+
+	Params::WBP_UI_ModeSelect_Options_C_ExecuteUbergraph_WBP_UI_ModeSelect_Options Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ClearFocusedButton
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::ClearFocusedButton()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClearFocusedButton", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.CheckIfNewPlayer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::CheckIfNewPlayer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckIfNewPlayer", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_2_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_WBP_UI_ModeSelect_ModeButton_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_Tutorial_Button_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_7_OnShowAdditionalInfo__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_SoloMode_Button_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -536,19 +496,59 @@ void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_ShootingRan
 }
 
 
-// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.ExecuteUbergraph_WBP_UI_ModeSelect_Options
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ModeSelect_Options_C::ExecuteUbergraph_WBP_UI_ModeSelect_Options(int32 EntryPoint)
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_ModeSelect_Options_C", "ExecuteUbergraph_WBP_UI_ModeSelect_Options", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_ModeSelect_Options_C_ExecuteUbergraph_WBP_UI_ModeSelect_Options Parms{};
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_Quickplay_Button_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ModeSelect_Options.WBP_UI_ModeSelect_Options_C.BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ModeSelect_Options_C::BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_ModeSelect_Options_C_BndEvt__WBP_UI_ModeSelect_Options_FindHeist_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

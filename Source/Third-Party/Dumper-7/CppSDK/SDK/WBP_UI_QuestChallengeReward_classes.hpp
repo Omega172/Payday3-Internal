@@ -36,18 +36,18 @@ public:
 	struct FLinearColor                           EmptyIconColor;                                    // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EmptySet();
-	void ExecuteUbergraph_WBP_UI_QuestChallengeReward(int32 EntryPoint);
-	void ItemInitialized(const class USBZInventoryBaseData* NewItem);
-	void OnImageLoaded(class UObject* LoadedObject);
-	void OnLoadingChanged(bool bIsLoading);
-	void SetClaimed(bool IsClaimed);
-	void SetEmptyIcon();
-	void SetIcon(class UPaperSprite* InSprite);
-	void SetIconTexture(class UTexture2D* InTexture);
-	void SetName();
+	void SpriteLoaded(class UPaperSprite* OutLoadedSprite_SpriteLoaded);
 	void SetType();
-	void SpriteLoaded(class UPaperSprite* OutLoadedSprite);
+	void SetName();
+	void SetIconTexture(class UTexture2D* InTexture);
+	void SetIcon(class UPaperSprite* InSprite);
+	void SetEmptyIcon();
+	void SetClaimed(bool IsClaimed);
+	void OnLoadingChanged(bool bIsLoading_OnLoadingChanged);
+	void OnImageLoaded(class UObject* LoadedObject_OnImageLoaded);
+	void ItemInitialized(const class USBZInventoryBaseData* NewItem_ItemInitialized);
+	void ExecuteUbergraph_WBP_UI_QuestChallengeReward(int32 EntryPoint);
+	void EmptySet();
 
 public:
 	static class UClass* StaticClass()

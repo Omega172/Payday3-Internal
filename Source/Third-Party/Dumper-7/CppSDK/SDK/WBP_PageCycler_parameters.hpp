@@ -16,19 +16,50 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_PageCycler.WBP_PageCycler_C.CreateAndAddPageCount
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_PageCycler_C_CreateAndAddPageCount final
+// Function WBP_PageCycler.WBP_PageCycler_C.UpdateActiveIndex
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PageCycler_C_UpdateActiveIndex final
 {
 public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 InIndex)>                K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PageCycleCounter_C*                CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         InNewIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PageCycler_C_CreateAndAddPageCount;
+DUMPER7_ASSERTS_WBP_PageCycler_C_UpdateActiveIndex;
+
+// Function WBP_PageCycler.WBP_PageCycler_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PageCycler_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PageCycler_C_PreConstruct;
+
+// Function WBP_PageCycler.WBP_PageCycler_C.OnNavItemClicked
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PageCycler_C_OnNavItemClicked final
+{
+public:
+	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PageCycler_C_OnNavItemClicked;
+
+// Function WBP_PageCycler.WBP_PageCycler_C.OnInputTypeChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PageCycler_C_OnInputTypeChanged final
+{
+public:
+	bool                                          bKeyboardMouseInput;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PageCycler_C_OnInputTypeChanged;
+
+// Function WBP_PageCycler.WBP_PageCycler_C.OnAddedPage
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PageCycler_C_OnAddedPage final
+{
+public:
+	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PageCycler_C_OnAddedPage;
 
 // Function WBP_PageCycler.WBP_PageCycler_C.ExecuteUbergraph_WBP_PageCycler
 // 0x0078 (0x0078 - 0x0000)
@@ -58,50 +89,19 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PageCycler_C_ExecuteUbergraph_WBP_PageCycler;
 
-// Function WBP_PageCycler.WBP_PageCycler_C.OnAddedPage
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PageCycler_C_OnAddedPage final
+// Function WBP_PageCycler.WBP_PageCycler_C.CreateAndAddPageCount
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_PageCycler_C_CreateAndAddPageCount final
 {
 public:
-	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 InIndex)>                K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PageCycleCounter_C*                CallFunc_Create_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_PageCycler_C_OnAddedPage;
-
-// Function WBP_PageCycler.WBP_PageCycler_C.OnInputTypeChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PageCycler_C_OnInputTypeChanged final
-{
-public:
-	bool                                          bKeyboardMouseInput;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PageCycler_C_OnInputTypeChanged;
-
-// Function WBP_PageCycler.WBP_PageCycler_C.OnNavItemClicked
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PageCycler_C_OnNavItemClicked final
-{
-public:
-	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PageCycler_C_OnNavItemClicked;
-
-// Function WBP_PageCycler.WBP_PageCycler_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PageCycler_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PageCycler_C_PreConstruct;
-
-// Function WBP_PageCycler.WBP_PageCycler_C.UpdateActiveIndex
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PageCycler_C_UpdateActiveIndex final
-{
-public:
-	int32                                         InNewIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PageCycler_C_UpdateActiveIndex;
+DUMPER7_ASSERTS_WBP_PageCycler_C_CreateAndAddPageCount;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

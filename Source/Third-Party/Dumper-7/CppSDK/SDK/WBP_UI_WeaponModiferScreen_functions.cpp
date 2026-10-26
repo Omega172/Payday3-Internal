@@ -16,15 +16,189 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.UpdateActiveButtonControlsReference
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_WeaponModiferScreen_C::BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature()
+void UWBP_UI_WeaponModiferScreen_C::UpdateActiveButtonControlsReference()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateActiveButtonControlsReference", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetPartPadding
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::SetPartPadding()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPartPadding", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetDefaultFocus
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::SetDefaultFocus()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDefaultFocus", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_WeaponModiferScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZMainMenuWeaponPartProgressionButton*SelectedButton_OnWeaponPartButtonSelected              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonSelected(const class USBZMainMenuWeaponPartProgressionButton* SelectedButton_OnWeaponPartButtonSelected)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponPartButtonSelected", FnName));
+
+	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected Parms{};
+
+	Parms.SelectedButton_OnWeaponPartButtonSelected = SelectedButton_OnWeaponPartButtonSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonEquipped
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZMainMenuWeaponPartProgressionButton*EquippedButton_OnWeaponPartButtonEquipped              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonEquipped(const class USBZMainMenuWeaponPartProgressionButton* EquippedButton_OnWeaponPartButtonEquipped)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponPartButtonEquipped", FnName));
+
+	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped Parms{};
+
+	Parms.EquippedButton_OnWeaponPartButtonEquipped = EquippedButton_OnWeaponPartButtonEquipped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_WeaponModiferScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::OnControlsReferenceClicked(class FName InActionInput)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+
+	Params::WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked Parms{};
+
+	Parms.InActionInput = InActionInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponModiferScreen_C::OnBackPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.NewWeaponPartFocused
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZMainMenuWeaponPartProgressionButton*NewFocusedButton_NewWeaponPartFocused                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::NewWeaponPartFocused(const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton_NewWeaponPartFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NewWeaponPartFocused", FnName));
+
+	Params::WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused Parms{};
+
+	Parms.NewFocusedButton_NewWeaponPartFocused = NewFocusedButton_NewWeaponPartFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ExecuteUbergraph_WBP_UI_WeaponModiferScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponModiferScreen_C::ExecuteUbergraph_WBP_UI_WeaponModiferScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_WeaponModiferScreen_C", "ExecuteUbergraph_WBP_UI_WeaponModiferScreen", FuncInfo);
+
+	Params::WBP_UI_WeaponModiferScreen_C_ExecuteUbergraph_WBP_UI_WeaponModiferScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -54,187 +228,13 @@ void UWBP_UI_WeaponModiferScreen_C::ConstructBlotSlotTexts(const class USBZWeapo
 }
 
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ExecuteUbergraph_WBP_UI_WeaponModiferScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_UI_WeaponModiferScreen_C::ExecuteUbergraph_WBP_UI_WeaponModiferScreen(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_WeaponModiferScreen_C", "ExecuteUbergraph_WBP_UI_WeaponModiferScreen", FuncInfo);
-
-	Params::WBP_UI_WeaponModiferScreen_C_ExecuteUbergraph_WBP_UI_WeaponModiferScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.NewWeaponPartFocused
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuWeaponPartProgressionButton*NewFocusedButton                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::NewWeaponPartFocused(const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton)
+void UWBP_UI_WeaponModiferScreen_C::BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NewWeaponPartFocused", FnName));
-
-	Params::WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused Parms{};
-
-	Parms.NewFocusedButton = NewFocusedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::OnBackPressed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
-
-	Params::WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_WeaponModiferScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonEquipped
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuWeaponPartProgressionButton*EquippedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonEquipped(const class USBZMainMenuWeaponPartProgressionButton* EquippedButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponPartButtonEquipped", FnName));
-
-	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped Parms{};
-
-	Parms.EquippedButton = EquippedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZMainMenuWeaponPartProgressionButton*SelectedButton                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::OnWeaponPartButtonSelected(const class USBZMainMenuWeaponPartProgressionButton* SelectedButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponPartButtonSelected", FnName));
-
-	Params::WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected Parms{};
-
-	Parms.SelectedButton = SelectedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponModiferScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_WeaponModiferScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetDefaultFocus
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::SetDefaultFocus()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDefaultFocus", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetPartPadding
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::SetPartPadding()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPartPadding", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.UpdateActiveButtonControlsReference
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_WeaponModiferScreen_C::UpdateActiveButtonControlsReference()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateActiveButtonControlsReference", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_WeaponModiferScreen_Widget_BuyItemButton_K2Node_ComponentBoundEvent_0_ButtonSelected__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

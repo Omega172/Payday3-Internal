@@ -28,11 +28,11 @@ public:
 	TArray<class UCheckBox*>                      Checkboxes;                                        // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ExecuteUbergraph_WBP_Blackmarket_PurchaseCount(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void RebuildButtons();
-	void SetCount(int32 InCount);
 	void SetMaxCount(int32 InMaxCount);
+	void SetCount(int32 InCount);
+	void RebuildButtons();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_Blackmarket_PurchaseCount(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

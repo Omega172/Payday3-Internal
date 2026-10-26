@@ -19,6 +19,281 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature final
+{
+public:
+	float                                         CurrentOffset;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature final
+{
+public:
+	float                                         CurrentOffset;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.ExecuteUbergraph_WBP_PlayerCardContainer
+// 0x01E8 (0x01E8 - 0x0000)
+struct WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_11;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_10;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_9;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_8;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_7;               // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_6;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FText& Text_0)>    K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_2;           // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, class FText>                K2Node_MakeMap_Map;                                // 0x0090(0x0050)()
+	TMap<class FName, class FText>                K2Node_MakeMap_Map_1;                              // 0x00E0(0x0050)()
+	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen_1;       // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, class FText>                K2Node_MakeMap_Map_2;                              // 0x0148(0x0050)()
+	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen_2;       // 0x0198(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_ComponentBoundEvent_CurrentOffset_1;        // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_ComponentBoundEvent_CurrentOffset;          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1BA[0x6];                                      // 0x01BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_Event_MenuButton;                           // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsFocused;                           // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1DB[0x1];                                      // 0x01DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast_1; // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleButtonFocusChanged
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_PlayerCardContainer_C_HandleButtonFocusChanged final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsButtonEnabled;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, class FText>                ButtonActionDisplayText;                           // 0x0010(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	TMap<class FName, class FText>                EmptyButtonActionDisplayText;                      // 0x0060(0x0050)(Edit, BlueprintVisible)
+	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_HandleButtonFocusChanged;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleFocusUpdateRequested
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PlayerCardContainer_C_HandleFocusUpdateRequested final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_UpdateFocus_bIsFocusUpdated;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_HandleFocusUpdateRequested;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HideOpenedContextMenu
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PlayerCardContainer_C_HideOpenedContextMenu final
+{
+public:
+	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_Social_ContextMenu_C*           CallFunc_IsContextMenuDisplayed_ContextMenu;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_HideOpenedContextMenu;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.InitPlatformFilterButtons
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PlayerCardContainer_C_InitPlatformFilterButtons final
+{
+public:
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZFirstPartyPlatform                        CallFunc_GetFirstPartyPlatform_ReturnValue;        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlatform                                  CallFunc_GetPlatformFromFirstPartyPlatformType_ReturnValue; // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_UI_PlayerCardContainer_FilterButton_C* K2Node_DynamicCast_AsWBP_UI_Player_Card_Container_Filter_Button; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPaperSprite*                           CallFunc_GetSpriteForPlatform_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_InitPlatformFilterButtons;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.LockScrollBar
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PlayerCardContainer_C_LockScrollBar final
+{
+public:
+	bool                                          LockScroll_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetScrollOffset_ReturnValue_1;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_VariableSet_ScrollBoxLockPos_ImplicitCast;  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_ScrollBoxLockPos_ImplicitCast_1; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_LockScrollBar;
+
 // Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.NavigateCards
 // 0x00D8 (0x00D8 - 0x0000)
 struct WBP_PlayerCardContainer_C_NavigateCards final
@@ -84,6 +359,44 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_OnFilterTextChanged;
 
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardFocused
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PlayerCardContainer_C_OnPlayerCardFocused final
+{
+public:
+	class USBZMenuButton*                         MenuButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_OnPlayerCardFocused;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PlayerCardContainer_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_PreConstruct;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetResultsWidgetSwitcherIndex
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PlayerCardContainer_C_SetResultsWidgetSwitcherIndex final
+{
+public:
+	bool                                          VisibleResults;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyChildren_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_SetResultsWidgetSwitcherIndex;
+
 // Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetSearchingVisuals
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_PlayerCardContainer_C_SetSearchingVisuals final
@@ -99,47 +412,6 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_SetSearchingVisuals;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.InitPlatformFilterButtons
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PlayerCardContainer_C_InitPlatformFilterButtons final
-{
-public:
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZFirstPartyPlatform                        CallFunc_GetFirstPartyPlatform_ReturnValue;        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlatform                                  CallFunc_GetPlatformFromFirstPartyPlatformType_ReturnValue; // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_UI_PlayerCardContainer_FilterButton_C* K2Node_DynamicCast_AsWBP_UI_Player_Card_Container_Filter_Button; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           CallFunc_GetSpriteForPlatform_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_InitPlatformFilterButtons;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.LockScrollBar
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PlayerCardContainer_C_LockScrollBar final
-{
-public:
-	bool                                          LockScroll_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScrollOffset_ReturnValue_1;            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F[0x1];                                        // 0x000F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_ScrollBoxLockPos_ImplicitCast;  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        K2Node_VariableSet_ScrollBoxLockPos_ImplicitCast_1; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_LockScrollBar;
 
 // Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateFocus
 // 0x0070 (0x0070 - 0x0000)
@@ -183,278 +455,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x006F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_UpdateFocus;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetResultsWidgetSwitcherIndex
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PlayerCardContainer_C_SetResultsWidgetSwitcherIndex final
-{
-public:
-	bool                                          VisibleResults;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyChildren_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_Select_Default;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_SetResultsWidgetSwitcherIndex;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleFocusUpdateRequested
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PlayerCardContainer_C_HandleFocusUpdateRequested final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_UpdateFocus_bIsFocusUpdated;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_HandleFocusUpdateRequested;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleButtonFocusChanged
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_PlayerCardContainer_C_HandleButtonFocusChanged final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsButtonEnabled;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, class FText>                ButtonActionDisplayText;                           // 0x0010(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
-	TMap<class FName, class FText>                EmptyButtonActionDisplayText;                      // 0x0060(0x0050)(Edit, BlueprintVisible)
-	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_HandleButtonFocusChanged;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HideOpenedContextMenu
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PlayerCardContainer_C_HideOpenedContextMenu final
-{
-public:
-	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_Social_ContextMenu_C*           CallFunc_IsContextMenuDisplayed_ContextMenu;       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_HideOpenedContextMenu;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature final
-{
-public:
-	float                                         CurrentOffset;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature final
-{
-public:
-	float                                         CurrentOffset;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardFocused
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PlayerCardContainer_C_OnPlayerCardFocused final
-{
-public:
-	class USBZMenuButton*                         MenuButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_OnPlayerCardFocused;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PlayerCardContainer_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_PreConstruct;
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.ExecuteUbergraph_WBP_PlayerCardContainer
-// 0x01E8 (0x01E8 - 0x0000)
-struct WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B[0x5];                                        // 0x000B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_11;              // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_10;              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_9;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_8;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_7;               // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_6;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FText& Text_0)>    K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen;         // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_2;           // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x0080(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled_1;           // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, class FText>                K2Node_MakeMap_Map;                                // 0x0090(0x0050)()
-	TMap<class FName, class FText>                K2Node_MakeMap_Map_1;                              // 0x00E0(0x0050)()
-	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen_1;       // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x0140(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, class FText>                K2Node_MakeMap_Map_2;                              // 0x0148(0x0050)()
-	class UWBP_UI_SocialScreen_C*                 K2Node_DynamicCast_AsWBP_UI_Social_Screen_2;       // 0x0198(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A1[0x3];                                      // 0x01A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_ComponentBoundEvent_CurrentOffset_1;        // 0x01A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_ComponentBoundEvent_CurrentOffset;          // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AC[0x4];                                      // 0x01AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x01B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BA[0x6];                                      // 0x01BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x01C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C9[0x7];                                      // 0x01C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_Event_MenuButton;                           // 0x01D0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsFocused;                           // 0x01D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x01D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1DB[0x1];                                      // 0x01DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast_1; // 0x01E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

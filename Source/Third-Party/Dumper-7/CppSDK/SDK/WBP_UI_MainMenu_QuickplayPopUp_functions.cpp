@@ -16,232 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_MainMenu_QuickplayPopUp_C", "ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp", FuncInfo);
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.LobbyTypeSelectorNavigateDown
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_MainMenu_QuickplayPopUp_C::LobbyTypeSelectorNavigateDown(EUINavigation Navigation_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LobbyTypeSelectorNavigateDown", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnControlsReferenceClicked
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.UpdateType
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZOnlineJoinType                      InLobbyType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_QuickplayPopUp_C::OnControlsReferenceClicked(class FName ActionName)
+void UWBP_UI_MainMenu_QuickplayPopUp_C::UpdateType(ESBZOnlineJoinType InLobbyType)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateType", FnName));
 
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked Parms{};
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_UpdateType Parms{};
 
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Set Difficulty
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_QuickplayPopUp_C::Set_Difficulty(ESBZDifficulty InDifficulty)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Difficulty", FnName));
-
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_Set_Difficulty Parms{};
-
-	Parms.InDifficulty = InDifficulty;
+	Parms.InLobbyType = InLobbyType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -265,19 +52,232 @@ void UWBP_UI_MainMenu_QuickplayPopUp_C::Update_Difficulty_Visuals(ESBZDifficulty
 }
 
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.UpdateType
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Set Difficulty
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZOnlineJoinType                      InLobbyType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_QuickplayPopUp_C::UpdateType(ESBZOnlineJoinType InLobbyType)
+void UWBP_UI_MainMenu_QuickplayPopUp_C::Set_Difficulty(ESBZDifficulty InDifficulty)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateType", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Difficulty", FnName));
 
-	Params::WBP_UI_MainMenu_QuickplayPopUp_C_UpdateType Parms{};
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_Set_Difficulty Parms{};
 
-	Parms.InLobbyType = InLobbyType;
+	Parms.InDifficulty = InDifficulty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnControlsReferenceClicked
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::OnControlsReferenceClicked(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.LobbyTypeSelectorNavigateDown
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_MainMenu_QuickplayPopUp_C::LobbyTypeSelectorNavigateDown(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LobbyTypeSelectorNavigateDown", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_MainMenu_QuickplayPopUp_C", "ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp", FuncInfo);
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_QuickplayPopUp_C::BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

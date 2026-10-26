@@ -25,8 +25,8 @@ public:
 	class UWBP_ConfirmationPopup_InventoryItemDisplay_C* WBP_ConfirmationPopup_InventoryItemDisplay; // 0x0390(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Loadout_ConfirmationPopup(int32 EntryPoint);
 	void OnItemDataInitialized();
+	void ExecuteUbergraph_WBP_Loadout_ConfirmationPopup(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

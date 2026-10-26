@@ -16,172 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.NavigateCards
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_PlayerCardContainer_C::NavigateCards(EUINavigation Navigation_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavigateCards", FnName));
-
-	Params::WBP_PlayerCardContainer_C_NavigateCards Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFilterTextChanged
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_PlayerCardContainer_C::OnFilterTextChanged(const class FText& InText)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFilterTextChanged", FnName));
-
-	Params::WBP_PlayerCardContainer_C_OnFilterTextChanged Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetSearchingVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    SearchStarted                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::SetSearchingVisuals(bool SearchStarted)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSearchingVisuals", FnName));
-
-	Params::WBP_PlayerCardContainer_C_SetSearchingVisuals Parms{};
-
-	Parms.SearchStarted = SearchStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.InitPlatformFilterButtons
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::InitPlatformFilterButtons()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitPlatformFilterButtons", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.LockScrollBar
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    LockScroll_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::LockScrollBar(bool LockScroll_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LockScrollBar", FnName));
-
-	Params::WBP_PlayerCardContainer_C_LockScrollBar Parms{};
-
-	Parms.LockScroll_0 = LockScroll_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateFocus
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Social_PlayerCard_C*      DestructedContextedMenu                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UWBP_UI_Social_ContextButton_C*   DestructedContextedFocusedButton                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   bIsFocusUpdated                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::UpdateFocus(class UWBP_UI_Social_PlayerCard_C* DestructedContextedMenu, class UWBP_UI_Social_ContextButton_C* DestructedContextedFocusedButton, bool* bIsFocusUpdated)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateFocus", FnName));
-
-	Params::WBP_PlayerCardContainer_C_UpdateFocus Parms{};
-
-	Parms.DestructedContextedMenu = DestructedContextedMenu;
-	Parms.DestructedContextedFocusedButton = DestructedContextedFocusedButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsFocusUpdated != nullptr)
-		*bIsFocusUpdated = Parms.bIsFocusUpdated;
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetResultsWidgetSwitcherIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::SetResultsWidgetSwitcherIndex()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetResultsWidgetSwitcherIndex", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleFocusUpdateRequested
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::HandleFocusUpdateRequested()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleFocusUpdateRequested", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleButtonFocusChanged
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText)
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleButtonFocusChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_PlayerCardContainer_C_HandleButtonFocusChanged Parms{};
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.IsButtonEnabled = IsButtonEnabled;
-	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HideOpenedContextMenu
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::HideOpenedContextMenu()
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideOpenedContextMenu", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -203,19 +92,39 @@ void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -257,19 +166,37 @@ void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Playstation_Fil
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// float                                   CurrentOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature", FnName));
 
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature Parms{};
 
-	Parms.Button = Button;
+	Parms.CurrentOffset = CurrentOffset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// float                                   CurrentOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature", FnName));
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature Parms{};
+
+	Parms.CurrentOffset = CurrentOffset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -311,25 +238,194 @@ void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Windows_Filter_
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardDataUpdated
-// (Event, Public, BlueprintEvent)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerCardContainer_C::OnPlayerCardDataUpdated()
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerCardDataUpdated", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.ExecuteUbergraph_WBP_PlayerCardContainer
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::ExecuteUbergraph_WBP_PlayerCardContainer(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_PlayerCardContainer_C", "ExecuteUbergraph_WBP_PlayerCardContainer", FuncInfo);
+
+	Params::WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleButtonFocusChanged
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsButtonEnabled                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TMap<class FName, class FText>&   ButtonActionDisplayText                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_PlayerCardContainer_C::HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleButtonFocusChanged", FnName));
+
+	Params::WBP_PlayerCardContainer_C_HandleButtonFocusChanged Parms{};
+
+	Parms.Button = Button;
+	Parms.IsButtonEnabled = IsButtonEnabled;
+	Parms.ButtonActionDisplayText = std::move(ButtonActionDisplayText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HandleFocusUpdateRequested
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::HandleFocusUpdateRequested()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleFocusUpdateRequested", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateContainerEntries
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.HideOpenedContextMenu
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerCardContainer_C::UpdateContainerEntries()
+void UWBP_PlayerCardContainer_C::HideOpenedContextMenu()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateContainerEntries", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideOpenedContextMenu", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.InitPlatformFilterButtons
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::InitPlatformFilterButtons()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitPlatformFilterButtons", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.LockScrollBar
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    LockScroll_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::LockScrollBar(bool LockScroll_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LockScrollBar", FnName));
+
+	Params::WBP_PlayerCardContainer_C_LockScrollBar Parms{};
+
+	Parms.LockScroll_0 = LockScroll_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.NavigateCards
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_PlayerCardContainer_C::NavigateCards(EUINavigation Navigation_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavigateCards", FnName));
+
+	Params::WBP_PlayerCardContainer_C_NavigateCards Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFilterTextChanged
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_PlayerCardContainer_C::OnFilterTextChanged(const class FText& InText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFilterTextChanged", FnName));
+
+	Params::WBP_PlayerCardContainer_C_OnFilterTextChanged Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFocusUpdateRequested
+// (Event, Public, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::OnFocusUpdateRequested()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusUpdateRequested", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -347,159 +443,15 @@ void UWBP_PlayerCardContainer_C::OnPartyPanelRefreshComplete()
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnFocusUpdateRequested
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnPlayerCardDataUpdated
 // (Event, Public, BlueprintEvent)
 
-void UWBP_PlayerCardContainer_C::OnFocusUpdateRequested()
+void UWBP_PlayerCardContainer_C::OnPlayerCardDataUpdated()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusUpdateRequested", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerCardDataUpdated", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PlayerCardContainer_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   CurrentOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature Parms{};
-
-	Parms.CurrentOffset = CurrentOffset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// float                                   CurrentOffset                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature Parms{};
-
-	Parms.CurrentOffset = CurrentOffset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerCardContainer_C::BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_PlayerCardContainer_C_BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -541,21 +493,69 @@ void UWBP_PlayerCardContainer_C::PreConstruct(bool IsDesignTime)
 }
 
 
-// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.ExecuteUbergraph_WBP_PlayerCardContainer
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetResultsWidgetSwitcherIndex
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerCardContainer_C::ExecuteUbergraph_WBP_PlayerCardContainer(int32 EntryPoint)
+void UWBP_PlayerCardContainer_C::SetResultsWidgetSwitcherIndex()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_PlayerCardContainer_C", "ExecuteUbergraph_WBP_PlayerCardContainer", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetResultsWidgetSwitcherIndex", FnName));
 
-	Params::WBP_PlayerCardContainer_C_ExecuteUbergraph_WBP_PlayerCardContainer Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.SetSearchingVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    SearchStarted                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::SetSearchingVisuals(bool SearchStarted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSearchingVisuals", FnName));
+
+	Params::WBP_PlayerCardContainer_C_SetSearchingVisuals Parms{};
+
+	Parms.SearchStarted = SearchStarted;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateContainerEntries
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerCardContainer_C::UpdateContainerEntries()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateContainerEntries", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerCardContainer.WBP_PlayerCardContainer_C.UpdateFocus
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Social_PlayerCard_C*      DestructedContextedMenu                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_UI_Social_ContextButton_C*   DestructedContextedFocusedButton                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bIsFocusUpdated                                        (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerCardContainer_C::UpdateFocus(class UWBP_UI_Social_PlayerCard_C* DestructedContextedMenu, class UWBP_UI_Social_ContextButton_C* DestructedContextedFocusedButton, bool* bIsFocusUpdated)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateFocus", FnName));
+
+	Params::WBP_PlayerCardContainer_C_UpdateFocus Parms{};
+
+	Parms.DestructedContextedMenu = DestructedContextedMenu;
+	Parms.DestructedContextedFocusedButton = DestructedContextedFocusedButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsFocusUpdated != nullptr)
+		*bIsFocusUpdated = Parms.bIsFocusUpdated;
 }
 
 

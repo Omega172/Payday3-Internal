@@ -16,42 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.ExecuteUbergraph_WBP_CheckmarkWidget
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CheckmarkWidget_C::ExecuteUbergraph_WBP_CheckmarkWidget(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CheckmarkWidget_C", "ExecuteUbergraph_WBP_CheckmarkWidget", FuncInfo);
-
-	Params::WBP_CheckmarkWidget_C_ExecuteUbergraph_WBP_CheckmarkWidget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CheckmarkWidget_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_CheckmarkWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.SetChecked
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -65,6 +29,42 @@ void UWBP_CheckmarkWidget_C::SetChecked(bool InIsChecked)
 	Params::WBP_CheckmarkWidget_C_SetChecked Parms{};
 
 	Parms.InIsChecked = InIsChecked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CheckmarkWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_CheckmarkWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CheckmarkWidget.WBP_CheckmarkWidget_C.ExecuteUbergraph_WBP_CheckmarkWidget
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CheckmarkWidget_C::ExecuteUbergraph_WBP_CheckmarkWidget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CheckmarkWidget_C", "ExecuteUbergraph_WBP_CheckmarkWidget", FuncInfo);
+
+	Params::WBP_CheckmarkWidget_C_ExecuteUbergraph_WBP_CheckmarkWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

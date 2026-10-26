@@ -29,14 +29,14 @@ public:
 	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DecrementCharacterPreferenceSlot();
-	void ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen(int32 EntryPoint);
-	void IncrementCharacterPreferenceSlot();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
+	void UpdateCharacterSlotButtonControlsReference(ESBZCharacterPreferenceButtonSelectionAction SelectionAction_UpdateCharacterSlotButtonControlsReference);
 	void OnLostStackFocused();
-	void UpdateCharacterSlotButtonControlsReference(ESBZCharacterPreferenceButtonSelectionAction SelectionAction);
+	void OnInitialized();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void IncrementCharacterPreferenceSlot();
+	void ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen(int32 EntryPoint);
+	void DecrementCharacterPreferenceSlot();
 
 public:
 	static class UClass* StaticClass()

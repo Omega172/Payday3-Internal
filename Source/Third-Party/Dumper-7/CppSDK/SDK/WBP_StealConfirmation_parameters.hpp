@@ -17,6 +17,51 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.SetStoreItem
+// 0x0150 (0x0150 - 0x0000)
+struct WBP_StealConfirmation_C_SetStoreItem final
+{
+public:
+	struct FSBZStoreBaseItem                      SBZStoreBaseItem;                                  // 0x0000(0x0150)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_StealConfirmation_C_SetStoreItem;
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.SetItem
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_StealConfirmation_C_SetItem final
+{
+public:
+	const class USBZInventoryBaseData*            ItemData;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_StealConfirmation_C_SetItem;
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_StealConfirmation_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_StealConfirmation_C_PreConstruct;
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_StealConfirmation_C_OnFlowStateChanged final
+{
+public:
+	ESBZUIPurchaseFlowState                       NewState_OnFlowStateChanged;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_StealConfirmation_C_OnFlowStateChanged;
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowConfigured
+// 0x0180 (0x0180 - 0x0000)
+struct WBP_StealConfirmation_C_OnFlowConfigured final
+{
+public:
+	struct FSBZStoreItemUIData                    StoreItemUIData_OnFlowConfigured;                  // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_StealConfirmation_C_OnFlowConfigured;
+
 // Function WBP_StealConfirmation.WBP_StealConfirmation_C.ExecuteUbergraph_WBP_StealConfirmation
 // 0x0400 (0x0400 - 0x0000)
 struct WBP_StealConfirmation_C_ExecuteUbergraph_WBP_StealConfirmation final
@@ -53,51 +98,6 @@ public:
 	class UWidget*                                K2Node_Select_Default_1;                           // 0x03F8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_StealConfirmation_C_ExecuteUbergraph_WBP_StealConfirmation;
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowConfigured
-// 0x0180 (0x0180 - 0x0000)
-struct WBP_StealConfirmation_C_OnFlowConfigured final
-{
-public:
-	struct FSBZStoreItemUIData                    StoreItemUIData;                                   // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_StealConfirmation_C_OnFlowConfigured;
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_StealConfirmation_C_OnFlowStateChanged final
-{
-public:
-	ESBZUIPurchaseFlowState                       NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_StealConfirmation_C_OnFlowStateChanged;
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_StealConfirmation_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_StealConfirmation_C_PreConstruct;
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.SetItem
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_StealConfirmation_C_SetItem final
-{
-public:
-	const class USBZInventoryBaseData*            ItemData;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_StealConfirmation_C_SetItem;
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.SetStoreItem
-// 0x0150 (0x0150 - 0x0000)
-struct WBP_StealConfirmation_C_SetStoreItem final
-{
-public:
-	struct FSBZStoreBaseItem                      SBZStoreBaseItem;                                  // 0x0000(0x0150)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_StealConfirmation_C_SetStoreItem;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

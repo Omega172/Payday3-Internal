@@ -16,78 +16,29 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.CanInspectItem
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      InInspectData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.SetVisualsForInspect
+// (BlueprintCallable, BlueprintEvent)
 
-bool UWBP_UI_Blackmarket_Inspect_C::CanInspectItem(const class USBZInventoryBaseData* InInspectData)
+void UWBP_UI_Blackmarket_Inspect_C::SetVisualsForInspect()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanInspectItem", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetVisualsForInspect", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_CanInspectItem Parms{};
-
-	Parms.InInspectData = InInspectData;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.ExecuteUbergraph_WBP_UI_Blackmarket_Inspect
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Blackmarket_Inspect_C::ExecuteUbergraph_WBP_UI_Blackmarket_Inspect(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Blackmarket_Inspect_C", "ExecuteUbergraph_WBP_UI_Blackmarket_Inspect", FuncInfo);
-
-	Params::WBP_UI_Blackmarket_Inspect_C_ExecuteUbergraph_WBP_UI_Blackmarket_Inspect Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.GetModularSlotMapFromWeaponSkin
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const class USBZWeaponSkinDataAsset*    Weapon_Skin                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TMap<class USBZModularPartSlotBase*, struct FSBZEquippablePartConfigGroup>*Mod_Map                                                (Parm, OutParm)
-
-void UWBP_UI_Blackmarket_Inspect_C::GetModularSlotMapFromWeaponSkin(const class USBZWeaponSkinDataAsset* Weapon_Skin, TMap<class USBZModularPartSlotBase*, struct FSBZEquippablePartConfigGroup>* Mod_Map)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetModularSlotMapFromWeaponSkin", FnName));
-
-	Params::WBP_UI_Blackmarket_Inspect_C_GetModularSlotMapFromWeaponSkin Parms{};
-
-	Parms.Weapon_Skin = Weapon_Skin;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Mod_Map != nullptr)
-		*Mod_Map = std::move(Parms.Mod_Map);
-}
-
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnBlendOut_A165E7FC40F3743584AB39B8F67756E1
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnBlendOut_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
+void UWBP_UI_Blackmarket_Inspect_C::OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBlendOut_A165E7FC40F3743584AB39B8F67756E1", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnBlendOut_A165E7FC40F3743584AB39B8F67756E1 Parms{};
+	Params::WBP_UI_Blackmarket_Inspect_C_OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -95,17 +46,17 @@ void UWBP_UI_Blackmarket_Inspect_C::OnBlendOut_A165E7FC40F3743584AB39B8F67756E1(
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnCompleted_A165E7FC40F3743584AB39B8F67756E1
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnCompleted_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
+void UWBP_UI_Blackmarket_Inspect_C::OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCompleted_A165E7FC40F3743584AB39B8F67756E1", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnCompleted_A165E7FC40F3743584AB39B8F67756E1 Parms{};
+	Params::WBP_UI_Blackmarket_Inspect_C_OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -113,37 +64,31 @@ void UWBP_UI_Blackmarket_Inspect_C::OnCompleted_A165E7FC40F3743584AB39B8F67756E1
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnControlReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnControlReferenceClicked(class FName ActionName)
+void UWBP_UI_Blackmarket_Inspect_C::OnLostStackFocused()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferenceClicked", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnControlReferenceClicked Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLoaded_BCC49D6440060E030B1348B2BC9D612B
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_UI_Blackmarket_Inspect_C::OnLoaded_BCC49D6440060E030B1348B2BC9D612B(class UObject* Loaded)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_BCC49D6440060E030B1348B2BC9D612B", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnGainedStackFocused Parms{};
+	Params::WBP_UI_Blackmarket_Inspect_C_OnLoaded_BCC49D6440060E030B1348B2BC9D612B Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -167,47 +112,53 @@ void UWBP_UI_Blackmarket_Inspect_C::OnInterrupted_A165E7FC40F3743584AB39B8F67756
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLoaded_BCC49D6440060E030B1348B2BC9D612B
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnLoaded_BCC49D6440060E030B1348B2BC9D612B(class UObject* Loaded)
+void UWBP_UI_Blackmarket_Inspect_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_BCC49D6440060E030B1348B2BC9D612B", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnLoaded_BCC49D6440060E030B1348B2BC9D612B Parms{};
+	Params::WBP_UI_Blackmarket_Inspect_C_OnGainedStackFocused Parms{};
 
-	Parms.Loaded = Loaded;
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnControlReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnLostStackFocused()
+void UWBP_UI_Blackmarket_Inspect_C::OnControlReferenceClicked(class FName ActionName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferenceClicked", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Blackmarket_Inspect_C_OnControlReferenceClicked Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnCompleted_A165E7FC40F3743584AB39B8F67756E1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
+void UWBP_UI_Blackmarket_Inspect_C::OnCompleted_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCompleted_A165E7FC40F3743584AB39B8F67756E1", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1 Parms{};
+	Params::WBP_UI_Blackmarket_Inspect_C_OnCompleted_A165E7FC40F3743584AB39B8F67756E1 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -215,17 +166,17 @@ void UWBP_UI_Blackmarket_Inspect_C::OnNotifyBegin_A165E7FC40F3743584AB39B8F67756
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnBlendOut_A165E7FC40F3743584AB39B8F67756E1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
+void UWBP_UI_Blackmarket_Inspect_C::OnBlendOut_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBlendOut_A165E7FC40F3743584AB39B8F67756E1", FnName));
 
-	Params::WBP_UI_Blackmarket_Inspect_C_OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1 Parms{};
+	Params::WBP_UI_Blackmarket_Inspect_C_OnBlendOut_A165E7FC40F3743584AB39B8F67756E1 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -233,15 +184,42 @@ void UWBP_UI_Blackmarket_Inspect_C::OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1
 }
 
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.SetVisualsForInspect
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.ExecuteUbergraph_WBP_UI_Blackmarket_Inspect
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Blackmarket_Inspect_C::SetVisualsForInspect()
+void UWBP_UI_Blackmarket_Inspect_C::ExecuteUbergraph_WBP_UI_Blackmarket_Inspect(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Blackmarket_Inspect_C", "ExecuteUbergraph_WBP_UI_Blackmarket_Inspect", FuncInfo);
+
+	Params::WBP_UI_Blackmarket_Inspect_C_ExecuteUbergraph_WBP_UI_Blackmarket_Inspect Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.CanInspectItem
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      InInspectData_CanInspectItem                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_CanInspectItem                             (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_UI_Blackmarket_Inspect_C::CanInspectItem(const class USBZInventoryBaseData* InInspectData_CanInspectItem)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetVisualsForInspect", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanInspectItem", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Blackmarket_Inspect_C_CanInspectItem Parms{};
+
+	Parms.InInspectData_CanInspectItem = InInspectData_CanInspectItem;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

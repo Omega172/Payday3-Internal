@@ -31,9 +31,9 @@ public:
 	class UWBP_Widget_CurrencyWidget_C*           StandardPrice;                                     // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay(int32 EntryPoint);
-	void InitializeItem(const class USBZInventoryBaseData* InventoryItem, int64 Cost, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage);
 	void SetPrice(int64 Price, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage);
+	void InitializeItem(const class USBZInventoryBaseData* InventoryItem, int64 Cost, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage);
+	void ExecuteUbergraph_WBP_ConfirmationPopup_InventoryItemDisplay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

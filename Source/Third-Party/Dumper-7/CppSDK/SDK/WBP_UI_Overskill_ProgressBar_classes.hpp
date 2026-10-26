@@ -35,9 +35,9 @@ public:
 	double                                        ProgressPercent;                                   // 0x0348(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Overskill_ProgressBar(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 	void Set_Progress(double InXp, double InProgressPercent);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_UI_Overskill_ProgressBar(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

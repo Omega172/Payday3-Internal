@@ -43,23 +43,23 @@ public:
 	bool                                          InCustomizeMode;                                   // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionInput(class FName InputName);
-	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget(int32 EntryPoint);
-	void Finished_5728DCA04E50DA12D1F368AA7CB416C0();
-	void OnCancelCustomizationPressed();
-	void OnCustomizePressed(bool SetFocus_0);
-	void OnDisplayPopUp_1();
-	void OnPopupHidden();
-	void OnPopupShown();
-	void SetCheckboxFocusChanged(class USBZMenuButton* CheckboxButton, bool Focused);
 	void SetRootControlReferences();
+	void SetCheckboxFocusChanged(class USBZMenuButton* CheckboxButton, bool Focused);
+	void OnPopupShown();
+	void OnPopupHidden();
+	void OnDisplayPopUp_1();
+	void OnCustomizePressed(bool SetFocus);
+	void OnCancelCustomizationPressed();
+	void Finished_5728DCA04E50DA12D1F368AA7CB416C0();
+	void ExecuteUbergraph_WBP_UI_Onboarding_Intro_Choice_PopUpWidget(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_0(EUINavigation Navigation);
+	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Telemetry_CheckBox_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Gamesight_CheckBox_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Onboarding_Intro_Choice_PopUpWidget_Crossplay_CheckBox_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void ActionInput(class FName InputName);
 
 public:
 	static class UClass* StaticClass()

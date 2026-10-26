@@ -16,51 +16,51 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.ExecuteUbergraph_WBP_UI_WeaponProgressionScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponProgressionScreen_C::ExecuteUbergraph_WBP_UI_WeaponProgressionScreen(int32 EntryPoint)
+void UWBP_UI_WeaponProgressionScreen_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_WeaponProgressionScreen_C", "ExecuteUbergraph_WBP_UI_WeaponProgressionScreen", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_WeaponProgressionScreen_C_ExecuteUbergraph_WBP_UI_WeaponProgressionScreen Parms{};
+	Params::WBP_UI_WeaponProgressionScreen_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.FocusedWeaponPartChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZWeaponPartDataAsset*    FocusedWeaponPart                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponProgressionScreen_C::FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FocusedWeaponPartChanged", FnName));
-
-	Params::WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged Parms{};
-
-	Parms.FocusedWeaponPart = FocusedWeaponPart;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnAddedToStack
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnLostStackFocused
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_WeaponProgressionScreen_C::OnAddedToStack()
+void UWBP_UI_WeaponProgressionScreen_C::OnLostStackFocused()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAddedToStack", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponProgressionScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -82,49 +82,49 @@ void UWBP_UI_WeaponProgressionScreen_C::OnControlsReferencePressed(class FName A
 }
 
 
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_WeaponProgressionScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_WeaponProgressionScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnLostStackFocused
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.OnAddedToStack
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_WeaponProgressionScreen_C::OnLostStackFocused()
+void UWBP_UI_WeaponProgressionScreen_C::OnAddedToStack()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAddedToStack", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.FocusedWeaponPartChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZWeaponPartDataAsset*    FocusedWeaponPart_FocusedWeaponPartChanged             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_WeaponProgressionScreen_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_WeaponProgressionScreen_C::FocusedWeaponPartChanged(const class USBZWeaponPartDataAsset* FocusedWeaponPart_FocusedWeaponPartChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FocusedWeaponPartChanged", FnName));
 
-	Params::WBP_UI_WeaponProgressionScreen_C_PreConstruct Parms{};
+	Params::WBP_UI_WeaponProgressionScreen_C_FocusedWeaponPartChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.FocusedWeaponPart_FocusedWeaponPartChanged = FocusedWeaponPart_FocusedWeaponPartChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponProgressionScreen.WBP_UI_WeaponProgressionScreen_C.ExecuteUbergraph_WBP_UI_WeaponProgressionScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_WeaponProgressionScreen_C::ExecuteUbergraph_WBP_UI_WeaponProgressionScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_WeaponProgressionScreen_C", "ExecuteUbergraph_WBP_UI_WeaponProgressionScreen", FuncInfo);
+
+	Params::WBP_UI_WeaponProgressionScreen_C_ExecuteUbergraph_WBP_UI_WeaponProgressionScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

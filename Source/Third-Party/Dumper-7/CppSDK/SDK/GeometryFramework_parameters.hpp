@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GeometryFramework_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GeometryFramework_structs.hpp"
 
 
 SDK_NAMESPACE_START

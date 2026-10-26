@@ -16,87 +16,81 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.UpdateCharges
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  NewChargeCount                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Placeable_DoctorBag_C::UpdateCharges(double NewChargeCount)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCharges", FnName));
 
-	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_Placeable_DoctorBag_C_UpdateCharges Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.NewChargeCount = NewChargeCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Placeable_DoctorBag_C::Timeline_0__UpdateFunc()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Placeable_DoctorBag_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.OnChargesChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   ChargesChangeTo_OnChargesChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnChargesChanged                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Placeable_DoctorBag_C::OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChargesChanged", FnName));
+
+	Params::BP_Placeable_DoctorBag_C_OnChargesChanged Parms{};
+
+	Parms.ChargesChangeTo_OnChargesChanged = ChargesChangeTo_OnChargesChanged;
+	Parms.bDoCosmetics_OnChargesChanged = bDoCosmetics_OnChargesChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.ExecuteUbergraph_BP_Placeable_DoctorBag
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Placeable_DoctorBag_C::ExecuteUbergraph_BP_Placeable_DoctorBag(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Placeable_DoctorBag_C", "ExecuteUbergraph_BP_Placeable_DoctorBag", FuncInfo);
 
-	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_Placeable_DoctorBag_C_ExecuteUbergraph_BP_Placeable_DoctorBag Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature", FnName));
-
-	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -122,81 +116,87 @@ void ABP_Placeable_DoctorBag_C::BndEvt__SBZShoutTarget_K2Node_ComponentBoundEven
 }
 
 
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.ExecuteUbergraph_BP_Placeable_DoctorBag
-// (Final, UbergraphFunction)
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Placeable_DoctorBag_C::ExecuteUbergraph_BP_Placeable_DoctorBag(int32 EntryPoint)
+void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "BP_Placeable_DoctorBag_C", "ExecuteUbergraph_BP_Placeable_DoctorBag", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
-	Params::BP_Placeable_DoctorBag_C_ExecuteUbergraph_BP_Placeable_DoctorBag Parms{};
+	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Component = Component;
+	Parms.bReset = bReset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.OnChargesChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// float                                   ChargesChangeTo                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Placeable_DoctorBag_C::OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics)
+void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChargesChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
-	Params::BP_Placeable_DoctorBag_C_OnChargesChanged Parms{};
+	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.ChargesChangeTo = ChargesChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.Timeline_0__FinishedFunc
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
-
-void ABP_Placeable_DoctorBag_C::Timeline_0__FinishedFunc()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Placeable_DoctorBag_C::Timeline_0__UpdateFunc()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.UpdateCharges
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  NewChargeCount                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Placeable_DoctorBag_C::UpdateCharges(double NewChargeCount)
+void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCharges", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	Params::BP_Placeable_DoctorBag_C_UpdateCharges Parms{};
+	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.NewChargeCount = NewChargeCount;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Placeable_DoctorBag.BP_Placeable_DoctorBag_C.BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Placeable_DoctorBag_C::BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Placeable_DoctorBag_C_BndEvt__BP_Placeable_DoctorBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

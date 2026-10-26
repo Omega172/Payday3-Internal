@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -50,16 +50,16 @@ public:
 	struct FLinearColor                           LoudColor;                                         // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ButtonHoveredChanged(bool bInIsHovered);
-	void ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget(int32 EntryPoint);
-	void OnHeistDataInitialized();
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-	void SetActive(bool bIsActive);
-	void SetSelected(bool bInIsSelected);
-	void SetupPinMaterial();
-	void ShowDifficultyVisual(ESBZDifficulty InDifficulty);
 	void UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle);
+	void ShowDifficultyVisual(ESBZDifficulty InDifficulty);
+	void SetupPinMaterial();
+	void SetSelected(bool bInIsSelected_SetSelected);
+	void SetActive(bool bIsActive);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnInitialized();
+	void OnHeistDataInitialized();
+	void ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget(int32 EntryPoint);
+	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
 
 public:
 	static class UClass* StaticClass()

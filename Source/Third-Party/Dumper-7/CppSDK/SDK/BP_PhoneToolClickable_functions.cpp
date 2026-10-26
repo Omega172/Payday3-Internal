@@ -16,31 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PhoneToolClickable.BP_PhoneToolClickable_C.ExecuteUbergraph_BP_PhoneToolClickable
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PhoneToolClickable_C::ExecuteUbergraph_BP_PhoneToolClickable(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "BP_PhoneToolClickable_C", "ExecuteUbergraph_BP_PhoneToolClickable", FuncInfo);
-
-	Params::BP_PhoneToolClickable_C_ExecuteUbergraph_BP_PhoneToolClickable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PhoneToolClickable.BP_PhoneToolClickable_C.OnActivated
+// Function BP_PhoneToolClickable.BP_PhoneToolClickable_C.OnReady
 // (Event, Protected, BlueprintEvent)
 
-void ABP_PhoneToolClickable_C::OnActivated()
+void ABP_PhoneToolClickable_C::OnReady()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnReady", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,15 +40,33 @@ void ABP_PhoneToolClickable_C::OnCanceled()
 }
 
 
-// Function BP_PhoneToolClickable.BP_PhoneToolClickable_C.OnReady
+// Function BP_PhoneToolClickable.BP_PhoneToolClickable_C.OnActivated
 // (Event, Protected, BlueprintEvent)
 
-void ABP_PhoneToolClickable_C::OnReady()
+void ABP_PhoneToolClickable_C::OnActivated()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnReady", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PhoneToolClickable.BP_PhoneToolClickable_C.ExecuteUbergraph_BP_PhoneToolClickable
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PhoneToolClickable_C::ExecuteUbergraph_BP_PhoneToolClickable(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PhoneToolClickable_C", "ExecuteUbergraph_BP_PhoneToolClickable", FuncInfo);
+
+	Params::BP_PhoneToolClickable_C_ExecuteUbergraph_BP_PhoneToolClickable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -19,7 +19,7 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_LoadoutScreen.WBP_LoadoutScreen_C
-// 0x00E0 (0x0420 - 0x0340)
+// 0x00F0 (0x0430 - 0x0340)
 class UWBP_LoadoutScreen_C final : public USBZMenuStackScreenWidget
 {
 public:
@@ -51,56 +51,63 @@ public:
 	class USBZUITextBlock*                        Text_ItemType_9;                                   // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USBZUITextBlock*                        Text_ItemType_10;                                  // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_UI_Inventory_LoadoutSkillsButton_New_C* WBP_UI_Inventory_LoadoutSkillsButton_New;     // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZInventoryItemDecorator*             LastFocusedDecorator;                              // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class USBZWidgetBase*                         LastFocusedWidget;                                 // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_LoadoutScreen_Btn_Armor_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_CosmeticMask_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_Emotes_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_ItemTool_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_Placeable_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_Throwable_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_LoadoutScreen_Btn_WeaponSecondary_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_5_OnPlayerLoadoutConfigChanged__DelegateSignature(const struct FSBZPlayerLoadoutConfig& PlayerLoadout, int32 PlayerLoadoutIndex);
-	void BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_LoadoutScreen(int32 EntryPoint);
-	void GetActiveItemData(ESBZItemCategory NewParam, class USBZInventoryBaseData** ItemData);
-	void GetActiveWeaponData(ESBZEquippableLoadoutSlot EquippableSlot, class USBZInventoryBaseData** Equippable_Data);
-	void GetCharacterData(bool* bIsValid, class USBZInventoryBaseData** CharacterData);
-	void OnCancelPressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void PostPush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_B3C3DB454B1AFEFB9B6B0F973C28633D(class USBZMenuStackScreenWidget* MenuWidget);
-	void PostPush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget);
-	void PreConstruct(bool IsDesignTime);
-	void PrePush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_B3C3DB454B1AFEFB9B6B0F973C28633D(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget);
 	void UpdateLoadout();
+	void PrePush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_B3C3DB454B1AFEFB9B6B0F973C28633D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget);
+	void PrePush_1A93DBB34DF30D0A611305B8C98DC77D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PostPush_DBA56ACC4F8063E4539CB4A6BA879C64(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_B3C3DB454B1AFEFB9B6B0F973C28633D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_8F444FD14D7C1386F6281987AA6F9779(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_8D9CEAB74A2AE8ED253297937E14F4A7(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_712E58A24F6E1C53C5C6188598195E6D(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_69CC72D6427035E37D7C5E8C5E1F7F09(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_681260894A4881FE3571E39F9AC3CC1C(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_591CDFAC4E87819FC621E488FA859D41(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_493EF86A497FE264CAFF169D32C37AE3(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_29B7319B48379564A0BD399AF91D3783(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_1FA6473E480112BAD7BABD9A31693EFB(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_1A93DBB34DF30D0A611305B8C98DC77D(class USBZMenuStackScreenWidget* MenuWidget);
+	void OnWeaponButtonFocused(bool Condition, const ESBZInventoryEquipmentType EquipmentType, ESBZItemCategory ItemCategory, class USBZInventoryItemDecorator** FocusedDecorator);
+	void OnRemovedFromStack();
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferencePressed(class FName ActionName);
+	const int32 GetEquippedWeaponIndex(ESBZEquippableLoadoutSlot ItemSlot);
+	void GetCharacterData(bool* bIsValid, class USBZInventoryBaseData** CharacterData);
+	void GetActiveWeaponData(ESBZEquippableLoadoutSlot EquippableSlot, class USBZInventoryBaseData** Equippable_Data);
+	void GetActiveItemData(ESBZItemCategory NewParam, class USBZInventoryBaseData** ItemData);
+	void ExecuteUbergraph_WBP_LoadoutScreen(int32 EntryPoint);
+	void BndEvt__WBP_LoadoutScreenNew_Btn_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreenNew_Btn_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_WBP_UI_Inventory_LoadoutSkillsButton_New_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_5_OnPlayerLoadoutConfigChanged__DelegateSignature(const struct FSBZPlayerLoadoutConfig& PlayerLoadout, int32 PlayerLoadoutIndex);
+	void BndEvt__WBP_LoadoutScreen_Button_SuitScreenButtonNew_K2Node_ComponentBoundEvent_15_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Button_GlovesScreenNew_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Button_CharacterPreferenceNew_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_WeaponSecondary_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_LoadoutScreen_Btn_WeaponPrimary_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_WeaponOverkill_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_LoadoutScreen_Btn_Throwable_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_Placeable_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_ItemTool_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_Emotes_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_CosmeticMask_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_LoadoutScreen_Btn_Armor_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

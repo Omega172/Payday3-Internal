@@ -16,166 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.UpdateDifficultyVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DifficultySelectorWidget_02_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_DifficultySelectorWidget_02_C::UpdateDifficultyVisuals(ESBZDifficulty InDifficulty)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDifficultyVisuals", FnName));
 
-	Params::WBP_UI_DifficultySelectorWidget_02_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_DifficultySelectorWidget_02_C_UpdateDifficultyVisuals Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::Construct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_DifficultySelectorWidget_02_C", "ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02", FuncInfo);
-
-	Params::WBP_UI_DifficultySelectorWidget_02_C_ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.GetDifficulty
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// ESBZDifficulty*                         NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::GetDifficulty(ESBZDifficulty* NewParam)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDifficulty", FnName));
-
-	Params::WBP_UI_DifficultySelectorWidget_02_C_GetDifficulty Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnSelectedLeft
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::OnSelectedLeft()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedLeft", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnSelectedRight
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::OnSelectedRight()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedRight", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnSelectionOptionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectionOptionChanged", FnName));
-
-	Params::WBP_UI_DifficultySelectorWidget_02_C_OnSelectionOptionChanged Parms{};
-
-	Parms.InCurrentIndex = InCurrentIndex;
-	Parms.bOverrideReadOnly = bOverrideReadOnly;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_DifficultySelectorWidget_02_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_DifficultySelectorWidget_02_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.InDifficulty = InDifficulty;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -199,21 +52,168 @@ void UWBP_UI_DifficultySelectorWidget_02_C::SetFocusVisuals(bool InIsFocused)
 }
 
 
-// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.UpdateDifficultyVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_DifficultySelectorWidget_02_C::UpdateDifficultyVisuals(ESBZDifficulty InDifficulty)
+void UWBP_UI_DifficultySelectorWidget_02_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDifficultyVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_DifficultySelectorWidget_02_C_UpdateDifficultyVisuals Parms{};
+	Params::WBP_UI_DifficultySelectorWidget_02_C_PreConstruct Parms{};
 
-	Parms.InDifficulty = InDifficulty;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnSelectionOptionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   InCurrentIndex_OnSelectionOptionChanged                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOverrideReadOnly_OnSelectionOptionChanged             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectionOptionChanged", FnName));
+
+	Params::WBP_UI_DifficultySelectorWidget_02_C_OnSelectionOptionChanged Parms{};
+
+	Parms.InCurrentIndex_OnSelectionOptionChanged = InCurrentIndex_OnSelectionOptionChanged;
+	Parms.bOverrideReadOnly_OnSelectionOptionChanged = bOverrideReadOnly_OnSelectionOptionChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnSelectedRight
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::OnSelectedRight()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedRight", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnSelectedLeft
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::OnSelectedLeft()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedLeft", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.GetDifficulty
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// ESBZDifficulty*                         NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::GetDifficulty(ESBZDifficulty* NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDifficulty", FnName));
+
+	Params::WBP_UI_DifficultySelectorWidget_02_C_GetDifficulty Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_DifficultySelectorWidget_02_C", "ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02", FuncInfo);
+
+	Params::WBP_UI_DifficultySelectorWidget_02_C_ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_UI_DifficultySelectorWidget_02_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_DifficultySelectorWidget_02.WBP_UI_DifficultySelectorWidget_02_C.BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_UI_DifficultySelectorWidget_02_C::BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

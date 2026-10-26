@@ -16,19 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.SetupData
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZEquippablePartDataAsset*NewParam                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Inventory_Item_Button_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_Inventory_Item_Button_C::SetupData(const class USBZEquippablePartDataAsset* NewParam)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupData", FnName));
 
-	Params::WBP_Inventory_Item_Button_C_ButtonFocusedChanged Parms{};
+	Params::WBP_Inventory_Item_Button_C_SetupData Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,19 +52,19 @@ void UWBP_Inventory_Item_Button_C::ExecuteUbergraph_WBP_Inventory_Item_Button(in
 }
 
 
-// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.SetupData
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Inventory_Item_Button.WBP_Inventory_Item_Button_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZEquippablePartDataAsset*NewParam                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Inventory_Item_Button_C::SetupData(const class USBZEquippablePartDataAsset* NewParam)
+void UWBP_Inventory_Item_Button_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupData", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_Inventory_Item_Button_C_SetupData Parms{};
+	Params::WBP_Inventory_Item_Button_C_ButtonFocusedChanged Parms{};
 
-	Parms.NewParam = NewParam;
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "NNERuntimeORT_structs.hpp"
-#include "DeveloperSettings_classes.hpp"
 #include "CoreUObject_classes.hpp"
+#include "NNERuntimeORT_structs.hpp"
 #include "NNE_classes.hpp"
+#include "DeveloperSettings_classes.hpp"
 
 
 SDK_NAMESPACE_START

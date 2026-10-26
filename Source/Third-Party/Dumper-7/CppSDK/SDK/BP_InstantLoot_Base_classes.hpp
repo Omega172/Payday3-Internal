@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0368(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_InstantLoot_Base(int32 EntryPoint);
 	void setBinaryState(bool state, bool doCosmetics);
+	void ExecuteUbergraph_BP_InstantLoot_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

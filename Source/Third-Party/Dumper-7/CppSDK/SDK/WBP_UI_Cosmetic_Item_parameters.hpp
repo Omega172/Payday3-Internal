@@ -18,33 +18,58 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.AddAssetCount
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.UpdateAssetCount
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Cosmetic_Item_C_UpdateAssetCount final
+{
+public:
+	bool                                          bIsDesignTime;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_UpdateAssetCount;
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.SetCurrent
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_UI_Cosmetic_Item_C_SetCurrent final
+{
+public:
+	bool                                          IsCurrent;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_SetCurrent;
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Cosmetic_Item_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_PreConstruct;
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnLoaded_DF5A03CE4F55139645004384AEF3E7B8
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_AddAssetCount final
+struct WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8 final
 {
 public:
-	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_AddAssetCount;
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8;
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged final
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnFocusChanged
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Cosmetic_Item_C_OnFocusChanged final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InFocus;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged;
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged final
-{
-public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_OnFocusChanged;
 
 // Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ExecuteUbergraph_WBP_UI_Cosmetic_Item
 // 0x00C0 (0x00C0 - 0x0000)
@@ -73,58 +98,33 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_ExecuteUbergraph_WBP_UI_Cosmetic_Item;
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnFocusChanged
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_OnFocusChanged final
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          InFocus;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_OnFocusChanged;
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_ButtonHoveredChanged;
 
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.OnLoaded_DF5A03CE4F55139645004384AEF3E7B8
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_ButtonFocusedChanged;
+
+// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.AddAssetCount
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8 final
+struct WBP_UI_Cosmetic_Item_C_AddAssetCount final
 {
 public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Count;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_OnLoaded_DF5A03CE4F55139645004384AEF3E7B8;
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_PreConstruct;
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.SetCurrent
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_SetCurrent final
-{
-public:
-	bool                                          IsCurrent;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_SetCurrent;
-
-// Function WBP_UI_Cosmetic_Item.WBP_UI_Cosmetic_Item_C.UpdateAssetCount
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Cosmetic_Item_C_UpdateAssetCount final
-{
-public:
-	bool                                          bIsDesignTime;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_UpdateAssetCount;
+DUMPER7_ASSERTS_WBP_UI_Cosmetic_Item_C_AddAssetCount;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

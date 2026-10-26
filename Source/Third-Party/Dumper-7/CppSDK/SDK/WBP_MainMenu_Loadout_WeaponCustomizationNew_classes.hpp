@@ -35,18 +35,18 @@ public:
 	class USBZMenuButton*                         FocusedButton;                                     // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_MainMenu_Loadout_WeaponCustomizationNew(int32 EntryPoint);
-	void OnAddedToStack();
-	void OnBackPressed();
-	void OnCategoryButtonFocused(class USBZMenuButton* InButton, bool bIsFocused);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnInitialized();
-	void OnLostStackFocused();
-	void OnRemovedFromStack();
-	void OnSlotChanged_Event(ESBZEquippableLoadoutSlot Category, int32 SlotIndex);
-	void SetCategoryPadding();
 	void UpdateControlsReference();
+	void SetCategoryPadding();
+	void OnSlotChanged_Event(ESBZEquippableLoadoutSlot Category, int32 SlotIndex);
+	void OnRemovedFromStack();
+	void OnLostStackFocused();
+	void OnInitialized();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnCategoryButtonFocused(class USBZMenuButton* InButton_OnCategoryButtonFocused, bool bIsFocused_OnCategoryButtonFocused);
+	void OnBackPressed();
+	void OnAddedToStack();
+	void ExecuteUbergraph_WBP_MainMenu_Loadout_WeaponCustomizationNew(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

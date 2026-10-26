@@ -51,32 +51,32 @@ public:
 	TMap<class UWBP_UI_MainMenu_CrimeNet_HeistButton_C*, class UWBP_UI_Crimenet_HeistMapWidget_C*> ButtonToMapMap; // 0x0408(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
-	void DisplayActiveOnMap(class UWBP_UI_MainMenu_CrimeNet_HeistButton_C* HeistButton, bool bIsActive);
-	void DisplayHeistSelection(bool bIsGameStart);
-	void DisplayPopUp(bool bShouldDisplay);
-	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection(int32 EntryPoint);
-	void InitializeLevelButtons();
-	void InitializeLevelList(const class FText& LevelListName, TArray<struct FSoftObjectPath>& LevelPathList);
-	void OnBackPressed();
-	void OnControlsReference_Matchmaking_Clicked(class FName InActionInput);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnControlsReferenceHeistSelectionClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnHeistButtonFocused(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnHeistButtonSelected(class USBZMenuButton* Button);
-	void OnLoaded_E6648CEA45447C8A0D6DA58373B5830A(class UObject* Loaded);
-	void OnLostStackFocused();
-	void PreConstruct(bool IsDesignTime);
-	void SetTimer(double Timer, bool bIsStealth);
-	void UpdateHeistIcon(TSoftObjectPtr<class UPaperSprite> InSoftObjectReference);
 	void UpdateLevelDescriptionPanel();
+	void UpdateHeistIcon(TSoftObjectPtr<class UPaperSprite> InSoftObjectReference);
+	void SetTimer(double Timer, bool bIsStealth);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnLostStackFocused();
+	void OnLoaded_E6648CEA45447C8A0D6DA58373B5830A(class UObject* Loaded);
+	void OnHeistButtonSelected(class USBZMenuButton* Button);
+	void OnHeistButtonFocused(class USBZMenuButton* Button, bool bIsEnabled);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceHeistSelectionClicked(class FName InActionInput);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnControlsReference_Matchmaking_Clicked(class FName InActionInput);
+	void OnBackPressed();
+	void InitializeLevelList(const class FText& LevelListName, TArray<struct FSoftObjectPath>& LevelPathList);
+	void InitializeLevelButtons();
+	void ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistSelection(int32 EntryPoint);
+	void DisplayPopUp(bool bShouldDisplay);
+	void DisplayHeistSelection(bool bIsGameStart);
+	void DisplayActiveOnMap(class UWBP_UI_MainMenu_CrimeNet_HeistButton_C* HeistButton, bool bIsActive);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Widget_DifficultySelection_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_PS_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_MM_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_UI_MainMenu_CrimeNet_HeistSelection_Button_Host_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

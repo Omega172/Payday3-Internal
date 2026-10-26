@@ -27,17 +27,6 @@ public:
 };
 DUMPER7_ASSERTS_GeometryCacheActor_GetGeometryCacheComponent;
 
-// Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
-// 0x00D0 (0x00D0 - 0x0000)
-struct GeometryCacheTrack_FlipbookAnimation_AddMeshSample final
-{
-public:
-	struct FGeometryCacheMeshData                 MeshData;                                          // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
-	float                                         SampleTime;                                        // 0x00C8(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-DUMPER7_ASSERTS_GeometryCacheTrack_FlipbookAnimation_AddMeshSample;
-
 // Function GeometryCache.GeometryCacheComponent.SetExtrapolateFrames
 // 0x0001 (0x0001 - 0x0000)
 struct GeometryCacheComponent_SetExtrapolateFrames final
@@ -259,6 +248,17 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_GeometryCacheComponent_IsPlayingReversed;
+
+// Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
+// 0x00D0 (0x00D0 - 0x0000)
+struct GeometryCacheTrack_FlipbookAnimation_AddMeshSample final
+{
+public:
+	struct FGeometryCacheMeshData                 MeshData;                                          // 0x0000(0x00C8)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+	float                                         SampleTime;                                        // 0x00C8(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+DUMPER7_ASSERTS_GeometryCacheTrack_FlipbookAnimation_AddMeshSample;
 
 // Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
 // 0x00C8 (0x00C8 - 0x0000)

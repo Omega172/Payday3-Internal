@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "InterchangeCore_structs.hpp"
-#include "InterchangeEngine_structs.hpp"
 #include "Engine_parameters.hpp"
+#include "InterchangeEngine_structs.hpp"
+#include "InterchangeCore_structs.hpp"
 
 
 SDK_NAMESPACE_START

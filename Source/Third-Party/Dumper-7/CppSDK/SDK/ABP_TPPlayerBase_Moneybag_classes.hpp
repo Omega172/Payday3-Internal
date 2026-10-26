@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_TPPlayerBase_Moneybag.ABP_TPPlayerBase_Moneybag_C
-// 0x1170 (0x1540 - 0x03D0)
+// 0x1270 (0x1640 - 0x03D0)
 class UABP_TPPlayerBase_Moneybag_C final : public UAnimInstance
 {
 public:
@@ -29,15 +29,15 @@ public:
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x03E0(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x03E8(0x0030)()
 	uint8                                         Pad_418[0x8];                                      // 0x0418(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0420(0x0AA0)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0EC0(0x0030)()
-	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0EF0(0x0168)(ContainsInstancedReference)
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x1058(0x0030)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_2;                        // 0x1088(0x0170)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x11F8(0x0170)()
-	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x1368(0x0170)()
-	class USkeletalMeshComponent*                 ParentSkeletalMeshComponent;                       // 0x14D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             StrapTransformOffset;                              // 0x14E0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0420(0x0BA0)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x0FC0(0x0030)()
+	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0FF0(0x0168)(ContainsInstancedReference)
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x1158(0x0030)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_2;                        // 0x1188(0x0170)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x12F8(0x0170)()
+	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x1468(0x0170)()
+	class USkeletalMeshComponent*                 ParentSkeletalMeshComponent;                       // 0x15D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             StrapTransformOffset;                              // 0x15E0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);

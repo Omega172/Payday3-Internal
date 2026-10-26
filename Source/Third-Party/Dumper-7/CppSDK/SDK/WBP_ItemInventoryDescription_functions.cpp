@@ -16,19 +16,121 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.ExecuteUbergraph_WBP_ItemInventoryDescription
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.TryInitWeaponSlots
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemInventoryDescription_C::ExecuteUbergraph_WBP_ItemInventoryDescription(int32 EntryPoint)
+void UWBP_ItemInventoryDescription_C::TryInitWeaponSlots(class USBZInventoryItemDecorator* ItemDeco)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ItemInventoryDescription_C", "ExecuteUbergraph_WBP_ItemInventoryDescription", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryInitWeaponSlots", FnName));
 
-	Params::WBP_ItemInventoryDescription_C_ExecuteUbergraph_WBP_ItemInventoryDescription Parms{};
+	Params::WBP_ItemInventoryDescription_C_TryInitWeaponSlots Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ItemDeco = ItemDeco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.TryInitWeaponData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInventoryDescription_C::TryInitWeaponData(class USBZInventoryItemDecorator* ItemDeco)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryInitWeaponData", FnName));
+
+	Params::WBP_ItemInventoryDescription_C_TryInitWeaponData Parms{};
+
+	Parms.ItemDeco = ItemDeco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.TryInitArmorData
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInventoryDescription_C::TryInitArmorData(class USBZInventoryItemDecorator* ItemDeco)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryInitArmorData", FnName));
+
+	Params::WBP_ItemInventoryDescription_C_TryInitArmorData Parms{};
+
+	Parms.ItemDeco = ItemDeco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.SetItemDecorator
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInventoryDescription_C::SetItemDecorator(class USBZInventoryItemDecorator* ItemDeco)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemDecorator", FnName));
+
+	Params::WBP_ItemInventoryDescription_C_SetItemDecorator Parms{};
+
+	Parms.ItemDeco = ItemDeco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.RefreshNamedSlotVisibility
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ItemInventoryDescription_C::RefreshNamedSlotVisibility()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshNamedSlotVisibility", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInventoryDescription_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ItemInventoryDescription_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.InitGenericData
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemInventoryDescription_C::InitGenericData(class USBZInventoryItemDecorator* ItemDeco)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitGenericData", FnName));
+
+	Params::WBP_ItemInventoryDescription_C_InitGenericData Parms{};
+
+	Parms.ItemDeco = ItemDeco;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -64,121 +166,19 @@ void UWBP_ItemInventoryDescription_C::GetEquippableConfig(class USBZInventoryIte
 }
 
 
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.InitGenericData
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.ExecuteUbergraph_WBP_ItemInventoryDescription
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemInventoryDescription_C::InitGenericData(class USBZInventoryItemDecorator* ItemDeco)
+void UWBP_ItemInventoryDescription_C::ExecuteUbergraph_WBP_ItemInventoryDescription(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitGenericData", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ItemInventoryDescription_C", "ExecuteUbergraph_WBP_ItemInventoryDescription", FuncInfo);
 
-	Params::WBP_ItemInventoryDescription_C_InitGenericData Parms{};
+	Params::WBP_ItemInventoryDescription_C_ExecuteUbergraph_WBP_ItemInventoryDescription Parms{};
 
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInventoryDescription_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ItemInventoryDescription_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.RefreshNamedSlotVisibility
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ItemInventoryDescription_C::RefreshNamedSlotVisibility()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshNamedSlotVisibility", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.SetItemDecorator
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInventoryDescription_C::SetItemDecorator(class USBZInventoryItemDecorator* ItemDeco)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemDecorator", FnName));
-
-	Params::WBP_ItemInventoryDescription_C_SetItemDecorator Parms{};
-
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.TryInitArmorData
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInventoryDescription_C::TryInitArmorData(class USBZInventoryItemDecorator* ItemDeco)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryInitArmorData", FnName));
-
-	Params::WBP_ItemInventoryDescription_C_TryInitArmorData Parms{};
-
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.TryInitWeaponData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInventoryDescription_C::TryInitWeaponData(class USBZInventoryItemDecorator* ItemDeco)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryInitWeaponData", FnName));
-
-	Params::WBP_ItemInventoryDescription_C_TryInitWeaponData Parms{};
-
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemInventoryDescription.WBP_ItemInventoryDescription_C.TryInitWeaponSlots
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemInventoryDescription_C::TryInitWeaponSlots(class USBZInventoryItemDecorator* ItemDeco)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryInitWeaponSlots", FnName));
-
-	Params::WBP_ItemInventoryDescription_C_TryInitWeaponSlots Parms{};
-
-	Parms.ItemDeco = ItemDeco;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

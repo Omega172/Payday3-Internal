@@ -16,141 +16,341 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BP_OnItemDoubleClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::BP_OnItemDoubleClicked(class UObject* Item)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnItemDoubleClicked", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_BP_OnItemDoubleClicked Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.Create Emote Icons
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.UpdateTileList
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_EmoteInventoryScreen_C::Create_Emote_Icons()
+void UWBP_EmoteInventoryScreen_C::UpdateTileList()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Create Emote Icons", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTileList", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.Event On Equipped
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.StopPlayingMontage
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_EmoteInventoryScreen_C::Event_On_Equipped()
+void UWBP_EmoteInventoryScreen_C::StopPlayingMontage()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event On Equipped", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopPlayingMontage", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.ExecuteUbergraph_WBP_EmoteInventoryScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PrePush_EB4572904A1FF447AB18B0B9535B894A
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EmoteInventoryScreen_C::ExecuteUbergraph_WBP_EmoteInventoryScreen(int32 EntryPoint)
+void UWBP_EmoteInventoryScreen_C::PrePush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_EmoteInventoryScreen_C", "ExecuteUbergraph_WBP_EmoteInventoryScreen", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_EB4572904A1FF447AB18B0B9535B894A", FnName));
 
-	Params::WBP_EmoteInventoryScreen_C_ExecuteUbergraph_WBP_EmoteInventoryScreen Parms{};
+	Params::WBP_EmoteInventoryScreen_C_PrePush_EB4572904A1FF447AB18B0B9535B894A Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PrePush_B78C6D19499C91674E07B0ADF0A837F4
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::PrePush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_B78C6D19499C91674E07B0ADF0A837F4", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_PrePush_B78C6D19499C91674E07B0ADF0A837F4 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PostPush_EB4572904A1FF447AB18B0B9535B894A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::PostPush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_EB4572904A1FF447AB18B0B9535B894A", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_PostPush_EB4572904A1FF447AB18B0B9535B894A Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PostPush_B78C6D19499C91674E07B0ADF0A837F4
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::PostPush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_B78C6D19499C91674E07B0ADF0A837F4", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_PostPush_B78C6D19499C91674E07B0ADF0A837F4 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PlayPreviewAnimation
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryItemDecorator*       ItemDecorator                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::PlayPreviewAnimation(class USBZInventoryItemDecorator* ItemDecorator)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayPreviewAnimation", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_PlayPreviewAnimation Parms{};
+
+	Parms.ItemDecorator = ItemDecorator;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnMontageBlendingOut_Event
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAnimMontage*                     Montage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInterrupted                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnMontageBlendingOut_Event(class UAnimMontage* Montage, bool bInterrupted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMontageBlendingOut_Event", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnMontageBlendingOut_Event Parms{};
+
+	Parms.Montage = Montage;
+	Parms.bInterrupted = bInterrupted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_EmoteInventoryScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnLoaded_B3D608934B60C556A88E078F272102DC
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnLoaded_B3D608934B60C556A88E078F272102DC(class UObject* Loaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_B3D608934B60C556A88E078F272102DC", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnLoaded_B3D608934B60C556A88E078F272102DC Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnItemsGenerated
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZItemCategory                        ItemCategory_OnItemsGenerated                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              SubCategory_OnItemsGenerated                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnItemsGenerated(ESBZItemCategory ItemCategory_OnItemsGenerated, const struct FGameplayTag& SubCategory_OnItemsGenerated)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemsGenerated", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnItemsGenerated Parms{};
+
+	Parms.ItemCategory_OnItemsGenerated = ItemCategory_OnItemsGenerated;
+	Parms.SubCategory_OnItemsGenerated = std::move(SubCategory_OnItemsGenerated);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_EmoteInventoryScreen_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnCompleted_4FB555974CE8CA191DF443ABAD8BB511
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnCompleted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCompleted_4FB555974CE8CA191DF443ABAD8BB511", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnCompleted_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnCancelPressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnCancelPressed(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCancelPressed", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnCancelPressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
+
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -178,343 +378,143 @@ void UWBP_EmoteInventoryScreen_C::FetchCategoryTexts(class USBZInventoryCategory
 }
 
 
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.ExecuteUbergraph_WBP_EmoteInventoryScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::ExecuteUbergraph_WBP_EmoteInventoryScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_EmoteInventoryScreen_C", "ExecuteUbergraph_WBP_EmoteInventoryScreen", FuncInfo);
+
+	Params::WBP_EmoteInventoryScreen_C_ExecuteUbergraph_WBP_EmoteInventoryScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.Event On Equipped
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EmoteInventoryScreen_C::OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
+void UWBP_EmoteInventoryScreen_C::Event_On_Equipped()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnBlendOut_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnCancelPressed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnCancelPressed(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCancelPressed", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnCancelPressed Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnCompleted_4FB555974CE8CA191DF443ABAD8BB511
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnCompleted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCompleted_4FB555974CE8CA191DF443ABAD8BB511", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnCompleted_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_EmoteInventoryScreen_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event On Equipped", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnInterrupted_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnItemsGenerated
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZItemCategory                        ItemCategory                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              SubCategory                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnItemsGenerated(ESBZItemCategory ItemCategory, const struct FGameplayTag& SubCategory)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItemsGenerated", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnItemsGenerated Parms{};
-
-	Parms.ItemCategory = ItemCategory;
-	Parms.SubCategory = std::move(SubCategory);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnLoaded_B3D608934B60C556A88E078F272102DC
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnLoaded_B3D608934B60C556A88E078F272102DC(class UObject* Loaded)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_B3D608934B60C556A88E078F272102DC", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnLoaded_B3D608934B60C556A88E078F272102DC Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_EmoteInventoryScreen_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnMontageBlendingOut_Event
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAnimMontage*                     Montage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInterrupted                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnMontageBlendingOut_Event(class UAnimMontage* Montage, bool bInterrupted)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMontageBlendingOut_Event", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnMontageBlendingOut_Event Parms{};
-
-	Parms.Montage = Montage;
-	Parms.bInterrupted = bInterrupted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnNotifyBegin_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511(class FName NotifyName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_OnNotifyEnd_4FB555974CE8CA191DF443ABAD8BB511 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PlayPreviewAnimation
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDecorator                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::PlayPreviewAnimation(class USBZInventoryItemDecorator* ItemDecorator)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayPreviewAnimation", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_PlayPreviewAnimation Parms{};
-
-	Parms.ItemDecorator = ItemDecorator;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PostPush_B78C6D19499C91674E07B0ADF0A837F4
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::PostPush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_B78C6D19499C91674E07B0ADF0A837F4", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_PostPush_B78C6D19499C91674E07B0ADF0A837F4 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PostPush_EB4572904A1FF447AB18B0B9535B894A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::PostPush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_EB4572904A1FF447AB18B0B9535B894A", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_PostPush_EB4572904A1FF447AB18B0B9535B894A Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PrePush_B78C6D19499C91674E07B0ADF0A837F4
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::PrePush_B78C6D19499C91674E07B0ADF0A837F4(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_B78C6D19499C91674E07B0ADF0A837F4", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_PrePush_B78C6D19499C91674E07B0ADF0A837F4 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.PrePush_EB4572904A1FF447AB18B0B9535B894A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EmoteInventoryScreen_C::PrePush_EB4572904A1FF447AB18B0B9535B894A(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_EB4572904A1FF447AB18B0B9535B894A", FnName));
-
-	Params::WBP_EmoteInventoryScreen_C_PrePush_EB4572904A1FF447AB18B0B9535B894A Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.StopPlayingMontage
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EmoteInventoryScreen_C::StopPlayingMontage()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopPlayingMontage", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.UpdateTileList
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.Create Emote Icons
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_EmoteInventoryScreen_C::UpdateTileList()
+void UWBP_EmoteInventoryScreen_C::Create_Emote_Icons()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTileList", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Create Emote Icons", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BP_OnItemDoubleClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::BP_OnItemDoubleClicked(class UObject* Item)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnItemDoubleClicked", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_BP_OnItemDoubleClicked Parms{};
+
+	Parms.Item = Item;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ItemInventoryScreen_NEW_WBP_UI_Menu_ActionInputButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_ItemInventoryScreen_NEW_Button_Equip_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_BndEvt__WBP_EmoteInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EmoteInventoryScreen.WBP_EmoteInventoryScreen_C.BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EmoteInventoryScreen_C::BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature", FnName));
+
+	Params::WBP_EmoteInventoryScreen_C_BndEvt__WBP_EmoteInventoryScreen_Navbar_SubCategory_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

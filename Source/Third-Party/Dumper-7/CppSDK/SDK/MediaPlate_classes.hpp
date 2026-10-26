@@ -13,8 +13,8 @@
 #include "MediaAssets_structs.hpp"
 #include "MediaAssets_classes.hpp"
 #include "Engine_classes.hpp"
-#include "MediaPlate_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "MediaPlate_structs.hpp"
 
 
 SDK_NAMESPACE_START

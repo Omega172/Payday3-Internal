@@ -16,85 +16,91 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.Set Weapon Name Colour
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              DesiredColour                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::Set_Weapon_Name_Colour(const struct FLinearColor& DesiredColour)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Weapon Name Colour", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_Set_Weapon_Name_Colour Parms{};
 
-	Parms.bInHasFocus = bInHasFocus;
+	Parms.DesiredColour = std::move(DesiredColour);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ButtonHoveredChanged(bool bInIsHovered)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::RefreshVisuals()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
-
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonHoveredChanged Parms{};
-
-	Parms.bInIsHovered = bInIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton(int32 EntryPoint)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_LoadoutCustomization_WeaponSlotButton_C", "ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton Parms{};
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.InitializeWeaponVisuals
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnWeaponSlotInitialized
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::InitializeWeaponVisuals(class USBZInventoryBaseData* InInventoryData)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnWeaponSlotInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeWeaponVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponSlotInitialized", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_InitializeWeaponVisuals Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InInventoryData = InInventoryData;
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnHover(bool bIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -118,91 +124,85 @@ void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnFocused(bool bIsFocused)
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.InitializeWeaponVisuals
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnHover(bool bIsHovered)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::InitializeWeaponVisuals(class USBZInventoryBaseData* InInventoryData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeWeaponVisuals", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_OnHover Parms{};
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_InitializeWeaponVisuals Parms{};
 
-	Parms.bIsHovered = bIsHovered;
+	Parms.InInventoryData = InInventoryData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnInitialized()
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_LoadoutCustomization_WeaponSlotButton_C", "ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton", FuncInfo);
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ExecuteUbergraph_WBP_UI_LoadoutCustomization_WeaponSlotButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.OnWeaponSlotInitialized
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonSelected
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::OnWeaponSlotInitialized()
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWeaponSlotInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_PreConstruct Parms{};
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::RefreshVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.Set Weapon Name Colour
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_LoadoutCustomization_WeaponSlotButton.WBP_UI_LoadoutCustomization_WeaponSlotButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const struct FLinearColor&              DesiredColour                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::Set_Weapon_Name_Colour(const struct FLinearColor& DesiredColour)
+void UWBP_UI_LoadoutCustomization_WeaponSlotButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Weapon Name Colour", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_Set_Weapon_Name_Colour Parms{};
+	Params::WBP_UI_LoadoutCustomization_WeaponSlotButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.DesiredColour = std::move(DesiredColour);
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

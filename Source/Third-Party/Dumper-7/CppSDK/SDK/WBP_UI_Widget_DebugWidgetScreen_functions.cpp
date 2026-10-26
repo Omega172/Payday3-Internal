@@ -17,7 +17,7 @@
 SDK_NAMESPACE_START
 
 // Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.ExecuteUbergraph_WBP_UI_Widget_DebugWidgetScreen
-// (Final, UbergraphFunction, HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -127,38 +127,6 @@ void UWBP_UI_Widget_DebugWidgetScreen_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_DebugWidgetScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
-
-	Params::WBP_UI_Widget_DebugWidgetScreen_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_DebugWidgetScreen.WBP_UI_Widget_DebugWidgetScreen_C.UpdateTime
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_DebugWidgetScreen_C::UpdateTime()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTime", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

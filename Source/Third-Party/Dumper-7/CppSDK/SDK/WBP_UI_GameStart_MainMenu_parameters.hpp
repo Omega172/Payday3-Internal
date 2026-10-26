@@ -30,7 +30,7 @@ DUMPER7_ASSERTS_WBP_UI_GameStart_MainMenu_C_ExecuteUbergraph_WBP_UI_GameStart_Ma
 struct WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused final
 {
 public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_GameStart_MainMenu_C_OnGainedStackFocused;
 

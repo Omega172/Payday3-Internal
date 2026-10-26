@@ -16,91 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::Destruct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Widget_SM_Matchmaking_C", "ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking", FuncInfo);
-
-	Params::WBP_UI_Widget_SM_Matchmaking_C_ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.GoToLobby
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::GoToLobby()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GoToLobby", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnExitedMatchmaking
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnStateMachineEnteredMatchmaking_Event_0
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_SM_Matchmaking_C::OnExitedMatchmaking()
+void UWBP_UI_Widget_SM_Matchmaking_C::OnStateMachineEnteredMatchmaking_Event_0()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnExitedMatchmaking", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnMatchFound
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchFound()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatchFound", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnMatchmakingCanceled
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchmakingCanceled()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatchmakingCanceled", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateMachineEnteredMatchmaking_Event_0", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -124,13 +46,91 @@ void UWBP_UI_Widget_SM_Matchmaking_C::OnPopUpButtonPressed(class FName ClosingAc
 }
 
 
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnStateMachineEnteredMatchmaking_Event_0
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnMatchmakingCanceled
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Widget_SM_Matchmaking_C::OnStateMachineEnteredMatchmaking_Event_0()
+void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchmakingCanceled()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateMachineEnteredMatchmaking_Event_0", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatchmakingCanceled", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnMatchFound
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::OnMatchFound()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatchFound", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnExitedMatchmaking
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::OnExitedMatchmaking()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnExitedMatchmaking", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.GoToLobby
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::GoToLobby()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GoToLobby", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Widget_SM_Matchmaking_C", "ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking", FuncInfo);
+
+	Params::WBP_UI_Widget_SM_Matchmaking_C_ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Widget_SM_Matchmaking_C::Destruct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

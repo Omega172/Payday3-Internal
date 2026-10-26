@@ -16,23 +16,83 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.DisplaySkillsScreen
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.Set Equip Skills
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSBZPlayerLoadoutConfig&         NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZSkill*&                 Skill                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// uint8                                   SkillState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Loadout_SkillsCustomization_C::DisplaySkillsScreen(struct FSBZPlayerLoadoutConfig& NewParam)
+void UWBP_UI_Loadout_SkillsCustomization_C::Set_Equip_Skills(const class USBZSkill*& Skill, uint8 SkillState)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisplaySkillsScreen", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Equip Skills", FnName));
 
-	Params::WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen Parms{};
+	Params::WBP_UI_Loadout_SkillsCustomization_C_Set_Equip_Skills Parms{};
 
-	Parms.NewParam = std::move(NewParam);
+	Parms.Skill = Skill;
+	Parms.SkillState = SkillState;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	NewParam = std::move(Parms.NewParam);
+
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnTutorialHidden
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Loadout_SkillsCustomization_C::OnTutorialHidden()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTutorialHidden", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Loadout_SkillsCustomization_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Loadout_SkillsCustomization_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_Loadout_SkillsCustomization_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnDescriptionScrollAxisChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   Value_OnDescriptionScrollAxisChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Loadout_SkillsCustomization_C::OnDescriptionScrollAxisChanged(float Value_OnDescriptionScrollAxisChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDescriptionScrollAxisChanged", FnName));
+
+	Params::WBP_UI_Loadout_SkillsCustomization_C_OnDescriptionScrollAxisChanged Parms{};
+
+	Parms.Value_OnDescriptionScrollAxisChanged = Value_OnDescriptionScrollAxisChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -54,83 +114,23 @@ void UWBP_UI_Loadout_SkillsCustomization_C::ExecuteUbergraph_WBP_UI_Loadout_Skil
 }
 
 
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnDescriptionScrollAxisChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Loadout_SkillsCustomization_C::OnDescriptionScrollAxisChanged(float Value)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDescriptionScrollAxisChanged", FnName));
-
-	Params::WBP_UI_Loadout_SkillsCustomization_C_OnDescriptionScrollAxisChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Loadout_SkillsCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_Loadout_SkillsCustomization_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue = PreviousValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Loadout_SkillsCustomization_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.OnTutorialHidden
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Loadout_SkillsCustomization_C::OnTutorialHidden()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTutorialHidden", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.Set Equip Skills
+// Function WBP_UI_Loadout_SkillsCustomization.WBP_UI_Loadout_SkillsCustomization_C.DisplaySkillsScreen
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZSkill*&                 Skill                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-// uint8                                   SkillState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSBZPlayerLoadoutConfig&         NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UI_Loadout_SkillsCustomization_C::Set_Equip_Skills(const class USBZSkill*& Skill, uint8 SkillState)
+void UWBP_UI_Loadout_SkillsCustomization_C::DisplaySkillsScreen(struct FSBZPlayerLoadoutConfig& NewParam)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Equip Skills", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisplaySkillsScreen", FnName));
 
-	Params::WBP_UI_Loadout_SkillsCustomization_C_Set_Equip_Skills Parms{};
+	Params::WBP_UI_Loadout_SkillsCustomization_C_DisplaySkillsScreen Parms{};
 
-	Parms.Skill = Skill;
-	Parms.SkillState = SkillState;
+	Parms.NewParam = std::move(NewParam);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	NewParam = std::move(Parms.NewParam);
 }
 
 

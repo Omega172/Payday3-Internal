@@ -46,38 +46,38 @@ public:
 	class USBZMenuButton*                         ActiveButton;                                      // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	class UWidget* NavigateCards(EUINavigation Navigation_0);
-	void OnFilterTextChanged(const class FText& InText);
-	void SetSearchingVisuals(bool SearchStarted);
-	void InitPlatformFilterButtons();
-	void LockScrollBar(bool LockScroll_0);
-	void UpdateFocus(class UWBP_UI_Social_PlayerCard_C* DestructedContextedMenu, class UWBP_UI_Social_ContextButton_C* DestructedContextedFocusedButton, bool* bIsFocusUpdated);
-	void SetResultsWidgetSwitcherIndex();
-	void HandleFocusUpdateRequested();
-	void HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText);
-	void HideOpenedContextMenu();
-	void BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnPlayerCardDataUpdated();
-	void UpdateContainerEntries();
-	void OnPartyPanelRefreshComplete();
-	void OnFocusUpdateRequested();
-	void BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void OnInitialized();
-	void BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature(float CurrentOffset);
-	void BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature(float CurrentOffset);
 	void BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_PlayerCardContainer_AddContactButton_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_PlayerCardContainer_ContainerFilter_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_LeaveParty_Button_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_Playstation_Filter_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_SBZScrollBox_110_K2Node_ComponentBoundEvent_8_OnUserScrolledEvent__DelegateSignature(float CurrentOffset);
+	void BndEvt__WBP_PlayerCardContainer_ScrollBox_PlayerCardList_Horizontal_K2Node_ComponentBoundEvent_6_OnUserScrolledEvent__DelegateSignature(float CurrentOffset);
+	void BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_Windows_Filter_K2Node_ComponentBoundEvent_24_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_PlayerCardContainer_Xbox_Filter_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void ExecuteUbergraph_WBP_PlayerCardContainer(int32 EntryPoint);
+	void HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled, const TMap<class FName, class FText>& ButtonActionDisplayText);
+	void HandleFocusUpdateRequested();
+	void HideOpenedContextMenu();
+	void InitPlatformFilterButtons();
+	void LockScrollBar(bool LockScroll_0);
+	class UWidget* NavigateCards(EUINavigation Navigation_0);
+	void OnFilterTextChanged(const class FText& InText);
+	void OnFocusUpdateRequested();
+	void OnInitialized();
+	void OnPartyPanelRefreshComplete();
+	void OnPlayerCardDataUpdated();
 	void OnPlayerCardFocused(class USBZMenuButton* MenuButton, bool bIsFocused);
 	void PreConstruct(bool IsDesignTime);
-	void ExecuteUbergraph_WBP_PlayerCardContainer(int32 EntryPoint);
+	void SetResultsWidgetSwitcherIndex();
+	void SetSearchingVisuals(bool SearchStarted);
+	void UpdateContainerEntries();
+	void UpdateFocus(class UWBP_UI_Social_PlayerCard_C* DestructedContextedMenu, class UWBP_UI_Social_ContextButton_C* DestructedContextedFocusedButton, bool* bIsFocusUpdated);
 
 public:
 	static class UClass* StaticClass()

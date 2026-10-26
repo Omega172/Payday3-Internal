@@ -18,34 +18,93 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckLineStillFocused
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.WBP_UI_Skills_Line_AutoGenFunc
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Skills_Line_C_CheckLineStillFocused final
+struct WBP_UI_Skills_Line_C_WBP_UI_Skills_Line_AutoGenFunc final
 {
 public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_CheckLineStillFocused;
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_WBP_UI_Skills_Line_AutoGenFunc;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.UpdateSkillLineDescription
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_UI_Skills_Line_C_UpdateSkillLineDescription final
+{
+public:
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_RegexReplace_ReturnValue;                 // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_UpdateSkillLineDescription;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SkillButtonFocused
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Line_C_SkillButtonFocused final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SkillButtonFocused;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineMainAndMasteryButtons
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_UI_Skills_Line_C_SetSkillLineMainAndMasteryButtons final
+{
+public:
+	class USBZSkillData*                          MasterySkillInfo;                                  // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZSkillData*                          BaseSkillInfo;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZSkill*                              CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZSkill*                              CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZSkill*                              CallFunc_Array_Get_Item_2;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SetSkillLineMainAndMasteryButtons;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineDescriptionEnabled
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled final
+{
+public:
+	bool                                          bInFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         InButton;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          WasAlreadyActive;                                  // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetResearched
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Skills_Line_C_SetResearched final
+{
+public:
+	bool                                          IsResearched;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SetResearched;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Skills_Line_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_PreConstruct;
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.OnLanguageChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Line_C_OnLanguageChanged final
+{
+public:
+	class FString                                 InLanguage;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_OnLanguageChanged;
 
 // Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.ExecuteUbergraph_WBP_UI_Skills_Line
 // 0x0118 (0x0118 - 0x0000)
@@ -105,93 +164,34 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_ExecuteUbergraph_WBP_UI_Skills_Line;
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.OnLanguageChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Line_C_OnLanguageChanged final
-{
-public:
-	class FString                                 InLanguage;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_OnLanguageChanged;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.PreConstruct
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckLineStillFocused
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Skills_Line_C_PreConstruct final
+struct WBP_UI_Skills_Line_C_CheckLineStillFocused final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_CheckLineStillFocused;
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetResearched
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Skills_Line_C_SetResearched final
-{
-public:
-	bool                                          IsResearched;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SetResearched;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineDescriptionEnabled
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled final
-{
-public:
-	bool                                          bInFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         InButton;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          WasAlreadyActive;                                  // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineMainAndMasteryButtons
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_Skills_Line_C_SetSkillLineMainAndMasteryButtons final
-{
-public:
-	class USBZSkillData*                          MasterySkillInfo;                                  // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZSkillData*                          BaseSkillInfo;                                     // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZSkill*                              CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZSkill*                              CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZSkill*                              CallFunc_Array_Get_Item_2;                         // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SetSkillLineMainAndMasteryButtons;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SkillButtonFocused
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Skills_Line_C_SkillButtonFocused final
+struct WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_SkillButtonFocused;
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.UpdateSkillLineDescription
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_Skills_Line_C_UpdateSkillLineDescription final
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_RegexReplace_ReturnValue;                 // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0010)()
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_UpdateSkillLineDescription;
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.WBP_UI_Skills_Line_AutoGenFunc
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Skills_Line_C_WBP_UI_Skills_Line_AutoGenFunc final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_WBP_UI_Skills_Line_AutoGenFunc;
+DUMPER7_ASSERTS_WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

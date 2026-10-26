@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.OnUpdateOwnershipStatus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_ItemBundleDetails_C_OnUpdateOwnershipStatus final
+{
+public:
+	bool                                          bOwned_OnUpdateOwnershipStatus;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_ItemBundleDetails_C_OnUpdateOwnershipStatus;
+
 // Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.ExecuteUbergraph_WBP_Shop_ItemBundleDetails
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_Shop_ItemBundleDetails_C_ExecuteUbergraph_WBP_Shop_ItemBundleDetails final
@@ -29,15 +38,6 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_ItemBundleDetails_C_ExecuteUbergraph_WBP_Shop_ItemBundleDetails;
-
-// Function WBP_Shop_ItemBundleDetails.WBP_Shop_ItemBundleDetails_C.OnUpdateOwnershipStatus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_ItemBundleDetails_C_OnUpdateOwnershipStatus final
-{
-public:
-	bool                                          bOwned;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_ItemBundleDetails_C_OnUpdateOwnershipStatus;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

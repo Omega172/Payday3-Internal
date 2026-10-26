@@ -34,22 +34,22 @@ public:
 	class ACH_UI_MM_PlayerCharacter_C*            MainMenuMannequin;                                 // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature(ESBZEquippableLoadoutSlot EquippableSlot, int32 ActiveWeaponIndex);
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsFocused, ESBZInventoryEquipmentType ButtonType);
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
-	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature();
-	void BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
-	void Construct();
-	void ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization(int32 EntryPoint);
-	void GetWeaponConfig(ESBZEquippableLoadoutSlot InEquippableSlot, struct FSBZEquippableConfig* Equippable_Config);
-	void OnAddedToStack();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
 	void SetDisabledState(bool bIsDisabled);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnAddedToStack();
+	void GetWeaponConfig(ESBZEquippableLoadoutSlot InEquippableSlot, struct FSBZEquippableConfig* Equippable_Config);
+	void ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature();
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsFocused, ESBZInventoryEquipmentType ButtonType);
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData);
+	void BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature(ESBZEquippableLoadoutSlot EquippableSlot, int32 ActiveWeaponIndex);
 
 public:
 	static class UClass* StaticClass()

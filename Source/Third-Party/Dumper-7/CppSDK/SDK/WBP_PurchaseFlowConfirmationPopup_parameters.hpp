@@ -19,6 +19,44 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.SetPrice
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_PurchaseFlowConfirmationPopup_C_SetPrice final
+{
+public:
+	int64                                         Price;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCurrencyCode                              Currency;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         DiscountedPrice;                                   // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DiscountedAmount;                                  // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         DiscountedPercentage;                              // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_23[0x1];                                       // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0028(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_SetPrice;
+
+// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowStateChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PurchaseFlowConfirmationPopup_C_OnFlowStateChanged final
+{
+public:
+	ESBZUIPurchaseFlowState                       NewState_OnFlowStateChanged;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_OnFlowStateChanged;
+
+// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowConfigured
+// 0x0180 (0x0180 - 0x0000)
+struct WBP_PurchaseFlowConfirmationPopup_C_OnFlowConfigured final
+{
+public:
+	struct FSBZStoreItemUIData                    StoreItemUIData_OnFlowConfigured;                  // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_OnFlowConfigured;
+
 // Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup
 // 0x0388 (0x0388 - 0x0000)
 struct WBP_PurchaseFlowConfirmationPopup_C_ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup final
@@ -77,44 +115,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_ExecuteUbergraph_WBP_PurchaseFlowConfirmationPopup;
-
-// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowConfigured
-// 0x0180 (0x0180 - 0x0000)
-struct WBP_PurchaseFlowConfirmationPopup_C_OnFlowConfigured final
-{
-public:
-	struct FSBZStoreItemUIData                    StoreItemUIData;                                   // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_OnFlowConfigured;
-
-// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.OnFlowStateChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PurchaseFlowConfirmationPopup_C_OnFlowStateChanged final
-{
-public:
-	ESBZUIPurchaseFlowState                       NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_OnFlowStateChanged;
-
-// Function WBP_PurchaseFlowConfirmationPopup.WBP_PurchaseFlowConfirmationPopup_C.SetPrice
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_PurchaseFlowConfirmationPopup_C_SetPrice final
-{
-public:
-	int64                                         Price;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCurrencyCode                              Currency;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         DiscountedPrice;                                   // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DiscountedAmount;                                  // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         DiscountedPercentage;                              // 0x001C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23[0x1];                                       // 0x0023(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0028(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_PurchaseFlowConfirmationPopup_C_SetPrice;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -64,20 +64,20 @@ public:
 	class USBZWidgetBase*                         FocusCandidate;                                    // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CampaignScreen(int32 EntryPoint);
-	void FindBestFocusButton(class USBZWidgetBase** Return);
-	void GetChapterDataFunc(class USBZCampaignBaseEntryData** EntryData, int32* ChaptedIndex);
-	void InitializeCampaignAct(class USBZCampaignActData* ActData_0);
-	class UWidget* NavigateToSelectedIndex(EUINavigation Navigation_0);
-	void OnBackPressed();
-	void OnButtonSelected_Event(class USBZMenuButton* Button);
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void PreConstruct(bool IsDesignTime);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void TryPlay2DSound(class USBZCampaignBaseEntryData* EntryData);
 	void UpdateButtonSelected(class USBZWidgetBase* Widget, bool bIsSelected);
+	void TryPlay2DSound(class USBZCampaignBaseEntryData* EntryData);
+	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnButtonSelected_Event(class USBZMenuButton* Button);
+	void OnBackPressed();
+	class UWidget* NavigateToSelectedIndex(EUINavigation Navigation);
+	void InitializeCampaignAct(class USBZCampaignActData* ActData);
+	void GetChapterDataFunc(class USBZCampaignBaseEntryData** EntryData, int32* ChaptedIndex);
+	void FindBestFocusButton(class USBZWidgetBase** Return);
+	void ExecuteUbergraph_WBP_CampaignScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

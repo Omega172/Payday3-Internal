@@ -39,21 +39,21 @@ public:
 	class USBZMenuButton*                         CurrentFocusedButton;                              // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void CheckLineStillFocused();
-	void CheckResearchMarker();
-	void Construct();
-	void ExecuteUbergraph_WBP_UI_Skills_Line(int32 EntryPoint);
-	void OnCultureChanged();
-	void OnLanguageChanged(const class FString& InLanguage);
-	void PreConstruct(bool IsDesignTime);
-	void SetResearched(bool IsResearched);
-	void SetSkillLineDescriptionEnabled(bool bInFocused, class USBZMenuButton* InButton);
-	void SetSkillLineMainAndMasteryButtons();
-	void SkillButtonFocused(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void WBP_UI_Skills_Line_AutoGenFunc(EUINavigation Navigation);
 	void UpdateSkillLineDescription();
-	void WBP_UI_Skills_Line_AutoGenFunc(EUINavigation Navigation_0);
+	void SkillButtonFocused(class USBZMenuButton* Button, bool bIsEnabled);
+	void SetSkillLineMainAndMasteryButtons();
+	void SetSkillLineDescriptionEnabled(bool bInFocused, class USBZMenuButton* InButton);
+	void SetResearched(bool IsResearched);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnLanguageChanged(const class FString& InLanguage);
+	void OnCultureChanged();
+	void ExecuteUbergraph_WBP_UI_Skills_Line(int32 EntryPoint);
+	void Construct();
+	void CheckResearchMarker();
+	void CheckLineStillFocused();
+	void BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

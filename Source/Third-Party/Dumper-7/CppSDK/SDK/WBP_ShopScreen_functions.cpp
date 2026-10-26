@@ -16,6 +16,48 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ShopScreen.WBP_ShopScreen_C.OnShopScreenOpened
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   CategoryIndex_OnShopScreenOpened                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bPlayAnimation_OnShopScreenOpened                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ShopScreen_C::OnShopScreenOpened(int32 CategoryIndex_OnShopScreenOpened, bool bPlayAnimation_OnShopScreenOpened)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShopScreenOpened", FnName));
+
+	Params::WBP_ShopScreen_C_OnShopScreenOpened Parms{};
+
+	Parms.CategoryIndex_OnShopScreenOpened = CategoryIndex_OnShopScreenOpened;
+	Parms.bPlayAnimation_OnShopScreenOpened = bPlayAnimation_OnShopScreenOpened;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ShopScreen.WBP_ShopScreen_C.OnActiveCategoryUpdated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZShopCategoryData*       NewCategory_OnActiveCategoryUpdated                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewCategoryIndex_OnActiveCategoryUpdated               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bWasChanged_OnActiveCategoryUpdated                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ShopScreen_C::OnActiveCategoryUpdated(const class USBZShopCategoryData* NewCategory_OnActiveCategoryUpdated, int32 NewCategoryIndex_OnActiveCategoryUpdated, bool bWasChanged_OnActiveCategoryUpdated)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveCategoryUpdated", FnName));
+
+	Params::WBP_ShopScreen_C_OnActiveCategoryUpdated Parms{};
+
+	Parms.NewCategory_OnActiveCategoryUpdated = NewCategory_OnActiveCategoryUpdated;
+	Parms.NewCategoryIndex_OnActiveCategoryUpdated = NewCategoryIndex_OnActiveCategoryUpdated;
+	Parms.bWasChanged_OnActiveCategoryUpdated = bWasChanged_OnActiveCategoryUpdated;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ShopScreen.WBP_ShopScreen_C.ExecuteUbergraph_WBP_ShopScreen
 // (Final, UbergraphFunction)
 // Parameters:
@@ -29,48 +71,6 @@ void UWBP_ShopScreen_C::ExecuteUbergraph_WBP_ShopScreen(int32 EntryPoint)
 	Params::WBP_ShopScreen_C_ExecuteUbergraph_WBP_ShopScreen Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ShopScreen.WBP_ShopScreen_C.OnActiveCategoryUpdated
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZShopCategoryData*       NewCategory                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewCategoryIndex                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bWasChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ShopScreen_C::OnActiveCategoryUpdated(const class USBZShopCategoryData* NewCategory, int32 NewCategoryIndex, bool bWasChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveCategoryUpdated", FnName));
-
-	Params::WBP_ShopScreen_C_OnActiveCategoryUpdated Parms{};
-
-	Parms.NewCategory = NewCategory;
-	Parms.NewCategoryIndex = NewCategoryIndex;
-	Parms.bWasChanged = bWasChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ShopScreen.WBP_ShopScreen_C.OnShopScreenOpened
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   CategoryIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPlayAnimation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ShopScreen_C::OnShopScreenOpened(int32 CategoryIndex, bool bPlayAnimation)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShopScreenOpened", FnName));
-
-	Params::WBP_ShopScreen_C_OnShopScreenOpened Parms{};
-
-	Parms.CategoryIndex = CategoryIndex;
-	Parms.bPlayAnimation = bPlayAnimation;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

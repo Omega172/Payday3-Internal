@@ -17,17 +17,17 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C
-// 0x0008 (0x0438 - 0x0430)
+// 0x0008 (0x03F8 - 0x03F0)
 class UWBP_Shop_CarouselItem_C final : public USBZShopItemPreviewButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0430(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_Shop_CarouselItem(int32 EntryPoint);
-	void OnShow(bool bIsLast, bool bCanBeInspected, bool bIsVendorPermission);
+	void OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus);
 	void OnUpdateImagePadding(bool bFill);
-	void OnUpdateOwnershipStatus(bool bIsOwned);
+	void OnShow(bool bIsLast_OnShow, bool bCanBeInspected_OnShow, bool bIsVendorPermission_OnShow);
+	void ExecuteUbergraph_WBP_Shop_CarouselItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

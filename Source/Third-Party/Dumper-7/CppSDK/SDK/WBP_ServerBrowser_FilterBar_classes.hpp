@@ -39,19 +39,20 @@ public:
 	bool                                          ShouldHideTitle;                                   // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
-	void Destruct();
-	void ExecuteUbergraph_WBP_ServerBrowser_FilterBar(int32 EntryPoint);
-	void HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled);
-	void HideTitleBar(bool ShouldHideTitle_0);
-	void PreConstruct(bool IsDesignTime);
-	void SwitchToOptions(bool bIsActive);
-	void ToggleRefreshButton(bool bInIsEnabled);
 	void UpdateFilterNumber();
+	void ToggleRefreshButton(bool bInIsEnabled);
+	void SwitchToOptions(bool bIsActive);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void HideTitleBar(bool ShouldHideTitle);
+	void HasAnyDisabledLevels(bool* HasDisabledLevel);
+	void HandleButtonFocusChanged(class USBZMenuButton* Button, bool IsButtonEnabled);
+	void ExecuteUbergraph_WBP_ServerBrowser_FilterBar(int32 EntryPoint);
+	void Destruct();
+	void BndEvt__WBP_ServerBrowser_FilterBar_WBP_UI_Widget_ActionInput_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
+	void BndEvt__WBP_ServerBrowser_FilterBar_Button_RefreshServers_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_New_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterOptions_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_ServerBrowser_FilterBar_Button_FilterDifficulty_NEW_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()

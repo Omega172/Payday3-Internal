@@ -17,6 +17,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CharacterPreferenceCharacterDisplay_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_PreConstruct;
+
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnLockedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CharacterPreferenceCharacterDisplay_C_OnLockedChanged final
+{
+public:
+	bool                                          bInIsLocked_OnLockedChanged;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_OnLockedChanged;
+
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnHovered
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CharacterPreferenceCharacterDisplay_C_OnHovered final
+{
+public:
+	bool                                          bIsHovered_OnHovered;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_OnHovered;
+
+// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnActiveChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_CharacterPreferenceCharacterDisplay_C_OnActiveChanged final
+{
+public:
+	bool                                          bInIsActive_OnActiveChanged;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_OnActiveChanged;
+
 // Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay
 // 0x00C8 (0x00C8 - 0x0000)
 struct WBP_UI_CharacterPreferenceCharacterDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay final
@@ -58,42 +94,6 @@ public:
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_ExecuteUbergraph_WBP_UI_CharacterPreferenceCharacterDisplay;
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnActiveChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CharacterPreferenceCharacterDisplay_C_OnActiveChanged final
-{
-public:
-	bool                                          bInIsActive;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_OnActiveChanged;
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnHovered
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CharacterPreferenceCharacterDisplay_C_OnHovered final
-{
-public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_OnHovered;
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.OnLockedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CharacterPreferenceCharacterDisplay_C_OnLockedChanged final
-{
-public:
-	bool                                          bInIsLocked;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_OnLockedChanged;
-
-// Function WBP_UI_CharacterPreferenceCharacterDisplay.WBP_UI_CharacterPreferenceCharacterDisplay_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_CharacterPreferenceCharacterDisplay_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_CharacterPreferenceCharacterDisplay_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

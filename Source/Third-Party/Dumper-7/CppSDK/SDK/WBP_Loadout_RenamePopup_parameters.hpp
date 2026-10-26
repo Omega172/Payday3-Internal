@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.UpdateName
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Loadout_RenamePopup_C_UpdateName final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Loadout_RenamePopup_C_UpdateName;
+
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ShowCurrentName
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Loadout_RenamePopup_C_ShowCurrentName final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Loadout_RenamePopup_C_ShowCurrentName;
+
 // Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ExecuteUbergraph_WBP_Loadout_RenamePopup
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_Loadout_RenamePopup_C_ExecuteUbergraph_WBP_Loadout_RenamePopup final
@@ -31,24 +49,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0058(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_Loadout_RenamePopup_C_ExecuteUbergraph_WBP_Loadout_RenamePopup;
-
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ShowCurrentName
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Loadout_RenamePopup_C_ShowCurrentName final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Loadout_RenamePopup_C_ShowCurrentName;
-
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.UpdateName
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Loadout_RenamePopup_C_UpdateName final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Loadout_RenamePopup_C_UpdateName;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

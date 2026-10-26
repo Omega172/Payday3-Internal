@@ -16,13 +16,49 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.UpdateName
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Loadout_RenamePopup_C::Construct()
+void UWBP_Loadout_RenamePopup_C::UpdateName(const class FText& Text)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateName", FnName));
+
+	Params::WBP_Loadout_RenamePopup_C_UpdateName Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ShowCurrentName
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Loadout_RenamePopup_C::ShowCurrentName(const class FText& InText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowCurrentName", FnName));
+
+	Params::WBP_Loadout_RenamePopup_C_ShowCurrentName Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Loadout_RenamePopup_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -46,51 +82,15 @@ void UWBP_Loadout_RenamePopup_C::ExecuteUbergraph_WBP_Loadout_RenamePopup(int32 
 }
 
 
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.OnInitialized
+// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Loadout_RenamePopup_C::OnInitialized()
+void UWBP_Loadout_RenamePopup_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.ShowCurrentName
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Loadout_RenamePopup_C::ShowCurrentName(const class FText& InText)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowCurrentName", FnName));
-
-	Params::WBP_Loadout_RenamePopup_C_ShowCurrentName Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Loadout_RenamePopup.WBP_Loadout_RenamePopup_C.UpdateName
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Loadout_RenamePopup_C::UpdateName(const class FText& Text)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateName", FnName));
-
-	Params::WBP_Loadout_RenamePopup_C_UpdateName Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

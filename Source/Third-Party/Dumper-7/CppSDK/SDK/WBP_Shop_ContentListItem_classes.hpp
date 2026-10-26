@@ -28,9 +28,9 @@ public:
 	double                                        Epsilon;                                           // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus);
+	void OnSetHighlighted(bool bHighlight_OnSetHighlighted, bool bIsInstant_OnSetHighlighted);
 	void ExecuteUbergraph_WBP_Shop_ContentListItem(int32 EntryPoint);
-	void OnSetHighlighted(bool bHighlight, bool bIsInstant);
-	void OnUpdateOwnershipStatus(bool bIsOwned);
 
 public:
 	static class UClass* StaticClass()

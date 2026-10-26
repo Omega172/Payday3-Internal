@@ -14,6 +14,18 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
+// 0x0020 (0x0020 - 0x0000)
+struct SBZSmallCosmeticDestruction_fading_C_UserConstructionScript final
+{
+public:
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_SBZSmallCosmeticDestruction_fading_C_UserConstructionScript;
+
 // Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ExecuteUbergraph_SBZSmallCosmeticDestruction_fading
 // 0x0028 (0x0028 - 0x0000)
 struct SBZSmallCosmeticDestruction_fading_C_ExecuteUbergraph_SBZSmallCosmeticDestruction_fading final
@@ -27,18 +39,6 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_SBZSmallCosmeticDestruction_fading_C_ExecuteUbergraph_SBZSmallCosmeticDestruction_fading;
-
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
-// 0x0020 (0x0020 - 0x0000)
-struct SBZSmallCosmeticDestruction_fading_C_UserConstructionScript final
-{
-public:
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_SBZSmallCosmeticDestruction_fading_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

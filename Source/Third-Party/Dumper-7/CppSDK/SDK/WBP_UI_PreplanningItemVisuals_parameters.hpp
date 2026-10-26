@@ -18,46 +18,49 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.ExecuteUbergraph_WBP_UI_PreplanningItemVisuals
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_ExecuteUbergraph_WBP_UI_PreplanningItemVisuals final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            K2Node_Event_NewItem;                              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZPreplanningAssetData*               K2Node_DynamicCast_AsSBZPreplanning_Asset_Data;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_ExecuteUbergraph_WBP_UI_PreplanningItemVisuals;
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.InitializeItemVisuals
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_InitializeItemVisuals final
-{
-public:
-	class USBZPreplanningAssetData*               InPreplanningItem;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPaperSprite*                           K2Node_DynamicCast_AsPaper_Sprite;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_InitializeItemVisuals;
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.ItemInitialized
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SpriteLoaded
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_ItemInitialized final
+struct WBP_UI_PreplanningItemVisuals_C_SpriteLoaded final
 {
 public:
-	const class USBZInventoryBaseData*            NewItem;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           OutLoadedSprite_SpriteLoaded;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_ItemInitialized;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_SpriteLoaded;
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SetIcon
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_PreplanningItemVisuals_C_SetIcon final
+{
+public:
+	class UPaperSprite*                           InDisplayIcon;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_SetIcon;
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SetDisplayName
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_PreplanningItemVisuals_C_SetDisplayName final
+{
+public:
+	class USBZPreplanningAssetData*               InPrePlanningAsset;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0008(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x002C(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_SetDisplayName;
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_PreplanningItemVisuals_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_PreConstruct;
 
 // Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.OnFocus
 // 0x00A8 (0x00A8 - 0x0000)
@@ -87,49 +90,46 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_OnFocus;
 
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_PreConstruct;
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SetDisplayName
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_SetDisplayName final
-{
-public:
-	class USBZPreplanningAssetData*               InPrePlanningAsset;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0008(0x0010)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x002C(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_SetDisplayName;
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SetIcon
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_SetIcon final
-{
-public:
-	class UPaperSprite*                           InDisplayIcon;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_SetIcon;
-
-// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.SpriteLoaded
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.ItemInitialized
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_PreplanningItemVisuals_C_SpriteLoaded final
+struct WBP_UI_PreplanningItemVisuals_C_ItemInitialized final
 {
 public:
-	class UPaperSprite*                           OutLoadedSprite;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZInventoryBaseData*            NewItem_ItemInitialized;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_SpriteLoaded;
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_ItemInitialized;
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.InitializeItemVisuals
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_PreplanningItemVisuals_C_InitializeItemVisuals final
+{
+public:
+	class USBZPreplanningAssetData*               InPreplanningItem;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           K2Node_DynamicCast_AsPaper_Sprite;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_InitializeItemVisuals;
+
+// Function WBP_UI_PreplanningItemVisuals.WBP_UI_PreplanningItemVisuals_C.ExecuteUbergraph_WBP_UI_PreplanningItemVisuals
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_UI_PreplanningItemVisuals_C_ExecuteUbergraph_WBP_UI_PreplanningItemVisuals final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            K2Node_Event_NewItem;                              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZPreplanningAssetData*               K2Node_DynamicCast_AsSBZPreplanning_Asset_Data;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPaperSprite*                           K2Node_Event_OutLoadedSprite;                      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_PreplanningItemVisuals_C_ExecuteUbergraph_WBP_UI_PreplanningItemVisuals;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

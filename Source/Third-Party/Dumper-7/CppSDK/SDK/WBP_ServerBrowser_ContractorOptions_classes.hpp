@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "S_ContractorHeists_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "UMG_classes.hpp"
-#include "SlateCore_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -43,33 +43,33 @@ public:
 	bool                                          IsConstructed;                                     // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, bool>                     ActiveHeists;                                      // 0x03C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(TArray<struct FSBZServerBrowserHeistLevel>& HeistDataFilters, int32 DifficultyFilterIndex, int32 TacticFilterIndex, bool ShowModdedLobbies)> SendFiltersToApply; // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(TArray<struct FSBZServerBrowserHeistLevel>& HeistDataFilters, int32 DifficultyFilterIndex, int32 TacticFilterIndex, bool ShowModdedLobbies, bool ShouldAnimate)> SendFiltersToApply; // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          AllButtonState;                                    // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddDataToSelector();
-	void AddOwnedHeistsToScrollBox();
-	void AllHeistsUpdated(const class FText& HeistTitle, bool IsHeistActive);
-	void BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
-	void BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
-	void CheckOwnedHeists(const class FString& InHeistToFind, bool* Found, struct FSBZServerBrowserHeistLevel* HeistData);
-	class UWidget* CustomUpNav_ForItemsBelowScrollbox(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions(int32 EntryPoint);
-	void FindHeistInScrollBox(const class FText& HeistNameToFind, bool* Found, class UWBP_YesNo_LineItem_MenuButton_C** ItemRef);
-	void GetHeistDataForActiveHeists(TArray<struct FSBZServerBrowserHeistLevel>* ActiveHeistData);
-	void HeistLineItemUpdated(const class FText& HeistTitle, bool IsHeistActive);
-	void PopulateOwnedHeistMap(bool* FoundHeists);
-	void PreConstruct(bool IsDesignTime);
-	void ResetAllFilters();
-	void ResetAllHeistsInScrollBox();
-	void RevealHeistsForContractor(const class FString& Key);
-	void SaveCurrentValuesToGameUserSettings();
-	void SetFiltersFromGameUserSettings();
-	void SetOwnedHeists(TArray<struct FSBZServerBrowserHeistCollection>& InOwnedHeists);
-	void UpdateAllDefaultState();
 	void UpdateOwnedHeistMap();
+	void UpdateAllDefaultState();
+	void SetOwnedHeists(TArray<struct FSBZServerBrowserHeistCollection>& InOwnedHeists);
+	void SetFiltersFromGameUserSettings();
+	void SaveCurrentValuesToGameUserSettings();
+	void RevealHeistsForContractor(const class FString& Key);
+	void ResetAllHeistsInScrollBox();
+	void ResetAllFilters();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PopulateOwnedHeistMap(bool* FoundHeists);
+	void HeistLineItemUpdated(const class FText& HeistTitle, bool IsHeistActive);
+	void GetHeistDataForActiveHeists(TArray<struct FSBZServerBrowserHeistLevel>* ActiveHeistData);
+	void FindHeistInScrollBox(const class FText& HeistNameToFind, bool* Found, class UWBP_YesNo_LineItem_MenuButton_C** ItemRef);
+	void ExecuteUbergraph_WBP_ServerBrowser_ContractorOptions(int32 EntryPoint);
+	class UWidget* CustomUpNav_ForItemsBelowScrollbox(EUINavigation Navigation);
+	void CheckOwnedHeists(const class FString& InHeistToFind, bool* Found, struct FSBZServerBrowserHeistLevel* HeistData);
+	void BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_Navbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_ServerBrowser_ContractorOptions_WBP_ServerBrowser_InspectButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_ContractorOptions_TacticFilter_K2Node_ComponentBoundEvent_3_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_ServerBrowser_ContractorOptions_DifficultyFilter_K2Node_ComponentBoundEvent_0_SBZOnSelectorOptionChanged__DelegateSignature(int32 NewIndex);
+	void AllHeistsUpdated(const class FText& HeistTitle, bool IsHeistActive);
+	void AddOwnedHeistsToScrollBox();
+	void AddDataToSelector();
 
 public:
 	static class UClass* StaticClass()

@@ -14,6 +14,61 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.SetContractorSprite
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite final
+{
+public:
+	TSoftObjectPtr<class UPaperSprite>            ContractorSprite;                                  // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_PreConstruct;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnSelectionOptionChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged final
+{
+public:
+	int32                                         InCurrentIndex_OnSelectionOptionChanged;           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bOverrideReadOnly_OnSelectionOptionChanged;        // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_51F23A4943941A9E9DE1DBB426DE1827
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_0B3A176146937A1A5B15A0B11F535FAF
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF;
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.GetContractorName
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ServerBrowser_ContractorSelector_C_GetContractorName final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_GetContractorName;
+
 // Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_ServerBrowser_ContractorSelector_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector final
@@ -47,61 +102,6 @@ public:
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_1;            // 0x00F8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.GetContractorName
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_GetContractorName final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_GetContractorName;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_0B3A176146937A1A5B15A0B11F535FAF
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_51F23A4943941A9E9DE1DBB426DE1827
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnSelectionOptionChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged final
-{
-public:
-	int32                                         InCurrentIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bOverrideReadOnly;                                 // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_PreConstruct;
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.SetContractorSprite
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite final
-{
-public:
-	TSoftObjectPtr<class UPaperSprite>            ContractorSprite;                                  // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

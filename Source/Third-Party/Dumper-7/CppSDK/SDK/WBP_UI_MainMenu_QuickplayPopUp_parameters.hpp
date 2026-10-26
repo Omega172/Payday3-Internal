@@ -18,62 +18,69 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.UpdateType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_UpdateType final
+{
+public:
+	ESBZOnlineJoinType                            InLobbyType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_UpdateType;
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Update Difficulty Visuals
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_Update_Difficulty_Visuals final
+{
+public:
+	ESBZDifficulty                                NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Map_Find_Value;                           // 0x0008(0x0010)()
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_Update_Difficulty_Visuals;
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Set Difficulty
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_Set_Difficulty final
+{
+public:
+	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_Set_Difficulty;
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_OnGainedStackFocused;
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnControlsReferenceClicked
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.LobbyTypeSelectorNavigateDown
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+struct WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature;
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown;
 
 // Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp
 // 0x01F0 (0x01F0 - 0x0000)
@@ -108,7 +115,7 @@ public:
 	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x00E0(0x0038)()
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0120(0x0010)(ReferenceParm)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0130(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0130(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_13C[0x4];                                      // 0x013C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference_1;    // 0x0140(0x0028)()
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -127,69 +134,62 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_ExecuteUbergraph_WBP_UI_MainMenu_QuickplayPopUp;
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.LobbyTypeSelectorNavigateDown
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_MatchmakeButton_InspectScreen_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown final
+struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_LobbyTypeSelectorNavigateDown;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnControlsReferenceClicked
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked final
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0018(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_OnControlsReferenceClicked;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_WBP_UI_DifficultySelectorWidget_02_K2Node_ComponentBoundEvent_1_SBZOnSelectorOptionChanged__DelegateSignature;
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_OnGainedStackFocused final
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_OnGainedStackFocused;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Set Difficulty
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_Set_Difficulty final
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_Set_Difficulty;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonReady_1_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.Update Difficulty Visuals
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_Update_Difficulty_Visuals final
+// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	ESBZDifficulty                                NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Map_Find_Value;                           // 0x0008(0x0010)()
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_Update_Difficulty_Visuals;
-
-// Function WBP_UI_MainMenu_QuickplayPopUp.WBP_UI_MainMenu_QuickplayPopUp_C.UpdateType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_QuickplayPopUp_C_UpdateType final
-{
-public:
-	ESBZOnlineJoinType                            InLobbyType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_UpdateType;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_QuickplayPopUp_C_BndEvt__WBP_UI_MainMenu_QuickplayPopUp_ButtonBACK_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

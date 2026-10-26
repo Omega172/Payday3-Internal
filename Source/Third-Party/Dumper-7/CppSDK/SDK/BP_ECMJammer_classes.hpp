@@ -27,10 +27,10 @@ public:
 	class UAkComponent*                           Ak;                                                // 0x06C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ECMJammer(int32 EntryPoint);
-	void OnActivated();
-	void OnActivatedUsing();
 	void OnJammerEffectEnded();
+	void OnActivatedUsing();
+	void OnActivated();
+	void ExecuteUbergraph_BP_ECMJammer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

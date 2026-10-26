@@ -16,19 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.ExecuteUbergraph_WBP_DailyChallengePreviewItem
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.UpdateProgress
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InCurrentVal                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InMaxValue                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengePreviewItem_C::ExecuteUbergraph_WBP_DailyChallengePreviewItem(int32 EntryPoint)
+void UWBP_DailyChallengePreviewItem_C::UpdateProgress(int32 InCurrentVal, int32 InMaxValue)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_DailyChallengePreviewItem_C", "ExecuteUbergraph_WBP_DailyChallengePreviewItem", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateProgress", FnName));
 
-	Params::WBP_DailyChallengePreviewItem_C_ExecuteUbergraph_WBP_DailyChallengePreviewItem Parms{};
+	Params::WBP_DailyChallengePreviewItem_C_UpdateProgress Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InCurrentVal = InCurrentVal;
+	Parms.InMaxValue = InMaxValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,21 +54,19 @@ void UWBP_DailyChallengePreviewItem_C::InitItem(const struct FSBZChallengeData& 
 }
 
 
-// Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.UpdateProgress
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_DailyChallengePreviewItem.WBP_DailyChallengePreviewItem_C.ExecuteUbergraph_WBP_DailyChallengePreviewItem
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   InCurrentVal                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   InMaxValue                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DailyChallengePreviewItem_C::UpdateProgress(int32 InCurrentVal, int32 InMaxValue)
+void UWBP_DailyChallengePreviewItem_C::ExecuteUbergraph_WBP_DailyChallengePreviewItem(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateProgress", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DailyChallengePreviewItem_C", "ExecuteUbergraph_WBP_DailyChallengePreviewItem", FuncInfo);
 
-	Params::WBP_DailyChallengePreviewItem_C_UpdateProgress Parms{};
+	Params::WBP_DailyChallengePreviewItem_C_ExecuteUbergraph_WBP_DailyChallengePreviewItem Parms{};
 
-	Parms.InCurrentVal = InCurrentVal;
-	Parms.InMaxValue = InMaxValue;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

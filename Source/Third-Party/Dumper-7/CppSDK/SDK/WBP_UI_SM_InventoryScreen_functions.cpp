@@ -16,247 +16,249 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.UpdateLoadoutName
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InLoadoutIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    InLoadoutString                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::UpdateLoadoutName(int32 InLoadoutIndex, const class FString& InLoadoutString)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateLoadoutName", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_UpdateLoadoutName Parms{};
+
+	Parms.InLoadoutIndex = InLoadoutIndex;
+	Parms.InLoadoutString = std::move(InLoadoutString);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.UpdateKeyboardFocus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_InventoryScreen_C::UpdateKeyboardFocus()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateKeyboardFocus", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SM_InventoryScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_InventoryScreen_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::OnControlsReferenceClicked(class FName InActionInput)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_OnControlsReferenceClicked Parms{};
+
+	Parms.InActionInput = InActionInput;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.NavToStyle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_SM_InventoryScreen_C::NavToStyle(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavToStyle", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_NavToStyle Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.NavToLoadout
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_UI_SM_InventoryScreen_C::NavToLoadout(EUINavigation Navigation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavToLoadout", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_NavToLoadout Parms{};
+
+	Parms.Navigation = Navigation;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.ExecuteUbergraph_WBP_UI_SM_InventoryScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::ExecuteUbergraph_WBP_UI_SM_InventoryScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_SM_InventoryScreen_C", "ExecuteUbergraph_WBP_UI_SM_InventoryScreen", FuncInfo);
+
+	Params::WBP_UI_SM_InventoryScreen_C_ExecuteUbergraph_WBP_UI_SM_InventoryScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_InventoryScreen_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature(int32 NewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature Parms{};
+
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature(const class FText& Text)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayerLoadoutConfig&   PlayerLoadout                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   PlayerLoadoutIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature(const struct FSBZPlayerLoadoutConfig& PlayerLoadout, int32 PlayerLoadoutIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature Parms{};
-
-	Parms.PlayerLoadout = std::move(PlayerLoadout);
-	Parms.PlayerLoadoutIndex = PlayerLoadoutIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZEquippableLoadoutSlot               EquippableSlot                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ActiveWeaponIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature(ESBZEquippableLoadoutSlot EquippableSlot, int32 ActiveWeaponIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature Parms{};
-
-	Parms.EquippableSlot = EquippableSlot;
-	Parms.ActiveWeaponIndex = ActiveWeaponIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature Parms{};
 
 	Parms.ActiveItemData = ActiveItemData;
 
@@ -264,35 +266,17 @@ void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Load
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature Parms{};
-
-	Parms.ActiveItemData = ActiveItemData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature Parms{};
 
 	Parms.ActiveItemData = ActiveItemData;
 
@@ -322,17 +306,17 @@ void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Load
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature Parms{};
 
 	Parms.ActiveItemData = ActiveItemData;
 
@@ -340,17 +324,17 @@ void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Load
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature Parms{};
 
 	Parms.ActiveItemData = ActiveItemData;
 
@@ -358,233 +342,249 @@ void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Load
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// const class USBZInventoryBaseData*      ActiveItemData                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature()
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature(const class USBZInventoryBaseData* ActiveItemData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_17_OnItemButtonSelected__DelegateSignature Parms{};
+
+	Parms.ActiveItemData = ActiveItemData;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZEquippableLoadoutSlot               EquippableSlot                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ActiveWeaponIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature(ESBZEquippableLoadoutSlot EquippableSlot, int32 ActiveWeaponIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature Parms{};
+
+	Parms.EquippableSlot = EquippableSlot;
+	Parms.ActiveWeaponIndex = ActiveWeaponIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature(const class FText& Text)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_LoadoutNameEntry_K2Node_ComponentBoundEvent_9_OnTextButtonSubmittedText__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.Text = std::move(Text);
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature(int32 NewIndex)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Widget_LocalNavBar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.NewIndex = NewIndex;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::Construct()
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_21_OnMenuButtonSelected__DelegateSignature Parms{};
 
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.ExecuteUbergraph_WBP_UI_SM_InventoryScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::ExecuteUbergraph_WBP_UI_SM_InventoryScreen(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_SM_InventoryScreen_C", "ExecuteUbergraph_WBP_UI_SM_InventoryScreen", FuncInfo);
-
-	Params::WBP_UI_SM_InventoryScreen_C_ExecuteUbergraph_WBP_UI_SM_InventoryScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.NavToLoadout
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_UI_SM_InventoryScreen_C::NavToLoadout(EUINavigation Navigation_0)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavToLoadout", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_NavToLoadout Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_WBP_UI_Inventory_TextButton_80_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.NavToStyle
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_UI_SM_InventoryScreen_C::NavToStyle(EUINavigation Navigation_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavToStyle", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_NavToStyle Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_InventoryScreen_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
-
-	Params::WBP_UI_SM_InventoryScreen_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPlayerLoadoutConfig&   PlayerLoadout                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   PlayerLoadoutIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature(const struct FSBZPlayerLoadoutConfig& PlayerLoadout, int32 PlayerLoadoutIndex)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_OnGainedStackFocused Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.PlayerLoadout = std::move(PlayerLoadout);
+	Parms.PlayerLoadoutIndex = PlayerLoadoutIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_SM_InventoryScreen_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SM_InventoryScreen_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.UpdateKeyboardFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_InventoryScreen_C::UpdateKeyboardFocus()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateKeyboardFocus", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.UpdateLoadoutName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   InLoadoutIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    InLoadoutString                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_InventoryScreen_C::UpdateLoadoutName(int32 InLoadoutIndex, const class FString& InLoadoutString)
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateLoadoutName", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_InventoryScreen_C_UpdateLoadoutName Parms{};
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_22_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.InLoadoutIndex = InLoadoutIndex;
-	Parms.InLoadoutString = std::move(InLoadoutString);
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_SelectorButton_LoadoutSelection_K2Node_ComponentBoundEvent_12_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Button_GlovesScreen_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_InventoryScreen.WBP_UI_SM_InventoryScreen_C.BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_InventoryScreen_C::BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_SM_InventoryScreen_C_BndEvt__WBP_UI_SM_InventoryScreen_Button_CharacterPreference_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

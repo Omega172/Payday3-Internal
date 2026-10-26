@@ -26,9 +26,9 @@ public:
 	class UWBP_UI_Widget_ActionInput_Hold_C*      Widget_TabForward;                                 // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_UI_CharacterPreferenceDisplay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

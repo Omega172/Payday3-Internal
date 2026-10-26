@@ -18,36 +18,87 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.UpdateBuyButtonControls
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_UpdateBuyButtonControls final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0018(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0050(0x0038)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0098(0x0028)()
 };
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_UpdateBuyButtonControls;
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.SetActiveButton
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
+struct WBP_UI_GloveInventoryScreen_C_SetActiveButton final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         NewButton;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_SetActiveButton;
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.Do Custom Navigation
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_Do_Custom_Navigation final
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPurchaseComplete
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_OnSlotPurchaseComplete final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bWasSuccessful_OnSlotPurchaseComplete;             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_Do_Custom_Navigation;
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnSlotPurchaseComplete;
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPriceChanged
+// 0x0158 (0x0158 - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_OnSlotPriceChanged final
+{
+public:
+	struct FSBZInventorySlotStoreItem             Item_OnSlotPriceChanged;                           // 0x0000(0x0158)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnSlotPriceChanged;
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnItemDiscarded
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_OnItemDiscarded final
+{
+public:
+	bool                                          bWasSuccessful_OnItemDiscarded;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnItemDiscarded;
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.GloveSlotButtonFocusedChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_GloveSlotButtonFocusedChanged final
+{
+public:
+	class USBZMenuButton*                         InFocusedButton_GloveSlotButtonFocusedChanged;     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused_GloveSlotButtonFocusedChanged;          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_GloveSlotButtonFocusedChanged;
 
 // Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.ExecuteUbergraph_WBP_UI_GloveInventoryScreen
 // 0x06D0 (0x06D0 - 0x0000)
@@ -74,7 +125,7 @@ public:
 	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0088(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0088(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0094(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_95[0x3];                                       // 0x0095(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0098(0x0038)()
@@ -172,87 +223,36 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_ExecuteUbergraph_WBP_UI_GloveInventoryScreen;
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.GloveSlotButtonFocusedChanged
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.Do Custom Navigation
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_GloveSlotButtonFocusedChanged final
+struct WBP_UI_GloveInventoryScreen_C_Do_Custom_Navigation final
 {
 public:
-	class USBZMenuButton*                         InFocusedButton;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_GloveSlotButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_Do_Custom_Navigation;
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnItemDiscarded
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_OnItemDiscarded final
-{
-public:
-	bool                                          bWasSuccessful;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnItemDiscarded;
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPriceChanged
-// 0x0158 (0x0158 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_OnSlotPriceChanged final
-{
-public:
-	struct FSBZInventorySlotStoreItem             Item;                                              // 0x0000(0x0158)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnSlotPriceChanged;
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.OnSlotPurchaseComplete
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_OnSlotPurchaseComplete final
-{
-public:
-	bool                                          bWasSuccessful;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_OnSlotPurchaseComplete;
-
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.SetActiveButton
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_SetActiveButton final
+struct WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class USBZMenuButton*                         NewButton;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_SetActiveButton;
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.UpdateBuyButtonControls
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_UI_GloveInventoryScreen_C_UpdateBuyButtonControls final
+// Function WBP_UI_GloveInventoryScreen.WBP_UI_GloveInventoryScreen_C.BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0018(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0050(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0088(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0098(0x0028)()
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_UpdateBuyButtonControls;
+DUMPER7_ASSERTS_WBP_UI_GloveInventoryScreen_C_BndEvt__WBP_UI_GloveInventoryScreen_Button_DefaultGlove_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 
 
@@ -31,10 +31,10 @@ public:
 	struct FVector2D                              ImageSize;                                         // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DailyChallengeReward(int32 EntryPoint);
-	void InitializeInfamyReward(int32 InInfamy);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void InitializeReward(const struct FSBZChallengeRewardItem& InRewardItem);
-	void PreConstruct(bool IsDesignTime);
+	void InitializeInfamyReward(int32 InInfamy);
+	void ExecuteUbergraph_WBP_DailyChallengeReward(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

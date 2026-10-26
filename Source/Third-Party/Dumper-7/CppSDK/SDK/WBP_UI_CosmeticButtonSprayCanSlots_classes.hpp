@@ -17,17 +17,17 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_CosmeticButtonSprayCanSlots.WBP_UI_CosmeticButtonSprayCanSlots_C
-// 0x0008 (0x0428 - 0x0420)
+// 0x0008 (0x03E8 - 0x03E0)
 class UWBP_UI_CosmeticButtonSprayCanSlots_C final : public UWBP_UI_CosmeticButton_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_UI_CosmeticButtonSprayCanSlots_C; // 0x0420(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_UI_CosmeticButtonSprayCanSlots_C; // 0x03E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots(int32 EntryPoint);
-	void HoverChangedVisuals(bool bIsHovered);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void OnCosmeticItemDataInitialized();
-	void PreConstruct(bool IsDesignTime);
+	void HoverChangedVisuals(bool bIsHovered);
+	void ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

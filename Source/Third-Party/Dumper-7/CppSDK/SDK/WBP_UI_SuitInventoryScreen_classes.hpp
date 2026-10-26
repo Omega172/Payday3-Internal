@@ -37,23 +37,23 @@ public:
 	class USBZMenuButton*                         Last_RT_Focusedbutton;                             // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_SuitInventoryScreen_WBP_UI_AppearanceTextButton_223_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	class UWidget* Do_Custom_Navigation(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_UI_SuitInventoryScreen(int32 EntryPoint);
-	void OnControlsReferenceClicked(class FName ActionName);
-	void OnCustomizePressed();
-	void OnDiscardPressed();
-	void OnEmptySlotSelected();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnItemDiscarded(bool bWasSuccessful);
-	void OnLostStackFocused();
-	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item);
-	void OnSlotPurchaseComplete(bool bWasSuccessful);
-	void OnTryBuySuitSlot();
-	void SetActiveButton(class USBZMenuButton* NewButton);
-	void SuitSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton, bool bIsFocused);
 	void UpdateBuyButtonControls();
+	void SuitSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton_SuitSlotButtonFocusedChanged, bool bIsFocused_SuitSlotButtonFocusedChanged);
+	void SetActiveButton(class USBZMenuButton* NewButton);
+	void OnTryBuySuitSlot();
+	void OnSlotPurchaseComplete(bool bWasSuccessful_OnSlotPurchaseComplete);
+	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item_OnSlotPriceChanged);
+	void OnLostStackFocused();
+	void OnItemDiscarded(bool bWasSuccessful_OnItemDiscarded);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnEmptySlotSelected();
+	void OnDiscardPressed();
+	void OnCustomizePressed();
+	void OnControlsReferenceClicked(class FName ActionName);
+	void ExecuteUbergraph_WBP_UI_SuitInventoryScreen(int32 EntryPoint);
+	class UWidget* Do_Custom_Navigation(EUINavigation Navigation);
+	void BndEvt__WBP_UI_SuitInventoryScreen_WBP_UI_AppearanceTextButton_223_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_SuitInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

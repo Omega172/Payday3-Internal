@@ -35,19 +35,19 @@ public:
 	class UWBP_UI_Inventory_ItemSlotButton_C*     ArmorVendorBtn;                                    // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_ItemInventoryScreen(int32 EntryPoint);
-	void HandleVendorButton();
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnEmptySlotFocus(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnItemSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused);
-	void OnItemSlotButtonSelected(class USBZMenuButton* SelectedButton);
-	void OnItemSlotScreenDisplayed();
-	void OnItemSlotsUpdated();
-	void OnLostStackFocused();
-	void OnPressCustomize();
-	void OpenArmorVendor(class USBZMenuButton* Button);
 	void SetControlReferences();
+	void OpenArmorVendor(class USBZMenuButton* Button);
+	void OnPressCustomize();
+	void OnLostStackFocused();
+	void OnItemSlotsUpdated();
+	void OnItemSlotScreenDisplayed();
+	void OnItemSlotButtonSelected(class USBZMenuButton* SelectedButton_OnItemSlotButtonSelected);
+	void OnItemSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton_OnItemSlotButtonFocusedChanged, bool bIsFocused_OnItemSlotButtonFocusedChanged);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnEmptySlotFocus(class USBZMenuButton* Button, bool bIsEnabled);
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void HandleVendorButton();
+	void ExecuteUbergraph_WBP_UI_ItemInventoryScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

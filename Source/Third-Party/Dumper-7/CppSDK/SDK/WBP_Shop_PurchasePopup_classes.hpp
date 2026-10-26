@@ -31,10 +31,10 @@ public:
 	class UWidgetSwitcher*                        Top_WS;                                            // 0x0540(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus);
+	void OnSelectedItemChanged(bool bIsOwned_OnSelectedItemChanged, bool bIsVendorPermission_OnSelectedItemChanged);
+	void OnOpen(bool bShouldPlayAnimation_OnOpen, bool bIsHeistDLC_OnOpen, const struct FSBZItemBundleStoreItem& InItemBundle_OnOpen);
 	void ExecuteUbergraph_WBP_Shop_PurchasePopup(int32 EntryPoint);
-	void OnOpen(bool bShouldPlayAnimation, bool bIsHeistDLC, const struct FSBZItemBundleStoreItem& InItemBundle);
-	void OnSelectedItemChanged(bool bIsOwned, bool bIsVendorPermission);
-	void OnUpdateOwnershipStatus(bool bIsOwned);
 
 public:
 	static class UClass* StaticClass()

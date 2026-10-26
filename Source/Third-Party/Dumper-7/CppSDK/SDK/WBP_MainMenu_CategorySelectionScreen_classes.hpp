@@ -36,14 +36,14 @@ public:
 	bool                                          IsDailyFocused;                                    // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature();
-	void ExecuteUbergraph_WBP_MainMenu_CategorySelectionScreen(int32 EntryPoint);
-	void OnAddedToStack();
-	void OnControlsReferencePressed(class FName ActionName);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void PreConstruct(bool IsDesignTime);
 	void SetControlReference();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnAddedToStack();
+	void ExecuteUbergraph_WBP_MainMenu_CategorySelectionScreen(int32 EntryPoint);
+	void BndEvt__WBP_MainMenu_CategorySelectionScreen_WBP_DailyChallengesContainer_K2Node_ComponentBoundEvent_2_RerollUsed__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

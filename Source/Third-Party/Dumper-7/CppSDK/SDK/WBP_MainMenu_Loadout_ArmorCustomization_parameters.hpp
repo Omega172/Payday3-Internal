@@ -16,6 +16,53 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.UpdateControlsReference
+// 0x00E8 (0x00E8 - 0x0000)
+struct WBP_MainMenu_Loadout_ArmorCustomization_C_UpdateControlsReference final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInputTypeController_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0020(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0058(0x0038)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x00A0(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x00B0(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00C0(0x0028)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_UpdateControlsReference;
+
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_Loadout_ArmorCustomization_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_OnGainedStackFocused;
+
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_Loadout_ArmorCustomization_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_OnControlsReferenceClicked;
+
+// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnCategoryButtonFocused
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MainMenu_Loadout_ArmorCustomization_C_OnCategoryButtonFocused final
+{
+public:
+	class USBZMenuButton*                         InButton_OnCategoryButtonFocused;                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused_OnCategoryButtonFocused;                // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_OnCategoryButtonFocused;
+
 // Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorCustomization
 // 0x00C0 (0x00C0 - 0x0000)
 struct WBP_MainMenu_Loadout_ArmorCustomization_C_ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorCustomization final
@@ -24,7 +71,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0010(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue_1;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -54,53 +101,6 @@ public:
 	class FName                                   K2Node_Event_PreviousValue;                        // 0x00B0(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorCustomization;
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnCategoryButtonFocused
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorCustomization_C_OnCategoryButtonFocused final
-{
-public:
-	class USBZMenuButton*                         InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFocused;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_OnCategoryButtonFocused;
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorCustomization_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_OnControlsReferenceClicked;
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorCustomization_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_OnGainedStackFocused;
-
-// Function WBP_MainMenu_Loadout_ArmorCustomization.WBP_MainMenu_Loadout_ArmorCustomization_C.UpdateControlsReference
-// 0x00E8 (0x00E8 - 0x0000)
-struct WBP_MainMenu_Loadout_ArmorCustomization_C_UpdateControlsReference final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInputTypeController_ReturnValue;        // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0020(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0058(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x00A0(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x00B0(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00C0(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Loadout_ArmorCustomization_C_UpdateControlsReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

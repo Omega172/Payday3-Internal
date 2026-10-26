@@ -16,73 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.ExecuteUbergraph_WBP_StealConfirmation
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.SetStoreItem
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZStoreBaseItem&         SBZStoreBaseItem                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_StealConfirmation_C::ExecuteUbergraph_WBP_StealConfirmation(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_StealConfirmation_C", "ExecuteUbergraph_WBP_StealConfirmation", FuncInfo);
-
-	Params::WBP_StealConfirmation_C_ExecuteUbergraph_WBP_StealConfirmation Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowConfigured
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZStoreItemUIData&       StoreItemUIData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_StealConfirmation_C::OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData)
+void UWBP_StealConfirmation_C::SetStoreItem(const struct FSBZStoreBaseItem& SBZStoreBaseItem)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowConfigured", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStoreItem", FnName));
 
-	Params::WBP_StealConfirmation_C_OnFlowConfigured Parms{};
+	Params::WBP_StealConfirmation_C_SetStoreItem Parms{};
 
-	Parms.StoreItemUIData = std::move(StoreItemUIData);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZUIPurchaseFlowState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_StealConfirmation_C::OnFlowStateChanged(ESBZUIPurchaseFlowState NewState)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowStateChanged", FnName));
-
-	Params::WBP_StealConfirmation_C_OnFlowStateChanged Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_StealConfirmation_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_StealConfirmation_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
+	Parms.SBZStoreBaseItem = std::move(SBZStoreBaseItem);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -106,19 +52,73 @@ void UWBP_StealConfirmation_C::SetItem(const class USBZInventoryBaseData* ItemDa
 }
 
 
-// Function WBP_StealConfirmation.WBP_StealConfirmation_C.SetStoreItem
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// const struct FSBZStoreBaseItem&         SBZStoreBaseItem                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_StealConfirmation_C::SetStoreItem(const struct FSBZStoreBaseItem& SBZStoreBaseItem)
+void UWBP_StealConfirmation_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStoreItem", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_StealConfirmation_C_SetStoreItem Parms{};
+	Params::WBP_StealConfirmation_C_PreConstruct Parms{};
 
-	Parms.SBZStoreBaseItem = std::move(SBZStoreBaseItem);
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZUIPurchaseFlowState                 NewState_OnFlowStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StealConfirmation_C::OnFlowStateChanged(ESBZUIPurchaseFlowState NewState_OnFlowStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowStateChanged", FnName));
+
+	Params::WBP_StealConfirmation_C_OnFlowStateChanged Parms{};
+
+	Parms.NewState_OnFlowStateChanged = NewState_OnFlowStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.OnFlowConfigured
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZStoreItemUIData&       StoreItemUIData_OnFlowConfigured                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_StealConfirmation_C::OnFlowConfigured(const struct FSBZStoreItemUIData& StoreItemUIData_OnFlowConfigured)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFlowConfigured", FnName));
+
+	Params::WBP_StealConfirmation_C_OnFlowConfigured Parms{};
+
+	Parms.StoreItemUIData_OnFlowConfigured = std::move(StoreItemUIData_OnFlowConfigured);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StealConfirmation.WBP_StealConfirmation_C.ExecuteUbergraph_WBP_StealConfirmation
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StealConfirmation_C::ExecuteUbergraph_WBP_StealConfirmation(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_StealConfirmation_C", "ExecuteUbergraph_WBP_StealConfirmation", FuncInfo);
+
+	Params::WBP_StealConfirmation_C_ExecuteUbergraph_WBP_StealConfirmation Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

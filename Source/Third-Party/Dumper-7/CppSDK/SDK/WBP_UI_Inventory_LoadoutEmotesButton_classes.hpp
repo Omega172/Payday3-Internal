@@ -18,32 +18,32 @@
 SDK_NAMESPACE_START
 
 // WidgetBlueprintGeneratedClass WBP_UI_Inventory_LoadoutEmotesButton.WBP_UI_Inventory_LoadoutEmotesButton_C
-// 0x0048 (0x0420 - 0x03D8)
+// 0x0048 (0x03E0 - 0x0398)
 class UWBP_UI_Inventory_LoadoutEmotesButton_C final : public USBZLoadoutSkillsButton
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       SelectedAnim;                                      // 0x03E0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       OnHoverSkills;                                     // 0x03E8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UBorder*                                Border_Highlight;                                  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        EquippedEmotes;                                    // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HorizontalBox_Emotes;                              // 0x0400(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Hover_Overlay;                                     // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class UObject* FocusedButton)> ButtonFocusedEvent;                 // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0398(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                       SelectedAnim;                                      // 0x03A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       OnHoverSkills;                                     // 0x03A8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UBorder*                                Border_Highlight;                                  // 0x03B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        EquippedEmotes;                                    // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HorizontalBox_Emotes;                              // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Hover_Overlay;                                     // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void(class UObject* FocusedButton)> ButtonFocusedEvent;                 // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ButtonFocusedChanged(bool bInHasFocus);
-	void ButtonHoveredChanged(bool bInIsHovered);
-	void Construct();
-	void Create_Emote_Icons_Button();
-	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutEmotesButton(int32 EntryPoint);
-	void OnFocused(bool bIsFocused);
-	void OnHover(bool bIsHovered);
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-	void RefreshVisuals();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void UpdateEmoteButton();
+	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
+	void RefreshVisuals();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnInitialized();
+	void OnHover(bool bIsHovered);
+	void OnFocused(bool bIsFocused);
+	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutEmotesButton(int32 EntryPoint);
+	void Create_Emote_Icons_Button();
+	void Construct();
+	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
+	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
 
 public:
 	static class UClass* StaticClass()

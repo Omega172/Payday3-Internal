@@ -29,13 +29,13 @@ public:
 	class UWBP_UI_Skills_Menu_C*                  WBP_UI_Skills_Menu;                                // 0x0480(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void DisplaySkillsScreen(struct FSBZPlayerLoadoutConfig& NewParam);
-	void ExecuteUbergraph_WBP_UI_Loadout_SkillsCustomization(int32 EntryPoint);
-	void OnDescriptionScrollAxisChanged(float Value);
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnLostStackFocused();
-	void OnTutorialHidden();
 	void Set_Equip_Skills(const class USBZSkill*& Skill, uint8 SkillState);
+	void OnTutorialHidden();
+	void OnLostStackFocused();
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnDescriptionScrollAxisChanged(float Value_OnDescriptionScrollAxisChanged);
+	void ExecuteUbergraph_WBP_UI_Loadout_SkillsCustomization(int32 EntryPoint);
+	void DisplaySkillsScreen(struct FSBZPlayerLoadoutConfig& NewParam);
 
 public:
 	static class UClass* StaticClass()

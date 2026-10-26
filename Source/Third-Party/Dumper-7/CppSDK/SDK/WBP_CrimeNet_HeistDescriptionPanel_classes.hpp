@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -51,18 +51,18 @@ public:
 	int32                                         Out_Max;                                           // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Display_Panel_Animation();
-	void ExecuteUbergraph_WBP_CrimeNet_HeistDescriptionPanel(int32 EntryPoint);
-	class FString GetSecurityCompanyName(class USBZSecurityCompanyVisualsWidget* Widget);
-	void InitializeHeistData(class UPD3HeistDataAsset* InHeistData);
-	void InitializeSecurityCompanies();
-	void OnInitialized();
-	void SetDifficulty(ESBZDifficulty InDifficulty);
-	void SetNoHeistData();
-	void Update_Security_Companies_for_Difficulty();
-	void UpdateDifficultyVisuals(ESBZDifficulty InDifficulty);
-	void UpdatePanelTimer(double Timer, bool bIsStealth);
 	void UpdateTimers();
+	void UpdatePanelTimer(double Timer, bool bIsStealth);
+	void UpdateDifficultyVisuals(ESBZDifficulty InDifficulty);
+	void Update_Security_Companies_for_Difficulty();
+	void SetNoHeistData();
+	void SetDifficulty(ESBZDifficulty InDifficulty);
+	void OnInitialized();
+	void InitializeSecurityCompanies();
+	void InitializeHeistData(class UPD3HeistDataAsset* InHeistData);
+	class FString GetSecurityCompanyName(class USBZSecurityCompanyVisualsWidget* Widget);
+	void ExecuteUbergraph_WBP_CrimeNet_HeistDescriptionPanel(int32 EntryPoint);
+	void Display_Panel_Animation();
 
 public:
 	static class UClass* StaticClass()

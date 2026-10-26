@@ -16,41 +16,75 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
+void UWBP_Shop_PurchasePopupItem_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Shop_PurchasePopupItem_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.ButtonFocusedChanged
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnUpdateOwnershipStatus
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOwned_OnUpdateOwnershipStatus                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_PurchasePopupItem_C::OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+
+	Params::WBP_Shop_PurchasePopupItem_C_OnUpdateOwnershipStatus Parms{};
+
+	Parms.bIsOwned_OnUpdateOwnershipStatus = bIsOwned_OnUpdateOwnershipStatus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnShow
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsLast_OnShow                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanBeInspected_OnShow                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsVendorPermission_OnShow                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_PurchasePopupItem_C::OnShow(bool bIsLast_OnShow, bool bCanBeInspected_OnShow, bool bIsVendorPermission_OnShow)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShow", FnName));
+
+	Params::WBP_Shop_PurchasePopupItem_C_OnShow Parms{};
+
+	Parms.bIsLast_OnShow = bIsLast_OnShow;
+	Parms.bCanBeInspected_OnShow = bCanBeInspected_OnShow;
+	Parms.bIsVendorPermission_OnShow = bIsVendorPermission_OnShow;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_PurchasePopupItem_C::ButtonFocusedChanged(bool bInHasFocus)
+void UWBP_Shop_PurchasePopupItem_C::OnFocusChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
 
-	Params::WBP_Shop_PurchasePopupItem_C_ButtonFocusedChanged Parms{};
+	Params::WBP_Shop_PurchasePopupItem_C_OnFocusChanged Parms{};
 
 	Parms.bInHasFocus = bInHasFocus;
 
@@ -76,79 +110,45 @@ void UWBP_Shop_PurchasePopupItem_C::ExecuteUbergraph_WBP_Shop_PurchasePopupItem(
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_PurchasePopupItem_C::OnFocusChanged(bool bInHasFocus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
-
-	Params::WBP_Shop_PurchasePopupItem_C_OnFocusChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnShow
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsLast                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bCanBeInspected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_PurchasePopupItem_C::OnShow(bool bIsLast, bool bCanBeInspected, bool bIsVendorPermission)
+void UWBP_Shop_PurchasePopupItem_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShow", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_Shop_PurchasePopupItem_C_OnShow Parms{};
+	Params::WBP_Shop_PurchasePopupItem_C_ButtonFocusedChanged Parms{};
 
-	Parms.bIsLast = bIsLast;
-	Parms.bCanBeInspected = bCanBeInspected;
-	Parms.bIsVendorPermission = bIsVendorPermission;
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.OnUpdateOwnershipStatus
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Shop_PurchasePopupItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
+void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature", FnName));
 
-	Params::WBP_Shop_PurchasePopupItem_C_OnUpdateOwnershipStatus Parms{};
-
-	Parms.bIsOwned = bIsOwned;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Shop_PurchasePopupItem.WBP_Shop_PurchasePopupItem_C.BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Shop_PurchasePopupItem_C::PreConstruct(bool IsDesignTime)
+void UWBP_Shop_PurchasePopupItem_C::BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature", FnName));
 
-	Params::WBP_Shop_PurchasePopupItem_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

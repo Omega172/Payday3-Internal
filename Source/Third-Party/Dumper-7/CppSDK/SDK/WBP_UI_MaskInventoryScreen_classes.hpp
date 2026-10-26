@@ -36,25 +36,25 @@ public:
 	class USBZMenuButton*                         Last_RT_Focusedbutton;                             // 0x0608(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_UI_MaskInventoryScreen_Button_DefaultMask_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void ControlsReferenceActionPressed(class FName ActionName);
-	class UWidget* DoCustomNavigation_0(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_UI_MaskInventoryScreen(int32 EntryPoint);
-	void GetContextAwareControlReference(class UWBP_UI_Inventory_MaskSlotButton_C* MaskButton, TArray<struct FSBZButtonControlReference>* ControlsReference);
-	void MaskSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton, bool bIsFocused);
-	void OnDiscardPressed();
-	void OnEditButtonPressed(int32 MaskSlotIndex);
-	void OnEmptySlotSelected();
-	void OnGainedStackFocused(const class FName& PreviousValue);
-	void OnItemDiscarded(bool bWasSuccessful);
-	void OnLostStackFocused();
-	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item);
-	void OnSlotPurchaseComplete(bool bWasSuccessful);
-	void OnTryBuyMaskSlot();
-	void RevertBodyAndEquipped();
-	void SetActiveButton(class USBZMenuButton* NewButton);
 	void ShowMaskOnly();
+	void SetActiveButton(class USBZMenuButton* NewButton);
+	void RevertBodyAndEquipped();
+	void OnTryBuyMaskSlot();
+	void OnSlotPurchaseComplete(bool bWasSuccessful_OnSlotPurchaseComplete);
+	void OnSlotPriceChanged(const struct FSBZInventorySlotStoreItem& Item_OnSlotPriceChanged);
+	void OnLostStackFocused();
+	void OnItemDiscarded(bool bWasSuccessful_OnItemDiscarded);
+	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
+	void OnEmptySlotSelected();
+	void OnEditButtonPressed(int32 MaskSlotIndex_OnEditButtonPressed);
+	void OnDiscardPressed();
+	void MaskSlotButtonFocusedChanged(class USBZMenuButton* InFocusedButton_MaskSlotButtonFocusedChanged, bool bIsFocused_MaskSlotButtonFocusedChanged);
+	void GetContextAwareControlReference(class UWBP_UI_Inventory_MaskSlotButton_C* MaskButton, TArray<struct FSBZButtonControlReference>* ControlsReference);
+	void ExecuteUbergraph_WBP_UI_MaskInventoryScreen(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_0(EUINavigation Navigation);
+	void ControlsReferenceActionPressed(class FName ActionName);
+	void BndEvt__WBP_UI_MaskInventoryScreen_Button_DefaultMask_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_UI_MaskInventoryScreen_Button_BuySlots_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

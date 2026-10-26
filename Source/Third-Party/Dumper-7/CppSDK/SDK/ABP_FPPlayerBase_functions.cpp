@@ -65,6 +65,42 @@ void UABP_FPPlayerBase_C::BlueprintUpdateAnimation(float DeltaTimeX)
 }
 
 
+// Function ABP_FPPlayerBase.ABP_FPPlayerBase_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_CopyBone_C6484F5B47D12FF446246CAAF76C75AE
+// (BlueprintEvent)
+
+void UABP_FPPlayerBase_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_CopyBone_C6484F5B47D12FF446246CAAF76C75AE()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_CopyBone_C6484F5B47D12FF446246CAAF76C75AE", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_FPPlayerBase.ABP_FPPlayerBase_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_ModifyBone_0A765FF7427DFA50B3FCC88D77F2E1F0
+// (BlueprintEvent)
+
+void UABP_FPPlayerBase_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_ModifyBone_0A765FF7427DFA50B3FCC88D77F2E1F0()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_ModifyBone_0A765FF7427DFA50B3FCC88D77F2E1F0", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_FPPlayerBase.ABP_FPPlayerBase_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_ModifyBone_9270F4B74E1DB478BA21169FA0719CBD
+// (BlueprintEvent)
+
+void UABP_FPPlayerBase_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_ModifyBone_9270F4B74E1DB478BA21169FA0719CBD()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FPPlayerBase_AnimGraphNode_ModifyBone_9270F4B74E1DB478BA21169FA0719CBD", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ABP_FPPlayerBase.ABP_FPPlayerBase_C.ExecuteUbergraph_ABP_FPPlayerBase
 // (Final, UbergraphFunction)
 // Parameters:

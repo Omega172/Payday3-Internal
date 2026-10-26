@@ -18,6 +18,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_DamageFalloff_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_DamageFalloff_C_PreConstruct;
+
 // Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.ExecuteUbergraph_WBP_UI_Widget_DamageFalloff
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_UI_Widget_DamageFalloff_C_ExecuteUbergraph_WBP_UI_Widget_DamageFalloff final
@@ -28,21 +37,12 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_DamageFalloff_C_ExecuteUbergraph_WBP_UI_Widget_DamageFalloff;
 
-// Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_DamageFalloff_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_DamageFalloff_C_PreConstruct;
-
 // Function WBP_UI_Widget_DamageFalloff.WBP_UI_Widget_DamageFalloff_C.OnPaint
 // 0x00E8 (0x00E8 - 0x0000)
 struct WBP_UI_Widget_DamageFalloff_C_OnPaint final
 {
 public:
-	struct FPaintContext                          Context;                                           // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FPaintContext                          Context_OnPaint;                                   // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 	double                                        CallFunc_MakeLiteralDouble_ReturnValue;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_MakeLiteralDouble_ReturnValue_1;          // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

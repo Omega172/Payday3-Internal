@@ -25,8 +25,8 @@ public:
 	class UWBP_Widget_CurrencyWidget_C*           PriceWidget;                                       // 0x0478(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_BlackMarket_InsufficientFundsPopupBody(int32 EntryPoint);
 	void OnItemDataInitialized();
+	void ExecuteUbergraph_WBP_BlackMarket_InsufficientFundsPopupBody(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

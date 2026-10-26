@@ -16,225 +16,175 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
-
-	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature", FnName));
-
-	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature Parms{};
-
-	Parms.Item = Item;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.CreateSlotDecos
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::CreateSlotDecos()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateSlotDecos", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.CustomEvent_0
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetStrategy
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseItemStrategy*             Strategy                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomizeScreen_C::CustomEvent_0(class FName ActionName)
+void UWBP_CustomizeScreen_C::SetStrategy(class USBZBaseItemStrategy* Strategy)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_0", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStrategy", FnName));
 
-	Params::WBP_CustomizeScreen_C_CustomEvent_0 Parms{};
+	Params::WBP_CustomizeScreen_C_SetStrategy Parms{};
 
-	Parms.ActionName = ActionName;
+	Parms.Strategy = Strategy;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ExecuteUbergraph_WBP_CustomizeScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetItemDecoration
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomizeScreen_C::ExecuteUbergraph_WBP_CustomizeScreen(int32 EntryPoint)
+void UWBP_CustomizeScreen_C::SetItemDecoration(class USBZInventoryItemDecorator* ItemDeco)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CustomizeScreen_C", "ExecuteUbergraph_WBP_CustomizeScreen", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemDecoration", FnName));
 
-	Params::WBP_CustomizeScreen_C_ExecuteUbergraph_WBP_CustomizeScreen Parms{};
+	Params::WBP_CustomizeScreen_C_SetItemDecoration Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ItemDeco = ItemDeco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PrePush_5CF471434F18C94D120FAC95FECE6E48
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::PrePush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_5CF471434F18C94D120FAC95FECE6E48", FnName));
+
+	Params::WBP_CustomizeScreen_C_PrePush_5CF471434F18C94D120FAC95FECE6E48 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PostPush_5CF471434F18C94D120FAC95FECE6E48
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::PostPush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_5CF471434F18C94D120FAC95FECE6E48", FnName));
+
+	Params::WBP_CustomizeScreen_C_PostPush_5CF471434F18C94D120FAC95FECE6E48 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CustomizeScreen_C::OnRemovedFromStack()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnRefreshRequest_Event_0
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CustomizeScreen_C::OnRefreshRequest_Event_0()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRefreshRequest_Event_0", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnPurchaseDone
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::OnPurchaseDone(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPurchaseDone", FnName));
+
+	Params::WBP_CustomizeScreen_C_OnPurchaseDone Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CustomizeScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_CustomizeScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnBackPressed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CustomizeScreen_C::OnBackPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ItemStrategy_OnActionExecuted
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZItemAction                          Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::ItemStrategy_OnActionExecuted(ESBZItemAction Action)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ItemStrategy_OnActionExecuted", FnName));
+
+	Params::WBP_CustomizeScreen_C_ItemStrategy_OnActionExecuted Parms{};
+
+	Parms.Action = Action;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -268,177 +218,227 @@ void UWBP_CustomizeScreen_C::GetWeaponConfig(ESBZEquippableLoadoutSlot ItemSlot,
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ItemStrategy_OnActionExecuted
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ExecuteUbergraph_WBP_CustomizeScreen
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESBZItemAction                          Action                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomizeScreen_C::ItemStrategy_OnActionExecuted(ESBZItemAction Action)
+void UWBP_CustomizeScreen_C::ExecuteUbergraph_WBP_CustomizeScreen(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ItemStrategy_OnActionExecuted", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CustomizeScreen_C", "ExecuteUbergraph_WBP_CustomizeScreen", FuncInfo);
 
-	Params::WBP_CustomizeScreen_C_ItemStrategy_OnActionExecuted Parms{};
+	Params::WBP_CustomizeScreen_C_ExecuteUbergraph_WBP_CustomizeScreen Parms{};
 
-	Parms.Action = Action;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnBackPressed
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.CustomEvent_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomizeScreen_C::OnBackPressed()
+void UWBP_CustomizeScreen_C::CustomEvent_0(class FName ActionName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnBackPressed", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_0", FnName));
+
+	Params::WBP_CustomizeScreen_C_CustomEvent_0 Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.CreateSlotDecos
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CustomizeScreen_C::CreateSlotDecos()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateSlotDecos", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomizeScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature", FnName));
 
-	Params::WBP_CustomizeScreen_C_OnGainedStackFocused Parms{};
+	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.Item = Item;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UObject*                          Item                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CustomizeScreen_C::OnLostStackFocused()
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature", FnName));
+
+	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
+
+	Parms.Item = Item;
+	Parms.bIsSelected = bIsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_7_SBZOnActionChanged__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnPurchaseDone
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CustomizeScreen_C::OnPurchaseDone(class FName ClosingActionName)
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPurchaseDone", FnName));
-
-	Params::WBP_CustomizeScreen_C_OnPurchaseDone Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnRefreshRequest_Event_0
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CustomizeScreen_C::OnRefreshRequest_Event_0()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRefreshRequest_Event_0", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Purchase_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CustomizeScreen_C::OnRemovedFromStack()
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_4_SBZOnActionChanged__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PostPush_5CF471434F18C94D120FAC95FECE6E48
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CustomizeScreen_C::PostPush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_5CF471434F18C94D120FAC95FECE6E48", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Equip_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature", FnName));
 
-	Params::WBP_CustomizeScreen_C_PostPush_5CF471434F18C94D120FAC95FECE6E48 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PrePush_5CF471434F18C94D120FAC95FECE6E48
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CustomizeScreen_C::PrePush_5CF471434F18C94D120FAC95FECE6E48(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_5CF471434F18C94D120FAC95FECE6E48", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_5_SBZOnActionChanged__DelegateSignature", FnName));
 
-	Params::WBP_CustomizeScreen_C_PrePush_5CF471434F18C94D120FAC95FECE6E48 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetItemDecoration
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryItemDecorator*       ItemDeco                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CustomizeScreen_C::SetItemDecoration(class USBZInventoryItemDecorator* ItemDeco)
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemDecoration", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Customize_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature", FnName));
 
-	Params::WBP_CustomizeScreen_C_SetItemDecoration Parms{};
-
-	Parms.ItemDeco = ItemDeco;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetStrategy
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZBaseItemStrategy*             Strategy_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CustomizeScreen_C::SetStrategy(class USBZBaseItemStrategy* Strategy_0)
+void UWBP_CustomizeScreen_C::BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStrategy", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CustomizeScreen_Button_Cosmetics_K2Node_ComponentBoundEvent_11_SBZOnActionChanged__DelegateSignature", FnName));
 
-	Params::WBP_CustomizeScreen_C_SetStrategy Parms{};
-
-	Parms.Strategy_0 = Strategy_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

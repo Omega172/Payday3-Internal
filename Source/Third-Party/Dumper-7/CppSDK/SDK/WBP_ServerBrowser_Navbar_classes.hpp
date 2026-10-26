@@ -40,25 +40,25 @@ public:
 	bool                                          Display_Single_Tab;                                // 0x0401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
-	void BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
-	void BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_10_SBZOnActionChanged__DelegateSignature();
-	void BndEvt__WBP_ServerBrowser_Navbar_Widget_TabForward_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature();
-	void ExecuteUbergraph_WBP_ServerBrowser_Navbar(int32 EntryPoint);
-	void GetButtonName(class FText* ButtonName);
-	void NavBarButtonClicked(int32 OutNavBarIndex);
-	void OnInitialized();
-	void OnTabBackward();
-	void OnTabForward();
-	void PreConstruct(bool IsDesignTime);
-	void RebuildNavbar();
-	void RefreshButtons();
-	void SetMaxCount(int32 InMaxCount);
-	void SetNavIcons(bool Condition);
 	void UpdateIndex(int32 NewActiveIndex, bool IsInitial);
+	void SetNavIcons(bool Condition);
+	void SetMaxCount(int32 InMaxCount);
+	void RefreshButtons();
+	void RebuildNavbar();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnTabForward();
+	void OnTabBackward();
+	void OnInitialized();
+	void NavBarButtonClicked(int32 OutNavBarIndex);
+	void GetButtonName(class FText* ButtonName);
+	void ExecuteUbergraph_WBP_ServerBrowser_Navbar(int32 EntryPoint);
+	void BndEvt__WBP_ServerBrowser_Navbar_Widget_TabForward_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_10_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_ServerBrowser_Navbar_Widget_TabBackward_K2Node_ComponentBoundEvent_0_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
+	void BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Navbar_NavRight_B_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BndEvt__WBP_ServerBrowser_Navbar_NavLeft_B_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
 
 public:
 	static class UClass* StaticClass()

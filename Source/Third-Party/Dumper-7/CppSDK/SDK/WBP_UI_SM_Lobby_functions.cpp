@@ -16,71 +16,165 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_Tick                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime_Tick                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Lobby_C::BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
+void UWBP_UI_SM_Lobby_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+
+	Params::WBP_UI_SM_Lobby_C_Tick Parms{};
+
+	Parms.MyGeometry_Tick = std::move(MyGeometry_Tick);
+	Parms.InDeltaTime_Tick = InDeltaTime_Tick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.SetFunctionReady
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsAsyncLoadingDone                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_Lobby_C::SetFunctionReady(bool bIsAsyncLoadingDone)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFunctionReady", FnName));
+
+	Params::WBP_UI_SM_Lobby_C_SetFunctionReady Parms{};
+
+	Parms.bIsAsyncLoadingDone = bIsAsyncLoadingDone;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnRemovedFromStack_1
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_Lobby_C::OnRemovedFromStack_1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack_1", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnLostStackFocused_1
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_SM_Lobby_C::OnLostStackFocused_1()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused_1", FnName));
 
-	Params::WBP_UI_SM_Lobby_C_BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Button = Button;
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_Lobby_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnGainedStackFocused_1
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_Lobby_C::OnGainedStackFocused_1(const class FName& PreviousValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused_1", FnName));
+
+	Params::WBP_UI_SM_Lobby_C_OnGainedStackFocused_1 Parms{};
+
+	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnAsyncLoadingProgress
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZAsyncLoadingProgress&  Progress_OnAsyncLoadingProgress                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_SM_Lobby_C::OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress_OnAsyncLoadingProgress)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAsyncLoadingProgress", FnName));
 
-	Params::WBP_UI_SM_Lobby_C_BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_SM_Lobby_C_OnAsyncLoadingProgress Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+	Parms.Progress_OnAsyncLoadingProgress = std::move(Progress_OnAsyncLoadingProgress);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnAsyncLoadingDone
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+void UWBP_UI_SM_Lobby_C::OnAsyncLoadingDone()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAsyncLoadingDone", FnName));
 
-	Params::WBP_UI_SM_Lobby_C_BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnAsyncLoadingCancel
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_SM_Lobby_C::OnAsyncLoadingCancel()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAsyncLoadingCancel", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.InitializeLevelDetails
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_Lobby_C::InitializeLevelDetails()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeLevelDetails", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.ExecuteUbergraph_WBP_UI_SM_Lobby
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_Lobby_C::ExecuteUbergraph_WBP_UI_SM_Lobby(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_SM_Lobby_C", "ExecuteUbergraph_WBP_UI_SM_Lobby", FuncInfo);
+
+	Params::WBP_UI_SM_Lobby_C_ExecuteUbergraph_WBP_UI_SM_Lobby Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -104,167 +198,73 @@ void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_Componen
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.ExecuteUbergraph_WBP_UI_SM_Lobby
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Lobby_C::ExecuteUbergraph_WBP_UI_SM_Lobby(int32 EntryPoint)
+void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_SM_Lobby_C", "ExecuteUbergraph_WBP_UI_SM_Lobby", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_Lobby_C_ExecuteUbergraph_WBP_UI_SM_Lobby Parms{};
+	Params::WBP_UI_SM_Lobby_C_BndEvt__WBP_UI_SM_Lobby_Button_SetReady_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.InitializeLevelDetails
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Lobby_C::InitializeLevelDetails()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeLevelDetails", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnAsyncLoadingCancel
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SM_Lobby_C::OnAsyncLoadingCancel()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAsyncLoadingCancel", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnAsyncLoadingDone
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_SM_Lobby_C::OnAsyncLoadingDone()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAsyncLoadingDone", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnAsyncLoadingProgress
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FSBZAsyncLoadingProgress&  Progress                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Lobby_C::OnAsyncLoadingProgress(const struct FSBZAsyncLoadingProgress& Progress)
+void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAsyncLoadingProgress", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_Lobby_C_OnAsyncLoadingProgress Parms{};
+	Params::WBP_UI_SM_Lobby_C_BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
-	Parms.Progress = std::move(Progress);
+	Parms.Button = Button;
+	Parms.bIsEnabled = bIsEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnGainedStackFocused_1
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Lobby_C::OnGainedStackFocused_1(const class FName& PreviousValue)
+void UWBP_UI_SM_Lobby_C::BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused_1", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_Lobby_C_OnGainedStackFocused_1 Parms{};
+	Params::WBP_UI_SM_Lobby_C_BndEvt__WBP_UI_SM_Lobby_Button_BackToMainMenu_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.PreviousValue = PreviousValue;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_UI_SM_Lobby_C::OnInitialized()
+void UWBP_UI_SM_Lobby_C::BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Button_ActionInput_Select_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnLostStackFocused_1
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Lobby_C::OnLostStackFocused_1()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused_1", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.OnRemovedFromStack_1
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Lobby_C::OnRemovedFromStack_1()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack_1", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.SetFunctionReady
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsAsyncLoadingDone                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_Lobby_C::SetFunctionReady(bool bIsAsyncLoadingDone)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFunctionReady", FnName));
-
-	Params::WBP_UI_SM_Lobby_C_SetFunctionReady Parms{};
-
-	Parms.bIsAsyncLoadingDone = bIsAsyncLoadingDone;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_Lobby.WBP_UI_SM_Lobby_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_Lobby_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
-
-	Params::WBP_UI_SM_Lobby_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

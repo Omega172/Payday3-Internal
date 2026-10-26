@@ -17,23 +17,63 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonFocusedChanged final
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.UpdateHighlights
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_UpdateHighlights final
 {
 public:
-	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_UpdateHighlights;
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonHoveredChanged final
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Set Price
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_Set_Price final
 {
 public:
-	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Price;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCurrencyCode                              Currency;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_Set_Price;
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_PreConstruct;
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.OnHover
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_OnHover final
+{
+public:
+	bool                                          IsHover;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_OnHover;
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Get Color by Currency
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_Get_Color_by_Currency final
+{
+public:
+	ESBZCurrencyCode                              Currency;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CurrencyColor;                                     // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCurrencyCode                              Temp_byte_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_1;             // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_2;             // 0x0038(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0048(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_Get_Color_by_Currency;
 
 // Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ExecuteUbergraph_WBP_UI_Inventory_SuitSlotStoreItemButton
 // 0x0010 (0x0010 - 0x0000)
@@ -49,63 +89,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_ExecuteUbergraph_WBP_UI_Inventory_SuitSlotStoreItemButton;
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Get Color by Currency
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_Get_Color_by_Currency final
-{
-public:
-	ESBZCurrencyCode                              Currency_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CurrencyColor;                                     // 0x0004(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCurrencyCode                              Temp_byte_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_1;             // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue_2;             // 0x0038(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0048(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_Get_Color_by_Currency;
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.OnHover
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_OnHover final
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          IsHover;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_OnHover;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.PreConstruct
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_PreConstruct final
+struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_PreConstruct;
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Set Price
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_Set_Price final
-{
-public:
-	int64                                         Price;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCurrencyCode                              Currency_0;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_Set_Price;
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.UpdateHighlights
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Inventory_SuitSlotStoreItemButton_C_UpdateHighlights final
-{
-public:
-	bool                                          IsFocused;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_UpdateHighlights;
+DUMPER7_ASSERTS_WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

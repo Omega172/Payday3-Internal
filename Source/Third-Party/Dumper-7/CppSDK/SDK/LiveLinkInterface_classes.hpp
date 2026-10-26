@@ -17,26 +17,6 @@
 
 SDK_NAMESPACE_START
 
-// Class LiveLinkInterface.LiveLinkController
-// 0x0000 (0x0030 - 0x0030)
-class ULiveLinkController final : public UObject
-{
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL("LiveLinkController")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"LiveLinkController")
-	}
-	static class ULiveLinkController* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<ULiveLinkController>();
-	}
-};
-DUMPER7_ASSERTS_ULiveLinkController;
-
 // Class LiveLinkInterface.LiveLinkFrameInterpolationProcessor
 // 0x0000 (0x0030 - 0x0030)
 class ULiveLinkFrameInterpolationProcessor : public UObject
@@ -56,6 +36,26 @@ public:
 	}
 };
 DUMPER7_ASSERTS_ULiveLinkFrameInterpolationProcessor;
+
+// Class LiveLinkInterface.LiveLinkController
+// 0x0000 (0x0030 - 0x0030)
+class ULiveLinkController final : public UObject
+{
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL("LiveLinkController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveLinkController")
+	}
+	static class ULiveLinkController* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<ULiveLinkController>();
+	}
+};
+DUMPER7_ASSERTS_ULiveLinkController;
 
 // Class LiveLinkInterface.LiveLinkFramePreProcessor
 // 0x0000 (0x0030 - 0x0030)

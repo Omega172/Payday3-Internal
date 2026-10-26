@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -37,17 +37,17 @@ public:
 	bool                                          InputEnabled;                                      // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature();
-	void EnableInput(bool InEnable);
-	void ExecuteUbergraph_WBP_DailyChallengesPreview(int32 EntryPoint);
-	void OnDailyChallengesUpdated();
-	void OnInitialized();
-	void OnInstallStateChanged(bool bIsGameInstallPending);
-	void OpenChallengesScreen();
-	void PreConstruct(bool IsDesignTime);
-	void Update_Visibility();
 	void UpdateChallengesFromData();
+	void Update_Visibility();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OpenChallengesScreen();
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void OnInitialized();
+	void OnDailyChallengesUpdated();
+	void ExecuteUbergraph_WBP_DailyChallengesPreview(int32 EntryPoint);
+	void EnableInput(bool InEnable);
+	void BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_1_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_DailyChallengesPreview_ActionButton_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,42 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_FireExtinguisher_01_Gas.BP_FireExtinguisher_01_Gas_C.ExecuteUbergraph_BP_FireExtinguisher_01_Gas
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FireExtinguisher_01_Gas_C::ExecuteUbergraph_BP_FireExtinguisher_01_Gas(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FireExtinguisher_01_Gas_C", "ExecuteUbergraph_BP_FireExtinguisher_01_Gas", FuncInfo);
+
+	Params::BP_FireExtinguisher_01_Gas_C_ExecuteUbergraph_BP_FireExtinguisher_01_Gas Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FireExtinguisher_01_Gas.BP_FireExtinguisher_01_Gas_C.BP_OnExplosion
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnExplosion                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FireExtinguisher_01_Gas_C::BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnExplosion", FnName));
+
+	Params::BP_FireExtinguisher_01_Gas_C_BP_OnExplosion Parms{};
+
+	Parms.bDoCosmetics_BP_OnExplosion = bDoCosmetics_BP_OnExplosion;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_FireExtinguisher_01_Gas.BP_FireExtinguisher_01_Gas_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -31,42 +67,6 @@ void ABP_FireExtinguisher_01_Gas_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraComp
 
 	Parms.Component = Component;
 	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FireExtinguisher_01_Gas.BP_FireExtinguisher_01_Gas_C.BP_OnExplosion
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FireExtinguisher_01_Gas_C::BP_OnExplosion(bool bDoCosmetics)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnExplosion", FnName));
-
-	Params::BP_FireExtinguisher_01_Gas_C_BP_OnExplosion Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FireExtinguisher_01_Gas.BP_FireExtinguisher_01_Gas_C.ExecuteUbergraph_BP_FireExtinguisher_01_Gas
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FireExtinguisher_01_Gas_C::ExecuteUbergraph_BP_FireExtinguisher_01_Gas(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "BP_FireExtinguisher_01_Gas_C", "ExecuteUbergraph_BP_FireExtinguisher_01_Gas", FuncInfo);
-
-	Params::BP_FireExtinguisher_01_Gas_C_ExecuteUbergraph_BP_FireExtinguisher_01_Gas Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

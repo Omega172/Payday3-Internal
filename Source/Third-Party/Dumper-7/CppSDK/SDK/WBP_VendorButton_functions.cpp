@@ -16,261 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_VendorButton.WBP_VendorButton_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_VendorButton_C::BP_OnEntryReleased()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEntryReleased", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.BP_OnItemSelectionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsSelected                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::BP_OnItemSelectionChanged(bool bIsSelected)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnItemSelectionChanged", FnName));
-
-	Params::WBP_VendorButton_C_BP_OnItemSelectionChanged Parms{};
-
-	Parms.bIsSelected = bIsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusChanging
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::ButtonFocusChanging(bool bInHasFocus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
-
-	Params::WBP_VendorButton_C_ButtonFocusChanging Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::ButtonFocusedChanged(bool bInHasFocus)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
-
-	Params::WBP_VendorButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus = bInHasFocus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_VendorButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.ExecuteUbergraph_WBP_VendorButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::ExecuteUbergraph_WBP_VendorButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_VendorButton_C", "ExecuteUbergraph_WBP_VendorButton", FuncInfo);
-
-	Params::WBP_VendorButton_C_ExecuteUbergraph_WBP_VendorButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.Initialize Item
+// Function WBP_VendorButton.WBP_VendorButton_C.UpdateVisuals
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            Inventory_Data                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::Initialize_Item(class USBZInventoryBaseData* Inventory_Data)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initialize Item", FnName));
-
-	Params::WBP_VendorButton_C_Initialize_Item Parms{};
-
-	Parms.Inventory_Data = Inventory_Data;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemEquippedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::OnListItemEquippedChanged(bool bIsEquipped)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemEquippedChanged", FnName));
-
-	Params::WBP_VendorButton_C_OnListItemEquippedChanged Parms{};
-
-	Parms.bIsEquipped = bIsEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemObjectSet
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::OnListItemObjectSet(class UObject* ListItemObject)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemObjectSet", FnName));
-
-	Params::WBP_VendorButton_C_OnListItemObjectSet Parms{};
-
-	Parms.ListItemObject = ListItemObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.OnMouseEnter
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_VendorButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseEnter", FnName));
-
-	Params::WBP_VendorButton_C_OnMouseEnter Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::PreConstruct(bool IsDesignTime)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_VendorButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.SelectionChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::SelectionChanged(bool IsSelected)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SelectionChanged", FnName));
-
-	Params::WBP_VendorButton_C_SelectionChanged Parms{};
-
-	Parms.IsSelected = IsSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.SetItemVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::SetItemVisuals(class USBZInventoryBaseData* InInventoryData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemVisuals", FnName));
-
-	Params::WBP_VendorButton_C_SetItemVisuals Parms{};
-
-	Parms.InInventoryData = InInventoryData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.TryPlayActionAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Selected                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZBundleItemDecorator*          InBundleDecorator                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_VendorButton_C::TryPlayActionAnimation(bool Selected, class USBZBundleItemDecorator* InBundleDecorator)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryPlayActionAnimation", FnName));
-
-	Params::WBP_VendorButton_C_TryPlayActionAnimation Parms{};
-
-	Parms.Selected = Selected;
-	Parms.InBundleDecorator = InBundleDecorator;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_VendorButton.WBP_VendorButton_C.UpdateActions
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class USBZBundleItemDecorator*          InBundleDecorator                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_VendorButton_C::UpdateActions(class USBZBundleItemDecorator* InBundleDecorator)
+void UWBP_VendorButton_C::UpdateVisuals(class USBZBundleItemDecorator* InBundleDecorator)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateActions", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisuals", FnName));
 
-	Params::WBP_VendorButton_C_UpdateActions Parms{};
+	Params::WBP_VendorButton_C_UpdateVisuals Parms{};
 
 	Parms.InBundleDecorator = InBundleDecorator;
 
@@ -296,21 +52,265 @@ void UWBP_VendorButton_C::UpdateDisplayState(class USBZBundleItemDecorator* InIt
 }
 
 
-// Function WBP_VendorButton.WBP_VendorButton_C.UpdateVisuals
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_VendorButton.WBP_VendorButton_C.UpdateActions
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class USBZBundleItemDecorator*          InBundleDecorator                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_VendorButton_C::UpdateVisuals(class USBZBundleItemDecorator* InBundleDecorator)
+void UWBP_VendorButton_C::UpdateActions(class USBZBundleItemDecorator* InBundleDecorator)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateActions", FnName));
 
-	Params::WBP_VendorButton_C_UpdateVisuals Parms{};
+	Params::WBP_VendorButton_C_UpdateActions Parms{};
 
 	Parms.InBundleDecorator = InBundleDecorator;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.TryPlayActionAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Selected                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundleItemDecorator*          InBundleDecorator                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::TryPlayActionAnimation(bool Selected, class USBZBundleItemDecorator* InBundleDecorator)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryPlayActionAnimation", FnName));
+
+	Params::WBP_VendorButton_C_TryPlayActionAnimation Parms{};
+
+	Parms.Selected = Selected;
+	Parms.InBundleDecorator = InBundleDecorator;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.SetItemVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            InInventoryData                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::SetItemVisuals(class USBZInventoryBaseData* InInventoryData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetItemVisuals", FnName));
+
+	Params::WBP_VendorButton_C_SetItemVisuals Parms{};
+
+	Parms.InInventoryData = InInventoryData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.SelectionChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsSelected                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::SelectionChanged(bool IsSelected)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SelectionChanged", FnName));
+
+	Params::WBP_VendorButton_C_SelectionChanged Parms{};
+
+	Parms.IsSelected = IsSelected;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_VendorButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.OnMouseEnter
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry_OnMouseEnter                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent_OnMouseEnter                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_VendorButton_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseEnter", FnName));
+
+	Params::WBP_VendorButton_C_OnMouseEnter Parms{};
+
+	Parms.MyGeometry_OnMouseEnter = std::move(MyGeometry_OnMouseEnter);
+	Parms.MouseEvent_OnMouseEnter = std::move(MouseEvent_OnMouseEnter);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject_OnListItemObjectSet                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::OnListItemObjectSet(class UObject* ListItemObject_OnListItemObjectSet)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemObjectSet", FnName));
+
+	Params::WBP_VendorButton_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject_OnListItemObjectSet = ListItemObject_OnListItemObjectSet;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.OnListItemEquippedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsEquipped_OnListItemEquippedChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::OnListItemEquippedChanged(bool bIsEquipped_OnListItemEquippedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemEquippedChanged", FnName));
+
+	Params::WBP_VendorButton_C_OnListItemEquippedChanged Parms{};
+
+	Parms.bIsEquipped_OnListItemEquippedChanged = bIsEquipped_OnListItemEquippedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.Initialize Item
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZInventoryBaseData*            Inventory_Data                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::Initialize_Item(class USBZInventoryBaseData* Inventory_Data)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initialize Item", FnName));
+
+	Params::WBP_VendorButton_C_Initialize_Item Parms{};
+
+	Parms.Inventory_Data = Inventory_Data;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.ExecuteUbergraph_WBP_VendorButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::ExecuteUbergraph_WBP_VendorButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_VendorButton_C", "ExecuteUbergraph_WBP_VendorButton", FuncInfo);
+
+	Params::WBP_VendorButton_C_ExecuteUbergraph_WBP_VendorButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_VendorButton_C::ButtonSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_VendorButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus_ButtonFocusChanging                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
+
+	Params::WBP_VendorButton_C_ButtonFocusChanging Parms{};
+
+	Parms.bInHasFocus_ButtonFocusChanging = bInHasFocus_ButtonFocusChanging;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsSelected_BP_OnItemSelectionChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_VendorButton_C::BP_OnItemSelectionChanged(bool bIsSelected_BP_OnItemSelectionChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnItemSelectionChanged", FnName));
+
+	Params::WBP_VendorButton_C_BP_OnItemSelectionChanged Parms{};
+
+	Parms.bIsSelected_BP_OnItemSelectionChanged = bIsSelected_BP_OnItemSelectionChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_VendorButton.WBP_VendorButton_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_VendorButton_C::BP_OnEntryReleased()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEntryReleased", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

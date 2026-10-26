@@ -100,4 +100,16 @@ void UWBP_QuestLine_ChapterGroup_C::Construct()
 }
 
 
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.CheckShouldStillBeVisible
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QuestLine_ChapterGroup_C::CheckShouldStillBeVisible()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckShouldStillBeVisible", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 SDK_NAMESPACE_END

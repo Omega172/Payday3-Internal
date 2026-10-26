@@ -25,15 +25,15 @@ public:
 	struct FTimerHandle                           JoinLobbyTimer;                                    // 0x0300(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking(int32 EntryPoint);
-	void GoToLobby();
-	void OnExitedMatchmaking();
-	void OnInitialized();
-	void OnMatchFound();
-	void OnMatchmakingCanceled();
-	void OnPopUpButtonPressed(class FName ClosingActionName);
 	void OnStateMachineEnteredMatchmaking_Event_0();
+	void OnPopUpButtonPressed(class FName ClosingActionName);
+	void OnMatchmakingCanceled();
+	void OnMatchFound();
+	void OnInitialized();
+	void OnExitedMatchmaking();
+	void GoToLobby();
+	void ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

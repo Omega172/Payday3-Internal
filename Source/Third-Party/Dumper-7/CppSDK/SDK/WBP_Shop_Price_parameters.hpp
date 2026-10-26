@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Shop_Price.WBP_Shop_Price_C.OnShowPriceForItem
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_Price_C_OnShowPriceForItem final
+{
+public:
+	ESBZShopPriceWidgetState                      State_OnShowPriceForItem;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_Price_C_OnShowPriceForItem;
+
 // Function WBP_Shop_Price.WBP_Shop_Price_C.ExecuteUbergraph_WBP_Shop_Price
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_Shop_Price_C_ExecuteUbergraph_WBP_Shop_Price final
@@ -56,15 +65,6 @@ public:
 	int32                                         K2Node_Select_Default_3;                           // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_Price_C_ExecuteUbergraph_WBP_Shop_Price;
-
-// Function WBP_Shop_Price.WBP_Shop_Price_C.OnShowPriceForItem
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_Price_C_OnShowPriceForItem final
-{
-public:
-	ESBZShopPriceWidgetState                      State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_Price_C_OnShowPriceForItem;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

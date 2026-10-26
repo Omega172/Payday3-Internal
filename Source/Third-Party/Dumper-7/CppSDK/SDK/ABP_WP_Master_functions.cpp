@@ -16,37 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_WP_Master.ABP_WP_Master_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
-
-void UABP_WP_Master_C::AnimGraph(struct FPoseLink* AnimGraph_0)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
-
-	Params::ABP_WP_Master_C_AnimGraph Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function ABP_WP_Master.ABP_WP_Master_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F
-// (BlueprintEvent)
-
-void UABP_WP_Master_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ABP_WP_Master.ABP_WP_Master_C.ExecuteUbergraph_ABP_WP_Master
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +31,37 @@ void UABP_WP_Master_C::ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ABP_WP_Master.ABP_WP_Master_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F
+// (BlueprintEvent)
+
+void UABP_WP_Master_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master_AnimGraphNode_ApplyAdditive_85D4F45E4F8F7BDA666392AE5DD6049F", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ABP_WP_Master.ABP_WP_Master_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
+
+void UABP_WP_Master_C::AnimGraph(struct FPoseLink* AnimGraph)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
+
+	Params::ABP_WP_Master_C_AnimGraph Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph != nullptr)
+		*AnimGraph = std::move(Parms.AnimGraph);
 }
 
 

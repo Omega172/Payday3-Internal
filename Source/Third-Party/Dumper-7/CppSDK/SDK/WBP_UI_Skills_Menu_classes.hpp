@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ESBZSkillEquipResult_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "ESBZSkillEquipResult_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -46,28 +46,28 @@ public:
 	class UWBP_UI_Skills_Line_C*                  CurrentFocusedSkillLine;                           // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnResetSkillsPopupClosed(class FName ClosingActionName);
-	void TryToResetSkills();
-	void UpdateControlsReference();
-	void DescriptionScrollAxisChanged(double Value);
-	void ResetSkills();
-	void SetFocusedButton(class UWBP_UI_Skills_Button_C* InButton, bool bWasHoveredFocus);
-	void SetFocusedSkillLine(class UWBP_UI_Skills_Line_C* FocusedSkillLine, class UWBP_UI_Skills_Button_C* OldFocusedButton, class UWBP_UI_Skills_Button_C* CurrentFocusedButton, class UWBP_UI_Skills_Button_C** NewFocusedButton);
-	void SetActiveSkills();
-	void UpdateSkillPoints();
-	void CanSelectSkill(class UWBP_UI_Skills_Button_C* Skill, ESBZSkillEquipResult* Result);
-	void SetAcedSkills();
-	void SetButtonFocus();
-	void SetSkillLineResearchMarker(class UWBP_UI_Skills_Line_C* SkillLineWidget);
-	void DebugSetResearch();
-	void SetEquipSkill(class USBZSkill* Skill, ESBZSkillState SkillState);
-	void ShowScreen(const TArray<class USBZSkillData*>& PlayerSkills_0);
-	void Init(class UWBP_UI_Loadout_SkillsCustomization_C* parent_0);
-	void Construct();
-	void OnControlsReferenceClicked(class FName ActionName);
-	void PreConstruct(bool IsDesignTime);
-	void OnInstallStateChanged(bool bIsGameInstallPending);
 	void ExecuteUbergraph_WBP_UI_Skills_Menu(int32 EntryPoint);
+	void OnInstallStateChanged(bool bIsGameInstallPending);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnControlsReferenceClicked(class FName ActionName);
+	void Construct();
+	void Init(class UWBP_UI_Loadout_SkillsCustomization_C* parent);
+	void ShowScreen(const TArray<class USBZSkillData*>& PlayerSkills);
+	void SetEquipSkill(class USBZSkill* Skill, ESBZSkillState SkillState);
+	void DebugSetResearch();
+	void SetSkillLineResearchMarker(class UWBP_UI_Skills_Line_C* SkillLineWidget);
+	void SetButtonFocus();
+	void SetAcedSkills();
+	void CanSelectSkill(class UWBP_UI_Skills_Button_C* Skill, ESBZSkillEquipResult* Result);
+	void UpdateSkillPoints();
+	void SetActiveSkills();
+	void SetFocusedSkillLine(class UWBP_UI_Skills_Line_C* FocusedSkillLine, class UWBP_UI_Skills_Button_C* OldFocusedButton, class UWBP_UI_Skills_Button_C* CurrentFocusedButton, class UWBP_UI_Skills_Button_C** NewFocusedButton);
+	void SetFocusedButton(class UWBP_UI_Skills_Button_C* InButton, bool bWasHoveredFocus);
+	void ResetSkills();
+	void DescriptionScrollAxisChanged(double Value);
+	void UpdateControlsReference();
+	void TryToResetSkills();
+	void OnResetSkillsPopupClosed(class FName ClosingActionName);
 
 public:
 	static class UClass* StaticClass()
