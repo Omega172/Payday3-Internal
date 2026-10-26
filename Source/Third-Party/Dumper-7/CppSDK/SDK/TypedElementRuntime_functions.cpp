@@ -12,6 +12,7 @@
 
 #include "TypedElementRuntime_classes.hpp"
 #include "TypedElementRuntime_parameters.hpp"
+#include "Engine_parameters.hpp"
 
 
 SDK_NAMESPACE_START

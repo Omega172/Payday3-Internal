@@ -20466,7 +20466,7 @@ class UWorldPartitionRuntimeCellData : public UObject
 public:
 	uint8                                         Pad_30[0x28];                                      // 0x0030(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FBox                                   ContentBounds;                                     // 0x0058(0x0038)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            CellBounds;                                        // 0x0090(0x0040)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	uint8 CellBounds[0x0040];                                                                        // 0x0090(0x0040)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class FName                                   GridName;                                          // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Priority;                                          // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         HierarchicalLevel;                                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -35190,7 +35190,7 @@ public:
 	int32                                         MinMultiDistanceFieldPpem;                         // 0x0080(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MidMultiDistanceFieldPpem;                         // 0x0084(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxMultiDistanceFieldPpem;                         // 0x0088(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            PlatformRasterizationModeOverrides;                // 0x008C(0x0004)(Edit, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	uint8 PlatformRasterizationModeOverrides[0x0004];                                                // 0x008C(0x0004)(Edit, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_90[0x8];                                       // 0x0090(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:

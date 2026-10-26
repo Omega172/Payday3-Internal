@@ -12,6 +12,7 @@
 
 #include "GameplayTags_classes.hpp"
 #include "GameplayTags_parameters.hpp"
+#include "GameplayAbilities_parameters.hpp"
 
 
 SDK_NAMESPACE_START

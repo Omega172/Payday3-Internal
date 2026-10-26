@@ -228,15 +228,15 @@ DUMPER7_ASSERTS_FStructSerializerSetTestStruct;
 struct alignas(0x10) FStructSerializerOptionalTestStruct final
 {
 public:
-	FOptionalProperty_                            StrOptional;                                       // 0x0000(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            StrOptionalUnset;                                  // 0x0010(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            IntOptional;                                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            IntOptionalUnset;                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            NameOptional;                                      // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            NameOptionalUnset;                                 // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 StrOptional[0x0010];                                                                       // 0x0000(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 StrOptionalUnset[0x0010];                                                                  // 0x0010(0x0010)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 IntOptional[0x0008];                                                                       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 IntOptionalUnset[0x0008];                                                                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 NameOptional[0x000C];                                                                      // 0x0030(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 NameOptionalUnset[0x000C];                                                                 // 0x003C(0x000C)(IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_48[0x8];                                       // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	FOptionalProperty_                            StructOptional;                                    // 0x0050(0x00F0)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	FOptionalProperty_                            StructOptionalUnset;                               // 0x0140(0x00F0)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 StructOptional[0x00F0];                                                                    // 0x0050(0x00F0)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8 StructOptionalUnset[0x00F0];                                                               // 0x0140(0x00F0)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 DUMPER7_ASSERTS_FStructSerializerOptionalTestStruct;
 
