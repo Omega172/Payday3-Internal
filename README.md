@@ -10,10 +10,6 @@ For injection I recommend downloading Xenos Injector 2.3.2 from [here](https://w
 or from the official Xenos Github [here](https://github.com/DarthTon/Xenos)
 
 # Contributing
-When making any changes they should all happen to the main v3 branch, and then merged into the v3-ms-store branch.
-The two branches are identical except for the Dumper-7 SDK: v3 carries the Steam dump and v3-ms-store the Microsoft Store (WinGDK) dump plus an empty `Source/Third-Party/Dumper-7/WinGDK.variant` marker, which makes local builds on that branch name the DLL `Payday3-Internal-WinGDK.dll` and show "PAYDAY 3 (WinGDK)" in the menu.
-To make sure SDK changes are not merged between them, run `git config merge.ours-sdk.driver true` once after cloning; `.gitattributes` marks the SDK folder `merge=ours-sdk`, so a merge keeps the branch's own SDK whenever both sides changed a file.
-After merging, check `git diff HEAD~1 -- Source/Third-Party/Dumper-7` is empty: git only runs the merge driver when both branches changed a file, so a file changed on one side alone (for example a new Steam-only header) is still taken.
 
 ## Want to add a translation?
 Game strings live in [English.hpp](Source/OmegaWare/Locales/English.hpp) next to the framework's own; add a matching `Locales/<Language>.hpp` entry for each key. Missing keys fall back to English.
@@ -31,16 +27,16 @@ In an existing clone run `git submodule update --init --recursive` first. Output
 
 | Target | Output |
 |--------|--------|
-| `OmegaWare` | `OmegaWare/Payday3-Internal.dll` for injection (`Payday3-Internal-WinGDK.dll` on `v3-ms-store`) |
+| `OmegaWare` | `OmegaWare/Payday3-Internal.dll` for injection |
 | `OmegaWareProxy` | `OmegaWareProxy/version.dll`, drop next to the game executable to load without an injector |
 
 `Test.bat debug x64` runs the framework's test suite. After adding or moving files run `UpdateCompileCommands.bat` to refresh IntelliSense.
 
 ### Dependencies
 - [OmegaWare-GUI](https://github.com/OmegaWareProjects/OmegaWare-GUI), [OmegaWare-RenderHook](https://github.com/OmegaWareProjects/OmegaWare-RenderHook) and [OmegaWare-Localization](https://github.com/OmegaWareProjects/OmegaWare-Localization) as submodules under `Source/Third-Party/OmegaWareProjects/`
-- The Dumper-7 SDK in `Source/Third-Party/Dumper-7/CppSDK`: the Steam dump on `v3`, the Microsoft Store (WinGDK) dump on `v3-ms-store`. The framework checks the SDK's global offsets at startup and scans for them when they do not match, so a slightly stale dump still finds the engine globals.
+- The Dumper-7 SDK in `Source/Third-Party/Dumper-7/CppSDK`: dumped from the Steam build. It works for the Microsoft Store (WinGDK) build too, because the SDK audit corrects the offsets at runtime. The framework checks the SDK's global offsets at startup and scans for them when they do not match, so a slightly stale dump still finds the engine globals.
 
-CI and releases build both stores from either branch: `Scripts/BuildStores.ps1` takes the Steam SDK from `v3` and the WinGDK SDK from `v3-ms-store`, builds each with its own DLL and `version.dll` proxy, runs the tests and packages them into one zip with a `Steam` and a `WinGDK` folder. Locally: `powershell -File Scripts/BuildStores.ps1 -Modes release -SteamSdk <Steam CppSDK> -WinGdkSdk <WinGDK CppSDK>` (keep the SDK paths short, xmake mirrors them under `Build/.objs`).
+CI and releases run `Scripts/BuildPackage.ps1`, which builds, runs the tests and packages the DLL and the `version.dll` proxy. Locally: `powershell -File Scripts/BuildPackage.ps1 -Modes release`.
 
 After dropping in a new Dumper-7 dump, run `FixSdk.bat`. It gives `FOptionalProperty_` placeholders their real sizes (otherwise Dumper-7's own layout asserts fail) and adds the `_parameters.hpp` includes some `_functions.cpp` files are missing. Running it twice is harmless.
 
@@ -111,7 +107,7 @@ Every option is set separately for each category.
 
 ### Windows
 - **Build**: Follow the build instructions above, or download a release.
-- **Injection**: Release zips have a `Steam` and a `WinGDK` folder. Inject `Steam/Payday3-Internal.dll` into `PAYDAY3-Win64-Shipping.exe` (Steam) or `WinGDK/Payday3-Internal-WinGDK.dll` into `PAYDAY3-WinGDK-Shipping.exe` (Microsoft Store) with any DLL injector, or put that folder's `Proxy/version.dll` next to the game executable.
+- **Injection**: Inject `Payday3-Internal.dll` into `PAYDAY3-Win64-Shipping.exe` (Steam) or `PAYDAY3-WinGDK-Shipping.exe` (Microsoft Store) with any DLL injector, or put `Proxy/version.dll` next to the game executable.
 - **DLSS / Frame Generation**: the v4 renderer hook is built to survive Streamline, so deleting the Streamline plugin files should no longer be needed.
 - **In-Game**: Press `INSERT` to open the menu and `END` to unload. Both keys can be changed under settings > keys. Logs, configs and crash dumps go to `Documents\Payday3-Internal\<exe>\`.
 

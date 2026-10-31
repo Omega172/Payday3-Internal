@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ v2, v3, v3-ms-store ]
+    branches: [ v2, v3 ]
   pull_request:
-    branches: [ v2, v3, v3-ms-store ]
+    branches: [ v2, v3 ]
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,27 +22,15 @@ jobs:
         path: src
         submodules: recursive
         token: ${{ secrets.OMEGAWARE_REPOSITORIES_TOKEN || github.token }}
-    - name: Checkout Steam SDK (v3)
-      uses: actions/checkout@v4
-      with:
-        ref: v3
-        path: sdk-steam
-        sparse-checkout: Source/Third-Party/Dumper-7
-    - name: Checkout Microsoft Store SDK (v3-ms-store)
-      uses: actions/checkout@v4
-      with:
-        ref: v3-ms-store
-        path: sdk-wingdk
-        sparse-checkout: Source/Third-Party/Dumper-7
     - name: Setup xmake
       uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: latest
-    - name: Build, test and package Steam and WinGDK
+    - name: Build, test and package
       timeout-minutes: 75
       shell: pwsh
       run: |
-        & ./src/Scripts/BuildStores.ps1 -Modes ${{ matrix.build_configuration }} -SteamSdk sdk-steam/Source/Third-Party/Dumper-7/CppSDK -WinGdkSdk sdk-wingdk/Source/Third-Party/Dumper-7/CppSDK -Out packages
+        & ./src/Scripts/BuildPackage.ps1 -Modes ${{ matrix.build_configuration }} -Out packages
         exit $LASTEXITCODE
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4

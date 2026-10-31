@@ -23,27 +23,15 @@ jobs:
         submodules: recursive
         fetch-depth: 0
         token: ${{ secrets.OMEGAWARE_REPOSITORIES_TOKEN || github.token }}
-    - name: Checkout Steam SDK (v3)
-      uses: actions/checkout@v4
-      with:
-        ref: v3
-        path: sdk-steam
-        sparse-checkout: Source/Third-Party/Dumper-7
-    - name: Checkout Microsoft Store SDK (v3-ms-store)
-      uses: actions/checkout@v4
-      with:
-        ref: v3-ms-store
-        path: sdk-wingdk
-        sparse-checkout: Source/Third-Party/Dumper-7
     - name: Setup xmake
       uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: latest
-    - name: Build, test and package Steam and WinGDK
+    - name: Build, test and package
       timeout-minutes: 130
       shell: pwsh
       run: |
-        & ./src/Scripts/BuildStores.ps1 -Modes debug,release -SteamSdk sdk-steam/Source/Third-Party/Dumper-7/CppSDK -WinGdkSdk sdk-wingdk/Source/Third-Party/Dumper-7/CppSDK -Out packages
+        & ./src/Scripts/BuildPackage.ps1 -Modes debug,release -Out packages
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         Compress-Archive -Path packages/debug/* -DestinationPath Payday3-Internal-Debug.zip
         Compress-Archive -Path packages/release/* -DestinationPath Payday3-Internal-Release.zip
@@ -95,8 +83,8 @@ jobs:
           ![GitHub Downloads (all assets, specific tag)](https://img.shields.io/github/downloads/Omega172/Payday3-Internal/${{ steps.get_version.outputs.VERSION }}/total)
 
           ### Packages
-          Each zip has a `Steam` and a `WinGDK` (Microsoft Store) folder; use the one matching your copy of the game.
-          - **Payday3-Internal-Release.zip** - Release builds (`Steam/Payday3-Internal.dll`, `WinGDK/Payday3-Internal-WinGDK.dll`, each with `Proxy/version.dll`)
+          One build covers both the Steam and Microsoft Store versions of the game.
+          - **Payday3-Internal-Release.zip** - Release builds (`Payday3-Internal.dll` and `Proxy/version.dll`)
           - **Payday3-Internal-Debug.zip** - Debug builds of the same, with PDBs
 
           ### Changes
@@ -104,8 +92,8 @@ jobs:
 
           ### Installation
           1. Download `Payday3-Internal-Release.zip` (or `Payday3-Internal-Debug.zip`)
-          2. Extract the archive and open the folder for your store (`Steam` or `WinGDK`)
-          3. Inject the DLL in it, or copy its `Proxy/version.dll` next to the game executable
+          2. Extract the archive
+          3. Inject `Payday3-Internal.dll`, or copy `Proxy/version.dll` next to the game executable
           4. See README.md for details
 
           ### Build Information
