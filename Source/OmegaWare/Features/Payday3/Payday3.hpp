@@ -63,6 +63,7 @@ namespace OmegaWare::Payday3
 		QRPhone,
 		USB,
 		KeycardReader,
+		ATM,
 	};
 
 	struct stItemInfo
@@ -88,6 +89,16 @@ namespace OmegaWare::Payday3
 
 	[[nodiscard]] SDK::ASBZBagTriggerVolume* AsDropOff(SDK::AActor* pActor);
 	[[nodiscard]] bool IsAlive(const SDK::UObject* pObject);
+	[[nodiscard]] bool IsLiveObject(const SDK::UObject* pObject);
+	enum class EModUserKind : std::uint8_t
+	{
+		None,
+		User,
+		Developer,
+	};
+
+	[[nodiscard]] EModUserKind GetModUserKind(const SDK::APlayerState* pState);
+	void DrawModUsersMenu();
 	[[nodiscard]] bool IsAliveActor(const SDK::AActor* pActor);
 
 	template <typename Fn>

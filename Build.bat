@@ -1,5 +1,6 @@
 @echo off
 setlocal
+if exist "%ProgramFiles%\LLVM\bin" set "PATH=%ProgramFiles%\LLVM\bin;%PATH%"
 cd /d "%~dp0"
 set MODE=%~1
 set ARCH=%~2

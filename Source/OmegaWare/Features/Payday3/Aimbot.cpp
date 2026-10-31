@@ -25,6 +25,7 @@
 #include <intrin.h>
 #include <limits>
 #include <mutex>
+#include <numbers>
 #include <optional>
 #include <unordered_map>
 #include <utility>
@@ -48,7 +49,7 @@ namespace OmegaWare
 		{
 			SDK::ASBZCharacter* pCharacter = nullptr;
 			SDK::FVector vecAimWorld;
-			float flScreenDistance = 0.f;
+			float flScore = 0.f;
 		};
 
 		struct stSilentState
@@ -56,6 +57,7 @@ namespace OmegaWare
 			std::mutex mtxState;
 			bool bOverride = false;
 			bool bManualFire = false;
+			bool bMagicBullet = true;
 			SDK::FVector vecLocation;
 			SDK::FRotator rotRotation;
 
@@ -165,7 +167,8 @@ namespace OmegaWare
 			const bool bManualWhileLearning = g_stSilent.bManualFire && !g_stSilent.bReady;
 			if (!bAutoFirePath && !bLearnedFirePath && !bManualWhileLearning)
 				return;
-			*pLocation = g_stSilent.vecLocation;
+			if (g_stSilent.bMagicBullet)
+				*pLocation = g_stSilent.vecLocation;
 			*pRotation = g_stSilent.rotRotation;
 		}
 
@@ -184,6 +187,42 @@ namespace OmegaWare
 				return reinterpret_cast<TryActivateAbility_t>(uAddress);
 			}();
 			return s_fnTryActivate;
+		}
+
+		[[nodiscard]] SDK::USBZTankAttributeSet* FindTankAttributes(SDK::ASBZCharacter* pCharacter)
+		{
+			SDK::USBZAbilitySystemComponent* pAbilitySystem = OW_FIELD(pCharacter, AbilitySystem);
+			if (!Memory::IsValidObjectPtr(pAbilitySystem))
+				return nullptr;
+			SDK::UAbilitySystemComponent* pBase = pAbilitySystem;
+			SDK::TArray<SDK::UAttributeSet*>& aAttributes = OW_FIELD(pBase, SpawnedAttributes);
+			for (int iAttribute = 0; iAttribute < aAttributes.Num(); ++iAttribute)
+			{
+				SDK::UAttributeSet* pSet = aAttributes[iAttribute];
+				if (Memory::IsValidObjectPtr(pSet) && pSet->IsA(SDK::USBZTankAttributeSet::StaticClass()))
+					return static_cast<SDK::USBZTankAttributeSet*>(pSet);
+			}
+			return nullptr;
+		}
+
+		[[nodiscard]] std::optional<SDK::FVector> DozerFacePlatePoint(SDK::ASBZCharacter* pCharacter)
+		{
+			SDK::USBZTankAttributeSet* pTank = FindTankAttributes(pCharacter);
+			if (!pTank || pTank->VisorArmor.CurrentValue <= 0.f)
+				return std::nullopt;
+			auto* pComponent = static_cast<SDK::USBZTankAIComponent*>(pCharacter->GetComponentByClass(SDK::USBZTankAIComponent::StaticClass()));
+			if (!Payday3::IsAlive(pComponent))
+				return std::nullopt;
+			SDK::TArray<SDK::USBZDozerFaceArmor*>& aPlates = OW_FIELD(pComponent, FaceArmor);
+			for (int iPlate = 0; iPlate < aPlates.Num(); ++iPlate)
+			{
+				SDK::USBZDozerFaceArmor* pPlate = aPlates[iPlate];
+				if (!Payday3::IsAlive(pPlate) || !pPlate->IsVisible())
+					continue;
+				const SDK::FBoxSphereBounds stBounds = pPlate->GetTightBounds(false);
+				return stBounds.SphereRadius > 0.0 ? stBounds.Origin : pPlate->K2_GetComponentLocation();
+			}
+			return std::nullopt;
 		}
 
 		[[nodiscard]] bool IsLoud()
@@ -215,13 +254,14 @@ namespace OmegaWare
 			}
 		}
 
-		void SetOverride(bool bOverride, bool bManualFire = false, const SDK::FVector& vecLocation = {}, const SDK::FRotator& rotRotation = {})
+		void SetOverride(bool bOverride, bool bManualFire = false, const SDK::FVector& vecLocation = {}, const SDK::FRotator& rotRotation = {}, bool bMagicBullet = true)
 		{
 			std::scoped_lock lckState(g_stSilent.mtxState);
 			g_stSilent.bOverride = bOverride;
 			g_stSilent.bManualFire = bOverride && bManualFire;
 			if (bOverride)
 			{
+				g_stSilent.bMagicBullet = bMagicBullet;
 				g_stSilent.vecLocation = vecLocation;
 				g_stSilent.rotRotation = rotRotation;
 			}
@@ -231,6 +271,7 @@ namespace OmegaWare
 		{
 		public:
 			[[nodiscard]] std::string_view GetName() const override { return "aimbot"; }
+			[[nodiscard]] std::string_view GetGroup() const override { return "aimbot"; }
 
 			bool Setup() override
 			{
@@ -238,7 +279,9 @@ namespace OmegaWare
 				m_pVisibleCheck = &Config::Add("aimbot.visible_check", false);
 				m_pDrawFov = &Config::Add("aimbot.draw_fov", false);
 				m_pKey = &Config::Add("aimbot.key", Config::stKeybind{ .eMode = Config::EKeybindMode::Hold });
+				Config::SetParent("aimbot.key", "aimbot.enabled");
 				m_pType = &Config::Add("aimbot.type", 0);
+				m_pMagicBullet = &Config::Add("aimbot.magic_bullet", false);
 				m_pTarget = &Config::Add("aimbot.target", 0);
 				m_pFovColor = &Config::Add("aimbot.fov_color", OmegaGUI::color(255, 0, 0));
 				m_pFov = &Config::Add("aimbot.fov", 60);
@@ -276,7 +319,7 @@ namespace OmegaWare
 
 			void Render() override
 			{
-				if (*m_pDrawFov)
+				if (*m_pDrawFov && *m_pFov > 0)
 					OmegaGUI::GetBackgroundDrawList().AddCircle((OmegaGUI::GetDisplaySize() * .5f).Floor(), static_cast<float>(*m_pFov), *m_pFovColor, 100, 1.f);
 				UpdateAim();
 			}
@@ -288,33 +331,52 @@ namespace OmegaWare
 				if (OmegaGUI::BeginSection("aimbot.section_general"_l))
 				{
 					OmegaGUI::Checkbox("aimbot.enabled"_l, m_pEnabled);
-					OmegaGUI::Checkbox("aimbot.visible_check"_l, m_pVisibleCheck);
-					OmegaGUI::Checkbox("aimbot.draw_fov"_l, m_pDrawFov);
-					OmegaGUI::Checkbox("aimbot.auto_fire"_l, m_pAutoFire);
-					OmegaGUI::ItemTooltip("aimbot.auto_fire_hint"_t);
-					if (*m_pAutoFire)
+					if (*m_pEnabled)
 					{
-						OmegaGUI::Indent();
-						OmegaGUI::Checkbox("aimbot.auto_fire_loud_only"_l, m_pAutoFireLoudOnly);
-						OmegaGUI::ItemTooltip("aimbot.auto_fire_loud_only_hint"_t);
-						OmegaGUI::Unindent();
+						OmegaGUI::Checkbox("aimbot.visible_check"_l, m_pVisibleCheck);
+						OmegaGUI::Checkbox("aimbot.auto_fire"_l, m_pAutoFire);
+						OmegaGUI::ItemTooltip("aimbot.auto_fire_hint"_t);
+						if (*m_pAutoFire)
+						{
+							OmegaGUI::Indent();
+							OmegaGUI::Checkbox("aimbot.auto_fire_loud_only"_l, m_pAutoFireLoudOnly);
+							OmegaGUI::ItemTooltip("aimbot.auto_fire_loud_only_hint"_t);
+							OmegaGUI::Unindent();
+						}
+						if (*m_pType == 0)
+						{
+							OmegaGUI::Spacing();
+							OmegaGUI::TextWrapped(OmegaLocalization::Format("aimbot.silent_status", SilentStatus()));
+						}
 					}
-					OmegaGUI::Spacing();
-					OmegaGUI::TextWrapped(OmegaLocalization::Format("aimbot.silent_status", SilentStatus()));
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
-				if (OmegaGUI::BeginSection("aimbot.section_settings"_l))
+				if (*m_pEnabled && OmegaGUI::BeginSection("aimbot.section_settings"_l))
 				{
 					Widgets::Keybind("aimbot.key"_l, *m_pKey);
 					OmegaGUI::TextMuted("aimbot.key_hint"_t);
 					const std::array<std::string_view, 2> aTypes = { "aimbot.type_silent"_t, "aimbot.type_snapping"_t };
 					OmegaGUI::Combo("aimbot.type"_l, m_pType, aTypes);
+					if (*m_pType == 0)
+					{
+						OmegaGUI::Checkbox("aimbot.magic_bullet"_l, m_pMagicBullet);
+						OmegaGUI::ItemTooltip("aimbot.magic_bullet_hint"_t);
+					}
 					const std::array<std::string_view, 7> aBones = { "aimbot.bone_head"_t, "aimbot.bone_torso"_t, "aimbot.bone_left_arm"_t, "aimbot.bone_right_arm"_t, "aimbot.bone_hips"_t, "aimbot.bone_left_leg"_t, "aimbot.bone_right_leg"_t };
 					OmegaGUI::Combo("aimbot.target"_l, m_pTarget, aBones);
-					OmegaGUI::ColorEdit("aimbot.fov_color"_l, m_pFovColor);
 					OmegaGUI::SliderInt("aimbot.fov"_l, m_pFov, 0, 200);
-					OmegaGUI::SliderInt("aimbot.smoothing"_l, m_pSmoothing, 0, 100);
+					OmegaGUI::ItemTooltip("aimbot.fov_hint"_t);
+					if (*m_pFov > 0)
+					{
+						OmegaGUI::Indent();
+						OmegaGUI::Checkbox("aimbot.draw_fov"_l, m_pDrawFov);
+						if (*m_pDrawFov)
+							OmegaGUI::ColorEdit("aimbot.fov_color"_l, m_pFovColor);
+						OmegaGUI::Unindent();
+					}
+					if (*m_pType == 1)
+						OmegaGUI::SliderInt("aimbot.smoothing"_l, m_pSmoothing, 0, 100);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::EndColumns();
@@ -349,10 +411,12 @@ namespace OmegaWare
 
 				const SDK::FVector vecCamera = pCamera->GetCameraLocation();
 				const SDK::FRotator rotCamera = pCamera->GetCameraRotation();
-				const float flMaxDistance = *m_pDrawFov ? static_cast<float>(*m_pFov) : std::numeric_limits<float>::max();
+				const double dYaw = rotCamera.Yaw * (std::numbers::pi / 180.0);
+				const double dPitch = rotCamera.Pitch * (std::numbers::pi / 180.0);
+				const SDK::FVector vecForward(std::cos(dPitch) * std::cos(dYaw), std::cos(dPitch) * std::sin(dYaw), std::sin(dPitch));
 				const int iBone = std::clamp(*m_pTarget, 0, static_cast<int>(g_aBones.size()) - 1);
 
-				const std::optional<stTarget> optTarget = SelectTarget(pController, vecCamera, flMaxDistance, g_aBones[iBone]);
+				const std::optional<stTarget> optTarget = SelectTarget(pController, vecCamera, vecForward, static_cast<float>(std::max(*m_pFov, 0)), g_aBones[iBone]);
 				if (!optTarget)
 				{
 					SetOverride(false);
@@ -366,7 +430,7 @@ namespace OmegaWare
 				if (*m_pType == 0)
 				{
 					const bool bManualFire = !OmegaGUI::WantsMouse() && (GetAsyncKeyState(VK_LBUTTON) & 0x8000);
-					SetOverride(bAutoFire || bManualFire, bManualFire, optTarget->vecAimWorld, rotDesired);
+					SetOverride(bAutoFire || bManualFire, bManualFire, optTarget->vecAimWorld, rotDesired, *m_pMagicBullet);
 					return;
 				}
 
@@ -399,25 +463,30 @@ namespace OmegaWare
 					m_bFireQueued = false;
 			}
 
-			std::optional<stTarget> SelectTarget(SDK::APlayerController* pController, const SDK::FVector& vecCamera, float flMaxDistance, const wchar_t* wszBone) const
+			std::optional<stTarget> SelectTarget(SDK::APlayerController* pController, const SDK::FVector& vecCamera, const SDK::FVector& vecForward, float flFov, const wchar_t* wszBone) const
 			{
 				SDK::USBZActorContainer* pPawns = Payday3::GetAllPawns();
 				if (!pPawns)
 					return std::nullopt;
 
+				const bool bFov = flFov > 0.f;
 				int iWidth = 0;
 				int iHeight = 0;
-				pController->GetViewportSize(&iWidth, &iHeight);
-				if (iWidth <= 0 || iHeight <= 0)
-					return std::nullopt;
+				if (bFov)
+				{
+					pController->GetViewportSize(&iWidth, &iHeight);
+					if (iWidth <= 0 || iHeight <= 0)
+						return std::nullopt;
+				}
 
 				const float flCenterX = static_cast<float>(iWidth) * .5f;
 				const float flCenterY = static_cast<float>(iHeight) * .5f;
 				const SDK::FName nameBone = Payday3::MakeName(wszBone);
+				const SDK::FName nameHead = Payday3::MakeName(g_aBones[0]);
 				SDK::APawn* pLocalPawn = pController->AcknowledgedPawn;
 
 				std::optional<stTarget> optBest;
-				float flBest = flMaxDistance;
+				float flBest = bFov ? flFov : std::numeric_limits<float>::max();
 				SDK::TArray<SDK::UObject*>& aActors = pPawns->Objects;
 				for (int iActor = 0; iActor < aActors.Num(); ++iActor)
 				{
@@ -428,21 +497,39 @@ namespace OmegaWare
 					if (!pCharacter->bIsAlive || !Memory::IsValidObjectPtr(pCharacter->Mesh))
 						continue;
 
-					if (Payday3::GetEnemyInfo(Payday3::ResolveEnemyType(pActor)).eCategory != Payday3::EEnemyCategory::Cop)
+					const Payday3::EEnemyType eType = Payday3::ResolveEnemyType(pActor);
+					if (Payday3::GetEnemyInfo(eType).eCategory != Payday3::EEnemyCategory::Cop)
 						continue;
 					if (*m_pVisibleCheck && !pController->LineOfSightTo(pCharacter, vecCamera, false))
 						continue;
 
-					const SDK::FVector vecAim = pCharacter->Mesh->GetSocketLocation(nameBone);
-					SDK::FVector2D vecScreen;
-					if (!pController->ProjectWorldLocationToScreen(vecAim, &vecScreen, false))
+					SDK::FVector vecAim;
+					if (eType == Payday3::EEnemyType::Dozer)
+					{
+						const std::optional<SDK::FVector> optPlate = DozerFacePlatePoint(pCharacter);
+						vecAim = optPlate ? *optPlate : pCharacter->Mesh->GetSocketLocation(nameHead);
+					}
+					else
+						vecAim = pCharacter->Mesh->GetSocketLocation(nameBone);
+					float flScore = 0.f;
+					if (bFov)
+					{
+						SDK::FVector2D vecScreen;
+						if (!pController->ProjectWorldLocationToScreen(vecAim, &vecScreen, false))
+							continue;
+						flScore = static_cast<float>(std::hypot(vecScreen.X - flCenterX, vecScreen.Y - flCenterY));
+					}
+					else
+					{
+						const SDK::FVector vecOffset = vecAim - vecCamera;
+						if (vecOffset.Magnitude() < 1.0)
+							continue;
+						flScore = 1.f - static_cast<float>(vecOffset.GetNormalized().Dot(vecForward));
+					}
+					if (flScore > flBest)
 						continue;
-
-					const float flDistance = static_cast<float>(std::hypot(vecScreen.X - flCenterX, vecScreen.Y - flCenterY));
-					if (flDistance > flBest)
-						continue;
-					flBest = flDistance;
-					optBest = stTarget{ pCharacter, vecAim, flDistance };
+					flBest = flScore;
+					optBest = stTarget{ pCharacter, vecAim, flScore };
 				}
 				return optBest;
 			}
@@ -452,6 +539,7 @@ namespace OmegaWare
 			bool* m_pDrawFov = nullptr;
 			Config::stKeybind* m_pKey = nullptr;
 			int* m_pType = nullptr;
+			bool* m_pMagicBullet = nullptr;
 			int* m_pTarget = nullptr;
 			OmegaGUI::color* m_pFovColor = nullptr;
 			int* m_pFov = nullptr;

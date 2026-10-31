@@ -25,8 +25,18 @@ set_version(get_config("framework_version") or stDefaults.strVersion)
 
 add_rules("mode.debug", "mode.release")
 
+local function LlvmTool(strName)
+    local strTool = path.join(os.getenv("ProgramFiles") or "", "LLVM", "bin", strName .. ".exe")
+    return os.isfile(strTool) and strTool or strName
+end
+set_toolchains("clang-cl")
+set_toolset("ld", LlvmTool("lld-link"))
+set_toolset("sh", LlvmTool("lld-link"))
+set_toolset("ar", LlvmTool("llvm-ar"))
+add_cxxflags("-Wno-c++11-narrowing", "-Wno-character-conversion", "-Wno-microsoft-template-shadow", "-Wno-pragma-once-outside-header", "-Wno-class-conversion", "-Wno-invalid-offsetof", "-Wno-implicitly-unsigned-literal", "-Wno-undefined-bool-conversion", {tools = "clang_cl"})
+
 if is_mode("debug") then
-    set_symbols("debug", "edit")
+    set_symbols("debug")
 end
 
 local function LibraryDefault(strName, strLibrary)
@@ -326,7 +336,7 @@ else
         add_syslinks("version")
         add_includedirs("Source/OmegaWare")
         add_files("Source/OmegaWareTests/*.cpp")
-        add_files("Source/OmegaWare/Memory/*.cpp", "Source/OmegaWare/Core/Log.cpp", "Source/OmegaWare/Core/Console.cpp", "Source/OmegaWare/Core/CrashDump.cpp", "Source/OmegaWare/Engines/Unreal/NamePool.cpp")
+        add_files("Source/OmegaWare/Memory/*.cpp", "Source/OmegaWare/Core/Log.cpp", "Source/OmegaWare/Core/Console.cpp", "Source/OmegaWare/Core/CrashDump.cpp", "Source/OmegaWare/Engines/Unreal/NamePool.cpp", "Source/OmegaWare/Engines/Unreal/ValidateThunk.cpp")
         if (get_config("engine") or stDefaults.strEngine) == "unity" then
             add_defines("OMEGAWARE_ENGINE_UNITY=1")
             add_files("Source/OmegaWare/Engines/Unity/*.cpp")

@@ -45,7 +45,7 @@ namespace OmegaWare::Payday3
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 29> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 30> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -65,6 +65,7 @@ namespace OmegaWare::Payday3
 			{ "qrphone", { "QR Phone", EItemType::QRPhone, EItemCategory::KeyItem } },
 			{ "usbdrive", { "USB", EItemType::USB, EItemCategory::KeyItem } },
 			{ "depositbox", { "Deposit Box", EItemType::DepositBox, EItemCategory::KeyItem } },
+			{ "breakable_atm", { "ATM", EItemType::ATM, EItemCategory::Loot } },
 			{ "instantloot_money", { "Cash", EItemType::Cash, EItemCategory::Loot } },
 			{ "moneypile_lowvalue", { "Medium Money", EItemType::MoneyMedium, EItemCategory::Loot } },
 			{ "moneypile_01_c_lowvalue", { "Medium Money", EItemType::MoneyMedium, EItemCategory::Loot } },
@@ -184,6 +185,8 @@ namespace OmegaWare::Payday3
 
 	EEnemyType ResolveEnemyType(SDK::AActor* pActor)
 	{
+		if (Memory::IsValidObjectPtr(pActor) && pActor->IsA(SDK::ASBZPlayerCharacter::StaticClass()))
+			return EEnemyType::None;
 		return ResolveType(g_stCache.mapEnemies, pActor, g_aEnemyLookup);
 	}
 
@@ -223,6 +226,16 @@ namespace OmegaWare::Payday3
 			return false;
 		constexpr std::uint32_t uDying = static_cast<std::uint32_t>(SDK::EObjectFlags::BeginDestroyed) | static_cast<std::uint32_t>(SDK::EObjectFlags::FinishDestroyed) | static_cast<std::uint32_t>(SDK::EObjectFlags::MirroredGarbage);
 		return (static_cast<std::uint32_t>(pObject->Flags) & uDying) == 0;
+	}
+
+	bool IsLiveObject(const SDK::UObject* pObject)
+	{
+		if (!IsAlive(pObject) || !SDK::UObject::GObjects)
+			return false;
+		const std::int32_t iIndex = pObject->Index;
+		if (iIndex < 0 || iIndex >= SDK::UObject::GObjects->Num())
+			return false;
+		return SDK::UObject::GObjects->GetByIndex(iIndex) == pObject;
 	}
 
 	bool IsAliveActor(const SDK::AActor* pActor)

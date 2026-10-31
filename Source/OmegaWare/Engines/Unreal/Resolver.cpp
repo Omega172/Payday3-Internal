@@ -69,11 +69,13 @@ namespace OmegaWare::Unreal::Resolver
 		std::atomic<std::uintptr_t> g_uNamePool = 0;
 		NamePool::stLayout g_stNameLayout;
 
+		void* (*volatile g_pfnCopy)(void*, const void*, std::size_t) = &std::memcpy;
+
 		[[nodiscard]] bool ProbeCopy(void* pDestination, const void* pSource, std::size_t uSize)
 		{
 			__try
 			{
-				std::memcpy(pDestination, pSource, uSize);
+				g_pfnCopy(pDestination, pSource, uSize);
 				return true;
 			}
 			__except (EXCEPTION_EXECUTE_HANDLER)

@@ -79,7 +79,7 @@ Every option is set separately for each category.
     - [x] Armor Bar (enemies)
     - [x] Skeleton
     - [x] Outline through walls
-- Loot (Cash / Medium Money / Large Money / Jewelry)
+- Loot (Cash / Medium Money / Large Money / Jewelry / ATMs that have not been looted)
     - [x] Short names, distance, outline, per-type filters and colors
 - Key items (Deposit Boxes / Keycards / QR Phone / USB)
     - [x] Short names, distance, outline, per-type filters and colors

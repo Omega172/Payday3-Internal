@@ -7,6 +7,13 @@
 
 namespace OmegaWare
 {
+	struct stFeaturePage
+	{
+		std::string_view strKey;
+		std::string_view strLabel;
+		std::string_view strGroup = {};
+	};
+
 	class clFeature
 	{
 	public:
@@ -18,12 +25,16 @@ namespace OmegaWare
 
 		[[nodiscard]] virtual std::string_view GetName() const = 0;
 		[[nodiscard]] virtual std::string GetDisplayName() const;
+		[[nodiscard]] virtual std::string_view GetGroup() const { return "misc"; }
+		[[nodiscard]] virtual std::span<const stFeaturePage> GetPages() const { return {}; }
+		[[nodiscard]] virtual bool HasMenu() const { return true; }
 
 		virtual bool Setup() { return true; }
 		virtual void Destroy() {}
 		virtual void Run() {}
 		virtual void Render() {}
 		virtual void DrawMenu() {}
+		virtual void DrawMenuPage(std::string_view) { DrawMenu(); }
 
 		[[nodiscard]] bool IsActive() const { return m_bActive; }
 		[[nodiscard]] bool IsFaulted() const { return m_bFaulted; }
@@ -45,7 +56,7 @@ namespace OmegaWare
 		void RunAll();
 		void RenderAll();
 		[[nodiscard]] std::string DisplayName(const clFeature& rFeature);
-		void DrawPage(clFeature& rFeature);
+		void DrawPage(clFeature& rFeature, std::string_view strPage = {});
 		void DestroyAll();
 	}
 }

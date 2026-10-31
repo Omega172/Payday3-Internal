@@ -49,7 +49,7 @@ namespace OmegaWare
 					++iDepth;
 				else if (strSignature[i] == '>' && iDepth > 0)
 					--iDepth;
-				else if (strSignature[i] == '(' && iDepth == 0 && !strSignature.substr(0, i).ends_with("operator "))
+				else if (strSignature[i] == '(' && iDepth == 0 && !strSignature.substr(0, i).ends_with("operator ") && !strSignature.substr(i).starts_with("(anonymous namespace)") && !strSignature.substr(i).starts_with("(lambda)"))
 				{
 					uParameters = i;
 					break;
@@ -59,9 +59,9 @@ namespace OmegaWare
 			iDepth = 0;
 			for (std::size_t i = strName.size(); i-- > 0;)
 			{
-				if (strName[i] == '>')
+				if (strName[i] == '>' || strName[i] == ')')
 					++iDepth;
-				else if (strName[i] == '<' && iDepth > 0)
+				else if ((strName[i] == '<' || strName[i] == '(') && iDepth > 0)
 					--iDepth;
 				else if (strName[i] == ' ' && iDepth == 0 && !strName.substr(0, i).ends_with("operator"))
 				{

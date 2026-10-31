@@ -8,6 +8,7 @@
 #include "Features/Feature.hpp"
 #include "Memory/Safety.hpp"
 #include "Menu/Widgets.hpp"
+#include "Plugins/Plugins.hpp"
 
 #include "OmegaGUI/OmegaGUI.hpp"
 #include "OmegaLocalization/OmegaLocalization.hpp"
@@ -19,6 +20,7 @@
 #include <format>
 #include <functional>
 #include <mutex>
+#include <span>
 #include <string>
 #include <unordered_set>
 #include <utility>
@@ -113,6 +115,9 @@ namespace OmegaWare
 				m_pTeamGodMode = &Config::Add("player.team_godmode", false);
 				m_pTeamInfAmmo = &Config::Add("player.team_inf_ammo", false);
 				m_pTeamInstantInteraction = &Config::Add("player.team_instant_interaction", false);
+				m_pTeamInfStamina = &Config::Add("player.team_inf_stamina", false);
+				m_pTeamInfArmor = &Config::Add("player.team_inf_armor", false);
+				m_pTeamNoDetection = &Config::Add("player.team_no_detection", false);
 				m_pInstantReload = &Config::Add("player.instant_reload", false);
 				m_pInfAmmo = &Config::Add("player.inf_ammo", false);
 				m_pNoRecoil = &Config::Add("player.no_recoil", false);
@@ -266,27 +271,26 @@ namespace OmegaWare
 				}
 			}
 
-			void DrawMenu() override
+			[[nodiscard]] std::string_view GetGroup() const override { return "player"; }
+
+			[[nodiscard]] std::span<const stFeaturePage> GetPages() const override
 			{
-				using namespace OmegaLocalization::Literals;
-				if (!OmegaGUI::BeginTabBar("player.tabs"))
-					return;
-				if (OmegaGUI::BeginTabItem("player.tab_local"_l))
-				{
+				static constexpr std::array<stFeaturePage, 3> s_aPages = { {
+					{ "local", "player.tab_local" },
+					{ "players", "player.tab_players", "session" },
+					{ "weapons", "player.tab_weapons" },
+				} };
+				return s_aPages;
+			}
+
+			void DrawMenuPage(std::string_view strPage) override
+			{
+				if (strPage == "local")
 					DrawLocalTab();
-					OmegaGUI::EndTabItem();
-				}
-				if (OmegaGUI::BeginTabItem("player.tab_players"_l))
-				{
+				else if (strPage == "players")
 					DrawPlayersTab();
-					OmegaGUI::EndTabItem();
-				}
-				if (OmegaGUI::BeginTabItem("player.tab_weapons"_l))
-				{
+				else if (strPage == "weapons")
 					DrawWeaponsTab();
-					OmegaGUI::EndTabItem();
-				}
-				OmegaGUI::EndTabBar();
 			}
 
 		private:
@@ -296,7 +300,6 @@ namespace OmegaWare
 				OmegaGUI::BeginColumns(2);
 				if (OmegaGUI::BeginSection("player.section_general"_l))
 				{
-					OmegaGUI::Checkbox("player.godmode"_l, m_pGodMode);
 					OmegaGUI::Checkbox("player.inf_stamina"_l, m_pInfStamina);
 					OmegaGUI::Checkbox("player.instant_melee"_l, m_pInstantMelee);
 					OmegaGUI::Checkbox("player.no_screenshake"_l, m_pNoScreenshake);
@@ -307,28 +310,37 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("player.instant_minigame"_l, m_pInstantMinigame);
 					OmegaGUI::Checkbox("player.auto_secure_bags"_l, m_pAutoSecure);
 					OmegaGUI::ItemTooltip("player.auto_secure_bags_hint"_t);
-					OmegaGUI::Checkbox("player.reach"_l, m_pReach);
-					OmegaGUI::ItemTooltip("player.reach_hint"_t);
-					OmegaGUI::Checkbox("player.reach_open"_l, m_pReachOpen);
-					OmegaGUI::ItemTooltip("player.reach_open_hint"_t);
-					OmegaGUI::Checkbox("player.speedhack"_l, m_pSpeedHack);
-					OmegaGUI::ItemTooltip("player.speedhack_hint"_t);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("player.section_settings"_l))
 				{
-					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_godmode", "player.godmode"_t), true))
+					OmegaGUI::Checkbox("player.godmode"_l, m_pGodMode);
+					if (*m_pGodMode)
 					{
+						OmegaGUI::Indent();
 						const std::array<std::string_view, 2> aTypes = { "player.godmode_set"_t, "player.godmode_block"_t };
 						OmegaGUI::Combo("player.godmode_type"_l, m_pGodModeType, aTypes);
+						OmegaGUI::Unindent();
 					}
-					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_reach", "player.reach"_t), true))
-						Widgets::Keybind("player.reach_key"_l, *m_pReachKey);
-					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_speedhack", "player.speedhack"_t), true))
+					OmegaGUI::Checkbox("player.reach"_l, m_pReach);
+					OmegaGUI::ItemTooltip("player.reach_hint"_t);
+					if (*m_pReach)
 					{
+						OmegaGUI::Indent();
+						OmegaGUI::Checkbox("player.reach_open"_l, m_pReachOpen);
+						OmegaGUI::ItemTooltip("player.reach_open_hint"_t);
+						Widgets::Keybind("player.reach_key"_l, *m_pReachKey);
+						OmegaGUI::Unindent();
+					}
+					OmegaGUI::Checkbox("player.speedhack"_l, m_pSpeedHack);
+					OmegaGUI::ItemTooltip("player.speedhack_hint"_t);
+					if (*m_pSpeedHack)
+					{
+						OmegaGUI::Indent();
 						OmegaGUI::SliderFloat("player.speedhack_multiplier"_l, m_pSpeedMultiplier, .1f, 10.f, "{:.1f}x");
 						Widgets::Keybind("player.speedhack_key"_l, *m_pSpeedKey);
+						OmegaGUI::Unindent();
 					}
 					OmegaGUI::EndSection();
 				}
@@ -371,11 +383,17 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("player.team_godmode"_l, m_pTeamGodMode);
 					OmegaGUI::Checkbox("player.team_inf_ammo"_l, m_pTeamInfAmmo);
 					OmegaGUI::Checkbox("player.team_instant_interaction"_l, m_pTeamInstantInteraction);
-					if (OmegaGUI::Button("player.bring_all"_l))
-						RequestBring(nullptr);
+					OmegaGUI::Checkbox("player.team_inf_stamina"_l, m_pTeamInfStamina);
+					OmegaGUI::Checkbox("player.team_inf_armor"_l, m_pTeamInfArmor);
+					OmegaGUI::Checkbox("player.team_no_detection"_l, m_pTeamNoDetection);
+					if (OmegaGUI::Button("player.heal_all"_l))
+						RequestAction(m_aHealRequests, nullptr);
+					Plugins::DrawExtensions("player.section");
 					OmegaGUI::EndDisabled();
 					OmegaGUI::EndSection();
 				}
+
+				Payday3::DrawModUsersMenu();
 
 				SDK::APawn* pLocalPawn = Unreal::GetLocalPawn();
 				const SDK::FVector vecOrigin = pLocalPawn ? pLocalPawn->K2_GetActorLocation() : SDK::FVector{};
@@ -402,6 +420,11 @@ namespace OmegaWare
 					OmegaGUI::TableNextRow();
 					OmegaGUI::TableNextColumn();
 					OmegaGUI::TextUnformatted(pState->GetPlayerName().ToString());
+					if (const Payday3::EModUserKind eKind = Payday3::GetModUserKind(pState); eKind != Payday3::EModUserKind::None)
+					{
+						OmegaGUI::SameLine();
+						OmegaGUI::TextColored(OmegaGUI::color(0, 255, 255), eKind == Payday3::EModUserKind::Developer ? "modusers.tag_dev"_t : "modusers.tag"_t);
+					}
 					OmegaGUI::TableNextColumn();
 					OmegaGUI::TextUnformatted(pAttributes ? std::format("{:.0f}", pAttributes->Health.CurrentValue) : "-");
 					OmegaGUI::TableNextColumn();
@@ -413,8 +436,9 @@ namespace OmegaWare
 					{
 						OmegaGUI::PushID(pState);
 						OmegaGUI::BeginDisabled(!bHost);
-						if (OmegaGUI::SmallButton("player.bring"_l))
-							RequestBring(pState);
+						if (OmegaGUI::SmallButton("player.heal"_l))
+							RequestAction(m_aHealRequests, pState);
+						Plugins::DrawExtensions("player.row", pState);
 						OmegaGUI::EndDisabled();
 						OmegaGUI::PopID();
 					}
@@ -432,29 +456,37 @@ namespace OmegaWare
 					OmegaGUI::Checkbox("player.inf_ammo"_l, m_pInfAmmo);
 					OmegaGUI::Checkbox("player.no_recoil"_l, m_pNoRecoil);
 					OmegaGUI::Checkbox("player.no_spread"_l, m_pNoSpread);
-					OmegaGUI::Checkbox("player.fire_rate"_l, m_pFireRate);
 					OmegaGUI::Checkbox("player.hold_to_shoot"_l, m_pHoldToShoot);
 					OmegaGUI::ItemTooltip("player.hold_to_shoot_hint"_t);
-					OmegaGUI::Checkbox("player.more_bullets"_l, m_pMoreBullets);
-					OmegaGUI::ItemTooltip("player.more_bullets_hint"_t);
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::NextColumn();
 				if (OmegaGUI::BeginSection("player.section_settings"_l))
 				{
-					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_fire_rate", "player.fire_rate"_t), true))
+					OmegaGUI::Checkbox("player.fire_rate"_l, m_pFireRate);
+					if (*m_pFireRate)
+					{
+						OmegaGUI::Indent();
 						OmegaGUI::SliderInt("player.fire_rate_multiplier"_l, m_pFireRateMultiplier, 0, 1000);
-					if (OmegaGUI::CollapsingHeader(std::format("{}###player.group_more_bullets", "player.more_bullets"_t), true))
+						OmegaGUI::Unindent();
+					}
+					OmegaGUI::Checkbox("player.more_bullets"_l, m_pMoreBullets);
+					OmegaGUI::ItemTooltip("player.more_bullets_hint"_t);
+					if (*m_pMoreBullets)
+					{
+						OmegaGUI::Indent();
 						OmegaGUI::SliderInt("player.more_bullets_count"_l, m_pMoreBulletsCount, 1, 100);
+						OmegaGUI::Unindent();
+					}
 					OmegaGUI::EndSection();
 				}
 				OmegaGUI::EndColumns();
 			}
 
-			void RequestBring(SDK::APlayerState* pState)
+			void RequestAction(std::vector<SDK::APlayerState*>& rRequests, SDK::APlayerState* pState)
 			{
 				std::scoped_lock lckBring(m_mtxBring);
-				m_aBringRequests.push_back(pState);
+				rRequests.push_back(pState);
 			}
 
 			void BlockDamage(SDK::ASBZPlayerCharacter* pCharacter, bool bEnabled)
@@ -504,9 +536,18 @@ namespace OmegaWare
 				}
 			}
 
+			static bool InNormalRange(SDK::ASBZPlayerCharacter* pCharacter, SDK::USBZBaseInteractableComponent* pInteraction)
+			{
+				SDK::AActor* pTarget = pInteraction->GetOwner();
+				if (!Payday3::IsAliveActor(pTarget) || !Payday3::IsAliveActor(pCharacter))
+					return false;
+				const double dRange = pInteraction->NormalDistance > 0.f ? pInteraction->NormalDistance : 200.0;
+				return (pTarget->K2_GetActorLocation() - pCharacter->K2_GetActorLocation()).Magnitude() <= dRange;
+			}
+
 			void CompleteInteraction(SDK::ASBZPlayerCharacter* pCharacter)
 			{
-				SDK::USBZPlayerInteractorComponent* pInteractor = pCharacter->Interactor;
+				SDK::USBZPlayerInteractorComponent* pInteractor = OW_FIELD(pCharacter, Interactor);
 				if (!Memory::IsValidObjectPtr(pInteractor))
 					return;
 				SDK::USBZBaseInteractableComponent* pInteraction = pInteractor->GetCurrentInteraction();
@@ -563,10 +604,10 @@ namespace OmegaWare
 				SDK::UWorld* pWorld = Unreal::GetWorld();
 				const bool bHost = pWorld && SDK::UKismetSystemLibrary::IsServer(pWorld) && !SDK::UKismetSystemLibrary::IsStandalone(pWorld);
 				m_bIsHost = bHost;
-				std::vector<SDK::APlayerState*> aBring;
+				std::vector<SDK::APlayerState*> aHeal;
 				{
 					std::scoped_lock lckBring(m_mtxBring);
-					aBring.swap(m_aBringRequests);
+					aHeal.swap(m_aHealRequests);
 				}
 				if (pWorld != m_pTeamWorld)
 				{
@@ -598,29 +639,27 @@ namespace OmegaWare
 					if (*m_pTeamInfAmmo && pAttributes)
 						for (SDK::FGameplayAttributeData* pAmmo : AmmoAttributes(pAttributes))
 							pAmmo->CurrentValue = 999.f;
+					if (*m_pTeamInfStamina && pAttributes)
+						pAttributes->Stamina.CurrentValue = 100.f;
+					if (*m_pTeamInfArmor && pAttributes && pTeammate->bIsAlive)
+						pAttributes->Armor.CurrentValue = pAttributes->ArmorMax.CurrentValue;
+					if (*m_pTeamNoDetection)
+						ClearDetection(pTeammate);
 					if (*m_pTeamInstantInteraction)
 						CompleteTeammateInteraction(pTeammate);
-				}
-
-				if (aBring.empty() || !pLocal)
-					return;
-				const SDK::FVector vecOrigin = pLocal->K2_GetActorLocation();
-				int iSlot = 0;
-				for (SDK::ASBZPlayerCharacter* pTeammate : aTeammates)
-				{
-					SDK::APlayerState* pState = pTeammate->PlayerState;
-					if (std::ranges::find(aBring, nullptr) == aBring.end() && std::ranges::find(aBring, pState) == aBring.end())
-						continue;
-					const double dAngle = (iSlot++ * 2.0944) + 0.5;
-					const SDK::FVector vecTarget = vecOrigin + SDK::FVector(std::cos(dAngle) * 120.0, std::sin(dAngle) * 120.0, 0.0);
-					pTeammate->K2_SetActorLocation(vecTarget, false, nullptr, true);
-					LogInfo("teammates: brought {} to the host", pState ? pState->GetPlayerName().ToString() : std::string("player"));
+					SDK::APlayerState* pTeammateState = pTeammate->PlayerState;
+					if (pAttributes && pTeammate->bIsAlive && !aHeal.empty() && (std::ranges::find(aHeal, nullptr) != aHeal.end() || std::ranges::find(aHeal, pTeammateState) != aHeal.end()))
+					{
+						pAttributes->Health.CurrentValue = pAttributes->HealthMax.CurrentValue;
+						pAttributes->Armor.CurrentValue = pAttributes->ArmorMax.CurrentValue;
+						LogInfo("teammates: healed {}", pTeammateState ? pTeammateState->GetPlayerName().ToString() : std::string("player"));
+					}
 				}
 			}
 
 			void CompleteTeammateInteraction(SDK::ASBZPlayerCharacter* pTeammate)
 			{
-				SDK::USBZPlayerInteractorComponent* pInteractor = pTeammate->Interactor;
+				SDK::USBZPlayerInteractorComponent* pInteractor = OW_FIELD(pTeammate, Interactor);
 				if (!Memory::IsValidObjectPtr(pInteractor))
 					return;
 				stTeammateInteract& rTrack = m_mapTeammateInteract[pTeammate];
@@ -635,6 +674,8 @@ namespace OmegaWare
 				SDK::AActor* pOwner = pInteraction->GetOwner();
 				if (Memory::IsValidObjectPtr(pOwner) && (pOwner->IsA(SDK::ASBZMiniGameActor::StaticClass()) || pOwner->IsA(SDK::ASBZBagItem::StaticClass())))
 					return;
+				if (!InNormalRange(pTeammate, pInteraction))
+					return;
 				rTrack = { pInteraction, pInteractor->InteractId };
 				pInteractor->Server_CompleteInteraction(pInteraction, pInteractor->InteractId);
 				pInteractor->Multicast_CompletedInteraction(pInteraction, false);
@@ -642,7 +683,7 @@ namespace OmegaWare
 
 			static void CompleteMinigame(SDK::ASBZPlayerCharacter* pCharacter)
 			{
-				SDK::ASBZPlayerState* pState = pCharacter->SBZPlayerState;
+				SDK::ASBZPlayerState* pState = OW_FIELD(pCharacter, SBZPlayerState);
 				if (!Memory::IsValidObjectPtr(pState))
 					return;
 				const SDK::EPD3MiniGameState eState = pState->MiniGameState;
@@ -1065,9 +1106,12 @@ namespace OmegaWare
 			bool* m_pTeamGodMode = nullptr;
 			bool* m_pTeamInfAmmo = nullptr;
 			bool* m_pTeamInstantInteraction = nullptr;
+			bool* m_pTeamInfStamina = nullptr;
+			bool* m_pTeamInfArmor = nullptr;
+			bool* m_pTeamNoDetection = nullptr;
 			std::atomic<bool> m_bIsHost = false;
 			std::mutex m_mtxBring;
-			std::vector<SDK::APlayerState*> m_aBringRequests;
+			std::vector<SDK::APlayerState*> m_aHealRequests;
 			std::unordered_map<SDK::ASBZPlayerCharacter*, stTeammateInteract> m_mapTeammateInteract;
 			std::unordered_set<SDK::ASBZPlayerCharacter*> m_setProtected;
 			SDK::UWorld* m_pTeamWorld = nullptr;
