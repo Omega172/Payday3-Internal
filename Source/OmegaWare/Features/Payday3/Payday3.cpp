@@ -27,7 +27,7 @@ namespace OmegaWare::Payday3
 			stItemInfo stInfo;
 		};
 
-		constexpr std::array<stEnemyLookup, 13> g_aEnemyLookup = { {
+		constexpr std::array<stEnemyLookup, 14> g_aEnemyLookup = { {
 			{ "security", EEnemyType::Security },
 			{ "armedcop", EEnemyType::ArmedCop },
 			{ "shield", EEnemyType::Shield },
@@ -41,11 +41,12 @@ namespace OmegaWare::Payday3
 			{ "civilian", EEnemyType::Civilian },
 			{ "smg", EEnemyType::SMG },
 			{ "ar_", EEnemyType::AR },
+			{ "cop_", EEnemyType::ArmedCop },
 		} };
 
 		constexpr stItemInfo kNoItem{};
 
-		constexpr std::array<stItemLookup, 30> g_aItemLookup = { {
+		constexpr std::array<stItemLookup, 35> g_aItemLookup = { {
 			{ "carriedredkeycard", { "Red Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carriedbluekeycard", { "Blue Keycard (carried)", EItemType::Keycard, EItemCategory::KeyItem } },
 			{ "carried", kNoItem },
@@ -76,6 +77,11 @@ namespace OmegaWare::Payday3
 			{ "instantloot_braceletbox", { "Bracelet", EItemType::Jewelry, EItemCategory::Loot } },
 			{ "instantloot_necklacebust", { "Necklace", EItemType::Jewelry, EItemCategory::Loot } },
 			{ "interactablejewelry", { "Jewelry", EItemType::Jewelry, EItemCategory::Loot } },
+			{ "plankspilerequirement", kNoItem },
+			{ "plankspile", { "Planks", EItemType::Plank, EItemCategory::Loot } },
+			{ "meth_hydrogenchloride", { "Hydrogen Chloride", EItemType::HydrogenChloride, EItemCategory::KeyItem } },
+			{ "meth_muriaticacid", { "Muriatic Acid", EItemType::MuriaticAcid, EItemCategory::KeyItem } },
+			{ "meth_causticsoda", { "Caustic Soda", EItemType::CausticSoda, EItemCategory::KeyItem } },
 		} };
 
 		constexpr std::array<stEnemyInfo, 15> g_aEnemyInfo = { {

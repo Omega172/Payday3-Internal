@@ -4,6 +4,7 @@
 
 #pragma warning(push)
 #pragma warning(disable : 4005 4369 4309 4267 4244)
+#include "SDK/BP_MethIngredientBase_classes.hpp"
 #include "SDK/BP_QRPhone_classes.hpp"
 #pragma warning(pop)
 
@@ -441,8 +442,12 @@ namespace OmegaWare
 				case Payday3::EItemType::MoneyLarge:
 				case Payday3::EItemType::Jewelry:
 				case Payday3::EItemType::ATM:
+				case Payday3::EItemType::Plank:
 					return ECategory::Loot;
 				case Payday3::EItemType::KeycardReader:
+				case Payday3::EItemType::HydrogenChloride:
+				case Payday3::EItemType::MuriaticAcid:
+				case Payday3::EItemType::CausticSoda:
 					return ECategory::Objectives;
 				default:
 					return ECategory::KeyItems;
@@ -1010,6 +1015,16 @@ namespace OmegaWare
 				return Memory::IsValidObjectPtr(pPhone->MobilePhone) && !pPhone->MobilePhone->bVisible;
 			}
 
+			[[nodiscard]] static bool IsCollectedIngredient(SDK::AActor* pActor)
+			{
+				if (!pActor->IsA(SDK::ABP_MethIngredientBase_C::StaticClass()))
+					return false;
+				auto* pIngredient = static_cast<SDK::ABP_MethIngredientBase_C*>(pActor);
+				if (pActor->bHidden)
+					return true;
+				return Memory::IsValidObjectPtr(pIngredient->StaticMesh) && !pIngredient->StaticMesh->bVisible;
+			}
+
 			[[nodiscard]] static bool IsLootedAtm(SDK::AActor* pActor)
 			{
 				if (!pActor->IsA(SDK::ASBZBreakableMachine::StaticClass()))
@@ -1029,6 +1044,10 @@ namespace OmegaWare
 					return IsCollectedPhone(pActor);
 				case Payday3::EItemType::ATM:
 					return IsLootedAtm(pActor);
+				case Payday3::EItemType::HydrogenChloride:
+				case Payday3::EItemType::MuriaticAcid:
+				case Payday3::EItemType::CausticSoda:
+					return IsCollectedIngredient(pActor);
 				default:
 					return false;
 				}
@@ -1193,7 +1212,7 @@ namespace OmegaWare
 			stColorPair m_stSkeletonColors;
 			bool* m_pShowDropOffs = nullptr;
 			OmegaGUI::color* m_pDropOffColor = nullptr;
-			std::array<stItemSetting, 10> m_aItems = { {
+			std::array<stItemSetting, 14> m_aItems = { {
 				{ Payday3::EItemType::Cash, "visuals.show_cash", "visuals.item_cash_color", OmegaGUI::color(0, 255, 255) },
 				{ Payday3::EItemType::MoneyMedium, "visuals.show_money_medium", "visuals.item_money_medium_color", OmegaGUI::color(120, 220, 120) },
 				{ Payday3::EItemType::MoneyLarge, "visuals.show_money_large", "visuals.item_money_large_color", OmegaGUI::color(0, 255, 0) },
@@ -1204,6 +1223,10 @@ namespace OmegaWare
 				{ Payday3::EItemType::QRPhone, "visuals.show_qr_phones", "visuals.item_qr_phone_color", OmegaGUI::color(255, 255, 0) },
 				{ Payday3::EItemType::USB, "visuals.show_usbs", "visuals.item_usb_color", OmegaGUI::color(255, 128, 0) },
 				{ Payday3::EItemType::KeycardReader, "visuals.show_keycard_readers", "visuals.item_keycard_reader_color", OmegaGUI::color(255, 128, 128) },
+				{ Payday3::EItemType::Plank, "visuals.show_planks", "visuals.item_plank_color", OmegaGUI::color(200, 150, 90) },
+				{ Payday3::EItemType::HydrogenChloride, "visuals.show_hydrogen_chloride", "visuals.item_hydrogen_chloride_color", OmegaGUI::color(120, 255, 200) },
+				{ Payday3::EItemType::MuriaticAcid, "visuals.show_muriatic_acid", "visuals.item_muriatic_acid_color", OmegaGUI::color(255, 230, 80) },
+				{ Payday3::EItemType::CausticSoda, "visuals.show_caustic_soda", "visuals.item_caustic_soda_color", OmegaGUI::color(180, 140, 255) },
 			} };
 
 			bool* m_pOutlineColors = nullptr;

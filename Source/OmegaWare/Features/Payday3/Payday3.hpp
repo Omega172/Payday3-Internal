@@ -64,6 +64,10 @@ namespace OmegaWare::Payday3
 		USB,
 		KeycardReader,
 		ATM,
+		Plank,
+		HydrogenChloride,
+		MuriaticAcid,
+		CausticSoda,
 	};
 
 	struct stItemInfo
